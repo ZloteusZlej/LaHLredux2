@@ -608,3 +608,133 @@ shared_focus = {
 	y = 5
 }
 
+shared_focus = {
+	id = NTH_whispers_in_the_dark
+	icon = GFX_goal_NTH_Whispers_in_the_Dark
+	prerequisite = {
+		focus = NTH_the_glorious_republican_army
+	}
+	cost = 10
+	x = 5
+	y = 1
+}
+
+shared_focus = {
+	id = NTH_social_credit
+	icon = GFX_goal_NTH_Social_Credit
+	prerequisite = {
+		focus = NTH_whispers_in_the_dark
+	}
+	cost = 10
+	x = 4
+	y = 2
+}
+
+shared_focus = {
+	id = NTH_stymphalian_birds
+	icon = GFX_goal_NTH_Stymphalian_Birds
+	prerequisite = {
+		focus = NTH_whispers_in_the_dark
+	}
+	cost = 10
+	x = 6
+	y = 2
+}
+
+shared_focus = {
+	id = NTH_M_O_A_B
+	icon = GFX_goal_NTH_M_O_A_B
+	prerequisite = {
+		focus = NTH_stymphalian_birds
+	}
+	prerequisite = {
+		focus = NTH_social_credit
+	}
+	cost = 10
+	x = 5
+	y = 3
+}
+
+shared_focus = {
+	id = NTH_weapons_of_tomorrow
+	icon = GFX_goal_NTH_weapons_of_tomorrow
+	prerequisite = {
+		focus = NTH_stymphalian_birds
+	}
+	prerequisite = {
+		focus = NTH_social_credit
+	}
+	cost = 10
+	x = 3
+	y = 3
+}
+
+shared_focus = {
+	id = NTH_advanced_mechanized_unit
+	icon = GFX_goal_NTH_Advanced_Mechanized_Unit
+	prerequisite = {
+		focus = NTH_stymphalian_birds
+	}
+	prerequisite = {
+		focus = NTH_social_credit
+	}
+	cost = 10
+	x = 7
+	y = 3
+}
+
+shared_focus = {
+	id = NTH_no_strength_in_numbers
+	icon = GFX_goal_NTH_No_Strength_In_Numbers
+	prerequisite = {
+		focus = NTH_weapons_of_tomorrow
+	}
+	prerequisite = {
+		focus = NTH_advanced_mechanized_unit
+	}
+	prerequisite = {
+		focus = NTH_M_O_A_B
+	}
+	mutually_exclusive = {
+		focus = NTH_total_annihilation
+	}
+	cost = 10
+	x = 4
+	y = 4
+}
+
+shared_focus = {
+	id = NTH_total_annihilation
+	icon = GFX_goal_NTH_Total_Annihilation
+	prerequisite = {
+		focus = NTH_weapons_of_tomorrow
+	}
+	prerequisite = {
+		focus = NTH_advanced_mechanized_unit
+	}
+	prerequisite = {
+		focus = NTH_M_O_A_B
+	}
+	mutually_exclusive = {
+		focus = NTH_no_strength_in_numbers
+	}
+	cost = 10
+	x = 6
+	y = 4
+}
+
+shared_focus = {
+	id = NTH_shock_and_wave
+	icon = GFX_goal_NTH_Shock_And_Awe
+	prerequisite = {
+		focus = NTH_total_annihilation
+	}
+	prerequisite = {
+		focus = NTH_no_strength_in_numbers
+	}
+	cost = 10
+	x = 5
+	y = 5
+}
+
+
