@@ -102,7 +102,25 @@ country_event = {
     fire_only_once = true
 	option = {
 		name = KNT_event.4.a
-    }	
+		KNT = {
+			add_ideas = KNT_multitool_rifle
+		}
+		add_political_power = -25
+    }
+	option = {
+		name = KNT_event.4.b
+		KNT = {
+			add_ideas = KNT_potato_grenade_launcher
+		}
+		add_political_power = -25
+    }
+	option = {
+		name = KNT_event.4.c
+		KNT = {
+			add_ideas = KNT_printed_rifle
+		}
+		add_political_power = -25
+    }
 }
 
 country_event = {
@@ -115,8 +133,17 @@ country_event = {
     fire_only_once = true
 	option = {
 		name = KNT_event.5.a
-    }	
-}
+		KNT = {
+			add_ideas = KNT_oxymiron_group
+		}
+    }
+	option = {
+		name = KNT_event.5.b
+		KNT = {
+			add_ideas = KNT_cambridge_group 
+		}
+	}
+}	
 
 country_event = {
 	id = KNT_event.6
