@@ -737,4 +737,139 @@ shared_focus = {
 	y = 5
 }
 
+shared_focus = {
+	id = NTH_the_reclamation_campaign
+	icon = GFX_goal_NTH_The_Reclamation_Campaign
+	cost = 10
+	x = 34
+	y = 0
+}
+
+shared_focus = {
+	id = NTH_annihilate_the_black_bandits
+	icon = GFX_goal_NTH_Annihilate_the_Black_Bandits
+	prerequisite = {
+		focus = NTH_the_reclamation_campaign
+	}
+	cost = 10
+	x = 34
+	y = 1
+}
+
+shared_focus = {
+	id = NTH_destroy_what_remains
+	icon = GFX_goal_NTH_Destroy_What_Remains
+	prerequisite = {
+		focus = NTH_annihilate_the_black_bandits
+	}
+	mutually_exclusive = {
+		focus = NTH_salvage_what_is_left
+	}
+	cost = 10
+	x = 33
+	y = 2
+}
+
+shared_focus = {
+	id = NTH_salvage_what_is_left
+	icon = GFX_goal_NTH_Salvage_What_is_Left
+	prerequisite = {
+		focus = NTH_annihilate_the_black_bandits
+	}
+	mutually_exclusive = {
+		focus = NTH_destroy_what_remains
+	}
+	cost = 10
+	x = 35
+	y = 2
+}
+
+shared_focus = {
+	id = NTH_the_german_issue
+	icon = GFX_goal_NTH_The_German_Issue
+	prerequisite = {
+		focus = NTH_destroy_what_remains
+		focus = NTH_salvage_what_is_left
+	}
+	cost = 10
+	x = 34
+	y = 3
+}
+
+shared_focus = {
+	id = NTH_infiltrate_london
+	icon = GFX_goal_NTH_Infiltrate_London
+	prerequisite = {
+		focus = NTH_the_german_issue
+	}
+	mutually_exclusive = {
+		focus = NTH_a_trail_down_south
+	}
+	cost = 10
+	x = 33
+	y = 4
+}
+
+shared_focus = {
+	id = NTH_a_trail_down_south
+	icon = GFX_goal_NTH_A_Trail_Down_South
+	prerequisite = {
+		focus = NTH_the_german_issue
+	}
+	mutually_exclusive = {
+		focus = NTH_infiltrate_london
+	}
+	cost = 10
+	x = 35
+	y = 4
+}
+
+shared_focus = {
+	id = NTH_the_battle_goes_on
+	icon = GFX_goal_NTH_The_Battle_Goes_On
+	prerequisite = {
+		focus = NTH_a_trail_down_south
+		focus = NTH_infiltrate_london
+	}
+	cost = 10
+	x = 34
+	y = 5
+}
+
+shared_focus = {
+	id = NTH_a_shaky_grasp
+	icon = GFX_goal_NTH_A_Shaky_Grasp
+	prerequisite = {
+		focus = NTH_the_battle_goes_on
+	}
+	cost = 10
+	x = 33
+	y = 6
+}
+
+shared_focus = {
+	id = NTH_fate_of_the_celts
+	icon = GFX_goal_Fate_of_The_Celts
+	prerequisite = {
+		focus = NTH_the_battle_goes_on
+	}
+	cost = 10
+	x = 35
+	y = 6
+}
+
+shared_focus = {
+	id = NTH_proclaim_the_republic
+	icon = GFX_goal_Proclaim_the_Republic
+	prerequisite = {
+		focus = NTH_fate_of_the_celts
+	}
+	prerequisite = {
+		focus = NTH_a_shaky_grasp
+	}
+	cost = 10
+	x = 34
+	y = 7
+}
+
 
