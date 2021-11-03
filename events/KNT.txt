@@ -157,3 +157,25 @@ country_event = {
 		name = KNT_event.6.a
     }	
 }
+
+country_event = {
+	id = KNT_event.7
+	title = KNT_event.7.t
+	desc = KNT_event.7.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true
+	option = {
+		name = KNT_event.7.a
+		KNT = {
+			add_ideas = KNT_guilds_unionized 
+		}
+    }
+	option = {
+		name = KNT_event.7.b
+		KNT = {
+			add_ideas = KNT_guilds_integrated
+		}
+    }
+}
