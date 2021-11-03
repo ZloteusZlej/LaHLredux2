@@ -1,0 +1,27 @@
+division_template = {
+	name = "Redemption Brigades"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+
+units = {
+	division = {
+		name="Zeki"
+		location= "17635"
+		division_template= "Redemption Brigades"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name="Chekisty"
+		location="17635"
+		division_template= "Redemption Brigades"
+		start_experience_factor = 0.2
+	}
+}
