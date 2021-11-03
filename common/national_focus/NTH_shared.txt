@@ -608,3 +608,301 @@ shared_focus = {
 	y = 5
 }
 
+shared_focus = {
+	id = NTH_whispers_in_the_dark
+	icon = GFX_goal_NTH_Whispers_in_the_Dark
+	prerequisite = {
+		focus = NTH_the_glorious_republican_army
+	}
+	cost = 10
+	x = 5
+	y = 1
+}
+
+shared_focus = {
+	id = NTH_social_credit
+	icon = GFX_goal_NTH_Social_Credit
+	prerequisite = {
+		focus = NTH_whispers_in_the_dark
+	}
+	cost = 10
+	x = 4
+	y = 2
+}
+
+shared_focus = {
+	id = NTH_stymphalian_birds
+	icon = GFX_goal_NTH_Stymphalian_Birds
+	prerequisite = {
+		focus = NTH_whispers_in_the_dark
+	}
+	cost = 10
+	x = 6
+	y = 2
+}
+
+shared_focus = {
+	id = NTH_M_O_A_B
+	icon = GFX_goal_NTH_M_O_A_B
+	prerequisite = {
+		focus = NTH_stymphalian_birds
+	}
+	prerequisite = {
+		focus = NTH_social_credit
+	}
+	cost = 10
+	x = 5
+	y = 3
+}
+
+shared_focus = {
+	id = NTH_weapons_of_tomorrow
+	icon = GFX_goal_NTH_weapons_of_tomorrow
+	prerequisite = {
+		focus = NTH_stymphalian_birds
+	}
+	prerequisite = {
+		focus = NTH_social_credit
+	}
+	cost = 10
+	x = 3
+	y = 3
+}
+
+shared_focus = {
+	id = NTH_advanced_mechanized_unit
+	icon = GFX_goal_NTH_Advanced_Mechanized_Unit
+	prerequisite = {
+		focus = NTH_stymphalian_birds
+	}
+	prerequisite = {
+		focus = NTH_social_credit
+	}
+	cost = 10
+	x = 7
+	y = 3
+}
+
+shared_focus = {
+	id = NTH_no_strength_in_numbers
+	icon = GFX_goal_NTH_No_Strength_In_Numbers
+	prerequisite = {
+		focus = NTH_weapons_of_tomorrow
+	}
+	prerequisite = {
+		focus = NTH_advanced_mechanized_unit
+	}
+	prerequisite = {
+		focus = NTH_M_O_A_B
+	}
+	mutually_exclusive = {
+		focus = NTH_total_annihilation
+	}
+	cost = 10
+	x = 4
+	y = 4
+}
+
+shared_focus = {
+	id = NTH_total_annihilation
+	icon = GFX_goal_NTH_Total_Annihilation
+	prerequisite = {
+		focus = NTH_weapons_of_tomorrow
+	}
+	prerequisite = {
+		focus = NTH_advanced_mechanized_unit
+	}
+	prerequisite = {
+		focus = NTH_M_O_A_B
+	}
+	mutually_exclusive = {
+		focus = NTH_no_strength_in_numbers
+	}
+	cost = 10
+	x = 6
+	y = 4
+}
+
+shared_focus = {
+	id = NTH_shock_and_wave
+	icon = GFX_goal_NTH_Shock_And_Awe
+	prerequisite = {
+		focus = NTH_total_annihilation
+	}
+	prerequisite = {
+		focus = NTH_no_strength_in_numbers
+	}
+	cost = 10
+	x = 5
+	y = 5
+}
+
+shared_focus = {
+	id = NTH_the_reclamation_campaign
+	icon = GFX_goal_NTH_The_Reclamation_Campaign
+	cost = 10
+	x = 34
+	y = 0
+}
+
+shared_focus = {
+	id = NTH_annihilate_the_black_bandits
+	icon = GFX_goal_NTH_Annihilate_the_Black_Bandits
+	prerequisite = {
+		focus = NTH_the_reclamation_campaign
+	}
+	cost = 10
+	x = 34
+	y = 1
+}
+
+shared_focus = {
+	id = NTH_destroy_what_remains
+	icon = GFX_goal_NTH_Destroy_What_Remains
+	prerequisite = {
+		focus = NTH_annihilate_the_black_bandits
+	}
+	mutually_exclusive = {
+		focus = NTH_salvage_what_is_left
+	}
+	cost = 10
+	x = 33
+	y = 2
+}
+
+shared_focus = {
+	id = NTH_salvage_what_is_left
+	icon = GFX_goal_NTH_Salvage_What_is_Left
+	prerequisite = {
+		focus = NTH_annihilate_the_black_bandits
+	}
+	mutually_exclusive = {
+		focus = NTH_destroy_what_remains
+	}
+	cost = 10
+	x = 35
+	y = 2
+}
+
+shared_focus = {
+	id = NTH_the_german_issue
+	icon = GFX_goal_NTH_The_German_Issue
+	prerequisite = {
+		focus = NTH_destroy_what_remains
+		focus = NTH_salvage_what_is_left
+	}
+	cost = 10
+	x = 34
+	y = 3
+}
+
+shared_focus = {
+	id = NTH_infiltrate_london
+	icon = GFX_goal_NTH_Infiltrate_London
+	prerequisite = {
+		focus = NTH_the_german_issue
+	}
+	mutually_exclusive = {
+		focus = NTH_a_trail_down_south
+	}
+	cost = 10
+	x = 33
+	y = 4
+}
+
+shared_focus = {
+	id = NTH_a_trail_down_south
+	icon = GFX_goal_NTH_A_Trail_Down_South
+	prerequisite = {
+		focus = NTH_the_german_issue
+	}
+	mutually_exclusive = {
+		focus = NTH_infiltrate_london
+	}
+	cost = 10
+	x = 35
+	y = 4
+}
+
+shared_focus = {
+	id = NTH_the_battle_goes_on
+	icon = GFX_goal_NTH_The_Battle_Goes_On
+	prerequisite = {
+		focus = NTH_a_trail_down_south
+		focus = NTH_infiltrate_london
+	}
+	cost = 10
+	x = 34
+	y = 5
+}
+
+shared_focus = {
+	id = NTH_a_shaky_grasp
+	icon = GFX_goal_NTH_A_Shaky_Grasp
+	prerequisite = {
+		focus = NTH_the_battle_goes_on
+	}
+	cost = 10
+	x = 33
+	y = 6
+}
+
+shared_focus = {
+	id = NTH_fate_of_the_celts
+	icon = GFX_goal_Fate_of_The_Celts
+	prerequisite = {
+		focus = NTH_the_battle_goes_on
+	}
+	cost = 10
+	x = 35
+	y = 6
+}
+
+shared_focus = {
+	id = NTH_proclaim_the_republic
+	icon = GFX_goal_Proclaim_the_Republic
+	prerequisite = {
+		focus = NTH_fate_of_the_celts
+	}
+	prerequisite = {
+		focus = NTH_a_shaky_grasp
+	}
+	cost = 10
+	x = 34
+	y = 7
+}
+
+shared_focus = {
+	id = NTH_two_comrades
+	icon = GFX_goal_NTH_Two_Comrades
+	prerequisite = {
+		focus = NTH_a_friend_in_need
+	}
+	cost = 10
+	x = 37
+	y = 1
+}
+
+shared_focus = {
+	id = NTH_last_train_home
+	icon = GFX_goal_NTH_Last_Train_Home
+	prerequisite = {
+		focus = NTH_a_friend_in_need
+	}
+	cost = 10
+	x = 39
+	y = 1
+}
+
+shared_focus = {
+	id = NTH_here_is_to_you
+	icon = GFX_goal_NTH_Here_is_to_You
+	prerequisite = {
+		focus = NTH_a_friend_in_need
+	}
+	cost = 10
+	x = 41
+	y = 1
+}
+
+
