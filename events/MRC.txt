@@ -1,108 +1,276 @@
-﻿`add_namespace = WES_event
+add_namespace = mrc
 
 country_event = {
-	id = WES_event.1
-	title = WES_event.1.t
-	desc = WES_event.1.d
-    is_triggered_only = yes
-	picture = 
-	major = no
-    fire_only_once = true	
+	id = mrc.1
+	title = mrc.1.t
+	desc = mrc.1.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+		tag = MRC
+	}
 	option = {
-		name = WES_event.1.a
-		set_party_name = { 
-		    ideology = regressionism
-			long_name = collapsed_government_long
-			name = collapsed_government
-		}	
-		kill_country_leader = yes
-		add_popularity = {
-		    ideology = regressionism
-            popularity = 1.00
-        }
-		create_country_leader = {
-	        name = "Collapsed Authority"
-            desc = "POLITICS_ANARCHY_DESC"
-	        picture = "Portrait_WES_Collapsed_Authority.dds"
-	        expire = "9999.1.1"
-	        ideology = neo_feudalism 
-	        traits = {
-		        total_anarchy
-	        }
+		name = mrc.1.a
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = mrc.2
+	title = mrc.2.t
+	desc = mrc.2.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+		tag = MRC
+	}
+	option = {
+		name = mrc.2.a
+		add_ideas = MRC_Youth_Go_War_Blyat
+		load_oob = MRC_Youth
+	}
+	option = {
+		name = mrc.2.b
+		create_corps_commander = {
+			name = "General Kto"
+			picture = ""
+			traits = {}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			stics_skill = 1
 		}
-        set_variable = {
-           var = george_slot_1
-           value = 2`
-        }
-		set_cosmetic_tag = collapsed_name
-		set_politics = {
-	        ruling_party = regressionism
-        }
-    } 
-}
-
-country_event = {
-	id = WES_event.3
-	title = WES_event.3.t
-	desc = WES_event.3.d
-    is_triggered_only = yes
-	picture = 
-	major = no
-    fire_only_once = true	
-	option = {
-		name = WES_event.3.a
-        set_variable = {
-           var = lhl_slot_2
-           value = 2
-        }
-    } 
-}
-
-
-country_event = {
-	id = WES_event.4
-	title = WES_event.4.t
-	desc = WES_event.4.d
-    is_triggered_only = yes
-	hidden = yes
-	picture = 
-	major = no
-    fire_only_once = true	
-	option = {
-		name = WES_event.4.a
-        set_variable = {
-           var = lhl_slot_12
-           value = 1
+		create_corps_commander = {
+			name = "General Kogda"
+			picture = ""
+			traits = {}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			stics_skill = 1
 		}
-    } 
+	}
 }
 
 country_event = {
-	id = WES_event.5
-	title = WES_event.5.t
-	desc = WES_event.5.d
-    is_triggered_only = yes
-	picture = 
-	major = no
-    fire_only_once = true	
+	id = mrc.3
+	title = mrc.3.t
+	desc = mrc.3.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+		tag = MRC
+	}
 	option = {
-		name = WES_event.5.a
-		add_popularity = {
-		    ideology = regressionism
-            popularity = 1.00
-        }
-		create_country_leader = {
-	        name = "George VII"
-            desc = "POLITICS_GEORGE_BASED_DESC"
-	        picture = "Portrait_WES_George_VII.dds"
-	        expire = "9999.1.1"
-	        ideology = neo_feudalism 
-	        traits = {
-		        new_pendragon
-	        }
+		name = mrc.3.a
+		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_4 amount = 100 } }
+		ROOT = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 150 } }
+		create_corps_commander = {
+			name = "General Zachem"
+			picture = ""
+			traits = {}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			stics_skill = 1
 		}
-    } 
+	}
+	option = {
+		name = mrc.3.b
+		add_manpower = 10000
+		load_oob = MRC_Brothers
+		create_corps_commander = {
+			name = "General Pochemu"
+			picture = ""
+			traits = {}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			stics_skill = 1
+		}
+	}
 }
 
+country_event = {
+	id = mrc.4
+	title = mrc.4.t
+	desc = mrc.4.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+		tag = MRC
+	}
+	option = {
+		name = mrc.4.a
+		add_stability = 0.2
+		add_political_power = 75
+	}
+	option = {
+		name = mrc.4.a
+		add_stability = -0.2
+		add_political_power = -100
+		add_war_support = 0.1
+		create_corps_commander = {
+			name = "General Horoshiy"
+			picture = ""
+			traits = {}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			stics_skill = 1
+		}
+		create_corps_commander = {
+			name = "General Plokhoy"
+			picture = ""
+			traits = {}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			stics_skill = 1
+		}
+	}
+}
 
+country_event = {
+	id = mrc.5
+	title = mrc.5.t
+	desc = mrc.5.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+		tag = MRC
+	}
+	option = {
+		name = mrc.5.a
+		add_political_power = -50
+		add_stability = -0.1
+		create_corps_commander = {
+			name = "General Pizdets"
+			picture = ""
+			traits = {}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			stics_skill = 1
+		}
+	}
+	option = {
+		name = mrc.5.b
+		add_political_power = 50
+		add_stability = 0.05
+		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 500 } }
+		ROOT = { add_equipment_to_stockpile = { type = support_equipment_1 amount = 50 } }
+		load_oob = MRC_Redemption
+	}
+}
 
+country_event = {
+	id = mrc.6
+	title = mrc.6.t
+	desc = mrc.6.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+		tag = MRC
+	}
+	option = {
+		name = mrc.6.a
+		add_political_power = -50
+		add_stability = -0.1
+		create_corps_commander = {
+			name = "General Ya"
+			picture = ""
+			traits = {}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			stics_skill = 1
+		}
+		create_corps_commander = {
+			name = "General Zaebalsya"
+			picture = ""
+			traits = {}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			stics_skill = 1
+		}
+	}	
+	option = {
+		name = mrc.6.a
+		add_stability = 0.15
+		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 500 } }
+		ROOT = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 50 } }
+		load_oob = MRC_Place_For_Us_All
+	}
+}
+
+country_event = {
+	id = mrc.7
+	title = mrc.7.t
+	desc = mrc.7.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+		tag = MRC
+	}
+	option = {
+		name = mrc.7.a
+		add_political_power = 50
+		ROOT = { add_equipment_to_stockpile = { type = main_battle_tank_equipment_2 amount = 50 } }
+		ROOT = { add_equipment_to_stockpile = { type = infantry_fighting_vehicle_equipment_2 amount = 100 } }
+		ROOT = { add_equipment_to_stockpile = { type = armoured_personnel_carrier_equipment_2 amount = 150 } }
+	}
+}
+
+country_event = {
+	id = mrc.8
+	title = mrc.8.t
+	desc = mrc.8.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+		tag = MRC
+	}
+	option = {
+		name = mrc.8.a
+		add_political_power = -75
+		add_manpower = -10000
+		army_experience = 15
+	}
+}
+
+country_event = {
+	id = mrc.9
+	title = mrc.9.t
+	desc = mrc.9.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+		tag = MRC
+	}
+	option = {
+		name = mrc.9.a
+		add_country_leader_trait = placeholder_1
+	}
+	option = {
+		name = mrc.9.b
+		add_country_leader_trait = placeholder_2
+	}
+	option = {
+		name = mrc.9.c
+		add_country_leader_trait = placeholder_3
+	}
+	option = {
+		name = mrc.9.e
+	}
+}
