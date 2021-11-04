@@ -140,7 +140,7 @@ shared_focus = {
 	}
 	cost = 10
 	x = 26
-	y = 4
+	y = 5
 }
 
 shared_focus = {
@@ -151,7 +151,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 26
-	y = 5
+	y = 6
 }
 
 shared_focus = {
@@ -162,7 +162,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 26
-	y = 6
+	y = 7
 }
 
 shared_focus = {
@@ -173,7 +173,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 25
-	y = 7
+	y = 8
 }
 
 shared_focus = {
@@ -184,7 +184,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 27
-	y = 7
+	y = 8
 }
 
 shared_focus = {
@@ -195,7 +195,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 25
-	y = 8
+	y = 9
 }
 
 shared_focus = {
@@ -206,7 +206,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 27
-	y = 8
+	y = 9
 }
 
 shared_focus = {
@@ -220,7 +220,7 @@ shared_focus = {
 	}		
 	cost = 10
 	x = 26
-	y = 9
+	y = 10
 }
 
 shared_focus = {
@@ -231,7 +231,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 22
-	y = 6
+	y = 7
 }
 
 shared_focus = {
@@ -242,7 +242,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 21
-	y = 7
+	y = 8
 }
 
 shared_focus = {
@@ -253,7 +253,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 23
-	y = 7
+	y = 8
 }
 
 shared_focus = {
@@ -264,7 +264,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 21
-	y = 8
+	y = 9
 }
 
 shared_focus = {
@@ -275,7 +275,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 23
-	y = 8
+	y = 9
 }
 
 shared_focus = {
@@ -289,7 +289,7 @@ shared_focus = {
 	}		
 	cost = 10
 	x = 22
-	y = 9
+	y = 10
 }
 
 shared_focus = {
@@ -300,7 +300,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 30
-	y = 6
+	y = 7
 }
 
 shared_focus = {
@@ -311,7 +311,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 29
-	y = 7
+	y = 8
 }
 
 shared_focus = {
@@ -322,7 +322,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 31
-	y = 7
+	y = 8
 }
 
 shared_focus = {
@@ -333,7 +333,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 29
-	y = 8
+	y = 9
 }
 
 shared_focus = {
@@ -344,7 +344,7 @@ shared_focus = {
 	}	
 	cost = 10
 	x = 31
-	y = 8
+	y = 9
 }
 
 shared_focus = {
@@ -358,7 +358,7 @@ shared_focus = {
 	}		
 	cost = 10
 	x = 30
-	y = 9
+	y = 10
 }
 
 shared_focus = {
@@ -375,7 +375,7 @@ shared_focus = {
 	}		
 	cost = 10
 	x = 26
-	y = 10
+	y = 11
 }
 
 shared_focus = {
@@ -395,6 +395,135 @@ shared_focus = {
 	cost = 10
 	x = 11
 	y = 1
+}
+
+shared_focus = {
+	id = NTH_whispers_in_the_dark
+	icon = GFX_goal_NTH_Whispers_in_the_Dark
+	prerequisite = {
+		focus = NTH_the_glorious_republican_army
+	}
+	cost = 10
+	x = 5
+	y = 1
+}
+
+shared_focus = {
+	id = NTH_social_credit
+	icon = GFX_goal_NTH_Social_Credit
+	prerequisite = {
+		focus = NTH_whispers_in_the_dark
+	}
+	cost = 10
+	x = 4
+	y = 2
+}
+
+shared_focus = {
+	id = NTH_stymphalian_birds
+	icon = GFX_goal_NTH_Stymphalian_Birds
+	prerequisite = {
+		focus = NTH_whispers_in_the_dark
+	}
+	cost = 10
+	x = 6
+	y = 2
+}
+
+shared_focus = {
+	id = NTH_M_O_A_B
+	icon = GFX_goal_NTH_M_O_A_B
+	prerequisite = {
+		focus = NTH_stymphalian_birds
+	}
+	prerequisite = {
+		focus = NTH_social_credit
+	}
+	cost = 10
+	x = 5
+	y = 3
+}
+
+shared_focus = {
+	id = NTH_weapons_of_tomorrow
+	icon = GFX_goal_NTH_weapons_of_tomorrow
+	prerequisite = {
+		focus = NTH_stymphalian_birds
+	}
+	prerequisite = {
+		focus = NTH_social_credit
+	}
+	cost = 10
+	x = 3
+	y = 3
+}
+
+shared_focus = {
+	id = NTH_advanced_mechanized_unit
+	icon = GFX_goal_NTH_Advanced_Mechanized_Unit
+	prerequisite = {
+		focus = NTH_stymphalian_birds
+	}
+	prerequisite = {
+		focus = NTH_social_credit
+	}
+	cost = 10
+	x = 7
+	y = 3
+}
+
+shared_focus = {
+	id = NTH_no_strength_in_numbers
+	icon = GFX_goal_NTH_No_Strength_In_Numbers
+	prerequisite = {
+		focus = NTH_weapons_of_tomorrow
+	}
+	prerequisite = {
+		focus = NTH_advanced_mechanized_unit
+	}
+	prerequisite = {
+		focus = NTH_M_O_A_B
+	}
+	mutually_exclusive = {
+		focus = NTH_total_annihilation
+	}
+	cost = 10
+	x = 4
+	y = 4
+}
+
+shared_focus = {
+	id = NTH_total_annihilation
+	icon = GFX_goal_NTH_Total_Annihilation
+	prerequisite = {
+		focus = NTH_weapons_of_tomorrow
+	}
+	prerequisite = {
+		focus = NTH_advanced_mechanized_unit
+	}
+	prerequisite = {
+		focus = NTH_M_O_A_B
+	}
+	mutually_exclusive = {
+		focus = NTH_no_strength_in_numbers
+	}
+	cost = 10
+	x = 6
+	y = 4
+}
+
+shared_focus = {
+	id = NTH_shock_and_wave
+	icon = GFX_goal_NTH_Shock_And_Awe
+	prerequisite = {
+		focus = NTH_total_annihilation
+	}
+	prerequisite = {
+		focus = NTH_no_strength_in_numbers
+	}
+	cost = 10
+	x = 5
+	y = 5
 }
 
 shared_focus = {
@@ -609,139 +738,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = NTH_whispers_in_the_dark
-	icon = GFX_goal_NTH_Whispers_in_the_Dark
-	prerequisite = {
-		focus = NTH_the_glorious_republican_army
-	}
-	cost = 10
-	x = 5
-	y = 1
-}
-
-shared_focus = {
-	id = NTH_social_credit
-	icon = GFX_goal_NTH_Social_Credit
-	prerequisite = {
-		focus = NTH_whispers_in_the_dark
-	}
-	cost = 10
-	x = 4
-	y = 2
-}
-
-shared_focus = {
-	id = NTH_stymphalian_birds
-	icon = GFX_goal_NTH_Stymphalian_Birds
-	prerequisite = {
-		focus = NTH_whispers_in_the_dark
-	}
-	cost = 10
-	x = 6
-	y = 2
-}
-
-shared_focus = {
-	id = NTH_M_O_A_B
-	icon = GFX_goal_NTH_M_O_A_B
-	prerequisite = {
-		focus = NTH_stymphalian_birds
-	}
-	prerequisite = {
-		focus = NTH_social_credit
-	}
-	cost = 10
-	x = 5
-	y = 3
-}
-
-shared_focus = {
-	id = NTH_weapons_of_tomorrow
-	icon = GFX_goal_NTH_weapons_of_tomorrow
-	prerequisite = {
-		focus = NTH_stymphalian_birds
-	}
-	prerequisite = {
-		focus = NTH_social_credit
-	}
-	cost = 10
-	x = 3
-	y = 3
-}
-
-shared_focus = {
-	id = NTH_advanced_mechanized_unit
-	icon = GFX_goal_NTH_Advanced_Mechanized_Unit
-	prerequisite = {
-		focus = NTH_stymphalian_birds
-	}
-	prerequisite = {
-		focus = NTH_social_credit
-	}
-	cost = 10
-	x = 7
-	y = 3
-}
-
-shared_focus = {
-	id = NTH_no_strength_in_numbers
-	icon = GFX_goal_NTH_No_Strength_In_Numbers
-	prerequisite = {
-		focus = NTH_weapons_of_tomorrow
-	}
-	prerequisite = {
-		focus = NTH_advanced_mechanized_unit
-	}
-	prerequisite = {
-		focus = NTH_M_O_A_B
-	}
-	mutually_exclusive = {
-		focus = NTH_total_annihilation
-	}
-	cost = 10
-	x = 4
-	y = 4
-}
-
-shared_focus = {
-	id = NTH_total_annihilation
-	icon = GFX_goal_NTH_Total_Annihilation
-	prerequisite = {
-		focus = NTH_weapons_of_tomorrow
-	}
-	prerequisite = {
-		focus = NTH_advanced_mechanized_unit
-	}
-	prerequisite = {
-		focus = NTH_M_O_A_B
-	}
-	mutually_exclusive = {
-		focus = NTH_no_strength_in_numbers
-	}
-	cost = 10
-	x = 6
-	y = 4
-}
-
-shared_focus = {
-	id = NTH_shock_and_wave
-	icon = GFX_goal_NTH_Shock_And_Awe
-	prerequisite = {
-		focus = NTH_total_annihilation
-	}
-	prerequisite = {
-		focus = NTH_no_strength_in_numbers
-	}
-	cost = 10
-	x = 5
-	y = 5
-}
-
-shared_focus = {
 	id = NTH_the_reclamation_campaign
 	icon = GFX_goal_NTH_The_Reclamation_Campaign
 	cost = 10
-	x = 34
+	x = 37
 	y = 0
 }
 
@@ -752,7 +752,7 @@ shared_focus = {
 		focus = NTH_the_reclamation_campaign
 	}
 	cost = 10
-	x = 34
+	x = 37
 	y = 1
 }
 
@@ -766,7 +766,7 @@ shared_focus = {
 		focus = NTH_salvage_what_is_left
 	}
 	cost = 10
-	x = 33
+	x = 36
 	y = 2
 }
 
@@ -780,7 +780,7 @@ shared_focus = {
 		focus = NTH_destroy_what_remains
 	}
 	cost = 10
-	x = 35
+	x = 38
 	y = 2
 }
 
@@ -792,7 +792,7 @@ shared_focus = {
 		focus = NTH_salvage_what_is_left
 	}
 	cost = 10
-	x = 34
+	x = 37
 	y = 3
 }
 
@@ -806,7 +806,7 @@ shared_focus = {
 		focus = NTH_a_trail_down_south
 	}
 	cost = 10
-	x = 33
+	x = 36
 	y = 4
 }
 
@@ -820,7 +820,7 @@ shared_focus = {
 		focus = NTH_infiltrate_london
 	}
 	cost = 10
-	x = 35
+	x = 38
 	y = 4
 }
 
@@ -832,7 +832,7 @@ shared_focus = {
 		focus = NTH_infiltrate_london
 	}
 	cost = 10
-	x = 34
+	x = 37
 	y = 5
 }
 
@@ -843,7 +843,7 @@ shared_focus = {
 		focus = NTH_the_battle_goes_on
 	}
 	cost = 10
-	x = 33
+	x = 36
 	y = 6
 }
 
@@ -854,7 +854,7 @@ shared_focus = {
 		focus = NTH_the_battle_goes_on
 	}
 	cost = 10
-	x = 35
+	x = 38
 	y = 6
 }
 
@@ -868,18 +868,15 @@ shared_focus = {
 		focus = NTH_a_shaky_grasp
 	}
 	cost = 10
-	x = 34
+	x = 37
 	y = 7
 }
 
 shared_focus = {
 	id = NTH_a_friend_in_need
-	icon = GFX_goal_NTH_a_friend_in_need
-	prerequisite = {
-		focus = NTH_a_friend_in_need
-	}
+	icon = GFX_goal_NTH_a_Friend_in_Need
 	cost = 10
-	x = 39
+	x = 41
 	y = 0
 }
 
@@ -890,7 +887,7 @@ shared_focus = {
 		focus = NTH_a_friend_in_need
 	}
 	cost = 10
-	x = 37
+	x = 39
 	y = 1
 }
 
@@ -901,7 +898,7 @@ shared_focus = {
 		focus = NTH_a_friend_in_need
 	}
 	cost = 10
-	x = 39
+	x = 41
 	y = 1
 }
 
@@ -912,8 +909,128 @@ shared_focus = {
 		focus = NTH_a_friend_in_need
 	}
 	cost = 10
-	x = 41
+	x = 43
 	y = 1
 }
 
+shared_focus = {
+	id = NTH_continue_the_political_reforms
+	icon = GFX_goal_NTH_Continue_the_Political_Reforms
+	prerequisite = {
+		focus = NTH_now_we_move_forward
+	}
+	cost = 10
+	x = 17
+	y = 7
+}
 
+shared_focus = {
+	id = NTH_fundamental_works
+	icon = GFX_goal_NTH_Fundamental_Works
+	prerequisite = {
+		focus = NTH_continue_the_political_reforms
+	}
+	cost = 10
+	x = 15
+	y = 8
+}
+
+shared_focus = {
+	id = NTH_launch_the_euronet
+	icon = GFX_goal_NTH_Launch_the_Euronet
+	prerequisite = {
+		focus = NTH_continue_the_political_reforms
+	}
+	cost = 10
+	x = 17
+	y = 8
+}
+
+shared_focus = {
+	id = NTH_mass_accomodation_programm
+	icon = GFX_goal_NTH_Mass_Accomodation_Programm
+	prerequisite = {
+		focus = NTH_continue_the_political_reforms
+	}
+	cost = 10
+	x = 19
+	y = 8
+}
+
+shared_focus = {
+	id = NTH_country_wide_tour
+	icon = GFX_goal_NTH_Country_Wide_Tour
+	prerequisite = {
+		focus = NTH_fundamental_works
+	}
+	prerequisite = {
+		focus = NTH_launch_the_euronet
+	}
+	prerequisite = {
+		focus = NTH_mass_accomodation_programm
+	}
+	cost = 10
+	x = 17
+	y = 9
+}
+
+shared_focus = {
+	id = NTH_continue_the_industralisation
+	icon = GFX_goal_NTH_Continue_the_Industralisation
+	prerequisite = {
+		focus = NTH_now_we_move_forward
+	}
+	cost = 10
+	x = 35
+	y = 7
+}
+
+shared_focus = {
+	id = NTH_economic_laws
+	icon = GFX_goal_NTH_Economic_Laws
+	prerequisite = {
+		focus = NTH_continue_the_industralisation
+	}
+	cost = 10
+	x = 33
+	y = 8
+}
+
+shared_focus = {
+	id = NTH_the_plan
+	icon = GFX_goal_NTH_the_Plan
+	prerequisite = {
+		focus = NTH_continue_the_industralisation
+	}
+	cost = 10
+	x = 35
+	y = 8
+}
+
+shared_focus = {
+	id = NTH_dengist_methods
+	icon = GFX_goal_NTH_Dengist_Methods
+	prerequisite = {
+		focus = NTH_continue_the_industralisation
+	}
+	cost = 10
+	x = 37
+	y = 8
+}
+
+shared_focus = {
+	id = NTH_bend_mother_nature
+	icon = GFX_goal_NTH_bend_mother_nature
+	prerequisite = {
+		focus = NTH_economic_laws
+	}
+	prerequisite = {
+		focus = NTH_dengist_methods
+	}
+	prerequisite = {
+		focus = NTH_the_plan
+	}
+	cost = 10
+	x = 35
+	y = 9
+}
