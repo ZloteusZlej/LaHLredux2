@@ -837,13 +837,77 @@ country_event = {
 				}
 			}
 		}
-	}
-	
-	option = {
-		name = WES_event.36.b
-		add_command_power = -25
-		ai_chance = {
+	    option = {
+		    name = WES_event.36.b
+		    add_command_power = -25
+		    ai_chance = {
             factor = 0
         }
     }
+}
+
+country_event = {
+	id = WES_event.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.37"}
+	title = WES_event.37.t
+	desc = WES_event.37.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true	
+	option = {
+	    name = WES_event.37.a
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cat_mobile_warfare
+		}
+    } 
+	option = {
+	    name = WES_event.37.b
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cat_superior_firepower
+		}
+    } 
+	option = {
+	    name = WES_event.37.c
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cat_grand_battle_plan
+		}
+    }	
+}
+
+
+country_event = { #Loading Tank Knights OOBs
+	id = WES_event.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.38"}
+	title = WES_event.38.t
+	desc = WES_event.38.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true	
+	option = {
+	    name = WES_event.38.a
+	    load_oob = WES_Tank_Forces
+    } 	  
+}
+
+country_event = { #Battle for Britain
+	id = WES_event.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.39"}
+	title = WES_event.39.t
+	desc = WES_event.39.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true	
+	option = {
+	    name = WES_event.39.a
+	    
+    } 	  
 }

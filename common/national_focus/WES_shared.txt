@@ -329,11 +329,12 @@ shared_focus = {
         focus = WES_royal_military
 	}
 	completion_reward = {
-	    add_equipment_to_stockpile = {
-            type = light_cruiser_1 
-            amount = 5
-            producer = WES
-        }
+	    WES = {
+			country_event = {
+				days = 1
+			    id = WES_event.37
+			}
+		}
 	}
 	cost = 3.5
 	x = 1
@@ -346,6 +347,9 @@ shared_focus = {
 	prerequisite = {
         focus = WES_protect_land
 	}
+	completion_reward = {
+	    add_ideas = WES_Concentrated_strikes
+	}
 	cost = 3.5
 	x = 0
 	y = 3
@@ -356,6 +360,25 @@ shared_focus = {
 	icon = GFX_goal_WES_artilerry_man
 	prerequisite = {
         focus = WES_protect_land
+	}
+	completion_reward = {
+	
+	    custom_effect_tooltip = WES_artillery_men_buff_tt
+		
+        hidden_effect = {
+		    hidden_ideas = {
+                WES_hidden_problem_1 = {
+                    modifier = {
+                        MBT = {
+					        maximum_speed = 0.02
+					        soft_attack = 0.02
+					        hard_attack = 0.02
+					        instant = yes
+				        }
+                    }
+                }
+            } 
+	    }
 	}
 	cost = 3.5
 	x = 2
@@ -371,6 +394,31 @@ shared_focus = {
 	prerequisite = {
         focus = WES_artillery_men
 	}
+	completion_reward = {
+	    WES = {
+			country_event = {
+				days = 1
+			    id = WES_event.38
+			}
+		}
+		
+	custom_effect_tooltip = WES_tank_knights_buff_tt
+		
+        hidden_effect = {
+		    hidden_ideas = {
+                WES_hidden_problem_2 = {
+                    modifier = {
+                        MBT = {
+					       maximum_speed = 0.02
+					       soft_attack = 0.02
+					       hard_attack = 0.02
+					       instant = yes
+				        }
+                    }
+                }
+            }
+	    }
+	}
 	cost = 3.5
 	x = 1
 	y = 4
@@ -383,7 +431,12 @@ shared_focus = {
         focus = WES_royal_military
 	}
 	completion_reward = {
-	    air_experience = 100
+	    air_experience = 20
+		add_tech_bonus = {
+			bonus = 0.50
+			uses = 3
+			category = jet_technology
+		}
 	}
 	cost = 3.5
 	x = 9
@@ -396,6 +449,13 @@ shared_focus = {
 	prerequisite = {
         focus = WES_rule_skies
 	}
+	completion_reward = {
+	    add_equipment_to_stockpile = {
+			type = fighter_equipment_0
+			amount = 500
+			producer = WES
+		}
+	}
 	cost = 3.5
 	x = 8
 	y = 3
@@ -406,6 +466,14 @@ shared_focus = {
 	icon = GFX_goal_WES_battle_britain
 	prerequisite = {
         focus = WES_rule_skies
+	}
+	completion_reward = {
+		    WES = {
+			country_event = {
+				days = 1
+			    id = WES_event.39
+			}
+		}
 	}
 	cost = 3.5
 	x = 10
@@ -420,6 +488,13 @@ shared_focus = {
 	}
 	prerequisite = {
         focus = WES_battle_britain
+	}
+	completion_reward = {
+	    add_tech_bonus = {
+			bonus = 0.50
+			uses = 2
+			category = air_doctrine
+		}
 	}
 	cost = 3.5
 	x = 9
