@@ -809,3 +809,41 @@ country_event = { #Officer Training
 	
     } 	  
 }
+
+country_event = {
+	id = WES_event.36
+	title = WES_event.36.t
+	desc = WES_event.36.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true
+		option = {
+			name = WES_event.36.a
+			remove_unit_leader = 30
+			ai_chance = {
+				factor = 1
+			}
+			KNT = {
+				create_corps_commander = {
+				name = "Peter Thomas Clayton Pearson"
+				picture = "Portrait_KNT_Peter_Pearson.dds"
+				traits = {  }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = WES_event.36.b
+		add_command_power = -25
+		ai_chance = {
+            factor = 0
+        }
+    }
+}

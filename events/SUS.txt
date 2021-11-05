@@ -1,0 +1,38 @@
+add_namespace = SUS_event 
+
+country_event = {
+	id = SUS_event.1
+	title = SUS_event.1.t
+	desc = SUS_event.1.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true
+	option = {
+		name = SUS_event.1.a
+		remove_unit_leader = 31
+		ai_chance = {
+            factor = 1
+        }
+		KNT = {
+		create_corps_commander = {
+			name = "David Leakey"
+			picture = "Portrait_KNT_David_Leakey.dds"
+			traits = {  }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			}
+		}
+    }
+	
+	option = {
+		name = SUS_event.1.b
+		add_command_power = -25
+		ai_chance = {
+            factor = 0
+        }
+    }
+}
