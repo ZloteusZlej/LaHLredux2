@@ -10,6 +10,7 @@
 				}
 			}
 			war_stability_factor = 0.15
+			add_political_power = 75
 		}
 		x = 27
 		y = 0
@@ -265,6 +266,7 @@
 			amount = 2
 			state = 1165
 			}
+			political_power_factor = 0.15
 		}
 		x = 34
 		y = 1
@@ -376,8 +378,12 @@
 		prerequisite = {
 			focus = KNT_we_shall_never_surrender
 		}
+		available = {
+        has_war = no
+		}
 		x = 24
 		y = 5
+			
 	}
 	shared_focus = {
 		id = KNT_status_of_guilds
@@ -394,6 +400,9 @@
 					}
 				}
 			}
+		available = {
+        has_war = no
+		}
 		x = 26
 		y = 5
 	}
@@ -405,9 +414,19 @@
 		prerequisite = {
 			focus = KNT_we_shall_never_surrender
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KNT_security_service_section_five
+				add_idea = KNT_security_service_section_five_upgrade
+				}
+		}
+		available = {
+        has_war = no
+		}
 		x = 28
 		y = 5
 	}
+	
 	shared_focus = {
 		id = KNT_no_sympathy_for_the_left
 		icon = GFX_goal_KNT_no_sympathy_for_the_left
@@ -415,6 +434,26 @@
 		prerequisite = {
 			focus = KNT_we_shall_never_surrender
 		}
+		available = {
+        has_war = no
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = left_authoritarianism 
+				popularity = -0.08
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.03
+			}
+			add_popularity = {
+				ideology = commendationism
+				popularity = -0.01
+			}
+			add_stability = 0.05
+			political_power_factor = 0.2
+		}
+		
 		x = 30
 		y = 5
 	}
@@ -433,6 +472,14 @@
 		}
 		prerequisite = {
 			focus = KNT_no_sympathy_for_the_left
+		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.6
+				}
+			}
 		}
 		x = 27
 		y = 6
