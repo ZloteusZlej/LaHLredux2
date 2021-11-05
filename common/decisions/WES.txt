@@ -1653,3 +1653,405 @@ WES_reunify_isles = {
 		}
 	}
 }    
+
+
+WES_Royal_military_schools = {
+
+    Rebuild_Naval_College = {
+		icon = generic_research
+		cost = 75
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_rebuild_schools
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_rebuild_schools
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		remove_effect = {
+		
+		custom_effect_tooltip = WES_royal_military_schools_tt
+		
+		hidden_effect = {
+			WES = { country_event = { id = WES_event.32 days = 1 } }
+		}	
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 2
+				category = marine_tech
+			}
+		}
+	}
+	
+	Rebuild_Commando_Center = {
+		icon = generic_research
+		cost = 75
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_rebuild_schools
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_rebuild_schools
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		remove_effect = {
+		
+		custom_effect_tooltip = WES_royal_military_schools_tt
+		
+		hidden_effect = {
+			WES = { country_event = { id = WES_event.33 days = 1 } }
+		}	
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = mountaineers_tech
+				category = para_tech
+				category = marine_tech
+			}
+		}
+	}
+	
+	Rebuild_Defence_School = {
+		icon = generic_research
+		cost = 75
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_rebuild_schools
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_rebuild_schools
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		remove_effect = {
+		
+		custom_effect_tooltip = WES_royal_military_schools_tt
+		
+		hidden_effect = {
+			WES = { country_event = { id = WES_event.34 days = 1 } }
+		}	
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = support_tech
+				category = encryption_tech
+	            category = decryption_tech
+	            category = computing_tech
+	            category = radar_tech
+			}
+		}
+	}
+	
+	Rebuild_Officer_Cadet_School = {
+		icon = generic_research
+		cost = 75
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_rebuild_schools
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_rebuild_schools
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		remove_effect = {
+		
+		custom_effect_tooltip = WES_royal_military_schools_tt
+		
+		add_ideas = WES_Mons_pro_officers	
+		
+		hidden_effect = {
+			WES = { country_event = { id = WES_event.35 days = 1 } }
+		}
+		
+		}
+	}
+}
+
+
+WES_Weapon_Guilds = {
+
+	Tank_guilds_armor_emphasis = {
+		icon = generic_research
+		cost = 50
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_weapon_guilds
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_weapon_guilds
+			NOT = { has_country_flag = WES_Emphasis_on_speed }
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 45
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+            set_country_flag = WES_Emphasis_on_armor
+        }
+		
+		remove_effect = {
+		    add_ideas = WES_Tank_guilds_w_armor_emphasis	
+		}
+	}
+	
+	Tank_guilds_speed_emphasis = {
+		icon = generic_research
+		cost = 50
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_weapon_guilds
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_weapon_guilds
+			NOT = { has_country_flag = WES_Emphasis_on_armor }
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 45
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+            set_country_flag = WES_Emphasis_on_speed
+        }
+		
+		remove_effect = {
+		    add_ideas = WES_Tank_guilds_w_speed_emphasis	
+		}
+	}
+	
+	Conventional_artillery_emphasis = {
+		icon = generic_research
+		cost = 50
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_weapon_guilds
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_weapon_guilds
+			NOT = { has_country_flag = WES_Emphasis_sp_fire_support }
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 45
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+            set_country_flag = WES_Emphasis_conventional_artillery
+        }
+		
+		remove_effect = {
+		    add_ideas = WES_conventional_artillery_emphasis	
+		}
+	}
+	
+	Self_propelled_fire_support_emphasis = {
+		icon = generic_research
+		cost = 50
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_weapon_guilds
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_weapon_guilds
+			NOT = { has_country_flag = WES_Emphasis_conventional_artillery }
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 45
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+            set_country_flag = WES_Emphasis_sp_fire_support
+        }
+		
+		remove_effect = {
+		    add_ideas = WES_sp_artillery_emphasis	
+		}
+	}
+	
+	Cavalry_and_Chivalry_emphasis = {
+		icon = generic_research
+		cost = 50
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_weapon_guilds
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_weapon_guilds
+			NOT = {
+			    OR = { 
+			        has_country_flag = WES_Emphasis_Mass_Mechanized
+			        has_country_flag = WES_Emphasis_Infantry_support
+			    }
+			}
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 45
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+            set_country_flag = WES_Emphasis_cavalry_and_chivalry
+        }
+		
+		remove_effect = {
+		    add_ideas = WES_infantry_guild_1	
+			add_ideas = WES_infantry_guild_1_subeffects	
+		}
+	}
+	
+	Mass_mechanized_emphasis = {
+		icon = generic_research
+		cost = 50
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_weapon_guilds
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_weapon_guilds
+			NOT = {
+			    OR = { 
+			        has_country_flag = WES_Emphasis_cavalry_and_chivalry
+			        has_country_flag = WES_Emphasis_Infantry_support
+			    }
+			}
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 45
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+            set_country_flag = WES_Emphasis_Mass_Mechanized
+        }
+		
+		remove_effect = {
+		    add_ideas = WES_infantry_guild_2	
+			add_ideas = WES_infantry_guild_2_subeffects	
+		}
+	}
+	
+	Infantry_and_Infantry_support_emphasis = {
+		icon = generic_research
+		cost = 50
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_weapon_guilds
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_weapon_guilds
+			NOT = {
+			    OR = { 
+			        has_country_flag = WES_Emphasis_cavalry_and_chivalry
+			        has_country_flag = WES_Emphasis_Mass_Mechanized
+			    }
+			}
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 45
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+            set_country_flag = WES_Emphasis_Infantry_support
+        }
+		
+		remove_effect = {
+		    add_ideas = WES_infantry_guild_3
+			add_ideas = WES_infantry_guild_3_subeffects	
+		}
+	}
+}

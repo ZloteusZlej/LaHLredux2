@@ -84,6 +84,21 @@
  WES_Sir_David_Amess:0 "Sir David Amess"
  ##COUNTRY IDEAS##
  WES_dynastic_crisis:0 "Dynastic Crisis"
+ WES_Royal_military:0 "Loyal and Royal Army"
+ WES_Fight_for_the_monarchy:0 "The Infantry is fighting for The Crown!"
+ WES_Mons_pro_officers:0 "Mons's Professional Officers"
+ WES_Communications_Information_Academy:0 "Modern C&I Training"
+ WES_Top_grade_arsenal:0 "Quality Small Arms"
+ WES_Tank_guilds_w_armor_emphasis:0 "MBT: Armor Optimization"
+ WES_Tank_guilds_w_speed_emphasis:0 "MBT: Speed Optimization"
+ WES_conventional_artillery_emphasis:0 "Artillery: Conventional Focus"
+ WES_sp_artillery_emphasis:0 "Artillery: Self-Propelled Focus"
+ WES_infantry_guild_1:0 "Doctrine: Cavalry & Chivalry Focus"
+ WES_infantry_guild_1_subeffects:0 "Doctrinal Sub-effects"
+ WES_infantry_guild_2:0 "Doctrine: Mass Mechanization Focus"
+ WES_infantry_guild_2_subeffects:0 "Doctrinal Sub-effects"
+ WES_infantry_guild_3:0 "Doctrine: Infantry & Infantry Support Focus"
+ WES_infantry_guild_3_subeffects:0 "Doctrinal Sub-effects"
  
  ##FOCUS TREES##
  WES_royal_military:0 "Royal Army"
@@ -187,6 +202,21 @@
  WES_deal_land:0 "Deal with Nick Land"
  WES_deal_dawkins:0 "Deal with Richard Dawkins"
  WES_deal_corbyn:0 "Deal with Jeremy Corbyn"
+ #
+ WES_Royal_military_schools:0 "Our Most Royal Military Schools"
+  Rebuild_Naval_College:0 "Rebuilt the Britannia Royal Naval College"
+  Rebuild_Commando_Center:0 "Invest in a Commando Training Center"
+  Rebuild_Defence_School:0 "Fund the Defence School of Communications & Informations Systems"
+  Rebuild_Officer_Cadet_School:0 "Reopen the Mons Officer Cadet School"
+ #
+ WES_Weapon_Guilds:0 "Euld Craftsmen of thy XXI Century"
+  Tank_guilds_armor_emphasis:0 "MBT: Emphasis - Armor"
+  Tank_guilds_speed_emphasis:0 "MBT: Emphasis - Speed"
+  Conventional_artillery_emphasis:0 "Artillery: Emphasis - Conventional"
+  Self_propelled_fire_support_emphasis:0 "Artillery: Emphasis - Self-Propelled"
+  Cavalry_and_Chivalry_emphasis:0 "Doctrine: Emphasis - Thy Euld Cavalry"
+  Mass_mechanized_emphasis:0 "Doctrine: Emphasis - Mass Mechanization"
+  Infantry_and_Infantry_support_emphasis:0 "Doctrine: Emphasis - Infantry & Infantry support"
  ##
  WES_king_legitimacy:0 "The Wounded King"
  WES_king_legitimacy_desc:0 "To maintain the stability of our current system, it is imperative that our kings wins back the favour of the populace. \nnThe legitemacy of George VII currently is: §Y[?george_legitemacy]§!"
@@ -363,6 +393,24 @@
  WES_event.31.b:0 "Assign Knight 2"
  WES_event.31.c:0 "Assign Knight 3"
  WES_event.31.e:0 "Assign Knight 4"
+ #
+ ##WES_Royal_military_schools events##
+ WES_event.32.t:0 "A New Generation of Royal Marines"
+ WES_event.32.d:0 "explaining the opening of the royal navy college training center blablabla" 
+ WES_event.32.a:0 "take these buffs and fuck off"
+ #
+ WES_event.33.t:0 "Locked and Loaded"
+ WES_event.33.d:0 "explaining the opening of the commando training center blablabla"
+ WES_event.33.a:0 "What? Do I look like a clown to you?"
+ #
+ WES_event.34.t:0 "On Other Means of Warfare"
+ WES_event.34.d:0 "explaining the opening of the communication and informations training center blablabla"
+ WES_event.34.a:0 "Fucking nerds"
+ #
+ WES_event.35.t:0 "A New Generation of Officers"
+ WES_event.35.d:0 "explaining the opening of the Mons officer school training center blablabla"
+ WES_event.35.a:0 "Why am I coding Britain?"
+ #
  ##NEW GUI##
  KNIGHT_SLEEPS:0 "This Knight is not yet present on the table"
  KNIGHT_GEORGE_ALIVE:0 "§YGeorge VII§!\n§YFisher King§!\n- War Support: §R-50.00%§!\n- Stability: §R-10.00%§!\n- Daily Political Power Gain: §R-0.10%§!"
@@ -373,6 +421,10 @@
  ENG_henry_here:0 "Prince Harry has been captured"
  WES_road_unification.tt:0 "§GWe will be able to core states of England.§!"
  WES_reunify_country1.tt:0 "\n§GWe have succesfully reunited Great Britain by crushing other warlords as well as annexing Scotland and Wales§!"
- WES_reunify_country2.tt:0 "\n§YWe have succesfully reunited England by crushing other warlords as well as installing friendly regimes in Wales and Scotland§! "
+ WES_reunify_country2.tt:0 "\n§YWe have succesfully reunited England by crushing other warlords as well as installing friendly regimes in Wales and Scotland§!"
  WES_masters_and_slaves.tt:0 "§GWe will be able to take Scotland, Wales and Ulster by force and integrate them back into United Kingdom,§!§R but this will cause severe unrest among the local population and it will take some time to integrate the new lands§!"
  WES_mutual_cooperation.tt:0 "§GWe will be able to peacfully co-exist with Scotland, Ireland and Wales and recieve possible benefits,§R however we shall lose any chance to reintegrate those lands into United Kingdom§!"
+ WES_royal_military_schools_tt:0 "\n§GInvesting in the refurbishement of a derilic military school will provide certain positive advantages by the end of the project:§\n"
+ WES_top_grade_weapons_tt:0 "\nTo secure victory we shall put an emphasis on quality small arms, restocking our arsenals with the finest weapons while pursuing ever more intensive research in the quest of continious improvements.\n"
+ WES_rebuild_military_schools_tt:0 "\nCompleting this focus will allow the reconstruction of derelic military schools which will in turn help in the reformation of a professional army loyal to The Crown.\n"
+ WES_weapons_guilds_tt:0 "\nCompleting this focus will allow the guidance of the Crown's Armement Corporations's production toward a distinct type in order to suite the doctrine of our armed forces.\n"
