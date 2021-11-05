@@ -1,22 +1,14 @@
 ideas = {
-
-	head_of_government = {
-	
-		MRC_regency_councilmer = {
-
-			picture = MRC_regency_councilmer
+	country = {
+		MRC_Youth_Go_War_Blyat = {
 			allowed = {
-				original_tag = "MRC"
+				original_tag = MRC
 			}
-
-			traits = {}
-
-			do_effect = {
-				#
-			}
-
-			ai_will_do = {
-				factor = 0
+			removal_cost = -1
+			picture = 
+			modifier = {
+				conscription = 0.05
+				army_attack_factor = 0.025
 			}
 		}
 	}

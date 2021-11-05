@@ -55,7 +55,7 @@ country_event = {
 	}
 	
 	
-	country_event = {
+country_event = {
 	id = albion.2
 	title = albion.2.t
 	desc = albion.2.d
@@ -82,4 +82,26 @@ country_event = {
 		set_province_name = { id = 10641	name = VICTORY_POINTS_10641_NTH  }
 		set_province_name = { id = 7454 	name = VICTORY_POINTS_7454_NTH  }
 			}
+}
+
+country_event = {
+	id = albion.3
+	title = albion.3.t
+	desc = albion.3.d
+	
+	immediate = {
+	}
+	trigger = {
+	}
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = albion.3.a
+		ai_chance = {
+			base = 100
+		}
+		load_focus_tree = NTH_after_galloway
+	}
 }

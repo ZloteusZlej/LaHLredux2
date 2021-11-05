@@ -9,6 +9,7 @@
 				id = KNT_event.1
 				}
 			}
+			war_stability_factor = 0.15
 		}
 		x = 27
 		y = 0
@@ -175,6 +176,10 @@
 		}
 		completion_reward = {
 			add_manpower = 30000
+		swap_ideas = {
+			remove_idea = volunteer_only
+			add_idea = limited_conscription
+			}
 		}
 	}
 	
@@ -374,9 +379,18 @@
 		prerequisite = {
 			focus = KNT_we_shall_never_surrender
 		}
+		completion_reward = {
+				KNT = {
+					country_event = {
+					days = 1
+					id = KNT_event.7
+					}
+				}
+			}
 		x = 26
 		y = 5
 	}
+	
 	shared_focus = {
 		id = KNT_new_management
 		icon = GFX_goal_KNT_new_management

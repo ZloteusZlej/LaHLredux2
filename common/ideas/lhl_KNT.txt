@@ -94,3 +94,162 @@ ideas = {
 			}
 		}
 	}
+	
+	country = {
+	
+		KNT_multitool_rifle = {
+			
+			picture = KNT_multitool_rifle
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					soft_attack = 0.1
+					ap_attack = 0.2
+					build_cost_ic = 0.2
+					entrenchment = 0.2
+					}
+				}
+		}
+	}
+	
+	country = {
+	
+		KNT_potato_grenade_launcher = {
+			
+			picture = KNT_potato_grenade_launcher
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+					reliability = 0.1
+					ap_attack = 1
+					hard_attack = 0.1
+					}
+				}
+		}
+	}
+	
+	country = {
+	
+		KNT_printed_rifle = {
+			
+			picture = KNT_printed_rifle
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+				instant = yes
+					build_cost_ic = -0.2
+					reliability = 0.1
+					movement = 0.2
+					breakthrough = 0.1
+					defense = 0.2
+				}
+			}
+		}
+	}
+	
+	country = {
+	
+		KNT_oxymiron_group = {
+			
+			picture = KNT_oxymiron_group
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+				modifier = {
+				political_advisor_cost_factor = -0.15
+				economy_cost_factor = -0.15
+				trade_laws_cost_factor = -0.15
+				mobilization_laws_cost_factor = -0.1
+				theorist_cost_factor = -0.1
+				high_command_cost_factor = -0.1
+			}
+		}
+	}
+	
+	country = {
+	
+		KNT_cambridge_group = {
+			
+			picture = KNT_cambridge_group
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				industry = 0.1
+				electronics = 0.1
+				support_tech = 0.05
+				armor = 0.05
+				artillery = 0.05
+			}
+		}
+	}
+	
+	country = {
+	
+		KNT_guilds_unionized = {
+			
+			picture = KNT_guilds_unionized
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_buildings_factor = -0.05
+			stability_factor = 0.05
+			production_factory_start_efficiency_factor = 0.15
+			production_factory_efficiency_gain_factor = 0.15
+			industrial_capacity_factory = 0.15
+			}
+		}
+	}
+	
+	country = {
+	
+		KNT_guilds_integrated = {
+			
+			picture = KNT_guilds_integrated
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_buildings_factor = 0.05
+			production_factory_max_efficiency_factor = 0.1
+			production_lack_of_resource_penalty_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+	}
+}
+	
+	
