@@ -5,3 +5,123 @@ shared_focus = {
 	x = 26
 	y = 12
 }
+
+shared_focus = {
+	id = NTH_staying_the_course
+	icon = GFX_goal_NTH_Staying_the_Course
+	prerequisite = {
+		focus = NTH_the_shoutout
+	}
+	cost = 10
+	x = 26
+	y = 13
+}
+
+shared_focus = {
+	id = NTH_the_sun_never_sets
+	icon = GFX_goal_NTH_the_Sun_Never_Sets
+	prerequisite = {
+		focus = NTH_staying_the_course
+	}
+	cost = 10
+	x = 26
+	y = 14
+}
+
+shared_focus = {
+	id = NTH_great_man_never_dies
+	icon = GFX_goal_NTH_Great_Man_Never_Dies
+	prerequisite = {
+		focus = NTH_the_sun_never_sets
+	}
+	cost = 10
+	x = 25
+	y = 15
+}
+
+shared_focus = {
+	id = NTH_tackle_the_parties
+	icon = GFX_goal_NTH_Tackle_the_Parties
+	prerequisite = {
+		focus = NTH_the_sun_never_sets
+	}
+	cost = 10
+	x = 27
+	y = 15
+}
+
+shared_focus = {
+	id = NTH_cultural_enchiriment
+	icon = GFX_goal_NTH_Cultural_Enchiriment
+	prerequisite = {
+		focus = NTH_tackle_the_parties
+	}
+	prerequisite = {
+		focus = NTH_great_man_never_dies
+	}
+	cost = 10
+	x = 24
+	y = 16
+}
+
+shared_focus = {
+	id = NTH_the_heartland
+	icon = GFX_goal_NTH_the_Heartland
+	prerequisite = {
+		focus = NTH_tackle_the_parties
+	}
+	prerequisite = {
+		focus = NTH_great_man_never_dies
+	}
+	cost = 10
+	x = 26
+	y = 16
+}
+
+shared_focus = {
+	id = NTH_rebuild_the_cities
+	icon = GFX_goal_NTH_Rebuild_the_Cities
+	prerequisite = {
+		focus = NTH_tackle_the_parties
+	}
+	prerequisite = {
+		focus = NTH_great_man_never_dies
+	}
+	cost = 10
+	x = 28
+	y = 16
+}
+
+shared_focus = {
+	id = NTH_celtic_cooperation
+	icon = GFX_goal_NTH_Celtic_Cooperation
+	prerequisite = {
+		focus = NTH_cultural_enchiriment
+	}
+	prerequisite = {
+		focus = NTH_the_heartland
+	}
+	prerequisite = {
+		focus = NTH_rebuild_the_cities
+	}
+	cost = 10
+	x = 25
+	y = 17
+}
+
+shared_focus = {
+	id = NTH_the_london_trials
+	icon = GFX_goal_NTH_the_London_Trials
+	prerequisite = {
+		focus = NTH_cultural_enchiriment
+	}
+	prerequisite = {
+		focus = NTH_the_heartland
+	}
+	prerequisite = {
+		focus = NTH_rebuild_the_cities
+	}
+	cost = 10
+	x = 27
+	y = 17
+}
