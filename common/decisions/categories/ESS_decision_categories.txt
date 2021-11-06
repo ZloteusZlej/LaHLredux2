@@ -16,16 +16,24 @@ ESS_great_gangs_dec = {
 	visible_when_empty = no
 	allowed = { original_tag = ESS }
 }
+ESS_towers_treasures = {
+	icon = GFX_
+	visible = {
+	    has_completed_focus = ESS_secure_the_tower
+	}
+	visible_when_empty = no
+	allowed = { original_tag = ESS }
+}
 
 ESS_prisoners_of_war = {
 	icon = GFX_
-	visible_when_empty = yes
+	visible_when_empty = no
 	allowed = { original_tag = ESS }
 }
 
 
 ESS_reunify_isles = {
 	icon = GFX_
-	visible_when_empty = yes
+	visible_when_empty = no
 	allowed = { original_tag = ESS }
 }

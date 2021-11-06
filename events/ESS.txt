@@ -4,6 +4,7 @@ country_event = {
 	id = ESS_event.1
 	title = ESS_event.1.t
 	desc = ESS_event.1.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.1"}
 	picture = 
 	major = no
     fire_only_once = true	
@@ -13,9 +14,46 @@ country_event = {
 		name = ESS_event.1.a
 		hidden_effect = {
 		    load_focus_tree = ESS_max_1
-		}
-		kill_country_leader = yes
+			EAG = {
+			    country_event = {
+					id = ENG_news.1
+					days = 2
+				}
+			}
+			SUS = {
+			    country_event = {
+					id = ENG_news.1
+					days = 2
+				}
+			}
+			KNT = {
+			    country_event = {
+					id = ENG_news.1
+					days = 2
+				}
+			}
+			WES = {
+			    country_event = {
+					id = ENG_news.1
+					days = 2
+				}
+			}
+			MRC = {
+			    country_event = {
+					id = ENG_news.1
+					days = 2
+				}
+			}
+			NTH = {
+			    country_event = {
+					id = ENG_news.1
+					days = 2
+				}
+			}
+			}
 		
+		kill_country_leader = yes
+		set_global_flag = ENG_Mosley_is_dead   		
 		create_country_leader = {
 	        name = "Interregnum"
             desc = "POLITICS_INTERREGNUM_DESC"
@@ -33,6 +71,7 @@ country_event = {
 	id = ESS_event.2
 	title = ESS_event.2.t
 	desc = ESS_event.2.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.2"}
 	picture = 
 	major = no
     fire_only_once = true	
@@ -78,6 +117,7 @@ country_event = {
 	id = ESS_event.3
 	title = ESS_event.3.t
 	desc = ESS_event.3.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.3"}
 	picture = 
 	major = no
     fire_only_once = true	
@@ -120,6 +160,7 @@ country_event = {
 	id = ESS_event.4
 	title = ESS_event.4.t
 	desc = ESS_event.4.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.4"}
 	picture = 
 	major = no
     fire_only_once = true	
@@ -162,6 +203,7 @@ country_event = {
 	id = ESS_event.5
 	title = ESS_event.5.t
 	desc = ESS_event.5.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.5"}
 	picture = 
 	major = no
     fire_only_once = true	
@@ -175,7 +217,7 @@ country_event = {
 				}
 		    }
 		}
-    }   
+     
 	option = {
 		name = ESS_event.5.b
 		custom_effect_tooltip = ESS_event5.b.tt
@@ -195,11 +237,12 @@ country_event = {
 		    }
 		}
     }	
-}
+
 country_event = {
 	id = ESS_event.6
 	title = ESS_event.6.t
 	desc = ESS_event.6.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.6"}
 	picture = 
 	major = no
     fire_only_once = true	
@@ -213,7 +256,7 @@ country_event = {
 				}
 		    }
 		}
-    }   
+       
 	option = {
 		name = ESS_event.6.b
 		custom_effect_tooltip = ESS_event6.b.tt
@@ -233,11 +276,12 @@ country_event = {
 		    }
 		}
     }	
-}
+
 country_event = {
 	id = ESS_event.7
 	title = ESS_event.7.t
 	desc = ESS_event.7.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.7"}
 	picture = 
 	major = no
     fire_only_once = true	
@@ -343,6 +387,7 @@ country_event = {
 	id = ESS_event.8
 	title = ESS_event.8.t
 	desc = ESS_event.8.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.8"}
 	picture = 
 	major = no
     fire_only_once = true	
@@ -365,6 +410,7 @@ country_event = {
 	id = ESS_event.9
 	title = ESS_event.9.t
 	desc = ESS_event.9.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.9"}
 	picture = 
 	major = no
     fire_only_once = true	
@@ -400,7 +446,7 @@ country_event = {
 					}
 					
     }
-	}
+	
 	option = {
 		name = ESS_event.9.c
 		custom_effect_tooltip = ESS_event9.c.tt
@@ -411,11 +457,13 @@ country_event = {
 				}
 				
 		}
-    }	
+    }
+}	
 country_event = {
 	id = ESS_event.10
 	title = ESS_event.10.t
 	desc = ESS_event.10.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.10"}
 	picture = 
 	major = no
     fire_only_once = true	
@@ -456,6 +504,7 @@ country_event = {
 	id = ESS_event.11
 	title = ESS_event.11.t
 	desc = ESS_event.11.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.11"}
 	picture = 
 	major = no
     fire_only_once = true	
@@ -474,6 +523,32 @@ country_event = {
 		
 		}
 	}
+country_event = 6 
+	id = ESS_event.12
+	title = ESS_event.12.t
+	desc = ESS_event.12.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.12"}
+	picture = 
+	major = no
+    fire_only_once = true	
+	is_triggered_only = yes
+
+    option = {
+		name = ESS_event.12.a 
+		
+		}
+	option = {
+		name = ESS_event.12.b 
+		
+		}
+	option = {
+		name = ESS_event.12.c 
+		
+		}
+	}
+	
+	
+	
 	country_event = {
 	id = ESS_event.666
 	title = ESS_event.666.t

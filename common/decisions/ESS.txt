@@ -333,6 +333,21 @@ ESS_great_gangs_dec = {
 	}
 	
 }
+
+ESS_towers_treasures = {
+    sell_the_spizhennoye = {
+	 cost = 0
+		days_remove = 1
+		visible = {
+			NOT = { has_global_flag = ESS_sell_the_spizhennoye }
+		}
+		complete_effect = {
+		set_global_flag = ESS_sell_the_spizhennoye   
+				}
+	}
+	}
+
+
 ESS_prisoners_of_war = {
     ESS_deal_galloway = {
 	    visible = {
