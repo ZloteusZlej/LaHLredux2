@@ -294,13 +294,13 @@ country_event = {
                 var = tories_p
                 value = party_popularity@right_populism
             }
-		}
-		if = {
-			limit = { 
-			check_variable = { neocam_p > tories_p }
-			}
-			set_politics = {
-			ruling_party = neocameralism
+				if = {
+				limit = { 
+				check_variable = { neocam_p > tories_p }
+				}
+				set_politics = {
+				ruling_party = neocameralism
+				}
 			}
 		}
 	}
