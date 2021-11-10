@@ -10,6 +10,7 @@
 				}
 			}
 			war_stability_factor = 0.15
+			add_political_power = 75
 		}
 		x = 27
 		y = 0
@@ -265,6 +266,7 @@
 			amount = 2
 			state = 1165
 			}
+			political_power_factor = 0.15
 		}
 		x = 34
 		y = 1
@@ -376,8 +378,12 @@
 		prerequisite = {
 			focus = KNT_we_shall_never_surrender
 		}
+		available = {
+        has_war = no
+		}
 		x = 24
 		y = 5
+			
 	}
 	shared_focus = {
 		id = KNT_status_of_guilds
@@ -394,6 +400,9 @@
 					}
 				}
 			}
+		available = {
+        has_war = no
+		}
 		x = 26
 		y = 5
 	}
@@ -405,9 +414,19 @@
 		prerequisite = {
 			focus = KNT_we_shall_never_surrender
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KNT_security_service_section_five
+				add_idea = KNT_security_service_section_five_upgrade
+				}
+		}
+		available = {
+        has_war = no
+		}
 		x = 28
 		y = 5
 	}
+	
 	shared_focus = {
 		id = KNT_no_sympathy_for_the_left
 		icon = GFX_goal_KNT_no_sympathy_for_the_left
@@ -415,6 +434,26 @@
 		prerequisite = {
 			focus = KNT_we_shall_never_surrender
 		}
+		available = {
+        has_war = no
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = left_authoritarianism 
+				popularity = -0.08
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.03
+			}
+			add_popularity = {
+				ideology = commendationism
+				popularity = -0.01
+			}
+			add_stability = 0.05
+			political_power_factor = 0.2
+		}
+		
 		x = 30
 		y = 5
 	}
@@ -434,6 +473,14 @@
 		prerequisite = {
 			focus = KNT_no_sympathy_for_the_left
 		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.6
+				}
+			}
+		}
 		x = 27
 		y = 6
 	}
@@ -443,6 +490,14 @@
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_commons_of_house
+		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.11
+				}
+			}
 		}
 		x = 17
 		y = 7
@@ -980,7 +1035,7 @@ shared_focus = {
 			focus = KNT_henry's_toys
 		}
 		x = 30
-		y = 9
+		y = 10
 	}
 	shared_focus = {
 		id = KNT_the_beast_on_rails
@@ -990,7 +1045,7 @@ shared_focus = {
 			focus = KNT_future_of_the_pneumatic_weaponry
 		}
 		x = 30
-		y = 10
+		y = 11
 		
 	}
 	shared_focus = {
@@ -1001,7 +1056,7 @@ shared_focus = {
 			focus = KNT_the_beast_on_rails
 		}
 		x = 29
-		y = 11
+		y = 13
 		
 	}
 	shared_focus = {
@@ -1012,7 +1067,7 @@ shared_focus = {
 			focus = KNT_the_beast_on_rails
 		}
 		x = 31
-		y = 11
+		y = 13
 		
 	}
 	shared_focus = {
@@ -1026,7 +1081,7 @@ shared_focus = {
 			focus = KNT_the_gulliver
 		}
 		x = 30
-		y = 12
+		y = 14
 		
 	}
 	shared_focus = {
@@ -1077,7 +1132,7 @@ shared_focus = {
 			focus = KNT_experimental_forces
 		}
 		x = 27
-		y = 10
+		y = 11
 	}
 	shared_focus = {
 		id = KNT_sabotage_experience 
@@ -1087,7 +1142,7 @@ shared_focus = {
 			focus = KNT_engineering_solutions 
 		}
 		x = 27
-		y = 11
+		y = 13
 	}
 	shared_focus = {
 		id = KNT_top_gear
@@ -1097,7 +1152,7 @@ shared_focus = {
 			focus = KNT_sabotage_experience
 		}
 		x = 27
-		y = 12
+		y = 15
 	}
 		shared_focus = {
 		id = KNT_like_in_the_rorke's_drift
@@ -1147,7 +1202,7 @@ shared_focus = {
 			focus = KNT_the_gun_that_won_the_uk
 		}
 		x = 33
-		y = 10
+		y = 11
 	}
 	shared_focus = {
 		id = KNT_strike_from_above
@@ -1157,7 +1212,7 @@ shared_focus = {
 			focus = KNT_for_god_and_britain
 		}
 		x = 33
-		y = 11
+		y = 13
 	}
 	shared_focus = {
 		id = KNT_the_old_guards_in_action
@@ -1167,7 +1222,7 @@ shared_focus = {
 			focus = KNT_strike_from_above
 		}
 		x = 33
-		y = 12
+		y = 15
 	}
 	shared_focus = {
 		id = KNT_big_brother's_help
