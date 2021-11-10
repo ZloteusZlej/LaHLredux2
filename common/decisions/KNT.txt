@@ -1214,3 +1214,56 @@ KNT_maglev = {
 		}
 	}
 }
+
+KNT_special_projects = {
+
+	KNT_wireless_electricity = {
+	days_remove = 50
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_no_more_wires
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_no_more_wires
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.13
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					wireless_power_transfer = 1
+				}
+			}
+		}	
+	}
+}
+
+KNT_thermonuclear_reactor = {
+		KNT_smuggle_main_engineers = {
+			KNT = {
+			has_variable = kent_thermonuclear_plant_completion
+		}
+		cost = 75
+		available = {
+        command_power > 25
+        }
+		complete_effect = {
+		add_command_power = -25
+		}
+		remove_effect = {
+				add_to_variable = {
+				var = kent_thermonuclear_plant_completion
+				value = 10
+			}
+		}
+	}
+}	

@@ -32,3 +32,21 @@ icon = GFX_
 	}
 	allowed = { original_tag = KNT }
 }
+
+KNT_special_projects = {
+icon = GFX_
+	visible = {
+	    has_completed_focus = KNT_commons_of_house
+	}
+	allowed = { original_tag = KNT }
+}
+
+KNT_thermonuclear_reactor = {
+icon = GFX_
+	visible = {
+		KNT = {
+	    has_variable = kent_thermonuclear_plant_completion
+		}
+	}
+	allowed = { original_tag = KNT }
+}

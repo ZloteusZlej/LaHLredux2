@@ -510,6 +510,9 @@
 		prerequisite = {
 			focus = KNT_the_workshop_of_the_world
 		}
+		KNT = {
+			add_ideas = KNT_railorads_revival
+		}
 		x = 17
 		y = 8
 	}
@@ -556,6 +559,15 @@
 		}
 		prerequisite = {
 			focus = KNT_greener_energy
+		}
+		
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.14
+				}
+			}
 		}
 		x = 17
 		y = 12
