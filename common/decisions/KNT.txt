@@ -241,3 +241,50 @@ KNT_channel_tunnel = {
 		}
 	}
 }
+
+KNT_maglev = {
+	KNT_kent_part = {
+	cost = 125
+	days_remove = 75
+		available = {
+			1002 = {
+				is_controlled_by = ROOT
+			}
+			1165 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = KNT_railroads_renewed_kent }
+		}
+			remove_effect = {
+				1002 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+				1165 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			set_global_flag = KNT_railroads_renewed_kent
+		}
+	}
+}
