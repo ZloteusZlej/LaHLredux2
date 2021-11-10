@@ -353,3 +353,45 @@ country_event = {
 		name = KNT_event.12.c
 	}
 }
+
+country_event = {
+	id = KNT_event.13
+	title = KNT_event.13.t
+	desc = KNT_event.13.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true
+	option = {
+		name = KNT_event.13.a
+		add_political_power = -125
+    }
+	
+	option = {
+		name = KNT_event.13.b
+		add_timed_idea = { idea = KNT_recent_public_investments_big_crowdfunding days = 45 }
+    }
+}
+
+country_event = {
+	id = KNT_event.14
+	title = KNT_event.14.t
+	desc = KNT_event.14.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true
+	option = {
+		name = KNT_event.14.a
+		hidden_effect = {
+			KNT = {
+			set_variable = { kent_thermonuclear_plant_completion = 0 }
+			}
+		}
+    }
+	
+	option = {
+		name = KNT_event.14.b
+		
+    }
+}

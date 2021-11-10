@@ -295,6 +295,27 @@ ideas = {
 	
 	country = {
 	
+		KNT_railorads_revival = {
+			
+			picture = KNT_railorads_revival
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			supply_consumption_factor = -0.15
+			attrition = -0.1
+			air_fuel_consumption_factor	= -0.1
+			production_speed_infrastructure_factor = 0.15
+			}
+		}
+	}
+	
+	country = {
+	
 		KNT_green_energy_subsidies = {
 			
 			picture = KNT_green_energy_subsidies
