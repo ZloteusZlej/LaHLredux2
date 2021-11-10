@@ -502,6 +502,7 @@
 		x = 17
 		y = 7
 	}
+	
 	shared_focus = {
 		id = KNT_new_era_of_railways
 		icon = GFX_goal_KNT_new_era_of_railways
@@ -512,6 +513,7 @@
 		x = 17
 		y = 8
 	}
+	
 	shared_focus = {
 		id = KNT_greener_energy
 		icon = GFX_goal_KNT_greener_energy
@@ -519,9 +521,22 @@
 		prerequisite = {
 			focus = KNT_new_era_of_railways
 		}
+		
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.12
+				}
+			}
+		}
+		KNT = {
+			add_ideas = KNT_green_energy_subsidies
+		}
 		x = 16
 		y = 10
 	}
+	
 	shared_focus = {
 		id = KNT_no_more_wires
 		icon = GFX_goal_KNT_no_more_wires

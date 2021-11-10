@@ -324,3 +324,32 @@ country_event = {
 		}
     }
 }
+
+country_event = {
+	id = KNT_event.12
+	title = KNT_event.12.t
+	desc = KNT_event.12.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true
+	option = {
+		name = KNT_event.12.a
+		set_technology = {
+			biofuel = 1
+		}
+		add_political_power = -50 
+    }
+	
+	option = {
+		name = KNT_event.12.b
+		set_technology = {
+			biofuel = 1
+		}
+		add_timed_idea = { idea = KNT_recent_public_investments_medium_crowdfunding days = 25 }
+    }
+	
+	option = {
+		name = KNT_event.12.c
+	}
+}

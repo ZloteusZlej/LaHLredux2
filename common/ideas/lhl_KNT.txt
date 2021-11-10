@@ -292,6 +292,80 @@ ideas = {
 			}
 		}
 	}
+	
+	country = {
+	
+		KNT_green_energy_subsidies = {
+			
+			picture = KNT_green_energy_subsidies
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			monthly_population = 0.01
+			fuel_gain = -0.25
+			production_lack_of_resource_penalty_factor = -0.1
+			}
+		}
+	}
+	
+	country = {
+	
+		KNT_recent_public_investments_small_crowdfunding = {
+			
+			picture = KNT_recent_public_investments_small_crowdfunding
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = -0.02
+			}
+		}
+	}
+	
+	country = {
+	
+		KNT_recent_public_investments_medium_crowdfunding = {
+			
+			picture = KNT_recent_public_investments_medium_crowdfunding
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = -0.05
+			}
+		}
+	}
+	
+	country = {
+	
+		KNT_recent_public_investments_big_crowdfunding = {
+			
+			picture = KNT_recent_public_investments_big_crowdfunding
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = -0.1
+			}
+		}
+	}
 }
 	
 	
