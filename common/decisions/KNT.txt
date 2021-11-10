@@ -287,4 +287,930 @@ KNT_maglev = {
 			set_global_flag = KNT_railroads_renewed_kent
 		}
 	}
+	
+	KNT_sussex_part = {
+	cost = 125
+	days_remove = 75
+		available = {
+			1001 = {
+				is_controlled_by = ROOT
+			}
+			1156 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = KNT_railroads_renewed_sussex }
+		}
+			remove_effect = {
+				1001 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+				1156 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			set_global_flag = KNT_railroads_renewed_sussex
+		}
+	}
+	
+	KNT_wessex_part = {
+	cost = 150
+	days_remove = 100
+		available = {
+			1161 = {
+				is_controlled_by = ROOT
+			}
+			1153 = {
+				is_controlled_by = ROOT
+			}
+			1000 = {
+				is_controlled_by = ROOT
+			}
+			1007 = {
+				is_controlled_by = ROOT
+			}
+			1006 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = KNT_railroads_renewed_wessex }
+		}
+			remove_effect = {
+			1000 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1007 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1006 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1161 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1153 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			set_global_flag = KNT_railroads_renewed_wessex
+		}
+	}
+	
+	KNT_cornwall_part = {
+	cost = 125
+	days_remove = 75
+		available = {
+			999 = {
+				is_controlled_by = ROOT
+			}
+			998 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = KNT_railroads_renewed_cornwall }
+		}
+			remove_effect = {
+				999 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+				998 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			set_global_flag = KNT_railroads_renewed_cornwall
+		}
+	}
+	
+	KNT_essex_part = {
+	cost = 150
+	days_remove = 100
+		available = {
+			1160 = {
+				is_controlled_by = ROOT
+			}
+			1159 = {
+				is_controlled_by = ROOT
+			}
+			1157 = {
+				is_controlled_by = ROOT
+			}
+			1158 = {
+				is_controlled_by = ROOT
+			}
+			1003 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = KNT_railroads_renewed_essex }
+		}
+			remove_effect = {
+			1003 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1158 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1157 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1159 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1160 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 1
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			set_global_flag = KNT_railroads_renewed_essex
+		}
+	}
+	
+	KNT_east_anglia_part = {
+	cost = 125
+	days_remove = 75
+		available = {
+			1004 = {
+				is_controlled_by = ROOT
+			}
+			1143 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = KNT_railroads_renewed_east_anglia }
+		}
+			remove_effect = {
+				1004 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+				1143 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			set_global_flag = KNT_railroads_renewed_east_anglia
+		}
+	}
+	
+	KNT_east_midlands_part = {
+	cost = 150
+	days_remove = 100
+		available = {
+			1005 = {
+				is_controlled_by = ROOT
+			}
+			1144 = {
+				is_controlled_by = ROOT
+			}
+			1155 = {
+				is_controlled_by = ROOT
+			}
+			1008 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = KNT_railroads_renewed_east_midlands }
+		}
+			remove_effect = {
+			1005 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1144 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1155 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1008 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			set_global_flag = KNT_railroads_renewed_east_midlands
+		}
+	}
+	
+	KNT_west_midlands_part = {
+	cost = 150
+	days_remove = 100
+		available = {
+			1151 = {
+				is_controlled_by = ROOT
+			}
+			1146 = {
+				is_controlled_by = ROOT
+			}
+			1154 = {
+				is_controlled_by = ROOT
+			}
+			1152 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = KNT_railroads_renewed_west_midlands }
+		}
+			remove_effect = {
+			1151 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1146 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1154 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1152 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			set_global_flag = KNT_railroads_renewed_west_midlands
+		}
+	}
+	
+	KNT_yorkshire_and_northumbria_part = {
+	cost = 125
+	days_remove = 75
+		available = {
+			1010 = {
+				is_controlled_by = ROOT
+			}
+			1011 = {
+				is_controlled_by = ROOT
+			}
+			1012 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = KNT_railroads_renewed_yorkshire_and_northumbria }
+		}
+			remove_effect = {
+			1010 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1011 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			
+			1012 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			set_global_flag = KNT_railroads_renewed_yorkshire_and_northumbria
+		}
+	}
+	
+	KNT_manchester_part = {
+	cost = 125
+	days_remove = 75
+		available = {
+			1009 = {
+				is_controlled_by = ROOT
+			}
+			1145 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = KNT_railroads_renewed_manchester }
+		}
+			remove_effect = {
+				1009 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+				1145 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			set_global_flag = KNT_railroads_renewed_manchester
+		}
+	}
+	
+	KNT_lowlands_part = {
+	cost = 125
+	days_remove = 75
+		available = {
+			1013 = {
+				is_controlled_by = ROOT
+			}
+			1014 = {
+				is_controlled_by = ROOT
+			}
+			1163 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = KNT_railroads_renewed_lowlands }
+		}
+			remove_effect = {
+			1013 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1014 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			
+			1163 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			set_global_flag = KNT_railroads_renewed_lowlands
+		}
+	}
+	
+	KNT_highlands_part = {
+	cost = 150
+	days_remove = 100
+		available = {
+			1015 = {
+				is_controlled_by = ROOT
+			}
+			1016 = {
+				is_controlled_by = ROOT
+			}
+			1164 = {
+				is_controlled_by = ROOT
+			}
+			1162 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = KNT_railroads_renewed_highlands }
+		}
+			remove_effect = {
+			1015 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1016 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			
+			1164 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			
+			1162 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			set_global_flag = KNT_railroads_renewed_highlands
+		}
+	}
+	
+	KNT_wales_part = {
+	cost = 150
+	days_remove = 100
+		available = {
+			1147 = {
+				is_controlled_by = ROOT
+			}
+			1148 = {
+				is_controlled_by = ROOT
+			}
+			1149 = {
+				is_controlled_by = ROOT
+			}
+			1150 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = KNT_railroads_renewed_wales }
+		}
+			remove_effect = {
+			1147 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1148 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			
+			1149 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			
+			1150 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			set_global_flag = KNT_railroads_renewed_wales
+		}
+	}
+	
+	KNT_ulster_part = {
+	cost = 125
+	days_remove = 75
+		available = {
+			1019 = {
+				is_controlled_by = ROOT
+			}
+			1021 = {
+				is_controlled_by = ROOT
+			}
+			1020 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = KNT_railroads_renewed_ulster }
+		}
+			remove_effect = {
+			1019 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1021 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			
+			1020 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			set_global_flag = KNT_railroads_renewed_ulster
+		}
+	}
+	
+	KNT_outter_ireland_part = {
+	cost = 125
+	days_remove = 75
+		available = {
+			1023 = {
+				is_controlled_by = ROOT
+			}
+			1022 = {
+				is_controlled_by = ROOT
+			}
+			1024 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = KNT_railroads_renewed_outter_ireland }
+		}
+			remove_effect = {
+			1023 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			1022 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			
+			1024 = {				
+				add_building_construction = {
+						type = infrastructure 
+						level = 2
+						instant_build = yes
+				}
+				add_province_modifier = {
+					static_modifiers = { improved_railroads }
+					province = {
+					all_provinces = yes
+					}
+				}
+			}
+			set_global_flag = KNT_railroads_renewed_outter_ireland
+		}
+	}
 }
