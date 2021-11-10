@@ -1219,6 +1219,9 @@ KNT_special_projects = {
 
 	KNT_wireless_electricity = {
 	days_remove = 50
+	visible = {
+			NOT = { has_global_flag = KNT_wireless_electricity_introduced}
+		}
 		available = {
 			KNT = {
 			has_completed_focus	= KNT_no_more_wires
@@ -1243,16 +1246,18 @@ KNT_special_projects = {
 					wireless_power_transfer = 1
 				}
 			}
+			set_global_flag = KNT_wireless_electricity_introduced
 		}	
 	}
 }
 
 KNT_thermonuclear_reactor = {
-		KNT_smuggle_main_engineers = {
-			KNT = {
-			has_variable = kent_thermonuclear_plant_completion
+	KNT_smuggle_main_engineers = {
+		visible = {
+			NOT = { has_global_flag = KNT_main_engineers_harbored}
 		}
 		cost = 75
+		days_remove = 30
 		available = {
         command_power > 25
         }
@@ -1264,6 +1269,7 @@ KNT_thermonuclear_reactor = {
 				var = kent_thermonuclear_plant_completion
 				value = 10
 			}
+		set_global_flag = KNT_main_engineers_harbored
 		}
 	}
 }	
