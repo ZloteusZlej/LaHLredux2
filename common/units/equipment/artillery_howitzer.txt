@@ -84,5 +84,36 @@ equipments = {
 			steel = 3
 		}
 	}
-	
+	artillery_equipment_4 = {
+		archetype = artillery_equipment
+		parent = artillery_equipment_3
+		priority = 50
+		visual_level = 2
+		
+		defense = 21
+		breakthrough = 9
+		soft_attack = 48
+		
+		build_cost_ic = 5
+		resources = {
+			tungsten = 1
+			steel = 4
+		}
+	}
+	artillery_equipment_5 = {
+		archetype = artillery_equipment
+		parent = artillery_equipment_4
+		priority = 50
+		visual_level = 2
+		
+		defense = 24
+		breakthrough = 10
+		soft_attack = 56
+		
+		build_cost_ic = 5.5
+		resources = {
+			tungsten = 2
+			steel = 4
+		}
+	}	
 }
