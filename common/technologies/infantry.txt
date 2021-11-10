@@ -685,12 +685,12 @@ technologies = {
 		}	
 		
 		path = {
-			leads_to_tech = anti_tank_weapon
+			leads_to_tech = anti_tank_weapon1
 			research_cost_coeff = 1
 		}	
 		
 		path = {
-			leads_to_tech = night_vision
+			leads_to_tech = night_vision1
 			research_cost_coeff = 1
 		}
 		
@@ -757,7 +757,7 @@ technologies = {
 		}	
 		
 		path = {
-			leads_to_tech = anti_air1
+			leads_to_tech = light_anti_air
 			research_cost_coeff = 1
 		}
 		
@@ -995,7 +995,7 @@ technologies = {
 	}
 	
 	
-	anti_air1 = {
+	light_anti_air = {
 	
 		research_cost = 1.5
 		start_year = 1990
@@ -1009,7 +1009,7 @@ technologies = {
         enemy_army_bonus_air_superiority_factor = -0.02
 		
 		path = {
-			leads_to_tech = anti_air1_2
+			leads_to_tech = light_anti_air_2
 			research_cost_coeff = 1
 		}	
 		
@@ -1027,7 +1027,7 @@ technologies = {
 		}
 	}
 
-	anti_air1_2 = {
+	light_anti_air_2 = {
 	
 		research_cost = 1.5
 		start_year = 1990
@@ -1041,7 +1041,7 @@ technologies = {
         enemy_army_bonus_air_superiority_factor = -0.02
 
 		path = {
-			leads_to_tech = anti_air1_3
+			leads_to_tech = light_anti_air_3
 			research_cost_coeff = 1
 		}		
 		
@@ -1059,7 +1059,7 @@ technologies = {
 		}
 	}
 	
-	anti_air1_3 = {
+	light_anti_air_3 = {
 	
 		research_cost = 1.5
 		start_year = 1990
@@ -1073,7 +1073,7 @@ technologies = {
         enemy_army_bonus_air_superiority_factor = -0.02
 		
 		path = {
-			leads_to_tech = anti_air1_4
+			leads_to_tech = light_anti_air_4
 			research_cost_coeff = 1
 		}	
 		
@@ -1091,7 +1091,7 @@ technologies = {
 		}
 	}
 	
-	anti_air1_4 = {
+	light_anti_air_4 = {
 	
 		research_cost = 1.5
 		start_year = 1990
@@ -1105,7 +1105,7 @@ technologies = {
         enemy_army_bonus_air_superiority_factor = -0.02
 		
 		path = {
-			leads_to_tech = anti_air1_5
+			leads_to_tech = light_anti_air_5
 			research_cost_coeff = 1
 		}	
 		
@@ -1123,7 +1123,7 @@ technologies = {
 		}
 	}
 	
-	anti_air1_5 = {
+	light_anti_air_5 = {
 	
 		research_cost = 1.5
 		start_year = 1990
@@ -1137,7 +1137,7 @@ technologies = {
         enemy_army_bonus_air_superiority_factor = -0.02
 		
 		path = {
-			leads_to_tech = anti_air1_6
+			leads_to_tech = light_anti_air_6
 			research_cost_coeff = 1
 		}	
 		
@@ -1155,7 +1155,7 @@ technologies = {
 		}
 	}
 	
-	anti_air1_6 = {
+	light_anti_air_6 = {
 	
 		research_cost = 1.5
 		start_year = 1990
@@ -1169,7 +1169,7 @@ technologies = {
         enemy_army_bonus_air_superiority_factor = -0.02
 		
 		path = {
-			leads_to_tech = anti_air1_7
+			leads_to_tech = light_anti_air_7
 			research_cost_coeff = 1
 		}	
 		
@@ -1187,7 +1187,7 @@ technologies = {
 		}
 	}
 	
-	anti_air1_7 = {
+	light_anti_air_7 = {
 	
 		research_cost = 1.5
 		start_year = 1990
@@ -1215,44 +1215,13 @@ technologies = {
 	}
 	
 	
-	 anti_tank_weapon = {
+	 anti_tank_weapon1 = {
 	
 		research_cost = 1.5
 		start_year = 1990
 		folder = {
 			name = infantry_folder
 			position = { x = 6 y = 4 }
-		}
-		category_all_infantry = {
-			hard_attack = 0.05
-			ap_attack = 0.1
-		}
-
-		path = {
-			leads_to_tech = anti_tank_weapon1
-			research_cost_coeff = 1
-		}		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 10
-				date > "1990.1.3"
-			}
-		}
-	}
-	
-	anti_tank_weapon1 = {
-	
-		research_cost = 1.5
-		start_year = 1990
-		folder = {
-			name = infantry_folder
-			position = { x = 6 y = 7 }
 		}
 		category_all_infantry = {
 			hard_attack = 0.05
@@ -1283,18 +1252,17 @@ technologies = {
 		start_year = 1990
 		folder = {
 			name = infantry_folder
-			position = { x = 6 y = 10 }
+			position = { x = 6 y = 7 }
 		}
 		category_all_infantry = {
 			hard_attack = 0.05
 			ap_attack = 0.1
 		}
-		
+
 		path = {
 			leads_to_tech = anti_tank_weapon3
 			research_cost_coeff = 1
-		}	
-		
+		}		
 		categories = {
 			infantry_weapons
 		}
@@ -1321,11 +1289,12 @@ technologies = {
 			hard_attack = 0.05
 			ap_attack = 0.1
 		}
-
+		
 		path = {
 			leads_to_tech = anti_tank_weapon4
 			research_cost_coeff = 1
-		}		
+		}	
+		
 		categories = {
 			infantry_weapons
 		}
@@ -1383,12 +1352,11 @@ technologies = {
 			hard_attack = 0.05
 			ap_attack = 0.1
 		}
-		
+
 		path = {
 			leads_to_tech = anti_tank_weapon6
 			research_cost_coeff = 1
-		}	
-		
+		}		
 		categories = {
 			infantry_weapons
 		}
@@ -1506,11 +1474,16 @@ technologies = {
 		folder = {
 			name = infantry_folder
 			position = { x = 6 y = 28 }
-		}	
+		}
 		category_all_infantry = {
 			hard_attack = 0.05
 			ap_attack = 0.1
 		}
+		
+		path = {
+			leads_to_tech = anti_tank_weapon9
+			research_cost_coeff = 1
+		}	
 		
 		categories = {
 			infantry_weapons
@@ -1526,12 +1499,12 @@ technologies = {
 		}
 	}
 	
-	night_vision = {
+	night_vision1 = {
 
 		land_night_attack = 0.04
 		
 		path = {
-			leads_to_tech = night_vision1
+			leads_to_tech = night_vision2
 			research_cost_coeff = 1
 		}
 		category_all_infantry = {
@@ -1575,12 +1548,12 @@ technologies = {
 		}
 	}
 	
-	night_vision1 = {
+	night_vision2 = {
 
 		land_night_attack = 0.04
 		
 		path = {
-			leads_to_tech = night_vision2
+			leads_to_tech = night_vision3
 			research_cost_coeff = 1
 		}
 		category_all_infantry = {
@@ -1593,56 +1566,6 @@ technologies = {
 		folder = {
 			name = infantry_folder
 			position = { x = 8 y = 7 }
-		}
-		
-		categories = {
-			night_vision
-		}
-		
-		ai_will_do = {
-			factor = 4
-			
-			modifier = {
-				factor = 2
-				date > "1942.1.9"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1943.1.6"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1946.1.1"
-			}
-		}
-	}
-	
-	night_vision2 = {
-
-		land_night_attack = 0.04
-		
-		path = {
-			leads_to_tech = night_vision3
-			research_cost_coeff = 1
-		}
-		
-		category_all_infantry = {
-            acclimatization_cold_climate_gain_factor =	0.02
-            acclimatization_hot_climate_gain_factor = 0.02
-		}
-
-		research_cost = 2.5
-		start_year = 1943
-		folder = {
-			name = infantry_folder
-			position = { x = 8 y = 10 }
 		}
 		
 		categories = {
@@ -1692,7 +1615,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = infantry_folder
-			position = { x = 8 y = 13 }
+			position = { x = 8 y = 10 }
 		}
 		
 		categories = {
@@ -1742,7 +1665,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = infantry_folder
-			position = { x = 8 y = 16 }
+			position = { x = 8 y = 13 }
 		}
 		
 		categories = {
@@ -1792,7 +1715,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = infantry_folder
-			position = { x = 8 y = 19 }
+			position = { x = 8 y = 16 }
 		}
 		
 		categories = {
@@ -1842,7 +1765,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = infantry_folder
-			position = { x = 8 y = 22 }
+			position = { x = 8 y = 19 }
 		}
 		
 		categories = {
@@ -1892,7 +1815,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = infantry_folder
-			position = { x = 8 y = 25 }
+			position = { x = 8 y = 22 }
 		}
 		
 		categories = {
@@ -1925,6 +1848,56 @@ technologies = {
 	}
 	
 	night_vision8 = {
+
+		land_night_attack = 0.04
+		
+		path = {
+			leads_to_tech = night_vision9
+			research_cost_coeff = 1
+		}
+		
+		category_all_infantry = {
+            acclimatization_cold_climate_gain_factor =	0.02
+            acclimatization_hot_climate_gain_factor = 0.02
+		}
+
+		research_cost = 2.5
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = 25 }
+		}
+		
+		categories = {
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1943.1.6"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1946.1.1"
+			}
+		}
+	}
+	
+	night_vision9 = {
 
 		land_night_attack = 0.04
 
