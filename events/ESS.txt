@@ -5,7 +5,7 @@ country_event = {
 	title = ESS_event.1.t
 	desc = ESS_event.1.d
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.1"}
-	picture = 
+	picture = GFX_death_of_ded
 	major = no
     fire_only_once = true	
 	is_triggered_only = yes
@@ -53,7 +53,8 @@ country_event = {
 			}
 		
 		kill_country_leader = yes
-		set_global_flag = ENG_Mosley_is_dead   		
+		set_global_flag = ENG_Mosley_is_dead  
+ 		clr_country_flag = ENG_mosley_here
 		create_country_leader = {
 	        name = "Interregnum"
             desc = "POLITICS_INTERREGNUM_DESC"
