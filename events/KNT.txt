@@ -37,10 +37,10 @@ country_event = {
     }
 	option = {
 		name = KNT_event.2.b
-			add_manpower = -50
+			add_manpower = -500
 			add_equipment_to_stockpile = {
 				type = main_battle_tank_equipment
-				amount = 50
+				amount = 150
 				producer = ESS
 			}
 			add_equipment_to_stockpile = {
@@ -385,7 +385,7 @@ country_event = {
 		name = KNT_event.14.a
 		hidden_effect = {
 			KNT = {
-			set_variable = { kent_thermonuclear_plant_completion = 0 }
+			set_variable = { kent_thermonuclear_plant_completion = 1 }
 			}
 		}
     }
