@@ -517,8 +517,30 @@
 		id = ESS_punish_the_huns
 		icon = GFX_goal_unknown
 		cost = 3
+		available = {
+		custom_trigger_tooltip = {
+				tooltip = ENG_rec_control_40
+				check_variable = {
+					var = ESS_control
+					value = 40
+					compare = greater_than_or_equals
+				}
+			}
+		}
 		prerequisite = {
 			focus = ESS_national_proclamation
+			}
+		bypass = {
+	    NOT = {
+		    country_exists = EAG
+			}			
+		}
+	completion_reward = {
+			create_wargoal = {
+			type = annex_everything
+			target = EAG
+			expire = 0
+			} 
 		}
 		x = 11
 		y = 2
@@ -528,6 +550,16 @@
 		id = ESS_deal_with_royalysts
 		icon = GFX_goal_unknown
 		cost = 3
+		available = {
+		custom_trigger_tooltip = {
+				tooltip = ENG_rec_control_50
+				check_variable = {
+					var = ESS_control
+					value = 50
+					compare = greater_than_or_equals
+				}
+			}
+		}
 		prerequisite = {
 			focus = ESS_national_proclamation
 		}
