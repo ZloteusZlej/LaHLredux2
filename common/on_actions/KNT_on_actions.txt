@@ -15,4 +15,18 @@ on_actions = {
 			}
 		}
 	}
+	
+	on_weekly_KNT = {
+	    effect = {
+			if = {
+				limit = {
+				has_global_flag = engineers_hired
+				}
+				add_to_variable = {
+					var = kent_thermonuclear_plant_completion
+					value = 5
+				}	
+			}
+		}
+	}
 }					  
