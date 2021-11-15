@@ -297,7 +297,7 @@
 		completion_reward = {
 			1002 = {
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes 
 				}
@@ -442,7 +442,7 @@
 				add_idea = KNT_security_service_section_five_upgrade
 				}
 				
-			add_ideas = KNT_Richard_Dearlove
+			add_ideas = KNT_richard_dearlove
 		}
 		available = {
         has_war = no
@@ -476,7 +476,10 @@
 			}
 			add_stability = 0.05
 			
-			add_idea = KNT_left_supression
+			add_timed_idea = { 
+			idea = KNT_left_supression
+			days = 120
+			}
 		}
 		
 		x = 30
@@ -1269,8 +1272,8 @@ shared_focus = {
 		y = 15
 	}
 	shared_focus = {
-		id = KNT_big_brother's_help
-		icon = GFX_goal_KNT_big_brother's_help
+		id = KNT_radio_wild_geese
+		icon = GFX_goal_KNT_radio_wild_geese
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_commons_of_house
@@ -1283,7 +1286,7 @@ shared_focus = {
 		icon = GFX_goal_KNT_tea_party_movement
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_big_brother's_help
+			focus = KNT_radio_wild_geese
 		}
 		x = 39
 		y = 8
@@ -1293,17 +1296,17 @@ shared_focus = {
 		icon = GFX_goal_KNT_djibouti_company
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_big_brother's_help
+			focus = KNT_radio_wild_geese
 		}
 		x = 37
 		y = 8
 	}
 		shared_focus = {
-		id = KNT_the_american_charity_campaign
-		icon = GFX_goal_KNT_the_american_charity_campaign
+		id = KNT_the_grand_embassy
+		icon = GFX_goal_KNT_the_grand_embassy
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_big_brother's_help
+			focus = KNT_radio_wild_geese
 		}
 		x = 41
 		y = 8
@@ -1319,7 +1322,7 @@ shared_focus = {
 			focus = KNT_djibouti_company
 		}
 		prerequisite = {
-			focus = KNT_the_american_charity_campaign
+			focus = KNT_the_grand_embassy
 		}
 		x = 38
 		y = 9
@@ -1335,14 +1338,14 @@ shared_focus = {
 			focus = KNT_djibouti_company
 		}
 		prerequisite = {
-			focus = KNT_the_american_charity_campaign
+			focus = KNT_the_grand_embassy
 		}
 		x = 40
 		y = 9
 	}
 	shared_focus = {
-		id = KNT_issue_price
-		icon = GFX_goal_KNT_issue_price
+		id = KNT_exiles_of_nepal
+		icon = GFX_goal_KNT_exiles_of_nepal
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_loyalists_from_hong_kong
