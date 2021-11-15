@@ -95,7 +95,7 @@
 				}		
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
-					amount = 1000
+					amount = 750
 					producer = KNT
 				}
 				add_equipment_to_stockpile = {
@@ -146,7 +146,7 @@
 			completion_reward = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
-					amount = 2500
+					amount = 1500
 					producer = KNT
 				}
 				add_equipment_to_stockpile = {
@@ -235,11 +235,26 @@
 				
 			random_owned_controlled_state = {
 				create_unit = {
-					division = "name = \"1st Motorized Cab Brigade Team\" division_template = \"Cab Brigade Team\" start_experience_factor = 0.8 start_equipment_factor = 0.8"
+					division = "name = \"1st Motorized Cab Brigade Team\" division_template = \"Cab Brigade Team\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
 					
 					owner = KNT
 				}
 			}
+			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"1st Motorized Cab Brigade Team\" division_template = \"Cab Brigade Team\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+			
+			KNT = {
+					country_event = {
+					days = 1
+					id = KNT_event.16
+					}
+				}
 		}
 		x = 22
 		y = 3
@@ -254,8 +269,10 @@
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = export_focus
-				add_idea = limited_exports
+				add_idea = closed_economy
 			}
+			add_ideas = KNT_economic_terrarium 
+			
 			add_resource = {
 			type = oil
 			amount = 3
@@ -263,10 +280,9 @@
 			}
 			add_resource = {
 			type = steel
-			amount = 2
+			amount = 12
 			state = 1165
 			}
-			political_power_factor = 0.15
 		}
 		x = 34
 		y = 1
@@ -281,9 +297,15 @@
 		completion_reward = {
 			1002 = {
 				add_building_construction = {
-					type = arms_factory
+					type = industrial_complex
 					level = 2
 					instant_build = yes 
+				}
+			}
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.15
 				}
 			}
 		}
@@ -419,6 +441,8 @@
 				remove_idea = KNT_security_service_section_five
 				add_idea = KNT_security_service_section_five_upgrade
 				}
+				
+			add_ideas = KNT_Richard_Dearlove
 		}
 		available = {
         has_war = no
@@ -451,7 +475,8 @@
 				popularity = -0.01
 			}
 			add_stability = 0.05
-			political_power_factor = 0.2
+			
+			add_idea = KNT_left_supression
 		}
 		
 		x = 30
@@ -525,14 +550,6 @@
 			focus = KNT_new_era_of_railways
 		}
 		
-		completion_reward = {
-			KNT = {
-				country_event = {
-				days = 1
-				id = KNT_event.12
-				}
-			}
-		}
 		KNT = {
 			add_ideas = KNT_green_energy_subsidies
 		}
