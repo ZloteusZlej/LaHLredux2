@@ -9,8 +9,8 @@
 				id = KNT_event.1
 				}
 			}
-			war_stability_factor = 0.15
-			add_political_power = 75
+			war_stability_factor = 0.1
+			add_political_power = 50
 		}
 		x = 27
 		y = 0
@@ -92,22 +92,8 @@
 					days = 1
 					id = KNT_event.3
 					}
-				}		
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 750
-					producer = KNT
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment
-					amount = 200
-					producer = KNT
-				}
-				add_equipment_to_stockpile = {
-					type = support_equipment
-					amount = 250
-					producer = KNT
-				}
+			add_timed_idea = { idea = KNT_border_guard days = 270 }					
 			}
 		x = 29
 		y = 2
@@ -299,6 +285,13 @@
 				add_building_construction = {
 					type = arms_factory
 					level = 2
+					instant_build = yes 
+				}
+			}
+			1165 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
 					instant_build = yes 
 				}
 			}

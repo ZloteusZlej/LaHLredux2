@@ -11,9 +11,8 @@ country_event = {
 	option = {
 		name = KNT_event.1.a
 		KNT = {
-			add_ideas = KNT_thin_purple_line
+			add_timed_idea = { idea = KNT_thin_purple_line  days = 546 }
 		}
-		add_timed_idea = { idea = KNT_thin_purple_line  days = 546 }
     }
 }
 
@@ -54,8 +53,8 @@ country_event = {
 			add_manpower = -1500
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = -250
-				producer = ESS
+				amount = -750
+				producer = KNT
 			}
 			1165 = {
 				add_building_construction = {
@@ -85,11 +84,15 @@ country_event = {
 	option = {
 		name = KNT_event.3.a
 		add_equipment_to_stockpile = {
-				type = convoy
-				amount = 6
-				producer = FRA
+			type = infantry_equipment
+			amount = 500
+			producer = FRA
 		}
-		add_ideas = KNT_border_guard	
+		add_equipment_to_stockpile = {
+			type = spg_equipment 
+			amount = 16
+			producer = FRA
+		}
 	}	
 }
 
@@ -106,21 +109,21 @@ country_event = {
 		KNT = {
 			add_ideas = KNT_multitool_rifle
 		}
-		add_political_power = -25
+		add_political_power = -45
     }
 	option = {
 		name = KNT_event.4.b
 		KNT = {
 			add_ideas = KNT_potato_grenade_launcher
 		}
-		add_political_power = -25
+		add_political_power = -45
     }
 	option = {
 		name = KNT_event.4.c
 		KNT = {
 			add_ideas = KNT_printed_rifle
 		}
-		add_political_power = -25
+		add_political_power = -45
     }
 }
 
@@ -407,14 +410,12 @@ country_event = {
     fire_only_once = true
 	option = {
 		name = KNT_event.15.a
-		1165 = {
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes 
-				}
-		}	
+		add_timed_idea = {idea = KNT_medium_manufacturers_suport days = 270}
     }
+	option = {
+		name = KNT_event.15.b
+		add_timed_idea = {idea = KNT_workshopers_suport days = 270}		
+    } 
 }
 
 country_event = {
@@ -490,7 +491,6 @@ country_event = {
 		KNT = {
 			add_ideas = {
 				KNT_infantry_guild_1
-				KNT_infantry_guild_1_subeffects
 			}
 		}
     }
@@ -500,9 +500,8 @@ country_event = {
 		KNT = {
 			add_ideas = {
 				KNT_infantry_guild_2
-				KNT_infantry_guild_2_subeffects
-				}
 			}
+		}	
 	}
 
 	
@@ -511,7 +510,6 @@ country_event = {
 		KNT = {
 			add_ideas = {
 				KNT_infantry_guild_3
-				KNT_infantry_guild_3_subeffects
 			}
 		}
 	}

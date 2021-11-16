@@ -198,46 +198,101 @@ KNT_reunify_isles = {
 KNT_channel_tunnel = {
 	KNT_import_french_guns = {
 	cost = 35
+	available = {
+		NOT = {
+			OR = {
+			car_purchased_swedish
+			arty_purchased_belgian
+			electronics_purchased_dutch
+			}
+		}
+	}
+	complete_effect = {
+		set_global_flag = guns_purchased_french
+	}
 	days_remove = 50
-			remove_effect = {
+		remove_effect = {
 			add_equipment_to_stockpile = {
 			type = infantry_equipment
 			amount = 150
 			producer = FRA
 			}
+		clr_global_flag = guns_purchased_french
 		}
 	}
+	
 	KNT_import_volvos = {
 	cost = 45
+	available = {
+		NOT = {
+			OR = {
+			guns_purchased_french
+			arty_purchased_belgian
+			electronics_purchased_dutch
+			}
+		}
+	}
+	complete_effect = {
+		set_global_flag = car_purchased_swedish
+	}
 	days_remove = 60
-			remove_effect = {
+		remove_effect = {
 			add_equipment_to_stockpile = {
 			type = motorized_equipment
 			amount = 30
 			producer = SCA
 			}
+		clr_global_flag = car_purchased_swedish
 		}
 	}
+	
 	KNT_import_belgian_arty = {
 	cost = 40
 	days_remove = 55
-			remove_effect = {
+	available = {
+		NOT = {
+			OR = {
+			guns_purchased_french
+			car_purchased_swedish
+			electronics_purchased_dutch
+			}
+		}
+	}
+	complete_effect = {
+		set_global_flag = arty_purchased_belgian
+	}
+		remove_effect = {
 			add_equipment_to_stockpile = {
 			type = artillery_equipment
 			amount = 10
 			producer = BEL
 			}
+		clr_global_flag = arty_purchased_belgian 
 		}
 	}
+	
 	KNT_import_dutch_electronics = {
 	cost = 40
 	days_remove = 55
-			remove_effect = {
+	available = {
+		NOT = {
+			OR = {
+			guns_purchased_french
+			car_purchased_swedish
+			arty_purchased_belgian
+			}
+		}
+	}
+	complete_effect = {
+		set_global_flag = electronics_purchased_dutch
+	}
+		remove_effect = {
 			add_equipment_to_stockpile = {
 			type = support_equipment
 			amount = 35
 			producer = HOL
 			}
+		clr_global_flag = electronics_purchased_dutch
 		}
 	}
 }
@@ -245,7 +300,7 @@ KNT_channel_tunnel = {
 KNT_maglev = {
 	KNT_kent_part = {
 	cost = 125
-	days_remove = 75
+	days_remove = 100
 		available = {
 			1002 = {
 				is_controlled_by = ROOT
@@ -255,7 +310,15 @@ KNT_maglev = {
 			}
 		}
 		visible = {
-			NOT = { has_global_flag = KNT_railroads_renewed_kent }
+			AND = {
+				NOT = { has_global_flag = KNT_railroads_renewed_kent }
+					1002 = {
+						is_controlled_by = ROOT
+					}
+					1165 = {
+						is_controlled_by = ROOT
+					}
+				}
 		}
 			remove_effect = {
 				1002 = {				
@@ -290,7 +353,7 @@ KNT_maglev = {
 	
 	KNT_sussex_part = {
 	cost = 125
-	days_remove = 75
+	days_remove = 100
 		available = {
 			1001 = {
 				is_controlled_by = ROOT
@@ -300,7 +363,15 @@ KNT_maglev = {
 			}
 		}
 		visible = {
-			NOT = { has_global_flag = KNT_railroads_renewed_sussex }
+			AND = { 
+				NOT = { has_global_flag = KNT_railroads_renewed_sussex }
+				1001 = {
+					is_controlled_by = ROOT
+				}
+				1156 = {
+					is_controlled_by = ROOT
+				}
+			}
 		}
 			remove_effect = {
 				1001 = {				
@@ -354,7 +425,24 @@ KNT_maglev = {
 			}
 		}
 		visible = {
-			NOT = { has_global_flag = KNT_railroads_renewed_wessex }
+			AND = {
+				NOT = { has_global_flag = KNT_railroads_renewed_wessex }
+				1161 = {
+					is_controlled_by = ROOT
+				}
+				1153 = {
+					is_controlled_by = ROOT
+				}
+				1000 = {
+					is_controlled_by = ROOT
+				}
+				1007 = {
+					is_controlled_by = ROOT
+				}
+				1006 = {
+					is_controlled_by = ROOT
+				}	
+			}
 		}
 			remove_effect = {
 			1000 = {				
@@ -428,7 +516,7 @@ KNT_maglev = {
 	
 	KNT_cornwall_part = {
 	cost = 125
-	days_remove = 75
+	days_remove = 100
 		available = {
 			999 = {
 				is_controlled_by = ROOT
@@ -438,7 +526,15 @@ KNT_maglev = {
 			}
 		}
 		visible = {
-			NOT = { has_global_flag = KNT_railroads_renewed_cornwall }
+			AND = { 
+				NOT = { has_global_flag = KNT_railroads_renewed_cornwall }
+				999 = {
+					is_controlled_by = ROOT
+				}
+				998 = {
+					is_controlled_by = ROOT
+				}
+			}
 		}
 			remove_effect = {
 				999 = {				
@@ -492,7 +588,24 @@ KNT_maglev = {
 			}
 		}
 		visible = {
-			NOT = { has_global_flag = KNT_railroads_renewed_essex }
+			AND = { 
+				NOT = { has_global_flag = KNT_railroads_renewed_essex }
+				1160 = {
+					is_controlled_by = ROOT
+				}
+				1159 = {
+					is_controlled_by = ROOT
+				}
+				1157 = {
+					is_controlled_by = ROOT
+				}
+				1158 = {
+					is_controlled_by = ROOT
+				}
+				1003 = {
+					is_controlled_by = ROOT
+				}
+			}
 		}
 			remove_effect = {
 			1003 = {				
@@ -566,7 +679,7 @@ KNT_maglev = {
 	
 	KNT_east_anglia_part = {
 	cost = 125
-	days_remove = 75
+	days_remove = 100
 		available = {
 			1004 = {
 				is_controlled_by = ROOT
@@ -576,7 +689,15 @@ KNT_maglev = {
 			}
 		}
 		visible = {
-			NOT = { has_global_flag = KNT_railroads_renewed_east_anglia }
+			AND = { 
+				NOT = { has_global_flag = KNT_railroads_renewed_east_anglia }
+				1004 = {
+					is_controlled_by = ROOT
+				}
+				1143 = {
+					is_controlled_by = ROOT
+				}
+			}
 		}
 			remove_effect = {
 				1004 = {				
@@ -611,7 +732,7 @@ KNT_maglev = {
 	
 	KNT_east_midlands_part = {
 	cost = 150
-	days_remove = 100
+	days_remove = 125
 		available = {
 			1005 = {
 				is_controlled_by = ROOT
@@ -627,7 +748,21 @@ KNT_maglev = {
 			}
 		}
 		visible = {
-			NOT = { has_global_flag = KNT_railroads_renewed_east_midlands }
+			AND = {
+				NOT = { has_global_flag = KNT_railroads_renewed_east_midlands }
+				1005 = {
+					is_controlled_by = ROOT
+				}
+				1144 = {
+					is_controlled_by = ROOT
+				}
+				1155 = {
+					is_controlled_by = ROOT
+				}
+				1008 = {
+					is_controlled_by = ROOT
+				}
+			}
 		}
 			remove_effect = {
 			1005 = {				
@@ -688,7 +823,7 @@ KNT_maglev = {
 	
 	KNT_west_midlands_part = {
 	cost = 150
-	days_remove = 100
+	days_remove = 125
 		available = {
 			1151 = {
 				is_controlled_by = ROOT
@@ -704,7 +839,21 @@ KNT_maglev = {
 			}
 		}
 		visible = {
-			NOT = { has_global_flag = KNT_railroads_renewed_west_midlands }
+			AND = {
+				NOT = { has_global_flag = KNT_railroads_renewed_west_midlands }
+				1151 = {
+					is_controlled_by = ROOT
+				}
+				1146 = {
+					is_controlled_by = ROOT
+				}
+				1154 = {
+					is_controlled_by = ROOT
+				}
+				1152 = {
+					is_controlled_by = ROOT
+				}
+			}
 		}
 			remove_effect = {
 			1151 = {				
@@ -765,7 +914,7 @@ KNT_maglev = {
 	
 	KNT_yorkshire_and_northumbria_part = {
 	cost = 125
-	days_remove = 75
+	days_remove = 100
 		available = {
 			1010 = {
 				is_controlled_by = ROOT
@@ -778,7 +927,18 @@ KNT_maglev = {
 			}
 		}
 		visible = {
-			NOT = { has_global_flag = KNT_railroads_renewed_yorkshire_and_northumbria }
+			AND = { 
+				NOT = { has_global_flag = KNT_railroads_renewed_yorkshire_and_northumbria }
+				1010 = {
+					is_controlled_by = ROOT
+				}
+				1011 = {
+					is_controlled_by = ROOT
+				}
+				1012 = {
+					is_controlled_by = ROOT
+				}
+			}
 		}
 			remove_effect = {
 			1010 = {				
@@ -823,11 +983,11 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_yorkshire_and_northumbria
 		}
-	}
+	}	
 	
 	KNT_manchester_part = {
 	cost = 125
-	days_remove = 75
+	days_remove = 100
 		available = {
 			1009 = {
 				is_controlled_by = ROOT
@@ -837,7 +997,15 @@ KNT_maglev = {
 			}
 		}
 		visible = {
-			NOT = { has_global_flag = KNT_railroads_renewed_manchester }
+			AND = { 
+				NOT = { has_global_flag = KNT_railroads_renewed_manchester }
+				1009 = {
+					is_controlled_by = ROOT
+				}
+				1145 = {
+					is_controlled_by = ROOT
+				}
+			}
 		}
 			remove_effect = {
 				1009 = {				
@@ -872,7 +1040,7 @@ KNT_maglev = {
 	
 	KNT_lowlands_part = {
 	cost = 125
-	days_remove = 75
+	days_remove = 100
 		available = {
 			1013 = {
 				is_controlled_by = ROOT
@@ -885,7 +1053,18 @@ KNT_maglev = {
 			}
 		}
 		visible = {
-			NOT = { has_global_flag = KNT_railroads_renewed_lowlands }
+			AND = { 
+				NOT = { has_global_flag = KNT_railroads_renewed_lowlands }
+				1013 = {
+					is_controlled_by = ROOT
+				}
+				1014 = {
+					is_controlled_by = ROOT
+				}
+				1163 = {
+					is_controlled_by = ROOT
+				}
+			}
 		}
 			remove_effect = {
 			1013 = {				
@@ -934,7 +1113,7 @@ KNT_maglev = {
 	
 	KNT_highlands_part = {
 	cost = 150
-	days_remove = 100
+	days_remove = 125
 		available = {
 			1015 = {
 				is_controlled_by = ROOT
@@ -950,7 +1129,21 @@ KNT_maglev = {
 			}
 		}
 		visible = {
-			NOT = { has_global_flag = KNT_railroads_renewed_highlands }
+			AND = {
+				NOT = { has_global_flag = KNT_railroads_renewed_highlands }
+				1015 = {
+					is_controlled_by = ROOT
+				}
+				1016 = {
+					is_controlled_by = ROOT
+				}
+				1164 = {
+					is_controlled_by = ROOT
+				}
+				1162 = {
+					is_controlled_by = ROOT
+				}
+			}
 		}
 			remove_effect = {
 			1015 = {				
@@ -1013,7 +1206,7 @@ KNT_maglev = {
 	
 	KNT_wales_part = {
 	cost = 150
-	days_remove = 100
+	days_remove = 125
 		available = {
 			1147 = {
 				is_controlled_by = ROOT
@@ -1029,7 +1222,21 @@ KNT_maglev = {
 			}
 		}
 		visible = {
-			NOT = { has_global_flag = KNT_railroads_renewed_wales }
+			AND = { 
+				NOT = { has_global_flag = KNT_railroads_renewed_wales }
+				1147 = {
+					is_controlled_by = ROOT
+				}
+				1148 = {
+					is_controlled_by = ROOT
+				}
+				1149 = {
+					is_controlled_by = ROOT
+				}
+				1150 = {
+					is_controlled_by = ROOT
+				}
+			}
 		}
 			remove_effect = {
 			1147 = {				
@@ -1092,7 +1299,7 @@ KNT_maglev = {
 	
 	KNT_ulster_part = {
 	cost = 125
-	days_remove = 75
+	days_remove = 100
 		available = {
 			1019 = {
 				is_controlled_by = ROOT
@@ -1105,7 +1312,18 @@ KNT_maglev = {
 			}
 		}
 		visible = {
-			NOT = { has_global_flag = KNT_railroads_renewed_ulster }
+			AND = { 
+				NOT = { has_global_flag = KNT_railroads_renewed_ulster }
+				1019 = {
+					is_controlled_by = ROOT
+				}
+				1021 = {
+					is_controlled_by = ROOT
+				}
+				1020 = {
+					is_controlled_by = ROOT
+				}
+			}
 		}
 			remove_effect = {
 			1019 = {				
@@ -1154,7 +1372,7 @@ KNT_maglev = {
 	
 	KNT_outter_ireland_part = {
 	cost = 125
-	days_remove = 75
+	days_remove = 100
 		available = {
 			1023 = {
 				is_controlled_by = ROOT
@@ -1167,7 +1385,18 @@ KNT_maglev = {
 			}
 		}
 		visible = {
-			NOT = { has_global_flag = KNT_railroads_renewed_outter_ireland }
+			AND = { 
+				NOT = { has_global_flag = KNT_railroads_renewed_outter_ireland }
+				1023 = {
+					is_controlled_by = ROOT
+				}
+				1022 = {
+					is_controlled_by = ROOT
+				}
+				1024 = {
+					is_controlled_by = ROOT
+				}
+			}
 		}
 			remove_effect = {
 			1023 = {				
@@ -1218,7 +1447,7 @@ KNT_maglev = {
 KNT_special_projects = {
 
 	KNT_wireless_electricity = {
-	days_remove = 120
+	days_remove = 200
 	visible = {
 			NOT = { has_global_flag = KNT_wireless_electricity_introduced}
 		}
@@ -1251,7 +1480,7 @@ KNT_special_projects = {
 	}
 	
 	KNT_biofuel_introduction = {
-	days_remove = 120
+	days_remove = 150
 	visible = {
 			NOT = { has_global_flag = KNT_biofuel_introduced}
 		}
@@ -1331,25 +1560,8 @@ KNT_thermonuclear_reactor = {
 		cost = 30
 		days_remove = 50
 		days_re_enable = 45
-		complete_effect = {
-			random_owned_controlled_state = {
-				remove_building = {
-				type = industrial_complex
-				level = 1
-				}
-				remove_building = {
-				type = industrial_complex
-				level = 1
-				}
-				remove_building = {
-				type = industrial_complex
-				level = 1
-				}
-				remove_building = {
-				type = industrial_complex
-				level = 1
-				}
-			}
+		modifier = {
+			civilian_factory_use = 4
 		}
 		remove_effect = {
 			add_to_variable = {
@@ -1357,28 +1569,6 @@ KNT_thermonuclear_reactor = {
 				value = 15
 			}
 			set_global_flag = recently_hired_building_companies
-			random_owned_controlled_state = {
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 	}
 	
