@@ -157,18 +157,36 @@ country_event = {
 	picture = 
 	major = no
     fire_only_once = true
+	immediate = {
+		hidden_effect = {
+			set_variable = { neocam_knt_p = 0 }
+			set_variable = { tories_knt_p = 0 }
+		}
+	}
 	option = {
 		name = KNT_event.6.a
-		add_popularity = {
-				ideology = right_populism
-				popularity = 0.15
+		add_to_variable = {
+			var = tories_p
+			value = 1
+		}
+		KNT = {
+			country_event = {
+			days = 10
+			id = KNT_event.8
+			}
 		}
     }
 	option = {
 		name = KNT_event.6.b
-		add_popularity = {
-				ideology = neocameralism
-				popularity = 0.15
+		add_to_variable = {
+			var = neocam_p
+			value = 1
+		}
+		KNT = {
+			country_event = {
+			days = 10
+			id = KNT_event.8
+			}
 		}
     }
 }
@@ -221,26 +239,30 @@ country_event = {
 	picture = 
 	major = no
     fire_only_once = true
-	trigger = {
-		tag = KNT
-		NOT = { has_completed_focus = KNT_commons_of_house }
-		focus_progress = {
-			focus = KNT_commons_of_house
-			progress < 0.25
-		}
-	}
 	option = {
 		name = KNT_event.8.a
-		add_popularity = {
-				ideology = right_populism
-				popularity = 0.15
+		add_to_variable = {
+			var = tories_knt_p
+			value = 1
+		}
+		KNT = {
+			country_event = {
+			days = 10
+			id = KNT_event.9
+			}
 		}
     }
 	option = {
 		name = KNT_event.8.b
-		add_popularity = {
-				ideology = neocameralism
-				popularity = 0.15
+		add_to_variable = {
+			var = neocam_knt_p
+			value = 1
+		}
+		KNT = {
+			country_event = {
+			days = 10
+			id = KNT_event.9
+			}
 		}
     }
 }
@@ -253,26 +275,30 @@ country_event = {
 	picture = 
 	major = no
     fire_only_once = true
-	trigger = {
-		tag = KNT
-		NOT = { has_completed_focus = KNT_commons_of_house }
-		focus_progress = {
-			focus = KNT_commons_of_house
-			progress < 0.5
-		}
-	}
 	option = {
 		name = KNT_event.9.a
-		add_popularity = {
-				ideology = right_populism
-				popularity = 0.15
+		add_to_variable = {
+			var = tories_knt_p
+			value = 1
+		}
+		KNT = {
+			country_event = {
+			days = 10
+			id = KNT_event.10
+			}
 		}
     }
 	option = {
 		name = KNT_event.9.b
-		add_popularity = {
-				ideology = neocameralism
-				popularity = 0.15
+		add_to_variable = {
+			var = neocam_knt_p
+			value = 1
+		}
+		KNT = {
+			country_event = {
+			days = 10
+			id = KNT_event.10
+			}
 		}
     }
 }
@@ -284,29 +310,11 @@ country_event = {
     is_triggered_only = yes
 	picture = 
 	major = no
-    fire_only_once = true
-	trigger = {
-		tag = KNT
-		NOT = { has_completed_focus = KNT_commons_of_house }
-		focus_progress = {
-			focus = KNT_commons_of_house
-			progress < 0.75
-		}
-	}
 	immediate = {
         hidden_effect = {
-            set_temp_variable = {
-                var = neocam_p
-                value = party_popularity@neocameralism
-            }
-
-            set_temp_variable = {
-                var = tories_p
-                value = party_popularity@right_populism
-            }
 				if = {
 				limit = { 
-				check_variable = { neocam_p > tories_p }
+				check_variable = { neocam_knt_p > tories_knt_p }
 				}
 				set_politics = {
 				ruling_party = neocameralism
