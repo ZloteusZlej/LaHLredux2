@@ -20,7 +20,10 @@ on_actions = {
 	    effect = {
 			if = {
 				limit = {
-				has_global_flag = engineers_hired
+				OR = {
+					has_global_flag = engineers_hired
+					has_global_flag = workers_hired
+					}
 				}
 				add_to_variable = {
 					var = kent_thermonuclear_plant_completion
