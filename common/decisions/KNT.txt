@@ -1582,22 +1582,48 @@ KNT_thermonuclear_reactor = {
 				has_global_flag	= recently_distributed_resources
 				has_global_flag	= recently_hired_building_companies
 				}
-				available = {
 				command_power > 15
-				}
-			}			
+			}
 		}
 		days_re_enable = 65
-			cost = 40
-			days_remove = 35
-			complete_effect = {
+		cost = 40
+		days_remove = 35
+		complete_effect = {
 			add_command_power = -15
 			set_global_flag = engineers_hired
 			clr_global_flag = recently_hired_building_companies
 			clr_global_flag = recently_distributed_resources
-			}
-			remove_effect = (
+		}
+		remove_effect = (
 			clr_global_flag	= engineers_hired
-			)
+		)
+	}
+	
+	KNT_hire_new_workers = {
+		visible = {
+			has_global_flag = KNT_main_engineers_harbored
+		}
+		available = {
+			AND = {
+				OR = {
+				has_global_flag	= recently_distributed_resources
+				has_global_flag	= recently_hired_building_companies
+				}
+				has_manpower > 1500
+			}
+		}
+		days_re_enable = 65
+		cost = 40
+		days_remove = 35
+		complete_effect = {
+			add_manpower =  = -1500
+			set_global_flag = engineers_hired
+			clr_global_flag = recently_hired_building_companies
+			clr_global_flag = recently_distributed_resources
+		}
+		remove_effect = (
+			clr_global_flag	= engineers_hired
+			add_manpower = 1500
+		)
 	}
 }	
