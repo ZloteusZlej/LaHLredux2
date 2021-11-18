@@ -412,7 +412,7 @@ ideas = {
 			
 			modifier = {
 			consumer_goods_factor = 0.05
-			min_export = 0.1
+			min_export = 0.05
 			}
 		}
 	}
@@ -781,6 +781,24 @@ ideas = {
 				state_production_speed_industrial_complex_factor = 0.1
 				state_production_speed_arms_factory_factor = 0.02
 				industrial_capacity_factory = 0.15
+			}
+		}
+	}
+	
+	country = {
+		KNT_recent_imports = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.03
 			}
 		}
 	}

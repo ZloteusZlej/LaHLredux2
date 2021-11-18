@@ -522,3 +522,86 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = KNT_event.20
+	title = KNT_event.20.t
+	desc = KNT_event.20.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true
+	option = {
+		name = KNT_event.20.a
+		add_timed_idea = {
+			idea = KNT_recent_imports
+			days = 90
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.21
+	title = KNT_event.21.t
+	desc = KNT_event.21.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true
+	option = {
+		name = KNT_event.21.a
+		add_political_power = -25
+    }
+}
+
+country_event = {
+	id = KNT_event.22
+	title = KNT_event.22.t
+	desc = KNT_event.22.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true
+	option = {
+		name = KNT_event.22.a
+		add_timed_idea = {
+			idea = KNT_recent_imports
+			days = 120
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.23
+	title = KNT_event.23.t
+	desc = KNT_event.23.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true
+	option = {
+		name = KNT_event.23.a
+		KNT = {
+			country_event = {
+				days = 14
+				id = KNT_event.24
+			}
+		}
+		add_political_power = -25
+		add_command_power = -20
+    }
+}
+
+country_event = {
+	id = KNT_event.24
+	title = KNT_event.24.t
+	desc = KNT_event.24.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true
+	option = {
+		name = KNT_event.24.a
+		set_global_flag = lithium_imports_to_kent
+    }
+}

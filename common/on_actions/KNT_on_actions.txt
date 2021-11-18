@@ -32,4 +32,18 @@ on_actions = {
 			}
 		}
 	}
+	
+	on_daily_KNT = {
+	    effect = {
+				if = {
+					limit = {
+					has_global_flag = lithium_imports_to_kent
+					}
+					add_to_variable = {
+						var = kent_thermonuclear_plant_completion
+						value = 0.25
+				}	
+			}
+		}
+	}
 }					  

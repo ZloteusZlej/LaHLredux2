@@ -1,0 +1,34 @@
+add_namespace = CRO_event 
+
+country_event = {
+	id = CRO_event.1
+	title = CRO_event.1.t
+	desc = CRO_event.1.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true
+	option = { 
+		name = CRO_event.1.a
+		KNT = {
+			country_event = {
+			days = 1
+			id = KNT_event.22
+			}
+		}
+		add_timed_idea = {
+			idea = CRO_lithium_exports_to_the_UK
+			days = 270
+		}
+		set_global_flag = lithium_imports_to_kent
+    }
+	option = {
+		name = CRO_event.1.b
+		KNT = {
+			country_event = {
+			days = 1
+			id = KNT_event.23
+			}
+		}
+    }
+}
