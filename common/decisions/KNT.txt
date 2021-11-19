@@ -1771,4 +1771,38 @@ KNT_thermonuclear_reactor = {
 			}
 		}
 	}
+	
+	KNT_finish_the_iter_project = {
+		visible = {
+			has_global_flag = KNT_main_engineers_harbored
+		}
+		available = {
+			AND	= {
+				check_variable = {
+					var = kent_thermonuclear_plant_completion
+					value = 1000
+					compare = greater_than_or_equals
+				}
+				KNT = { 
+					nuclear_reactor > 2
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 75
+		days_remove = 35
+		complete_effect = {
+			clr_global_flag = lithium_imports_to_kent
+			clr_global_flag = KNT_main_engineers_harbored
+		}
+		remove_effect = {
+			add_ideas = KNT_the_iter_project
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.25
+					}
+			}
+		}
+	}
 }	

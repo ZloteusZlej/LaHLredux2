@@ -605,3 +605,18 @@ country_event = {
 		set_global_flag = lithium_imports_to_kent
     }
 }
+
+country_event = {
+	id = KNT_event.25
+	title = KNT_event.25.t
+	desc = KNT_event.25.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true
+	option = {
+		name = KNT_event.25.a
+		add_offsite_building = { type = nuclear_reactor level = 1 }
+		add_offsite_building = { type = industrial_complex level = 2 }
+    }
+}
