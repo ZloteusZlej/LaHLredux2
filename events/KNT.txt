@@ -621,3 +621,48 @@ country_event = {
     }
 }
 
+country_event = {
+	id = KNT_event.26
+	title = KNT_event.26.t
+	desc = KNT_event.26.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true
+	option = {
+		name = KNT_event.26.a
+		set_global_flag = kent_iter_cover_up
+    }
+}
+
+country_event = {
+	id = KNT_event.27
+	title = KNT_event.27.t
+	desc = KNT_event.27.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+    fire_only_once = true
+	option = {
+		name = KNT_event.27.a
+		add_timed_idea = { idea = KNT_iter_cover_up_failed days = 183 }
+    }
+}
+
+country_event = {
+	id = KNT_event.28
+	title = KNT_event.28.t
+	desc = KNT_event.28.d
+    is_triggered_only = yes
+	picture = 
+	major = no
+	hidden = yes
+	timeout_days = 1
+    fire_only_once = true
+	option = {
+		name = KNT_event.28.a
+		KNT = {
+			activate_mission = KNT_cover_up_funds
+		}
+    }
+}
