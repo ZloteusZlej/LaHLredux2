@@ -1360,8 +1360,8 @@ shared_focus = {
 		y = 7
 	}
 	shared_focus = {
-		id = KNT_lilliburlero
-		icon = GFX_goal_KNT_lilliburlero
+		id = KNT_orange_resistance
+		icon = GFX_goal_KNT_orange_resistance
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_para_bellum
@@ -1370,30 +1370,51 @@ shared_focus = {
 		y = 8
 	}
 	shared_focus = {
-		id = KNT_the_new_good_friday
-		icon = GFX_goal_KNT_the_new_good_friday
+		id = KNT_loyalist_agency
+		icon = GFX_goal_KNT_loyalist_agency
 		cost = 4.3
 		prerequisite = {
-			KNT_lilliburlero
+			focus = KNT_orange_resistance
+		}
+		x = 44
+		y = 9
+	}
+	shared_focus = {
+		id = KNT_the_status_of_the_order
+		icon = GFX_goal_KNT_the_status_of_the_order
+		cost = 4.3
+		prerequisite = {
+			focus = KNT_loyalist_agency
 		}
 		mutually_exclusive = {
 	            focus = KNT_ulster_the_way_home
 		}
 		x = 43
-		y = 9
+		y = 10
 	}
 	shared_focus = {
 		id = KNT_ulster_the_way_home
 		icon = GFX_goal_KNT_ulster_the_way_home
 		cost = 4.3
 		prerequisite = {
-			KNT_lilliburlero
+			focus = KNT_loyalist_agency
 		}
 		mutually_exclusive = {
-	    focus = KNT_the_new_good_friday
+	    focus = KNT_the_status_of_the_order
 		}
 		x = 45
-		y = 9
+		y = 10
+	}
+	shared_focus = {
+		id = KNT_lilliburlero
+		icon = GFX_goal_KNT_lilliburlero
+		cost = 4.3
+		prerequisite = {
+			focus = KNT_ulster_the_way_home
+			focus = KNT_the_status_of_the_order
+		}
+		x = 44
+		y = 11
 	}
 shared_focus = {
 		id = KNT_an_unwilling_alliance
@@ -1420,8 +1441,8 @@ shared_focus = {
 		y = 9
 	}
 	shared_focus = {
-		id = KNT_white_youth
-		icon = GFX_goal_KNT_white_youth
+		id = KNT_our_legitimacy
+		icon = GFX_goal_KNT_our_legitimacy
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_our_germanic_brothers
@@ -1430,26 +1451,33 @@ shared_focus = {
 		y = 10
 	}
 	shared_focus = {
-		id = KNT_pimp_my_panzer
-		icon = GFX_goal_KNT_pimp_my_panzer
+		id = KNT_money_fixes_all
+		icon = GFX_goal_KNT_money_fixes_all
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_white_youth
+			focus = KNT_our_legitimacy
 		}
 		x = 52
 		y = 11
 	}
 	shared_focus = {
-		id = KNT_london_referendum
-		icon = GFX_goal_KNT_london_referendum
+		id = KNT_coordinated_strikes
+		icon = GFX_goal_KNT_coordinated_strikes
 		cost = 4.3
 		prerequisite = {
-			focus =  KNT_pimp_my_panzer
-		}
-		mutually_exclusive = {
-			focus = KNT_buy_them
+			focus = KNT_money_fixes_all
 		}
 		x = 51
+		y = 12
+	}
+	shared_focus = {
+		id = KNT_the_angry_brigade
+		icon = GFX_goal_KNT_the_angry_brigade
+		cost = 4.3
+		prerequisite = {
+			focus = KNT_money_fixes_all
+		}
+		x = 53
 		y = 12
 	}
 	shared_focus = {
@@ -1457,24 +1485,10 @@ shared_focus = {
 		icon = GFX_goal_KNT_buy_them
 		cost = 4.3
 		prerequisite = {
-			focus =  KNT_pimp_my_panzer
-		}
-		mutually_exclusive = {
-			focus = KNT_london_referendum
-		}
-		x = 53
-		y = 12
-	}
-	shared_focus = {
-		id = KNT_coordinated_strikes
-		icon = GFX_goal_KNT_coordinated_strikes
-		cost = 4.3
-		prerequisite = {
 			focus = KNT_the_angry_brigade
 		}
 		prerequisite = {
-			focus = KNT_buy_them
-			focus = KNT_london_referendum
+			focus = KNT_coordinated_strikes
 		}
 		x = 52
 		y = 13
@@ -1514,38 +1528,34 @@ shared_focus = {
 		y = 11
 	}
 	shared_focus = {
-		id = KNT_expose_the_gangs
-		icon = GFX_goal_KNT_expose_the_gangs
+		id = KNT_cambridge_boys
+		icon = GFX_goal_KNT_cambridge_boys
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_exchange_of_technologies
-		}
-		mutually_exclusive = {
-			focus = KNT_the_network_gate
 		}
 		x = 47
 		y = 12
 	}
 	shared_focus = {
-		id = KNT_the_network_gate
-		icon = GFX_goal_KNT_the_network_gate
+		id = KNT_policing_the_unpoliceable
+		icon = GFX_goal_KNT_policing_the_unpoliceable
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_exchange_of_technologies
-		}
-		mutually_exclusive = {
-			focus = KNT_expose_the_gangs
 		}
 		x = 49
 		y = 12
 	}
 	shared_focus = {
-		id = KNT_the_mole
-		icon = GFX_goal_KNT_the_mole
+		id = KNT_expose_the_gangs
+		icon = GFX_goal_KNT_expose_the_gangs
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_expose_the_gangs
-			focus = KNT_the_network_gate
+			focus = KNT_cambridge_boys
+		}
+		prerequisite = {
+			focus = KNT_policing_the_unpoliceable
 		}
 		x = 48
 		y = 13
@@ -1591,32 +1601,28 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_shut_the_devil_servants_up
 		}
-		mutually_exclusive = {
-			focus = KNT_traditional_leap_forward
-		}
 		x = 55
 		y = 12
 	}
 	shared_focus = {
-		id = KNT_traditional_leap_forward
-		icon = GFX_goal_KNT_traditional_leap_forward
+		id = KNT_heroes_of_albion
+		icon = GFX_goal_KNT_heroes_of_albion
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_shut_the_devil_servants_up
-		}
-		mutually_exclusive = {
-			focus = KNT_barbarism_vs_civilization
 		}
 		x = 57
 		y = 12
 	}
 	shared_focus = {
-		id = KNT_into_to_the_woods
-		icon = GFX_goal_KNT_into_to_the_woods
+		id = KNT_engineers_of_blood_faith_and_race
+		icon = GFX_goal_KNT_engineers_of_blood_faith_and_race
 		cost = 4.3
 		prerequisite = {
+			focus = KNT_heroes_of_albion
+		}
+		prerequisite = {
 			focus = KNT_barbarism_vs_civilization
-			focus = KNT_traditional_leap_forward
 		}
 		x = 56
 		y = 13
@@ -1626,9 +1632,9 @@ shared_focus = {
 		icon = GFX_goal_KNT_it's_treason_then
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_into_to_the_woods
-			focus = KNT_coordinated_strikes
-			focus = KNT_the_mole
+			focus = KNT_engineers_of_blood_faith_and_race
+			focus = KNT_buy_them
+			focus = KNT_expose_the_gangs
 		}
 		x = 52
 		y = 14
