@@ -1395,7 +1395,7 @@ shared_focus = {
 		x = 45
 		y = 9
 	}
-	shared_focus = {
+shared_focus = {
 		id = KNT_an_unwilling_alliance
 		icon = GFX_goal_KNT_an_unwilling_alliance
 		cost = 4.3
@@ -1469,6 +1469,9 @@ shared_focus = {
 		id = KNT_coordinated_strikes
 		icon = GFX_goal_KNT_coordinated_strikes
 		cost = 4.3
+		prerequisite = {
+			focus = KNT_the_angry_brigade
+		}
 		prerequisite = {
 			focus = KNT_buy_them
 			focus = KNT_london_referendum
