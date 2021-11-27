@@ -1815,44 +1815,7 @@ KNT_thermonuclear_reactor = {
 			set_global_flag = kent_iter_project_done_or_closed
 		}
 	}
-	
-	KNT_naebat_goyev = {
-		fire_only_once = yes
-		cost = 25
-		days_remove = 1
-		remove_effect = {
-			set_global_flag = kent_iter_project_done_or_closed
-		}
-		KNT = {
-				country_event = {
-					days = 1
-					id = KNT_event.26
-					}
-			}
-	}
 }
 
-KNT_iter_project_cover_up = {
-	KNT_cover_up_funds = {
-		allowed = { tag = KNT }
-		activation = {
-			has_global_flag = kent_iter_cover_up
-		}
-		days_mission_timeout = 35
-		is_good = no
-		timeout_effect = {
-			country_event = {
-				days = 1
-				id = KNT_event.27
-			}
-		}
-		complete_effect = {
-			country_event = {
-				days = 5
-				id = KNT_event.28
-			}
-		}
-	}	
-}
 
 	
