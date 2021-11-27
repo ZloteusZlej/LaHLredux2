@@ -46,8 +46,22 @@ KNT_thermonuclear_reactor = {
 icon = GFX_
 	visible = {
 		KNT = {
-	    has_variable = kent_thermonuclear_plant_completion
+			AND = {
+				has_variable = kent_thermonuclear_plant_completion
+				NOT = {
+					has_global_flag = kent_iter_project_done_or_closed
+				}
+			}
 		}
+	}
+	visible_when_empty = yes
+	allowed = { original_tag = KNT }
+}
+
+KNT_iter_project_cover_up = {
+icon = GFX_
+	visible = {
+		has_global_flag = kent_iter_cover_up
 	}
 	visible_when_empty = yes
 	allowed = { original_tag = KNT }
