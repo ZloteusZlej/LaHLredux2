@@ -37,6 +37,7 @@ replace_path="common/difficulty_settings"
 replace_path="common/ideologies"
 # replace_path="common/technologies"
 replace_path="gfx/loadingscreens"
+replace_path="gfx/interface/equipmentdesigner/tanks"
 tags={
 	"Map"
 }
