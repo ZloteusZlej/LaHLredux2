@@ -1,43 +1,41 @@
 technologies = {
 	
 	motorised_infantry = {
-
+	
 		enable_subunits = {
 			motorized
 		}
-
+	
 		enable_equipments = {
 			motorized_equipment_1
 		}
-
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = motorized
-				}
+		start_year = 2020
+		
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = motorized
 			}
+		}
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_motorized"
 			}			
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 		
+		research_cost = 2
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 0 }
+		}
 		path = {
 			leads_to_tech = outdated_armoured_personnel_carrier
 			research_cost_coeff = 1
 		}
-		
 		path = {
 			leads_to_tech = outdated_infantry_fighting_vehicle
 			research_cost_coeff = 1
-		}
-
-		research_cost = 2
-		start_year = 1936
-				
-		folder = {
-			name = armour_folder
-			position = { x = 0 y = 0 }
 		}
 		
 		categories = {
@@ -46,9 +44,10 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
+
 
     obsolete_main_battle_tank = { 
 
