@@ -422,10 +422,6 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
 			
 			removal_cost = -1
 
@@ -441,10 +437,6 @@ ideas = {
 			
 			allowed = {
 				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
 			}
 			
 			removal_cost = -1
@@ -463,13 +455,6 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
-			allowed_civil_war = {
-				OR = {
-					has_government = communism
-					has_government = fascism
-				}
-			}
 			
 			removal_cost = -1
 
@@ -486,13 +471,6 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
-			allowed_civil_war = {
-				OR = {
-					has_government = communism
-					has_government = fascism
-				}
-			}
 			
 			removal_cost = -1
 
@@ -508,13 +486,6 @@ ideas = {
 			
 			allowed = {
 				always = no
-			}
-
-			allowed_civil_war = {
-				OR = {
-					has_government = communism
-					has_government = fascism
-				}
 			}
 			
 			removal_cost = -1
@@ -558,10 +529,6 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
 			
 			removal_cost = -1
 
@@ -577,10 +544,6 @@ ideas = {
 			
 			allowed = {
 				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
 			}
 
 			cancel = {
@@ -1560,7 +1523,7 @@ ideas = {
 		}
 	}
 
-	political_advisor = {
+	#political_advisor = {
 
 		generic_captain_of_industry = {
 
@@ -1597,9 +1560,9 @@ ideas = {
 			
 			traits = { war_industrialist }
 		}
-	}
+	#}
 
-	army_chief = {
+	#army_chief = {
 		
 		generic_army_chief_off = {
 			
@@ -1624,9 +1587,9 @@ ideas = {
 			
 			traits = { army_chief_defensive_1 }
 		}
-	}
+	#}
 
-	navy_chief = {		
+	#navy_chief = {		
 
 		generic_navy_chief_decisive_bat = {
 			
@@ -1651,9 +1614,9 @@ ideas = {
 			
 			traits = { navy_anti_submarine_2 }
 		}
-	}
+	#}
 
-	air_chief = {
+	#air_chief = {
 
 		generic_air_close_air_sup = {
 			
@@ -1678,9 +1641,9 @@ ideas = {
 			
 			traits = { air_chief_all_weather_2 }			
 		}
-	}
+	#}
 
-	high_command = {
+	#high_command = {
 
 		generic_army_art = {
 			
@@ -1729,9 +1692,9 @@ ideas = {
 			
 			traits = { air_air_combat_training_2 }			
 		}
-	}
+	#}
 
-	theorist = {
+	#theorist = {
 
 		generic_military_theorist = {
 			
@@ -1781,6 +1744,6 @@ ideas = {
 			traits = { air_warfare_theorist }
 		}
 
-	}
+	#}
 
 }
