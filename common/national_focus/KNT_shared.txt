@@ -545,10 +545,11 @@
 		prerequisite = {
 			focus = KNT_new_era_of_railways
 		}
-		
-		KNT = {
+		completion_reward = {
+			KNT = {
 			add_ideas = KNT_green_energy_subsidies
-		}
+			}
+		}	
 		x = 16
 		y = 10
 	}
@@ -602,6 +603,26 @@
 		prerequisite = {
 			focus = KNT_the_iter_project
 		}
+		completion_reward = {
+			modifier = {
+				industrial_capacity_dockyard = 0.3 
+			}
+			1001 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes 
+				}
+			}
+			KNT = {
+				create_ship = {
+					type = ship_hull_cruiser_2
+					equipment_variant = "Business Class"
+					creator = KNT
+					name = "Titanic II"
+				}
+			}
+		}
 		x = 18
 		y = 13
 	}
@@ -611,6 +632,13 @@
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_the_workshop_of_the_world
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = closed_economy
+				add_idea = free_trade
+			}
+			add_ideas = KNT_neovictorians_economic_plan 
 		}
 		x = 13
 		y = 8
@@ -622,6 +650,10 @@
 		prerequisite = {
 			focus = KNT_manchester_model
 		}
+		completion_reward = {
+			add_ideas = KNT_protection_of_patents
+			add_political_power = 50
+		}
 		x = 13
 		y = 9
 	}
@@ -631,6 +663,13 @@
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_manchester_model
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KNT_neovictorians_economic_plan
+				add_idea = KNT_neovictorians_economic_plan_2
+			}
+			add_research_slot = 1
 		}
 		x = 11
 		y = 9
@@ -645,6 +684,14 @@
 		prerequisite = {
 			focus = KNT_russel_group_competition
 		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.29
+				}
+			}
+		}
 		x = 13
 		y = 10
 	}
@@ -656,8 +703,26 @@
 			focus = KNT_role_of_the_unions
 		}
 		mutually_exclusive = {
-	    focus = KNT_the_law
-	}
+			focus = KNT_the_law
+		}
+		completion_reward = {
+			add_ideas = KNT_antimonopoly_taxation
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 		x = 12
 		y = 11
 	}
@@ -669,8 +734,23 @@
 			focus = KNT_role_of_the_unions
 		}
 		mutually_exclusive = {
-	    focus = KNT_the_limit
-	}
+			focus = KNT_the_limit
+		}
+		completion_reward = {
+			add_ideas = KNT_antimonopoly_taxation
+			random_owned_state = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_state = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
 		x = 14
 		y = 11
 	}
@@ -682,6 +762,26 @@
 			focus = KNT_the_limit
 			focus = KNT_the_law
 		}
+		completion_reward = {
+			KNT = {
+				if = {
+					limit = {
+						has_idea = KNT_neovictorians_economic_plan_3a 
+					}
+					swap_ideas = {
+						remove_idea = KNT_neovictorians_economic_plan_3a
+						add_idea = KNT_neovictorians_economic_plan_4a
+					}
+				}
+				else = {
+					swap_ideas = {
+						remove_idea = KNT_neovictorians_economic_plan_3b
+						add_idea = KNT_neovictorians_economic_plan_4b
+					}
+				}
+			}
+			add_stability = -0.05
+		}
 		x = 13
 		y = 12
 	}
@@ -691,6 +791,26 @@
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_rational_egoism
+		}
+		completion_reward = {
+			KNT = {
+				if = {
+					limit = {
+						has_idea = KNT_neovictorians_economic_plan_4a 
+					}
+					swap_ideas = {
+						remove_idea = KNT_neovictorians_economic_plan_4a
+						add_idea = KNT_neovictorians_economic_plan_5a
+					}
+				}
+				else = {
+					swap_ideas = {
+						remove_idea = KNT_neovictorians_economic_plan_4b
+						add_idea = KNT_neovictorians_economic_plan_5b
+					}
+				}
+			}
+			add_stability = 0.07
 		}
 		x = 13
 		y = 13
@@ -702,6 +822,22 @@
 		prerequisite = {
 			focus = KNT_friendly_society
 		}
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 		x = 12
 		y = 15
 	}
@@ -711,6 +847,23 @@
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_friendly_society
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
 		}
 		x = 14
 		y = 15
@@ -723,8 +876,15 @@
 			focus = KNT_the_workshop_of_the_world
 		}
 		mutually_exclusive = {
-	    focus = KNT_manchester_model
-	}
+			focus = KNT_manchester_model
+		}
+		completion_reward = {
+			add_ideas = KNT_hightories_economic_plan
+			swap_ideas = {
+				remove_idea = closed_economy
+				add_idea = export_focus
+			}
+		}
 		x = 21
 		y = 8
 	}
@@ -735,6 +895,14 @@
 		prerequisite = {
 			focus = KNT_the_gospel_of_wealth
 		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.30
+				}
+			}
+		}
 		x = 21
 		y = 9
 	}
@@ -744,6 +912,15 @@
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_the_gospel_of_wealth
+		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.31
+				}
+			}
+			add_research_slot = 1
 		}
 		x = 23
 		y = 9
@@ -758,6 +935,15 @@
 		prerequisite = {
 			focus = KNT_new_place_new_opportunity
 		}
+		completion_reward = {
+			all_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			swap_ideas = {
+				remove_idea = KNT_hightories_economic_plan
+				add_idea = KNT_hightories_economic_plan_2
+			}
+		}
 		x = 21
 		y = 10
 	}
@@ -769,7 +955,13 @@
 			focus = KNT_rebirth_of_gentries
 		}
 		mutually_exclusive = {
-	    focus = KNT_everything_within_britain
+			focus = KNT_everything_within_britain
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KNT_hightories_economic_plan_2
+				add_idea = KNT_hightories_economic_plan_3a
+			}
 		}
 		x = 22
 		y = 11
@@ -784,6 +976,12 @@
 		mutually_exclusive = {
 	    focus = KNT_mercantilism_of_our_century
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KNT_hightories_economic_plan_2
+				add_idea = KNT_hightories_economic_plan_3b
+			}
+		}
 		x = 20
 		y = 11
 	}
@@ -795,6 +993,40 @@
 			focus = KNT_everything_within_britain
 			focus = KNT_mercantilism_of_our_century
 		}
+		completion_reward = {
+			KNT = {
+				if = {
+					limit = {
+						has_idea =  KNT_hightories_economic_plan_3a
+					}
+					swap_ideas = {
+						remove_idea = KNT_hightories_economic_plan_3a
+						add_idea = KNT_hightories_economic_plan_4a
+					}
+				}
+				else = {
+					swap_ideas = {
+						remove_idea =  KNT_hightories_economic_plan_3b
+						add_idea = KNT_hightories_economic_plan_4b
+					}
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.1
+		}
 		x = 21
 		y = 12
 	}
@@ -804,6 +1036,39 @@
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_support_of_local_communities
+		}
+		completion_reward = {
+			KNT = {
+				if = {
+					limit = {
+						has_idea =  KNT_hightories_economic_plan_4a
+					}
+					swap_ideas = {
+						remove_idea = KNT_hightories_economic_plan_4a
+						add_idea = KNT_hightories_economic_plan_5a
+					}
+				}
+				else = {
+					swap_ideas = {
+						remove_idea =  KNT_hightories_economic_plan_4b
+						add_idea = KNT_hightories_economic_plan_5b
+					}
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		x = 21
 		y = 13
@@ -815,6 +1080,22 @@
 		prerequisite = {
 			focus = KNT_noblesse_oblige
 		}
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 		x = 20
 		y = 15
 	}
@@ -824,6 +1105,22 @@
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_noblesse_oblige
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		x = 22
 		y = 15
@@ -1360,8 +1657,8 @@ shared_focus = {
 		y = 7
 	}
 	shared_focus = {
-		id = KNT_orange_resistance
-		icon = GFX_goal_KNT_orange_resistance
+		id = KNT_lilliburlero
+		icon = GFX_goal_KNT_lilliburlero
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_para_bellum
@@ -1370,53 +1667,32 @@ shared_focus = {
 		y = 8
 	}
 	shared_focus = {
-		id = KNT_loyalist_agency
-		icon = GFX_goal_KNT_loyalist_agency
+		id = KNT_the_new_good_friday
+		icon = GFX_goal_KNT_the_new_good_friday
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_orange_resistance
-		}
-		x = 44
-		y = 9
-	}
-	shared_focus = {
-		id = KNT_the_status_of_the_order
-		icon = GFX_goal_KNT_the_status_of_the_order
-		cost = 4.3
-		prerequisite = {
-			focus = KNT_loyalist_agency
+			focus = KNT_lilliburlero
 		}
 		mutually_exclusive = {
-	            focus = KNT_ulster_the_way_home
+	        focus = KNT_ulster_the_way_home
 		}
 		x = 43
-		y = 10
+		y = 9
 	}
 	shared_focus = {
 		id = KNT_ulster_the_way_home
 		icon = GFX_goal_KNT_ulster_the_way_home
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_loyalist_agency
+			focus = KNT_lilliburlero
 		}
 		mutually_exclusive = {
-	    focus = KNT_the_status_of_the_order
+			focus = KNT_the_new_good_friday
 		}
 		x = 45
-		y = 10
+		y = 9
 	}
 	shared_focus = {
-		id = KNT_lilliburlero
-		icon = GFX_goal_KNT_lilliburlero
-		cost = 4.3
-		prerequisite = {
-			focus = KNT_ulster_the_way_home
-			focus = KNT_the_status_of_the_order
-		}
-		x = 44
-		y = 11
-	}
-shared_focus = {
 		id = KNT_an_unwilling_alliance
 		icon = GFX_goal_KNT_an_unwilling_alliance
 		cost = 4.3
@@ -1441,8 +1717,8 @@ shared_focus = {
 		y = 9
 	}
 	shared_focus = {
-		id = KNT_our_legitimacy
-		icon = GFX_goal_KNT_our_legitimacy
+		id = KNT_white_youth
+		icon = GFX_goal_KNT_white_youth
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_our_germanic_brothers
@@ -1451,33 +1727,26 @@ shared_focus = {
 		y = 10
 	}
 	shared_focus = {
-		id = KNT_money_fixes_all
-		icon = GFX_goal_KNT_money_fixes_all
+		id = KNT_pimp_my_panzer
+		icon = GFX_goal_KNT_pimp_my_panzer
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_our_legitimacy
+			focus = KNT_white_youth
 		}
 		x = 52
 		y = 11
 	}
 	shared_focus = {
-		id = KNT_coordinated_strikes
-		icon = GFX_goal_KNT_coordinated_strikes
+		id = KNT_london_referendum
+		icon = GFX_goal_KNT_london_referendum
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_money_fixes_all
+			focus = KNT_pimp_my_panzer
+		}
+		mutually_exclusive = {
+			focus = KNT_buy_them
 		}
 		x = 51
-		y = 12
-	}
-	shared_focus = {
-		id = KNT_the_angry_brigade
-		icon = GFX_goal_KNT_the_angry_brigade
-		cost = 4.3
-		prerequisite = {
-			focus = KNT_money_fixes_all
-		}
-		x = 53
 		y = 12
 	}
 	shared_focus = {
@@ -1485,10 +1754,21 @@ shared_focus = {
 		icon = GFX_goal_KNT_buy_them
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_the_angry_brigade
+			focus = KNT_pimp_my_panzer
 		}
+		mutually_exclusive = {
+			focus = KNT_london_referendum
+		}
+		x = 53
+		y = 12
+	}
+	shared_focus = {
+		id = KNT_coordinated_strikes
+		icon = GFX_goal_KNT_coordinated_strikes
+		cost = 4.3
 		prerequisite = {
-			focus = KNT_coordinated_strikes
+			focus = KNT_buy_them
+			focus = KNT_london_referendum
 		}
 		x = 52
 		y = 13
@@ -1528,34 +1808,38 @@ shared_focus = {
 		y = 11
 	}
 	shared_focus = {
-		id = KNT_cambridge_boys
-		icon = GFX_goal_KNT_cambridge_boys
+		id = KNT_expose_the_gangs
+		icon = GFX_goal_KNT_expose_the_gangs
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_exchange_of_technologies
+		}
+		mutually_exclusive = {
+			focus = KNT_the_network_gate
 		}
 		x = 47
 		y = 12
 	}
 	shared_focus = {
-		id = KNT_policing_the_unpoliceable
-		icon = GFX_goal_KNT_policing_the_unpoliceable
+		id = KNT_the_network_gate
+		icon = GFX_goal_KNT_the_network_gate
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_exchange_of_technologies
+		}
+		mutually_exclusive = {
+			focus = KNT_expose_the_gangs
 		}
 		x = 49
 		y = 12
 	}
 	shared_focus = {
-		id = KNT_expose_the_gangs
-		icon = GFX_goal_KNT_expose_the_gangs
+		id = KNT_the_mole
+		icon = GFX_goal_KNT_the_mole
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_cambridge_boys
-		}
-		prerequisite = {
-			focus = KNT_policing_the_unpoliceable
+			focus = KNT_expose_the_gangs
+			focus = KNT_the_network_gate
 		}
 		x = 48
 		y = 13
@@ -1601,27 +1885,31 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_shut_the_devil_servants_up
 		}
+		mutually_exclusive = {
+			focus = KNT_traditional_leap_forward
+		}
 		x = 55
 		y = 12
 	}
 	shared_focus = {
-		id = KNT_heroes_of_albion
-		icon = GFX_goal_KNT_heroes_of_albion
+		id = KNT_traditional_leap_forward
+		icon = GFX_goal_KNT_traditional_leap_forward
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_shut_the_devil_servants_up
+		}
+		mutually_exclusive = {
+			focus = KNT_barbarism_vs_civilization
 		}
 		x = 57
 		y = 12
 	}
 	shared_focus = {
-		id = KNT_engineers_of_blood_faith_and_race
-		icon = GFX_goal_KNT_engineers_of_blood_faith_and_race
+		id = KNT_into_the_woods
+		icon = GFX_goal_KNT_into_the_woods
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_heroes_of_albion
-		}
-		prerequisite = {
+			focus = KNT_traditional_leap_forward
 			focus = KNT_barbarism_vs_civilization
 		}
 		x = 56
@@ -1632,9 +1920,9 @@ shared_focus = {
 		icon = GFX_goal_KNT_it's_treason_then
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_engineers_of_blood_faith_and_race
-			focus = KNT_buy_them
-			focus = KNT_expose_the_gangs
+			focus = KNT_into_the_woods
+			focus = KNT_the_mole
+			focus = KNT_coordinated_strikes
 		}
 		x = 52
 		y = 14
@@ -1674,34 +1962,24 @@ shared_focus = {
 		y = 16
 	}
 	shared_focus = {
-		id = KNT_london_recovery
-		icon = GFX_goal_KNT_london_recovery
+		id = KNT_the_law_of_the_state
+		icon = GFX_goal_KNT_the_law_of_the_state
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_there_always_be_an_england
 		}
-		x = 26
+		x = 25
 		y = 17
 	}
 	shared_focus = {
-		id = KNT_dumping_strategy
-		icon = GFX_goal_KNT_dumping_strategy
+		id = KNT_reforging_britain
+		icon = GFX_goal_KNT_reforging_britain
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_there_always_be_an_england
+			focus = KNT_the_law_of_the_state
 		}
-		x = 24
-		y = 17
-	}
-	shared_focus = {
-		id = KNT_fixing_thatcher's_mess
-		icon = GFX_goal_KNT_fixing_thatcher's_mess
-		cost = 4.3
-		prerequisite = {
-			focus = KNT_there_always_be_an_england
-		}
-		x = 28
-		y = 17
+		x = 25
+		y = 18
 	}
 	shared_focus = {
 		id = KNT_peace_through_the_faith
@@ -1710,61 +1988,84 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_there_always_be_an_england
 		}
-		x = 30
+		x = 27
 		y = 17
 	}
 	shared_focus = {
-		id = KNT_praise_the_victory
-		icon = GFX_goal_KNT_praise_the_victory
+		id = KNT_thatcher's_mistakes
+		icon = GFX_goal_KNT_thatcher's_mistakes
 		cost = 4.3
-		prerequisite = {
-			focus = KNT_london_recovery
-		}
-		prerequisite = {
-			focus = KNT_dumping_strategy
-		}
-		prerequisite = {
-			focus = KNT_fixing_thatcher's_mess
-		}
 		prerequisite = {
 			focus = KNT_peace_through_the_faith
 		}
-		x = 26
+		x = 27
 		y = 18
 	}
 	shared_focus = {
-		id = KNT_there's_none_that_can_compare
-		icon = GFX_goal_KNT_there's_none_that_can_compare
+		id = KNT_reconstruction_effort
+		icon = GFX_goal_KNT_reconstruction_effort
+		cost = 4.3
+		prerequisite = {
+			focus = KNT_there_always_be_an_england
+		}
+		x = 29
+		y = 17
+	}
+	shared_focus = {
+		id = KNT_london_recovery
+		icon = GFX_goal_KNT_london_recovery
+		cost = 4.3
+		prerequisite = {
+			focus = KNT_reconstruction_effort
+		}
+		x = 29
+		y = 18
+	}
+	shared_focus = {
+		id = KNT_dumping_strategy
+		icon = GFX_goal_KNT_dumping_strategy
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_london_recovery
 		}
 		prerequisite = {
-			focus = KNT_dumping_strategy
+			focus = KNT_thatcher's_mistakes
 		}
 		prerequisite = {
-			focus = KNT_fixing_thatcher's_mess
-		}
-		prerequisite = {
-			focus = KNT_peace_through_the_faith
+			focus = KNT_reforging_britain
 		}
 		x = 28
-		y = 18
+		y = 19
+	}
+	shared_focus = {
+		id = KNT_the_great_exhibition
+		icon = GFX_goal_KNT_the_great_exhibition
+		cost = 4.3
+		prerequisite = {
+			focus = KNT_london_recovery
+		}
+		prerequisite = {
+			focus = KNT_thatcher's_mistakes
+		}
+		prerequisite = {
+			focus = KNT_reforging_britain
+		}
+		x = 26
+		y = 19
 	}
 	shared_focus = {
 		id = KNT_all_hail_britania
 		icon = GFX_goal_KNT_all_hail_britania
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_praise_the_victory
+			focus = KNT_dumping_strategy
 		}
 		prerequisite = {
-			focus = KNT_there's_none_that_can_compare
-		}
+			focus = KNT_the_great_exhibition
+		}	
 		x = 27
-		y = 19
+		y = 20	
 	}
-	
 	
 	
 

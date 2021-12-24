@@ -1486,12 +1486,12 @@ KNT_special_projects = {
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_greener_energy
+			has_completed_focus	= KNT_the_modern_prometheus
 			}
 		}
 		visible = {
 				KNT = {
-				has_completed_focus	= KNT_greener_energy
+				has_completed_focus	= KNT_the_modern_prometheus
 			}
 		}
 		complete_effect = {
@@ -1512,6 +1512,71 @@ KNT_special_projects = {
 		}	
 	}
 	
+	KNT_supersoldier_rations_introduction = {
+	days_remove = 50
+	visible = {
+			NOT = { has_global_flag = KNT_supersoldier_rations_introduced}
+		}
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_the_modern_prometheus
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_the_modern_prometheus
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.13
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					stem_cell = 1
+					}
+			}
+			set_global_flag = KNT_supersoldier_rations_introduced
+		}	
+	}
+	
+	KNT_stem_cell_introduction = {
+	days_remove = 50
+	visible = {
+			NOT = { has_global_flag = KNT_stem_cell_introduced}
+		}
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_the_modern_prometheus
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_the_modern_prometheus
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.13
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					stem_cell = 1
+					}
+			}
+			set_global_flag = KNT_stem_cell_introduced
+		}	
+	}
 }
 
 KNT_thermonuclear_reactor = {

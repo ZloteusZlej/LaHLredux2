@@ -595,3 +595,149 @@ country_event = {
 		add_offsite_building = { type = industrial_complex level = 2 }
     }
 }
+
+country_event = {
+	id = KNT_event.26
+	title = KNT_event.26.t
+	desc = KNT_event.26.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.26.a
+		add_political_power = -75
+    }
+	
+	option = {
+		name = KNT_event.26.b
+		add_timed_idea = { idea = KNT_recent_public_investments_small_crowdfunding days = 15 }
+    }
+}
+
+country_event = {
+	id = KNT_event.27
+	title = KNT_event.27.t
+	desc = KNT_event.27.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.27.a
+    }
+	option = {
+		name = KNT_event.27.b
+		add_political_power = -30
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.28
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.28
+	title = KNT_event.28.t
+	desc = KNT_event.28.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.28.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = millenarism
+			popularity = 0.02
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.29
+	title = KNT_event.29.t
+	desc = KNT_event.29.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.29.a
+		add_stability = -0.15
+		add_popularity = {
+			ideology = neocameralism
+			popularity = -0.1
+		}
+		swap_ideas = {
+			remove_idea = KNT_neovictorians_economic_plan_2
+			add_idea = KNT_neovictorians_economic_plan_3a
+		}
+    }
+		option = {
+		name = KNT_event.29.b
+		add_political_power = -20
+			swap_ideas = {
+			remove_idea = KNT_neovictorians_economic_plan_2
+			add_idea = KNT_neovictorians_economic_plan_3b
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.30
+	title = KNT_event.30.t
+	desc = KNT_event.30.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.30.a
+		add_political_power = -20
+		add_ideas = KNT_rewarded_scientists
+    }
+	option = {
+		name = KNT_event.30.b
+		add_political_power = -35
+		add_ideas = KNT_privileged_scientists 
+    }
+}
+
+country_event = {
+	id = KNT_event.31
+	title = KNT_event.31.t
+	desc = KNT_event.31.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.31.a
+		add_tech_bonus = {
+			bonus = 0.33
+			uses = 4
+			category = industry
+		}
+    }
+	option = {
+		name = KNT_event.31.b
+		add_tech_bonus = {
+			bonus = 0.33
+			uses = 4
+			category = electronics
+		}
+    }
+	option = {
+		name = KNT_event.31.c
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = armor
+		}
+    }
+	option = {
+		name = KNT_event.31.e
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = heavy_air
+		}
+    }
+}
