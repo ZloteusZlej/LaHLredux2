@@ -741,3 +741,132 @@ country_event = {
 		}
     }
 }
+
+country_event = {
+	id = KNT_event.32
+	title = KNT_event.32.t
+	desc = KNT_event.32.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.32.a
+    }
+}
+
+country_event = {
+	id = KNT_event.33
+	title = KNT_event.33.t
+	desc = KNT_event.33.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.33.a
+		add_political_power = -35
+		add_ideas = KNT_infrasound_guns 
+    }
+	option = {
+		name = KNT_event.33.b
+		add_political_power = -35
+		add_ideas = KNT_radium_bullets
+    }
+	option = {
+		name = KNT_event.33.c
+		add_political_power = -35
+		add_ideas = KNT_plasma_guns
+    }
+	
+	option = {
+		name = KNT_event.33.e
+		add_political_power = -35
+		add_ideas = KNT_sticky_bomb_launcher
+	}
+}
+
+country_event = {
+	id = KNT_event.34
+	title = KNT_event.34.t
+	desc = KNT_event.34.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.34.a
+		army_experience = -10
+		add_ideas = KNT_pyro_brigades
+    }
+	option = {
+		name = KNT_event.34.b
+		army_experience = -10
+		add_ideas = KNT_jagers
+    }
+	option = {
+		name = KNT_event.34.c
+		army_experience = -10
+		add_ideas = KNT_capsule_fighters
+    }
+}
+
+country_event = {
+	id = KNT_event.35
+	title = KNT_event.35.t
+	desc = KNT_event.35.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.35.a
+		army_experience = -5
+		add_political_power = -15
+		add_ideas = KNT_armor_sollution_1
+    }
+	option = {
+		name = KNT_event.35.b
+		army_experience = -5
+		add_political_power = -15
+		add_ideas = KNT_armor_sollution_2
+    }
+	option = {
+		name = KNT_event.35.c
+		army_experience = -5
+		add_political_power = -15
+		add_ideas = KNT_armor_sollution_3
+    }
+}
+
+country_event = {
+	id = KNT_event.36
+	title = KNT_event.36.t
+	desc = KNT_event.36.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.36.c
+		army_experience = -5
+		add_political_power = -20
+		add_ideas = KNT_armored_powerboat
+		KNT = {
+			country_event = {
+			days = 6
+			id = KNT_event.37
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.37
+	title = KNT_event.37.t
+	desc = KNT_event.37.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.36.c
+		army_experience = -5
+		add_political_power = -20
+		add_ideas = KNT_trench_digging_machine
+    }
+}

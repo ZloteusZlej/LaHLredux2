@@ -1449,7 +1449,7 @@ KNT_special_projects = {
 	KNT_wireless_electricity = {
 	days_remove = 200
 	visible = {
-			NOT = { has_global_flag = KNT_wireless_electricity_introduced}
+			NOT = { has_global_flag = KNT_wireless_electricity_introduced }
 		}
 		available = {
 			KNT = {
@@ -1515,7 +1515,7 @@ KNT_special_projects = {
 	KNT_supersoldier_rations_introduction = {
 	days_remove = 50
 	visible = {
-			NOT = { has_global_flag = KNT_supersoldier_rations_introduced}
+			NOT = { has_global_flag = KNT_supersoldier_rations_introduced }
 		}
 		available = {
 			KNT = {
@@ -1531,7 +1531,7 @@ KNT_special_projects = {
 			KNT = {
 				country_event = {
 				days = 1
-				id = KNT_event.13
+				id = KNT_event.12
 				}
 			}
 		}
@@ -1548,7 +1548,7 @@ KNT_special_projects = {
 	KNT_stem_cell_introduction = {
 	days_remove = 50
 	visible = {
-			NOT = { has_global_flag = KNT_stem_cell_introduced}
+			NOT = { has_global_flag = KNT_stem_cell_introduced }
 		}
 		available = {
 			KNT = {
@@ -1564,7 +1564,7 @@ KNT_special_projects = {
 			KNT = {
 				country_event = {
 				days = 1
-				id = KNT_event.13
+				id = KNT_event.12
 				}
 			}
 		}
@@ -1575,6 +1575,276 @@ KNT_special_projects = {
 					}
 			}
 			set_global_flag = KNT_stem_cell_introduced
+		}	
+	}
+	
+	KNT_airgun_introduction = {
+	days_remove = 35
+	visible = {
+			NOT = { has_global_flag = KNT_airgun_introduced }
+		}
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_future_of_the_pneumatic_weaponry
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_future_of_the_pneumatic_weaponry
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.26
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					airgun = 1
+					}
+			}
+			set_global_flag = KNT_airgun_introduced
+		}	
+	}
+	
+	KNT_railgun_introduction = {
+	days_remove = 100
+	visible = {
+			NOT = { has_global_flag = KNT_railgun_introduced }
+		}
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_future_of_the_pneumatic_weaponry
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_future_of_the_pneumatic_weaponry
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.12
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					railgun = 1
+					}
+			}
+			set_global_flag = KNT_railgun_introduced
+		}	
+	}
+	
+	KNT_evangelion_introduction = {
+	days_remove = 200
+	visible = {
+			NOT = { has_global_flag = KNT_evangelion_introduced }
+		}
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_the_gulliver
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_the_gulliver
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.13
+				}
+			}
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.32
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					evangelion = 1
+					}
+			}
+			set_global_flag = KNT_evangelion_introduced
+		}	
+	}
+	
+	KNT_unmanned_tank_introduction = {
+	days_remove = 125
+	visible = {
+			NOT = { has_global_flag = KNT_unmanned_tank_introduced }
+		}
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_the_gulliver
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_the_gulliver
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.12
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					unmanned_tank = 1
+					}
+			}
+			set_global_flag = KNT_unmanned_tank_introduced
+		}	
+	}
+	
+	KNT_landing_tank_introduction = {
+	days_remove = 125
+	visible = {
+			NOT = { has_global_flag = KNT_landing_tank_introduced }
+		}
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_the_gulliver
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_the_gulliver
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.12
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					landing_tank = 1
+					}
+			}
+			set_global_flag = KNT_landing_tank_introduced
+		}	
+	}
+	
+	KNT_transport_airship_introduction = {
+	days_remove = 175
+	visible = {
+			NOT = { has_global_flag = KNT_transport_airship_introduced }
+		}
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_airships'_renaissance
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_airships'_renaissance
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.13
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					transport_airship = 1
+					}
+			}
+			set_global_flag = KNT_transport_airship_introduced
+		}	
+	}
+	
+	KNT_power_armor_weapon_introduction = {
+	days_remove = 75
+	visible = {
+			NOT = { has_global_flag = KNT_power_armor_weapon_introduced }
+		}
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_experimental_forces
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_experimental_forces
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.13
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					power_armor_weapon = 1
+					}
+			}
+			set_global_flag = KNT_power_armor_weapon_introduced
+		}	
+	}
+	
+	KNT_exosuit_brigade_introduction = {
+	days_remove = 125
+	visible = {
+			NOT = { has_global_flag = KNT_exosuit_brigade_introduced }
+		}
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_experimental_forces
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_experimental_forces
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.12
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					exosuit_brigade = 1
+					}
+			}
+			set_global_flag = KNT_exosuit_brigade_introduced
 		}	
 	}
 }
@@ -1640,7 +1910,7 @@ KNT_thermonuclear_reactor = {
 		}
 	}
 	
-	KNT_hire_old_workers = {
+	KNT_hire_workers = {
 		visible = {
 			has_global_flag = KNT_main_engineers_harbored
 		}
