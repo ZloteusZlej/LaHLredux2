@@ -17,6 +17,8 @@ ideas = {
 			political_power_factor = 0.05
 			}
 		}
+		
+		
 		#RUSSIA#
     	RUS_russian_civl_war_disaster = {
 			
@@ -34,6 +36,25 @@ ideas = {
 				production_speed_dockyard_factor = -0.5			
 				production_factory_max_efficiency_factor = -0.3
 
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		sabotage_from_kent = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				attrition = 0.2
+				army_morale_factor = -0.2
+				army_org = -0.1
+				army_org_regain = -0.3
 			}
 		}
 	}

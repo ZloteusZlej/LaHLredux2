@@ -2140,4 +2140,99 @@ KNT_thermonuclear_reactor = {
 			}
 		}
 	}
+}
+
+KNT_sabotages = {
+    KNT_thermal_imaging_scouting = {
+		cost = 10
+		available = {
+        command_power > 15
+        }
+		days_remove = 20
+		days_re_enable = 55
+		modifier = {
+			recon_factor = 0.3
+			terrain_penalty_reduction = 0.2
+		}
+        complete_effect = {
+            add_command_power = -15
+		}
+	}
+	
+	KNT_supplies_liquidation = {
+		cost = 10
+		available = {
+        command_power > 50
+        }
+		target_trigger = {
+			FROM = {
+				has_war_with = ROOT
+			}
+		}
+		days_remove = 20
+		days_re_enable = 75
+        complete_effect = {
+            add_command_power = -50
+			add_manpower = -250
+			FROM = {
+				add_timed_idea = {
+				idea = sabotage_from_kent
+				days = 20
+				}
+			}
+		}
+	}
+	
+	KNT_equipment_straling = {
+		cost = 10
+		available = {
+        command_power > 50
+        }
+		target_trigger = {
+			FROM = {
+				has_war_with = ROOT
+			}
+		}
+		days_remove = 20
+		days_re_enable = 75
+        complete_effect = {
+            add_command_power = -50
+			add_manpower = -500
+			FROM = {
+					add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -750
+					producer = FROM
+					}
+					add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -200
+					producer = FROM
+					}
+					add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = -500
+					producer = FROM
+				}
+			}
+			
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 750
+					producer = FROM
+					}
+					add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 200
+					producer = FROM
+					}
+					add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 500
+					producer = FROM
+				}
+			}
+		}
+	}
 }	
