@@ -63,3 +63,16 @@ picture = GFX_decision_KNT_cultural_decisions
 	visible_when_empty = yes
 	allowed = { original_tag = KNT }
 }
+KNT_sabotages = {
+	icon = GFX_
+	visible_when_empty = yes
+	visible = {
+		KNT = {
+			AND = {
+				has_completed_focus = KNT_sabotage_experience 
+				has_war	= yes
+			}
+		}
+	}
+	allowed = { original_tag = KNT }
+}

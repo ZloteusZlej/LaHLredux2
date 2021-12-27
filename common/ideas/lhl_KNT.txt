@@ -1493,36 +1493,384 @@ ideas = {
 	}
 	country = {
 		KNT_student_riots = {
-	
 			picture = 
 			
 			allowed = {
 				always = no
 			}
 			
-			removal_cost = -1
-
+			removal_cost = -1 
             modifier = {
 				political_power_gain = -0.1
 				consumer_goods_factor = 0.05
 				research_speed_factor = -0.1
 			}
 		}
-		
-		KNT_banditism = {
-	
+	}
+	hidden_ideas = {
+		KNT_security_service_section_five_upgrade_2a = {
 			picture = 
 			
 			allowed = {
 				always = no
 			}
 			
+			removal_cost = -1 
+			
+			modifier = {
+				intel_network_gain_factor = 0.6
+				crypto_strength	= 1
+				decryption_power_factor = 0.6
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_security_service_section_five_upgrade_2b = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				encryption	= 1
+				decryption_factor = 0.8
+				required_garrison_factor = 0.6
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_radium_bullets = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_morale_factor = -0.1
+				breakthrough_factor = 0.1
+				army_attack_factor = 0.1
+			}
+			targeted_modifier = {
+				every_army_leader = {
+					is_leading_army = yes
+				}
+				wounded_chance_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_infrasound_guns = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_attack_factor = 0.15
+				resistance_decay_on_our_occupied_states = 0.2
+				land_night_attack = 0.1
+				army_defence_factor = -0.1
+			}
+			targeted_modifier = {
+				every_army_leader = {
+					is_leading_army = yes
+				}
+				sickness_chance = 0.05
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_plasma_guns = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_attack_factor = 0.18
+				army_speed_factor = -0.1
+				supply_consumption_factor = 0.1
+				max_dig_in_factor = 0.1
+				army_defence_factor = 0.05
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_sticky_bomb_launcher = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				dig_in_speed_factor	= 0.1
+				army_defence_factor	= 0.15
+				army_morale_factor = 0.1
+				supply_consumption_factor = 0.1
+				attrition = 0.1
+			}
+		}
+	}
+	
+	country = {
+		KNT_professional_army_path = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				planning_speed = 0.1
+				special_forces_cap = 0.5
+				experience_gain_army_unit_factor = 0.2
+				army_org_regain = 0.1
+			}
+		}
+	}
+	
+	country = {
+		KNT_professional_army_path_2 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				planning_speed = 0.2
+				special_forces_cap = 0.5
+				experience_gain_army_unit_factor = 0.2
+				army_org_regain = 0.1
+				experience_gain_army_factor = 0.2
+				special_forces_training_time_factor	= 0.1
+				special_forces_attack_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_pyro_brigades = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				recon_factor = 0.3
+				breakthrough_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_jagers = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				recon_factor = 0.2
+				land_night_attack = 0.2
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_capsule_fighters = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_defence_factor = 0.15
+				army_org_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_armor_sollution_1 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_armor_attack_factor = 0.2
+				army_armor_speed_factor = -0.1
+				army_armor_defence_factor = -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_armor_sollution_2 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_armor_defence_factor = 0.2
+				army_armor_speed_factor = -0.1
+				army_armor_attack_factor = -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_armor_sollution_3 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_armor_defence_factor = -0.1
+				army_armor_speed_factor = 0.2
+				army_armor_attack_factor = -0.1
+			}
+		}
+	}
+	
+	country = {
+		KNT_professional_army_path_3 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				planning_speed = 0.2
+				special_forces_cap = 0.5
+				experience_gain_army_unit_factor = 0.2
+				army_org_regain = 0.1
+				experience_gain_army_factor = 0.2
+				special_forces_training_time_factor	= 0.1
+				special_forces_attack_factor = 0.1
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.2
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_armored_powerboat = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
 			removal_cost = -1
-
+			modifier = {
+				river_crossing_factor = -0.45
+				org_loss_when_moving = -0.3
+			}
+		}
+	}
+	country = {
+		KNT_banditism = {
+	
+			removal_cost = -1
+			picture = 
+			
+			allowed = {
+				always = no
+			}
             modifier = {
 				political_power_gain = -0.05
 				consumer_goods_factor = 0.1
 				stability_weekly_factor = -0.05
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_trench_digging_machine = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				max_dig_in = 0.1
+				dont_lose_dig_in_on_attack = 1
+			}
+		}
+	}
+	
+	country = {
+		KNT_professional_army_path_4 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				planning_speed = 0.2
+				special_forces_cap = 0.5
+				experience_gain_army_unit_factor = 0.2
+				army_org_regain = 0.1
+				experience_gain_army_factor = 0.2
+				special_forces_training_time_factor	= 0.1
+				special_forces_attack_factor = 0.1
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.2
+				recon_factor = 0.1
 			}
 		}
 	}

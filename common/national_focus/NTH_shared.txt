@@ -5,6 +5,9 @@ shared_focus = {
 	cost = 10
 	x = 26
 	y = 0
+	completion_reward = {
+		NTH = { country_event = albion.4 days = 1 }
+	}
 }
 
 shared_focus = {
@@ -16,6 +19,9 @@ shared_focus = {
 	cost = 10
 	x = 23
 	y = 1
+	completion_reward = {
+		NTH = { country_event = albion.5 days = 1 }
+	}
 }
 
 shared_focus = {
@@ -27,6 +33,23 @@ shared_focus = {
 	cost = 10
 	x = 21
 	y = 2
+	completion_reward = { 
+		NTH = { country_event = albion.6 days = 1 }
+	}
+}
+
+shared_focus = {
+	id = NTH_war_time_media
+	icon = GFX_goal_NTH_War_Time_Media
+	prerequisite = {
+		focus = NTH_peoples_promise
+	}	
+	cost = 10
+	x = 23
+	y = 2
+	completion_reward = {
+		NTH = {	 country_event = albion.7 days = 1 }
+	}
 }
 
 shared_focus = {
