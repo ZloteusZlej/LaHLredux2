@@ -1407,7 +1407,6 @@ shared_focus = {
 				limit = { has_dlc "La Resistance"}
 					upgrade_intelligence_agency	= upgrade_anti_partisan
 					upgrade_intelligence_agency	= upgrade_form_department
-					add_ideas = KNT_security_service_section_five_upgrade_2a
 				}
 				else = {
 					swap_ideas = {
@@ -1607,10 +1606,22 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_sabotage_experience
 		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.38
+				}
+			}
+			swap_ideas = {
+				remove_idea = KNT_professional_army_path_4
+				add_idea = KNT_professional_army_path_5
+			}
+		}
 		x = 27
 		y = 15
 	}
-		shared_focus = {
+	shared_focus = {
 		id = KNT_like_in_the_rorke's_drift
 		icon = GFX_goal_KNT_like_in_the_rorke's_drift
 		cost = 4.3

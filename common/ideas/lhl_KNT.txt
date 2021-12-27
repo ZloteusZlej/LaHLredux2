@@ -1345,24 +1345,6 @@ ideas = {
 	}
 	
 	hidden_ideas = {
-		KNT_security_service_section_five_upgrade_2a = {
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1 
-			
-			modifier = {
-				intel_network_gain_factor = 0.6
-				crypto_strength	= 1
-				decryption_power_factor = 0.6
-			}
-		}
-	}
-	
-	hidden_ideas = {
 		KNT_security_service_section_five_upgrade_2b = {
 			picture = 
 			
@@ -1374,8 +1356,8 @@ ideas = {
 			
 			modifier = {
 				encryption	= 1
-				decryption_factor = 0.8
-				required_garrison_factor = 0.6
+				decryption_factor = 0.6
+				required_garrison_factor = -0.6
 			}
 		}
 	}
@@ -1694,6 +1676,101 @@ ideas = {
 				dig_in_speed_factor = 0.1
 				max_dig_in_factor = 0.2
 				recon_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_the_marauder = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				motorized = {
+					build_cost_ic = 0.07
+					weight = 0.1
+					max_strength = 0.2
+					reliability = 0.1
+					defense = 0.07
+				}			
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_the_kombat = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				motorized = {
+					build_cost_ic = 0.07
+					maximum_speed = 0.15
+					attack = 0.05
+					movement = 0.1 
+					breakthrough = 0.05
+				}			
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_ARV = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				motorized = {
+					build_cost_ic = 0.07
+					reliability = 0.15
+					default_morale = 0.1
+					entrenchment = 0.2
+					defense = 0.1
+				}			
+			}
+		}
+	}
+	
+	country = {
+		KNT_professional_army_path_5 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				planning_speed = 0.2
+				special_forces_cap = 0.5
+				experience_gain_army_unit_factor = 0.2
+				army_org_regain = 0.1
+				experience_gain_army_factor = 0.2
+				special_forces_training_time_factor	= 0.1
+				special_forces_attack_factor = 0.1
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.2
+				recon_factor = 0.1
+				army_speed_factor = 0.25
 			}
 		}
 	}
