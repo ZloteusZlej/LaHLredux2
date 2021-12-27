@@ -383,7 +383,7 @@ country_event = {
 		name = KNT_event.14.a
 		hidden_effect = {
 			KNT = {
-			set_variable = { kent_thermonuclear_plant_completion = 1 }
+				set_variable = { kent_thermonuclear_plant_completion = 1 }
 			}
 		}
     }
@@ -741,3 +741,1127 @@ country_event = {
 		}
     }
 }
+###CULTURAL TREE##
+
+country_event = {
+	id = KNT_event.70
+	title = KNT_event.70.t
+	desc = KNT_event.70.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.70.a
+		add_political_power = 50
+		custom_effect_tooltip = KNT_event70.tt
+		hidden_effect = {
+			remove_ideas = KNT_cultural_abyss
+			add_ideas = KNT_cultural_death
+			set_country_flag = KNT_riots_available
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.71
+	title = KNT_event.71.t
+	desc = KNT_event.71.d
+	trigger = {
+		check_variable = {
+			var = KNT_culture_progress
+			value = 250
+			compare = equals
+		} 
+        original_tag = KNT			
+	}
+	mean_time_to_happen = {
+	    days = 1
+    }
+	option = {
+		name = KNT_event.71.a
+		custom_effect_tooltip = KNT_event71.tt
+		hidden_effect = {
+			set_variable = {
+				KNT_culture_progress = 0
+			}
+			if = {
+				limit = {
+					KNT = {
+						has_country_flag = KNT_culture_dead_flag
+					}
+				}
+				KNT = {
+					set_country_flag = KNT_culture_battered_flag
+				}
+				KNT = {
+					clr_country_flag = KNT_culture_dead_flag
+				}
+				swap_ideas = {
+					remove_idea = KNT_cultural_death
+					add_idea = KNT_cultural_battered
+				}		
+			}
+			else_if = {
+				limit = {
+					KNT = {
+						has_country_flag = KNT_culture_battered_flag
+					}
+				}
+				KNT = {
+					set_country_flag = KNT_culture_recovering_flag
+				}
+				KNT = {
+					clr_country_flag = KNT_culture_battered_flag
+				}
+				swap_ideas = {
+					remove_idea = KNT_cultural_battered
+					add_idea = KNT_cultural_recovering
+				}
+			}
+			else_if = {
+				limit = {
+					KNT = {
+						has_country_flag = KNT_culture_recovering_flag
+					}
+				}
+				KNT = {
+					set_country_flag = KNT_culture_great_flag
+				}
+				KNT = {
+					clr_country_flag = KNT_culture_recovering_flag
+				}
+				swap_ideas = {
+					remove_idea = KNT_cultural_recovering
+					add_idea = KNT_cultural_great
+				}
+			}
+			else_if = {
+				limit = {
+					KNT = {
+						has_country_flag = KNT_culture_great_flag
+					}
+				}
+				KNT = {
+					set_country_flag = KNT_culture_soaring_flag
+				}
+				KNT = {
+					clr_country_flag = KNT_culture_great_flag
+				}
+				swap_ideas = {
+					remove_idea = KNT_cultural_great
+					add_idea = KNT_cultural_soaring
+				}
+			}
+			else_if = {
+				limit = {
+					KNT = {
+						has_country_flag = KNT_culture_soaring_flag
+					}
+				}
+				KNT = {
+					set_country_flag = KNT_culture_golden_age_flag
+				}
+				KNT = {
+					clr_country_flag = KNT_culture_soaring_flag
+				}
+				swap_ideas = {
+					remove_idea = KNT_cultural_soaring
+					add_idea = KNT_cultural_golden_age
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.72
+	title = KNT_event.72.t
+	desc = KNT_event.72.d
+	trigger = {
+		check_variable = {
+			var = KNT_culture_progress
+			value = -250
+			compare = equals
+		} 
+        original_tag = KNT			
+	}
+	mean_time_to_happen = {
+	    days = 1
+    }
+	option = {
+		name = KNT_event.72.a
+		custom_effect_tooltip = KNT_event72.tt
+		hidden_effect = {
+			set_variable = {
+				KNT_culture_progress = 0
+			}
+			if = {
+				limit = {
+					KNT = {
+						has_country_flag = KNT_culture_battered_flag
+					}
+				}
+				KNT = {
+					set_country_flag = KNT_culture_dead_flag
+				}
+				KNT = {
+					clr_country_flag = KNT_culture_battered_flag
+				}
+				swap_ideas = {
+					remove_idea = KNT_cultural_battered
+					add_idea = KNT_cultural_death
+				}		
+			}
+			else_if = {
+				limit = {
+					KNT = {
+						has_country_flag = KNT_culture_recovering_flag
+					}
+				}
+				KNT = {
+					set_country_flag = KNT_culture_battered_flag
+				}
+				KNT = {
+					clr_country_flag = KNT_culture_recovering_flag
+				}
+				swap_ideas = {
+					remove_idea = KNT_cultural_recovering
+					add_idea = KNT_cultural_battered
+				}
+			}
+			else_if = {
+				limit = {
+					KNT = {
+						has_country_flag = KNT_culture_great_flag
+					}
+				}
+				KNT = {
+					set_country_flag = KNT_culture_recovering_flag
+				}
+				KNT = {
+					clr_country_flag = KNT_culture_great_flag
+				}
+				swap_ideas = {
+					remove_idea = KNT_cultural_great
+					add_idea = KNT_cultural_recovering
+				}
+			}
+			else_if = {
+				limit = {
+					KNT = {
+						has_country_flag = KNT_culture_soaring_flag
+					}
+				}
+				KNT = {
+					set_country_flag = KNT_culture_great_flag
+				}
+				KNT = {
+					clr_country_flag = KNT_culture_soaring_flag
+				}
+				swap_ideas = {
+					remove_idea = KNT_cultural_soaring
+					add_idea = KNT_cultural_great
+				}
+			}
+			else_if = {
+				limit = {
+					KNT = {
+						has_country_flag = KNT_culture_golden_age_flag
+					}
+				}
+				KNT = {
+					set_country_flag = KNT_culture_soaring_flag
+				}
+				KNT = {
+					clr_country_flag = KNT_culture_golden_age_flag
+				}
+				swap_ideas = {
+					remove_idea = KNT_cultural_golden_age
+					add_idea = KNT_cultural_soaring
+				}
+			}
+		}
+    }
+}
+country_event = {
+	id = KNT_event.73
+	title = KNT_event.73.t
+	desc = KNT_event.73.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.73.a
+		add_political_power = -250
+		add_stability = -0.3
+    }
+}
+
+country_event = {
+	id = KNT_event.74
+	title = KNT_event.74.t
+	desc = KNT_event.74.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.74.a
+		custom_effect_tooltip = KNT_event74.tt
+		add_political_power = 15
+		add_stability = 0.05
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 5
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.75
+	title = KNT_event.75.t
+	desc = KNT_event.75.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.75.a
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.76
+			}
+		}
+    }
+	option = {
+		name = KNT_event.75.b
+		custom_effect_tooltip = KNT_bad_people_small.tt
+		custom_effect_tooltip = KNT_bad_progress_small.tt
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -5
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = -5
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.76
+	title = KNT_event.76.t
+	desc = KNT_event.76.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.76.a
+		add_political_power = -50
+		add_stability = -0.05
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.77
+			}
+		}
+    }
+	option = {
+		name = KNT_event.76.b
+		custom_effect_tooltip = KNT_good_people_small.tt
+		add_political_power = 15
+		add_stability = 0.05
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 2
+			}
+			KNT = {
+				country_event = {
+					days = 5
+					id = KNT_event.78
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.77
+	title = KNT_event.77.t
+	desc = KNT_event.77.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.77.a
+		custom_effect_tooltip = KNT_redrock.tt
+		custom_effect_tooltip = KNT_good_people_big.tt
+		custom_effect_tooltip = KNT_good_progress_big.tt
+		add_political_power = 75
+		add_stability = 0.1
+		add_manpower = -5
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = radar_tech
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 10
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 10
+			}
+			add_timed_idea = { idea = KNT_buidling_underway  days = 30 }
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.78
+	title = KNT_event.78.t
+	desc = KNT_event.78.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.78.a
+		custom_effect_tooltip = KNT_good_progress_small.tt
+		custom_effect_tooltip = KNT_good_effect_small.tt
+		add_political_power = -10
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 5
+			}
+			add_to_variable = {
+				var = KNT_culture_effectiveness_factor
+				value = 3
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.79
+	title = KNT_event.79.t
+	desc = KNT_event.79.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.79.a
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.80
+			}
+		}
+    }
+	option = {
+		name = KNT_event.79.b
+		custom_effect_tooltip = KNT_bad_progress_small.tt
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = -5
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.80
+	title = KNT_event.80.t
+	desc = KNT_event.80.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.80.a
+		custom_effect_tooltip = KNT_student_halls.tt
+		custom_effect_tooltip = KNT_bad_people_big.tt
+		custom_effect_tooltip = KNT_good_progress_big.tt
+		custom_effect_tooltip = KNT_good_effect_small.tt
+		add_political_power = -50
+		damage_building = {
+			type = infrastructure
+			damage = 2
+			province = 10732
+		}
+		add_timed_idea = { idea = KNT_student_riots  days = 30 }
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -10
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 10
+			}
+			add_to_variable = {
+				var = KNT_culture_effectiveness_factor
+				value = 5
+			}
+			add_timed_idea = { idea = KNT_buidling_underway  days = 30 }
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.81
+	title = KNT_event.81.t
+	desc = KNT_event.81.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.81.a
+		add_timed_idea = { idea = KNT_banditism days = 30 }
+		custom_effect_tooltip =  KNT_haydn_tower.tt
+		custom_effect_tooltip = KNT_good_people_small.tt
+		custom_effect_tooltip = KNT_good_progress_big.tt
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 5
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 15
+			}
+			add_timed_idea = { idea = KNT_buidling_underway  days = 30 }
+		}
+    }
+	option = {
+		name = KNT_event.81.b
+		custom_effect_tooltip = KNT_bad_people_big.tt
+		custom_effect_tooltip = KNT_bad_progress_big.tt
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -10
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = -10
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.82
+	title = KNT_event.82.t
+	desc = KNT_event.82.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.81.a
+		custom_effect_tooltip = KNT_Lincoln_Plaza.tt
+		custom_effect_tooltip = KNT_good_people_small.tt
+		custom_effect_tooltip = KNT_good_progress_small.tt
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 5
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 5
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.83
+	title = KNT_event.83.t
+	desc = KNT_event.83.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.83.a
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.84
+			}
+		}
+    }
+	option = {
+		name = KNT_event.83.b
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.85
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.84
+	title = KNT_event.84.t
+	desc = KNT_event.84.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.84.a
+		custom_effect_tooltip = KNT_Strata.tt
+		custom_effect_tooltip = KNT_good_people_big.tt
+		custom_effect_tooltip = KNT_good_progress_big.tt
+		add_political_power = 100
+		add_manpower = -56
+		damage_building = {
+			type = infrastructure
+			damage = 4
+			province = 1446
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 20
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 25
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.85
+	title = KNT_event.85.t
+	desc = KNT_event.85.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.85.a
+		custom_effect_tooltip = KNT_Strata2.tt
+		custom_effect_tooltip = KNT_good_people_big.tt
+		custom_effect_tooltip = KNT_good_progress_big.tt
+		add_equipment_to_stockpile = {
+			type = artillery_equipment_2 
+			amount = 3
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_3
+			amount = 270
+		}
+		add_equipment_to_stockpile = {
+			type = armoured_personnel_carrier_equipment_3
+			amount = 1
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 10
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 10
+			}
+			add_timed_idea = { idea = KNT_buidling_underway  days = 30 }
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.86
+	title = KNT_event.86.t
+	desc = KNT_event.86.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.86.a
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.87
+			}
+		}
+    }
+	option = {
+		name = KNT_event.86.b
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.88
+			}
+		}
+	}
+}
+
+country_event = {
+	id = KNT_event.87
+	title = KNT_event.87.t
+	desc = KNT_event.87.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.87.a
+		custom_effect_tooltip = KNT_Sark.tt
+		custom_effect_tooltip = KNT_bad_people_big.tt
+		custom_effect_tooltip = KNT_bad_progress_big.tt
+		add_political_power = 100
+		add_stability = 0.15
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -15
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = -20
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.88
+	title = KNT_event.88.t
+	desc = KNT_event.88.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.88.a
+		custom_effect_tooltip = KNT_Sark2.tt
+		custom_effect_tooltip = KNT_good_people_big.tt
+		custom_effect_tooltip = KNT_good_progress_big.tt
+		add_political_power = -75
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 15
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 25
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.89
+	title = KNT_event.89.t
+	desc = KNT_event.89.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.89.a
+		custom_effect_tooltip = KNT_Fenchurch.tt
+		custom_effect_tooltip = KNT_bad_people_small.tt
+		custom_effect_tooltip = KNT_good_progress_small.tt
+		add_political_power = -10
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -5
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 5
+			}
+			add_timed_idea = { idea = KNT_buidling_underway  days = 30 }
+		}
+    }
+	option = {
+		name = KNT_event.89.b
+		custom_effect_tooltip = KNT_good_people_small.tt
+		custom_effect_tooltip = KNT_bad_progress_small.tt
+		add_political_power = -10
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 8
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = -5
+			}
+		}
+    }
+	option = {
+		name = KNT_event.89.c
+		add_political_power = -55
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.90
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.90
+	title = KNT_event.90.t
+	desc = KNT_event.90.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.90.a
+		custom_effect_tooltip = KNT_good_people_big.tt
+		add_political_power = 100
+		add_stability = 0.05
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 15
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.91
+	title = KNT_event.91.t
+	desc = KNT_event.91.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.91.a
+		custom_effect_tooltip = KNT_Trellick.tt
+		custom_effect_tooltip = KNT_good_people_small.tt
+		custom_effect_tooltip = KNT_good_progress_small.tt
+		add_political_power = -20
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 5
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 5
+			}
+			add_timed_idea = { idea = KNT_buidling_underway  days = 30 }
+		}
+    }
+	option = {
+		name = KNT_event.91.b
+		custom_effect_tooltip = KNT_bad_people_small.tt
+		custom_effect_tooltip = KNT_bad_progress_small.tt
+		add_political_power = 25
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -5
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = -5
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.92
+	title = KNT_event.92.t
+	desc = KNT_event.92.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.92.a
+		custom_effect_tooltip = KNT_Cumbernauld.tt
+		custom_effect_tooltip = KNT_good_people_small.tt
+		custom_effect_tooltip = KNT_good_progress_small.tt
+		add_political_power = -55
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 8
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 8
+			}
+			add_timed_idea = { idea = KNT_buidling_underway  days = 30 }
+		}
+    }
+	option = {
+		name = KNT_event.92.b
+		custom_effect_tooltip = KNT_bad_people_small.tt
+		custom_effect_tooltip = KNT_bad_progress_small.tt
+		add_political_power = 25
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -5
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = -5
+			}
+		}
+    }
+	option = {
+		name = KNT_event.92.c
+		custom_effect_tooltip = KNT_dick.tt
+    }
+}
+
+country_event = { #Cumbernauld event, fix with scotland
+	id = KNT_event.93
+	title = KNT_event.93.t
+	desc = KNT_event.93.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.93.a
+	}
+}
+
+country_event = {
+	id = KNT_event.94
+	title = KNT_event.94.t
+	desc = KNT_event.94.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.94.a
+		custom_effect_tooltip = KNT_Battersea.tt
+		custom_effect_tooltip = KNT_good_people_big.tt
+		custom_effect_tooltip = KNT_good_progress_big.tt
+		add_political_power = -55
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 10
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 10
+			}
+			add_timed_idea = { idea = KNT_buidling_underway  days = 30 }
+		}
+    }
+	option = {
+		name = KNT_event.94.b
+		custom_effect_tooltip = KNT_bad_people_small.tt
+		custom_effect_tooltip = KNT_bad_progress_small.tt
+		add_political_power = 25
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -5
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = -5
+			}
+		}
+    }
+	option = {
+		name = KNT_event.94.c
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.95
+			}
+		}
+		hidden_effect = {
+			add_timed_idea = { idea = KNT_buidling_underway  days = 30 }
+		}
+    }
+	option = {
+		name = KNT_event.94.d
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.96
+			}
+		}
+		hidden_effect = {
+			add_timed_idea = { idea = KNT_buidling_underway  days = 30 }
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.95
+	title = KNT_event.95.t
+	desc = KNT_event.95.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.95.a
+		custom_effect_tooltip = KNT_bad_people_big.tt
+		add_stability = -0.05
+		add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+			province = 1446
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -20
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.96
+	title = KNT_event.96.t
+	desc = KNT_event.96.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.96.a
+		custom_effect_tooltip = KNT_good_people_big.tt
+		custom_effect_tooltip = KNT_good_progress_big.tt
+		custom_effect_tooltip = KNT_good_effect_big.tt
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 20
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 20
+			}
+			add_to_variable = {
+				var = KNT_culture_effectiveness_factor
+				value = 10
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.97
+	title = KNT_event.97.t
+	desc = KNT_event.97.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.97.a
+		custom_effect_tooltip = KNT_Drake.tt
+		custom_effect_tooltip = KNT_good_people_small.tt
+		custom_effect_tooltip = KNT_good_progress_small.tt
+		add_political_power = -55
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 8
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 8
+			}
+			add_timed_idea = { idea = KNT_buidling_underway  days = 30 }
+		}
+    }
+	option = {
+		name = KNT_event.97.b
+		custom_effect_tooltip = KNT_bad_people_small.tt
+		custom_effect_tooltip = KNT_bad_progress_small.tt
+		add_political_power = 25
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -5
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = -5
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.98
+	title = KNT_event.98.t
+	desc = KNT_event.98.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.98.a
+		custom_effect_tooltip = KNT_Pier.tt
+		add_stability = 0.01
+    }
+	option = {
+		name = KNT_event.98.b
+		add_stability = -0.01
+    }
+}
+
+country_event = {
+	id = KNT_event.99
+	title = KNT_event.99.t
+	desc = KNT_event.99.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.99.a
+		custom_effect_tooltip = KNT_Mega.tt
+		custom_effect_tooltip = KNT_good_people_small.tt
+		custom_effect_tooltip = KNT_good_progress_small.tt
+		remove_building = {
+			type = infrastructure
+			level = 2
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 8
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 8
+			}
+			add_timed_idea = { idea = KNT_buidling_underway  days = 30 }
+		}
+    }
+	option = {
+		name = KNT_event.99.b
+		custom_effect_tooltip = KNT_bad_people_big.tt
+		custom_effect_tooltip = KNT_bad_progress_big.tt
+		add_political_power = 100
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -12
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = -12
+			}
+		}
+    }
+	option = {
+		name = KNT_event.99.c
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.100
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.100
+	title = KNT_event.100.t
+	desc = KNT_event.100.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.100.a
+		custom_effect_tooltip = KNT_good_people_big.tt
+		custom_effect_tooltip = KNT_good_progress_big.tt
+		custom_effect_tooltip = KNT_good_effect_big.tt
+		add_war_support = 0.2
+		add_political_power - 25
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 20
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 20
+			}
+			add_to_variable = {
+				var = KNT_culture_effectiveness_factor
+				value = 10
+			}
+			KNT = {
+				country_event = {
+					days = 5
+					id = KNT_event.101
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.101
+	title = KNT_event.101.t
+	desc = KNT_event.101.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.101.a
+		add_political_power = -25
+		add_stability = -0.05
+    }
+}
+   

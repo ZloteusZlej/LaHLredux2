@@ -914,8 +914,8 @@
 		completion_reward = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.31
+					days = 1
+					id = KNT_event.31
 				}
 			}
 			add_research_slot = 1
@@ -1130,6 +1130,28 @@
 		prerequisite = {
 			focus = KNT_commons_of_house
 		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.70
+				}
+			}
+			hidden_effect = {
+				KNT = {
+					set_variable = { KNT_culture_effectiveness_factor = 0 }
+				}
+				KNT = {
+					set_variable = { KNT_culture_people_support = 51 }
+				}
+				KNT = {
+					set_country_flag = KNT_culture_dead_flag
+				}
+				KNT = {
+					set_variable = { KNT_culture_progress = 35 }
+				}
+			}
+		}
 		x = 5
 		y = 7
 	}
@@ -1141,7 +1163,16 @@
 			focus = KNT_stop_cultural_decadence
 		}
 		mutually_exclusive = {
-	    focus = KNT_our_new_burden
+			focus = KNT_our_new_burden
+		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+					days = 0
+					id = KNT_event.74
+				}
+			}
+			custom_effect_tooltip = KNT_xlisting.tt
 		}
 		x = 4
 		y = 8

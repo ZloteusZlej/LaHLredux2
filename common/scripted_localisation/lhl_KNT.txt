@@ -1,0 +1,131 @@
+defined_text = {
+	name = GetKentPeopleSupport
+	text = {
+		trigger = {
+			check_variable = { KNT_culture_people_support = 100 }
+		}
+		localization_key = KNT_culture_people_ecstatic
+	}
+	text = {
+		trigger = {
+			check_variable = { KNT_culture_people_support > 90 }
+		}
+		localization_key = KNT_culture_people_jubilation
+	}
+	text = {
+		trigger = {
+			check_variable = { KNT_culture_people_support > 80 }
+		}
+		localization_key = KNT_culture_people_gay
+	}
+	text = {
+		trigger = {
+			check_variable = { KNT_culture_people_support > 70 }
+		}
+		localization_key = KNT_culture_people_happy
+	}
+	text = {
+		trigger = {
+			check_variable = { KNT_culture_people_support > 60 }
+		}
+		localization_key = KNT_culture_people_like
+	}
+	text = {
+		trigger = {
+			check_variable = { KNT_culture_people_support > 50 }
+		}
+		localization_key = KNT_culture_people_interested
+	}
+	text = {
+		trigger = {
+			check_variable = { KNT_culture_people_support > 40 }
+		}
+		localization_key = KNT_culture_people_content
+	}
+	text = {
+		trigger = {
+			check_variable = { KNT_culture_people_support > 30 }
+		}
+		localization_key = KNT_culture_people_unhappy
+	}
+	text = {
+		trigger = {
+			check_variable = { KNT_culture_people_support > 20 }
+		}
+		localization_key = KNT_culture_people_hate
+	}
+	text = {
+		trigger = {
+			check_variable = { KNT_culture_people_support > 10 }
+		}
+		localization_key = KNT_culture_people_despair
+	}
+	text = {
+		localization_key = KNT_culture_people_hang_pm
+	}
+}
+
+defined_text = {
+	name = GetKentEffectiveness
+	text = {
+		trigger = {
+			check_variable = { KNT_culture_effectiveness_factor > 75 }
+		}
+		localization_key = KNT_culture_effectiveness_high
+	}
+	text = {
+		trigger = {
+			check_variable = { KNT_culture_effectiveness_factor > 50 }
+		}
+		localization_key = KNT_culture_effectiveness_medium
+	}
+	text = {
+		trigger = {
+			check_variable = { KNT_culture_effectiveness_factor > 25 }
+		}
+		localization_key = KNT_culture_effectiveness_low
+	}
+	text = {
+		localization_key = KNT_culture_effectiveness_zero
+	}
+}
+
+defined_text = {
+	name = GetKentCulture
+	text = {
+		trigger = {
+			has_country_flag = KNT_culture_golden_age_flag
+		}
+		localization_key = KNT_culture_golden_age
+	}
+	text = {
+		trigger = {
+			has_country_flag = KNT_culture_soaring_flag
+		}
+		localization_key = KNT_culture_soaring
+	}
+	text = {
+		trigger = {
+			has_country_flag = KNT_culture_great_flag
+		}
+		localization_key = KNT_culture_great
+	}
+	text = {
+		trigger = {
+			has_country_flag = KNT_culture_recovering_flag
+		}
+		localization_key = KNT_culture_recovering
+	}
+	text = {
+		trigger = {
+			has_country_flag = KNT_culture_battered_flag
+		}
+		localization_key = KNT_culture_battered
+	}
+	text = {
+		trigger = {
+			has_country_flag = KNT_culture_dead_flag
+		}
+		localization_key = KNT_culture_dead
+	}
+}

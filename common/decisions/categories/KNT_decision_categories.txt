@@ -52,3 +52,14 @@ icon = GFX_
 	visible_when_empty = yes
 	allowed = { original_tag = KNT }
 }
+
+KNT_cultural_progress = {
+picture = GFX_decision_KNT_cultural_decisions
+	visible = {
+		KNT = {
+			has_completed_focus = KNT_stop_cultural_decadence
+		}
+	}
+	visible_when_empty = yes
+	allowed = { original_tag = KNT }
+}
