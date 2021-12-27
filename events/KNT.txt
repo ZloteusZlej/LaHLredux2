@@ -893,6 +893,76 @@ country_event = {
     }
 }
 
+country_event = {
+	id = KNT_event.39
+	title = KNT_event.39.t
+	desc = KNT_event.39.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.39.a
+		add_political_power = -15
+		add_ideas = KNT_aimbot
+    }
+	option = {
+		name = KNT_event.39.b
+		add_political_power = -15
+		add_ideas = KNT_ripple_fire_bazooka 
+    }
+	option = {
+		name = KNT_event.39.c
+		add_political_power = -15
+		add_ideas = KNT_phlogistinator 
+    }
+	option = {
+		name = KNT_event.39.e
+		add_political_power = -15
+		add_ideas = KNT_freezing_lazer
+    }
+}
+
+country_event = {
+	id = KNT_event.40
+	title = KNT_event.40.t
+	desc = KNT_event.40.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.40.a
+		army_experience	= -10
+		add_ideas = KNT_snipers_striking_infantry
+    }
+	option = {
+		name = KNT_event.40.b
+		army_experience	= -10
+		add_ideas = KNT_snipers_striking_officers
+    }
+}
+
+country_event = {
+	id = KNT_event.41
+	title = KNT_event.41.t
+	desc = KNT_event.41.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.41.a
+		KNT = {
+			country_event = {
+			days = 1
+			id = KNT_event.26
+			}
+		}
+    }
+	
+	option = {
+		name = KNT_event.41.b
+    }
+}
+
 ###CULTURAL TREE##
 
 country_event = {

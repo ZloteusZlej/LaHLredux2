@@ -1771,6 +1771,13 @@ KNT_special_projects = {
 				id = KNT_event.13
 				}
 			}
+			
+			KNT = {
+				country_event = {
+				days = 35
+				id = KNT_event.41
+				}
+			}
 		}
 		remove_effect = {
 					KNT = {
@@ -1845,6 +1852,171 @@ KNT_special_projects = {
 					}
 			}
 			set_global_flag = KNT_exosuit_brigade_introduced
+		}	
+	}
+	
+	KNT_jetpack_brigade_introduction = {
+	days_remove = 125
+	visible = {
+			NOT = { has_global_flag = KNT_jetpack_brigade_introduced }
+		}
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_experimental_forces
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_experimental_forces
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.12
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					jetpack_brigade = 1
+					}
+			}
+			set_global_flag = KNT_jetpack_brigade_introduced
+		}	
+	}
+	
+	KNT_rubber_bomb_introduction = {
+	days_remove = 100
+	visible = {
+			NOT = { has_global_flag = KNT_rubber_bomb_introduced }
+		}
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_strike_from_above
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_strike_from_above
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.12
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					rubber_bomb = 1
+					}
+			}
+			set_global_flag = KNT_rubber_bomb_introduced
+		}	
+	}
+	
+	KNT_DU_ammo_introduction = {
+	days_remove = 100
+	visible = {
+			NOT = { has_global_flag = KNT_DU_ammo_introduced }
+		}
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_strike_from_above
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_strike_from_above
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.12
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					DU_ammo = 1
+					}
+			}
+			set_global_flag = KNT_DU_ammo_introduced
+		}	
+	}
+	
+	KNT_suicide_drones_introduction = {
+	days_remove = 65
+	visible = {
+			NOT = { has_global_flag = KNT_suicide_drones_introduced }
+		}
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_strike_from_above
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_strike_from_above
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.26
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					suicide_drones = 1
+					}
+			}
+			set_global_flag = KNT_suicide_drones_introduced
+		}	
+	}
+	
+	KNT_supercannons_introduction = {
+	days_remove = 225
+	visible = {
+			NOT = { has_global_flag = KNT_supercannons_introduced }
+		}
+		available = {
+			KNT = {
+			has_completed_focus	= KNT_strike_from_above
+			}
+		}
+		visible = {
+				KNT = {
+				has_completed_focus	= KNT_strike_from_above
+			}
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.13
+				}
+			}
+		}
+		remove_effect = {
+					KNT = {
+					set_technology = {
+					supercannons = 1
+					}
+			}
+			set_global_flag = KNT_supercannons_introduced
 		}	
 	}
 }
@@ -2702,3 +2874,87 @@ KNT_sabotages = {
 		}
 	}
 }	
+
+KNT_air_strikes = {
+    KNT_horny_gas = {
+		cost = 0
+		available = {
+        command_power > 30
+        }
+		target_trigger = {
+			FROM = {
+				has_war_with = ROOT
+			}
+		}
+		days_remove = 14
+		days_re_enable = 55
+        complete_effect = {
+            add_command_power = -30
+			FROM = {
+				add_timed_idea = {
+				idea = horny_gas_bombings
+				days = 14
+				}
+			}
+			modifier = {
+				air_fuel_consumption_factor = 0.2
+			}	
+		}
+	}
+	
+	KNT_electromagnetic_shock_waves = {
+		cost = 0
+		available = {
+        command_power > 30
+        }
+		target_trigger = {
+			FROM = {
+				has_war_with = ROOT
+			}
+		}
+		days_remove = 14
+		days_re_enable = 55
+        complete_effect = {
+            add_command_power = -30
+			FROM = {
+				add_timed_idea = {
+				idea = electromagnetic_shock_bombings
+				days = 14
+				}
+			}
+			modifier = {
+				air_fuel_consumption_factor = 0.2
+				air_cas_efficiency = 0.2
+			}	
+		}
+	}
+	
+	KNT_volcanic_bombs = {	
+		cost = 0
+		available = {
+        command_power > 30
+        }
+		target_trigger = {
+			FROM = {
+				has_war_with = ROOT
+			}
+		}
+		days_remove = 14
+		days_re_enable = 55
+        complete_effect = {
+            add_command_power = -30
+			FROM = {
+				add_timed_idea = {
+				idea = volcanic_bombings
+				days = 14
+				}
+			}
+			modifier = {
+				air_fuel_consumption_factor = 0.2
+				air_cas_efficiency = 0.2
+			}	
+		}
+	}
+}
+
+

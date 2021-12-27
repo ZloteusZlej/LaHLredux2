@@ -1951,6 +1951,246 @@ ideas = {
 			}
 		}
 	}
+	
+	country = {
+		KNT_army_traditions_path = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_core_defence_factor = 0.15
+				army_attack_factor = 0.15
+				army_morale_factor = 0.2
+				skill_bonus_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_aimbot = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.1
+					soft_attack = 0.15
+					defense = 0.05
+					breakthrough = 0.08
+					instant = yes
+				}			
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_ripple_fire_bazooka = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = 0.05
+					hard_attack = 0.15
+					ap_attack = 0.2
+					air_attack = 0.1
+					instant = yes
+				}			
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_phlogistinator = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = 0.07
+					soft_attack = 0.1
+					max_strength = 0.1
+					supply_consumption = -0.05
+					instant = yes
+				}			
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_freezing_lazer = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = 0.07
+					soft_attack = 0.15
+					defense = 0.05
+					entrenchment = 0.1
+					instant = yes
+				}			
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_snipers_striking_officers = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				breakthrough_factor = 0.12
+				land_night_attack = 0.1
+				recon_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_snipers_striking_infantry = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = 0.08
+				army_attack_factor = 0.08
+				planning_speed = 0.1
+			}
+		}
+	}
+	
+	country = {
+		KNT_army_traditions_path_2 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_core_defence_factor = 0.18
+				army_attack_factor = 0.15
+				army_morale_factor = 0.2
+				skill_bonus_factor = 0.1
+				
+			}
+		}
+	}
+	
+	country = {
+		KNT_army_traditions_path_3 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_defence_factor = 0.18
+				army_attack_factor = 0.15
+				army_morale_factor = 0.2
+				skill_bonus_factor = 0.1
+				training_time_factor = -0.25
+				recruitable_population_factor = 0.05
+			}
+		}
+	}
+	
+	country = {
+		KNT_army_traditions_path_4 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_defence_factor = 0.2
+				army_attack_factor = 0.2
+				army_morale_factor = 0.2
+				skill_bonus_factor = 0.1
+				training_time_factor = -0.25
+				air_attack_factor = 0.2
+				air_defence_factor = 0.2
+				air_bombing_targetting = 0.2
+				recruitable_population_factor = 0.05
+			}
+		}
+	}
+	
+	country = {
+		KNT_army_traditions_path_5 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_defence_factor = 0.2
+				army_attack_factor = 0.2
+				army_morale_factor = 0.2
+				skill_bonus_factor = 0.1
+				training_time_factor = -0.25
+				air_attack_factor = 0.2
+				air_defence_factor = 0.2
+				air_bombing_targetting = 0.2
+				recruitable_population_factor = 0.05
+				experience_gain_infantry_combat_factor = 0.1
+				max_training = 0.25
+			}
+		}
+	}
 }
 	
 	
