@@ -35,14 +35,80 @@ on_actions = {
 	
 	on_daily_KNT = {
 	    effect = {
-				if = {
-					limit = {
-					has_global_flag = lithium_imports_to_kent
-					}
-					add_to_variable = {
-						var = kent_thermonuclear_plant_completion
-						value = 0.25
+			if = {
+				limit = {
+				has_global_flag = lithium_imports_to_kent
+				}
+				add_to_variable = {
+					var = kent_thermonuclear_plant_completion
+					value = 0.25
 				}	
+			}   
+		}
+	}
+	on_daily_KNT = {
+	    effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = KNT_culture_effectiveness_factor
+						value = 25
+						compare = greater_than_or_equals
+					} 
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 0.2
+			    }
+				clamp_variable = {
+					var = KNT_culture_progress
+					min = -250
+					max = 250
+				}
+			}
+		}
+	}
+	on_daily_KNT = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = KNT_culture_effectiveness_factor
+						value = 50
+						compare = greater_than_or_equals
+					} 
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 0.3
+			    }
+				clamp_variable = {
+					var = KNT_culture_progress
+					min = -250
+					max = 250
+				}				
+			}
+		}
+	}
+	on_daily_KNT = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = KNT_culture_effectiveness_factor
+						value = 75
+						compare = greater_than_or_equals
+					} 
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 0.3
+			    }
+				clamp_variable = {
+					var = KNT_culture_progress
+					min = -250
+					max = 250
+				}				
 			}
 		}
 	}

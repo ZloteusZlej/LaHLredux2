@@ -2142,6 +2142,472 @@ KNT_thermonuclear_reactor = {
 	}
 }
 
+KNT_cultural_progress = {
+
+	KNT_cultural_propaganda_campaign = {
+	    days_remove = 70
+		fire_only_once = no
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_stop_cultural_decadence
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_stop_cultural_decadence
+			}
+		}
+		modifier = {
+			stability_weekly = -0.01
+			political_power_gain = -0.05
+			war_support_weekly = -0.01
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_cultural_propaganda.tt
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 5
+			}	
+		}	
+	}
+	
+	KNT_host_cultural_festival = {
+	    days_remove = 70
+		fire_only_once = no
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_stop_cultural_decadence
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_stop_cultural_decadence
+			}
+		}
+		modifier = {
+			production_speed_buildings_factor = -0.05
+			consumer_goods_factor = -0.05
+			civilian_factory_use = 1
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_cultural_festival.tt
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 2
+			}
+			clamp_variable = {
+				var = KNT_culture_progress
+				min = -250
+				max = 250
+			}			
+		}	
+	}
+    KNT_people_rioting = {                           
+        allowed = { tag = KNT }                 
+        available = {                           
+            check_variable = { KNT_culture_people_support > 10 } 
+        }
+        activation = {                          
+            check_variable = { KNT_culture_people_support < 10 }
+			KNT = {
+				has_country_flag = KNT_riots_available
+			}			
+        }
+        is_good = no                                        
+        days_mission_timeout = 100              
+        timeout_effect = {                      
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.73
+				}
+			} 
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 10
+			}
+        }
+        complete_effect = {                    
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 1
+			}
+        }
+    }
+###DESTROY BUILDINGS###
+	KNT_destroy_redrock_stockport = {
+	    days_remove = 30
+		fire_only_once = yes
+          visible = {
+               has_manpower > 0
+          }
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+			1009 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.75
+				}
+			}
+		}
+		remove_effect = {
+
+		}	
+	}
+	KNT_destroy_greetham_street = {
+	    days_remove = 30
+		fire_only_once = yes
+          visible = {
+               has_manpower > 0
+          }
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+			1001 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.79
+				}
+			}
+		}
+		remove_effect = {
+
+		}	
+	}
+	KNT_destroy_haydn_tower = {
+	    days_remove = 30
+		fire_only_once = yes
+          visible = {
+               has_manpower > 0
+          }
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+			1160 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.81
+				}
+			}
+		}
+		remove_effect = {
+
+		}	
+	}
+	KNT_destroy_strata_se1 = {
+	    days_remove = 30
+		fire_only_once = yes
+          visible = {
+               has_manpower > 0
+          }
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+			1160 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.83
+				}
+			}
+		}
+		remove_effect = {
+
+		}	
+	}
+	KNT_destroy_lincoln_tower = {
+	    days_remove = 30
+		fire_only_once = yes
+          visible = {
+               has_manpower > 0
+          }
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+			1160 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.82
+				}
+			}
+		}
+		remove_effect = {
+
+		}	
+	}
+	KNT_destroy_cutty_sark = {
+	    days_remove = 30
+		fire_only_once = yes
+          visible = {
+               has_manpower > 0
+          }
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+			1160 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.86
+				}
+			}
+		}
+		remove_effect = {
+
+		}	
+	}
+	KNT_destroy_fenchurch_buidling = {
+	    days_remove = 30
+		fire_only_once = yes
+          visible = {
+               has_manpower > 0
+          }
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+			1160 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.89
+				}
+			}
+		}
+		remove_effect = {
+
+		}	
+	}
+	KNT_destroy_trellick_tower = {
+	    days_remove = 30
+		fire_only_once = yes
+          visible = {
+               has_manpower > 0
+          }
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+			1160 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.91
+				}
+			}
+		}
+		remove_effect = {
+
+		}	
+	}
+	KNT_destroy_cumbernauld_town_centre = {
+	    days_remove = 30
+		fire_only_once = yes
+          visible = {
+               has_manpower > 0
+          }
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+			1014 = { #FIX AFTER SCOTLAND REMADE
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.92
+				}
+			}
+		}
+		remove_effect = {
+
+		}	
+	}
+	KNT_destroy_battersea_power_station = {
+	    days_remove = 30
+		fire_only_once = yes
+          visible = {
+               has_manpower > 0
+          }
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+			1160 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.94
+				}
+			}
+		}
+		remove_effect = {
+
+		}	
+	}
+	KNT_destroy_megacity_uk = {
+	    days_remove = 30
+		fire_only_once = yes
+          visible = {
+               has_manpower > 0
+          }
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+			1009 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.99
+				}
+			}
+		}
+		remove_effect = {
+
+		}	
+	}
+	KNT_destroy_drake_circus = {
+	    days_remove = 30
+		fire_only_once = yes
+          visible = {
+               has_manpower > 0
+          }
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+			999 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.97
+				}
+			}
+		}
+		remove_effect = {
+
+		}	
+	}
+	KNT_destroy_pier_head_ferry_terminal = {
+	    days_remove = 30
+		fire_only_once = yes
+          visible = {
+               has_manpower > 0
+          }
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+			1009 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.98
+				}
+			}
+		}
+		remove_effect = {
+
+		}	
+	}
+}
+
+
 KNT_sabotages = {
     KNT_thermal_imaging_scouting = {
 		cost = 10

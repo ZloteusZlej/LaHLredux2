@@ -63,6 +63,154 @@ ideas = {
 	
 	country = {
 	
+		KNT_cultural_abyss = {
+			
+			picture = KNT_cultural_abyss
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.3
+				war_support_factor = -0.2
+				monthly_population = -0.15
+				research_speed_factor = -0.3
+				political_advisor_cost_factor = 0.35
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_cultural_death = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.3
+				war_support_factor = -0.2
+				monthly_population = -0.15
+				research_speed_factor = -0.3
+				political_advisor_cost_factor = 0.35
+			}
+		}
+		
+		KNT_cultural_battered = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				monthly_population = -0.10
+				research_speed_factor = -0.2
+				political_advisor_cost_factor = 0.20
+			}
+		}
+		
+		KNT_cultural_recovering = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.02
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				monthly_population = -0.05
+				research_speed_factor = -0.05
+				political_advisor_cost_factor = 0.05
+			}
+		}
+	
+		KNT_cultural_great = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.02
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				monthly_population = 0.05
+				research_speed_factor = 0.05
+				political_advisor_cost_factor = -0.05
+			}
+		}
+	
+		KNT_cultural_soaring = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.08
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				monthly_population = 0.10
+				research_speed_factor = 0.10
+				political_advisor_cost_factor = -0.08
+			}
+		}
+	
+		KNT_cultural_golden_age = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.30
+				war_support_factor = 0.30
+				monthly_population = 0.18
+				research_speed_factor = 0.20
+				political_advisor_cost_factor = -0.15
+			}
+		}
+		KNT_buidling_underway = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				civilian_factory_use = 2
+			}
+		}
+	}
+	
+	country = {
+	
 		KNT_stand_against_the_false_king = {
 			
 			picture = KNT_stand_against_the_false_king
@@ -1343,7 +1491,22 @@ ideas = {
 			}
 		}
 	}
-	
+	country = {
+		KNT_student_riots = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+            modifier = {
+				political_power_gain = -0.1
+				consumer_goods_factor = 0.05
+				research_speed_factor = -0.1
+			}
+		}
+	}
 	hidden_ideas = {
 		KNT_security_service_section_five_upgrade_2b = {
 			picture = 
@@ -1628,12 +1791,26 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			
-			removal_cost = -1 
-			
+			removal_cost = -1
 			modifier = {
 				river_crossing_factor = -0.45
 				org_loss_when_moving = -0.3
+			}
+		}
+	}
+	country = {
+		KNT_banditism = {
+	
+			removal_cost = -1
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+            modifier = {
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.1
+				stability_weekly_factor = -0.05
 			}
 		}
 	}
