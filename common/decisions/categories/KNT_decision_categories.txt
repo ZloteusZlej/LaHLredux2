@@ -76,3 +76,17 @@ KNT_sabotages = {
 	}
 	allowed = { original_tag = KNT }
 }
+
+KNT_air_strikes = {
+	icon = GFX_
+	visible_when_empty = yes
+	visible = {
+		KNT = {
+			AND = {
+				has_completed_focus = KNT_strike_from_above 
+				has_war	= yes
+			}
+		}
+	}
+	allowed = { original_tag = KNT }
+}

@@ -237,18 +237,18 @@
 			
 			random_owned_controlled_state = {
 				create_unit = {
-					division = "name = \"1st Motorized Cab Brigade Team\" division_template = \"Cab Brigade Team\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
+					division = "name = \"2nd Motorized Cab Brigade Team\" division_template = \"Cab Brigade Team\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
 					
 					owner = KNT
 				}
 			}
 			
 			KNT = {
-					country_event = {
-					days = 1
-					id = KNT_event.16
-					}
+				country_event = {
+				days = 1
+				id = KNT_event.16
 				}
+			}
 		}
 		x = 22
 		y = 3
@@ -1438,7 +1438,6 @@ shared_focus = {
 				limit = { has_dlc "La Resistance"}
 					upgrade_intelligence_agency	= upgrade_anti_partisan
 					upgrade_intelligence_agency	= upgrade_form_department
-					add_ideas = KNT_security_service_section_five_upgrade_2a
 				}
 				else = {
 					swap_ideas = {
@@ -1638,10 +1637,22 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_sabotage_experience
 		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.38
+				}
+			}
+			swap_ideas = {
+				remove_idea = KNT_professional_army_path_4
+				add_idea = KNT_professional_army_path_5
+			}
+		}
 		x = 27
 		y = 15
 	}
-		shared_focus = {
+	shared_focus = {
 		id = KNT_like_in_the_rorke's_drift
 		icon = GFX_goal_KNT_like_in_the_rorke's_drift
 		cost = 4.3
@@ -1655,6 +1666,9 @@ shared_focus = {
 				}
             }
 		}
+		completion_reward = {
+			add_ideas = KNT_army_traditions_path
+		}
 		x = 33
 		y = 8
 	}
@@ -1665,6 +1679,14 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_like_in_the_rorke's_drift
 		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.39
+				}
+			}
+		}
 		x = 32
 		y = 9
 	}
@@ -1674,6 +1696,18 @@ shared_focus = {
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_like_in_the_rorke's_drift
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KNT_army_traditions_path
+				add_idea = KNT_army_traditions_path_2
+			}
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.40
+				}
+			}
 		}
 		x = 34
 		y = 9
@@ -1688,6 +1722,69 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_the_gun_that_won_the_uk
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KNT_army_traditions_path_2
+				add_idea = KNT_army_traditions_path_3
+			}
+			division_template = {
+				name = "Royal Home Defence Regiment"
+				priority = 1
+				is_locked = yes
+				division_names_group = KNT_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+				}
+			}
+			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"1st Royal Home Defence Regiment\" division_template = \"Royal Home Defence Regiment\" start_experience_factor = 0 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"2nd Royal Home Defence Regiment\" division_template = \"Royal Home Defence Regiment\" start_experience_factor = 0 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"3rd Royal Home Defence Regiment\" division_template = \"Royal Home Defence Regiment\" start_experience_factor = 0 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"4th Royal Home Defence Regiment\" division_template = \"Royal Home Defence Regiment\" start_experience_factor = 0 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"5th Royal Home Defence Regiment\" division_template = \"Royal Home Defence Regiment\" start_experience_factor = 0 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+			
+		}
 		x = 33
 		y = 11
 	}
@@ -1698,6 +1795,12 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_for_god_and_britain
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KNT_army_traditions_path_3
+				add_idea = KNT_army_traditions_path_4
+			}
+		}	
 		x = 33
 		y = 13
 	}
@@ -1708,6 +1811,56 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_strike_from_above
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KNT_army_traditions_path_4
+				add_idea = KNT_army_traditions_path_5
+			}
+			
+			division_template = {
+				name = "Royal Guard Veterans Regiment"
+				division_names_group = KNT_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }	
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }	
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 } 
+					artillery = { x = 0 y = 1 } 		
+				}
+			}
+		
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Kent Royal Guard Veterans Regiment\" division_template = \"Royal Guard Veterans Regiment\" start_experience_factor = 1 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Sussex Royal Guard Veterans Regiment\" division_template = \"Royal Guard Veterans Regiment\" start_experience_factor = 1 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Wessex Royal Guard Veterans Regiment\" division_template = \"Royal Guard Veterans Regiment\" start_experience_factor = 1 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+		}	
 		x = 33
 		y = 15
 	}

@@ -742,11 +742,18 @@ country_event = {
     }
 }
 
-#country_event = {
-#	id = KNT_event.32
-#	title = KNT_event.32.t
-#	desc = KNT_event.32.d
-#	name = KNT_event.32.a
+
+country_event = {
+    id = KNT_event.32
+    title = KNT_event.32.t
+    desc = KNT_event.32.d
+    is_triggered_only = yes
+
+    fire_only_once = yes
+    option = {
+        name = KNT_event.32.a
+    }
+}
 
 country_event = {
 	id = KNT_event.33
@@ -857,10 +864,102 @@ ountry_event = {
 	
     fire_only_once = yes
 	option = {
-		name = KNT_event.36.c
+		name = KNT_event.37.c
 		army_experience = -5
 		add_political_power = -20
 		add_ideas = KNT_trench_digging_machine
+    }
+}
+
+
+country_event = {
+	id = KNT_event.38
+	title = KNT_event.38.t
+	desc = KNT_event.38.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.38.c
+		add_ideas = KNT_the_marauder
+    }
+	option = {
+		name = KNT_event.38.c
+		add_ideas = KNT_the_kombat
+    }
+	option = {
+		name = KNT_event.38.c
+		add_ideas = KNT_ARV 
+    }
+}
+
+country_event = {
+	id = KNT_event.39
+	title = KNT_event.39.t
+	desc = KNT_event.39.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.39.a
+		add_political_power = -15
+		add_ideas = KNT_aimbot
+    }
+	option = {
+		name = KNT_event.39.b
+		add_political_power = -15
+		add_ideas = KNT_ripple_fire_bazooka 
+    }
+	option = {
+		name = KNT_event.39.c
+		add_political_power = -15
+		add_ideas = KNT_phlogistinator 
+    }
+	option = {
+		name = KNT_event.39.e
+		add_political_power = -15
+		add_ideas = KNT_freezing_lazer
+    }
+}
+
+country_event = {
+	id = KNT_event.40
+	title = KNT_event.40.t
+	desc = KNT_event.40.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.40.a
+		army_experience	= -10
+		add_ideas = KNT_snipers_striking_infantry
+    }
+	option = {
+		name = KNT_event.40.b
+		army_experience	= -10
+		add_ideas = KNT_snipers_striking_officers
+    }
+}
+
+country_event = {
+	id = KNT_event.41
+	title = KNT_event.41.t
+	desc = KNT_event.41.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = KNT_event.41.a
+		KNT = {
+			country_event = {
+			days = 1
+			id = KNT_event.26
+			}
+		}
+    }
+	
+	option = {
+		name = KNT_event.41.b
     }
 }
 
