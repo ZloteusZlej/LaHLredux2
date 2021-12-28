@@ -2086,3 +2086,198 @@ country_event = {
     }
 }
    
+
+
+country_event = {
+	id = KNT_event.130
+	title = KNT_event.130.t
+	desc = KNT_event.130.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.130.a
+		if = {
+			limit = {
+			country_exists = IRE
+			}
+			IRE = {
+				country_event = {
+					days = 3
+					id = IRE_event.4
+				}
+			}
+		}
+		else_if = {
+			limit = {
+			country_exists = ULS
+			}
+			ULS = {
+				country_event = {
+					days = 3
+					id = ULS_event.1
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.131
+	title = KNT_event.131.t
+	desc = KNT_event.131.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.131.a
+		set_country_flag = irish_reject
+    }
+}
+
+country_event = {
+	id = KNT_event.132
+	title = KNT_event.132.t
+	desc = KNT_event.132.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.132.a
+		set_country_flag = irish_accept
+    }
+}
+
+country_event = {
+	id = KNT_event.133
+	title = KNT_event.133.t
+	desc = KNT_event.133.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.132.a
+		1165 = {				
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 17520
+				instant_build = yes
+			}
+		}
+		1165 = {				
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 17525
+				instant_build = yes
+			}
+		}
+		1165 = {				
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 17526
+				instant_build = yes
+			}
+		}
+		1156 = {				
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 17524
+				instant_build = yes
+			}
+		}
+		1156 = {				
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 10733
+				instant_build = yes
+			}
+		}
+		1156 = {				
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 17529
+				instant_build = yes
+			}
+		}
+		1156 = {				
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 17533
+				instant_build = yes
+			}
+		}
+		1156 = {				
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 17519
+				instant_build = yes
+			}
+		}
+    }
+	
+	option = {
+		name = KNT_event.132.a
+		1161 = {				
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 6624
+				instant_build = yes
+			}
+		}
+
+		1161 = {				
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 17542
+				instant_build = yes
+			}
+		}
+		
+		1153 = {				
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 17552
+				instant_build = yes
+			}
+		}
+		
+		1153 = {				
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 17568
+				instant_build = yes
+			}
+		}
+		
+		1153 = {				
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 10617
+				instant_build = yes
+			}
+		}
+		
+		1153 = {				
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 17551
+				instant_build = yes
+			}
+		}
+		
+		1153 = {				
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 10647
+				instant_build = yes
+			}
+		}
+	}
+}

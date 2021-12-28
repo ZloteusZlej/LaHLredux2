@@ -1,0 +1,44 @@
+add_namespace = ULS_event
+
+country_event = {
+	id = ULS_event.1
+	title = ULS_event.1.t
+	desc = ULS_event.1.d
+    is_triggered_only = yes
+	option = {
+		name = ULS_event.1.a
+		ai_chance = {
+			base = 6
+				modifier = {
+				add = -6
+				ULS = { has_government = hegemonism }
+				}
+				modifier = {
+				add = 5
+				KNT = { has_government = right_populism }
+				}
+		}
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.131
+			}
+		}
+    }
+	option = {
+		name = ULS_event.1.b
+		ai_chance = {
+			base = 4
+				modifier = {
+				add = -4
+				ULS = { NOT = { has_government = hegemonism } }
+				}
+		}
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.132
+			}
+		}
+    }
+}

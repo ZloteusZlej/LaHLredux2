@@ -72,3 +72,42 @@ country_event = {
         }
     } 	
 }
+
+country_event = {
+	id = IRE_event.4
+	title = IRE_event.4.t
+	desc = IRE_event.4.d
+    is_triggered_only = yes
+	option = {
+		name = IRE_event.4.a
+			ai_chance = { 
+				base = 7
+				modifier = {
+				add = 3
+				IRE = { has_government = regressionism }
+				}
+			KNT = {
+				country_event = {
+					days = 5
+					id = KNT_event.131
+				}
+			}
+		}
+	}
+	option = {
+		name = IRE_event.4.b
+		ai_chance = {
+			base = 3
+			modifier = {
+			add = -3
+			IRE = { has_government = regressionism }
+			}
+		}
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.132
+			}
+		}
+    }
+}

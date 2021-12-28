@@ -402,7 +402,11 @@
 			focus = KNT_we_shall_never_surrender
 		}
 		available = {
-        has_war = no
+			AND = {
+				has_war = no
+				country_exists = WES
+				country_exists = SUS
+			}
 		}
 		x = 24
 		y = 5
@@ -424,7 +428,11 @@
 				}
 			}
 		available = {
-        has_war = no
+			AND = {
+					has_war = no
+					country_exists = WES
+					country_exists = SUS
+			}
 		}
 		x = 26
 		y = 5
@@ -469,7 +477,11 @@
 			add_ideas = KNT_richard_dearlove
 		}
 		available = {
-        has_war = no
+			AND = {
+				has_war = no
+				country_exists = WES
+				country_exists = SUS
+			}
 		}
 		x = 28
 		y = 5
@@ -483,7 +495,11 @@
 			focus = KNT_we_shall_never_surrender
 		}
 		available = {
-        has_war = no
+			AND = {
+				has_war = no
+				country_exists = WES
+				country_exists = SUS
+			}
 		}
 		completion_reward = {
 			add_popularity = {
@@ -1956,6 +1972,14 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_commons_of_house
 		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.133
+				}
+			}
+		}
 		x = 46
 		y = 7
 	}
@@ -1965,6 +1989,56 @@ shared_focus = {
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_para_bellum
+		}
+		available = {
+			AND = {
+				NOT = {
+					OR = {
+						has_war_with = IRE
+						has_war_with = ULS
+					}
+				}
+				NOT = {
+					AND = {
+						country_exists = SUS
+						country_exists = WES
+						country_exists = ESS
+						country_exists = MRC
+						country_exists = EAG
+						country_exists = NTH
+					}
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = IRE
+				has_war_with = ULS
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							country_exists = IRE
+							country_exists = ULS
+						}
+						NOT = {
+							OR = {
+								has_war_with = IRE
+								has_war_with = ULS
+							}
+						}
+					}
+				}
+				KNT = {
+					country_event = {
+					days = 1
+					id = KNT_event.130
+					}
+				}
+			}
 		}
 		x = 44
 		y = 8
@@ -1976,8 +2050,35 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_lilliburlero
 		}
+		available = {
+			has_country_flag = irish_accept
+		}
 		mutually_exclusive = {
 	        focus = KNT_ulster_the_way_home
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = IRE
+				}
+				KNT = {
+					add_state_core = 1019
+					transfer_state = 1019
+					give_guarantee = IRE
+					give_military_access = IRE
+				}
+				IRE = {
+					give_military_access = KNT
+				}
+			}
+			else_if = {
+				limit = {
+					country_exists = ULS
+				}
+				KNT = {
+					puppet = ULS
+				}
+			}
 		}
 		x = 43
 		y = 9
@@ -1988,6 +2089,64 @@ shared_focus = {
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_lilliburlero
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = IRE
+				}
+				KNT = {
+					declare_war_on = {
+					target = IRE
+					type = annex_everything
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					country_exists = ULS
+				}
+				KNT = {
+					declare_war_on = {
+					target = ULS
+					type = annex_everything
+					}
+				}
+			}
+			division_template = {
+				name = "Polite Guys"
+				division_names_group = KNT_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }	
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }	
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+			}
+			
+			1019 = {
+				create_unit = {
+					division = "name = \"Batalion Falklands\" division_template = \"Polite Guyst\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
+					prioritize_location = 17680
+					owner = KNT
+				}
+			}
+			
+			1019 = {
+				create_unit = {
+					division = "name = \"Batalion Bastion\" division_template = \"Polite Guyst\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
+					prioritize_location = 7381
+					owner = KNT
+				}
+			}
+			
+		}
+		available = {
+			has_country_flag = irish_reject
 		}
 		mutually_exclusive = {
 			focus = KNT_the_new_good_friday
