@@ -50,7 +50,7 @@ country_event = {
 					days = 2
 				}
 			}
-			}
+	}
 		
 		kill_country_leader = yes
 		set_global_flag = ENG_Mosley_is_dead  
@@ -514,7 +514,7 @@ country_event = {
 		
 		}
 	}
-country_event = 6 
+country_event = { 
 	id = ESS_event.12
 	title = ESS_event.12.t
 	desc = ESS_event.12.d
@@ -534,6 +534,23 @@ country_event = 6
 	option = {
 		name = ESS_event.12.c 
 		
+		}
+	}
+	
+	country_event = { 
+		id = ESS_event.13
+		title = ESS_event.13.t
+		desc = ESS_event.13.d
+		
+		fire_only_once = yes	
+		is_triggered_only = yes
+
+		option = {
+			name = ESS_event.13.a 
+				set_global_flag = essex_accepts_kent_offer
+			}
+		option = {
+			name = ESS_event.13.b 
 		}
 	}
 	

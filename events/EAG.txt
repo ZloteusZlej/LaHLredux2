@@ -90,3 +90,19 @@ country_event = {
 		######give helis and manpoper
     }   	
 }
+
+country_event = {
+	id = EAG_event.5
+	title = EAG_event.5.t
+	desc = EAG_event.5.d
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+		name = EAG_event.5.a
+		set_global_flag = east_anglia_accepts_kent_offer
+    }
+	option = {
+		name = EAG_event.5.b
+    }
+}

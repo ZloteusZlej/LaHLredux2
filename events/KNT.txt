@@ -2280,4 +2280,33 @@ country_event = {
 			}
 		}
 	}
-}
+	
+	country_event = {
+		id = KNT_event.134
+		title = KNT_event.134.t
+		desc = KNT_event.134.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.134.a
+			ESS = {
+				country_event = {
+				days = 4
+				id = ESS_event.13
+				}
+			}
+			
+			EAG = {
+				country_event = {
+				days = 4
+				id = EAG_event.5
+				}
+			}
+			
+			MRC = {
+				country_event = {
+				days = 4
+				id = mrc.10
+				}
+			}
+		}
+	}

@@ -2161,6 +2161,14 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_para_bellum
 		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.134
+				}
+			}
+		}
 		x = 52
 		y = 8
 	}
@@ -2170,6 +2178,9 @@ shared_focus = {
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_an_unwilling_alliance
+		}
+		available = {
+			has_global_flag = east_anglia_accepts_kent_offer
 		}
 		mutually_exclusive = {
 	    focus = KNT_the_patriot
@@ -2242,6 +2253,9 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_an_unwilling_alliance
 		}
+		available = {
+			has_global_flag = essex_accepts_kent_offer
+		}
 		mutually_exclusive = {
 	    focus = KNT_the_patriot
 		focus = KNT_our_germanic_brothers
@@ -2312,6 +2326,9 @@ shared_focus = {
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_an_unwilling_alliance
+		}
+		available = {
+			has_global_flag = mercia_accepts_kent_offer
 		}
 		mutually_exclusive = {
 	    focus = KNT_our_germanic_brothers

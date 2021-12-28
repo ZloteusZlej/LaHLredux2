@@ -274,3 +274,21 @@ country_event = {
 		name = mrc.9.e
 	}
 }
+
+country_event = {
+	id = mrc.10
+	title = mrc.10.t
+	desc = mrc.10.d
+	picture = 
+	is_triggered_only = yes
+	trigger = {
+		tag = MRC
+	}
+	option = {
+		name = mrc.10.a
+		set_global_flag = mercia_accepts_kent_offer
+	}
+	option = {
+		name = mrc.10.b
+	}
+}
