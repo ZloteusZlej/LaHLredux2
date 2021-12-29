@@ -314,6 +314,7 @@ country_event = {
 	}
 	option = {
 	name = KNT_event.10.a
+	set_country_flag = KENT_political_matters_resolved
     }
 }
 	
@@ -2097,7 +2098,7 @@ country_event = {
 		name = KNT_event.130.a
 		if = {
 			limit = {
-			country_exists = IRE
+				NOT = { country_exists = ULS }
 			}
 			IRE = {
 				country_event = {
@@ -2108,7 +2109,7 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-			country_exists = ULS
+			NOT = { country_exists = IRE }
 			}
 			ULS = {
 				country_event = {
@@ -2148,7 +2149,7 @@ country_event = {
 	desc = KNT_event.133.d
     is_triggered_only = yes
 	option = {
-		name = KNT_event.132.a
+		name = KNT_event.133.a
 		1165 = {				
 			add_building_construction = {
 				type = bunker
@@ -2216,67 +2217,68 @@ country_event = {
     }
 	
 	option = {
-		name = KNT_event.132.a
-		1161 = {				
-			add_building_construction = {
-				type = bunker
-				level = 3
-				province = 6624
-				instant_build = yes
+		name = KNT_event.133.b
+			1161 = {				
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6624
+					instant_build = yes
+				}
 			}
-		}
 
-		1161 = {				
-			add_building_construction = {
-				type = bunker
-				level = 3
-				province = 17542
-				instant_build = yes
+			1161 = {				
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 17542
+					instant_build = yes
+				}
 			}
-		}
-		
-		1153 = {				
-			add_building_construction = {
-				type = bunker
-				level = 3
-				province = 17552
-				instant_build = yes
+			
+			1153 = {				
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 17552
+					instant_build = yes
+				}
 			}
-		}
-		
-		1153 = {				
-			add_building_construction = {
-				type = bunker
-				level = 3
-				province = 17568
-				instant_build = yes
+			
+			1153 = {				
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 17568
+					instant_build = yes
+				}
 			}
-		}
-		
-		1153 = {				
-			add_building_construction = {
-				type = bunker
-				level = 3
-				province = 10617
-				instant_build = yes
+			
+			1153 = {				
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 10617
+					instant_build = yes
+				}
 			}
-		}
-		
-		1153 = {				
-			add_building_construction = {
-				type = bunker
-				level = 3
-				province = 17551
-				instant_build = yes
+			
+			1153 = {				
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 17551
+					instant_build = yes
+				}
 			}
-		}
-		
-		1153 = {				
-			add_building_construction = {
-				type = bunker
-				level = 3
-				province = 10647
-				instant_build = yes
+			
+			1153 = {				
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 10647
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -2308,5 +2310,19 @@ country_event = {
 				id = mrc.10
 				}
 			}
+		}
+	}
+	
+	######THERE'LL ALWAYS BE AN ENGLAND####### 
+	
+	country_event = {
+		id = KNT_event.250
+		title = KNT_event.250.t
+		desc = KNT_event.250.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.250.a
+				add_war_support = 0.2
+				add_stability = 0.15
 		}
 	}

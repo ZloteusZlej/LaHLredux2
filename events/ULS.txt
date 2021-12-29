@@ -8,15 +8,16 @@ country_event = {
 	option = {
 		name = ULS_event.1.a
 		ai_chance = {
-			base = 6
+			base = 8
 				modifier = {
-				add = -6
-				ULS = { has_government = hegemonism }
-				}
+					add = -8
+					ULS = { has_government = hegemonism }
+					}
 				modifier = {
-				add = 5
-				KNT = { has_government = right_populism }
-				}
+					add = 7
+					KNT = { has_government = right_populism }
+					}
+				factor = 1
 		}
 		KNT = {
 			country_event = {
@@ -28,11 +29,12 @@ country_event = {
 	option = {
 		name = ULS_event.1.b
 		ai_chance = {
-			base = 4
+			base = 2
 				modifier = {
-				add = -4
-				ULS = { NOT = { has_government = hegemonism } }
-				}
+					add = -2
+					ULS = { NOT = { has_government = hegemonism } }
+					}
+				factor = 1
 		}
 		KNT = {
 			country_event = {

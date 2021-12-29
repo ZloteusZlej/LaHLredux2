@@ -404,8 +404,10 @@
 		available = {
 			AND = {
 				has_war = no
-				country_exists = WES
-				country_exists = SUS
+				NOT ={
+					country_exists = WES
+					country_exists = SUS
+				}
 			}
 		}
 		x = 24
@@ -429,9 +431,11 @@
 			}
 		available = {
 			AND = {
-					has_war = no
+				has_war = no
+				NOT ={
 					country_exists = WES
 					country_exists = SUS
+				}
 			}
 		}
 		x = 26
@@ -479,8 +483,10 @@
 		available = {
 			AND = {
 				has_war = no
-				country_exists = WES
-				country_exists = SUS
+				NOT ={
+					country_exists = WES
+					country_exists = SUS
+				}
 			}
 		}
 		x = 28
@@ -497,8 +503,10 @@
 		available = {
 			AND = {
 				has_war = no
-				country_exists = WES
-				country_exists = SUS
+				NOT ={
+					country_exists = WES
+					country_exists = SUS
+				}
 			}
 		}
 		completion_reward = {
@@ -558,6 +566,9 @@
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_commons_of_house
+		}
+		available = {
+			has_country_flag = KENT_political_matters_resolved
 		}
 		completion_reward = {
 			KNT = {
@@ -685,6 +696,9 @@
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_the_workshop_of_the_world
+		}
+		available = {
+			has_government = neocameralism
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -930,6 +944,9 @@
 		}
 		mutually_exclusive = {
 			focus = KNT_manchester_model
+		}
+		available = {
+			has_government = right_populism
 		}
 		completion_reward = {
 			add_ideas = KNT_hightories_economic_plan
@@ -1185,6 +1202,9 @@
 		prerequisite = {
 			focus = KNT_commons_of_house
 		}
+		available = {
+			has_country_flag = KENT_political_matters_resolved
+		}
 		completion_reward = {
 			KNT = {
 				country_event = {
@@ -1219,6 +1239,9 @@
 		}
 		mutually_exclusive = {
 			focus = KNT_our_new_burden
+		}
+		available = {
+			has_government = neocameralism
 		}
 		completion_reward = {
 			KNT = {
@@ -1325,6 +1348,9 @@
 		prerequisite = {
 			focus = KNT_stop_cultural_decadence
 		}
+		available = {
+			has_government = right_populism
+		}
 		mutually_exclusive = {
 	    focus = KNT_victorian_ensemble
 		}
@@ -1421,6 +1447,12 @@ shared_focus = {
 		id = KNT_the_coronation
 		icon = GFX_goal_KNT_the_coronation
 		cost = 4.3
+		available = {
+			OR = {
+				has_country_flag = KENT_hightories_britain_reunified
+				has_country_flag = KENT_neovictorians_britain_reunified
+			}
+		}
 		prerequisite = {
 			focus = KNT_the_merrie_monarch
 			focus = KNT_le_roi_soleil
@@ -1438,6 +1470,9 @@ shared_focus = {
 		completion_reward = {
 			army_experience = 35
 			skill_bonus_factor = 0.2
+		}
+		available = {
+			has_country_flag = KENT_political_matters_resolved
 		}
 		x = 30
 		y = 7
@@ -1536,6 +1571,9 @@ shared_focus = {
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_we_shall_go_on_to_the_end
+		}
+		available = {
+			has_government = neocameralism
 		}
 		available = {
             KNT = {
@@ -1674,6 +1712,9 @@ shared_focus = {
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_we_shall_go_on_to_the_end
+		}
+		available = {
+			has_government = right_populism
 		}
 		available = {
             KNT = {
@@ -1887,6 +1928,9 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_commons_of_house
 		}
+		available = {
+			has_country_flag = KENT_political_matters_resolved
+		}
 		x = 39
 		y = 7
 	}
@@ -1972,6 +2016,9 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_commons_of_house
 		}
+		available = {
+			has_country_flag = KENT_political_matters_resolved
+		}
 		completion_reward = {
 			KNT = {
 				country_event = {
@@ -1991,24 +2038,16 @@ shared_focus = {
 			focus = KNT_para_bellum
 		}
 		available = {
-			AND = {
 				NOT = {
-					OR = {
-						has_war_with = IRE
-						has_war_with = ULS
-					}
+					has_war_with = IRE
+					has_war_with = ULS
+					country_exists = SUS
+					country_exists = WES
+					country_exists = ESS
+					country_exists = MRC
+					country_exists = EAG
+					country_exists = NTH
 				}
-				NOT = {
-					AND = {
-						country_exists = SUS
-						country_exists = WES
-						country_exists = ESS
-						country_exists = MRC
-						country_exists = EAG
-						country_exists = NTH
-					}
-				}
-			}
 		}
 		bypass = {
 			OR = {
@@ -2017,28 +2056,12 @@ shared_focus = {
 			}
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					AND = {
-						OR = {
-							country_exists = IRE
-							country_exists = ULS
-						}
-						NOT = {
-							OR = {
-								has_war_with = IRE
-								has_war_with = ULS
-							}
-						}
-					}
-				}
 				KNT = {
 					country_event = {
 					days = 1
 					id = KNT_event.130
 					}
 				}
-			}
 		}
 		x = 44
 		y = 8
@@ -2130,17 +2153,19 @@ shared_focus = {
 			
 			1019 = {
 				create_unit = {
-					division = "name = \"Batalion Falklands\" division_template = \"Polite Guyst\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
+					division = "name = \"Batalion Falklands\" division_template = \"Polite Guys\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
 					prioritize_location = 17680
 					owner = KNT
+					allow_spawning_on_enemy_provs = yes
 				}
 			}
 			
 			1019 = {
 				create_unit = {
-					division = "name = \"Batalion Bastion\" division_template = \"Polite Guyst\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
+					division = "name = \"Batalion Bastion\" division_template = \"Polite Guys\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
 					prioritize_location = 7381
 					owner = KNT
+					allow_spawning_on_enemy_provs = yes 
 				}
 			}
 			
@@ -2434,6 +2459,44 @@ shared_focus = {
 				}
 				KNT = {
 				    has_completed_focus = KNT_the_old_guards_in_action
+				}
+			}
+			OR = {
+				KNT = {
+					has_country_flag = KENT_hightories_britain_reunified
+				}
+				KNT = {
+					has_country_flag = KENT_neovictorians_britain_reunified
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = KENT_hightories_britain_reunified
+				}
+				country_event = {
+				days = 1
+				id = super.3
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = KENT_neovictorians_britain_reunified
+				}
+				country_event = {
+				days = 1
+				id = super.10
+				}
+			}
+			set_capital = {
+				state = 1160
+				remember_old_capital = no
+			}
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.250
 				}
 			}
 		}	
