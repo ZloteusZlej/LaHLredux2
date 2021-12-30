@@ -1138,7 +1138,108 @@ Black_bird = { #Roger Scruton#
 		}
 	}
 	
-	visionary_atlas = {
+	protector_of_monarchy = { #Jacob_Rees-Mogg#
+		random = no
+		stability_factor = 0.05
+		drift_defence_factor = 0.1
+		max_surrender_limit_offset = 0.3
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	patriotic_industrialist = { #Jacob_Rees-Mogg#
+		random = no
+		production_factory_efficiency_gain_factor = 0.2
+		political_power_gain = -0.1
+		production_speed_buildings_factor = 0.1
+		industry_repair_factor = 0.2
+		consumer_goods_factor = -0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	popular_reformist = { #Jacob_Rees-Mogg#
+		random = no
+		stability_factor = 0.15
+		political_power_gain = 0.3
+		war_support_factor = -0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	communism_destroyer = { #Jacob_Rees-Mogg#
+		random = no
+		custom_modifier_tooltip = KNT_communism_destroyer.tt
+		hidden_effect = {
+			targeted_modifier = { tag = SUS attack_bonus_against = 0.5 }
+		}
+		war_support_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eurasia_destroyer = { #Jacob_Rees-Mogg#
+		random = no
+		custom_modifier_tooltip = KNT_eurasia_destroyer.tt
+		hidden_effect = {
+			targeted_modifier = { tag = NTH attack_bonus_against = 0.5 }
+		}
+		war_support_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	radical_destroyer = { #Jacob_Rees-Mogg#
+		random = no
+		custom_modifier_tooltip = KNT_communism_destroyer.tt
+		hidden_effect = {
+			targeted_modifier = { tag = MRC attack_bonus_against = 0.5 }
+		}
+		war_support_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	true_high_tory = { #Jacob_Rees-Mogg#
+		random = no
+		stability_factor = 0.15
+		monthly_population = 0.3
+		research_speed_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	anti_radical = { #Jacob_Rees-Mogg#
+		random = no
+		stability_factor = 0.15
+		political_power_gain = 0.15
+		war_support_factor = 0.1
+		drift_defence_factor = 0.3
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	our_last_best_hope = { #Jacob_Rees-Mogg#
+		random = no
+		justify_war_goal_time = -0.3
+		stability_factor = -0.2
+		war_support_factor = 0.25
+		send_volunteer_factor = 0.5
+		army_morale_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	visionary_atlas = { #Petterson#
 		random = no
 		research_speed_factor = 0.1
 		political_power_factor = 0.05

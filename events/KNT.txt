@@ -2312,6 +2312,186 @@ country_event = {
 			}
 		}
 	}
+
+	country_event = {
+		id = KNT_event.135
+		title = KNT_event.135.t
+		desc = KNT_event.135.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.135.a
+			custom_effect_tooltip = KNT_good_effect_small.tt
+			add_war_support = 0.02
+			add_stability = 0.08
+			hidden_effect = {
+				add_to_variable = {
+					var = KNT_culture_effectiveness_factor
+					value = 2
+				}
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.136
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.136
+		title = KNT_event.136.t
+		desc = KNT_event.136.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.136.a
+			add_country_leader_trait = true_high_tory
+			custom_effect_tooltip = KNT_good_progress_big
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.137
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 10
+				}
+			}
+		}
+		option = {
+			name = KNT_event.136.a
+			add_country_leader_trait = anti_radical
+			custom_effect_tooltip = KNT_good_effect_small
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.137
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_effectiveness_factor
+					value = 4
+				}
+			}
+		}
+		option = {
+			name = KNT_event.136.a
+			add_country_leader_trait = our_last_best_hope
+			custom_effect_tooltip = KNT_bad_people_big
+			custom_effect_tooltip = KNT_good_effect_big
+			custom_effect_tooltip = KNT_good_progress_big
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.137
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_effectiveness_factor
+					value = 5
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 12
+				}
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = -10
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.137
+		title = KNT_event.137.t
+		desc = KNT_event.137.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.137.a
+			add_country_leader_trait = protector_of_monarchy
+			custom_effect_tooltip = KNT_good_people_small
+			custom_effect_tooltip = KNT_good_progress_small
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.138
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 8
+				}
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = 8
+				}
+			}
+		}
+		option = {
+			name = KNT_event.137.a
+			add_country_leader_trait = patriotic_industrialist
+			custom_effect_tooltip = KNT_good_effect_small
+			custom_effect_tooltip = KNT_good_progress_small
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.138
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_effectiveness_factor
+					value = 2
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 7
+				}
+			}
+		}
+		option = {
+			name = KNT_event.137.a
+			add_country_leader_trait = popular_reformist
+			custom_effect_tooltip = KNT_good_people_big
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.138
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = 15
+				}
+			}
+		}
+	}
+		
+	country_event = {
+		id = KNT_event.138
+		title = KNT_event.138.t
+		desc = KNT_event.138.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.138.a
+			add_country_leader_trait = communism_destroyer
+		}
+		option = {
+			name = KNT_event.136.a
+			add_country_leader_trait = eurasia_destroyer
+		}
+		option = {
+			name = KNT_event.136.a
+			add_country_leader_trait = radical_destroyer
+		}
+	}
 	
 	######THERE'LL ALWAYS BE AN ENGLAND####### 
 	
@@ -2324,5 +2504,31 @@ country_event = {
 			name = KNT_event.250.a
 				add_war_support = 0.2
 				add_stability = 0.15
+		}
+	}
+	
+	###FAKE EVENT###
+	
+	country_event = {
+		id = KNT_event.1000
+		title = KNT_event.1000.t
+		desc = KNT_event.1000.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.1000.a
+		}
+		option = {
+			name = KNT_event.1000.b
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.1001
+		title = KNT_event.1001.t
+		desc = KNT_event.1001.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.1001.a
+			custom_effect_tooltip = KNT_event1000.tt
 		}
 	}

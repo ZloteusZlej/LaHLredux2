@@ -1352,7 +1352,15 @@
 			has_government = right_populism
 		}
 		mutually_exclusive = {
-	    focus = KNT_victorian_ensemble
+			focus = KNT_victorian_ensemble
+		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.135
+				}
+			}
 		}
 		x = 7
 		y = 8
@@ -1367,7 +1375,7 @@
 		x = 6
 		y = 9
 	}
-		shared_focus = {
+	shared_focus = {
 		id = KNT_church_order
 		icon = GFX_goal_KNT_church_order
 		cost = 4.3

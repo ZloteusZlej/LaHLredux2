@@ -2319,6 +2319,7 @@ KNT_thermonuclear_reactor = {
 KNT_cultural_progress = {
 
 	KNT_cultural_propaganda_campaign = {
+		cost = 30
 	    days_remove = 70
 		fire_only_once = no
 		visible = {
@@ -2349,6 +2350,7 @@ KNT_cultural_progress = {
 	}
 	
 	KNT_host_cultural_festival = {
+		cost = 30
 	    days_remove = 70
 		fire_only_once = no
 		visible = {
@@ -2416,11 +2418,14 @@ KNT_cultural_progress = {
     }
 ###DESTROY BUILDINGS###
 	KNT_destroy_redrock_stockport = {
+		cost = 10	
 	    days_remove = 30
 		fire_only_once = yes
-          visible = {
-               has_manpower > 0
-          }
+        visible = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+        }
 		available = {
 			KNT = {
 				has_completed_focus	= KNT_victorian_ensemble
@@ -2444,11 +2449,14 @@ KNT_cultural_progress = {
 		}	
 	}
 	KNT_destroy_greetham_street = {
+		cost = 10	
 	    days_remove = 30
 		fire_only_once = yes
-          visible = {
-               has_manpower > 0
-          }
+        visible = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+        }
 		available = {
 			KNT = {
 				has_completed_focus	= KNT_victorian_ensemble
@@ -2472,11 +2480,14 @@ KNT_cultural_progress = {
 		}	
 	}
 	KNT_destroy_haydn_tower = {
+		cost = 10	
 	    days_remove = 30
 		fire_only_once = yes
-          visible = {
-               has_manpower > 0
-          }
+        visible = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+        }
 		available = {
 			KNT = {
 				has_completed_focus	= KNT_victorian_ensemble
@@ -2500,11 +2511,14 @@ KNT_cultural_progress = {
 		}	
 	}
 	KNT_destroy_strata_se1 = {
+		cost = 10	
 	    days_remove = 30
 		fire_only_once = yes
-          visible = {
-               has_manpower > 0
-          }
+        visible = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+        }
 		available = {
 			KNT = {
 				has_completed_focus	= KNT_victorian_ensemble
@@ -2528,11 +2542,14 @@ KNT_cultural_progress = {
 		}	
 	}
 	KNT_destroy_lincoln_tower = {
+		cost = 10	
 	    days_remove = 30
 		fire_only_once = yes
-          visible = {
-               has_manpower > 0
-          }
+        visible = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+        }
 		available = {
 			KNT = {
 				has_completed_focus	= KNT_victorian_ensemble
@@ -2556,11 +2573,14 @@ KNT_cultural_progress = {
 		}	
 	}
 	KNT_destroy_cutty_sark = {
+		cost = 10	
 	    days_remove = 30
 		fire_only_once = yes
-          visible = {
-               has_manpower > 0
-          }
+        visible = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+        }
 		available = {
 			KNT = {
 				has_completed_focus	= KNT_victorian_ensemble
@@ -2584,11 +2604,14 @@ KNT_cultural_progress = {
 		}	
 	}
 	KNT_destroy_fenchurch_buidling = {
+		cost = 10	
 	    days_remove = 30
 		fire_only_once = yes
-          visible = {
-               has_manpower > 0
-          }
+        visible = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+        }
 		available = {
 			KNT = {
 				has_completed_focus	= KNT_victorian_ensemble
@@ -2612,11 +2635,14 @@ KNT_cultural_progress = {
 		}	
 	}
 	KNT_destroy_trellick_tower = {
+		cost = 10	
 	    days_remove = 30
 		fire_only_once = yes
-          visible = {
-               has_manpower > 0
-          }
+        visible = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+        }
 		available = {
 			KNT = {
 				has_completed_focus	= KNT_victorian_ensemble
@@ -2640,11 +2666,14 @@ KNT_cultural_progress = {
 		}	
 	}
 	KNT_destroy_cumbernauld_town_centre = {
+		cost = 10	
 	    days_remove = 30
 		fire_only_once = yes
-          visible = {
-               has_manpower > 0
-          }
+        visible = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+        }
 		available = {
 			KNT = {
 				has_completed_focus	= KNT_victorian_ensemble
@@ -2668,11 +2697,14 @@ KNT_cultural_progress = {
 		}	
 	}
 	KNT_destroy_battersea_power_station = {
+		cost = 10	
 	    days_remove = 30
 		fire_only_once = yes
-          visible = {
-               has_manpower > 0
-          }
+        visible = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+        }
 		available = {
 			KNT = {
 				has_completed_focus	= KNT_victorian_ensemble
@@ -2696,11 +2728,14 @@ KNT_cultural_progress = {
 		}	
 	}
 	KNT_destroy_megacity_uk = {
+		cost = 10	
 	    days_remove = 30
 		fire_only_once = yes
-          visible = {
-               has_manpower > 0
-          }
+        visible = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+        }
 		available = {
 			KNT = {
 				has_completed_focus	= KNT_victorian_ensemble
@@ -2724,11 +2759,14 @@ KNT_cultural_progress = {
 		}	
 	}
 	KNT_destroy_drake_circus = {
+		cost = 10	
 	    days_remove = 30
 		fire_only_once = yes
-          visible = {
-               has_manpower > 0
-          }
+        visible = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+        }
 		available = {
 			KNT = {
 				has_completed_focus	= KNT_victorian_ensemble
@@ -2752,11 +2790,14 @@ KNT_cultural_progress = {
 		}	
 	}
 	KNT_destroy_pier_head_ferry_terminal = {
+		cost = 10	
 	    days_remove = 30
 		fire_only_once = yes
-          visible = {
-               has_manpower > 0
-          }
+        visible = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+        }
 		available = {
 			KNT = {
 				has_completed_focus	= KNT_victorian_ensemble
@@ -2777,6 +2818,40 @@ KNT_cultural_progress = {
 		}
 		remove_effect = {
 
+		}	
+	}
+###Our Burden###
+	KNT_conduct_a_military_parade = {
+		cost = 50
+	    days_remove = 70
+		fire_only_once = no
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_our_new_burden
+			}
+		}
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_our_new_burden
+			}
+		}
+		modifier = {
+			war_support_weekly = 0.02
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_good_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 6
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 8
+			}				
 		}	
 	}
 }
