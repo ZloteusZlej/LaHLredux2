@@ -1174,6 +1174,129 @@ country_event = {
 			add_command_power = -50
 		}
 	}
+	
+	country_event = {
+		id = KNT_event.48
+		title = KNT_event.48.t
+		desc = KNT_event.48.d
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		option = {
+			name = KNT_event.48.a
+			KNT = {
+				division_template = {
+					name = "Private Militärfirma"
+					division_names_group = EAG_INF_02
+
+					regiments = {
+						infantry = { x = 0 y = 0 }	
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }	
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						artillery_brigade = { x = 1 y = 4 }
+						artillery_brigade = { x = 0 y = 3 }
+					}
+					support = {
+						recon = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 } 		
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Private Militärfirma "Asgaard"\" division_template = \"Private Militärfirma\" start_experience_factor = 1 start_equipment_factor = 1"
+						
+						owner = KNT
+					}
+				}
+				add_political_power = -35
+				
+			}
+		}
+		option = {
+			name = KNT_event.48.b
+			EAG = {
+				country_event = {
+				days = 4
+				id = EAG_event.6
+				}
+			}
+			KNT = { add_political_power = -35 }
+		}
+		option = {
+			name = KNT_event.48.c
+			KNT = {
+				division_template = {
+					name = "Panzerbrigade"
+					division_names_group = EAG_MBT_01
+
+					regiments = {
+						MBT = { x = 0 y = 0 }	
+						MBT = { x = 0 y = 1 }
+						MBT = { x = 0 y = 2 }	
+						MBT = { x = 0 y = 3 }
+						MBT = { x = 0 y = 4 }
+						MBT = { x = 0 y = 5 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+						motorized = { x = 1 y = 3 }
+						motorized = { x = 1 y = 4 }
+					}
+					
+					support = { 
+						engineer = { x = 0 y = 0 } 
+						maintenance_company = { x = 0 y = 1 } 		
+					}
+				}
+				
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Panzerbrigade der Koalitionstruppen\" division_template = \"Panzerbrigade\" start_experience_factor = 0.8 start_equipment_factor = 1"
+						
+						owner = KNT
+					}
+				}
+				add_political_power = -35
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.49
+		title = KNT_event.49.t
+		desc = KNT_event.49.d
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		option = {
+			name = KNT_event.49.a
+			KNT = {
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Private Militärfirma "Wodan"\" division_template = \"Private Militärfirma\" start_experience_factor = 1 start_equipment_factor = 1"
+						
+						owner = KNT
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -750
+					producer = KNT
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = -50
+					producer = KNT
+				}
+				add_political_power = -50
+			}
+		}
+
+	}
 
 ###CULTURAL TREE##
 
@@ -2535,5 +2658,124 @@ country_event = {
 			name = KNT_event.250.a
 				add_war_support = 0.2
 				add_stability = 0.15
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.251
+		title = KNT_event.251.t
+		desc = KNT_event.251.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.251.a
+			EAG = {
+				country_event = {
+				days = 2
+				id = EAG_event.7
+				}
+			}
+		}
+		
+		option = {
+			name = KNT_event.251.b
+			KNT = {
+				country_event = {
+				days = 3
+				id = KNT_event.252
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.252
+		title = KNT_event.252.t
+		desc = KNT_event.252.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.252.a
+			EAG = {
+				country_event = {
+				days = 2
+				id = EAG_event.8
+				}
+			}
+		}
+		
+		option = {
+			name = KNT_event.252.b
+			KNT = {
+				country_event = {
+				days = 3
+				id = KNT_event.253
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.253
+		title = KNT_event.253.t
+		desc = KNT_event.253.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.253.a
+			EAG = {
+				country_event = {
+				days = 4
+				id = EAG_event.9
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.254
+		title = KNT_event.254.t
+		desc = KNT_event.254.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.254.a
+			add_political_power = -50
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.255
+		title = KNT_event.255.t
+		desc = KNT_event.255.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.255.a
+			KNT = {
+				remove_unit_leader = 228
+				create_corps_commander = {
+						name = "Nick Carter"
+						picture = "Portrait_EAG_Nick_Carter.dds"
+						traits = {  }
+						skill = 2
+						attack_skill = 1
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 2
+					}
+			}
+			EAG = {
+				remove_unit_leader = 124
+				create_corps_commander = {
+						name = "Louis Lillywhite"
+						picture = "Portrait_KNT_Louis_Lillywhite.dds"
+						traits = {  }
+						skill = 2
+						attack_skill = 1
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 3
+				}
+				country_event = {
+				days = 4
+				id = EAG_event.10
+				}
+			}	
 		}
 	}

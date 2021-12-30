@@ -102,3 +102,15 @@ KNT_essex_diplomacy = {
 	}
 	visible_when_empty = yes
 }
+
+KNT_east_anglia_diplomacy = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = KNT }
+	visible = {
+			KNT = {
+				has_completed_focus = KNT_our_germanic_brothers
+			}
+	}
+	visible_when_empty = yes
+}

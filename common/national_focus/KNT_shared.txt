@@ -2208,6 +2208,12 @@ shared_focus = {
 		available = {
 			has_global_flag = east_anglia_accepts_kent_offer
 		}
+		completion_reward = {
+			create_faction = "Legitimate Government Forces"
+			KNT = {
+					add_to_faction = EAG
+			}
+		}	
 		mutually_exclusive = {
 	    focus = KNT_the_patriot
 		focus = KNT_the_chimes_of_big_ben
@@ -2222,6 +2228,14 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_our_germanic_brothers
 		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.48
+				}
+			}
+		}
 		x = 53
 		y = 10
 	}
@@ -2231,6 +2245,14 @@ shared_focus = {
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_white_youth
+		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.251
+				}
+			}
 		}
 		x = 53
 		y = 11
@@ -2258,6 +2280,14 @@ shared_focus = {
 		mutually_exclusive = {
 			focus = KNT_london_referendum
 		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.49
+				}
+			}
+		}
 		x = 54
 		y = 12
 	}
@@ -2268,6 +2298,20 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_buy_them
 			focus = KNT_london_referendum
+		}
+		completion_reward = {
+			KNT = {
+				add_ideas = KNT_german_enlgish_coop
+			}
+			EAG = {
+				add_ideas = EAG_german_enlgish_coop
+			}
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.255
+				}
+			}
 		}
 		x = 53
 		y = 14
@@ -2415,7 +2459,7 @@ shared_focus = {
 			focus = KNT_an_unwilling_alliance
 		}
 		available = {
-			has_global_flag = mercia_accepts_kent_offer
+			has_global_flag = pearce_accepts_kent_offer
 		}
 		mutually_exclusive = {
 	    focus = KNT_our_germanic_brothers

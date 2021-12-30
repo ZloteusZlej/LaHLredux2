@@ -20,4 +20,103 @@ ideas = {
 			}
 		}
 	}
+	
+	hidden_ideas = {
+		EAG_klumb-1000 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			equipment_bonus = {
+				main_battle_tank_equipment = {
+					build_cost_ic = 0.1
+					hard_attack = 2
+					soft_attack = 3
+					armor_value = 1
+					defense = 2
+					maximum_speed = 7
+					reliability = -0.1
+				}
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_klumb-2000 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			equipment_bonus = {
+				main_battle_tank_equipment = {
+					build_cost_ic = 0.15
+					hard_attack = 3
+					soft_attack = 3
+					armor_value = 1
+					defense = 2
+					maximum_speed = 11
+					reliability = -0.2
+					air_attack = 5
+				}
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_klumb-3000 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			equipment_bonus = {
+				main_battle_tank_equipment = {
+					build_cost_ic = 0.2
+					hard_attack = 3
+					soft_attack = 5
+					armor_value = 2
+					defense = 1
+					maximum_speed = 15
+					reliability = -0.2
+					hardness = 0.02
+					ap_attack = 25
+					air_attack = 7
+				}
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_german_enlgish_coop = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor	= 0.05
+				air_superiority_bonus_in_combat = 0.1
+				recon_factor_while_entrenched = 0.05
+			}
+			targeted_modifier = {
+				tag = EAG
+			}
+		}
+	}
 }
