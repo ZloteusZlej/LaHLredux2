@@ -2473,6 +2473,12 @@ shared_focus = {
 	    focus = KNT_our_germanic_brothers
 		focus = KNT_the_chimes_of_big_ben
 		}
+		completion_reward = {
+			create_faction = "British Liberation Front"
+			KNT = {
+				add_to_faction = MRC
+			}
+		}
 		x = 57
 		y = 9
 	}
@@ -2483,6 +2489,14 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_the_patriot
 		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.256
+				}
+			}
+		}
 		x = 57
 		y = 10
 	}
@@ -2492,6 +2506,14 @@ shared_focus = {
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_the_mercian_hidalgo
+		}
+		completion_reward = {
+			MRC = {
+				country_event = {
+				days = 1
+				id = mrc.11
+				}
+			}
 		}
 		x = 57
 		y = 11
@@ -2505,6 +2527,14 @@ shared_focus = {
 		}
 		mutually_exclusive = {
 			focus = KNT_traditional_leap_forward
+		}
+		completion_reward = {
+			MRC = {
+				country_event = {
+				days = 1
+				id = mrc.12
+				}
+			}
 		}
 		x = 56
 		y = 12
@@ -2530,6 +2560,14 @@ shared_focus = {
 			focus = KNT_traditional_leap_forward
 			focus = KNT_barbarism_vs_civilization
 		}
+		completion_reward = {
+			MRC = {
+				add_ideas = MRC_cambridge_protection 
+			}
+			KNT = {
+				add_ideas = KNT_cambridge_protection
+			}
+		}
 		x = 57
 		y = 14
 	}
@@ -2542,6 +2580,33 @@ shared_focus = {
 			focus = KNT_the_mole
 			focus = KNT_coordinated_strikes
 		}
+		completion_reward = {
+			if = {
+				limit = {
+					is_in_faction_with = ESS
+				}
+				dismantle_faction = yes
+				}
+			}
+			else_if = {
+				limit = {
+					is_in_faction_with = EAG
+				}
+				dismantle_faction = yes
+			}
+			else_if = {
+				limit = {
+					is_in_faction_with = MRC
+				}
+				dismantle_faction = yes
+				MRC = {
+					country_event = {
+					days = 1
+					id = mrc.13
+					}
+				}
+			}
+			
 		x = 53
 		y = 16
 	}

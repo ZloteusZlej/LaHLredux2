@@ -3310,6 +3310,7 @@ KNT_east_anglia_diplomacy  = {
 		complete_effect = {
 			add_to_variable = { var = kent_popularity_london value = 6 }
 		}
+		available = { has_completed_focus = KNT_london_referendum }
 	}
 	
 	KNT_bbs_adverts = {
@@ -3319,6 +3320,7 @@ KNT_east_anglia_diplomacy  = {
 		complete_effect = {
 			add_to_variable = { var = kent_popularity_london value = 7 }
 		}
+		available = { has_completed_focus = KNT_london_referendum }
 	}
 	
 	KNT_nationalist_votes = {
@@ -3328,6 +3330,183 @@ KNT_east_anglia_diplomacy  = {
 		complete_effect = {
 			add_to_variable = { var = kent_popularity_london value = 8 }
 		}
+		available = { has_completed_focus = KNT_london_referendum }
 	}
 }
 
+KNT_mercia_diplomacy = {
+    KNT_pearce_concert = {
+		cost = 0
+		days_remove = 21
+		days_re_enable = 35
+		available = { has_completed_focus = KNT_the_mercian_hidalgo }
+		modifier = { stability_weekly = -0.05 }
+        complete_effect = {
+            add_to_variable = { var = pearce_trust value = 6 }
+		}
+	}
+	
+	KNT_pearce_visits_bases = {
+		cost = 0
+		days_remove = 21
+		days_re_enable = 35
+		available = { has_completed_focus = KNT_the_mercian_hidalgo }
+		modifier = { political_power_gain = -0.1 }
+        complete_effect = {
+            add_to_variable = { var = pearce_trust value = 6 }
+		}
+	}
+	
+	KNT_pearce_fights_for_peace = {
+		cost = 0
+		days_remove = 21
+		days_re_enable = 35
+		available = { has_completed_focus = KNT_the_mercian_hidalgo }
+		modifier = { war_support_weekly_factor = -0.05 }
+        complete_effect = {
+            add_to_variable = { var = pearce_trust value = 6 }
+		}
+	}
+	
+	KNT_supply_mercia_markets = {
+		cost = 0
+		days_remove = 21
+		days_re_enable = 35
+		available = { has_completed_focus = KNT_the_mercian_hidalgo }
+		modifier = { consumer_goods_factor = -0.05 }
+        complete_effect = {
+            add_to_variable = { var = pearce_trust value = 6 }
+		}
+	}
+	
+	KNT_tradness_race = {
+		cost = 0
+		is_good = no                                        
+        days_mission_timeout = 45
+		allowed = { tag = KNT }
+        available = {                           
+            check_variable = { tradness_kent_lvl > 50 }
+        }
+		activation = {                          
+            has_completed_focus = KNT_london_referendum			
+        }
+		timeout_effect = {
+			add_to_variable = { var = pearce_trust value = -10 }
+		}
+		complete_effect = {                    
+			KNT = {
+				country_event = {
+				days = 4
+				id = KNT_event.257
+				}
+			}
+        }
+	}
+	
+	KNT_distribute_lands = {
+		cost = 50
+		days_remove = 5
+		days_re_enable = 7
+		available = { has_completed_focus = KNT_the_mercian_hidalgo }
+        complete_effect = {
+            add_to_variable = { var = tradness_kent_lvl value = 3 }
+		}
+		remove_effect = {
+			random_state = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	}
+	
+	KNT_organise_militias = {
+		cost = 25
+		days_remove = 7
+		days_re_enable = 8
+		available = {
+			has_completed_focus = KNT_the_mercian_hidalgo
+			command_power > 25
+		}
+        complete_effect = {
+            add_to_variable = { var = tradness_kent_lvl value = 4 }
+			add_command_power = -25
+		}
+		modifier = { war_support_weekly_factor = 0.06 }
+	}
+	
+	KNT_build_churches = {
+		cost = 55
+		days_remove = 10
+		days_re_enable = 15
+		available = {
+			has_completed_focus = KNT_the_mercian_hidalgo
+		}
+        complete_effect = {
+            add_to_variable = { var = tradness_kent_lvl value = 6 }
+		}
+		modifier = { stability_weekly = 0.06 }
+	}
+	
+	KNT_christian_radio_podcasts = {
+		cost = 35
+		days_remove = 9
+		days_re_enable = 12
+		available = {
+			has_completed_focus = KNT_the_mercian_hidalgo
+		}
+        complete_effect = {
+            add_to_variable = { var = tradness_kent_lvl value = 5 }
+		}
+		modifier = { millenarism_drift = 0.01 }
+	}
+}
+
+KNT_wars = {
+	KNT_war_on_essex = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		available = {
+			has_completed_focus = KNT_it's_treason_then
+		}
+		remove_effect = {
+			declare_war_on = {
+			target = ESS
+			type = annex_everything
+			}	
+		}
+	}
+	
+	KNT_war_on_east_anglia = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		available = {
+			has_completed_focus = KNT_it's_treason_then
+		}
+		remove_effect = {
+			declare_war_on = {
+			target = EAG
+			type = annex_everything
+			}	
+		}
+	}
+	
+	KNT_war_on_mercia = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		available = {
+			has_completed_focus = KNT_it's_treason_then
+		}
+		remove_effect = {
+			declare_war_on = {
+			target = MRC
+			type = annex_everything
+			}	
+		}
+	}
+}

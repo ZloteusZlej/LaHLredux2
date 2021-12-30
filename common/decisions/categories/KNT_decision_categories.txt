@@ -98,9 +98,9 @@ KNT_essex_diplomacy = {
 	visible = {
 			KNT = {
 				has_completed_focus = KNT_the_chimes_of_big_ben
+				NOT = { has_completed_focus = KNT_it's_treason_then }
 			}
 	}
-	visible_when_empty = yes
 }
 
 KNT_east_anglia_diplomacy = {
@@ -110,7 +110,26 @@ KNT_east_anglia_diplomacy = {
 	visible = {
 			KNT = {
 				has_completed_focus = KNT_our_germanic_brothers
+				NOT = { has_completed_focus = KNT_it's_treason_then }
 			}
 	}
-	visible_when_empty = yes
+}
+
+KNT_mercia_diplomacy = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = KNT }
+	visible = {
+			KNT = {
+				has_completed_focus = KNT_the_patriot
+				NOT = { has_completed_focus = KNT_it's_treason_then }
+			}
+	}
+}
+
+KNT_wars = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = KNT }
+	visible_when_empty = yes	
 }

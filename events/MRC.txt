@@ -281,14 +281,80 @@ country_event = {
 	desc = mrc.10.d
 	picture = 
 	is_triggered_only = yes
-	trigger = {
-		tag = MRC
-	}
 	option = {
 		name = mrc.10.a
 		set_global_flag = pearce_accepts_kent_offer
 	}
 	option = {
 		name = mrc.10.b
+	}
+}
+
+country_event = {
+	id = mrc.11
+	title = mrc.11.t
+	desc = mrc.11.d
+	picture = 
+	is_triggered_only = yes
+	option = {
+		name = mrc.11.a
+		add_ideas = MRC_exorcists_in_mercia
+	}
+}
+
+country_event = {
+	id = mrc.12
+	title = mrc.12.t
+	desc = mrc.12.d
+	picture = 
+	is_triggered_only = yes
+	option = {
+		name = mrc.12.a
+		random_unit_leader = {
+			limit = {
+				is_leading_army = yes
+			}
+			add_unit_leader_trait = quarreled_with_comrades
+		}
+		
+		random_unit_leader = {
+			limit = {
+				is_leading_army = yes
+			}
+			add_unit_leader_trait = quarreled_with_comrades
+		}
+		
+		random_unit_leader = {
+			limit = {
+				is_leading_army = yes
+			}
+			add_unit_leader_trait = quarreled_with_comrades
+		}
+	}
+}
+
+country_event = {
+	id = mrc.13
+	title = mrc.13.t
+	desc = mrc.13.d
+	picture = 
+	is_triggered_only = yes
+	option = {
+		name = mrc.13.a
+		if = {
+			limit = { 
+				check_variable { pearce_trust > 80 } 
+			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Free Pearce"
+				picture = "Portrait_WRC_Hu_Xijin.dds"
+				expire = "9999.1.1"
+				ideology = national_conservatism
+				traits = {
+				}
+			}
+		}
+		
 	}
 }
