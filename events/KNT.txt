@@ -964,6 +964,340 @@ country_event = {
     }
 }
 
+	country_event = {
+		id = KNT_event.42
+		title = KNT_event.42.t
+		desc = KNT_event.42.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.42.a
+				trigger = {
+					has_tech = wireless_power_transfer
+				}
+			ESS = {
+				set_technology = {
+					wireless_power_transfer = 1
+				}
+				country_event = {
+				days = 4
+				id = ESS_event.20
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.7
+					uses = 1
+					category = radar_tech
+				}
+			}
+		}
+		
+		option = {
+			name = KNT_event.42.b
+				trigger = {
+					has_tech = biofuel
+				}
+			ESS = {
+				set_technology = {
+					biofuel = 1
+				}
+				country_event = {
+				days = 4
+				id = ESS_event.20
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.7
+					uses = 1
+					category = electronics
+				}
+			}
+		}
+		
+		option = {
+			name = KNT_event.42.c
+				trigger = {
+					has_tech = jetpack_brigade
+				}
+			ESS = {
+				set_technology = {
+					jetpack_brigade = 1
+				}
+				country_event = {
+				days = 4
+				id = ESS_event.20
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.7
+					uses = 1
+					category = electronics
+				}
+			}
+		}
+		
+		option = {
+			name = KNT_event.42.e
+				trigger = {
+					has_tech = DU_ammo
+				}
+			ESS = {
+				set_technology = {
+					DU_ammo = 1
+				}
+				country_event = {
+				days = 4
+				id = ESS_event.20
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.7
+					uses = 1
+					category = nuclear
+				}
+			}
+		}
+		
+		option = {
+			name = KNT_event.42.f
+				trigger = {
+					has_tech = rubber_bomb
+				}
+			ESS = {
+				set_technology = {
+					rubber_bomb = 1
+				}
+				country_event = {
+				days = 4
+				id = ESS_event.20
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.7
+					uses = 1
+					category = industry
+				}
+			}
+		}
+		
+		option = {
+			name = KNT_event.42.g
+			add_stability = -0.05
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.43
+		title = KNT_event.43.t
+		desc = KNT_event.43.d
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		option = {
+			name = KNT_event.43.a
+			ESS = {
+				country_event = {
+				days = 4
+				id = ESS_event.22
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.44
+		title = KNT_event.44.t
+		desc = KNT_event.44.d
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		option = {
+			name = KNT_event.44.a
+			ESS = {
+				country_event = {
+				days = 4
+				id = ESS_event.23
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.45
+		title = KNT_event.45.t
+		desc = KNT_event.45.d
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		option = {
+			name = KNT_event.45.a
+			ESS = {
+				country_event = {
+				days = 4
+				id = ESS_event.24
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.46
+		title = KNT_event.46.t
+		desc = KNT_event.46.d
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		option = {
+			name = KNT_event.46.a
+			ESS = {
+				country_event = {
+				days = 4
+				id = ESS_event.25
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.47
+		title = KNT_event.47.t
+		desc = KNT_event.47.d
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		option = {
+			name = KNT_event.47.a
+			add_command_power = -50
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.48
+		title = KNT_event.48.t
+		desc = KNT_event.48.d
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		option = {
+			name = KNT_event.48.a
+			KNT = {
+				division_template = {
+					name = "Private Militärfirma"
+					division_names_group = EAG_INF_02
+
+					regiments = {
+						infantry = { x = 0 y = 0 }	
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }	
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						artillery_brigade = { x = 1 y = 4 }
+						artillery_brigade = { x = 0 y = 3 }
+					}
+					support = {
+						recon = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 } 		
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Private Militärfirma "Asgaard"\" division_template = \"Private Militärfirma\" start_experience_factor = 1 start_equipment_factor = 1"
+						
+						owner = KNT
+					}
+				}
+				add_political_power = -35
+				
+			}
+		}
+		option = {
+			name = KNT_event.48.b
+			EAG = {
+				country_event = {
+				days = 4
+				id = EAG_event.6
+				}
+			}
+			KNT = { add_political_power = -35 }
+		}
+		option = {
+			name = KNT_event.48.c
+			KNT = {
+				division_template = {
+					name = "Panzerbrigade"
+					division_names_group = EAG_MBT_01
+
+					regiments = {
+						MBT = { x = 0 y = 0 }	
+						MBT = { x = 0 y = 1 }
+						MBT = { x = 0 y = 2 }	
+						MBT = { x = 0 y = 3 }
+						MBT = { x = 0 y = 4 }
+						MBT = { x = 0 y = 5 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+						motorized = { x = 1 y = 3 }
+						motorized = { x = 1 y = 4 }
+					}
+					
+					support = { 
+						engineer = { x = 0 y = 0 } 
+						maintenance_company = { x = 0 y = 1 } 		
+					}
+				}
+				
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Panzerbrigade der Koalitionstruppen\" division_template = \"Panzerbrigade\" start_experience_factor = 0.8 start_equipment_factor = 1"
+						
+						owner = KNT
+					}
+				}
+				add_political_power = -35
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.49
+		title = KNT_event.49.t
+		desc = KNT_event.49.d
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		option = {
+			name = KNT_event.49.a
+			KNT = {
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Private Militärfirma "Wodan"\" division_template = \"Private Militärfirma\" start_experience_factor = 1 start_equipment_factor = 1"
+						
+						owner = KNT
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -750
+					producer = KNT
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = -50
+					producer = KNT
+				}
+				add_political_power = -50
+			}
+		}
+
+	}
+
 ###CULTURAL TREE##
 
 country_event = {
@@ -2507,8 +2841,6 @@ country_event = {
 		}
 	}
 	
-	###FAKE EVENT###
-	
 	country_event = {
 		id = KNT_event.1000
 		title = KNT_event.1000.t
@@ -2530,5 +2862,124 @@ country_event = {
 		option = {
 			name = KNT_event.1001.a
 			custom_effect_tooltip = KNT_event1000.tt
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.251
+		title = KNT_event.251.t
+		desc = KNT_event.251.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.251.a
+			EAG = {
+				country_event = {
+				days = 2
+				id = EAG_event.7
+				}
+			}
+		}
+		
+		option = {
+			name = KNT_event.251.b
+			KNT = {
+				country_event = {
+				days = 3
+				id = KNT_event.252
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.252
+		title = KNT_event.252.t
+		desc = KNT_event.252.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.252.a
+			EAG = {
+				country_event = {
+				days = 2
+				id = EAG_event.8
+				}
+			}
+		}
+		
+		option = {
+			name = KNT_event.252.b
+			KNT = {
+				country_event = {
+				days = 3
+				id = KNT_event.253
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.253
+		title = KNT_event.253.t
+		desc = KNT_event.253.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.253.a
+			EAG = {
+				country_event = {
+				days = 4
+				id = EAG_event.9
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.254
+		title = KNT_event.254.t
+		desc = KNT_event.254.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.254.a
+			add_political_power = -50
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.255
+		title = KNT_event.255.t
+		desc = KNT_event.255.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.255.a
+			KNT = {
+				remove_unit_leader = 228
+				create_corps_commander = {
+						name = "Nick Carter"
+						picture = "Portrait_EAG_Nick_Carter.dds"
+						traits = {  }
+						skill = 2
+						attack_skill = 1
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 2
+					}
+			}
+			EAG = {
+				remove_unit_leader = 124
+				create_corps_commander = {
+						name = "Louis Lillywhite"
+						picture = "Portrait_KNT_Louis_Lillywhite.dds"
+						traits = {  }
+						skill = 2
+						attack_skill = 1
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 3
+				}
+				country_event = {
+				days = 4
+				id = EAG_event.10
+				}
+			}	
 		}
 	}
