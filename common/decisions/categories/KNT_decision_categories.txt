@@ -90,3 +90,15 @@ KNT_air_strikes = {
 	}
 	allowed = { original_tag = KNT }
 }
+
+KNT_essex_diplomacy = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = KNT }
+	visible = {
+			KNT = {
+				has_completed_focus = KNT_the_chimes_of_big_ben
+			}
+	}
+	visible_when_empty = yes
+}

@@ -2285,6 +2285,13 @@ shared_focus = {
 	    focus = KNT_the_patriot
 		focus = KNT_our_germanic_brothers
 		}
+		completion_reward = {
+			create_faction = "British Protection League"
+			KNT = {
+				add_to_faction = ESS
+			}
+			
+		}
 		x = 48
 		y = 9
 	}
@@ -2294,6 +2301,38 @@ shared_focus = {
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_the_chimes_of_big_ben
+		}
+		completion_reward = {
+			ESS = {
+				add_ideas = ESS_kent_proxy_trade
+			}
+			division_template = {
+				name = "Essex Gang"
+				division_names_group = ESS_INF_02
+
+				regiments = {
+					infantry = { x = 0 y = 0 }	
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }	
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+				}
+					support = {
+					recon = { x = 0 y = 0 } 		
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Special Security Brigade\" division_template = \"Essex Gang\" start_experience_factor = 1 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
 		}
 		x = 48
 		y = 10
@@ -2318,6 +2357,14 @@ shared_focus = {
 		mutually_exclusive = {
 			focus = KNT_the_network_gate
 		}
+		completion_reward = {
+			ESS = {
+				country_event = {
+				days = 5
+				id = ESS_event.21
+				}
+			}
+		}
 		x = 47
 		y = 12
 	}
@@ -2331,6 +2378,14 @@ shared_focus = {
 		mutually_exclusive = {
 			focus = KNT_expose_the_gangs
 		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.43
+				}
+			}
+		}
 		x = 49
 		y = 12
 	}
@@ -2341,6 +2396,12 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_expose_the_gangs
 			focus = KNT_the_network_gate
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = KNT_moles_in_london
+				days = 100
+			}
 		}
 		x = 48
 		y = 13

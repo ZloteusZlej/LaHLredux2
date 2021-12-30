@@ -964,6 +964,217 @@ country_event = {
     }
 }
 
+	country_event = {
+		id = KNT_event.42
+		title = KNT_event.42.t
+		desc = KNT_event.42.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.42.a
+				trigger = {
+					has_tech = wireless_power_transfer
+				}
+			ESS = {
+				set_technology = {
+					wireless_power_transfer = 1
+				}
+				country_event = {
+				days = 4
+				id = ESS_event.20
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.7
+					uses = 1
+					category = radar_tech
+				}
+			}
+		}
+		
+		option = {
+			name = KNT_event.42.b
+				trigger = {
+					has_tech = biofuel
+				}
+			ESS = {
+				set_technology = {
+					biofuel = 1
+				}
+				country_event = {
+				days = 4
+				id = ESS_event.20
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.7
+					uses = 1
+					category = electronics
+				}
+			}
+		}
+		
+		option = {
+			name = KNT_event.42.c
+				trigger = {
+					has_tech = jetpack_brigade
+				}
+			ESS = {
+				set_technology = {
+					jetpack_brigade = 1
+				}
+				country_event = {
+				days = 4
+				id = ESS_event.20
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.7
+					uses = 1
+					category = electronics
+				}
+			}
+		}
+		
+		option = {
+			name = KNT_event.42.e
+				trigger = {
+					has_tech = DU_ammo
+				}
+			ESS = {
+				set_technology = {
+					DU_ammo = 1
+				}
+				country_event = {
+				days = 4
+				id = ESS_event.20
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.7
+					uses = 1
+					category = nuclear
+				}
+			}
+		}
+		
+		option = {
+			name = KNT_event.42.f
+				trigger = {
+					has_tech = rubber_bomb
+				}
+			ESS = {
+				set_technology = {
+					rubber_bomb = 1
+				}
+				country_event = {
+				days = 4
+				id = ESS_event.20
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.7
+					uses = 1
+					category = industry
+				}
+			}
+		}
+		
+		option = {
+			name = KNT_event.42.g
+			add_stability = -0.05
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.43
+		title = KNT_event.43.t
+		desc = KNT_event.43.d
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		option = {
+			name = KNT_event.43.a
+			ESS = {
+				country_event = {
+				days = 4
+				id = ESS_event.22
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.44
+		title = KNT_event.44.t
+		desc = KNT_event.44.d
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		option = {
+			name = KNT_event.44.a
+			ESS = {
+				country_event = {
+				days = 4
+				id = ESS_event.23
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.45
+		title = KNT_event.45.t
+		desc = KNT_event.45.d
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		option = {
+			name = KNT_event.45.a
+			ESS = {
+				country_event = {
+				days = 4
+				id = ESS_event.24
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.46
+		title = KNT_event.46.t
+		desc = KNT_event.46.d
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		option = {
+			name = KNT_event.46.a
+			ESS = {
+				country_event = {
+				days = 4
+				id = ESS_event.25
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.47
+		title = KNT_event.47.t
+		desc = KNT_event.47.d
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		option = {
+			name = KNT_event.47.a
+			add_command_power = -50
+		}
+	}
+
 ###CULTURAL TREE##
 
 country_event = {

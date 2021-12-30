@@ -1488,12 +1488,12 @@ KNT_special_projects = {
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_the_modern_prometheus
+			has_completed_focus	= KNT_greener_energy
 			}
 		}
 		visible = {
 				KNT = {
-				has_completed_focus	= KNT_the_modern_prometheus
+				has_completed_focus	= KNT_greener_energy
 			}
 		}
 		complete_effect = {
@@ -1963,12 +1963,12 @@ KNT_special_projects = {
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_strike_from_above
+			has_completed_focus	= KNT_experimental_forces
 			}
 		}
 		visible = {
 				KNT = {
-				has_completed_focus	= KNT_strike_from_above
+				has_completed_focus	= KNT_experimental_forces
 			}
 		}
 		complete_effect = {
@@ -2955,6 +2955,252 @@ KNT_air_strikes = {
 				air_fuel_consumption_factor = 0.2
 				air_cas_efficiency = 0.2
 			}	
+		}
+	}
+}
+
+KNT_essex_diplomacy = {
+    KNT_sell_power_armor = {
+			cost = 0
+			days_remove = 25
+			days_re_enable = 60
+		available = {
+			has_tech = power_armor_weapon
+			has_equipment = { power_armor_weapon_equipment_1 > 100 }
+		}
+		modifier = {
+			research_bonus = {
+				electronics = 0.4
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = power_armor_weapon_equipment
+				amount = -100
+				producer = KNT
+			}
+		}
+		remove_effect = {
+				ESS = {
+					country_event = {
+					days = 1
+					id = ESS_event.14
+					}
+				}
+				if = {
+					limit = {
+						ESS = {
+							NOT = { has_tech = power_armor_weapon }
+						}
+					}
+					ESS = {
+						set_technology = {
+						power_armor_weapon = 1
+					}
+				}
+			}
+		}
+	}
+	
+	KNT_sell_suicide_drones = {
+			cost = 0
+			days_remove = 25
+			days_re_enable = 60
+		available = {
+			has_tech = suicide_drones 
+			has_equipment = { suicide_drones_equipment_1 > 50 }
+		}
+		modifier = {
+			research_bonus = {
+				radar_tech = 0.4
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = suicide_drones_equipment
+				amount = -50
+				producer = KNT
+			}
+		}
+		remove_effect = {
+			ESS = {
+				country_event = {
+				days = 1
+				id = ESS_event.15
+				}
+			}
+		}
+	}
+	
+	KNT_sell_railguns = {
+			cost = 0
+			days_remove = 25
+			days_re_enable = 60
+		available = {
+			has_tech = railgun 
+			has_equipment = { railgun_equipment_1 > 75 }
+		}
+		modifier = {
+			research_bonus = {
+				computing_tech = 0.4
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = railgun_equipment
+				amount = -75
+				producer = KNT
+			}
+		}
+		remove_effect = {
+			ESS = {
+				country_event = {
+				days = 1
+				id = ESS_event.16
+				}
+			}
+		}
+	}
+	
+	KNT_sell_evangelions = {
+			cost = 0
+			days_remove = 35
+			days_re_enable = 75
+		available = {
+			has_tech = evangelion 
+			has_equipment = { evangelion_equipment_1 > 15 }
+		}
+		modifier = {
+			research_bonus = {
+				nuclear = 0.4
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = evangelion_equipment
+				amount = -15
+				producer = KNT
+			}
+		}
+		remove_effect = {
+			ESS = {
+				country_event = {
+				days = 1
+				id = ESS_event.17
+				}
+			}
+				if = {
+				limit = {
+						ESS = {
+						NOT = { has_tech = evangelion }
+					}
+				}
+				ESS = {
+					set_technology = {
+					evangelion = 1
+					}
+				}
+			}
+		}
+		
+	}
+	
+	KNT_sell_supercannons = {
+			cost = 0
+			days_remove = 35
+			days_re_enable = 75
+		available = {
+			has_tech = supercannons 
+			has_equipment = { supercannons_equipment_1 > 20 }
+		}
+		modifier = {
+			research_bonus = {
+				industry = 0.4
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = supercannons_equipment
+				amount = -20
+				producer = KNT
+			}
+		}
+		remove_effect = {
+			ESS = {
+				country_event = {
+				days = 1
+				id = ESS_event.18
+				}
+			}
+				if = {
+				limit = {
+						ESS = {
+						NOT = { has_tech = supercannons }
+					}
+				}
+				ESS = {
+					set_technology = {
+					supercannons = 1
+					}
+				}
+			}
+		}
+	}
+	
+	KNT_sell_unmanned_tanks = {
+			cost = 0
+			days_remove = 25
+			days_re_enable = 65
+		available = {
+			has_tech = unmanned_tank 
+			has_equipment = { unmanned_tank_equipment_1 > 50 }
+		}
+		modifier = {
+			research_bonus = {
+				infantry_weapons = 0.4
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = unmanned_tank_equipment
+				amount = -50
+				producer = KNT
+			}
+		}
+		remove_effect = {
+				ESS = {
+					country_event = {
+					days = 1
+					id = ESS_event.19
+					}
+				}
+				
+				if = {
+				limit = {
+						ESS = {
+						NOT = { has_tech = unmanned_tank  }
+					}
+				}
+				ESS = {
+					set_technology = {
+					unmanned_tank = 1
+					}
+				}
+			}
+		}
+	}
+	
+	KNT_sell_any_technology = {
+		cost = 0
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.42
+				}
+			}
 		}
 	}
 }
