@@ -1940,6 +1940,15 @@ shared_focus = {
 		available = {
 			has_country_flag = KENT_political_matters_resolved
 		}
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 5
+				id = KNT_event.50
+				}
+			}
+			add_ideas = KNT_mercs_radio
+		}
 		x = 39
 		y = 7
 	}
@@ -1950,6 +1959,80 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_radio_wild_geese
 		}
+		completion_reward = {
+			division_template = {
+				name = "Freedomfighters"
+				division_names_group = KNT_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }	
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }	
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					recon = { x = 0 y = 1 } 
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Oath Keepers\" division_template = \"Freedomfighters\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Arm of the Lord\" division_template = \"Freedomfighters\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Minutemen\" division_template = \"Freedomfighters\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Christian Patriots\" division_template = \"Freedomfighters\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+			
+			create_corps_commander = {
+				name = "Steve Bannon"
+					picture = "Portrait_KNT_Steve_Bannon.dds"
+				traits = {  }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			
+			create_corps_commander = {
+				name = "Stewart Rhodes"
+					picture = "Portrait_KNT_Stewart_Rhodes.dds"
+				traits = {  }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 1
+			}
+		}
 		x = 39
 		y = 9
 	}
@@ -1959,6 +2042,38 @@ shared_focus = {
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_radio_wild_geese
+		}
+		completion_reward = {
+			division_template = {
+				name = "Limonov Company"
+				division_names_group = ESS_INF_02
+
+				regiments = {
+					infantry = { x = 0 y = 0 }	
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }	
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+				}
+					support = {
+					artillery = { x = 0 y = 0 } 		
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Brigada Juzhno-Sibirskaja\" division_template = \"Limonov Company\" start_experience_factor = 1.2 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+			DJI = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
 		}
 		x = 36
 		y = 8
@@ -1986,6 +2101,15 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_the_grand_embassy
 		}
+		
+		completion_reward = {
+			KNT = {
+				country_event = {
+				days = 5
+				id = KNT_event.51
+				}
+			}
+		}
 		x = 37
 		y = 10
 	}
@@ -2002,6 +2126,37 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_the_grand_embassy
 		}
+		completion_reward = {
+			division_template = {
+				name = "Hong Kongers"
+				division_names_group = ESS_INF_02
+
+				regiments = {
+					infantry_fighting_vehicle = { x = 0 y = 0 }	
+					infantry_fighting_vehicle = { x = 0 y = 1 }
+					infantry_fighting_vehicle = { x = 0 y = 2 }	
+					infantry_fighting_vehicle = { x = 0 y = 3 }
+					infantry_fighting_vehicle = { x = 0 y = 4 }
+					infantry_fighting_vehicle = { x = 1 y = 0 }
+					infantry_fighting_vehicle = { x = 1 y = 1 }
+					infantry_fighting_vehicle = { x = 1 y = 2 }
+					infantry_fighting_vehicle = { x = 1 y = 3 }
+					infantry_fighting_vehicle = { x = 1 y = 4 }
+				}
+					support = {
+					military_police = { x = 0 y = 0 }
+					recon = { x = 0 y = 1 }
+				}
+			}
+			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Hong Kong Police Unit\" division_template = \"Hong Kongers\" start_experience_factor = 0.9 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+		}
 		x = 41
 		y = 10
 	}
@@ -2015,6 +2170,50 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_no_other_choice
 		}
+		
+		completion_reward = {
+			division_template = {
+				name = "Gurkha Rifles"
+				division_names_group = KNT_INF_01
+
+				regiments = {
+					mountaineers = { x = 0 y = 0 }	
+					mountaineers = { x = 0 y = 1 }
+					mountaineers = { x = 0 y = 2 }	
+					mountaineers = { x = 0 y = 3 }
+					mountaineers = { x = 0 y = 4 }
+					mountaineers = { x = 1 y = 0 }
+					mountaineers = { x = 1 y = 1 }
+					mountaineers = { x = 1 y = 2 }
+					mountaineers = { x = 1 y = 3 }
+					mountaineers = { x = 1 y = 4 }
+				}
+					support = {
+					artillery = { x = 0 y = 0 } 
+					recon = { x = 0 y = 1 }
+				}
+			}
+			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Royal Gurkha Rifles\" division_template = \"Gurkha Rifles\" start_experience_factor = 1.2 start_equipment_factor = 0.9"
+					
+					owner = KNT
+				}
+			}
+			
+			create_corps_commander = {
+				name = "Gerald Strickland"
+					picture = "Portrait_KNT_Gerald_Strickland.dds"
+				traits = {  }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+		
 		x = 39
 		y = 11
 	}

@@ -133,3 +133,14 @@ KNT_wars = {
 	allowed = { original_tag = KNT }
 	visible_when_empty = yes	
 }
+
+KNT_international_aid = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = KNT }
+	visible = {
+			KNT = {
+				has_completed_focus = KNT_the_grand_embassy
+			}
+	}
+}

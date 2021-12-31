@@ -2316,6 +2316,146 @@ ideas = {
 			}
 		}
 	}
+	
+	hidden_ideas = {	
+		KNT_mercs_radio = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 200
+				minimum_training_level = 0.2
+				army_leader_cost_factor	= -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_volvo_saab_contracts = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				motorized = {
+					maximum_speed = 2
+					reliability = 0.2
+					fuel_consumption = -0.2
+				}			
+			}
+			modifier = {
+				political_power_factor = -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_recognition_from_germany = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.15
+				trade_opinion_factor = 0.2
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_exports_to_germany = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.08
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_nozhki_pola = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.07
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_bosnian_electronics = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_bonus = {
+					electronics = 0.15
+				}
+				political_power_factor = -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_dutch_biohacks = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.1
+				army_org_factor	= 0.1
+				army_org_regain = 0.08
+				org_loss_when_moving = -0.2
+				attrition = -0.2
+				political_power_factor = -0.1
+			}
+		}
+	}
 }
 	
 	

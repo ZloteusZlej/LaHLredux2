@@ -3510,3 +3510,93 @@ KNT_wars = {
 		}
 	}
 }
+
+KNT_international_aid = {
+	KNT_swedish_aid = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 14
+		available = {
+			OR = {
+				AND = { 
+					country_exists = SWE
+					NOT = { has_government = national_bolshevism }
+				}
+				country_exists = SCA
+			}
+		}
+		remove_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.52
+				}
+			}
+		}
+	}
+	
+	KNT_german_aid = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 14
+		available = {
+			country_exists = GER
+		}
+		remove_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.53
+				}
+			}
+		}
+	}
+	
+	KNT_american_aid = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 14
+		remove_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.54
+				}
+			}
+		}
+	}
+	
+	KNT_bosnian_aid = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 14
+		available = {
+			country_exists = BOS
+		}
+		remove_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.55
+				}
+			}
+		}
+	}
+	
+	KNT_dutch_aid = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 14
+		available = {
+			country_exists = HOL
+		}
+		remove_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.56
+				}
+			}
+		}
+	}
+}
