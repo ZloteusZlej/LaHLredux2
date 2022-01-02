@@ -1,36 +1,32 @@
-add_namespace = mrc
+add_namespace = MRC_event
 
 country_event = {
-	id = mrc.1
-	title = mrc.1.t
-	desc = mrc.1.d
+	id = MRC_event.1
+	title = MRC_event.1.t
+	desc = MRC_event.1.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
-	trigger = {
-		tag = MRC
-	}
+	fire_only_once = yes
 	option = {
-		name = mrc.1.a
+		name = MRC_event.1.a
 		add_political_power = 50
 	}
 }
 
 country_event = {
-	id = mrc.2
-	title = mrc.2.t
-	desc = mrc.2.d
+	id = MRC_event.2
+	title = MRC_event.2.t
+	desc = MRC_event.2.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
-	trigger = {
-		tag = MRC
-	}
+	fire_only_once = yes
 	option = {
-		name = mrc.2.a
+		name = MRC_event.2.a
 		add_ideas = MRC_Youth_Go_War_Blyat
 		load_oob = MRC_Youth
 	}
 	option = {
-		name = mrc.2.b
+		name = MRC_event.2.b
 		create_corps_commander = {
 			name = "General Kto"
 			picture = ""
@@ -55,16 +51,14 @@ country_event = {
 }
 
 country_event = {
-	id = mrc.3
-	title = mrc.3.t
-	desc = mrc.3.d
+	id = MRC_event.3
+	title = MRC_event.3.t
+	desc = MRC_event.3.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
-	trigger = {
-		tag = MRC
-	}
+	fire_only_once = yes
 	option = {
-		name = mrc.3.a
+		name = MRC_event.3.a
 		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_4 amount = 100 } }
 		ROOT = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 150 } }
 		create_corps_commander = {
@@ -79,7 +73,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = mrc.3.b
+		name = MRC_event.3.b
 		add_manpower = 10000
 		load_oob = MRC_Brothers
 		create_corps_commander = {
@@ -96,21 +90,19 @@ country_event = {
 }
 
 country_event = {
-	id = mrc.4
-	title = mrc.4.t
-	desc = mrc.4.d
+	id = MRC_event.4
+	title = MRC_event.4.t
+	desc = MRC_event.4.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
-	trigger = {
-		tag = MRC
-	}
+	fire_only_once = yes
 	option = {
-		name = mrc.4.a
+		name = MRC_event.4.a
 		add_stability = 0.2
 		add_political_power = 75
 	}
 	option = {
-		name = mrc.4.a
+		name = MRC_event.4.a
 		add_stability = -0.2
 		add_political_power = -100
 		add_war_support = 0.1
@@ -138,16 +130,14 @@ country_event = {
 }
 
 country_event = {
-	id = mrc.5
-	title = mrc.5.t
-	desc = mrc.5.d
+	id = MRC_event.5
+	title = MRC_event.5.t
+	desc = MRC_event.5.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
-	trigger = {
-		tag = MRC
-	}
+	fire_only_once = yes
 	option = {
-		name = mrc.5.a
+		name = MRC_event.5.a
 		add_political_power = -50
 		add_stability = -0.1
 		create_corps_commander = {
@@ -162,7 +152,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = mrc.5.b
+		name = MRC_event.5.b
 		add_political_power = 50
 		add_stability = 0.05
 		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 500 } }
@@ -172,16 +162,17 @@ country_event = {
 }
 
 country_event = {
-	id = mrc.6
-	title = mrc.6.t
-	desc = mrc.6.d
+	id = MRC_event.6
+	title = MRC_event.6.t
+	desc = MRC_event.6.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		tag = MRC
 	}
 	option = {
-		name = mrc.6.a
+		name = MRC_event.6.a
 		add_political_power = -50
 		add_stability = -0.1
 		create_corps_commander = {
@@ -206,7 +197,7 @@ country_event = {
 		}
 	}	
 	option = {
-		name = mrc.6.a
+		name = MRC_event.6.a
 		add_stability = 0.15
 		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 500 } }
 		ROOT = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 50 } }
@@ -215,16 +206,14 @@ country_event = {
 }
 
 country_event = {
-	id = mrc.7
-	title = mrc.7.t
-	desc = mrc.7.d
+	id = MRC_event.7
+	title = MRC_event.7.t
+	desc = MRC_event.7.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
-	trigger = {
-		tag = MRC
-	}
+	fire_only_once = yes
 	option = {
-		name = mrc.7.a
+		name = MRC_event.7.a
 		add_political_power = 50
 		ROOT = { add_equipment_to_stockpile = { type = main_battle_tank_equipment_2 amount = 50 } }
 		ROOT = { add_equipment_to_stockpile = { type = infantry_fighting_vehicle_equipment_2 amount = 100 } }
@@ -233,16 +222,14 @@ country_event = {
 }
 
 country_event = {
-	id = mrc.8
-	title = mrc.8.t
-	desc = mrc.8.d
+	id = MRC_event.8
+	title = MRC_event.8.t
+	desc = MRC_event.8.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
-	trigger = {
-		tag = MRC
-	}
+	fire_only_once = yes
 	option = {
-		name = mrc.8.a
+		name = MRC_event.8.a
 		add_political_power = -75
 		add_manpower = -10000
 		army_experience = 15
@@ -250,67 +237,67 @@ country_event = {
 }
 
 country_event = {
-	id = mrc.9
-	title = mrc.9.t
-	desc = mrc.9.d
+	id = MRC_event.9
+	title = MRC_event.9.t
+	desc = MRC_event.9.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
-	trigger = {
-		tag = MRC
-	}
+	fire_only_once = yes
 	option = {
-		name = mrc.9.a
+		name = MRC_event.9.a
 		add_country_leader_trait = placeholder_1
 	}
 	option = {
-		name = mrc.9.b
+		name = MRC_event.9.b
 		add_country_leader_trait = placeholder_2
 	}
 	option = {
-		name = mrc.9.c
+		name = MRC_event.9.c
 		add_country_leader_trait = placeholder_3
 	}
 	option = {
-		name = mrc.9.e
+		name = MRC_event.9.e
 	}
 }
 
 country_event = {
-	id = mrc.10
-	title = mrc.10.t
-	desc = mrc.10.d
+	id = MRC_event.10
+	title = MRC_event.10.t
+	desc = MRC_event.10.d
 	picture = 
 	is_triggered_only = yes
-	trigger = {
+	fire_only_once = yes
 	option = {
-		name = mrc.10.a
+		name = MRC_event.10.a
 		set_global_flag = pearce_accepts_kent_offer
 	}
 	option = {
-		name = mrc.10.b
+		name = MRC_event.10.b
 	}
 }
 
 country_event = {
-	id = mrc.11
-	title = mrc.11.t
-	desc = mrc.11.d
+	id = MRC_event.11
+	title = MRC_event.11.t
+	desc = MRC_event.11.d
 	picture = 
 	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
-		name = mrc.11.a
+		name = MRC_event.11.a
 		add_ideas = MRC_exorcists_in_mercia
 	}
 }
 
 country_event = {
-	id = mrc.12
-	title = mrc.12.t
-	desc = mrc.12.d
+	id = MRC_event.12
+	title = MRC_event.12.t
+	desc = MRC_event.12.d
 	picture = 
 	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
-		name = mrc.12.a
+		name = MRC_event.12.a
 		random_unit_leader = {
 			limit = {
 				is_leading_army = yes
@@ -335,13 +322,14 @@ country_event = {
 }
 
 country_event = {
-	id = mrc.13
-	title = mrc.13.t
-	desc = mrc.13.d
+	id = MRC_event.13
+	title = MRC_event.13.t
+	desc = MRC_event.13.d
 	picture = 
 	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
-		name = mrc.13.a
+		name = MRC_event.13.a
 		if = {
 			limit = { 
 				check_variable { pearce_trust > 80 } 

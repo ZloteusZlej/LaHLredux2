@@ -4,11 +4,13 @@
 shared_focus = {
 	id = MRC_the_calling
 	icon = GFX_goal_MRC_The_Calling
-	cost = 10
+	cost = 5
 	x = 32
 	y = 0
 	completion_reward = {
-		country_event = mrc.1
+		MRC = {
+			country_event = MRC_event.1
+		}
 	}
 }
 
@@ -18,11 +20,13 @@ shared_focus = {
 	prerequisite = {
 		focus = MRC_the_calling
 	}
-	cost = 10
+	cost = 5
 	x = 30
 	y = 1
 	completion_reward = {
-		country_event = mrc.2
+		MRC = {
+		    country_event = MRC_event.2
+		}
 	}
 }
 
@@ -32,11 +36,13 @@ shared_focus = {
 	prerequisite = {
 		focus = MRC_the_calling
 	}
-	cost = 10
+	cost = 5
 	x = 32
 	y = 1
 	completion_reward = {
-		country_event = mrc.3
+		MRC = {
+		    country_event = MRC_event.3
+		}
 	}
 }
 
@@ -46,11 +52,13 @@ shared_focus = {
 	prerequisite = {
 		focus = MRC_the_calling
 	}
-	cost = 10
+	cost = 5
 	x = 34
 	y = 1
 	completion_reward = {
-		country_event = mrc.4
+		MRC = {
+		    country_event = MRC_event.4
+		}
 	}
 }
 
@@ -63,11 +71,13 @@ shared_focus = {
 	prerequisite = {
 		focus = MRC_brothers_in_arms
 	}
-	cost = 10
+	cost = 5
 	x = 31
 	y = 2
 	completion_reward = {
-		country_event = mrc.5
+		MRC = {
+		    country_event = MRC_event.5
+		}
 	}
 }
 
@@ -80,11 +90,13 @@ shared_focus = {
 	prerequisite = {
 		focus = MRC_nothing_left_to_lose
 	}
-	cost = 10
+	cost = 5
 	x = 33
 	y = 2
 	completion_reward = {
-		country_event = mrc.6
+		MRC = {
+		    country_event = MRC_event.6
+		}
 	}
 }
 
@@ -94,7 +106,7 @@ shared_focus = {
 	prerequisite = {
 		focus = MRC_path_of_redemption
 	}
-	cost = 10
+	cost = 5
 	x = 30
 	y = 3
 	completion_reward = {
@@ -103,8 +115,8 @@ shared_focus = {
 			attacker = {
 				state = 1146
 				num_provinces = 6
-				on_win = mrc.7
-				on_lose = mrc.8
+				on_win = MRC_event.7
+				on_lose = MRC_event.8
 			}
 			defender = {
 				state = 1009
@@ -123,11 +135,13 @@ shared_focus = {
 	prerequisite = {
 		focus = MRC_place_for_all_of_us
 	}
-	cost = 10
+	cost = 5
 	x = 32
 	y = 3
 	completion_reward = {
-		country_event = mrc.9
+		MRC = {
+		    country_event = MRC_event.9
+		}
 	}
 }
 
@@ -137,7 +151,7 @@ shared_focus = {
 	prerequisite = {
 		focus = MRC_place_for_all_of_us
 	}
-	cost = 10
+	cost = 5
 	x = 34
 	y = 3
 	completion_reward = {
@@ -156,7 +170,7 @@ shared_focus = {
 	prerequisite = {
 		focus = MRC_mind_over_equipment
 	}
-	cost = 10
+	cost = 5
 	x = 32
 	y = 4
 	completion_reward = {
