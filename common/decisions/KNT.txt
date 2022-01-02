@@ -2898,7 +2898,7 @@ KNT_sabotages = {
 		}
 	}
 	
-	KNT_equipment_straling = {
+	KNT_equipment_stealing = {
 		cost = 10
 		available = {
         command_power > 50
@@ -3505,6 +3505,99 @@ KNT_wars = {
 		remove_effect = {
 			declare_war_on = {
 			target = MRC
+			type = annex_everything
+			}	
+		}
+	}
+	
+	KNT_war_on_sussex = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		available = {
+			has_completed_focus = KNT_we_shall_never_surrender
+		}
+		remove_effect = {
+			declare_war_on = {
+			target = SUS
+			type = annex_everything
+			}	
+		}
+	}
+	
+	KNT_war_on_wessex = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		available = {
+			has_completed_focus = KNT_we_shall_never_surrender
+		}
+		remove_effect = {
+			declare_war_on = {
+			target = WES
+			type = annex_everything
+			}	
+		}
+	}
+	
+	KNT_war_on_northumbria = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		available = {
+			OR = {
+				has_completed_focus = KNT_our_germanic_brothers
+				has_completed_focus = KNT_the_chimes_of_big_ben
+				has_completed_focus = KNT_the_patriot
+			}	
+		}
+		remove_effect = {
+			declare_war_on = {
+			target = NTH
+			type = annex_everything
+			}	
+		}
+	}
+	
+	KNT_war_on_wales = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		available = {
+			NOT = {
+				country_exists = SUS
+				country_exists = WES
+				country_exists = NTH
+				country_exists = MRC
+				country_exists = ESS
+				country_exists = EAG
+			}
+		}
+		remove_effect = {
+			declare_war_on = {
+			target = WLS
+			type = annex_everything
+			}	
+		}
+	}
+	
+	KNT_war_on_scotland = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		available = {
+			NOT = {
+				country_exists = SUS
+				country_exists = WES
+				country_exists = NTH
+				country_exists = MRC
+				country_exists = ESS
+				country_exists = EAG
+			}
+		}
+		remove_effect = {
+			declare_war_on = {
+			target = SCO
 			type = annex_everything
 			}	
 		}
