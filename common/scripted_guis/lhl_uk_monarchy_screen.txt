@@ -1,0 +1,105 @@
+scripted_gui = {
+	lhl_uk_monarchy_upper_tab_button = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "lhl_uk_monarchy_screen_upper_button"
+		visible = {
+			tag = KNT
+		}
+
+		effects = {
+			uk_monarchy_upper_tab_button_click = {
+				if = {
+					limit = { has_country_flag = lhl_uk_monarchy_screen_open }
+					clr_country_flag = lhl_uk_monarchy_screen_open
+				}
+				else = {
+					set_country_flag = lhl_uk_monarchy_screen_open
+				}
+			}
+		}
+	}
+	
+	lhl_uk_monarchy_screen_body = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "lhl_uk_monarchy_screen_full"
+
+		visible = {
+			has_country_flag = lhl_uk_monarchy_screen_open
+			tag = KNT
+		}
+		triggers = {
+            lhl_uk_monarchy_slot_1_visible = {
+               check_variable = {
+                    var = uk_monarchy
+                    value = 1	
+					compare = equals					
+                }
+		    }
+            lhl_uk_monarchy_slot_2_visible = {
+               check_variable = {
+                    var = uk_monarchy
+                    value = 2	
+					compare = equals					
+                }
+		    }	
+            lhl_uk_monarchy_slot_3_visible = {
+               check_variable = {
+                    var = uk_monarchy
+                    value = 3
+					compare = equals					
+                }
+		    }	
+            lhl_uk_monarchy_slot_4_visible = {
+               check_variable = {
+                    var = uk_monarchy
+                    value = 4		
+					compare = equals					
+                }
+		    }	
+            lhl_uk_monarchy_slot_5_visible = {
+               check_variable = {
+                    var = uk_monarchy
+                    value = 5	
+					compare = equals					
+                }
+		    }	
+            lhl_uk_monarchy_slot_6_visible = {
+               check_variable = {
+                    var = uk_monarchy
+                    value = 6	
+					compare = equals					
+                }
+		    }	
+            lhl_uk_monarchy_slot_7_visible = {
+               check_variable = {
+                    var = uk_monarchy
+                    value = 7	
+					compare = equals					
+                }
+		    }	
+            lhl_uk_monarchy_slot_8_visible = {
+               check_variable = {
+                    var = uk_monarchy
+                    value = 8	
+					compare = equals					
+                }
+		    }	
+            lhl_uk_monarchy_slot_9_visible = {
+               check_variable = {
+                    var = uk_monarchy
+                    value = 9	
+					compare = equals					
+                }
+		    }	
+            lhl_uk_monarchy_slot_10_visible = {
+               check_variable = {
+                    var = uk_monarchy
+                    value = 10	
+					compare = equals					
+                }
+		    }				
+        }
+	}
+}
