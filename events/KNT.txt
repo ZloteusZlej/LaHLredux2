@@ -3227,3 +3227,157 @@ country_event = {
 			}
 		}
 	}
+	
+	country_event = {
+		id = KNT_event.258
+		title = KNT_event.258.t
+		desc = KNT_event.258.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.258.a
+			add_political_power = 15
+		}
+		option = {
+			name = KNT_event.258.b
+			add_ideas = KNT_constitution_part1_house_of_commons_reformed
+			trigger = { 
+				has_government = right_populism
+			}
+			KNT = {
+				country_event = {
+					days = 7
+					id = KNT_event.259
+				}
+			}
+		}
+		option = {
+			name = KNT_event.258.c
+			add_ideas = KNT_constitution_part1_house_of_lords_empowered
+			trigger = { 
+				has_government = neocameralism
+			}
+			KNT = {
+				country_event = {
+					days = 7
+					id = KNT_event.259
+				}
+			}
+		}
+		option = {
+			name = KNT_event.258.e
+			add_ideas = KNT_constitution_part1_house_of_commons_stays
+			KNT = {
+				country_event = {
+					days = 7
+					id = KNT_event.259
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.259
+		title = KNT_event.259.t
+		desc = KNT_event.259.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.259.b
+			add_ideas = KNT_constitution_part2_dual_monarchy
+			trigger = { 
+				has_government = right_populism
+			}
+			KNT = {
+				country_event = {
+					days = 7
+					id = KNT_event.260
+				}
+			}
+		}
+		option = {
+			name = KNT_event.259.c
+			add_ideas = KNT_constitution_part2_parliamentary_monarchy
+			trigger = { 
+				has_government = neocameralism
+			}
+			KNT = {
+				country_event = {
+					days = 7
+					id = KNT_event.260
+				}
+			}
+		}
+		option = {
+			name = KNT_event.259.c
+			add_ideas = KNT_constitution_part2_constitutional_monarchy
+			KNT = {
+				country_event = {
+					days = 7
+					id = KNT_event.260
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.260
+		title = KNT_event.260.t
+		desc = KNT_event.260.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.260.b
+			add_ideas = KNT_constitution_part3_monarch_settlement
+			trigger = { 
+				has_government = right_populism
+			}
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.261
+				}
+			}
+		}
+		option = {
+			name = KNT_event.260.c
+			add_ideas = KNT_constitution_part3_parliament_settlement
+			trigger = { 
+				has_government = neocameralism
+			}
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.261
+				}
+			}
+		}
+		option = {
+			name = KNT_event.260.c
+			add_ideas = KNT_constitution_part3_current_settlement
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.261
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.261
+		title = KNT_event.261.t
+		desc = KNT_event.261.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.261.a
+			trigger = { 
+				has_government = neocameralism
+			}
+			add_ideas = KNT_neovic_constitution
+		}
+		option = {
+			name = KNT_event.261.b
+			trigger = { 
+				has_government = right_populism
+			}
+			add_ideas = KNT_high_tory_constitution
+		}
+	}

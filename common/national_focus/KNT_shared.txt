@@ -311,7 +311,7 @@
 			}
 		}
 		x = 33
-		y = 2
+		y = 2	
 	}
 	shared_focus = {
 		id = KNT_exploit_the_brain_drain
@@ -2888,6 +2888,14 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_there_always_be_an_england
 		}
+		select_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.258
+				}
+			}
+		}
 		x = 24
 		y = 18
 	}
@@ -2898,6 +2906,13 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_the_law_of_the_state
 		}
+		completion_reward = {
+			add_political_power = -45
+			add_timed_idea = {
+				idea = KNT_british_reconstruction
+				days = 365
+			}
+		}
 		x = 24
 		y = 19
 	}
@@ -2907,6 +2922,9 @@ shared_focus = {
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_there_always_be_an_england
+		}
+		completion_reward = {
+			
 		}
 		x = 27
 		y = 19
