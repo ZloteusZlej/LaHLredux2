@@ -129,3 +129,107 @@ defined_text = {
 		localization_key = KNT_culture_dead
 	}
 }
+
+defined_text = {
+	name = GetKentMonarch
+	text = {
+		trigger = {
+            check_variable = {
+                var = uk_monarchy
+                value = 1
+				compare = equals				
+            }
+		}
+		localization_key = KNT_monarch_exists_1
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = uk_monarchy
+                value = 2	
+				compare = equals				
+            }
+		}
+		localization_key = KNT_monarch_exists_2
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = uk_monarchy
+                value = 3	
+				compare = equals				
+            }
+		}
+		localization_key = KNT_monarch_exists_3
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = uk_monarchy
+                value = 4	
+				compare = equals				
+            }
+		}
+		localization_key = KNT_monarch_exists_4
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = uk_monarchy
+                value = 5	
+				compare = equals				
+            }
+		}
+		localization_key = KNT_monarch_exists_5
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = uk_monarchy
+                value = 6	
+				compare = equals				
+            }
+		}
+		localization_key = KNT_monarch_exists_6
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = uk_monarchy
+                value = 7		
+				compare = equals				
+            }
+		}
+		localization_key = KNT_monarch_exists_7
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = uk_monarchy
+                value = 8
+				compare = equals				
+            }
+		}
+		localization_key = KNT_monarch_exists_8
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = uk_monarchy
+                value = 9	
+				compare = equals				
+            }
+		}
+		localization_key = KNT_monarch_exists_9
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = uk_monarchy
+                value = 10
+				compare = equals				
+            }
+		}
+		localization_key = KNT_monarch_exists_10
+	}
+}
