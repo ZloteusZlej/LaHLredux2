@@ -5338,3 +5338,655 @@ KNT_britain_cores = {
 	
 	
 }
+
+KNT_selling_shit = {
+    KNT_selling_railguns = {
+		cost = 0
+		days_remove = 30
+		visible = {
+			has_tech = railgun
+			has_government = neocameralism
+		}
+		available = {
+			has_equipment = { railgun_equipment_1 > 50 }
+		}
+        complete_effect = {
+			KNT = {
+				add_equipment_to_stockpile = {
+					type = railgun_equipment
+					amount = -50
+					producer = KNT
+				}
+			}
+		}
+		remove_effect = {
+			653 = {
+				owner = {
+					country_event = {
+					days = 1
+					id = KNT_event.300
+					}
+				}
+			}
+			KNT = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+	}
+	
+	KNT_selling_airguns = {
+		cost = 0
+		days_remove = 30
+		visible = {
+			has_tech = airgun
+			has_government = neocameralism
+		}
+		available = {
+			has_equipment = { airgun_equipment_1 > 65 }
+		}
+        complete_effect = {
+			KNT = {
+				add_equipment_to_stockpile = {
+					type = airgun_equipment
+					amount = -65
+					producer = KNT
+				}
+			}
+		}
+		remove_effect = {
+			189 = {
+				owner = {
+					country_event = {
+					days = 1
+					id = KNT_event.301
+					}
+				}
+			}
+			KNT = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+	}
+	
+	KNT_selling_landing_tanks = {
+		cost = 0
+		days_remove = 30
+		visible = {
+			has_tech = landing_tank
+			has_government = neocameralism
+		}
+		available = {
+			has_equipment = { landing_tank_equipment_1 > 55 }
+		}
+        complete_effect = {
+			KNT = {
+				add_equipment_to_stockpile = {
+					type = landing_tank_equipment
+					amount = -55
+					producer = KNT
+				}
+			}
+		}
+		remove_effect = {
+			798 = {
+				owner = {
+					country_event = {
+					days = 1
+					id = KNT_event.302
+					}
+				}
+			}
+			KNT = {
+				random_owned_state = {
+						add_building_construction = {
+							type = infrastructure 
+							level = 1
+							instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	KNT_selling_transport_airships = {
+		cost = 0
+		days_remove = 30
+		visible = {
+			has_tech = transport_airship 
+			has_government = neocameralism
+		}
+		available = {
+			has_equipment = { transport_airship_equipment_1 > 30 }
+		}
+        complete_effect = {
+			KNT = {
+				add_equipment_to_stockpile = {
+					type = transport_airship_equipment
+					amount = -30
+					producer = KNT
+				}
+			}
+		}
+		remove_effect = {
+			211 = {
+				owner = {
+					country_event = {
+					days = 1
+					id = KNT_event.303
+					}
+				}
+			}
+			KNT = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+	}
+	
+	KNT_selling_evangelions = {
+		cost = 0
+		days_remove = 30
+		visible = {
+			has_tech = evangelion 
+			has_government = neocameralism
+		}
+		available = {
+			has_equipment = { evangelion_equipment_1 > 25 }
+		}
+        complete_effect = {
+			KNT = {
+				add_equipment_to_stockpile = {
+					type = evangelion_equipment
+					amount = -25
+					producer = KNT
+				}
+			}
+		}
+		remove_effect = {
+			39 = {
+				owner = {
+					country_event = {
+					days = 1
+					id = KNT_event.304
+					}
+				}
+			}
+			KNT = {
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+		}
+	}
+	
+	KNT_selling_unmanned_tanks = {
+		cost = 0
+		days_remove = 30
+		visible = {
+			has_tech = unmanned_tank 
+			has_government = neocameralism
+		}
+		available = {
+			has_equipment = { unmanned_tank_equipment_1 > 35 }
+		}
+        complete_effect = {
+			KNT = {
+				add_equipment_to_stockpile = {
+					type = unmanned_tank_equipment
+					amount = -35
+					producer = KNT
+				}
+			}
+		}
+		remove_effect = {
+			140 = {
+				owner = {
+					country_event = {
+					days = 1
+					id = KNT_event.305
+					}
+				}
+			}
+			KNT = {
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+		}
+	}
+	
+	KNT_selling_power_armor = {
+		cost = 0
+		days_remove = 30
+		visible = {
+			has_tech = power_armor_weapon 
+			has_government = neocameralism
+		}
+		available = {
+			has_equipment = { power_armor_weapon_equipment_1 > 75 }
+		}
+        complete_effect = {
+			KNT = {
+				add_equipment_to_stockpile = {
+					type = power_armor_weapon_equipment
+					amount = -75
+					producer = KNT
+				}
+			}
+		}
+		remove_effect = {
+			290 = {
+				owner = {
+					country_event = {
+					days = 1
+					id = KNT_event.306
+					}
+				}
+			}
+			KNT = {
+				random_owned_state = {
+						add_building_construction = {
+							type = dockyard 
+							level = 1
+							instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	KNT_selling_suicide_drones = {
+		cost = 0
+		days_remove = 30
+		visible = {
+			has_tech = suicide_drones 
+			has_government = neocameralism
+		}
+		available = {
+			has_equipment = { suicide_drones_equipment_1 > 45 }
+		}
+        complete_effect = {
+			KNT = {
+				add_equipment_to_stockpile = {
+					type = suicide_drones_equipment
+					amount = -45
+					producer = KNT
+				}
+			}
+		}
+		remove_effect = {
+			741 = {
+				owner = {
+					country_event = {
+					days = 1
+					id = KNT_event.307
+					}
+				}
+			}
+			KNT = {
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+		}
+	}
+	
+	KNT_selling_construction_materials = {
+		cost = 0
+		days_remove = 30
+		days_re_enable = 45
+		visible = {
+			has_government = right_populism
+		}
+        modifier = {
+			production_speed_buildings_factor = -0.13
+		}
+		remove_effect = {
+			KNT = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+	}
+	
+	KNT_selling_machinery = {
+		cost = 0
+		days_remove = 35
+		days_re_enable = 50
+		visible = {
+			has_government = right_populism
+		}
+        modifier = {
+			production_factory_max_efficiency_factor = -0.2
+		}
+		remove_effect = {
+			KNT = {
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+		}
+	}
+	
+	KNT_selling_consumer_goods = {
+		cost = 0
+		days_remove = 30
+		days_re_enable = 45
+		visible = {
+			has_government = right_populism
+		}
+        modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			KNT = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+	}
+	
+	KNT_selling_plastics = {
+		cost = 0
+		days_remove = 30
+		days_re_enable = 45
+		visible = {
+			has_government = right_populism
+		}
+        modifier = {
+			fuel_gain_factor = -0.2
+		}
+		remove_effect = {
+			KNT = {
+				random_owned_state = {
+						add_building_construction = {
+						type = infrastructure 
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	KNT_selling_coal_and_steel = {
+		cost = 0
+		days_remove = 35
+		days_re_enable = 50
+		visible = {
+			has_government = right_populism
+		}
+        modifier = {
+			production_lack_of_resource_penalty_factor = 0.2
+		}
+		remove_effect = {
+			KNT = {
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+		}
+	}
+	
+	KNT_selling_trains_to_libya = {
+		cost = 0
+		days_remove = 35
+		days_re_enable = 50
+		visible = {
+			has_government = right_populism
+		}
+		available = {
+			has_equipment = {
+				train_equipment_1 > 25
+			}
+		}
+		complete_effect = {
+			KNT = {
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = -25
+					producer = KNT
+				}
+			}
+		}
+		remove_effect = {
+			KNT = {
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+			741 = {
+				owner = {
+					country_event = {
+					days = 1
+					id = KNT_event.308
+					}
+				}
+			}
+		}
+	}
+}
+
+KNT_exhibition_preparation = {
+    KNT_exhibition_mission = {
+		cost = 0
+		is_good = no                                        
+        days_mission_timeout = 70
+		allowed = { tag = KNT }
+        available = {                           
+            check_variable = { kent_exhibition_preparedness > 99 }
+        }
+		activation = {                          
+            has_completed_focus = KNT_the_great_exhibition		
+        }
+		timeout_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.310
+				}
+			}
+		}
+		complete_effect = {                    
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.309
+				}
+			}
+        }
+	}
+	
+	KNT_build_pavilion = {
+		cost = 20
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			add_to_variable = { var = kent_exhibition_preparedness value = 18 }
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		available = { has_completed_focus = KNT_the_great_exhibition }
+	}
+	
+	KNT_send_civil_manufacturers = {
+		cost = 15
+		days_remove = 5
+		days_re_enable = 4
+		complete_effect = {
+			add_to_variable = { var = kent_exhibition_preparedness value = 6 }
+		}
+		modifier = {
+			consumer_goods_factor = 0.03
+		}
+		available = { has_completed_focus = KNT_the_great_exhibition }
+		visible = { 
+			has_active_mission = KNT_exhibition_mission 
+		}
+	}
+	
+	KNT_send_mic_manufacturers = {
+		cost = 15
+		days_remove = 6
+		days_re_enable = 5
+		complete_effect = {
+			add_to_variable = { var = kent_exhibition_preparedness value = 7 }
+		}
+		modifier = {
+			production_factory_max_efficiency_factor = -0.15
+			production_factory_efficiency_gain_factor = -0.1
+		}
+		available = { has_completed_focus = KNT_the_great_exhibition }
+		visible = { 
+			has_active_mission = KNT_exhibition_mission 
+		}
+	}
+	
+	KNT_send_mic_manufacturers = {
+		cost = 15
+		days_remove = 6
+		days_re_enable = 5
+		complete_effect = {
+			add_to_variable = { var = kent_exhibition_preparedness value = 7 }
+		}
+		modifier = {
+			production_factory_max_efficiency_factor = -0.15
+			production_factory_efficiency_gain_factor = -0.1
+		}
+		available = { has_completed_focus = KNT_the_great_exhibition }
+		visible = { 
+			has_active_mission = KNT_exhibition_mission 
+		}
+	}
+	
+	KNT_invite_inventors = {
+		cost = 15
+		days_remove = 5
+		days_re_enable = 5
+		complete_effect = {
+			add_to_variable = { var = kent_exhibition_preparedness value = 6 }
+		}
+		modifier = {
+			research_speed_factor = -0.07
+		}
+		available = { has_completed_focus = KNT_the_great_exhibition }
+		visible = { 
+			has_active_mission = KNT_exhibition_mission 
+		}
+	}
+	
+	KNT_clean_the_london = {
+		cost = 12
+		days_remove = 7
+		fire_only_once = yes
+		remove_effect = {
+			add_to_variable = { var = kent_exhibition_preparedness value = 12 }
+		}
+		modifier = {
+			industrial_capacity_factory = -0.1
+		}
+		available = { has_completed_focus = KNT_the_great_exhibition }
+		visible = { 
+			has_active_mission = KNT_exhibition_mission 
+		}
+	}
+	
+	KNT_provide_security = {
+		cost = 20
+		days_remove = 2
+		fire_only_once = yes
+		remove_effect = {
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.311
+				}
+			}
+		}
+		available = { has_completed_focus = KNT_the_great_exhibition }
+		visible = { 
+			has_active_mission = KNT_exhibition_mission 
+		}
+	}
+	
+	KNT_invite_germans = {
+		cost = 20
+		days_remove = 3
+		fire_only_once = yes
+		remove_effect = {
+			GER = {
+				country_event = {
+				days = 1
+				id = GER_event.9
+				}
+			}
+		}
+		available = { has_completed_focus = KNT_the_great_exhibition }
+		visible = {
+			country_exists = GER 
+			has_active_mission = KNT_exhibition_mission 
+		}
+	}
+	
+	KNT_invite_bosnians = {
+		cost = 20
+		days_remove = 3
+		fire_only_once = yes
+		remove_effect = {
+			BOS = {
+				country_event = {
+				days = 1
+				id = BOS_event.2
+				}
+			}
+		}
+		available = { has_completed_focus = KNT_the_great_exhibition }
+		visible = {
+			country_exists = BOS 
+			has_active_mission = KNT_exhibition_mission 
+		}
+	}
+	
+	KNT_invite_dutch = {
+		cost = 20
+		days_remove = 3
+		fire_only_once = yes
+		remove_effect = {
+			HOL = {
+				country_event = {
+				days = 1
+				id = HOL_event.1
+				}
+			}
+		}
+		available = { has_completed_focus = KNT_the_great_exhibition }
+		visible = {
+			country_exists = HOL 
+			has_active_mission = KNT_exhibition_mission 
+		}
+	}
+	
+	KNT_invite_iraqis = {
+		cost = 20
+		days_remove = 3
+		fire_only_once = yes
+		remove_effect = {
+			IRQ = {
+				country_event = {
+				days = 1
+				id = IRQ_event.1
+				}
+			}
+		}
+		available = { has_completed_focus = KNT_the_great_exhibition }
+		visible = {
+			country_exists = IRQ 
+			has_active_mission = KNT_exhibition_mission 
+		}
+	}
+	
+	KNT_invite_lybians = {
+		cost = 20
+		days_remove = 3
+		fire_only_once = yes
+		remove_effect = {
+			UAS = {
+				country_event = {
+				days = 1
+				id = UAS_event.2
+				}
+			}
+		}
+		available = { has_completed_focus = KNT_the_great_exhibition }
+		visible = {
+			country_exists = UAS 
+			has_active_mission = KNT_exhibition_mission 
+		}
+	}
+}

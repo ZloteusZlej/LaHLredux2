@@ -2686,6 +2686,45 @@ ideas = {
 			}
 		}
 	}
+	
+	hidden_ideas = {	
+		KNT_successful_exhibition = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly_factor	= 0.02	
+				war_support_weekly = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_failed_exhibition = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly_factor	= -0.01	
+				war_support_weekly = -0.02
+				production_factory_efficiency_gain_factor = -0.15
+				production_speed_buildings_factor = -0.3
+			}
+		}
+	}
 }
 	
 	

@@ -3392,3 +3392,284 @@ country_event = {
 			custom_effect_tooltip = KNT_event262.tt
 		}
 	}
+	
+	
+	
+	country_event = {
+		id = KNT_event.300
+		title = KNT_event.300.t
+		desc = KNT_event.300.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.300.a
+			add_equipment_to_stockpile = {
+				type = railgun_equipment
+				amount = 50
+				producer = KNT
+			}
+			add_political_power = -25
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.301
+		title = KNT_event.301.t
+		desc = KNT_event.301.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.301.a
+			add_equipment_to_stockpile = {
+				type = airgun_equipment
+				amount = 65
+				producer = KNT
+			}
+			add_political_power = -20
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.302
+		title = KNT_event.302.t
+		desc = KNT_event.302.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.302.a
+			add_equipment_to_stockpile = {
+				type = landing_tank_equipment
+				amount = 55
+				producer = KNT
+			}
+			add_political_power = -45
+			if = {
+				limit = { 
+					NOT = { has_template = "Landing Tanks" }
+				}
+				division_template = {
+					name = "Landing Tanks"
+					division_names_group = SAH_INF_02
+
+					regiments = {
+						landing_tank_battalion = { x = 0 y = 0 }	
+						landing_tank_battalion = { x = 0 y = 1 }
+						landing_tank_battalion = { x = 0 y = 2 }	
+						landing_tank_battalion = { x = 0 y = 3 }
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.303
+		title = KNT_event.303.t
+		desc = KNT_event.303.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.303.a
+			add_equipment_to_stockpile = {
+				type = transport_airship_equipment
+				amount = 30
+				producer = KNT
+			}
+			add_political_power = -35
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.304
+		title = KNT_event.304.t
+		desc = KNT_event.304.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.304.a
+			add_equipment_to_stockpile = {
+				type = evangelion_equipment
+				amount = 25
+				producer = KNT
+			}
+			add_political_power = -45
+			if = {
+				limit = { 
+					NOT = { has_template = "Gulivers" }
+				}
+				division_template = {
+					name = "Gulivers"
+					division_names_group = SAH_INF_02
+
+					regiments = {
+						evangelion_brigade = { x = 0 y = 0 }	
+						evangelion_brigade = { x = 0 y = 1 }
+						evangelion_brigade = { x = 0 y = 2 }	
+						evangelion_brigade = { x = 0 y = 3 }
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.305
+		title = KNT_event.305.t
+		desc = KNT_event.305.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.305.a
+			add_equipment_to_stockpile = {
+				type = unmanned_tank_equipment
+				amount = 35
+				producer = KNT
+			}
+			add_political_power = -45
+			if = {
+				limit = { 
+					NOT = { has_template = "Unmanned Tanks" }
+				}
+				division_template = {
+					name = "Unmanned Tanks"
+					division_names_group = SAH_INF_02
+
+					regiments = {
+						unmanned_tank_battalion = { x = 0 y = 0 }	
+						unmanned_tank_battalion = { x = 0 y = 1 }
+						unmanned_tank_battalion = { x = 0 y = 2 }	
+						unmanned_tank_battalion = { x = 0 y = 3 }
+						unmanned_tank_battalion = { x = 0 y = 4 }
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.306
+		title = KNT_event.306.t
+		desc = KNT_event.306.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.306.a
+			add_equipment_to_stockpile = {
+				type = power_armor_weapon_equipment
+				amount = 75
+				producer = KNT
+			}
+			add_political_power = -40
+			if = {
+				limit = { 
+					NOT = { has_template = "Power Armor Infantry" }
+				}
+				division_template = {
+					name = "Power Armor Infantry"
+					division_names_group = SAH_INF_02
+
+					regiments = {
+						power_armor_infantry = { x = 0 y = 0 }	
+						power_armor_infantry = { x = 0 y = 1 }
+						power_armor_infantry = { x = 0 y = 2 }	
+						power_armor_infantry = { x = 0 y = 3 }
+						power_armor_infantry = { x = 0 y = 4 }
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.307
+		title = KNT_event.307.t
+		desc = KNT_event.307.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.307.a
+			add_equipment_to_stockpile = {
+				type = suicide_drones_equipment
+				amount = 45
+				producer = KNT
+			}
+			add_political_power = -35
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.308
+		title = KNT_event.308.t
+		desc = KNT_event.308.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.308.a
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 25
+				producer = KNT
+			}
+			add_political_power = -35
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.309
+		title = KNT_event.309.t
+		desc = KNT_event.309.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.309.a
+			add_timed_idea = {
+				idea = KNT_successful_exhibition
+				days = 35
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.310
+		title = KNT_event.310.t
+		desc = KNT_event.310.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.310.a
+			add_timed_idea = {
+				idea = KNT_failed_exhibition
+				days = 35
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.311
+		title = KNT_event.311.t
+		desc = KNT_event.311.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.311.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -150
+				producer = KNT
+			}
+			add_command_power = -35
+			add_political_power = -30
+			add_to_variable = { var = kent_exhibition_preparedness value = 8 }
+		}
+		
+		option = {
+			name = KNT_event.311.b
+			add_to_variable = { var = kent_exhibition_preparedness value = 12 }
+			KNT = {
+				country_event = {
+				days = 1
+				id = KNT_event.312
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.312
+		title = KNT_event.312.t
+		desc = KNT_event.312.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.312.b
+			add_to_variable = { var = kent_exhibition_preparedness value = -16 }
+			add_stability = -0.1
+		}
+	}
