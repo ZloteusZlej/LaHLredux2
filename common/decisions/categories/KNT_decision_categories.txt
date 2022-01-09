@@ -169,3 +169,20 @@ KNT_exhibition_preparation = {
 	}
 	allowed = { original_tag = KNT }
 }
+
+KNT_britain_pacification = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = KNT }
+	visible_when_empty = yes
+	scripted_gui = lhl_britain_control_screen_body
+	visible = {
+			KNT = {
+				has_completed_focus = KNT_there_always_be_an_england
+			}
+	}
+	allowed = { 
+		original_tag = KNT
+		has_completed_focus = KNT_there_always_be_an_england
+	}
+}

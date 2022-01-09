@@ -2820,6 +2820,37 @@ KNT_cultural_progress = {
 
 		}	
 	}
+	KNT_destroy_welsh_shed = {
+		cost = 10	
+	    days_remove = 30
+		fire_only_once = yes
+        visible = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+        }
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+			1148 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.115
+				}
+			}
+		}
+		remove_effect = {
+
+		}	
+	}
 ###Our Burden###
 	KNT_conduct_a_military_parade = {
 		cost = 50
@@ -2830,7 +2861,7 @@ KNT_cultural_progress = {
 				has_completed_focus = KNT_our_new_burden
 			}
 		}
-		visible = {
+		available = {
 			KNT = {
 				has_completed_focus = KNT_our_new_burden
 			}
@@ -2852,6 +2883,387 @@ KNT_cultural_progress = {
 				var = KNT_culture_progress
 				value = 8
 			}				
+		}	
+	}
+###Heroism over Hedonism##
+	KNT_shoot_patriotic_movies = {
+		cost = 50
+	    days_remove = 70
+		fire_only_once = no
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		modifier = {
+			civilian_factory_use = 1
+			political_power_gain = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_good_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 6
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 8
+			}				
+		}	
+	}
+	KNT_youth_education_programs = {
+		cost = 50
+	    days_remove = 70
+		fire_only_once = no
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		modifier = {
+			stability_weekly = -0.03
+			political_power_gain = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_good_effect_small.tt
+			add_to_variable = {
+				var = KNT_culture_effectiveness_factor
+				value = 2
+			}				
+		}	
+	}
+	KNT_imprison_journalists = {
+		cost = 25
+	    days_remove = 70
+		fire_only_once = no
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		modifier = {
+			stability_weekly = -0.03
+			political_power_gain = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_good_progress_big.tt
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 8
+			}				
+		}	
+	}
+	KNT_ban_videogames = {
+		cost = 10
+	    days_remove = 70
+		fire_only_once = no
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		modifier = {
+			stability_weekly = 0.05
+			war_support_weekly = 0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_bad_people_big.tt
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -8
+			}				
+		}	
+	}
+	###DEPOPULATE###
+	KNT_depopulate_london = {
+		cost = 75
+	    days_remove = 100
+		fire_only_once = yes
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+			1160 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+			stability_weekly = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_bad_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt
+			1148 = {
+				add_manpower = -500000
+			}
+			1158 = {
+				add_manpower = 500000
+			}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -6
+			}	
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 6
+			}			
+		}	
+	}
+	KNT_depopulate_sussex = {
+		cost = 75
+	    days_remove = 100
+		fire_only_once = yes
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+			1001 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+			stability_weekly = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_bad_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt
+			1001 = {
+				add_manpower = -500000
+			}
+			1156 = {
+				add_manpower = 500000
+			}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -6
+			}	
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 6
+			}			
+		}	
+	}
+	KNT_depopulate_bristol = {
+		cost = 75
+	    days_remove = 100
+		fire_only_once = yes
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+			1006 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+			stability_weekly = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_bad_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt
+			1006  = {
+				add_manpower = -500000
+			}
+			1153 = {
+				add_manpower = 500000
+			}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -6
+			}	
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 6
+			}			
+		}	
+	}
+	KNT_depopulate_birmingham = {
+		cost = 75
+	    days_remove = 100
+		fire_only_once = yes
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+			1154 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+			stability_weekly = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_bad_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt
+			1154  = {
+				add_manpower = -500000
+			}
+			1152 = {
+				add_manpower = 500000
+			}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -6
+			}	
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 6
+			}			
+		}	
+	}
+	KNT_depopulate_sheffield = {
+		cost = 75
+	    days_remove = 100
+		fire_only_once = yes
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+			1008 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+			stability_weekly = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_bad_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt
+			1008  = {
+				add_manpower = -500000
+			}
+			1151 = {
+				add_manpower = 500000
+			}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -6
+			}	
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 6
+			}			
+		}	
+	}
+	KNT_depopulate_manchester = {
+		cost = 75
+	    days_remove = 100
+		fire_only_once = yes
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+			1009 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+			stability_weekly = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_bad_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt
+			1009  = {
+				add_manpower = -500000
+			}
+			1145 = {
+				add_manpower = 500000
+			}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -6
+			}	
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 6
+			}			
 		}	
 	}
 }
@@ -5988,5 +6400,579 @@ KNT_exhibition_preparation = {
 			country_exists = UAS 
 			has_active_mission = KNT_exhibition_mission 
 		}
+	}
+}
+
+KNT_britain_pacification  = {
+	KNT_pacification_campaign = {
+		cost = 45
+		days_remove = 50
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_supression_ALL.tt
+			add_to_variable = {
+				var = KNT_east_anglia_resistance_lvl
+				value = -2
+			}
+			add_to_variable = {
+				var = KNT_nothern_ireland_resistance_lvl
+				value = -2
+			}	
+			add_to_variable = {
+				var = KNT_essex_resistance_lvl
+				value = -2
+			}	
+			add_to_variable = {
+				var = KNT_mercia_resistance_lvl
+				value = -2
+			}	
+			add_to_variable = {
+				var = KNT_northumbria_resistance_lvl
+				value = -2
+			}	
+			add_to_variable = {
+				var = KNT_scotland_resistance_lvl
+				value = -2
+			}	
+			add_to_variable = {
+				var = KNT_sussex_resistance_lvl
+				value = -2
+			}	
+			add_to_variable = {
+				var = KNT_wales_resistance_lvl
+				value = -2
+			}	
+			add_to_variable = {
+				var = KNT_wessex_resistance_lvl
+				value = -2
+			}				
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+		}
+	}
+###Reforging Britain###
+	KNT_rebuild_sussex = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_rebuild_SUSSEX.tt
+			custom_effect_tooltip = KNT_resistance_supression_SUSSEX.tt
+			add_to_variable = {
+				var = KNT_sussex_resistance_lvl
+				value = -3
+			}	
+			1001 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.05
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_reforging_britain	
+		}
+	}
+	KNT_rebuild_wessex = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_rebuild_WESSEX.tt
+			custom_effect_tooltip = KNT_resistance_supression_WESSEX.tt
+			add_to_variable = {
+				var = KNT_wessex_resistance_lvl
+				value = -3
+			}	
+			1006 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.05
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_reforging_britain	
+		}
+	}
+	KNT_rebuild_east_anglia = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_rebuild_EAST_ANGLIA.tt
+			custom_effect_tooltip = KNT_resistance_supression_EAST_ANGLIA.tt
+			add_to_variable = {
+				var = KNT_east_anglia_resistance_lvl
+				value = -3
+			}	
+			1004 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.05
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_reforging_britain	
+		}
+	}
+	KNT_rebuild_mercia = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_rebuild_MERCIA.tt
+			custom_effect_tooltip = KNT_resistance_supression_MERCIA.tt
+			add_to_variable = {
+				var = KNT_mercia_resistance_lvl
+				value = -3
+			}	
+			1154 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.05
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_reforging_britain	
+		}
+	}
+###Reconstruction Effort###
+	KNT_pacify_scotland = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_rebuild_SCOTLAND.tt
+			custom_effect_tooltip = KNT_resistance_supression_SCOTLAND.tt
+			add_to_variable = {
+				var = KNT_scotland_resistance_lvl
+				value = -3
+			}	
+			1014 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_reconstruction_effort
+		}
+	}
+	KNT_pacify_wales = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_rebuild_WALES.tt
+			custom_effect_tooltip = KNT_resistance_supression_WALES.tt
+			add_to_variable = {
+				var = KNT_wales_resistance_lvl
+				value = -3
+			}	
+			1149 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_reconstruction_effort
+		}
+	}
+	KNT_pacify_ireland  = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_rebuild_IRELAND.tt
+			custom_effect_tooltip = KNT_resistance_supression_IRELAND.tt
+			add_to_variable = {
+				var = KNT_nothern_ireland_resistance_lvl
+				value = -3
+			}	
+			1019 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_reconstruction_effort
+		}
+	}
+###REBUILD LONDON###
+	KNT_rebuild_big_ben = {
+		cost = 75
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_rebuild_LONDON.tt
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = {
+				var = KNT_essex_resistance_lvl
+				value = -18
+			}	
+			1149 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.313
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_london_recovery
+		}
+	}
+	KNT_rebuild_westminster = {
+		cost = 75
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_rebuild_LONDON.tt
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = {
+				var = KNT_essex_resistance_lvl
+				value = -18
+			}	
+			1149 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.314
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_london_recovery
+		}
+	}
+	KNT_rebuild_buckingham_palace = {
+		cost = 75
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_rebuild_LONDON.tt
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = {
+				var = KNT_essex_resistance_lvl
+				value = -18
+			}	
+			1149 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.315
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_london_recovery
+		}
+	}
+###THATCHER###
+	KNT_normal_wages  = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_rebuild_NORTHUMBRIA.tt
+			custom_effect_tooltip = KNT_resistance_supression_NORTHUMBRIA.tt
+			add_to_variable = {
+				var = KNT_northumbria_resistance_lvl
+				value = -5
+			}	
+			1009 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_thatcher's_mistakes
+		}
+	}
+###PACIFY###
+	KNT_mass_pacification_campaign = {
+		cost = 100
+		days_remove = 75
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_supression_ALL.tt
+			add_to_variable = {
+				var = KNT_east_anglia_resistance_lvl
+				value = -8
+			}
+			add_to_variable = {
+				var = KNT_nothern_ireland_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_essex_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_mercia_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_northumbria_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_scotland_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_sussex_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_wales_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_wessex_resistance_lvl
+				value = -8
+			}				
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+		}
+	}
+	KNT_propaganda_in_the_north = {
+		cost = 75
+		days_remove = 75
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_supression_NORTHUMBRIA.tt	
+			custom_effect_tooltip = KNT_resistance_supression_MERCIA.tt			
+			add_to_variable = {
+				var = KNT_mercia_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_northumbria_resistance_lvl
+				value = -8
+			}					
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+		}
+	}
+	KNT_propaganda_in_the_west = {
+		cost = 75
+		days_remove = 75
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_supression_SUSSEX.tt	
+			custom_effect_tooltip = KNT_resistance_supression_WESSEX.tt			
+			add_to_variable = {
+				var = KNT_sussex_resistance_lvl
+				value = -8
+			}		
+			add_to_variable = {
+				var = KNT_wessex_resistance_lvl
+				value = -8
+			}				
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+		}
+	}
+	KNT_propaganda_in_the_east = {
+		cost = 75
+		days_remove = 75
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_supression_EAST_ANGLIA.tt	
+			custom_effect_tooltip = KNT_resistance_supression_ESSEX.tt		
+			add_to_variable = {
+				var = KNT_east_anglia_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_essex_resistance_lvl
+				value = -8
+			}				
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+		}
+	}
+	KNT_propaganda_in_the_republics = {
+		cost = 75
+		days_remove = 75
+		remove_effect = {
+			custom_effect_tooltip =  KNT_resistance_supression_IRELAND.tt	
+			custom_effect_tooltip = KNT_resistance_supression_SCOTLAND.tt	
+			custom_effect_tooltip = KNT_resistance_supression_WALES.tt			
+			add_to_variable = {
+				var = KNT_nothern_ireland_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_scotland_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_wales_resistance_lvl
+				value = -8
+			}					
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+		}
+	}
+###MISSION###
+    KNT_partisan_uprising = {
+		cost = 0
+		is_good = no                                        
+        days_mission_timeout = 300
+		allowed = { tag = KNT }
+        available = {                           
+			check_variable = {
+				var = KNT_east_anglia_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_nothern_ireland_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_essex_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_mercia_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_northumbria_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_scotland_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_sussex_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_wales_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_wessex_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+        }
+		activation = {                          
+            has_completed_focus = KNT_there_always_be_an_england			
+        }
+		timeout_effect = {
+			start_civil_war = {
+				ruling_party = ROOT
+				ideology = hegemonism
+				size = 0.8
+				only_own_territory = no
+				keep_political_leader = yes
+				keep_political_party_members = yes
+			}
+		}
+		complete_effect = {  
+			add_political_power = 50
+        }
 	}
 }
