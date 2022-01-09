@@ -6402,3 +6402,544 @@ KNT_exhibition_preparation = {
 		}
 	}
 }
+
+KNT_britain_pacification  = {
+	KNT_pacification_campaign = {
+		cost = 45
+		days_remove = 50
+		remove_effect = {
+			add_to_variable = {
+				var = KNT_east_anglia_resistance_lvl
+				value = -2
+			}
+			add_to_variable = {
+				var = KNT_nothern_ireland_resistance_lvl
+				value = -2
+			}	
+			add_to_variable = {
+				var = KNT_essex_resistance_lvl
+				value = -2
+			}	
+			add_to_variable = {
+				var = KNT_mercia_resistance_lvl
+				value = -2
+			}	
+			add_to_variable = {
+				var = KNT_northumbria_resistance_lvl
+				value = -2
+			}	
+			add_to_variable = {
+				var = KNT_scotland_resistance_lvl
+				value = -2
+			}	
+			add_to_variable = {
+				var = KNT_sussex_resistance_lvl
+				value = -2
+			}	
+			add_to_variable = {
+				var = KNT_wales_resistance_lvl
+				value = -2
+			}	
+			add_to_variable = {
+				var = KNT_wessex_resistance_lvl
+				value = -2
+			}				
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+		}
+	}
+###Reforging Britain###
+	KNT_rebuild_sussex = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			add_to_variable = {
+				var = KNT_sussex_resistance_lvl
+				value = -3
+			}	
+			1001 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.05
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_reforging_britain	
+		}
+	}
+	KNT_rebuild_wessex = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			add_to_variable = {
+				var = KNT_wessex_resistance_lvl
+				value = -3
+			}	
+			1006 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.05
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_reforging_britain	
+		}
+	}
+	KNT_rebuild_east_anglia = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			add_to_variable = {
+				var = KNT_east_anglia_resistance_lvl
+				value = -3
+			}	
+			1004 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.05
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_reforging_britain	
+		}
+	}
+	KNT_rebuild_mercia = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			add_to_variable = {
+				var = KNT_mercia_resistance_lvl
+				value = -3
+			}	
+			1154 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.05
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_reforging_britain	
+		}
+	}
+###Reconstruction Effort###
+	KNT_pacify_scotland = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			add_to_variable = {
+				var = KNT_scotland_resistance_lvl
+				value = -3
+			}	
+			1014 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_reconstruction_effort
+		}
+	}
+	KNT_pacify_wales = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			add_to_variable = {
+				var = KNT_wales_resistance_lvl
+				value = -3
+			}	
+			1149 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_reconstruction_effort
+		}
+	}
+	KNT_pacify_ireland  = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			add_to_variable = {
+				var = KNT_nothern_ireland_resistance_lvl
+				value = -3
+			}	
+			1019 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_reconstruction_effort
+		}
+	}
+###REBUILD LONDON###
+	KNT_rebuild_big_ben = {
+		cost = 75
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			add_to_variable = {
+				var = KNT_essex_resistance_lvl
+				value = -2
+			}	
+			1149 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.313
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_london_recovery
+		}
+	}
+	KNT_rebuild_westminster = {
+		cost = 75
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			add_to_variable = {
+				var = KNT_essex_resistance_lvl
+				value = -2
+			}	
+			1149 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.314
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_london_recovery
+		}
+	}
+	KNT_rebuild_buckingham_palace = {
+		cost = 75
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			add_to_variable = {
+				var = KNT_essex_resistance_lvl
+				value = -2
+			}	
+			1149 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.315
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_london_recovery
+		}
+	}
+###THATCHER###
+	KNT_normal_wages  = {
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			add_to_variable = {
+				var = KNT_northumbria_resistance_lvl
+				value = -5
+			}	
+			1009 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_thatcher's_mistakes
+		}
+	}
+###PACIFY###
+	KNT_mass_pacification_campaign = {
+		cost = 100
+		days_remove = 75
+		remove_effect = {
+			add_to_variable = {
+				var = KNT_east_anglia_resistance_lvl
+				value = -8
+			}
+			add_to_variable = {
+				var = KNT_nothern_ireland_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_essex_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_mercia_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_northumbria_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_scotland_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_sussex_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_wales_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_wessex_resistance_lvl
+				value = -8
+			}				
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+		}
+	}
+	KNT_propaganda_in_the_north = {
+		cost = 75
+		days_remove = 75
+		remove_effect = {	
+			add_to_variable = {
+				var = KNT_mercia_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_northumbria_resistance_lvl
+				value = -8
+			}					
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+		}
+	}
+	KNT_propaganda_in_the_west = {
+		cost = 75
+		days_remove = 75
+		remove_effect = {	
+			add_to_variable = {
+				var = KNT_sussex_resistance_lvl
+				value = -8
+			}		
+			add_to_variable = {
+				var = KNT_wessex_resistance_lvl
+				value = -8
+			}				
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+		}
+	}
+	KNT_propaganda_in_the_east = {
+		cost = 75
+		days_remove = 75
+		remove_effect = {
+			add_to_variable = {
+				var = KNT_east_anglia_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_essex_resistance_lvl
+				value = -8
+			}				
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+		}
+	}
+	KNT_propaganda_in_the_republics = {
+		cost = 75
+		days_remove = 75
+		remove_effect = {
+			add_to_variable = {
+				var = KNT_nothern_ireland_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_scotland_resistance_lvl
+				value = -8
+			}	
+			add_to_variable = {
+				var = KNT_wales_resistance_lvl
+				value = -8
+			}					
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+		}
+	}
+###MISSION###
+    KNT_partisan_uprising = {
+		cost = 0
+		is_good = no                                        
+        days_mission_timeout = 300
+		allowed = { tag = KNT }
+        available = {                           
+			check_variable = {
+				var = KNT_east_anglia_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_nothern_ireland_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_essex_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_mercia_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_northumbria_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_scotland_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_sussex_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_wales_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = KNT_wessex_resistance_lvl
+				value = 0
+				compare = less_than_or_equals
+			}
+        }
+		activation = {                          
+            has_completed_focus = KNT_there_always_be_an_england			
+        }
+		timeout_effect = {
+			start_civil_war = {
+				ruling_party = ROOT
+				ideology = hegemonism
+				size = 0.8
+				only_own_territory = no
+				keep_political_leader = yes
+				keep_political_party_members = yes
+			}
+		}
+		complete_effect = {  
+			add_political_power = 50
+        }
+	}
+}

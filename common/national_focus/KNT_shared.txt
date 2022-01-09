@@ -3051,6 +3051,17 @@ shared_focus = {
 				id = KNT_event.250
 				}
 			}
+			hidden_effect = {
+				set_variable = { KNT_east_anglia_resistance_lvl = 100 }
+				set_variable = { KNT_nothern_ireland_resistance_lvl = 100 }
+				set_variable = { KNT_essex_resistance_lvl = 100 }
+				set_variable = { KNT_mercia_resistance_lvl = 100 }
+				set_variable = { KNT_northumbria_resistance_lvl = 100 }
+				set_variable = { KNT_scotland_resistance_lvl = 100 }
+				set_variable = { KNT_sussex_resistance_lvl = 100 }
+				set_variable = { KNT_wales_resistance_lvl = 100 }
+				set_variable = { KNT_wessex_resistance_lvl = 100 }
+			}
 		}	
 		x = 27
 		y = 17
@@ -3128,7 +3139,7 @@ shared_focus = {
 		icon = GFX_goal_KNT_london_recovery
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_reconstruction_effort
+			focus = KNT_reforging_britain
 		}
 		x = 30
 		y = 19
