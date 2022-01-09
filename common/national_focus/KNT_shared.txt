@@ -2415,6 +2415,13 @@ shared_focus = {
 		available = {
 			has_global_flag = east_anglia_accepts_kent_offer
 		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
+		}
 		completion_reward = {
 			create_faction = "Legitimate Government Forces"
 			KNT = {
@@ -2435,6 +2442,13 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_our_germanic_brothers
 		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
+		}
 		completion_reward = {
 			KNT = {
 				country_event = {
@@ -2452,6 +2466,13 @@ shared_focus = {
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_white_youth
+		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
 		}
 		completion_reward = {
 			KNT = {
@@ -2471,6 +2492,13 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_pimp_my_panzer
 		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
+		}
 		mutually_exclusive = {
 			focus = KNT_buy_them
 		}
@@ -2486,6 +2514,13 @@ shared_focus = {
 		}
 		mutually_exclusive = {
 			focus = KNT_london_referendum
+		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
 		}
 		completion_reward = {
 			KNT = {
@@ -2505,6 +2540,13 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_buy_them
 			focus = KNT_london_referendum
+		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
 		}
 		completion_reward = {
 			KNT = {
@@ -2530,6 +2572,13 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_an_unwilling_alliance
 		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
+		}
 		available = {
 			has_global_flag = essex_accepts_kent_offer
 		}
@@ -2553,6 +2602,13 @@ shared_focus = {
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_the_chimes_of_big_ben
+		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
 		}
 		completion_reward = {
 			ESS = {
@@ -2596,6 +2652,13 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_quid_pro_quo
 		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
+		}
 		x = 49
 		y = 11
 	}
@@ -2608,6 +2671,13 @@ shared_focus = {
 		}
 		mutually_exclusive = {
 			focus = KNT_the_network_gate
+		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
 		}
 		completion_reward = {
 			ESS = {
@@ -2629,6 +2699,13 @@ shared_focus = {
 		}
 		mutually_exclusive = {
 			focus = KNT_expose_the_gangs
+		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
 		}
 		completion_reward = {
 			KNT = {
@@ -2655,6 +2732,13 @@ shared_focus = {
 				days = 100
 			}
 		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
+		}
 		x = 49
 		y = 14
 	}
@@ -2667,6 +2751,13 @@ shared_focus = {
 		}
 		available = {
 			has_global_flag = pearce_accepts_kent_offer
+		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
 		}
 		mutually_exclusive = {
 	    focus = KNT_our_germanic_brothers
@@ -2687,6 +2778,13 @@ shared_focus = {
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_the_patriot
+		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
 		}
 		completion_reward = {
 			KNT = {
@@ -2714,6 +2812,13 @@ shared_focus = {
 				}
 			}
 		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
+		}
 		x = 57
 		y = 11
 	}
@@ -2735,6 +2840,13 @@ shared_focus = {
 				}
 			}
 		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
+		}
 		x = 56
 		y = 12
 	}
@@ -2747,6 +2859,13 @@ shared_focus = {
 		}
 		mutually_exclusive = {
 			focus = KNT_barbarism_vs_civilization
+		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
 		}
 		x = 58
 		y = 12
@@ -2767,6 +2886,13 @@ shared_focus = {
 				add_ideas = KNT_cambridge_protection
 			}
 		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
+		}
 		x = 57
 		y = 14
 	}
@@ -2778,6 +2904,13 @@ shared_focus = {
 			focus = KNT_into_the_woods
 			focus = KNT_the_mole
 			focus = KNT_coordinated_strikes
+		}
+		bypass = {
+			AND = {
+				has_global_flag = east_anglia_rejects_kent_offer
+				has_global_flag = pearce_rejects_kent_offer
+				has_global_flag = essex_rejects_kent_offer
+			}
 		}
 		completion_reward = {
 			if = {
