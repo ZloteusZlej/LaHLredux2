@@ -1298,8 +1298,30 @@ country_event = {
 		}
 
 	}
+###CULTURAL TREE##	
+country_event = {
+	id = KNT_event.57
+	title = KNT_event.57.t
+	desc = KNT_event.57.d
+	is_triggered_only = yes
+	option = {
+		name = KNT_event.57.a
+		add_political_power = 50
+    }
+}
 
-###CULTURAL TREE##
+country_event = {
+	id = KNT_event.58
+	title = KNT_event.58.t
+	desc = KNT_event.58.d
+	is_triggered_only = yes
+	option = {
+		name = KNT_event.57.a
+		add_political_power = 50
+    }
+}
+
+
 
 country_event = {
 	id = KNT_event.70
@@ -2421,9 +2443,719 @@ country_event = {
 		add_stability = -0.05
     }
 }
+
+country_event = { #Monarchy chain, tories
+	id = KNT_event.102
+	title = KNT_event.102.t
+	desc = KNT_event.102.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.102.a
+		add_political_power = 10
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.103
+			}
+		}
+    }
+}
+
+country_event = { #Monarchy chain, william
+	id = KNT_event.103
+	title = KNT_event.103.t
+	desc = KNT_event.103.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.103.a
+		hidden_effect = {
+			KNT = {
+				set_country_flag = KNT_flag_king_william
+			}
+		}
+    }
+	option = {
+		name = KNT_event.103.b
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.104
+			}
+		}
+    }
+}
+
+country_event = { #Monarchy chain, michael
+	id = KNT_event.104
+	title = KNT_event.104.t
+	desc = KNT_event.104.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.104.a
+		hidden_effect = {
+			KNT = {
+				set_country_flag = KNT_flag_king_michael
+			}
+		}
+    }
+	option = {
+		name = KNT_event.104.b
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.105
+			}
+		}
+    }
+}
+
+country_event = { #Monarchy chain, george
+	id = KNT_event.105
+	title = KNT_event.105.t
+	desc = KNT_event.105.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.105.a
+		hidden_effect = {
+			KNT = {
+				set_country_flag = KNT_flag_king_george_viii
+			}
+		}
+    }
+	option = {
+		name = KNT_event.105.b
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.106
+			}
+		}
+    }
+}
+
+country_event = { #Monarchy chain, anne
+	id = KNT_event.106
+	title = KNT_event.106.t
+	desc = KNT_event.106.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.106.a
+		hidden_effect = {
+			KNT = {
+				set_country_flag = KNT_flag_king_anne
+			}
+		}
+    }
+	option = {
+		name = KNT_event.106.b
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.107
+			}
+		}
+    }
+}
+
+country_event = { #Monarchy chain, fuck you
+	id = KNT_event.107
+	title = KNT_event.107.t
+	desc = KNT_event.107.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.107.a
+		hidden_effect = {
+			KNT = {
+				set_country_flag = KNT_flag_no_monarchy
+			}
+		}
+	}
+	option = {
+		name = KNT_event.107.b
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.103
+			}
+		}
+    }
+}
+
+country_event = { #Monarchy chain, neovics
+	id = KNT_event.109
+	title = KNT_event.109.t
+	desc = KNT_event.109.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.109.a
+		add_political_power = 10
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.110
+			}
+		}
+    }
+}
+
+country_event = { #Monarchy chain, edward
+	id = KNT_event.110
+	title = KNT_event.110.t
+	desc = KNT_event.110.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.110.a
+		hidden_effect = {
+			KNT = {
+				set_country_flag = KNT_flag_king_edward 
+			}
+		}
+    }
+	option = {
+		name = KNT_event.110.b
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.111
+			}
+		}
+    }
+}
+
+country_event = { #Monarchy chain, peter
+	id = KNT_event.111
+	title = KNT_event.111.t
+	desc = KNT_event.111.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.111.a
+		hidden_effect = {
+			KNT = {
+				set_country_flag = KNT_flag_king_peter
+			}
+		}
+    }
+	option = {
+		name = KNT_event.111.b
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.112
+			}
+		}
+    }
+}
+
+country_event = { #Monarchy chain, frederick
+	id = KNT_event.112
+	title = KNT_event.112.t
+	desc = KNT_event.112.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.112.a
+		hidden_effect = {
+			KNT = {
+				set_country_flag = KNT_flag_king_frederick
+			}
+		}
+    }
+	option = {
+		name = KNT_event.112.b
+		trigger = {
+			KNT = {
+				has_country_flag = KNT_diana_found
+			}
+		}
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.113
+			}
+		}
+    }
+	option = {
+		name = KNT_event.112.c
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.114
+			}
+		}
+    }
+}
+
+country_event = { #Monarchy chain, diana
+	id = KNT_event.113
+	title = KNT_event.113.t
+	desc = KNT_event.113.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.113.a
+		hidden_effect = {
+			KNT = {
+				set_country_flag = KNT_flag_king_diana
+			}
+		}
+    }
+	option = {
+		name = KNT_event.113.b
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.114
+			}
+		}
+    }
+}
+
+country_event = { #Monarchy chain, fuck you
+	id = KNT_event.114
+	title = KNT_event.114.t
+	desc = KNT_event.114.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.114.a
+		hidden_effect = {
+			KNT = {
+				set_country_flag = KNT_flag_no_monarchy
+			}
+		}
+	}
+	option = {
+		name = KNT_event.114.b
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.110
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.115
+	title = KNT_event.115.t
+	desc = KNT_event.115.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.115.a
+		custom_effect_tooltip = KNT_bad_people_small.tt
+		custom_effect_tooltip = KNT_bad_progress_small.tt
+		hidden_effect = {
+			KNT = {
+				country_event = {
+					days = 5
+					id = KNT_event.116
+				}
+			}
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -5
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = -5
+			}
+		}
+	}
+	option = {
+		name = KNT_event.115.b
+		custom_effect_tooltip = KNT_good_people_small.tt
+		custom_effect_tooltip = KNT_good_progress_small.tt
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 5
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = KNT_event.116
+	title = KNT_event.116.t
+	desc = KNT_event.116.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.116.a
+		custom_effect_tooltip = KNT_wales_shed.tt
+		custom_effect_tooltip = KNT_good_people_big.tt
+		custom_effect_tooltip = KNT_good_progress_big.tt
+		custom_effect_tooltip = KNT_good_effect_big.tt
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 15
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 15
+			}
+			add_to_variable = {
+				var = KNT_culture_effectiveness_factor
+				value = 15
+			}
+			KNT = {
+				set_country_flag = KNT_diana_found
+			}
+		}
+    }
+}
+
+country_event = { #Coronation
+	id = KNT_event.117
+	title = KNT_event.117.t
+	desc = KNT_event.117.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.117.a
+		trigger = {
+			has_country_flag = KNT_flag_king_frederick
+		}
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.118
+			}
+		}
+    }
+	option = {
+		name = KNT_event.117.b
+		trigger = {
+			has_country_flag = KNT_flag_king_george_viii
+		}
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.119
+			}
+		}
+    }
+	option = {
+		name = KNT_event.117.c
+		trigger = {
+			has_country_flag = KNT_flag_king_peter
+		}
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.120
+			}
+		}
+    }
+	option = {
+		name = KNT_event.117.d
+		trigger = {
+			has_country_flag = KNT_flag_king_edward
+		}
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.121
+			}
+		}
+    }
+	option = {
+		name = KNT_event.117.e
+		trigger = {
+			has_country_flag = KNT_flag_king_michael
+		}
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.122
+			}
+		}
+    }
+	option = {
+		name = KNT_event.117.f
+		trigger = {
+			has_country_flag = KNT_flag_king_william
+		}
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.123
+			}
+		}
+    }
+	option = {
+		name = KNT_event.117.g
+		trigger = {
+			has_country_flag = KNT_flag_king_diana
+		}
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.124
+			}
+		}
+    }
+	option = {
+		name = KNT_event.117.h
+		trigger = {
+			has_country_flag = KNT_flag_king_anne
+		}
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.125
+			}
+		}
+    }
+	option = {
+		name = KNT_event.117.i
+		trigger = {
+			has_country_flag = KNT_flag_king_dead
+		}
+		KNT = {
+			country_event = {
+				days = 5
+				id = KNT_event.126
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.118
+	title = KNT_event.118.t
+	desc = KNT_event.118.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.118.a
+		add_political_power = 100
+		hidden_effect = {
+			KNT = {
+				set_variable = { uk_monarchy = 2 }
+			}
+			add_ideas = KNT_king_frederick
+			remove_ideas = KNT_king_george 
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.119
+	title = KNT_event.119.t
+	desc = KNT_event.119.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.119.a
+		add_political_power = 100
+		hidden_effect = {
+			KNT = {
+				set_variable = { uk_monarchy = 3 }
+			}
+			add_ideas = KNT_king_george_VIII
+			remove_ideas = KNT_king_george 
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.120
+	title = KNT_event.120.t
+	desc = KNT_event.120.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.120.a
+		add_political_power = 100
+		hidden_effect = {
+			KNT = {
+				set_variable = { uk_monarchy = 4 }
+			}
+			add_ideas = KNT_king_peter
+			remove_ideas = KNT_king_george 
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.121
+	title = KNT_event.121.t
+	desc = KNT_event.121.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.121.a
+		add_political_power = 100
+		hidden_effect = {
+			KNT = {
+				set_variable = { uk_monarchy = 5 }
+			}
+			add_ideas = KNT_king_edward
+			remove_ideas = KNT_king_george 
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.122
+	title = KNT_event.122.t
+	desc = KNT_event.122.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.122.a
+		add_political_power = 100
+		hidden_effect = {
+			KNT = {
+				set_variable = { uk_monarchy = 6 }
+			}
+			add_ideas = KNT_king_michael
+			remove_ideas = KNT_king_george 
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.123
+	title = KNT_event.123.t
+	desc = KNT_event.123.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.123.a
+		add_political_power = 100
+		hidden_effect = {
+			KNT = {
+				set_variable = { uk_monarchy = 7 }
+			}
+			add_ideas = KNT_king_william
+			remove_ideas = KNT_king_george 
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.124
+	title = KNT_event.124.t
+	desc = KNT_event.124.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.124.a
+		add_political_power = 200
+		hidden_effect = {
+			KNT = {
+				set_variable = { uk_monarchy = 8 }
+			}
+			add_ideas = KNT_king_diana
+			remove_ideas = KNT_king_george 
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.125
+	title = KNT_event.125.t
+	desc = KNT_event.125.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.125.a
+		add_political_power = 100
+		hidden_effect = {
+			KNT = {
+				set_variable = { uk_monarchy = 9 }
+			}
+			add_ideas = KNT_king_anne
+			remove_ideas = KNT_king_george 
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.126
+	title = KNT_event.126.t
+	desc = KNT_event.126.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.126.a
+		add_political_power = -500
+		hidden_effect = {
+			KNT = {
+				set_variable = { uk_monarchy = 10 }
+			}
+			add_ideas = KNT_king_dead
+			remove_ideas = KNT_king_george 
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.127
+	title = KNT_event.127.t
+	desc = KNT_event.127.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.127.a
+		add_political_power = 25
+		add_stability = 0.1
+		hidden_effect = {
+			KNT = {
+				country_event = {
+					days = 5
+					id = KNT_event.128
+				}
+			}
+			KNT = {
+				country_event = {
+					days = 8
+					id = KNT_event.1000
+				}
+			}
+			KNT = {
+				country_event = {
+					days = 10
+					id = KNT_event.129
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.128
+	title = KNT_event.128.t
+	desc = KNT_event.128.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.128.a
+		add_political_power = -50
+		swap_ideas = {
+			remove_idea = KNT_freedom_of_expression_1
+			add_idea = KNT_freedom_of_expression_2
+		}
+    }
+}
+
+country_event = {
+	id = KNT_event.129
+	title = KNT_event.129.t
+	desc = KNT_event.129.d
+    is_triggered_only = yes
+	option = {
+		name = KNT_event.129.a
+		custom_effect_tooltip = KNT_bad_people_small.tt
+		custom_effect_tooltip = KNT_good_progress_small.tt
+		hidden_effect = {
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -1
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 2
+			}
+		}
+    }
+	option = {
+		name = KNT_event.129.b
+		add_political_power = 5
+    }
+}
    
-
-
 country_event = {
 	id = KNT_event.130
 	title = KNT_event.130.t
@@ -2696,7 +3428,7 @@ country_event = {
 			}
 		}
 		option = {
-			name = KNT_event.136.a
+			name = KNT_event.136.b
 			add_country_leader_trait = anti_radical
 			custom_effect_tooltip = KNT_good_effect_small
 			hidden_effect = {
@@ -2713,7 +3445,7 @@ country_event = {
 			}
 		}
 		option = {
-			name = KNT_event.136.a
+			name = KNT_event.136.c
 			add_country_leader_trait = our_last_best_hope
 			custom_effect_tooltip = KNT_bad_people_big
 			custom_effect_tooltip = KNT_good_effect_big
@@ -2769,7 +3501,7 @@ country_event = {
 			}
 		}
 		option = {
-			name = KNT_event.137.a
+			name = KNT_event.137.b
 			add_country_leader_trait = patriotic_industrialist
 			custom_effect_tooltip = KNT_good_effect_small
 			custom_effect_tooltip = KNT_good_progress_small
@@ -2791,7 +3523,7 @@ country_event = {
 			}
 		}
 		option = {
-			name = KNT_event.137.a
+			name = KNT_event.137.c
 			add_country_leader_trait = popular_reformist
 			custom_effect_tooltip = KNT_good_people_big
 			hidden_effect = {
@@ -2819,11 +3551,11 @@ country_event = {
 			add_country_leader_trait = communism_destroyer
 		}
 		option = {
-			name = KNT_event.136.a
+			name = KNT_event.138.b
 			add_country_leader_trait = eurasia_destroyer
 		}
 		option = {
-			name = KNT_event.136.a
+			name = KNT_event.138.c
 			add_country_leader_trait = radical_destroyer
 		}
 	}
@@ -2834,8 +3566,985 @@ country_event = {
 		desc = KNT_event.139.d
 		is_triggered_only = yes
 		option = {
-			name = KNT_event.138.a
-			add_country_leader_trait = communism_destroyer
+			name = KNT_event.139.a
+			add_manpower = 1
+		}
+	}
+	
+	country_event = {
+		id = KNT_event.140
+		title = KNT_event.140.t
+		desc = KNT_event.140.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.140.a
+			add_political_power = -20
+			add_stability = 0.12
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.141
+					}
+				}
+				KNT = {
+					country_event = {
+						days = 10
+						id = KNT_event.142
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Children working
+		id = KNT_event.141
+		title = KNT_event.141.t
+		desc = KNT_event.141.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.141.a
+			custom_effect_tooltip = KNT_bad_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_big.tt
+			hidden_effect = {
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = -5
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 10
+				}
+			}
+		}
+		option = {
+			name = KNT_event.141.b
+			custom_effect_tooltip = KNT_good_people_small.tt
+			hidden_effect = {
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = 5
+				}
+			}
+		}
+	}
+	
+	country_event = { #Children homes
+		id = KNT_event.142
+		title = KNT_event.142.t
+		desc = KNT_event.142.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.142.a
+			custom_effect_tooltip = KNT_bad_people_small.tt
+			add_stability = 0.05
+			add_war_support = 0.05
+			hidden_effect = {
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = -8
+				}
+			}
+		}
+		option = {
+			name = KNT_event.142.b
+			custom_effect_tooltip = KNT_good_people_small.tt
+			hidden_effect = {
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = 5
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties 1
+		id = KNT_event.143
+		title = KNT_event.143.t
+		desc = KNT_event.143.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.143.a
+			add_political_power = 10
+			KNT = {
+				country_event = {
+					days = 5
+					id = KNT_event.144
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties WW2
+		id = KNT_event.144
+		title = KNT_event.144.t
+		desc = KNT_event.144.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.144.a	
+			custom_effect_tooltip = KNT_good_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt		
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 0
+						id = KNT_event.145
+					}
+					country_event = {
+						days = 5
+						id = KNT_event.146
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = 5
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 8
+				}
+			}
+		}
+		option = {
+			name = KNT_event.144.b
+			add_political_power = 30
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.146
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties WW2 Begun
+		id = KNT_event.145
+		title = KNT_event.145.t
+		desc = KNT_event.145.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.145.a
+			add_timed_idea = {
+				idea = KNT_recent_celebrations
+				days = 90
+			}
+			hidden_effect = {	
+				KNT = {
+					country_event = {
+						days = 365
+						id = KNT_event.145
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties WW1
+		id = KNT_event.146
+		title = KNT_event.146.t
+		desc = KNT_event.146.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.146.a	
+			custom_effect_tooltip = KNT_good_progress_big.tt		
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 0
+						id = KNT_event.147
+					}
+					country_event = {
+						days = 5
+						id = KNT_event.148
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 10
+				}
+			}
+		}
+		option = {
+			name = KNT_event.146.b
+			add_political_power = 30
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.148
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties WW1 Begun
+		id = KNT_event.147
+		title = KNT_event.147.t
+		desc = KNT_event.147.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.145.a
+			add_timed_idea = {
+				idea = KNT_recent_celebrations
+				days = 90
+			}
+			hidden_effect = {	
+				KNT = {
+					country_event = {
+						days = 365
+						id = KNT_event.147
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties Napoleon
+		id = KNT_event.148
+		title = KNT_event.148.t
+		desc = KNT_event.148.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.148.a	
+			custom_effect_tooltip = KNT_good_progress_small.tt	
+			custom_effect_tooltip = KNT_good_effect_small.tt				
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 0
+						id = KNT_event.149
+					}
+					country_event = {
+						days = 5
+						id = KNT_event.150
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = KNT_culture_effectiveness_factor
+					value = 5
+				}
+			}
+		}
+		option = {
+			name = KNT_event.148.b
+			add_political_power = 30
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.150
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties Napoleon Begun
+		id = KNT_event.149
+		title = KNT_event.149.t
+		desc = KNT_event.149.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.149.a
+			add_timed_idea = {
+				idea = KNT_recent_celebrations
+				days = 90
+			}
+			hidden_effect = {	
+				KNT = {
+					country_event = {
+						days = 365
+						id = KNT_event.149
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties Crimean War
+		id = KNT_event.150
+		title = KNT_event.150.t
+		desc = KNT_event.150.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.150.a	
+			custom_effect_tooltip = KNT_good_progress_big.tt	
+			custom_effect_tooltip = KNT_good_effect_small.tt
+			custom_effect_tooltip = KNT_good_people_big.tt				
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 0
+						id = KNT_event.151
+					}
+					country_event = {
+						days = 5
+						id = KNT_event.152
+					}
+					country_event = {
+						days = 15
+						id = KNT_event.153
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 15
+				}
+				add_to_variable = {
+					var = KNT_culture_effectiveness_factor
+					value = 5
+				}
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = 15
+				}
+			}
+		}
+		option = {
+			name = KNT_event.150.b
+			add_political_power = 30
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.153
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties Crimean War Begun
+		id = KNT_event.151
+		title = KNT_event.151.t
+		desc = KNT_event.151.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.151.a
+			add_timed_idea = {
+				idea = KNT_recent_celebrations
+				days = 90
+			}
+			hidden_effect = {	
+				KNT = {
+					country_event = {
+						days = 365
+						id = KNT_event.151
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties Crimean War Debate
+		id = KNT_event.152
+		title = KNT_event.152.t
+		desc = KNT_event.152.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.152.a	
+			add_political_power = -100
+			custom_effect_tooltip = KNT_good_people_big.tt				
+			hidden_effect = {
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = 15
+				}
+			}
+		}
+		option = {
+			name = KNT_event.152.b
+			custom_effect_tooltip = KNT_bad_people_big.tt				
+			hidden_effect = {
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = -15
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties Cod Wars 
+		id = KNT_event.153
+		title = KNT_event.153.t
+		desc = KNT_event.153.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.150.a	
+			custom_effect_tooltip = KNT_good_progress_small.tt	
+			custom_effect_tooltip = KNT_good_effect_small.tt
+			custom_effect_tooltip = KNT_bad_people_small.tt				
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 0
+						id = KNT_event.154
+					}
+					country_event = {
+						days = 5
+						id = KNT_event.155
+					}
+					country_event = {
+						days = 15
+						id = KNT_event.156
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = KNT_culture_effectiveness_factor
+					value = 2
+				}
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = -8
+				}
+			}
+		}
+		option = {
+			name = KNT_event.153.b
+			add_political_power = 30
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.156
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties Cod War Began
+		id = KNT_event.154
+		title = KNT_event.154.t
+		desc = KNT_event.154.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.154.a
+			add_timed_idea = {
+				idea = KNT_recent_celebrations
+				days = 90
+			}
+			hidden_effect = {	
+				KNT = {
+					country_event = {
+						days = 365
+						id = KNT_event.154
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties Cod War trade
+		id = KNT_event.155
+		title = KNT_event.155.t
+		desc = KNT_event.155.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.155.a	
+			add_political_power = -50	
+			ICE = {
+				add_opinion_modifier = {
+					target = KNT
+					modifier = KNT_celebrate_cod_wars
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties Opium Wars
+		id = KNT_event.156
+		title = KNT_event.156.t
+		desc = KNT_event.156.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.156.a	
+			custom_effect_tooltip = KNT_good_progress_big.tt	
+			custom_effect_tooltip = KNT_bad_people_big.tt				
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 0
+						id = KNT_event.157
+					}
+					country_event = {
+						days = 5
+						id = KNT_event.158
+					}
+					country_event = {
+						days = 15
+						id = KNT_event.159
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 35
+				}
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = -12
+				}
+			}
+		}
+		option = {
+			name = KNT_event.156.b
+			add_political_power = 30
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.159
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties Opium Wars Began
+		id = KNT_event.157
+		title = KNT_event.157.t
+		desc = KNT_event.157.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.157.a
+			add_timed_idea = {
+				idea = KNT_recent_celebrations
+				days = 90
+			}
+			hidden_effect = {	
+				KNT = {
+					country_event = {
+						days = 365
+						id = KNT_event.157
+					}
+					country_event = {
+						days = 365
+						id = KNT_event.158
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties Opium Wars protests
+		id = KNT_event.158
+		title = KNT_event.158.t
+		desc = KNT_event.158.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.158.a	
+			add_political_power = -50
+			add_timed_idea = { idea = KNT_student_riots  days = 30 }
+			damage_building = {
+				type = infrastructure
+				damage = 2
+				province = 1446
+			}
+		}
+	}
+	
+	country_event = { #Parties 1812
+		id = KNT_event.159
+		title = KNT_event.159.t
+		desc = KNT_event.159.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.159.a	
+			custom_effect_tooltip = KNT_good_progress_big.tt	
+			custom_effect_tooltip = KNT_good_people_big.tt				
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 0
+						id = KNT_event.160
+					}
+					country_event = {
+						days = 5
+						id = KNT_event.161
+					}
+					country_event = {
+						days = 15
+						id = KNT_event.162
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 20
+				}
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = 20
+				}
+			}
+		}
+		option = {
+			name = KNT_event.159.b
+			add_political_power = 30
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.162
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties 1812 Begun
+		id = KNT_event.160
+		title = KNT_event.160.t
+		desc = KNT_event.160.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.160.a
+			add_timed_idea = {
+				idea = KNT_recent_celebrations
+				days = 90
+			}
+			hidden_effect = {	
+				KNT = {
+					country_event = {
+						days = 365
+						id = KNT_event.160
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties 1812 defectors
+		id = KNT_event.161
+		title = KNT_event.161.t
+		desc = KNT_event.161.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.161.a	
+			add_political_power = -50
+			add_command_power = -20
+			add_manpower = -5000
+			remove_unit_leader = 1667
+			remove_unit_leader = 1337
+		}
+	}
+	
+	country_event = { #Parties HYPERWAR
+		id = KNT_event.162
+		title = KNT_event.162.t
+		desc = KNT_event.162.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.159.a		
+			custom_effect_tooltip = KNT_good_people_big.tt				
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 0
+						id = KNT_event.163
+					}
+					country_event = {
+						days = 5
+						id = KNT_event.164
+					}
+					country_event = {
+						days = 15
+						id = KNT_event.165
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = 22
+				}
+			}
+		}
+		option = {
+			name = KNT_event.162.b
+			add_political_power = 30
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.165
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties HYPERWAR Begun
+		id = KNT_event.163
+		title = KNT_event.163.t
+		desc = KNT_event.163.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.163.a
+			add_timed_idea = {
+				idea = KNT_recent_celebrations
+				days = 90
+			}
+			hidden_effect = {	
+				KNT = {
+					country_event = {
+						days = 365
+						id = KNT_event.163
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties HYPERWAR historian
+		id = KNT_event.164
+		title = KNT_event.164.t
+		desc = KNT_event.164.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.164.a
+			custom_effect_tooltip =  KNT_bad_progress_big.tt
+			add_political_power = -150
+			add_stability = -0.08
+			hidden_effect = {
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = -10
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties Ireland
+		id = KNT_event.165
+		title = KNT_event.165.t
+		desc = KNT_event.165.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.165.a		
+			custom_effect_tooltip = KNT_good_people_big.tt	
+			custom_effect_tooltip = KNT_good_progress_big.tt
+			custom_effect_tooltip = KNT_good_effect_small.tt
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 0
+						id = KNT_event.166
+					}
+					country_event = {
+						days = 5
+						id = KNT_event.167
+					}
+					country_event = {
+						days = 15
+						id = KNT_event.168
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = 10
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 15
+				}
+				add_to_variable = {
+					var = KNT_culture_effectiveness_factor
+					value = 5
+				}
+			}
+		}
+		option = {
+			name = KNT_event.165.b
+			add_political_power = 30
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.168
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties Ireland Begun
+		id = KNT_event.166
+		title = KNT_event.166.t
+		desc = KNT_event.166.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.166.a
+			add_timed_idea = {
+				idea = KNT_recent_celebrations
+				days = 90
+			}
+			hidden_effect = {	
+				KNT = {
+					country_event = {
+						days = 365
+						id = KNT_event.166
+					}
+				}
+				KNT = {
+					country_event = {
+						days = 365
+						id = KNT_event.167
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties Ireland black and tans
+		id = KNT_event.167
+		title = KNT_event.167.t
+		desc = KNT_event.167.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.167.a
+			damage_building = {
+				type = infrastructure
+				damage = 3
+			}
+			add_equipment_to_stockpile = {
+				type = armored_car_equipment
+				amount = -150
+				producer = KNT
+			}
+		}
+	}
+	
+	country_event = { #Parties Argentina
+		id = KNT_event.168
+		title = KNT_event.168.t
+		desc = KNT_event.168.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.165.a		
+			custom_effect_tooltip = KNT_good_people_big.tt	
+			custom_effect_tooltip = KNT_good_progress_big.tt
+			custom_effect_tooltip = KNT_good_effect_small.tt
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 0
+						id = KNT_event.169
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = 10
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = 15
+				}
+				add_to_variable = {
+					var = KNT_culture_effectiveness_factor
+					value = 5
+				}
+			}
+		}
+		option = {
+			name = KNT_event.168.b
+			add_political_power = 30
+			hidden_effect = {
+				KNT = {
+					country_event = {
+						days = 5
+						id = KNT_event.169
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Parties Argentina Begun
+		id = KNT_event.169
+		title = KNT_event.169.t
+		desc = KNT_event.169.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.169.a
+			add_timed_idea = {
+				idea = KNT_recent_celebrations
+				days = 90
+			}
+			hidden_effect = {	
+				KNT = {
+					country_event = {
+						days = 365
+						id = KNT_event.169
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = { #Proper Care for veterans 1
+		id = KNT_event.170
+		title = KNT_event.170.t
+		desc = KNT_event.170.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.170.a
+			custom_effect_tooltip = KNT_good_people_big.tt	
+			add_war_support = 0.02
+			hidden_effect = {	
+				KNT = {
+					country_event = {
+						days = 10
+						id = KNT_event.171
+					}
+				}
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = 15
+				}
+			}
+		}
+	}
+	
+	country_event = { #Proper Care for veterans 2
+		id = KNT_event.171
+		title = KNT_event.171.t
+		desc = KNT_event.171.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.171.a
+			custom_effect_tooltip = KNT_good_people_big.tt	
+			custom_effect_tooltip = KNT_bad_progress_big.tt
+			add_war_support = -0.05
+			hidden_effect = {	
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = 18
+				}
+				add_to_variable = {
+					var = KNT_culture_progress
+					value = -20
+				}
+			}
+		}
+		option = {	
+			name = KNT_event.171.b
+			custom_effect_tooltip = KNT_bad_people_big.tt	
+			add_war_support = 0.05
+			hidden_effect = {	
+				add_to_variable = {
+					var = KNT_culture_people_support
+					value = -18
+				}
+			}
 		}
 	}
 	
@@ -2860,6 +4569,12 @@ country_event = {
 		is_triggered_only = yes
 		option = {
 			name = KNT_event.1000.a
+			KNT = {
+				country_event = {
+					days = 3
+					id = KNT_event.1001
+				}
+			}
 		}
 		option = {
 			name = KNT_event.1000.b
@@ -2886,8 +4601,8 @@ country_event = {
 			name = KNT_event.251.a
 			EAG = {
 				country_event = {
-				days = 2
-				id = EAG_event.7
+					days = 2
+					id = EAG_event.7
 				}
 			}
 		}
@@ -2896,8 +4611,8 @@ country_event = {
 			name = KNT_event.251.b
 			KNT = {
 				country_event = {
-				days = 3
-				id = KNT_event.252
+					days = 3
+					id = KNT_event.252
 				}
 			}
 		}

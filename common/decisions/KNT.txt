@@ -2820,6 +2820,37 @@ KNT_cultural_progress = {
 
 		}	
 	}
+	KNT_destroy_welsh_shed = {
+		cost = 10	
+	    days_remove = 30
+		fire_only_once = yes
+        visible = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+        }
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_victorian_ensemble
+			}
+			1148 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.115
+				}
+			}
+		}
+		remove_effect = {
+
+		}	
+	}
 ###Our Burden###
 	KNT_conduct_a_military_parade = {
 		cost = 50
@@ -2830,7 +2861,7 @@ KNT_cultural_progress = {
 				has_completed_focus = KNT_our_new_burden
 			}
 		}
-		visible = {
+		available = {
 			KNT = {
 				has_completed_focus = KNT_our_new_burden
 			}
@@ -2852,6 +2883,387 @@ KNT_cultural_progress = {
 				var = KNT_culture_progress
 				value = 8
 			}				
+		}	
+	}
+###Heroism over Hedonism##
+	KNT_shoot_patriotic_movies = {
+		cost = 50
+	    days_remove = 70
+		fire_only_once = no
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		modifier = {
+			civilian_factory_use = 1
+			political_power_gain = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_good_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = 6
+			}
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 8
+			}				
+		}	
+	}
+	KNT_youth_education_programs = {
+		cost = 50
+	    days_remove = 70
+		fire_only_once = no
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		modifier = {
+			stability_weekly = -0.03
+			political_power_gain = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_good_effect_small.tt
+			add_to_variable = {
+				var = KNT_culture_effectiveness_factor
+				value = 2
+			}				
+		}	
+	}
+	KNT_imprison_journalists = {
+		cost = 25
+	    days_remove = 70
+		fire_only_once = no
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		modifier = {
+			stability_weekly = -0.03
+			political_power_gain = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_good_progress_big.tt
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 8
+			}				
+		}	
+	}
+	KNT_ban_videogames = {
+		cost = 10
+	    days_remove = 70
+		fire_only_once = no
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_heroism_over_hedonism
+			}
+		}
+		modifier = {
+			stability_weekly = 0.05
+			war_support_weekly = 0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_bad_people_big.tt
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -8
+			}				
+		}	
+	}
+	###DEPOPULATE###
+	KNT_depopulate_london = {
+		cost = 75
+	    days_remove = 100
+		fire_only_once = yes
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+			1160 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+			stability_weekly = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_bad_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt
+			1148 = {
+				add_manpower = -500000
+			}
+			1158 = {
+				add_manpower = 500000
+			}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -6
+			}	
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 6
+			}			
+		}	
+	}
+	KNT_depopulate_sussex = {
+		cost = 75
+	    days_remove = 100
+		fire_only_once = yes
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+			1001 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+			stability_weekly = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_bad_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt
+			1001 = {
+				add_manpower = -500000
+			}
+			1156 = {
+				add_manpower = 500000
+			}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -6
+			}	
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 6
+			}			
+		}	
+	}
+	KNT_depopulate_bristol = {
+		cost = 75
+	    days_remove = 100
+		fire_only_once = yes
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+			1006 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+			stability_weekly = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_bad_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt
+			1006  = {
+				add_manpower = -500000
+			}
+			1153 = {
+				add_manpower = 500000
+			}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -6
+			}	
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 6
+			}			
+		}	
+	}
+	KNT_depopulate_birmingham = {
+		cost = 75
+	    days_remove = 100
+		fire_only_once = yes
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+			1154 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+			stability_weekly = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_bad_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt
+			1154  = {
+				add_manpower = -500000
+			}
+			1152 = {
+				add_manpower = 500000
+			}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -6
+			}	
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 6
+			}			
+		}	
+	}
+	KNT_depopulate_sheffield = {
+		cost = 75
+	    days_remove = 100
+		fire_only_once = yes
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+			1008 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+			stability_weekly = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_bad_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt
+			1008  = {
+				add_manpower = -500000
+			}
+			1151 = {
+				add_manpower = 500000
+			}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -6
+			}	
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 6
+			}			
+		}	
+	}
+	KNT_depopulate_manchester = {
+		cost = 75
+	    days_remove = 100
+		fire_only_once = yes
+		visible = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+		}
+		available = {
+			KNT = {
+				has_completed_focus = KNT_self_sufficient_families
+			}
+			1009 = {
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+			stability_weekly = -0.05
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_bad_people_small.tt
+			custom_effect_tooltip = KNT_good_progress_small.tt
+			1009  = {
+				add_manpower = -500000
+			}
+			1145 = {
+				add_manpower = 500000
+			}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_to_variable = {
+				var = KNT_culture_people_support
+				value = -6
+			}	
+			add_to_variable = {
+				var = KNT_culture_progress
+				value = 6
+			}			
 		}	
 	}
 }

@@ -60,7 +60,7 @@ ideas = {
 			}
 		}
 	}
-	
+###GLUSHKIN'S IDEAS###
 	country = {
 	
 		KNT_cultural_abyss = {
@@ -81,6 +81,73 @@ ideas = {
 				research_speed_factor = -0.3
 				political_advisor_cost_factor = 0.35
 				compliance_gain = 0.75
+			}
+		}
+		
+		KNT_freedom_of_expression_1 = {
+			
+			picture = KNT_cultural_despair
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.02
+				stability_factor = 0.05
+				research_speed_factor = 0.1
+			}
+		}
+		KNT_freedom_of_expression_2 = {
+			
+			picture = KNT_cultural_despair
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.02
+				stability_factor = 0.05
+				research_speed_factor = 0.1
+				war_support_factor = -0.15			
+			}
+		}
+		KNT_lessons_of_dickens = {
+			
+			picture = KNT_cultural_despair
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.08
+				
+			}
+		}
+		KNT_recent_celebrations = {
+			
+			picture = KNT_cultural_despair
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.01
+				civilian_factory_use = 2
 			}
 		}
 	}
@@ -206,6 +273,177 @@ ideas = {
 
             modifier = {
 				civilian_factory_use = 2
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_king_george = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				war_support_factor = -0.5
+				stability_factor = -0.1
+				political_power_gain = -0.1
+			}
+		}
+		KNT_king_frederick = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+		KNT_king_george_VIII = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				stability_factor = 0.2
+				trade_opinion_factor = 0.2
+			}
+		}
+		KNT_king_peter = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				stability_factor = -0.05
+				political_advisor_cost_factor = -0.25
+				political_power_gain = 0.75
+			}
+		}
+		KNT_king_edward = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				stability_factor = 0.15
+				political_advisor_cost_factor = 0.30
+				recon_factor = 0.05
+			}
+		}
+		KNT_king_michael = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				war_support_factor = -0.05
+				stability_factor = 0.05
+				political_power_gain = 0.25
+				trade_opinion_factor = 0.1
+			}
+		}
+		KNT_king_william = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				war_support_factor = 0.1
+				air_attack_factor = 0.05
+				air_defence_factor = 0.05
+				air_cas_efficiency = 0.05
+			}
+		}
+		KNT_king_diana = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				war_support_factor = 0.1
+				stability_factor = 0.1
+				political_power_gain = 0.25
+				army_attack_factor = 0.1
+				compliance_gain = 0.75
+				
+			}
+		}
+		KNT_king_anne = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				war_support_factor = 0.05
+				stability_factor = 0.05
+				political_power_gain = 0.25
+				consumer_goods_factor = -0.1
+				
+			}
+		}
+		KNT_king_dead = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				war_support_factor = -0.75
+				stability_factor = -0.75
+				political_power_gain = -0.5		
+				army_attack_factor = -0.5
+				army_defence_factor = -0.5
+				army_morale_factor = -0.3
 			}
 		}
 	}
