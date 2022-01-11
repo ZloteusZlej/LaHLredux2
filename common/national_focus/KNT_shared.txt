@@ -156,6 +156,9 @@
 		prerequisite = {
 			focus = KNT_inspect_warehouses
 		}
+		completion_reward = {
+			custom_effect_tooltip = KNT_channel_tunnel.tt
+		}
 		x = 20
 		y = 2
 	}
@@ -185,15 +188,18 @@
 			focus = KNT_inspect_warehouses
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
+			custom_effect_tooltip = KNT_home_office.tt
+			hidden_effect = {
+				if = {
+					limit = {
+						has_dlc = "La Resistance"
+					}
+				create_intelligence_agency = yes
 				}
-			create_intelligence_agency = yes
-			}
-			else = {
-				KNT = {
-					add_ideas = KNT_security_service_section_five
+				else = {
+					KNT = {
+						add_ideas = KNT_security_service_section_five
+					}
 				}
 			}
 		}
@@ -295,6 +301,7 @@
 					level = 2
 					instant_build = yes 
 				}
+				add_extra_state_shared_building_slots = 2
 			}
 			1165 = {
 				add_building_construction = {
@@ -302,6 +309,7 @@
 					level = 3
 					instant_build = yes 
 				}
+				add_extra_state_shared_building_slots = 3
 			}
 			KNT = {
 				country_event = {
@@ -409,6 +417,9 @@
 					country_exists = SUS
 				}
 			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = KNT_georges_knights.tt
 		}
 		x = 24
 		y = 5
