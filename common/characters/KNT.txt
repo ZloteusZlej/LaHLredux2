@@ -1,0 +1,265 @@
+characters={
+	KNT_rupert_sheldrake={
+		name="Rupert Sheldrake"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Rupert_Sheldrake.dds"
+			}
+		}
+		country_leader={
+			ideology=ethical_millennialism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_china_mieville={
+		name="China Mieville"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_China_Mieville.dds"
+			}
+		}
+		country_leader={
+			ideology=ultrahegelianism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_mike_katz={
+		name="Mike Katz"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Mike_Katz.dds"
+			}
+		}
+		country_leader={
+			ideology=soviet_marxism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_alan_moore={
+		name="Alan Moore"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Alan_Moore.dds"
+			}
+		}
+		country_leader={
+			ideology=labor_socialism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_jacob_reesmogg={
+		name="Jacob Rees-Mogg"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Rees_Mogg.dds"
+			}
+		}
+		country_leader={
+			ideology=social_conservatism
+			traits={ high_handed_despot }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_anthony_giddens={
+		name="Anthony Giddens"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Anthony_Giddens.dds"
+			}
+		}
+		country_leader={
+			ideology=nazbol_gang
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_alexandra_paterson={
+		name="Alexandra Paterson"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Alexandra_Paterson.dds"
+			}
+		}
+		country_leader={
+			ideology=atlantic_liberalism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_thomas_copingersymes={
+		name="Thomas Copinger-Symes"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Thomas_Copinger-Symes.dds"
+			}
+		}
+		country_leader={
+			ideology=nationalism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_tony_johnstoneburt={
+		name="Tony Johnstone-Burt"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Tony_Johnstone-Burt.dds"
+			}
+		}
+		country_leader={
+			ideology=neo_feudalism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_nobody={
+		name="NOBODY"
+		portraits={
+			civilian={
+				small="_small"
+			}
+			civilian={
+				large=""
+			}
+		}
+		country_leader={
+			ideology=charismatic_dictatorship
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	
+	KNT_patrick_cormack = {
+		name = KNT_patrick_cormack
+		portraits = {
+			civilian={
+				small = "KNT_patrick_cormack"
+			}
+		}
+		head_of_government ={
+			slot = head_of_government
+			idea_token = KNT_patrick_cormack
+			traits = {
+				
+			}
+		ai_will_do  = {
+				factor  = 1.000
+			}
+	}
+	}
+	
+	###Pol_adv###
+	
+	GER_julius_leber={
+		name=GER_julius_leber
+		portraits={
+			army={
+				small="GFX_idea_GER_julius_leber"
+			}
+		}
+		political_advisor={
+			slot = political_advisor
+			idea_token = GER_julius_leber
+			
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	
+	KNT_richard_dearlove = {
+		name = KNT_richard_dearlove
+		portraits = {
+			army = {
+				small = "KNT_richard_dearlove"
+			}
+		}
+		political_advisor = {
+			slot = political_advisor
+			idea_token = KNT_richard_dearlove
+			traits = {
+				
+			}
+		allowed = {
+			original_tag = KNT
+			}
+			cost = 100
+		ai_will_do  = {
+				factor  = 1.000
+			}
+	}
+	}
+	KNT_richard_dearlove = {
+		name = KNT_richard_dearlove
+		portraits = {
+			army = {
+				small = "KNT_richard_dearlove"
+			}
+		}
+		advisor = {
+			slot = advisor
+			idea_token = KNT_richard_dearlove
+			traits = {
+				
+			}
+		allowed = {
+			original_tag = KNT
+			}
+			cost = 100
+		ai_will_do  = {
+				factor  = 1.000
+			}
+	}
+	}
+	KNT_richard_dearlove = {
+		name = KNT_richard_dearlove
+		portraits = {
+			army = {
+				small = "KNT_richard_dearlove"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KNT_richard_dearlove
+			traits = {
+				
+			}
+		allowed = {
+			original_tag = KNT
+			}
+			cost = 100
+		ai_will_do  = {
+				factor  = 1.000
+			}
+	}
+	}
+		KNT_richard_dearlove = {
+		name = KNT_richard_dearlove
+		portraits = {
+			army = {
+				small = "KNT_richard_dearlove"
+			}
+		}
+		political_advisor = {
+			slot = advisor
+			idea_token = KNT_richard_dearlove
+			traits = {
+				
+			}
+		allowed = {
+			original_tag = KNT
+			}
+			cost = 100
+		ai_will_do  = {
+				factor  = 1.000
+			}
+	}
+	}
+}
+}
+

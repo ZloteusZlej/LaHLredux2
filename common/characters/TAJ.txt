@@ -1,0 +1,564 @@
+characters={
+	TAJ_sherali_mirzo={
+		name="Sherali Mirzo"
+		portraits={
+			civilian={
+				large="gfx/leaders/TAJ/Portrait_TAJ_Sherali_Mirzo.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_SHERALI_DESC"
+			ideology=autocracy
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	TAJ_ustoz_ibragimov={
+		name="Ustoz Ibragimov"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=ethical_millennialism
+			traits={ armaments_organizer appeaser }
+			expire="2029.1.1.14"
+			id=-1
+		}
+	}
+	TAJ_firuz_kasymov={
+		name="Firuz Kasymov"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=ultrahegelianism
+			traits={ economist editor }
+			expire="2037.1.1.14"
+			id=-1
+		}
+	}
+	TAJ_muhammad_niyozov={
+		name="Muhammad Niyozov"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=soviet_marxism
+			expire="2030.1.1.14"
+			id=-1
+		}
+	}
+	TAJ_khon_sharifov={
+		name="Khon Sharifov"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=progressivism
+			traits={ fortification_engineer }
+			expire="2039.1.1.14"
+			id=-1
+		}
+	}
+	TAJ_daler_yusufov={
+		name="Daler Yusufov"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=atlantic_liberalism
+			traits={ smooth_talking_charmer }
+			expire="2032.1.1.14"
+			id=-1
+		}
+	}
+	TAJ_ahmadjon_alimov={
+		name="Ahmadjon Alimov"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=distributism
+			expire="2025.1.1.14"
+			id=-1
+		}
+	}
+	TAJ_zokir_haydarov={
+		name="Zokir Haydarov"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=christian_democracy
+			expire="2034.1.1.14"
+			id=-1
+		}
+	}
+	TAJ_nosir_kasymov={
+		name="Nosir Kasymov"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=neo_feudalism
+			traits={ quartermaster_general eager_collaborator }
+			expire="2026.1.1.14"
+			id=-1
+		}
+	}
+	TAJ_muhammadjon_niyazov={
+		name="Muhammadjon Niyazov"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=charismatic_dictatorship
+			traits={ compassionate_gentleman Kipelych }
+			expire="2035.1.1.14"
+			id=-1
+		}
+	}
+	TAJ_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = TAJ_aco2
+			allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TAJ_aco2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_4"
+			}
+		}
+	}
+	TAJ_nt={
+		advisor={
+			slot = theorist
+			idea_token = TAJ_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="TAJ_nt"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+	}
+	TAJ_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = TAJ_communist_guy
+			allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					communist_revolutionary
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="TAJ_communist_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+	}
+	TAJ_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = TAJ_pot
+			allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="TAJ_pot"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+	}
+	TAJ_acas={
+		advisor={
+			slot = high_command
+			idea_token = TAJ_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TAJ_acas"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+	}
+	TAJ_acr={
+		advisor={
+			slot = air_chief
+			idea_token = TAJ_acr
+			allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TAJ_acr"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}
+	}
+	TAJ_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = TAJ_stc
+			allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="TAJ_stc"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+	}
+	TAJ_ai2={
+		advisor={
+			slot = high_command
+			idea_token = TAJ_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TAJ_ai2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_3"
+			}
+		}
+	}
+	TAJ_ncs={
+		advisor={
+			slot = high_command
+			idea_token = TAJ_ncs
+			ledger  = navy 
+				allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TAJ_ncs"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_2"
+			}
+		}
+	}
+	TAJ_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = TAJ_ncm
+			allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TAJ_ncm"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+	}
+	TAJ_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = TAJ_acd2
+			allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TAJ_acd2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+	}
+	TAJ_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = TAJ_democratic_guy
+			allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					democratic_reformer
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="TAJ_democratic_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+	}
+	TAJ_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = TAJ_fascist_guy
+			allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					fascist_demagogue
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="TAJ_fascist_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+	}
+	TAJ_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = TAJ_coi
+			allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="TAJ_coi"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+	}
+	TAJ_ar={
+		advisor={
+			slot = high_command
+			idea_token = TAJ_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TAJ_ar"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_5"
+			}
+		}
+	}
+	TAJ_aa2={
+		advisor={
+			slot = high_command
+			idea_token = TAJ_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TAJ_aa2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}
+	}
+	TAJ_awt={
+		advisor={
+			slot = theorist
+			idea_token = TAJ_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="TAJ_awt"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+	}
+	TAJ_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = TAJ_acgs
+			allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TAJ_acgs"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}
+	}
+	TAJ_mt={
+		advisor={
+			slot = theorist
+			idea_token = TAJ_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="TAJ_mt"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_6"
+			}
+		}
+	}
+	TAJ_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = TAJ_nccr
+			allowed  = {
+					original_tag  = TAJ
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TAJ_nccr"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_2"
+			}
+		}
+	}
+}

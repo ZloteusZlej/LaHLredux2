@@ -1,0 +1,561 @@
+characters={
+	GMB_adama_barrow={
+		name="Adama Barrow"
+		portraits={
+			civilian={
+				large="gfx/leaders/GMB/Portrait_GMB_Adama_Barrow.dds"
+			}
+		}
+		country_leader={
+			ideology=atlantic_liberalism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	GMB_marcus_smith={
+		name="Marcus Smith"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=religious_millennialism
+			traits={ financial_expert captain_of_industry }
+			expire="2037.1.1.14"
+			id=-1
+		}
+	}
+	GMB_jonas_wilson={
+		name="Jonas Wilson"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=leftwing_chauvinism
+			expire="2030.1.1.14"
+			id=-1
+		}
+	}
+	GMB_alexander_wilson={
+		name="Alexander Wilson"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=soviet_marxism
+			expire="2039.1.1.14"
+			id=-1
+		}
+	}
+	GMB_peter_evans={
+		name="Peter Evans"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=progressivism
+			expire="2031.1.1.14"
+			id=-1
+		}
+	}
+	GMB_peter_brown={
+		name="Peter Brown"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=national_conservatism
+			traits={ eager_collaborator ideological_crusader }
+			expire="2040.1.1.14"
+			id=-1
+		}
+	}
+	GMB_john_walker={
+		name="John Walker"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=social_conservatism
+			traits={ captain_of_industry }
+			expire="2033.1.1.14"
+			id=-1
+		}
+	}
+	GMB_peter_white={
+		name="Peter White"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=nationalism
+			expire="2026.1.1.14"
+			id=-1
+		}
+	}
+	GMB_john_white={
+		name="John White"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=paleo_revolutionism
+			traits={ captain_of_industry }
+			expire="2035.1.1.14"
+			id=-1
+		}
+	}
+	GMB_johannes_jones={
+		name="Johannes Jones"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=charismatic_dictatorship
+			expire="2028.1.1.14"
+			id=-1
+		}
+	}
+	GMB_GAM_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = GAM_fascist_guy
+			allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					fascist_demagogue
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="GAM_fascist_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_2"
+			}
+		}
+	}
+	GMB_GAM_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = GAM_coi
+			allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="GAM_coi"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_1"
+			}
+		}
+	}
+	GMB_GAM_acr={
+		advisor={
+			slot = air_chief
+			idea_token = GAM_acr
+			allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="GAM_acr"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_3"
+			}
+		}
+	}
+	GMB_GAM_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = GAM_nccr
+			allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="GAM_nccr"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_2"
+			}
+		}
+	}
+	GMB_GAM_ai2={
+		advisor={
+			slot = high_command
+			idea_token = GAM_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="GAM_ai2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_3"
+			}
+		}
+	}
+	GMB_GAM_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = GAM_ncm
+			allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="GAM_ncm"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_3"
+			}
+		}
+	}
+	GMB_GAM_acas={
+		advisor={
+			slot = high_command
+			idea_token = GAM_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="GAM_acas"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_2"
+			}
+		}
+	}
+	GMB_GAM_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = GAM_aco2
+			allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="GAM_aco2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_4"
+			}
+		}
+	}
+	GMB_GAM_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = GAM_acd2
+			allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="GAM_acd2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_1"
+			}
+		}
+	}
+	GMB_GAM_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = GAM_pot
+			allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="GAM_pot"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_2"
+			}
+		}
+	}
+	GMB_GAM_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = GAM_stc
+			allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="GAM_stc"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_3"
+			}
+		}
+	}
+	GMB_GAM_aa2={
+		advisor={
+			slot = high_command
+			idea_token = GAM_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="GAM_aa2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_2"
+			}
+		}
+	}
+	GMB_GAM_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = GAM_acgs
+			allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="GAM_acgs"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_3"
+			}
+		}
+	}
+	GMB_GAM_nt={
+		advisor={
+			slot = theorist
+			idea_token = GAM_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="GAM_nt"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_3"
+			}
+		}
+	}
+	GMB_GAM_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = GAM_communist_guy
+			allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					communist_revolutionary
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="GAM_communist_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_3"
+			}
+		}
+	}
+	GMB_GAM_ar={
+		advisor={
+			slot = high_command
+			idea_token = GAM_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="GAM_ar"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_5"
+			}
+		}
+	}
+	GMB_GAM_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = GAM_democratic_guy
+			allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					democratic_reformer
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="GAM_democratic_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_1"
+			}
+		}
+	}
+	GMB_GAM_mt={
+		advisor={
+			slot = theorist
+			idea_token = GAM_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="GAM_mt"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_6"
+			}
+		}
+	}
+	GMB_GAM_ncs={
+		advisor={
+			slot = high_command
+			idea_token = GAM_ncs
+			ledger  = navy 
+				allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="GAM_ncs"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_2"
+			}
+		}
+	}
+	GMB_GAM_awt={
+		advisor={
+			slot = theorist
+			idea_token = GAM_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = GAM
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="GAM_awt"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_2"
+			}
+		}
+	}
+}

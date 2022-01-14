@@ -1,0 +1,564 @@
+characters={
+	SOM_sharif_sheikh_ahmed={
+		name="Sharif Sheikh Ahmed"
+		portraits={
+			civilian={
+				large="gfx/leaders/SOM/Portrait_SOM_Sharif_Sheikh_Ahmed.dds"
+			}
+		}
+		country_leader={
+			ideology=social_conservatism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	SOM_yusuf_kahin={
+		name="Yusuf Kahin"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=ethical_millennialism
+			traits={ retired_officer }
+			expire="2040.1.1.14"
+			id=-1
+		}
+	}
+	SOM_ibrahim_haji={
+		name="Ibrahim Haji"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=ultrahegelianism
+			expire="2025.1.1.14"
+			id=-1
+		}
+	}
+	SOM_rageh_warsame={
+		name="Rageh Warsame"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=soviet_marxism
+			traits={ retired_officer }
+			expire="2027.1.1.14"
+			id=-1
+		}
+	}
+	SOM_abdulsalami_omer={
+		name="Abdulsalami Omer"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=labor_socialism
+			traits={ smooth_talking_charmer }
+			expire="2029.1.1.14"
+			id=-1
+		}
+	}
+	SOM_mohamud_alkawneyn={
+		name="Mohamud Al-Kawneyn"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=accelerationism
+			traits={ reluctant_interventionist armaments_organizer }
+			expire="2030.1.1.14"
+			id=-1
+		}
+	}
+	SOM_adan_bani={
+		name="Adan Bani"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=distributism
+			traits={ dealbroker }
+			expire="2032.1.1.14"
+			id=-1
+		}
+	}
+	SOM_muse_qalanjo={
+		name="Muse Qalanjo"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=green_autocracy
+			traits={ retired_officer }
+			expire="2034.1.1.14"
+			id=-1
+		}
+	}
+	SOM_abd_ibrahim={
+		name="Abd Ibrahim"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=neoluddism
+			expire="2035.1.1.14"
+			id=-1
+		}
+	}
+	SOM_jaylaani_abubakar={
+		name="Jaylaani Abubakar"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=charismatic_dictatorship
+			traits={ retired_officer }
+			expire="2037.1.1.14"
+			id=-1
+		}
+	}
+	SOM_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = SOM_pot
+			allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="SOM_pot"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_2"
+			}
+		}
+	}
+	SOM_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = SOM_aco2
+			allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SOM_aco2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_4"
+			}
+		}
+	}
+	SOM_mt={
+		advisor={
+			slot = theorist
+			idea_token = SOM_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="SOM_mt"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_6"
+			}
+		}
+	}
+	SOM_ar={
+		advisor={
+			slot = high_command
+			idea_token = SOM_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SOM_ar"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_5"
+			}
+		}
+	}
+	SOM_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = SOM_fascist_guy
+			allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					fascist_demagogue
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="SOM_fascist_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_2"
+			}
+		}
+	}
+	SOM_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = SOM_acd2
+			allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SOM_acd2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_1"
+			}
+		}
+	}
+	SOM_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = SOM_ncm
+			allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SOM_ncm"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_3"
+			}
+		}
+	}
+	SOM_ai2={
+		advisor={
+			slot = high_command
+			idea_token = SOM_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SOM_ai2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_3"
+			}
+		}
+	}
+	SOM_acas={
+		advisor={
+			slot = high_command
+			idea_token = SOM_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SOM_acas"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_2"
+			}
+		}
+	}
+	SOM_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = SOM_democratic_guy
+			allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					democratic_reformer
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="SOM_democratic_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_1"
+			}
+		}
+	}
+	SOM_aa2={
+		advisor={
+			slot = high_command
+			idea_token = SOM_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SOM_aa2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_2"
+			}
+		}
+	}
+	SOM_awt={
+		advisor={
+			slot = theorist
+			idea_token = SOM_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="SOM_awt"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_2"
+			}
+		}
+	}
+	SOM_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = SOM_coi
+			allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="SOM_coi"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_1"
+			}
+		}
+	}
+	SOM_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = SOM_stc
+			allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="SOM_stc"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_3"
+			}
+		}
+	}
+	SOM_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = SOM_acgs
+			allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SOM_acgs"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_3"
+			}
+		}
+	}
+	SOM_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = SOM_nccr
+			allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SOM_nccr"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_2"
+			}
+		}
+	}
+	SOM_ncs={
+		advisor={
+			slot = high_command
+			idea_token = SOM_ncs
+			ledger  = navy 
+				allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SOM_ncs"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_2"
+			}
+		}
+	}
+	SOM_nt={
+		advisor={
+			slot = theorist
+			idea_token = SOM_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="SOM_nt"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_3"
+			}
+		}
+	}
+	SOM_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = SOM_communist_guy
+			allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					communist_revolutionary
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="SOM_communist_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_3"
+			}
+		}
+	}
+	SOM_acr={
+		advisor={
+			slot = air_chief
+			idea_token = SOM_acr
+			allowed  = {
+					original_tag  = SOM
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SOM_acr"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_3"
+			}
+		}
+	}
+}
