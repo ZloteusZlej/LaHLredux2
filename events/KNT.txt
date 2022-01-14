@@ -882,11 +882,11 @@ country_event = {
 	
     fire_only_once = yes
 	option = {
-		name = KNT_event.38.c
+		name = KNT_event.38.a
 		add_ideas = KNT_the_marauder
     }
 	option = {
-		name = KNT_event.38.c
+		name = KNT_event.38.b
 		add_ideas = KNT_the_kombat
     }
 	option = {
@@ -958,7 +958,12 @@ country_event = {
 			id = KNT_event.26
 			}
 		}
-    }
+		KNT = {
+			set_technology = {
+			drone_hives = 1
+			}
+		}
+	}
 	
 	option = {
 		name = KNT_event.41.b

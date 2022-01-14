@@ -406,7 +406,7 @@ KNT_maglev = {
 		}
 	}
 	
-	KNT_KNTsex_part = {
+	KNT_wessex_part = {
 	cost = 150
 	days_remove = 100
 		available = {
@@ -2289,7 +2289,7 @@ KNT_thermonuclear_reactor = {
 			AND	= {
 				check_variable = {
 					var = kent_thermonuclear_plant_completion
-					value = 1000
+					value > 1000
 					compare = greater_than_or_equals
 				}
 				KNT = { 
