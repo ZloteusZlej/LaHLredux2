@@ -134,132 +134,97 @@ characters={
 		}
 	}
 	
+### CORPS COMMANDERS ###
+
+	KNT_louis_lillywhite={
+		name="Louis Lillywhite"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=228
+		}
+	}
+	KNT_gary_coward={
+		name="Gary Coward"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=229
+		}
+	}
+	
+### HEAD OF GOVERNMENT ###
+	
 	KNT_patrick_cormack = {
 		name = KNT_patrick_cormack
 		portraits = {
 			civilian={
-				small = "KNT_patrick_cormack"
+				large=""
+				small = "GFX_idea_KNT_patrick_cormack"
 			}
 		}
-		head_of_government ={
+		advisor = {
+			cost = 120
 			slot = head_of_government
 			idea_token = KNT_patrick_cormack
 			traits = {
 				
 			}
-		ai_will_do  = {
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
 				factor  = 1.000
 			}
-	}
+	    }
 	}
 	
 	###Pol_adv###
 	
-	GER_julius_leber={
-		name=GER_julius_leber
-		portraits={
-			army={
-				small="GFX_idea_GER_julius_leber"
-			}
-		}
-		political_advisor={
-			slot = political_advisor
-			idea_token = GER_julius_leber
-			
-			ai_will_do = {
-				factor = 0.000
-			}
-		}
-	}
-	
-	KNT_richard_dearlove = {
-		name = KNT_richard_dearlove
+	KNT_patrick_cormack_1 = {
+		name = KNT_patrick_cormack_1
 		portraits = {
-			army = {
-				small = "KNT_richard_dearlove"
-			}
-		}
-		political_advisor = {
-			slot = political_advisor
-			idea_token = KNT_richard_dearlove
-			traits = {
-				
-			}
-		allowed = {
-			original_tag = KNT
-			}
-			cost = 100
-		ai_will_do  = {
-				factor  = 1.000
-			}
-	}
-	}
-	KNT_richard_dearlove = {
-		name = KNT_richard_dearlove
-		portraits = {
-			army = {
-				small = "KNT_richard_dearlove"
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_patrick_cormack"
 			}
 		}
 		advisor = {
-			slot = advisor
-			idea_token = KNT_richard_dearlove
-			traits = {
-				
-			}
-		allowed = {
-			original_tag = KNT
-			}
-			cost = 100
-		ai_will_do  = {
-				factor  = 1.000
-			}
-	}
-	}
-	KNT_richard_dearlove = {
-		name = KNT_richard_dearlove
-		portraits = {
-			army = {
-				small = "KNT_richard_dearlove"
-			}
-		}
-		advisor = {
+			cost = 120
 			slot = political_advisor
-			idea_token = KNT_richard_dearlove
+			idea_token = KNT_patrick_cormack
 			traits = {
 				
 			}
-		allowed = {
-			original_tag = KNT
+			allowed = {
+				original_tag = KNT
 			}
-			cost = 100
-		ai_will_do  = {
+			ai_will_do  = {
 				factor  = 1.000
 			}
+	    }
 	}
-	}
-		KNT_richard_dearlove = {
-		name = KNT_richard_dearlove
-		portraits = {
-			army = {
-				small = "KNT_richard_dearlove"
-			}
-		}
-		political_advisor = {
-			slot = advisor
-			idea_token = KNT_richard_dearlove
-			traits = {
-				
-			}
-		allowed = {
-			original_tag = KNT
-			}
-			cost = 100
-		ai_will_do  = {
-				factor  = 1.000
-			}
-	}
-	}
-}
 }
 
