@@ -407,6 +407,9 @@ shared_focus = {
 	cost = 10
 	x = 11
 	y = 0
+	completion_reward = {
+		NTH = { country_event = albion.10 days = 1 }
+	}
 }
 
 shared_focus = {
@@ -414,6 +417,11 @@ shared_focus = {
 	icon = GFX_goal_NTH_Doctrine_Of_The_New_Millennium
 	prerequisite = {
 		focus = NTH_the_glorious_republican_army
+	}
+	completion_reward = {	
+		NTH = {
+			add_idea = NTH_eurasian_doctrine 
+		}
 	}
 	cost = 10
 	x = 11
@@ -425,6 +433,11 @@ shared_focus = {
 	icon = GFX_goal_NTH_Whispers_in_the_Dark
 	prerequisite = {
 		focus = NTH_the_glorious_republican_army
+	}
+	completion_reward = {
+		NTH = {
+			add_idea = NTH_atlantic_doctrine 
+		}
 	}
 	cost = 10
 	x = 5
@@ -555,6 +568,12 @@ shared_focus = {
 	prerequisite = {
 		focus = NTH_doctrine_of_the_new_millennium
 	}
+	completion_reward = {
+		NTH = {
+			add_idea = NTH_eurasian_doctrine_m 
+			remove_idea = NTH_eurasian_doctrine 
+		}
+	}
 	cost = 10
 	x = 10
 	y = 2
@@ -566,6 +585,11 @@ shared_focus = {
 	prerequisite = {
 		focus = NTH_doctrine_of_the_new_millennium
 	}
+	completion_reward = {
+		NTH = {
+			research_speed_factor = 0.5
+		}
+	}
 	cost = 10
 	x = 12
 	y = 2
@@ -576,6 +600,15 @@ shared_focus = {
 	icon = GFX_goal_NTH_Helicopter_Support
 	prerequisite = {
 		focus = NTH_airland_battle
+	}
+	completion_reward = {
+		NTH = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = helicopter_tech
+			}
+		}
 	}
 	cost = 10
 	x = 9
@@ -602,6 +635,44 @@ shared_focus = {
 	prerequisite = {
 		focus = NTH_combined_doctrine
 	}
+	completion_reward = {
+			division_template = {
+				name = "Elite Batalion"
+				priority = 1
+				is_locked = yes
+				division_names_group = NTH_TST_01
+				regiments = {
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
+					motorized = { x = 0 y = 2 }
+					mechanized = { x = 1 y = 0 }
+					mechanized = { x = 1 y = 1 }
+					mechanized = { x = 1 y = 2 }
+				}
+			}
+			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"1st Elite Batalion\" division_template = \"Elite Batalion\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
+					
+					owner = NTH
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"2nd Elite Batalion\" division_template = \"Elite Batalion\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
+					
+					owner = NTH
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"3rd Elite Batalion\" division_template = \"Elite Batalion\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
+					
+					owner = NTH
+				}
+			}
+	}		
 	cost = 10
 	x = 13
 	y = 3
