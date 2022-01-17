@@ -100,10 +100,12 @@ country_event = {
 	is_triggered_only = yes
     option = {
 		name = EAG_event.5.a
+		ai_chance = { factor = 10 }
 		set_global_flag = east_anglia_accepts_kent_offer
     }
 	option = {
 		name = EAG_event.5.b
+		ai_chance = { factor = 0 }
 		set_global_flag = east_anglia_rejects_kent_offer
     }
 }

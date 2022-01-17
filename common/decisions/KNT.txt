@@ -2035,11 +2035,16 @@ KNT_thermonuclear_reactor = {
 		add_command_power = -25
 		}
 		remove_effect = {
-				add_to_variable = {
+			add_to_variable = {
 				var = kent_thermonuclear_plant_completion
 				value = 10
 			}
-		set_global_flag = KNT_main_engineers_harbored
+			clamp_variable = {
+				var = kent_thermonuclear_plant_completion
+				min = 0
+				max = 1000
+			}
+		    set_global_flag = KNT_main_engineers_harbored
 		}
 	}
 	
@@ -2054,11 +2059,16 @@ KNT_thermonuclear_reactor = {
 		add_timed_idea = { idea = KNT_plant_parts_manufacturing days = 45 }
 		}
 		remove_effect = {
-				add_to_variable = {
+			add_to_variable = {
 				var = kent_thermonuclear_plant_completion
 				value = 15
 			}
-		set_global_flag = recently_distributed_resources
+			clamp_variable = {
+				var = kent_thermonuclear_plant_completion
+				min = 0
+				max = 1000
+			}
+			set_global_flag = recently_distributed_resources
 		}
 	}
 	
@@ -2079,6 +2089,11 @@ KNT_thermonuclear_reactor = {
 			add_to_variable = {
 				var = kent_thermonuclear_plant_completion
 				value = 15
+			}
+			clamp_variable = {
+				var = kent_thermonuclear_plant_completion
+				min = 0
+				max = 1000
 			}
 			set_global_flag = recently_hired_building_companies
 		}
@@ -2171,11 +2186,21 @@ KNT_thermonuclear_reactor = {
 					var = kent_thermonuclear_plant_completion
 					value = 75
 				}
+				clamp_variable = {
+					var = kent_thermonuclear_plant_completion
+					min = 0
+					max = 1000
+				}
 			}
 			else = {
 				add_to_variable = {
 					var = kent_thermonuclear_plant_completion
 					value = -25
+				}
+				clamp_variable = {
+					var = kent_thermonuclear_plant_completion
+					min = 0
+					max = 1000
 				}
 			}
 		}
@@ -4239,7 +4264,8 @@ KNT_britain_cores = {
 			controls_state = 1161
 			controls_state = 1006
 			controls_state = 1007
-			controls_state = 1000		
+			controls_state = 1000	
+			controls_state = 1018			
 		}
 		visible = {
 			owns_state = 1153
@@ -4247,6 +4273,7 @@ KNT_britain_cores = {
 			owns_state = 1007
 			owns_state = 1006
 			owns_state = 1000
+			owns_state = 1018
 			NOT = {
 				1153 = {
 					is_core_of = KNT
@@ -4261,6 +4288,9 @@ KNT_britain_cores = {
 					is_core_of = KNT
 				}
 				1000 = {
+					is_core_of = KNT
+				}
+				1018 = {
 					is_core_of = KNT
 				}
 			}
@@ -4290,6 +4320,9 @@ KNT_britain_cores = {
 			1000 = {
 			    add_compliance = 10
             }
+			1018 = {
+			    add_compliance = 10
+            }
 		}
 	}
 	KNT_resistance_coring_wessex = {
@@ -4300,6 +4333,7 @@ KNT_britain_cores = {
 			controls_state = 1006
 			controls_state = 1007
 			controls_state = 1000
+			controls_state = 1018
             has_manpower > 1000	
             has_equipment = {
                 infantry_equipment_1 > 499
@@ -4311,6 +4345,7 @@ KNT_britain_cores = {
 			owns_state = 1007
 			owns_state = 1006
 			owns_state = 1000
+			owns_state = 1018
 			NOT = {
 				1153 = {
 					is_core_of = KNT
@@ -4325,6 +4360,9 @@ KNT_britain_cores = {
 					is_core_of = KNT
 				}
 				1000 = {
+					is_core_of = KNT
+				}
+				1018 = {
 					is_core_of = KNT
 				}
 			}
@@ -4355,6 +4393,9 @@ KNT_britain_cores = {
 			1000 = {
 			    add_resistance = -5
             }
+			1018 = {
+			    add_resistance = -5
+            }
 			add_manpower = -250
 		}
 	}
@@ -4362,6 +4403,7 @@ KNT_britain_cores = {
 		icon = GFX_decision_generic_form_nation
 		available = {
 			controls_state = 1001
+			controls_state = 1018
 			controls_state = 1156
 			1153 = {
 			    compliance > 75
@@ -4378,6 +4420,9 @@ KNT_britain_cores = {
 			1000 = {
 			    compliance > 75
             }
+			1018 = {
+			    compliance > 75
+            }
 			1153 = {
 			    resistance < 10
 			}
@@ -4393,6 +4438,9 @@ KNT_britain_cores = {
 			1000 = {
 			    resistance < 10
             }
+			1018 = {
+			    resistance < 10
+            }
 		}
 		visible = {
 			owns_state = 1153
@@ -4400,6 +4448,7 @@ KNT_britain_cores = {
 			owns_state = 1007
 			owns_state = 1006
 			owns_state = 1000
+			owns_state = 1018
 			NOT = {
 				1153 = {
 					is_core_of = KNT
@@ -4414,6 +4463,9 @@ KNT_britain_cores = {
 					is_core_of = KNT
 				}
 				1000 = {
+					is_core_of = KNT
+				}
+				1018 = {
 					is_core_of = KNT
 				}
 			}
@@ -4436,6 +4488,7 @@ KNT_britain_cores = {
 			add_state_core = 1161
 			add_state_core = 1007
 			add_state_core = 1006
+			add_state_core = 1018
 			add_state_core = 1000
 		}
 	}
