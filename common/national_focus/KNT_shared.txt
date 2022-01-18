@@ -592,7 +592,7 @@
 				}
 			}
 		}
-		x = 17
+		x = 20
 		y = 7
 	}
 	
@@ -607,7 +607,7 @@
 			KNT = { add_ideas = KNT_railorads_revival }
 			custom_effect_tooltip =  KNT_new_era_of_railways.tt
 		}
-		x = 17
+		x = 20
 		y = 8
 	}
 	
@@ -623,7 +623,7 @@
 			add_ideas = KNT_green_energy_subsidies
 			}
 		}	
-		x = 16
+		x = 19
 		y = 10
 	}
 	
@@ -637,7 +637,7 @@
 		completion_reward = {
 			custom_effect_tooltip = KNT_no_more_wires.tt
 		}
-		x = 18
+		x = 21
 		y = 10
 	}
 	shared_focus = {
@@ -659,7 +659,7 @@
 				}
 			}
 		}
-		x = 17
+		x = 20
 		y = 12
 	}
 	shared_focus = {
@@ -677,7 +677,7 @@
 				}
 			}
 		}
-		x = 16
+		x = 19
 		y = 13
 	}
 	shared_focus = {
@@ -705,7 +705,7 @@
 			}
 			add_ideas = KNT_dockyard_expansion
 		}
-		x = 18
+		x = 21
 		y = 13
 	}
 	shared_focus = {
@@ -725,7 +725,7 @@
 			}
 			add_ideas = KNT_neovictorians_economic_plan 
 		}
-		x = 13
+		x = 16
 		y = 8
 	}
 	shared_focus = {
@@ -739,7 +739,7 @@
 			add_ideas = KNT_protection_of_patents
 			add_political_power = 50
 		}
-		x = 14
+		x = 17
 		y = 9
 	}
 	shared_focus = {
@@ -756,7 +756,7 @@
 			}
 			add_research_slot = 1
 		}
-		x = 12
+		x = 15
 		y = 9
 	}
 	shared_focus = {
@@ -777,7 +777,7 @@
 				}
 			}
 		}
-		x = 13
+		x = 16
 		y = 10
 	}
 	shared_focus = {
@@ -797,8 +797,8 @@
 					type = industrial_complex
 					level = 1
 					instant_build = yes
-
 				}
+				add_extra_state_shared_building_slots = 1
 			}
 			random_owned_state = {
 				add_building_construction = {
@@ -806,9 +806,10 @@
 					level = 1
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 1
 			}
 		}
-		x = 12
+		x = 15
 		y = 11
 	}
 	shared_focus = {
@@ -828,15 +829,17 @@
 					type = industrial_complex
 					level = 1
 				}
+				add_extra_state_shared_building_slots = 1
 			}
 			random_owned_state = {
 				remove_building = {
 					type = industrial_complex
 					level = 1
 				}
+				add_extra_state_shared_building_slots = 1
 			}
 		}
-		x = 14
+		x = 17
 		y = 11
 	}
 	shared_focus = {
@@ -867,7 +870,7 @@
 			}
 			add_stability = -0.05
 		}
-		x = 13
+		x = 16
 		y = 12
 	}
 	shared_focus = {
@@ -897,7 +900,7 @@
 			}
 			add_stability = 0.07
 		}
-		x = 13
+		x = 16
 		y = 13
 	}
 	shared_focus = {
@@ -914,6 +917,7 @@
 					level = 1
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 1
 			}
 			random_owned_state = {
 				add_building_construction = {
@@ -921,9 +925,10 @@
 					level = 1
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 1
 			}
 		}
-		x = 12
+		x = 15
 		y = 15
 	}
 	shared_focus = {
@@ -940,6 +945,7 @@
 					level = 1
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 1
 			}
 			random_owned_state = {
 				add_building_construction = {
@@ -947,10 +953,11 @@
 					level = 2
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 2
 			}
 
 		}
-		x = 14
+		x = 17
 		y = 15
 	}
 	shared_focus = {
@@ -973,7 +980,7 @@
 				add_idea = export_focus
 			}
 		}
-		x = 21
+		x = 24
 		y = 8
 	}
 	shared_focus = {
@@ -991,7 +998,7 @@
 				}
 			}
 		}
-		x = 20
+		x = 23
 		y = 9
 	}
 	shared_focus = {
@@ -1010,7 +1017,7 @@
 			}
 			add_research_slot = 1
 		}
-		x = 22
+		x = 25
 		y = 9
 	}
 	shared_focus = {
@@ -1032,7 +1039,7 @@
 				add_idea = KNT_hightories_economic_plan_2
 			}
 		}
-		x = 21
+		x = 24
 		y = 10
 	}
 	shared_focus = {
@@ -1051,7 +1058,7 @@
 				add_idea = KNT_hightories_economic_plan_3a
 			}
 		}
-		x = 22
+		x = 25
 		y = 11
 	}
 	shared_focus = {
@@ -1070,7 +1077,7 @@
 				add_idea = KNT_hightories_economic_plan_3b
 			}
 		}
-		x = 20
+		x = 23
 		y = 11
 	}
 	shared_focus = {
@@ -1112,10 +1119,11 @@
 					level = 1
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 1
 			}
 			add_stability = 0.1
 		}
-		x = 21
+		x = 24
 		y = 12
 	}
 	shared_focus = {
@@ -1149,6 +1157,7 @@
 					level = 1
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 1
 			}
 			random_owned_state = {
 				add_building_construction = {
@@ -1158,7 +1167,7 @@
 				}
 			}
 		}
-		x = 21
+		x = 24
 		y = 13
 	}
 	shared_focus = {
@@ -1175,6 +1184,7 @@
 					level = 1
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 1
 			}
 			random_owned_state = {
 				add_building_construction = {
@@ -1182,9 +1192,10 @@
 					level = 1
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 1
 			}
 		}
-		x = 20
+		x = 23
 		y = 15
 	}
 	shared_focus = {
@@ -1201,6 +1212,7 @@
 					level = 2
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 2
 			}
 			random_owned_state = {
 				add_building_construction = {
@@ -1208,9 +1220,10 @@
 					level = 1
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 1
 			}
 		}
-		x = 22
+		x = 25
 		y = 15
 	}
 	shared_focus = {
@@ -1245,7 +1258,7 @@
 				}
 			}
 		}
-		x = 5
+		x = 8
 		y = 7
 	}
 	shared_focus = {
@@ -1270,7 +1283,7 @@
 			}
 			custom_effect_tooltip = KNT_xlisting.tt
 		}
-		x = 3
+		x = 6
 		y = 8
 	}
 	shared_focus = {
@@ -1288,7 +1301,7 @@
 				}
 			}
 		}
-		x = 4
+		x = 7
 		y = 9,5
 	}
 	shared_focus = {
@@ -1306,7 +1319,7 @@
 				}
 			}
 		}
-		x = 2
+		x = 5
 		y = 9
 	}
 	shared_focus = {
@@ -1327,7 +1340,7 @@
 				}
 			}
 		}
-		x = 3
+		x = 6
 		y = 10
 	}
 	shared_focus = {
@@ -1345,7 +1358,7 @@
 				}
 			}
 		}
-		x = 3
+		x = 6
 		y = 12
 	}
 		shared_focus = {
@@ -1363,7 +1376,7 @@
 				}
 			}
 		}
-		x = 2
+		x = 5
 		y = 13
 	}
 	shared_focus = {
@@ -1381,7 +1394,7 @@
 				}
 			}
 		}
-		x = 4
+		x = 7
 		y = 13
 	}
 	shared_focus = {
@@ -1420,7 +1433,7 @@
 				}
 			}
 		}
-		x = 3
+		x = 6
 		y = 15
 	}
 	shared_focus = {
@@ -1438,7 +1451,7 @@
 				}
 			}
 		}
-		x = 3
+		x = 6
 		y = 17
 	}
 	shared_focus = {
@@ -1462,7 +1475,7 @@
 				}
 			}
 		}
-		x = 7
+		x = 10
 		y = 8
 	}
 	shared_focus = {
@@ -1480,7 +1493,7 @@
 				}
 			}
 		}
-		x = 6
+		x = 9
 		y = 9
 	}
 	shared_focus = {
@@ -1498,7 +1511,7 @@
 				}
 			}
 		}
-		x = 8
+		x = 11
 		y = 9
 	}
 	shared_focus = {
@@ -1519,7 +1532,7 @@
 				}
 			}
 		}
-		x = 7
+		x = 10
 		y = 10
 	}
 shared_focus = {
@@ -1537,7 +1550,7 @@ shared_focus = {
 				}
 			}
 		}
-		x = 7
+		x = 10
 		y = 12
 	}
 	shared_focus = {
@@ -1555,7 +1568,7 @@ shared_focus = {
 				}
 			}
 		}
-		x = 6
+		x = 9
 		y = 13
 	}
 	shared_focus = {
@@ -1573,7 +1586,7 @@ shared_focus = {
 				}
 			}
 		}
-		x = 8
+		x = 11
 		y = 13
 	}
 	shared_focus = {
@@ -1612,7 +1625,7 @@ shared_focus = {
 				}
 			}
 		}
-		x = 7
+		x = 10
 		y = 15
 	}
 	shared_focus = {
@@ -1630,7 +1643,7 @@ shared_focus = {
 				}
 			}
 		}
-		x = 7
+		x = 10
 		y = 17
 	}
 	shared_focus = {
@@ -1655,7 +1668,7 @@ shared_focus = {
 				}
 			}
 		}
-		x = 5
+		x = 8
 		y = 19
 		
 	}
@@ -1673,7 +1686,7 @@ shared_focus = {
 		available = {
 			has_country_flag = KENT_political_matters_resolved
 		}
-		x = 30
+		x = 33
 		y = 7
 	}
 	shared_focus = {
@@ -1696,7 +1709,7 @@ shared_focus = {
 				}
 			}
 		}
-		x = 30
+		x = 33
 		y = 8
 	}
 	shared_focus = {
@@ -1706,7 +1719,10 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_henry's_toys
 		}
-		x = 30
+		completion_reward = {
+			custom_effect_tooltip = KNT_future_of_the_pneumatic_weaponry.tt
+		}
+		x = 33
 		y = 10
 	}
 	shared_focus = {
@@ -1716,7 +1732,10 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_future_of_the_pneumatic_weaponry
 		}
-		x = 30
+		completion_reward = {
+			custom_effect_tooltip = KNT_the_beast_on_rails.tt
+		}
+		x = 33
 		y = 11
 		
 	}
@@ -1727,7 +1746,10 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_the_beast_on_rails
 		}
-		x = 29
+		completion_reward = {
+			custom_effect_tooltip = KNT_the_gulliver.tt
+		}
+		x = 32
 		y = 13
 		
 	}
@@ -1738,7 +1760,10 @@ shared_focus = {
 		prerequisite = {
 			focus = KNT_the_beast_on_rails
 		}
-		x = 31
+		completion_reward = {
+			custom_effect_tooltip = KNT_airships_renaissance.tt
+		}
+		x = 34
 		y = 13
 		
 	}
@@ -1760,7 +1785,7 @@ shared_focus = {
 				}
 			}
 		}
-		x = 30
+		x = 33
 		y = 14
 		
 	}
@@ -1799,7 +1824,7 @@ shared_focus = {
 				category = marine_tech
 			}
 		}
-		x = 27
+		x = 30
 		y = 8
 	}
 	shared_focus = {
@@ -1821,7 +1846,7 @@ shared_focus = {
 				}
 			}
 		}
-		x = 26
+		x = 29
 		y = 9
 	}
 	shared_focus = {
@@ -1839,7 +1864,7 @@ shared_focus = {
 				}
 			}
 		}
-		x = 28
+		x = 31
 		y = 9
 	}
 	shared_focus = {
@@ -1864,7 +1889,7 @@ shared_focus = {
 				}
 			}
 		}
-		x = 27
+		x = 30
 		y = 11
 	}
 	shared_focus = {
@@ -1880,7 +1905,7 @@ shared_focus = {
 				add_idea = KNT_professional_army_path_4
 			}
 		}
-		x = 27
+		x = 30
 		y = 13
 	}
 	shared_focus = {
@@ -1902,7 +1927,7 @@ shared_focus = {
 				add_idea = KNT_professional_army_path_5
 			}
 		}
-		x = 27
+		x = 30
 		y = 15
 	}
 	shared_focus = {
@@ -1925,7 +1950,7 @@ shared_focus = {
 		completion_reward = {
 			add_ideas = KNT_army_traditions_path
 		}
-		x = 33
+		x = 36
 		y = 8
 	}
 	shared_focus = {
@@ -1943,7 +1968,7 @@ shared_focus = {
 				}
 			}
 		}
-		x = 32
+		x = 35
 		y = 9
 	}
 	shared_focus = {
@@ -1965,7 +1990,7 @@ shared_focus = {
 				}
 			}
 		}
-		x = 34
+		x = 37
 		y = 9
 	}
 	shared_focus = {
@@ -2041,7 +2066,7 @@ shared_focus = {
 			}
 			
 		}
-		x = 33
+		x = 36
 		y = 11
 	}
 	shared_focus = {
@@ -2057,7 +2082,7 @@ shared_focus = {
 				add_idea = KNT_army_traditions_path_4
 			}
 		}	
-		x = 33
+		x = 36
 		y = 13
 	}
 	shared_focus = {
@@ -2117,18 +2142,15 @@ shared_focus = {
 				}
 			}
 		}	
-		x = 33
+		x = 36
 		y = 15
 	}
 	shared_focus = {
 		id = KNT_radio_wild_geese
 		icon = GFX_goal_KNT_radio_wild_geese
 		cost = 4.3
-		prerequisite = {
-			focus = KNT_commons_of_house
-		}
 		available = {
-			has_country_flag = KENT_political_matters_resolved
+			has_completed_focus = KNT_we_shall_never_surrender
 		}
 		completion_reward = {
 			KNT = {
@@ -2139,8 +2161,8 @@ shared_focus = {
 			}
 			add_ideas = KNT_mercs_radio
 		}
-		x = 39
-		y = 7
+		x = 41
+		y = 1
 	}
 	shared_focus = {
 		id = KNT_tea_party_movement
@@ -2225,8 +2247,8 @@ shared_focus = {
 				logistics_skill = 1
 			}
 		}
-		x = 39
-		y = 9
+		x = 41
+		y = 3
 	}
 		shared_focus = {
 		id = KNT_djibouti_company
@@ -2267,18 +2289,21 @@ shared_focus = {
 				add_offsite_building = { type = industrial_complex level = 1 }
 			}
 		}
-		x = 36
-		y = 8
+		x = 38
+		y = 2
 	}
-		shared_focus = {
+	shared_focus = {
 		id = KNT_the_grand_embassy
 		icon = GFX_goal_KNT_the_grand_embassy
 		cost = 4.3
 		prerequisite = {
 			focus = KNT_radio_wild_geese
 		}
-		x = 42
-		y = 8
+		completion_reward = {
+			custom_effect_tooltip = KNT_the_grand_embassy.tt
+		}
+		x = 44
+		y = 2
 	}
 	shared_focus = {
 		id = KNT_no_other_choice
@@ -2302,8 +2327,8 @@ shared_focus = {
 				}
 			}
 		}
-		x = 37
-		y = 10
+		x = 38
+		y = 4
 	}
 	shared_focus = {
 		id = KNT_loyalists_from_hong_kong
@@ -2349,8 +2374,8 @@ shared_focus = {
 				}
 			}
 		}
-		x = 41
-		y = 10
+		x = 44
+		y = 4
 	}
 	shared_focus = {
 		id = KNT_exiles_of_nepal
@@ -2406,8 +2431,8 @@ shared_focus = {
 			}
 		}
 		
-		x = 39
-		y = 11
+		x = 41
+		y = 5
 	}
 	shared_focus = {
 		id = KNT_para_bellum
@@ -2694,6 +2719,9 @@ shared_focus = {
 		mutually_exclusive = {
 			focus = KNT_buy_them
 		}
+		completion_reward = {
+			custom_effect_tooltip = KNT_london_referendum.tt
+		}
 		x = 52
 		y = 12
 	}
@@ -2850,6 +2878,9 @@ shared_focus = {
 				has_global_flag = pearce_rejects_kent_offer
 				has_global_flag = essex_rejects_kent_offer
 			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = KNT_exchange_of_technologies.tt
 		}
 		x = 49
 		y = 11
@@ -3059,6 +3090,9 @@ shared_focus = {
 				has_global_flag = essex_rejects_kent_offer
 			}
 		}
+		completion_reward = {
+			custom_effect_tooltip = KNT_traditional_leap_forward.tt
+		}
 		x = 58
 		y = 12
 	}
@@ -3105,6 +3139,7 @@ shared_focus = {
 			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = KNT_its_treason_then.tt
 			if = {
 				limit = {
 					is_in_faction_with = ESS
