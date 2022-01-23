@@ -87,310 +87,6 @@ ideas = {
 			}
 		}
 		
-	#MILITARY HARDWARE GUILDS IDEAS
-	 #Tanks
-	
-		WES_Tank_guilds_w_armor_emphasis = {
-		
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			equipment_bonus = {
-				MBT = {
-					armor_value = 0.10
-					hard_attack = 0.10
-					instant = yes
-				}
-			    MBT = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				MBT = {
-					reliability = -0.05
-					maximum_speed = -0.05
-					instant = yes
-				}
-			}
-		}
-		
-		WES_Tank_guilds_w_speed_emphasis = {
-		
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			equipment_bonus = {
-				MBT = {
-					maximum_speed = 0.10
-					soft_attack = 0.10
-					instant = yes
-				}
-			    MBT = {
-					build_cost_ic = -0.15
-					instant = yes
-				}
-				MBT = {
-					reliability = -0.05
-					armor_value = -0.05
-					instant = yes
-				}
-			}
-		}
-		
-	 #Artillery
-	 
-		WES_conventional_artillery_emphasis = {
-		
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			equipment_bonus = {
-				artillery = {
-					soft_attack = 0.05
-					build_cost_ic = -0.10
-					instant = yes
-				}
-			    anti_tank = {
-				    hard_attack = 0.05
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				anti_air = {
-					air_attack = 0.05
-					build_cost_ic = -0.10
-					instant = yes
-				}
-			}
-		}
-		
-		WES_sp_artillery_emphasis = {
-		
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			equipment_bonus = {
-				mlrs = {
-				    soft_attack = 0.05
-					build_cost_ic = -0.15
-					instant = yes
-				}
-			    spaag = {
-				    soft_attack = 0.05
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				sam = {
-			    	air_attack = 0.05
-					build_cost_ic = -0.10
-					instant = yes
-				}
-			}
-		}
-		
-	 #Cavalry&Chivalry  ###WE WUZ NOBLES AND SHIT
-	 
-	   	WES_infantry_guild_1 = {
-		
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-				research_speed_factor = -0.05
-			}
-			
-			equipment_bonus = {
-				APC = {
-					build_cost_ic = 0.05
-					instant = yes
-				}
-			    IFV = {
-					build_cost_ic = 0.05
-					instant = yes
-				}
-				motorized = {
-					build_cost_ic = 0.05
-					instant = yes
-				}
-			}
-		}
-		WES_infantry_guild_1_subeffects = {
-		
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-		    modifier = {	
-		        cavalry_attack_factor = 0.20
-		        cavalry_defence_factor = 0.25
-			    army_infantry_attack_factor = 0.05
-		        army_infantry_defence_factor = 0.05
-			}
-		}
-		
-	 #Mass Mechanized
-	 
-		WES_infantry_guild_2 = {
-		
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			equipment_bonus = {
-				APC = {
-				    maximum_speed = 0.05
-					build_cost_ic = -0.10
-					armor_value = -0.10
-					instant = yes
-				}
-			    IFV = {
-				    maximum_speed = 0.05
-					build_cost_ic = -0.10
-					armor_value = -0.10
-					instant = yes
-				}
-				motorized = {
-				    maximum_speed = 0.05
-					build_cost_ic = -0.15
-					armor_value = -0.10
-					instant = yes
-				}
-			}
-		}
-		WES_infantry_guild_2_subeffects = {
-		
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-		    modifier = {	
-			    army_infantry_attack_factor = 0.05
-		        army_infantry_defence_factor = -0.05
-			}
-		}
-		
-	 #Infantry & Infantry support
-		
-		WES_infantry_guild_3 = {
-		
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			equipment_bonus = {
-				APC = {
-					build_cost_ic = 0.05
-					instant = yes
-				}
-			    IFV = {
-					build_cost_ic = 0.05
-					instant = yes
-				}
-				motorized = {
-					build_cost_ic = 0.05
-					instant = yes
-				}			
-				infantry_equipment = {
-					build_cost_ic = -0.10
-					instant = yes
-			    }
-			}
-		}
-		WES_infantry_guild_3_subeffects = {
-	
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-            modifier = {
-			    army_artillery_attack_factor = 0.07
-                army_artillery_defence_factor = 0.07
-			}
-		}
-	    
-		#
-		
-		WES_Concentrated_strikes = { 
-		
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			equipment_bonus = {
-				APC = {
-				    soft_attack = 0.02
-				    hard_attack = 0.02
-					maximum_speed = 0.05
-					instant = yes
-				}
-			    IFV = {
-				    soft_attack = 0.02
-				    hard_attack = 0.02
-					maximum_speed = 0.05
-					instant = yes
-				}
-				motorized = {
-				    soft_attack = 0.02
-				    hard_attack = 0.02
-					maximum_speed = 0.05
-					instant = yes
-				}			
-			}
-			modifier = {	
-		        cavalry_attack_factor = 0.10
-			}
-		}
-		
-		#
-		
-		
 		WES_flight_heroes = {
 			
 			picture = 
@@ -694,6 +390,305 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
+			}
+		}
+	}
+	
+	tank_manufacturer = {
+		WES_Tank_guilds_w_armor_emphasis = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				MBT = {
+					armor_value = 0.10
+					hard_attack = 0.10
+					instant = yes
+				}
+			    MBT = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				MBT = {
+					reliability = -0.05
+					maximum_speed = -0.05
+					instant = yes
+				}
+			}
+		}
+		
+		WES_Tank_guilds_w_speed_emphasis = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				MBT = {
+					maximum_speed = 0.10
+					soft_attack = 0.10
+					instant = yes
+				}
+			    MBT = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				MBT = {
+					reliability = -0.05
+					armor_value = -0.05
+					instant = yes
+				}
+			}
+		}
+	}
+	
+	materiel_manufacturer = {
+		WES_conventional_artillery_emphasis = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				artillery = {
+					soft_attack = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			    anti_tank = {
+				    hard_attack = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				anti_air = {
+					air_attack = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+		}
+		
+		WES_sp_artillery_emphasis = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				mlrs = {
+				    soft_attack = 0.05
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			    spaag = {
+				    soft_attack = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				sam = {
+			    	air_attack = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+		}
+		
+		WES_infantry_guild_1 = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.05
+			}
+			
+			equipment_bonus = {
+				APC = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+			    IFV = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+			}
+		}
+	
+	WES_infantry_guild_2 = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				APC = {
+				    maximum_speed = 0.05
+					build_cost_ic = -0.10
+					armor_value = -0.10
+					instant = yes
+				}
+			    IFV = {
+				    maximum_speed = 0.05
+					build_cost_ic = -0.10
+					armor_value = -0.10
+					instant = yes
+				}
+				motorized = {
+				    maximum_speed = 0.05
+					build_cost_ic = -0.15
+					armor_value = -0.10
+					instant = yes
+				}
+			}
+	}
+	
+	WES_infantry_guild_3 = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				APC = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+			    IFV = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.05
+					instant = yes
+				}			
+				infantry_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+			    }
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		WES_infantry_guild_1_subeffects = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+		    modifier = {	
+		        cavalry_attack_factor = 0.20
+		        cavalry_defence_factor = 0.25
+			    army_infantry_attack_factor = 0.05
+		        army_infantry_defence_factor = 0.05
+			}
+		}
+	 
+		
+		WES_infantry_guild_2_subeffects = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+		    modifier = {	
+			    army_infantry_attack_factor = 0.05
+		        army_infantry_defence_factor = -0.05
+			}
+		}
+		
+		
+		WES_infantry_guild_3_subeffects = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+			    army_artillery_attack_factor = 0.07
+                army_artillery_defence_factor = 0.07
+			}
+		}
+		
+		WES_Concentrated_strikes = { 
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				APC = {
+				    soft_attack = 0.02
+				    hard_attack = 0.02
+					maximum_speed = 0.05
+					instant = yes
+				}
+			    IFV = {
+				    soft_attack = 0.02
+				    hard_attack = 0.02
+					maximum_speed = 0.05
+					instant = yes
+				}
+				motorized = {
+				    soft_attack = 0.02
+				    hard_attack = 0.02
+					maximum_speed = 0.05
+					instant = yes
+				}			
+			}
+			modifier = {	
+		        cavalry_attack_factor = 0.10
 			}
 		}
 	}
