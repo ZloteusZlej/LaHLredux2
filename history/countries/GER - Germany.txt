@@ -1,4 +1,4 @@
-capital = 64
+capital = 189
 
 oob = "GER_2020"
 
@@ -22,6 +22,11 @@ set_popularities = {
 	hegemonism = 100
 }
 
+add_ideas = {
+	GER_green_prussia
+	GER_nsis
+}
+
 country_event = { id = GER_event.1 days = 15 }
 
 create_country_leader = {
@@ -42,6 +47,7 @@ create_country_leader = {
 	ideology = charismatic_dictatorship
 	traits = { }
 }
+
 
 # DIPLOMACY
 if = {
