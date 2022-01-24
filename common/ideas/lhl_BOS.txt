@@ -18,5 +18,45 @@ ideas = {
 			}
 		}
 	}
+
+	country = {
+	
+		BOS_golden_age = {
+			
+			picture = BOS_golden_age
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = -0.2
+			research_speed_factor = 0.2
+			}
+		}
+	}
+
+	country = {
+	
+		BOS_lybian_workshop = {
+			
+			picture = BOS_lybian_workshop
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability = -0.3
+			monthly_population = -0.2
+			national_bolshevism_drift = 0.01
+			right_populism_drift = 0.01
+			}
+		}
+	}
 	
 }
