@@ -829,7 +829,7 @@ ideas = {
 	
 	tank_manufacturer = {
 		designer = yes
-		KNT_tank_guilds_w_armor_emphasis = {
+		KNT_Tank_guilds_w_armor_emphasis = {
 		
 			picture = 
 			
@@ -857,11 +857,8 @@ ideas = {
 				}
 			}
 		}
-	}	
-	
-	tank_manufacturer = {
-		designer = yes
-		KNT_tank_guilds_w_speed_emphasis = {
+		
+		KNT_Tank_guilds_w_speed_emphasis = {
 		
 			picture = 
 			
@@ -889,7 +886,7 @@ ideas = {
 				}
 			}
 		}
-	}	
+	}
 	
 	materiel_manufacturer = {
 		designer = yes
@@ -898,7 +895,6 @@ ideas = {
 			picture = 
 			
 			allowed = {
-				always = no
 				original_tag = KNT
 			}
 			
@@ -922,16 +918,12 @@ ideas = {
 				}
 			}
 		}
-	}
-	
-	materiel_manufacturer = {
-		designer = yes
+		
 		KNT_sp_artillery_emphasis = {
 		
 			picture = 
 			
 			allowed = {
-				always = no
 				original_tag = KNT
 			}
 			
@@ -955,121 +947,24 @@ ideas = {
 				}
 			}
 		}
-	}	
-
-	materiel_manufacturer = { 
-		designer = yes
+		
 		KNT_infantry_guild_1 = {
 		
 			picture = 
 			
 			allowed = {
-				always = no
 				original_tag = KNT
 			}
 			
 			removal_cost = -1
 			
-			
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.15
-					instant = yes
-				}
-			    support_equipment = {
-					build_cost_ic = -0.15
-					instant = yes
-				}
-			}
-		}
-	}
-	
-	hidden_ideas = {
-		KNT_infantry_guild_1_subeffects = {
-		
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-		    modifier = {	
-		        max_dig_in_factor = 0.15
-		        land_reinforce_rate = 0.15
+			modifier = {
+				research_speed_factor = -0.05
+		        cavalry_attack_factor = 0.20
+		        cavalry_defence_factor = 0.25
 			    army_infantry_attack_factor = 0.05
 		        army_infantry_defence_factor = 0.05
 			}
-		}
-	}
-	
-	materiel_manufacturer = {
-		designer = yes
-		KNT_infantry_guild_2 = {
-		
-			picture = 
-			
-			allowed = {
-				always = no
-				original_tag = KNT
-			}
-			
-			removal_cost = -1
-			
-			equipment_bonus = {
-				APC = {
-				    maximum_speed = 0.05
-					build_cost_ic = -0.10
-					armor_value = -0.10
-					instant = yes
-				}
-			    IFV = {
-				    maximum_speed = 0.05
-					build_cost_ic = -0.10
-					armor_value = -0.10
-					instant = yes
-				}
-				motorized = {
-				    maximum_speed = 0.05
-					build_cost_ic = -0.15
-					armor_value = -0.10
-					instant = yes
-				}
-			}
-		}
-	}
-	
-	hidden_ideas = {
-		KNT_infantry_guild_2_subeffects = {
-		
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-		    modifier = {	
-			    army_infantry_attack_factor = 0.05
-		        army_infantry_defence_factor = -0.05
-			}
-		}
-	}	
-
-	materiel_manufacturer = {	
-		designer = yes
-		KNT_infantry_guild_3 = {
-		
-			picture = 
-			
-			allowed = {
-				always = no
-				original_tag = KNT
-			}
-			
-			removal_cost = -1
 			
 			equipment_bonus = {
 				APC = {
@@ -1077,6 +972,72 @@ ideas = {
 					instant = yes
 				}
 			    IFV = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+			}
+		}
+	
+		KNT_infantry_guild_2 = {
+			
+			picture = 
+				
+			allowed = {
+				original_tag = KNT
+			}
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = -0.05
+			}
+				
+			removal_cost = -1
+				
+			equipment_bonus = {
+				APC = {
+					maximum_speed = 0.05
+					build_cost_ic = -0.10
+					armor_value = -0.10
+					instant = yes
+				}
+				IFV = {
+					maximum_speed = 0.05
+					build_cost_ic = -0.10
+					armor_value = -0.10
+					instant = yes
+				}
+				motorized = {
+					maximum_speed = 0.05
+					build_cost_ic = -0.15
+					armor_value = -0.10
+					instant = yes
+				}
+			}
+		}
+	
+		KNT_infantry_guild_3 = {	
+			
+			picture = 
+				
+			allowed = {
+				original_tag = KNT
+			}
+            modifier = {
+			    army_artillery_attack_factor = 0.07
+                army_artillery_defence_factor = 0.07
+			}
+				
+			removal_cost = -1
+				
+			equipment_bonus = {
+				APC = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				IFV = {
 					build_cost_ic = 0.05
 					instant = yes
 				}
@@ -1087,28 +1048,10 @@ ideas = {
 				infantry_equipment = {
 					build_cost_ic = -0.10
 					instant = yes
-			    }
+				}
 			}
 		}
 	}
-
-	hidden_ideas = {
-		KNT_infantry_guild_3_subeffects = {
-	
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-            modifier = {
-			    army_artillery_attack_factor = 0.07
-                army_artillery_defence_factor = 0.07
-			}
-		}
-	}	
 	
 	hidden_ideas = {
 		KNT_medium_manufacturers_suport = {
