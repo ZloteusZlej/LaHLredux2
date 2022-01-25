@@ -1,0 +1,52 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "lhl_george_legitimacy_full"
+		size = { width = 1000 height = 500 }
+		position = { x = 100 y = 0 }
+		scale = 1.4
+		moveable = no
+		clipping = yes
+		
+		background = {
+			name = "lhl_table_opening_screen_background_1"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+		###Background###
+		##Portraits##
+	    iconType = {
+			name = "lhl_george_legitimacy_low"
+			spriteType = "GFX_lhl_george_legitimacy_sad"
+			pdx_tooltip = "WES_GEORGE_LEGITIMACY_SAD"
+			position = { x = 90 y = 10 }
+		}
+	    iconType = {
+			name = "lhl_george_legitimacy_high"
+			spriteType = "GFX_lhl_george_legitimacy_happy"
+			pdx_tooltip = "WES_GEORGE_LEGITIMACY_HAPPY"
+			position = { x = 90 y = 10 }
+		}
+		background = {
+			name = "lhl_table_opening_screen_background_1"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+		instantTextboxType = {
+			name = "lhl_george_legitimacy_text_1"
+			position = { x = 28 y = 275 }
+			font = "hoi_12header"
+			text = "WES_GEORGE_LEGITIMACY_TEXT_1"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "lhl_george_legitimacy_text_2"
+			position = { x = 33 y = 300 }
+			font = "hoi_12header"
+			text = "WES_GEORGE_LEGITIMACY_TEXT_2"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+	}
+}

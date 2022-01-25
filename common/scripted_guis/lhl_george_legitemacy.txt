@@ -1,0 +1,31 @@
+scripted_gui = {
+	
+	lhl_george_legitimacy_screen_body = {
+		context_type = decision_category
+		parent_window_token = decision_tab
+		window_name = "lhl_george_legitimacy_full"
+
+		visible = {
+			tag = WES
+			WES = {
+				has_completed_focus = WES_return_king
+			}
+		}
+		triggers = {
+            lhl_george_legitimacy_low_visible = {
+               check_variable = {
+                    var = WES_george_legitimacy_level
+                    value = 80
+					compare = less_than_or_equals					
+                }
+		    }
+            lhl_george_legitimacy_high_visible = {
+               check_variable = {
+                    var = WES_george_legitimacy_level
+                    value = 80	
+					compare = greater_than					
+                }
+		    }		
+        }
+	}
+}

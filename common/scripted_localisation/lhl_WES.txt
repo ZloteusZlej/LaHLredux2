@@ -1,0 +1,73 @@
+defined_text = {
+	name = GetWessexLegitimacy
+	text = {
+		trigger = {
+            check_variable = {
+                var = WES_george_legitimacy_level
+                value = 100
+				compare = equals	
+			}
+		}
+		localization_key = WES_george_legitimacy_top
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = WES_george_legitimacy_level
+                value = 80
+				compare = greater_than_or_equals	
+			}
+		}
+		localization_key = WES_george_legitimacy_very_high
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = WES_george_legitimacy_level
+                value = 60
+				compare = greater_than_or_equals	
+			}
+		}
+		localization_key = WES_george_legitimacy_high
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = WES_george_legitimacy_level
+                value = 40
+				compare = greater_than_or_equals	
+			}
+		}
+		localization_key = WES_george_legitimacy_medium
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = WES_george_legitimacy_level
+                value = 20
+				compare = greater_than_or_equals	
+			}
+		}
+		localization_key = WES_george_legitimacy_low
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = WES_george_legitimacy_level
+                value = 5
+				compare = greater_than_or_equals	
+			}
+		}
+		localization_key = WES_george_legitimacy_very_low
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = WES_george_legitimacy_level
+                value = 0
+				compare = equals	
+			}
+		}
+		localization_key = WES_george_legitimacy_dead
+	}
+}
