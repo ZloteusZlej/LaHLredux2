@@ -11,7 +11,7 @@ shared_focus = {
 				id = WES_event.3
 			}
 			set_variable = { 
-				george_legitemacy = 10
+				WES_george_legitimacy_level = 10
 			}
 		}
 	}
@@ -947,6 +947,12 @@ shared_focus = {
 	id = WES_rule_george
 	icon = GFX_goal_WES_Rule_of_george
 	cost = 3.5
+	available = {
+		WES = {
+			has_country_flag = WES_george_legitimacy_achieved
+			has_completed_focus = WES_return_king
+		}
+	}
 	x = 17
 	y = 6
 }

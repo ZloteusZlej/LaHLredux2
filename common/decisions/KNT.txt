@@ -194,115 +194,130 @@ KNT_reunify_isles = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}	
 	}
 }  		    
 
 KNT_channel_tunnel = {
 	KNT_import_french_guns = {
-	cost = 35
-	available = {
-		NOT = {
-			OR = {
-			has_global_flag = car_purchased_swedish
-			has_global_flag = arty_purchased_belgian
-			has_global_flag = electronics_purchased_dutch
+		cost = 35
+		available = {
+			NOT = {
+				OR = {
+				has_global_flag = car_purchased_swedish
+				has_global_flag = arty_purchased_belgian
+				has_global_flag = electronics_purchased_dutch
+				}
 			}
 		}
-	}
-	complete_effect = {
-		set_global_flag = guns_purchased_french
-	}
-	days_remove = 50
+		complete_effect = {
+			set_global_flag = guns_purchased_french
+		}
+		days_remove = 50
 		remove_effect = {
 			add_equipment_to_stockpile = {
 			type = infantry_equipment
 			amount = 750
 			producer = FRA
 			}
-		clr_global_flag = guns_purchased_french
+			clr_global_flag = guns_purchased_french
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
 	KNT_import_volvos = {
-	cost = 45
-	available = {
-		NOT = {
-			OR = {
-			has_global_flag = guns_purchased_french
-			has_global_flag = arty_purchased_belgian
-			has_global_flag = electronics_purchased_dutch
+		cost = 45
+		available = {
+			NOT = {
+				OR = {
+				has_global_flag = guns_purchased_french
+				has_global_flag = arty_purchased_belgian
+				has_global_flag = electronics_purchased_dutch
+				}
 			}
 		}
-	}
-	complete_effect = {
-		set_global_flag = car_purchased_swedish
-	}
-	days_remove = 60
+		complete_effect = {
+			set_global_flag = car_purchased_swedish
+		}
+		days_remove = 60
 		remove_effect = {
 			add_equipment_to_stockpile = {
 			type = motorized_equipment
 			amount = 75
 			producer = SCA
 			}
-		clr_global_flag = car_purchased_swedish
+			clr_global_flag = car_purchased_swedish
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
 	KNT_import_belgian_arty = {
-	cost = 40
-	days_remove = 55
-	available = {
-		NOT = {
-			OR = {
-			has_global_flag = guns_purchased_french
-			has_global_flag = car_purchased_swedish
-			has_global_flag = electronics_purchased_dutch
+		cost = 40
+		days_remove = 55
+		available = {
+			NOT = {
+				OR = {
+				has_global_flag = guns_purchased_french
+				has_global_flag = car_purchased_swedish
+				has_global_flag = electronics_purchased_dutch
+				}
 			}
 		}
-	}
-	complete_effect = {
-		set_global_flag = arty_purchased_belgian
-	}
+		complete_effect = {
+			set_global_flag = arty_purchased_belgian
+		}
 		remove_effect = {
 			add_equipment_to_stockpile = {
 			type = artillery_equipment
 			amount = 75
 			producer = BEL
 			}
-		clr_global_flag = arty_purchased_belgian 
+			clr_global_flag = arty_purchased_belgian 
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
 	KNT_import_dutch_electronics = {
-	cost = 40
-	days_remove = 55
-	available = {
-		NOT = {
-			OR = {
-			has_global_flag = guns_purchased_french
-			has_global_flag = car_purchased_swedish
-			has_global_flag = arty_purchased_belgian
+		cost = 40
+		days_remove = 55
+		available = {
+			NOT = {
+				OR = {
+				has_global_flag = guns_purchased_french
+				has_global_flag = car_purchased_swedish
+				has_global_flag = arty_purchased_belgian
+				}
 			}
 		}
-	}
-	complete_effect = {
-		set_global_flag = electronics_purchased_dutch
-	}
+		complete_effect = {
+			set_global_flag = electronics_purchased_dutch
+		}
 		remove_effect = {
 			add_equipment_to_stockpile = {
 			type = support_equipment
 			amount = 100
 			producer = HOL
 			}
-		clr_global_flag = electronics_purchased_dutch
+			clr_global_flag = electronics_purchased_dutch
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 }
 
 KNT_maglev = {
 	KNT_kent_part = {
-	cost = 125
-	days_remove = 100
+		cost = 125
+		days_remove = 100
 		available = {
 			1002 = {
 				is_controlled_by = ROOT
@@ -322,7 +337,7 @@ KNT_maglev = {
 					}
 				}
 		}
-			remove_effect = {
+		remove_effect = {
 				1002 = {				
 				add_building_construction = {
 						type = infrastructure 
@@ -351,11 +366,14 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_kent
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_sussex_part = {
-	cost = 125
-	days_remove = 100
+		cost = 125
+		days_remove = 100
 		available = {
 			1001 = {
 				is_controlled_by = ROOT
@@ -375,7 +393,7 @@ KNT_maglev = {
 				}
 			}
 		}
-			remove_effect = {
+		remove_effect = {
 				1001 = {				
 				add_building_construction = {
 						type = infrastructure 
@@ -404,11 +422,14 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_sussex
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_wessex_part = {
-	cost = 150
-	days_remove = 100
+		cost = 150
+		days_remove = 100
 		available = {
 			1161 = {
 				is_controlled_by = ROOT
@@ -446,7 +467,7 @@ KNT_maglev = {
 				}	
 			}
 		}
-			remove_effect = {
+		remove_effect = {
 			1000 = {				
 				add_building_construction = {
 						type = infrastructure 
@@ -514,11 +535,14 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_KNTsex
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_cornwall_part = {
-	cost = 125
-	days_remove = 100
+		cost = 125
+		days_remove = 100
 		available = {
 			999 = {
 				is_controlled_by = ROOT
@@ -538,7 +562,7 @@ KNT_maglev = {
 				}
 			}
 		}
-			remove_effect = {
+		remove_effect = {
 				999 = {				
 				add_building_construction = {
 						type = infrastructure 
@@ -567,11 +591,14 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_cornwall
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_essex_part = {
-	cost = 150
-	days_remove = 100
+		cost = 150
+		days_remove = 100
 		available = {
 			1160 = {
 				is_controlled_by = ROOT
@@ -609,7 +636,7 @@ KNT_maglev = {
 				}
 			}
 		}
-			remove_effect = {
+		remove_effect = {
 			1003 = {				
 				add_building_construction = {
 						type = infrastructure 
@@ -677,11 +704,14 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_essex
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_east_anglia_part = {
-	cost = 125
-	days_remove = 100
+		cost = 125
+		days_remove = 100
 		available = {
 			1004 = {
 				is_controlled_by = ROOT
@@ -701,7 +731,7 @@ KNT_maglev = {
 				}
 			}
 		}
-			remove_effect = {
+		remove_effect = {
 				1004 = {				
 				add_building_construction = {
 						type = infrastructure 
@@ -730,11 +760,14 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_east_anglia
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_east_midlands_part = {
-	cost = 150
-	days_remove = 125
+		cost = 150
+		days_remove = 125
 		available = {
 			1005 = {
 				is_controlled_by = ROOT
@@ -766,7 +799,7 @@ KNT_maglev = {
 				}
 			}
 		}
-			remove_effect = {
+		remove_effect = {
 			1005 = {				
 				add_building_construction = {
 						type = infrastructure 
@@ -821,11 +854,14 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_east_midlands
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_west_midlands_part = {
-	cost = 150
-	days_remove = 125
+		cost = 150
+		days_remove = 125
 		available = {
 			1151 = {
 				is_controlled_by = ROOT
@@ -857,7 +893,7 @@ KNT_maglev = {
 				}
 			}
 		}
-			remove_effect = {
+		remove_effect = {
 			1151 = {				
 				add_building_construction = {
 						type = infrastructure 
@@ -912,11 +948,14 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_west_midlands
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_yorkshire_and_northumbria_part = {
-	cost = 125
-	days_remove = 100
+		cost = 125
+		days_remove = 100
 		available = {
 			1010 = {
 				is_controlled_by = ROOT
@@ -942,7 +981,7 @@ KNT_maglev = {
 				}
 			}
 		}
-			remove_effect = {
+		remove_effect = {
 			1010 = {				
 				add_building_construction = {
 						type = infrastructure 
@@ -985,11 +1024,14 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_yorkshire_and_northumbria
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}	
 	
 	KNT_manchester_part = {
-	cost = 125
-	days_remove = 100
+		cost = 125
+		days_remove = 100
 		available = {
 			1009 = {
 				is_controlled_by = ROOT
@@ -1009,7 +1051,7 @@ KNT_maglev = {
 				}
 			}
 		}
-			remove_effect = {
+		remove_effect = {
 				1009 = {				
 				add_building_construction = {
 						type = infrastructure 
@@ -1038,11 +1080,14 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_manchester
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_lowlands_part = {
-	cost = 125
-	days_remove = 100
+		cost = 125
+		days_remove = 100
 		available = {
 			1013 = {
 				is_controlled_by = ROOT
@@ -1068,7 +1113,7 @@ KNT_maglev = {
 				}
 			}
 		}
-			remove_effect = {
+		remove_effect = {
 			1013 = {				
 				add_building_construction = {
 						type = infrastructure 
@@ -1111,11 +1156,14 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_lowlands
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_highlands_part = {
-	cost = 150
-	days_remove = 125
+		cost = 150
+		days_remove = 125
 		available = {
 			1015 = {
 				is_controlled_by = ROOT
@@ -1147,7 +1195,7 @@ KNT_maglev = {
 				}
 			}
 		}
-			remove_effect = {
+		remove_effect = {
 			1015 = {				
 				add_building_construction = {
 						type = infrastructure 
@@ -1204,11 +1252,14 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_highlands
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_wales_part = {
-	cost = 150
-	days_remove = 125
+		cost = 150
+		days_remove = 125
 		available = {
 			1147 = {
 				is_controlled_by = ROOT
@@ -1240,7 +1291,7 @@ KNT_maglev = {
 				}
 			}
 		}
-			remove_effect = {
+		remove_effect = {
 			1147 = {				
 				add_building_construction = {
 						type = infrastructure 
@@ -1297,11 +1348,14 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_wales
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_ulster_part = {
-	cost = 125
-	days_remove = 100
+		cost = 125
+		days_remove = 100
 		available = {
 			1019 = {
 				is_controlled_by = ROOT
@@ -1327,7 +1381,7 @@ KNT_maglev = {
 				}
 			}
 		}
-			remove_effect = {
+		remove_effect = {
 			1019 = {				
 				add_building_construction = {
 						type = infrastructure 
@@ -1370,11 +1424,14 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_ulster
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_outter_ireland_part = {
-	cost = 125
-	days_remove = 100
+		cost = 125
+		days_remove = 100
 		available = {
 			1023 = {
 				is_controlled_by = ROOT
@@ -1400,7 +1457,7 @@ KNT_maglev = {
 				}
 			}
 		}
-			remove_effect = {
+		remove_effect = {
 			1023 = {				
 				add_building_construction = {
 						type = infrastructure 
@@ -1443,407 +1500,423 @@ KNT_maglev = {
 			}
 			set_global_flag = KNT_railroads_renewed_outter_ireland
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 }
 
 KNT_special_projects = {
 
 	KNT_wireless_electricity = {
-	days_remove = 200
-	visible = {
+		days_remove = 200
+		visible = {
 			NOT = { has_global_flag = KNT_wireless_electricity_introduced }
+			KNT = {
+				has_completed_focus	= KNT_no_more_wires
+			}
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_no_more_wires
-			}
-		}
-		visible = {
-				KNT = {
 				has_completed_focus	= KNT_no_more_wires
 			}
 		}
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.13
+					days = 1
+					id = KNT_event.13
 				}
 			}
 		}
 		remove_effect = {
-					KNT = {
-					set_technology = {
+			KNT = {
+				set_technology = {
 					wireless_power_transfer = 1
 				}
 			}
 			set_global_flag = KNT_wireless_electricity_introduced
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_biofuel_introduction = {
-	days_remove = 150
-	visible = {
+		days_remove = 150
+		visible = {
 			NOT = { has_global_flag = KNT_biofuel_introduced}
+			KNT = {
+				has_completed_focus	= KNT_greener_energy
+			}
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_greener_energy
-			}
-		}
-		visible = {
-				KNT = {
 				has_completed_focus	= KNT_greener_energy
 			}
 		}
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.13
+					days = 1
+					id = KNT_event.13
 				}
 			}
 		}
 		remove_effect = {
-					KNT = {
-					set_technology = {
+			KNT = {
+				set_technology = {
 					biofuel = 1
-					}
+				}
 			}
 			set_global_flag = KNT_biofuel_introduced
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_supersoldier_rations_introduction = {
-	days_remove = 50
-	visible = {
+		days_remove = 50
+		visible = {
 			NOT = { has_global_flag = KNT_supersoldier_rations_introduced }
+			KNT = {
+				has_completed_focus	= KNT_the_modern_prometheus
+			}
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_the_modern_prometheus
-			}
-		}
-		visible = {
-				KNT = {
 				has_completed_focus	= KNT_the_modern_prometheus
 			}
 		}
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.12
+					days = 1
+					id = KNT_event.12
 				}
 			}
 		}
 		remove_effect = {
-					KNT = {
-					set_technology = {
+			KNT = {
+				set_technology = {
 					stem_cell = 1
-					}
+				}
 			}
 			set_global_flag = KNT_supersoldier_rations_introduced
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_stem_cell_introduction = {
-	days_remove = 50
-	visible = {
+		days_remove = 50
+		visible = {
 			NOT = { has_global_flag = KNT_stem_cell_introduced }
+			KNT = {
+				has_completed_focus	= KNT_the_modern_prometheus
+			}
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_the_modern_prometheus
-			}
-		}
-		visible = {
-				KNT = {
 				has_completed_focus	= KNT_the_modern_prometheus
 			}
 		}
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.12
+					days = 1
+					id = KNT_event.12
 				}
 			}
 		}
 		remove_effect = {
-					KNT = {
-					set_technology = {
+			KNT = {
+				set_technology = {
 					stem_cell = 1
-					}
+				}
 			}
 			set_global_flag = KNT_stem_cell_introduced
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 	
 	KNT_airgun_introduction = {
-	days_remove = 35
-	visible = {
+		days_remove = 35
+		visible = {
 			NOT = { has_global_flag = KNT_airgun_introduced }
+			KNT = {
+				has_completed_focus	= KNT_future_of_the_pneumatic_weaponry
+			}
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_future_of_the_pneumatic_weaponry
-			}
-		}
-		visible = {
-				KNT = {
 				has_completed_focus	= KNT_future_of_the_pneumatic_weaponry
 			}
 		}
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.26
+					days = 1
+					id = KNT_event.26
 				}
 			}
 		}
 		remove_effect = {
-					KNT = {
-					set_technology = {
+			KNT = {
+				set_technology = {
 					airgun = 1
 					}
 			}
 			set_global_flag = KNT_airgun_introduced
 		}	
+		ai_will_do = {
+			factor = 100
+		}	
 	}
 	
 	KNT_railgun_introduction = {
-	days_remove = 100
-	visible = {
+		days_remove = 100
+		visible = {
 			NOT = { has_global_flag = KNT_railgun_introduced }
+			KNT = {
+				has_completed_focus	= KNT_future_of_the_pneumatic_weaponry
+			}
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_future_of_the_pneumatic_weaponry
-			}
-		}
-		visible = {
-				KNT = {
 				has_completed_focus	= KNT_future_of_the_pneumatic_weaponry
 			}
 		}
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.12
+					days = 1
+					id = KNT_event.12
 				}
 			}
 		}
 		remove_effect = {
-					KNT = {
-					set_technology = {
+			KNT = {
+				set_technology = {
 					railgun = 1
-					}
+				}
 			}
 			set_global_flag = KNT_railgun_introduced
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_evangelion_introduction = {
-	days_remove = 200
-	visible = {
+		days_remove = 200
+		visible = {
 			NOT = { has_global_flag = KNT_evangelion_introduced }
+			KNT = {
+				has_completed_focus	= KNT_the_gulliver
+			}
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_the_gulliver
+				has_completed_focus	= KNT_the_gulliver
 			}
 		}
 		visible = {
-				KNT = {
-				has_completed_focus	= KNT_the_gulliver
-			}
+
 		}
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.13
+					days = 1
+					id = KNT_event.13
 				}
 			}
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.32
+					days = 1
+					id = KNT_event.32
 				}
 			}
 		}
 		remove_effect = {
-					KNT = {
-					set_technology = {
+			KNT = {
+				set_technology = {
 					evangelion = 1
-					}
+				}
 			}
 			set_global_flag = KNT_evangelion_introduced
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 	
 	KNT_unmanned_tank_introduction = {
-	days_remove = 125
-	visible = {
+		days_remove = 125
+		visible = {
 			NOT = { has_global_flag = KNT_unmanned_tank_introduced }
+			KNT = {
+				has_completed_focus	= KNT_the_gulliver
+			}
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_the_gulliver
-			}
-		}
-		visible = {
-				KNT = {
 				has_completed_focus	= KNT_the_gulliver
 			}
 		}
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.12
+					days = 1
+					id = KNT_event.12
 				}
 			}
 		}
 		remove_effect = {
-					KNT = {
-					set_technology = {
+			KNT = {
+				set_technology = {
 					unmanned_tank = 1
-					}
+				}
 			}
 			set_global_flag = KNT_unmanned_tank_introduced
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_landing_tank_introduction = {
-	days_remove = 125
-	visible = {
+		days_remove = 125
+		visible = {
 			NOT = { has_global_flag = KNT_landing_tank_introduced }
+			KNT = {
+				has_completed_focus	= KNT_the_gulliver
+			}
 		}
 		available = {
 			KNT = {
 			has_completed_focus	= KNT_the_gulliver
 			}
 		}
-		visible = {
-				KNT = {
-				has_completed_focus	= KNT_the_gulliver
-			}
-		}
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.12
+					days = 1
+					id = KNT_event.12
 				}
 			}
 		}
 		remove_effect = {
-					KNT = {
-					set_technology = {
+			KNT = {
+				set_technology = {
 					landing_tank = 1
-					}
+				}
 			}
 			set_global_flag = KNT_landing_tank_introduced
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_transport_airship_introduction = {
-	days_remove = 175
-	visible = {
+		days_remove = 175
+		visible = {
 			NOT = { has_global_flag = KNT_transport_airship_introduced }
+			KNT = {
+				has_completed_focus	= KNT_airships'_renaissance
+			}
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_airships'_renaissance
-			}
-		}
-		visible = {
-				KNT = {
 				has_completed_focus	= KNT_airships'_renaissance
 			}
 		}
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.13
+					days = 1
+					id = KNT_event.13
 				}
 			}
 			
 			KNT = {
 				country_event = {
-				days = 35
-				id = KNT_event.41
+					days = 35
+					id = KNT_event.41
 				}
 			}
-		}
+		}	
 		remove_effect = {
-					KNT = {
-					set_technology = {
+			KNT = {
+				set_technology = {
 					transport_airship = 1
-					}
+				}
 			}
 			set_global_flag = KNT_transport_airship_introduced
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_power_armor_weapon_introduction = {
-	days_remove = 75
-	visible = {
+		days_remove = 75
+		visible = {
 			NOT = { has_global_flag = KNT_power_armor_weapon_introduced }
+			KNT = {
+				has_completed_focus	= KNT_experimental_forces
+			}
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_experimental_forces
-			}
-		}
-		visible = {
-				KNT = {
 				has_completed_focus	= KNT_experimental_forces
 			}
 		}
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.13
+					days = 1
+					id = KNT_event.13
 				}
 			}
 		}
 		remove_effect = {
-					KNT = {
-					set_technology = {
+			KNT = {
+				set_technology = {
 					power_armor_weapon = 1
-					}
+				}
 			}
 			set_global_flag = KNT_power_armor_weapon_introduced
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_exosuit_brigade_introduction = {
-	days_remove = 125
-	visible = {
-			NOT = { has_global_flag = KNT_exosuit_brigade_introduced }
-		}
-		available = {
-			KNT = {
-			has_completed_focus	= KNT_experimental_forces
-			}
-		}
+		days_remove = 125
 		visible = {
-				KNT = {
+			NOT = { has_global_flag = KNT_exosuit_brigade_introduced }
+			KNT = {
 				has_completed_focus	= KNT_experimental_forces
 			}
 		}
+		available = {
+			KNT = {
+				has_completed_focus	= KNT_experimental_forces
+			}
+		}
+
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.12
+					days = 1
+					id = KNT_event.12
 				}
 			}
 		}
@@ -1854,128 +1927,132 @@ KNT_special_projects = {
 					}
 			}
 			set_global_flag = KNT_exosuit_brigade_introduced
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 	
 	KNT_jetpack_brigade_introduction = {
-	days_remove = 125
-	visible = {
+		days_remove = 125
+		visible = {
 			NOT = { has_global_flag = KNT_jetpack_brigade_introduced }
+			KNT = {
+				has_completed_focus	= KNT_experimental_forces
+			}
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_experimental_forces
-			}
-		}
-		visible = {
-				KNT = {
 				has_completed_focus	= KNT_experimental_forces
 			}
 		}
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.12
+					days = 1
+					id = KNT_event.12
 				}
 			}
 		}
 		remove_effect = {
-					KNT = {
-					set_technology = {
+			KNT = {
+				set_technology = {
 					jetpack_brigade = 1
-					}
+				}
 			}
 			set_global_flag = KNT_jetpack_brigade_introduced
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 	
 	KNT_rubber_bomb_introduction = {
-	days_remove = 100
-	visible = {
+		days_remove = 100
+		visible = {
 			NOT = { has_global_flag = KNT_rubber_bomb_introduced }
+			KNT = {
+				has_completed_focus	= KNT_strike_from_above
+			}
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_strike_from_above
-			}
-		}
-		visible = {
-				KNT = {
 				has_completed_focus	= KNT_strike_from_above
 			}
 		}
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.12
+					days = 1
+					id = KNT_event.12
 				}
 			}
 		}
-		remove_effect = {
-					KNT = {
-					set_technology = {
+		remove_effect = {C
+			KNT = {
+				set_technology = {
 					rubber_bomb = 1
-					}
+				}
 			}
 			set_global_flag = KNT_rubber_bomb_introduced
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}			
 	}
 	
 	KNT_DU_ammo_introduction = {
-	days_remove = 100
-	visible = {
+		days_remove = 100
+		visible = {
 			NOT = { has_global_flag = KNT_DU_ammo_introduced }
+			KNT = {
+				has_completed_focus	= KNT_strike_from_above
+			}
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_strike_from_above
-			}
-		}
-		visible = {
-				KNT = {
 				has_completed_focus	= KNT_strike_from_above
 			}
 		}
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.12
+					days = 1
+					id = KNT_event.12
 				}
 			}
 		}
 		remove_effect = {
-					KNT = {
-					set_technology = {
+			KNT = {
+				set_technology = {
 					DU_ammo = 1
-					}
+				}
 			}
 			set_global_flag = KNT_DU_ammo_introduced
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_suicide_drones_introduction = {
-	days_remove = 65
-	visible = {
+		days_remove = 65
+		visible = {
 			NOT = { has_global_flag = KNT_suicide_drones_introduced }
+			KNT = {
+				has_completed_focus	= KNT_experimental_forces
+			}
 		}
 		available = {
 			KNT = {
-			has_completed_focus	= KNT_experimental_forces
-			}
-		}
-		visible = {
-				KNT = {
 				has_completed_focus	= KNT_experimental_forces
 			}
 		}
 		complete_effect = {
 			KNT = {
 				country_event = {
-				days = 1
-				id = KNT_event.26
+					days = 1
+					id = KNT_event.26
 				}
 			}
 		}
@@ -1986,40 +2063,44 @@ KNT_special_projects = {
 					}
 			}
 			set_global_flag = KNT_suicide_drones_introduced
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 	
 	KNT_supercannons_introduction = {
-	days_remove = 225
-	visible = {
-			NOT = { has_global_flag = KNT_supercannons_introduced }
-		}
-		available = {
-			KNT = {
-			has_completed_focus	= KNT_strike_from_above
-			}
-		}
+		days_remove = 225
 		visible = {
-				KNT = {
+			NOT = { has_global_flag = KNT_supercannons_introduced }
+			KNT = {
 				has_completed_focus	= KNT_strike_from_above
 			}
 		}
-		complete_effect = {
+		available = {
 			KNT = {
-				country_event = {
-				days = 1
-				id = KNT_event.13
+				has_completed_focus	= KNT_strike_from_above
+			}													
+			complete_effect = {
+				KNT = {
+					country_event = {
+						days = 1
+						id = KNT_event.13
+					}
 				}
 			}
 		}
 		remove_effect = {
-					KNT = {
-					set_technology = {
+			KNT = {
+				set_technology = {
 					supercannons = 1
-					}
+				}
 			}
 			set_global_flag = KNT_supercannons_introduced
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 }
 
@@ -2046,6 +2127,9 @@ KNT_thermonuclear_reactor = {
 			}
 		    set_global_flag = KNT_main_engineers_harbored
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_resources_redistribution = {
@@ -2069,6 +2153,9 @@ KNT_thermonuclear_reactor = {
 				max = 1000
 			}
 			set_global_flag = recently_distributed_resources
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -2096,6 +2183,9 @@ KNT_thermonuclear_reactor = {
 				max = 1000
 			}
 			set_global_flag = recently_hired_building_companies
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -2125,6 +2215,9 @@ KNT_thermonuclear_reactor = {
 			clr_global_flag	= workers_hired
 			add_manpower = 1500
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_hire_more_engineers = {
@@ -2151,6 +2244,9 @@ KNT_thermonuclear_reactor = {
 		}
 		remove_effect = {
 			clr_global_flag	= engineers_hired
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -2203,6 +2299,9 @@ KNT_thermonuclear_reactor = {
 					max = 1000
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -2304,6 +2403,9 @@ KNT_thermonuclear_reactor = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_finish_the_iter_project = {
@@ -2338,6 +2440,9 @@ KNT_thermonuclear_reactor = {
 					}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 }
 
@@ -2371,7 +2476,10 @@ KNT_cultural_progress = {
 				var = KNT_culture_people_support
 				value = 5
 			}	
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 	
 	KNT_host_cultural_festival = {
@@ -2408,6 +2516,9 @@ KNT_cultural_progress = {
 				max = 250
 			}			
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
     KNT_people_rioting = {                           
         allowed = { tag = KNT }                 
@@ -2440,6 +2551,9 @@ KNT_cultural_progress = {
 				value = 1
 			}
         }
+		ai_will_do = {
+			factor = 100
+		}
     }
 ###DESTROY BUILDINGS###
 	KNT_destroy_redrock_stockport = {
@@ -2472,6 +2586,9 @@ KNT_cultural_progress = {
 		remove_effect = {
 
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_destroy_greetham_street = {
 		cost = 10	
@@ -2503,6 +2620,9 @@ KNT_cultural_progress = {
 		remove_effect = {
 
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_destroy_haydn_tower = {
 		cost = 10	
@@ -2534,6 +2654,9 @@ KNT_cultural_progress = {
 		remove_effect = {
 
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_destroy_strata_se1 = {
 		cost = 10	
@@ -2565,6 +2688,9 @@ KNT_cultural_progress = {
 		remove_effect = {
 
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_destroy_lincoln_tower = {
 		cost = 10	
@@ -2596,6 +2722,9 @@ KNT_cultural_progress = {
 		remove_effect = {
 
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_destroy_cutty_sark = {
 		cost = 10	
@@ -2626,7 +2755,10 @@ KNT_cultural_progress = {
 		}
 		remove_effect = {
 
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 	KNT_destroy_fenchurch_buidling = {
 		cost = 10	
@@ -2658,6 +2790,9 @@ KNT_cultural_progress = {
 		remove_effect = {
 
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_destroy_trellick_tower = {
 		cost = 10	
@@ -2688,7 +2823,10 @@ KNT_cultural_progress = {
 		}
 		remove_effect = {
 
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 	KNT_destroy_cumbernauld_town_centre = {
 		cost = 10	
@@ -2720,6 +2858,9 @@ KNT_cultural_progress = {
 		remove_effect = {
 
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_destroy_battersea_power_station = {
 		cost = 10	
@@ -2751,6 +2892,9 @@ KNT_cultural_progress = {
 		remove_effect = {
 
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_destroy_megacity_uk = {
 		cost = 10	
@@ -2782,6 +2926,9 @@ KNT_cultural_progress = {
 		remove_effect = {
 
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_destroy_drake_circus = {
 		cost = 10	
@@ -2812,7 +2959,10 @@ KNT_cultural_progress = {
 		}
 		remove_effect = {
 
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 	KNT_destroy_pier_head_ferry_terminal = {
 		cost = 10	
@@ -2844,6 +2994,9 @@ KNT_cultural_progress = {
 		remove_effect = {
 
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_destroy_welsh_shed = {
 		cost = 10	
@@ -2875,6 +3028,9 @@ KNT_cultural_progress = {
 		remove_effect = {
 
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 ###Our Burden###
 	KNT_conduct_a_military_parade = {
@@ -2908,7 +3064,10 @@ KNT_cultural_progress = {
 				var = KNT_culture_progress
 				value = 8
 			}				
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 ###Heroism over Hedonism##
 	KNT_shoot_patriotic_movies = {
@@ -2944,6 +3103,9 @@ KNT_cultural_progress = {
 				value = 8
 			}				
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_youth_education_programs = {
 		cost = 50
@@ -2972,7 +3134,10 @@ KNT_cultural_progress = {
 				var = KNT_culture_effectiveness_factor
 				value = 2
 			}				
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 	KNT_imprison_journalists = {
 		cost = 25
@@ -3001,7 +3166,10 @@ KNT_cultural_progress = {
 				var = KNT_culture_progress
 				value = 8
 			}				
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 	KNT_ban_videogames = {
 		cost = 10
@@ -3030,7 +3198,10 @@ KNT_cultural_progress = {
 				var = KNT_culture_people_support
 				value = -8
 			}				
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 	###DEPOPULATE###
 	KNT_depopulate_london = {
@@ -3075,6 +3246,9 @@ KNT_cultural_progress = {
 				value = 6
 			}			
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_depopulate_sussex = {
 		cost = 75
@@ -3118,6 +3292,9 @@ KNT_cultural_progress = {
 				value = 6
 			}			
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_depopulate_bristol = {
 		cost = 75
@@ -3160,7 +3337,10 @@ KNT_cultural_progress = {
 				var = KNT_culture_progress
 				value = 6
 			}			
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 	KNT_depopulate_birmingham = {
 		cost = 75
@@ -3204,6 +3384,9 @@ KNT_cultural_progress = {
 				value = 6
 			}			
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_depopulate_sheffield = {
 		cost = 75
@@ -3247,6 +3430,9 @@ KNT_cultural_progress = {
 				value = 6
 			}			
 		}	
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_depopulate_manchester = {
 		cost = 75
@@ -3289,7 +3475,10 @@ KNT_cultural_progress = {
 				var = KNT_culture_progress
 				value = 6
 			}			
-		}	
+		}
+		ai_will_do = {
+			factor = 100
+		}		
 	}
 }
 
@@ -3308,6 +3497,9 @@ KNT_sabotages = {
 		}
         complete_effect = {
             add_command_power = -15
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -3332,6 +3524,9 @@ KNT_sabotages = {
 				days = 20
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -3386,6 +3581,9 @@ KNT_sabotages = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 }	
 
@@ -3414,6 +3612,9 @@ KNT_air_strikes = {
 				air_fuel_consumption_factor = 0.2
 			}	
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_electromagnetic_shock_waves = {
@@ -3440,6 +3641,9 @@ KNT_air_strikes = {
 				air_fuel_consumption_factor = 0.2
 				air_cas_efficiency = 0.2
 			}	
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -3468,14 +3672,17 @@ KNT_air_strikes = {
 				air_cas_efficiency = 0.2
 			}	
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 }
 
 KNT_essex_diplomacy = {
     KNT_sell_power_armor = {
-			cost = 0
-			days_remove = 25
-			days_re_enable = 60
+		cost = 0
+		days_remove = 25
+		days_re_enable = 60
 		available = {
 			has_tech = power_armor_weapon
 			has_equipment = { power_armor_weapon_equipment_1 > 100 }
@@ -3512,12 +3719,15 @@ KNT_essex_diplomacy = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_sell_suicide_drones = {
-			cost = 0
-			days_remove = 25
-			days_re_enable = 60
+		cost = 0
+		days_remove = 25
+		days_re_enable = 60
 		available = {
 			has_tech = suicide_drones 
 			has_equipment = { suicide_drones_equipment_1 > 50 }
@@ -3542,12 +3752,15 @@ KNT_essex_diplomacy = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_sell_railguns = {
-			cost = 0
-			days_remove = 25
-			days_re_enable = 60
+		cost = 0
+		days_remove = 25
+		days_re_enable = 60
 		available = {
 			has_tech = railgun 
 			has_equipment = { railgun_equipment_1 > 75 }
@@ -3572,12 +3785,15 @@ KNT_essex_diplomacy = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_sell_evangelions = {
-			cost = 0
-			days_remove = 35
-			days_re_enable = 75
+		cost = 0
+		days_remove = 35
+		days_re_enable = 75
 		available = {
 			has_tech = evangelion 
 			has_equipment = { evangelion_equipment_1 > 15 }
@@ -3614,13 +3830,15 @@ KNT_essex_diplomacy = {
 				}
 			}
 		}
-		
+		ai_will_do = {
+			factor = 100
+		}	
 	}
 	
 	KNT_sell_supercannons = {
-			cost = 0
-			days_remove = 35
-			days_re_enable = 75
+		cost = 0
+		days_remove = 35
+		days_re_enable = 75
 		available = {
 			has_tech = supercannons 
 			has_equipment = { supercannons_equipment_1 > 20 }
@@ -3657,12 +3875,15 @@ KNT_essex_diplomacy = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_sell_unmanned_tanks = {
-			cost = 0
-			days_remove = 25
-			days_re_enable = 65
+		cost = 0
+		days_remove = 25
+		days_re_enable = 65
 		available = {
 			has_tech = unmanned_tank 
 			has_equipment = { unmanned_tank_equipment_1 > 50 }
@@ -3700,6 +3921,9 @@ KNT_essex_diplomacy = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_sell_any_technology = {
@@ -3713,6 +3937,9 @@ KNT_essex_diplomacy = {
 					id = KNT_event.42
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 }
@@ -3738,6 +3965,9 @@ KNT_east_anglia_diplomacy  = {
 				transfer_state = 1160
 			}
         }
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_nigel_farage_rally = {
@@ -3748,6 +3978,9 @@ KNT_east_anglia_diplomacy  = {
 			add_to_variable = { var = kent_popularity_london value = 6 }
 		}
 		available = { has_completed_focus = KNT_london_referendum }
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_bbs_adverts = {
@@ -3758,6 +3991,9 @@ KNT_east_anglia_diplomacy  = {
 			add_to_variable = { var = kent_popularity_london value = 7 }
 		}
 		available = { has_completed_focus = KNT_london_referendum }
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_nationalist_votes = {
@@ -3768,6 +4004,9 @@ KNT_east_anglia_diplomacy  = {
 			add_to_variable = { var = kent_popularity_london value = 8 }
 		}
 		available = { has_completed_focus = KNT_london_referendum }
+		ai_will_do = {
+			factor = 100
+		}
 	}
 }
 
@@ -3781,6 +4020,9 @@ KNT_mercia_diplomacy = {
         complete_effect = {
             add_to_variable = { var = pearce_trust value = 6 }
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_pearce_visits_bases = {
@@ -3791,6 +4033,9 @@ KNT_mercia_diplomacy = {
 		modifier = { political_power_gain = -0.1 }
         complete_effect = {
             add_to_variable = { var = pearce_trust value = 6 }
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -3803,6 +4048,9 @@ KNT_mercia_diplomacy = {
         complete_effect = {
             add_to_variable = { var = pearce_trust value = 6 }
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_supply_mercia_markets = {
@@ -3813,6 +4061,9 @@ KNT_mercia_diplomacy = {
 		modifier = { consumer_goods_factor = -0.05 }
         complete_effect = {
             add_to_variable = { var = pearce_trust value = 6 }
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -3838,6 +4089,9 @@ KNT_mercia_diplomacy = {
 				}
 			}
         }
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_distribute_lands = {
@@ -3857,6 +4111,9 @@ KNT_mercia_diplomacy = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_organise_militias = {
@@ -3872,6 +4129,9 @@ KNT_mercia_diplomacy = {
 			add_command_power = -25
 		}
 		modifier = { war_support_weekly_factor = 0.06 }
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_build_churches = {
@@ -3885,6 +4145,9 @@ KNT_mercia_diplomacy = {
             add_to_variable = { var = tradness_kent_lvl value = 6 }
 		}
 		modifier = { stability_weekly = 0.06 }
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_christian_radio_podcasts = {
@@ -3898,6 +4161,9 @@ KNT_mercia_diplomacy = {
             add_to_variable = { var = tradness_kent_lvl value = 5 }
 		}
 		modifier = { millenarism_drift = 0.01 }
+		ai_will_do = {
+			factor = 100
+		}
 	}
 }
 
@@ -3915,6 +4181,9 @@ KNT_wars = {
 			type = annex_everything
 			}	
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_war_on_east_anglia = {
@@ -3929,6 +4198,9 @@ KNT_wars = {
 			target = EAG
 			type = annex_everything
 			}	
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -3945,6 +4217,9 @@ KNT_wars = {
 			type = annex_everything
 			}	
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_war_on_sussex = {
@@ -3960,6 +4235,9 @@ KNT_wars = {
 			type = annex_everything
 			}	
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_war_on_wessex = {
@@ -3974,6 +4252,9 @@ KNT_wars = {
 			target = WES
 			type = annex_everything
 			}	
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -3993,6 +4274,9 @@ KNT_wars = {
 			target = NTH
 			type = annex_everything
 			}	
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -4015,6 +4299,9 @@ KNT_wars = {
 			type = annex_everything
 			}	
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_war_on_scotland = {
@@ -4035,6 +4322,9 @@ KNT_wars = {
 			target = SCO
 			type = annex_everything
 			}	
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 }
@@ -4061,6 +4351,9 @@ KNT_international_aid = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_german_aid = {
@@ -4078,6 +4371,9 @@ KNT_international_aid = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_american_aid = {
@@ -4091,6 +4387,9 @@ KNT_international_aid = {
 				id = KNT_event.54
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -4109,6 +4408,9 @@ KNT_international_aid = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_dutch_aid = {
@@ -4125,6 +4427,9 @@ KNT_international_aid = {
 				id = KNT_event.56
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 }
@@ -4164,6 +4469,9 @@ KNT_britain_cores = {
 			1001 = {
 			    add_compliance = 10
             }
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_resistance_coring_sussex = {
@@ -4206,6 +4514,9 @@ KNT_britain_cores = {
 			    add_resistance = -5
             }
 			add_manpower = -250
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_coring_sussex = {
@@ -4254,6 +4565,9 @@ KNT_britain_cores = {
 			log = "[GetDateText]: [Root.GetName]: Decision KNT_coring_sussex"
 			add_state_core = 1001
 			add_state_core = 1156
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -4323,6 +4637,9 @@ KNT_britain_cores = {
 			1018 = {
 			    add_compliance = 10
             }
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_resistance_coring_wessex = {
@@ -4397,6 +4714,9 @@ KNT_britain_cores = {
 			    add_resistance = -5
             }
 			add_manpower = -250
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_coring_wessex = {
@@ -4491,6 +4811,9 @@ KNT_britain_cores = {
 			add_state_core = 1018
 			add_state_core = 1000
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_compliance_coring_cornwall = {
@@ -4527,6 +4850,9 @@ KNT_britain_cores = {
 			998 = {
 			    add_compliance = 10
             }
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_resistance_coring_cornwall = {
@@ -4569,6 +4895,9 @@ KNT_britain_cores = {
 			    add_resistance = -5
             }
 			add_manpower = -250
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_coring_cornwall = {
@@ -4618,6 +4947,9 @@ KNT_britain_cores = {
 			add_state_core = 999
 			add_state_core = 998
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_compliance_coring_london = {
@@ -4662,6 +4994,9 @@ KNT_britain_cores = {
 			1158 = {
 			    add_compliance = 10
             }
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_resistance_coring_london = {
@@ -4712,6 +5047,9 @@ KNT_britain_cores = {
 			    add_resistance = -5
             }
 			add_manpower = -250
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_coring_london = {
@@ -4773,6 +5111,9 @@ KNT_britain_cores = {
 			add_state_core = 1159
 			add_state_core = 1158
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_compliance_coring_essex = {
 		icon = GFX_decision_generic_form_nation
@@ -4808,6 +5149,9 @@ KNT_britain_cores = {
 			1003 = {
 			    add_compliance = 10
             }
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_resistance_coring_essex = {
@@ -4850,6 +5194,9 @@ KNT_britain_cores = {
 			    add_resistance = -5
             }
 			add_manpower = -250
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_coring_essex = {
@@ -4899,6 +5246,9 @@ KNT_britain_cores = {
 			add_state_core = 1157
 			add_state_core = 1003
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_compliance_coring_east_anglia = {
@@ -4935,6 +5285,9 @@ KNT_britain_cores = {
 			1143 = {
 			    add_compliance = 10
             }
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_resistance_coring_east_anglia = {
@@ -4977,6 +5330,9 @@ KNT_britain_cores = {
 			    add_resistance = -5
             }
 			add_manpower = -250
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_coring_east_anglia = {
@@ -5025,6 +5381,9 @@ KNT_britain_cores = {
 			log = "[GetDateText]: [Root.GetName]: Decision KNT_coring_east_anglia"
 			add_state_core = 1004
 			add_state_core = 1143
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_compliance_coring_west_midlands = {
@@ -5077,6 +5436,9 @@ KNT_britain_cores = {
 			1151 = {
 			    add_compliance = 10
             }
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_resistance_coring_west_midlands = {
@@ -5135,6 +5497,9 @@ KNT_britain_cores = {
 			    add_resistance = -5
             }
 			add_manpower = -250
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_coring_west_midlands = {
@@ -5208,6 +5573,9 @@ KNT_britain_cores = {
 			add_state_core = 1146
 			add_state_core = 1151
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_compliance_coring_east_midlands = {
 		icon = GFX_decision_generic_form_nation
@@ -5259,6 +5627,9 @@ KNT_britain_cores = {
 			1005 = {
 			    add_compliance = 10
             }
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_resistance_coring_east_midlands = {
@@ -5317,6 +5688,9 @@ KNT_britain_cores = {
 			    add_resistance = -5
             }
 			add_manpower = -250
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_coring_east_midlands = {
@@ -5390,6 +5764,9 @@ KNT_britain_cores = {
 			add_state_core = 1144
 			add_state_core = 1005
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_compliance_coring_northwest_england = {
 		icon = GFX_decision_generic_form_nation
@@ -5425,6 +5802,9 @@ KNT_britain_cores = {
 			1145 = {
 			    add_compliance = 10
             }
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_resistance_coring_northwest_england = {
@@ -5467,6 +5847,9 @@ KNT_britain_cores = {
 			    add_resistance = -5
             }
 			add_manpower = -250
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_coring_northwest_england = {
@@ -5516,6 +5899,9 @@ KNT_britain_cores = {
 			add_state_core = 1009
 			add_state_core = 1145
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_compliance_coring_yorkshire = {
 		icon = GFX_decision_generic_form_nation
@@ -5543,6 +5929,9 @@ KNT_britain_cores = {
 			1010 = {
 			    add_compliance = 10
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_resistance_coring_yorkshire = {
@@ -5577,6 +5966,9 @@ KNT_britain_cores = {
 			    add_resistance = -5
 			}
 			add_manpower = -250
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_coring_yorkshire = {
@@ -5613,6 +6005,9 @@ KNT_britain_cores = {
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision KNT_coring_yorkshire"
 			add_state_core = 1010
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -5666,6 +6061,9 @@ KNT_britain_cores = {
 			1147 = {
 			    add_compliance = 10
             }
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_resistance_coring_wales = {
@@ -5724,6 +6122,9 @@ KNT_britain_cores = {
 			    add_resistance = -5
             }
 			add_manpower = -250
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_coring_wales = {
@@ -5797,9 +6198,10 @@ KNT_britain_cores = {
 			add_state_core = 1150
 			add_state_core = 1147
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
-	
-	
 }
 
 KNT_selling_shit = {
@@ -5835,6 +6237,9 @@ KNT_selling_shit = {
 				add_offsite_building = { type = industrial_complex level = 1 }
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_selling_airguns = {
@@ -5868,6 +6273,9 @@ KNT_selling_shit = {
 			KNT = {
 				add_offsite_building = { type = industrial_complex level = 1 }
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -5909,6 +6317,9 @@ KNT_selling_shit = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_selling_transport_airships = {
@@ -5942,6 +6353,9 @@ KNT_selling_shit = {
 			KNT = {
 				add_offsite_building = { type = industrial_complex level = 1 }
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -5977,6 +6391,9 @@ KNT_selling_shit = {
 				add_offsite_building = { type = arms_factory level = 1 }
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_selling_unmanned_tanks = {
@@ -6010,6 +6427,9 @@ KNT_selling_shit = {
 			KNT = {
 				add_offsite_building = { type = arms_factory level = 1 }
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -6051,6 +6471,9 @@ KNT_selling_shit = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_selling_suicide_drones = {
@@ -6085,6 +6508,9 @@ KNT_selling_shit = {
 				add_offsite_building = { type = arms_factory level = 1 }
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_selling_construction_materials = {
@@ -6101,6 +6527,9 @@ KNT_selling_shit = {
 			KNT = {
 				add_offsite_building = { type = industrial_complex level = 1 }
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -6119,6 +6548,9 @@ KNT_selling_shit = {
 				add_offsite_building = { type = arms_factory level = 1 }
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_selling_consumer_goods = {
@@ -6135,6 +6567,9 @@ KNT_selling_shit = {
 			KNT = {
 				add_offsite_building = { type = industrial_complex level = 1 }
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -6159,6 +6594,9 @@ KNT_selling_shit = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_selling_coal_and_steel = {
@@ -6175,6 +6613,9 @@ KNT_selling_shit = {
 			KNT = {
 				add_offsite_building = { type = arms_factory level = 1 }
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -6212,6 +6653,9 @@ KNT_selling_shit = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 }
 
@@ -6243,6 +6687,7 @@ KNT_exhibition_preparation = {
 				}
 			}
         }
+
 	}
 	
 	KNT_build_pavilion = {
@@ -6256,6 +6701,9 @@ KNT_exhibition_preparation = {
 			civilian_factory_use = 2
 		}
 		available = { has_completed_focus = KNT_the_great_exhibition }
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_send_civil_manufacturers = {
@@ -6272,22 +6720,8 @@ KNT_exhibition_preparation = {
 		visible = { 
 			has_active_mission = KNT_exhibition_mission 
 		}
-	}
-	
-	KNT_send_mic_manufacturers = {
-		cost = 15
-		days_remove = 6
-		days_re_enable = 5
-		complete_effect = {
-			add_to_variable = { var = kent_exhibition_preparedness value = 7 }
-		}
-		modifier = {
-			production_factory_max_efficiency_factor = -0.15
-			production_factory_efficiency_gain_factor = -0.1
-		}
-		available = { has_completed_focus = KNT_the_great_exhibition }
-		visible = { 
-			has_active_mission = KNT_exhibition_mission 
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -6305,6 +6739,29 @@ KNT_exhibition_preparation = {
 		available = { has_completed_focus = KNT_the_great_exhibition }
 		visible = { 
 			has_active_mission = KNT_exhibition_mission 
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	KNT_send_mic_manufacturers = {
+		cost = 15
+		days_remove = 6
+		days_re_enable = 5
+		complete_effect = {
+			add_to_variable = { var = kent_exhibition_preparedness value = 7 }
+		}
+		modifier = {
+			production_factory_max_efficiency_factor = -0.15
+			production_factory_efficiency_gain_factor = -0.1
+		}
+		available = { has_completed_focus = KNT_the_great_exhibition }
+		visible = { 
+			has_active_mission = KNT_exhibition_mission 
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -6322,6 +6779,9 @@ KNT_exhibition_preparation = {
 		visible = { 
 			has_active_mission = KNT_exhibition_mission 
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_clean_the_london = {
@@ -6337,6 +6797,9 @@ KNT_exhibition_preparation = {
 		available = { has_completed_focus = KNT_the_great_exhibition }
 		visible = { 
 			has_active_mission = KNT_exhibition_mission 
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -6355,6 +6818,9 @@ KNT_exhibition_preparation = {
 		available = { has_completed_focus = KNT_the_great_exhibition }
 		visible = { 
 			has_active_mission = KNT_exhibition_mission 
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -6375,6 +6841,9 @@ KNT_exhibition_preparation = {
 			country_exists = GER 
 			has_active_mission = KNT_exhibition_mission 
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_invite_bosnians = {
@@ -6393,6 +6862,9 @@ KNT_exhibition_preparation = {
 		visible = {
 			country_exists = BOS 
 			has_active_mission = KNT_exhibition_mission 
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	
@@ -6413,6 +6885,9 @@ KNT_exhibition_preparation = {
 			country_exists = HOL 
 			has_active_mission = KNT_exhibition_mission 
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_invite_iraqis = {
@@ -6432,6 +6907,9 @@ KNT_exhibition_preparation = {
 			country_exists = IRQ 
 			has_active_mission = KNT_exhibition_mission 
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
 	KNT_invite_lybians = {
@@ -6450,6 +6928,9 @@ KNT_exhibition_preparation = {
 		visible = {
 			country_exists = UAS 
 			has_active_mission = KNT_exhibition_mission 
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 }
@@ -6500,6 +6981,9 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 ###Reforging Britain###
 	KNT_rebuild_sussex = {
@@ -6528,6 +7012,9 @@ KNT_britain_pacification  = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_reforging_britain	
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_rebuild_wessex = {
 		cost = 75
@@ -6554,6 +7041,9 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_reforging_britain	
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_rebuild_east_anglia = {
@@ -6582,6 +7072,9 @@ KNT_britain_pacification  = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_reforging_britain	
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_rebuild_mercia = {
 		cost = 75
@@ -6608,6 +7101,9 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_reforging_britain	
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 ###Reconstruction Effort###
@@ -6637,6 +7133,9 @@ KNT_britain_pacification  = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_reconstruction_effort
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_pacify_wales = {
 		cost = 75
@@ -6664,6 +7163,9 @@ KNT_britain_pacification  = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_reconstruction_effort
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_pacify_ireland  = {
 		cost = 75
@@ -6690,6 +7192,9 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_reconstruction_effort
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 ###REBUILD LONDON###
@@ -6726,6 +7231,9 @@ KNT_britain_pacification  = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_london_recovery
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_rebuild_westminster = {
 		cost = 75
@@ -6759,6 +7267,9 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_london_recovery
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_rebuild_buckingham_palace = {
@@ -6794,6 +7305,9 @@ KNT_britain_pacification  = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_london_recovery
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 ###THATCHER###
 	KNT_normal_wages  = {
@@ -6821,6 +7335,9 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_thatcher's_mistakes
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 ###PACIFY###
@@ -6870,6 +7387,9 @@ KNT_britain_pacification  = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_peace_through_the_faith
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_propaganda_in_the_north = {
 		cost = 75
@@ -6889,6 +7409,9 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_peace_through_the_faith
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_propaganda_in_the_west = {
@@ -6910,6 +7433,9 @@ KNT_britain_pacification  = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_peace_through_the_faith
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	KNT_propaganda_in_the_east = {
 		cost = 75
@@ -6929,6 +7455,9 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_peace_through_the_faith
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	KNT_propaganda_in_the_republics = {
@@ -6954,6 +7483,9 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_peace_through_the_faith
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 ###MISSION###
@@ -7025,5 +7557,8 @@ KNT_britain_pacification  = {
 		complete_effect = {  
 			add_political_power = 50
         }
+		ai_will_do = {
+			factor = 100
+		}
 	}
 }
