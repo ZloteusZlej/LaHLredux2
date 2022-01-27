@@ -20,4 +20,70 @@ ideas = {
 			}
 		}
 	}
+	
+	naval_manufacturer = { 
+		designer = yes
+		
+		bae_systems_portsmouth = {
+			
+			cost = 100
+			
+			available = {
+				ROOT = {
+					owns_state = 1001
+				}
+			}
+			
+			visible = {
+				ROOT = {
+					owns_state = 1001
+				}
+			}
+			
+			equipment_bonus = {
+				screen_ship = {
+					build_cost_ic = -0.2
+					fire_range = 0.2
+					naval_range = 0.2
+					naval_speed = 0.1
+				}
+			}
+			
+			modifier = {
+				research_bonus = {
+					naval_equipment = 0.1
+				}
+				navy_screen_attack_factor = 0.15
+			}
+		}
+	}
+	
+	materiel_manufacturer = {
+		designer = yes
+		accuracy_international = {
+			cost = 100
+			
+			available = {
+				ROOT = {
+					owns_state = 1001
+				}
+			}
+			
+			visible = {
+				ROOT = {
+					owns_state = 1001
+				}
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.10
+					soft_attack = 0.2
+				}
+			}
+			modifier = {
+				army_defence_factor = 0.1
+			}
+		}
+	}
 }
