@@ -1,0 +1,161 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "lhl_WES_diplomacy_full"
+		size = { width = 1000 height = 500 }
+		position = { x = 100` y = 0 }
+		scale = 1.3
+		moveable = no
+		clipping = yes
+		
+		###Buttons###
+
+		##Portraits##
+		iconType = {
+			name ="background"
+			spriteType = "GFX_WES_tiled_peace_upper_bar"
+			position = { x=15 y=0 }
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "diplomacy_1_folder_tab"
+			position = { x = 20 y = 30 }
+			quadTextureSprite = "GFX_lhl_diplomacy_1"
+			frame = 1
+			clicksound = ui_research_tab_infantry
+		}
+		buttonType = {
+			name = "diplomacy_2_folder_tab"
+			position = { x = 113 y = 30 }
+			quadTextureSprite = "GFX_lhl_diplomacy_2"
+			frame = 1
+			clicksound = ui_research_tab_infantry
+		}
+		buttonType = {
+			name = "diplomacy_3_folder_tab"
+			position = { x = 207 y = 30 }
+			quadTextureSprite = "GFX_lhl_diplomacy_3"
+			frame = 1
+			clicksound = ui_research_tab_infantry
+		}
+		buttonType = {
+			name = "diplomacy_4_folder_tab"
+			position = { x = 300 y = 30 }
+			quadTextureSprite = "GFX_lhl_diplomacy_4"
+			frame = 1
+			clicksound = ui_research_tab_infantry
+		}
+		##EURASIAN CONNECTIONS##
+		buttonType = {
+			name ="WES_duginist_eurasia_diplomacy_button"
+			position = { x=35 y=100 }
+			quadTextureSprite = "GFX_WES_duginist_eurasia"
+			frame = 1
+			clicksound = ui_research_tab_infantry
+		}
+		instantTextboxType = {
+			name = "WES_duginist_eurasia_diplomacy_text"
+			position = { x = 50 y = 110 }
+			font = "hoi_12header"
+			text = "EURASIA"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name ="WES_sterlingov_manor_diplomacy_button"
+			position = { x=35 y=160 }
+			quadTextureSprite = "GFX_WES_sterlingov_manor"
+			frame = 1
+			clicksound = ui_research_tab_infantry
+		}
+		instantTextboxType = {
+			name = "WES_sterlingov_manor_diplomacy_text"
+			position = { x = 50 y = 170 }
+			font = "hoi_12header"
+			text = "STERLINGOV"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name ="WES_russian_volunteers_diplomacy_button"
+			position = { x=35 y=220 }
+			quadTextureSprite = "GFX_WES_russian_volunteer"
+			frame = 1
+			clicksound = ui_research_tab_infantry
+		}
+		instantTextboxType = {
+			name = "WES_russian_volunteers_text"
+			position = { x = 50 y = 230 }
+			font = "hoi_12header"
+			text = "RUSSIANS"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name ="WES_altai_volunteers_diplomacy_button"
+			position = { x=35 y=280 }
+			quadTextureSprite = "GFX_WES_altai_volunteers"
+			frame = 1
+			clicksound = ui_research_tab_infantry
+		}
+		instantTextboxType = {
+			name = "WES_altai_volunteers_diplomacy_text"
+			position = { x = 50 y = 290 }
+			font = "hoi_12header"
+			text = "ALTAI"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name ="WES_gazprom_diplomacy_button"
+			position = { x=35 y=340 }
+			quadTextureSprite = "GFX_WES_gazprom"
+			frame = 1
+			clicksound = ui_research_tab_infantry
+		}
+		instantTextboxType = {
+			name = "WES_gazprom_diplomacy_text"
+			position = { x = 50 y = 350 }
+			font = "hoi_12header"
+			text = "GAZPROM"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+	##MERCIAN KNIGHT##
+		iconType = {
+			name ="WES_diplomacy_george_image"
+			spriteType = "GFX_WES_diplomacy_george"
+			position = { x=30 y=100 }
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "WES_diplomacy_george_text"
+			position = { x = -70 y = 255 }
+			font = "hoi_12header"
+			text = "GEORGE VII"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="WES_diplomacy_douglas_image"
+			spriteType = "GFX_WES_diplomacy_douglas"
+			position = { x=260 y=100 }
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "WES_diplomacy_douglas_text"
+			position = { x = 162 y = 255 }
+			font = "hoi_12header"
+			text = "DOUGLAS PEARCE"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+	}
+}
