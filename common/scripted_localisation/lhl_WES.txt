@@ -71,3 +71,500 @@ defined_text = {
 		localization_key = WES_george_legitimacy_dead
 	}
 }
+
+defined_text = {
+	name = GetWessexGeorgeInfluence
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -71
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "0%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -70
+				compare = greater_than_or_equals			
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -60
+				compare = less_than				
+			}
+		}
+		localization_key = "2%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -60
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -50
+				compare = less_than				
+			}
+		}
+		localization_key = "8%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -50
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -40
+				compare = less_than				
+			}
+		}
+		localization_key = "15%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -40
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -30
+				compare = less_than				
+			}
+		}
+		localization_key = "22%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -30
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -20
+				compare = less_than				
+			}
+		}
+		localization_key = "29%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -20
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -10
+				compare = less_than				
+			}
+		}
+		localization_key = "36%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -10
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 0
+				compare = less_than				
+			}
+		}
+		localization_key = "43%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 0
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 10
+				compare = less_than				
+			}
+		}
+		localization_key = "50%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 10
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 20
+				compare = less_than				
+			}
+		}
+		localization_key = "57%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 20
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 30
+				compare = less_than				
+			}
+		}
+		localization_key = "64%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 30
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 40
+				compare = less_than				
+			}
+		}
+		localization_key = "71%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 40
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 50
+				compare = less_than				
+			}
+		}
+		localization_key = "78%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 50
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 60
+				compare = less_than				
+			}
+		}
+		localization_key = "85%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 60
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 70
+				compare = less_than				
+			}
+		}
+		localization_key = "92%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 70
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 80
+				compare = less_than				
+			}
+		}
+		localization_key = "98%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 80
+				compare = greater_than_or_equals				
+			}
+		}
+		localization_key = "100%"
+	}
+}
+defined_text = {
+	name = GetWessexDouglasInfluence
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -71
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "100%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -70
+				compare = greater_than_or_equals			
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -60
+				compare = less_than				
+			}
+		}
+		localization_key = "98%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -60
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -50
+				compare = less_than				
+			}
+		}
+		localization_key = "92%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -50
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -40
+				compare = less_than				
+			}
+		}
+		localization_key = "85%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -40
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -30
+				compare = less_than				
+			}
+		}
+		localization_key = "78%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -30
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -20
+				compare = less_than				
+			}
+		}
+		localization_key = "71%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -20
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -10
+				compare = less_than				
+			}
+		}
+		localization_key = "64%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -10
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 0
+				compare = less_than				
+			}
+		}
+		localization_key = "57%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 0
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 10
+				compare = less_than				
+			}
+		}
+		localization_key = "50%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 10
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 20
+				compare = less_than				
+			}
+		}
+		localization_key = "43%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 20
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 30
+				compare = less_than				
+			}
+		}
+		localization_key = "36%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 30
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 40
+				compare = less_than				
+			}
+		}
+		localization_key = "29%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 40
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 50
+				compare = less_than				
+			}
+		}
+		localization_key = "22%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 50
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 60
+				compare = less_than				
+			}
+		}
+		localization_key = "15%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 60
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 70
+				compare = less_than				
+			}
+		}
+		localization_key = "8%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 70
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 80
+				compare = less_than				
+			}
+		}
+		localization_key = "2%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 80
+				compare = greater_than_or_equals				
+			}
+		}
+		localization_key = "0%"
+	}
+}

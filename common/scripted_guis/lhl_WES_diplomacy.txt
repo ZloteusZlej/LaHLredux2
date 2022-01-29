@@ -35,6 +35,7 @@ scripted_gui = {
 			}
 		}
 		triggers = {
+		#EURASIA VISIBLE#
             WES_duginist_eurasia_diplomacy_button_visible = {
 				WES = {
 					has_country_flag = lhl_WES_diplomacy_1_open
@@ -83,6 +84,405 @@ scripted_gui = {
             WES_gazprom_diplomacy_text_visible = {
 				WES = {
 					has_country_flag = lhl_WES_diplomacy_1_open
+				}
+		    }
+		#MERCIA VISIBLE#
+            WES_diplomacy_george_image_visible = {
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_diplomacy_george_text_visible = {
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_diplomacy_douglas_image_visible = {
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_diplomacy_douglas_text_visible = {
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_influence_progress_bar_visible = {
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }	
+		#Douglas#
+            WES_douglas_bar_0_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 80
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_douglas_bar_1_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 70
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_douglas_bar_2_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 60
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_douglas_bar_3_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 50
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_douglas_bar_4_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 40
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_douglas_bar_5_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 30
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_douglas_bar_6_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 20
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_douglas_bar_7_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 10
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_douglas_bar_8_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 0
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_douglas_bar_9_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = -10
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_douglas_bar_10_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = -20
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_douglas_bar_11_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = -30
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_douglas_bar_12_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = -40
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_douglas_bar_13_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = -50
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_douglas_bar_14_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = -60
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_douglas_bar_15_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = -70
+					compare = less_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+		#George#
+            WES_george_bar_0_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 80
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_george_bar_1_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 70
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_george_bar_2_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 60
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_george_bar_3_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 50
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_george_bar_4_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 40
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_george_bar_5_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 30
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_george_bar_6_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 20
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_george_bar_7_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 10
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_george_bar_8_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 0
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_george_bar_9_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = -10
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_george_bar_10_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = -20
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_george_bar_11_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = -30
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_george_bar_12_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = -40
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_george_bar_13_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = -50
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_george_bar_14_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = -60
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+            WES_george_bar_15_visible = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = -70
+					compare = greater_than_or_equals				
+				}
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_2_open
+				}
+		    }
+		#ORTHODOX VISIBLE#
+            WES_athos_diplomacy_button_visible = {
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+            WES_athos_diplomacy_text_visible = {
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+            WES_ethiopia_diplomacy_button_visible = {
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+            WES_ethiopia_diplomacy_text_visible = {
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+            WES_greece_diplomacy_button_visible = {
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+            WES_greece_diplomacy_text_visible = {
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+            WES_romania_diplomacy_button_visible = {
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+            WES_romania_diplomacy_text_visible = {
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+            WES_serbia_diplomacy_button_visible = {
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+            WES_serbia_diplomacy_text_visible = {
+				WES = {
+					has_country_flag = lhl_WES_diplomacy_3_open
 				}
 		    }
 		}
