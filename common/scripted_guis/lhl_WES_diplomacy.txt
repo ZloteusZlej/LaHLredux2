@@ -9,25 +9,25 @@ scripted_gui = {
 			tag = WES
 		}
 		effects = {
-			diplomacy_1_folder_tab_click = {
+			WES_diplomacy_1_folder_tab_click = {
 					set_country_flag = lhl_WES_diplomacy_1_open
 					clr_country_flag = lhl_WES_diplomacy_2_open
 					clr_country_flag = lhl_WES_diplomacy_3_open
 					clr_country_flag = lhl_WES_diplomacy_4_open
 			}
-			diplomacy_2_folder_tab_click = {
+			WES_diplomacy_2_folder_tab_click = {
 					set_country_flag = lhl_WES_diplomacy_2_open
 					clr_country_flag = lhl_WES_diplomacy_1_open
 					clr_country_flag = lhl_WES_diplomacy_3_open
 					clr_country_flag = lhl_WES_diplomacy_4_open
 			}
-			diplomacy_3_folder_tab_click = {
+			WES_diplomacy_3_folder_tab_click = {
 					set_country_flag = lhl_WES_diplomacy_3_open
 					clr_country_flag = lhl_WES_diplomacy_1_open
 					clr_country_flag = lhl_WES_diplomacy_2_open
 					clr_country_flag = lhl_WES_diplomacy_4_open
 			}
-			diplomacy_4_folder_tab_click = {
+			WES_diplomacy_4_folder_tab_click = {
 					set_country_flag = lhl_WES_diplomacy_4_open
 					clr_country_flag = lhl_WES_diplomacy_1_open
 					clr_country_flag = lhl_WES_diplomacy_2_open
@@ -35,6 +35,27 @@ scripted_gui = {
 			}
 		}
 		triggers = {
+		#Buttons visible#
+            WES_diplomacy_1_folder_tab_visible = {
+				WES = {
+					has_country_flag = gay_death
+				}
+		    }
+            WES_diplomacy_2_folder_tab_visible = {
+				WES = {
+					has_country_flag = WES_diplomacy_douglas_open
+				}
+		    }
+            WES_diplomacy_3_folder_tab_visible = {
+				WES = {
+					has_country_flag = gay_death
+				}
+		    }
+            WES_diplomacy_4_folder_tab_visible = {
+				WES = {
+					has_country_flag = gay_death
+				}
+		    }			
 		#EURASIA VISIBLE#
             WES_duginist_eurasia_diplomacy_button_visible = {
 				WES = {

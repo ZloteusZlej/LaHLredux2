@@ -567,4 +567,26 @@ defined_text = {
 		}
 		localization_key = "0%"
 	}
+defined_text = {
+	name = GetWessexMonarchRussia
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_diplomacy_monarch_russia
+				value = 0
+				compare = equals				
+			}
+		}
+		localization_key = "WES_diplomacy_monarch_russia_no_king"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_diplomacy_monarch_russia
+				value = 1
+				compare = equals				
+			}
+		}
+		localization_key = "WES_diplomacy_monarch_russia_harry"
+	}
 }

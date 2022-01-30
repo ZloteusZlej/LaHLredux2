@@ -8,6 +8,7 @@ guiTypes = {
 		moveable = no
 		clipping = yes		
 		##Progress Bar##
+		##STOLEN SHIT##
 		#Douglas#
 			iconType = {
 				name ="WES_douglas_bar_0"
@@ -203,40 +204,40 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		##Folders##
-		iconType = {
-			name ="background"
-			spriteType = "GFX_WES_tiled_peace_upper_bar"
-			position = { x=15 y=0 }
-			alwaystransparent = yes
-		}
-		buttonType = {
-			name = "diplomacy_1_folder_tab"
-			position = { x = 20 y = 30 }
-			quadTextureSprite = "GFX_lhl_diplomacy_1"
-			frame = 1
-			clicksound = ui_research_tab_infantry
-		}
-		buttonType = {
-			name = "diplomacy_2_folder_tab"
-			position = { x = 113 y = 30 }
-			quadTextureSprite = "GFX_lhl_diplomacy_2"
-			frame = 1
-			clicksound = ui_research_tab_infantry
-		}
-		buttonType = {
-			name = "diplomacy_3_folder_tab"
-			position = { x = 207 y = 30 }
-			quadTextureSprite = "GFX_lhl_diplomacy_3"
-			frame = 1
-			clicksound = ui_research_tab_infantry
-		}
-		buttonType = {
-			name = "diplomacy_4_folder_tab"
-			position = { x = 300 y = 30 }
-			quadTextureSprite = "GFX_lhl_diplomacy_4"
-			frame = 1
-			clicksound = ui_research_tab_infantry
-		}
+			iconType = {
+				name ="background"
+				spriteType = "GFX_WES_tiled_peace_upper_bar"
+				position = { x=15 y=0 }
+				alwaystransparent = yes
+			}
+			buttonType = {
+				name = "WES_diplomacy_1_folder_tab"
+				position = { x = 20 y = 30 }
+				quadTextureSprite = "GFX_lhl_diplomacy_1"
+				frame = 1
+				clicksound = ui_research_tab_infantry
+			}
+			buttonType = {
+				name = "WES_diplomacy_2_folder_tab"
+				position = { x = 113 y = 30 }
+				quadTextureSprite = "GFX_lhl_diplomacy_2"
+				frame = 1
+				clicksound = ui_research_tab_infantry
+			}
+			buttonType = {
+				name = "WES_diplomacy_3_folder_tab"
+				position = { x = 207 y = 30 }
+				quadTextureSprite = "GFX_lhl_diplomacy_3"
+				frame = 1
+				clicksound = ui_research_tab_infantry
+			}
+			buttonType = {
+				name = "WES_diplomacy_4_folder_tab"
+				position = { x = 300 y = 30 }
+				quadTextureSprite = "GFX_lhl_diplomacy_4"
+				frame = 1
+				clicksound = ui_research_tab_infantry
+			}
 		##EURASIAN CONNECTIONS##
 		buttonType = {
 			name ="WES_duginist_eurasia_diplomacy_button"

@@ -198,7 +198,7 @@ shared_focus = {
 		    WES = {
 			    country_event = {
 				    days = 1
-					id = WES_event.7
+					id = WES_event.40
 				}
 			}
 		add_ideas = WES_Royal_military	
@@ -637,6 +637,12 @@ shared_focus = {
 	icon = GFX_goal_WES_knight_mercia
 	prerequisite = {
         focus = WES_arise_folk
+	}
+	completion_reward = {
+		WES = {
+			set_country_flag = WES_diplomacy_open
+			set_country_flag = WES_diplomacy_douglas_open
+		}
 	}
 	cost = 3.5
 	x = 34

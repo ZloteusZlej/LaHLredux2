@@ -14,6 +14,9 @@ WES_diplomacy = {
 	scripted_gui = lhl_WES_diplomacy_screen_body
 	allowed = { original_tag = WES }
 	visible_when_empty = yes
+	visible = {
+	    has_country_flag = WES_diplomacy_open	
+	}
 }
 
 WES_prisoners_of_war = {
