@@ -592,6 +592,12 @@ shared_focus = {
 	id = WES_orthodox_diplomacy
 	icon = GFX_goal_WES_orthodox_diplomacy
 	cost = 3.5
+	completion_reward = {
+		WES = {
+			set_country_flag = WES_diplomacy_open
+			set_country_flag = WES_diplomacy_orthodox_open
+		}
+	}
 	x = 25
 	y = 2
 }
@@ -626,6 +632,9 @@ shared_focus = {
 	}
 	prerequisite = {
         focus = WES_plead_help
+	}
+	completion_reward = {
+		set_country_flag = WES_diplomacy_eurasia_open
 	}
 	cost = 3.5
 	x = 25

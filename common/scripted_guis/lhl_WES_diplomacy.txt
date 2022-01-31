@@ -38,7 +38,7 @@ scripted_gui = {
 		#Buttons visible#
             WES_diplomacy_1_folder_tab_visible = {
 				WES = {
-					has_country_flag = gay_death
+					has_country_flag = WES_diplomacy_eurasia_open
 				}
 		    }
             WES_diplomacy_2_folder_tab_visible = {
@@ -48,63 +48,135 @@ scripted_gui = {
 		    }
             WES_diplomacy_3_folder_tab_visible = {
 				WES = {
-					has_country_flag = gay_death
+					has_country_flag = WES_diplomacy_orthodox_open
 				}
 		    }
             WES_diplomacy_4_folder_tab_visible = {
 				WES = {
 					has_country_flag = gay_death
 				}
-		    }			
+		    }	
+		#ORTHODOX VISIBLE#
+			WES_athos_diplomacy_button_visible = {
+				WES = {
+					has_completed_focus = WES_keepers_athos
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+			WES_athos_diplomacy_text_visible = {
+				WES = {
+					has_completed_focus = WES_keepers_athos
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+			WES_ethiopia_diplomacy_button_visible = {
+				WES = {
+					has_completed_focus = WES_orthodox_diplomacy
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+			WES_ethiopia_diplomacy_text_visible = {
+				WES = {
+					has_completed_focus = WES_orthodox_diplomacy
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+			WES_greece_diplomacy_button_visible = {
+				WES = {
+					has_completed_focus = WES_keepers_athos
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+			WES_greece_diplomacy_text_visible = {
+				WES = {
+					has_completed_focus = WES_keepers_athos
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+			WES_romania_diplomacy_button_visible = {
+				WES = {
+					has_completed_focus = WES_orthodox_diplomacy
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+			WES_romania_diplomacy_text_visible = {
+				WES = {
+					has_completed_focus = WES_orthodox_diplomacy
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+			WES_serbia_diplomacy_button_visible = {
+				WES = {
+					has_completed_focus = WES_keepers_athos
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+			WES_serbia_diplomacy_text_visible = {
+				WES = {
+					has_completed_focus = WES_keepers_athos
+					has_country_flag = lhl_WES_diplomacy_3_open
+				}
+		    }
+		#
 		#EURASIA VISIBLE#
             WES_duginist_eurasia_diplomacy_button_visible = {
 				WES = {
 					has_country_flag = lhl_WES_diplomacy_1_open
+					has_completed_focus = WES_eurasian_connections
 				}
 		    }
             WES_duginist_eurasia_diplomacy_text_visible = {
 				WES = {
 					has_country_flag = lhl_WES_diplomacy_1_open
+					has_completed_focus = WES_eurasian_connections
 				}
 		    }
             WES_sterlingov_manor_diplomacy_button_visible = {
 				WES = {
 					has_country_flag = lhl_WES_diplomacy_1_open
+					has_completed_focus = WES_eurasian_connections
 				}
 		    }
             WES_sterlingov_manor_diplomacy_text_visible = {
 				WES = {
 					has_country_flag = lhl_WES_diplomacy_1_open
+					has_completed_focus = WES_eurasian_connections
 				}
 		    }
             WES_russian_volunteers_diplomacy_button_visible = {
 				WES = {
 					has_country_flag = lhl_WES_diplomacy_1_open
+					has_completed_focus = WES_eurasian_connections
 				}
 		    }
             WES_russian_volunteers_text_visible = {
 				WES = {
 					has_country_flag = lhl_WES_diplomacy_1_open
+					has_completed_focus = WES_eurasian_connections
 				}
 		    }
             WES_altai_volunteers_diplomacy_button_visible = {
 				WES = {
 					has_country_flag = lhl_WES_diplomacy_1_open
+					has_completed_focus = WES_eurasian_connections
 				}
 		    }
             WES_altai_volunteers_diplomacy_text_visible = {
 				WES = {
 					has_country_flag = lhl_WES_diplomacy_1_open
+					has_completed_focus = WES_eurasian_connections
 				}
 		    }
             WES_gazprom_diplomacy_button_visible = {
 				WES = {
 					has_country_flag = lhl_WES_diplomacy_1_open
+					has_completed_focus = WES_eurasian_connections
 				}
 		    }
             WES_gazprom_diplomacy_text_visible = {
 				WES = {
 					has_country_flag = lhl_WES_diplomacy_1_open
+					has_completed_focus = WES_eurasian_connections
 				}
 		    }
 		#MERCIA VISIBLE#
@@ -453,57 +525,6 @@ scripted_gui = {
 				}
 				WES = {
 					has_country_flag = lhl_WES_diplomacy_2_open
-				}
-		    }
-		#ORTHODOX VISIBLE#
-            WES_athos_diplomacy_button_visible = {
-				WES = {
-					has_country_flag = lhl_WES_diplomacy_3_open
-				}
-		    }
-            WES_athos_diplomacy_text_visible = {
-				WES = {
-					has_country_flag = lhl_WES_diplomacy_3_open
-				}
-		    }
-            WES_ethiopia_diplomacy_button_visible = {
-				WES = {
-					has_country_flag = lhl_WES_diplomacy_3_open
-				}
-		    }
-            WES_ethiopia_diplomacy_text_visible = {
-				WES = {
-					has_country_flag = lhl_WES_diplomacy_3_open
-				}
-		    }
-            WES_greece_diplomacy_button_visible = {
-				WES = {
-					has_country_flag = lhl_WES_diplomacy_3_open
-				}
-		    }
-            WES_greece_diplomacy_text_visible = {
-				WES = {
-					has_country_flag = lhl_WES_diplomacy_3_open
-				}
-		    }
-            WES_romania_diplomacy_button_visible = {
-				WES = {
-					has_country_flag = lhl_WES_diplomacy_3_open
-				}
-		    }
-            WES_romania_diplomacy_text_visible = {
-				WES = {
-					has_country_flag = lhl_WES_diplomacy_3_open
-				}
-		    }
-            WES_serbia_diplomacy_button_visible = {
-				WES = {
-					has_country_flag = lhl_WES_diplomacy_3_open
-				}
-		    }
-            WES_serbia_diplomacy_text_visible = {
-				WES = {
-					has_country_flag = lhl_WES_diplomacy_3_open
 				}
 		    }
 		}
