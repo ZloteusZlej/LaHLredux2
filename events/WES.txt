@@ -1150,3 +1150,51 @@ country_event = {
 		add_stability = 0.1
     }
 }
+
+country_event = { #DOUGLAS FAILURE#
+	id = WES_event.51
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.50"}
+	title = WES_event.51.t
+	desc = WES_event.51.d
+    fire_only_once = yes
+	mean_time_to_happen = {
+	    days = 1
+    }
+	trigger = {
+		WES = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -70
+				compare = less_than_or_equals	
+			}	
+		}
+	}
+	option = {
+	    name = WES_event.51.a
+		add_political_power = -100
+		WES = {
+			clr_country_flag = lhl_WES_diplomacy_2_open
+			clr_country_flag = WES_diplomacy_douglas_open
+		}
+		unlock_national_focus = WES_battle_faiths
+		unlock_national_focus = WES_ideological_conflict
+		unlock_national_focus = WES_final_decision
+    }
+}
+
+country_event = { #DOUGLAS SUCCESS#
+	id = WES_event.52
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.50"}
+	title = WES_event.52.t
+	desc = WES_event.52.d
+    fire_only_once = yes
+	mean_time_to_happen = {
+	    days = 1
+    }
+	option = {
+	    name = WES_event.52.a
+    }
+	option = {
+	    name = WES_event.52.b
+    }
+}

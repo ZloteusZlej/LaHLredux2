@@ -703,11 +703,24 @@ shared_focus = {
 shared_focus = {
 	id = WES_final_decision
 	icon = GFX_goal_WES_final_decision
+	available = {
+		WES = {
+			has_country_flag = WES_douglas_diplomacy_accept
+		}
+	}
 	prerequisite = {
         focus = WES_battle_faiths
 	}
 	prerequisite = {
         focus = WES_ideological_conflict
+	}
+	completion_reward = {
+		WES = {
+			country_event = {
+				days = 5
+				id = WES_event.52
+			}
+		}	
 	}
 	cost = 3.5
 	x = 34
