@@ -926,6 +926,7 @@ country_event = {
     fire_only_once = yes	
 	option = {
 	    name = WES_event.43.a
+		custom_effect_tooltip = WES_diplomacy_opened.tt
 		set_country_flag = lhl_WES_diplomacy_2_open
 		set_country_flag = WES_diplomacy_douglas_open
     }
@@ -941,6 +942,8 @@ country_event = {
     fire_only_once = yes	
 	option = {
 	    name = WES_event.44.a
+		custom_effect_tooltip = WES_diplomacy_douglas_plus_big.tt
+		custom_effect_tooltip = WES_diplomacy_opened.tt
 		add_to_variable = {
 			var = WES_mercia_battle
 			value = 10
@@ -959,6 +962,7 @@ country_event = {
     fire_only_once = yes	
 	option = {
 	    name = WES_event.45.a
+		custom_effect_tooltip = WES_diplomacy_douglas_plus_big.tt
 		add_to_variable = {
 			var = WES_mercia_battle
 			value = 8
@@ -969,9 +973,10 @@ country_event = {
 	
 	option = {
 	    name = WES_event.45.b
+		custom_effect_tooltip = WES_diplomacy_douglas_minus.tt
 		add_to_variable = {
 			var = WES_mercia_battle
-			value = 5
+			value = -5
 		}
 		add_stability = 0.05
 		add_war_support	= 0.05
@@ -988,6 +993,7 @@ country_event = {
     fire_only_once = yes	
 	option = {
 	    name = WES_event.46.a
+		custom_effect_tooltip = WES_diplomacy_douglas_plus.tt
 		add_to_variable = {
 			var = WES_mercia_battle
 			value = 5
@@ -997,6 +1003,7 @@ country_event = {
 	
 	option = {
 	    name = WES_event.46.b
+		custom_effect_tooltip = WES_diplomacy_douglas_plus_big.tt
 		add_to_variable = {
 			var = WES_mercia_battle
 			value = 10
@@ -1023,6 +1030,8 @@ country_event = {
     fire_only_once = yes	
 	option = {
 	    name = WES_event.47.a
+		custom_effect_tooltip = WES_diplomacy_douglas_plus_big.tt
+		custom_effect_tooltip = WES_diplomacy_opened.tt
 		add_to_variable = {
 			var = WES_mercia_battle
 			value = 10
@@ -1041,6 +1050,7 @@ country_event = {
     fire_only_once = yes	
 	option = {
 	    name = WES_event.48.a
+		custom_effect_tooltip = WES_diplomacy_douglas_plus_big.tt
 		add_to_variable = {
 			var = WES_mercia_battle
 			value = 10
@@ -1059,9 +1069,10 @@ country_event = {
 	
 	option = {
 	    name = WES_event.48.b
+		custom_effect_tooltip = WES_diplomacy_douglas_minus.tt
 		add_to_variable = {
 			var = WES_mercia_battle
-			value = 5
+			value = -5
 		}
 		add_to_variable = {
 			var = WES_george_legitimacy_level
@@ -1086,13 +1097,14 @@ country_event = {
     fire_only_once = yes	
 	option = {
 	    name = WES_event.49.a
+		custom_effect_tooltip = WES_diplomacy_douglas_plus.tt
 		add_to_variable = {
 			var = WES_mercia_battle
 			value = 5
 		}
-		add_to_variable = {
+		WES = {
 			add_ideas = WES_neofolk
-		}
+		} 
 		WES = {
 			country_event = {
 				days = 4
@@ -1103,6 +1115,7 @@ country_event = {
 	
 	option = {
 	    name = WES_event.49.b
+		custom_effect_tooltip = WES_diplomacy_douglas_minus_big.tt
 		add_to_variable = {
 			var = WES_mercia_battle
 			value = -8
@@ -1126,6 +1139,7 @@ country_event = {
     fire_only_once = yes	
 	option = {
 	    name = WES_event.50.a
+		custom_effect_tooltip = WES_diplomacy_douglas_plus_big.tt
 		add_to_variable = {
 			var = WES_mercia_battle
 			value = 10
@@ -1143,6 +1157,7 @@ country_event = {
 	
 	option = {
 	    name = WES_event.50.b
+		custom_effect_tooltip = WES_diplomacy_douglas_minus_big.tt
 		add_to_variable = {
 			var = WES_mercia_battle
 			value = -8
@@ -1153,7 +1168,7 @@ country_event = {
 
 country_event = { #DOUGLAS FAILURE#
 	id = WES_event.51
-	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.50"}
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.51"}
 	title = WES_event.51.t
 	desc = WES_event.51.d
     fire_only_once = yes
@@ -1161,6 +1176,7 @@ country_event = { #DOUGLAS FAILURE#
 	    days = 1
     }
 	trigger = {
+		tag = WES
 		WES = {
 			check_variable = {
 				var = WES_mercia_battle
@@ -1184,17 +1200,110 @@ country_event = { #DOUGLAS FAILURE#
 
 country_event = { #DOUGLAS SUCCESS#
 	id = WES_event.52
-	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.50"}
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.52"}
 	title = WES_event.52.t
 	desc = WES_event.52.d
     fire_only_once = yes
 	mean_time_to_happen = {
 	    days = 1
     }
+	trigger = {
+		tag = WES
+		WES = {
+			NOT = {
+				country_exists = SUS
+			}
+			NOT = {
+				country_exists = KNT
+			}
+			NOT = {
+				country_exists = EAG
+			}
+			NOT = {
+				country_exists = ESS
+			}		
+			NOT = {
+				country_exists = NTH
+			}				
+			country_exists = MRC
+			MRC = {
+				is_in_faction_with = WES
+			}
+			WES = {			
+				has_country_flag = WES_diplomacy_douglas_success
+			}
+		}
+	}
 	option = {
 	    name = WES_event.52.a
+		WES = {
+			create_corps_commander = {
+				name = "Douglas Pearce"
+				picture = "Portrait_WES_Douglas_Pierce.dds"
+				traits = {  }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			annex_country = {
+				target = MRC
+				transfer_troops = yes
+			}
+		}
     }
 	option = {
 	    name = WES_event.52.b
+		custom_effect_tooltip = WES_douglas_knight.tt
+		WES = {
+			create_corps_commander = {
+				name = "Douglas Pearce"
+				picture = "Portrait_WES_Douglas_Pierce.dds"
+				traits = {  }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			set_variable = {
+			   var = slot_3
+			   value = 2
+			}
+			annex_country = {
+				target = MRC
+				transfer_troops = yes
+			}
+		}
+    }
+}
+
+country_event = { #DOUGLAS DIPLOMACY SUCCESS#
+	id = WES_event.53
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.53"}
+	title = WES_event.53.t
+	desc = WES_event.53.d
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.53.a
+		WES = {
+			create_faction = WES_DOUGLAS_FACTION
+		}
+		WES = { 
+			add_to_faction = MRC 
+		}
+		WES = {			
+			set_country_flag = WES_diplomacy_douglas_success
+		}
+    }
+	option = {
+	    name = WES_event.53.b
+		MRC = {
+			add_war_support = -0.25
+			add_stability = -0.5
+			add_political_power = -350
+		}
     }
 }

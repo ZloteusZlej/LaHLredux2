@@ -647,7 +647,14 @@ shared_focus = {
 	prerequisite = {
         focus = WES_arise_folk
 	}
+	bypass = {
+	    NOT = {
+		    country_exists = MRC
+		}			
+	}
 	completion_reward = {
+		custom_effect_tooltip = WES_knight_mercia.tt
+		custom_effect_tooltip = WES_diplomacy_opened.tt
 		WES = {
 			set_country_flag = WES_diplomacy_open
 			country_event = {
@@ -667,8 +674,13 @@ shared_focus = {
 	prerequisite = {
         focus = WES_knight_mercia
 	}
-	
+	bypass = {
+	    NOT = {
+		    country_exists = MRC
+		}			
+	}	
 	completion_reward = {
+		custom_effect_tooltip = WES_battle_faiths.tt
 		WES = {
 			country_event = {
 				days = 1
@@ -687,7 +699,13 @@ shared_focus = {
 	prerequisite = {
         focus = WES_knight_mercia
 	}
+	bypass = {
+	    NOT = {
+		    country_exists = MRC
+		}			
+	}
 	completion_reward = {
+		custom_effect_tooltip = WES_ideological_conflict.tt
 		WES = {
 			country_event = {
 				days = 1
@@ -708,6 +726,11 @@ shared_focus = {
 			has_country_flag = WES_douglas_diplomacy_accept
 		}
 	}
+	bypass = {
+	    NOT = {
+		    country_exists = MRC
+		}			
+	}
 	prerequisite = {
         focus = WES_battle_faiths
 	}
@@ -715,10 +738,11 @@ shared_focus = {
         focus = WES_ideological_conflict
 	}
 	completion_reward = {
+		custom_effect_tooltip = WES_final_decision.tt
 		WES = {
 			country_event = {
 				days = 5
-				id = WES_event.52
+				id = WES_event.53
 			}
 		}	
 	}

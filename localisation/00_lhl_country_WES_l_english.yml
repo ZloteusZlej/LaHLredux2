@@ -227,6 +227,30 @@
  WES_deal_land:0 "Deal with Nick Land"
  WES_deal_dawkins:0 "Deal with Richard Dawkins"
  WES_deal_corbyn:0 "Deal with Jeremy Corbyn"
+ WES_douglas_move:0 "Douglas Pearce makes his move!"
+ WES_pressure_douglas:0 "Pressure Douglas"
+ WES_send_arms_to_douglas:0 "Send Arms to Black Army"
+ WES_hold_a_debate:0 "Hold a Religious Debate"
+ WES_hold_a_ceremony:0 "Hold an Occult Ceremony"
+ WES_sow_discord:0 "Sow Discord within The Black Army"
+ WES_leader_meeting:0 "Hold a Big Meeting"
+ WES_a_personal_visit:0 "Personally Visist Douglas"
+ WES_ambassador_meeting:0 "Hold an Ambassador Meeting"
+ WES_general_meeting:0 "Meet The Generals"
+ WES_accept_douglas:0 "Forge an Alliance with Douglas Pearce"
+ ##TOOLTIPS##
+ WES_diplomacy_douglas_plus.tt:0 "§GOur influence will slightly increase!§!"
+ WES_diplomacy_douglas_plus_big.tt:0 "§GOur influence will increase!§!"
+ WES_diplomacy_douglas_minus.tt:0 "§ROur influence will slightly decrease!§!"
+ WES_diplomacy_douglas_minus_big.tt:0 "§ROur influence will decrease!§!"
+ WES_diplomacy_final_decision.tt:0 "§YA New Focus Has Been Unlocked§!"
+ WES_diplomacy_opened.tt:0 "§YThis Will Open More Diplomatic Options.§!"
+ WES_knight_mercia.tt:0 "§YWe Will Attempt to Recruit Douglas Pearce into Our Cause.§!"
+ WES_battle_faiths.tt:0 "§YWe Have to Break The Religious Dogmas of The Black Army§!"
+ WES_ideological_conflict.tt:0 "§YWe Have to Break The Ideological Dogmas of The Black Army.§!"
+ WES_final_decision.tt:0 "§YWe have swayed Douglas into our ranks. Now we have a choice to make.§!"
+ WES_douglas_knight.tt:0 "§Douglas Pearce Will Become a Knight.§!"
+ WES_DOUGLAS_FACTION:0 "England Salvation League"
  #
  WES_Royal_military_schools:0 "Our Most Royal Military Schools"
   Rebuild_Naval_College:0 "Rebuilt the Britannia Royal Naval College"
@@ -455,11 +479,75 @@
  WES_event.39.d:0 "I couldn't find how to put air attack cause am tired"
  WES_event.39.a:0 "I need to put some shit here"
  #
+ WES_event.40.t:0 "The New British Army"
+ WES_event.40.d:0 "We have to rebuild the british army and destroy the opressors!"
+ WES_event.40.a:0 "Let's Go!"
+ #
+ WES_event.41.t:0 "The Knight of Mercia"
+ WES_event.41.d:0 "We will try to establish friendly relations with Douglas Pearce!"
+ WES_event.41.a:0 "Send the Envoys!"
+ #
+ WES_event.42.t:0 "Chto Za Event?????????????"
+ WES_event.42.d:0 "We will try to establish friendly relations with Douglas Pearce!"
+ WES_event.42.a:0 "Send the Envoys!"
+ #
+ WES_event.43.t:0 "The Answer From Mercia"
+ WES_event.43.d:0 "Douglas Pearce has accepted our proposal, but we need to convince him..."
+ WES_event.43.a:0 "Let The Battle Begin!"
+ #
+ WES_event.44.t:0 "Religious Debate"
+ WES_event.44.d:0 "We have to break the religious dogmas of the Black Army"
+ WES_event.44.a:0 "Let's Go!"
+ #
+ WES_event.45.t:0 "Debating Douglas"
+ WES_event.45.d:0 "We are debating Douglas Pearce!"
+ WES_event.45.a:0 "Allow certain occult freedom"
+ WES_event.45.b:0 "Ban various cults"
+ #
+ WES_event.46.t:0 "The Ceremony"
+ WES_event.46.d:0 "We shall hold a ceremony..."
+ WES_event.46.a:0 "Hold a small ceremony"
+ WES_event.46.b:0 "Hold a big ceremony"
+ #
+ WES_event.47.t:0 "Political Debate"
+ WES_event.47.d:0 "We have to break the ideological dogmas of the Black Army"
+ WES_event.47.a:0 "Let's Go!"
+ #
+ WES_event.48.t:0 "A Presonal Visit"
+ WES_event.48.d:0 "King George personally visits Douglas"
+ WES_event.48.a:0 "Endorse Douglas"
+ WES_event.48.b:0 "Keep it secret for now"
+ #
+ WES_event.49.t:0 "Question of Neofolk"
+ WES_event.49.d:0 "Do we allow this satanic culture?"
+ WES_event.49.a:0 "Yes"
+ WES_event.49.b:0 "No"
+ #
+ WES_event.50.t:0 "Help fight Bandits?"
+ WES_event.50.d:0 "Do we help Douglas Pearce fight bandits?"
+ WES_event.50.a:0 "Yes"
+ WES_event.50.b:0 "No"
+ #
+ WES_event.51.t:0 "Douglas turns his back on us!"
+ WES_event.51.d:0 "We failed!"
+ WES_event.51.a:0 "Damn"
+ #
+ WES_event.52.t:0 "Douglas joins us"
+ WES_event.52.d:0 "We have defeated the enemies of England. Douglas Pearce shall join us!"
+ WES_event.52.a:0 "He will become a general."
+ WES_event.52.b:0 "Make him a Knight!"
+ #
+ WES_event.53.t:0 "Douglas gives in"
+ WES_event.53.d:0 "We have convinced Douglas to join us. What shall we do?"
+ WES_event.53.a:0 "Create an alliance"
+ WES_event.53.b:0 "Betray him!"
+ #
  ##NEW GUI##
  KNIGHT_SLEEPS:0 "This Knight is not yet present on the table"
  KNIGHT_GEORGE_ALIVE:0 "§YGeorge VII§!\n§YFisher King§!\n- War Support: §R-50.00%§!\n- Stability: §R-10.00%§!\n- Daily Political Power Gain: §R-0.10%§!"
  KNIGHT_HENRY_TRAITOR:0 "§YPrince Harry, Duke of Sussex§!\n§YTraitorous Imposter§!\n- Stability: §R-15.00%§!"
  KNIGHT_HENRY_REDEEMED:0 "§YPrince Harry, Duke of Sussex§!\n§YCrimson Knight§!\n- Division Organization: §G+10.0%§!"
+ KNIGHT_DOUGLAS:0 "§YDouglas Pearce§!\n§YHero of Mercia§!\n- War Support: §G5.00%§!\n- Division Attack: §G+10.0%§!"
  KNIGHT_MENU:0 "Open the knight menu"
  ##TOOLTIP##
  ENG_henry_here:0 "Prince Harry has been captured"
@@ -474,6 +562,7 @@
  WES_weapons_guilds_tt:0 "\nCompleting this focus will allow the guidance of the Crown's Armement Corporations's production toward a distinct type in order to suite the doctrine of our armed forces.\n"
  WES_artillery_men_buff_tt:0 "\nThrough vigorous training our men will become as methodical and mechanical as the machines they wield! §G(+5% Increase in soft attack to Howitzers, Self-Propelled Artillery, and Multiple Launch Rocket System units)§.\n"
  WES_tank_knights_buff_tt:0 "\nJust like the knights of yore. Our tank crews will, through valor, virtue and training, plow through enemy ranks and bring us the victories we so desperatly need! §G(+2% Increase in soft attack, hard attack and speed of Main Battle Tank units)§.\n"
+ WES_douglas_diplomacy_accept:0 "Douglas Pearce has accpeted our proposal."
  ##GUI##
  WES_GEORGE_LEGITIMACY_TEXT_1:0 "King George's legitimacy is §Y[?WES_george_legitimacy_level]§!"
  WES_GEORGE_LEGITIMACY_TEXT_2:0 "King George's legitimacy is [ROOT.GetWessexLegitimacy]"
