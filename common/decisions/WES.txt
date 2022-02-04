@@ -2108,7 +2108,7 @@ WES_diplomacy = {
 			}
 		}
 		ai_will_do = {
-			base = 85
+			base = 100
 		}
 	}
 	
@@ -2147,7 +2147,7 @@ WES_diplomacy = {
 			}
 		}
 		ai_will_do = {
-			base = 85
+			base = 100
 		}
 	}
 	
@@ -2177,7 +2177,7 @@ WES_diplomacy = {
 			}
 		}
 		ai_will_do = {
-			base = 85
+			base = 100
 		}
 	}
 	
@@ -2207,7 +2207,7 @@ WES_diplomacy = {
 			}
 		}
 		ai_will_do = {
-			base = 85
+			base = 100
 		}
 	}
 	
@@ -2237,7 +2237,7 @@ WES_diplomacy = {
 			}
 		}
 		ai_will_do = {
-			base = 85
+			base = 100
 		}
 	}
 	
@@ -2263,7 +2263,7 @@ WES_diplomacy = {
 			}
 		}
 		ai_will_do = {
-			base = 85
+			base = 100
 		}
 	}
 	
@@ -2293,7 +2293,7 @@ WES_diplomacy = {
 			}
 		}
 		ai_will_do = {
-			base = 85
+			base = 100
 		}
 	}
 	
@@ -2321,7 +2321,7 @@ WES_diplomacy = {
 			}
         }
 		ai_will_do = {
-			base = 85
+			base = 100
 		}
 	}
 	
@@ -2350,7 +2350,7 @@ WES_diplomacy = {
 			add_command_power = -45
         }
 		ai_will_do = {
-			base = 85
+			base = 100
 		}
 	}
 	WES_accept_douglas = {	
@@ -2395,6 +2395,7 @@ WES_diplomacy = {
 		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
         }
 		days_remove = 30
+		cost = 50
 		remove_effect = {   
         }
 		complete_effect = {
@@ -2422,6 +2423,7 @@ WES_diplomacy = {
 		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
         }
 		days_remove = 30
+		cost = 10
 		remove_effect = { 
         }
 		complete_effect = {
@@ -2455,6 +2457,7 @@ WES_diplomacy = {
 		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
         }
 		days_remove = 30
+		cost = 50
 		remove_effect = {   
         }
 		complete_effect = {
@@ -2486,6 +2489,7 @@ WES_diplomacy = {
 		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
         }
 		days_remove = 30
+		cost = 15
 		remove_effect = { 
         }
 		complete_effect = {
@@ -2525,6 +2529,7 @@ WES_diplomacy = {
 		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
         }
 		days_remove = 100
+		cost = 50
 		remove_effect = {   
         }
 		complete_effect = {
@@ -2551,6 +2556,7 @@ WES_diplomacy = {
 		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
         }
 		days_remove = 30
+		cost = 50
 		remove_effect = {   
         }
 		complete_effect = {
@@ -2583,6 +2589,7 @@ WES_diplomacy = {
 		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
         }
 		days_remove = 30
+		cost = 50
 		remove_effect = { 
         }
 		complete_effect = {
@@ -2619,11 +2626,12 @@ WES_diplomacy = {
 		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
         }
 		days_remove = 30
+		cost = 50
 		fire_only_once = yes
 		remove_effect = {   
         }
 		complete_effect = {
-			MSC = {
+			STM = {
 				country_event = {
 					days = 1
 					id = MSC_event.8
@@ -2646,6 +2654,7 @@ WES_diplomacy = {
 		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
         }
 		days_remove = 120
+		cost = 50
 		fire_only_once = yes
 		remove_effect = {   
         }
@@ -2673,6 +2682,7 @@ WES_diplomacy = {
 		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
         }
 		days_remove = 100
+		cost = 50
 		fire_only_once = yes
 		remove_effect = {   
         }
@@ -2688,5 +2698,375 @@ WES_diplomacy = {
 			base = 100
 		}
 	}
+#STERLINGOV#
+	WES_diplomacy_smuggle_volunteers_out_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 50
+		remove_effect = {   
+        }
+		complete_effect = {
+			STM = {
+				country_event = {
+					days = 1
+					id = STM_event.1
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_smuggle_volunteers_in_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+				has_manpower > 1000
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 10
+		remove_effect = { 
+        }
+		complete_effect = {
+			STM = {
+				country_event = {
+					days = 1
+					id = STM_event.2
+				}
+			}
+			WES = {
+				add_manpower = -1000
+			}
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_send_volunteers_out_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+			}
+			any_state = {
+				is_owned_by = STM
+				is_coastal = yes
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 50
+		remove_effect = {   
+        }
+		complete_effect = {
+			STM = {
+				country_event = {
+					days = 1
+					id = STM_event.3
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_send_volunteers_in_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+				has_manpower > 10000
+			}
+			any_state = {
+				is_owned_by = STM
+				is_coastal = yes
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 15
+		remove_effect = { 
+        }
+		complete_effect = {
+			STM = {
+				country_event = {
+					days = 1
+					id = STM_event.4
+				}
+			}
+			WES = {
+				add_manpower = -10000
+			}
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_send_division_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+				has_manpower > 6800
+				has_equipment = {
+					infantry_equipment > 609
+				}
+				has_equipment = {
+					support_equipment > 29
+				}
+				has_equipment = {
+					artillery_equipment > 35
+				}
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 100
+		cost = 50
+		remove_effect = {   
+        }
+		complete_effect = {
+			STM = {
+				country_event = {
+					days = 1
+					id = STM_event.5
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_smuggle_weapons_out_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 50
+		remove_effect = {   
+        }
+		complete_effect = {
+			STM = {
+				country_event = {
+					days = 1
+					id = STM_event.6
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_smuggle_weapons_in_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+				has_equipment = {
+					support_equipment > 99
+				}
+				has_equipment = {
+					infantry_equipment > 499
+				}
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 50
+		remove_effect = { 
+        }
+		complete_effect = {
+			STM = {
+				country_event = {
+					days = 1
+					id = STM_event.7
+				}
+			}
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 500
+				target = STM
+			}
+			send_equipment = {
+				equipment = support_equipment
+				amount = 100
+				target = STM
+			}
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+##UNIQUE##
+	WES_diplomacy_send_knight_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+				check_variable = {
+                    var = slot_12
+                    value = 3		
+				}				
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 50
+		remove_effect = { 
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_advanced_cheese_techniques_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open				
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 75
+		cost = 100
+		fire_only_once = yes 
+		remove_effect = { 
+			add_ideas = {
+				WES_advanced_cheese_techniques
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_fresh_food_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open				
+			}
+			any_state = {
+				is_owned_by = STM
+				is_coastal = yes
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 75
+		cost = 125
+		remove_effect = { 
+			add_timed_idea = {
+				idea = WES_fresh_food
+				days = 90
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+##RUSSKIYE IDUT##
+	WES_diplomacy_monarchists_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 10
+		cost = 100
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "Russian Monarchist Volunteers"
+						}	
+						division_template = {
+							name = "Russian Monarchist Volunteers"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								infantry = { x = 0 y = 0 }	
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }	
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
+								infantry = { x = 0 y = 5 }
+								artillery_brigade = { x = 1 y = 0 }
+							}
+								
+							support = { 
+								engineer = { x = 0 y = 0 } 	
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Russian Volunteer Unit in Great Britain"\" division_template = \"Russian Monarchist Volunteers\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+					create_unit = {
+						division = "name = \"Russian Volunteer Unit in Great Britain"\" division_template = \"Russian Monarchist Volunteers\" start_experience_factor = 1 start_equipment_factor = 1"		
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
 }
-	

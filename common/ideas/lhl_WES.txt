@@ -130,9 +130,6 @@ ideas = {
 			    political_power_factor = -0.10			
 			}
 		}
-	}
-	
-	hidden_ideas = {
 		WES_neofolk = {   
 			picture = GFX_idea_WES_neofolk
 			allowed = {
@@ -142,6 +139,27 @@ ideas = {
 			modifier = {
                 stability_factor = -0.05
 			    political_power_gain = -0.1	
+			}
+		}
+		WES_advanced_cheese_techniques = {   
+			picture = GFX_idea_WES_advanced_cheese_techniques 
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+                stability_factor = 0.02
+				consumer_goods_factor = -0.02
+			}
+		}
+		WES_fresh_food = {   
+			picture = GFX_idea_WES_fresh_food
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
 			}
 		}
 	}

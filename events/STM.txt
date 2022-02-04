@@ -1,0 +1,193 @@
+add_namespace = STM_event 
+##WESSEX VOLUNTEERS##
+country_event = { #WESSEX REQUESTS VOLUNTEERS#
+	id = STM_event.1
+	title = STM_event.1.t
+	desc = STM_event.1.d
+    is_triggered_only = yes
+	option = { 
+		name = STM_event.1.a
+		ai_chance = {
+			base = 100
+		}
+		STM = {
+			add_manpower = -1000
+		}
+		WES = {
+			country_event = {
+				days = 5
+				id = WES_event.54
+			}
+		}
+    }
+	option = {
+		name = STM_event.1.b
+		WES = {
+			country_event = {
+				days = 5
+				id = WES_event.55
+			}
+		}
+    }
+}
+
+country_event = { #WESSEX SENDS VOLUNTEERS#
+	id = STM_event.2
+	title = STM_event.2.t
+	desc = STM_event.2.d
+    is_triggered_only = yes
+	option = { 
+		name = STM_event.2.a
+		STM = {
+			add_manpower = 1000
+		}
+    }
+}
+
+country_event = { #WESSEX REQUESTS VOLUNTEERS PORTS#
+	id = STM_event.3
+	title = STM_event.3.t
+	desc = STM_event.3.d
+    is_triggered_only = yes
+	option = { 
+		name = STM_event.3.a
+		ai_chance = {
+			base = 100
+		}
+		STM = {
+			add_manpower = -10000
+		}
+		WES = {
+			country_event = {
+				days = 5
+				id = WES_event.56
+			}
+		}
+    }
+	option = {
+		name = STM_event.3.b
+		WES = {
+			country_event = {
+				days = 5
+				id = WES_event.55
+			}
+		}
+    }
+}
+
+country_event = { #WESSEX SENDS VOLUNTEERS PORTS#
+	id = STM_event.4
+	title = STM_event.4.t
+	desc = STM_event.4.d
+    is_triggered_only = yes
+	option = { 
+		name = STM_event.4.a
+		STM = {
+			add_manpower = 10000
+		}
+    }
+}
+
+country_event = { #WESSEX SENDS DIVISION#
+	id = STM_event.5
+	title = STM_event.5.t
+	desc = STM_event.5.d
+    is_triggered_only = yes
+	option = { 
+		name = STM_event.5.a
+		STM = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 610
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 30
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 36
+			}
+			if = {
+				STM = {
+					NOT = {
+						has_template = "Wessex Volunteers"
+					}	
+					division_template = {
+						name = "Wessex Volunteers"
+						division_names_group = WES_INF_01
+
+						regiments = {
+							infantry = { x = 0 y = 0 }	
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }	
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 0 y = 4 }
+							infantry = { x = 0 y = 5 }
+							artillery_brigade = { x = 1 y = 0 }
+						}
+							
+						support = { 
+							engineer = { x = 0 y = 0 } 	
+						}
+					}
+				}
+			}			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Wessex Volunteers\" division_template = \"Wessex Volunteers\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = STM
+				}
+			}
+		}
+    }
+}
+
+country_event = { #WESSEX REQUESTS WEAPONS#
+	id = STM_event.6
+	title = STM_event.6.t
+	desc = STM_event.6.d
+    is_triggered_only = yes
+	option = { 
+		name = STM_event.6.a
+		ai_chance = {
+			base = 100
+		}
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 500
+			target = WES
+		}
+		send_equipment = {
+			equipment = support_equipment
+			amount = 100
+			target = WES
+		}
+		WES = {
+			country_event = {
+				days = 0
+				id = WES_event.57
+			}
+		}
+    }
+	option = {
+		name = STM_event.6.b
+		WES = {
+			country_event = {
+				days = 5
+				id = WES_event.55
+			}
+		}
+    }
+}
+
+country_event = { #WESSEX SENDS WEAPONS#
+	id = STM_event.7
+	title = STM_event.7.t
+	desc = STM_event.7.d
+    is_triggered_only = yes
+	option = { 
+		name = STM_event.7.a
+    }
+}
+##UNIQUE##
