@@ -1,0 +1,261 @@
+add_namespace = MSC_event 
+##WESSEX VOLUNTEERS##
+country_event = { #WESSEX REQUESTS VOLUNTEERS#
+	id = MSC_event.1
+	title = MSC_event.1.t
+	desc = MSC_event.1.d
+    is_triggered_only = yes
+	option = { 
+		name = MSC_event.1.a
+		ai_chance = {
+			base = 100
+		}
+		MSC = {
+			add_manpower = -1000
+		}
+		WES = {
+			country_event = {
+				days = 5
+				id = WES_event.54
+			}
+		}
+    }
+	option = {
+		name = MSC_event.1.b
+		WES = {
+			country_event = {
+				days = 5
+				id = WES_event.55
+			}
+		}
+    }
+}
+
+country_event = { #WESSEX SENDS VOLUNTEERS#
+	id = MSC_event.2
+	title = MSC_event.2.t
+	desc = MSC_event.2.d
+    is_triggered_only = yes
+	option = { 
+		name = MSC_event.2.a
+		MSC = {
+			add_manpower = 1000
+		}
+    }
+}
+
+country_event = { #WESSEX REQUESTS VOLUNTEERS PORTS#
+	id = MSC_event.3
+	title = MSC_event.3.t
+	desc = MSC_event.3.d
+    is_triggered_only = yes
+	option = { 
+		name = MSC_event.3.a
+		ai_chance = {
+			base = 100
+		}
+		MSC = {
+			add_manpower = -10000
+		}
+		WES = {
+			country_event = {
+				days = 5
+				id = WES_event.56
+			}
+		}
+    }
+	option = {
+		name = MSC_event.3.b
+		WES = {
+			country_event = {
+				days = 5
+				id = WES_event.55
+			}
+		}
+    }
+}
+
+country_event = { #WESSEX SENDS VOLUNTEERS PORTS#
+	id = MSC_event.4
+	title = MSC_event.4.t
+	desc = MSC_event.4.d
+    is_triggered_only = yes
+	option = { 
+		name = MSC_event.4.a
+		MSC = {
+			add_manpower = 10000
+		}
+    }
+}
+
+country_event = { #WESSEX SENDS DIVISION#
+	id = MSC_event.5
+	title = MSC_event.5.t
+	desc = MSC_event.5.d
+    is_triggered_only = yes
+	option = { 
+		name = MSC_event.5.a
+		MSC = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 610
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 30
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 36
+			}
+			if = {
+				MSC = {
+					NOT = {
+						has_template = "Wessex Volunteers"
+					}	
+					division_template = {
+						name = "Wessex Volunteers"
+						division_names_group = WES_INF_01
+
+						regiments = {
+							infantry = { x = 0 y = 0 }	
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }	
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 0 y = 4 }
+							infantry = { x = 0 y = 5 }
+							artillery_brigade = { x = 1 y = 0 }
+						}
+							
+						support = { 
+							engineer = { x = 0 y = 0 } 	
+						}
+					}
+				}
+			}			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Wessex Volunteers\" division_template = \"Wessex Volunteers\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = MSC
+				}
+			}
+		}
+    }
+}
+
+country_event = { #WESSEX REQUESTS WEAPONS#
+	id = MSC_event.6
+	title = MSC_event.6.t
+	desc = MSC_event.6.d
+    is_triggered_only = yes
+	option = { 
+		name = MSC_event.6.a
+		ai_chance = {
+			base = 100
+		}
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 500
+			target = WES
+		}
+		send_equipment = {
+			equipment = support_equipment
+			amount = 100
+			target = WES
+		}
+		WES = {
+			country_event = {
+				days = 0
+				id = WES_event.57
+			}
+		}
+    }
+	option = {
+		name = MSC_event.6.b
+		WES = {
+			country_event = {
+				days = 5
+				id = WES_event.55
+			}
+		}
+    }
+}
+
+country_event = { #WESSEX SENDS WEAPONS#
+	id = MSC_event.7
+	title = MSC_event.7.t
+	desc = MSC_event.7.d
+    is_triggered_only = yes
+	option = { 
+		name = MSC_event.7.a
+    }
+}
+##UNIQUE##
+country_event = { #WESSEX REQUESTS TECHNOLOGY#
+	id = MSC_event.8
+	title = MSC_event.8.t
+	desc = MSC_event.8.d
+    is_triggered_only = yes
+	option = { 
+		name = MSC_event.8.a
+		ai_chance = {
+			base = 100
+		}
+		MSC = {
+			add_stability = -0.02
+		}
+		WES = {
+			country_event = {
+				days = 5
+				id = WES_event.58
+			}
+		}
+    }
+	option = {
+		name = MSC_event.8.b
+		WES = {
+			country_event = {
+				days = 5
+				id = WES_event.55
+			}
+		}
+    }
+}
+
+country_event = { #WESSEX REQUESTS WEAPONS#
+	id = MSC_event.9
+	title = MSC_event.9.t
+	desc = MSC_event.9.d
+    is_triggered_only = yes
+	option = { 
+		name = MSC_event.9.a
+		ai_chance = {
+			base = 100
+		}
+		send_equipment = {
+			equipment = main_battle_tank_equipment_1
+			amount = 75
+			target = WES
+		}
+		send_equipment = {
+			equipment = infantry_fighting_vehicle_equipment_1
+			amount = 100
+			target = WES
+		}
+		WES = {
+			country_event = {
+				days = 0
+				id = WES_event.59
+			}
+		}
+    }
+	option = {
+		name = MSC_event.9.b
+		WES = {
+			country_event = {
+				days = 5
+				id = WES_event.55
+			}
+		}
+    }
+}

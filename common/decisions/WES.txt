@@ -2046,6 +2046,14 @@ WES_Weapon_Guilds = {
 	}
 }
 WES_diplomacy = {
+	WES_diplomacy_meme = {	
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+	}
+##DOUGLAS##
     WES_douglas_move = {    
         allowed = { tag = WES }                 
         available = {  
@@ -2374,4 +2382,311 @@ WES_diplomacy = {
 			base = 100
 		}
 	}
+##EURASIA##
+	WES_diplomacy_smuggle_volunteers_out_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 30
+		remove_effect = {   
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.1
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_smuggle_volunteers_in_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+				has_manpower > 1000
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 30
+		remove_effect = { 
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.2
+				}
+			}
+			WES = {
+				add_manpower = -1000
+			}
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_send_volunteers_out_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+			}
+			any_state = {
+				is_owned_by = MSC
+				is_coastal = yes
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 30
+		remove_effect = {   
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.3
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_send_volunteers_in_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+				has_manpower > 10000
+			}
+			any_state = {
+				is_owned_by = MSC
+				is_coastal = yes
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 30
+		remove_effect = { 
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.4
+				}
+			}
+			WES = {
+				add_manpower = -10000
+			}
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_send_division_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+				has_manpower > 6800
+				has_equipment = {
+					infantry_equipment > 609
+				}
+				has_equipment = {
+					support_equipment > 29
+				}
+				has_equipment = {
+					artillery_equipment > 35
+				}
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 100
+		remove_effect = {   
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.5
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_smuggle_weapons_out_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 30
+		remove_effect = {   
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.6
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_smuggle_weapons_in_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+				has_equipment = {
+					support_equipment > 99
+				}
+				has_equipment = {
+					infantry_equipment > 499
+				}
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 30
+		remove_effect = { 
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.7
+				}
+			}
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 500
+				target = MSC
+			}
+			send_equipment = {
+				equipment = support_equipment
+				amount = 100
+				target = MSC
+			}
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_technology_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {   
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.8
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_contractors_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 120
+		fire_only_once = yes
+		remove_effect = {   
+        }
+		complete_effect = {
+			WES = {
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+			WES = {
+				add_offsite_building = { type = industrial_complex level = 2 }
+			}				
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_armour_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 100
+		fire_only_once = yes
+		remove_effect = {   
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.9
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
 }
+	
