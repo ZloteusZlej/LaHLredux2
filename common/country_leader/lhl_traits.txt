@@ -1121,10 +1121,13 @@ Black_bird = { #Roger Scruton#
 			factor = 1
 		}
 	}
+	
+#################################ENGLAND#######################################
+
 ##IDEAS_NATIONALISTS/ESSEX##
 
-###JACOBITES/KENT### #KNT#
-##LEADERS_JACOBITES/KENT##
+###CONSERVATIVES/KENT### #KNT#
+##LEADERS_CONSERVATIVES/KENT##
 	high_handed_despot = { #Jacob_Rees-Mogg#
 		random = no
 		stability_factor = -0.05
@@ -1252,7 +1255,171 @@ Black_bird = { #Roger Scruton#
 			factor = 1
 		}
 	}
-##IDEAS_JACOBITES/KENT##
+	
+	##KNT_Advisors##
+	
+	viscount = { #Edward Leigh#
+		random = no
+		production_factory_efficiency_gain_factor = 0.1
+		production_speed_buildings_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	radio_priest = { #John Joseph Haldane#
+		random = no
+		compliance_gain = 0.20
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	voice_of_tories = { #Annunziata Rees-Mogg#
+		random = no
+		stability_factor = 0.05
+		political_power_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	protectionist = { #Patrick Cormack#
+		random = no
+		consumer_goods_factor = -0.05
+		production_factory_max_efficiency_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	meanest_boss = { #Peter Bone#
+		random = no
+		conscription_factor = 0.1
+		local_resources_factor = 0.2
+		ai_will_do = {
+			factor = 1
+		}
+	} 
+	national_fav = { #Nigel Farage#
+		random = no
+		compliance_gain = 0.1
+		stability_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	regime_defender = { #Andrew Roberts#
+		random = no
+		resistance_growth = 0.10
+		political_power_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	vox_populi = { #Simon Heffer#
+		random = no
+		political_power_factor = -0.2
+		production_speed_buildings_factor = 0.3
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	blue_blood = { #James Thompson# 
+		random = no
+		monthly_population = 0.3
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	influential_ideologist = { #Merlin Hanbury-Tracy# 
+		random = no
+		training_time_factor = -0.15
+		political_advisor_cost_factor = -0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	inventors_lobbyist = { #John Hayes# 
+		random = no
+		research_speed_factor = 0.08
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	eurasian_specialist = { #Tim Montgomerie# 
+		random = no
+		targeted_modifier = 
+			{
+			tag = NTH
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+			}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	war_hero = { #James Glancy#
+		random = no
+		conscription_factor = 0.05
+		experience_gain_army_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	saviour_of_housewifes = { #James Dyson#
+		random = no
+		stability_factor = 0.1
+		consumer_goods_factor = -0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	charity_gentlemen = { #Rupert Grint#
+		random = no
+		stability_factor = 0.1
+		consumer_goods_factor = -0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	go_getter = { #Ben Bradley#
+		random = no
+		local_resources_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	it_analytic = { #Darren Grimes#
+		random = no
+		encryption_factor = 0.1
+		decryption_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	oraculus_of_progress = { #Neal Asher#
+		random = no
+		research_speed_factor = 0.04
+		political_advisor_cost_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	prometheus = { #Tim Berners-Lee#
+		random = no
+		production_factory_efficiency_gain_factor = 0.1
+		production_speed_radar_station_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	whip = { #Tom Pursglove#
+		random = no
+		production_speed_buildings_factor = 0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+##IDEAS_CONSERVATIVES/KENT##
 	knight_of_uk = { #Knights#
 		random = no
 		stability_factor = 0.05
@@ -1315,6 +1482,11 @@ Black_bird = { #Roger Scruton#
 		}
 	}
 ##IDEAS_ABSOLUTISTS/SUSSEX##
+
+
+
+#################################ENGLAND#######################################
+
 
 ###RUSSIAN_NATIONAL_STATE### #RNG#
 ##LEADERS_RUSSIAN_NATIONAL_STATE##

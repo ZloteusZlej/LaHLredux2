@@ -140,10 +140,9 @@ characters={
 		name="Louis Lillywhite"
 		portraits={
 			army={
-				small=""
-			}
-			army={
 				large="gfx/leaders/Generics/leader_unknown.dds"
+				
+				small="gfx/interface/ideas/KNT/leader_unknown.dds"
 			}
 		}
 		corps_commander={
@@ -159,10 +158,9 @@ characters={
 		name="Gary Coward"
 		portraits={
 			army={
-				small=""
-			}
-			army={
 				large="gfx/leaders/Generics/leader_unknown.dds"
+				
+				small="gfx/interface/ideas/KNT/leader_unknown.dds"
 			}
 		}
 		corps_commander={
@@ -190,7 +188,7 @@ characters={
 			slot = head_of_government
 			idea_token = KNT_patrick_cormack
 			traits = {
-				
+				protectionist
 			}
 			allowed = {
 				original_tag = KNT
@@ -203,20 +201,435 @@ characters={
 	
 	###Pol_adv###
 	
-	KNT_patrick_cormack_1 = {
-		name = KNT_patrick_cormack_1
+	KNT_edward_leigh = {
+		name = KNT_edward_leigh
 		portraits = {
 			civilian={
 				large=""
-				small = "GFX_idea_KNT_patrick_cormack"
+				small = "GFX_idea_KNT_edward_leigh"
 			}
 		}
 		advisor = {
 			cost = 120
 			slot = political_advisor
-			idea_token = KNT_patrick_cormack
+			idea_token = KNT_edward_leigh
 			traits = {
-				
+				viscount
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_john_joseph_haldane  = {
+		name = KNT_john_joseph_haldane
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_john_joseph_haldane"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_john_joseph_haldane
+			traits = {
+				radio_priest
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	
+	KNT_annunziata_reesmogg = {
+		name = KNT_annunziata_reesmogg
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_annunziata_reesmogg"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_annunziata_reesmogg
+			traits = {
+				voice_of_tories
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_peter_bone = {
+		name = KNT_peter_bone
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_peter_bone"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token =KNT_peter_bone
+			traits = {
+				meanest_boss
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_nigel_farage  = {
+		name = KNT_nigel_farage 
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_nigel_farage"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_nigel_farage 
+			traits = {
+				national_fav
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_andrew_roberts = {
+		name = KNT_andrew_roberts
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_andrew_roberts"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_andrew_roberts 
+			traits = {
+				regime_defender
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_simon_heffer = {
+		name = KNT_simon_heffer
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_simon_heffer"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_simon_heffer 
+			traits = {
+				vox_populi
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_james_thompson = {
+		name = KNT_james_thompson
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_james_thompson"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_james_thompson
+			traits = {
+				blue_blood
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_merlin_hanbury_tracy = {
+		name = KNT_merlin_hanbury_tracy
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_merlin_hanbury_tracy"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_merlin_hanbury_tracy
+			traits = {
+				influential_ideologist
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_john_hayes = {
+		name = KNT_john_hayes
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_john_hayes"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_john_hayes
+			traits = {
+				inventors_lobbyist
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_tim_montgomerie = {
+		name = KNT_tim_montgomerie
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_tim_montgomerie"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_tim_montgomerie
+			traits = {
+				eurasian_specialist
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_james_glancy = {
+		name = KNT_james_glancy
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_james_glancy"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_james_glancy
+			traits = {
+				war_hero
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_james_dyson = {
+		name = KNT_james_dyson
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_james_dyson"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_james_dyson
+			traits = {
+				saviour_of_housewifes
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_rupert_grint = {
+		name = KNT_rupert_grint
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_rupert_grint"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_rupert_grint
+			traits = {
+				charity_gentlemen 
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_ben_bradley = {
+		name = KNT_ben_bradley
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_ben_bradley"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_ben_bradley
+			traits = {
+				go_getter
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_darren_grimes = {
+		name = KNT_darren_grimes
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_darren_grimes"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_darren_grimes
+			traits = {
+				it_analytic
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_neal_asher = {
+		name = KNT_neal_asher
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_neal_asher"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_neal_asher
+			traits = {
+				oraculus_of_progress
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_tim_berners_lee = {
+		name = KNT_tim_berners_lee
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_tim_berners_lee"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_tim_berners_lee
+			traits = {
+				prometheus
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	} 
+	KNT_tom_purgslove = {
+		name = KNT_tom_purgslove
+		portraits = {
+			civilian={
+				large=""
+				small = "GFX_idea_KNT_tom_purgslove"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_tom_purgslove
+			traits = {
+				whip
 			}
 			allowed = {
 				original_tag = KNT
