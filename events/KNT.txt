@@ -1222,7 +1222,13 @@ country_event = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"Private Militärfirma "Asgaard"\" division_template = \"Private Militärfirma\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Private Militärfirma "Asgaard"\" division_template = \"Private Militärfirma\" start_experience_factor = 1 start_equipment_factor = 0.8"
+						
+						owner = KNT
+					}
+				}random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Private Militärfirma "Asgaard"\" division_template = \"Private Militärfirma\" start_experience_factor = 1 start_equipment_factor = 0.8"
 						
 						owner = KNT
 					}
@@ -1270,7 +1276,7 @@ country_event = {
 				
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"Panzerbrigade der Koalitionstruppen\" division_template = \"Panzerbrigade\" start_experience_factor = 0.8 start_equipment_factor = 1"
+						division = "name = \"Panzerbrigade der Koalitionstruppen\" division_template = \"Panzerbrigade\" start_experience_factor = 0.8 start_equipment_factor = 0.7"
 						
 						owner = KNT
 					}
@@ -1292,7 +1298,7 @@ country_event = {
 			KNT = {
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"Private Militärfirma "Wodan"\" division_template = \"Private Militärfirma\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Private Militärfirma "Wodan"\" division_template = \"Private Militärfirma\" start_experience_factor = 1 start_equipment_factor = 0.7"
 						
 						owner = KNT
 					}
@@ -4806,7 +4812,7 @@ country_event = {
 			
 			random_owned_controlled_state = {
 				create_unit = {
-					division = "name = \"32-Bataljon\" division_template = \"Buffalo Battalion\" start_experience_factor = 1.2 start_equipment_factor = 1"
+					division = "name = \"32-Bataljon\" division_template = \"Buffalo Battalion\" start_experience_factor = 1.2 start_equipment_factor = 0.8"
 					
 					owner = KNT
 				}
@@ -4821,6 +4827,22 @@ country_event = {
 				defense_skill = 2
 				planning_skill = 3
 				logistics_skill = 2
+			}
+			
+			add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 20
+					producer = KNT
+			}
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 50
+					producer = KNT
+			}
+			add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 500
+					producer = KNT
 			}
 		}
 		
@@ -4850,7 +4872,7 @@ country_event = {
 			
 			random_owned_controlled_state = {
 				create_unit = {
-					division = "name = \"Executive Outcomes\" division_template = \"Security Firm\" start_experience_factor = 1.2 start_equipment_factor = 1"
+					division = "name = \"Executive Outcomes\" division_template = \"Security Firm\" start_experience_factor = 1.2 start_equipment_factor = 0.8"
 					
 					owner = KNT
 				}
@@ -4865,6 +4887,30 @@ country_event = {
 				defense_skill = 3
 				planning_skill = 2
 				logistics_skill = 3
+			}
+			
+			add_equipment_to_stockpile = {
+				type = main_battle_tank_equipment
+				amount = 200
+			}
+			add_equipment_to_stockpile = {
+				type = armored_car_equipment	
+				amount = 300
+			}
+			add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 20
+					producer = KNT
+			}
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 50
+					producer = KNT
+			}
+			add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 500
+					producer = KNT
 			}
 		}
 	}
@@ -5973,7 +6019,7 @@ country_event = {
 			
 			random_owned_controlled_state = {
 				create_unit = {
-					division = "name = \"Gothic Lolita Death Battalion\" division_template = \"Gothic Lolita Squad\" start_experience_factor = 1.2 start_equipment_factor = 1"
+					division = "name = \"Gothic Lolita Death Battalion\" division_template = \"Gothic Lolita Squad\" start_experience_factor = 1.2 start_equipment_factor = 0.9"
 					
 					owner = KNT
 				}
