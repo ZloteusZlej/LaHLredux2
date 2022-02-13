@@ -1226,6 +1226,12 @@ country_event = {
 						
 						owner = KNT
 					}
+				}random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Private Militärfirma "Asgaard"\" division_template = \"Private Militärfirma\" start_experience_factor = 1 start_equipment_factor = 0.8"
+						
+						owner = KNT
+					}
 				}
 				add_political_power = -35
 				
@@ -4822,6 +4828,22 @@ country_event = {
 				planning_skill = 3
 				logistics_skill = 2
 			}
+			
+			add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 20
+					producer = KNT
+			}
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 50
+					producer = KNT
+			}
+			add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 500
+					producer = KNT
+			}
 		}
 		
 		option = {
@@ -4874,6 +4896,21 @@ country_event = {
 			add_equipment_to_stockpile = {
 				type = armored_car_equipment	
 				amount = 300
+			}
+			add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 20
+					producer = KNT
+			}
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 50
+					producer = KNT
+			}
+			add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 500
+					producer = KNT
 			}
 		}
 	}
