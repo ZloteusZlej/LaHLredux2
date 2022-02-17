@@ -815,6 +815,24 @@ country_event = {
 		}
 	}
 	
+	country_event = { #TEMPORARY EVENT DELETE#
+		id = ESS_event.26
+		title = ESS_event.26.t
+		desc = ESS_event.26.d
+		
+		fire_only_once = yes
+		is_triggered_only = yes		
+		option = {
+			name = ESS_event.26.a
+			ESS = {
+				declare_war_on = {
+					target = EAG
+					type = annex_everything
+				}
+			}
+		}
+	}
+	
 country_event = {
 	id = ESS_event.666
 	title = ESS_event.666.t
