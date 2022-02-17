@@ -18,7 +18,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1980
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 0 }
@@ -30,7 +30,7 @@ technologies = {
 			
 			modifier = {
 				factor = 3
-				date > "1937.1.1"
+				date > "2022.1.1"
 			}
 		}
 		
@@ -52,6 +52,7 @@ technologies = {
 		}
 		
 		research_cost = 1.75
+		start_year = 1990
 		
 		folder = {
 			name = electronics_folder
@@ -71,12 +72,8 @@ technologies = {
 				has_war = yes
 			}
 			modifier = {
-				is_major = yes
-				factor = 2
-			}
-			modifier = {
 				factor = 5
-				date > "1939.8.1"
+				date > "1990.8.1"
 			}
 		}
 		
@@ -99,6 +96,7 @@ technologies = {
 		}
 		
 		research_cost = 1.75
+		start_year = 2000
 		
 		folder = {
 			name = electronics_folder
@@ -108,8 +106,8 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = USA
-				factor = 4
+				factor = 2
+				date > "2000.1.1"
 			}
 		}
 		
@@ -129,7 +127,7 @@ technologies = {
 		}
 		
 		research_cost = 1.25
-		start_year = 1938
+		start_year = 2010
 		enable_equipment_modules = { 
 			ship_radar_1
 		}
@@ -141,15 +139,8 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				factor = 5
-			}
-			modifier = {
-				date < "1938.1.1"
-				factor = 0.5
+				factor = 2
+				date > "2010.1.1"
 			}
 		}
 		
@@ -182,7 +173,7 @@ technologies = {
 		}
 		
 		research_cost = 1.25
-		start_year = 1939
+		start_year = 2015
 		
 		folder = {
 			name = electronics_folder
@@ -192,15 +183,8 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				factor = 5
-			}
-			modifier = {
-				date < "1939.1.1"
-				factor = 0.5
+				factor = 2
+				date > "2015.1.1"
 			}
 		}
 		
@@ -230,7 +214,7 @@ technologies = {
 		}
 		
 		research_cost = 1.25
-		start_year = 1940
+		start_year = 2020
 		
 		folder = {
 			name = electronics_folder
@@ -240,15 +224,8 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				factor = 4
-			}
-			modifier = {
-				date < "1940.1.1"
-				factor = 0.5
+				factor = 2
+				date > "2020.1.1"
 			}
 		}
 		
@@ -276,7 +253,7 @@ technologies = {
 		}
 		
 		research_cost = 1.25
-		start_year = 1941
+		start_year = 2022
 		
 		folder = {
 			name = electronics_folder
@@ -286,15 +263,8 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				factor = 4
-			}
-			modifier = {
-				date < "1941.1.1"
-				factor = 0.5
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 		
@@ -319,7 +289,7 @@ technologies = {
 		static_anti_air_hit_chance_factor = 0.2
 		
 		research_cost = 1.25
-		start_year = 1942
+		start_year = 2025
 		
 		folder = {
 			name = electronics_folder
@@ -329,11 +299,8 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				factor = 5
+				factor = 2
+				date > "2025.1.1"
 			}
 		}
 		
@@ -359,6 +326,7 @@ technologies = {
 		}
 		
 		research_cost = 2.5
+		start_year = 1990
 		
 		folder = {
 			name = electronics_folder
@@ -397,7 +365,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2.5
-		start_year = 1938
+		start_year = 2010
 		
 		folder = {
 			name = electronics_folder
@@ -406,16 +374,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 6
-			
-			modifier = {
-				factor = 3
-				date > "1938.1.6"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1939.1.1"
-			}
 		}
 		
 		categories = {
@@ -450,7 +408,7 @@ technologies = {
 		}
 		
 		research_cost = 2.5
-		start_year = 1940
+		start_year = 2020
 		
 		folder = {
 			name = electronics_folder
@@ -461,18 +419,8 @@ technologies = {
 			factor = 3
 			
 			modifier = {
-				factor = 3
-				date > "1940.1.6"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1941.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				tag = GER
+				factor = 4
+				date > "2020.1.1"
 			}
 		}
 		
@@ -499,7 +447,7 @@ technologies = {
 		}
 		
 		research_cost = 2.5
-		start_year = 1942
+		start_year = 2025
 		
 		folder = {
 			name = electronics_folder
@@ -510,13 +458,8 @@ technologies = {
 			factor = 3
 			
 			modifier = {
-				factor = 3
-				date > "1942.1.6"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1943.1.1"
+				factor = 4
+				date > "2025.1.1"
 			}
 		}
 		
@@ -534,7 +477,7 @@ technologies = {
 		encryption = 1
 		
 		research_cost = 1
-		start_year = 1938
+		start_year = 2000
 		allow_branch = {
 			NOT = { has_dlc = "La Resistance" }
 		}
@@ -545,24 +488,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1.75
-			modifier = {
-				has_war = yes
-				factor = 3
-			}
-			modifier = {
-				num_of_military_factories < 50
-				factor = 1.5 # not a major
-			}
-			modifier = {
-				factor = 3
-
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -579,7 +504,7 @@ technologies = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1
-		start_year = 1940
+		start_year = 2010
 		
 		folder = {
 			name = electronics_folder
@@ -588,24 +513,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1.75
-			modifier = {
-				has_war = yes
-				factor = 3
-			}
-			modifier = {
-				num_of_military_factories < 50
-				factor = 1.5 # not a major
-			}
-			modifier = {
-				factor = 3
-
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -622,7 +529,7 @@ technologies = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1
-		start_year = 1942
+		start_year = 2015
 		
 		folder = {
 			name = electronics_folder
@@ -631,24 +538,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1.75
-			modifier = {
-				has_war = yes
-				factor = 3
-			}
-			modifier = {
-				num_of_military_factories < 50
-				factor = 1.5 # not a major
-			}
-			modifier = {
-				factor = 3
-
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -665,7 +554,7 @@ technologies = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1.5
-		start_year = 1938
+		start_year = 2000
 		
 		folder = {
 			name = electronics_folder
@@ -674,20 +563,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1.5
-			modifier = {
-				num_of_military_factories < 50
-				factor = 1.5 # not a major
-			}
-			modifier = {
-				factor = 3
-
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -704,7 +579,7 @@ technologies = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1.5
-		start_year = 1940
+		start_year = 2010
 		
 		folder = {
 			name = electronics_folder
@@ -713,20 +588,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1.5
-			modifier = {
-				num_of_military_factories < 50
-				factor = 1.5 # not a major
-			}
-			modifier = {
-				factor = 3
-
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -743,7 +604,7 @@ technologies = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1.5
-		start_year = 1942
+		start_year = 2020
 		
 		folder = {
 			name = electronics_folder
@@ -752,20 +613,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1.5
-			modifier = {
-				num_of_military_factories < 50
-				factor = 1.5 # not a major
-			}
-			modifier = {
-				factor = 3
-
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -785,6 +632,7 @@ technologies = {
 		}
 		
 		research_cost = 1
+		start_year = 2000
 		
 		folder = {
 			name = electronics_folder
@@ -792,22 +640,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.75
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 3
-			}
-			modifier = {
-				OR = {
-					can_research = improved_fire_control_system
-					has_tech = improved_fire_control_system
-				}
-				factor = 0
-			}
+			factor = 0.2
 		}
 		
 		categories = {
@@ -824,6 +657,7 @@ technologies = {
 		}
 		
 		research_cost = 1
+		start_year = 2015
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
@@ -833,22 +667,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.75
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 3
-			}
-			modifier = {
-				OR = {
-					can_research = advanced_fire_control_system
-					has_tech = advanced_fire_control_system
-				}
-				factor = 0
-			}
+			factor = 0.2
 		}
 		
 		categories = {
@@ -868,6 +687,7 @@ technologies = {
 		}
 		
 		research_cost = 1
+		start_year = 2022
 		
 		folder = {
 			name = electronics_folder
@@ -875,16 +695,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.75
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 3
-			}
-			
+			factor = 0.2
 		}
 		
 		categories = {
@@ -908,7 +719,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1943
+		start_year = 1980
 		
 		folder = {
 			name = electronics_folder
@@ -916,7 +727,7 @@ technologies = {
 		}
 	
 		ai_will_do = {
-			factor = 1
+			factor = 0.8
 		}
 		
 		categories = {
@@ -952,7 +763,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 		research_cost = 2
-		start_year = 1944
+		start_year = 2000
 		
 		folder = {
 			name = electronics_folder
@@ -965,7 +776,7 @@ technologies = {
 		
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.8
 		}
 		
 		categories = {
@@ -1003,7 +814,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1945
+		start_year = 2020
 		
 		folder = {
 			name = electronics_folder
@@ -1011,7 +822,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.8
 		}
 		
 		categories = {
@@ -1044,7 +855,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1946
+		start_year = 2025
 		
 		folder = {
 			name = electronics_folder
@@ -1052,7 +863,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.8
 		}
 		
 		categories = {
@@ -1069,7 +880,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		start_year = 1940
+		start_year = 1945
 		research_cost = 5
 		
 		folder = {
@@ -1078,26 +889,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.5
 			
 			modifier = {
-				factor = 1.2
-				date > "1941.1.1"
+				factor = 1
+				date > "2021.1.1"
 			}
 			
 			modifier = {
-				factor = 1.2
-				date > "1942.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1943.1.1"
+				factor = 1.5
+				date > "2022.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				date > "2023.1.1"
+			}
+			
+			modifier = {
+				factor = 2.5
+				date > "2024.1.1"
 			}
 		}
 		
@@ -1112,7 +923,7 @@ technologies = {
 
 		# can build reactors
 		
-		start_year = 1943
+		start_year = 1980
 		research_cost = 5
 		
 		folder = {
@@ -1121,10 +932,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0.5
+			
 			modifier = {
-				tag = USA
+				factor = 1
+				date > "2021.1.1"
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > "2022.1.1"
+			}
+			
+			modifier = {
 				factor = 2
+				date > "2023.1.1"
+			}
+			
+			modifier = {
+				factor = 2.5
+				date > "2024.1.1"
 			}
 		}
 		
@@ -1141,7 +968,7 @@ technologies = {
 	lar_decryption_bonus_tech = {
 				
 		research_cost = 1.5 #Carrier Variant
-		start_year = 1944
+		start_year = 2020
 
 		# only from focus!!! #####
 		allow = {
