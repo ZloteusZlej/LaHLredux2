@@ -2631,7 +2631,7 @@ WES_diplomacy = {
 		remove_effect = {   
         }
 		complete_effect = {
-			STM = {
+			MSC = {
 				country_event = {
 					days = 1
 					id = MSC_event.8
@@ -3058,6 +3058,403 @@ WES_diplomacy = {
 					}
 					create_unit = {
 						division = "name = \"Russian Volunteer Unit in Great Britain"\" division_template = \"Russian Monarchist Volunteers\" start_experience_factor = 1 start_equipment_factor = 1"		
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_agrarian_socialists_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 10
+		cost = 55
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "Revolutionary Peasant Brigade"
+						}	
+						division_template = {
+							name = "Revolutionary Peasant Brigade"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								infantry = { x = 0 y = 0 }	
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }	
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
+								infantry = { x = 0 y = 5 }
+								infantry = { x = 1 y = 0 }	
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }	
+								infantry = { x = 1 y = 3 }
+								infantry = { x = 1 y = 4 }
+								infantry = { x = 1 y = 5 }
+							}
+								
+							support = { 
+
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Revolutionary Peasant Brigade Volunteers"\" division_template = \"Revolutionary Peasant Brigade\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_CHVK_Varg_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 10
+		cost = 120
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "CHVK Varg"
+						}	
+						division_template = {
+							name = "CHVK Varg"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								motorized = { x = 0 y = 0 }
+								motorized = { x = 0 y = 1 }
+								motorized = { x = 0 y = 2 }
+								motorized = { x = 0 y = 3 }
+								infantry_fighting_vehicle = { x = 1 y = 0 }
+								infantry_fighting_vehicle = { x = 1 y = 1 }
+								infantry_fighting_vehicle = { x = 1 y = 2 }
+								infantry_fighting_vehicle = { x = 1 y = 3 }
+							}
+								
+							support = { 
+
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"CHVK Varg 1st Brigade"\" division_template = \"CHVK Varg\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+					create_unit = {
+						division = "name = \"CHVK Varg 2nd Brigade"\" division_template = \"CHVK Varg\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_vasya_brigade_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 10
+		cost = 15
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "Vasya Brigade"
+						}	
+						division_template = {
+							name = "Vasya Brigade"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								infantry = { x = 0 y = 0 }	
+								infantry = { x = 0 y = 1 }
+							}
+								
+							support = { 
+
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Vasya's Squad"\" division_template = \"Vasya Brigade\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+					create_unit = {
+						division = "name = \"Lyokha's Division"\" division_template = \"Vasya Brigade\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+					create_unit = {
+						division = "name = \"Pet'ka's Brigade"\" division_template = \"Vasya Brigade\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_orthodox_priests_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 10
+		cost = 100
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "Orthodox Priests"
+						}	
+						division_template = {
+							name = "Orthodox Priests"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								infantry = { x = 0 y = 0 }	
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }	
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
+								artillery_brigade = { x = 1 y = 0 }
+								artillery_brigade = { x = 1 y = 1 }
+							}
+								
+							support = { 
+								engineer = { x = 0 y = 0 }
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Orthodox Warriors"\" division_template = \"Orthodox Priests\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+					create_unit = {
+						division = "name = \"Orthodox Warriors"\" division_template = \"Orthodox Priests\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_night_wolf_brigade_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 10
+		cost = 75
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "Nightwolf Brigade"
+						}	
+						division_template = {
+							name = "Nightwolf Brigade"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								motorized = { x = 0 y = 0 }
+								motorized = { x = 0 y = 1 }
+								motorized = { x = 0 y = 2 }
+								motorized = { x = 0 y = 3 }
+							}
+								
+							support = { 
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Biker Gang"\" division_template = \"Nightwolf Brigade\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+					create_unit = {
+						division = "name = \"Biker Gang"\" division_template = \"Nightwolf Brigade\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_tankmen_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 10
+		cost = 75
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "Russian Tankists"
+						}	
+						division_template = {
+							name = "Russian Tankists"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								main_battle_tank = { x = 0 y = 0 }
+								main_battle_tank = { x = 0 y = 1 }
+								main_battle_tank = { x = 0 y = 2 }
+								main_battle_tank = { x = 0 y = 3 }
+							}
+								
+							support = { 
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"T-34 Tank Brigade"\" division_template = \"Russian Tankists\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+					create_unit = {
+						division = "name = \"T-60 Tank Brigade"\" division_template = \"Russian Tankists\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_siberian_shamans_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 10
+		cost = 100
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "Siberian Shamans"
+						}	
+						division_template = {
+							name = "Siberian Shamans"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								mountaineers = { x = 0 y = 0 }	
+								mountaineers = { x = 0 y = 1 }
+								mountaineers = { x = 0 y = 2 }	
+								mountaineers = { x = 0 y = 3 }
+								mountaineers = { x = 0 y = 4 }
+								mountaineers = { x = 1 y = 0 }
+								mountaineers = { x = 1 y = 1 }
+								mountaineers = { x = 1 y = 2 }
+								mountaineers = { x = 1 y = 3 }
+								mountaineers = { x = 1 y = 4 }
+							}
+								
+							support = { 
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Sons of Garbyshev"\" division_template = \"Siberian Shamans\"  start_experience_factor = 1 start_equipment_factor = 1"
 						owner = WES
 					}
 				}
