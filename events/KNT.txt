@@ -1368,8 +1368,8 @@ country_event = {
 	trigger = {
 		check_variable = {
 			var = KNT_culture_progress
-			value = 250
-			compare = equals
+			value = 100
+			compare = greater_than_or_equals
 		} 
         original_tag = KNT			
 	}
@@ -1479,8 +1479,8 @@ country_event = {
 	trigger = {
 		check_variable = {
 			var = KNT_culture_progress
-			value = -250
-			compare = equals
+			value = -100
+			compare = less_than_or_equals
 		} 
         original_tag = KNT			
 	}
