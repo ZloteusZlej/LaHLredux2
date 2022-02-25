@@ -4,8 +4,23 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/MRC/Portrait_MRC_Douglas_Pierce.dds"
+				small = "gfx/leaders/MRC/GFX_idea_MRC_douglas_pearce.dds"
 			}
 		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = MRC_douglas_pearce
+			traits = {
+				
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
 		country_leader={
 			ideology=charismatic_dictatorship
 			expire="1.1.1.1"
@@ -30,8 +45,23 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/MRC/Portrait_MRC_David_Tibet.dds"
+				small = "gfx/leaders/MRC/GFX_idea_MRC_David_Tibet.dds"
 			}
 		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = MRC_david_tibet
+			traits = {
+				
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
 		country_leader={
 			ideology=ethical_millennialism
 			expire="1.1.1.1"
@@ -43,6 +73,12 @@ characters={
 			id=-1
 		}
 	}
+	
+
+	
+	
+	
+	
 	MRC_jeff_kent={
 		name="Jeff Kent"
 		portraits={
@@ -113,14 +149,150 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/MRC/Portrait_MRC_Michael_Moynichan.dds"
+				small = "gfx/leaders/MRC/GFX_idea_MRC_Michael_Moynichan.dds"
+				
 			}
 		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = MRC_michael_moynichan
+			traits = {
+				
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
 		country_leader={
 			ideology=autocracy
 			expire="1.1.1.1"
 			id=-1
 		}
 	}
+	
+	
+	MRC_tony_wakeford = {
+		name="Tony Wakeford"
+		portraits={
+			civilian={
+				small = "gfx/leaders/MRC/GFX_idea_MRC_tony_wakeford.dds"
+				
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = MRC_tony_wakeford
+			traits = {
+				
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_ronald_hutton = {
+		name="Ronald Hutton"
+		portraits={
+			civilian={
+				small = "gfx/leaders/MRC/GFX_idea_MRC_ronald_hutton.dds"
+				
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = MRC_ronald_hutton
+			traits = {
+				
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_archbishop_of_canterbury = {
+		name="Archbishop of Canterbury"
+		portraits={
+			civilian={
+				small = "gfx/leaders/MRC/GFX_idea_MRC_archbishop_of_canterbury.dds"
+				
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = MRC_archbishop_of_canterbury
+			traits = {
+				
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_daniele_liotta = {
+		name="Daniele Liotta"
+		portraits={
+			civilian={
+				small = "gfx/leaders/MRC/GFX_idea_MRC_daniele_liotta.dds"
+				
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = MRC_daniele_liotta
+			traits = {
+				
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_freya_aswynn = {
+		name="Freya Aswynn"
+		portraits={
+			civilian={
+				small = "gfx/leaders/MRC/GFX_idea_MRC_freya_aswynn.dds"
+				
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = MRC_freya_aswynn
+			traits = {
+				
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	
+	
+	
 	MRC_patrick_sanders={
 		name="Patrick Sanders"
 		portraits={
@@ -128,7 +300,7 @@ characters={
 				small=""
 			}
 			army={
-				large="gfx/leaders/Generics/leader_unknown.dds"
+				large="gfx/leaders/MRC/Portrait_MRC_Patrick_Sanders.dds"
 			}
 		}
 		corps_commander={

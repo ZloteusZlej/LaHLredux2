@@ -53,17 +53,6 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = NTH_war_time_media
-	icon = GFX_goal_NTH_War_Time_Media
-	prerequisite = {
-		focus = NTH_peoples_promise
-	}	
-	cost = 10
-	x = 23
-	y = 2
-}
-
-shared_focus = {
 	id = NTH_the_most_democratic_constitution
 	icon = GFX_goal_NTH_The_Most_Democratic_Constitution
 	prerequisite = {
@@ -418,9 +407,15 @@ shared_focus = {
 	prerequisite = {
 		focus = NTH_the_glorious_republican_army
 	}
+	mutually_exclusive = {
+		focus = NTH_all_hands_on_deck
+		focus = NTH_whispers_in_the_dark
+	}
 	completion_reward = {	
-		NTH = {
-			add_idea = NTH_eurasian_doctrine 
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = mobile_warfare
 		}
 	}
 	cost = 10
@@ -434,9 +429,15 @@ shared_focus = {
 	prerequisite = {
 		focus = NTH_the_glorious_republican_army
 	}
+	mutually_exclusive = {
+		focus = NTH_doctrine_of_the_new_millennium
+		focus = NTH_all_hands_on_deck
+	}
 	completion_reward = {
-		NTH = {
-			add_idea = NTH_atlantic_doctrine 
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = superior_firepower
 		}
 	}
 	cost = 10
@@ -569,10 +570,8 @@ shared_focus = {
 		focus = NTH_doctrine_of_the_new_millennium
 	}
 	completion_reward = {
-		NTH = {
-			add_idea = NTH_eurasian_doctrine_m 
-			remove_idea = NTH_eurasian_doctrine 
-		}
+		add_idea = NTH_eurasian_doctrine_m 
+		remove_idea = NTH_eurasian_doctrine 
 	}
 	cost = 10
 	x = 10
@@ -725,6 +724,17 @@ shared_focus = {
 	icon = GFX_goal_NTH_All_Hands_On_Deck
 	prerequisite = {
 		focus = NTH_the_glorious_republican_army
+	}
+	mutually_exclusive = {
+		focus = NTH_doctrine_of_the_new_millennium
+		focus = NTH_whispers_in_the_dark
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = grand_battle_plan
+		}
 	}
 	cost = 10
 	x = 17
