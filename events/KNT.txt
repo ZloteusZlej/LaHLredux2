@@ -32,6 +32,7 @@ country_event = {
 				amount = 300
 				producer = ESS
 			}
+		add_political_power = 35
     }
 	option = {
 		name = KNT_event.2.b
@@ -46,6 +47,7 @@ country_event = {
 				amount = 75
 				producer = ESS
 			}
+			add_political_power = 45
     }
 	option = {
 		name = KNT_event.2.c
@@ -69,6 +71,7 @@ country_event = {
 					instant_build = yes 
 				}
 			}
+			add_political_power = 50
     }
 }
 
@@ -316,6 +319,7 @@ country_event = {
 	option = {
 	name = KNT_event.10.a
 	set_country_flag = KENT_political_matters_resolved
+	add_political_power = 65
     }
 }
 	
@@ -330,6 +334,7 @@ country_event = {
 		name = KNT_event.11.a
 		KNT = {
 			add_ideas = KNT_inovations_introduction_act
+			add_political_power = 45
 		}
     }
 }
@@ -388,11 +393,12 @@ country_event = {
 				set_variable = { kent_thermonuclear_plant_completion = 1 }
 			}
 		}
+		add_political_power = 15
     }
 	
 	option = {
 		name = KNT_event.14.b
-		
+		add_political_power = 25
     }
 }
 
@@ -406,10 +412,12 @@ country_event = {
 	option = {
 		name = KNT_event.15.a
 		add_timed_idea = {idea = KNT_medium_manufacturers_suport days = 270}
+		add_political_power = 35
     }
 	option = {
 		name = KNT_event.15.b
-		add_timed_idea = {idea = KNT_workshopers_suport days = 270}		
+		add_timed_idea = {idea = KNT_workshopers_suport days = 270}
+		add_political_power = 35		
     } 
 }
 
@@ -422,7 +430,8 @@ country_event = {
     fire_only_once = yes
 	option = {
 		name = KNT_event.16.a
-		army_experience	= 10	
+		army_experience	= 10
+		add_political_power = 15
     }
 }
 
@@ -438,6 +447,7 @@ country_event = {
 		KNT = {
 			add_ideas = KNT_tank_guilds_w_armor_emphasis
 		}
+		add_political_power = 25
     }
 	
 	option = {
@@ -445,6 +455,7 @@ country_event = {
 		KNT = {
 			add_ideas = KNT_tank_guilds_w_speed_emphasis
 		}
+		add_political_power = 25
     }
 }
 
@@ -460,6 +471,7 @@ country_event = {
 		KNT = {
 			add_ideas = KNT_conventional_artillery_emphasis
 		}
+		add_political_power = 25
     }
 	
 	option = {
@@ -467,9 +479,11 @@ country_event = {
 		KNT = {
 			add_ideas = KNT_sp_artillery_emphasis
 		}
+		add_political_power = 25
     }
 	option = {
 		name = KNT_event.18.c
+		add_political_power = 30
     }
 }
 
@@ -488,6 +502,7 @@ country_event = {
 				KNT_infantry_guild_1_subeffects
 			}
 		}
+		add_political_power = 25
     }
 	
 	option = {
@@ -497,7 +512,8 @@ country_event = {
 				KNT_infantry_guild_2
 				KNT_infantry_guild_2_subeffects
 			}
-		}	
+		}
+		add_political_power = 25
 	}
 
 	
@@ -509,9 +525,11 @@ country_event = {
 				KNT_infantry_guild_3_subeffects
 			}
 		}
+		add_political_power = 25
 	}
 	option = {
 		name = KNT_event.19.e
+		add_political_power = 30
 	}
 }
 
@@ -604,6 +622,7 @@ country_event = {
 		name = KNT_event.25.a
 		add_offsite_building = { type = nuclear_reactor level = 1 }
 		add_offsite_building = { type = industrial_complex level = 2 }
+		add_political_power = 100
     }
 }
 
@@ -726,6 +745,7 @@ country_event = {
 			uses = 4
 			category = industry
 		}
+		add_political_power = 25
     }
 	option = {
 		name = KNT_event.31.b
@@ -734,6 +754,7 @@ country_event = {
 			uses = 4
 			category = electronics
 		}
+		add_political_power = 25
     }
 	option = {
 		name = KNT_event.31.c
@@ -742,6 +763,7 @@ country_event = {
 			uses = 2
 			category = armor
 		}
+		add_political_power = 25
     }
 	option = {
 		name = KNT_event.31.e
@@ -750,6 +772,7 @@ country_event = {
 			uses = 2
 			category = heavy_air
 		}
+		add_political_power = 25
     }
 }
 
@@ -976,6 +999,7 @@ country_event = {
 	
 	option = {
 		name = KNT_event.41.b
+		add_political_power = 45
     }
 }
 
@@ -1005,6 +1029,7 @@ country_event = {
 					category = radar_tech
 				}
 			}
+			add_political_power = 55
 		}
 		
 		option = {
@@ -1028,6 +1053,7 @@ country_event = {
 					category = electronics
 				}
 			}
+			add_political_power = 55
 		}
 		
 		option = {
@@ -1051,6 +1077,7 @@ country_event = {
 					category = electronics
 				}
 			}
+			add_political_power = 55
 		}
 		
 		option = {
@@ -1074,6 +1101,7 @@ country_event = {
 					category = nuclear
 				}
 			}
+			add_political_power = 55
 		}
 		
 		option = {
@@ -1097,6 +1125,7 @@ country_event = {
 					category = industry
 				}
 			}
+			add_political_power = 55
 		}
 		
 		option = {
@@ -1233,7 +1262,7 @@ country_event = {
 						owner = KNT
 					}
 				}
-				add_political_power = -35
+				add_political_power = -15
 				
 			}
 		}
@@ -1245,7 +1274,7 @@ country_event = {
 				id = EAG_event.6
 				}
 			}
-			KNT = { add_political_power = -35 }
+			KNT = { add_political_power = -15 }
 		}
 		option = {
 			name = KNT_event.48.c
@@ -1281,7 +1310,7 @@ country_event = {
 						owner = KNT
 					}
 				}
-				add_political_power = -35
+				add_political_power = -15
 			}
 		}
 	}
@@ -1313,7 +1342,7 @@ country_event = {
 					amount = -50
 					producer = KNT
 				}
-				add_political_power = -50
+				add_political_power = -25
 			}
 		}
 
