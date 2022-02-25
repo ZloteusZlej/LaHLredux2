@@ -6936,6 +6936,13 @@ KNT_exhibition_preparation = {
 }
 
 KNT_britain_pacification  = {
+	WES_diplomacy_meme = {	
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+	}
 	KNT_pacification_campaign = {
 		cost = 45
 		days_remove = 50
@@ -6943,39 +6950,39 @@ KNT_britain_pacification  = {
 			custom_effect_tooltip = KNT_resistance_supression_ALL.tt
 			add_to_variable = {
 				var = KNT_east_anglia_resistance_lvl
-				value = -2
+				value = -5
 			}
 			add_to_variable = {
 				var = KNT_nothern_ireland_resistance_lvl
-				value = -2
+				value = -5
 			}	
 			add_to_variable = {
 				var = KNT_essex_resistance_lvl
-				value = -2
+				value = -5
 			}	
 			add_to_variable = {
 				var = KNT_mercia_resistance_lvl
-				value = -2
+				value = -5
 			}	
 			add_to_variable = {
 				var = KNT_northumbria_resistance_lvl
-				value = -2
+				value = -5
 			}	
 			add_to_variable = {
 				var = KNT_scotland_resistance_lvl
-				value = -2
+				value = -5
 			}	
 			add_to_variable = {
 				var = KNT_sussex_resistance_lvl
-				value = -2
+				value = -5
 			}	
 			add_to_variable = {
 				var = KNT_wales_resistance_lvl
-				value = -2
+				value = -5
 			}	
 			add_to_variable = {
 				var = KNT_wessex_resistance_lvl
-				value = -2
+				value = -5 
 			}				
 		}
 		visible = {
@@ -7011,6 +7018,7 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_reforging_britain	
+			has_country_flag = lhl_britain_control_sussex_open
 		}
 		ai_will_do = {
 			factor = 100
@@ -7041,6 +7049,7 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_reforging_britain	
+			has_country_flag = lhl_britain_control_wessex_open
 		}
 		ai_will_do = {
 			factor = 100
@@ -7071,6 +7080,7 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_reforging_britain	
+			has_country_flag = lhl_britain_control_east_anglia_open
 		}
 		ai_will_do = {
 			factor = 100
@@ -7101,6 +7111,7 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_reforging_britain	
+			has_country_flag = lhl_britain_control_mercia_open
 		}
 		ai_will_do = {
 			factor = 100
@@ -7132,6 +7143,7 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_reconstruction_effort
+			has_country_flag = lhl_britain_control_scotland_open
 		}
 		ai_will_do = {
 			factor = 100
@@ -7162,6 +7174,7 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_reconstruction_effort
+			has_country_flag = lhl_britain_control_wales_open
 		}
 		ai_will_do = {
 			factor = 100
@@ -7192,6 +7205,7 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_reconstruction_effort
+			has_country_flag = lhl_britain_control_ireland_open
 		}
 		ai_will_do = {
 			factor = 100
@@ -7207,7 +7221,7 @@ KNT_britain_pacification  = {
 			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
 			add_to_variable = {
 				var = KNT_essex_resistance_lvl
-				value = -18
+				value = -8
 			}	
 			1149 = {
 				add_building_construction = {
@@ -7230,6 +7244,7 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_london_recovery
+			has_country_flag = lhl_britain_control_london_open
 		}
 		ai_will_do = {
 			factor = 100
@@ -7244,7 +7259,7 @@ KNT_britain_pacification  = {
 			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
 			add_to_variable = {
 				var = KNT_essex_resistance_lvl
-				value = -18
+				value = -8
 			}	
 			1149 = {
 				add_building_construction = {
@@ -7267,6 +7282,7 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_london_recovery
+			has_country_flag = lhl_britain_control_london_open
 		}
 		ai_will_do = {
 			factor = 100
@@ -7281,7 +7297,7 @@ KNT_britain_pacification  = {
 			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
 			add_to_variable = {
 				var = KNT_essex_resistance_lvl
-				value = -18
+				value = -8
 			}	
 			1149 = {
 				add_building_construction = {
@@ -7304,6 +7320,121 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_london_recovery
+			has_country_flag = lhl_britain_control_london_open
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	KNT_rebuild_parliament_building = {
+		cost = 75
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_rebuild_LONDON.tt
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = {
+				var = KNT_essex_resistance_lvl
+				value = -8
+			}	
+			1149 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.316
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_london_recovery
+			has_country_flag = lhl_britain_control_london_open
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	KNT_rebuild_tower_of_london = {
+		cost = 75
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_rebuild_LONDON.tt
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = {
+				var = KNT_essex_resistance_lvl
+				value = -8
+			}	
+			1149 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.317
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_london_recovery
+			has_country_flag = lhl_britain_control_london_open
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	KNT_rebuild_london_suburbs = {
+		cost = 75
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_rebuild_LONDON.tt
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = {
+				var = KNT_essex_resistance_lvl
+				value = -8
+			}	
+			1149 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.318
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+			stability_weekly = -0.08
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_london_recovery
+			has_country_flag = lhl_britain_control_london_open
 		}
 		ai_will_do = {
 			factor = 100
@@ -7335,6 +7466,7 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_thatcher's_mistakes
+			has_country_flag = lhl_britain_control_northumbria_open
 		}
 		ai_will_do = {
 			factor = 100
@@ -7409,6 +7541,7 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_peace_through_the_faith
+			has_country_flag = lhl_britain_control_mercia_open
 		}
 		ai_will_do = {
 			factor = 100
@@ -7432,6 +7565,7 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_peace_through_the_faith
+			has_country_flag = lhl_britain_control_wessex_open
 		}
 		ai_will_do = {
 			factor = 100
@@ -7455,6 +7589,7 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_peace_through_the_faith
+			has_country_flag = lhl_britain_control_london_open
 		}
 		ai_will_do = {
 			factor = 100
@@ -7483,6 +7618,7 @@ KNT_britain_pacification  = {
 		visible = {
 			has_active_mission = KNT_partisan_uprising 
 			has_completed_focus = KNT_peace_through_the_faith
+			has_country_flag = lhl_britain_control_scotland_open
 		}
 		ai_will_do = {
 			factor = 100
@@ -7492,7 +7628,7 @@ KNT_britain_pacification  = {
     KNT_partisan_uprising = {
 		cost = 0
 		is_good = no                                        
-        days_mission_timeout = 300
+        days_mission_timeout = 30
 		allowed = { tag = KNT }
         available = {                           
 			check_variable = {
@@ -7545,14 +7681,6 @@ KNT_britain_pacification  = {
             has_completed_focus = KNT_there_always_be_an_england			
         }
 		timeout_effect = {
-			start_civil_war = {
-				ruling_party = ROOT
-				ideology = hegemonism
-				size = 0.8
-				only_own_territory = no
-				keep_political_leader = yes
-				keep_political_party_members = yes
-			}
 		}
 		complete_effect = {  
 			add_political_power = 50

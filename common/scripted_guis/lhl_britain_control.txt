@@ -8,6 +8,107 @@ scripted_gui = {
 		visible = {
 			tag = KNT
 		}
+		effects = {
+			lhl_britain_control_east_anglia_click = {
+					set_country_flag = lhl_britain_control_east_anglia_open
+					clr_country_flag = lhl_britain_control_ireland_open
+					clr_country_flag = lhl_britain_control_london_open
+					clr_country_flag = lhl_britain_control_mercia_open
+					clr_country_flag = lhl_britain_control_northumbria_open
+					clr_country_flag = lhl_britain_control_scotland_open
+					clr_country_flag = lhl_britain_control_sussex_open
+					clr_country_flag = lhl_britain_control_wales_open
+					clr_country_flag = lhl_britain_control_wessex_open
+			}
+			lhl_britain_control_ireland_click = {
+					clr_country_flag = lhl_britain_control_east_anglia_open
+					set_country_flag = lhl_britain_control_ireland_open
+					clr_country_flag = lhl_britain_control_london_open
+					clr_country_flag = lhl_britain_control_mercia_open
+					clr_country_flag = lhl_britain_control_northumbria_open
+					clr_country_flag = lhl_britain_control_scotland_open
+					clr_country_flag = lhl_britain_control_sussex_open
+					clr_country_flag = lhl_britain_control_wales_open
+					clr_country_flag = lhl_britain_control_wessex_open
+			}
+			lhl_britain_control_london_click = {
+					clr_country_flag = lhl_britain_control_east_anglia_open
+					clr_country_flag = lhl_britain_control_ireland_open
+					set_country_flag = lhl_britain_control_london_open
+					clr_country_flag = lhl_britain_control_mercia_open
+					clr_country_flag = lhl_britain_control_northumbria_open
+					clr_country_flag = lhl_britain_control_scotland_open
+					clr_country_flag = lhl_britain_control_sussex_open
+					clr_country_flag = lhl_britain_control_wales_open
+					clr_country_flag = lhl_britain_control_wessex_open
+			}
+			lhl_britain_control_mercia_click = {
+					clr_country_flag = lhl_britain_control_east_anglia_open
+					clr_country_flag = lhl_britain_control_ireland_open
+					clr_country_flag = lhl_britain_control_london_open
+					set_country_flag = lhl_britain_control_mercia_open
+					clr_country_flag = lhl_britain_control_northumbria_open
+					clr_country_flag = lhl_britain_control_scotland_open
+					clr_country_flag = lhl_britain_control_sussex_open
+					clr_country_flag = lhl_britain_control_wales_open
+					clr_country_flag = lhl_britain_control_wessex_open
+			}
+			lhl_britain_control_northumbria_click = {
+					clr_country_flag = lhl_britain_control_east_anglia_open
+					clr_country_flag = lhl_britain_control_ireland_open
+					clr_country_flag = lhl_britain_control_london_open
+					clr_country_flag = lhl_britain_control_mercia_open
+					set_country_flag = lhl_britain_control_northumbria_open
+					clr_country_flag = lhl_britain_control_scotland_open
+					clr_country_flag = lhl_britain_control_sussex_open
+					clr_country_flag = lhl_britain_control_wales_open
+					clr_country_flag = lhl_britain_control_wessex_open
+			}
+			lhl_britain_control_scotland_click = {
+					clr_country_flag = lhl_britain_control_east_anglia_open
+					clr_country_flag = lhl_britain_control_ireland_open
+					clr_country_flag = lhl_britain_control_london_open
+					clr_country_flag = lhl_britain_control_mercia_open
+					clr_country_flag = lhl_britain_control_northumbria_open
+					set_country_flag = lhl_britain_control_scotland_open
+					clr_country_flag = lhl_britain_control_sussex_open
+					clr_country_flag = lhl_britain_control_wales_open
+					clr_country_flag = lhl_britain_control_wessex_open
+			}
+			lhl_britain_control_sussex_click = {
+					clr_country_flag = lhl_britain_control_east_anglia_open
+					clr_country_flag = lhl_britain_control_ireland_open
+					clr_country_flag = lhl_britain_control_london_open
+					clr_country_flag = lhl_britain_control_mercia_open
+					clr_country_flag = lhl_britain_control_northumbria_open
+					clr_country_flag = lhl_britain_control_scotland_open
+					set_country_flag = lhl_britain_control_sussex_open
+					clr_country_flag = lhl_britain_control_wales_open
+					clr_country_flag = lhl_britain_control_wessex_open
+			}
+			lhl_britain_control_wales_click = {
+					clr_country_flag = lhl_britain_control_east_anglia_open
+					clr_country_flag = lhl_britain_control_ireland_open
+					clr_country_flag = lhl_britain_control_london_open
+					clr_country_flag = lhl_britain_control_mercia_open
+					clr_country_flag = lhl_britain_control_northumbria_open
+					clr_country_flag = lhl_britain_control_scotland_open
+					clr_country_flag = lhl_britain_control_sussex_open
+					set_country_flag = lhl_britain_control_wales_open
+					clr_country_flag = lhl_britain_control_wessex_open
+			}
+			lhl_britain_control_wessex_click = {
+					clr_country_flag = lhl_britain_control_east_anglia_open
+					clr_country_flag = lhl_britain_control_ireland_open
+					clr_country_flag = lhl_britain_control_london_open
+					clr_country_flag = lhl_britain_control_mercia_open
+					clr_country_flag = lhl_britain_control_northumbria_open
+					clr_country_flag = lhl_britain_control_scotland_open
+					clr_country_flag = lhl_britain_control_sussex_open
+					clr_country_flag = lhl_britain_control_wales_open
+					set_country_flag = lhl_britain_control_wessex_open
+			}
+		}
 		triggers = {
             lhl_britain_control_east_anglia_visible = {
                check_variable = {

@@ -6539,29 +6539,121 @@ country_event = {
 	}
 	
 ###REBUILD##
-	country_event = { #Big Ben Rebuilt
+	country_event = {  #Big Ben Rebuilt 
 		id = KNT_event.313
 		title = KNT_event.313.t
 		desc = KNT_event.313.d
 		is_triggered_only = yes
 		option = {
+			trigger = {
+				KNT = {
+					has_government = right_populism
+				}
+			}
 			name = KNT_event.313.a
 			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
 			add_to_variable = { var = KNT_essex_resistance_lvl value = -8 }
 			add_stability = 0.02
 		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = right_populism
+				}
+			}
+			name = KNT_event.313.b
+			KNT = {
+				country_event = {
+					days = 10
+					id = KNT_event.319
+				}
+			}	
+			add_political_power = -30
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = neocameralism
+				}
+			}
+			name = KNT_event.313.c
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -8 }
+			add_stability = 0.02
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = neocameralism
+				}
+			}
+			name = KNT_event.313.e
+			KNT = {
+				country_event = {
+					days = 10
+					id = KNT_event.320
+				}
+			}
+			add_political_power = -30
+		}
 	}
 	
-	country_event = { #Westminster Rebuilt
+	country_event = { #Westminster Rebuilt 
 		id = KNT_event.314
 		title = KNT_event.314.t
 		desc = KNT_event.314.d
 		is_triggered_only = yes
 		option = {
+			trigger = {
+				KNT = {
+					has_government = right_populism
+				}
+			}
 			name = KNT_event.314.a
 			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
 			add_to_variable = { var = KNT_essex_resistance_lvl value = -8 }
 			add_stability = 0.02
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = right_populism
+				}
+			}
+			name = KNT_event.314.b
+			KNT = {
+				country_event = {
+					days = 10
+					id = KNT_event.321
+				}
+			}
+			add_political_power = -30
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = neocameralism
+				}
+			}
+			name = KNT_event.314.c
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -8 }
+			add_stability = 0.02
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = neocameralism
+				}
+			}
+			name = KNT_event.314.e
+			KNT = {
+				country_event = {
+					days = 10
+					id = KNT_event.322
+				}
+			}
+			add_political_power = -30
 		}
 	}
 	
@@ -6571,9 +6663,387 @@ country_event = {
 		desc = KNT_event.315.d
 		is_triggered_only = yes
 		option = {
+			trigger = {
+				KNT = {
+					has_government = right_populism
+				}
+			}
 			name = KNT_event.315.a
 			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
 			add_to_variable = { var = KNT_essex_resistance_lvl value = -8 }
 			add_stability = 0.02
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = right_populism
+				}
+			}
+			name = KNT_event.315.b
+			KNT = {
+				country_event = {
+					days = 10
+					id = KNT_event.323
+				}
+			}
+			add_political_power = -30
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = neocameralism
+				}
+			}
+			name = KNT_event.315.c
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -8 }
+			add_stability = 0.02
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = neocameralism
+				}
+			}
+			name = KNT_event.315.e
+			KNT = {
+				country_event = {
+					days = 10
+					id = KNT_event.324
+				}
+			}
+			add_political_power = -30
+		}
+	}
+	
+	country_event = { #Parliament Building Rebuilt
+		id = KNT_event.316
+		title = KNT_event.316.t
+		desc = KNT_event.316.d
+		is_triggered_only = yes
+		option = {
+			trigger = {
+				KNT = {
+					has_government = right_populism
+				}
+			}
+			name = KNT_event.316.a
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -8 }
+			add_stability = 0.02
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = right_populism
+				}
+			}
+			name = KNT_event.316.b
+			KNT = {
+				country_event = {
+					days = 10
+					id = KNT_event.325
+				}
+			}
+			add_political_power = -30
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = neocameralism
+				}
+			}
+			name = KNT_event.316.c
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -8 }
+			add_stability = 0.02
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = neocameralism
+				}
+			}
+			name = KNT_event.316.e
+			KNT = {
+				country_event = {
+					days = 10
+					id = KNT_event.326
+				}
+			}
+			add_political_power = -30
+		}
+	}
+	
+	country_event = { #Tower of London Rebuilt
+		id = KNT_event.317
+		title = KNT_event.317.t
+		desc = KNT_event.317.d
+		is_triggered_only = yes
+		option = {
+			trigger = {
+				KNT = {
+					has_government = right_populism
+				}
+			}
+			name = KNT_event.317.a
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -8 }
+			add_stability = 0.02
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = right_populism
+				}
+			}
+			name = KNT_event.317.b
+			KNT = {
+				country_event = {
+					days = 10
+					id = KNT_event.327
+				}
+			}
+			add_political_power = -30
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = neocameralism
+				}
+			}
+			name = KNT_event.317.c
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -8 }
+			add_stability = 0.02
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = neocameralism
+				}
+			}
+			name = KNT_event.317.e
+			KNT = {
+				country_event = {
+					days = 10
+					id = KNT_event.328
+				}
+			}
+			add_political_power = -30
+		}
+	}
+	country_event = { #City Suburbs Rebuilt 
+		id = KNT_event.318
+		title = KNT_event.318.t
+		desc = KNT_event.318.d
+		is_triggered_only = yes
+		option = {
+			trigger = {
+				KNT = {
+					has_government = right_populism
+				}
+			}
+			name = KNT_event.318.a
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -8 }
+			add_stability = 0.02
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = right_populism
+				}
+			}
+			name = KNT_event.318.b
+			KNT = {
+				country_event = {
+					days = 10
+					id = KNT_event.329
+				}
+			}
+			add_political_power = -30
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = neocameralism
+				}
+			}
+			name = KNT_event.318.c
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -8 }
+			add_stability = 0.02
+		}
+		option = {
+			trigger = {
+				KNT = {
+					has_government = neocameralism
+				}
+			}
+			name = KNT_event.318.e
+			KNT = {
+				country_event = {
+					days = 10
+					id = KNT_event.330
+				}
+			}
+			add_political_power = -30
+		}
+	}
+	country_event = {
+		id = KNT_event.319
+		title = KNT_event.319.t
+		desc = KNT_event.319.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.319.a
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -10 }
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	country_event = {
+		id = KNT_event.320
+		title = KNT_event.320.t
+		desc = KNT_event.320.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.320.a
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -10 }
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	country_event = {
+		id = KNT_event.321
+		title = KNT_event.321.t
+		desc = KNT_event.321.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.321.a
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -10 }
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	country_event = {
+		id = KNT_event.322
+		title = KNT_event.322.t
+		desc = KNT_event.322.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.322.a
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -10 }
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	country_event = {
+		id = KNT_event.323
+		title = KNT_event.323.t
+		desc = KNT_event.323.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.323.a
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -10 }
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	country_event = {
+		id = KNT_event.324
+		title = KNT_event.324.t
+		desc = KNT_event.324.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.324.a
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -10 }
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	country_event = {
+		id = KNT_event.325
+		title = KNT_event.325.t
+		desc = KNT_event.325.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.325.a
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -10 }
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	country_event = {
+		id = KNT_event.326
+		title = KNT_event.326.t
+		desc = KNT_event.326.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.326.a
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -10 }
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	country_event = {
+		id = KNT_event.327
+		title = KNT_event.327.t
+		desc = KNT_event.327.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.327.a
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -10 }
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	country_event = {
+		id = KNT_event.328
+		title = KNT_event.328.t
+		desc = KNT_event.328.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.328.a
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -10 }
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	country_event = {
+		id = KNT_event.329
+		title = KNT_event.329.t
+		desc = KNT_event.329.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.329.a
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -10 }
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	country_event = {
+		id = KNT_event.330
+		title = KNT_event.330.t
+		desc = KNT_event.330.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.330.a
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = { var = KNT_essex_resistance_lvl value = -10 }
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 	}
