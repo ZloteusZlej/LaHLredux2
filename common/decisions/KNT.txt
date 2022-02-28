@@ -7592,10 +7592,12 @@ KNT_britain_pacification  = {
 		}
 	}
 	KNT_hunting_down_knights = {
-		custom_cost_trigger = {
-            has_equipment = {
-                infantry_equipment_1 > 999
-            }
+		available = {
+			KNT = {
+				has_equipment = {
+					infantry_equipment_1 > 499
+				}
+			}
 		}
 		days_remove = 30
 		complete_effect = {	
@@ -7762,7 +7764,7 @@ KNT_britain_pacification  = {
     KNT_partisan_uprising = {
 		cost = 0
 		is_good = no                                        
-        days_mission_timeout = 30
+        days_mission_timeout = 75
 		allowed = { tag = KNT }
         available = {                           
 			check_variable = {
@@ -7815,6 +7817,12 @@ KNT_britain_pacification  = {
             has_completed_focus = KNT_there_always_be_an_england			
         }
 		timeout_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.335
+				}
+			}	
 		}
 		complete_effect = {  
 			add_political_power = 50
