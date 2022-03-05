@@ -246,3 +246,198 @@ country_event = {
 		air_cas_efficiency = 0.02
 	}
 }
+
+
+country_event = {
+	id = albion.25
+	title = albion.25.t
+	desc = albion.25.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.25.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = albion.26
+	title = albion.26.t
+	desc = albion.26.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.26.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		MRC = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.27
+	title = albion.27.t
+	desc = albion.27.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.27.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		ESS = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.28
+	title = albion.28.t
+	desc = albion.28.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.28.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		KNT = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.29
+	title = albion.29.t
+	desc = albion.29.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.29.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		EAG = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.30
+	title = albion.30.t
+	desc = albion.30.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.30.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		WES = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.31
+	title = albion.31.t
+	desc = albion.31.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.31.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		SUS = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.31
+	title = albion.31.t
+	desc = albion.31.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.31.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		SCO = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.32
+	title = albion.32.t
+	desc = albion.32.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.31.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		WLS = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.40
+	title = albion.40.t
+	desc = albion.40.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.31.a
+		ai_chance = {
+			base = 100
+		}
+		add_idea = {
+			NTH_holding_out
+		}
+	}
+}
