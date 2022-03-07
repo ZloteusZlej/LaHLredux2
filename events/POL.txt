@@ -1,0 +1,170 @@
+add_namespace = POL_event
+
+country_event = {
+	id = POL_event.1
+	title = POL_event.1.t
+	desc = POL_event.1.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	immediate = {
+	POL_release_NLF = yes
+	hidden_effect = {
+		    NLF = {
+		        add_state_core = 175
+		        transfer_state = 175
+		        add_state_core = 187
+		        transfer_state = 187
+				add_state_core = 185
+		        transfer_state = 185
+				add_state_core = 182
+				add_state_core = 176
+				add_state_core = 177
+				add_state_core = 172
+				add_state_core = 173
+				add_state_core = 183
+				add_state_core = 180
+				add_state_core = 181
+				add_state_core = 178
+				add_state_core = 179
+			}			
+		}
+           }
+	option = {
+		name = POL_event.1.a
+		add_stability = -0.05
+    }	
+	option = {
+	    name = POL_event.1.b
+	    trigger = {
+	        is_ai = no
+	    }
+	    hidden_effect = {
+	        NLF = {
+	            change_tag_from = POL
+	        }
+	    }
+	}
+}
+
+country_event = {
+	id = POL_event.2
+	title = POL_event.2.t
+	desc = POL.2.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	immediate = {
+	POL_release_URL = yes
+	hidden_effect = {
+		    URL = {
+		        add_state_core = 173
+		        transfer_state = 173
+				add_state_core = 172
+				add_state_core = 177
+				add_state_core = 178
+				add_state_core = 179
+				add_state_core = 173
+				add_state_core = 180
+				add_state_core = 183
+				add_state_core = 181
+				add_state_core = 182
+				add_state_core = 176
+				add_state_core = 185
+				add_state_core = 175
+				add_state_core = 187
+				add_state_core = 184
+				add_state_core = 183
+				add_state_core = 186
+				add_state_core = 683
+				add_state_core = 174
+			}			
+		}
+           }
+	option = {
+		name = POL_event.2.a
+		add_stability = -0.05
+    }	
+	option = {
+	    name = POL_event.2.b
+	    trigger = {
+	        is_ai = no
+	    }
+	    hidden_effect = {
+	        URL = {
+	            change_tag_from = POL
+	        }
+	    }
+	}
+}
+
+country_event = {
+	id = POL_event.3
+	title = POL_event.3.t
+	desc = POL.3.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	immediate = {
+	POL_release_PDE = yes
+	POL_release_PLP = yes
+	hidden_effect = {
+		    PDE = {
+				add_state_core = 186
+		        transfer_state = 186
+				add_state_core = 184
+		        transfer_state = 184
+				add_state_core = 183
+		        transfer_state = 183
+			}
+			PLP = {
+		        add_state_core = 174
+		        transfer_state = 174
+			}
+		}
+           }
+	option = {
+		name = POL_event.3.a
+		add_stability = -0.05
+    }	
+	option = {
+	    name = POL_event.3.b
+	    trigger = {
+	        is_ai = no
+	    }
+	    hidden_effect = {
+	        PDE = {
+	            change_tag_from = POL
+	        }
+	    }
+	}
+	
+	option = {
+	    name = POL_event.3.c
+	    trigger = {
+	        is_ai = no
+	    }
+	    hidden_effect = {
+	        PLP = {
+	            change_tag_from = POL
+	        }
+	    }
+	}
+}
+
+country_event = {
+	id = POL_event.4
+	title = POL_event.4.t
+	desc = POL.4.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = POL_event.4.a
+		retire_character = POL_andrzej_lepper
+		set_politics = {
+			ruling_party = hegemonism
+		}
+    }	
+
+}
