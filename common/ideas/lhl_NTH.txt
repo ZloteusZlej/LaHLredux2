@@ -882,6 +882,44 @@ ideas = {
 				air_cas_efficiency = 0.02
 			}
 		}
+		
+		NTH_terror_bombings = {
+	
+			picture = NTH_terror_bombings
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.3
+				production_speed_buildings_factor = -0.5
+				repair_speed_buildings_factor = -0.75
+				war_support_factor = -0.2
+				army_defence_factor = -0.1
+				army_attack_factor = -0.1
+			}
+		}
+		
+		NTH_holding_out = {
+	
+			picture = NTH_holding_out
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+			}
+		}
 	}
 	
 	naval_manufacturer = { 

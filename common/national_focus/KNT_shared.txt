@@ -3371,7 +3371,7 @@ shared_focus = {
 		icon = GFX_goal_KNT_the_law_of_the_state
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_there_always_be_an_england
+			focus = KNT_peace_through_the_faith
 		}
 		select_effect = {
 			KNT = {
@@ -3385,15 +3385,15 @@ shared_focus = {
 			custom_effect_tooltip =  KNT_law.tt
 			add_political_power = 100
 		}
-		x = 24
-		y = 18
+		x = 27
+		y = 20
 	}
 	shared_focus = {
 		id = KNT_reconstruction_effort
 		icon = GFX_goal_KNT_reconstruction_effort
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_the_law_of_the_state
+			focus = KNT_thatcher's_mistakes
 		}
 		completion_reward = {
 			add_political_power = -45
@@ -3428,13 +3428,13 @@ shared_focus = {
 		icon = GFX_goal_KNT_thatcher's_mistakes
 		cost = 4.3
 		prerequisite = {
-			focus = KNT_peace_through_the_faith
+			focus = KNT_there_always_be_an_england
 		}
 		completion_reward = {
 			custom_effect_tooltip = KNT_reconstruct_north.tt
 		}
-		x = 27
-		y = 20
+		x = 24
+		y = 18
 	}
 	shared_focus = {
 		id = KNT_reforging_britain
@@ -3470,10 +3470,7 @@ shared_focus = {
 			focus = KNT_london_recovery
 		}
 		prerequisite = {
-			focus = KNT_thatcher's_mistakes
-		}
-		prerequisite = {
-			focus = KNT_reconstruction_effort
+			focus = KNT_the_law_of_the_state
 		}
 		completion_reward = {
 			custom_effect_tooltip = KNT_dumping.tt 
@@ -3490,7 +3487,7 @@ shared_focus = {
 			focus = KNT_london_recovery
 		}
 		prerequisite = {
-			focus = KNT_thatcher's_mistakes
+			focus = KNT_the_law_of_the_state
 		}
 		prerequisite = {
 			focus = KNT_reconstruction_effort
