@@ -1,0 +1,18 @@
+add_namespace = NLF_event
+
+country_event = {
+	id =  NLF_event.1
+	title = NLF_event.1.t
+	desc = NLF.1.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = NLF_event.1.a
+		retire_character = NLF_zbignew_stonoga
+		set_politics = {
+			ruling_party = neocameralism
+		}
+    }	
+
+}

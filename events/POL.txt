@@ -78,6 +78,7 @@ country_event = {
 				add_state_core = 186
 				add_state_core = 683
 				add_state_core = 174
+				
 			}			
 		}
            }
@@ -167,4 +168,40 @@ country_event = {
 		}
     }	
 
+}
+
+country_event = {
+	id = POL_event.5
+	title = POL_event.5.t
+	desc = POL.5.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = POL_event.5.a
+		retire_character = POL_lech_kaczynski
+		recruit_character = POL_jens_stoltenberg
+		POL_jens_stoltenberg = {
+			promote_character = yes
+			promote_character = stratocracy
+		}
+    }	
+}
+
+country_event = {
+	id = POL_event.6
+	title = POL_event.6.t
+	desc = POL.6.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = {
+		name = POL_event.6.a
+		retire_character = POL_jens_stoltenberg
+		recruit_character = POL_antoni_macierewicz
+		POL_antoni_macierewicz = {
+			promote_character = yes
+			promote_character = stratocracy
+		}
+    }	
 }
