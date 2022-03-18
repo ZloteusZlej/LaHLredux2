@@ -203,3 +203,30 @@ country_event = {
 		army_experience = 10
     }
 }
+
+country_event = {
+	id = EAG_event.11
+	title = EAG_event.11.t
+	desc = EAG_event.11.d
+	is_triggered_only = yes	
+    option = {
+		name = EAG_event.11.a
+		EAG = {
+			add_ideas = EAG_mercs_quality_very_low
+			set_country_flag = int_mercs_quality_very_low
+		}			
+    }
+}
+
+country_event = {
+	id = EAG_event.12
+	title = EAG_event.12.t
+	desc = EAG_event.12.d
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+		name = EAG_event.12.a
+		clr_country_flag = int_mercs_quality_very_low
+    }
+}

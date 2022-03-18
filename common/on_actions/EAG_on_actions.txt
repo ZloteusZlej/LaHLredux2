@@ -15,4 +15,58 @@ on_actions = {
 			}
 		}
 	}
-}					  
+	
+	on_startup	 = {
+	    effect = {
+			EAG = {
+				set_variable = {
+					var = mercs_quality
+					value = 20
+				}
+				set_variable = {
+					var = mercs_mood
+					value = 60
+				}
+				set_variable = {
+					var = volk_dev
+					value = 35
+				}
+				set_variable = {
+					var = volk_mood
+					value = 40
+				}
+			}
+		}
+	}
+	
+	on_daily_EAG = {
+		effect = {
+			 if = {
+				limit = {
+					check_variable = {
+						var = mercs_quality
+						value = 25
+						compare = less_than_or_equals
+					}
+					NOT = {
+							EAG = {
+								has_country_flag = int_mercs_quality_very_low
+							}
+						}	
+				}
+				clamp_variable = {
+					var = mercs_quality
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.11
+						days = 0
+					}
+				}
+			}
+		}
+	}
+}
+				  
