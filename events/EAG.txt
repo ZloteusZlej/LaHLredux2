@@ -209,12 +209,42 @@ country_event = {
 	title = EAG_event.11.t
 	desc = EAG_event.11.d
 	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_mercs_quality_low
+			}
+			clr_country_flag = int_mercs_quality_low
+			remove_ideas = EAG_mercs_quality_low 
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_medium
+			}
+			clr_country_flag = int_mercs_quality_medium
+			remove_ideas = EAG_mercs_quality_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_high
+			}
+			clr_country_flag = int_mercs_quality_high
+			remove_ideas = EAG_mercs_quality_high
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_high
+			}
+			clr_country_flag = int_mercs_quality_very_high
+			remove_ideas = EAG_mercs_quality_very_high
+		}
+	}
     option = {
 		name = EAG_event.11.a
 		EAG = {
 			add_ideas = EAG_mercs_quality_very_low
 			set_country_flag = int_mercs_quality_very_low
-		}			
+		}
     }
 }
 
@@ -222,11 +252,173 @@ country_event = {
 	id = EAG_event.12
 	title = EAG_event.12.t
 	desc = EAG_event.12.d
-	
-    fire_only_once = yes	
-	is_triggered_only = yes
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_low
+			}
+			clr_country_flag = int_mercs_quality_very_low
+			remove_ideas = EAG_mercs_quality_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_medium
+			}
+			clr_country_flag = int_mercs_quality_medium
+			remove_ideas = EAG_mercs_quality_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_high
+			}
+			clr_country_flag = int_mercs_quality_high
+			remove_ideas = EAG_mercs_quality_high
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_high
+			}
+			clr_country_flag = int_mercs_quality_very_high
+			remove_ideas = EAG_mercs_quality_very_high
+		}
+	}
     option = {
 		name = EAG_event.12.a
-		clr_country_flag = int_mercs_quality_very_low
+		EAG = {
+			add_ideas = EAG_mercs_quality_low
+			set_country_flag = int_mercs_quality_low
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.13
+	title = EAG_event.13.t
+	desc = EAG_event.13.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_low
+			}
+			clr_country_flag = int_mercs_quality_very_low
+			remove_ideas = EAG_mercs_quality_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_low
+			}
+			clr_country_flag = int_mercs_quality_low
+			remove_ideas = EAG_mercs_quality_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_high
+			}
+			clr_country_flag = int_mercs_quality_high
+			remove_ideas = EAG_mercs_quality_high
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_high
+			}
+			clr_country_flag = int_mercs_quality_very_high
+			remove_ideas = EAG_mercs_quality_very_high
+		}
+	}
+    option = {
+		name = EAG_event.13.a
+		EAG = {
+			add_ideas = EAG_mercs_quality_medium
+			set_country_flag = int_mercs_quality_medium
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.14
+	title = EAG_event.14.t
+	desc = EAG_event.14.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_low
+			}
+			clr_country_flag = int_mercs_quality_very_low
+			remove_ideas = EAG_mercs_quality_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_low
+			}
+			clr_country_flag = int_mercs_quality_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_medium
+			}
+			clr_country_flag = int_mercs_quality_medium
+			remove_ideas = EAG_mercs_quality_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_high
+			}
+			clr_country_flag = int_mercs_quality_very_high
+			remove_ideas = EAG_mercs_quality_very_high
+		}
+	}
+    option = {
+		name = EAG_event.14.a
+		EAG = {
+			add_ideas = EAG_mercs_quality_high
+			set_country_flag = int_mercs_quality_high
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.15
+	title = EAG_event.15.t
+	desc = EAG_event.15.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_low
+			}
+			clr_country_flag = int_mercs_quality_very_low
+			remove_ideas = EAG_mercs_quality_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_low
+			}
+			clr_country_flag = int_mercs_quality_low
+			remove_ideas = EAG_mercs_quality_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_medium
+			}
+			clr_country_flag = int_mercs_quality_medium
+			remove_ideas = EAG_mercs_quality_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_high
+			}
+			clr_country_flag = int_mercs_quality_high
+			remove_ideas = EAG_mercs_quality_high
+		}
+	}
+    option = {
+		name = EAG_event.15.a
+		EAG = {
+			add_ideas = EAG_mercs_quality_very_high
+			set_country_flag = int_mercs_quality_very_high
+		}
     }
 }
