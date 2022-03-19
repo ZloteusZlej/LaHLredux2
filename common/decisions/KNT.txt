@@ -7791,7 +7791,7 @@ KNT_britain_pacification  = {
 			factor = 100
 		}
 	}
-	KNT_legacy_of_the_king = {
+	KNT_legacy_of_the_red_king = {
 		cost = 50
 		days_remove = 20
 		fire_only_once = yes
@@ -8018,7 +8018,7 @@ KNT_britain_pacification  = {
 			factor = 100
 		}
 	}
-	KNT_ = {
+	KNT_unegnilsh_teachings = {
 		cost = 50
 		days_remove = 20
 		fire_only_once = yes
@@ -8107,7 +8107,7 @@ KNT_britain_pacification  = {
 			factor = 100
 		}
 	}
-	KNT_anti_communist_social_reforms = {
+	KNT_legacy_of_accelerationism = {
 		cost = 50
 		days_remove = 20
 		fire_only_once = yes
@@ -8134,7 +8134,7 @@ KNT_britain_pacification  = {
 			factor = 100
 		}
 	}
-	KNT_subvert_local_feminism = {
+	KNT_marvels_of_london = {
 		cost = 50
 		days_remove = 20
 		fire_only_once = yes
@@ -8143,6 +8143,233 @@ KNT_britain_pacification  = {
 				country_event = {
 					days = 1
 					id = KNT_event.343
+				}
+			}
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+			has_country_flag = lhl_britain_control_london_open
+			KNT = {
+				has_government = neocameralism
+			}
+		}
+		modifier = {
+			stability_weekly = -0.08
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	KNT_humanitarian_help = {
+		cost = 30
+		days_remove = 30
+		complete_effect = {	
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+			has_country_flag = lhl_britain_control_london_open
+			KNT = {
+				has_government = neocameralism
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = {
+				var = KNT_wessex_resistance_lvl
+				value = -5
+			}	
+		}
+		modifier = {
+			civilian_factory_use = 2
+			stability_weekly = 0.05
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	KNT_neovictorian_propaganda = {
+		cost = 75
+		days_remove = 30
+		complete_effect = {	
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+			has_country_flag = lhl_britain_control_london_open
+			KNT = {
+				has_government = neocameralism
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = {
+				var = KNT_wessex_resistance_lvl
+				value = -5
+			}	
+		}
+		modifier = {
+			stability_weekly = -0.08
+			political_power_gain = 0.05
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+#EAST ENGLAND#
+	KNT_secrets_of_london = {
+		cost = 50
+		days_remove = 20
+		fire_only_once = yes
+		complete_effect = {	
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.344
+				}
+			}
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+			has_country_flag = lhl_britain_control_london_open
+			KNT = {
+				has_government = right_populism
+			}
+		}
+		modifier = {
+			stability_weekly = -0.08
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	KNT_unegnilsh_teachings = {
+		cost = 50
+		days_remove = 20
+		fire_only_once = yes
+		complete_effect = {	
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.345
+				}
+			}
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+			has_country_flag = lhl_britain_control_london_open
+			KNT = {
+				has_government = right_populism
+			}
+		}
+		modifier = {
+			stability_weekly = -0.08
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	KNT_clean_up_the_gangs = {
+		available = {
+			KNT = {
+				has_equipment = {
+					infantry_equipment_1 > 499
+				}
+			}
+		}
+		days_remove = 30
+		complete_effect = {	
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+			has_country_flag = lhl_britain_control_london_open
+			KNT = {
+				has_government = right_populism
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = {
+				var = KNT_wessex_resistance_lvl
+				value = -5
+			}	
+		}
+		modifier = {
+			stability_weekly = -0.08
+			war_support_weekly = 0.08
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	KNT_reinforce_local_police = {
+		cost = 75
+		days_remove = 30
+		complete_effect = {	
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+			has_country_flag = lhl_britain_control_london_open
+			KNT = {
+				has_government = right_populism
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = KNT_resistance_supression_LONDON.tt
+			add_to_variable = {
+				var = KNT_wessex_resistance_lvl
+				value = -5
+			}	
+		}
+		modifier = {
+			war_support_weekly = -0.08
+			stability_weekly = 0.1
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	KNT_legacy_of_accelerationism = {
+		cost = 50
+		days_remove = 20
+		fire_only_once = yes
+		complete_effect = {	
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.346
+				}
+			}
+		}
+		visible = {
+			has_active_mission = KNT_partisan_uprising 
+			has_completed_focus = KNT_peace_through_the_faith
+			has_country_flag = lhl_britain_control_london_open
+			KNT = {
+				has_government = neocameralism
+			}
+		}
+		modifier = {
+			stability_weekly = -0.08
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	KNT_marvels_of_london = {
+		cost = 50
+		days_remove = 20
+		fire_only_once = yes
+		complete_effect = {	
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.347
 				}
 			}
 		}
