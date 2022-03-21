@@ -16,24 +16,42 @@ on_actions = {
 		}
 	}
 	
-	on_startup	 = {
+	on_startup	= {
 	    effect = {
 			EAG = {
 				set_variable = {
 					var = mercs_quality
-					value = 20
+					value = 55
 				}
+			}
+		}
+	}
+	on_startup	= {
+		effect = {
+			EAG = {
 				set_variable = {
 					var = mercs_mood
 					value = 60
 				}
+			}
+		}
+	}
+	on_startup	= {
+		effect = {
+			EAG = {
 				set_variable = {
 					var = volk_dev
 					value = 35
 				}
+			}
+		}
+	}
+	on_startup	= {
+		effect = {
+			EAG = {
 				set_variable = {
 					var = volk_mood
-					value = 40
+					value = 42	
 				}
 			}
 		}
@@ -177,6 +195,441 @@ on_actions = {
 				EAG = {
 					country_event = {
 						id = EAG_event.15
+						days = 0
+					}
+				}
+			}
+		}
+	}
+	
+	on_daily_EAG = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = mercs_mood
+						value = 20
+						compare = less_than_or_equals
+					}
+					NOT = {
+						EAG = {
+							has_country_flag = int_mercs_mood_very_low
+						}
+					}	
+				}
+				clamp_variable = {
+					var = mercs_mood
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.16
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = mercs_mood
+							value = 21
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = mercs_mood
+							value = 40
+							compare = less_than_or_equals
+						}
+					NOT = {
+						EAG = {
+							has_country_flag = int_mercs_mood_low
+						}
+					}	
+				}
+				clamp_variable = {
+					var = mercs_mood
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.17
+						days = 0
+					}
+				}
+			}	
+			else_if = {
+				limit = {
+						check_variable = {
+							var = mercs_mood
+							value = 41
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = mercs_mood
+							value = 60
+							compare = less_than_or_equals
+						}
+					NOT = {
+						EAG = {
+							has_country_flag = int_mercs_mood_medium
+						}
+					}	
+				}
+				clamp_variable = {
+					var = mercs_mood
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.18
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = mercs_mood
+							value = 61
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = mercs_mood
+							value = 80
+							compare = less_than_or_equals
+						}
+						NOT = {
+							EAG = {
+								has_country_flag = int_mecrs_mood_high
+							}
+						}	
+				}
+				clamp_variable = {
+					var = mecrs_mood
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.19
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = mercs_mood
+						value = 81
+						compare = greater_than_or_equals
+					}
+					NOT = {
+						EAG = {
+							has_country_flag = int_mecrs_mood_very_high
+						}
+					}	
+				}
+				clamp_variable = {
+					var = mercs_mood
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.20
+						days = 0
+					}
+				}
+			}
+		}
+	}
+	
+	on_daily_EAG = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = volk_dev
+						value = 20
+						compare = less_than_or_equals
+					}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_dev_very_low
+						}
+					}	
+				}
+				clamp_variable = {
+					var = volk_dev
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.21
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = volk_dev
+							value = 21
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = volk_dev
+							value = 40
+							compare = less_than_or_equals
+						}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_dev_low
+						}
+					}	
+				}
+				clamp_variable = {
+					var = volk_dev
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.22
+						days = 0
+					}
+				}
+			}	
+			else_if = {
+				limit = {
+						check_variable = {
+							var = volk_dev
+							value = 41
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = volk_dev
+							value = 60
+							compare = less_than_or_equals
+						}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_dev_medium
+						}
+					}	
+				}
+				clamp_variable = {
+					var = volk_dev
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.23
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = volk_dev
+							value = 61
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = volk_dev
+							value = 80
+							compare = less_than_or_equals
+						}
+						NOT = {
+							EAG = {
+								has_country_flag = int_volk_dev_high
+							}
+						}	
+				}
+				clamp_variable = {
+					var = volk_dev
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.24
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = volk_dev
+						value = 81
+						compare = greater_than_or_equals
+					}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_dev_very_high
+						}
+					}	
+				}
+				clamp_variable = {
+					var = volk_dev
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.25
+						days = 0
+					}
+				}
+			}
+		}
+	}
+	
+	on_daily_EAG = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = volk_mood
+						value = 20
+						compare = less_than_or_equals
+					}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_mood_very_low
+						}
+					}	
+				}
+				clamp_variable = {
+					var = volk_mood
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.26
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = volk_mood
+							value = 21
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = volk_mood
+							value = 40
+							compare = less_than_or_equals
+						}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_mood_low
+						}
+					}	
+				}
+				clamp_variable = {
+					var = volk_mood
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.27
+						days = 0
+					}
+				}
+			}	
+			else_if = {
+				limit = {
+						check_variable = {
+							var = volk_mood
+							value = 41
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = volk_mood
+							value = 60
+							compare = less_than_or_equals
+						}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_mood_medium
+						}
+					}	
+				}
+				clamp_variable = {
+					var = volk_mood
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.28
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = volk_mood
+							value = 61
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = volk_mood
+							value = 80
+							compare = less_than_or_equals
+						}
+						NOT = {
+							EAG = {
+								has_country_flag = int_volk_mood_high
+							}
+						}	
+				}
+				clamp_variable = {
+					var = volk_mood
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.29
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = volk_mood
+						value = 81
+						compare = greater_than_or_equals
+					}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_mood_very_high
+						}
+					}	
+				}
+				clamp_variable = {
+					var = volk_mood
+					max = 100
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.30
 						days = 0
 					}
 				}
