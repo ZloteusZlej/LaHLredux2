@@ -70,11 +70,25 @@ characters={
 			civilian={
 				large="gfx/leaders/EAG/Portrait_EAG_Reinchard_Gunzel.dds"
 			}
+			army={
+				small="gfx/ideas/EAG/GFX_idea_EAG_Reinchard_Gunzel.dds"
+				
+				large="gfx/leaders/EAG/Portrait_EAG_reinchard_gunzel.dds"
+			}
 		}
 		country_leader={
 			ideology=neo_reaction
 			expire="1.1.1.1"
 			id=-1
+		}
+		field_marshal ={
+			traits = {  }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			id = 236
 		}
 	}
 	EAG_national_comittee={
@@ -95,7 +109,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/EAG/Portrait_EAG_Theresa_May.dds"
-				small="gfx/ideas/EAG/Portrait_EAG_Theresa_May.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Theresa_May.dds"
 			}
 		}
 		country_leader={
@@ -111,7 +125,7 @@ characters={
 				
 			}
 			allowed = {
-				original_tag = KNT
+				original_tag = EAG
 			}
 			ai_will_do  = {
 				factor  = 1.000
@@ -150,8 +164,22 @@ characters={
 		name="Nicholas Patrick Carter"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Nicholas_Patrick_Carter.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Nicholas_Patrick_Carter.dds"
 			}
+			army={
+				small="gfx/ideas/EAG/GFX_idea_EAG_Nicholas_Patrick_Carter.dds"
+				
+				large="gfx/leaders/EAG/Portrait_EAG_nicholas_patrick_carter.dds"
+			}
+		}
+		corps_commander={
+			traits = {  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			id = 124
 		}
 		advisor = {
 			cost = 120
@@ -169,11 +197,30 @@ characters={
 	    }
 	}
 	
+	EAG_louis_lillywhite={
+		name="Louis Lillywhite"
+		portraits={
+			army={
+				large="gfx/leaders/EAG/Portrait_EAG_Louis_Lillywhite.dds"
+				
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_louis_lillywhite.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=228
+		}
+	}
+	
 	EAG_troy_southgate={
 		name="Troy Southgate"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Troy_Southgate.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Troy_Southgate.dds"
 			}
 		}
 		advisor = {
@@ -196,7 +243,7 @@ characters={
 		name="Garry Bushell"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Garry_Bushell.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Garry_Bushell.dds"
 			}
 		}
 		advisor = {
@@ -219,7 +266,7 @@ characters={
 		name="Wayne John Sturgeon"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Wayne_John_Sturgeon.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Wayne_John_Sturgeon.dds"
 			}
 		}
 		advisor = {
@@ -242,7 +289,7 @@ characters={
 		name="Christopher Houghton Budd"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Christopher_Houghton_Budd.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Christopher_Houghton_Budd.dds"
 			}
 		}
 		advisor = {
@@ -265,7 +312,7 @@ characters={
 		name="Alexander Thynn"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Alexander_Thynn.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Alexander_Thynn.dds"
 			}
 		}
 		advisor = {
@@ -288,7 +335,7 @@ characters={
 		name="Jeff Kent"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Jeff_Kent.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Jeff_Kent.dds"
 			}
 		}
 		advisor = {
@@ -311,7 +358,7 @@ characters={
 		name="Emma Restall Orr"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Emma_Restall_Orr.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Emma_Restall_Orr.dds"
 			}
 		}
 		advisor = {
@@ -334,7 +381,7 @@ characters={
 		name="Alex Whitehouse"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Alex_Whitehouse.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Alex_Whitehouse.dds"
 			}
 		}
 		advisor = {
@@ -353,11 +400,34 @@ characters={
 	    }
 	}
 	
+	EAG_philip_yea  ={
+		name="Philip Yea"
+		portraits={
+			civilian={
+				small="gfx/ideas/EAG/GFX_idea_EAG_Philip_Yea.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = EAG_philip_yea
+			traits = {
+				
+			}
+			allowed = {
+				original_tag = EAG
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	
 	EAG_rick_astley ={
 		name="Rick Astley"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Rick_Astley.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Rick_Astley.dds"
 			}
 		}
 		advisor = {
@@ -380,7 +450,7 @@ characters={
 		name="Michael Bates"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Michael_Bates.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Michael_Bates.dds"
 			}
 		}
 		advisor = {
@@ -403,7 +473,7 @@ characters={
 		name="Harold Elletson"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Harold_Elletson.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Harold_Elletson.dds"
 			}
 		}
 		advisor = {
@@ -426,7 +496,7 @@ characters={
 		name="Robin Tilbrook"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Robin_Tilbrook.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Robin_Tilbrook.dds"
 			}
 		}
 		advisor = {
@@ -449,7 +519,7 @@ characters={
 		name="Julia Gasper"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Julia_Gasper.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Julia_Gasper.dds"
 			}
 		}
 		advisor = {
@@ -472,8 +542,21 @@ characters={
 		name="Wolfgang Schneiderhan"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Wolfgang_Schneiderhan.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Wolfgang_Schneiderhan.dds"
 			}
+			army={
+				large="gfx/leaders/EAG/Portrait_EAG_Wolfgang_Schneiderhan.dds"
+				
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_wolfgang_schneiderhan.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			id = 232
 		}
 		advisor = {
 			cost = 120
@@ -495,7 +578,7 @@ characters={
 		name="Martin Hohmann"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Martin_Hohmann.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Martin_Hohmann.dds"
 			}
 		}
 		advisor = {
@@ -518,7 +601,7 @@ characters={
 		name="Andreas Kalbitz"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Andreas_Kalbitz.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Andreas_Kalbitz.dds"
 			}
 		}
 		advisor = {
@@ -541,7 +624,12 @@ characters={
 		name="Georg Klein"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Georg_Klein.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Georg_Klein.dds"
+			}
+			army={
+				large="gfx/leaders/EAG/Portrait_EAG_Georg_Klein.dds"
+				
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Georg_Klein.dds"
 			}
 		}
 		advisor = {
@@ -558,13 +646,27 @@ characters={
 				factor  = 1.000
 			}
 	    }
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			id = 234
+		}
 	}
 	
 	EAG_erich_vad ={
 		name="Erich Vad"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Erich_Vad.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Erich_Vad.dds"
+			}
+			
+			army={
+				large="gfx/leaders/EAG/Portrait_EAG_Erich_Vad.dds"
+				
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Erich_Vad.dds"
 			}
 		}
 		advisor = {
@@ -581,36 +683,43 @@ characters={
 				factor  = 1.000
 			}
 	    }
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			id = 235
+		}
 	}
 	
 	EAG_georg_pazderski ={
 		name="Georg Pazderski"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Georg_Pazderski.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Georg_Pazderski.dds"
+			}
+			army={
+				large="gfx/leaders/EAG/Portrait_EAG_Georg_Pazderski.dds"
+				
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Georg_Pazderski.dds"
 			}
 		}
-		advisor = {
-			cost = 120
-			slot = political_advisor
-			idea_token = EAG_georg_pazderski 
-			traits = {
-				
-			}
-			allowed = {
-				original_tag = EAG
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-	    }
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			id = 240
+		}
 	}
 	
 	EAG_joachim_wundrak ={
 		name="Joachim Wundrak"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/Portrait_EAG_Joachim_Wundrak.dds"
+				small="gfx/ideas/EAG/GFX_idea_EAG_Joachim_Wundrak.dds"
 			}
 		}
 		advisor = {
@@ -627,5 +736,101 @@ characters={
 				factor  = 1.000
 			}
 	    }
+	}
+	
+	EAG_john_timothy_rothwell={
+		name="John Timothy Rothwell"
+		portraits={
+			army={
+				large="gfx/leaders/EAG/Portrait_EAG_John_Timothy_Rothwell.dds"
+				
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_john_timothy_rothwell.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			id = 231
+		}
+	}
+
+	
+	EAG_fritz_zwicknagl={
+		name="Fritz Zwicknagl"
+		portraits={
+			army={
+				large="gfx/leaders/EAG/Portrait_EAG_Fritz_Zwicknagl.dds"
+				
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_fritz_zwicknagl.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			id = 233
+		}
+	}
+	
+	EAG_dag_baehr={
+		name="Dag Baehr"
+		portraits={
+			army={
+				large="gfx/leaders/EAG/Portrait_EAG_Dag_Baehr.dds"
+				
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_dag_baehr.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+			id = 237
+		}
+	}
+	
+	EAG_heinz_feldmann={
+		name="Heinz Feldmann"
+		portraits={
+			army={
+				large="gfx/leaders/EAG/Portrait_EAG_Heinz_Feldmann.dds"
+				
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_heinz_feldmann.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			id = 238
+		}
+	}
+	
+	EAG_christian_freudingn={
+		name="Christian Freuding"
+		portraits={
+			army={
+				large="gfx/leaders/EAG/Portrait_EAG_Christian_Freuding.dds"
+				
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_christian_freudingn.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			id = 239
+		}
 	}
 }

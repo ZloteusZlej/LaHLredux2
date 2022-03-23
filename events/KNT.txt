@@ -4728,34 +4728,11 @@ country_event = {
 		option = {
 			name = KNT_event.255.a
 			KNT = {
-				remove_unit_leader = 228
-				create_corps_commander = {
-						name = "Nick Carter"
-						picture = "Portrait_EAG_Nick_Carter.dds"
-						traits = {  }
-						skill = 2
-						attack_skill = 1
-						defense_skill = 2
-						planning_skill = 2
-						logistics_skill = 2
-					}
+				retire_character = KNT_louis_lillywhite
+				recruit_character = KNT_nick_carter
 			}
 			EAG = {
-				remove_unit_leader = 124
-				create_corps_commander = {
-						name = "Louis Lillywhite"
-						picture = "Portrait_KNT_Louis_Lillywhite.dds"
-						traits = {  }
-						skill = 2
-						attack_skill = 1
-						defense_skill = 2
-						planning_skill = 2
-						logistics_skill = 3
-				}
-				country_event = {
-				days = 4
-				id = EAG_event.10
-				}
+				recruit_character = EAG_louis_lillywhite
 			}	
 		}
 	}
