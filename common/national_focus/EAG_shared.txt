@@ -8,6 +8,12 @@ shared_focus = {
 	completion_reward = {
 	}
 	select_effect = {
+		EAG = {
+			country_event = {
+				days = 5
+				id = EAG_event.1
+			}
+		}
 	}
 	x = 12
 	y = 0
@@ -18,6 +24,16 @@ shared_focus = {
 	icon = GFX_goal_EAG_delivery_for_the_front
 	cost = 4.3
 	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3500
+			producer = EAG
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 250
+			producer = EAG
+		}
 	}
 	prerequisite = {
 		focus = EAG_norfolk_expedition
@@ -31,6 +47,21 @@ shared_focus = {
 	icon = GFX_goal_EAG_american_relicts
 	cost = 4.3
 	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = attack_helicopter_equipment
+			amount = 20
+			producer = EAG
+		}
+		add_equipment_to_stockpile = {
+			type = fighter_equipment
+			amount = 10
+			producer = EAG
+		}
+		add_equipment_to_stockpile = {
+			type = CAS_equipment
+			amount = 15
+			producer = EAG
+		}
 	}
 	prerequisite = {
 		focus = EAG_norfolk_expedition
@@ -44,6 +75,13 @@ shared_focus = {
 	icon = GFX_goal_EAG_panem
 	cost = 4.3
 	completion_reward = {
+		add_ideas = EAG_panem_a
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.34
+			}
+		}
 	}
 	prerequisite = {
 		focus = EAG_delivery_for_the_front
@@ -60,6 +98,13 @@ shared_focus = {
 	icon = GFX_goal_EAG_circenses
 	cost = 4.3
 	completion_reward = {
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.35
+			}
+		}
+		add_ideas = EAG_circenses_bonus
 	}
 	prerequisite = {
 		focus = EAG_delivery_for_the_front
@@ -76,6 +121,25 @@ shared_focus = {
 	icon = GFX_goal_EAG_raid_on_ports
 	cost = 4.3
 	completion_reward = {
+		1143 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+			add_compliance = 5 
+			add_resistance = -5
+		}
+		1004 = {
+			add_compliance = 5 
+			add_resistance = -5
+		}
 	}
 	prerequisite = {
 		focus = EAG_delivery_for_the_front
@@ -92,6 +156,19 @@ shared_focus = {
 	icon = GFX_goal_EAG_heart_of_suffolk
 	cost = 4.3
 	completion_reward = {
+		1143 = {
+			add_building_construction = {
+				type = nuclear_reactor
+				level = 1
+				instant_build = yes
+			}
+			add_compliance = 5 
+			add_resistance = -5
+		}
+		1004 = {
+			add_compliance = 5 
+			add_resistance = -5
+		}
 	}
 	prerequisite = {
 		focus = EAG_delivery_for_the_front
@@ -108,6 +185,49 @@ shared_focus = {
 	icon = GFX_goal_EAG_the_last_hire
 	cost = 4.3
 	completion_reward = {
+		division_template = {
+			name = "Military Firm"
+			division_names_group = EAG_INF_02
+
+			regiments = {
+				infantry = { x = 0 y = 0 }	
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }	
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				artillery_brigade = { x = 1 y = 2 }
+				artillery_brigade = { x = 1 y = 32 }
+			}
+			support = { 
+				engineer = { x = 0 y = 0 } 		
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Angelsachsen Firm\" division_template = \"Military Firm\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = -4
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 100
+		}
+		add_to_variable = {
+				var = mercs_dev
+				value = 6
+		}
+		clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 100
+		}
 	}
 	prerequisite = {
 		focus = EAG_delivery_for_the_front
@@ -124,6 +244,34 @@ shared_focus = {
 	icon = GFX_goal_EAG_black_guards
 	cost = 4.3
 	completion_reward = {
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Pruhdonist Squad\" division_template = \"Englische Milizia\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+		}
+		random_owned_controlled_state = {	
+			create_unit = {
+				division = "name = \"Ipswish Dockyards Militia\" division_template = \"Englische Milizia\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+		}
+		random_owned_controlled_state = {	
+			create_unit = {
+				division = "name = \"Nechayev's Brigade\" division_template = \"Englische Milizia\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Batalion Gazza\" division_template = \"Englische Milizia\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+		}
 	}
 	prerequisite = {
 		focus = EAG_delivery_for_the_front
@@ -140,6 +288,13 @@ shared_focus = {
 	icon = GFX_goal_EAG_gather_our_wealth
 	cost = 4.3
 	completion_reward = {
+		add_political_power = 100
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.36
+			}
+		}
 	}
 	prerequisite = {
 		focus = EAG_panem
@@ -156,6 +311,30 @@ shared_focus = {
 	icon = GFX_goal_EAG_protect_the_farmer
 	cost = 4.3
 	completion_reward = {
+		1143 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+			add_compliance = 10 
+			add_resistance = -6
+		}
+		1004 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			add_compliance = 10 
+			add_resistance = -6
+		}
+		swap_ideas = {
+			remove_idea = EAG_panem_a
+			add_idea = EAG_panem_b
+		}
 	}
 	prerequisite = {
 		focus = EAG_heart_of_suffolk
@@ -171,6 +350,19 @@ shared_focus = {
 	icon = GFX_goal_EAG_peoples_storm
 	cost = 4.3
 	completion_reward = {
+		add_to_variable = {
+				var = volk_mood
+				value = -5
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 100
+		}
+		swap_ideas = {
+			remove_idea = volunteer_only
+			add_idea = extensive_conscription
+		}
 	}
 	prerequisite = {
 		focus = EAG_the_last_hire
@@ -186,7 +378,19 @@ shared_focus = {
 	id = EAG_march_of_liberators
 	icon = GFX_goal_EAG_march_of_liberators
 	cost = 4.3
+	select_effect = {
+		EAG = {
+			country_event = {
+				days = 3
+				id = EAG_event.37
+			}
+		}
+	}
 	completion_reward = {
+		declare_war_on = {
+			target = ESS
+			type = annex_everything
+		}
 	}
 	prerequisite = {
 		focus = EAG_peoples_storm
