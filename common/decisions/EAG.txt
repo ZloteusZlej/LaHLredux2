@@ -237,18 +237,18 @@ EAG_reunify_isles = {
 				clamp_variable = {
 					var = volk_dev
 					min = 0
-					max = 100
+					max = 25
 				}
 			}
 			remove_effect = {
 				add_to_variable = {
 					var = volk_mood
-					value = 5
+					value = 3
 				}
 				clamp_variable = {
 					var = volk_mood
 					min = 0
-					max = 100
+					max = 25
 				}
 				add_popularity = {
 					ideology = hegemonism
@@ -278,21 +278,21 @@ EAG_reunify_isles = {
 			remove_effect = {
 				add_to_variable = {
 					var = volk_mood
-					value = 3
+					value = 2
 				}
 				add_to_variable = {
 					var = volk_dev
-					value = 3
+					value = 2
 				}
 				clamp_variable = {
 					var = volk_mood
 					min = 0
-					max = 100
+					max = 25
 				}
 				clamp_variable = {
 					var = volk_dev
 					min = 0
-					max = 100
+					max = 25
 				}
 				random_core_state = {
 					add_extra_state_shared_building_slots = 1
@@ -326,18 +326,18 @@ EAG_reunify_isles = {
 				clamp_variable = {
 					var = volk_mood
 					min = 0
-					max = 100
+					max = 25
 				}
 			}
 			remove_effect = {
 				add_to_variable = {
 					var = volk_dev
-					value = 5
+					value = 3
 				}
 				clamp_variable = {
 					var = volk_dev
 					min = 0
-					max = 100
+					max = 25
 				}
 				random_core_state = {
 					add_building_construction = {
@@ -378,18 +378,18 @@ EAG_reunify_isles = {
 				clamp_variable = {
 					var = mercs_dev
 					min = 0
-					max = 100
+					max = 25
 				}
 			}
 			remove_effect = {
 				add_to_variable = {
 					var = mercs_mood
-					value = 5
+					value = 3
 				}
 				clamp_variable = {
 					var = mercs_mood
 					min = 0
-					max = 100
+					max = 25
 				}
 				add_command_power = 25
 			}
@@ -416,21 +416,21 @@ EAG_reunify_isles = {
 			remove_effect = {
 				add_to_variable = {
 					var = mercs_mood
-					value = 3
+					value = 2
 				}
 				clamp_variable = {
 					var = mercs_mood
 					min = 0
-					max = 100
+					max = 25
 				}
 				add_to_variable = {
 					var = mercs_dev
-					value = 3
+					value = 2
 				}
 				clamp_variable = {
 					var = mercs_dev
 					min = 0
-					max = 100
+					max = 25
 				}
 				
 			}
@@ -463,19 +463,19 @@ EAG_reunify_isles = {
 				clamp_variable = {
 					var = mercs_mood
 					min = 0
-					max = 100
+					max = 25
 				}
 				add_command_power = -35
 			}
 			remove_effect = {
 				add_to_variable = {
 					var = mercs_dev
-					value = 5
+					value = 3
 				}
 				clamp_variable = {
 					var = mercs_dev
 					min = 0
-					max = 100
+					max = 25
 				}
 				army_experience = 5
 				air_experience = 5
@@ -503,12 +503,12 @@ EAG_reunify_isles = {
 			complete_effect = {
 				add_to_variable = {
 					var = volk_mood
-					value = -5
+					value = -4
 				}
 				clamp_variable = {
 					var = volk_mood
 					min = 0
-					max = 100
+					max = 25
 				}
 			}
 			remove_effect = {
@@ -536,12 +536,12 @@ EAG_reunify_isles = {
 			complete_effect = {
 				add_to_variable = {
 					var = volk_dev
-					value = -5
+					value = -3
 				}
 				clamp_variable = {
 					var = volk_dev
 					min = 0
-					max = 100
+					max = 25
 				}
 			}
 			remove_effect = {
@@ -569,12 +569,12 @@ EAG_reunify_isles = {
 			complete_effect = {
 				add_to_variable = {
 					var = volk_dev
-					value = -5
+					value = -3
 				}
 				clamp_variable = {
 					var = volk_dev
 					min = 0
-					max = 100
+					max = 25
 				}
 			}
 			remove_effect = {
@@ -605,12 +605,12 @@ EAG_reunify_isles = {
 			complete_effect = {
 				add_to_variable = {
 					var = mercs_mood
-					value = -5
+					value = -3
 				}
 				clamp_variable = {
 					var = mercs_mood
 					min = 0
-					max = 100
+					max = 25
 				}
 			}
 			remove_effect = {
@@ -646,13 +646,13 @@ EAG_reunify_isles = {
 			}
 			complete_effect = {
 				add_to_variable = {
-					var = mercs_mood
-					value = -5
+					var = mercs_dev
+					value = -4
 				}
 				clamp_variable = {
-					var = mercs_mood
+					var = mercs_dev
 					min = 0
-					max = 100
+					max = 25
 				}
 			}
 			remove_effect = {

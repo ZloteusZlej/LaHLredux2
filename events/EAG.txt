@@ -11,21 +11,21 @@ country_event = {
 		name = EAG_event.1.a
 			add_to_variable = {
 				var = mercs_mood
-				value = 3
+				value = 4
 			}
 			clamp_variable = {
 				var = mercs_mood
 				min = 0
-				max = 100
+				max = 25
 			}
 			add_to_variable = {
 				var = volk_mood
-				value = -3
+				value = -4
 			}
 			clamp_variable = {
-				var = mercs_mood
+				var = volk_mood
 				min = 0
-				max = 100
+				max = 25
 			}
 			add_to_variable = {
 				var = help_forces
@@ -42,21 +42,21 @@ country_event = {
 		name = EAG_event.1.b
 			add_to_variable = {
 				var = mercs_mood
-				value = -3
+				value = -4
 			}
 			clamp_variable = {
 				var = mercs_mood
 				min = 0
-				max = 100
+				max = 25
 			}
 			add_to_variable = {
 				var = volk_mood
-				value = 3
+				value = 4
 			}
 			clamp_variable = {
 				var = volk_mood
 				min = 0
-				max = 100
+				max = 25
 			}
 			add_to_variable = {
 				var = help_ppl
@@ -111,7 +111,7 @@ country_event = {
 			clamp_variable = {
 				var = mercs_dev
 				min = 0
-				max = 100
+				max = 25
 			}
 		EAG = {
 			country_event = {
@@ -129,7 +129,7 @@ country_event = {
 			clamp_variable = {
 				var = mercs_mood
 				min = 0
-				max = 100
+				max = 25
 			}
 			add_to_variable = {
 				var = help_forces
@@ -155,12 +155,12 @@ country_event = {
 		name = EAG_event.3.a
 		add_to_variable = {
 				var = volk_dev
-				value = 2
+				value = 3
 			}
 			clamp_variable = {
 				var = volk_dev
 				min = 0
-				max = 100
+				max = 25
 			}
 			add_to_variable = {
 				var = help_ppl
@@ -178,12 +178,12 @@ country_event = {
 		name = EAG_event.3.b
 		add_to_variable = {
 				var = mercs_dev
-				value = 2
+				value = 3
 			}
 			clamp_variable = {
 				var = mercs_dev
 				min = 0
-				max = 100
+				max = 25
 			}
 			add_to_variable = {
 				var = help_forces
@@ -195,7 +195,12 @@ country_event = {
 					id = EAG_event.31
 				}
 			}
-			army_experience = 7
+			army_experience = 10
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 25
+				producer = EAG
+			}
 		}
     } 
 
@@ -249,7 +254,7 @@ country_event = {
 			clamp_variable = {
 				var = mercs_dev
 				min = 0
-				max = 100
+				max = 25
 			}
 			1004 = {
 				create_unit = {
@@ -282,12 +287,6 @@ country_event = {
 				instant_build = yes
 			}
 		}
-		EAG = {
-			country_event = {
-				days = 5
-				id = EAG_event.33
-			}
-		}
     }
 	option = {
 		name = EAG_event.32.b
@@ -300,12 +299,6 @@ country_event = {
 			type = infantry_equipment
 			amount = 1000
 			producer = EAG
-		}
-		EAG = {
-			country_event = {
-				days = 5
-				id = EAG_event.33
-			}
 		}
 	}
 }
@@ -365,12 +358,12 @@ country_event = {
 		}
 		add_to_variable = {
 			var = volk_mood
-			value = 6
+			value = 5
 			}
 		clamp_variable = {
 			var = volk_mood
 			min = 0
-			max = 100
+			max = 25
 		}
     }
 	option = {
@@ -436,12 +429,12 @@ country_event = {
 		}
 		add_to_variable = {
 			var = volk_dev
-			value = -3
+			value = -4
 			}
 		clamp_variable = {
 			var = volk_dev
 			min = 0
-			max = 100
+			max = 25
 		}
 	}
 }
@@ -1482,7 +1475,7 @@ country_event = {
 			clamp_variable = {
 				var = mercs_mood
 				min = 0
-				max = 100
+				max = 25
 			}
     }
 }
@@ -1502,7 +1495,7 @@ country_event = {
 			clamp_variable = {
 				var = volk_mood
 				min = 0
-				max = 100
+				max = 25
 			}
     }
 	
@@ -1515,7 +1508,7 @@ country_event = {
 			clamp_variable = {
 				var = mercs_mood
 				min = 0
-				max = 100
+				max = 25
 			}
     }
 	
@@ -1528,7 +1521,7 @@ country_event = {
 			clamp_variable = {
 				var = mercs_mood
 				min = 0
-				max = 100
+				max = 25
 			}
 			add_to_variable = {
 				var = volk_mood
@@ -1537,7 +1530,7 @@ country_event = {
 			clamp_variable = {
 				var = volk_mood
 				min = 0
-				max = 100
+				max = 25
 			}
     }
 }
@@ -1557,7 +1550,7 @@ country_event = {
 			clamp_variable = {
 				var = volk_dev
 				min = 0
-				max = 100
+				max = 25
 			}
 			add_to_variable = {
 				var = mercs_mood
@@ -1566,7 +1559,7 @@ country_event = {
 			clamp_variable = {
 				var = mercs_mood
 				min = 0
-				max = 100
+				max = 25
 			}
     }
 	
@@ -1579,7 +1572,7 @@ country_event = {
 			clamp_variable = {
 				var = mercs_mood
 				min = 0
-				max = 100
+				max = 25
 			}
 			add_to_variable = {
 				var = volk_dev
@@ -1588,7 +1581,7 @@ country_event = {
 			clamp_variable = {
 				var = volk_dev
 				min = 0
-				max = 100
+				max = 25
 			}
     }
 }

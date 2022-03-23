@@ -21,7 +21,7 @@ on_actions = {
 			EAG = {
 				set_variable = {
 					var = mercs_quality
-					value = 55
+					value = 13
 				}
 			}
 		}
@@ -31,7 +31,7 @@ on_actions = {
 			EAG = {
 				set_variable = {
 					var = mercs_mood
-					value = 60
+					value = 12
 				}
 			}
 		}
@@ -41,7 +41,7 @@ on_actions = {
 			EAG = {
 				set_variable = {
 					var = volk_dev
-					value = 35
+					value = 8
 				}
 			}
 		}
@@ -51,7 +51,7 @@ on_actions = {
 			EAG = {
 				set_variable = {
 					var = volk_mood
-					value = 42	
+					value = 11	
 				}
 			}
 		}
@@ -63,7 +63,7 @@ on_actions = {
 				limit = {
 					check_variable = {
 						var = mercs_quality
-						value = 20
+						value = 5
 						compare = less_than_or_equals
 					}
 					NOT = {
@@ -74,7 +74,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = mercs_quality
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -88,12 +88,12 @@ on_actions = {
 				limit = {
 						check_variable = {
 							var = mercs_quality
-							value = 21
+							value = 6
 							compare = greater_than_or_equals
 						}
 						check_variable = {
 							var = mercs_quality
-							value = 40
+							value = 10
 							compare = less_than_or_equals
 						}
 					NOT = {
@@ -104,7 +104,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = mercs_quality
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -118,12 +118,12 @@ on_actions = {
 				limit = {
 						check_variable = {
 							var = mercs_quality
-							value = 41
+							value = 11
 							compare = greater_than_or_equals
 						}
 						check_variable = {
 							var = mercs_quality
-							value = 60
+							value = 15
 							compare = less_than_or_equals
 						}
 					NOT = {
@@ -134,7 +134,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = mercs_quality
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -148,12 +148,12 @@ on_actions = {
 				limit = {
 						check_variable = {
 							var = mercs_quality
-							value = 61
+							value = 16
 							compare = greater_than_or_equals
 						}
 						check_variable = {
 							var = mercs_quality
-							value = 80
+							value = 20
 							compare = less_than_or_equals
 						}
 						NOT = {
@@ -164,7 +164,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = mercs_quality
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -178,7 +178,7 @@ on_actions = {
 				limit = {
 					check_variable = {
 						var = mercs_quality
-						value = 81
+						value = 21
 						compare = greater_than_or_equals
 					}
 					NOT = {
@@ -189,7 +189,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = mercs_quality
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -208,7 +208,7 @@ on_actions = {
 				limit = {
 					check_variable = {
 						var = mercs_mood
-						value = 20
+						value = 5
 						compare = less_than_or_equals
 					}
 					NOT = {
@@ -219,7 +219,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = mercs_mood
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -233,12 +233,12 @@ on_actions = {
 				limit = {
 						check_variable = {
 							var = mercs_mood
-							value = 21
+							value = 6
 							compare = greater_than_or_equals
 						}
 						check_variable = {
 							var = mercs_mood
-							value = 40
+							value = 10
 							compare = less_than_or_equals
 						}
 					NOT = {
@@ -249,7 +249,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = mercs_mood
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -263,12 +263,12 @@ on_actions = {
 				limit = {
 						check_variable = {
 							var = mercs_mood
-							value = 41
+							value = 11
 							compare = greater_than_or_equals
 						}
 						check_variable = {
 							var = mercs_mood
-							value = 60
+							value = 15
 							compare = less_than_or_equals
 						}
 					NOT = {
@@ -279,7 +279,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = mercs_mood
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -293,12 +293,12 @@ on_actions = {
 				limit = {
 						check_variable = {
 							var = mercs_mood
-							value = 61
+							value = 16
 							compare = greater_than_or_equals
 						}
 						check_variable = {
 							var = mercs_mood
-							value = 80
+							value = 20
 							compare = less_than_or_equals
 						}
 						NOT = {
@@ -309,7 +309,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = mercs_mood
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -323,7 +323,7 @@ on_actions = {
 				limit = {
 					check_variable = {
 						var = mercs_mood
-						value = 81
+						value = 21
 						compare = greater_than_or_equals
 					}
 					NOT = {
@@ -334,7 +334,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = mercs_mood
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -353,7 +353,7 @@ on_actions = {
 				limit = {
 					check_variable = {
 						var = volk_dev
-						value = 20
+						value = 5
 						compare = less_than_or_equals
 					}
 					NOT = {
@@ -364,7 +364,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = volk_dev
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -378,12 +378,12 @@ on_actions = {
 				limit = {
 						check_variable = {
 							var = volk_dev
-							value = 21
+							value = 6
 							compare = greater_than_or_equals
 						}
 						check_variable = {
 							var = volk_dev
-							value = 40
+							value = 10
 							compare = less_than_or_equals
 						}
 					NOT = {
@@ -394,7 +394,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = volk_dev
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -408,12 +408,12 @@ on_actions = {
 				limit = {
 						check_variable = {
 							var = volk_dev
-							value = 41
+							value = 11
 							compare = greater_than_or_equals
 						}
 						check_variable = {
 							var = volk_dev
-							value = 60
+							value = 15
 							compare = less_than_or_equals
 						}
 					NOT = {
@@ -424,7 +424,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = volk_dev
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -438,12 +438,12 @@ on_actions = {
 				limit = {
 						check_variable = {
 							var = volk_dev
-							value = 61
+							value = 16
 							compare = greater_than_or_equals
 						}
 						check_variable = {
 							var = volk_dev
-							value = 80
+							value = 20
 							compare = less_than_or_equals
 						}
 						NOT = {
@@ -454,7 +454,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = volk_dev
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -468,7 +468,7 @@ on_actions = {
 				limit = {
 					check_variable = {
 						var = volk_dev
-						value = 81
+						value = 21
 						compare = greater_than_or_equals
 					}
 					NOT = {
@@ -479,7 +479,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = volk_dev
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -498,7 +498,7 @@ on_actions = {
 				limit = {
 					check_variable = {
 						var = volk_mood
-						value = 20
+						value = 5
 						compare = less_than_or_equals
 					}
 					NOT = {
@@ -509,7 +509,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = volk_mood
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -523,12 +523,12 @@ on_actions = {
 				limit = {
 						check_variable = {
 							var = volk_mood
-							value = 21
+							value = 6
 							compare = greater_than_or_equals
 						}
 						check_variable = {
 							var = volk_mood
-							value = 40
+							value = 10
 							compare = less_than_or_equals
 						}
 					NOT = {
@@ -539,7 +539,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = volk_mood
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -553,12 +553,12 @@ on_actions = {
 				limit = {
 						check_variable = {
 							var = volk_mood
-							value = 41
+							value = 11
 							compare = greater_than_or_equals
 						}
 						check_variable = {
 							var = volk_mood
-							value = 60
+							value = 15
 							compare = less_than_or_equals
 						}
 					NOT = {
@@ -569,7 +569,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = volk_mood
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -583,12 +583,12 @@ on_actions = {
 				limit = {
 						check_variable = {
 							var = volk_mood
-							value = 61
+							value = 16
 							compare = greater_than_or_equals
 						}
 						check_variable = {
 							var = volk_mood
-							value = 80
+							value = 20
 							compare = less_than_or_equals
 						}
 						NOT = {
@@ -599,7 +599,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = volk_mood
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {
@@ -613,7 +613,7 @@ on_actions = {
 				limit = {
 					check_variable = {
 						var = volk_mood
-						value = 81
+						value = 21
 						compare = greater_than_or_equals
 					}
 					NOT = {
@@ -624,7 +624,7 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = volk_mood
-					max = 100
+					max = 25
 					min = 0
 				}
 				EAG = {

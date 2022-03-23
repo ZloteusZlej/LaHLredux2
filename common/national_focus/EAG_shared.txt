@@ -15,6 +15,16 @@ shared_focus = {
 			}
 		}
 	}
+	hidden_effect = {
+		completion_reward = {
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.33
+				}
+			}
+		}
+	}
 	x = 12
 	y = 0
 }
@@ -197,7 +207,7 @@ shared_focus = {
 				infantry = { x = 1 y = 0 }
 				infantry = { x = 1 y = 1 }
 				artillery_brigade = { x = 1 y = 2 }
-				artillery_brigade = { x = 1 y = 32 }
+				artillery_brigade = { x = 1 y = 3 }
 			}
 			support = { 
 				engineer = { x = 0 y = 0 } 		
@@ -217,16 +227,16 @@ shared_focus = {
 		clamp_variable = {
 				var = mercs_mood
 				min = 0
-				max = 100
+				max = 25
 		}
 		add_to_variable = {
 				var = mercs_dev
-				value = 6
+				value = 3
 		}
 		clamp_variable = {
 				var = mercs_dev
 				min = 0
-				max = 100
+				max = 25
 		}
 	}
 	prerequisite = {
@@ -352,12 +362,12 @@ shared_focus = {
 	completion_reward = {
 		add_to_variable = {
 				var = volk_mood
-				value = -5
+				value = -6
 		}
 		clamp_variable = {
 				var = volk_mood
 				min = 0
-				max = 100
+				max = 25
 		}
 		swap_ideas = {
 			remove_idea = volunteer_only
