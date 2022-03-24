@@ -6,22 +6,20 @@ shared_focus = {
 	icon = GFX_goal_EAG_norfolk_expedition
 	cost = 4.3
 	completion_reward = {
+		hidden_effect = {
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.33
+				}
+			}
+		}
 	}
 	select_effect = {
 		EAG = {
 			country_event = {
 				days = 5
 				id = EAG_event.1
-			}
-		}
-	}
-	hidden_effect = {
-		completion_reward = {
-			EAG = {
-				country_event = {
-					days = 5
-					id = EAG_event.33
-				}
 			}
 		}
 	}
@@ -413,4 +411,214 @@ shared_focus = {
 	}
 	x = 12
 	y = 4
+}
+
+###ADDITIONAL TREE###
+
+shared_focus = {
+	id = EAG_fresh_meat
+	icon = GFX_goal_EAG_fresh_meat
+	cost = 4.3
+	completion_reward = {
+		add_timed_idea = {
+			idea = EAG_simplified_training
+			days = 255
+		}
+	}
+	x = 28
+	y = 0
+}
+
+shared_focus = {
+	id = EAG_from_under_their_nose
+	icon = GFX_goal_EAG_from_under_their_nose
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_fresh_meat
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 75
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_fighting_vehicle_equipment
+			amount = 25
+			producer = FRA
+		}
+		add_equipment_to_stockpile = {
+			type = main_battle_tank_equipment
+			amount = 25
+			producer = HOL
+		}
+	}
+	x = 28
+	y = 1
+}
+
+shared_focus = {
+	id = EAG_outreach_the_right
+	icon = GFX_goal_EAG_outreach_the_right
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_fresh_meat
+	}
+	completion_reward = {
+		add_manpower = 6300
+		add_to_variable = {
+				var = mercs_dev
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+		}
+		add_popularity = {
+			ideology = hegemonism
+			popularity = 0.1
+		}
+	}
+	x = 26
+	y = 1
+}
+
+shared_focus = {
+	id = EAG_secure_the_shelfs
+	icon = GFX_goal_EAG_secure_the_shelfs
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_fresh_meat
+	}
+	completion_reward = {
+		add_fuel = 800
+		1004 = {
+			add_resource = {
+				type = oil
+				amount = 15
+			}
+			add_building_construction = {
+				type = fuel_silo 
+				level = 2
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+	x = 30
+	y = 1
+}
+
+shared_focus = {
+	id = EAG_no_to_marauders
+	icon = GFX_goal_EAG_no_to_marauders
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_secure_the_shelfs
+	}
+	prerequisite = {
+		focus = EAG_outreach_the_right
+	}
+	prerequisite = {
+		focus = EAG_from_under_their_nose
+	}
+	completion_reward = {
+		add_to_variable = {
+				var = mercs_mood
+				value = -6
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = volk_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		add_timed_idea = {
+			idea = EAG_discipline_campaign
+			days = 180
+		}
+	}
+	x = 27
+	y = 2
+}
+
+shared_focus = {
+	id = EAG_contest_for_lucksmen 
+	icon = GFX_goal_EAG_contest_for_lucksmen
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_secure_the_shelfs
+	}
+	prerequisite = {
+		focus = EAG_outreach_the_right
+	}
+	prerequisite = {
+		focus = EAG_from_under_their_nose
+	}
+	completion_reward = {
+		add_to_variable = {
+				var = mercs_dev
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = 4
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		add_war_support = 0.15
+	}
+	x = 29
+	y = 2
+}
+
+shared_focus = {
+	id = EAG_ask_smugglers_for_a_kickback 
+	icon = GFX_goal_EAG_contest_for_lucksmen
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_contest_for_lucksmen
+	}
+	prerequisite = {
+		focus = EAG_no_to_marauders
+	}
+	completion_reward = {
+		add_to_variable = {
+				var = volk_dev
+				value = 5
+		}
+		clamp_variable = {
+				var = volk_dev
+				min = 0
+				max = 25
+		}
+		1004 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		add_political_power = 100
+	}
+	x = 28
+	y = 3
 }
