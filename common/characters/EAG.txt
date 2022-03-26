@@ -251,7 +251,7 @@ characters={
 			slot = political_advisor
 			idea_token = EAG_garry_bushell
 			traits = {
-				
+				eternal_rebel
 			}
 			allowed = {
 				original_tag = EAG
@@ -274,7 +274,7 @@ characters={
 			slot = political_advisor
 			idea_token = EAG_wayne_john_sturgeon
 			traits = {
-				
+				voice_of_christianity
 			}
 			allowed = {
 				original_tag = EAG
@@ -297,7 +297,7 @@ characters={
 			slot = political_advisor
 			idea_token = EAG_christopher_houghton_budd
 			traits = {
-				
+				architect
 			}
 			allowed = {
 				original_tag = EAG
@@ -320,7 +320,7 @@ characters={
 			slot = political_advisor
 			idea_token = EAG_alexander_thynn
 			traits = {
-				
+				extraordinary_lord
 			}
 			allowed = {
 				original_tag = EAG
@@ -343,7 +343,7 @@ characters={
 			slot = political_advisor
 			idea_token = EAG_jeff_kent
 			traits = {
-				
+				local_reformer
 			}
 			allowed = {
 				original_tag = EAG
@@ -366,7 +366,7 @@ characters={
 			slot = political_advisor
 			idea_token = EAG_emma_restall_orr
 			traits = {
-				
+				priestess
 			}
 			allowed = {
 				original_tag = EAG
@@ -389,7 +389,7 @@ characters={
 			slot = political_advisor
 			idea_token = EAG_alex_whitehouse
 			traits = {
-				
+				breadearner
 			}
 			allowed = {
 				original_tag = EAG
@@ -412,7 +412,7 @@ characters={
 			slot = political_advisor
 			idea_token = EAG_philip_yea
 			traits = {
-				
+				king_of_spirits
 			}
 			allowed = {
 				original_tag = EAG
@@ -428,14 +428,15 @@ characters={
 		portraits={
 			civilian={
 				small="gfx/ideas/EAG/GFX_idea_EAG_Rick_Astley.dds"
-			}
+				large="gfx/leaders/EAG/Portrait_EAG_Rick_Astley.dds"
+						}
 		}
 		advisor = {
 			cost = 120
 			slot = political_advisor
 			idea_token = EAG_rick_astley
 			traits = {
-				
+				peoples_artist
 			}
 			allowed = {
 				original_tag = EAG
@@ -444,6 +445,11 @@ characters={
 				factor  = 1.000
 			}
 	    }
+		country_leader={
+			ideology=stratocracy
+			expire="1.1.1.1"
+			id=-1
+		}
 	}
 	
 	EAG_michael_bates ={
