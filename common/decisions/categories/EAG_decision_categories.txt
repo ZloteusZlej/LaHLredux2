@@ -20,4 +20,50 @@ EAG_volk_and_mercs = {
 	icon = GFX_
 	visible_when_empty = yes
 	allowed = { original_tag = EAG }
+	available = { 
+		EAG = {
+			has_government = hegemonism
+		}
+	}
+	visible = { 
+		EAG = {
+			has_government = hegemonism
+		}
+	}
+}
+
+EAG_mercs = {
+	icon = GFX_
+	visible_when_empty = yes
+	allowed = { 
+		original_tag = EAG
+	}
+	available = {
+		EAG = {
+			has_government = neocameralism
+		}
+	}
+	visible = {
+		EAG = {
+			has_government = neocameralism
+		}
+	}
+}
+
+EAG_volk = {
+	icon = GFX_
+	visible_when_empty = yes
+	allowed = { 
+		original_tag = EAG
+	}
+	available = {
+		EAG = {
+			has_government = national_bolshevism
+		}
+	}
+	visible = {
+		EAG = {
+			has_government = national_bolshevism
+		}
+	}
 }
