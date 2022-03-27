@@ -663,5 +663,913 @@ EAG_reunify_isles = {
 				add_manpower = 1000
 			}
 		}
+		
+		EAG_football_and_pubs = {
+			cost = 20
+			days_remove = 30
+			days_re_enable = 35
+			available = {
+				NOT = {
+					country_exists = ESS
+				}
+			}
+			visible = {
+				NOT = {
+					country_exists = ESS
+				}	
+			}
+			modifier = {
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = 0.05
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = volk_dev
+					value = -2
+				}
+				clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+			}
+			remove_effect = {
+				add_to_variable = {
+					var = volk_mood
+					value = 3
+				}
+				clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+				add_popularity = {
+					ideology = hegemonism
+					popularity = 0.02
+				}
+			}
+		}
+		
+		EAG_subsidise_reconstruction_works = {
+			cost = 20
+			days_remove = 30
+			days_re_enable = 30
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				industry_free_repair_factor	= 0.2
+				industry_repair_factor = 0.2
+				production_speed_buildings_factor = 0.2
+				political_power_factor = -0.15
+			}
+			remove_effect = {
+				add_to_variable = {
+					var = volk_mood
+					value = 2
+				}
+				add_to_variable = {
+					var = volk_dev
+					value = 2
+				}
+				clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+				clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+			}
+		}
+		
+		EAG_demarginalization_campaign = {
+			cost = 25
+			days_remove = 20
+			days_re_enable = 35
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				weekly_manpower = 450
+				production_factory_efficiency_gain_factor = 0.15
+				research_speed_factor = 0.2
+				consumer_goods_factor = 0.05
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = volk_mood
+					value = -2
+				}
+				clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+			}
+			remove_effect = {
+				add_to_variable = {
+					var = volk_dev
+					value = 3
+				}
+				clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+				random_core_state = {
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		EAG_cover_up_activities = {
+			cost = 25
+			days_remove = 20
+			days_re_enable = 35
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				political_power_factor = -0.15
+				consumer_goods_factor = 0.05
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = mercs_dev
+					value = -2
+				}
+				clamp_variable = {
+					var = mercs_dev
+					min = 0
+					max = 25
+				}
+			}
+			remove_effect = {
+				add_to_variable = {
+					var = mercs_mood
+					value = 3
+				}
+				clamp_variable = {
+					var = mercs_mood
+					min = 0
+					max = 25
+				}
+				add_political_power = 55
+			}
+		}
+		
+		EAG_open_military_plants = {
+			cost = 40
+			days_remove = 30
+			days_re_enable = 35
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.1
+			}
+			remove_effect = {
+				add_to_variable = {
+					var = mercs_mood
+					value = 2
+				}
+				clamp_variable = {
+					var = mercs_mood
+					min = 0
+					max = 25
+				}
+				add_to_variable = {
+					var = mercs_dev
+					value = 2
+				}
+				clamp_variable = {
+					var = mercs_dev
+					min = 0
+					max = 25
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+		
+		EAG_hire_new_members = {
+			cost = 20
+			days_remove = 20
+			days_re_enable = 35
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+				command_power > 35
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = mercs_mood
+					value = -2
+				}
+				clamp_variable = {
+					var = mercs_mood
+					min = 0
+					max = 25
+				}
+				add_command_power = -35
+			}
+			remove_effect = {
+				add_to_variable = {
+					var = mercs_dev
+					value = 3
+				}
+				clamp_variable = {
+					var = mercs_dev
+					min = 0
+					max = 25
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Gruppe Private Polizeiarbeit\" division_template = \"Military Firm\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+							
+						owner = EAG
+					}
+				}
+			}
+		}
+		
+		
+		
+		EAG_tax_hike = {
+			cost = 0
+			days_remove = 30
+			days_re_enable = 40
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				consumer_goods_factor = -0.06
+				production_factory_efficiency_gain_factor = -0.05
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = volk_mood
+					value = -4
+				}
+				clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+			}
+			remove_effect = {
+				add_political_power = 60
+			}
+		}
+		
+		EAG_lobbying_and_networking = {
+			cost = 40
+			days_remove = 20
+			days_re_enable = 55
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				all_controlled_state = {
+					compliance_gain = 0.01
+					resistance_decay = 0.02
+				}
+				production_speed_buildings_factor = 0.1
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = volk_dev
+					value = -3
+				}
+				clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+			}
+			remove_effect = {
+				random_list = { 
+					50 = {
+						add_offsite_building = { type = arms_factory level = 1 }
+					}
+					50 = {
+						add_offsite_building = { type = industrial_complex level = 1 }
+					}
+				}
+			}
+		}
+		
+		EAG_demand_discipline = {
+			cost = 15
+			days_remove = 30
+			days_re_enable = 35
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+				command_power > 35
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				army_org_factor = 0.2
+				army_morale_factor = 0.2
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = mercs_mood
+					value = -3
+				}
+				clamp_variable = {
+					var = mercs_mood
+					min = 0
+					max = 25
+				}
+				add_command_power = -35
+			}
+			remove_effect = {
+				random_army_leader = {
+					limit = { 
+						is_leading_army = yes
+					}
+					gain_xp	= 10
+					add_skill_level = 1
+					add_planning = 1
+				}
+			}
+		}
+		
+		EAG_lower_proffessionalism = {
+			cost = 25
+			days_remove = 30
+			days_re_enable = 35
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+				command_power > 35
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				weekly_manpower = 650
+				army_morale_factor = -0.15
+				army_org_factor = -0.15
+				army_org_regain = -0.15
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = mercs_dev
+					value = -4
+				}
+				clamp_variable = {
+					var = mercs_dev
+					min = 0
+					max = 25
+				}
+			}
+			remove_effect = {
+				add_manpower = 1250
+			}
+		}
 	} 	
+	
+	EAG_mercs = {
+		EAG_distribute_land = {
+			cost = 25
+			days_remove = 20
+			days_re_enable = 35
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.15
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = mercs_dev
+					value = -2
+				}
+				clamp_variable = {
+					var = mercs_dev
+					min = 0
+					max = 25
+				}
+			}
+			remove_effect = {
+				add_to_variable = {
+					var = mercs_mood
+					value = 3
+				}
+				clamp_variable = {
+					var = mercs_mood
+					min = 0
+					max = 25
+				}
+			}
+		}
+		
+		EAG_use_engineer_batallion = {
+			cost = 45
+			days_remove = 30
+			days_re_enable = 35
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+				command_power > 35
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+				industry_free_repair_factor	= 0.2
+				industry_repair_factor = 0.2
+				production_speed_buildings_factor = 0.2
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = mercs_mood
+					value = -3
+				}
+				clamp_variable = {
+					var = mercs_mood
+					min = 0
+					max = 25
+				}
+				add_command_power = -35
+			}
+			remove_effect = {
+				random_owned_controlled_state = {
+					random_list = {
+						50 = {
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+							add_extra_state_shared_building_slots = 1
+						}
+						50 = {
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+							add_extra_state_shared_building_slots = 1
+						}
+					}
+				}
+			}
+		}
+		
+		EAG_raise_payments_1 = {
+			cost = 35
+			days_remove = 35
+			days_re_enable = 30
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.15
+			}
+			remove_effect = {
+				add_to_variable = {
+					var = mercs_mood
+					value = 2
+				}
+				clamp_variable = {
+					var = mercs_mood
+					min = 0
+					max = 25
+				}
+				add_to_variable = {
+					var = mercs_dev
+					value = 2
+				}
+				clamp_variable = {
+					var = mercs_dev
+					min = 0
+					max = 25
+				}
+				
+			}
+		}
+		
+		EAG_hire_new_members_1 = {
+			cost = 30
+			days_remove = 35
+			days_re_enable = 35
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+				command_power > 35
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = mercs_mood
+					value = -2
+				}
+				clamp_variable = {
+					var = mercs_mood
+					min = 0
+					max = 25
+				}
+				add_command_power = -35
+			}
+			remove_effect = {
+				add_to_variable = {
+					var = mercs_dev
+					value = 3
+				}
+				clamp_variable = {
+					var = mercs_dev
+					min = 0
+					max = 25
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Gruppe Private Polizeiarbeit\" division_template = \"Military Firm\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+							
+						owner = EAG
+					}
+				}
+			}
+		}
+		
+		
+		
+		EAG_lower_proffessionalism_1 = {
+			cost = 25
+			days_remove = 30
+			days_re_enable = 35
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+				command_power > 35
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				weekly_manpower = 650
+				army_morale_factor = -0.15
+				army_org_factor = -0.15
+				army_org_regain = -0.15
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = mercs_dev
+					value = -4
+				}
+				clamp_variable = {
+					var = mercs_dev
+					min = 0
+					max = 25
+				}
+			}
+			remove_effect = {
+				add_manpower = 1250
+			}
+		}
+	}
+	
+	EAG_volk = {
+		EAG_redistribute_wealth_from_cities_to_communes = {
+			cost = 30
+			days_remove = 30
+			days_re_enable = 35
+			available = {
+				NOT = {
+					country_exists = ESS
+				}
+			}
+			visible = {
+				NOT = {
+					country_exists = ESS
+				}	
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.25
+				industry_free_repair_factor	= -0.2
+				industry_repair_factor = -0.2
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = volk_dev
+					value = -2
+				}
+				clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+			}
+			remove_effect = {
+				add_to_variable = {
+					var = volk_mood
+					value = 3
+				}
+				clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+			}
+		}
+		
+		EAG_encourage_new_settlers = {
+			cost = 45
+			days_remove = 35
+			days_re_enable = 30
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.1 
+				production_speed_industrial_complex_factor_factor = 0.05
+				production_speed_infrastructure_factor = 0.25
+			}
+			remove_effect = {
+				add_to_variable = {
+					var = volk_mood
+					value = 2
+				}
+				add_to_variable = {
+					var = volk_dev
+					value = 2
+				}
+				clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+				clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+				random_owned_controlled_state = {
+					add_manpower = 5000
+				}
+			}
+		}
+		
+		EAG_agricultural_reeducation = {
+			cost = 25
+			days_remove = 20
+			days_re_enable = 35
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.15
+				production_speed_buildings_factor = 0.1
+				all_controlled_state = {
+					resistance_decay = 0.1
+				}
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = volk_mood
+					value = -2
+				}
+				clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+			}
+			remove_effect = {
+				add_to_variable = {
+					var = volk_dev
+					value = 3
+				}
+				clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+			}
+		}
+		
+		EAG_ask_communnes_for_volunteers = {
+			cost = 25
+			days_remove = 30
+			days_re_enable = 40
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				weekly_manpower = 650
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = volk_mood
+					value = -4
+				}
+				clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+			}
+			remove_effect = {
+				add_manpower = 1250
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2500
+					producer = EAG
+				}
+			}
+		}
+		
+		EAG_ask_communnes_for_civ_aid = {
+			cost = 0
+			days_remove = 30
+			days_re_enable = 55
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				industrial_capacity_factory	 = 0.25
+				all_controlled_state = {
+					local_resources_factor = 0.3
+				}
+				fuel_gain_factor = 0.15
+				supply_node_range = 0.15
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = volk_dev
+					value = -4
+				}
+				clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+			}
+			remove_effect = {
+				add_political_power = 50
+			}
+		}
+		
+		EAG_ask_communnes_for_mil_aid = {
+			cost = 0
+			days_remove = 30
+			days_re_enable = 55
+			available = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			visible = {
+					NOT = {
+						country_exists = ESS
+				}
+			}
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_org_regain = 0.15
+				org_loss_when_moving = -0.15
+				breakthrough_factor = 0.15
+			}
+			complete_effect = {
+				add_to_variable = {
+					var = volk_dev
+					value = -4
+				}
+				clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+			}
+		}
+	}
 	

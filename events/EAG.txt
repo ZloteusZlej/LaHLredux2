@@ -33,7 +33,7 @@ country_event = {
 			}
 			EAG = {
 				country_event = {
-				days = 5
+				days = 4
 				id = EAG_event.2
 				}
 			}
@@ -64,7 +64,7 @@ country_event = {
 			}
 			EAG = {
 				country_event = {
-				days = 5
+				days = 4
 				id = EAG_event.2
 				}
 			}
@@ -115,7 +115,7 @@ country_event = {
 			}
 		EAG = {
 			country_event = {
-			days = 5
+			days = 4
 			id = EAG_event.3
 			}
 		}
@@ -137,7 +137,7 @@ country_event = {
 			}
 		EAG = {
 			country_event = {
-			days = 5
+			days = 4
 			id = EAG_event.3
 			}
 		}
@@ -168,7 +168,7 @@ country_event = {
 			}
 			EAG = {
 				country_event = {
-					days = 5
+					days = 4
 					id = EAG_event.31
 				}
 			}
@@ -191,7 +191,7 @@ country_event = {
 			}
 			EAG = {
 				country_event = {
-					days = 5
+					days = 4
 					id = EAG_event.31
 				}
 			}
@@ -221,7 +221,7 @@ country_event = {
 			}
 			EAG = {
 				country_event = {
-					days = 5
+					days = 4
 					id = EAG_event.32
 			}
 			add_manpower = 500
@@ -243,7 +243,7 @@ country_event = {
 			}
 			EAG = {
 				country_event = {
-					days = 5
+					days = 4
 					id = EAG_event.32
 				}
 			}
@@ -1564,7 +1564,7 @@ country_event = {
     }
 	
 	option = {
-		name = EAG_event.36.c
+		name = EAG_event.36.b
 			add_to_variable = {
 				var = mercs_mood
 				value = 5
@@ -1655,5 +1655,96 @@ country_event = {
 				province = 17569
 			}
 		}
+    }
+}
+
+country_event = {
+	id = EAG_event.38
+	title = EAG_event.38.t
+	desc = EAG_event.38.d
+	is_triggered_only = yes	
+	
+    option = {
+		name = EAG_event.38.a
+		1143 = {
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 17579
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 8334
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 10629
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 17569
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.39
+	title = EAG_event.39.t
+	desc = EAG_event.39.d
+	is_triggered_only = yes	
+	
+    option = {
+		name = EAG_event.39.a
+		set_politics = {
+			ruling_party = neocameralism
+		}
+		remove_ideas = {
+			EAG_volk_dev_very_low
+			EAG_volk_dev_low
+			EAG_volk_dev_medium
+			EAG_volk_dev_high
+			EAG_volk_dev_very_high
+			EAG_volk_mood_very_low
+			EAG_volk_mood_low
+			EAG_volk_mood_medium
+			EAG_volk_mood_high
+			EAG_volk_mood_very_high
+		}
+		clear_variable = volk_dev
+		clear_variable = volk_mood
+    }
+	
+	 option = {
+		name = EAG_event.39.b
+		set_politics = {
+			ruling_party = national_bolshevism
+		}
+		remove_ideas = {
+			EAG_mercs_quality_very_low
+			EAG_mercs_quality_low
+			EAG_mercs_quality_medium
+			EAG_mercs_quality_high
+			EAG_mercs_quality_very_high
+			EAG_mercs_mood_very_low
+			EAG_mercs_mood_low
+			EAG_mercs_mood_medium
+			EAG_mercs_mood_high
+			EAG_mercs_mood_very_high
+		}
+		clear_variable = mercs_quality
+		clear_variable = mercs_mood
+    }
+	
+	option = {
+		name = EAG_event.39.c
+		
     }
 }

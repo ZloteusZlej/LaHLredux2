@@ -15,4 +15,21 @@ on_actions = {
 			}
 		}
 	}
+	
+	 on_capitulation = {
+	    effect = {
+		    if = {
+			    limit = {
+			        FROM = { tag = EAG }
+					ROOT = { tag = ESS }
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.39
+					}
+				}
+			}
+		}
+	}
 }					  
