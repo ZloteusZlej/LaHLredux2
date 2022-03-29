@@ -67,3 +67,21 @@ EAG_volk = {
 		}
 	}
 }
+
+EAG_relocate_regressionist_industry = {
+	icon = GFX_
+	visible_when_empty = yes
+	allowed = { 
+		original_tag = EAG
+	}
+	available = {
+		EAG = {
+			has_completed_focus = EAG_deal_for_regressionists
+		}
+	}
+	visible = {
+		EAG = {
+			has_completed_focus = EAG_deal_for_regressionists
+		}
+	}
+}

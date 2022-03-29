@@ -1573,3 +1573,97 @@ EAG_reunify_isles = {
 		}
 	}
 	
+	EAG_relocate_regressionist_industry = {
+		EAG_greece_deal = {
+			days_remove = 25
+			fire_only_once = yes
+			available = {
+				country_exists = GRE
+				GRE = {
+					has_government = regressionism
+				}
+			}
+			visible = {
+				country_exists = GRE
+				GRE = {
+					has_government = regressionism
+				}
+			}
+			GRE = {
+					country_event = {
+					days = 2
+					id = smert_event.6
+				}
+			}
+		}
+		
+		EAG_albania_deal = {
+			days_remove = 25
+			fire_only_once = yes
+			available = {
+				country_exists = ALB
+				ALB = {
+					has_government = regressionism
+				}
+			}
+			visible = {
+				country_exists = ALB
+				ALB = {
+					has_government = regressionism
+				}
+			}
+			ALB = {
+					country_event = {
+					days = 2
+					id = smert_event.6
+				}
+			}
+		}
+		
+		EAG_finland_deal = {
+			days_remove = 25
+			fire_only_once = yes
+			available = {
+				country_exists = FIN
+				FIN = {
+					has_government = regressionism
+				}
+			}
+			visible = {
+				country_exists = FIN
+				FIN = {
+					has_government = regressionism
+				}
+			}
+			FIN = {
+					country_event = {
+					days = 2
+					id = smert_event.6
+				}
+			}
+		}
+		
+		EAG_phoenicia_deal = {
+			days_remove = 25
+			fire_only_once = yes
+			available = {
+				country_exists = LEB
+				LEB = {
+					has_government = regressionism
+				}
+			}
+			visible = {
+				country_exists = LEB
+				LEB = {
+					has_government = regressionism
+				}
+			}
+			LEB = {
+					country_event = {
+					days = 2
+					id = smert_event.6
+				}
+			}
+		}
+	}
+	

@@ -492,7 +492,7 @@ shared_focus = {
 		focus = EAG_fresh_meat
 	}
 	completion_reward = {
-		add_fuel = 800
+		add_fuel = 4000
 		1004 = {
 			add_resource = {
 				type = oil
@@ -624,3 +624,300 @@ shared_focus = {
 }
 
 ###MERCS TREE###
+
+shared_focus = {
+	id = EAG_haven_for_smugglers
+	icon = GFX_goal_EAG_haven_for_smugglers
+	cost = 4.3
+	completion_reward = {
+		1004 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		add_offsite_building = { type = industrial_complex level = 1 }
+		add_ideas = EAG_port_of_ipswich
+	}
+	x = 12
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_acmesation
+	icon = GFX_goal_EAG_acmesation
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_haven_for_smugglers
+	}
+	completion_reward = {
+		add_ideas = EAG_english_laundromat
+	}
+	x = 12
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_gunzel_pounds
+	icon = GFX_goal_EAG_gunzel_pounds
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_haven_for_smugglers
+	}
+	completion_reward = {
+		add_political_power = 125
+		add_timed_idea = {
+			idea = EAG_currency_introduction
+			days = 60
+		}
+	}
+	x = 10
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_revise_lands_blueprints
+	icon = GFX_goal_EAG_revise_lands_blueprints
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_haven_for_smugglers
+	}
+	completion_reward = {
+		add_ideas = EAG_lands_blueprints
+	}
+	x = 14
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_flat_taxation
+	icon = GFX_goal_EAG_flat_taxation
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_revise_lands_blueprints
+	}
+	prerequisite = {
+		focus = EAG_gunzel_pounds
+	}
+	prerequisite = {
+		focus = EAG_acmesation
+	}
+	completion_reward = {
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+	}
+	x = 11
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_rebrand_oxford
+	icon = GFX_goal_EAG_rebrand_oxford
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_revise_lands_blueprints
+	}
+	prerequisite = {
+		focus = EAG_gunzel_pounds
+	}
+	prerequisite = {
+		focus = EAG_acmesation
+	}
+	completion_reward = {
+		add_ideas = EAG_new_universities
+		add_political_power = 75
+	}
+	x = 13
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_deal_for_regressionists
+	icon = GFX_goal_EAG_deal_for_regressionists
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_rebrand_oxford
+	}
+	prerequisite = {
+		focus = EAG_flat_taxation
+	}
+	mutually_exclusive = {
+		focus = EAG_the_moneybag
+	}
+	completion_reward = {
+		add_political_power = 25
+	}
+	x = 11
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_the_moneybag
+	icon = GFX_goal_EAG_the_moneybag
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_rebrand_oxford
+	}
+	prerequisite = {
+		focus = EAG_flat_taxation
+	}
+	mutually_exclusive = {
+		focus = EAG_deal_for_regressionists
+	}
+	available = {
+		country_exists = GRE
+	}
+	completion_reward = {
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.40
+			}
+		}
+	}
+	x = 13
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_our_own_guns
+	icon = GFX_goal_EAG_our_own_guns
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_deal_for_regressionists
+		focus = EAG_the_moneybag
+	}
+	completion_reward = {
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+	}
+	x = 12
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_trusted_partners	
+	icon = GFX_goal_EAG_trusted_partners
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_our_own_guns
+	}
+	select_effect = {
+		add_political_power = -25
+		EAG = {
+			country_event = {
+					days = 2
+					id = EAG_event.42
+			}
+		}
+	}
+	completion_reward = {
+		EAG = {
+			country_event = {
+					days = 0
+					id = EAG_event.45
+			}
+		}
+	}
+	x = 11
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_englisch_kontore	
+	icon = GFX_goal_EAG_englisch_kontore
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_our_own_guns
+	}
+	completion_reward = {
+		add_ideas = EAG_english_kontore_codex
+	}
+	x = 13
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_farmers_self_governance	
+	icon = GFX_goal_EAG_farmers_self_governance
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_englisch_kontore
+	}
+	prerequisite = {
+		focus = EAG_trusted_partners
+	}
+	completion_reward = {
+		add_ideas = EAG_peasant_autonomy
+	}
+	x = 12
+	y = 11
+}
+
+shared_focus = {
+	id = EAG_liquid_gold
+	icon = GFX_goal_EAG_liquid_gold
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_farmers_self_governance
+	}
+	completion_reward = {
+		add_political_power = 125
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = industry
+		}
+		
+	}
+	x = 12
+	y = 12
+}

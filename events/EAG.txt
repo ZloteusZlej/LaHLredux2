@@ -1659,43 +1659,6 @@ country_event = {
 }
 
 country_event = {
-	id = EAG_event.38
-	title = EAG_event.38.t
-	desc = EAG_event.38.d
-	is_triggered_only = yes	
-	
-    option = {
-		name = EAG_event.38.a
-		1143 = {
-			add_building_construction = {
-				type = bunker
-				level = 1
-				instant_build = yes
-				province = 17579
-			}
-			add_building_construction = {
-				type = bunker
-				level = 1
-				instant_build = yes
-				province = 8334
-			}
-			add_building_construction = {
-				type = bunker
-				level = 1
-				instant_build = yes
-				province = 10629
-			}
-			add_building_construction = {
-				type = bunker
-				level = 1
-				instant_build = yes
-				province = 17569
-			}
-		}
-    }
-}
-
-country_event = {
 	id = EAG_event.39
 	title = EAG_event.39.t
 	desc = EAG_event.39.d
@@ -1746,5 +1709,125 @@ country_event = {
 	option = {
 		name = EAG_event.39.c
 		
+    }
+}
+
+country_event = {
+	id = EAG_event.40
+	title = EAG_event.40.t
+	desc = EAG_event.40.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.40.a
+		add_political_power = -15
+		GRE = {
+			country_event = {
+					days = 2
+					id = GRE_event.1
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.41
+	title = EAG_event.41.t
+	desc = EAG_event.41.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.41.a
+		add_political_power = 100
+		add_offsite_building = { type = arms_factory level = 2 }
+		add_offsite_building = { type = industrial_complex level = 2 }
+    }
+}
+
+country_event = {
+	id = EAG_event.42
+	title = EAG_event.42.t
+	desc = EAG_event.42.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.42.a
+		add_timed_idea = {
+			idea = EAG_recovery_investments
+			days = 30
+		}
+		hidden_effect = {
+			EAG = {
+				country_event = {
+						days = 7
+						id = EAG_event.43
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.43
+	title = EAG_event.43.t
+	desc = EAG_event.43.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.43.a
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		hidden_effect = {
+			EAG = {
+				country_event = {
+						days = 7
+						id = EAG_event.44
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.44
+	title = EAG_event.44.t
+	desc = EAG_event.44.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.44.a
+		1160 = {	
+			add_resource = {
+				type = steel
+				amount = 15
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.45
+	title = EAG_event.45.t
+	desc = EAG_event.45.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.45.a
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
     }
 }
