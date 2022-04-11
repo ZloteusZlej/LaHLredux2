@@ -623,7 +623,7 @@ shared_focus = {
 	y = 3
 }
 
-###MERCS TREE###
+###MERCS TREE ECONOMY###
 
 shared_focus = {
 	id = EAG_haven_for_smugglers
@@ -920,4 +920,312 @@ shared_focus = {
 	}
 	x = 12
 	y = 12
+}
+
+###MERCS TREE ADMINISTRATION###
+
+shared_focus = {
+	id = EAG_price_for_freedom
+	icon = GFX_goal_EAG_price_for_freedom
+	cost = 4.3
+	completion_reward = {
+		add_political_power = 100
+	}
+	x = 5
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_see_genossenschaft
+	icon = GFX_goal_EAG_see_genossenschaft
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_price_for_freedom
+	}
+	mutually_exclusive = {
+		focus = EAG_survival_of_the_fittest
+	}
+	completion_reward = {
+		add_to_variable = {
+				var = mercs_dev
+				value = -4
+		}
+		clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = 4
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		add_war_support = 0.1
+	}
+	x = 4
+	y = 6
+}
+shared_focus = {
+	id = EAG_survival_of_the_fittest
+	icon = GFX_goal_EAG_survival_of_the_fittest
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_price_for_freedom
+	}
+	mutually_exclusive = {
+		focus = EAG_see_genossenschaft
+	}
+	completion_reward = {
+		add_to_variable = {
+				var = mercs_dev
+				value = 4
+		}
+		clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = -4
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		all_army_leader = {
+			limit = {
+				is_leading_army = yes
+			}
+			add_skill_level = 1
+		}
+	}
+	x = 6
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_talking_toms
+	icon = GFX_goal_EAG_talking_toms
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_see_genossenschaft
+		focus = EAG_survival_of_the_fittest
+	}
+	completion_reward = {
+			add_advisor_role = {
+			  сharacter = EAG_nicholas_patrick_carter
+				  advisor = {
+					slot = head_of_government
+						cost = 50
+						idea_token = EAG_nicholas_patrick_carter
+						traits = {
+							house_manager
+						}
+					}
+				activate = yes
+			}
+	}
+	x = 4
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_ipswich_law
+	icon = GFX_goal_EAG_ipswich_law
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_see_genossenschaft
+		focus = EAG_survival_of_the_fittest
+	}
+	completion_reward = {
+		add_ideas = EAG_ipswich_league
+	}
+	x = 6
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_camouflage_for_dinner_suits
+	icon = GFX_goal_EAG_camouflage_for_dinner_suits
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_ipswich_law
+	}
+	prerequisite = {
+		focus = EAG_talking_toms
+	}
+	completion_reward = {
+		remove_idea = EAG_illegitimate_government
+		add_political_power = 50
+		set_party_name = { 
+			ideology = neocameralism 
+			long_name = EAG_neocameralism_party_legitimate_long 
+			name = EAG_neocameralism_party_legitimate
+		}
+	}
+	x = 3
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_privacy_above_all
+	icon = GFX_goal_EAG_camouflage_for_dinner_suits
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_ipswich_law
+	}
+	prerequisite = {
+		focus = EAG_talking_toms
+	}
+	completion_reward = {
+		add_political_power = 50
+		add_ideas = EAG_privacy_laws
+		add_offsite_building = { type = arms_factory level = 2 }
+		add_offsite_building = { type = industrial_complex level = 2 }
+	}
+	x = 5
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_cops_for_hire
+	icon = GFX_goal_EAG_camouflage_for_dinner_suits
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_ipswich_law
+	}
+	prerequisite = {
+		focus = EAG_talking_toms
+	}
+	completion_reward = {
+		add_to_variable = {
+				var = mercs_dev
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = -2
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		add_ideas = EAG_polizei
+	}
+	x = 7
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_common_enemy
+	icon = GFX_goal_EAG_common_enemy
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_cops_for_hire
+	}
+	prerequisite = {
+		focus = EAG_privacy_above_all
+	}
+	prerequisite = {
+		focus = EAG_camouflage_for_dinner_suits
+	}
+	completion_reward = {
+		create_intelligence_agency = yes
+		EAG = {
+				country_event = {
+						days = 0
+						id = EAG_event.46
+				}
+			}
+	}
+	x = 4
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_our_friends_in_berlin
+	icon = GFX_goal_EAG_our_friends_in_berlin
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_cops_for_hire
+	}
+	prerequisite = {
+		focus = EAG_privacy_above_all
+	}
+	prerequisite = {
+		focus = EAG_camouflage_for_dinner_suits
+	}
+	completion_reward = {
+		add_ideas = EAG_exiles_of_berlin
+		add_research_slot = 1
+	}
+	x = 6
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_herr_justice
+	icon = GFX_goal_EAG_herr_justice
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_common_enemy
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_polizei
+			add_idea = EAG_polizei_1
+		}
+		add_political_power = 50
+		stability_factor = 0.1
+	}
+	x = 4
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_fate_of_the_crown
+	icon = GFX_goal_EAG_fate_of_the_crown
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_our_friends_in_berlin
+	}
+	completion_reward = {
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.49
+			}
+		}
+	}
+	x = 6
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_ensuring_our_place_in_heaven
+	icon = GFX_goal_EAG_ensuring_our_place_in_heaven
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_fate_of_the_crown
+	}
+	prerequisite = {
+		focus = EAG_herr_justice
+	}
+	completion_reward = {
+		add_ideas = EAG_company_charity
+	}
+	x = 5
+	y = 11
 }

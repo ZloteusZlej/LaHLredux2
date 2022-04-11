@@ -70,7 +70,7 @@ EAG_volk = {
 
 EAG_relocate_regressionist_industry = {
 	icon = GFX_
-	visible_when_empty = yes
+	visible_when_empty = no
 	allowed = { 
 		original_tag = EAG
 	}
@@ -82,6 +82,24 @@ EAG_relocate_regressionist_industry = {
 	visible = {
 		EAG = {
 			has_completed_focus = EAG_deal_for_regressionists
+		}
+	}
+}
+
+EAG_ipswich_law_implementation = {
+	icon = GFX_
+	visible_when_empty = yes
+	allowed = { 
+		original_tag = EAG
+	}
+	available = {
+		EAG = {
+			has_completed_focus = EAG_ipswich_law
+		}
+	}
+	visible = {
+		EAG = {
+			has_completed_focus = EAG_ipswich_law
 		}
 	}
 }

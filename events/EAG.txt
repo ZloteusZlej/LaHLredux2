@@ -1680,10 +1680,13 @@ country_event = {
 			EAG_volk_mood_medium
 			EAG_volk_mood_high
 			EAG_volk_mood_very_high
+			EAG_panem_b
+			EAG_circenses_bonus
 		}
 		clear_variable = volk_dev
 		clear_variable = volk_mood
 		load_focus_tree = EAG_mercenary
+		add_ideas = EAG_illegitimate_government
     }
 	
 	 option = {
@@ -1702,6 +1705,8 @@ country_event = {
 			EAG_mercs_mood_medium
 			EAG_mercs_mood_high
 			EAG_mercs_mood_very_high
+			EAG_panem_b
+			EAG_circenses_bonus
 		}
 		clear_variable = mercs_quality
 		clear_variable = mercs_mood
@@ -1709,7 +1714,10 @@ country_event = {
 	
 	option = {
 		name = EAG_event.39.c
-		
+		remove_ideas = {
+			EAG_panem_b
+			EAG_circenses_bonus
+		}
     }
 }
 
@@ -1830,5 +1838,101 @@ country_event = {
 			}
 				add_extra_state_shared_building_slots = 1
 		}
+    }
+}
+
+country_event = {
+	id = EAG_event.46
+	title = EAG_event.46.t
+	desc = EAG_event.46.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.46.a
+		add_political_power = -55
+		hidden_effect = {
+			EAG = {
+				country_event = {
+						days = 20
+						id = EAG_event.47
+				}
+			}
+		}
+    }
+	option = {
+		name = EAG_event.46.b
+		add_political_power = 35
+		hidden_effect = {
+			EAG = {
+				country_event = {
+						days = 20
+						id = EAG_event.48
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.47
+	title = EAG_event.47.t
+	desc = EAG_event.47.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.47.a	
+		upgrade_intelligence_agency = upgrade_form_department
+		upgrade_intelligence_agency = upgrade_crypto_strength
+		upgrade_intelligence_agency = upgrade_decryption_boost
+		
+    }
+}
+
+country_event = {
+	id = EAG_event.48
+	title = EAG_event.48.t
+	desc = EAG_event.48.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.48.a	
+		add_timed_idea = {
+			idea = EAG_civil_shock
+			days = 45
+		}
+    }
+	option = {
+		name = EAG_event.48.b	
+		add_timed_idea = {
+			idea = EAG_civil_shock
+			days = 45
+		}
+    }
+	option = {
+		name = EAG_event.48.c
+		add_timed_idea = {
+			idea = EAG_civil_shock
+			days = 45
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.49
+	title = EAG_event.49.t
+	desc = EAG_event.49.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.49.a	
+		add_political_power = 55
+    }
+	option = {
+		name = EAG_event.49.b	
+		swap_ideas = {
+			remove_idea = EAG_ipswich_league
+			add_idea = EAG_ipswich_league_2
+		}
+    }
+	option = {
+		name = EAG_event.49.c	
+		stability_factor = -0.07
+		war_support_factor = 0.1
     }
 }
