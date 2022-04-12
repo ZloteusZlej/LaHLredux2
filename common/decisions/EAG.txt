@@ -1178,23 +1178,26 @@ EAG_reunify_isles = {
 				add_command_power = -35
 			}
 			remove_effect = {
-				random_owned_controlled_state = {
 					random_list = {
 						50 = {
-							add_building_construction = {
-								type = industrial_complex
-								level = 1
-								instant_build = yes
+							random_owned_controlled_state = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
 							}
-							add_extra_state_shared_building_slots = 1
 						}
 						50 = {
-							add_building_construction = {
-								type = arms_factory
-								level = 1
-								instant_build = yes
+							random_owned_controlled_state = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
 							}
-							add_extra_state_shared_building_slots = 1
 						}
 					}
 				}
@@ -1589,10 +1592,12 @@ EAG_reunify_isles = {
 					has_government = regressionism
 				}
 			}
-			GRE = {
-					country_event = {
-					days = 2
-					id = smert_event.6
+			complete_effect = {
+				GRE = {
+						country_event = {
+						days = 2
+						id = smert_event.6
+					}
 				}
 			}
 		}
@@ -1612,10 +1617,12 @@ EAG_reunify_isles = {
 					has_government = regressionism
 				}
 			}
-			ALB = {
-					country_event = {
-					days = 2
-					id = smert_event.6
+			complete_effect = {
+				ALB = {
+						country_event = {
+						days = 2
+						id = smert_event.6
+					}
 				}
 			}
 		}
@@ -1635,10 +1642,12 @@ EAG_reunify_isles = {
 					has_government = regressionism
 				}
 			}
-			FIN = {
-					country_event = {
-					days = 2
-					id = smert_event.6
+			complete_effect = {
+				FIN = {
+						country_event = {
+						days = 2
+						id = smert_event.6
+					}
 				}
 			}
 		}
@@ -1658,11 +1667,962 @@ EAG_reunify_isles = {
 					has_government = regressionism
 				}
 			}
-			LEB = {
-					country_event = {
-					days = 2
-					id = smert_event.6
+			complete_effect = {
+				LEB = {
+						country_event = {
+						days = 2
+						id = smert_event.6
+					}
 				}
+			}
+		}
+	}
+	
+	EAG_ipswich_law_implementation = {
+		EAG_norwich_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1004 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1004 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1004 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1004 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1004 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_london_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1160 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1160 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1160 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1160 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1160 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		
+		EAG_kent_agglomeration_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1002 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1002 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1002 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1002 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1002 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_sussex_agglomeration_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1001 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1001 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1001 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1001 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1001 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_southhampton_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1000 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1000 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1000 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1000 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1000 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_bristol_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1006 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1006 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1006 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1006 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1006 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_oxford_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1153 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1153 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1153 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1153 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1153 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_plymouth_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				999 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				999 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				999 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							999 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							999 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_birminghem_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1154 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1154 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1154 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1154 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1154 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_cambridge_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1005 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1005 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1005 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1005 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1005 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_peterborough_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1144 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1144 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1144 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1144 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1144 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_sheffield_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1008 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1008 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1008 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1008 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1008 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_leeds_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1146 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1146 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1146 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1146 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1146 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_liverpool_and_manchester_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1009 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1009 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1009 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1009 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1009 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_york_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1010 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1010 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1010 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1010 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1010 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_newcastle_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1012 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1012 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1012 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1012 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1012 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_cardiff_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1149 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1149 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1149 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1149 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1149 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_edinburgh_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1163 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1163 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1163 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1163 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1163 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_glasgow_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1164 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1164 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1164 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1164 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1164 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_ulster_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1019 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1019 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1019 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1019 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1019 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_dublin_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1023 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1023 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1023 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1023 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1023 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			}
+		}
+		
+		EAG_cork_membership = {
+			days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1022 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1022 = {
+					is_controlled_by = EAG
+				}
+			}
+			remove_effect = {
+				1022 = {
+					add_dynamic_modifier = ipswich_league_member
+				}
+				random_list = {
+						50 = {
+							1022 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							1022 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
 			}
 		}
 	}

@@ -944,4 +944,203 @@ ideas = {
 			}
 		}
 	}
+	
+	country = {
+		EAG_ipswich_league = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.02
+				required_garrison_factor = -0.1
+				line_change_production_efficiency_factor = 0.3
+				production_factory_efficiency_gain_factor = 0.1
+				political_power_factor = 0.25
+				all_controlled_state = {
+					starting_compliance = 0.15
+				}
+			}
+		}
+	}
+	
+	country = {
+		EAG_illegitimate_government = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = -0.75
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				political_power_factor = -0.35
+				surrender_limit = -0.25
+				conscription_factor = -0.15
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_privacy_laws = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				encryption_factor = -0.5
+				industrial_capacity_dockyard = 0.25
+				industrial_capacity_factory = 0.25
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_polizei = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				all_controlled_state = {
+					local_non_core_manpower = 0.2
+					resistance_decay = 0.05
+				}
+				political_power_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_civil_shock = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.75
+				required_garrison_factor = 0.5
+				conscription_factor = -0.15
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_exiles_of_berlin = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 150
+				research_speed_factor = 0.15
+				political_advisor_cost_factor = -0.25
+				intel_network_gain_factor = 0.2
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_polizei_1 = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				all_controlled_state = {
+					local_non_core_manpower = 0.2
+					resistance_decay = 0.05
+					compliance_growth = 0.1
+				}
+				required_garrison_factor = -0.25
+				political_power_factor = 0.1
+			}
+		}
+	}
+	
+	country = {
+		EAG_ipswich_league_2 = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.01
+				required_garrison_factor = -0.1
+				line_change_production_efficiency_factor = 0.3
+				production_factory_efficiency_gain_factor = 0.1
+				political_power_factor = 0.3
+				all_controlled_state = {
+					starting_compliance = 0.2
+					mobilization_speed = 0.25
+				}
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_company_charity = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.1
+				research_speed_factor = 0.02
+				production_speed_industrial_complex_factor = 0.05	
+				production_speed_infrastructure_factor = 0.05
+				industry_free_repair_factor = 0.25
+				consumer_goods_factor = -0.1
+				political_power_factor = 0.25
+			}
+		}
+	}
 }
