@@ -1018,18 +1018,21 @@ shared_focus = {
 		focus = EAG_survival_of_the_fittest
 	}
 	completion_reward = {
-			add_advisor_role = {
-			  сharacter = EAG_nicholas_patrick_carter
-				  advisor = {
-					slot = head_of_government
-						cost = 50
-						idea_token = EAG_nicholas_patrick_carter
-						traits = {
-							house_manager
-						}
-					}
-				activate = yes
+		add_advisor_role = {
+		  Character = EAG_nicholas_patrick_carter
+		  advisor = {
+			slot = head_of_government
+			cost = 50
+			idea_token = EAG_nicholas_patrick_carter
+			traits = {
+				house_manager
 			}
+			allowed = {
+				always = yes
+			}
+		  }
+		activate = yes
+		}
 	}
 	x = 4
 	y = 7
