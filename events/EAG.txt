@@ -9,29 +9,139 @@ country_event = {
 	is_triggered_only = yes
     option = {
 		name = EAG_event.1.a
-		hidden_effect = {
-		    EAG = {
-			    country_event = { id = EAG_event.2 days = 5 }
-		    }
-		}
+			add_to_variable = {
+				var = mercs_mood
+				value = 4
+			}
+			clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+			}
+			add_to_variable = {
+				var = volk_mood
+				value = -4
+			}
+			clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+			}
+			add_to_variable = {
+				var = help_forces
+				value = 1
+			}
+			EAG = {
+				country_event = {
+				days = 4
+				id = EAG_event.2
+				}
+			}
     }   	
+	option = {
+		name = EAG_event.1.b
+			add_to_variable = {
+				var = mercs_mood
+				value = -4
+			}
+			clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+			}
+			add_to_variable = {
+				var = volk_mood
+				value = 4
+			}
+			clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+			}
+			add_to_variable = {
+				var = help_ppl
+				value = 1
+			}
+			EAG = {
+				country_event = {
+				days = 4
+				id = EAG_event.2
+				}
+			}
+    } 
 }
 
 country_event = {
 	id = EAG_event.2
 	title = EAG_event.2.t
 	desc = EAG_event.2.d
-	
+	immediate = {
+		division_template = {
+			name = "Norfolk Militia"
+			priority = 1
+			is_locked = yes
+			division_names_group = EAG_INF_01
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+			}
+		}
+	}
     fire_only_once = yes	
 	is_triggered_only = yes
     option = {
 		name = EAG_event.2.a
-		hidden_effect = {
-		    GER = {
-			    country_event = { id = GER_event.4 days = 5 }
-		    }
+			1004 = {
+				create_unit = {
+					division = "name = \"Norfolk volunteers\" division_template = \"Norfolk Militia\" start_experience_factor = 1.8 start_equipment_factor = 0.8"
+					
+					owner = EAG
+				}
+			}
+			add_to_variable = {
+				var = help_ppl
+				value = 1
+			}
+			add_to_variable = {
+				var = mercs_dev
+				value = -4
+			}
+			clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+			}
+		EAG = {
+			country_event = {
+			days = 4
+			id = EAG_event.3
+			}
 		}
-    }   	
+    }   
+	option = {
+		name = EAG_event.2.b
+		add_to_variable = {
+				var = mercs_dev
+				value = 4
+			}
+			clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+			}
+			add_to_variable = {
+				var = help_forces
+				value = 1
+			}
+		EAG = {
+			country_event = {
+			days = 4
+			id = EAG_event.3
+			}
+		}
+    }
 }
 
 country_event = {
@@ -43,21 +153,290 @@ country_event = {
 	is_triggered_only = yes
     option = {
 		name = EAG_event.3.a
-		FROM = {
-			set_autonomy = {
-				target = ROOT
-				autonomy_state = autonomy_free
+		add_to_variable = {
+				var = volk_dev
+				value = 3
+			}
+			clamp_variable = {
+				var = volk_dev
+				min = 0
+				max = 25
+			}
+			add_to_variable = {
+				var = help_ppl
+				value = 1
+			}
+			EAG = {
+				country_event = {
+					days = 4
+					id = EAG_event.31
+				}
+			}
+			add_political_power = 35
+	}
+	option = {
+		name = EAG_event.3.b
+		add_to_variable = {
+				var = mercs_dev
+				value = 3
+			}
+			clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+			}
+			add_to_variable = {
+				var = help_forces
+				value = 1
+			}
+			EAG = {
+				country_event = {
+					days = 4
+					id = EAG_event.31
+				}
+			}
+			army_experience = 10
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 25
+				producer = EAG
 			}
 		}
-		EAG = {
-			leave_faction = yes
+    } 
+
+
+country_event = {
+	id = EAG_event.31
+	title = EAG_event.31.t
+	desc = EAG_event.31.d
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+		name = EAG_event.31.a
+			recruit_character = EAG_theresa_may
+			add_to_variable = {
+				var = help_ppl
+				value = 1
+			}
+			EAG = {
+				country_event = {
+					days = 4
+					id = EAG_event.32
+			}
+			add_manpower = 500
 		}
-		hidden_effect = {
-		    GER = {
-			    country_event = { id = GER_event.5 days = 2 }
-		    }
+		1004 = { 
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
 		}
-    }   	
+    }
+	option = {
+		name = EAG_event.31.b
+			recruit_character = EAG_theresa_may
+			add_to_variable = {
+				var = help_forces
+				value = 1
+			}
+			EAG = {
+				country_event = {
+					days = 4
+					id = EAG_event.32
+				}
+			}
+			add_to_variable = {
+				var = mercs_dev
+				value = 3
+			}
+			clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+			}
+			1004 = {
+				create_unit = {
+					division = "name = \"Cromer police\" division_template = \"Norfolk Militia\" start_experience_factor = 1 start_equipment_factor = 0.8"
+					
+					owner = EAG
+				}
+			}
+		}
+	}
+
+country_event = {
+	id = EAG_event.32
+	title = EAG_event.32.t
+	desc = EAG_event.32.d
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+		name = EAG_event.32.a
+			add_to_variable = {
+				var = help_ppl
+				value = 1
+			}
+		recruit_character = EAG_alex_whitehouse
+		1004 = { 
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+    }
+	option = {
+		name = EAG_event.32.b
+			add_to_variable = {
+				var = help_forces
+				value = 1
+			}
+		recruit_character = EAG_philip_yea
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = EAG
+		}
+	}
+}
+
+country_event = {
+	id = EAG_event.33
+	title = EAG_event.33.t
+	desc = {
+		text = EAG_event.33.d_a
+		trigger = {
+			check_variable = {
+				var = help_ppl
+				value = 5
+				compare = equals
+			}
+		}
+	}
+	
+	desc = {
+		text = EAG_event.33.d_b
+		trigger = {
+			check_variable = { help_ppl > help_forces }
+		}
+	}
+	
+	desc = {
+		text = EAG_event.33.d_c
+		trigger = {
+			check_variable = { help_ppl < help_forces }
+		}
+	}
+	
+	desc = {
+		text = EAG_event.33.d_d
+		trigger = {
+			check_variable = {
+				var = help_forces
+				value = 5
+				compare = equals
+			}
+		}
+	}
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+		name = EAG_event.33.a
+		trigger = {
+			check_variable = {
+				var = help_ppl
+				value = 5
+				compare = equals
+			}
+		}
+		1004 = {
+			add_compliance = 35
+		}
+		add_to_variable = {
+			var = volk_mood
+			value = 5
+			}
+		clamp_variable = {
+			var = volk_mood
+			min = 0
+			max = 25
+		}
+    }
+	option = {
+		name = EAG_event.33.b
+		trigger = {
+				check_variable = {
+					var = help_ppl
+					value = help_forces
+					compare = greater_than
+				}
+				check_variable = {
+					var = help_ppl
+					value = 5
+					compare = not_equals
+				}
+				check_variable = {
+					var = help_forces
+					value = 5
+					compare = not_equals
+				}
+		}
+		1004 = {
+			add_compliance = 40
+		}
+		add_manpower = -1000
+	}
+	option = {
+		name = EAG_event.33.c
+		trigger = {
+				check_variable = {
+					var = help_ppl
+					value = help_forces
+					compare = less_than
+				}
+				check_variable = {
+					var = help_ppl
+					value = 5
+					compare = not_equals
+				}
+				check_variable = {
+					var = help_forces
+					value = 5
+					compare = not_equals
+				}
+		}
+		1004 = {
+			add_compliance = 25
+		}
+		add_manpower = -250
+	}
+	option = {
+		name = EAG_event.33.e
+		trigger = {
+			check_variable = {
+				var = help_forces
+				value = 5
+				compare = equals
+			}
+		}
+		1004 = {
+			add_compliance = 25
+			add_resistance = -30
+		}
+		add_to_variable = {
+			var = volk_dev
+			value = -4
+			}
+		clamp_variable = {
+			var = volk_dev
+			min = 0
+			max = 25
+		}
+	}
 }
 
 country_event = {
@@ -201,5 +580,1359 @@ country_event = {
     option = {
 		name = EAG_event.10.a
 		army_experience = 10
+    }
+}
+
+country_event = {
+	id = EAG_event.11
+	title = EAG_event.11.t
+	desc = EAG_event.11.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_mercs_quality_low
+			}
+			clr_country_flag = int_mercs_quality_low
+			remove_ideas = EAG_mercs_quality_low 
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_medium
+			}
+			clr_country_flag = int_mercs_quality_medium
+			remove_ideas = EAG_mercs_quality_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_high
+			}
+			clr_country_flag = int_mercs_quality_high
+			remove_ideas = EAG_mercs_quality_high
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_high
+			}
+			clr_country_flag = int_mercs_quality_very_high
+			remove_ideas = EAG_mercs_quality_very_high
+		}
+	}
+    option = {
+		name = EAG_event.11.a
+		EAG = {
+			add_ideas = EAG_mercs_quality_very_low
+			set_country_flag = int_mercs_quality_very_low
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.12
+	title = EAG_event.12.t
+	desc = EAG_event.12.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_low
+			}
+			clr_country_flag = int_mercs_quality_very_low
+			remove_ideas = EAG_mercs_quality_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_medium
+			}
+			clr_country_flag = int_mercs_quality_medium
+			remove_ideas = EAG_mercs_quality_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_high
+			}
+			clr_country_flag = int_mercs_quality_high
+			remove_ideas = EAG_mercs_quality_high
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_high
+			}
+			clr_country_flag = int_mercs_quality_very_high
+			remove_ideas = EAG_mercs_quality_very_high
+		}
+	}
+    option = {
+		name = EAG_event.12.a
+		EAG = {
+			add_ideas = EAG_mercs_quality_low
+			set_country_flag = int_mercs_quality_low
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.13
+	title = EAG_event.13.t
+	desc = EAG_event.13.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_low
+			}
+			clr_country_flag = int_mercs_quality_very_low
+			remove_ideas = EAG_mercs_quality_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_low
+			}
+			clr_country_flag = int_mercs_quality_low
+			remove_ideas = EAG_mercs_quality_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_high
+			}
+			clr_country_flag = int_mercs_quality_high
+			remove_ideas = EAG_mercs_quality_high
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_high
+			}
+			clr_country_flag = int_mercs_quality_very_high
+			remove_ideas = EAG_mercs_quality_very_high
+		}
+	}
+    option = {
+		name = EAG_event.13.a
+		EAG = {
+			add_ideas = EAG_mercs_quality_medium
+			set_country_flag = int_mercs_quality_medium
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.14
+	title = EAG_event.14.t
+	desc = EAG_event.14.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_low
+			}
+			clr_country_flag = int_mercs_quality_very_low
+			remove_ideas = EAG_mercs_quality_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_low
+			}
+			clr_country_flag = int_mercs_quality_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_medium
+			}
+			clr_country_flag = int_mercs_quality_medium
+			remove_ideas = EAG_mercs_quality_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_high
+			}
+			clr_country_flag = int_mercs_quality_very_high
+			remove_ideas = EAG_mercs_quality_very_high
+		}
+	}
+    option = {
+		name = EAG_event.14.a
+		EAG = {
+			add_ideas = EAG_mercs_quality_high
+			set_country_flag = int_mercs_quality_high
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.15
+	title = EAG_event.15.t
+	desc = EAG_event.15.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_mercs_quality_very_low
+			}
+			clr_country_flag = int_mercs_quality_very_low
+			remove_ideas = EAG_mercs_quality_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_low
+			}
+			clr_country_flag = int_mercs_quality_low
+			remove_ideas = EAG_mercs_quality_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_medium
+			}
+			clr_country_flag = int_mercs_quality_medium
+			remove_ideas = EAG_mercs_quality_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_quality_high
+			}
+			clr_country_flag = int_mercs_quality_high
+			remove_ideas = EAG_mercs_quality_high
+		}
+	}
+    option = {
+		name = EAG_event.15.a
+		EAG = {
+			add_ideas = EAG_mercs_quality_very_high
+			set_country_flag = int_mercs_quality_very_high
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.16
+	title = EAG_event.16.t
+	desc = EAG_event.16.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_mercs_mood_low
+			}
+			clr_country_flag = int_mercs_mood_low
+			remove_ideas = EAG_mercs_mood_low 
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_mood_medium
+			}
+			clr_country_flag = int_mercs_mood_medium
+			remove_ideas = EAG_mercs_mood_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_mood_high
+			}
+			clr_country_flag = int_mercs_mood_high
+			remove_ideas = EAG_mercs_mood_high
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_mood_very_high
+			}
+			clr_country_flag = int_mercs_mood_very_high
+			remove_ideas = EAG_mercs_mood_very_high
+		}
+	}
+    option = {
+		name = EAG_event.16.a
+		EAG = {
+			add_ideas = EAG_mercs_mood_very_low
+			set_country_flag = int_mercs_mood_very_low
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.17
+	title = EAG_event.17.t
+	desc = EAG_event.17.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_mercs_mood_very_low
+			}
+			clr_country_flag = int_mercs_mood_very_low
+			remove_ideas = EAG_mercs_mood_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_mood_medium
+			}
+			clr_country_flag = int_mercs_mood_medium
+			remove_ideas = EAG_mercs_mood_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_mood_high
+			}
+			clr_country_flag = int_mercs_mood_high
+			remove_ideas = EAG_mercs_mood_high
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_mood_very_high
+			}
+			clr_country_flag = int_mercs_mood_very_high
+			remove_ideas = EAG_mercs_mood_very_high
+		}
+	}
+    option = {
+		name = EAG_event.17.a
+		EAG = {
+			add_ideas = EAG_mercs_mood_low
+			set_country_flag = int_mercs_mood_low
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.18
+	title = EAG_event.18.t
+	desc = EAG_event.18.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_mercs_mood_very_low
+			}
+			clr_country_flag = int_mercs_mood_very_low
+			remove_ideas = EAG_mercs_mood_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_mood_low
+			}
+			clr_country_flag = int_mercs_mood_low
+			remove_ideas = EAG_mercs_mood_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_mood_high
+			}
+			clr_country_flag = int_mercs_mood_high
+			remove_ideas = EAG_mercs_mood_high
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_mood_very_high
+			}
+			clr_country_flag = int_mercs_mood_very_high
+			remove_ideas = EAG_mercs_mood_very_high
+		}
+	}
+    option = {
+		name = EAG_event.18.a
+		EAG = {
+			add_ideas = EAG_mercs_mood_medium
+			set_country_flag = int_mercs_mood_medium
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.19
+	title = EAG_event.19.t
+	desc = EAG_event.19.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_mercs_mood_very_low
+			}
+			clr_country_flag = int_mercs_mood_very_low
+			remove_ideas = EAG_mercs_mood_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_mood_low
+			}
+			clr_country_flag = int_mercs_mood_low
+			remove_ideas = EAG_mercs_mood_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_mood_medium
+			}
+			clr_country_flag = int_mercs_mood_medium
+			remove_ideas = EAG_mercs_mood_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_mood_very_high
+			}
+			clr_country_flag = int_mercs_mood_very_high
+			remove_ideas = EAG_mercs_mood_very_high
+		}
+	}
+    option = {
+		name = EAG_event.19.a
+		EAG = {
+			add_ideas = EAG_mercs_mood_high
+			set_country_flag = int_mercs_mood_high
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.20
+	title = EAG_event.20.t
+	desc = EAG_event.20.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_mercs_mood_very_low
+			}
+			clr_country_flag = int_mercs_mood_very_low
+			remove_ideas = EAG_mercs_mood_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_mood_low
+			}
+			clr_country_flag = int_mercs_mood_low
+			remove_ideas = EAG_mercs_mood_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_mood_medium
+			}
+			clr_country_flag = int_mercs_mood_medium
+			remove_ideas = EAG_mercs_mood_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_mercs_mood_high
+			}
+			clr_country_flag = int_mercs_mood_high
+			remove_ideas = EAG_mercs_mood_high
+		}
+	}
+    option = {
+		name = EAG_event.20.a
+		EAG = {
+			add_ideas = EAG_mercs_mood_very_high
+			set_country_flag = int_mercs_mood_very_high
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.21
+	title = EAG_event.21.t
+	desc = EAG_event.21.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_volk_dev_low
+			}
+			clr_country_flag = int_volk_dev_low
+			remove_ideas = EAG_volk_dev_low 
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_dev_medium
+			}
+			clr_country_flag = int_volk_dev_medium
+			remove_ideas = EAG_volk_dev_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_dev_high
+			}
+			clr_country_flag = int_volk_dev_high
+			remove_ideas = EAG_volk_dev_high
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_dev_very_high
+			}
+			clr_country_flag = int_volk_dev_very_high
+			remove_ideas = EAG_volk_dev_very_high
+		}
+	}
+    option = {
+		name = EAG_event.21.a
+		EAG = {
+			add_ideas = EAG_volk_dev_very_low
+			set_country_flag = int_volk_dev_very_low
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.22
+	title = EAG_event.22.t
+	desc = EAG_event.22.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_volk_dev_very_low
+			}
+			clr_country_flag = int_volk_dev_very_low
+			remove_ideas = EAG_volk_dev_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_dev_medium
+			}
+			clr_country_flag = int_volk_dev_medium
+			remove_ideas = EAG_volk_dev_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_dev_high
+			}
+			clr_country_flag = int_volk_dev_high
+			remove_ideas = EAG_volk_dev_high
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_dev_very_high
+			}
+			clr_country_flag = int_volk_dev_very_high
+			remove_ideas = EAG_volk_dev_very_high
+		}
+	}
+    option = {
+		name = EAG_event.22.a
+		EAG = {
+			add_ideas = EAG_volk_dev_low
+			set_country_flag = int_volk_dev_low
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.23
+	title = EAG_event.23.t
+	desc = EAG_event.23.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_volk_dev_very_low
+			}
+			clr_country_flag = int_volk_dev_very_low
+			remove_ideas = EAG_volk_dev_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_dev_low
+			}
+			clr_country_flag = int_volk_dev_low
+			remove_ideas = EAG_volk_dev_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_dev_high
+			}
+			clr_country_flag = int_volk_dev_high
+			remove_ideas = EAG_volk_dev_high
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_dev_very_high
+			}
+			clr_country_flag = int_volk_dev_very_high
+			remove_ideas = EAG_volk_dev_very_high
+		}
+	}
+    option = {
+		name = EAG_event.23.a
+		EAG = {
+			add_ideas = EAG_volk_dev_medium
+			set_country_flag = int_volk_dev_medium
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.24
+	title = EAG_event.24.t
+	desc = EAG_event.24.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_volk_dev_very_low
+			}
+			clr_country_flag = int_volk_dev_very_low
+			remove_ideas = EAG_volk_dev_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_dev_low
+			}
+			clr_country_flag = int_volk_dev_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_dev_medium
+			}
+			clr_country_flag = int_volk_dev_medium
+			remove_ideas = EAG_volk_dev_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_dev_very_high
+			}
+			clr_country_flag = int_volk_dev_very_high
+			remove_ideas = EAG_volk_dev_very_high
+		}
+	}
+    option = {
+		name = EAG_event.24.a
+		EAG = {
+			add_ideas = EAG_volk_dev_high
+			set_country_flag = int_volk_dev_high
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.25
+	title = EAG_event.25.t
+	desc = EAG_event.25.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_volk_dev_very_low
+			}
+			clr_country_flag = int_volk_dev_very_low
+			remove_ideas = EAG_volk_dev_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_dev_low
+			}
+			clr_country_flag = int_volk_dev_low
+			remove_ideas = EAG_volk_dev_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_dev_medium
+			}
+			clr_country_flag = int_volk_dev_medium
+			remove_ideas = EAG_volk_dev_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_dev_high
+			}
+			clr_country_flag = int_volk_dev_high
+			remove_ideas = EAG_volk_dev_high
+		}
+	}
+    option = {
+		name = EAG_event.25.a
+		EAG = {
+			add_ideas = EAG_volk_dev_very_high
+			set_country_flag = int_volk_dev_very_high
+		}
+    }
+}	
+
+country_event = {
+	id = EAG_event.26
+	title = EAG_event.26.t
+	desc = EAG_event.26.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_volk_mood_low
+			}
+			clr_country_flag = int_volk_mood_low
+			remove_ideas = EAG_volk_mood_low 
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_mood_medium
+			}
+			clr_country_flag = int_volk_mood_medium
+			remove_ideas = EAG_volk_mood_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_mood_high
+			}
+			clr_country_flag = int_volk_mood_high
+			remove_ideas = EAG_volk_mood_high
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_mood_very_high
+			}
+			clr_country_flag = int_volk_mood_very_high
+			remove_ideas = EAG_volk_mood_very_high
+		}
+	}
+    option = {
+		name = EAG_event.26.a
+		EAG = {
+			add_ideas = EAG_volk_mood_very_low
+			set_country_flag = int_volk_mood_very_low
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.27
+	title = EAG_event.27.t
+	desc = EAG_event.27.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_volk_mood_very_low
+			}
+			clr_country_flag = int_volk_mood_very_low
+			remove_ideas = EAG_volk_mood_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_mood_medium
+			}
+			clr_country_flag = int_volk_mood_medium
+			remove_ideas = EAG_volk_mood_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_mood_high
+			}
+			clr_country_flag = int_volk_mood_high
+			remove_ideas = EAG_volk_mood_high
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_mood_very_high
+			}
+			clr_country_flag = int_volk_mood_very_high
+			remove_ideas = EAG_volk_mood_very_high
+		}
+	}
+    option = {
+		name = EAG_event.27.a
+		EAG = {
+			add_ideas = EAG_volk_mood_low
+			set_country_flag = int_volk_mood_low
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.28
+	title = EAG_event.28.t
+	desc = EAG_event.28.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_volk_mood_very_low
+			}
+			clr_country_flag = int_volk_mood_very_low
+			remove_ideas = EAG_volk_mood_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_mood_low
+			}
+			clr_country_flag = int_volk_mood_low
+			remove_ideas = EAG_volk_mood_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_mood_high
+			}
+			clr_country_flag = int_volk_mood_high
+			remove_ideas = EAG_volk_mood_high
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_mood_very_high
+			}
+			clr_country_flag = int_volk_mood_very_high
+			remove_ideas = EAG_volk_mood_very_high
+		}
+	}
+    option = {
+		name = EAG_event.28.a
+		EAG = {
+			add_ideas = EAG_volk_mood_medium
+			set_country_flag = int_volk_mood_medium
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.29
+	title = EAG_event.29.t
+	desc = EAG_event.29.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_volk_mood_very_low
+			}
+			clr_country_flag = int_volk_mood_very_low
+			remove_ideas = EAG_volk_mood_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_mood_low
+			}
+			clr_country_flag = int_volk_mood_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_mood_medium
+			}
+			clr_country_flag = int_volk_mood_medium
+			remove_ideas = EAG_volk_mood_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_mood_very_high
+			}
+			clr_country_flag = int_volk_mood_very_high
+			remove_ideas = EAG_volk_mood_very_high
+		}
+	}
+    option = {
+		name = EAG_event.29.a
+		EAG = {
+			add_ideas = EAG_volk_mood_high
+			set_country_flag = int_volk_mood_high
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.30
+	title = EAG_event.30.t
+	desc = EAG_event.30.d
+	is_triggered_only = yes	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = int_volk_mood_very_low
+			}
+			clr_country_flag = int_volk_mood_very_low
+			remove_ideas = EAG_volk_mood_very_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_mood_low
+			}
+			clr_country_flag = int_volk_mood_low
+			remove_ideas = EAG_volk_mood_low
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_mood_medium
+			}
+			clr_country_flag = int_volk_mood_medium
+			remove_ideas = EAG_volk_mood_medium
+		}
+		else_if = {
+			limit = {
+				has_country_flag = int_volk_mood_high
+			}
+			clr_country_flag = int_volk_mood_high
+			remove_ideas = EAG_volk_mood_high
+		}
+	}
+    option = {
+		name = EAG_event.30.a
+		EAG = {
+			add_ideas = EAG_volk_mood_very_high
+			set_country_flag = int_volk_mood_very_high
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.34
+	title = EAG_event.34.t
+	desc = EAG_event.34.d
+	is_triggered_only = yes	
+	
+    option = {
+		name = EAG_event.34.a
+			add_to_variable = {
+				var = mercs_mood
+				value = 2
+			}
+			clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+			}
+    }
+}
+
+country_event = {
+	id = EAG_event.35
+	title = EAG_event.35.t
+	desc = EAG_event.35.d
+	is_triggered_only = yes	
+	
+    option = {
+		name = EAG_event.35.a
+			add_to_variable = {
+				var = volk_mood
+				value = 4
+			}
+			clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+			}
+    }
+	
+	option = {
+		name = EAG_event.35.b
+			add_to_variable = {
+				var = mercs_mood
+				value = 4
+			}
+			clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+			}
+    }
+	
+	option = {
+		name = EAG_event.35.c
+			add_to_variable = {
+				var = mercs_mood
+				value = 2
+			}
+			clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+			}
+			add_to_variable = {
+				var = volk_mood
+				value = 2
+			}
+			clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+			}
+    }
+}
+
+country_event = {
+	id = EAG_event.36
+	title = EAG_event.36.t
+	desc = EAG_event.36.d
+	is_triggered_only = yes	
+	
+    option = {
+		name = EAG_event.36.a
+			add_to_variable = {
+				var = volk_dev
+				value = 5
+			}
+			clamp_variable = {
+				var = volk_dev
+				min = 0
+				max = 25
+			}
+			add_to_variable = {
+				var = mercs_mood
+				value = -3
+			}
+			clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+			}
+    }
+	
+	option = {
+		name = EAG_event.36.b
+			add_to_variable = {
+				var = mercs_mood
+				value = 5
+			}
+			clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+			}
+			add_to_variable = {
+				var = volk_dev
+				value = -3
+			}
+			clamp_variable = {
+				var = volk_dev
+				min = 0
+				max = 25
+			}
+    }
+}
+
+country_event = {
+	id = EAG_event.37
+	title = EAG_event.37.t
+	desc = EAG_event.37.d
+	is_triggered_only = yes	
+	
+    option = {
+		name = EAG_event.37.a
+			add_timed_idea = { 
+				idea = EAG_festung_ipswich
+				days = 240
+			}
+		EAG = {
+			country_event = {
+				days = 12
+				id = EAG_event.38
+			}
+		}
+    }
+	
+	option = {
+		name = EAG_event.37.b
+		add_timed_idea = { 
+			idea = EAG_london_blitzkrieg
+			days = 240
+		}
+		EAG = {
+			country_event = {
+				days = 12
+				id = EAG_event.38
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.38
+	title = EAG_event.38.t
+	desc = EAG_event.38.d
+	is_triggered_only = yes	
+	
+    option = {
+		name = EAG_event.38.a
+		1143 = {
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 17579
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 8334
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 10629
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 17569
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.39
+	title = EAG_event.39.t
+	desc = EAG_event.39.d
+	is_triggered_only = yes	
+	
+    option = {
+		name = EAG_event.39.a
+		set_politics = {
+			ruling_party = neocameralism
+		}
+		remove_ideas = {
+			EAG_volk_dev_very_low
+			EAG_volk_dev_low
+			EAG_volk_dev_medium
+			EAG_volk_dev_high
+			EAG_volk_dev_very_high
+			EAG_volk_mood_very_low
+			EAG_volk_mood_low
+			EAG_volk_mood_medium
+			EAG_volk_mood_high
+			EAG_volk_mood_very_high
+			EAG_panem_b
+			EAG_circenses_bonus
+		}
+		clear_variable = volk_dev
+		clear_variable = volk_mood
+		load_focus_tree = EAG_mercenary
+		add_ideas = EAG_illegitimate_government
+    }
+	
+	 option = {
+		name = EAG_event.39.b
+		set_politics = {
+			ruling_party = national_bolshevism
+		}
+		remove_ideas = {
+			EAG_mercs_quality_very_low
+			EAG_mercs_quality_low
+			EAG_mercs_quality_medium
+			EAG_mercs_quality_high
+			EAG_mercs_quality_very_high
+			EAG_mercs_mood_very_low
+			EAG_mercs_mood_low
+			EAG_mercs_mood_medium
+			EAG_mercs_mood_high
+			EAG_mercs_mood_very_high
+			EAG_panem_b
+			EAG_circenses_bonus
+		}
+		clear_variable = mercs_quality
+		clear_variable = mercs_mood
+    }
+	
+	option = {
+		name = EAG_event.39.c
+		remove_ideas = {
+			EAG_panem_b
+			EAG_circenses_bonus
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.40
+	title = EAG_event.40.t
+	desc = EAG_event.40.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.40.a
+		add_political_power = -15
+		GRE = {
+			country_event = {
+					days = 2
+					id = GRE_event.1
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.41
+	title = EAG_event.41.t
+	desc = EAG_event.41.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.41.a
+		add_political_power = 100
+		add_offsite_building = { type = arms_factory level = 2 }
+		add_offsite_building = { type = industrial_complex level = 2 }
+    }
+}
+
+country_event = {
+	id = EAG_event.42
+	title = EAG_event.42.t
+	desc = EAG_event.42.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.42.a
+		add_timed_idea = {
+			idea = EAG_recovery_investments
+			days = 30
+		}
+		hidden_effect = {
+			EAG = {
+				country_event = {
+						days = 7
+						id = EAG_event.43
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.43
+	title = EAG_event.43.t
+	desc = EAG_event.43.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.43.a
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		hidden_effect = {
+			EAG = {
+				country_event = {
+						days = 7
+						id = EAG_event.44
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.44
+	title = EAG_event.44.t
+	desc = EAG_event.44.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.44.a
+		1160 = {	
+			add_resource = {
+				type = steel
+				amount = 15
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.45
+	title = EAG_event.45.t
+	desc = EAG_event.45.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.45.a
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.46
+	title = EAG_event.46.t
+	desc = EAG_event.46.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.46.a
+		add_political_power = -55
+		hidden_effect = {
+			EAG = {
+				country_event = {
+						days = 20
+						id = EAG_event.47
+				}
+			}
+		}
+    }
+	option = {
+		name = EAG_event.46.b
+		add_political_power = 35
+		hidden_effect = {
+			EAG = {
+				country_event = {
+						days = 20
+						id = EAG_event.48
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.47
+	title = EAG_event.47.t
+	desc = EAG_event.47.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.47.a	
+		upgrade_intelligence_agency = upgrade_form_department
+		upgrade_intelligence_agency = upgrade_crypto_strength
+		upgrade_intelligence_agency = upgrade_decryption_boost
+		
+    }
+}
+
+country_event = {
+	id = EAG_event.48
+	title = EAG_event.48.t
+	desc = EAG_event.48.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.48.a	
+		add_timed_idea = {
+			idea = EAG_civil_shock
+			days = 45
+		}
+    }
+	option = {
+		name = EAG_event.48.b	
+		add_timed_idea = {
+			idea = EAG_civil_shock
+			days = 45
+		}
+    }
+	option = {
+		name = EAG_event.48.c
+		add_timed_idea = {
+			idea = EAG_civil_shock
+			days = 45
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.49
+	title = EAG_event.49.t
+	desc = EAG_event.49.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.49.a	
+		add_political_power = 55
+    }
+	option = {
+		name = EAG_event.49.b	
+		swap_ideas = {
+			remove_idea = EAG_ipswich_league
+			add_idea = EAG_ipswich_league_2
+		}
+    }
+	option = {
+		name = EAG_event.49.c	
+		stability_factor = -0.07
+		war_support_factor = 0.1
     }
 }

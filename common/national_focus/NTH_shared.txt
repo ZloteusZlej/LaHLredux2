@@ -1,4 +1,3 @@
-
 shared_focus = {
 	id = NTH_according_to_plan
 	icon = GFX_goal_NTH_According_To_Plan
@@ -554,9 +553,32 @@ shared_focus = {
 	icon = GFX_goal_NTH_Shock_And_Awe
 	prerequisite = {
 		focus = NTH_total_annihilation
-	}
-	prerequisite = {
 		focus = NTH_no_strength_in_numbers
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			category = jet_engines
+			uses = 3
+		}
+		
+		add_tech_bonus = {
+			bonus = 1
+			category = helicopter_engines
+			uses = 3
+		}
+		
+		add_tech_bonus = {
+			bonus = 1
+			category = stealth_technology
+			uses = 3
+		}
+		
+		add_tech_bonus = {
+			bonus = 1
+			category = cas_1
+			uses = 3
+		}
 	}
 	cost = 10
 	x = 5
@@ -581,29 +603,17 @@ shared_focus = {
 shared_focus = {
 	id = NTH_combined_doctrine
 	icon = GFX_goal_NTH_Combined_Doctrine
-	cost = 10
-	x = 12
-	y = 2
 	prerequisite = {
 		focus = NTH_doctrine_of_the_new_millennium
 	}
 	completion_reward = {
-		add_tech_bonus = {
-			bonus = 0.5
-			uses = 1
-			category = infantry_equipment
-		}		
-		add_tech_bonus = {
-			bonus = 0.5
-			uses = 1
-			category = motorised_infantry
-		}
-		add_tech_bonus = {
-			bonus = 0.5
-			uses = 1
-			category = jet_engines
+		NTH = {
+			research_speed_factor = 0.5
 		}
 	}
+	cost = 10
+	x = 12
+	y = 2
 }
 
 shared_focus = {
@@ -617,7 +627,7 @@ shared_focus = {
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
-				category = helicopter_engines
+				category = helicopter_tech
 			}
 		}
 	}
@@ -734,9 +744,6 @@ shared_focus = {
 shared_focus = {
 	id = NTH_all_hands_on_deck
 	icon = GFX_goal_NTH_All_Hands_On_Deck
-	cost = 10
-	x = 17
-	y = 1
 	prerequisite = {
 		focus = NTH_the_glorious_republican_army
 	}
@@ -751,6 +758,9 @@ shared_focus = {
 			category = grand_battle_plan
 		}
 	}
+	cost = 10
+	x = 17
+	y = 1
 }
 
 shared_focus = {
@@ -762,23 +772,6 @@ shared_focus = {
 	cost = 10
 	x = 16
 	y = 2
-	completion_reward = {
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = 150
-			producer = NTH
-		}
-		
-		add_equipment_to_stockpile = {
-			type = motorised_infantry
-			amount = 500
-			producer = NTH
-		}
-		
-		set_technology = {
-			battle_bus = 1
-		}
-	}
 }
 
 shared_focus = {
@@ -801,44 +794,6 @@ shared_focus = {
 	cost = 10
 	x = 15
 	y = 3
-	completion_reward = {
-		division_template = {
-			name = "Elite Batalion"
-			priority = 1
-			is_locked = yes
-			division_names_group = NTH_TST_01
-			regiments = {
-				motorized = { x = 0 y = 0 }
-				motorized = { x = 0 y = 1 }
-				motorized = { x = 0 y = 2 }
-				mechanized = { x = 1 y = 0 }
-				mechanized = { x = 1 y = 1 }
-				mechanized = { x = 1 y = 2 }
-			}
-		}
-			
-		random_owned_controlled_state = {
-			create_unit = {
-				division = "name = \"1st Elite Batalion\" division_template = \"Elite Batalion\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
-					
-				owner = NTH
-			}
-		}
-		random_owned_controlled_state = {
-			create_unit = {
-				division = "name = \"2nd Elite Batalion\" division_template = \"Elite Batalion\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
-					
-				owner = NTH
-			}
-		}
-		random_owned_controlled_state = {
-			create_unit = {
-				division = "name = \"3rd Elite Batalion\" division_template = \"Elite Batalion\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
-					
-				owner = NTH
-			}
-		}
-	}
 }
 
 shared_focus = {
