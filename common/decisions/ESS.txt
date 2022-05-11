@@ -404,6 +404,311 @@ ESS_great_gangs_dec = {
 				} 
 			}
 		}	
+		ESS_provoke_sussex = {
+			cost = 0
+			days_remove = 30
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 100
+			}
+			available = {
+				1156 = {
+				CONTROLLER = {
+					has_war_with = ROOT
+					}
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1156
+				}
+			}
+			complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Complete ESS_provoke_sussex"
+				1156 = {
+				add_province_modifier = {
+					static_modifiers = { pure_chaos }
+					province = {
+					all_provinces = yes
+					}
+					}
+				}
+				
+			1156 = {
+				create_unit = {
+					division = "name = \"Susex Guerrillas\" division_template = \"Saboteurs\" start_experience_factor = 0.3 start_equipment_factor = 0.5"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
+			}
+				}
+			remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove ESS_provoke_sussex"
+			1156 = {
+				remove_province_modifier = {
+					static_modifiers = { pure_chaos }
+					province = {
+					all_provinces = yes
+					}
+					}
+				} 
+			}
+		}
+		ESS_provoke_wiltshire = {
+			cost = 0
+			days_remove = 30
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 100
+			}
+			available = {
+				1161 = {
+				CONTROLLER = {
+					has_war_with = ROOT
+					}
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1161
+				}
+			}
+			complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Complete ESS_provoke_wiltshire"
+				1161 = {
+				add_province_modifier = {
+					static_modifiers = { pure_chaos }
+					province = {
+					all_provinces = yes
+					}
+					}
+				}
+				
+			1161 = {
+				create_unit = {
+					division = "name = \"Wiltshire Guerrillas\" division_template = \"Saboteurs\" start_experience_factor = 0.3 start_equipment_factor = 0.5"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
+			}
+				}
+			remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove ESS_provoke_wiltshire"
+			1161 = {
+				remove_province_modifier = {
+					static_modifiers = { pure_chaos }
+					province = {
+					all_provinces = yes
+					}
+					}
+				} 
+			}
+		}
+		ESS_provoke_gloustershire = {
+			cost = 0
+			days_remove = 30
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 100
+			}
+			available = {
+				1153 = {
+				CONTROLLER = {
+					has_war_with = ROOT
+					}
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1153
+				}
+			}
+			complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Complete ESS_provoke_gloustershire"
+				1153 = {
+				add_province_modifier = {
+					static_modifiers = { pure_chaos }
+					province = {
+					all_provinces = yes
+					}
+					}
+				}
+				
+			1153 = {
+				create_unit = {
+					division = "name = \"Gloustershire Guerrillas\" division_template = \"Saboteurs\" start_experience_factor = 0.3 start_equipment_factor = 0.5"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
+			}
+				}
+			remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove ESS_provoke_gloustershire"
+			1153 = {
+				remove_province_modifier = {
+					static_modifiers = { pure_chaos }
+					province = {
+					all_provinces = yes
+					}
+					}
+				} 
+			}
+		}
+		ESS_provoke_northampton = {
+			cost = 0
+			days_remove = 30
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 100
+			}
+			available = {
+				1155 = {
+				CONTROLLER = {
+					has_war_with = ROOT
+					}
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1155
+				}
+			}
+			complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Complete ESS_provoke_northampton"
+				1155 = {
+				add_province_modifier = {
+					static_modifiers = { pure_chaos }
+					province = {
+					all_provinces = yes
+					}
+					}
+				}
+				
+			1155 = {
+				create_unit = {
+					division = "name = \"Northampton Guerrillas\" division_template = \"Saboteurs\" start_experience_factor = 0.3 start_equipment_factor = 0.5"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
+			}
+				}
+			remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove ESS_provoke_northampton"
+			1155 = {
+				remove_province_modifier = {
+					static_modifiers = { pure_chaos }
+					province = {
+					all_provinces = yes
+					}
+					}
+				} 
+			}
+		}
+		ESS_provoke_cambrige = {
+			cost = 0
+			days_remove = 30
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 100
+			}
+			available = {
+				1005 = {
+				CONTROLLER = {
+					has_war_with = ROOT
+					}
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1005
+				}
+			}
+			complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Complete ESS_provoke_cambrige"
+				1005 = {
+				add_province_modifier = {
+					static_modifiers = { pure_chaos }
+					province = {
+					all_provinces = yes
+					}
+					}
+				}
+				
+			1005 = {
+				create_unit = {
+					division = "name = \"Cambrige Guerrillas\" division_template = \"Saboteurs\" start_experience_factor = 0.3 start_equipment_factor = 0.5"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
+			}
+				}
+			remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove ESS_provoke_cambrige"
+			1005 = {
+				remove_province_modifier = {
+					static_modifiers = { pure_chaos }
+					province = {
+					all_provinces = yes
+					}
+					}
+				} 
+			}
+		}
+		ESS_provoke_suffolk = {
+			cost = 0
+			days_remove = 30
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 100
+			}
+			available = {
+				1143 = {
+				CONTROLLER = {
+					has_war_with = ROOT
+					}
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1143
+				}
+			}
+			complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Complete ESS_provoke_suffolk"
+				1143 = {
+				add_province_modifier = {
+					static_modifiers = { pure_chaos }
+					province = {
+					all_provinces = yes
+					}
+					}
+				}
+				
+			1143 = {
+				create_unit = {
+					division = "name = \"Suffolk Guerrillas\" division_template = \"Saboteurs\" start_experience_factor = 0.3 start_equipment_factor = 0.5"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
+			}
+				}
+			remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove ESS_provoke_suffolk"
+			1143 = {
+				remove_province_modifier = {
+					static_modifiers = { pure_chaos }
+					province = {
+					all_provinces = yes
+					}
+					}
+				} 
+			}
+		}
+		ESS_disband_guerrillas = {
+		effect_tooltip = {
+		delete_unit_template_and_units = { division_template = \"Saboteurs\" }
+		}
+		}
 	}
 	}
 
