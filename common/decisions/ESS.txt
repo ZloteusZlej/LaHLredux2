@@ -378,8 +378,19 @@ ESS_great_gangs_dec = {
 				1165 = {
 				add_province_modifier = {
 					static_modifiers = { pure_chaos }
+					province = {
+					all_provinces = yes
+					}
 					}
 				}
+				
+			1165 = {
+				create_unit = {
+					division = "name = \"Kent Guerrillas\" division_template = \"Saboteurs\" start_experience_factor = 0.3 start_equipment_factor = 0.5"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
+			}
 				}
 			remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision Remove ESS_provoke_kent"
@@ -387,8 +398,8 @@ ESS_great_gangs_dec = {
 				remove_province_modifier = {
 					static_modifiers = { pure_chaos }
 					province = {
-					1165
-						}
+					all_provinces = yes
+					}
 					}
 				} 
 			}
