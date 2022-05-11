@@ -34,18 +34,18 @@ ESS_debug = {
 		    load_focus_tree = ESS_dawkins_1
 		}
 	}
-	ESS_natan_0 = {
+	ESS_collins_0 = {
 		cost = 0
 		days_remove = 1
         complete_effect = { 
-		    load_focus_tree = ESS_natan_0
+		    load_focus_tree = ESS_collins_0
 		}
 	}
-	ESS_natan_1 = {
+	ESS_collins_1 = {
 		cost = 0
 		days_remove = 1
         complete_effect = { 
-		    load_focus_tree = ESS_natan_1
+		    load_focus_tree = ESS_collins_1
 		}
 	}
 }
@@ -351,12 +351,54 @@ ESS_great_gangs_dec = {
 							}
 		} 
 	}
+	}
 	
-}
+	ESS_our_great_revolution = {
+		ESS_provoke_kent = {
+			cost = 0
+			days_remove = 30
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 100
+			}
+			available = {
+				1165 = {
+				CONTROLLER = {
+					has_war_with = ROOT
+					}
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1165
+				}
+			}
+			complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Complete ESS_provoke_kent"
+				1165 = {
+				add_province_modifier = {
+					static_modifiers = { pure_chaos }
+					}
+				}
+				}
+			remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove ESS_provoke_kent"
+			1165 = {
+				remove_province_modifier = {
+					static_modifiers = { pure_chaos }
+					province = {
+					1165
+						}
+					}
+				} 
+			}
+		}	
+	}
+	}
 
-ESS_towers_treasures = {
-    sell_the_spizhennoye = {
-	 cost = 0
+	ESS_towers_treasures = {
+		sell_the_spizhennoye = {
+			cost = 0
 		days_remove = 1
 		visible = {
 			NOT = { has_global_flag = ESS_sell_the_spizhennoye }
@@ -415,6 +457,7 @@ ESS_prisoners_of_war = {
         } 
 	}
 }	    
+
 
 ESS_reunify_isles = {
     ESS_reunify_country = {

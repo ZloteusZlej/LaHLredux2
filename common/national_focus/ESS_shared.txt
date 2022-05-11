@@ -38,12 +38,9 @@
 		cost = 3
 		completion_reward = {
 		    ESS = {
-			    country_event = {
-				    days = 1
-					id = ESS_event.8
+			    add_ideas = ESS_big_thinkin
 				}
-				}
-				}
+			}
 		x = 21
 		y = 0
 	}
@@ -57,17 +54,30 @@
 		mutually_exclusive = {
 			focus = ESS_sword_of_the_republic
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ESS_big_thinkin
+				add_idea = ESS_decentralized_army
+				}
+			}
 		x = 18
 		y = 1
 	}
 	
-	shared_focus = {
+	shared_focus = { 
 		id = ESS_urban_warfare
 		icon = GFX_goal_ESS_urban_warfare
 		cost = 3
 		prerequisite = {
 		focus = ESS_decentralized_command
-	}
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = urban_tech
+			}
+			}
 		x = 17
 		y = 2
 
