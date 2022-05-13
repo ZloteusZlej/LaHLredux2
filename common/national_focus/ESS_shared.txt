@@ -40,6 +40,7 @@
 		    ESS = {
 			    add_ideas = ESS_big_thinkin
 				}
+				army_experience = 25
 			}
 		x = 21
 		y = 0
@@ -100,6 +101,28 @@
 				planning_skill = 2
 				logistics_skill = 2
 			}
+			create_corps_commander = {
+				name = "Daniel Radcliffe"
+				desc = "NAZI HARRY POTTER"
+				picture = "Portrait_ESS_Daniel_Radcliffe.dds"
+				traits = { militiaman }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Paul McCartney"
+				desc = "Co-lead vocalist and bassist for the Beatles"
+				picture = "Portrait_ESS_Paul_McCartney.dds"
+				traits = { militiaman }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
+			}
 			}
 		x = 19
 		y = 2
@@ -112,6 +135,20 @@
 		prerequisite = {
 		focus = ESS_decentralized_command
 	}
+	completion_reward = {
+			custom_effect_tooltip = ESS_contacts_with_local_rebels.tt
+			division_template = {
+				name = "Saboteurs"
+				division_names_group = ESS_INF_02
+				is_locked = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }	
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }	
+					}
+					
+				}
+		}
 		x = 18
 		y = 3
 	}
@@ -134,6 +171,43 @@
 		prerequisite = {
 		focus = ESS_elevate_warlords
 	}
+	completion_reward = {
+		    ESS = {
+			    add_ideas = ESS_field_recruiting
+				}
+			division_template = {
+				name = "Drafted Punks"
+				division_names_group = ESS_INF_02
+				is_locked = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }	
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }	
+					infantry = { x = 0 y = 3 }	
+					}
+					support = {
+						engineer = { x = 0 y = 0 } 
+					}
+				}
+				random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Scarlet Chorus\" division_template = \"Drafted Punks\" start_experience_factor = 0.6 start_equipment_factor = 0.1"
+					owner = ESS
+				}
+				create_unit = {
+					division = "name = \"Lightning Armbands\" division_template = \"Drafted Punks\" start_experience_factor = 0.6 start_equipment_factor = 0.1"
+					owner = ESS
+				}
+				create_unit = {
+					division = "name = \"Green Hairs\" division_template = \"Drafted Punks\" start_experience_factor = 0.6 start_equipment_factor = 0.1"
+					owner = ESS
+				}
+				create_unit = {
+					division = "name = \"'I am totally not gonna get drafted' Brigade\" division_template = \"Drafted Punks\" start_experience_factor = 0.6 start_equipment_factor = 0.1"
+					owner = ESS
+				}
+			}
+			}
 		x = 19
 		y = 4
 	}
