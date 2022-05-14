@@ -103,3 +103,23 @@ EAG_ipswich_law_implementation = {
 		}
 	}
 }
+
+EAG_britain_cores = {
+	icon = GFX_
+	visible_when_empty = yes
+	allowed = { 
+		original_tag = EAG
+	}
+}
+
+EAG_wars = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			NOT = {
+				country_exists = ESS
+			}
+	}
+	visible_when_empty = yes	
+}
