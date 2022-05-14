@@ -261,7 +261,7 @@ shared_focus = {
 		}
 		random_owned_controlled_state = {	
 			create_unit = {
-				division = "name = \"Ipswish Dockyards Militia\" division_template = \"Englische Milizia\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+				division = "name = \"Ipswich Dockyards Militia\" division_template = \"Englische Milizia\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
 					
 				owner = EAG
 			}
@@ -1049,7 +1049,12 @@ shared_focus = {
 	completion_reward = {
 		add_ideas = EAG_ipswich_league
 			1143 = {
-				add_dynamic_modifier = ipswich_league_member
+				add_province_modifier = {
+						static_modifiers = { ipswich_league_member }
+						province = {
+						all_provinces = yes
+						}
+					}
 			}
 		random_list = {
 				50 = {
@@ -1255,5 +1260,423 @@ shared_focus = {
 		add_ideas = EAG_company_charity
 	}
 	x = 5
+	y = 11
+}
+
+###MERCS TREE ARMY###
+
+shared_focus = {
+	id = EAG_take_care_of_the_company
+	icon = GFX_goal_EAG_take_care_of_the_company
+	cost = 4.3
+	completion_reward = {
+		army_experience = 15
+		add_political_power = 45
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 3
+			category = land_doctrine
+		}
+	}
+	x = 19
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_prussian_discipline
+	icon = GFX_goal_EAG_prussian_discipline
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_take_care_of_the_company
+	}
+	completion_reward = {
+		add_to_variable = {
+				var = mercs_dev
+				value = 4
+		}
+		clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = -2
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		add_ideas = EAG_improved_discipline
+	}
+	x = 18
+	y = 6
+}`
+
+shared_focus = {
+	id = EAG_learn_from_the_guru
+	icon = GFX_goal_EAG_learn_from_the_guru
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_take_care_of_the_company
+	}
+	completion_reward = {
+		add_political_power = 35
+		add_ideas = EAG_gunzel_group
+	}
+	x = 20
+	y = 6
+}`
+
+shared_focus = {
+	id = EAG_spezialkrafte
+	icon = GFX_goal_EAG_spezialkrafte
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_learn_from_the_guru
+	}
+	prerequisite = {
+		focus = EAG_prussian_discipline
+	}
+	completion_reward = {
+		add_ideas = EAG_spezialkrafte_bonus
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = mountaineers_tech
+		}
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = marine_tech
+		}
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = para_tech
+		}
+	}
+	x = 17
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_panzer_reiters
+	icon = GFX_goal_EAG_panzer_reiters
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_learn_from_the_guru
+	}
+	prerequisite = {
+		focus = EAG_prussian_discipline
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_gunzel_group
+			add_idea = EAG_gunzel_group_tanks_department
+		}
+		army_experience = 15
+	}
+	x = 19
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_rob_the_raf
+	icon = GFX_goal_EAG_rob_the_raf
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_learn_from_the_guru
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = fighter_equipment
+			amount = 120
+			producer = EAG
+		}
+		add_equipment_to_stockpile = {
+			type = CAS_equipment
+			amount = 75
+			producer = EAG
+		}
+		add_equipment_to_stockpile = {
+			type = strat_bomber_equipment
+			amount = 75
+			producer = EAG
+		}
+		add_political_power = 25
+	}
+	x = 21
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_street_fighters
+	icon = GFX_goal_EAG_street_fighters
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_spezialkrafte
+	}
+	completion_reward = {
+		add_ideas = EAG_urban_warfare_forces
+		division_template = {
+			name = "Häuserkampfwehr"
+			division_names_group = EAG_INF_02
+			is_locked = no
+			regiments = {
+				urban_forces = { x = 0 y = 0 }	
+				urban_forces = { x = 0 y = 1 }
+				urban_forces = { x = 0 y = 2 }	
+				urban_forces = { x = 0 y = 3 }
+				urban_forces = { x = 1 y = 0 }
+				urban_forces = { x = 1 y = 1 }
+				artillery_brigade = { x = 1 y = 2 }
+			}
+			support = { 
+				engineer = { x = 0 y = 0 } 		
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Sektion A\" division_template = \"Häuserkampfwehr\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+			create_unit = {
+				division = "name = \"Sektion B\" division_template = \"Häuserkampfwehr\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+		}
+	}
+	x = 17
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_native_armor
+	icon = GFX_goal_EAG_native_armor
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_panzer_reiters
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_gunzel_group_tanks_department
+			add_idea = EAG_gunzel_group_tanks_department_upgrade
+		}
+		add_political_power = 30
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+	}
+	x = 19
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_united_cities_fleet
+	icon = GFX_goal_EAG_united_cities_fleet
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_rob_the_raf
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = convoy
+			amount = 75
+			producer = EAG
+		}
+		EAG = {
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "Ostanglien"
+				creator = EAG
+				name = "UFS Dover"
+			}
+			
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "Ostanglien"
+				creator = EAG
+				name = "UFS Ipswich"
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Ostanglien"
+				creator = EAG
+				name = "UFS Thames"
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Ostanglien"
+				creator = EAG
+				name = "UFS Müller"
+			}
+		}
+		add_political_power = 20
+	}
+	x = 21
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_english_foreign_legion
+	icon = GFX_goal_EAG_english_foreign_legion
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_united_cities_fleet
+	}
+	prerequisite = {
+		focus = EAG_native_armor
+	}
+	prerequisite = {
+		focus = EAG_street_fighters
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_gunzel_group_tanks_department_upgrade
+			add_idea = EAG_gunzel_group_legion
+		}
+		add_manpower = 25000
+		army_experience = 20
+		add_war_support	= 15
+	}
+	x = 19
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_bellum_se_ipsum_alet 
+	icon = GFX_goal_EAG_bellum_se_ipsum_alet
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_english_foreign_legion
+	}
+	mutually_exclusive = {
+		focus = EAG_ubersoldiers
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_gunzel_group_legion
+			add_idea = EAG_gunzel_group_robbers
+		}
+		add_to_variable = {
+				var = mercs_dev
+				value = -2
+		}
+		clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		add_political_power = 35
+		add_offsite_building = { type = industrial_complex level = 1 }
+	}
+	x = 18
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_ubersoldiers 
+	icon = EAG_ubersoldiers
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_english_foreign_legion
+	}
+	mutually_exclusive = {
+		focus = EAG_bellum_se_ipsum_alet
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_gunzel_group_legion
+			add_idea = EAG_gunzel_group_uber
+		}
+		add_to_variable = {
+				var = mercs_dev
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = -2
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.25
+			uses = 3
+			category = land_doctrine
+		}
+	}
+	x = 20
+	y = 10
+}
+
+
+shared_focus = {
+	id = EAG_the_main_business
+	icon = EAG_the_main_business
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_bellum_se_ipsum_alet 
+		focus = EAG_ubersoldiers
+	}
+	completion_reward = {
+		set_rule = {
+			desc = EAG_hui_ne_sosi
+			can_send_volunteers = yes
+		}
+		add_to_variable = {
+				var = mercs_dev
+				value = 5
+		}
+		clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = 4
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		add_political_power = 50
+	}
+	x = 19
 	y = 11
 }

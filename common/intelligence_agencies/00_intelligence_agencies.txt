@@ -13,9 +13,51 @@ intelligence_agency = {
 
 intelligence_agency = {
 
-	picture = GFX_intelligence_agency_logo_msc
+	picture = GFX_intelligence_agency_logo_knt
 	names = { "Security Service Section Five" }
 	
 	default = { tag = KNT }
 	available = { original_tag = KNT }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_eag_1
+	names = { "Werwolf" }
+	
+	default = { tag = EAG }
+	available = { 
+		AND = {
+			original_tag = EAG 
+			has_government = neocameralism
+		}
+	}
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_eag_2
+	names = { "Federal Intelligence Service" }
+	
+	default = { tag = EAG }
+	available = { 
+		AND = {
+			original_tag = EAG 
+			has_government = hegemonism
+		}
+	}
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_eag_3
+	names = { "Revolutionary Information Service" }
+	
+	default = { tag = EAG }
+	available = { 
+		AND = {
+			original_tag = EAG 
+			has_government = national_bolshevism
+		}
+	}
 }

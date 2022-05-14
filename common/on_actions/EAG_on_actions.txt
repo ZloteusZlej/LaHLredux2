@@ -736,5 +736,27 @@ on_actions = {
 			}
 		}
 	}
+	
+	on_send_volunteers = {
+		effect = {
+			ROOT = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+			FROM = {
+				add_ideas = active_contract
+			}
+		}
+	}
+	
+	on_recall_volunteers = {
+		effect = {
+			ROOT = {
+				add_offsite_building = { type = industrial_complex level = -1 }
+			}
+			FROM = {
+				remove_ideas = active_contract
+			}
+		}
+	}
 }
 				  

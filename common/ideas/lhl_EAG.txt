@@ -757,6 +757,285 @@ ideas = {
 	}
 	
 	hidden_ideas = {
+		EAG_improved_discipline = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				training_time_army_factor = -0.1
+				minimum_training_level = 0.15
+				max_training = 0.15
+			}
+		}
+	}
+	
+	country = {
+		EAG_gunzel_group = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army_factor = 0.5
+				special_forces_cap = 0.5
+				army_org_factor = 0.1
+				army_org_regain = 0.1
+			}
+		}
+	}
+	
+	country = {
+		EAG_gunzel_group_tanks_department = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army_factor = 0.5
+				special_forces_cap = 0.5
+				army_org_factor = 0.1
+				army_org_regain = 0.1
+				army_armor_attack_factor = 0.1
+				army_armor_speed_factor = 0.1
+			}
+		}
+	}
+	
+	country = {
+		EAG_gunzel_group_tanks_department_upgrade = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army_factor = 0.5
+				special_forces_cap = 0.5
+				army_org_factor = 0.1
+				army_org_regain = 0.1
+				army_armor_attack_factor = 0.1
+				army_armor_speed_factor = 0.1
+			}
+			equipment_bonus = {
+				main_battle_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
+			equipment_bonus = {
+				infantry_fighting_vehicle_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
+		}
+	}
+	
+	country = {
+		EAG_gunzel_group_legion = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army_factor = 0.5
+				special_forces_cap = 0.6
+				army_org_factor = 0.15
+				army_org_regain = 0.15
+				army_armor_attack_factor = 0.1
+				army_armor_speed_factor = 0.1
+				conscription_factor = 0.05
+				training_time_factor = -0.05
+			}
+			equipment_bonus = {
+				main_battle_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
+			equipment_bonus = {
+				infantry_fighting_vehicle_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
+		}
+	}
+	
+	country = {
+		EAG_gunzel_group_robbers = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army_factor = 0.5
+				special_forces_cap = 0.6
+				army_org_factor = 0.15
+				army_org_regain = 0.15
+				army_armor_attack_factor = 0.1
+				army_armor_speed_factor = 0.1
+				conscription_factor = 0.05
+				resistance_damage_to_garrison_on_our_occupied_states = 0.15
+				required_garrison_factor = 0.1
+				monthly_population = -0.05
+				army_fuel_consumption_factor = -0.25
+				winter_attrition_factor = -0.15
+				org_loss_when_moving = -0.1
+				out_of_supply_factor = 0.15
+				unit_upkeep_attrition_factor = -0.2
+				training_time_factor = -0.05
+				supply_consumption_factor = -0.15
+
+			}
+			equipment_bonus = {
+				main_battle_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
+			equipment_bonus = {
+				infantry_fighting_vehicle_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
+		}
+	}
+	
+	country = {
+		EAG_gunzel_group_uber = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army_factor = 0.5
+				special_forces_cap = 0.6
+				army_org_factor = 0.2
+				army_org_regain = 0.2
+				army_armor_attack_factor = 0.1
+				army_armor_speed_factor = 0.1
+				conscription_factor = 0.05
+				training_time_factor = -0.1
+				supply_consumption_factor = 0.2
+				terrain_penalty_reduction = 0.1
+				land_night_attack = 0.1
+				breakthrough_factor = 0.15
+				army_fuel_consumption_factor = 0.15
+				max_planning_factor	= 0.2
+			}
+			equipment_bonus = {
+				main_battle_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
+			equipment_bonus = {
+				infantry_fighting_vehicle_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_spezialkrafte_bonus = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				new_operative_slot_bonus = 2
+				intel_network_gain_factor = 0.15
+				subversive_activites_upkeep = -0.2
+				agency_upgrade_time = -0.2
+				special_forces_out_of_supply_factor = -0.25
+				special_forces_cap = 0.1
+				special_forces_training_time_factor = -0.2
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_urban_warfare_forces = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				urban_forces_attack_factor = 0.2
+				urban_forces_defence_factor = 0.2
+			}
+		}
+	}
+	
+	country = {
+		active_contract = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				max_planning_factor = 0.1
+				army_org_factor = 0.05
+				army_org_regain = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+	
+	hidden_ideas = {
 		EAG_discipline_campaign = {
 		
 			picture = 
@@ -1129,4 +1408,5 @@ ideas = {
 			}
 		}
 	}
+\
 }
