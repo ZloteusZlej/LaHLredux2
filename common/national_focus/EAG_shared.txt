@@ -1682,3 +1682,129 @@ shared_focus = {
 }
 
 
+shared_focus = {
+	id = EAG_the_end_of_expedition
+	icon = GFX_goal_EAG_the_end_of_expedition
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_liquid_gold
+	}
+	prerequisite = {
+		focus = EAG_ensuring_our_place_in_heaven
+	}
+	prerequisite = {
+		focus = EAG_the_main_business
+	}
+	available = {
+		has_country_flag = OSTANG_mercs_britain_reunified
+	}
+	completion_reward = {
+		add_political_power = 250
+		add_stability = 0.2
+		country_event = {
+			days = 1
+			id = super.9
+		}
+		set_capital = {
+			state = 1160
+			remember_old_capital = no
+		}
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.1337
+			}
+		}
+	}
+	x = 12
+	y = 13
+}
+
+shared_focus = {
+	id = EAG_peace_in_england
+	icon = GFX_goal_EAG_peace_in_england
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_the_end_of_expedition
+	}
+	completion_reward = {
+		EAG = {
+			every_controlled_state = {
+				 add_compliance = 15
+				 add_resistance = -25
+			}
+		}
+		add_ideas = EAG_english_reconstruction
+	}
+	x = 12
+	y = 14
+}
+
+shared_focus = {
+	id = EAG_lager_diplomacy
+	icon = GFX_goal_EAG_lager_diplomacy
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_peace_in_england
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_english_reconstruction
+			add_idea = EAG_english_reconstruction_2
+		}
+	}
+	x = 10
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_wash_the_reputation
+	icon = GFX_goal_EAG_wash_the_reputation
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_peace_in_england
+	}
+	completion_reward = {
+		EAG = {
+			every_controlled_state = {
+				 add_compliance = 15
+			}
+			add_stability = 0.1
+		}
+	}
+	x = 12
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_electors_system
+	icon = GFX_goal_EAG_electors_system
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_peace_in_england
+	}
+	completion_reward = {
+	}
+	x = 14
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_what_happens_in_london
+	icon = GFX_goal_EAG_what_happens_in_london
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_lager_diplomacy
+	}
+	prerequisite = {
+		focus = EAG_electors_system
+	}
+	prerequisite = {
+		focus = EAG_wash_the_reputation
+	}
+	completion_reward = {
+	}
+	x = 9
+	y = 16
+}
+

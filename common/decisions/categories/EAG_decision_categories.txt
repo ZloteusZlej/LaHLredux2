@@ -123,3 +123,19 @@ EAG_wars = {
 	}
 	visible_when_empty = yes	
 }
+
+EAG_lager_diplomacy_actions = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			EAG = {
+				has_completed_focus = EAG_lager_diplomacy
+			}
+	}
+	available = {
+			EAG = {
+				has_completed_focus = EAG_lager_diplomacy
+			}
+	}
+}
