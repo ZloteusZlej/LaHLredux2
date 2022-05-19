@@ -139,3 +139,19 @@ EAG_lager_diplomacy_actions = {
 			}
 	}
 }
+
+EAG_tropico = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			EAG = {
+				has_completed_focus = EAG_what_happens_in_london
+			}
+	}
+	available = {
+			EAG = {
+				has_completed_focus = EAG_what_happens_in_london
+			}
+	}
+}

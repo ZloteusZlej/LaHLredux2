@@ -4928,5 +4928,562 @@ EAG_wars = {
 	}
 }
 
+EAG_lager_diplomacy_actions = {
+	EAG_gift_beer = {
+		cost = 35
+		fire_only_once = yes
+		days_remove = 10
+		remove_effect = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 3						
+				}						
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_gift_rolls_royce = {
+		cost = 30
+		fire_only_once = yes
+		days_remove = 10
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -75
+				producer = EAG
+			}
+		}
+		remove_effect = {
+				add_resource = {
+				type = oil
+				amount = 35
+				state = 1165
+				}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_gift_castles = {
+		cost = 30
+		fire_only_once = yes
+		days_remove = 10
+		modifier = {
+			civilian_factory_use = 1
+		}
+		remove_effect = {
+			add_research_slot = 1
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_gift_jewerly = {
+		cost = 45
+		fire_only_once = yes
+		days_remove = 10
+		modifier = {
+			local_resources_factor = -0.3
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2						
+				}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_gift_whiskey = {
+		cost = 45
+		fire_only_once = yes
+		days_remove = 10
+		modifier = {
+			civilian_factory_use = 1
+		}
+		remove_effect = {
+			add_fuel = 10000
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+EAG_tropico = {
+	EAG_strip_club_big_ben = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			add_to_variable = {
+					var = mercs_mood
+					value = 3
+				}
+			clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+			}	
+			add_stability = -0.1
+		}
+		modifier = {
+			monthly_population = -0.1
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_coffeeshop_of_ipswich = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			add_stability = -0.05
+			add_ideas = EAG_suffolk_bath_salts
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_casino_treasure_island = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			add_stability = 0.05
+			1006 = {
+					add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_political_power = 100
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_sussex_brothel = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			add_stability = -0.05
+			1001 = {
+				add_manpower = 6000
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_birminghem_shooting_park = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			add_stability = 0.05
+			army_experience = 35
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_newcastle_pub_park = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			add_stability = 0.05
+			1010 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	
+	EAG_kent_duty_free_auction_house = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			add_stability = -0.05
+			add_ideas = EAG_kent_auction
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_sell_mummies = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = selling_artifacts
+		}
+		remove_effect = {
+			clr_country_flag = selling_artifacts
+			add_political_power = 55
+			random_list = {
+						50 = {
+							random_owned_controlled_state = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							random_owned_controlled_state = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+		}
+		available = {
+			NOT = {
+				has_country_flag = selling_artifacts
+			}
+			has_completed_focus = EAG_sell_trophies
+		}
+		visible = {
+			has_completed_focus = EAG_sell_trophies
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_sell_scythian_gold = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = selling_artifacts
+		}
+		remove_effect = {
+			clr_country_flag = selling_artifacts
+			add_political_power = 65
+			random_list = {
+						50 = {
+							random_owned_controlled_state = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							random_owned_controlled_state = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+		}
+		available = {
+			NOT = {
+				has_country_flag = selling_artifacts
+			}
+			has_completed_focus = EAG_sell_trophies
+		}
+		visible = {
+			has_completed_focus = EAG_sell_trophies
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_sell_benin_sculptures = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = selling_artifacts
+		}
+		remove_effect = {
+			clr_country_flag = selling_artifacts
+			add_political_power = 55
+			random_list = {
+						50 = {
+							random_owned_controlled_state = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							random_owned_controlled_state = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+		}
+		available = {
+			NOT = {
+				has_country_flag = selling_artifacts
+			}
+			has_completed_focus = EAG_sell_trophies
+		}
+		visible = {
+			has_completed_focus = EAG_sell_trophies
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	
+	EAG_sell_ethiopian_manuscripts = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = selling_artifacts
+		}
+		remove_effect = {
+			clr_country_flag = selling_artifacts
+			add_political_power = 55
+			random_list = {
+						50 = {
+							random_owned_controlled_state = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							random_owned_controlled_state = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+		}
+		available = {
+			NOT = {
+				has_country_flag = selling_artifacts
+			}
+			has_completed_focus = EAG_sell_trophies
+		}
+		visible = {
+			has_completed_focus = EAG_sell_trophies
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_sell_koh_i_noor = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = selling_artifacts
+		}
+		remove_effect = {
+			clr_country_flag = selling_artifacts
+			add_political_power = 55
+			random_list = {
+						50 = {
+							random_owned_controlled_state = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							random_owned_controlled_state = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+		}
+		available = {
+			NOT = {
+				has_country_flag = selling_artifacts
+			}
+			has_completed_focus = EAG_sell_trophies
+		}
+		visible = {
+			has_completed_focus = EAG_sell_trophies
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_isle_of_man_mansion = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			1018 = {
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2		
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		visible = {
+			has_completed_focus = EAG_boheme_resort
+		}
+		available = {
+			has_completed_focus = EAG_boheme_resort
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_eastbourne_reconstruction = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			1002 = {		
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_manpower = 10000
+			}
+		}
+		visible = {
+			has_completed_focus = EAG_boheme_resort
+		}
+		available = {
+			has_completed_focus = EAG_boheme_resort
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_english_hollywood = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			add_stability = 0.1
+			1160 = {		
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = EAG_boheme_resort
+		}
+		available = {
+			has_completed_focus = EAG_boheme_resort
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_privitize_reserves = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			add_stability = -0.1
+			every_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		visible = {
+			has_completed_focus = EAG_boheme_resort
+		}
+		available = {
+			has_completed_focus = EAG_boheme_resort
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
 
 	

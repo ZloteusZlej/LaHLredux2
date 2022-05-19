@@ -1770,6 +1770,7 @@ shared_focus = {
 				 add_compliance = 15
 			}
 			add_stability = 0.1
+			add_political_power = 50
 		}
 	}
 	x = 12
@@ -1803,8 +1804,299 @@ shared_focus = {
 		focus = EAG_wash_the_reputation
 	}
 	completion_reward = {
+		add_ideas = EAG_economy_of_entertainment
 	}
 	x = 9
 	y = 16
 }
 
+
+shared_focus = {
+	id = EAG_financial_innovations
+	icon = GFX_goal_EAG_financial_innovations
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_lager_diplomacy
+	}
+	prerequisite = {
+		focus = EAG_electors_system
+	}
+	prerequisite = {
+		focus = EAG_wash_the_reputation
+	}
+	completion_reward = {
+		add_ideas = EAG_schemes_and_machinations
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.50
+			}
+		}
+	}
+	x = 11
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_to_the_last_drop
+	icon = GFX_goal_EAG_to_the_last_drop
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_lager_diplomacy
+	}
+	prerequisite = {
+		focus = EAG_electors_system
+	}
+	prerequisite = {
+		focus = EAG_wash_the_reputation
+	}
+	completion_reward = {
+		add_stability = -0.05
+		add_political_power = 75
+		swap_ideas = {
+			remove_idea = EAG_english_reconstruction_2
+			add_idea = EAG_english_reconstruction_3
+		}
+	}
+	x = 13
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_connecting_people
+	icon = GFX_goal_EAG_connecting_people
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_lager_diplomacy
+	}
+	prerequisite = {
+		focus = EAG_electors_system
+	}
+	prerequisite = {
+		focus = EAG_wash_the_reputation
+	}
+	completion_reward = {
+		add_ideas = EAG_internets
+	}
+	x = 15
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_golden_english_republic
+	icon = GFX_goal_EAG_golden_english_republic
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_what_happens_in_london
+	}
+	prerequisite = {
+		focus = EAG_financial_innovations
+	}
+	prerequisite = {
+		focus = EAG_to_the_last_drop
+	}
+	prerequisite = {
+		focus = EAG_connecting_people
+	}
+	mutually_exclusive = {
+		focus = EAG_guilds_control
+	}
+	completion_reward = {
+		add_ideas = EAG_golden_english_republic_bonus
+	}
+	x = 11
+	y = 17
+}
+
+shared_focus = {
+	id = EAG_guilds_control
+	icon = GFX_goal_EAG_guilds_control
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_what_happens_in_london
+	}
+	prerequisite = {
+		focus = EAG_financial_innovations
+	}
+	prerequisite = {
+		focus = EAG_to_the_last_drop
+	}
+	prerequisite = {
+		focus = EAG_connecting_people
+	}
+	mutually_exclusive = {
+		focus = EAG_golden_english_republic
+	}
+	completion_reward = {
+		add_ideas = EAG_guilds_control_bonus
+	}
+	x = 13
+	y = 17
+}
+
+shared_focus = {
+	id = EAG_one_state_two_armies
+	icon = GFX_goal_EAG_one_state_two_armies
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_guilds_control
+		focus = EAG_golden_english_republic
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_polizei_1
+			add_idea = EAG_polizei_2
+		}
+	}
+	x = 11
+	y = 18
+}
+
+shared_focus = {
+	id = EAG_agreement_with_lords
+	icon = GFX_goal_EAG_agreement_with_lords
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_guilds_control
+		focus = EAG_golden_english_republic
+	}
+	completion_reward = {
+		add_political_power = 45
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+	}
+	x = 13
+	y = 18
+}
+
+shared_focus = {
+	id = EAG_sell_trophies
+	icon = GFX_goal_EAG_sell_trophies
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_agreement_with_lords
+	}
+	prerequisite = {
+		focus = EAG_one_state_two_armies
+	}
+	completion_reward = {
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.51
+			}
+		}
+	}
+	x = 10
+	y = 19
+}
+
+shared_focus = {
+	id = EAG_free_lunch
+	icon = GFX_goal_EAG_free_lunch
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_agreement_with_lords
+	}
+	prerequisite = {
+		focus = EAG_one_state_two_armies
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_english_reconstruction_3
+			add_idea = EAG_english_reconstruction_4
+		}
+	}
+	x = 12
+	y = 19
+}
+
+shared_focus = {
+	id = EAG_boheme_resort
+	icon = GFX_goal_EAG_boheme_resort
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_agreement_with_lords
+	}
+	prerequisite = {
+		focus = EAG_one_state_two_armies
+	}
+	completion_reward = {
+		add_political_power = 40
+	}
+	x = 14
+	y = 19
+}
+
+shared_focus = {
+	id = EAG_evolved_but_untamed
+	icon = GFX_goal_EAG_evolved_but_untamed
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_sell_trophies
+	}
+	prerequisite = {
+		focus = EAG_free_lunch
+	}
+	prerequisite = {
+		focus = EAG_boheme_resort
+	}
+	completion_reward = {
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.52
+			}
+		}
+		add_to_variable = {
+				var = mercs_dev
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+	}
+	x = 12
+	y = 20
+}
