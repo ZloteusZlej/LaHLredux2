@@ -5484,6 +5484,690 @@ EAG_tropico = {
 		}
 	}
 }
+EAG_city_influence = {
+	EAG_budget_meme = {	
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+	}
+	EAG_small_budget_boost = {
+		cost = 25
+		days_remove = 75
+		complete_effect = {
+			add_to_variable = {
+				var = EAG_city_budget
+				value = 10
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_moderate_budget_boost = {
+		cost = 50
+		days_remove = 75
+		complete_effect = {
+			add_to_variable = {
+				var = EAG_city_budget
+				value = 25
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_big_budget_boost = {
+		cost = 75
+		days_remove = 100
+		complete_effect = {
+			add_to_variable = {
+				var = EAG_city_budget
+				value = 100
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_huge_budget_boost = {
+		cost = 100
+		days_remove = 100
+		complete_effect = {
+			add_to_variable = {
+				var = EAG_city_budget
+				value = 200
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_project_meme = {
+	    visible = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_project_launched
+				}
+			}
+        } 
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+	}
+	EAG_project_01 = {
+	    visible = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_project_launched
+				}
+			}
+        } 
+		custom_cost_trigger = {
+			check_variable = { EAG_city_budget > 25 }
+		}
+		custom_cost_text = EAG_CITY_BUDGET_COST_25
+		days_remove = 25
+		complete_effect = {
+			add_to_variable = {
+				var = EAG_city_budget
+				value = -25
+			}
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.65
+				}
+				set_country_flag = EAG_project_launched
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_project_02 = {
+	    visible = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_project_launched
+				}
+			}
+        } 
+		custom_cost_trigger = {
+			check_variable = { EAG_city_budget > 50 }
+		}
+		custom_cost_text = EAG_CITY_BUDGET_COST_50
+		days_remove = 25
+		complete_effect = {
+			add_to_variable = {
+				var = EAG_city_budget
+				value = -50
+			}	
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.66
+				}
+				set_country_flag = EAG_project_launched
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_project_03 = {
+	    visible = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_project_launched
+				}
+			}
+        } 
+		custom_cost_trigger = {
+			check_variable = { EAG_city_budget > 100 }
+		}
+		custom_cost_text = EAG_CITY_BUDGET_COST_100
+		days_remove = 25
+		complete_effect = {
+			add_to_variable = {
+				var = EAG_city_budget
+				value = -100
+			}
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.67
+				}
+				set_country_flag = EAG_project_launched
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_pleading_meme = {
+	    visible = {
+			EAG = {
+				has_country_flag = EAG_project_launched
+			}
+        } 
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+	}
+	EAG_eastern_england_plead = {
+		cost = 25
+	    visible = {
+			EAG = {
+				has_country_flag = EAG_project_launched
+			}
+        } 
+		days_remove = 100
+		complete_effect = {	
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.72
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_essex_plead = {
+		cost = 25
+	    visible = {
+			EAG = {
+				has_country_flag = EAG_project_launched
+			}
+        } 
+		days_remove = 100
+		complete_effect = {	
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.73
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_mercia_plead = {
+		cost = 25
+	    visible = {
+			EAG = {
+				has_country_flag = EAG_project_launched
+			}
+        } 
+		days_remove = 100
+		complete_effect = {	
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.74
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_northumbria_plead = {
+		cost = 25
+	    visible = {
+			EAG = {
+				has_country_flag = EAG_project_launched
+			}
+        } 
+		days_remove = 100
+		complete_effect = {	
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.75
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_southern_england_plead = {
+		cost = 25
+	    visible = {
+			EAG = {
+				has_country_flag = EAG_project_launched
+			}
+        } 
+		days_remove = 100
+		complete_effect = {	
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.76
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_wessex_plead = {
+		cost = 25
+	    visible = {
+			EAG = {
+				has_country_flag = EAG_project_launched
+			}
+        } 
+		days_remove = 100
+		complete_effect = {	
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.77
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+    EAG_project_01_voting = {                           
+        allowed = { 
+			tag = EAG 
+		}
+        available = {                           
+            set_temp_variable = { EAG_total_influence_level = 0 }
+            add_to_temp_variable = { EAG_total_influence_level = 1153.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1153.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1153.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1161.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1161.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1161.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1006.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1006.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1006.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1007.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1007.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1007.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1000.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1000.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1000.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 999.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 999.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 999.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 998.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 998.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 998.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1156.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1156.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1156.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1001.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1001.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1001.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1165.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1165.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1165.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1002.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1002.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1002.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1009.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1009.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1009.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1145.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1145.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1145.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1011.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1011.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1011.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1012.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1012.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1012.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1010.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1010.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1010.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1005.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1005.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1005.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1144.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1144.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1144.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1155.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1155.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1155.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1008.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1008.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1008.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1146.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1146.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1146.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1154.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1154.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1154.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1151.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1151.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1151.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1152.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1152.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1152.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1157.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1157.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1157.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1160.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1160.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1160.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1159.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1159.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1159.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1003.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1003.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1003.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1158.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1158.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1158.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1143.industrial_complex_level }
+			add_to_temp_variable = { EAG_total_influence_level = 1004.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1143.infrastructure_level }
+			add_to_temp_variable = { EAG_total_influence_level = 1004.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1143.arms_factory_level }
+			add_to_temp_variable = { EAG_total_influence_level = 1004.arms_factory_level }
+			multiply_temp_variable = { EAG_total_influence_level = 10 }
+			divide_temp_variable = { EAG_total_influence_level = 2 }
+            check_variable = { EAG_our_influence_level > EAG_total_influence_level }
+        }
+        activation = {   
+			always = false
+        }
+        is_good = no                         
+        days_mission_timeout = 100              
+        timeout_effect = {                      
+            add_political_power = -50   
+			set_variable = { EAG_our_influence_level = 0 }
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.71
+				}
+			}
+        }
+        complete_effect = {                    
+            add_political_power = 50
+			set_variable = { EAG_our_influence_level = 0 }
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.68
+				}
+			}
+        }
+    }
+   EAG_project_02_voting = {                           
+        allowed = { 
+			tag = EAG 
+		}
+        available = {                           
+            set_temp_variable = { EAG_total_influence_level = 0 }
+            add_to_temp_variable = { EAG_total_influence_level = 1153.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1153.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1153.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1161.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1161.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1161.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1006.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1006.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1006.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1007.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1007.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1007.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1000.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1000.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1000.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 999.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 999.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 999.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 998.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 998.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 998.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1156.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1156.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1156.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1001.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1001.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1001.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1165.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1165.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1165.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1002.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1002.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1002.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1009.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1009.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1009.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1145.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1145.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1145.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1011.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1011.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1011.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1012.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1012.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1012.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1010.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1010.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1010.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1005.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1005.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1005.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1144.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1144.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1144.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1155.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1155.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1155.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1008.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1008.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1008.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1146.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1146.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1146.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1154.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1154.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1154.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1151.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1151.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1151.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1152.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1152.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1152.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1157.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1157.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1157.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1160.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1160.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1160.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1159.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1159.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1159.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1003.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1003.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1003.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1158.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1158.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1158.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1143.industrial_complex_level }
+			add_to_temp_variable = { EAG_total_influence_level = 1004.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1143.infrastructure_level }
+			add_to_temp_variable = { EAG_total_influence_level = 1004.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1143.arms_factory_level }
+			add_to_temp_variable = { EAG_total_influence_level = 1004.arms_factory_level }
+			multiply_temp_variable = { EAG_total_influence_level = 10 }
+			divide_temp_variable = { EAG_total_influence_level = 2 }
+            check_variable = { EAG_our_influence_level > EAG_total_influence_level }
+        }
+        activation = {   
+			always = false
+        }
+        is_good = no                         
+        days_mission_timeout = 100              
+        timeout_effect = {                      
+            add_political_power = -50  
+			set_variable = { EAG_our_influence_level = 0 }
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.71
+				}
+			}
+        }
+        complete_effect = {                    
+            add_political_power = 50
+			set_variable = { EAG_our_influence_level = 0 }
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.69
+				}
+			}
+        }
+    }
+   EAG_project_03_voting = {                           
+        allowed = { 
+			tag = EAG 
+		}
+        available = {                           
+            set_temp_variable = { EAG_total_influence_level = 0 }
+            add_to_temp_variable = { EAG_total_influence_level = 1153.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1153.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1153.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1161.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1161.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1161.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1006.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1006.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1006.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1007.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1007.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1007.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1000.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1000.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1000.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 999.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 999.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 999.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 998.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 998.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 998.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1156.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1156.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1156.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1001.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1001.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1001.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1165.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1165.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1165.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1002.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1002.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1002.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1009.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1009.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1009.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1145.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1145.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1145.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1011.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1011.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1011.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1012.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1012.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1012.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1010.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1010.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1010.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1005.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1005.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1005.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1144.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1144.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1144.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1155.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1155.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1155.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1008.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1008.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1008.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1146.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1146.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1146.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1154.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1154.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1154.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1151.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1151.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1151.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1152.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1152.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1152.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1157.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1157.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1157.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1160.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1160.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1160.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1159.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1159.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1159.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1003.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1003.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1003.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1158.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1158.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1158.arms_factory_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1143.industrial_complex_level }
+			add_to_temp_variable = { EAG_total_influence_level = 1004.industrial_complex_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1143.infrastructure_level }
+			add_to_temp_variable = { EAG_total_influence_level = 1004.infrastructure_level }
+            add_to_temp_variable = { EAG_total_influence_level = 1143.arms_factory_level }
+			add_to_temp_variable = { EAG_total_influence_level = 1004.arms_factory_level }
+			multiply_temp_variable = { EAG_total_influence_level = 10 }
+			divide_temp_variable = { EAG_total_influence_level = 2 }
+            check_variable = { EAG_our_influence_level > EAG_total_influence_level }
+        }
+        activation = {   
+			always = false
+        }
+        is_good = no                         
+        days_mission_timeout = 100              
+        timeout_effect = {                      
+            add_political_power = -50   
+			set_variable = { EAG_our_influence_level = 0 }
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.71
+				}
+			}
+        }
+        complete_effect = {                    
+            add_political_power = 50
+			set_variable = { EAG_our_influence_level = 0 }
+			EAG = {
+				country_event = {
+					days = 5
+					id = EAG_event.70
+				}
+			}
+        }
+    }
+}
 
 
 	

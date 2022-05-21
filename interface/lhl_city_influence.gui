@@ -1,0 +1,722 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "lhl_city_influence_full"
+		size = { width = 1000 height = 700 }
+		position = { x = 100 y = 0 }
+		scale = 1.2
+		clipping = yes
+		
+		background = {
+			name = "lhl_table_opening_screen_background_1"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+		###Background###
+		##Flasks##
+	    iconType = {
+			name = "EAG_flask_1"
+			spriteType = "GFX_EAG_flask"
+			position = { x = 20 y = 35 }
+		}
+	    iconType = {
+			name = "EAG_flask_2"
+			spriteType = "GFX_EAG_flask"
+			position = { x = 85 y = 35 }
+		}
+	    iconType = {
+			name = "EAG_flask_3"
+			spriteType = "GFX_EAG_flask"
+			position = { x = 150 y = 35 }
+		}
+	    iconType = {
+			name = "EAG_flask_4"
+			spriteType = "GFX_EAG_flask"
+			position = { x = 215 y = 35 }
+		}
+	    iconType = {
+			name = "EAG_flask_5"
+			spriteType = "GFX_EAG_flask"
+			position = { x = 280 y = 35 }
+		}
+	    iconType = {
+			name = "EAG_flask_6"
+			spriteType = "GFX_EAG_flask"
+			position = { x = 345 y = 35 }
+		}
+		##Orders##
+	    iconType = {
+			name = "EAG_order_1"
+			spriteType = "GFX_EAG_east_england_order"
+			pdx_tooltip = "EAG_EAST_ANGLIA_INFLUENCE"
+			position = { x = 27 y = 325 }
+		}
+	    iconType = {
+			name = "EAG_order_2"
+			spriteType = "GFX_EAG_essex_order"
+			pdx_tooltip = "EAG_ESSEX_INFLUENCE"
+			position = { x = 92 y = 325 }
+		}
+	    iconType = {
+			name = "EAG_order_3"
+			spriteType = "GFX_EAG_mercia_order"
+			pdx_tooltip = "EAG_MERCIA_INFLUENCE"
+			position = { x = 157 y = 325 }
+		}
+	    iconType = {
+			name = "EAG_order_4"
+			spriteType = "GFX_EAG_northumbria_order"
+			pdx_tooltip = "EAG_NORTHUMBRIA_INFLUENCE"
+			position = { x = 222 y = 325 }
+		}
+	    iconType = {
+			name = "EAG_order_5"
+			spriteType = "GFX_EAG_southern_england_order"
+			pdx_tooltip = "EAG_SOUTHERN_ENGLAND_INFLUENCE"
+			position = { x = 287 y = 325 }
+		}
+	    iconType = {
+			name = "EAG_order_6"
+			spriteType = "GFX_EAG_wessex_order"
+			pdx_tooltip = "EAG_WESSEX_INFLUENCE"
+			position = { x = 352 y = 325 }
+		}
+		##Pills East England##
+	    iconType = {
+			name = "EAG_east_england_bar_1"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 292 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_2"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 279 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_3"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 266 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_4"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 253 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_5"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 240 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_6"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 227 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_7"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 214 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_8"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 201 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_9"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 188 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_10"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 175 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_11"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 162 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_12"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 149 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_13"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 136 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_14"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 123 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_15"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 110 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_16"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 97 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_17"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 84 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_18"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 71 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_19"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 58 }
+		}
+	    iconType = {
+			name = "EAG_east_england_bar_20"
+			spriteType = "GFX_EAG_east_england_bar"
+			position = { x = 27 y = 45 }
+		}
+		##Pills Essex##
+	    iconType = {
+			name = "EAG_essex_bar_1"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 292 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_2"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 279 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_3"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 266 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_4"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 253 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_5"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 240 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_6"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 227 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_7"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 214 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_8"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 201 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_9"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 188 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_10"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 175 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_11"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 162 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_12"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 149 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_13"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 136 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_14"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 123 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_15"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 110 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_16"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 97 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_17"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 84 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_18"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 71 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_19"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 58 }
+		}
+	    iconType = {
+			name = "EAG_essex_bar_20"
+			spriteType = "GFX_EAG_essex"
+			position = { x = 92 y = 45 }
+		}
+		##Pills mercia##
+	    iconType = {
+			name = "EAG_mercia_bar_1"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 292 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_2"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 279 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_3"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 266 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_4"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 253 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_5"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 240 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_6"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 227 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_7"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 214 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_8"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 201 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_9"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 188 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_10"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 175 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_11"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 162 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_12"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 149 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_13"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 136 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_14"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 123 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_15"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 110 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_16"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 97 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_17"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 84 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_18"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 71 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_19"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 58 }
+		}
+	    iconType = {
+			name = "EAG_mercia_bar_20"
+			spriteType = "GFX_EAG_mercia"
+			position = { x = 157 y = 45 }
+		}
+	##Pills northumbria##
+	    iconType = {
+			name = "EAG_northumbria_bar_1"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 292 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_2"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 279 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_3"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 266 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_4"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 253 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_5"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 240 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_6"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 227 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_7"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 214 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_8"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 201 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_9"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 188 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_10"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 175 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_11"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 162 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_12"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 149 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_13"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 136 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_14"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 123 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_15"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 110 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_16"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 97 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_17"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 84 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_18"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 71 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_19"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 58 }
+		}
+	    iconType = {
+			name = "EAG_northumbria_bar_20"
+			spriteType = "GFX_EAG_northumbria"
+			position = { x = 222 y = 45 }
+		}
+	##Pills southern_england##
+	    iconType = {
+			name = "EAG_southern_england_bar_1"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 292 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_2"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 279 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_3"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 266 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_4"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 253 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_5"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 240 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_6"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 227 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_7"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 214 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_8"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 201 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_9"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 188 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_10"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 175 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_11"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 162 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_12"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 149 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_13"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 136 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_14"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 123 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_15"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 110 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_16"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 97 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_17"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 84 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_18"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 71 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_19"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 58 }
+		}
+	    iconType = {
+			name = "EAG_southern_england_bar_20"
+			spriteType = "GFX_EAG_southern_england"
+			position = { x = 287 y = 45 }
+		}
+	##Pills wessex##
+	    iconType = {
+			name = "EAG_wessex_bar_1"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 292 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_2"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 279 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_3"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 266 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_4"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 253 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_5"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 240 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_6"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 227 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_7"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 214 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_8"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 201 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_9"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 188 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_10"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 175 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_11"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 162 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_12"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 149 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_13"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 136 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_14"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 123 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_15"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 110 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_16"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 97 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_17"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 84 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_18"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 71 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_19"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 58 }
+		}
+	    iconType = {
+			name = "EAG_wessex_bar_20"
+			spriteType = "GFX_EAG_wessex_bar"
+			position = { x = 352 y = 45 }
+		}
+		background = {
+			name = "lhl_table_opening_screen_background_1"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+		##Text##
+		instantTextboxType = {
+			name = "EAG_city_budget_box"
+			position = { x = 65 y = 400 }
+			font = "newsfeed_body"
+			text = "EAG_CITY_BUDGET_BOX"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "EAG_total_influence_text_box"
+			position = { x = 65 y = 500 }
+			font = "newsfeed_body"
+			text = "EAG_TOTAL_INFLUENCE_TEXT_BOX"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "EAG_city_influence_title"
+			position = { x = 65 y = -4 }
+			font = "hoi_24header"
+			text = "EAG_INFLUENCE_LEVELS"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+	}
+}
