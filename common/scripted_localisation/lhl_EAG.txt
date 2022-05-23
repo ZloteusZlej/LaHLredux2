@@ -254,3 +254,20 @@ defined_text = {
 		localization_key = EAG_total_influence_level
 	}
 }
+defined_text = {
+	name = GetEAGProjectStatus
+	text = {
+		trigger = {
+			has_country_flag = EAG_project_launched
+		}
+		localization_key = EAG_project_is_launched
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = EAG_project_launched
+			}
+		}
+		localization_key = EAG_project_not_launched
+	}
+}
