@@ -1978,7 +1978,6 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.65.a	
-		activate_mission = EAG_project_01_voting
     }
 }
 
@@ -1989,7 +1988,6 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.66.a	
-		activate_mission = EAG_project_02_voting
     }
 }
 
@@ -2000,7 +1998,6 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.67.a	
-		activate_mission = EAG_project_03_voting
     }
 }
 
@@ -2012,9 +2009,6 @@ country_event = {
 	option = {
 		name = EAG_event.68.a	
 		add_political_power = 75
-		EAG = {
-			clr_country_flag = EAG_project_launched
-		}
     }
 }
 
@@ -2026,9 +2020,6 @@ country_event = {
 	option = {
 		name = EAG_event.69.a	
 		add_political_power = 75
-		EAG = {
-			clr_country_flag = EAG_project_launched
-		}
     }
 }
 
@@ -2040,9 +2031,6 @@ country_event = {
 	option = {
 		name = EAG_event.70.a	
 		add_political_power = 75
-		EAG = {
-			clr_country_flag = EAG_project_launched
-		}
     }
 }
 
@@ -2054,6 +2042,15 @@ country_event = {
 	option = {
 		name = EAG_event.71.a	
 		add_stability = -0.05
+		clr_country_flag =	EAG_voting_wessex_agreed
+		clr_country_flag =	EAG_voting_southern_england_agreed
+		clr_country_flag =	EAG_voting_northumbria_agreed
+		clr_country_flag =	EAG_voting_mercia_agreed
+		clr_country_flag =	EAG_voting_essex_agreed
+		clr_country_flag =	EAG_voting_east_england_agreed
+		EAG = {
+			clr_country_flag = EAG_project_launched
+		}
     }
 }
 
@@ -2064,6 +2061,7 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.72.a
+		custom_effect_tooltip = EAG_small_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2084,15 +2082,19 @@ country_event = {
 		add_to_temp_variable = { EAG_east_england_influence_level = 1004.infrastructure_level }
 		add_to_temp_variable = { EAG_east_england_influence_level = 1143.arms_factory_level }
 		add_to_temp_variable = { EAG_east_england_influence_level = 1004.arms_factory_level }
-		multiply_temp_variable = { EAG_east_england_influence_level = 10 }
+		multiply_temp_variable = { EAG_east_england_influence_level = 28 }
 		divide_temp_variable = { EAG_east_england_influence_level = 5 }
 		add_to_variable = {
 			var = EAG_our_influence_level
 			value = EAG_east_england_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_east_england_agreed
+		}
     }
 	option = {
 		name = EAG_event.72.b
+		custom_effect_tooltip = EAG_medium_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2113,15 +2115,19 @@ country_event = {
 		add_to_temp_variable = { EAG_east_england_influence_level = 1004.infrastructure_level }
 		add_to_temp_variable = { EAG_east_england_influence_level = 1143.arms_factory_level }
 		add_to_temp_variable = { EAG_east_england_influence_level = 1004.arms_factory_level }
-		multiply_temp_variable = { EAG_east_england_influence_level = 10 }
+		multiply_temp_variable = { EAG_east_england_influence_level = 28 }
 		divide_temp_variable = { EAG_east_england_influence_level = 2 }
 		add_to_variable = {
 			var = EAG_our_influence_level
 			value = EAG_east_england_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_east_england_agreed
+		}
     }
 	option = {
-		name = EAG_event.72.c	
+		name = EAG_event.72.c
+		custom_effect_tooltip = EAG_big_city_spending.tt		
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2142,14 +2148,17 @@ country_event = {
 		add_to_temp_variable = { EAG_east_england_influence_level = 1004.infrastructure_level }
 		add_to_temp_variable = { EAG_east_england_influence_level = 1143.arms_factory_level }
 		add_to_temp_variable = { EAG_east_england_influence_level = 1004.arms_factory_level }
-		multiply_temp_variable = { EAG_east_england_influence_level = 10 }
+		multiply_temp_variable = { EAG_east_england_influence_level = 28 }
 		add_to_variable = {
 			var = EAG_our_influence_level
 			value = EAG_east_england_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_east_england_agreed
+		}
     }
 	option = {
-		name = EAG_event.72.d
+		name = EAG_event.72.e
 		add_stability = -0.01
     }
 }
@@ -2161,6 +2170,7 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.73.a
+		custom_effect_tooltip = EAG_small_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2190,15 +2200,19 @@ country_event = {
 		add_to_temp_variable = { EAG_essex_influence_level = 1158.industrial_complex_level }
 		add_to_temp_variable = { EAG_essex_influence_level = 1158.infrastructure_level }
 		add_to_temp_variable = { EAG_essex_influence_level = 1158.arms_factory_level }
-		multiply_temp_variable = { EAG_essex_influence_level = 10 }
+		multiply_temp_variable = { EAG_essex_influence_level = 15 }
 		divide_temp_variable = { EAG_essex_influence_level = 5 }
 		add_to_variable = {
 			var = EAG_our_influence_level
 			value = EAG_essex_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_essex_agreed
+		}
     }
 	option = {
 		name = EAG_event.73.b
+		custom_effect_tooltip = EAG_medium_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2228,15 +2242,19 @@ country_event = {
 		add_to_temp_variable = { EAG_essex_influence_level = 1158.industrial_complex_level }
 		add_to_temp_variable = { EAG_essex_influence_level = 1158.infrastructure_level }
 		add_to_temp_variable = { EAG_essex_influence_level = 1158.arms_factory_level }
-		multiply_temp_variable = { EAG_essex_influence_level = 10 }
+		multiply_temp_variable = { EAG_essex_influence_level = 15 }
 		divide_temp_variable = { EAG_essex_influence_level = 2 }
 		add_to_variable = {
 			var = EAG_our_influence_level
 			value = EAG_essex_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_essex_agreed
+		}
     }
 	option = {
-		name = EAG_event.73.c	
+		name = EAG_event.73.c
+		custom_effect_tooltip = EAG_big_city_spending.tt		
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2266,14 +2284,17 @@ country_event = {
 		add_to_temp_variable = { EAG_essex_influence_level = 1158.industrial_complex_level }
 		add_to_temp_variable = { EAG_essex_influence_level = 1158.infrastructure_level }
 		add_to_temp_variable = { EAG_essex_influence_level = 1158.arms_factory_level }
-		multiply_temp_variable = { EAG_essex_influence_level = 10 }
+		multiply_temp_variable = { EAG_essex_influence_level = 15 }
 		add_to_variable = {
 			var = EAG_our_influence_level
 			value = EAG_essex_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_essex_agreed
+		}
     }
 	option = {
-		name = EAG_event.73.d
+		name = EAG_event.73.e
 		add_stability = -0.01
     }
 }
@@ -2285,6 +2306,7 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.74.a
+		custom_effect_tooltip = EAG_small_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2329,9 +2351,13 @@ country_event = {
 			var = EAG_our_influence_level
 			value = EAG_mercia_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_mercia_agreed
+		}
     }
 	option = {
-		name = EAG_event.74.b
+		name = EAG_event.74.b|
+		custom_effect_tooltip = EAG_medium_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2376,9 +2402,13 @@ country_event = {
 			var = EAG_our_influence_level
 			value = EAG_mercia_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_mercia_agreed
+		}
     }
 	option = {
 		name = EAG_event.74.c	
+		custom_effect_tooltip = EAG_big_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2422,9 +2452,12 @@ country_event = {
 			var = EAG_our_influence_level
 			value = EAG_mercia_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_mercia_agreed
+		}
     }
 	option = {
-		name = EAG_event.74.d
+		name = EAG_event.74.e
 		add_stability = -0.01
     }
 }
@@ -2436,6 +2469,7 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.75.a
+		custom_effect_tooltip = EAG_small_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2471,9 +2505,13 @@ country_event = {
 			var = EAG_our_influence_level
 			value = EAG_northumbria_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_northumbria_agreed
+		}
     }
 	option = {
 		name = EAG_event.75.b
+		custom_effect_tooltip = EAG_medium_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2509,9 +2547,13 @@ country_event = {
 			var = EAG_our_influence_level
 			value = EAG_northumbria_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_northumbria_agreed
+		}
     }
 	option = {
 		name = EAG_event.75.c	
+		custom_effect_tooltip = EAG_big_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2546,9 +2588,12 @@ country_event = {
 			var = EAG_our_influence_level
 			value = EAG_northumbria_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_northumbria_agreed
+		}
     }
 	option = {
-		name = EAG_event.75.d
+		name = EAG_event.75.e
 		add_stability = -0.01
     }
 }
@@ -2560,6 +2605,7 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.76.a
+		custom_effect_tooltip = EAG_small_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2586,15 +2632,19 @@ country_event = {
 		add_to_temp_variable = { EAG_southern_england_influence_level = 1002.industrial_complex_level }
 		add_to_temp_variable = { EAG_southern_england_influence_level = 1002.infrastructure_level }
 		add_to_temp_variable = { EAG_southern_england_influence_level = 1002.arms_factory_level }
-		multiply_temp_variable = { EAG_southern_england_influence_level = 10 }
+		multiply_temp_variable = { EAG_southern_england_influence_level = 16 }
 		divide_temp_variable = { EAG_northumbria_influence_level = 5 }
 		add_to_variable = {
 			var = EAG_our_influence_level
 			value = EAG_southern_england_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_southern_england_agreed
+		}
     }
 	option = {
 		name = EAG_event.76.b
+		custom_effect_tooltip = EAG_medium_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2621,15 +2671,19 @@ country_event = {
 		add_to_temp_variable = { EAG_southern_england_influence_level = 1002.industrial_complex_level }
 		add_to_temp_variable = { EAG_southern_england_influence_level = 1002.infrastructure_level }
 		add_to_temp_variable = { EAG_southern_england_influence_level = 1002.arms_factory_level }
-		multiply_temp_variable = { EAG_southern_england_influence_level = 10 }
+		multiply_temp_variable = { EAG_southern_england_influence_level = 16 }
 		divide_temp_variable = { EAG_southern_england_influence_level = 2 }
 		add_to_variable = {
 			var = EAG_our_influence_level
 			value = EAG_southern_england_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_southern_england_agreed
+		}
     }
 	option = {
 		name = EAG_event.76.c	
+		custom_effect_tooltip = EAG_big_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2656,14 +2710,17 @@ country_event = {
 		add_to_temp_variable = { EAG_southern_england_influence_level = 1002.industrial_complex_level }
 		add_to_temp_variable = { EAG_southern_england_influence_level = 1002.infrastructure_level }
 		add_to_temp_variable = { EAG_southern_england_influence_level = 1002.arms_factory_level }
-		multiply_temp_variable = { EAG_southern_england_influence_level = 10 }
+		multiply_temp_variable = { EAG_southern_england_influence_level = 16 }
 		add_to_variable = {
 			var = EAG_our_influence_level
 			value = EAG_southern_england_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_southern_england_agreed
+		}
     }
 	option = {
-		name = EAG_event.76.d
+		name = EAG_event.76.e
 		add_stability = -0.01
     }
 }
@@ -2675,6 +2732,7 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.77.a
+		custom_effect_tooltip = EAG_small_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2716,9 +2774,13 @@ country_event = {
 			var = EAG_our_influence_level
 			value = EAG_wessex_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_wessex_agreed
+		}
     }
 	option = {
 		name = EAG_event.77.b
+		custom_effect_tooltip = EAG_medium_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2760,9 +2822,13 @@ country_event = {
 			var = EAG_our_influence_level
 			value = EAG_wessex_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_wessex_agreed
+		}
     }
 	option = {
 		name = EAG_event.77.c	
+		custom_effect_tooltip = EAG_big_city_spending.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2803,9 +2869,12 @@ country_event = {
 			var = EAG_our_influence_level
 			value = EAG_wessex_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_wessex_agreed
+		}
     }
 	option = {
-		name = EAG_event.77.d
+		name = EAG_event.77.e
 		add_stability = -0.01
     }
 }
@@ -2833,6 +2902,7 @@ country_event = {
 	}
 	option = {
 		name = EAG_event.78.a	
+		custom_effect_tooltip = EAG_project_city_spending_1.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2850,26 +2920,29 @@ country_event = {
 			value = -10
 		}
 		activate_mission = EAG_project_eastern_england_voting
-		set_temp_variable = { EAG_essex_influence_level = 0 }
-		add_to_temp_variable = { EAG_essex_influence_level = 1157.industrial_complex_level }
-		add_to_temp_variable = { EAG_essex_influence_level = 1157.infrastructure_level }
-		add_to_temp_variable = { EAG_essex_influence_level = 1157.arms_factory_level }
-		add_to_temp_variable = { EAG_essex_influence_level = 1160.industrial_complex_level }
-		add_to_temp_variable = { EAG_essex_influence_level = 1160.infrastructure_level }
-		add_to_temp_variable = { EAG_essex_influence_level = 1160.arms_factory_level }
-		add_to_temp_variable = { EAG_essex_influence_level = 1159.industrial_complex_level }
-		add_to_temp_variable = { EAG_essex_influence_level = 1159.infrastructure_level }
-		add_to_temp_variable = { EAG_essex_influence_level = 1159.arms_factory_level }
-		add_to_temp_variable = { EAG_essex_influence_level = 1003.industrial_complex_level }
-		add_to_temp_variable = { EAG_essex_influence_level = 1003.infrastructure_level }
-		add_to_temp_variable = { EAG_essex_influence_level = 1003.arms_factory_level }
-		add_to_temp_variable = { EAG_essex_influence_level = 1158.industrial_complex_level }
-		add_to_temp_variable = { EAG_essex_influence_level = 1158.infrastructure_level }
-		add_to_temp_variable = { EAG_essex_influence_level = 1158.arms_factory_level }
-		multiply_temp_variable = { EAG_essex_influence_level = 10 }
+		set_temp_variable = { EAG_east_england_influence_level = 0 }
+		add_to_temp_variable = { EAG_east_england_influence_level = 1157.industrial_complex_level }
+		add_to_temp_variable = { EAG_east_england_influence_level = 1157.infrastructure_level }
+		add_to_temp_variable = { EAG_east_england_influence_level = 1157.arms_factory_level }
+		add_to_temp_variable = { EAG_east_england_influence_level = 1160.industrial_complex_level }
+		add_to_temp_variable = { EAG_east_england_influence_level = 1160.infrastructure_level }
+		add_to_temp_variable = { EAG_east_england_influence_level = 1160.arms_factory_level }
+		add_to_temp_variable = { EAG_east_england_influence_level = 1159.industrial_complex_level }
+		add_to_temp_variable = { EAG_east_england_influence_level = 1159.infrastructure_level }
+		add_to_temp_variable = { EAG_east_england_influence_level = 1159.arms_factory_level }
+		add_to_temp_variable = { EAG_east_england_influence_level = 1003.industrial_complex_level }
+		add_to_temp_variable = { EAG_east_england_influence_level = 1003.infrastructure_level }
+		add_to_temp_variable = { EAG_east_england_influence_level = 1003.arms_factory_level }
+		add_to_temp_variable = { EAG_east_england_influence_level = 1158.industrial_complex_level }
+		add_to_temp_variable = { EAG_east_england_influence_level = 1158.infrastructure_level }
+		add_to_temp_variable = { EAG_east_england_influence_level = 1158.arms_factory_level }
+		multiply_temp_variable = { EAG_east_england_influence_level = 28 }
 		add_to_variable = {
 			var = EAG_our_influence_level
-			value = EAG_essex_influence_level
+			value = EAG_east_england_influence_level
+		}
+		EAG = {
+			set_country_flag = EAG_voting_east_england_agreed
 		}
     }
 	option = {
@@ -2901,6 +2974,7 @@ country_event = {
 	}
 	option = {
 		name = EAG_event.79.a
+		custom_effect_tooltip = EAG_project_city_spending_1.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -2934,10 +3008,13 @@ country_event = {
 		add_to_temp_variable = { EAG_essex_influence_level = 1158.industrial_complex_level }
 		add_to_temp_variable = { EAG_essex_influence_level = 1158.infrastructure_level }
 		add_to_temp_variable = { EAG_essex_influence_level = 1158.arms_factory_level }
-		multiply_temp_variable = { EAG_essex_influence_level = 10 }
+		multiply_temp_variable = { EAG_essex_influence_level = 15 }
 		add_to_variable = {
 			var = EAG_our_influence_level
 			value = EAG_essex_influence_level
+		}
+		EAG = {
+			set_country_flag = EAG_voting_essex_agreed
 		}
     }
 	option = {
@@ -2968,7 +3045,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = EAG_event.80.a	
+		name = EAG_event.80.a
+		custom_effect_tooltip = EAG_project_city_spending_1.tt		
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3016,6 +3094,9 @@ country_event = {
 			var = EAG_our_influence_level
 			value = EAG_mercia_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_mercia_agreed
+		}
     }
 	option = {
 		name = EAG_event.80.b
@@ -3046,6 +3127,7 @@ country_event = {
 	}
 	option = {
 		name = EAG_event.81.a	
+		custom_effect_tooltip = EAG_project_city_spending_1.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3084,6 +3166,9 @@ country_event = {
 			var = EAG_our_influence_level
 			value = EAG_northumbria_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_northumbria_agreed
+		}
     }
 	option = {
 		name = EAG_event.81.b
@@ -3114,6 +3199,7 @@ country_event = {
 	}
 	option = {
 		name = EAG_event.82.a	
+		custom_effect_tooltip = EAG_project_city_spending_1.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3144,10 +3230,13 @@ country_event = {
 		add_to_temp_variable = { EAG_southern_england_influence_level = 1002.industrial_complex_level }
 		add_to_temp_variable = { EAG_southern_england_influence_level = 1002.infrastructure_level }
 		add_to_temp_variable = { EAG_southern_england_influence_level = 1002.arms_factory_level }
-		multiply_temp_variable = { EAG_southern_england_influence_level = 10 }
+		multiply_temp_variable = { EAG_southern_england_influence_level = 16 }
 		add_to_variable = {
 			var = EAG_our_influence_level
 			value = EAG_southern_england_influence_level
+		}
+		EAG = {
+			set_country_flag = EAG_voting_southern_england_agreed
 		}
     }
 	option = {
@@ -3178,7 +3267,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = EAG_event.83.a	
+		name = EAG_event.83.a
+		custom_effect_tooltip = EAG_project_city_spending_1.tt		
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3223,6 +3313,9 @@ country_event = {
 			var = EAG_our_influence_level
 			value = EAG_wessex_influence_level
 		}
+		EAG = {
+			set_country_flag = EAG_voting_wessex_agreed
+		}
     }
 	option = {
 		name = EAG_event.83.b
@@ -3238,9 +3331,6 @@ country_event = {
 	option = {
 		name = EAG_event.84.a	
 		add_political_power = 75
-		EAG = {
-			clr_country_flag = EAG_project_launched
-		}
     }
 }
 
@@ -3252,9 +3342,6 @@ country_event = {
 	option = {
 		name = EAG_event.85.a	
 		add_political_power = 75
-		EAG = {
-			clr_country_flag = EAG_project_launched
-		}
     }
 }
 
@@ -3266,9 +3353,6 @@ country_event = {
 	option = {
 		name = EAG_event.86.a	
 		add_political_power = 75
-		EAG = {
-			clr_country_flag = EAG_project_launched
-		}
     }
 }
 
@@ -3280,9 +3364,6 @@ country_event = {
 	option = {
 		name = EAG_event.87.a	
 		add_political_power = 75
-		EAG = {
-			clr_country_flag = EAG_project_launched
-		}
     }
 }
 
@@ -3294,9 +3375,6 @@ country_event = {
 	option = {
 		name = EAG_event.88.a	
 		add_political_power = 75
-		EAG = {
-			clr_country_flag = EAG_project_launched
-		}
     }
 }
 
@@ -3308,11 +3386,137 @@ country_event = {
 	option = {
 		name = EAG_event.89.a	
 		add_political_power = 75
+    }
+}
+
+country_event = {
+	id = EAG_event.90
+	title = EAG_event.90.t
+	desc = EAG_event.90.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.90.a
+		clr_country_flag =	EAG_voting_wessex_agreed
+		clr_country_flag =	EAG_voting_southern_england_agreed
+		clr_country_flag =	EAG_voting_northumbria_agreed
+		clr_country_flag =	EAG_voting_mercia_agreed
+		clr_country_flag =	EAG_voting_essex_agreed
+		clr_country_flag =	EAG_voting_east_england_agreed		
+		add_political_power = 50
 		EAG = {
 			clr_country_flag = EAG_project_launched
 		}
     }
 }
+
+country_event = {
+	id = EAG_event.91
+	title = EAG_event.91
+	desc = EAG_event.91
+	is_triggered_only = yes	
+	trigger = {
+		EAG = {
+			NOT = {
+				has_country_flag = EAG_voting_east_england_agreed	
+			}
+		}
+	}
+	option = {
+		name = EAG_event.91.a	
+		add_stability = -0.02
+    }
+}
+
+country_event = {
+	id = EAG_event.92
+	title = EAG_event.92
+	desc = EAG_event.92
+	is_triggered_only = yes	
+	trigger = {
+		EAG = {
+			NOT = {
+				has_country_flag = EAG_voting_essex_agreed
+			}
+		}
+	}
+	option = {
+		name = EAG_event.92.a	
+		add_stability = -0.02
+    }
+}
+
+country_event = {
+	id = EAG_event.93
+	title = EAG_event.93
+	desc = EAG_event.93
+	is_triggered_only = yes	
+	trigger = {
+		EAG = {
+			NOT = {
+				has_country_flag = EAG_voting_mercia_agreed	
+			}
+		}
+	}
+	option = {
+		name = EAG_event.93.a	
+		add_stability = -0.02
+    }
+}
+
+country_event = {
+	id = EAG_event.94
+	title = EAG_event.94
+	desc = EAG_event.94
+	is_triggered_only = yes	
+	trigger = {
+		EAG = {
+			NOT = {
+				has_country_flag = EAG_voting_northumbria_agreed	
+			}
+		}
+	}
+	option = {
+		name = EAG_event.94.a	
+		add_stability = -0.02
+    }
+}
+
+country_event = {
+	id = EAG_event.95
+	title = EAG_event.95
+	desc = EAG_event.95
+	is_triggered_only = yes	
+	trigger = {
+		EAG = {
+			NOT = {
+				has_country_flag = EAG_voting_southern_england_agreed	
+			}
+		}
+	}
+	option = {
+		name = EAG_event.95.a	
+		add_stability = -0.02
+    }
+}
+
+country_event = {
+	id = EAG_event.96
+	title = EAG_event.96
+	desc = EAG_event.96
+	is_triggered_only = yes	
+	trigger = {
+		EAG = {
+			NOT = {
+				has_country_flag = EAG_voting_wessex_agreed	
+			}
+		}
+	}
+	option = {
+		name = EAG_event.96.a	
+		add_stability = -0.02
+    }
+}
+
 
 country_event = {
 	id = EAG_event.1337
