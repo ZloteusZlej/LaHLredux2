@@ -3632,6 +3632,28 @@ country_event = { #CCTV
     }
 }
 
+country_event = { #English "Sport"
+	id = EAG_event.101
+	title = EAG_event.101
+	desc = EAG_event.101
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.101.a	
+		add_political_power = 25
+		add_ideas = EAG_football_stadiums
+    }
+	option = {
+		name = EAG_event.101.b
+		add_political_power = 25
+		add_ideas = EAG_football_stadiums
+    }
+	option = {
+		name = EAG_event.101.c	
+		add_political_power = 25
+		add_ideas = EAG_football_stadiums
+    }
+}
+
 
 country_event = {
 	id = EAG_event.1337
