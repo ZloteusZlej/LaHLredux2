@@ -2161,3 +2161,108 @@ shared_focus = {
 	x = 10
 	y = 6
 }
+
+shared_focus = {
+	id = EAG_new_dwellings 
+	icon = GFX_goal_EAG_new_dwellings
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_end_of_the_exploitation
+	}
+	completion_reward = {
+		add_ideas = EAG_simplified_building
+	}
+	x = 12
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_exchange_trading_services
+	icon = GFX_goal_EAG_exchange_trading_services
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_end_of_the_exploitation
+	}
+	completion_reward = {
+		add_ideas = EAG_service_exchange
+	}
+	x = 14
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_cottage_industry
+	icon = GFX_goal_EAG_cottage_industry
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_simpler_life
+	}
+	prerequisite = {
+		focus = EAG_new_dwellings
+	}
+	prerequisite = {
+		focus = EAG_exchange_trading_services
+	}
+	completion_reward = {
+		add_ideas = EAG_cottage_industry_bonus
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 2
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+	}
+	x = 11
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_currency_for_every_commune
+	icon = GFX_goal_EAG_currency_for_every_commune
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_simpler_life
+	}
+	prerequisite = {
+		focus = EAG_new_dwellings
+	}
+	prerequisite = {
+		focus = EAG_exchange_trading_services
+	}
+	completion_reward = {
+		add_ideas = EAG_local_currency
+		add_political_power = 55
+	}
+	x = 13
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_diggers_cooperatives 
+	icon = GFX_goal_EAG_diggers_cooperatives
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_currency_for_every_commune
+	}
+	prerequisite = {
+		focus = EAG_cottage_industry
+	}
+	mutually_exclusive = {
+		focus = EAG_encourage_recycling
+	}
+	completion_reward = {
+		add_political_power = 45
+	}
+	x = 11
+	y = 8
+}

@@ -1660,6 +1660,95 @@ ideas = {
 			}
 		}
 	}
+	
+	hidden_ideas = {
+		EAG_anticonsumerism = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_simplified_building = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				state_production_speed_infrastructure_factor = 0.1
+				state_production_speed_industrial_complex_factor = 0.1
+				state_production_speed_bunker_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_service_exchange = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.15
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_cottage_industry_bonus = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_local_currencies = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+	}
 	##City Influence Ideas##
 	country = {
 		EAG_festivities_people = {

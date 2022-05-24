@@ -162,3 +162,19 @@ EAG_city_influence = {
 	allowed = { original_tag = EAG }
 	visible_when_empty = yes
 }
+
+EAG_digger_cooperatives_decisions = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			EAG = {
+				has_completed_focus = EAG_diggers_cooperatives
+			}
+	}
+	available = {
+			EAG = {
+				has_completed_focus = EAG_diggers_cooperatives
+			}
+	}
+}
