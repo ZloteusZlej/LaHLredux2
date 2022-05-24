@@ -2008,7 +2008,25 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.68.a	
-		add_political_power = 75
+		add_political_power = 25
+		random_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type =  radar_station
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type =  anti_air_building
+				level = 3
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
     }
 }
 
@@ -2019,7 +2037,19 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.69.a	
-		add_political_power = 75
+		add_political_power = 25
+		add_timed_idea = {
+			idea = EAG_festivities_people
+			days = 90
+		}
+    }
+	option = {
+		name = EAG_event.69.b
+		add_political_power = 25
+		add_timed_idea = {
+			idea = EAG_festivities_production 
+			days = 90
+		}
     }
 }
 
@@ -2030,7 +2060,27 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.70.a	
-		add_political_power = 75
+		add_political_power = 50
+		random_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 3
+		}
+    }
+	option = {
+		name = EAG_event.70.b
+		add_political_power = 50
+		random_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 3
+		}
     }
 }
 
@@ -2356,7 +2406,7 @@ country_event = {
 		}
     }
 	option = {
-		name = EAG_event.74.b|
+		name = EAG_event.74.b
 		custom_effect_tooltip = EAG_medium_city_spending.tt
 		trigger = {
 			EAG = {
@@ -3403,9 +3453,6 @@ country_event = {
 		clr_country_flag =	EAG_voting_essex_agreed
 		clr_country_flag =	EAG_voting_east_england_agreed		
 		add_political_power = 50
-		EAG = {
-			clr_country_flag = EAG_project_launched
-		}
     }
 }
 
@@ -3514,6 +3561,74 @@ country_event = {
 	option = {
 		name = EAG_event.96.a	
 		add_stability = -0.02
+    }
+}
+
+###NEW PROJECTS###
+country_event = { #Nuclear Project
+	id = EAG_event.97
+	title = EAG_event.97
+	desc = EAG_event.97
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.97.a	
+		add_political_power = 100
+		random_state = {
+			add_building_construction = {
+				type = nuclear_reactor
+				level = 2
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+    }
+}
+
+country_event = { #Football
+	id = EAG_event.98
+	title = EAG_event.98
+	desc = EAG_event.98
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.98.a	
+		add_political_power = 25
+		add_ideas = EAG_football_stadiums
+    }
+}
+
+country_event = { #Football Frenzy
+	id = EAG_event.99
+	title = EAG_event.99
+	desc = EAG_event.99
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.99.a	
+		add_political_power = -25
+		random_state = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+    }
+}
+
+country_event = { #CCTV
+	id = EAG_event.100
+	title = EAG_event.100
+	desc = EAG_event.100
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.100.a	
+		add_political_power = 50
+		add_stability = 0.5
+		add_war_support = 0.5
+    }
+	option = {
+		name = EAG_event.100.b
+		add_political_power = -75
+		add_stability = 0.15
+		upgrade_intelligence_agency = upgrade_form_department
     }
 }
 
