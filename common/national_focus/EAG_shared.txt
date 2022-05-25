@@ -2266,3 +2266,188 @@ shared_focus = {
 	x = 11
 	y = 8
 }
+
+shared_focus = {
+	id = EAG_encourage_recycling 
+	icon = GFX_goal_EAG_encourage_recycling
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_currency_for_every_commune
+	}
+	prerequisite = {
+		focus = EAG_cottage_industry
+	}
+	mutually_exclusive = {
+		focus = EAG_diggers_cooperatives
+	}
+	completion_reward = {
+		add_political_power = 35
+		add_ideas = EAG_recycling
+	}
+	x = 13
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_eternal_powers
+	icon = GFX_goal_EAG_eternal_powers
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_encourage_recycling
+		focus = EAG_diggers_cooperatives
+	}
+	completion_reward = {
+		add_political_power = 35
+		remove_ideas = {
+			EAG_local_currency
+			EAG_cottage_industry_bonus
+			EAG_service_exchange
+			EAG_anticonsumerism
+			EAG_simplified_building
+		}
+		add_to_variable = {
+					var = volk_dev
+					value = 2
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+		add_ideas = EAG_non_capitalist_economy
+	}
+	x = 12
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_the_end_of_banking 
+	icon = GFX_goal_EAG_the_end_of_banking
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_eternal_powers
+	}
+	completion_reward = {
+		add_political_power = 65
+		add_offsite_building = { type = industrial_complex level = 2 }
+		add_ideas = EAG_death_of_usury
+	}
+	x = 11
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_hands_off_the_commune
+	icon = GFX_goal_EAG_hands_off_the_commune
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_eternal_powers
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_non_capitalist_economy
+			add_idea = EAG_non_capitalist_economy_2
+		}
+		if = {
+			limit = {
+				has_idea = free_trade
+			}
+			swap_ideas = {
+				remove_idea = free_trade
+				add_idea = limited_exports
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = export_focus
+			}
+			swap_ideas = {
+				remove_idea = export_focus
+				add_idea = limited_exports
+			}
+		}
+		
+		if = {
+			limit = {
+				has_idea = free_trade
+			}
+			swap_ideas = {
+				remove_idea = free_trade
+				add_idea = partial_economic_mobilisation
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = low_economic_mobilisation
+			}
+			swap_ideas = {
+				remove_idea = low_economic_mobilisation
+				add_idea = partial_economic_mobilisation
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = partial_economic_mobilisation
+			}
+			swap_ideas = {
+				remove_idea = partial_economic_mobilisation
+				add_idea = war_economy
+			}
+		}
+	}
+	x = 13
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_hands_off_the_commune
+	icon = GFX_goal_EAG_hands_off_the_commune
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_eternal_powers
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_non_capitalist_economy_2
+			add_idea = EAG_non_capitalist_economy_3
+		}
+	}
+	x = 12
+	y = 11
+}
+
+shared_focus = {
+	id = EAG_hands_off_the_commune
+	icon = GFX_goal_EAG_hands_off_the_commune
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_eternal_powers
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_non_capitalist_economy_3
+			add_idea = EAG_non_capitalist_economy_4
+		}
+		add_political_power = 100
+		add_to_variable = {
+					var = volk_dev
+					value = 4
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+		add_to_variable = {
+					var = volk_mood
+					value = 3
+				}
+		clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}		
+	}
+	x = 12
+	y = 12
+}

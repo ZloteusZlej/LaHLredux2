@@ -1690,9 +1690,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				state_production_speed_infrastructure_factor = 0.1
-				state_production_speed_industrial_complex_factor = 0.1
-				state_production_speed_bunker_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_bunker_factor = 0.1
 			}
 		}
 	}
@@ -1749,6 +1749,162 @@ ideas = {
 			}
 		}
 	}
+	
+	hidden_ideas = {
+		EAG_recycling = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.2
+				political_power_factor = 0.05
+				equipment_capture_factor = 0.6
+			}
+		}
+	}
+	
+	country = {
+		EAG_non_capitalist_economy = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_bunker_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+				line_change_production_efficiency_factor = 0.15
+				political_power_factor = 0.15
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+	}
+	
+	country = {
+		EAG_non_capitalist_economy_2 = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.15
+				min_export = -0.05
+				fuel_gain_factor = 0.15
+				local_resources_factor = 0.25
+				production_speed_bunker_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+				line_change_production_efficiency_factor = 0.15
+				political_power_factor = 0.15
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.2
+			}
+		}
+	}
+	
+	country = {
+		EAG_non_capitalist_economy_3 = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.15
+				min_export = -0.05
+				fuel_gain_factor = 0.15
+				local_resources_factor = 0.25
+				production_speed_bunker_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.2
+				line_change_production_efficiency_factor = 0.15
+				political_power_factor = 0.15
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.2
+				production_lack_of_resource_penalty_factor = -0.1
+				supply_consumption_factor = -0.15
+				supply_node_range = 0.2
+			}
+		}
+	}
+	
+	country = {
+		EAG_non_capitalist_economy_4 = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_infrastructure_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				min_export = -0.05
+				fuel_gain_factor = 0.15
+				local_resources_factor = 0.25
+				production_speed_bunker_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.2
+				line_change_production_efficiency_factor = 0.15
+				political_power_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.2
+				production_lack_of_resource_penalty_factor = -0.1
+				supply_consumption_factor = -0.15
+				supply_node_range = 0.2
+				industrial_capacity_factory = 0.25
+				research_speed_factor = 0.15
+				
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_death_of_usury = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+	
 	##City Influence Ideas##
 	country = {
 		EAG_festivities_people = {
