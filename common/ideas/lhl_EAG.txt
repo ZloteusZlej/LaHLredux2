@@ -1658,10 +1658,22 @@ ideas = {
 				army_core_defence_factor = 0.15
 				army_core_attack_factor = 0.15
 			}
-moval_cost = -1
+		}
+	}
+	
+	hidden_ideas = {
+		EAG_anticonsumerism = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.1
 			}
 		}
 	}

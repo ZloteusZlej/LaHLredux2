@@ -9162,5 +9162,431 @@ EAG_city_influence = {
 
 
 EAG_digger_cooperatives_decisions = {
-		
+	EAG_kent_fuels_and_steels_cooperative = {
+		days_remove = 25
+			fire_only_once = yes
+			cost = 15
+			available = {
+				1002 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1002 = {
+					is_controlled_by = EAG
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1002
+				}
+			}
+			remove_effect = {
+				add_resource = {
+					type = steel
+					amount = 20
+					state = 1002
+			}
+			add_resource = {
+					type = oil
+					amount = 8
+					state = 1002
+			}
+		}	
+	}	
+	
+	EAG_cornwall_potassium_and_tin_cooperative = {
+		days_remove = 25
+			fire_only_once = yes
+			cost = 15
+			available = {
+				999 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				999 = {
+					is_controlled_by = EAG
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 999
+				}
+			}
+			remove_effect = {
+				add_resource = {
+					type = aluminium
+					amount = 25
+					state = 999
+			}
+		}	
+	}
+	
+	EAG_sussex_fuel_cooperative = {
+		days_remove = 25
+			fire_only_once = yes
+			cost = 15
+			available = {
+				1001 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1001 = {
+					is_controlled_by = EAG
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1001
+				}
+			}
+			remove_effect = {
+				add_resource = {
+					type = oil
+					amount = 8
+					state = 1001
+			}
+		}	
+	}
+	
+	EAG_bristol_strontium_cooperative = {
+		days_remove = 25
+			fire_only_once = yes
+			cost = 15
+			available = {
+				1006 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1006 = {
+					is_controlled_by = EAG
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1006
+				}
+			}
+			remove_effect = {
+				add_resource = {
+					type = rubber
+					amount = 15
+					state = 1006
+			}
+		}	
+	}
+	
+	
+	EAG_northampton_iron_cooperative = {
+		days_remove = 25
+			fire_only_once = yes
+			cost = 15
+			available = {
+				1155 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1155 = {
+					is_controlled_by = EAG
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1155
+				}
+			}
+			remove_effect = {
+				add_resource = {
+					type = steel
+					amount = 20
+					state = 1155
+			}
+		}	
+	}
+	
+	EAG_birminghem_coal_cooperative = {
+		days_remove = 25
+			fire_only_once = yes
+			cost = 15
+			available = {
+				1154 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1154 = {
+					is_controlled_by = EAG
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1154
+				}
+			}
+			remove_effect = {
+				add_resource = {
+					type = steel
+					amount = 8
+					state = 1154
+			}
+		}	
+	}
+	
+	EAG_nottinghamshire_coal_cooperatives = {
+		days_remove = 25
+			fire_only_once = yes
+			cost = 20
+			available = {
+				1154 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1154 = {
+					is_controlled_by = EAG
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1154
+				}
+			}
+			remove_effect = {
+				add_resource = {
+					type = steel
+					amount = 24
+					state = 1154
+			}
+		}	
+	}
+	
+	EAG_lincolnshire_iron_cooperative = {
+		days_remove = 25
+			fire_only_once = yes
+			cost = 15
+			available = {
+				1144 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1144 = {
+					is_controlled_by = EAG
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1144
+				}
+			}
+			remove_effect = {
+				add_resource = {
+					type = steel
+					amount = 8
+					state = 1144
+			}
+		}	
+	}
+	
+	EAG_cumberland_metalworks_cooperatives = {
+		days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1145 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1145 = {
+					is_controlled_by = EAG
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1145
+				}
+			}
+			remove_effect = {
+				add_resource = {
+					type = steel
+					amount = 16
+					state = 1145
+			}
+			add_resource = {
+					type = tungsten
+					amount = 8
+					state = 1145
+			}
+		}	
+	}
+	
+	EAG_northumbria_fuels_cooperatives = {
+		days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1012 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1012 = {
+					is_controlled_by = EAG
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1012
+				}
+			}
+			remove_effect = {
+				add_resource = {
+					type = steel
+					amount = 8
+					state = 1012
+				}
+				add_resource = {
+					type = oil
+					amount = 24
+					state = 1012
+				}
+		}	
+	}
+	
+	EAG_scottish_fuels_and_steel_cooperatives = {
+		days_remove = 25
+			fire_only_once = yes
+			cost = 25
+			available = {
+				1163 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1163 = {
+					is_controlled_by = EAG
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1163
+				}
+			}
+			remove_effect = {
+				add_resource = {
+					type = steel
+					amount = 6
+					state = 1164
+				}
+				add_resource = {
+					type = steel
+					amount = 6
+					state = 1163
+				}
+				add_resource = {
+					type = oil
+					amount = 8
+					state = 1163
+				}
+		}	
+	}
+	
+	EAG_gwent_coal_cooperative = {
+		days_remove = 25
+			fire_only_once = yes
+			cost = 15
+			available = {
+				1149 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1149 = {
+					is_controlled_by = EAG
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1149
+				}
+			}
+			remove_effect = {
+				add_resource = {
+					type = steel
+					amount = 8
+					state = 1149
+			}
+		}	
+	}
+	
+	EAG_gwynedd_coal_and_copper_cooperatives = {
+		days_remove = 25
+			fire_only_once = yes
+			cost = 15
+			available = {
+				1149 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1149 = {
+					is_controlled_by = EAG
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1149
+				}
+			}
+			remove_effect = {
+				add_resource = {
+					type = steel
+					amount = 8
+					state = 1149
+			}
+				add_resource = {
+					type = aluminium
+					amount = 8
+					state = 1149
+			}
+		}	
+	}
+	
+	EAG_tynagh_zinc_and_lead_cooperative = {
+		days_remove = 25
+			fire_only_once = yes
+			cost = 15
+			available = {
+				1024 = {
+					is_controlled_by = EAG
+				}
+			}
+			visible = {
+				1024 = {
+					is_controlled_by = EAG
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1024
+				}
+			}
+			remove_effect = {
+				add_resource = {
+					type = chromium
+					amount = 8
+					state = 1024
+			}
+				add_resource = {
+					type = aluminium
+					amount = 8
+					state = 1024
+			}
+		}	
+	}
 }	
