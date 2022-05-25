@@ -3594,6 +3594,14 @@ country_event = { #Football
 		name = EAG_event.98.a	
 		add_political_power = 25
 		add_ideas = EAG_football_stadiums
+		hidden_effect = {
+			EAG = {
+				country_event = {
+				days = 20
+				id = EAG_event.99
+				}
+			}
+		}
     }
 }
 
@@ -3641,17 +3649,224 @@ country_event = { #English "Sport"
 	option = {
 		name = EAG_event.101.a	
 		add_political_power = 25
-		add_ideas = EAG_football_stadiums
+		add_ideas = EAG_legal_dog_fights
     }
 	option = {
 		name = EAG_event.101.b
 		add_political_power = 25
-		add_ideas = EAG_football_stadiums
+		add_ideas = EAG_legal_football_craze
     }
 	option = {
 		name = EAG_event.101.c	
 		add_political_power = 25
-		add_ideas = EAG_football_stadiums
+		add_ideas = EAG_legal_boxing_craze
+    }
+}
+
+country_event = { #Doctor Who
+	id = EAG_event.102
+	title = EAG_event.102
+	desc = EAG_event.102
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.102.a	
+		hidden_effect = {
+			EAG = {
+				country_event = {
+				days = 75
+				id = EAG_event.103
+				}
+			}
+		}
+    }
+	option = {
+		name = EAG_event.102.b
+		add_political_power = 25
+		hidden_effect = {
+			EAG = {
+				country_event = {
+				days = 75
+				id = EAG_event.104
+				}
+			}
+		}
+    }
+	option = {
+		name = EAG_event.102.c	
+		add_political_power = 25
+		hidden_effect = {
+			EAG = {
+				country_event = {
+				days = 75
+				id = EAG_event.105
+				}
+			}
+		}
+    }
+}
+
+country_event = { #Doctor Who Sad
+	id = EAG_event.103
+	title = EAG_event.103
+	desc = EAG_event.103
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.103.a	
+		add_political_power = -25
+		add_stability = -0.05
+		add_manpower = 10000
+    }
+}
+
+country_event = { #Doctor Who Happy
+	id = EAG_event.104
+	title = EAG_event.104
+	desc = EAG_event.104
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.104.a	
+		add_political_power = 100
+		add_stability = 0.1
+    }
+}
+
+country_event = { #Doctor Who Furious
+	id = EAG_event.105
+	title = EAG_event.105
+	desc = EAG_event.105
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.105.a	
+		add_political_power = -75
+		random_state = {
+			damage_building = {
+				type = infrastructure
+				damage = 2
+			}
+		}
+		add_stability = 0.12
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = radar_tech
+		}
+    }
+}
+
+country_event = { #Monument
+	id = EAG_event.106
+	title = EAG_event.106
+	desc = EAG_event.106
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.106.a	
+		hidden_effect = {
+			EAG = {
+				country_event = {
+				days = 75
+				id = EAG_event.107
+				}
+			}
+		}
+    }
+	option = {
+		name = EAG_event.106.b
+		add_political_power = 25
+		hidden_effect = {
+			EAG = {
+				country_event = {
+				days = 75
+				id = EAG_event.108
+				}
+			}
+		}
+    }
+	option = {
+		name = EAG_event.106.c	
+		add_political_power = 25
+		hidden_effect = {
+			EAG = {
+				country_event = {
+				days = 75
+				id = EAG_event.109
+				}
+			}
+		}
+    }
+	option = {
+		name = EAG_event.106.e
+		add_political_power = 25
+		hidden_effect = {
+			EAG = {
+				country_event = {
+				days = 75
+				id = EAG_event.110
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.107
+	title = EAG_event.107.t
+	desc = EAG_event.107.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.107.a	
+		add_province_modifier = {
+			static_modifiers = { henry_v_statue }
+			province = {
+				id = 17539
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.108
+	title = EAG_event.108.t
+	desc = EAG_event.108.d
+	is_triggered_only = yes	
+	option = {
+		add_province_modifier = {
+			static_modifiers = { william_the_conqueror_statue }
+			province = {
+				id = 17539
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.109
+	title = EAG_event.109.t
+	desc = EAG_event.109.d
+	is_triggered_only = yes
+	option = {
+		add_province_modifier = {
+			static_modifiers = { margaret_thatcher_statue }
+			province = {
+				id = 17539
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.110
+	title = EAG_event.110.t
+	desc = EAG_event.110.d
+	is_triggered_only = yes	
+	option = {
+		1160 = {
+			add_province_modifier = {
+				static_modifiers = { gunzel_statue }
+				province = {
+					id = 17539
+				}
+			}
+		}
     }
 }
 
