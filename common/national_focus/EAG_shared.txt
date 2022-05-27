@@ -998,9 +998,9 @@ shared_focus = {
 				min = 0
 				max = 25
 		}
-		all_army_leader = {
+		every_character = {
 			limit = {
-				is_leading_army = yes
+				is_unit_leader = yes
 			}
 			add_skill_level = 1
 		}
@@ -2453,4 +2453,192 @@ shared_focus = {
 }
 
 ##NATIONAL ANARCHISTS TREE ADMINISTRATION##
+
+##NATIONAL ANARCHISTS TREE ARMY##
+
+shared_focus = {
+	id = EAG_to_the_barricades
+	icon = GFX_goal_EAG_to_the_barricades
+	cost = 4.3
+	completion_reward = {
+		army_experience = 15
+		add_political_power = 50
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 3
+			category = land_doctrine
+		}
+	}
+	x = 19
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_communards_duty
+	icon = GFX_goal_EAG_communards_duty
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_to_the_barricades
+	}
+	completion_reward = {
+		add_ideas = EAG_communards_duty_bonus
+	}
+	x = 18
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_mass_weaponization
+	icon = GFX_goal_EAG_mass_weaponization
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_to_the_barricades
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = EAG_weapons_distribution
+			days = 365
+		}
+		add_ideas = EAG_free_english_army
+	}
+	x = 20
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_irregular_service
+	icon = GFX_goal_EAG_irregular_service
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_mass_weaponization
+	}
+	prerequisite = {
+		focus = EAG_communards_duty
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_free_english_army
+			add_idea = EAG_free_english_army_2
+		}
+	}
+	army_experience = 10
+	x = 17
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_self_made_generals
+	icon = GFX_goal_EAG_self_made_generals
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_irregular_service
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_free_english_army_2
+			add_idea = EAG_free_english_army_3
+		}
+		every_character = {
+			limit = {
+				is_unit_leader = yes
+			}
+			add_skill_level = 1
+		}
+		army_experience = 15
+	}
+	x = 17
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_english_tachanka
+	icon = GFX_goal_EAG_english_tachanka
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_mass_weaponization
+	}
+	prerequisite = {
+		focus = EAG_communards_duty
+	}
+	completion_reward = {
+		army_experience = 5
+		EAG = {
+			set_technology = {
+				battle_bus = 1
+			}
+		}
+		add_ideas = EAG_toyotta_tactics
+		add_equipment_to_stockpile = {
+			type = battle_bus_equipment
+			amount = 200
+			producer = EAG
+		}
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 200
+			producer = EAG
+		}
+	}
+	x = 19
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_killdosers
+	icon = GFX_goal_EAG_killdosers
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_english_tachanka
+	}
+	completion_reward = {
+		army_experience = 10
+		add_ideas = EAG_improvised_armor
+		add_equipment_to_stockpile = {
+			type = infantry_fighting_vehicle_equipment
+			amount = 300
+			producer = EAG
+		}
+	}
+	x = 19
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_communal_air_defence
+	icon = GFX_goal_EAG_communal_air_defence
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_mass_weaponization
+	}
+	prerequisite = {
+		focus = EAG_communards_duty
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				NOT = {
+					has_tech = obsolete_anti_air
+				}
+			}
+			EAG = {
+				set_technology = {
+					obsolete_anti_air = 1
+				}
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				is_fully_controlled_by = EAG
+			}
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+	x = 21
+	y = 7
+}
 
