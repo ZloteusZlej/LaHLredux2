@@ -1971,6 +1971,34 @@ country_event = {
     }
 }
 
+country_event = {
+	id = EAG_event.53
+	title = EAG_event.53.t
+	desc = EAG_event.53.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.53.a	
+		add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 150
+				producer = EAG
+		}
+		add_equipment_to_stockpile = {
+				type = CAS_equipment
+				amount = 50
+				producer = EAG
+		}
+    }
+	option = {
+		name = EAG_event.53.b	
+		add_equipment_to_stockpile = {
+				type = attack_helicopter_equipment
+				amount = 200
+				producer = EAG
+		}
+    }
+}
+
 ##CITY EVENTS##
 country_event = {
 	id = EAG_event.65

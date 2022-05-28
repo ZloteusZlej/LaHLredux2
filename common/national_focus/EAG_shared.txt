@@ -2637,8 +2637,266 @@ shared_focus = {
 			}
 			add_extra_state_shared_building_slots = 1
 		}
+		air_experience = 10
 	}
 	x = 21
 	y = 7
 }
 
+shared_focus = {
+	id = EAG_free_the_skies
+	icon = GFX_goal_EAG_free_the_skies
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_communal_air_defence
+	}
+	completion_reward = {
+		add_ideas = EAG_free_aviators
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.53
+			}
+		}
+		air_experience = 15
+	}
+	x = 21
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_iron_rain
+	icon = GFX_goal_EAG_iron_rain
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_self_made_generals
+	}
+	prerequisite = {
+		focus = EAG_killdosers
+	}
+	prerequisite = {
+		focus = EAG_free_the_skies
+	}
+	completion_reward = {
+		army_experience = 15
+		swap_ideas = {
+			remove_idea = EAG_free_english_army_3
+			add_idea = EAG_free_english_army_4
+		}
+	}
+	x = 19
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_guardians_of_the_revolution
+	icon = GFX_goal_EAG_guardians_of_the_revolution
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_iron_rain
+	}
+	mutually_exclusive = {
+		focus = EAG_the_finniest_men_of_communes
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_free_english_army_4
+			add_idea = EAG_free_english_army_5
+		}
+		division_template = {
+			name = "English Revolutionary Guards"
+			division_names_group = EAG_INF_01
+			is_locked = yes
+			regiments = {
+				urban_forces = { x = 0 y = 0 }	
+				urban_forces = { x = 0 y = 1 }
+				urban_forces = { x = 0 y = 2 }	
+				urban_forces = { x = 0 y = 3 }
+				urban_forces = { x = 1 y = 0 }
+				urban_forces = { x = 1 y = 1 }
+				artillery_brigade = { x = 1 y = 2 }
+			}
+			support = { 
+				engineer = { x = 0 y = 0 } 	
+				recon = { x = 0 y = 1 }
+				signal_company = = { x = 0 y = 2 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Batalion Winstanley\" division_template = \"English Revolutionary Guards\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+			create_unit = {
+				division = "name = \"Batalion Everard\" division_template = \"English Revolutionary Guards\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+			create_unit = {
+				division = "name = \"Batalion Coppe\" division_template = \"English Revolutionary Guards\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+			create_unit = {
+				division = "name = \"Batalion Bauthumley\" division_template = \"English Revolutionary Guards\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+		}
+		add_to_variable = {
+					var = volk_dev
+					value = -3
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+	}
+	x = 18
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_the_finniest_men_of_communes
+	icon = GFX_goal_EAG_the_finniest_men_of_communes
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_iron_rain
+	}
+	mutually_exclusive = {
+		focus = EAG_guardians_of_the_revolution
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_free_english_army_4
+			add_idea = EAG_free_english_army_5
+		}
+		division_template = {
+			name = "Black Jagers"
+			division_names_group = EAG_INF_01
+			is_locked = yes
+			regiments = {
+				mountaineers = { x = 0 y = 0 }	
+				mountaineers = { x = 0 y = 1 }
+				mountaineers = { x = 0 y = 2 }	
+				mountaineers = { x = 0 y = 3 }
+				mountaineers = { x = 1 y = 0 }
+				mountaineers = { x = 1 y = 1 }
+				mountaineers = { x = 1 y = 2 }
+				mountaineers = { x = 1 y = 3 }
+			}
+			support = { 
+				recon = { x = 0 y = 0 }
+			}
+		}
+		division_template = {
+			name = "Revolutionary Marines"
+			division_names_group = EAG_INF_01
+			is_locked = yes
+			regiments = {
+				marine = { x = 0 y = 0 }	
+				marine = { x = 0 y = 1 }
+				marine = { x = 0 y = 2 }	
+				marine = { x = 0 y = 3 }
+				marine = { x = 1 y = 0 }
+				marine = { x = 1 y = 1 }
+				marine = { x = 1 y = 2 }
+				marine = { x = 1 y = 3 }
+			}
+			support = { 
+				engineer = { x = 0 y = 0 }
+			}
+		}
+		division_template = {
+			name = "Stormtroopers"
+			division_names_group = EAG_INF_01
+			is_locked = yes
+			regiments = {
+				urban_forces = { x = 0 y = 0 }	
+				urban_forces = { x = 0 y = 1 }
+				urban_forces = { x = 0 y = 2 }	
+				urban_forces = { x = 0 y = 3 }
+				urban_forces = { x = 1 y = 0 }
+				urban_forces = { x = 1 y = 1 }
+				urban_forces = { x = 1 y = 2 }
+				urban_forces = { x = 1 y = 3 }
+			}
+			support = { 
+				signal_company = { x = 0 y = 0 }
+			}
+		}
+		division_template = {
+			name = "Mobile Company"
+			division_names_group = EAG_INF_01
+			is_locked = yes
+			regiments = {
+				motorized = { x = 0 y = 0 }	
+				motorized = { x = 0 y = 1 }
+				motorized = { x = 0 y = 2 }	
+				motorized = { x = 0 y = 3 }
+				motorized = { x = 1 y = 0 }
+				motorized = { x = 1 y = 1 }
+				motorized = { x = 1 y = 2 }
+				motorized = { x = 1 y = 3 }
+			}
+			support = { 
+				engineer = { x = 0 y = 0 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Norwich Riflemen\" division_template = \"Black Jagers\" start_experience_factor = 1.5 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+			create_unit = {
+				division = "name = \"Thames Marines\" division_template = \"Revolutionary Marines"\" start_experience_factor = 1.5 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+			create_unit = {
+				division = "name = \"Londoneers\" division_template = \"Stormtroopers"\" start_experience_factor = 1.5 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+			create_unit = {
+				division = "name = \"Free Truckers\" division_template = \"Mobile Company"\" start_experience_factor = 1.5 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+		}
+		add_to_variable = {
+					var = volk_mood
+					value = -3
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+	}
+	x = 20
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_army_of_the_people
+	icon = GFX_goal_EAG_army_of_the_people
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_the_finniest_men_of_communes
+		focus = EAG_guardians_of_the_revolution
+	}
+	completion_reward = {
+		add_political_power = 100
+		army_experience = 50
+		swap_ideas = {
+			remove_idea = EAG_free_english_army_5
+			add_idea = EAG_free_english_army_6
+		}
+	}
+	x = 19
+	y = 11
+}
