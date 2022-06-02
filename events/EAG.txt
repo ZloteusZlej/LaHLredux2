@@ -1999,6 +1999,159 @@ country_event = {
     }
 }
 
+country_event = {
+	id = EAG_event.54
+	title = EAG_event.54.t
+	desc = EAG_event.54.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.54.a	
+		set_country_flag = EAG_nsis_cooperation
+    }
+	option = {
+		name = EAG_event.54.b	
+		add_political_power = 15
+    }
+}
+
+country_event = {
+	id = EAG_event.55
+	title = EAG_event.55.t
+	desc = EAG_event.55.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.55.a	
+		1160 = {
+			add_manpower = -50000
+		}
+		1159 = {
+			add_manpower = 25000
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		1158 = {
+			add_manpower = 25000
+			add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		EAG = {
+			country_event = {
+				days = 5
+				id = EAG_event.56
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.56
+	title = EAG_event.56.t
+	desc = EAG_event.56.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.56.a	
+		1160 = {
+			add_manpower = -50000
+		}
+		1157 = {
+			add_manpower = 50000
+			
+		}
+		EAG = {
+			country_event = {
+				days = 5
+				id = EAG_event.57
+			}
+		}
+		add_research_slot = 1
+    }
+}
+
+country_event = {
+	id = EAG_event.57
+	title = EAG_event.57.t
+	desc = EAG_event.57.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.57.a	
+		1160 = {
+			add_manpower = -50000
+		}
+		1003 = {
+			add_manpower = 50000
+			
+		}
+		EAG = {
+			country_event = {
+				days = 5
+				id = EAG_event.58
+			}
+		}
+		army_experience = 25
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 3
+			category = land_doctrine
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.58
+	title = EAG_event.58.t
+	desc = EAG_event.58.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.58.a	
+		1160 = {
+			add_manpower = -50000
+		}
+		1004 = {
+			add_manpower = 50000
+			
+		}
+		EAG = {
+			country_event = {
+				days = 5
+				id = EAG_event.59
+			}
+			add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 2
+		}
+		
+    }
+}
+
+country_event = {
+	id = EAG_event.58
+	title = EAG_event.58.t
+	desc = EAG_event.58.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.58.a	
+		1160 = {
+			add_manpower = -50000
+		}
+		1001 = {
+			add_manpower = 50000
+			
+		}
+		add_ideas = EAG_norwich_model_commune
+    }
+}
+
 ##CITY EVENTS##
 country_event = {
 	id = EAG_event.65

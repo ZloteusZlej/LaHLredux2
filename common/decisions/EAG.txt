@@ -9589,4 +9589,222 @@ EAG_digger_cooperatives_decisions = {
 			}
 		}	
 	}
+}
+
+EAG_nsis_coop = {
+	EAG_cyber_attack_on_kent = {
+		days_remove = 30
+		days_re_enable = 54
+		cost = 35
+		complete_effect = {
+			set_country_flag = current_ddos
+		}
+		remove_effect = {
+			clr_country_flag = current_ddos
+		}
+		targeted_modifier = {
+			tag = KNT
+			attack_bonus_against = 0.2
+			breakthrough_bonus_against = 0.2
+		}
+		available = {
+			NOT = {
+				has_country_flag = current_ddos
+			}
+		}
+	}	
+	EAG_cyber_attack_on_mercia = {
+		days_remove = 30
+		days_re_enable = 54
+		cost = 35
+		complete_effect = {
+			set_country_flag = current_ddos
+		}
+		remove_effect = {
+			clr_country_flag = current_ddos
+		}
+		targeted_modifier = {
+			tag = MRC
+			attack_bonus_against = 0.2
+			breakthrough_bonus_against = 0.2
+		}
+		available = {
+			NOT = {
+				has_country_flag = current_ddos
+			}
+		}
+	}
+	EAG_cyber_attack_on_northumbria = {
+		days_remove = 30
+		days_re_enable = 54
+		cost = 35
+		complete_effect = {
+			set_country_flag = current_ddos
+		}
+		remove_effect = {
+			clr_country_flag = current_ddos
+		}
+		targeted_modifier = {
+			tag = NTH
+			attack_bonus_against = 0.2
+			breakthrough_bonus_against = 0.2
+		}
+		available = {
+			NOT = {
+				has_country_flag = current_ddos
+			}
+		}
+	}
+	
+	EAG_cyber_attack_on_wessex = {
+		days_remove = 30
+		days_re_enable = 54
+		cost = 35
+		complete_effect = {
+			set_country_flag = current_ddos
+		}
+		remove_effect = {
+			clr_country_flag = current_ddos
+		}
+		targeted_modifier = {
+			tag = WES
+			attack_bonus_against = 0.2
+			breakthrough_bonus_against = 0.2
+		}
+		available = {
+			NOT = {
+				has_country_flag = current_ddos
+			}
+		}
+	}
+	
+	EAG_cyber_attack_on_sussex = {
+		days_remove = 30
+		days_re_enable = 54
+		cost = 35
+		complete_effect = {
+			set_country_flag = current_ddos
+		}
+		remove_effect = {
+			clr_country_flag = current_ddos
+		}
+		targeted_modifier = {
+			tag = SUS
+			attack_bonus_against = 0.2
+			breakthrough_bonus_against = 0.2
+		}
+		available = {
+			NOT = {
+				has_country_flag = current_ddos
+			}
+		}
+	}
+	
+	EAG_cyber_attack_on_wales = {
+		days_remove = 30
+		days_re_enable = 54
+		cost = 35
+		complete_effect = {
+			set_country_flag = current_ddos
+		}
+		remove_effect = {
+			clr_country_flag = current_ddos
+		}
+		targeted_modifier = {
+			tag = WLS
+			attack_bonus_against = 0.2
+			breakthrough_bonus_against = 0.2
+		}
+		available = {
+			NOT = {
+				has_country_flag = current_ddos
+			}
+		}
+	}
+	
+	EAG_cyber_attack_on_scotland = {
+		days_remove = 30
+		days_re_enable = 54
+		cost = 35
+		complete_effect = {
+			set_country_flag = current_ddos
+		}
+		remove_effect = {
+			clr_country_flag = current_ddos
+		}
+		targeted_modifier = {
+			tag = SCO
+			attack_bonus_against = 0.2
+			breakthrough_bonus_against = 0.2
+		}
+		available = {
+			NOT = {
+				has_country_flag = current_ddos
+			}
+		}
+	}
+	
+	EAG_cyberexpropriation = {
+		days_remove = 30
+		days_re_enable = 70
+		cost = 0
+		complete_effect = {
+			set_country_flag = current_ddos
+			add_command_power = -50
+		}
+		remove_effect = {
+			clr_country_flag = current_ddos
+			random_list = {
+						50 = {
+							random_owned_controlled_state = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+						50 = {
+							random_owned_controlled_state = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+						}
+					}
+			add_political_power = 50
+		}
+		available = {
+			NOT = {
+				has_country_flag = current_ddos
+			}
+			command_power > 50
+		}
+	}
+	
+	EAG_it_research = {
+		days_remove = 30
+		fire_only_once = yes
+		cost = 35
+		complete_effect = {
+			set_country_flag = current_ddos
+		}
+		remove_effect = {
+			clr_country_flag = current_ddos
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				category = electronics
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = current_ddos
+			}	
+		}
+	}
 }	

@@ -178,3 +178,19 @@ EAG_digger_cooperatives_decisions = {
 			}
 	}
 }
+
+EAG_nsis_coop = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			EAG = {
+				has_country_flag = EAG_nsis_cooperation
+			}
+	}
+	available = {
+			EAG = {
+				has_country_flag = EAG_nsis_cooperation
+			}
+	}
+}

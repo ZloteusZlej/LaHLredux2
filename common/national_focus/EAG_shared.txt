@@ -2454,6 +2454,327 @@ shared_focus = {
 
 ##NATIONAL ANARCHISTS TREE ADMINISTRATION##
 
+shared_focus = {
+	id = EAG_no_to_opression
+	icon = GFX_goal_EAG_no_to_opression
+	cost = 4.3
+	completion_reward = {
+		add_political_power = 100
+		custom_effect_tooltip = EAG_rehab_for_advisors_tt
+		EAG = {
+			country_event = {
+				days = 5
+				id = EAG_event.54
+			}
+		}
+		hidden_effect = {
+			set_nationality = {
+				target_country = EAG
+				character = ESS_paul_mccartney
+			}
+			set_nationality = {
+				target_country = EAG
+				character = ESS_tim_collins
+			}
+			set_nationality = {
+				target_country = EAG
+				character = ESS_david_starkey
+			}
+			set_nationality = {
+				target_country = EAG
+				character = ESS_andrew_rosindell
+			}
+			set_nationality = {
+				target_country = EAG
+				character = ESS_raheem_kassam
+			}
+			set_nationality = {
+				target_country = EAG
+				character = ESS_ringo_starr
+			}
+			set_nationality = {
+				target_country = EAG
+				character = ESS_maryam_namazie
+			}
+			set_nationality = {
+				target_country = EAG
+				character = ESS_suzanne_moore
+			}
+		}
+	}
+	x = 5
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_сompromise_with_the_left
+	icon = GFX_goal_EAG_сompromise_with_the_left
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_no_to_opression
+	}
+	mutually_exclusive = {
+		focus = EAG_conservative_revolution
+	}
+	completion_reward = {
+		1160 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 3
+		}
+		add_to_variable = {
+					var = volk_dev
+					value = 3
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+	}
+	x = 4
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_conservative_revolution
+	icon = GFX_goal_EAG_conservative_revolution
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_no_to_opression
+	}
+	mutually_exclusive = {
+		focus = EAG_сompromise_with_the_left
+	}
+	completion_reward = {
+		every_controlled_state = {
+			limit = {
+				state = 1160
+			}
+			add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+		}	
+		add_to_variable = {
+					var = volk_mood
+					value = 3
+				}
+		clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+	}
+	x = 6
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_begin_the_decentralization
+	icon = GFX_goal_EAG_begin_the_decentralization
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_conservative_revolution
+		focus = EAG_сompromise_with_the_left
+	}
+	completion_reward = {
+		add_ideas = EAG_year_one_1
+	}
+	x = 4
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_london_exodus
+	icon = GFX_goal_EAG_london_exodus
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_conservative_revolution
+		focus = EAG_сompromise_with_the_left
+	}
+	select_effect = {
+		EAG = {
+			country_event = {
+				days = 5
+				id = EAG_event.55
+			}
+		}
+	}
+	x = 6
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_natural_hierarchy
+	icon = GFX_goal_EAG_natural_hierarchy
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_london_exodus
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_year_one_1
+			add_idea = EAG_year_one_2
+		}
+		every_character = {
+			limit = {
+				is_unit_leader = yes
+			}
+			add_skill_level = 1
+		}
+	}
+	x = 3
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_witan_revival
+	icon = GFX_goal_EAG_witan_revival
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_london_exodus
+	}
+	completion_reward = {
+		add_ideas = EAG_witenagemots
+		add_political_power = 25
+	}
+	x = 5
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_racial_separatism
+	icon = GFX_goal_EAG_racial_separatism
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_london_exodus
+	}
+	completion_reward = {
+		add_ideas = EAG_right_face_of_anarchism
+	}
+	x = 7
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_freedom_beacon_of_europe
+	icon = GFX_goal_EAG_freedom_beacon_of_europe
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_witan_revival
+	}
+	prerequisite = {
+		focus = EAG_racial_separatism
+	}
+	prerequisite = {
+		focus = EAG_natural_hierarchy
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_year_one_2
+			add_idea = EAG_year_one_3
+		}
+	}
+	x = 4
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_congress_of_communities
+	icon = GFX_goal_EAG_freedom_beacon_of_europe
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_witan_revival
+	}
+	prerequisite = {
+		focus = EAG_racial_separatism
+	}
+	prerequisite = {
+		focus = EAG_natural_hierarchy
+	}
+	completion_reward = {
+		add_political_power = 30
+	}
+	x = 6
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_landsknecht_paradise
+	icon = GFX_goal_EAG_landsknecht_paradise
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_witan_revival
+	}
+	prerequisite = {
+		focus = EAG_racial_separatism
+	}
+	prerequisite = {
+		focus = EAG_natural_hierarchy
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_year_one_3
+			add_idea = EAG_year_one_4
+		}
+	}
+	x = 4
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_revolt_into_style
+	icon = GFX_goal_EAG_revolt_into_style
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_witan_revival
+	}
+	prerequisite = {
+		focus = EAG_racial_separatism
+	}
+	prerequisite = {
+		focus = EAG_natural_hierarchy
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_right_face_of_anarchism
+			add_idea = EAG_right_face_of_anarchism_2
+		}
+		add_political_power = 45
+	}
+	x = 6
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_seeds_of_wisdom
+	icon = GFX_goal_EAG_seeds_of_wisdom
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_revolt_into_style
+	}
+	prerequisite = {
+		focus = EAG_landsknecht_paradise
+	}
+	completion_reward = {
+		remove_ideas = {
+			EAG_right_face_of_anarchism_2
+			EAG_year_one_4
+			EAG_witenagemots
+		}
+		add_ideas = EAG_triumph_of_communities
+		add_research_slot = 1
+		add_political_power = 75
+	}
+	x = 5
+	y = 11
+}
+
 ##NATIONAL ANARCHISTS TREE ARMY##
 
 shared_focus = {
@@ -2896,6 +3217,7 @@ shared_focus = {
 			remove_idea = EAG_free_english_army_5
 			add_idea = EAG_free_english_army_6
 		}
+		
 	}
 	x = 19
 	y = 11
