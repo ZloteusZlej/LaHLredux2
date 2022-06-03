@@ -24,14 +24,15 @@ icon = GFX_
 	visible_when_empty = no
 	allowed = { original_tag = ESS }
 }
-ESS_towers_treasures = {
-	icon = GFX_
+ESS_take_what_is_ours = {
+icon = GFX_
 	visible = {
-	    has_completed_focus = ESS_secure_the_tower
+	    has_completed_focus = ESS_preventive_strike
 	}
-	visible_when_empty = no
+	visible_when_empty = yes
 	allowed = { original_tag = ESS }
 }
+
 
 ESS_prisoners_of_war = {
 	icon = GFX_

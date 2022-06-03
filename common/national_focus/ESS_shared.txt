@@ -201,7 +201,9 @@
 	}
 	completion_reward = {
 		    ESS = {
-			    add_ideas = ESS_field_recruiting
+			    add_timed_idea = { 
+				idea = ESS_field_recruiting
+				days = 120
 				}
 			division_template = {
 				name = "Drafted Punks"
@@ -253,10 +255,17 @@
 		prerequisite = {
 		focus = ESS_autonomous_recruiting
 	}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ESS_decentralized_army_2
+				add_idea = ESS_decentralized_army_3
+			}
+		}
 		x = 18
 		y = 5
 
 	}
+	
 	shared_focus = {
 		id = ESS_preventive_strike
 		icon = GFX_goal_unknown
@@ -268,6 +277,7 @@
 		y = 3
 
 	}
+	
 	shared_focus = {
 	id = ESS_sword_of_the_republic
 	icon = GFX_goal_unknown

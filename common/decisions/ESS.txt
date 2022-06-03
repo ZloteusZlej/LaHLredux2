@@ -353,6 +353,77 @@ ESS_great_gangs_dec = {
 	}
 	}
 	
+	ESS_take_what_is_ours = {
+	ESS_raid_KNT = {
+	    available = {
+            country_exists = KNT
+			} 
+		ai_will_do = {
+			factor = 100
+			}
+		complete_effect = {
+			KNT = {
+			add_timed_idea = { 
+				idea = KNT_was_raided
+				days = 50 
+				}
+			}
+		}
+		days_remove = 50
+		cost = 0
+		remove_effect = {
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 350
+			producer = KNT
+				}
+			}
+		}
+	ESS_raid_EAG = {
+	    available = {
+            country_exists = EAG
+
+			} 
+		ai_will_do = {
+			factor = 100
+			}
+		complete_effect = {
+			EAG = {
+			add_timed_idea = { 
+				idea = ESS_was_raided
+				days = 50  
+				}
+			}
+		}
+		cost = 0
+		days_remove = 50
+		remove_effect = {
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 350
+			producer = EAG
+				}
+			}
+		}
+	ESS_raid_SUS = {
+		ai_will_do = {
+			factor = 100
+			}
+		cost = 0
+		days_remove = 50
+		remove_effect = {
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 350
+			producer = EAG
+				}
+			}
+			complete_effect = {
+			}
+		}
+
+	}
+	
 	ESS_our_great_revolution = {
 		ESS_provoke_kent = {
 			cost = 0
@@ -710,21 +781,6 @@ ESS_great_gangs_dec = {
 		}
 		}
 	}
-	}
-
-	ESS_towers_treasures = {
-		sell_the_spizhennoye = {
-			cost = 0
-		days_remove = 1
-		visible = {
-			NOT = { has_global_flag = ESS_sell_the_spizhennoye }
-		}
-		complete_effect = {
-		set_global_flag = ESS_sell_the_spizhennoye   
-				}
-	}
-	}
-
 
 ESS_prisoners_of_war = {
     ESS_deal_galloway = {
