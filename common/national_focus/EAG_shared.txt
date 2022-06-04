@@ -3035,7 +3035,7 @@ shared_focus = {
 			support = { 
 				engineer = { x = 0 y = 0 } 	
 				recon = { x = 0 y = 1 }
-				signal_company = = { x = 0 y = 2 }
+				signal_company = { x = 0 y = 2 }
 			}
 		}
 		random_owned_controlled_state = {
@@ -3055,20 +3055,20 @@ shared_focus = {
 				owner = EAG
 			}
 			create_unit = {
-				division = "name = \"Batalion Bauthumley\" division_template = \"English Revolutionary Guards\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
-					
+				division = "name = \"Batalion Bauthumley\" division_template = \"English Revolutionary 	Guards\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+				
 				owner = EAG
 			}
 		}
 		add_to_variable = {
-					var = volk_dev
-					value = -3
-				}
+			var = volk_dev
+			value = -3
+		}
 		clamp_variable = {
-					var = volk_dev
-					min = 0
-					max = 25
-				}
+			var = volk_dev
+			min = 0
+			max = 25
+		}
 	}
 	x = 18
 	y = 10
