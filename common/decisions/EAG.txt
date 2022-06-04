@@ -5695,6 +5695,255 @@ EAG_city_influence = {
 			factor = 100
 		}
 	}
+##Projects##
+	EAG_project_nuclear = {
+	    visible = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_project_launched
+				}
+			}
+        } 
+		custom_cost_trigger = {
+			check_variable = { EAG_city_budget > 100 }
+		}
+		custom_cost_text = EAG_CITY_BUDGET_COST_100
+		days_remove = 25
+		complete_effect = {
+			add_to_variable = {
+				var = EAG_city_budget
+				value = -100
+			}
+			EAG = {
+				country_event = {
+					days = 0
+					id = EAG_event.97
+				}
+				set_country_flag = EAG_project_launched
+				activate_mission = EAG_project_nuclear_voting
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_project_football = {
+	    visible = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_project_launched
+				}
+			}
+        } 
+		custom_cost_trigger = {
+			check_variable = { EAG_city_budget > 100 }
+		}
+		custom_cost_text = EAG_CITY_BUDGET_COST_100
+		days_remove = 25
+		complete_effect = {
+			add_to_variable = {
+				var = EAG_city_budget
+				value = -100
+			}
+			EAG = {
+				country_event = {
+					days = 0
+					id = EAG_event.98
+				}
+				set_country_flag = EAG_project_launched
+				activate_mission = EAG_project_football_voting
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_project_cctv = {
+	    visible = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_project_launched
+				}
+			}
+        } 
+		custom_cost_trigger = {
+			check_variable = { EAG_city_budget > 100 }
+		}
+		custom_cost_text = EAG_CITY_BUDGET_COST_100
+		days_remove = 25
+		complete_effect = {
+			add_to_variable = {
+				var = EAG_city_budget
+				value = -100
+			}
+			EAG = {
+				country_event = {
+					days = 0
+					id = EAG_event.100
+				}
+				set_country_flag = EAG_project_launched
+				activate_mission = EAG_project_cctv_voting
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_project_sport = {
+	    visible = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_project_launched
+				}
+			}
+        } 
+		custom_cost_trigger = {
+			check_variable = { EAG_city_budget > 100 }
+		}
+		custom_cost_text = EAG_CITY_BUDGET_COST_100
+		days_remove = 25
+		complete_effect = {
+			add_to_variable = {
+				var = EAG_city_budget
+				value = -100
+			}
+			EAG = {
+				country_event = {
+					days = 0
+					id = EAG_event.101
+				}
+				set_country_flag = EAG_project_launched
+				activate_mission = EAG_project_sport_voting
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_project_doctor_who = {
+	    visible = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_project_launched
+				}
+			}
+        } 
+		custom_cost_trigger = {
+			check_variable = { EAG_city_budget > 100 }
+		}
+		custom_cost_text = EAG_CITY_BUDGET_COST_100
+		days_remove = 25
+		complete_effect = {
+			add_to_variable = {
+				var = EAG_city_budget
+				value = -100
+			}
+			EAG = {
+				country_event = {
+					days = 0
+					id = EAG_event.102
+				}
+				set_country_flag = EAG_project_launched
+				activate_mission = EAG_project_doctor_who_voting
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_project_monument = {
+	    visible = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_project_launched
+				}
+			}
+        } 
+		custom_cost_trigger = {
+			check_variable = { EAG_city_budget > 100 }
+		}
+		custom_cost_text = EAG_CITY_BUDGET_COST_100
+		days_remove = 25
+		complete_effect = {
+			add_to_variable = {
+				var = EAG_city_budget
+				value = -100
+			}
+			EAG = {
+				country_event = {
+					days = 0
+					id = EAG_event.106
+				}
+				set_country_flag = EAG_project_launched
+				activate_mission = EAG_project_monument_voting
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_project_rebuild = {
+	    visible = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_project_launched
+				}
+			}
+        } 
+		custom_cost_trigger = {
+			check_variable = { EAG_city_budget > 100 }
+		}
+		custom_cost_text = EAG_CITY_BUDGET_COST_100
+		days_remove = 25
+		complete_effect = {
+			add_to_variable = {
+				var = EAG_city_budget
+				value = -100
+			}
+			EAG = {
+				country_event = {
+					days = 0
+					id = EAG_event.111
+				}
+				set_country_flag = EAG_project_launched
+				activate_mission = EAG_project_rebuild_voting
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_project_museum = {
+	    visible = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_project_launched
+				}
+			}
+        } 
+		custom_cost_trigger = {
+			check_variable = { EAG_city_budget > 100 }
+		}
+		custom_cost_text = EAG_CITY_BUDGET_COST_100
+		days_remove = 25
+		complete_effect = {
+			add_to_variable = {
+				var = EAG_city_budget
+				value = -100
+			}
+			EAG = {
+				country_event = {
+					days = 0
+					id = EAG_event.112
+				}
+				set_country_flag = EAG_project_launched
+				activate_mission = EAG_project_museum_voting
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
 	EAG_pleading_meme = {
 	    visible = {
 			EAG = {
@@ -9161,6 +9410,8 @@ EAG_city_influence = {
 }
 
 
+
+
 EAG_digger_cooperatives_decisions = {
 	EAG_kent_fuels_and_steels_cooperative = {
 		days_remove = 25
@@ -9589,8 +9840,7 @@ EAG_digger_cooperatives_decisions = {
 			}
 		}	
 	}
-}
-
+}	
 EAG_nsis_coop = {
 	EAG_cyber_attack_on_kent = {
 		days_remove = 30
@@ -9808,3 +10058,4 @@ EAG_nsis_coop = {
 		}
 	}
 }	
+

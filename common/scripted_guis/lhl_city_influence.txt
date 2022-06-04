@@ -8,6 +8,36 @@ scripted_gui = {
 		visible = {
 			tag = EAG
 		}
+		effects = {
+			EAG_order_1_click = {
+				activate_decision = EAG_highlight_east_england
+			}
+		}
+		effects = {
+			EAG_order_2_click = {
+				activate_decision = EAG_highlight_london
+			}
+		}
+		effects = {
+			EAG_order_3_click = {
+				activate_decision = EAG_highlight_mercia
+			}
+		}
+		effects = {
+			EAG_order_4_click = {
+				activate_decision = EAG_highlight_northumbria
+			}
+		}
+		effects = {
+			EAG_order_5_click = {
+				activate_decision = EAG_highlight_southern_england
+			}
+		}
+		effects = {
+			EAG_order_6_click = {
+				activate_decision = EAG_highlight_wessex
+			}
+		}
 		triggers = {
             EAG_east_england_bar_1_visible = {
                 set_temp_variable = { EAG_east_england_influence_level = 0 }
