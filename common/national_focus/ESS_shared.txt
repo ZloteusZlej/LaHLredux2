@@ -257,20 +257,10 @@
 		y = 5
 
 	}
-	shared_focus = {
-		id = ESS_preventive_strike
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-		focus = ESS_national_revolutionary_army
-	}
-		x = 21
-		y = 3
-
-	}
+		
 	shared_focus = {
 	id = ESS_sword_of_the_republic
-	icon = GFX_goal_unknown
+	icon = GFX_goal_ESS_sword_of_the_republic
 	cost = 3
 	prerequisite = {
 		focus = ESS_national_revolutionary_army
@@ -283,7 +273,7 @@
 	}
 	shared_focus = {
 		id = ESS_revive_military_provost
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_revive_military_provost
 		cost = 3
 		prerequisite = {
 		focus = ESS_sword_of_the_republic
@@ -294,7 +284,7 @@
 	}
 	shared_focus = {
 		id = ESS_suppress_independent_warlords
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_suppress_independent_warlords
 		cost = 3
 		prerequisite = {
 		focus = ESS_sword_of_the_republic
@@ -305,7 +295,7 @@
 	}
 	shared_focus = {
 		id = ESS_amnesty_for_royal_officers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_amnesty_for_royal_officers
 		cost = 3
 		prerequisite = {
 		focus = ESS_sword_of_the_republic
@@ -315,8 +305,8 @@
 
 	}
 	shared_focus = {
-		id = ESS_auxiliary_Forces
-		icon = GFX_goal_unknown
+		id = ESS_auxiliary_forces
+		icon = GFX_goal_ESS_auxiliary_forces
 		cost = 3
 		prerequisite = {
 		focus = ESS_revive_military_provost
@@ -338,13 +328,13 @@
 	}
 	shared_focus = {
 		id = ESS_return_honor_to_the_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_return_honor_to_the_army
 		cost = 3
 		prerequisite = {
 		focus = ESS_amnesty_for_royal_officers
 	}
 	prerequisite = {
-		focus = ESS_auxiliary_Forces
+		focus = ESS_auxiliary_forces
 	}
 	prerequisite = {
 		focus = ESS_introduce_military_ranks
@@ -353,6 +343,17 @@
 		y = 5
 
 	}	
+	shared_focus = {
+		id = ESS_preventive_strike
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+		focus = ESS_national_revolutionary_army
+	}
+		x = 21
+		y = 3
+
+	}
 
 	shared_focus = {
 		id = ESS_revolutionary_ethic 
