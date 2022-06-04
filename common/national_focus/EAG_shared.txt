@@ -1175,7 +1175,10 @@ shared_focus = {
 		focus = EAG_camouflage_for_dinner_suits
 	}
 	completion_reward = {
-		create_intelligence_agency = yes
+		create_intelligence_agency = {
+				name = "Werwolf"
+				icon = GFX_intelligence_agency_logo_eag_1
+			}
 		EAG = {
 				country_event = {
 						days = 0
@@ -1681,6 +1684,7 @@ shared_focus = {
 	y = 11
 }
 
+##MERCS FINAL##
 
 shared_focus = {
 	id = EAG_the_end_of_expedition
@@ -3193,7 +3197,7 @@ shared_focus = {
 					value = -3
 				}
 		clamp_variable = {
-					var = volk_dev
+					var = volk_mood
 					min = 0
 					max = 25
 				}
@@ -3221,4 +3225,368 @@ shared_focus = {
 	}
 	x = 19
 	y = 11
+}
+
+##NATIONAL ANARCHISTS FINAL##
+
+shared_focus = {
+	id = EAG_the_standard_of_revolt
+	icon = GFX_goal_EAG_the_standard_of_revolt
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_bread_and_freedom
+	}
+	prerequisite = {
+		focus = EAG_seeds_of_wisdom
+	}
+	prerequisite = {
+		focus = EAG_army_of_the_people
+	}
+	available = {
+		has_country_flag = OSTANG_nazanarch_britain_reunified
+	}
+	completion_reward = {
+		add_political_power = 250
+		add_stability = 0.2
+		country_event = {
+			days = 1
+			id = super.21
+		}
+		set_capital = {
+			state = 1160
+			remember_old_capital = no
+		}
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.777
+			}
+		}
+	}
+	x = 12
+	y = 13
+}
+
+shared_focus = {
+	id = EAG_home_sweet_home
+	icon = GFX_goal_EAG_home_sweet_home
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_the_standard_of_revolt
+	}
+	completion_reward = {
+		add_ideas = EAG_order_of_anarchy
+		delete_unit_template_and_units = {
+			division_template = "Englische Milizia"
+			disband = yes 
+		}
+	}
+	x = 11
+	y = 14
+}
+
+shared_focus = {
+	id = EAG_palaces_for_the_people
+	icon = GFX_goal_EAG_palaces_for_the_people
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_the_standard_of_revolt
+	}
+	completion_reward = {
+		EAG = {
+			every_controlled_state = {
+				 add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	x = 13
+	y = 14
+}
+
+shared_focus = {
+	id = EAG_life_and_labour
+	icon = GFX_goal_EAG_life_and_labour
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_home_sweet_home
+	}
+	prerequisite = {
+		focus = EAG_palaces_for_the_people
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_order_of_anarchy
+			add_idea = EAG_order_of_anarchy_2
+		}
+	}
+	x = 9
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_expand_cooperatives
+	icon = GFX_goal_EAG_expand_cooperatives
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_life_and_labour
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_order_of_anarchy_2
+			add_idea = EAG_order_of_anarchy_3
+		}
+		add_to_variable = {
+					var = volk_dev
+					value = 3
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+	}
+	x = 9
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_neofolk_revolution
+	icon = GFX_goal_EAG_neofolk_revolution
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_home_sweet_home
+	}
+	prerequisite = {
+		focus = EAG_palaces_for_the_people
+	}
+	completion_reward = {
+		add_stability = 0.15
+		add_war_support = 0.1
+		add_political_power = 50
+	}
+	x = 11
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_lancasterian_system
+	icon = GFX_goal_EAG_lancasterian_system
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_home_sweet_home
+	}
+	prerequisite = {
+		focus = EAG_palaces_for_the_people
+	}
+	completion_reward = {
+		add_research_slot = 1
+		swap_ideas = {
+			remove_idea = EAG_triumph_of_communities
+			add_idea = EAG_triumph_of_communities_2
+		}
+	}
+	x = 13
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_mens_sana_in_corpore_sano
+	icon = GFX_goal_EAG_mens_sana_in_corpore_sano
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_lancasterian_system
+	}
+	prerequisite = {
+		focus = EAG_neofolk_revolution
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_free_english_army_6
+			add_idea = EAG_free_english_army_7
+		}
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.59
+			}
+		}
+	}
+	x = 12
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_return_treasury
+	icon = GFX_goal_EAG_return_treasury
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_home_sweet_home
+	}
+	prerequisite = {
+		focus = EAG_palaces_for_the_people
+	}
+	completion_reward = {
+		add_political_power = 100
+		add_to_variable = {
+					var = volk_dev
+					value = 2
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+	}
+	x = 15
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_insurrection_agency
+	icon = GFX_goal_EAG_insurrection_agency
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_home_sweet_home
+	}
+	prerequisite = {
+		focus = EAG_palaces_for_the_people
+	}
+	completion_reward = {
+		create_intelligence_agency = {
+				name = "Revolutionary Information Service"
+				icon = GFX_intelligence_agency_logo_eag_3
+			}
+	}
+	x = 15
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_let_them_be
+	icon = GFX_goal_EAG_let_them_be
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_expand_cooperatives
+	}
+	prerequisite = {
+		focus = EAG_mens_sana_in_corpore_sano
+	}
+	prerequisite = {
+		focus = EAG_insurrection_agency
+	}
+	mutually_exclusive = {
+		focus = EAG_abandon_ship
+	}
+	completion_reward = {
+		add_to_variable = {
+					var = volk_dev
+					value = -2
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+				
+		add_to_variable = {
+					var = volk_mood
+					value = 2
+				}
+		clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+		swap_ideas = {
+			remove_idea = EAG_order_of_anarchy_3
+			add_idea = EAG_order_of_anarchy_4a
+		}
+	}
+	x = 11
+	y = 17
+}
+
+shared_focus = {
+	id = EAG_abandon_ship
+	icon = GFX_goal_EAG_abandon_ship
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_expand_cooperatives
+	}
+	prerequisite = {
+		focus = EAG_mens_sana_in_corpore_sano
+	}
+	prerequisite = {
+		focus = EAG_insurrection_agency
+	}
+	mutually_exclusive = {
+		focus = EAG_let_them_be
+	}
+	completion_reward = {
+		add_to_variable = {
+					var = volk_dev
+					value = 2
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+				
+		add_to_variable = {
+					var = volk_mood
+					value = -2
+				}
+		clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+		swap_ideas = {
+			remove_idea = EAG_order_of_anarchy_3
+			add_idea = EAG_order_of_anarchy_4b
+		}
+	}
+	x = 13
+	y = 17
+}
+
+shared_focus = {
+	id = EAG_joy_of_liberty
+	icon = GFX_goal_EAG_joy_of_liberty
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_abandon_ship
+		focus = EAG_let_them_be
+	}
+	completion_reward = {
+		add_to_variable = {
+					var = volk_dev
+					value = 4
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+				
+		add_to_variable = {
+					var = volk_mood
+					value = 4
+				}
+		clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+		add_political_power = 200
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.60
+			}
+		}
+	}
+	x = 12
+	y = 18
 }
