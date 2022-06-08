@@ -10041,7 +10041,7 @@ EAG_nsis_coop = {
 			clr_country_flag = current_ddos
 			add_tech_bonus = {
 				bonus = 0.5
-				uses = 4
+				uses = 3
 				category = electronics
 			}
 		}
@@ -10052,4 +10052,217 @@ EAG_nsis_coop = {
 		}
 	}
 }	
+
+EAG_european_trade = {
+	EAG_scandinavian_steel = {
+		days_remove = 30
+		fire_only_once = yes
+		cost = 35
+		complete_effect = {
+			set_country_flag = trade_negotiations
+		}
+		target_trigger = {
+			FROM = {
+				controls_state = 321
+			}
+		}
+		remove_effect = {
+			clr_country_flag = trade_negotiations
+			ROOT = {
+				create_import = {
+					resource = steel
+					amount = 45
+					exporter = FROM
+				}
+			}
+			FROM = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		available = {
+			NOT = {
+				has_country_flag = trade_negotiations
+			}	
+		}
+	}
+	
+	EAG_italian_aluminium = {
+		days_remove = 30
+		fire_only_once = yes
+		cost = 35
+		complete_effect = {
+			set_country_flag = trade_negotiations
+		}
+		target_trigger = {
+			FROM = {
+				controls_state = 695
+			}
+		}
+		remove_effect = {
+			clr_country_flag = trade_negotiations
+			ROOT = {
+				create_import = {
+					resource = aluminium
+					amount = 30
+					exporter = FROM
+				}
+			}
+			FROM = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		available = {
+			NOT = {
+				has_country_flag = trade_negotiations
+			}	
+		}
+	}
+	
+	EAG_iberian_tugsten = {
+		days_remove = 30
+		fire_only_once = yes
+		cost = 35
+		complete_effect = {
+			set_country_flag = trade_negotiations
+		}
+		target_trigger = {
+			FROM = {
+				controls_state = 676
+			}
+		}
+		remove_effect = {
+			clr_country_flag = trade_negotiations
+			ROOT = {
+				create_import = {
+					resource = tungsten
+					amount = 30
+					exporter = FROM
+				}
+			}
+			FROM = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		available = {
+			NOT = {
+				has_country_flag = trade_negotiations
+			}	
+		}
+	}
+	
+	
+	EAG_moravian_chromium = {
+		days_remove = 30
+		fire_only_once = yes
+		cost = 35
+		complete_effect = {
+			set_country_flag = trade_negotiations
+		}
+		target_trigger = {
+			FROM = {
+				controls_state = 214
+			}
+		}
+		remove_effect = {
+			clr_country_flag = trade_negotiations
+			ROOT = {
+				create_import = {
+					resource = chromium
+					amount = 30
+					exporter = FROM
+				}
+			}
+			FROM = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		available = {
+			NOT = {
+				has_country_flag = trade_negotiations
+			}	
+		}
+	}
+	
+	EAG_occitan_rare_metals = {
+		days_remove = 30
+		fire_only_once = yes
+		cost = 35
+		complete_effect = {
+			set_country_flag = trade_negotiations
+		}
+		target_trigger = {
+			FROM = {
+				controls_state = 648
+			}
+		}
+		remove_effect = {
+			clr_country_flag = trade_negotiations
+			ROOT = {
+				create_import = {
+					resource = rubber
+					amount = 30
+					exporter = FROM
+				}
+			}
+			FROM = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		available = {
+			NOT = {
+				has_country_flag = trade_negotiations
+			}	
+		}
+	}
+	
+	EAG_lowlands_gas = {
+		days_remove = 30
+		fire_only_once = yes
+		cost = 35
+		complete_effect = {
+			set_country_flag = trade_negotiations
+		}
+		target_trigger = {
+			FROM = {
+				controls_state = 305
+			}
+		}
+		remove_effect = {
+			clr_country_flag = trade_negotiations
+			ROOT = {
+				create_import = {
+					resource = oil
+					amount = 30
+					exporter = FROM
+				}
+			}
+			FROM = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		available = {
+			NOT = {
+				has_country_flag = trade_negotiations
+			}	
+		}
+	}
+}
 

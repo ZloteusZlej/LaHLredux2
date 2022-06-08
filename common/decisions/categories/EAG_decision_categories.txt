@@ -194,3 +194,19 @@ EAG_nsis_coop = {
 			}
 	}
 }
+
+EAG_european_trade = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			EAG = {
+				has_completed_focus = EAG_new_partners
+			}
+	}
+	available = {
+			EAG = {
+				has_completed_focus = EAG_new_partners
+			}
+	}
+}

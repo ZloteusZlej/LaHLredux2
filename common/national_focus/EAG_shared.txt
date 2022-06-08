@@ -2373,10 +2373,10 @@ shared_focus = {
 		
 		if = {
 			limit = {
-				has_idea = free_trade
+				has_idea = civilian_economy
 			}
 			swap_ideas = {
-				remove_idea = free_trade
+				remove_idea = civilian_economy
 				add_idea = partial_economic_mobilisation
 			}
 		}
@@ -3596,4 +3596,299 @@ shared_focus = {
 	}
 	x = 12
 	y = 18
+}
+
+##KLUMB TREE ECONOMY##
+
+shared_focus = {
+	id = EAG_community_services
+	icon = GFX_goal_EAG_community_services
+	cost = 4.3
+	completion_reward = {
+		add_ideas = EAG_community_services_bonus
+	}
+	x = 12
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_english_autharky
+	icon = GFX_goal_EAG_english_autharky
+	cost = 4.3
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = free_trade
+			}
+			swap_ideas = {
+				remove_idea = free_trade
+				add_idea = limited_exports
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = export_focus
+			}
+			swap_ideas = {
+				remove_idea = export_focus
+				add_idea = limited_exports
+			}
+		}	
+		add_ideas = EAG_wartime_protectionism
+		add_resource = {
+			type = steel
+			amount = 30
+			state = 1160
+		}
+		add_resource = {
+			type = oil
+			amount = 30
+			state = 1004
+		}
+	}
+	prerequisite = {
+		focus = EAG_community_services
+	}
+	x = 10
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_english_florins
+	icon = GFX_goal_EAG_english_florins
+	cost = 4.3
+	completion_reward = {
+		add_ideas = EAG_federal_bank_of_england
+		add_political_power = 75
+	}
+	prerequisite = {
+		focus = EAG_community_services
+	}
+	x = 12
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_standards_of_quality
+	icon = GFX_goal_EAG_standards_of_quality
+	cost = 4.3
+	completion_reward = {
+		add_ideas = EAG_quality_commision
+	}
+	prerequisite = {
+		focus = EAG_community_services
+	}
+	x = 14
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_short_term_commitments
+	icon = GFX_goal_EAG_short_term_commitments
+	cost = 4.3
+	completion_reward = {
+		add_ideas = EAG_klumb_wechsels
+		add_political_power = 100
+	}
+	prerequisite = {
+		focus = EAG_standards_of_quality
+	}
+	prerequisite = {
+		focus = EAG_english_florins
+	}
+	prerequisite = {
+		focus = EAG_english_autharky
+	}
+	x = 11
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_new_partners
+	icon = GFX_goal_EAG_new_partners
+	cost = 4.3
+	completion_reward = {
+	}
+	prerequisite = {
+		focus = EAG_standards_of_quality
+	}
+	prerequisite = {
+		focus = EAG_english_florins
+	}
+	prerequisite = {
+		focus = EAG_english_autharky
+	}
+	x = 13
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_regulated_resources
+	icon = GFX_goal_EAG_regulated_resources
+	cost = 4.3
+	completion_reward = {
+		add_ideas = EAG_privileges_for_industry
+	}
+	prerequisite = {
+		focus = EAG_new_partners
+	}
+	prerequisite = {
+		focus = EAG_short_term_commitments
+	}
+	mutually_exclusive = {
+		focus = EAG_let_the_rains_go
+	}
+	x = 11
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_let_the_rains_go
+	icon = GFX_goal_EAG_let_the_rains_go
+	cost = 4.3
+	completion_reward = {
+		add_ideas = EAG_relaxed_regulations
+	}
+	prerequisite = {
+		focus = EAG_new_partners
+	}
+	prerequisite = {
+		focus = EAG_short_term_commitments
+	}
+	mutually_exclusive = {
+		focus = EAG_regulated_resources
+	}
+	x = 13
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_merge_companies
+	icon = GFX_goal_EAG_merge_companies
+	cost = 4.3
+	completion_reward = {
+		remove_ideas = {
+			EAG_community_services_bonus
+			EAG_wartime_protectionism
+			EAG_federal_bank_of_england
+			EAG_quality_commision
+			EAG_klumb_wechsels
+		}
+		add_ideas = EAG_miracle_on_thames
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 2
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 3
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 2
+		}
+	}
+	prerequisite = {
+		focus = EAG_let_the_rains_go
+		focus = EAG_regulated_resources
+	}
+	x = 12
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_blueprints_leftovers
+	icon = GFX_goal_EAG_blueprints_leftovers
+	cost = 4.3
+	completion_reward = {
+		add_research_slot = 1
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = motorized_equipment
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = armor
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = electronics
+		}
+	}
+	prerequisite = {
+		focus = EAG_merge_companies
+	}
+	x = 11
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_bring_the_specialists
+	icon = GFX_goal_EAG_bring_the_specialists
+	cost = 4.3
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_miracle_on_thames
+			add_idea = EAG_miracle_on_thames_2
+		}
+	}
+	prerequisite = {
+		focus = EAG_merge_companies
+	}
+	x = 13
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_we_are_the_machine
+	icon = GFX_goal_EAG_we_are_the_machine
+	cost = 4.3
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_miracle_on_thames_2
+			add_idea = EAG_miracle_on_thames_3
+		}
+	}
+	prerequisite = {
+		focus = EAG_bring_the_specialists
+	}
+	prerequisite = {
+		focus = EAG_blueprints_leftovers
+	}
+	x = 12
+	y = 11
+}
+
+shared_focus = {
+	id = EAG_governors_care
+	icon = GFX_goal_EAG_governors_care
+	cost = 4.3
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_miracle_on_thames_3
+			add_idea = EAG_miracle_on_thames_4
+		}
+		add_political_power = 100
+		add_stability = 0.1
+	}
+	prerequisite = {
+		focus = EAG_we_are_the_machine
+	}
+	x = 12
+	y = 12
 }
