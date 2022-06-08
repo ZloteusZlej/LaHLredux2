@@ -121,6 +121,29 @@ ideas = {
 				out_of_supply_factor = 0.1
 			}
 		}
+		ESS_decentralized_army_3 = {
+			
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army = 0.06
+				command_power_gain_mult = -0.5
+				max_dig_in = 0.8
+				planning_speed = -0.3
+				army_morale_factor = 0.1
+				special_forces_attack_factor = 0.15
+				land_reinforce_rate = 0.1
+				out_of_supply_factor = 0.1
+				army_speed_factor = 0.10
+				recon_factor = 0.04
+			}
+		}
 		ESS_field_recruiting = {
 			
 			picture = 
@@ -132,8 +155,20 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription = 0.02
-				
+				weekly_manpower = 200
+				minimum_training_level = -0.2
+			}
+		}
+		KNT_was_raided = { ###for other factions###
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			political_power_gain = -0.2
+			consumer_goods_factor = 0.1
+			production_factory_efficiency_gain_factor = -0.12
+			stability_factor = -0.15
 			}
 		}
 	}
@@ -197,9 +232,7 @@ ideas = {
 			max_dig_in_factor = -0.1
 		}
 		
-		ESS_more_special_units = {
-			special_forces_cap = 0.1
-		}
+		
 	}
 	
 	

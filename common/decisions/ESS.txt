@@ -87,271 +87,280 @@ ESS_control_over_london = {
 	}
 }	
 
-ESS_great_gangs_dec = {
-    recruit_the_great_chavs = {
-	    cost = 50
-		days_remove = 1
-		visible = {
-			NOT = { has_global_flag = ESS_chavs_recruited }
-			NOT = { has_global_flag = ESS_chavs_integrated }
-		}
-		complete_effect = {
-				set_global_flag = ESS_chavs_recruited
-				
-				division_template = {
-					name = "Big Boyz"
-					priority = 1
-					is_locked = yes
-					division_names_group = ESS_INF_02
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 0 y = 3 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 1 y = 3 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-						infantry = { x = 2 y = 3 }
-					}
-				}
-				
-			random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"Great Chavs\" division_template = \"Big Boyz\" start_experience_factor = 0.8 start_equipment_factor = 0.8"
-					prioritize = { 1160 }
-					owner = ESS
-				}
-			}
-			
-		 }
-	} 
-	integrate_the_great_chavs = {
-	    cost = 0
-		days_remove = 1
-		visible = {
-			NOT = { has_global_flag = ESS_chavs_recruited }
-			NOT = { has_global_flag = ESS_chavs_integrated }
-		}
-		complete_effect = {
-		set_global_flag = ESS_chavs_integrated
-            add_manpower = 20000
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-					amount = 2000
-					producer = ESS
-			}
-		} 
-	}
-	
-	recruit_the_london_hearts = { ######heliboys
-	    cost = 50
-		days_remove = 1
-		visible = {
-			NOT = { has_global_flag = ESS_hearts_recruited }
-			NOT = { has_global_flag = ESS_hearts_integrated }
-		}
-			complete_effect = {
-				set_global_flag = ESS_hearts_recruited
-			division_template = {
-					name = "Heli Boyz"
-					priority = 1
-					is_locked = yes
-					division_names_group = ESS_INF_02
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-					}
-					support = { ######heliboys
-						recon = { x = 0 y = 0 } 	
-						engineer = { x = 0 y = 1 }
-						signal_company = { x = 0 y = 2 }
-						field_hospital = { x = 0 y = 3 }
-						maintenance_company = { x = 0 y = 4 }
-	}
-				}
-			random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"London Hearts\" division_template = \"Heli Boyz\" start_experience_factor = 0.8 start_equipment_factor = 0.8"
-					prioritize = { 1160 }
-					owner = ESS
-			
-		 }
-		 }
-		 }
-		 }
 
-	integrate_the_london_hearts = {
-	    cost = 0
-		days_remove = 1
-		visible = {
-			NOT = { has_global_flag = ESS_hearts_recruited }
-			NOT = { has_global_flag = ESS_hearts_integrated }
-		}
-		
-		
-		complete_effect = {
-		set_global_flag = ESS_hearts_integrated
-            add_manpower = 20000
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-					amount = 2000
-					producer = ESS
-								}
-		    ESS = {
-			    country_event = {
-				    days = 20
-					id = ESS_event.10_1
+ESS_take_what_is_ours = {
+	ESS_raid_KNT = {
+	    available = {
+			NOT = {
+				has_country_flag = raid_in_process
+			}
+            country_exists = KNT
+			any_owned_state = {
+				any_neighbor_state = { 
+				is_fully_controlled_by = KNT
 				}
 			}
 		}
-		} 
-	
-			
+		ai_will_do = {
+			factor = 100
+			}
+		complete_effect = {
+		set_country_flag = raid_in_process
+			KNT = {
+			add_timed_idea = { 
+				idea = ESS_was_raided
+				days = 50 
+				}
+			country_event = {
+				days = 1
+				id = ESS_event.27
+					}
+				}
+			}
+		days_remove = 50
+		cost = 80
+		days_re_enable = 150
+		remove_effect = {
+		clr_country_flag = raid_in_process
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 350
+			producer = KNT
+			}
+			add_equipment_to_stockpile = {
+			type = motorized_equipment_1
+			amount = 30
+			producer = KNT
+			}
+		}
+	}
+	ESS_raid_SUS = {
+	    available = {
+			NOT = {
+				has_country_flag = raid_in_process
+			}
+            country_exists = SUS
+			any_owned_state = {
+				any_neighbor_state = { 
+				is_fully_controlled_by = SUS
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			}
+		complete_effect = {
+		set_country_flag = raid_in_process
+			SUS = {
+			add_timed_idea = { 
+				idea = ESS_was_raided
+				days = 50 
+				}
+			country_event = {
+				days = 1
+				id = ESS_event.27
+					}
+				}
+			}
+		days_remove = 50
+		cost = 80
+		days_re_enable = 150
+		remove_effect = {
+		clr_country_flag = raid_in_process
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 350
+			producer = SUS
+			}
+			add_equipment_to_stockpile = {
+			type = motorized_equipment_1
+			amount = 30
+			producer = SUS
+			}
+		}
+	}
+	ESS_raid_EAG = {
+	    available = {
+			NOT = {
+				has_country_flag = raid_in_process
+			}
+            country_exists = EAG
+			any_owned_state = {
+				any_neighbor_state = { 
+				is_fully_controlled_by = EAG
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			}
+		complete_effect = {
+		set_country_flag = raid_in_process
+			EAG = {
+			add_timed_idea = { 
+				idea = ESS_was_raided
+				days = 50 
+				}
+			country_event = {
+				days = 1
+				id = ESS_event.27
+					}
+				}
+			}
+		days_remove = 50
+		cost = 80
+		days_re_enable = 150
+		remove_effect = {
+		clr_country_flag = raid_in_process
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 350
+			producer = EAG
+			}
+			add_equipment_to_stockpile = {
+			type = motorized_equipment_1
+			amount = 30
+			producer = EAG
+			}
+		}
+	}
+	ESS_raid_WES = {
+	    available = {
+			NOT = {
+				has_country_flag = raid_in_process
+			}
+            country_exists = WES
+			any_owned_state = {
+				any_neighbor_state = { 
+				is_fully_controlled_by = WES
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			}
+		complete_effect = {
+		set_country_flag = raid_in_process
+			WES = {
+			add_timed_idea = { 
+				idea = ESS_was_raided
+				days = 50 
+				}
+			country_event = {
+				days = 1
+				id = ESS_event.27
+					}
+				}
+			}
+		days_remove = 50
+		cost = 80
+		days_re_enable = 150
+		remove_effect = {
+		clr_country_flag = raid_in_process
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 350
+			producer = WES
+			}
+			add_equipment_to_stockpile = {
+			type = motorized_equipment_1
+			amount = 30
+			producer = WES
+			}
+		}
+	}
+	ESS_raid_MRC = {
+	    available = {
+			NOT = {
+				has_country_flag = raid_in_process
+			}
+            country_exists = MRC
+			any_owned_state = {
+				any_neighbor_state = { 
+				is_fully_controlled_by = MRC
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			}
+		complete_effect = {
+		set_country_flag = raid_in_process
+			MRC = {
+			add_timed_idea = { 
+				idea = ESS_was_raided
+				days = 50 
+				}
+			country_event = {
+				days = 1
+				id = ESS_event.27
+					}
+				}
+			}
+		days_remove = 50
+		cost = 80
+		days_re_enable = 150
+		remove_effect = {
+		clr_country_flag = raid_in_process
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 350
+			producer = MRC
+			}
+			add_equipment_to_stockpile = {
+			type = motorized_equipment_1
+			amount = 30
+			producer = MRC
+			}
+		}
+	}
+	ESS_raid_NTH = {
+	    available = {
+			NOT = {
+				has_country_flag = raid_in_process
+			}
+            country_exists = NTH
+			any_owned_state = {
+				any_neighbor_state = { 
+				is_fully_controlled_by = NTH
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			}
+		complete_effect = {
+		set_country_flag = raid_in_process
+			NTH = {
+			add_timed_idea = { 
+				idea = ESS_was_raided
+				days = 50 
+				}
+			country_event = {
+				days = 1
+				id = ESS_event.27
+					}
+				}
+			}
+		days_remove = 50
+		cost = 80
+		days_re_enable = 150
+		remove_effect = {
+		clr_country_flag = raid_in_process
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 350
+			producer = NTH
+			}
+			add_equipment_to_stockpile = {
+			type = motorized_equipment_1
+			amount = 30
+			producer = NTH
+			}
+		}
+	}
 
-    recruit_the_young_league = {
-	    cost = 50
-		days_remove = 1
-		visible = {
-			NOT = { has_global_flag = ESS_youngs_recruited }
-			NOT = { has_global_flag = ESS_youngs_integrated }
-		}
-		complete_effect = {
-				set_global_flag = ESS_youngs_recruited
-			division_template = {
-					name = "Brain Boyz"
-					priority = 1
-					is_locked = yes
-					division_names_group = ESS_INF_02
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-					}
-					support = {
-						recon = { x = 0 y = 0 } 	
-						engineer = { x = 0 y = 1 }
-						signal_company = { x = 0 y = 2 }
-						field_hospital = { x = 0 y = 3 }
-						maintenance_company = { x = 0 y = 4 }
-	}
-				}
-			random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"Young League \" division_template = \"Brain Boyz\" start_experience_factor = 0.8 start_equipment_factor = 0.8"
-					prioritize = { 1160 }
-					owner = ESS
-			
-		 }
-		} 
-		}
-		}
-	integrate_the_young_league = {
-	    cost = 0
-		days_remove = 1
-		visible = {
-			NOT = { has_global_flag = ESS_youngs_recruited }
-			NOT = { has_global_flag = ESS_youngs_integrated }
-		}
-		complete_effect = {
-		set_global_flag = ESS_youngs_integrated
-            add_manpower = 10000
-			add_equipment_to_stockpile = {
-				type = support_equipment
-					amount = 200
-					producer = ESS
-							}
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-					amount = 1000
-					producer = ESS
-							}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment
-					amount = 100
-					producer = ESS
-							}
-		} 
-	}
-	
-	    recruit_the_road_crushers = {
-	    cost = 50
-		days_remove = 1
-		visible = {
-			NOT = { has_global_flag = ESS_crushers_recruited }
-			NOT = { has_global_flag = ESS_crushers_integrated }
-		}
-		complete_effect = {
-				set_global_flag = ESS_crushers_recruited
-			division_template = {
-					name = "Brain Boyz"
-					priority = 1
-					is_locked = yes
-					division_names_group = ESS_INF_02
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-					}
-					support = {
-						recon = { x = 0 y = 0 } 	
-						engineer = { x = 0 y = 1 }
-						signal_company = { x = 0 y = 2 }
-						field_hospital = { x = 0 y = 3 }
-						maintenance_company = { x = 0 y = 4 }
-	}
-				}
-			random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"Young League \" division_template = \"Brain Boyz\" start_experience_factor = 0.8 start_equipment_factor = 0.8"
-					prioritize = { 1160 }
-					owner = ESS
-			
-		 }
-		} 
-		}
-		}
-	integrate_the_road_crushers = {
-	    cost = 0
-		days_remove = 1
-		visible = {
-			NOT = { has_global_flag = ESS_crushers_recruited }
-			NOT = { has_global_flag = ESS_crushers_integrated }
-		}
-		complete_effect = {
-		set_global_flag = ESS_crushers_integrated
-            add_manpower = 10000
-			add_equipment_to_stockpile = {
-				type = support_equipment
-					amount = 200
-					producer = ESS
-							}
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-					amount = 1000
-					producer = ESS
-							}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment
-					amount = 100
-					producer = ESS
-							}
-		} 
-	}
-	}
+}
 	
 	ESS_our_great_revolution = {
 		ESS_provoke_kent = {
@@ -710,20 +719,9 @@ ESS_great_gangs_dec = {
 		}
 		}
 	}
-	}
+	
 
-	ESS_towers_treasures = {
-		sell_the_spizhennoye = {
-			cost = 0
-		days_remove = 1
-		visible = {
-			NOT = { has_global_flag = ESS_sell_the_spizhennoye }
-		}
-		complete_effect = {
-		set_global_flag = ESS_sell_the_spizhennoye   
-				}
-	}
-	}
+
 
 
 ESS_prisoners_of_war = {
