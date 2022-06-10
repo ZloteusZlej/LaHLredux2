@@ -256,6 +256,12 @@
 		prerequisite = {
 		focus = ESS_autonomous_recruiting
 	}
+	completion_reward = {
+			swap_ideas = {
+				remove_idea = ESS_decentralized_army_2
+				add_idea = ESS_decentralized_army_3
+			}
+		}
 		x = 18
 		y = 5
 
@@ -271,6 +277,12 @@
 	mutually_exclusive = {
 			focus = ESS_decentralized_command
 		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = ESS_big_thinkin
+			add_idea = ESS_united_army
+			}
+	}
 	x = 24
 	y = 1
 	}
@@ -281,6 +293,38 @@
 		prerequisite = {
 		focus = ESS_sword_of_the_republic
 	}
+	completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = military_police_tech
+			}
+			division_template = {
+				name = "London Police Units"
+				division_names_group = ESS_INF_01
+				regiments = {
+					armored_car = { x = 0 y = 0 }	
+					armored_car = { x = 0 y = 1 }
+					armored_car = { x = 0 y = 2 }	
+					armored_car = { x = 0 y = 3 }	
+					armored_car = { x = 0 y = 4 }	
+					}
+					support = {
+						military_police = { x = 0 y = 0 } 
+						signal_company = { x = 0 y = 1 } 
+					}
+				}
+				random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Police Unit Alpha\" division_template = \"London Police Units\" start_experience_factor = 0.6 start_equipment_factor = 0.7"
+					owner = ESS
+				}
+				create_unit = {
+					division = "name = \"Police Unit Beta\" division_template = \"London Police Units\" start_experience_factor = 0.6 start_equipment_factor = 0.7"
+					owner = ESS
+				}
+			}
+		}
 		x = 23
 		y = 2
 
@@ -314,6 +358,51 @@
 		prerequisite = {
 		focus = ESS_revive_military_provost
 	}
+	completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 1
+				category = uav_brigade
+			}
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 1
+				category = signal_company
+			}
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 1
+				category = engineer
+			}
+			
+			division_template = {
+				name = "Multisupport Unit"
+				division_names_group = ESS_INF_01
+				is_locked = no
+				regiments = {
+					infantry = { x = 0 y = 0 }	
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }	
+					infantry = { x = 0 y = 3 }	
+					infantry = { x = 0 y = 4 }	
+					infantry = { x = 1 y = 0 }	
+					}
+					support = {
+						uav_brigade = { x = 0 y = 0 } 
+						signal_company = { x = 0 y = 1 } 
+						maintenance_company = { x = 0 y = 2 } 
+						armored_car_recon = { x = 0 y = 3 } 
+						engineer = { x = 0 y = 4 } 
+					}
+				}
+				
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Future Warriors\" division_template = \"Multisupport Unit\" start_experience_factor = 1.0 start_equipment_factor = 0.7"
+					owner = ESS
+				}
+			}
+		}
 		x = 23
 		y = 4
 
@@ -353,6 +442,7 @@
 		prerequisite = {
 		focus = ESS_national_revolutionary_army
 	}
+	custom_effect_tooltip = ESS_preventive_strike.tt
 		x = 21
 		y = 3
 
