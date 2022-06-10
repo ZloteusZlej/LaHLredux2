@@ -3367,9 +3367,12 @@ shared_focus = {
 		focus = EAG_palaces_for_the_people
 	}
 	completion_reward = {
-		add_stability = 0.15
-		add_war_support = 0.1
-		add_political_power = 50
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.61
+			}
+		}
 	}
 	x = 11
 	y = 15

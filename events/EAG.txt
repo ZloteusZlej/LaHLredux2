@@ -2179,6 +2179,77 @@ country_event = {
     }
 }
 
+country_event = {
+	id = EAG_event.61
+	title = EAG_event.61.t
+	desc = EAG_event.61.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.61.a
+		add_stability = 0.1
+		add_war_support = 0.15
+		add_political_power = 50
+		set_nationality = {
+			target_country = EAG
+			character = MRC_tony_wakeford
+		}
+		set_nationality = {
+			target_country = EAG
+			character = MRC_michael_moynichan
+		}
+		set_nationality = {
+			target_country = EAG
+			character = MRC_freya_aswynn
+		}
+		set_nationality = {
+			target_country = EAG
+			character = MRC_david_tibet
+		}
+		set_nationality = {
+			target_country = EAG
+			character = MRC_douglas_pearce
+		}
+    }
+	option = {
+		name = EAG_event.61.b
+		add_stability = 0.05
+		add_war_support = 0.1
+		add_political_power = 25
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = electronics
+		}
+		set_nationality = {
+			target_country = EAG
+			character = MRC_freya_aswynn
+		}
+		set_nationality = {
+			target_country = EAG
+			character = MRC_david_tibet
+		}
+		set_nationality = {
+			target_country = EAG
+			character = MRC_ronald_hutton
+		}
+		set_nationality = {
+			target_country = EAG
+			character = MRC_daniele_liotta
+		}
+    }
+	option = {
+		name = EAG_event.61.c
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 3
+			category = armor
+		}
+		set_technology = {
+			helicopter_pirates = 1
+		}
+    }
+}
+
 ##CITY EVENTS##
 country_event = {
 	id = EAG_event.65
