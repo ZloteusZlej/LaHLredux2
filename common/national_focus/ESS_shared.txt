@@ -78,7 +78,9 @@
 				uses = 2
 				category = urban_tech
 			}
-			
+			hidden_effect = {
+			add_idea = ESS_more_special_units
+			}
 			division_template = {
 				name = "Street Fighters"
 				division_names_group = ESS_INF_02
@@ -207,7 +209,7 @@
 			division_template = {
 				name = "Drafted Punks"
 				division_names_group = ESS_INF_02
-				is_locked = no
+				is_locked = yes
 				regiments = {
 					infantry = { x = 0 y = 0 }	
 					infantry = { x = 0 y = 1 }
@@ -254,12 +256,6 @@
 		prerequisite = {
 		focus = ESS_autonomous_recruiting
 	}
-	completion_reward = {
-			swap_ideas = {
-				remove_idea = ESS_decentralized_army_2
-				add_idea = ESS_decentralized_army_3
-			}
-		}
 		x = 18
 		y = 5
 
@@ -273,18 +269,11 @@
 		focus = ESS_national_revolutionary_army
 	}
 	mutually_exclusive = {
-		focus = ESS_decentralized_command
+			focus = ESS_decentralized_command
 		}
-	completion_reward = {
-		swap_ideas = {
-			remove_idea = ESS_big_thinkin
-			add_idea = ESS_united_army
-			}
-	}
 	x = 24
 	y = 1
 	}
-	
 	shared_focus = {
 		id = ESS_revive_military_provost
 		icon = GFX_goal_ESS_revive_military_provost
@@ -292,40 +281,6 @@
 		prerequisite = {
 		focus = ESS_sword_of_the_republic
 	}
-	completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = military_police_tech
-			}
-			division_template = {
-				name = "London Police Units"
-				division_names_group = ESS_INF_02
-				is_locked = no
-				regiments = {
-					armored_car = { x = 0 y = 0 }	
-					armored_car = { x = 0 y = 1 }
-					armored_car = { x = 0 y = 2 }	
-					armored_car = { x = 0 y = 3 }	
-					armored_car = { x = 0 y = 4 }	
-					}
-					support = {
-						military_police = { x = 0 y = 0 } 
-						signal_company = { x = 0 y = 1 } 
-					}
-				}
-				random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"Police Unit Alpha\" division_template = \"London Police Units\" start_experience_factor = 0.6 start_equipment_factor = 0.7"
-					owner = ESS
-				}
-				create_unit = {
-					division = "name = \"Police Unit Beta\" division_template = \"London Police Units\" start_experience_factor = 0.6 start_equipment_factor = 0.7"
-					owner = ESS
-				}
-				
-			}
-		
 		x = 23
 		y = 2
 
@@ -359,43 +314,6 @@
 		prerequisite = {
 		focus = ESS_revive_military_provost
 	}
-	completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.3
-				uses = 1
-				category = uav_brigade
-			}
-			
-			division_template = {
-				name = "Multisupport Unit"
-				division_names_group = ESS_INF_02
-				is_locked = no
-				regiments = {
-					infantry = { x = 0 y = 0 }	
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }	
-					infantry = { x = 0 y = 3 }	
-					infantry = { x = 0 y = 4 }	
-					infantry = { x = 1 y = 0 }	
-					}
-					support = {
-						uav_brigade = { x = 0 y = 0 } 
-						signal_company = { x = 0 y = 1 } 
-						maintenance_company = { x = 0 y = 2 } 
-						armored_car_recon = { x = 0 y = 3 } 
-						engineer = { x = 0 y = 4 } 
-					}
-				}
-				
-				random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"Future Warriors\" division_template = \"Multisupport Unit\" start_experience_factor = 1.0 start_equipment_factor = 0.7"
-					owner = ESS
-				}
-				
-				
-			}
-		
 		x = 23
 		y = 4
 
@@ -435,9 +353,6 @@
 		prerequisite = {
 		focus = ESS_national_revolutionary_army
 	}
-	completion_reward = {
-			custom_effect_tooltip = ESS_preventive_strike.tt
-			}
 		x = 21
 		y = 3
 
@@ -726,7 +641,109 @@
 		y = 1
 
 	}
+	shared_focus = {
+		id = ESS_punish_the_huns
+		icon = GFX_goal_unknown
+		cost = 3
+		available = {
+		custom_trigger_tooltip = {
+				tooltip = ENG_rec_control_40
+				check_variable = {
+					var = ESS_control
+					value = 40
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		prerequisite = {
+			focus = ESS_national_proclamation
+			}
+		bypass = {
+	    NOT = {
+		    country_exists = EAG
+			}			
+		}
+	completion_reward = {
+			create_wargoal = {
+			type = annex_everything
+			target = EAG
+			expire = 0
+			} 
+		}
+		x = 11
+		y = 2
 
+	}
+	shared_focus = {
+		id = ESS_deal_with_royalysts
+		icon = GFX_goal_unknown
+		cost = 3
+		available = {
+		custom_trigger_tooltip = {
+				tooltip = ENG_rec_control_50
+				check_variable = {
+					var = ESS_control
+					value = 50
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		prerequisite = {
+			focus = ESS_national_proclamation
+		}
+		x = 13
+		y = 2
+
+	}
+	shared_focus = {
+		id = ESS_to_the_north
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_national_proclamation
+		}
+		x = 15
+		y = 2
+
+	}
+	shared_focus = {
+		id = ESS_england_and_the_world
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_deal_with_royalysts
+		}
+		x = 13
+		y = 3
+
+	}
+	shared_focus = {
+		id = ESS_albion_cooperation
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_england_and_the_world
+		}
+		mutually_exclusive = {
+			focus = ESS_make_them_obey
+		}
+		x = 12
+		y = 4
+
+	}
+	shared_focus = {
+		id = ESS_make_them_obey
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_england_and_the_world
+		}
+		mutually_exclusive = {
+			focus = ESS_albion_cooperation
+		}
+		x = 14
+		y = 4
+}
 	shared_focus = {
 		id = ESS_interregnum
 		icon = GFX_goal_unknown
