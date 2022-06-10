@@ -3885,10 +3885,423 @@ shared_focus = {
 		}
 		add_political_power = 100
 		add_stability = 0.1
+		add_to_variable = {
+				var = volk_dev
+				value = 3
+		}
+		clamp_variable = {
+				var = volk_dev
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = volk_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
 	}
 	prerequisite = {
 		focus = EAG_we_are_the_machine
 	}
 	x = 12
 	y = 12
+}
+
+##KLUMB TREE ARMY##
+
+shared_focus = {
+	id = EAG_dressed_in_uniforms
+	icon = GFX_goal_EAG_sword_of_the_republic
+	cost = 4.3
+	completion_reward = {
+		army_experience = 25
+		add_political_power = 50
+	}
+	x = 19
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_great_general_staff
+	icon = GFX_goal_EAG_great_general_staff
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_dressed_in_uniforms
+	}
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 3
+			category = cat_superior_firepower
+		}
+	}
+	x = 18
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_valuable_personnel
+	icon = GFX_goal_EAG_valuable_personnel
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_dressed_in_uniforms
+	}
+	completion_reward = {
+		add_ideas = EAG_trainings_reorganisation
+	}
+	x = 20
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_careful_exploitation
+	icon = GFX_goal_EAG_careful_exploitation
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_valuable_personnel
+	}
+	prerequisite = {
+		focus = EAG_great_general_staff
+	}
+	completion_reward = {
+		add_ideas = EAG_supply_reorganisation
+	}
+	x = 17
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_wilhelm_the_conqueror_division
+	icon = GFX_goal_EAG_wilhelm_the_conqueror_division
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_careful_exploitation
+	}
+	completion_reward = {
+		division_template = {
+			name = "Elite Tank Division"
+			division_names_group = EAG_ARM_01
+			is_locked = no
+			regiments = {
+				MBT = { x = 0 y = 0 }	
+				MBT = { x = 0 y = 1 }
+				MBT = { x = 0 y = 2 }	
+				MBT = { x = 0 y = 3 }
+				MBT = { x = 0 y = 4 }
+				MBT = { x = 1 y = 0 }	
+				MBT = { x = 1 y = 1 }
+				MBT = { x = 1 y = 2 }	
+				MBT = { x = 1 y = 3 }
+				MBT = { x = 1 y = 4 }
+				APC = { x = 2 y = 0 }	
+				APC = { x = 2 y = 1 }
+				APC = { x = 2 y = 2 }	
+				APC = { x = 2 y = 3 }
+				APC = { x = 2 y = 4 }
+				APC = { x = 3 y = 0 }	
+				APC = { x = 3 y = 1 }
+				APC = { x = 3 y = 2 }	
+				APC = { x = 3 y = 3 }
+				APC = { x = 3 y = 4 }
+				anti_tank_brigade = { x = 4 y = 0 }
+			}
+			support = { 
+				engineer = { x = 0 y = 0 }
+				maintenance_company = { x = 0 y = 1 }
+			}
+		}
+		
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Wilhelm the Conqueror\" division_template = \"Elite Tank Division\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+		}
+	}
+	x = 17
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_motorization_priority
+	icon = GFX_goal_EAG_motorization_priority
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_valuable_personnel
+	}
+	prerequisite = {
+		focus = EAG_great_general_staff
+	}
+	completion_reward = {
+		add_ideas = EAG_motorization_effort
+		add_political_power = 75
+		army_experience = 10
+	}
+	x = 19
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_english_panzergrenadiers 
+	icon = GFX_goal_EAG_english_panzergrenadiers
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_motorization_priority
+	}
+	completion_reward = {
+		division_template = {
+			name = "Panzergrenadiers"
+			division_names_group = EAG_ARM_01
+			is_locked = no
+			regiments = {
+				IFV = { x = 0 y = 0 }	
+				IFV = { x = 0 y = 1 }
+				IFV = { x = 0 y = 2 }	
+				IFV = { x = 0 y = 3 }
+				IFV = { x = 0 y = 4 }
+				IFV = { x = 1 y = 0 }	
+				IFV = { x = 1 y = 1 }
+				IFV = { x = 1 y = 2 }	
+				IFV = { x = 1 y = 3 }
+				IFV = { x = 1 y = 4 }
+				anti_tank_brigade = { x = 2 y = 0 }
+			}
+			support = { 
+				engineer = { x = 0 y = 0 }
+				maintenance_company = { x = 0 y = 1 }
+				recon = { x = 0 y = 2 }
+			}
+		}
+		
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Brigade Alpha\" division_template = \"Panzergrenadiers\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+			
+			create_unit = {
+				division = "name = \"Brigade Beta\" division_template = \"Panzergrenadiers\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+			
+			create_unit = {
+				division = "name = \"Brigade Gamma\" division_template = \"Panzergrenadiers\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+			
+			create_unit = {
+				division = "name = \"Brigade Delta\" division_template = \"Panzergrenadiers\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+		}
+	}
+	x = 19
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_fill_the_skies
+	icon = GFX_goal_EAG_fill_the_skies
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_valuable_personnel
+	}
+	prerequisite = {
+		focus = EAG_great_general_staff
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = fighter_equipment
+			amount = 75
+			producer = EAG
+		}
+	}
+	x = 21
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_bomb_into_the_stone_age
+	icon = GFX_goal_EAG_bomb_into_the_stone_age
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_fill_the_skies
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = CAS_equipment
+			amount = 50
+			producer = EAG
+		}
+		add_equipment_to_stockpile = {
+			type = strat_bomber_equipment
+			amount = 50
+			producer = EAG
+		}
+		add_ideas = EAG_air_support
+		air_experience = 25
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.75
+			uses = 1
+			category = air_doctrine
+		}
+	}
+	x = 21
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_border_protection_group
+	icon = GFX_goal_EAG_border_protection_group
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_bomb_into_the_stone_age
+	}
+	prerequisite = {
+		focus = EAG_english_panzergrenadiers
+	}
+	prerequisite = {
+		focus = EAG_wilhelm_the_conqueror_division
+	}
+	completion_reward = {
+		remove_ideas = {
+			EAG_motorization_effort
+			EAG_supply_reorganisation
+			EAG_trainings_reorganisation
+			EAG_air_support
+		}
+		add_ideas = EAG_federal_defence
+		army_experience = 10
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = mountaineers_tech
+		}
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = marine_tech
+		}
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = para_tech
+		}
+	}
+	x = 19
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_teach_tommies
+	icon = GFX_goal_EAG_teach_tommies
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_border_protection_group
+	}
+	mutually_exclusive = {
+		focus = EAG_circle_of_friends
+	}
+	completion_reward = {
+		add_ideas = EAG_brit_presence_in_general_staff
+		every_character	= {
+			limit = {
+				has_trait = angloid
+			}
+			add_skill_level = 1
+			add_attack = 1
+		}
+		add_to_variable = {
+				var = volk_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+	}
+	x = 18
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_circle_of_friends
+	icon = GFX_goal_EAG_circle_of_friends
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_border_protection_group
+	}
+	mutually_exclusive = {
+		focus = EAG_teach_tommies
+	}
+	completion_reward = {
+		every_character	= {
+			limit = {
+				has_trait = german
+			}
+			add_skill_level = 1
+			add_defense = 1
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+	}
+	x = 20
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_we_walk_in_line
+	icon = GFX_goal_EAG_we_walk_in_line
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_circle_of_friends
+	}
+	prerequisite = {
+		focus = EAG_teach_tommies
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_federal_defence
+			add_idea = EAG_federal_defence_2
+		}
+		add_to_variable = {
+				var = mercs_dev
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		army_experience = 20
+		add_political_power = 50
+	}
+	x = 19
+	y = 11
 }

@@ -38,3 +38,25 @@ EAG_INF_02 =
 	}
 }
 
+
+EAG_ARM_01 = 
+{
+	name = "Deutsch Panzer Divisions"
+
+	for_countries = { EAG }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%d. Panzer-Division"
+
+	ordered =
+	{
+		1 = { "%d Panzer-Division" }
+		2 = { "%d Panzer-Division" }
+		3 = { "%d Panzer-Division" }
+		4 = { "%d Panzer-Division" }
+				
+	}
+}
