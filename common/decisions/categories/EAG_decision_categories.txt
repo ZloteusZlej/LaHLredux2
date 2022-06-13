@@ -210,3 +210,19 @@ EAG_european_trade = {
 			}
 	}
 }
+
+EAG_cleaning_london = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			EAG = {
+				has_completed_focus = EAG_safer_city
+			}
+	}
+	available = {
+			EAG = {
+				has_completed_focus = EAG_safer_city
+			}
+	}
+}

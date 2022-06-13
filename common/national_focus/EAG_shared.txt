@@ -1224,7 +1224,7 @@ shared_focus = {
 			add_idea = EAG_polizei_1
 		}
 		add_political_power = 50
-		stability_factor = 0.1
+		add_stability = 0.1
 	}
 	x = 4
 	y = 10
@@ -2649,6 +2649,7 @@ shared_focus = {
 	completion_reward = {
 		add_ideas = EAG_witenagemots
 		add_political_power = 25
+		remove_ideas = EAG_illegitimate_government
 	}
 	x = 5
 	y = 8
@@ -2693,7 +2694,7 @@ shared_focus = {
 
 shared_focus = {
 	id = EAG_congress_of_communities
-	icon = GFX_goal_EAG_freedom_beacon_of_europe
+	icon = GFX_goal_EAG_congress_of_communities
 	cost = 4.3
 	prerequisite = {
 		focus = EAG_witan_revival
@@ -2741,6 +2742,10 @@ shared_focus = {
 			add_idea = EAG_right_face_of_anarchism_2
 		}
 		add_political_power = 45
+		set_rule = {
+			desc = EAG_hui_ne_sosi
+			can_send_volunteers = yes
+		}
 	}
 	x = 6
 	y = 10
@@ -4304,7 +4309,339 @@ shared_focus = {
 		}
 		army_experience = 20
 		add_political_power = 50
+		set_rule = {
+			desc = EAG_hui_ne_sosi
+			can_send_volunteers = yes
+		}
 	}
 	x = 19
+	y = 11
+}
+
+##KLUMB ADMINISTRATION TREE##
+
+shared_focus = {
+	id = EAG_safer_city
+	icon = GFX_goal_EAG_safer_city
+	cost = 4.3
+	completion_reward = {
+		add_political_power = 65
+		1160 = {
+			add_compliance = 15
+			add_resistance = -15
+		}
+	}
+	x = 5
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_federation_of_england
+	icon = GFX_goal_EAG_federation_of_england
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_safer_city
+	}
+	mutually_exclusive = {
+		focus = EAG_forge_the_state
+	}
+	completion_reward = {
+		add_ideas = EAG_federalization_reforms
+	}
+	x = 4
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_forge_the_state
+	icon = GFX_goal_EAG_forge_the_state
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_safer_city
+	}
+	mutually_exclusive = {
+		focus = EAG_federation_of_england
+	}
+	completion_reward = {
+		add_ideas = EAG_centralization_reforms
+	}
+	x = 6
+	y = 6
+}
+
+
+shared_focus = {
+	id = EAG_national_diet
+	icon = GFX_goal_EAG_national_diet
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_forge_the_state
+		focus = EAG_federation_of_england
+	}
+	completion_reward = {
+		add_political_power = 25
+		set_party_name = { 
+			ideology = neocameralism 
+			long_name = EAG_neocameralism_party_legitimate_long 
+			name = EAG_neocameralism_party_legitimate
+		}
+		
+		set_party_name = { 
+			ideology = hegemonism 
+			long_name = EAG_hegemonism_party_legitimate_long 
+			name = EAG_hegemonism_party_legitimate
+		}
+		
+		set_party_name = { 
+			ideology = national_bolshevism 
+			long_name = EAG_national_bolshevism_party_legitimate_long 
+			name = EAG_national_bolshevism_party_legitimate
+		}
+	}
+	x = 4
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_rebrand_the_administration
+	icon = GFX_goal_EAG_rebrand_the_administration
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_forge_the_state
+		focus = EAG_federation_of_england
+	}
+	completion_reward = {
+		remove_idea = EAG_illegitimate_government
+		every_character	= {
+			limit = {
+				is_character = EAG_josef_maria_klumb
+			}
+			add_country_leader_trait = founding_father
+		}
+	}
+	x = 6
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_new_bill_of_rights
+	icon = GFX_goal_EAG_new_bill_of_rights
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_rebrand_the_administration
+	}
+	prerequisite = {
+		focus = EAG_national_diet
+	}
+	completion_reward = {
+		add_political_power = 75
+		add_stability = 0.15
+		add_to_variable = {
+				var = volk_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = volk_dev
+				value = 3
+		}
+		clamp_variable = {
+				var = volk_dev
+				min = 0
+				max = 25
+		}
+	}
+	x = 3
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_improving_the_justice
+	icon = GFX_goal_EAG_improving_the_justice
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_rebrand_the_administration
+	}
+	prerequisite = {
+		focus = EAG_national_diet
+	}
+	completion_reward = {
+		add_ideas = EAG_new_supreme_court
+	}
+	x = 5
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_eyes_and_ears_of_democracy
+	icon = GFX_goal_EAG_eyes_and_ears_of_democracy
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_rebrand_the_administration
+	}
+	prerequisite = {
+		focus = EAG_national_diet
+	}
+	completion_reward = {
+		create_intelligence_agency = {
+				name = "Federal Intelligence Service"
+				icon = GFX_intelligence_agency_logo_eag_2
+			}
+	}
+	x = 7
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_government_of_the_people
+	icon = GFX_goal_EAG_government_of_the_people
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_eyes_and_ears_of_democracy
+	}
+	prerequisite = {
+		focus = EAG_improving_the_justice
+	}
+	prerequisite = {
+		focus = EAG_new_bill_of_rights
+	}
+	completion_reward = {
+		add_ideas = EAG_meritocracy
+	}
+	x = 4
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_english_wave
+	icon = GFX_goal_EAG_english_wave
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_eyes_and_ears_of_democracy
+	}
+	prerequisite = {
+		focus = EAG_improving_the_justice
+	}
+	prerequisite = {
+		focus = EAG_new_bill_of_rights
+	}
+	completion_reward = {
+		add_ideas = EAG_english_wave_bonus
+	}
+	x = 6
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_restore_universities
+	icon = GFX_goal_EAG_restore_universities
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_government_of_the_people
+	}
+	prerequisite = {
+		focus = EAG_english_wave
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_meritocracy
+			add_idea = EAG_meritocracy_1
+		}
+		add_research_slot = 1
+	}
+	x = 4
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_fate_of_the_church
+	icon = GFX_goal_EAG_fate_of_the_church
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_government_of_the_people
+	}
+	prerequisite = {
+		focus = EAG_english_wave
+	}
+	completion_reward = {
+		add_political_power = 25
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.112
+			}
+		}
+	}
+	x = 6
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_peacemaker
+	icon = GFX_goal_EAG_peacemaker
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_fate_of_the_church
+	}
+	prerequisite = {
+		focus = EAG_restore_universities
+	}
+	completion_reward = {
+		add_political_power = 100
+		add_stability = 0.05
+		add_to_variable = {
+				var = volk_mood
+				value = 2
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = volk_dev
+				value = 2
+		}
+		clamp_variable = {
+				var = volk_dev
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = mercs_dev
+				value = 2
+		}
+		clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = 2
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		every_character	= {
+			limit = {
+				is_character = EAG_josef_maria_klumb
+			}
+			add_country_leader_trait = peacemaker
+		}
+		remove_ideas = {
+			EAG_meritocracy_1
+			EAG_english_wave_bonus
+			EAG_new_supreme_court
+		}
+		add_ideas = EAG_e_pluribus_unum
+	}
+	x = 5
 	y = 11
 }
