@@ -10399,3 +10399,257 @@ EAG_cleaning_london = {
 		}
 	}
 }
+
+EAG_london_referendum = {
+	EAG_london_referendum_mission = {
+		cost = 0
+		is_good = no                                        
+        days_mission_timeout = 65
+		allowed = { tag = KNT }
+        available = {                           
+			hidden_trigger = {
+				always = false
+			}
+        }
+		is_good = yes
+		activation = {                          
+            KNT = {
+				has_completed_focus = KNT_london_referendum	
+			}			
+        }
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { kent_popularity_london > eag_popularity_london }
+				}
+				KNT = {
+					transfer_state = 1160
+				}
+				add_stability = -0.1
+				add_war_support = -0.15
+				add_to_variable = {
+					var = volk_dev
+					value = -3
+				}
+				clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+				add_to_variable = {
+					var = mercs_dev
+					value = -2
+				}
+				clamp_variable = {
+					var = mercs_dev
+					min = 0
+					max = 25
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { kent_popularity_london < eag_popularity_london }
+				}
+				add_to_variable = {
+					var = volk_dev
+					value = 1
+				}
+				clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+				add_to_variable = {
+					var = volk_mood
+					value = 2
+				}
+				clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+				add_to_variable = {
+					var = mercs_dev
+					value = 1
+				}
+				clamp_variable = {
+					var = mercs_dev
+					min = 0
+					max = 25
+				}
+				add_to_variable = {
+					var = mercs_mood
+					value = 2
+				}
+				clamp_variable = {
+					var = mercs_mood
+					min = 0
+					max = 25
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { kent_popularity_london = eag_popularity_london }
+				}
+				add_days_mission_timeout = {
+					mission = KNT_london_referendum_mission
+					days = 8
+				}
+			}
+		}
+		complete_effect = {
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_use_administrative_resource = {
+		cost = 25
+		days_remove = 6
+		days_re_enable = 9
+		complete_effect = {
+			add_to_variable = { var = kent_popularity_london value = -6 }
+		}
+		available = { 
+			AND = {
+				check_variable = {
+					var = kent_popularity_london
+					value = 6
+					compare = greater_than_or_equals
+				}
+				KNT = {
+					has_completed_focus = KNT_london_referendum	
+				}	
+				NOT = {
+					EAG = {
+						has_government = national_bolshevism
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_olygarch_media_assitance = {
+		cost = 25
+		days_remove = 5
+		days_re_enable = 7
+		complete_effect = {
+			add_to_variable = { var = eag_popularity_london value = 6 }
+		}
+		available = { 
+			AND = {
+				KNT = {
+					has_completed_focus = KNT_london_referendum	
+				}	
+				NOT = {
+					EAG = {
+						has_government = national_bolshevism
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_invest_in_boroughs = {
+		cost = 50
+		days_remove = 6
+		days_re_enable = 9
+		complete_effect = {
+			add_to_variable = { var = eag_popularity_london value = 10 }
+		}
+		available = { 
+			AND = {
+				KNT = {
+					has_completed_focus = KNT_london_referendum	
+				}	
+				NOT = {
+					EAG = {
+						has_government = national_bolshevism
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_anticapitalist_agitation = {
+		cost = 25
+		days_remove = 6
+		days_re_enable = 9
+		complete_effect = {
+			add_to_variable = { var = kent_popularity_london value = -6 }
+		}
+		available = { 
+			AND = {
+				check_variable = {
+					var = kent_popularity_london
+					value = 6
+					compare = greater_than_or_equals
+				}
+				KNT = {
+					has_completed_focus = KNT_london_referendum	
+				}	
+				EAG = {
+					has_government = national_bolshevism
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_prols_votes = {
+		cost = 25
+		days_remove = 5
+		days_re_enable = 7
+		complete_effect = {
+			add_to_variable = { var = eag_popularity_london value = 6 }
+		}
+		available = { 
+			AND = {
+				KNT = {
+					has_completed_focus = KNT_london_referendum	
+				}	
+
+				EAG = {
+					has_government = national_bolshevism
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_asisst_london_syndicates = {
+		cost = 50
+		days_remove = 6
+		days_re_enable = 9
+		complete_effect = {
+			add_to_variable = { var = eag_popularity_london value = 10 }
+		}
+		available = { 
+			AND = {
+				KNT = {
+					has_completed_focus = KNT_london_referendum	
+				}	
+				EAG = {
+					has_government = national_bolshevism
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

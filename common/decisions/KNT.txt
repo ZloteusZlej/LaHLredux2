@@ -3944,26 +3944,50 @@ KNT_essex_diplomacy = {
 	}
 }
 
-KNT_east_anglia_diplomacy  = {
+KNT_east_anglia_diplomacy = {
     KNT_london_referendum_mission = {
 		cost = 0
 		is_good = no                                        
         days_mission_timeout = 65
 		allowed = { tag = KNT }
         available = {                           
-            check_variable = { kent_popularity_london > 99 }
+			hidden_trigger = {
+				always = false
+			}
         }
-		activation = {                          
-            has_completed_focus = KNT_london_referendum			
+		is_good = yes
+		activation = {   
+			KNT = {
+				has_completed_focus = KNT_london_referendum	
+			}			
         }
 		timeout_effect = {
-			add_stability = -0.15
-			add_war_support	= -0.1
-		}
-		complete_effect = {                    
-			KNT = {
-				transfer_state = 1160
+			if = {
+				limit = {
+					check_variable = { kent_popularity_london > eag_popularity_london }
+				}
+				KNT = {
+					transfer_state = 1160
+				}
 			}
+			else_if = {
+				limit = {
+					check_variable = { kent_popularity_london < eag_popularity_london }
+				}
+				add_stability = -0.1
+				add_war_support = -0.15
+			}
+			else_if = {
+				limit = {
+					check_variable = { kent_popularity_london = eag_popularity_london }
+				}
+				add_days_mission_timeout = {
+					mission = KNT_london_referendum_mission
+					days = 8
+				}
+			}
+		}
+		complete_effect = {
         }
 		ai_will_do = {
 			factor = 100
@@ -3972,8 +3996,30 @@ KNT_east_anglia_diplomacy  = {
 	
 	KNT_nigel_farage_rally = {
 		cost = 25
+		days_remove = 6
+		days_re_enable = 9
+		complete_effect = {
+			add_to_variable = { var = eag_popularity_london value = -6 }
+		}
+		available = { 
+			AND = {
+				check_variable = {
+					var = eag_popularity_london
+					value = 6
+					compare = greater_than_or_equals
+				}
+				has_completed_focus = KNT_london_referendum 
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	KNT_bbs_adverts = {
+		cost = 25
 		days_remove = 5
-		days_re_enable = 3
+		days_re_enable = 7
 		complete_effect = {
 			add_to_variable = { var = kent_popularity_london value = 6 }
 		}
@@ -3983,25 +4029,12 @@ KNT_east_anglia_diplomacy  = {
 		}
 	}
 	
-	KNT_bbs_adverts = {
-		cost = 50
-		days_remove = 4
-		days_re_enable = 6
-		complete_effect = {
-			add_to_variable = { var = kent_popularity_london value = 7 }
-		}
-		available = { has_completed_focus = KNT_london_referendum }
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
 	KNT_nationalist_votes = {
-		cost = 75
+		cost = 50
 		days_remove = 6
-		days_re_enable = 8
+		days_re_enable = 9
 		complete_effect = {
-			add_to_variable = { var = kent_popularity_london value = 8 }
+			add_to_variable = { var = kent_popularity_london value = 10 }
 		}
 		available = { has_completed_focus = KNT_london_referendum }
 		ai_will_do = {
