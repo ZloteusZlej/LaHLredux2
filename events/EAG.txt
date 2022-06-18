@@ -1712,6 +1712,65 @@ country_event = {
 		clear_variable = mercs_mood
 		load_focus_tree = EAG_anarchists
 		add_ideas = EAG_illegitimate_government
+		hidden_effect = {
+			EAG = {
+				country_event = {
+					days = 10
+					random = 5
+					random_days = 1085
+					id = EAG_event.113
+				}
+				
+				country_event = {
+					days = 10
+					random = 5
+					random_days = 1085
+					id = EAG_event.114
+				}
+				
+				country_event = {
+					days = 10
+					random = 5
+					random_days = 1085
+					id = EAG_event.115
+				}
+				
+				country_event = {
+					days = 10
+					random = 5
+					random_days = 1085
+					id = EAG_event.116
+				}
+				
+				country_event = {
+					days = 10
+					random = 5
+					random_days = 1085
+					id = EAG_event.117
+				}
+				
+				country_event = {
+					days = 10
+					random = 5
+					random_days = 1085
+					id = EAG_event.118
+				}
+				
+				country_event = {
+					days = 10
+					random = 5
+					random_days = 1085
+					id = EAG_event.119
+				}
+				
+				country_event = {
+					days = 10
+					random = 5
+					random_days = 30
+					id = EAG_event.120
+				}
+			}
+		}
     }
 	
 	option = {
@@ -2537,6 +2596,143 @@ country_event = {
 				min = 0
 				max = 25
 		}
+    }
+}
+
+
+country_event = {
+	id = EAG_event.113
+	title = EAG_event.113.t
+	desc = EAG_event.113.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.113.a
+		add_to_variable = {
+				var = nsis_concession
+				value = 1
+		}
+    }
+	option = {
+		name = EAG_event.113.b
+		
+    }
+}
+
+country_event = {
+	id = EAG_event.114
+	title = EAG_event.114.t
+	desc = EAG_event.114.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.114.a
+		add_to_variable = {
+				var = nsis_concession
+				value = 1
+		}
+    }
+	option = {
+		name = EAG_event.114.b
+    }
+}
+
+country_event = {
+	id = EAG_event.115
+	title = EAG_event.115.t
+	desc = EAG_event.115.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.115.a
+		add_to_variable = {
+				var = nsis_concession
+				value = 1
+		}
+    }
+	option = {
+		name = EAG_event.115.b
+    }
+}
+
+country_event = {
+	id = EAG_event.116
+	title = EAG_event.116.t
+	desc = EAG_event.116.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.116.a
+		add_to_variable = {
+				var = nsis_concession
+				value = 1
+		}
+    }
+	option = {
+		name = EAG_event.116.b
+    }
+}
+
+country_event = {
+	id = EAG_event.117
+	title = EAG_event.117.t
+	desc = EAG_event.117.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.117.a
+    }
+	option = {
+		name = EAG_event.117.b
+    }
+	option = {
+		name = EAG_event.117.с
+    }
+}
+
+country_event = {
+	id = EAG_event.118
+	title = EAG_event.118.t
+	desc = EAG_event.118.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.118.a
+		add_to_variable = {
+				var = nsis_concession
+				value = 1
+		}
+    }
+	option = {
+		name = EAG_event.118.b
+    }
+}
+
+country_event = {
+	id = EAG_event.119
+	title = EAG_event.119.t
+	desc = EAG_event.119.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.119.a
+		add_to_variable = {
+				var = nsis_concession
+				value = 1
+		}
+    }
+	option = {
+		name = EAG_event.119.b
+    }
+}
+
+country_event = {
+	id = EAG_event.120
+	title = EAG_event.120.t
+	desc = EAG_event.120.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.120.a
+		add_to_variable = {
+				var = nsis_concession
+				value = 1
+		}
+    }
+	option = {
+		name = EAG_event.120.b
     }
 }
 
