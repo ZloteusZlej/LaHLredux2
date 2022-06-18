@@ -4643,6 +4643,7 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.1337.a	
+
     }
 }
 
@@ -4652,6 +4653,10 @@ country_event = {
 	desc = EAG_event.777.d
 	is_triggered_only = yes	
 	option = {
-		name = EAG_event.777.a	
+		name = EAG_event.777.a
+		add_to_array = { parliament_seat_array = 20 } 
+		add_to_array = { parliament_seat_array = -20 }
+		add_to_array = { parliament_member_array = 1 }
+		add_to_array = { parliament_member_array = 2 }		
     }
 }
