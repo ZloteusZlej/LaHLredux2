@@ -480,13 +480,15 @@ country_event = {
 	is_triggered_only = yes
     option = {
 		name = EAG_event.6.a
-		damage_building = {
-			type = arms_factory
-			damage = 2
-		}
-		damage_building = {
-			type = industrial_complex
-			damage = 2
+		random_owned_controlled_state = {
+			damage_building = {
+				type = arms_factory
+				damage = 2
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 2
+			}
 		}
     }
 }
@@ -2611,10 +2613,29 @@ country_event = {
 				var = nsis_concession
 				value = 1
 		}
+		add_political_power = -20
     }
 	option = {
 		name = EAG_event.113.b
-		
+		add_to_variable = {
+				var = mercs_mood
+				value = -3
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = volk_mood
+				value = -3
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		add_political_power = 35
     }
 }
 
@@ -2629,9 +2650,32 @@ country_event = {
 				var = nsis_concession
 				value = 1
 		}
+		add_political_power = -55
     }
 	option = {
 		name = EAG_event.114.b
+		random_character = {
+					limit = {
+					OR = {
+						is_character = EAG_robin_tilbrook
+						is_character = EAG_joachim_wundrak
+						is_character = EAG_andreas_kalbitz
+						is_character = EAG_martin_hohmann
+						is_character = EAG_julia_gasper
+				}
+			}
+			retire = yes
+		}
+		add_to_variable = {
+				var = volk_dev
+				value = -2
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		add_political_power = 30
     }
 }
 
@@ -2646,9 +2690,64 @@ country_event = {
 				var = nsis_concession
 				value = 1
 		}
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = electronics
+		}
+		add_political_power = -45
     }
 	option = {
 		name = EAG_event.115.b
+		add_to_variable = {
+				var = nsis_concession
+				value = 1
+		}
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = industry
+		}
+		add_political_power = -45
+    }
+	option = {
+		name = EAG_event.115.c
+		add_to_variable = {
+				var = nsis_concession
+				value = 1
+		}
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = armor
+		}
+		add_political_power = -45
+    }
+	option = {
+		name = EAG_event.115.e
+		add_to_variable = {
+				var = nsis_concession
+				value = 1
+		}
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = artillery
+		}
+		add_political_power = -45
+    }
+	option = {
+		name = EAG_event.115.f
+		add_political_power = 40
+		add_to_variable = {
+				var = mercs_dev
+				value = 2
+		}
+		clamp_variable = {
+				var = mercs_dev
+				min = 0
+				max = 25
+		}
     }
 }
 
@@ -2663,9 +2762,23 @@ country_event = {
 				var = nsis_concession
 				value = 1
 		}
+		random_neighbor_country	= {
+			limit = {
+				is_neighbor_of = EAG
+			}
+			add_intel = {
+				target = THIS
+				civilian_intel = 3
+				army_intel = 3
+				airforce_intel = 3
+			}
+			add_political_power = -30
+		}
     }
 	option = {
 		name = EAG_event.116.b
+		add_ideas = EAG_intel_improvements
+		add_political_power = 20
     }
 }
 
@@ -2676,12 +2789,42 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.117.a
+		add_to_variable = {
+				var = volk_mood
+				value = -5
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		add_stability = -0.15
     }
 	option = {
 		name = EAG_event.117.b
+		add_to_variable = {
+				var = volk_mood
+				value = -5
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		add_war_support = -0.15
     }
 	option = {
 		name = EAG_event.117.с
+		add_to_variable = {
+				var = volk_mood
+				value = -5
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		add_political_power = -50
     }
 }
 
@@ -2696,9 +2839,25 @@ country_event = {
 				var = nsis_concession
 				value = 1
 		}
+		add_political_power = -55
     }
 	option = {
 		name = EAG_event.118.b
+		random_character = {
+			limit = {
+				is_unit_leader = yes
+			}
+			retire = yes
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = -3
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
     }
 }
 
@@ -2713,9 +2872,58 @@ country_event = {
 				var = nsis_concession
 				value = 1
 		}
+		add_to_variable = {
+				var = volk_dev
+				value = 3
+		}
+		clamp_variable = {
+				var = volk_dev
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = volk_mood
+				value = 2
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		add_political_power = -40
     }
 	option = {
 		name = EAG_event.119.b
+		random_owned_controlled_state = {
+			damage_building = {
+				type = arms_factory
+				damage = 3
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 3
+			}
+		}
+		random_owned_controlled_state = {
+			damage_building = {
+				type = arms_factory
+				damage = 3
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 3
+			}
+		}
+		random_owned_controlled_state = {
+			damage_building = {
+				type = arms_factory
+				damage = 3
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 3
+			}
+		}
     }
 }
 
@@ -2730,9 +2938,42 @@ country_event = {
 				var = nsis_concession
 				value = 1
 		}
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2500
+				producer = EAG
+		}
     }
 	option = {
 		name = EAG_event.120.b
+		add_timed_idea = {
+			idea = EAG_infrastructure_cyberattack
+			days = 30 
+		}
+		random_owned_controlled_state = {
+			damage_building = {
+				type = infrastructure
+				damage = 3
+			}
+		}
+		random_owned_controlled_state = {
+			damage_building = {
+				type = infrastructure
+				damage = 3
+			}
+		}
+		random_owned_controlled_state = {
+			damage_building = {
+				type = infrastructure
+				damage = 3
+			}
+		}
+		random_owned_controlled_state = {
+			damage_building = {
+				type = infrastructure
+				damage = 3
+			}
+		}
     }
 }
 
@@ -2775,7 +3016,7 @@ country_event = {
 	option = {
 		name = EAG_event.68.a	
 		add_political_power = 25
-		random_state = {
+		random_owned_controlled_state = {
 			add_building_construction = {
 				type = infrastructure
 				level = 2
@@ -2827,7 +3068,7 @@ country_event = {
 	option = {
 		name = EAG_event.70.a	
 		add_political_power = 50
-		random_state = {
+		random_owned_controlled_state = {
 			add_building_construction = {
 				type = industrial_complex
 				level = 3
@@ -2839,7 +3080,7 @@ country_event = {
 	option = {
 		name = EAG_event.70.b
 		add_political_power = 50
-		random_state = {
+		random_owned_controlled_state = {
 			add_building_construction = {
 				type = arms_factory
 				level = 3
@@ -4339,7 +4580,7 @@ country_event = { #Nuclear Project
 	option = {
 		name = EAG_event.97.a	
 		add_political_power = 100
-		random_state = {
+		random_owned_controlled_state = {
 			add_building_construction = {
 				type = nuclear_reactor
 				level = 2
@@ -4378,7 +4619,7 @@ country_event = { #Football Frenzy
 	option = {
 		name = EAG_event.99.a	
 		add_political_power = -25
-		random_state = {
+		random_owned_controlled_state = {
 			damage_building = {
 				type = infrastructure
 				damage = 1
@@ -4503,7 +4744,7 @@ country_event = { #Doctor Who Furious
 	option = {
 		name = EAG_event.105.a	
 		add_political_power = -75
-		random_state = {
+		random_owned_controlled_state = {
 			damage_building = {
 				type = infrastructure
 				damage = 2
@@ -4658,5 +4899,187 @@ country_event = {
 		add_to_array = { parliament_seat_array = -20 }
 		add_to_array = { parliament_member_array = 1 }
 		add_to_array = { parliament_member_array = 2 }		
+    }
+}
+
+country_event = {
+	id = EAG_event.200
+	title = EAG_event.200.t
+	desc = EAG_event.200.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.200.a	
+		set_country_flag = run_as_klumb
+    }
+	option = {
+		name = EAG_event.200.b	
+		set_country_flag = run_as_may
+    }
+	option = {
+		name = EAG_event.200.c 
+		set_country_flag = run_as_yea
+    }
+	option = {
+		name = EAG_event.200.e
+		set_country_flag = run_as_whitehouse
+    }
+	option = {
+		name = EAG_event.200.f
+		set_country_flag = run_as_bushell
+    }
+	option = {
+		name = EAG_event.200.g
+		set_country_flag = run_as_starmer
+    }
+	option = {
+		name = EAG_event.200.h
+		set_country_flag = run_as_iсke
+    }
+	option = {
+		name = EAG_event.200.k
+		set_country_flag = run_as_astley
+    }
+	option = {
+		name = EAG_event.200.l
+		set_country_flag = run_as_bates
+    }
+}
+
+country_event = {
+	id = EAG_event.201
+	title = EAG_event.201.t
+	desc = EAG_event.201.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.201.a	
+		add_stability = 0.05
+    }
+}
+
+country_event = {
+	id = EAG_event.202
+	title = EAG_event.202.t
+	desc = EAG_event.202.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.202.a	
+		EAG = {
+			retire_country_leader = yes
+			promote_character = EAG_theresa_may
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.203
+	title = EAG_event.203.t
+	desc = EAG_event.203.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.203.a	
+		EAG = {
+			set_politics = {
+				ruling_party = neocameralism
+			}
+			retire_country_leader = yes
+			promote_character = EAG_philip_yea
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.204
+	title = EAG_event.204.t
+	desc = EAG_event.204.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.204.a	
+		EAG = {
+			set_politics = {
+				ruling_party = socialism
+			}
+			retire_country_leader = yes
+			promote_character = EAG_keir_starmer
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.205
+	title = EAG_event.205.t
+	desc = EAG_event.205.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.205.a	
+		EAG = {
+			set_politics = {
+				ruling_party = national_bolshevism
+			}
+			retire_country_leader = yes
+			promote_character = EAG_garry_bushell
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.206
+	title = EAG_event.206.t
+	desc = EAG_event.206.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.206.a	
+		EAG = {
+			set_politics = {
+				ruling_party = millennialism
+			}
+			retire_country_leader = yes
+			promote_character = EAG_david_iсke
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.207
+	title = EAG_event.207.t
+	desc = EAG_event.207.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.207.a	
+		EAG = {
+			set_politics = {
+				ruling_party = right_populism
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.208
+	title = EAG_event.208.t
+	desc = EAG_event.208.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.208.a	
+		EAG = {
+			set_politics = {
+				ruling_party = neocameralism
+			}
+			retire_country_leader = yes
+			promote_character = EAG_alex_whitehouse
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.209
+	title = EAG_event.209.t
+	desc = EAG_event.209.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.209.a	
+		EAG = {
+			retire_country_leader = yes
+			promote_character = EAG_michael_bates
+		}
     }
 }

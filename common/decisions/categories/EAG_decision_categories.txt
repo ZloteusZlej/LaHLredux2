@@ -252,3 +252,19 @@ parliament_gui_decision_category = {
 	scripted_gui = parliament_gui
 	visible_when_empty = yes
 }
+
+EAG_elections = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			EAG = {
+				has_completed_focus = EAG_vote_or_lose
+			}
+	}
+	available = {
+			EAG = {
+				has_completed_focus = EAG_vote_or_lose
+			}
+	}
+}

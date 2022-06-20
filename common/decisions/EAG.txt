@@ -9855,6 +9855,9 @@ EAG_nsis_coop = {
 			NOT = {
 				has_country_flag = current_ddos
 			}
+			EAG = {
+				has_war	= yes
+			}
 		}
 	}	
 	EAG_cyber_attack_on_mercia = {
@@ -9876,6 +9879,9 @@ EAG_nsis_coop = {
 			NOT = {
 				has_country_flag = current_ddos
 			}
+			EAG = {
+				has_war	= yes
+			}
 		}
 	}
 	EAG_cyber_attack_on_northumbria = {
@@ -9896,6 +9902,9 @@ EAG_nsis_coop = {
 		available = {
 			NOT = {
 				has_country_flag = current_ddos
+			}
+			EAG = {
+				has_war	= yes
 			}
 		}
 	}
@@ -9919,6 +9928,9 @@ EAG_nsis_coop = {
 			NOT = {
 				has_country_flag = current_ddos
 			}
+			EAG = {
+				has_war	= yes
+			}
 		}
 	}
 	
@@ -9940,6 +9952,9 @@ EAG_nsis_coop = {
 		available = {
 			NOT = {
 				has_country_flag = current_ddos
+			}
+			EAG = {
+				has_war	= yes
 			}
 		}
 	}
@@ -9963,6 +9978,9 @@ EAG_nsis_coop = {
 			NOT = {
 				has_country_flag = current_ddos
 			}
+			EAG = {
+				has_war	= yes
+			}
 		}
 	}
 	
@@ -9984,6 +10002,9 @@ EAG_nsis_coop = {
 		available = {
 			NOT = {
 				has_country_flag = current_ddos
+			}
+			EAG = {
+				has_war	= yes
 			}
 		}
 	}
@@ -10405,7 +10426,7 @@ EAG_london_referendum = {
 		cost = 0
 		is_good = no                                        
         days_mission_timeout = 65
-		allowed = { tag = KNT }
+		allowed = { tag = EAG }
         available = {                           
 			hidden_trigger = {
 				always = false
@@ -10654,3 +10675,1523 @@ EAG_london_referendum = {
 	}
 }
 
+EAG_elections = {
+	EAG_election_campaign = {
+		cost = 0
+		is_good = no                                        
+        days_mission_timeout = 183
+		allowed = { tag = EAG }
+        available = {                           
+			hidden_trigger = {
+				always = false
+			}
+        }
+		cancel_trigger = {
+			has_country_flag = elections_ended
+		}
+		is_good = yes
+		activation = {                          
+           	OR = {
+				has_country_flag = run_as_klumb
+				has_country_flag = run_as_may
+				has_country_flag = run_as_whitehouse
+				has_country_flag = run_as_bushell
+				has_country_flag = run_as_starmer
+				has_country_flag = run_as_iсke
+				has_country_flag = run_as_astley
+				has_country_flag = run_as_bates
+				has_country_flag = run_as_yea
+			}			
+        }
+		timeout_effect = {
+			set_country_flag = elections_ended
+		}
+		complete_effect = {
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_party_of_power_move = {    
+        allowed = { tag = EAG }                 
+        available = {  
+			hidden_trigger = {
+				always = false
+			}		
+        }
+        visible = {
+           EAG = {
+				OR = {
+					has_country_flag = run_as_whitehouse
+					has_country_flag = run_as_bushell
+					has_country_flag = run_as_starmer
+					has_country_flag = run_as_iсke
+					has_country_flag = run_as_astley
+					has_country_flag = run_as_yea
+				}
+			}
+        }
+        activation = {                          
+			EAG = {
+				OR = {
+					has_country_flag = run_as_whitehouse
+					has_country_flag = run_as_bushell
+					has_country_flag = run_as_starmer
+					has_country_flag = run_as_iсke
+					has_country_flag = run_as_astley
+					has_country_flag = run_as_yea
+				}
+			}			
+        }
+		cancel_trigger = {
+			has_country_flag = elections_ended
+		}
+        is_good = no                                        
+        days_mission_timeout = 10          
+        timeout_effect = {  
+			EAG = {
+				random_list = {
+					25 = {
+						add_popularity = {
+							ideology = hegemonism
+							popularity = 0.08
+						}
+					}
+					30 = {
+						add_popularity = {
+							ideology = socialism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = right_populism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = national_bolshevism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = millenarism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = neocameralism
+							popularity = -0.04
+						}
+					}
+					30 = {
+						add_popularity = {
+							ideology = hegemonism
+							popularity = 0.05
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = millenarism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = socialism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = national_bolshevism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = right_populism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = neocameralism
+							popularity = -0.15
+						}
+					}
+				}
+			}
+        }
+        complete_effect = {                    
+        }
+		ai_will_do = {
+			factor = 100
+		}
+    }
+	
+	EAG_freedom_party_move = {    
+        allowed = { tag = EAG }                 
+        available = {  
+			hidden_trigger = {
+				always = false
+			}		
+        }
+		cancel_trigger = {
+			has_country_flag = elections_ended
+		}
+        visible = {
+           EAG = {
+				OR = {
+					has_country_flag = run_as_klumb
+					has_country_flag = run_as_may
+					has_country_flag = run_as_bushell
+					has_country_flag = run_as_starmer
+					has_country_flag = run_as_iсke
+					has_country_flag = run_as_astley
+					has_country_flag = run_as_bates
+				}
+			}
+        }
+        activation = {                          
+			EAG = {
+				OR = {
+					has_country_flag = run_as_klumb
+					has_country_flag = run_as_may
+					has_country_flag = run_as_bushell
+					has_country_flag = run_as_starmer
+					has_country_flag = run_as_iсke
+					has_country_flag = run_as_astley
+					has_country_flag = run_as_bates
+				}
+			}			
+        }
+        is_good = no                                        
+        days_mission_timeout = 10          
+        timeout_effect = {  
+			EAG = {
+				random_list = {
+					25 = {
+						add_popularity = {
+							ideology = neocameralism
+							popularity = 0.08
+						}
+					}
+					30 = {
+						add_popularity = {
+							ideology = socialism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = right_populism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = national_bolshevism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = millenarism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = hegemonism
+							popularity = -0.04
+						}
+					}
+					30 = {
+						add_popularity = {
+							ideology = neocameralism
+							popularity = 0.05
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = millenarism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = socialism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = national_bolshevism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = right_populism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = hegemonism
+							popularity = -0.15
+						}
+					}
+				}
+			}
+        }
+        complete_effect = {                    
+        }
+		ai_will_do = {
+			factor = 100
+		}
+    }
+	
+	EAG_volt_uk_move = {    
+        allowed = { tag = EAG }                 
+        available = {  
+			hidden_trigger = {
+				always = false
+			}		
+        }
+		cancel_trigger = {
+			has_country_flag = elections_ended
+		}
+        visible = {
+           EAG = {
+				OR = {
+					has_country_flag = run_as_klumb
+					has_country_flag = run_as_may
+					has_country_flag = run_as_bushell
+					has_country_flag = run_as_iсke
+					has_country_flag = run_as_astley
+					has_country_flag = run_as_bates
+					has_country_flag = run_as_yea
+					has_country_flag = run_as_whitehouse
+				}
+			}
+        }
+        activation = {                          
+			EAG = {
+				OR = {
+					has_country_flag = run_as_klumb
+					has_country_flag = run_as_may
+					has_country_flag = run_as_bushell
+					has_country_flag = run_as_iсke
+					has_country_flag = run_as_astley
+					has_country_flag = run_as_bates
+					has_country_flag = run_as_yea
+					has_country_flag = run_as_whitehouse
+				}
+			}			
+        }
+        is_good = no                                        
+        days_mission_timeout = 10          
+        timeout_effect = {  
+			EAG = {
+				random_list = {
+					25 = {
+						add_popularity = {
+							ideology = socialism
+							popularity = 0.08
+						}
+					}
+					30 = {
+						add_popularity = {
+							ideology = neocameralism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = right_populism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = national_bolshevism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = millenarism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = hegemonism
+							popularity = -0.04
+						}
+					}
+					30 = {
+						add_popularity = {
+							ideology = socialism
+							popularity = 0.05
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = millenarism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = neocameralism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = national_bolshevism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = right_populism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = hegemonism
+							popularity = -0.15
+						}
+					}
+				}
+			}
+        }
+        complete_effect = {                    
+        }
+		ai_will_do = {
+			factor = 100
+		}
+    }
+	
+	EAG_peoples_party_move = {    
+        allowed = { tag = EAG }                 
+        available = {  
+			hidden_trigger = {
+				always = false
+			}		
+        }
+		cancel_trigger = {
+			has_country_flag = elections_ended
+		}
+        visible = {
+           EAG = {
+				OR = {
+					has_country_flag = run_as_klumb
+					has_country_flag = run_as_may
+					has_country_flag = run_as_starmer
+					has_country_flag = run_as_iсke
+					has_country_flag = run_as_astley
+					has_country_flag = run_as_bates
+					has_country_flag = run_as_yea
+					has_country_flag = run_as_whitehouse
+				}
+			}
+        }
+        activation = {                          
+			EAG = {
+				OR = {
+					has_country_flag = run_as_klumb
+					has_country_flag = run_as_may
+					has_country_flag = run_as_starmer
+					has_country_flag = run_as_iсke
+					has_country_flag = run_as_astley
+					has_country_flag = run_as_bates
+					has_country_flag = run_as_yea
+					has_country_flag = run_as_whitehouse
+				}
+			}			
+        }
+        is_good = no                                        
+        days_mission_timeout = 10          
+        timeout_effect = {  
+			EAG = {
+				random_list = {
+					25 = {
+						add_popularity = {
+							ideology = national_bolshevism
+							popularity = 0.08
+						}
+					}
+					30 = {
+						add_popularity = {
+							ideology = neocameralism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = right_populism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = socialism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = millenarism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = hegemonism
+							popularity = -0.04
+						}
+					}
+					30 = {
+						add_popularity = {
+							ideology = national_bolshevism
+							popularity = 0.05
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = millenarism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = neocameralism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = socialism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = right_populism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = hegemonism
+							popularity = -0.15
+						}
+					}
+				}
+			}
+        }
+        complete_effect = {                    
+        }
+		ai_will_do = {
+			factor = 100
+		}
+    }
+	
+	EAG_icke_move = {    
+        allowed = { tag = EAG }                 
+        available = {  
+			hidden_trigger = {
+				always = false
+			}		
+        }
+		cancel_trigger = {
+			has_country_flag = elections_ended
+		}
+        visible = {
+           EAG = {
+				OR = {
+					has_country_flag = run_as_klumb
+					has_country_flag = run_as_may
+					has_country_flag = run_as_starmer
+					has_country_flag = run_as_bushell
+					has_country_flag = run_as_astley
+					has_country_flag = run_as_bates
+					has_country_flag = run_as_yea
+					has_country_flag = run_as_whitehouse
+				}
+			}
+        }
+        activation = {                          
+			EAG = {
+				OR = {
+					has_country_flag = run_as_klumb
+					has_country_flag = run_as_may
+					has_country_flag = run_as_starmer
+					has_country_flag = run_as_bushell
+					has_country_flag = run_as_astley
+					has_country_flag = run_as_bates
+					has_country_flag = run_as_yea
+					has_country_flag = run_as_whitehouse
+				}
+			}			
+        }
+        is_good = no                                        
+        days_mission_timeout = 10          
+        timeout_effect = {  
+			EAG = {
+				random_list = {
+					25 = {
+						add_popularity = {
+							ideology = millenarism
+							popularity = 0.08
+						}
+					}
+					30 = {
+						add_popularity = {
+							ideology = neocameralism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = right_populism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = socialism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = national_bolshevism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = hegemonism
+							popularity = -0.04
+						}
+					}
+					30 = {
+						add_popularity = {
+							ideology = millenarism
+							popularity = 0.05
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = national_bolshevism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = neocameralism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = socialism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = right_populism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = hegemonism
+							popularity = -0.15
+						}
+					}
+				}
+			}
+        }
+        complete_effect = {                    
+        }
+		ai_will_do = {
+			factor = 100
+		}
+    }
+	
+	EAG_astley_move = {    
+        allowed = { tag = EAG }                 
+        available = {  
+			hidden_trigger = {
+				always = false
+			}		
+        }
+		cancel_trigger = {
+			has_country_flag = elections_ended
+		}
+        visible = {
+           EAG = {
+				OR = {
+					has_country_flag = run_as_klumb
+					has_country_flag = run_as_may
+					has_country_flag = run_as_starmer
+					has_country_flag = run_as_bushell
+					has_country_flag = run_as_iсke
+					has_country_flag = run_as_bates
+					has_country_flag = run_as_yea
+					has_country_flag = run_as_whitehouse
+				}
+			}
+        }
+        activation = {                          
+			EAG = {
+				OR = {
+					has_country_flag = run_as_klumb
+					has_country_flag = run_as_may
+					has_country_flag = run_as_starmer
+					has_country_flag = run_as_bushell
+					has_country_flag = run_as_iсke
+					has_country_flag = run_as_bates
+					has_country_flag = run_as_yea
+					has_country_flag = run_as_whitehouse
+				}
+			}			
+        }
+        is_good = no                                        
+        days_mission_timeout = 10          
+        timeout_effect = {  
+			EAG = {
+				random_list = {
+					25 = {
+						add_popularity = {
+							ideology = right_populism
+							popularity = 0.08
+						}
+					}
+					30 = {
+						add_popularity = {
+							ideology = neocameralism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = millenarism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = socialism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = national_bolshevism
+							popularity = -0.04
+						}
+						add_popularity = {
+							ideology = hegemonism
+							popularity = -0.04
+						}
+					}
+					30 = {
+						add_popularity = {
+							ideology = right_populism
+							popularity = 0.05
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = national_bolshevism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = neocameralism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = socialism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = millenarism
+							popularity = -0.15
+						}
+					}
+					3 = {
+						add_popularity = {
+							ideology = hegemonism
+							popularity = -0.15
+						}
+					}
+				}
+			}
+        }
+        complete_effect = {                    
+        }
+		ai_will_do = {
+			factor = 100
+		}
+    }
+	
+	EAG_pro_governmental_agitation = {
+		cost = 25
+		days_remove = 10
+		days_re_enable = 12
+		complete_effect = {
+			add_popularity = {
+				ideology = hegemonism
+				popularity = 0.05
+			}
+		}
+		available = { 
+			OR = {
+				has_country_flag = run_as_klumb
+				has_country_flag = run_as_may
+				has_country_flag = run_as_bates
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = run_as_klumb
+				has_country_flag = run_as_may
+				has_country_flag = run_as_bates
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_encourage_loyalist_rallies = {
+		cost = 40
+		days_remove = 7
+		days_re_enable = 7
+		complete_effect = {
+			add_popularity = {
+				ideology = hegemonism
+				popularity = 0.08
+			}
+			add_command_power = -15
+		}
+		available = { 
+			AND = {
+				command_power > 15
+				OR = {
+					has_country_flag = run_as_klumb
+					has_country_flag = run_as_may
+					has_country_flag = run_as_bates
+				}
+			}
+		}
+		visible = {
+			AND = {
+				command_power > 15
+				OR = {
+					has_country_flag = run_as_klumb
+					has_country_flag = run_as_may
+					has_country_flag = run_as_bates
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_discredit_opponents_1 = {
+		cost = 30
+		days_remove = 10
+		days_re_enable = 12
+		complete_effect = {
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = right_populism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = national_bolshevism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = millenarism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = neocameralism
+				popularity = -0.04
+			}
+		}
+		available = {
+			OR = {
+				has_country_flag = run_as_klumb
+				has_country_flag = run_as_may
+				has_country_flag = run_as_bates
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = run_as_klumb
+				has_country_flag = run_as_may
+				has_country_flag = run_as_bates
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_right_wing_agitation = {
+		cost = 25
+		days_remove = 10
+		days_re_enable = 12
+		complete_effect = {
+			add_popularity = {
+				ideology = neocameralism
+				popularity = 0.05
+			}
+		}
+		available = { 
+			OR = {
+				has_country_flag = run_as_whitehouse
+				has_country_flag = run_as_yea
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = run_as_whitehouse
+				has_country_flag = run_as_yea
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_encourage_nationalist_rallies = {
+		cost = 40
+		days_remove = 7
+		days_re_enable = 7
+		complete_effect = {
+			add_popularity = {
+				ideology = neocameralism
+				popularity = 0.08
+			}
+			add_command_power = -15
+		}
+		available = { 
+			AND = {
+				command_power > 15
+				OR = {
+					has_country_flag = run_as_whitehouse
+					has_country_flag = run_as_yea
+				}
+			}
+		}
+		visible = {
+			AND = {
+				command_power > 15
+				OR = {
+					has_country_flag = run_as_whitehouse
+					has_country_flag = run_as_yea
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_discredit_opponents_2 = {
+		cost = 30
+		days_remove = 10
+		days_re_enable = 12
+		complete_effect = {
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = hegemonism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = national_bolshevism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = millenarism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = right_populism
+				popularity = -0.04
+			}
+		}
+		available = {
+			OR = {
+				has_country_flag = run_as_whitehouse
+				has_country_flag = run_as_yea
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = run_as_whitehouse
+				has_country_flag = run_as_yea
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_left_wing_agitation = {
+		cost = 25
+		days_remove = 10
+		days_re_enable = 12
+		complete_effect = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+		available = { 
+			OR = {
+				has_country_flag = run_as_starmer
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = run_as_starmer
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_encourage_labour_rallies = {
+		cost = 40
+		days_remove = 7
+		days_re_enable = 7
+		complete_effect = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.08
+			}
+			add_command_power = -15
+		}
+		available = { 
+			AND = {
+				command_power > 15
+				OR = {
+					has_country_flag = run_as_starmer
+				}
+			}
+		}
+		visible = {
+			AND = {
+				command_power > 15
+				OR = {
+					has_country_flag = run_as_starmer
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_discredit_opponents_3 = {
+		cost = 30
+		days_remove = 10
+		days_re_enable = 12
+		complete_effect = {
+			add_popularity = {
+				ideology = right_populism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = hegemonism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = national_bolshevism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = millenarism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = neocameralism
+				popularity = -0.04
+			}
+		}
+		available = {
+			OR = {
+				has_country_flag = run_as_starmer
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = run_as_starmer
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_regionalist_agitation = {
+		cost = 25
+		days_remove = 10
+		days_re_enable = 12
+		complete_effect = {
+			add_popularity = {
+				ideology = national_bolshevism
+				popularity = 0.05
+			}
+		}
+		available = { 
+			OR = {
+				has_country_flag = run_as_bushell
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = run_as_bushell
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_encourage_farmers_rallies = {
+		cost = 40
+		days_remove = 7
+		days_re_enable = 7
+		complete_effect = {
+			add_popularity = {
+				ideology = national_bolshevism
+				popularity = 0.08
+			}
+			add_command_power = -15
+		}
+		available = { 
+			AND = {
+				command_power > 15
+				OR = {
+					has_country_flag = run_as_bushell
+				}
+			}
+		}
+		visible = {
+			AND = {
+				command_power > 15
+				OR = {
+					has_country_flag = run_as_bushell
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_discredit_opponents_4 = {
+		cost = 30
+		days_remove = 10
+		days_re_enable = 12
+		complete_effect = {
+			add_popularity = {
+				ideology = right_populism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = hegemonism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = millenarism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = neocameralism
+				popularity = -0.04
+			}
+		}
+		available = {
+			OR = {
+				has_country_flag = run_as_bushell
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = run_as_bushell
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_pro_icke_agitation = {
+		cost = 25
+		days_remove = 10
+		days_re_enable = 12
+		complete_effect = {
+			add_popularity = {
+				ideology = millenarism
+				popularity = 0.05
+			}
+		}
+		available = { 
+			OR = {
+				has_country_flag = run_as_iсke
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = run_as_iсke
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_encourage_new_ageist_rallies = {
+		cost = 40
+		days_remove = 7
+		days_re_enable = 7
+		complete_effect = {
+			add_popularity = {
+				ideology = national_bolshevism
+				popularity = 0.08
+			}
+			add_command_power = -15
+		}
+		available = { 
+			AND = {
+				command_power > 15
+				OR = {
+					has_country_flag = run_as_iсke
+				}
+			}
+		}
+		visible = {
+			AND = {
+				command_power > 15
+				OR = {
+					has_country_flag = run_as_iсke
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_discredit_opponents_5 = {
+		cost = 30
+		days_remove = 10
+		days_re_enable = 12
+		complete_effect = {
+			add_popularity = {
+				ideology = right_populism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = hegemonism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = national_bolshevism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = neocameralism
+				popularity = -0.04
+			}
+		}
+		available = {
+			OR = {
+				has_country_flag = run_as_iсke
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = run_as_iсke
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_populist_agitation = {
+		cost = 25
+		days_remove = 10
+		days_re_enable = 12
+		complete_effect = {
+			add_popularity = {
+				ideology = right_populism
+				popularity = 0.05
+			}
+		}
+		available = { 
+			OR = {
+				has_country_flag = run_as_astley
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = run_as_astley
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_encourage_youth_rallies = {
+		cost = 40
+		days_remove = 7
+		days_re_enable = 7
+		complete_effect = {
+			add_popularity = {
+				ideology = right_populism
+				popularity = 0.08
+			}
+			add_command_power = -15
+		}
+		available = { 
+			AND = {
+				command_power > 15
+				OR = {
+					has_country_flag = run_as_astley
+				}
+			}
+		}
+		visible = {
+			AND = {
+				command_power > 15
+				OR = {
+					has_country_flag = run_as_astley
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_discredit_opponents_6 = {
+		cost = 30
+		days_remove = 10
+		days_re_enable = 12
+		complete_effect = {
+			add_popularity = {
+				ideology = millenarism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = hegemonism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = national_bolshevism
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = neocameralism
+				popularity = -0.04
+			}
+		}
+		available = {
+			OR = {
+				has_country_flag = run_as_astley
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = run_as_astley
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_frame_government_officials = {
+		cost = 65
+		days_remove = 15
+		days_re_enable = 45
+		complete_effect = {
+			add_popularity = {
+				ideology = hegemonism
+				popularity = -0.15
+			}
+		}
+		available = {
+			NOT = {
+				AND = {
+					has_country_flag = run_as_klumb
+					has_country_flag = run_as_may
+					has_country_flag = run_as_bates
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				AND = {
+					has_country_flag = run_as_klumb
+					has_country_flag = run_as_may
+					has_country_flag = run_as_bates
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_frame_freedom_party = {
+		cost = 65
+		days_remove = 15
+		days_re_enable = 45
+		complete_effect = {
+			add_popularity = {
+				ideology = neocameralism
+				popularity = -0.15
+			}
+		}
+		available = {
+			NOT = {
+				AND = {
+					has_country_flag = run_as_whitehouse
+					has_country_flag = run_as_yea
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				AND = {
+					has_country_flag = run_as_whitehouse
+					has_country_flag = run_as_yea
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_frame_uk_volt = {
+		cost = 65
+		days_remove = 15
+		days_re_enable = 45
+		complete_effect = {
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.15
+			}
+		}
+		available = {
+			NOT = {
+				AND = {
+					has_country_flag = run_as_starmer
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				AND = {
+					has_country_flag = run_as_starmer
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_frame_peoples_party = {
+		cost = 65
+		days_remove = 15
+		days_re_enable = 45
+		complete_effect = {
+			add_popularity = {
+				ideology = national_bolshevism
+				popularity = -0.15
+			}
+		}
+		available = {
+			NOT = {
+				AND = {
+					has_country_flag = run_as_bushell
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				AND = {
+					has_country_flag = run_as_bushell
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_frame_icke = {
+		cost = 65
+		days_remove = 15
+		days_re_enable = 45
+		complete_effect = {
+			add_popularity = {
+				ideology = millenarism
+				popularity = -0.15
+			}
+		}
+		available = {
+			NOT = {
+				AND = {
+					has_country_flag = run_as_iсke
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				AND = {
+					has_country_flag = run_as_iсke
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	EAG_frame_astley = {
+		cost = 65
+		days_remove = 15
+		days_re_enable = 45
+		complete_effect = {
+			add_popularity = {
+				ideology = right_populism
+				popularity = -0.15
+			}
+		}
+		available = {
+			NOT = {
+				AND = {
+					has_country_flag = run_as_astley
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				AND = {
+					has_country_flag = run_as_astley
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

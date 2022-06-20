@@ -4654,3 +4654,521 @@ shared_focus = {
 	x = 5
 	y = 11
 }
+
+###KLUMB FINAL###
+
+shared_focus = {
+	id = EAG_open_the_country
+	icon = GFX_goal_EAG_open_the_country
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_peacemaker
+	}
+	prerequisite = {
+		focus = EAG_we_walk_in_line
+	}
+	prerequisite = {
+		focus = EAG_governors_care
+	}
+	available = {
+		has_country_flag = OSTANG_klumb_britain_reunified
+	}
+	completion_reward = {
+		add_political_power = 250
+		add_stability = 0.2
+		country_event = {
+			days = 1
+			id = super.7
+		}
+		set_capital = {
+			state = 1160
+			remember_old_capital = no
+		}
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.420
+			}
+		}
+		if = {
+			limit = {
+				has_idea = export_focus
+			}
+			swap_ideas = {
+				remove_idea = export_focus
+				add_idea = free_trade
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = limited_exports
+			}
+			swap_ideas = {
+				remove_idea = limited_exports
+				add_idea = free_trade
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = closed_economy
+			}
+			swap_ideas = {
+				remove_idea = closed_economy
+				add_idea = free_trade
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = closed_economy
+			}
+			swap_ideas = {
+				remove_idea = closed_economy
+				add_idea = free_trade
+			}
+		}
+	}
+	x = 12
+	y = 13
+}
+
+shared_focus = {
+	id = EAG_refugees_welcome
+	icon = GFX_goal_EAG_refugees_welcome
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_open_the_country
+	}
+	completion_reward = {
+		every_controlled_state = {
+			add_manpower = 50000
+		}
+		1160 = {
+			add_manpower = 500000
+		}
+		1154 = {
+			add_manpower = 500000
+		}
+		1146 = {
+			add_manpower = 250000
+		}
+		1009 = {
+			add_manpower = 500000
+		}
+		add_offsite_building = { type = industrial_complex level = 3 }
+	}
+	x = 11
+	y = 14
+}
+
+shared_focus = {
+	id = EAG_not_so_fast
+	icon = GFX_goal_EAG_not_so_fast
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_open_the_country
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_e_pluribus_unum
+			add_idea = EAG_e_pluribus_unum_1
+		}
+		add_research_slot = 1
+	}
+	x = 13
+	y = 14
+}
+
+shared_focus = {
+	id = EAG_unstopabble_growth
+	icon = GFX_goal_EAG_unstopabble_growth
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_refugees_welcome
+	}
+	prerequisite = {
+		focus = EAG_not_so_fast
+	}
+	mutually_exclusive = {
+		focus = EAG_expand_welfare
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_miracle_on_thames_4
+			add_idea = EAG_miracle_on_thames_5a
+		}
+	}
+	x = 11
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_expand_welfare
+	icon = GFX_goal_EAG_expand_welfare
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_refugees_welcome
+	}
+	prerequisite = {
+		focus = EAG_not_so_fast
+	}
+	mutually_exclusive = {
+		focus = EAG_non_stopabble_growth
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_miracle_on_thames_4
+			add_idea = EAG_miracle_on_thames_5b
+		}
+	}
+	x = 13
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_house_the_folk
+	icon = GFX_goal_EAG_house_the_folk
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_expand_welfare
+		focus = EAG_unstopabble_growth
+	}
+	completion_reward = {
+		add_ideas = EAG_mass_social_housing
+		add_political_power = 15
+		add_to_variable = {
+				var = volk_mood
+				value = 2
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		add_to_variable = {
+				var = volk_dev
+				value = 2
+		}
+		clamp_variable = {
+				var = volk_dev
+				min = 0
+				max = 25
+		}
+	}
+	x = 11
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_mass_conversion
+	icon = GFX_goal_EAG_mass_conversion
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_expand_welfare
+		focus = EAG_unstopabble_growth
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		add_to_variable = {
+			var = volk_dev
+			value = 2
+		}
+		clamp_variable = {
+			var = volk_dev
+			min = 0
+			max = 25
+		}
+	}
+	x = 13
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_vote_or_lose
+	icon = GFX_goal_EAG_vote_or_lose
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_mass_conversion
+	}
+	prerequisite = {
+		focus = EAG_house_the_folk
+	}
+	completion_reward = {
+		add_political_power = 100
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.200
+			}
+		}
+		set_party_name = { 
+			ideology = millenarism
+			long_name = EAG_millenarism_party_legitimate_long 
+			name = EAG_millenarism_party_legitimate
+		}
+		set_party_name = { 
+			ideology = millenarism
+			long_name = EAG_right_populism_party_legitimate_long 
+			name = EAG_right_populism_party_legitimate
+		}
+		recruit_character = EAG_david_iсke
+		recruit_character = EAG_keir_starmer
+	}
+	x = 14
+	y = 17
+}
+
+shared_focus = {
+	id = EAG_and_the_winner_is
+	icon = GFX_goal_EAG_and_the_winner_is
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_vote_or_lose
+	}
+	available = {
+		hidden_trigger = {
+			always = false
+		}
+	}
+	bypass = {
+		has_country_flag = elections_ended
+	}
+	completion_reward = {
+		custom_effect_tooltip = EAG_elections_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = party_popularity@hegemonism
+							value = highest_party_popularity
+							compare = equals
+						}
+						NOT = {
+							has_country_flag = run_as_may
+							has_country_flag = run_as_bates
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.201
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = party_popularity@hegemonism
+							value = highest_party_popularity
+							compare = equals
+						}
+						has_country_flag = run_as_may
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.202
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = party_popularity@hegemonism
+							value = highest_party_popularity
+							compare = equals
+						}
+						has_country_flag = run_as_bates
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.209
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = party_popularity@neocameralism
+							value = highest_party_popularity
+							compare = equals
+						}
+						has_country_flag = run_as_yea
+						NOT = {
+							has_country_flag = run_as_whitehouse
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.208
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = party_popularity@neocameralism
+							value = highest_party_popularity
+							compare = equals
+						}
+						has_country_flag = run_as_whitehouse
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.209
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = party_popularity@socialism
+							value = highest_party_popularity
+							compare = equals
+						}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.204
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = party_popularity@national_bolshevism
+							value = highest_party_popularity
+							compare = equals
+						}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.205
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = party_popularity@millenarism
+							value = highest_party_popularity
+							compare = equals
+						}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.206
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						check_variable = {
+							var = party_popularity@right_populism
+							value = highest_party_popularity
+							compare = equals
+						}
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.207
+					}
+				}
+			}
+		}
+	}
+	x = 14
+	y = 18
+}
