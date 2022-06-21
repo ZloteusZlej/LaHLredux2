@@ -31,6 +31,29 @@ division_template = {
 	priority = 2
 }
 
+division_template = {
+	name = "Expeditions-Panzerdivisionen"
+	division_names_group = EAG_ARM_01
+
+	regiments = {
+		MBT = { x = 0 y = 0 }	
+		MBT = { x = 0 y = 1 }
+		MBT = { x = 0 y = 2 }	
+		MBT = { x = 0 y = 3 }
+		MBT = { x = 0 y = 4 }
+		IFV = { x = 1 y = 0 }
+		IFV = { x = 1 y = 1 }
+		IFV = { x = 1 y = 2 }
+		IFV = { x = 1 y = 3 }
+		IFV = { x = 1 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+		artillery = { x = 0 y = 1 } 		
+	}
+	priority = 2
+}
+
 units = {
 	division= {	
 		division_name = {
@@ -81,12 +104,24 @@ units = {
 	division= {	
 		division_name = {
 			is_name_ordered = yes
-			name_order = 3
+			name_order = 1
 		}
 		location = 9793
-		division_template = "Englische Milizia"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
+		division_template = "Expeditions-Panzerdivisionen"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.8
+
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 17575
+		division_template = "Expeditions-Panzerdivisionen"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.8
 
 	}
 }

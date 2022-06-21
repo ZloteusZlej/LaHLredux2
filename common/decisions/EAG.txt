@@ -10686,25 +10686,13 @@ EAG_elections = {
 				always = false
 			}
         }
-		cancel_trigger = {
-			has_country_flag = elections_ended
-		}
 		is_good = yes
 		activation = {                          
-           	OR = {
-				has_country_flag = run_as_klumb
-				has_country_flag = run_as_may
-				has_country_flag = run_as_whitehouse
-				has_country_flag = run_as_bushell
-				has_country_flag = run_as_starmer
-				has_country_flag = run_as_iсke
-				has_country_flag = run_as_astley
-				has_country_flag = run_as_bates
-				has_country_flag = run_as_yea
-			}			
+           has_country_flag = elections_started			
         }
 		timeout_effect = {
 			set_country_flag = elections_ended
+			clr_country_flag = elections_started
 		}
 		complete_effect = {
         }

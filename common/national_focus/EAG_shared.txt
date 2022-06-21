@@ -389,7 +389,7 @@ shared_focus = {
 	select_effect = {
 		EAG = {
 			country_event = {
-				days = 3
+				days = 5
 				id = EAG_event.37
 			}
 		}
@@ -4289,8 +4289,6 @@ shared_focus = {
 	cost = 4.3
 	prerequisite = {
 		focus = EAG_circle_of_friends
-	}
-	prerequisite = {
 		focus = EAG_teach_tommies
 	}
 	completion_reward = {
@@ -4969,20 +4967,21 @@ shared_focus = {
 				id = EAG_event.200
 			}
 		}
+		set_country_flag = elections_started
 		set_party_name = { 
 			ideology = millenarism
 			long_name = EAG_millenarism_party_legitimate_long 
 			name = EAG_millenarism_party_legitimate
 		}
 		set_party_name = { 
-			ideology = millenarism
+			ideology = right_populism
 			long_name = EAG_right_populism_party_legitimate_long 
 			name = EAG_right_populism_party_legitimate
 		}
 		recruit_character = EAG_david_iсke
 		recruit_character = EAG_keir_starmer
 	}
-	x = 14
+	x = 12
 	y = 17
 }
 
@@ -5169,6 +5168,6 @@ shared_focus = {
 			}
 		}
 	}
-	x = 14
+	x = 12
 	y = 18
 }
