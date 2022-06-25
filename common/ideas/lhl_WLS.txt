@@ -1,0 +1,41 @@
+ideas = {
+
+	country = {
+	
+		WLS_Indepenpent_state = {
+			
+			picture = WLS_Indepenpent_state
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			war_support_factor = 0.10
+			political_power_factor = 0.05
+			}
+		}
+	}
+	head_of_government = {
+	
+		ATH_iera_koinotita = {
+
+			picture = ATH_iera_koinotita
+			allowed = {
+				original_tag = "ATH"
+			}
+
+			traits = { ideological_crusader }
+
+			do_effect = {
+				#
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}
