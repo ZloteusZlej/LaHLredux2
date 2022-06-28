@@ -85,3 +85,21 @@ country_event = {
 		ai_chance = { factor = 0 }
     } 	
 }
+country_event = {
+	id = WLS_event.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WLS_event.4"}
+	title = WLS_event.4.t
+	desc = WLS_event.4.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	option = {
+	    name = WLS_event.4.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.1
+    }
+	option = {
+	    name = WLS_event.4.b
+		ai_chance = { factor = 0 }
+    } 	
+}
