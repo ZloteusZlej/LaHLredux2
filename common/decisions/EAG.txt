@@ -11406,12 +11406,19 @@ EAG_elections = {
 				ideology = hegemonism
 				popularity = 0.05
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = { 
 			OR = {
 				has_country_flag = run_as_klumb
 				has_country_flag = run_as_may
 				has_country_flag = run_as_bates
+			}
+			NOT = {
+				has_country_flag = current_election_action
 			}
 		}
 		visible = {
@@ -11436,6 +11443,10 @@ EAG_elections = {
 				popularity = 0.08
 			}
 			add_command_power = -15
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = { 
 			AND = {
@@ -11444,6 +11455,9 @@ EAG_elections = {
 					has_country_flag = run_as_klumb
 					has_country_flag = run_as_may
 					has_country_flag = run_as_bates
+				}
+				NOT = {
+					has_country_flag = current_election_action
 				}
 			}
 		}
@@ -11487,12 +11501,19 @@ EAG_elections = {
 				ideology = neocameralism
 				popularity = -0.04
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = {
 			OR = {
 				has_country_flag = run_as_klumb
 				has_country_flag = run_as_may
 				has_country_flag = run_as_bates
+			}
+			NOT = {
+				has_country_flag = current_election_action
 			}
 		}
 		visible = {
@@ -11516,11 +11537,18 @@ EAG_elections = {
 				ideology = neocameralism
 				popularity = 0.05
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = { 
 			OR = {
 				has_country_flag = run_as_whitehouse
 				has_country_flag = run_as_yea
+			}
+			NOT = {
+				has_country_flag = current_election_action
 			}
 		}
 		visible = {
@@ -11544,6 +11572,10 @@ EAG_elections = {
 				popularity = 0.08
 			}
 			add_command_power = -15
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = { 
 			AND = {
@@ -11551,6 +11583,9 @@ EAG_elections = {
 				OR = {
 					has_country_flag = run_as_whitehouse
 					has_country_flag = run_as_yea
+				}
+				NOT = {
+					has_country_flag = current_election_action
 				}
 			}
 		}
@@ -11593,11 +11628,18 @@ EAG_elections = {
 				ideology = right_populism
 				popularity = -0.04
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = {
 			OR = {
 				has_country_flag = run_as_whitehouse
 				has_country_flag = run_as_yea
+			}
+			NOT = {
+				has_country_flag = current_election_action
 			}
 		}
 		visible = {
@@ -11620,10 +11662,17 @@ EAG_elections = {
 				ideology = socialism
 				popularity = 0.05
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = { 
 			OR = {
 				has_country_flag = run_as_starmer
+			}
+			NOT = {
+				has_country_flag = current_election_action
 			}
 		}
 		visible = {
@@ -11646,12 +11695,19 @@ EAG_elections = {
 				popularity = 0.08
 			}
 			add_command_power = -15
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = { 
 			AND = {
 				command_power > 15
 				OR = {
 					has_country_flag = run_as_starmer
+				}
+				NOT = {
+					has_country_flag = current_election_action
 				}
 			}
 		}
@@ -11693,10 +11749,17 @@ EAG_elections = {
 				ideology = neocameralism
 				popularity = -0.04
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = {
 			OR = {
 				has_country_flag = run_as_starmer
+			}
+			NOT = {
+				has_country_flag = current_election_action
 			}
 		}
 		visible = {
@@ -11718,10 +11781,17 @@ EAG_elections = {
 				ideology = national_bolshevism
 				popularity = 0.05
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = { 
 			OR = {
 				has_country_flag = run_as_bushell
+			}
+			NOT = {
+				has_country_flag = current_election_action
 			}
 		}
 		visible = {
@@ -11744,12 +11814,19 @@ EAG_elections = {
 				popularity = 0.08
 			}
 			add_command_power = -15
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = { 
 			AND = {
 				command_power > 15
 				OR = {
 					has_country_flag = run_as_bushell
+				}
+				NOT = {
+					has_country_flag = current_election_action
 				}
 			}
 		}
@@ -11791,10 +11868,17 @@ EAG_elections = {
 				ideology = neocameralism
 				popularity = -0.04
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = {
 			OR = {
 				has_country_flag = run_as_bushell
+			}
+			NOT = {
+				has_country_flag = current_election_action
 			}
 		}
 		visible = {
@@ -11816,10 +11900,17 @@ EAG_elections = {
 				ideology = millenarism
 				popularity = 0.05
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = { 
 			OR = {
 				has_country_flag = run_as_iсke
+			}
+			NOT = {
+				has_country_flag = current_election_action
 			}
 		}
 		visible = {
@@ -11842,12 +11933,19 @@ EAG_elections = {
 				popularity = 0.08
 			}
 			add_command_power = -15
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = { 
 			AND = {
 				command_power > 15
 				OR = {
 					has_country_flag = run_as_iсke
+				}
+				NOT = {
+					has_country_flag = current_election_action
 				}
 			}
 		}
@@ -11889,10 +11987,17 @@ EAG_elections = {
 				ideology = neocameralism
 				popularity = -0.04
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = {
 			OR = {
 				has_country_flag = run_as_iсke
+			}
+			NOT = {
+				has_country_flag = current_election_action
 			}
 		}
 		visible = {
@@ -11914,10 +12019,17 @@ EAG_elections = {
 				ideology = right_populism
 				popularity = 0.05
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = { 
 			OR = {
 				has_country_flag = run_as_astley
+			}
+			NOT = {
+				has_country_flag = current_election_action
 			}
 		}
 		visible = {
@@ -11940,12 +12052,19 @@ EAG_elections = {
 				popularity = 0.08
 			}
 			add_command_power = -15
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = { 
 			AND = {
 				command_power > 15
 				OR = {
 					has_country_flag = run_as_astley
+				}
+				NOT = {
+					has_country_flag = current_election_action
 				}
 			}
 		}
@@ -11987,10 +12106,17 @@ EAG_elections = {
 				ideology = neocameralism
 				popularity = -0.04
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = {
 			OR = {
 				has_country_flag = run_as_astley
+			}
+			NOT = {
+				has_country_flag = current_election_action
 			}
 		}
 		visible = {
@@ -12012,6 +12138,10 @@ EAG_elections = {
 				ideology = hegemonism
 				popularity = -0.15
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = {
 			NOT = {
@@ -12019,6 +12149,7 @@ EAG_elections = {
 					has_country_flag = run_as_klumb
 					has_country_flag = run_as_may
 					has_country_flag = run_as_bates
+					has_country_flag = current_election_action
 				}
 			}
 		}
@@ -12045,12 +12176,17 @@ EAG_elections = {
 				ideology = neocameralism
 				popularity = -0.15
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = {
 			NOT = {
 				AND = {
 					has_country_flag = run_as_whitehouse
 					has_country_flag = run_as_yea
+					has_country_flag = current_election_action
 				}
 			}
 		}
@@ -12076,11 +12212,16 @@ EAG_elections = {
 				ideology = socialism
 				popularity = -0.15
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = {
 			NOT = {
 				AND = {
 					has_country_flag = run_as_starmer
+					has_country_flag = current_election_action
 				}
 			}
 		}
@@ -12105,11 +12246,16 @@ EAG_elections = {
 				ideology = national_bolshevism
 				popularity = -0.15
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = {
 			NOT = {
 				AND = {
 					has_country_flag = run_as_bushell
+					has_country_flag = current_election_action
 				}
 			}
 		}
@@ -12134,11 +12280,16 @@ EAG_elections = {
 				ideology = millenarism
 				popularity = -0.15
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = {
 			NOT = {
 				AND = {
 					has_country_flag = run_as_iсke
+					has_country_flag = current_election_action
 				}
 			}
 		}
@@ -12163,11 +12314,16 @@ EAG_elections = {
 				ideology = right_populism
 				popularity = -0.15
 			}
+			set_country_flag = current_election_action
+		}
+		remove_effect = {
+			clr_country_flag = current_election_action
 		}
 		available = {
 			NOT = {
 				AND = {
 					has_country_flag = run_as_astley
+					has_country_flag = current_election_action
 				}
 			}
 		}
