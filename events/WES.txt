@@ -1406,3 +1406,17 @@ country_event = { #EURASIA SENDS WEAPONS#
 	    name = WES_event.59.a
     }
 }
+
+country_event = { #test#
+	id = WES_event.60
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.60"}
+	title = WES_event.60.t
+	desc = WES_event.60.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.60.a
+		WES_nick_houghton = {
+			add_planning = 1
+			add_skill_level = 1
+    }
+}
