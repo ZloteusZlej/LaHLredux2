@@ -12339,3 +12339,308 @@ EAG_elections = {
 		}
 	}
 }
+EAG_parliament_gui_decision = {
+	EAG_integrate_kent = {
+		cost = 15
+		days_remove = 10
+		fire_only_once = yes
+		remove_effect = {
+			subtract_from_variable = { parliament_seat_array^2 = 7 }
+			subtract_from_variable = { parliament_seat_array^1 = -7 }
+			modify_parliament_seat = yes
+		}
+		available = {
+			EAG = {
+				controls_state = 1165
+				owns_state = 1165
+				controls_state = 1002
+				owns_state = 1002
+			}
+		}
+		visible = {
+			EAG = {
+				controls_state = 1165
+				owns_state = 1165
+				controls_state = 1002
+				owns_state = 1002	
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_integrate_sussex = {
+		cost = 15
+		days_remove = 10
+		fire_only_once = yes
+		remove_effect = {
+			subtract_from_variable = { parliament_seat_array^2 = 10 }
+			subtract_from_variable = { parliament_seat_array^1 = -10 }
+			modify_parliament_seat = yes
+		}
+		available = {
+			EAG = {
+				controls_state = 1156
+				owns_state = 1156
+				controls_state = 1001
+				owns_state = 1001
+			}
+		}
+		visible = {
+			EAG = {
+				controls_state = 1156
+				owns_state = 1156
+				controls_state = 1001
+				owns_state = 1001
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_integrate_wessex = {
+		cost = 15
+		days_remove = 10
+		fire_only_once = yes
+		remove_effect = {
+			subtract_from_variable = { parliament_seat_array^2 = 25 }
+			subtract_from_variable = { parliament_seat_array^1 = -25 }
+			modify_parliament_seat = yes
+		}
+		available = {
+			EAG = {
+				controls_state = 1153
+				owns_state = 1153
+				controls_state = 1161
+				owns_state = 1161
+				controls_state = 1000
+				owns_state = 1000
+				controls_state = 1006
+				owns_state = 1006
+				controls_state = 1007
+				owns_state = 1007
+				controls_state = 999
+				owns_state = 999
+				controls_state = 998
+				owns_state = 998
+				controls_state = 1018
+				owns_state = 1018
+			}
+		}
+		visible = {
+			EAG = {
+				controls_state = 1153
+				owns_state = 1153
+				controls_state = 1161
+				owns_state = 1161
+				controls_state = 1000
+				owns_state = 1000
+				controls_state = 1006
+				owns_state = 1006
+				controls_state = 1007
+				owns_state = 1007
+				controls_state = 999
+				owns_state = 999
+				controls_state = 998
+				owns_state = 998
+				controls_state = 1018
+				owns_state = 1018
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_integrate_mercia = {
+		cost = 15
+		days_remove = 10
+		fire_only_once = yes
+		remove_effect = {
+			subtract_from_variable = { parliament_seat_array^2 = 46 }
+			subtract_from_variable = { parliament_seat_array^1 = -46 }
+			modify_parliament_seat = yes
+		}
+		available = {
+			EAG = {
+				controls_state = 1152
+				owns_state = 1152
+				controls_state = 1151
+				owns_state = 1151
+				controls_state = 1154
+				owns_state = 1154
+				controls_state = 1146
+				owns_state = 1146
+				controls_state = 1155
+				owns_state = 1155
+				controls_state = 1008
+				owns_state = 1008
+				controls_state = 1144
+				owns_state = 1144
+				controls_state = 1005
+				owns_state = 1005
+			}
+		}
+		visible = {
+			EAG = {
+				controls_state = 1152
+				owns_state = 1152
+				controls_state = 1151
+				owns_state = 1151
+				controls_state = 1154
+				owns_state = 1154
+				controls_state = 1146
+				owns_state = 1146
+				controls_state = 1155
+				owns_state = 1155
+				controls_state = 1008
+				owns_state = 1008
+				controls_state = 1144
+				owns_state = 1144
+				controls_state = 1005
+				owns_state = 1005
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_integrate_northumbria = {
+		cost = 15
+		days_remove = 10
+		fire_only_once = yes
+		remove_effect = {
+			subtract_from_variable = { parliament_seat_array^2 = 31 }
+			subtract_from_variable = { parliament_seat_array^1 = -31 }
+			modify_parliament_seat = yes
+		}
+		available = {
+			EAG = {
+				controls_state = 1009
+				owns_state = 1009
+				controls_state = 1145
+				owns_state = 1145
+				controls_state = 1012
+				owns_state = 1012
+				controls_state = 1011
+				owns_state = 1011
+				controls_state = 1010
+				owns_state = 1010
+			}
+		}
+		visible = {
+			EAG = {
+				controls_state = 1009
+				owns_state = 1009
+				controls_state = 1145
+				owns_state = 1145
+				controls_state = 1012
+				owns_state = 1012
+				controls_state = 1011
+				owns_state = 1011
+				controls_state = 1010
+				owns_state = 1010
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_integrate_wales = {
+		cost = 15
+		days_remove = 10
+		fire_only_once = yes
+		remove_effect = {
+			subtract_from_variable = { parliament_seat_array^2 = 10 }
+			subtract_from_variable = { parliament_seat_array^1 = -10 }
+			modify_parliament_seat = yes
+		}
+		available = {
+			EAG = {
+				controls_state = 1149
+				owns_state = 1149
+				controls_state = 1148
+				owns_state = 1148
+				controls_state = 1150
+				owns_state = 1150
+				controls_state = 1147
+				owns_state = 1147
+			}
+		}
+		visible = {
+			EAG = {
+				controls_state = 1149
+				owns_state = 1149
+				controls_state = 1148
+				owns_state = 1148
+				controls_state = 1150
+				owns_state = 1150
+				controls_state = 1147
+				owns_state = 1147
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_integrate_scotland = {
+		cost = 15
+		days_remove = 10
+		fire_only_once = yes
+		remove_effect = {
+			subtract_from_variable = { parliament_seat_array^2 = 18 }
+			subtract_from_variable = { parliament_seat_array^1 = -18 }
+			modify_parliament_seat = yes
+		}
+		available = {
+			EAG = {
+				controls_state = 1013
+				owns_state = 1013
+				controls_state = 1014
+				owns_state = 1014
+				controls_state = 1163
+				owns_state = 1163
+				controls_state = 1164
+				owns_state = 1164
+				controls_state = 1016
+				owns_state = 1016
+				controls_state = 1015
+				owns_state = 1015
+				controls_state = 1015
+				owns_state = 1015
+				controls_state = 1162
+				owns_state = 1162
+				controls_state = 1308
+				owns_state = 1308
+				controls_state = 1120
+				owns_state = 1120
+			}
+		}
+		visible = {
+			EAG = {
+				controls_state = 1013
+				owns_state = 1013
+				controls_state = 1014
+				owns_state = 1014
+				controls_state = 1163
+				owns_state = 1163
+				controls_state = 1164
+				owns_state = 1164
+				controls_state = 1016
+				owns_state = 1016
+				controls_state = 1015
+				owns_state = 1015
+				controls_state = 1015
+				owns_state = 1015
+				controls_state = 1162
+				owns_state = 1162
+				controls_state = 1308
+				owns_state = 1308
+				controls_state = 1120
+				owns_state = 1120
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
