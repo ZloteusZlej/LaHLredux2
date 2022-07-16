@@ -1,14 +1,16 @@
 ﻿l_english:
 
  # Decisions
-  parliament_gui_decision_category:0 "Parliament GUI Examples§!"
+  EAG_parliament_gui_decision:0 "The Communal Assembly"
+  EAG_parliament_gui_decision_desc:0 "[?EAG_anarchist_mood]"
 
  # Scripted GUIs
+  EAG_anarchist_total_support:0 "[?EAG_anarchist_total_support]"
   parliament_gui_title:0 "Grid Parliament"
   semicircle_parliament_gui_title:0 "The Communal Assembly"
   parliament_seat_text:0 "Seat [?temp_seat|Y0]"
   parliament_member_text:0 "[?parliament_seat_array^parliament_member_index][GetParliamentPartyName]"
-  total_amount_of_communes_text:0 "Currently §G[?parliament_seat_array^0]§!/§Y[?parliament_seat_array^1]§! communes support us." 
+  total_amount_of_communes_text:0 "Currently §G[?parliament_seat_array^0]§!/§Y[GetAnarchistCommunesTotalSupport]§! communes support us." 
 
   party_1_text:0 "§G communes support our current policy.§!"
   party_2_text:0 "§R communes DON'T support our current policy.§!"

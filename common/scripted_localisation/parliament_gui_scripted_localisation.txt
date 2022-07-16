@@ -36,3 +36,15 @@ defined_text = {
 		localization_key = parliament_seat_text
 	}
 }
+
+defined_text = {
+	name = GetAnarchistCommunesTotalSupport
+	text = {
+		trigger = {
+            set_temp_variable = { EAG_anarchist_total_support = 0 }
+            add_to_temp_variable = { EAG_anarchist_total_support = parliament_seat_array^0 }
+			add_to_temp_variable = { EAG_anarchist_total_support = parliament_seat_array^1 }
+		}
+		localization_key = EAG_anarchist_total_support
+	}
+}
