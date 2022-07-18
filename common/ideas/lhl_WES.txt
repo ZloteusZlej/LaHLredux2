@@ -162,6 +162,30 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
+		
+		WES_royal_science_fund = {
+			picture = GFX_idea_WES_royal_science_fund
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+				political_power_factor = 0.05
+			}
+		}
+		
+		WES_royal_infrastructure_investment = {
+			picture = GFX_idea_WES_royal_infrastructure_investment
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
 	}
 	
 	
