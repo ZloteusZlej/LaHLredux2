@@ -1,4 +1,5 @@
 on_actions = {
+
     on_capitulation = {
 	    effect = {
 		    if = {
@@ -11,6 +12,16 @@ on_actions = {
 						days = 1
 						id = WES_event.21
 					}
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			EAG = {
+				set_variable = {
+					var = EAG_anarchist_mood
+					value = 51
 				}
 			}
 		}
@@ -781,6 +792,121 @@ on_actions = {
 			100 = EAG_event.82
 			100 = EAG_event.83
         }
+	}
+	on_monthly_EAG = {
+		effect = {
+            set_temp_variable = { EAG_anarchist_total_support = 0 }
+            add_to_temp_variable = { EAG_anarchist_total_support = parliament_seat_array^0 }
+			add_to_temp_variable = { EAG_anarchist_total_support = parliament_seat_array^1 }
+			if = {
+				limit = {
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 0
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 25
+						compare = less_than_or_equals
+					}	
+					check_variable = {
+						var = parliament_seat_array^0
+						value = 0
+						compare = greater_than
+					}
+				}
+				clamp_variable = {
+					var = parliament_seat_array^0
+					max = EAG_anarchist_total_support
+					min = 2
+				}
+				subtract_from_variable = { parliament_seat_array^0 = 2 }
+				subtract_from_variable = { parliament_seat_array^1 = -2 }
+				modify_parliament_seat = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 26
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 50
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = parliament_seat_array^0
+						value = 0
+						compare = greater_than
+					}
+				}
+				clamp_variable = {
+					var = parliament_seat_array^0
+					max = EAG_anarchist_total_support
+					min = 2
+				}
+				subtract_from_variable = { parliament_seat_array^0 = 1 }
+				subtract_from_variable = { parliament_seat_array^1 = -1 }
+				modify_parliament_seat = yes
+			}	
+			else_if = {
+				limit = {
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 51
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 75
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = parliament_seat_array^0
+						value = 0
+						compare = greater_than
+					}
+				}
+				clamp_variable = {
+					var = parliament_seat_array^0
+					max = EAG_anarchist_total_support
+					min = 2
+				}
+				subtract_from_variable = { parliament_seat_array^0 = 0 }
+				subtract_from_variable = { parliament_seat_array^1 = 0 }
+				modify_parliament_seat = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 76
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 100
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = parliament_seat_array^0
+						value = EAG_anarchist_total_support
+						compare = less_than
+					}
+				}
+				clamp_variable = {
+					var = parliament_seat_array^0
+					max = EAG_anarchist_total_support
+					min = 0
+				}
+				subtract_from_variable = { parliament_seat_array^0 = -1 }
+				subtract_from_variable = { parliament_seat_array^1 = 1 }
+				modify_parliament_seat = yes
+			}
+		}
 	}
 }
 				  

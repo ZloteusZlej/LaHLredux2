@@ -20,12 +20,6 @@ defined_text = {
 		localization_key = party_3_text
 	}
 	text = {
-		trigger = {
-			check_variable = { v = 4 }
-		}
-		localization_key = party_4_text
-	}
-	text = {
 		localization_key = "Error"
 	}
 }
@@ -40,5 +34,17 @@ defined_text = {
 			check_variable = { temp_seat > 0 }
 		}
 		localization_key = parliament_seat_text
+	}
+}
+
+defined_text = {
+	name = GetAnarchistCommunesTotalSupport
+	text = {
+		trigger = {
+            set_temp_variable = { EAG_anarchist_total_support = 0 }
+            add_to_temp_variable = { EAG_anarchist_total_support = parliament_seat_array^0 }
+			add_to_temp_variable = { EAG_anarchist_total_support = parliament_seat_array^1 }
+		}
+		localization_key = EAG_anarchist_total_support
 	}
 }
