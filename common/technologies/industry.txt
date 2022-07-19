@@ -590,6 +590,10 @@ technologies = {
 			leads_to_tech = excavation1
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = automatization1
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
 		start_year = 2000
@@ -601,6 +605,34 @@ technologies = {
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+			
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
+			}
+		}
+	}
+	
+	automatization1 = {
+		
+		production_factory_efficiency_gain_factor = 0.10
+		conscription_factor = 0.001
+		production_factory_max_efficiency_factor = 0.10
+		
+		research_cost = 2
+		start_year = 2000
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -677,6 +709,10 @@ technologies = {
 			leads_to_tech = excavation2 
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = automatization2 
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
 		start_year = 2010
@@ -698,6 +734,34 @@ technologies = {
 				factor = 10
 				date > "2025.1.1"
 			}			
+		}
+	}
+	
+	automatization2 = {
+		
+		production_factory_efficiency_gain_factor = 0.10
+		conscription_factor = 0.001
+		production_factory_max_efficiency_factor = 0.10
+		
+		research_cost = 2
+		start_year = 2010
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+			
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
+			}
 		}
 	}
 
