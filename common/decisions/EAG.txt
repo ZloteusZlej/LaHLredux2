@@ -13086,5 +13086,40 @@ EAG_parliament_gui_decision = {
 		}
 	}
 	EAG_anarchist_collapse = {
+		is_good = no                                        
+        days_mission_timeout = 75
+		allowed = { tag = EAG }
+        available = {  
+			set_temp_variable = { EAG_anarchist_support_10 = 0 }
+            add_to_temp_variable = { EAG_anarchist_support_10 = parliament_seat_array^0 }
+			add_to_temp_variable = { EAG_anarchist_support_10 = parliament_seat_array^1 }
+			divide_temp_variable = { EAG_anarchist_support_10 = 10 }		
+			check_variable = {
+				var = parliament_seat_array^0
+				value = EAG_anarchist_support_10
+				compare = greater_than_or_equals
+			}
+        }
+		activation = {   
+			set_temp_variable = { EAG_anarchist_support_10 = 0 }
+            add_to_temp_variable = { EAG_anarchist_support_10 = parliament_seat_array^0 }
+			add_to_temp_variable = { EAG_anarchist_support_10 = parliament_seat_array^1 }
+			divide_temp_variable = { EAG_anarchist_support_10 = 10 }
+			check_variable = {
+				var = parliament_seat_array^0
+				value = EAG_anarchist_support_10
+				compare = less_than_or_equals
+			}
+        }
+		timeout_effect = {
+			EAG = {
+				add_political_power = -100
+			}
+		}
+		complete_effect = {
+        }
+		ai_will_do = {
+			factor = 100
+		}
 	}
 }
