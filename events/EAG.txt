@@ -1714,6 +1714,17 @@ country_event = {
 		clear_variable = mercs_mood
 		load_focus_tree = EAG_anarchists
 		add_ideas = EAG_illegitimate_government
+		
+    }
+	
+	option = {
+		name = EAG_event.39.c
+		remove_ideas = {
+			EAG_panem_b
+			EAG_circenses_bonus
+		}
+		load_focus_tree = EAG_hitler
+		add_ideas = EAG_illegitimate_government
 		hidden_effect = {
 			EAG = {
 				country_event = {
@@ -1773,16 +1784,6 @@ country_event = {
 				}
 			}
 		}
-    }
-	
-	option = {
-		name = EAG_event.39.c
-		remove_ideas = {
-			EAG_panem_b
-			EAG_circenses_bonus
-		}
-		load_focus_tree = EAG_hitler
-		add_ideas = EAG_illegitimate_government
     }
 }
 

@@ -1460,7 +1460,7 @@ EAG_reunify_isles = {
 			}
 		}
 		
-		EAG_ask_communnes_for_volunteers = {
+		EAG_speed_up_communalisation = {
 			cost = 25
 			days_remove = 30
 			days_re_enable = 40
@@ -1475,7 +1475,7 @@ EAG_reunify_isles = {
 				}
 			}
 			modifier = {
-				weekly_manpower = 650
+				compliance_gain = 0.03
 			}
 			complete_effect = {
 				add_to_variable = {
@@ -1488,17 +1488,9 @@ EAG_reunify_isles = {
 					max = 25
 				}
 			}
-			remove_effect = {
-				add_manpower = 1250
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 2500
-					producer = EAG
-				}
-			}
 		}
 		
-		EAG_ask_communnes_for_civ_aid = {
+		EAG_ask_people_for_civ_aid = {
 			cost = 0
 			days_remove = 30
 			days_re_enable = 55
@@ -1513,7 +1505,7 @@ EAG_reunify_isles = {
 				}
 			}
 			modifier = {
-				industrial_capacity_factory	 = 0.25
+				industrial_capacity_factory = 0.25
 				all_controlled_state = {
 					local_resources_factor = 0.3
 				}
@@ -1536,7 +1528,7 @@ EAG_reunify_isles = {
 			}
 		}
 		
-		EAG_ask_communnes_for_mil_aid = {
+		EAG_ask_people_for_mil_aid = {
 			cost = 0
 			days_remove = 30
 			days_re_enable = 55
