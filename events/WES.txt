@@ -270,7 +270,7 @@ country_event = {
 			popularity = 0.1
         }
 		add_to_variable = { 
-			george_legitemacy = 5
+			WES_george_legitimacy_level = 5
 		}
 		1001 = {
 		     add_resistance = 50
@@ -297,7 +297,7 @@ country_event = {
 			popularity = 0.3
         }
 		add_to_variable = { 
-			george_legitemacy = 5
+			WES_george_legitimacy_level = 5
 		}
 		create_field_marshal = {
 			name = "Prince Harry, Duke of Sussex"
@@ -331,7 +331,7 @@ country_event = {
         }
 		add_stability = -0.1
 		add_to_variable = { 
-			george_legitemacy = -2
+			WES_george_legitimacy_level = -2
 		}
 		1001 = {
 		     add_resistance = 50
@@ -1407,16 +1407,353 @@ country_event = { #EURASIA SENDS WEAPONS#
     }
 }
 
-country_event = { #test#
-	id = WES_event.60
-	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.60"}
-	title = WES_event.60.t
-	desc = WES_event.60.d
+country_event = { 
+	id = WES_event.70
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.70"}
+	title = WES_event.70.t
+	desc = WES_event.70.d
 	is_triggered_only = yes
 	option = {
-	    name = WES_event.60.a
-		WES_nick_houghton = {
-			add_planning = 1
-			add_skill_level = 1
+	    name = WES_event.70.a
+		add_political_power = 100
+		add_to_variable = { 
+			WES_george_legitimacy_level = 10
+		}
     }
+}
+
+country_event = { 
+	id = WES_event.71
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.71"}
+	title = WES_event.71.t
+	desc = WES_event.71.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.71.a
+		add_ideas = WES_royal_science_fund
+		add_to_variable = { 
+			WES_george_legitimacy_level = 5
+		}
+    }
+	option = {
+	    name = WES_event.71.b
+		add_ideas = WES_royal_infrastructure_investment
+		add_to_variable = { 
+			WES_george_legitimacy_level = 5
+		}
+    }
+	option = {
+	    name = WES_event.71.c
+		add_to_variable = { 
+			WES_george_legitimacy_level = 5
+		}
+		WES = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = WES
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 100
+				producer = WES
+			}
+			add_equipment_to_stockpile = {
+				type = main_battle_tank_equipment
+				amount = 15
+				producer = WES
+			}
+		}
+    }
+}
+
+country_event = { 
+	id = WES_event.72
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.72"}
+	title = WES_event.72.t
+	desc = WES_event.72.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.72.a
+			add_to_variable = { 
+				WES_george_legitimacy_level = 3
+			}
+			add_trait = {
+				 character = WES_george_vii
+				 slot = country_leader
+				 trait = patron_of_medicine
+			}
+	}
+	
+	option = {
+	    name = WES_event.72.b
+			add_to_variable = { 
+				WES_george_legitimacy_level = 3
+			}
+			add_trait = {
+				 character = WES_george_vii
+				 slot = country_leader
+				 trait = chief_of_raf
+			}
+	}
+	
+	option = {
+	    name = WES_event.72.c
+			add_to_variable = { 
+				WES_george_legitimacy_level = 3
+			}
+			add_trait = {
+				 character = WES_george_vii
+				 slot = country_leader
+				 trait = spiritual_leader_g
+			}
+	}
+	
+	option = {
+	    name = WES_event.72.e
+		add_to_variable = { 
+			WES_george_legitimacy_level = 3
+		}
+			add_trait = {
+				 character = WES_george_vii
+				 slot = country_leader
+				 trait = new_classical_connoisseur
+			}
+	}
+}
+
+country_event = { 
+	id = WES_event.73
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.73"}
+	title = WES_event.73.t
+	desc = WES_event.73.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.73.a
+		add_political_power = 100
+    }
+	
+	option = {
+	    name = WES_event.73.b
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 2
+		}
+    }
+	
+	option = {
+	    name = WES_event.73.c
+		add_trait = {
+				 character = WES_george_vii
+				 slot = country_leader
+				 trait = enlightened
+		}
+		add_to_variable = { 
+			WES_george_legitimacy_level = -5
+		}
+		add_political_power = -50
+    }
+}
+
+country_event = { 
+	id = WES_event.74
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.74"}
+	title = WES_event.74.t
+	desc = WES_event.74.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.74.a
+		army_experience = 25
+		add_field_marshal_role = {
+		  character = WES_george_vii
+		  skill = 4
+		  attack_skill = 2
+		  defense_skill = 3
+		  planning_skill = 3
+		  logistics_skill = 5
+		  traits = {
+				old_guard
+				media_personality
+			}
+		}
+    }
+}
+
+country_event = { 
+	id = WES_event.75
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.75"}
+	title = WES_event.75.t
+	desc = WES_event.75.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.75.a
+		all_character = {
+			limit = {
+				is_character = WES_george_vii
+			}
+			add_planning = 2
+		}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 3
+		}
+    }
+	
+	option = {
+	    name = WES_event.75.b
+		all_character = {
+			limit = {
+				is_character = WES_george_vii
+			}
+			add_defense = 2
+		}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 3
+		}
+    }
+	
+	option = {
+	    name = WES_event.75.с
+		all_character = {
+			limit = {
+				is_character = WES_george_vii
+			}
+			add_attack = 2
+		}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 3
+		}
+    }
+	
+	option = {
+	    name = WES_event.75.e
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 2
+		}
+    }
+}
+
+country_event = { 
+	id = WES_event.76
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.76"}
+	title = WES_event.76.t
+	desc = WES_event.76.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.76.a
+		all_character = {
+			limit = {
+				is_character = WES_george_vii
+			}
+			add_unit_leader_trait = logistics_wizard
+		}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 3
+		}
+    }
+	
+	option = {
+	    name = WES_event.76.b
+		all_character = {
+			limit = {
+				is_character = WES_george_vii
+			}
+			add_unit_leader_trait = infantry_leader
+		}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 3
+		}
+    }
+	
+	option = {
+	    name = WES_event.76.с
+		all_character = {
+			limit = {
+				is_character = WES_george_vii
+			}
+			add_unit_leader_trait = charismatic
+		}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 3
+		}
+    }
+	
+	option = {
+	    name = WES_event.76.e
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 2
+		}
+    }
+}
+
+country_event = { 
+	id = WES_event.77
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.77"}
+	title = WES_event.77.t
+	desc = WES_event.77.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.77.a
+		all_character = {
+			limit = {
+				is_character = WES_george_vii
+			}
+			remove_unit_leader_trait = old_guard
+		}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 3
+		}
+    }
+	
+	option = {
+	    name = WES_event.77.b
+		all_character = {
+			limit = {
+				is_character = WES_george_vii
+			}
+			add_skill_level = 1
+		}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 3
+		}
+    }
+	
+	option = {
+	    name = WES_event.77.с
+		all_character = {
+			limit = {
+				is_character = WES_george_vii
+			}
+			add_skill_level = 2
+		}
+		add_political_power = -100
+		add_to_variable = { 
+			WES_george_legitimacy_level = 3
+		}
+    }
+	
+	option = {
+	    name = WES_event.77.e
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 2
+		}
+	}
 }
