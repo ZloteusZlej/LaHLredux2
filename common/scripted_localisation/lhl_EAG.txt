@@ -393,19 +393,65 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = GetEAGProjectStatus
+	name = GetEAGAnarchistSupport
 	text = {
 		trigger = {
-			has_country_flag = EAG_project_launched
+			check_variable = {
+				var = EAG_anarchist_mood 
+				value = 0
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EAG_anarchist_mood 
+				value = 25
+				compare = less_than_or_equals
+			}
 		}
-		localization_key = EAG_project_is_launched
+		localization_key = EAG_anarchist_communes_furious
 	}
 	text = {
 		trigger = {
-			NOT = {
-				has_country_flag = EAG_project_launched
+			check_variable = {
+				var = EAG_anarchist_mood 
+				value = 26
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EAG_anarchist_mood 
+				value = 50
+				compare = less_than_or_equals
 			}
 		}
-		localization_key = EAG_project_not_launched
+		localization_key = EAG_anarchist_communes_sad
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_anarchist_mood 
+				value = 51
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EAG_anarchist_mood 
+				value = 75
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EAG_anarchist_communes_content
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_anarchist_mood 
+				value = 76
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EAG_anarchist_mood 
+				value = 100
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EAG_anarchist_communes_happy
 	}
 }

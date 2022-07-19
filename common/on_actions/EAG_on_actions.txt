@@ -794,6 +794,19 @@ on_actions = {
         }
 	}
 	on_monthly_EAG = {
+		random_events = {
+			100 = EAG_event.210
+			100 = EAG_event.211
+			100 = EAG_event.212
+			100 = EAG_event.213
+			100 = EAG_event.214
+			100 = EAG_event.215
+			100 = EAG_event.216
+			100 = EAG_event.217
+			100 = EAG_event.218
+		}
+	}
+	on_monthly_EAG = {
 		effect = {
             set_temp_variable = { EAG_anarchist_total_support = 0 }
             add_to_temp_variable = { EAG_anarchist_total_support = parliament_seat_array^0 }

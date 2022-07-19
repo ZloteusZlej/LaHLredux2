@@ -2,13 +2,15 @@
 
  # Decisions
   EAG_parliament_gui_decision:0 "The Communal Assembly"
-  EAG_parliament_gui_decision_desc:0 "[?EAG_anarchist_mood]"
+  EAG_parliament_gui_decision_desc:0 "A national-anarchist society is based upon collective control over the matters of state. If we are to make important decisions such as a delcaration of war or levy of troops, we have to have the support of §Ythe majority of communes§!. Under extraordinary circumstances we can override the support of the majority, however this will affect the §Ocommunal trust§! in our system.\n\n§OCommunal§! trust can affect the amount of communes that support our government every month.§!\n\nCurrently, [GetEAGAnarchistSupport]"
 
  # Scripted GUIs
   EAG_anarchist_total_support:0 "[?EAG_anarchist_total_support]"
+  EAG_anarchist_communes_furious:0 "§Rthe communes are furious with our government!§!\n- Monthly Commune Support §R-2.0§!"
+  EAG_anarchist_communes_sad:0 "§Othe communes are disappointed in our government.§!\n- Monthly Commune Support §R-1.0§!"
+  EAG_anarchist_communes_content:0 "§gthe communes are content with our government.§!\n- Monthly Commune Support §Y0.0§!"
+  EAG_anarchist_communes_happy:0 "§Gthe communes trust our government!§!\n- Monthly Commune Support §G+1.0§!"
   parliament_gui_title:0 "Grid Parliament"
-  semicircle_parliament_gui_title:0 "The Communal Assembly"
-  parliament_seat_text:0 "Seat [?temp_seat|Y0]"
   parliament_member_text:0 "[?parliament_seat_array^parliament_member_index][GetParliamentPartyName]"
   total_amount_of_communes_text:0 "Currently §G[?parliament_seat_array^0]§!/§Y[GetAnarchistCommunesTotalSupport]§! communes support us." 
 

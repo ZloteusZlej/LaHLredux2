@@ -161,6 +161,11 @@ EAG_city_influence = {
 	scripted_gui = lhl_city_influence_screen_body
 	allowed = { original_tag = EAG }
 	visible_when_empty = yes
+	visible = { 
+		EAG = {
+			has_completed_focus = EAG_electors_system
+		}
+	}
 }
 
 EAG_digger_cooperatives_decisions = {
@@ -251,6 +256,11 @@ EAG_parliament_gui_decision = {
 
 	scripted_gui = parliament_gui
 	visible_when_empty = yes
+	visible = { 
+		EAG = {
+			has_completed_focus = EAG_congress_of_communities
+		}
+	}
 }
 
 EAG_elections = {

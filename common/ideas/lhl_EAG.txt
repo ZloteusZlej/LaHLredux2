@@ -3945,7 +3945,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.05
-				war_support_weekly = 0.1
+				war_support_weekly = 0.01
 			}
 		}
 		EAG_legal_football_craze = {
@@ -3977,6 +3977,25 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				experience_gain_army_factor = 0.02
+			}
+		}
+		EAG_anarchist_riot = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				production_factory_start_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.15		
+				production_speed_buildings_factor = -0.05
 			}
 		}
 	}

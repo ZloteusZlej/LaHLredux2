@@ -5095,3 +5095,417 @@ country_event = {
 		}
     }
 }
+
+##Anarchist Stuff##
+country_event = {
+	id = EAG_event.210
+	title = EAG_event.210.t
+	desc = EAG_event.210.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_congress_of_communities
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.210.a
+		random_owned_controlled_state = {
+			damage_building = {
+				type = infrastructure
+				damage = 7
+			}
+		}
+		add_political_power = 50
+    }
+	option = {
+		name = EAG_event.210.b	
+		if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 > 5 }
+			}
+			subtract_from_variable = { parliament_seat_array^0 = 5 }
+			subtract_from_variable = { parliament_seat_array^1 = -5 }
+			modify_parliament_seat = yes
+			custom_effect_tooltip = EAG_anarchist_small_support_lost.tt
+		}
+		else_if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 < 5 }
+			}
+			add_political_power = -100
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.211
+	title = EAG_event.211.t
+	desc = EAG_event.211.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_congress_of_communities
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.211.a
+		add_manpower = -1500
+		add_political_power = 50
+    }
+	option = {
+		name = EAG_event.211.b	
+		if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 > 5 }
+			}
+			subtract_from_variable = { parliament_seat_array^0 = 5 }
+			subtract_from_variable = { parliament_seat_array^1 = -5 }
+			modify_parliament_seat = yes
+			custom_effect_tooltip = EAG_anarchist_small_support_lost.tt
+		}
+		else_if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 < 5 }
+			}
+			add_political_power = -100
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.212
+	title = EAG_event.212.t
+	desc = EAG_event.212.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_congress_of_communities
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.212.a
+		EAG = {
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+		add_political_power = 50
+    }
+	option = {
+		name = EAG_event.212.b	
+		if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 > 5 }
+			}
+			subtract_from_variable = { parliament_seat_array^0 = 5 }
+			subtract_from_variable = { parliament_seat_array^1 = -5 }
+			modify_parliament_seat = yes
+			custom_effect_tooltip = EAG_anarchist_small_support_lost.tt
+		}
+		else_if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 < 5 }
+			}
+			add_political_power = -100
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.213
+	title = EAG_event.213.t
+	desc = EAG_event.213.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_congress_of_communities
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.213.a
+		random_owned_controlled_state = {
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		add_political_power = 50
+    }
+	option = {
+		name = EAG_event.213.b	
+		if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 > 5 }
+			}
+			subtract_from_variable = { parliament_seat_array^0 = 5 }
+			subtract_from_variable = { parliament_seat_array^1 = -5 }
+			modify_parliament_seat = yes
+			custom_effect_tooltip = EAG_anarchist_small_support_lost.tt
+		}
+		else_if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 < 5 }
+			}
+			add_political_power = -100
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.214
+	title = EAG_event.214.t
+	desc = EAG_event.214.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_congress_of_communities
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.214.a
+		EAG = { 
+			add_timed_idea = { 
+				idea = EAG_anarchist_riot  
+				days = 30 
+			}
+		}
+		add_political_power = 50
+    }
+	option = {
+		name = EAG_event.214.b	
+		if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 > 10 }
+			}
+			subtract_from_variable = { parliament_seat_array^0 = 10 }
+			subtract_from_variable = { parliament_seat_array^1 = -10 }
+			modify_parliament_seat = yes
+			custom_effect_tooltip = EAG_anarchist_big_support_lost.tt
+		}
+		else_if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 < 10 }
+			}
+			add_political_power = -100
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.215
+	title = EAG_event.215.t
+	desc = EAG_event.215.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_congress_of_communities
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.215.a
+		if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 > 10 }
+			}
+			subtract_from_variable = { parliament_seat_array^0 = 10 }
+			subtract_from_variable = { parliament_seat_array^1 = -10 }
+			modify_parliament_seat = yes
+			add_political_power = -10
+			custom_effect_tooltip = EAG_anarchist_big_support_lost.tt
+		}
+		else_if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 < 10 }
+			}
+			add_political_power = -10
+		}
+    }
+	option = {
+		name = EAG_event.215.b	
+		if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 > 5 }
+			}
+			subtract_from_variable = { parliament_seat_array^0 = 5 }
+			subtract_from_variable = { parliament_seat_array^1 = -5 }
+			modify_parliament_seat = yes
+			custom_effect_tooltip = EAG_anarchist_small_support_lost.tt
+			add_political_power = -75
+		}
+		else_if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 < 5 }
+			}
+			add_political_power = -75
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.216
+	title = EAG_event.216.t
+	desc = EAG_event.216.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_congress_of_communities
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.216.a
+		random_army_leader = {
+			retire = yes
+		}		
+    }
+	option = {
+		name = EAG_event.216.b	
+		if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 > 10 }
+			}
+			subtract_from_variable = { parliament_seat_array^0 = 10 }
+			subtract_from_variable = { parliament_seat_array^1 = -10 }
+			modify_parliament_seat = yes
+			custom_effect_tooltip = EAG_anarchist_big_support_lost.tt
+		}
+		else_if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 < 10 }
+			}
+			add_political_power = -100
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.217
+	title = EAG_event.217.t
+	desc = EAG_event.217.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_congress_of_communities
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.217.a	
+		add_stability = 0.1
+		add_war_support = 0.1
+    }
+	option = {
+		name = EAG_event.217.b	
+		if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 > 10 }
+			}
+			subtract_from_variable = { parliament_seat_array^0 = 10 }
+			subtract_from_variable = { parliament_seat_array^1 = -10 }
+			modify_parliament_seat = yes
+			add_political_power = 250
+			custom_effect_tooltip = EAG_anarchist_big_support_lost.tt
+		}
+		else_if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 < 10 }
+			}
+			add_political_power = -100
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.218
+	title = EAG_event.218.t
+	desc = EAG_event.218.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_congress_of_communities
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.218.a
+		random_list = {
+			50 = {
+				EAG = {
+					country_event = {
+						days = 10
+						id = EAG_event.219
+					}
+				}
+			}
+			50 = {
+				EAG = {
+					country_event = {
+						days = 10
+						id = EAG_event.220
+					}
+				}
+			}
+		}
+    }
+	option = {
+		name = EAG_event.218.b	
+		if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 > 20 }
+			}
+			subtract_from_variable = { parliament_seat_array^0 = 20 }
+			subtract_from_variable = { parliament_seat_array^1 = -20 }
+			custom_effect_tooltip = EAG_anarchist_massive_support_lost.tt
+			modify_parliament_seat = yes
+		}
+		else_if = {
+			limit = {
+				check_variable = { parliament_seat_array^0 < 10 }
+			}
+			add_political_power = -300
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.219
+	title = EAG_event.219.t
+	desc = EAG_event.219.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_congress_of_communities
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.219.a	
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = nuclear_reactor
+				level = 1
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.220
+	title = EAG_event.220.t
+	desc = EAG_event.220.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_congress_of_communities
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.220.a	
+		random_owned_controlled_state = {
+			owner = {
+				EAG = {
+					launch_nuke = {
+						state = PREV.PREV
+						controller = EAG
+						use_nuke = no
+					}
+				}
+			}
+		}
+    }
+}
