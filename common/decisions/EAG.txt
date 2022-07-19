@@ -12648,6 +12648,7 @@ EAG_parliament_gui_decision = {
 		days_remove = 15
 		days_re_enable = 45
 		remove_effect = {
+			custom_effect_tooltip = EAG_anarchist_small_support_boost.tt
 			subtract_from_variable = { parliament_seat_array^1 = 2 }
 			subtract_from_variable = { parliament_seat_array^0 = -2 }
 			modify_parliament_seat = yes
@@ -12664,6 +12665,7 @@ EAG_parliament_gui_decision = {
 		days_remove = 15
 		days_re_enable = 45
 		remove_effect = {
+			custom_effect_tooltip = EAG_anarchist_medium_support_boost.tt
 			subtract_from_variable = { parliament_seat_array^1 = 5 }
 			subtract_from_variable = { parliament_seat_array^0 = -5 }
 			modify_parliament_seat = yes
@@ -12680,6 +12682,7 @@ EAG_parliament_gui_decision = {
 		days_remove = 15
 		days_re_enable = 45
 		remove_effect = {
+			custom_effect_tooltip = EAG_anarchist_big_support_boost.tt
 			subtract_from_variable = { parliament_seat_array^1 = 10 }
 			subtract_from_variable = { parliament_seat_array^0 = -10 }
 			modify_parliament_seat = yes
@@ -12696,6 +12699,7 @@ EAG_parliament_gui_decision = {
 		days_remove = 15
 		days_re_enable = 45
 		remove_effect = {
+			custom_effect_tooltip = EAG_anarchist_massive_support_boost.tt
 			subtract_from_variable = { parliament_seat_array^1 = 20 }
 			subtract_from_variable = { parliament_seat_array^0 = -20 }
 			modify_parliament_seat = yes
@@ -12712,6 +12716,7 @@ EAG_parliament_gui_decision = {
 		days_remove = 70
 		days_re_enable = 45
 		remove_effect = {
+			custom_effect_tooltip = EAG_anarchist_massive_support_boost.tt
 			subtract_from_variable = { parliament_seat_array^1 = 20 }
 			subtract_from_variable = { parliament_seat_array^0 = -20 }
 			modify_parliament_seat = yes
@@ -12742,6 +12747,7 @@ EAG_parliament_gui_decision = {
 					check_variable = { parliament_seat_array^1 > parliament_seat_array^0 }
 				}
 				subtract_from_variable = { EAG_anarchist_mood = 10 }
+				custom_effect_tooltip = EAG_anarchist_mood_loss.tt
 			}
 			declare_war_on = {
 				target = KNT
@@ -12775,6 +12781,7 @@ EAG_parliament_gui_decision = {
 					check_variable = { parliament_seat_array^1 > parliament_seat_array^0 }
 				}
 				subtract_from_variable = { EAG_anarchist_mood = 10 }
+				custom_effect_tooltip = EAG_anarchist_mood_loss.tt
 			}
 			declare_war_on = {
 				target = WES
@@ -12808,6 +12815,7 @@ EAG_parliament_gui_decision = {
 					check_variable = { parliament_seat_array^1 > parliament_seat_array^0 }
 				}
 				subtract_from_variable = { EAG_anarchist_mood = 10 }
+				custom_effect_tooltip = EAG_anarchist_mood_loss.tt
 			}
 			declare_war_on = {
 				target = SUS
@@ -12841,6 +12849,7 @@ EAG_parliament_gui_decision = {
 					check_variable = { parliament_seat_array^1 > parliament_seat_array^0 }
 				}
 				subtract_from_variable = { EAG_anarchist_mood = 10 }
+				custom_effect_tooltip = EAG_anarchist_mood_loss.tt
 			}
 			declare_war_on = {
 				target = MRC
@@ -12874,6 +12883,7 @@ EAG_parliament_gui_decision = {
 					check_variable = { parliament_seat_array^1 > parliament_seat_array^0 }
 				}
 				subtract_from_variable = { EAG_anarchist_mood = 10 }
+				custom_effect_tooltip = EAG_anarchist_mood_loss.tt
 			}
 			declare_war_on = {
 				target = NTH
@@ -12907,6 +12917,7 @@ EAG_parliament_gui_decision = {
 					check_variable = { parliament_seat_array^1 > parliament_seat_array^0 }
 				}
 				subtract_from_variable = { EAG_anarchist_mood = 10 }
+				custom_effect_tooltip = EAG_anarchist_mood_loss.tt
 			}
 			declare_war_on = {
 				target = WLS
@@ -12941,6 +12952,7 @@ EAG_parliament_gui_decision = {
 					check_variable = { parliament_seat_array^1 > parliament_seat_array^0 }
 				}
 				subtract_from_variable = { EAG_anarchist_mood = 10 }
+				custom_effect_tooltip = EAG_anarchist_mood_loss.tt
 			}
 			declare_war_on = {
 				target = SCO
@@ -12975,6 +12987,7 @@ EAG_parliament_gui_decision = {
 					check_variable = { parliament_seat_array^1 > parliament_seat_array^0 }
 				}
 				subtract_from_variable = { EAG_anarchist_mood = 10 }
+				custom_effect_tooltip = EAG_anarchist_mood_loss.tt
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -13005,6 +13018,7 @@ EAG_parliament_gui_decision = {
 					check_variable = { parliament_seat_array^1 > parliament_seat_array^0 }
 				}
 				subtract_from_variable = { EAG_anarchist_mood = 10 }
+				custom_effect_tooltip = EAG_anarchist_mood_loss.tt
 			}
 			add_manpower = 2500
 		}
@@ -13031,6 +13045,7 @@ EAG_parliament_gui_decision = {
 					check_variable = { parliament_seat_array^1 > parliament_seat_array^0 }
 				}
 				subtract_from_variable = { EAG_anarchist_mood = 10 }
+				custom_effect_tooltip = EAG_anarchist_mood_loss.tt
 			}
 			EAG = {
 				random_owned_controlled_state = {
@@ -13066,6 +13081,7 @@ EAG_parliament_gui_decision = {
 					check_variable = { parliament_seat_array^1 > parliament_seat_array^0 }
 				}
 				subtract_from_variable = { EAG_anarchist_mood = 10 }
+				custom_effect_tooltip = EAG_anarchist_mood_loss.tt
 			}
 			EAG = {
 				random_owned_controlled_state = {
