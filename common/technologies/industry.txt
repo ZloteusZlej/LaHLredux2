@@ -830,6 +830,10 @@ technologies = {
 			leads_to_tech = excavation3
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = automatization3
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
 		start_year = 2015
@@ -864,6 +868,33 @@ technologies = {
 		}
 	}
 
+	automatization3 = {
+		
+		production_factory_efficiency_gain_factor = 0.10
+		conscription_factor = 0.001
+		production_factory_max_efficiency_factor = 0.10
+		
+		research_cost = 2
+		start_year = 2015
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+			
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
+			}
+		}
+	}
 
 	excavation3 = {
 		
@@ -929,7 +960,10 @@ technologies = {
 			leads_to_tech = excavation4
 			research_cost_coeff = 1
 		}
-		
+		path = {
+			leads_to_tech = automatization4
+			research_cost_coeff = 1
+		}
 		research_cost = 2
 		start_year = 2020
 		
@@ -952,7 +986,33 @@ technologies = {
 			}
 		}
 	}
-
+	automatization4 = {
+		
+		production_factory_efficiency_gain_factor = 0.10
+		conscription_factor = 0.001
+		production_factory_max_efficiency_factor = 0.10
+		
+		research_cost = 2
+		start_year = 2020
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+			
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
+			}
+		}
+	}
 	excavation4 = {
 		
 		local_resources_factor = 0.10
@@ -1014,7 +1074,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		
+		path = {
+			leads_to_tech = automatization5
+			research_cost_coeff = 1
+		}
+
 		research_cost = 2
 		start_year = 2022
 		
@@ -1037,8 +1101,33 @@ technologies = {
 			}
 		}
 	}
-
-
+	automatization5 = {
+		
+		production_factory_efficiency_gain_factor = 0.10
+		conscription_factor = 0.001
+		production_factory_max_efficiency_factor = 0.10
+		
+		research_cost = 2
+		start_year = 2022
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+			
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
+			}
+		}
+	}
 	excavation5 = {
 		
 		local_resources_factor = 0.10
