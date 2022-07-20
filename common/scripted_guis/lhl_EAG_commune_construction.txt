@@ -1,0 +1,88 @@
+scripted_gui = {
+	lhl_eag_commune_construction_window = {
+		context_type = player_context
+		parent_window_token = construction_tab
+		window_name = "lhl_eag_commune_construction_screen"
+		visible = {
+			tag = EAG
+			EAG = {
+				has_completed_focus = EAG_no_to_opression
+			}
+		}
+		triggers = {
+            lhl_EAG_commune_construction_image_1_visible = {
+				set_temp_variable = { EAG_anarchist_support_10 = 0 }
+				add_to_temp_variable = { EAG_anarchist_support_10 = parliament_seat_array^0 }
+				add_to_temp_variable = { EAG_anarchist_support_10 = parliament_seat_array^1 }
+				divide_temp_variable = { EAG_anarchist_support_10 = 4 }
+				check_variable = {
+					var = parliament_seat_array^0
+					value = EAG_anarchist_support_10
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_EAG_commune_construction_image_2_visible = {
+				set_temp_variable = { EAG_anarchist_support_10 = 0 }
+				add_to_temp_variable = { EAG_anarchist_support_10 = parliament_seat_array^0 }
+				add_to_temp_variable = { EAG_anarchist_support_10 = parliament_seat_array^1 }
+				divide_temp_variable = { EAG_anarchist_support_10 = 4 }
+				check_variable = {
+					var = parliament_seat_array^0
+					value = EAG_anarchist_support_10
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_EAG_commune_construction_image_3_visible = {
+				set_temp_variable = { EAG_anarchist_support_10 = 0 }
+				add_to_temp_variable = { EAG_anarchist_support_10 = parliament_seat_array^0 }
+				add_to_temp_variable = { EAG_anarchist_support_10 = parliament_seat_array^1 }
+				divide_temp_variable = { EAG_anarchist_support_10 = 4 }
+				check_variable = {
+					var = parliament_seat_array^0
+					value = EAG_anarchist_support_10
+					compare = less_than_or_equals
+				}
+		    }
+		}
+	}
+	lhl_eag_commune_research_window = {
+		context_type = player_context
+		parent_window_token = technology_tab
+		window_name = "lhl_eag_commune_research_screen"
+		visible = {
+			tag = EAG
+			set_temp_variable = { EAG_anarchist_support_10 = 0 }
+			add_to_temp_variable = { EAG_anarchist_support_10 = parliament_seat_array^0 }
+			add_to_temp_variable = { EAG_anarchist_support_10 = parliament_seat_array^1 }
+			divide_temp_variable = { EAG_anarchist_support_10 = 4 }
+			check_variable = {
+				var = parliament_seat_array^0
+				value = EAG_anarchist_support_10
+				compare = less_than_or_equals
+			}
+			EAG = {
+				has_completed_focus = EAG_no_to_opression
+			}
+		}
+	}
+	lhl_eag_commune_research_window = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "lhl_eag_commune_politics_screen"
+		visible = {
+			tag = EAG
+			set_temp_variable = { EAG_anarchist_support_10 = 0 }
+			add_to_temp_variable = { EAG_anarchist_support_10 = parliament_seat_array^0 }
+			add_to_temp_variable = { EAG_anarchist_support_10 = parliament_seat_array^1 }
+			divide_temp_variable = { EAG_anarchist_support_10 = 4 }
+			check_variable = {
+				var = parliament_seat_array^0
+				value = EAG_anarchist_support_10
+				compare = less_than_or_equals
+			}
+			EAG = {
+				has_completed_focus = EAG_no_to_opression
+			}
+		}
+	}
+}
