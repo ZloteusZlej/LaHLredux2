@@ -87,7 +87,118 @@ ESS_control_over_london = {
 	}
 }	
 
-
+ESS_desperate_measures = {
+	ESS_great_londons_flood = {
+	    available = {
+			has_country_flag = ESS_london_flood_proposed
+			ESS = {
+				has_war	= yes
+				}
+				
+			}
+		ai_will_do = {
+			factor = 100
+			}
+		highlight_states = {
+			highlight_state_targets = { state = 1160 }
+			highlight_provinces = {
+				17534
+				2740
+				17539
+				15014
+				1448
+				5956
+				15007
+				14972
+				17531
+			}
+		}
+		complete_effect = {
+		clr_country_flag = ESS_london_flood_proposed
+				1160 = {
+					add_province_modifier = {
+						static_modifiers = { flooded }
+						province = {
+							id = 17534
+							id = 2740
+							id = 17539
+							id = 15014
+							id = 1448
+							id = 5956
+							id = 15007
+							id = 14972
+							id = 17531
+						}
+					}
+					damage_building = {
+					    type = infrastructure
+					    damage = 2
+					}
+					damage_building = {
+					    type = industrial_complex
+					    damage = 0.5
+					}
+					damage_building = {
+					    type = arms_factory
+					    damage = 0.5
+					}
+				}
+			set_country_flag = { flag = ESS_londons_aquapark value = 1 days = 60 }	
+		}
+	}
+	ESS_drain_london = {
+	days_remove = 60
+	visible = {
+	NOT = {
+			has_country_flag = ESS_london_flood_proposed
+			}
+		}
+	available = {
+		NOT = {
+			has_country_flag = ESS_londons_aquapark
+			}
+		ai_will_do = {
+			factor = 100
+			}
+		highlight_states = {
+			highlight_state_targets = { state = 1160 }
+			highlight_provinces = {
+				17534
+				2740
+				17539
+				15014
+				1448
+				5956
+				15007
+				14972
+				17531
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+	remove_effect = {
+		clr_country_flag = ESS_londons_aquapark
+			1160 = {
+				remove_province_modifier = {
+					static_modifiers = { flooded }
+					province = {
+						id = 17534
+							id = 2740
+							id = 17539
+							id = 15014
+							id = 1448
+							id = 5956
+							id = 15007
+							id = 14972
+							id = 17531
+					}
+				}
+			}
+		}
+	}	
+}
+}
 ESS_take_what_is_ours = {
 	ESS_raid_KNT = {
 	    available = {
