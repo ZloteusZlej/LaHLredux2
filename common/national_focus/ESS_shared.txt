@@ -32,421 +32,6 @@
 		x = 4
 		y = 1
 	}
-	shared_focus = {
-		id = ESS_national_revolutionary_army
-		icon = GFX_goal_unknown
-		cost = 3
-		completion_reward = {
-		    ESS = {
-			    add_ideas = ESS_big_thinkin
-				}
-				army_experience = 25
-			}
-		x = 21
-		y = 0
-	}
-	shared_focus = {
-		id = ESS_decentralized_command
-		icon = GFX_goal_ESS_decentralized_command
-		cost = 3
-		prerequisite = {
-			focus = ESS_national_revolutionary_army
-		}
-		mutually_exclusive = {
-			focus = ESS_sword_of_the_republic
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ESS_big_thinkin
-				add_idea = ESS_decentralized_army
-				}
-			}
-		x = 18
-		y = 1
-	}
-	
-	shared_focus = { 
-		id = ESS_urban_warfare
-		icon = GFX_goal_ESS_urban_warfare
-		cost = 3
-		prerequisite = {
-		focus = ESS_decentralized_command
-			}
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = urban_tech
-			}
-			hidden_effect = {
-			add_idea = ESS_more_special_units
-			}
-			division_template = {
-				name = "Street Fighters"
-				division_names_group = ESS_INF_02
-				regiments = {
-					urban_forces = { x = 0 y = 0 }	
-					urban_forces = { x = 0 y = 1 }
-					urban_forces = { x = 0 y = 2 }	
-					urban_forces = { x = 0 y = 3 }	
-					}
-					support = {
-						recon = { x = 0 y = 0 } 
-					}
-				}
-				random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"Undergrounders\" division_template = \"Street Fighters\" start_experience_factor = 1.2 start_equipment_factor = 0.7"
-					owner = ESS
-				}
-			}
-		}
-		x = 17
-		y = 2
-
-	}
-	shared_focus = {
-		id = ESS_elevate_warlords
-		icon = GFX_goal_ESS_elevate_warlords
-		cost = 3
-		prerequisite = {
-		focus = ESS_decentralized_command
-	}
-		completion_reward = {
-			create_corps_commander = {
-				name = "Gerald Strickland"
-				picture = "Portrait_KNT_Gerald_Strickland.dds"
-				traits = {  }
-				skill = 3
-				attack_skill = 2
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 2
-			}
-			create_corps_commander = {
-				name = "Daniel Radcliffe"
-				desc = "NAZI HARRY POTTER"
-				picture = "Portrait_ESS_Daniel_Radcliffe.dds"
-				traits = { militiaman }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			create_corps_commander = {
-				name = "Paul McCartney"
-				desc = "Co-lead vocalist and bassist for the Beatles"
-				picture = "Portrait_ESS_Paul_McCartney.dds"
-				traits = { militiaman }
-				skill = 2
-				attack_skill = 1
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			}
-		x = 19
-		y = 2
-	}
-	
-	shared_focus = {
-		id = ESS_contacts_with_local_rebels
-		icon = GFX_goal_ESS_contacts_with_local_rebels
-		cost = 3
-		prerequisite = {
-		focus = ESS_decentralized_command
-	}
-	completion_reward = {
-			custom_effect_tooltip = ESS_contacts_with_local_rebels.tt
-			division_template = {
-				name = "Saboteurs"
-				division_names_group = ESS_INF_02
-				is_locked = yes
-				regiments = {
-					infantry = { x = 0 y = 0 }	
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }	
-					}
-					
-				}
-		}
-		x = 18
-		y = 3
-	}
-	
-	shared_focus = {
-		id = ESS_dare_to_die_corps
-		icon = GFX_goal_ESS_dare_to_die_corps
-		cost = 3
-		prerequisite = {
-		focus = ESS_urban_warfare
-	}
-	completion_reward = {
-			swap_ideas = {
-				remove_idea = ESS_decentralized_army
-				add_idea = ESS_decentralized_army_2
-			}
-		}
-		x = 17
-		y = 4
-
-	}
-	shared_focus = {
-		id = ESS_autonomous_recruiting
-		icon = GFX_goal_ESS_autonomous_recruiting
-		cost = 3
-		prerequisite = {
-		focus = ESS_elevate_warlords
-	}
-	completion_reward = {
-		    ESS = {
-			add_timed_idea = { 
-				idea = ESS_field_recruiting
-				days = 100 
-				}
-				}
-			division_template = {
-				name = "Drafted Punks"
-				division_names_group = ESS_INF_02
-				is_locked = yes
-				regiments = {
-					infantry = { x = 0 y = 0 }	
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }	
-					infantry = { x = 0 y = 3 }	
-					}
-					support = {
-						engineer = { x = 0 y = 0 } 
-					}
-				}
-				random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"Modern Blackshirts\" division_template = \"Drafted Punks\" start_experience_factor = 0.6 start_equipment_factor = 0.1"
-					owner = ESS
-				}
-				create_unit = {
-					division = "name = \"Flash And Circles\" division_template = \"Drafted Punks\" start_experience_factor = 0.6 start_equipment_factor = 0.1"
-					owner = ESS
-				}
-				create_unit = {
-					division = "name = \"Green Hairs\" division_template = \"Drafted Punks\" start_experience_factor = 0.6 start_equipment_factor = 0.1"
-					owner = ESS
-				}
-				create_unit = {
-					division = "name = \"'I am totally not gonna get drafted' Brigade\" division_template = \"Drafted Punks\" start_experience_factor = 0.6 start_equipment_factor = 0.1"
-					owner = ESS
-				}
-			}
-			}
-		x = 19
-		y = 4
-	}
-	
-	shared_focus = {
-		id = ESS_initiatives_on_the_ground
-		icon = GFX_goal_ESS_initiatives_on_the_ground
-		cost = 3
-		prerequisite = {
-		focus = ESS_dare_to_die_corps
-	}
-		prerequisite = {
-		focus = ESS_contacts_with_local_rebels
-	}
-		prerequisite = {
-		focus = ESS_autonomous_recruiting
-	}
-	completion_reward = {
-			swap_ideas = {
-				remove_idea = ESS_decentralized_army_2
-				add_idea = ESS_decentralized_army_3
-			}
-		}
-		x = 18
-		y = 5
-
-	}
-		
-	shared_focus = {
-	id = ESS_sword_of_the_republic
-	icon = GFX_goal_ESS_sword_of_the_republic
-	cost = 3
-	prerequisite = {
-		focus = ESS_national_revolutionary_army
-	}
-	mutually_exclusive = {
-			focus = ESS_decentralized_command
-		}
-	completion_reward = {
-		swap_ideas = {
-			remove_idea = ESS_big_thinkin
-			add_idea = ESS_united_army
-			}
-	}
-	x = 24
-	y = 1
-	}
-	shared_focus = {
-		id = ESS_revive_military_provost
-		icon = GFX_goal_ESS_revive_military_provost
-		cost = 3
-		prerequisite = {
-		focus = ESS_sword_of_the_republic
-	}
-	completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = military_police_tech
-			}
-			division_template = {
-				name = "London Police Units"
-				division_names_group = ESS_INF_01
-				regiments = {
-					armored_car = { x = 0 y = 0 }	
-					armored_car = { x = 0 y = 1 }
-					armored_car = { x = 0 y = 2 }	
-					armored_car = { x = 0 y = 3 }	
-					armored_car = { x = 0 y = 4 }	
-					}
-					support = {
-						military_police = { x = 0 y = 0 } 
-						signal_company = { x = 0 y = 1 } 
-					}
-				}
-				random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"Police Unit Alpha\" division_template = \"London Police Units\" start_experience_factor = 0.6 start_equipment_factor = 0.7"
-					owner = ESS
-				}
-				create_unit = {
-					division = "name = \"Police Unit Beta\" division_template = \"London Police Units\" start_experience_factor = 0.6 start_equipment_factor = 0.7"
-					owner = ESS
-				}
-			}
-		}
-		x = 23
-		y = 2
-
-	}
-	shared_focus = {
-		id = ESS_suppress_independent_warlords
-		icon = GFX_goal_ESS_suppress_independent_warlords
-		cost = 3
-		prerequisite = {
-		focus = ESS_sword_of_the_republic
-	}
-		x = 25
-		y = 2
-
-	}
-	shared_focus = {
-		id = ESS_amnesty_for_royal_officers
-		icon = GFX_goal_ESS_amnesty_for_royal_officers
-		cost = 3
-		prerequisite = {
-		focus = ESS_sword_of_the_republic
-	}
-		x = 24
-		y = 3
-
-	}
-	shared_focus = {
-		id = ESS_auxiliary_forces
-		icon = GFX_goal_ESS_auxiliary_forces
-		cost = 3
-		prerequisite = {
-		focus = ESS_revive_military_provost
-	}
-	completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.3
-				uses = 1
-				category = uav_brigade
-			}
-			add_tech_bonus = {
-				bonus = 0.3
-				uses = 1
-				category = signal_company
-			}
-			add_tech_bonus = {
-				bonus = 0.3
-				uses = 1
-				category = engineer
-			}
-			
-			division_template = {
-				name = "Multisupport Unit"
-				division_names_group = ESS_INF_01
-				is_locked = no
-				regiments = {
-					infantry = { x = 0 y = 0 }	
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }	
-					infantry = { x = 0 y = 3 }	
-					infantry = { x = 0 y = 4 }	
-					infantry = { x = 1 y = 0 }	
-					}
-					support = {
-						uav_brigade = { x = 0 y = 0 } 
-						signal_company = { x = 0 y = 1 } 
-						maintenance_company = { x = 0 y = 2 } 
-						armored_car_recon = { x = 0 y = 3 } 
-						engineer = { x = 0 y = 4 } 
-					}
-				}
-				
-			random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"Future Warriors\" division_template = \"Multisupport Unit\" start_experience_factor = 1.0 start_equipment_factor = 0.7"
-					owner = ESS
-				}
-			}
-		}
-		x = 23
-		y = 4
-
-	}
-	shared_focus = {
-		id = ESS_introduce_military_ranks
-		icon = GFX_goal_ESS_introduce_military_ranks
-		cost = 3
-		prerequisite = {
-		focus = ESS_suppress_independent_warlords
-	}
-		x = 25
-		y = 4
-
-	}
-	shared_focus = {
-		id = ESS_return_honor_to_the_army
-		icon = GFX_goal_ESS_return_honor_to_the_army
-		cost = 3
-		prerequisite = {
-		focus = ESS_amnesty_for_royal_officers
-	}
-	prerequisite = {
-		focus = ESS_auxiliary_forces
-	}
-	prerequisite = {
-		focus = ESS_introduce_military_ranks
-	}
-		x = 24
-		y = 5
-
-	}	
-	shared_focus = {
-		id = ESS_preventive_strike
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-		focus = ESS_national_revolutionary_army
-	}
-	custom_effect_tooltip = ESS_preventive_strike.tt
-		x = 21
-		y = 3
-
-	}
 
 	shared_focus = {
 		id = ESS_revolutionary_ethic 
@@ -720,120 +305,427 @@
 		y = 5
 
 	}
+	
 	shared_focus = {
-		id = ESS_national_proclamation
+		id = ESS_national_revolutionary_army
 		icon = GFX_goal_unknown
 		cost = 3
-		prerequisite = {
-			focus = ESS_german_invaders
-		}
-		x = 13
+		completion_reward = {
+		    ESS = {
+			    add_ideas = ESS_big_thinkin
+				}
+				army_experience = 25
+			}
+		x = 16
 		y = 1
-
 	}
 	shared_focus = {
-		id = ESS_punish_the_huns
-		icon = GFX_goal_unknown
+		id = ESS_decentralized_command
+		icon = GFX_goal_ESS_decentralized_command
 		cost = 3
-		available = {
-		custom_trigger_tooltip = {
-				tooltip = ENG_rec_control_40
-				check_variable = {
-					var = ESS_control
-					value = 40
-					compare = greater_than_or_equals
+		prerequisite = {
+			focus = ESS_national_revolutionary_army
+		}
+		mutually_exclusive = {
+			focus = ESS_sword_of_the_republic
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ESS_big_thinkin
+				add_idea = ESS_decentralized_army
+				}
+			}
+		x = 13
+		y = 2
+	}
+	
+	shared_focus = { 
+		id = ESS_urban_warfare
+		icon = GFX_goal_ESS_urban_warfare
+		cost = 3
+		prerequisite = {
+		focus = ESS_decentralized_command
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = urban_tech
+			}
+			hidden_effect = {
+			add_idea = ESS_more_special_units
+			}
+			division_template = {
+				name = "Street Fighters"
+				division_names_group = ESS_INF_02
+				regiments = {
+					urban_forces = { x = 0 y = 0 }	
+					urban_forces = { x = 0 y = 1 }
+					urban_forces = { x = 0 y = 2 }	
+					urban_forces = { x = 0 y = 3 }	
+					}
+					support = {
+						recon = { x = 0 y = 0 } 
+					}
+				}
+				random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Undergrounders\" division_template = \"Street Fighters\" start_experience_factor = 1.2 start_equipment_factor = 0.7"
+					owner = ESS
 				}
 			}
 		}
-		prerequisite = {
-			focus = ESS_national_proclamation
-			}
-		bypass = {
-	    NOT = {
-		    country_exists = EAG
-			}			
-		}
-	completion_reward = {
-			create_wargoal = {
-			type = annex_everything
-			target = EAG
-			expire = 0
-			} 
-		}
-		x = 11
-		y = 2
-
-	}
-	shared_focus = {
-		id = ESS_deal_with_royalysts
-		icon = GFX_goal_unknown
-		cost = 3
-		available = {
-		custom_trigger_tooltip = {
-				tooltip = ENG_rec_control_50
-				check_variable = {
-					var = ESS_control
-					value = 50
-					compare = greater_than_or_equals
-				}
-			}
-		}
-		prerequisite = {
-			focus = ESS_national_proclamation
-		}
-		x = 13
-		y = 2
-
-	}
-	shared_focus = {
-		id = ESS_to_the_north
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_national_proclamation
-		}
-		x = 15
-		y = 2
-
-	}
-	shared_focus = {
-		id = ESS_england_and_the_world
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_deal_with_royalysts
-		}
-		x = 13
+		x = 12
 		y = 3
 
 	}
 	shared_focus = {
-		id = ESS_albion_cooperation
-		icon = GFX_goal_unknown
+		id = ESS_elevate_warlords
+		icon = GFX_goal_ESS_elevate_warlords
 		cost = 3
 		prerequisite = {
-			focus = ESS_england_and_the_world
+		focus = ESS_decentralized_command
+	}
+		completion_reward = {
+			create_corps_commander = {
+				name = "Gerald Strickland"
+				picture = "Portrait_KNT_Gerald_Strickland.dds"
+				traits = {  }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Daniel Radcliffe"
+				desc = "NAZI HARRY POTTER"
+				picture = "Portrait_ESS_Daniel_Radcliffe.dds"
+				traits = { militiaman }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Paul McCartney"
+				desc = "Co-lead vocalist and bassist for the Beatles"
+				picture = "Portrait_ESS_Paul_McCartney.dds"
+				traits = { militiaman }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			}
+		x = 14
+		y = 3
+	}
+	
+	shared_focus = {
+		id = ESS_contacts_with_local_rebels
+		icon = GFX_goal_ESS_contacts_with_local_rebels
+		cost = 3
+		prerequisite = {
+		focus = ESS_decentralized_command
+	}
+	completion_reward = {
+			custom_effect_tooltip = ESS_contacts_with_local_rebels.tt
+			division_template = {
+				name = "Saboteurs"
+				division_names_group = ESS_INF_02
+				is_locked = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }	
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }	
+					}
+					
+				}
 		}
-		mutually_exclusive = {
-			focus = ESS_make_them_obey
+		x = 13
+		y = 4
+	}
+	
+	shared_focus = {
+		id = ESS_dare_to_die_corps
+		icon = GFX_goal_ESS_dare_to_die_corps
+		cost = 3
+		prerequisite = {
+		focus = ESS_urban_warfare
+	}
+	completion_reward = {
+			swap_ideas = {
+				remove_idea = ESS_decentralized_army
+				add_idea = ESS_decentralized_army_2
+			}
 		}
 		x = 12
+		y = 5
+
+	}
+	shared_focus = {
+		id = ESS_autonomous_recruiting
+		icon = GFX_goal_ESS_autonomous_recruiting
+		cost = 3
+		prerequisite = {
+		focus = ESS_elevate_warlords
+	}
+	completion_reward = {
+		    ESS = {
+			add_timed_idea = { 
+				idea = ESS_field_recruiting
+				days = 100 
+				}
+				}
+			division_template = {
+				name = "Drafted Punks"
+				division_names_group = ESS_INF_02
+				is_locked = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }	
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }	
+					infantry = { x = 0 y = 3 }	
+					}
+					support = {
+						engineer = { x = 0 y = 0 } 
+					}
+				}
+				random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Modern Blackshirts\" division_template = \"Drafted Punks\" start_experience_factor = 0.6 start_equipment_factor = 0.1"
+					owner = ESS
+				}
+				create_unit = {
+					division = "name = \"Flash And Circles\" division_template = \"Drafted Punks\" start_experience_factor = 0.6 start_equipment_factor = 0.1"
+					owner = ESS
+				}
+				create_unit = {
+					division = "name = \"Green Hairs\" division_template = \"Drafted Punks\" start_experience_factor = 0.6 start_equipment_factor = 0.1"
+					owner = ESS
+				}
+				create_unit = {
+					division = "name = \"'I am totally not gonna get drafted' Brigade\" division_template = \"Drafted Punks\" start_experience_factor = 0.6 start_equipment_factor = 0.1"
+					owner = ESS
+				}
+			}
+			}
+		x = 14
+		y = 5
+	}
+	
+	shared_focus = {
+		id = ESS_initiatives_on_the_ground
+		icon = GFX_goal_ESS_initiatives_on_the_ground
+		cost = 3
+		prerequisite = {
+		focus = ESS_dare_to_die_corps
+	}
+		prerequisite = {
+		focus = ESS_contacts_with_local_rebels
+	}
+		prerequisite = {
+		focus = ESS_autonomous_recruiting
+	}
+	completion_reward = {
+			swap_ideas = {
+				remove_idea = ESS_decentralized_army_2
+				add_idea = ESS_decentralized_army_3
+			}
+		}
+		x = 13
+		y = 6
+
+	}
+		
+	shared_focus = {
+	id = ESS_sword_of_the_republic
+	icon = GFX_goal_ESS_sword_of_the_republic
+	cost = 3
+	prerequisite = {
+		focus = ESS_national_revolutionary_army
+	}
+	mutually_exclusive = {
+			focus = ESS_decentralized_command
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = ESS_big_thinkin
+			add_idea = ESS_united_army
+			}
+	}
+	x = 19
+	y = 2
+	}
+	
+	shared_focus = {
+		id = ESS_revive_military_provost
+		icon = GFX_goal_ESS_revive_military_provost
+		cost = 3
+		prerequisite = {
+		focus = ESS_sword_of_the_republic
+	}
+	completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = military_police_tech
+			}
+			division_template = {
+				name = "London Police Units"
+				division_names_group = ESS_INF_01
+				regiments = {
+					armored_car = { x = 0 y = 0 }	
+					armored_car = { x = 0 y = 1 }
+					armored_car = { x = 0 y = 2 }	
+					armored_car = { x = 0 y = 3 }	
+					armored_car = { x = 0 y = 4 }	
+					}
+					support = {
+						military_police = { x = 0 y = 0 } 
+						signal_company = { x = 0 y = 1 } 
+					}
+				}
+				random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Police Unit Alpha\" division_template = \"London Police Units\" start_experience_factor = 0.6 start_equipment_factor = 0.7"
+					owner = ESS
+				}
+				create_unit = {
+					division = "name = \"Police Unit Beta\" division_template = \"London Police Units\" start_experience_factor = 0.6 start_equipment_factor = 0.7"
+					owner = ESS
+				}
+			}
+		}
+		x = 18
+		y = 3
+
+	}
+	shared_focus = {
+		id = ESS_suppress_independent_warlords
+		icon = GFX_goal_ESS_suppress_independent_warlords
+		cost = 3
+		prerequisite = {
+		focus = ESS_sword_of_the_republic
+	}
+		x = 20
+		y = 3
+
+	}
+	shared_focus = {
+		id = ESS_amnesty_for_royal_officers
+		icon = GFX_goal_ESS_amnesty_for_royal_officers
+		cost = 3
+		prerequisite = {
+		focus = ESS_sword_of_the_republic
+	}
+		x = 19
 		y = 4
 
 	}
 	shared_focus = {
-		id = ESS_make_them_obey
+		id = ESS_auxiliary_forces
+		icon = GFX_goal_ESS_auxiliary_forces
+		cost = 3
+		prerequisite = {
+		focus = ESS_revive_military_provost
+	}
+	completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 1
+				category = uav_brigade
+			}
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 1
+				category = signal_company
+			}
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 1
+				category = engineer
+			}
+			
+			division_template = {
+				name = "Multisupport Unit"
+				division_names_group = ESS_INF_01
+				is_locked = no
+				regiments = {
+					infantry = { x = 0 y = 0 }	
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }	
+					infantry = { x = 0 y = 3 }	
+					infantry = { x = 0 y = 4 }	
+					infantry = { x = 1 y = 0 }	
+					}
+					support = {
+						uav_brigade = { x = 0 y = 0 } 
+						signal_company = { x = 0 y = 1 } 
+						maintenance_company = { x = 0 y = 2 } 
+						armored_car_recon = { x = 0 y = 3 } 
+						engineer = { x = 0 y = 4 } 
+					}
+				}
+				
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Future Warriors\" division_template = \"Multisupport Unit\" start_experience_factor = 1.0 start_equipment_factor = 0.7"
+					owner = ESS
+				}
+			}
+		}
+		x = 18
+		y = 5
+
+	}
+	
+	shared_focus = {
+		id = ESS_introduce_military_ranks
+		icon = GFX_goal_ESS_introduce_military_ranks
+		cost = 3
+		prerequisite = {
+		focus = ESS_suppress_independent_warlords
+	}
+		x = 20
+		y = 5
+
+	}
+	
+	shared_focus = {
+		id = ESS_return_honor_to_the_army
+		icon = GFX_goal_ESS_return_honor_to_the_army
+		cost = 3
+		prerequisite = {
+		focus = ESS_amnesty_for_royal_officers
+	}
+	prerequisite = {
+		focus = ESS_auxiliary_forces
+	}
+	prerequisite = {
+		focus = ESS_introduce_military_ranks
+	}
+		x = 19
+		y = 6
+
+	}	
+	
+	shared_focus = {
+		id = ESS_preventive_strike
 		icon = GFX_goal_unknown
 		cost = 3
 		prerequisite = {
-			focus = ESS_england_and_the_world
-		}
-		mutually_exclusive = {
-			focus = ESS_albion_cooperation
-		}
-		x = 14
+		focus = ESS_national_revolutionary_army
+	}
+	custom_effect_tooltip = ESS_preventive_strike.tt
+		x = 16
 		y = 4
-}
+
+	}
+
 	shared_focus = {
 		id = ESS_interregnum
 		icon = GFX_goal_unknown
