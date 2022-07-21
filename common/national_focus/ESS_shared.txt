@@ -57,12 +57,12 @@
 			focus = ESS_revolutionary_ethic
 		}
 		completion_reward = {
-		    ESS = {
-			    add_manpower = 30000
-				
+		add_manpower = 30000
+		add_stability = 0.05
+		swap_ideas = {
+			remove_idea = ESS_accelerated_army
+			add_idea = ESS_accelerated_army_1
 			}
-				
-			
 		}
 		x = -1
 		y = 3
@@ -74,6 +74,14 @@
 		cost = 3
 		prerequisite = {
 			focus = ESS_revolutionary_ethic
+		}
+		completion_reward = {
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.28
+			}
+		}
 		}
 		x = 3
 		y = 3
@@ -611,6 +619,23 @@
 		prerequisite = {
 		focus = ESS_sword_of_the_republic
 	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1200
+			producer = ESS
+		}
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 250
+			producer = ESS
+		}
+		add_equipment_to_stockpile = {
+			type = attack_helicopter_equipment
+			amount = 10
+			producer = ESS
+		}
+	}
 		x = 20
 		y = 3
 
@@ -673,7 +698,7 @@
 				
 			random_owned_controlled_state = {
 				create_unit = {
-					division = "name = \"Future Warriors\" division_template = \"Multisupport Unit\" start_experience_factor = 1.0 start_equipment_factor = 0.7"
+					division = "name = \"PMC "New Millenium"\" division_template = \"Multisupport Unit\" start_experience_factor = 1.0 start_equipment_factor = 0.7"
 					owner = ESS
 				}
 			}
@@ -690,6 +715,12 @@
 		prerequisite = {
 		focus = ESS_suppress_independent_warlords
 	}
+	completion_reward = {
+			swap_ideas = {
+				remove_idea = ESS_united_army
+				add_idea = ESS_united_army_1
+			}
+		}
 		x = 20
 		y = 5
 
@@ -708,6 +739,13 @@
 	prerequisite = {
 		focus = ESS_introduce_military_ranks
 	}
+	completion_reward = {
+			swap_ideas = {
+				remove_idea = ESS_united_army_1
+				add_idea = ESS_united_army_2
+			}
+			add_war_support = 0.10
+		}
 		x = 19
 		y = 6
 

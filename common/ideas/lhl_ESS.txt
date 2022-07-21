@@ -19,6 +19,24 @@ ideas = {
 			}
 		}
 		
+		ESS_accelerated_army_1 = {
+			
+			picture = GFX_idea_ESS_accelerated_army
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.10
+				army_org_factor = -0.10
+				army_morale_factor = 0.10
+				non_core_manpower = 0.02
+			}
+		}
+		
 		ESS_granddad_of_nation = {
 			
 			picture = GFX_idea_ESS_granddad_of_nation
@@ -183,10 +201,53 @@ ideas = {
 			
 			modifier = {
 				experience_gain_army = 0.03
-				army_org_factor	= 0.05
 				army_org_regain = 0.05
 				max_planning_factor = 0.05
 				training_time_army_factor = 0.2
+				conscription_factor = -0.05
+			}
+		}
+		ESS_united_army_1 = {
+			
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army = 0.03
+				army_org_factor	= 0.1
+				army_org_regain = 0.05
+				max_planning_factor = 0.05
+				training_time_army_factor = 0.3
+				conscription_factor = -0.1
+				org_loss_when_moving = -0.1
+				army_strength_factor = 0.1
+			}
+		}
+		ESS_united_army_2 = {
+			
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army = 0.03
+				army_org_factor	= 0.1
+				army_org_regain = 0.05
+				max_planning_factor = 0.05
+				training_time_army_factor = 0.3
+				conscription_factor = -0.1
+				org_loss_when_moving = -0.1
+				army_strength_factor = 0.1
+				special_forces_cap = 0.5
 			}
 		}
 	}

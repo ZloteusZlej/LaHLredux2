@@ -845,6 +845,56 @@ country_event = {
 			}
 	}
 	
+	country_event = { 
+		id = ESS_event.28
+		title = ESS_event.28.t
+		desc = ESS_event.28.d
+		
+		fire_only_once = yes	
+		is_triggered_only = yes
+		option = {
+			name = ESS_event.28.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 300
+				producer = ESS
+			}
+			add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 200
+			producer = ESS
+			}
+			add_war_support = -0.05
+			add_stability = -0.05
+			}
+		option = {
+			name = ESS_event.28.b
+				1160 = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				add_war_support = -0.1
+			}
+		option = {
+			name = ESS_event.28.c
+				1160 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 1
+					}
+				add_stability = -0.1
+			}
+
+	}
+	
+	
 country_event = {
 	id = ESS_event.666
 	title = ESS_event.666.t
