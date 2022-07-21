@@ -23,3 +23,47 @@ country_event = {
 	}
 }
 
+
+news_event = {
+	id = EAG_nsis.2
+		title = EAG_nsis.2.t 
+        desc = EAG_nsis.2.d
+	picture = 
+
+	is_triggered_only = yes 
+
+	fire_only_once = yes
+	
+	option = { 
+		name = EAG_nsis.2.a 
+		trigger = {
+            NOT = {
+				OR = {
+					tag = GER 
+					tag = EAG
+				}
+			}
+        }
+	}
+	
+	option = { 
+		name = EAG_nsis.2.b
+		trigger = {
+			tag = GER
+		}
+		add_political_power = -75
+		EAG = {
+			country_event = {
+				days = 7
+				id = EAG_event.1111
+			}
+		}
+	}
+	
+	option = { 
+		name = EAG_nsis.2.c 
+		trigger = {
+			tag = EAG
+		}
+	}
+}

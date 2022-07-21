@@ -165,3 +165,17 @@ country_event = {
 		add_political_power = 5
 	}
 }
+
+
+country_event = {
+	id = GER_event.10
+	title = GER_event.10.t
+	desc = GER_event.10.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	option = {
+	    name = GER_event.10.a
+		add_stability = -0.05
+	}
+}
