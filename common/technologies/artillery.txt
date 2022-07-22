@@ -1,49 +1,4 @@
 technologies = {
-
-	obsolete_anti_air = {
-	
-		start_year = 1980
-		
-		enable_equipments = {
-			anti_air_equipment_1
-		}
-		
-		
-		path = {
-			leads_to_tech = outdated_anti_air
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = outdated_spaag
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = outdated_sam
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -12 y = 0 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "1980.1.3"
-			}
-		}
-	}
 	
 	outdated_anti_air = {
 	
@@ -68,12 +23,17 @@ technologies = {
 			leads_to_tech = outdated_anti_air_radar
 			research_cost_coeff = 1
 		}
+		
+		sub_technologies = {
+			outdated_spaag
+			outdated_sam
+		}
 				
 		research_cost = 1.5
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -12 y = 2 }
+			position = { x = 3 y = 2 }
 		}
 		
 		categories = {
@@ -105,12 +65,19 @@ technologies = {
 		anti_air_brigade = {
 		    air_attack = 0.05
 		}
+		
+		spaag = {
+		     air_attack = 0.05
+		}
+		sam = {
+		     air_attack = 0.05
+		}
 				
 		research_cost = 1.5
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -13 y = 4 }
+			position = { x = 2 y = 4 }
 		}
 		
 		categories = {
@@ -142,12 +109,17 @@ technologies = {
 		anti_air_brigade = {
 		     reliability = 0.02
 		}
-				
+		spaag = {
+		     armor_value = 0.05
+		}	
+		sam = {
+		     armor_value = 0.05
+		}
 		research_cost = 1.5
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -11 y = 4 }
+			position = { x = 4 y = 4 }
 		}
 		
 		categories = {
@@ -175,22 +147,7 @@ technologies = {
 			spaag
 		}
 		
-		path = {
-			leads_to_tech = outdated_spaag_gun
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = outdated_spaag_radar
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -16 y = 2 }
-		}
+		research_cost = 0.5
 		
 		categories = {
 			artillery
@@ -202,72 +159,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "2000.1.3"
-			}
-		}
-	}
-	
-	outdated_spaag_gun = {
-	
-		start_year = 2010
-		
-		path = {
-			leads_to_tech = basic_spaag
-			research_cost_coeff = 1
-		}
-		spaag = {
-		     air_attack = 0.05
-		}
-				
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -17 y = 4 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2010.1.3"
-			}
-		}
-	}
-	
-	outdated_spaag_radar = {
-	
-		start_year = 2010
-		
-		path = {
-			leads_to_tech = basic_spaag
-			research_cost_coeff = 1
-		}
-		spaag = {
-		     armor_value = 0.05
-		}
-				
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -15 y = 4 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2010.1.3"
 			}
 		}
 	}
@@ -283,23 +174,9 @@ technologies = {
 		enable_subunits = {
 			sam
 		}
-				
-		path = {
-			leads_to_tech = outdated_sam_gun
-			research_cost_coeff = 1
-		}
 		
-		path = {
-			leads_to_tech = outdated_sam_radar
-			research_cost_coeff = 1
-		}
+		research_cost = 0.5
 		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -8 y = 2 }
-		}
 		
 		categories = {
 			artillery
@@ -311,72 +188,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "2000.1.3"
-			}
-		}
-	}
-	
-	outdated_sam_gun = {
-	
-		start_year = 2010
-		
-		path = {
-			leads_to_tech = basic_sam
-			research_cost_coeff = 1
-		}
-		sam = {
-		     air_attack = 0.05
-		}
-				
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -9 y = 4 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2010.1.3"
-			}
-		}
-	}
-	
-	outdated_sam_radar = {
-	
-		start_year = 2010
-		
-		path = {
-			leads_to_tech = basic_sam
-			research_cost_coeff = 1
-		}
-		sam = {
-		     armor_value = 0.05
-		}
-				
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -7 y = 4 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2010.1.3"
 			}
 		}
 	}
@@ -398,12 +209,17 @@ technologies = {
 			leads_to_tech = basic_anti_air_radar
 			research_cost_coeff = 1
 		}
-				
+		
+		sub_technologies = {
+			basic_spaag
+			basic_sam
+		}
+		
 		research_cost = 1.5
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -12 y = 6 }
+			position = { x = 3 y = 6 }
 		}
 		
 		categories = {
@@ -433,12 +249,18 @@ technologies = {
 		}
 		anti_air_brigade = {
 		    air_attack = 0.05
-		}				
+		}		
+		spaag = {
+		     air_attack = 0.05
+		}	
+		sam = {
+		     air_attack = 0.05
+		}
 		research_cost = 1.5
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -13 y = 8 }
+			position = { x = 2 y = 8 }
 		}
 		
 		categories = {
@@ -468,12 +290,18 @@ technologies = {
 		}
 		anti_air_brigade = {
 		    reliability = 0.02
-		}			
+		}	
+		spaag = {
+		     armor_value = 0.05
+		}	
+		sam = {
+		     armor_value = 0.05
+		}	
 		research_cost = 1.5
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -11 y = 8 }
+			position = { x = 4 y = 8 }
 		}
 		
 		categories = {
@@ -495,25 +323,10 @@ technologies = {
 		start_year = 2016
 		
 		enable_equipments = {
-			anti_air_equipment_1
+			sp_anti_air_equipment_2
 		}
 		
-		path = {
-			leads_to_tech = basic_spaag_gun
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = basic_spaag_radar
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -16 y = 6 }
-		}
+		research_cost = 0.5
 		
 		categories = {
 			artillery
@@ -529,94 +342,16 @@ technologies = {
 		}
 	}
 	
-	basic_spaag_gun = {
-	
-		start_year = 2018
-		
-		path = {
-			leads_to_tech = improved_spaag
-			research_cost_coeff = 1
-		}
-		spaag = {
-			air_attack = 0.05
-		}				
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -17 y = 8 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2018.1.3"
-			}
-		}
-	}
-	
-	basic_spaag_radar = {
-	
-		start_year = 2018
-		
-		path = {
-			leads_to_tech = improved_spaag
-			research_cost_coeff = 1
-		}
-		spaag = {
-			armor_value = 0.05
-	    }
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -15 y = 8 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2018.1.3"
-			}
-		}
-	}
 	
 	basic_sam = {
 	
 		start_year = 2016
 		
 		enable_equipments = {
-			anti_air_equipment_1
-		}
-				
-		path = {
-			leads_to_tech = basic_sam_gun
-			research_cost_coeff = 1
+			rocket_anti_air_equipment_2
 		}
 		
-		path = {
-			leads_to_tech = basic_sam_radar
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -8 y = 6 }
-		}
+		research_cost = 0.5
 		
 		categories = {
 			artillery
@@ -628,70 +363,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "2016.1.3"
-			}
-		}
-	}
-	
-	basic_sam_gun = {
-	
-		start_year = 2018
-		
-		path = {
-			leads_to_tech = improved_sam
-			research_cost_coeff = 1
-		}
-		sam = {
-			air_attack = 0.05
-	    }				
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -9 y = 8 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2018.1.3"
-			}
-		}
-	}
-	
-	basic_sam_radar = {
-	
-		start_year = 2018
-		
-		path = {
-			leads_to_tech = improved_sam
-			research_cost_coeff = 1
-		}
-		sam = {
-			armor_value = 0.05
-	    }		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -7 y = 8 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2018.1.3"
 			}
 		}
 	}
@@ -713,12 +384,17 @@ technologies = {
 			leads_to_tech = improved_anti_air_radar
 			research_cost_coeff = 1
 		}
+		
+		sub_technologies = {
+			improved_spaag
+			improved_sam
+		}
 				
 		research_cost = 1.5
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -12 y = 10 }
+			position = { x = 3 y = 10 }
 		}
 		
 		categories = {
@@ -748,12 +424,18 @@ technologies = {
 		}
 		anti_air_brigade = {
 		    air_attack = 0.05
-		}					
+		}		
+		spaag = {
+		     air_attack = 0.05
+		}	
+		sam = {
+		     air_attack = 0.05
+		}	
 		research_cost = 1.5
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -13 y = 12 }
+			position = { x = 2 y = 12 }
 		}
 		
 		categories = {
@@ -783,12 +465,18 @@ technologies = {
 		}
 		anti_air_brigade = {
 		    reliability = 0.02
-		}					
+		}	
+		spaag = {
+		     armor_value = 0.05
+		}	
+		sam = {
+		     armor_value = 0.05
+		}	
 		research_cost = 1.5
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -11 y = 12 }
+			position = { x = 4 y = 12 }
 		}
 		
 		categories = {
@@ -810,25 +498,10 @@ technologies = {
 		start_year = 2020
 		
 		enable_equipments = {
-			anti_air_equipment_1
+			sp_anti_air_equipment_3
 		}
 		
-		path = {
-			leads_to_tech = improved_spaag_gun
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = improved_spaag_radar
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -16 y = 10 }
-		}
+		research_cost = 0.5
 		
 		categories = {
 			artillery
@@ -840,70 +513,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "2020.1.3"
-			}
-		}
-	}
-	
-	improved_spaag_gun = {
-	
-		start_year = 2022
-		
-		path = {
-			leads_to_tech = advanced_spaag
-			research_cost_coeff = 1
-		}
-		spaag = {
-			air_attack = 0.05
-		}			
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -17 y = 12 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2022.1.3"
-			}
-		}
-	}
-	
-	improved_spaag_radar = {
-	
-		start_year = 2022
-		
-		path = {
-			leads_to_tech = advanced_spaag
-			research_cost_coeff = 1
-		}
-		spaag = {
-			armor_value = 0.05
-	    }
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -15 y = 12 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2022.1.3"
 			}
 		}
 	}
@@ -913,25 +522,10 @@ technologies = {
 		start_year = 2020
 		
 		enable_equipments = {
-			anti_air_equipment_1
-		}
-				
-		path = {
-			leads_to_tech = improved_sam_gun
-			research_cost_coeff = 1
+			rocket_anti_air_equipment_3
 		}
 		
-		path = {
-			leads_to_tech = improved_sam_radar
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -8 y = 10 }
-		}
+		research_cost = 0.5
 		
 		categories = {
 			artillery
@@ -943,70 +537,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "2020.1.3"
-			}
-		}
-	}
-	
-	improved_sam_gun = {
-	
-		start_year = 2022
-		
-		path = {
-			leads_to_tech = advanced_sam
-			research_cost_coeff = 1
-		}
-		sam = {
-			air_attack = 0.05
-	    }	
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -9 y = 12 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2022.1.3"
-			}
-		}
-	}
-	
-	improved_sam_radar = {
-	
-		start_year = 2022
-		
-		path = {
-			leads_to_tech = advanced_sam
-			research_cost_coeff = 1
-		}
-		sam = {
-			armor_value = 0.05
-	    }
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -7 y = 12 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2022.1.3"
 			}
 		}
 	}
@@ -1028,12 +558,17 @@ technologies = {
 			leads_to_tech = advanced_anti_air_radar
 			research_cost_coeff = 1
 		}
+		
+		sub_technologies = {
+			advanced_spaag
+			advanced_sam
+		}
 				
 		research_cost = 1.5
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -12 y = 14 }
+			position = { x = 3 y = 14 }
 		}
 		
 		categories = {
@@ -1064,11 +599,17 @@ technologies = {
 		anti_air_brigade = {
 		    air_attack = 0.05
 		}
+		sam = {
+			air_attack = 0.05
+		}
+		spaag = {
+			air_attack = 0.05
+		}
 		research_cost = 1.5
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -13 y = 16 }
+			position = { x = 2 y = 16 }
 		}
 		
 		categories = {
@@ -1098,12 +639,18 @@ technologies = {
 		}
 		anti_air_brigade = {
 		    reliability = 0.02
-		}		
+		}	
+		sam = {
+			armor_value = 0.05
+		}
+		spaag = {
+			armor_value = 0.05
+		}	
 		research_cost = 1.5
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -11 y = 16 }
+			position = { x = 4 y = 16 }
 		}
 		
 		categories = {
@@ -1125,25 +672,10 @@ technologies = {
 		start_year = 2025
 		
 		enable_equipments = {
-			anti_air_equipment_1
+			sp_anti_air_equipment_4
 		}
 		
-		path = {
-			leads_to_tech = advanced_spaag_gun
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = advanced_spaag_radar
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -16 y = 14 }
-		}
+		research_cost = 0.5
 		
 		categories = {
 			artillery
@@ -1155,70 +687,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "2025.1.3"
-			}
-		}
-	}
-	
-	advanced_spaag_gun = {
-	
-		start_year = 2028
-		
-		path = {
-			leads_to_tech = futuristic_spaag
-			research_cost_coeff = 1
-		}
-		spaag = {
-			air_attack = 0.05
-		}
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -17 y = 16 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2028.1.3"
-			}
-		}
-	}
-	
-	advanced_spaag_radar = {
-	
-		start_year = 2028
-		
-		path = {
-			leads_to_tech = futuristic_spaag
-			research_cost_coeff = 1
-		}
-		spaag = {
-			armor_value = 0.05
-	    }
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -15 y = 16 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2028.1.3"
 			}
 		}
 	}
@@ -1228,25 +696,10 @@ technologies = {
 		start_year = 2025
 		
 		enable_equipments = {
-			anti_air_equipment_1
-		}
-				
-		path = {
-			leads_to_tech = advanced_sam_gun
-			research_cost_coeff = 1
+			rocket_anti_air_equipment_4
 		}
 		
-		path = {
-			leads_to_tech = advanced_sam_radar
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -8 y = 14 }
-		}
+		research_cost = 0.5
 		
 		categories = {
 			artillery
@@ -1262,69 +715,6 @@ technologies = {
 		}
 	}
 	
-	advanced_sam_gun = {
-	
-		start_year = 2028
-		
-		path = {
-			leads_to_tech = futuristic_sam
-			research_cost_coeff = 1
-		}
-		sam = {
-			air_attack = 0.05
-	    }
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -9 y = 16 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2028.1.3"
-			}
-		}
-	}
-	
-	advanced_sam_radar = {
-	
-		start_year = 2028
-		
-		path = {
-			leads_to_tech = futuristic_sam
-			research_cost_coeff = 1
-		}
-		sam = {
-			armor_value = 0.05
-	    }
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -7 y = 16 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2028.1.3"
-			}
-		}
-	}
 	
 	futuristic_anti_air = {
 	
@@ -1343,12 +733,17 @@ technologies = {
 			leads_to_tech = futuristic_anti_air_radar
 			research_cost_coeff = 1
 		}
-				
+		
+		sub_technologies = {
+			futuristic_spaag
+			futuristic_sam
+		}
+		
 		research_cost = 1.5
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -12 y = 18 }
+			position = { x = 3 y = 18 }
 		}
 		
 		categories = {
@@ -1376,9 +771,15 @@ technologies = {
 		anti_air_brigade = {
 		    air_attack = 0.05
 		}
+		sam = {
+			air_attack = 0.05
+		}
+		spaag = {
+			air_attack = 0.05
+		}
 		folder = {
 			name = artillery_folder
-			position = { x = -13 y = 20 }
+			position = { x = 2 y = 20 }
 		}
 		
 		categories = {
@@ -1403,7 +804,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -11 y = 20 }
+			position = { x = 4 y = 20 }
 		}
 		anti_air = {
 		    reliability = 0.02
@@ -1411,6 +812,12 @@ technologies = {
 		anti_air_brigade = {
 		    reliability = 0.02
 		}	
+		sam = {
+			armor_value = 0.05
+		}
+		spaag = {
+			armor_value = 0.05
+		}
 		categories = {
 			artillery
 		}
@@ -1430,26 +837,11 @@ technologies = {
 		start_year = 2030
 		
 		enable_equipments = {
-			anti_air_equipment_1
+			sp_anti_air_equipment_5
 		}
 		
-		path = {
-			leads_to_tech = futuristic_spaag_gun
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = futuristic_spaag_radar
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -16 y = 18 }
-		}
-		
+		research_cost = 0.5
+
 		categories = {
 			artillery
 		}
@@ -1460,88 +852,18 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "2030.1.3"
-			}
-		}
-	}
-	
-	futuristic_spaag_gun = {
-	
-		start_year = 2032
-				
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -17 y = 20 }
-		}
-		spaag = {
-			air_attack = 0.05
-		}
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2032.1.3"
-			}
-		}
-	}
-	
-	futuristic_spaag_radar = {
-	
-		start_year = 2032
-				
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -15 y = 20 }
-		}
-		spaag = {
-			armor_value = 0.05
-	    }
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2032.1.3"
 			}
 		}
 	}
 	
 	futuristic_sam = {
 	
-		start_year = 2030
-		
 		enable_equipments = {
-			anti_air_equipment_1
-		}
-				
-		path = {
-			leads_to_tech = futuristic_sam_gun
-			research_cost_coeff = 1
+			rocket_anti_air_equipment_5
 		}
 		
-		path = {
-			leads_to_tech = futuristic_sam_radar
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -8 y = 18 }
-		}
+		start_year = 2030
+		research_cost = 0.5
 		
 		categories = {
 			artillery
@@ -1553,61 +875,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "2030.1.3"
-			}
-		}
-	}
-	
-	futuristic_sam_gun = {
-	
-		start_year = 2032
-		
-				
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -9 y = 20 }
-		}
-		sam = {
-			air_attack = 0.05
-	    }
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2032.1.3"
-			}
-		}
-	}
-	
-	futuristic_sam_radar = {
-	
-		start_year = 2032
-				
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -7 y = 20 }
-		}
-		sam = {
-			armor_value = 0.05
-	    }
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2032.1.3"
 			}
 		}
 	}
@@ -1634,7 +901,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = outdated_spg
+			leads_to_tech = outdated_anti_air
 			research_cost_coeff = 1
 		}
 	
@@ -1683,6 +950,10 @@ technologies = {
 			position = { x = -1 y = 2 }
 		}
 		
+		sub_technologies = {
+			outdated_spg
+		}
+		
 		path = {
 			leads_to_tech = outdated_howitzer_gun
 			research_cost_coeff = 1
@@ -1728,6 +999,9 @@ technologies = {
 		artillery_brigade = {
 		     soft_attack = 0.05
 		}
+		spg = {
+			 soft_attack = 0.05
+		}
 		
 		categories = {
 			artillery
@@ -1758,6 +1032,9 @@ technologies = {
 		}
 		artillery_brigade = {
 		     reliability = 0.05
+		}
+		spg = {
+			 armor_value = 0.05
 		}
 		
 		path = {
@@ -1790,22 +1067,7 @@ technologies = {
 			spg
 		}
 		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 3 y = 2 }
-		}
-		
-		path = {
-			leads_to_tech = outdated_spg_gun
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = outdated_spg_radar
-			research_cost_coeff = 1
-		}
+		research_cost = 0.5
 	
 		categories = {
 			artillery
@@ -1820,72 +1082,6 @@ technologies = {
 			}
 		}
 	}
-	
-	outdated_spg_gun = {
-	
-		start_year = 2010
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 2 y = 4 }
-		}
-		spg = {
-		     soft_attack = 0.05
-		}
-		
-		path = {
-			leads_to_tech = basic_spg
-			research_cost_coeff = 1
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2010.1.3"
-			}
-		}
-	}	
-
-	outdated_spg_radar = {
-	
-		start_year = 2010
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 4 y = 4 }
-		}
-		spg = {
-		    armor_value = 0.05
-		}
-		
-		path = {
-			leads_to_tech = basic_spg
-			research_cost_coeff = 1
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2010.1.3"
-			}
-		}
-	}	
 
 	outdated_anti_tank = {
 	
@@ -2128,6 +1324,10 @@ technologies = {
 			position = { x = -1 y = 6 }
 		}
 		
+		sub_technologies = {
+			basic_spg
+		}
+		
 		path = {
 			leads_to_tech = basic_howitzer_gun
 			research_cost_coeff = 1
@@ -2169,6 +1369,10 @@ technologies = {
 		artillery_brigade = {
 			soft_attack = 0.05
 		}	
+		
+		spg = {
+			 soft_attack = 0.05
+		}
 
 		path = {
 			leads_to_tech = improved_howitzer
@@ -2205,6 +1409,11 @@ technologies = {
 		artillery_brigade = {
 			reliability = 0.05
 		}		
+		
+		spg = {
+			 armor_value = 0.05
+		}
+		
 		path = {
 			leads_to_tech = improved_howitzer
 			research_cost_coeff = 1
@@ -2230,25 +1439,10 @@ technologies = {
 		
 		enable_equipments = {
 			howitzer_0
-			artillery_equipment_1
+			spg_equipment_2
 		}
 		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 3 y = 6 }
-		}
-		
-		path = {
-			leads_to_tech = basic_spg_gun
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = basic_spg_radar
-			research_cost_coeff = 1
-		}
+		research_cost = 0.5
 	
 		categories = {
 			artillery
@@ -2263,74 +1457,6 @@ technologies = {
 			}
 		}
 	}
-	
-	basic_spg_gun = {
-	
-		start_year = 2016
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 2 y = 8 }
-		}
-
-		spg = {
-			soft_attack = 0.05
-		}
-
-		path = {
-			leads_to_tech = improved_spg
-			research_cost_coeff = 1
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2016.1.3"
-			}
-		}
-	}	
-
-	basic_spg_radar = {
-	
-		start_year = 2018
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 4 y = 8 }
-		}
-
-		spg = {
-		    armor_value = 0.05
-		}
-		
-		path = {
-			leads_to_tech = improved_spg
-			research_cost_coeff = 1
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2018.1.3"
-			}
-		}
-	}	
 
 	basic_anti_tank = {
 	
@@ -2579,6 +1705,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		sub_technologies = {
+			improved_spg
+		}
+		
 		categories = {
 			artillery
 		}
@@ -2609,6 +1739,10 @@ technologies = {
 		}
 		artillery_brigade = {
 			soft_attack = 0.05
+		}
+		
+		spg = {
+			 soft_attack = 0.05
 		}
 
 		path = {
@@ -2647,6 +1781,9 @@ technologies = {
 		artillery_brigade = {
 			reliability = 0.05
 		}	
+		spg = {
+			armor_value = 0.05
+		}
 		
 		path = {
 			leads_to_tech = advanced_howitzer
@@ -2673,25 +1810,10 @@ technologies = {
 		
 		enable_equipments = {
 			howitzer_0
-			artillery_equipment_1
+			spg_equipment_3
 		}
 		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 3 y = 10 }
-		}
-		
-		path = {
-			leads_to_tech = improved_spg_gun
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = improved_spg_radar
-			research_cost_coeff = 1
-		}
+		research_cost = 0.5
 	
 
 		
@@ -2708,74 +1830,6 @@ technologies = {
 			}
 		}
 	}
-	
-	improved_spg_gun = {
-	
-		start_year = 2022
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 2 y = 12 }
-		}
-		
-		spg = {
-			soft_attack = 0.05
-		}
-		
-		path = {
-			leads_to_tech = advanced_spg
-			research_cost_coeff = 1
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2022.1.3"
-			}
-		}
-	}	
-
-	improved_spg_radar = {
-	
-		start_year = 2022
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 4 y = 12 }
-		}
-		
-		spg = {
-		    armor_value = 0.05
-		}
-		
-		path = {
-			leads_to_tech = advanced_spg
-			research_cost_coeff = 1
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2022.1.3"
-			}
-		}
-	}	
 
 	improved_anti_tank = {
 	
@@ -3014,6 +2068,10 @@ technologies = {
 			position = { x = -1 y = 14 }
 		}
 		
+		sub_technologies = {
+			advanced_spg
+		}
+		
 		path = {
 			leads_to_tech = advanced_howitzer_gun
 			research_cost_coeff = 1
@@ -3056,6 +2114,10 @@ technologies = {
 			soft_attack = 0.05
 		}
 		
+		spg = {
+			soft_attack = 0.05
+		}
+		
 		path = {
 			leads_to_tech = futuristic_howitzer
 			research_cost_coeff = 1
@@ -3092,6 +2154,9 @@ technologies = {
 		artillery_brigade = {
 			reliability = 0.05
 		}	
+		spg = {
+			 armor_value = 0.05
+		}
 
 		path = {
 			leads_to_tech = futuristic_howitzer
@@ -3118,26 +2183,10 @@ technologies = {
 		
 		enable_equipments = {
 			howitzer_0
-			artillery_equipment_1
+			spg_equipment_4
 		}
 		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 3 y = 14 }
-		}
-		
-		path = {
-			leads_to_tech = advanced_spg_gun
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = advanced_spg_radar
-			research_cost_coeff = 1
-		}
-	
+		research_cost = 0.5
 
 		
 		categories = {
@@ -3153,74 +2202,6 @@ technologies = {
 			}
 		}
 	}
-	
-	advanced_spg_gun = {
-	
-		start_year = 2028
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 2 y = 16 }
-		}
-
-		spg = {
-			soft_attack = 0.05
-		}
-		
-		path = {
-			leads_to_tech = futuristic_spg
-			research_cost_coeff = 1
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2028.1.3"
-			}
-		}
-	}	
-
-	advanced_spg_radar = {
-	
-		start_year = 2028
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 4 y = 16 }
-		}
-		
-		spg = {
-		    armor_value = 0.05
-		}
-
-		path = {
-			leads_to_tech = futuristic_spg
-			research_cost_coeff = 1
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2028.1.3"
-			}
-		}
-	}	
 
 	advanced_anti_tank = {
 	
@@ -3469,6 +2450,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		sub_technologies = {
+			futuristic_spg
+		}
+		
 		categories = {
 			artillery
 		}
@@ -3500,7 +2485,9 @@ technologies = {
 		artillery_brigade = {
 			soft_attack = 0.05
 		}
-
+		spg = {
+			 soft_attack = 0.05
+		}
 		categories = {
 			artillery
 		}
@@ -3532,7 +2519,9 @@ technologies = {
 		artillery_brigade = {
 			reliability = 0.05
 		}	
-
+		spg = {
+			 armor_value = 0.05
+		}
 		categories = {
 			artillery
 		}
@@ -3553,25 +2542,10 @@ technologies = {
 		
 		enable_equipments = {
 			howitzer_0
-			artillery_equipment_1
+			spg_equipment_5
 		}
 		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 3 y = 18 }
-		}
-		
-		path = {
-			leads_to_tech = futuristic_spg_gun
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = futuristic_spg_radar
-			research_cost_coeff = 1
-		}
+		research_cost = 0.5
 	
 		categories = {
 			artillery
@@ -3586,64 +2560,6 @@ technologies = {
 			}
 		}
 	}
-	
-	futuristic_spg_gun = {
-	
-		start_year = 2032
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 2 y = 20 }
-		}
-		
-		spg = {
-			soft_attack = 0.05
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2032.1.3"
-			}
-		}
-	}	
-
-	futuristic_spg_radar = {
-	
-		start_year = 2032
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 4 y = 20 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		spg = {
-		    armor_value = 0.05
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2032.1.3"
-			}
-		}
-	}	
 
 	futuristic_anti_tank = {
 	
@@ -3845,565 +2761,4 @@ technologies = {
 			}
 		}
 	}	
-	
-	obsolete_tbm = {
-	
-		start_year = 1980
-		
-		enable_equipments = {
-			tactical_ballistic_missile_equipment_1
-		}
-		
-		path = {
-			leads_to_tech = outdated_tbm
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 13 y = 0 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "1980.1.3"
-			}
-		}
-	}
-	
-	outdated_tbm = {
-	
-		start_year = 2000
-		
-		enable_equipments = {
-			tactical_ballistic_missile_equipment_1
-		}
-		enable_subunits = {
-			tactical_missile
-		}
-		
-		path = {
-			leads_to_tech = outdated_tbm_gun
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = outdated_tbm_radar
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 13 y = 2 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "2000.1.3"
-			}
-		}
-	}
-	
-	outdated_tbm_gun = {
-	
-		start_year = 2010
-		
-		path = {
-			leads_to_tech = basic_tbm
-			research_cost_coeff = 1
-		}
-		tactical_missile = {
-		     soft_attack = 0.05
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 12 y = 4 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "2010.1.3"
-			}
-		}
-	}
-	
-	outdated_tbm_radar = {
-	
-		start_year = 2010
-		
-		path = {
-			leads_to_tech = basic_tbm
-			research_cost_coeff = 1
-		}
-		tactical_missile = {
-		     armor_value = 0.05
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 14 y = 4 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "2010.1.3"
-			}
-		}
-	}
-	
-	basic_tbm = {
-	
-		start_year = 2016
-		
-		enable_equipments = {
-			anti_air_equipment_1
-		}
-		
-		path = {
-			leads_to_tech = basic_tbm_gun
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = basic_tbm_radar
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 13 y = 6 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "2016.1.3"
-			}
-		}
-	}
-	
-	basic_tbm_gun = {
-	
-		start_year = 2018
-		
-		path = {
-			leads_to_tech = improved_tbm
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 12 y = 8 }
-		}
-
-		tactical_missile = {
-			soft_attack = 0.05
-		}		
-
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "2018.1.3"
-			}
-		}
-	}
-	
-	basic_tbm_radar = {
-	
-		start_year = 2018
-		
-		path = {
-			leads_to_tech = improved_tbm
-			research_cost_coeff = 1
-		}
-		
-		tactical_missile = {
-			armor_value = 0.05
-		}
-
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 14 y = 8 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "2018.1.3"
-			}
-		}
-	}
-	
-	improved_tbm = {
-	
-		start_year = 2020
-		
-		enable_equipments = {
-			anti_air_equipment_1
-		}
-		
-		path = {
-			leads_to_tech = improved_tbm_gun
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = improved_tbm_radar
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 13 y = 10 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "2020.1.3"
-			}
-		}
-	}
-	
-	improved_tbm_gun = {
-	
-		start_year = 2022
-		
-		path = {
-			leads_to_tech = advanced_tbm
-			research_cost_coeff = 1
-		}
-		
-		tactical_missile = {
-			soft_attack = 0.05
-		}		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 12 y = 12 }
-		}
-		
-
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "2022.1.3"
-			}
-		}
-	}
-	
-	improved_tbm_radar = {
-	
-		start_year = 2022
-		
-		path = {
-			leads_to_tech = advanced_tbm
-			research_cost_coeff = 1
-		}
-		
-		tactical_missile = {
-			armor_value = 0.05
-		}
-
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 14 y = 12 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "2022.1.3"
-			}
-		}
-	}
-	
-	advanced_tbm = {
-	
-		start_year = 2025
-		
-		enable_equipments = {
-			anti_air_equipment_1
-		}
-		
-		path = {
-			leads_to_tech = advanced_tbm_gun
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = advanced_tbm_radar
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 13 y = 14 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "2025.1.3"
-			}
-		}
-	}
-	
-	advanced_tbm_gun = {
-	
-		start_year = 2028
-		
-		path = {
-			leads_to_tech = futuristic_tbm
-			research_cost_coeff = 1
-		}
-		
-		tactical_missile = {
-			soft_attack = 0.05
-		}	
-				
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 12 y = 16 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "2028.1.3"
-			}
-		}
-	}
-	
-	advanced_tbm_radar = {
-	
-		start_year = 2028
-		
-		path = {
-			leads_to_tech = futuristic_tbm
-			research_cost_coeff = 1
-		}
-
-		tactical_missile = {
-			armor_value = 0.05
-		}
-
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 14 y = 16 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "2028.1.3"
-			}
-		}
-	}
-	
-	futuristic_tbm = {
-	
-		start_year = 2030
-		
-		enable_equipments = {
-			anti_air_equipment_1
-		}
-		
-		path = {
-			leads_to_tech = futuristic_tbm_gun
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = futuristic_tbm_radar
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 13 y = 18 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "2030.1.3"
-			}
-		}
-	}
-	
-	futuristic_tbm_gun = {
-	
-		start_year = 2032
-		
-		research_cost = 1.5
-
-		tactical_missile = {
-			soft_attack = 0.05
-		}
-
-		folder = {
-			name = artillery_folder
-			position = { x = 12 y = 20 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "2032.1.3"
-			}
-		}
-	}
-	
-	futuristic_tbm_radar = {
-	
-		start_year = 2032
-	
-		research_cost = 1.5
-		
-		tactical_missile = {
-			armor_value = 0.05
-		}
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 14 y = 20 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 1
-				date > "2032.1.3"
-			}
-		}
-	}
-	
 }
