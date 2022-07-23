@@ -1222,25 +1222,11 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "obsolete_howitzer_tree"
-				position = { x = 220 y = 175 }
+				position = { x = -350 y = 175 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
-			}
-			gridboxtype = {
-				name = "obsolete_anti_air_tree"
-				position = { x = 400 y = 175 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			gridboxtype = {
-				name = "obsolete_tbm_tree"
-				position = { x = 400 y = 175 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}				
+			}			
 		}
 
 		containerWindowType = {
@@ -3937,6 +3923,24 @@ containerWindowType = {
 			maxWidth = 80
 			maxHeight = 20
 			format = center
+		}
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=141 y=1 }
+			size = { width = 35 height = 26 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+			
+			iconType = {
+				name = "picture"
+				position = { x=2 y=2 }
+				spriteType = "GFX_subtech_rocket"
+				alwaystransparent = yes
+			}
 		}
 	}
 
