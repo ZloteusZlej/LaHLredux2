@@ -2,7 +2,7 @@ technologies = {
 	
 	outdated_anti_air = {
 	
-		start_year = 2000
+		start_year = 2018
 		
 		enable_equipments = {
 			anti_air_equipment_1
@@ -37,6 +37,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 		
 		ai_will_do = {
@@ -44,14 +45,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2000.1.3"
+				date > "2018.1.3"
 			}
 		}
 	}
 	
 	outdated_anti_air_gun = {
 	
-		start_year = 2010
+		start_year = 2022
 		
 		path = {
 			leads_to_tech = basic_anti_air
@@ -68,9 +69,6 @@ technologies = {
 		spaag = {
 		     air_attack = 0.05
 		}
-		sam = {
-		     air_attack = 0.05
-		}
 				
 		research_cost = 1.5
 		
@@ -81,6 +79,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 		
 		ai_will_do = {
@@ -88,14 +87,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2010.1.3"
+				date > "2022.1.3"
 			}
 		}
 	}
 	
 	outdated_anti_air_radar = {
 	
-		start_year = 2010
+		start_year = 2022
 		
 		path = {
 			leads_to_tech = basic_anti_air
@@ -111,9 +110,6 @@ technologies = {
 		spaag = {
 		     armor_value = 0.05
 		}	
-		sam = {
-		     armor_value = 0.05
-		}
 		research_cost = 1.5
 		
 		folder = {
@@ -123,6 +119,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 		
 		ai_will_do = {
@@ -130,14 +127,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2010.1.3"
+				date > "2022.1.3"
 			}
 		}
 	}
 	
 	outdated_spaag = {
 	
-		start_year = 2000
+		start_year = 2018
 		
 		enable_equipments = {
 			sp_anti_air_equipment_1
@@ -150,6 +147,8 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
+			armor
 		}
 		
 		ai_will_do = {
@@ -157,43 +156,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2000.1.3"
-			}
-		}
-	}
-	
-	outdated_sam = {
-	
-		start_year = 2000
-		
-		enable_equipments = {
-			rocket_anti_air_equipment_1
-		}
-		
-		enable_subunits = {
-			sam
-		}
-		
-		research_cost = 0.5
-		
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2000.1.3"
+				date > "2018.1.3"
 			}
 		}
 	}
 	
 	basic_anti_air = {
 	
-		start_year = 2016
+		start_year = 2025
 		
 		enable_equipments = {
 			anti_air_equipment_2
@@ -211,7 +181,6 @@ technologies = {
 		
 		sub_technologies = {
 			basic_spaag
-			basic_sam
 		}
 		
 		research_cost = 1.5
@@ -223,6 +192,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 		
 		ai_will_do = {
@@ -230,14 +200,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2016.1.3"
+				date > "2025.1.3"
 			}
 		}
 	}
 	
 	basic_anti_air_gun = {
 	
-		start_year = 2018
+		start_year = 2026
 		
 		path = {
 			leads_to_tech = improved_anti_air
@@ -252,9 +222,6 @@ technologies = {
 		spaag = {
 		     air_attack = 0.05
 		}	
-		sam = {
-		     air_attack = 0.05
-		}
 		research_cost = 1.5
 		
 		folder = {
@@ -264,6 +231,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 		
 		ai_will_do = {
@@ -271,14 +239,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2018.1.3"
+				date > "2026.1.3"
 			}
 		}
 	}
 	
 	basic_anti_air_radar = {
 	
-		start_year = 2018
+		start_year = 2026
 		
 		path = {
 			leads_to_tech = improved_anti_air
@@ -292,10 +260,7 @@ technologies = {
 		}	
 		spaag = {
 		     armor_value = 0.05
-		}	
-		sam = {
-		     armor_value = 0.05
-		}	
+		}		
 		research_cost = 1.5
 		
 		folder = {
@@ -305,6 +270,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 		
 		ai_will_do = {
@@ -312,14 +278,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2018.1.3"
+				date > "2026.1.3"
 			}
 		}
 	}
 	
 	basic_spaag = {
 	
-		start_year = 2016
+		start_year = 2025
 		
 		enable_equipments = {
 			sp_anti_air_equipment_2
@@ -329,6 +295,8 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
+			armor
 		}
 		
 		ai_will_do = {
@@ -336,39 +304,15 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2016.1.3"
+				date > "2025.1.3"
 			}
 		}
 	}
 	
-	
-	basic_sam = {
-	
-		start_year = 2016
-		
-		enable_equipments = {
-			rocket_anti_air_equipment_2
-		}
-		
-		research_cost = 0.5
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2016.1.3"
-			}
-		}
-	}
 	
 	improved_anti_air = {
 	
-		start_year = 2020
+		start_year = 2028
 		
 		enable_equipments = {
 			anti_air_equipment_3
@@ -386,7 +330,6 @@ technologies = {
 		
 		sub_technologies = {
 			improved_spaag
-			improved_sam
 		}
 				
 		research_cost = 1.5
@@ -398,6 +341,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 		
 		ai_will_do = {
@@ -405,14 +349,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2020.1.3"
+				date > "2028.1.3"
 			}
 		}
 	}
 	
 	improved_anti_air_gun = {
 	
-		start_year = 2022
+		start_year = 2029
 		
 		path = {
 			leads_to_tech = advanced_anti_air
@@ -426,10 +370,7 @@ technologies = {
 		}		
 		spaag = {
 		     air_attack = 0.05
-		}	
-		sam = {
-		     air_attack = 0.05
-		}	
+		}		
 		research_cost = 1.5
 		
 		folder = {
@@ -439,6 +380,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 		
 		ai_will_do = {
@@ -446,14 +388,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2022.1.3"
+				date > "2029.1.3"
 			}
 		}
 	}
 	
 	improved_anti_air_radar = {
 	
-		start_year = 2022
+		start_year = 2029
 		
 		path = {
 			leads_to_tech = advanced_anti_air
@@ -468,9 +410,6 @@ technologies = {
 		spaag = {
 		     armor_value = 0.05
 		}	
-		sam = {
-		     armor_value = 0.05
-		}	
 		research_cost = 1.5
 		
 		folder = {
@@ -480,6 +419,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 		
 		ai_will_do = {
@@ -494,7 +434,7 @@ technologies = {
 	
 	improved_spaag = {
 	
-		start_year = 2020
+		start_year = 2027
 		
 		enable_equipments = {
 			sp_anti_air_equipment_3
@@ -504,30 +444,8 @@ technologies = {
 		
 		categories = {
 			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2020.1.3"
-			}
-		}
-	}
-	
-	improved_sam = {
-	
-		start_year = 2020
-		
-		enable_equipments = {
-			rocket_anti_air_equipment_3
-		}
-		
-		research_cost = 0.5
-		
-		categories = {
-			artillery
+			cat_anti_air
+			armor
 		}
 		
 		ai_will_do = {
@@ -542,7 +460,7 @@ technologies = {
 	
 	advanced_anti_air = {
 	
-		start_year = 2025
+		start_year = 2030
 		
 		enable_equipments = {
 			anti_air_equipment_4
@@ -560,7 +478,6 @@ technologies = {
 		
 		sub_technologies = {
 			advanced_spaag
-			advanced_sam
 		}
 				
 		research_cost = 1.5
@@ -572,6 +489,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 		
 		ai_will_do = {
@@ -579,14 +497,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2025.1.3"
+				date > "2030.1.3"
 			}
 		}
 	}
 	
 	advanced_anti_air_gun = {
 	
-		start_year = 2028
+		start_year = 2032
 		
 		path = {
 			leads_to_tech = futuristic_anti_air
@@ -597,9 +515,6 @@ technologies = {
 		}
 		anti_air_brigade = {
 		    air_attack = 0.05
-		}
-		sam = {
-			air_attack = 0.05
 		}
 		spaag = {
 			air_attack = 0.05
@@ -613,6 +528,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 		
 		ai_will_do = {
@@ -620,14 +536,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2028.1.3"
+				date > "2032.1.3"
 			}
 		}
 	}
 	
 	advanced_anti_air_radar = {
 	
-		start_year = 2028
+		start_year = 2032
 		
 		path = {
 			leads_to_tech = futuristic_anti_air
@@ -639,9 +555,6 @@ technologies = {
 		anti_air_brigade = {
 		    reliability = 0.02
 		}	
-		sam = {
-			armor_value = 0.05
-		}
 		spaag = {
 			armor_value = 0.05
 		}	
@@ -654,6 +567,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 		
 		ai_will_do = {
@@ -661,14 +575,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2028.1.3"
+				date > "2032.1.3"
 			}
 		}
 	}
 	
 	advanced_spaag = {
 	
-		start_year = 2025
+		start_year = 2030
 		
 		enable_equipments = {
 			sp_anti_air_equipment_4
@@ -678,6 +592,8 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
+			armor
 		}
 		
 		ai_will_do = {
@@ -685,31 +601,7 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2025.1.3"
-			}
-		}
-	}
-	
-	advanced_sam = {
-	
-		start_year = 2025
-		
-		enable_equipments = {
-			rocket_anti_air_equipment_4
-		}
-		
-		research_cost = 0.5
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2025.1.3"
+				date > "2030.1.3"
 			}
 		}
 	}
@@ -717,7 +609,7 @@ technologies = {
 	
 	futuristic_anti_air = {
 	
-		start_year = 2030
+		start_year = 2035
 		
 		enable_equipments = {
 			anti_air_equipment_5
@@ -735,7 +627,6 @@ technologies = {
 		
 		sub_technologies = {
 			futuristic_spaag
-			futuristic_sam
 		}
 		
 		research_cost = 1.5
@@ -747,6 +638,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 		
 		ai_will_do = {
@@ -754,14 +646,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2030.1.3"
+				date > "2035.1.3"
 			}
 		}
 	}
 	
 	futuristic_anti_air_gun = {
 	
-		start_year = 2032
+		start_year = 2037
 				
 		research_cost = 1.5
 		anti_air = {
@@ -769,9 +661,6 @@ technologies = {
 		}
 		anti_air_brigade = {
 		    air_attack = 0.05
-		}
-		sam = {
-			air_attack = 0.05
 		}
 		spaag = {
 			air_attack = 0.05
@@ -783,6 +672,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 		
 		ai_will_do = {
@@ -790,14 +680,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2032.1.3"
+				date > "2037.1.3"
 			}
 		}
 	}
 	
 	futuristic_anti_air_radar = {
 	
-		start_year = 2032
+		start_year = 2037
 				
 		research_cost = 1.5
 		
@@ -811,14 +701,12 @@ technologies = {
 		anti_air_brigade = {
 		    reliability = 0.02
 		}	
-		sam = {
-			armor_value = 0.05
-		}
 		spaag = {
 			armor_value = 0.05
 		}
 		categories = {
 			artillery
+			cat_anti_air
 		}
 		
 		ai_will_do = {
@@ -833,7 +721,7 @@ technologies = {
 	
 	futuristic_spaag = {
 	
-		start_year = 2030
+		start_year = 2035
 		
 		enable_equipments = {
 			sp_anti_air_equipment_5
@@ -843,6 +731,8 @@ technologies = {
 
 		categories = {
 			artillery
+			cat_anti_air
+			armor
 		}
 		
 		ai_will_do = {
@@ -850,30 +740,7 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2030.1.3"
-			}
-		}
-	}
-	
-	futuristic_sam = {
-	
-		enable_equipments = {
-			rocket_anti_air_equipment_5
-		}
-		
-		start_year = 2030
-		research_cost = 0.5
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2030.1.3"
+				date > "2035.1.3"
 			}
 		}
 	}
@@ -930,7 +797,7 @@ technologies = {
 
 	outdated_howitzer = {
 	
-		start_year = 2000
+		start_year = 2018
 		
 		enable_equipments = {
 			artillery_equipment_1
@@ -972,14 +839,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2000.1.3"
+				date > "2018.1.3"
 			}
 		}
 	}
 
 	outdated_howitzer_gun = {
 	
-		start_year = 2010
+		start_year = 2020
 		
 		research_cost = 1.5
 		
@@ -1011,14 +878,14 @@ technologies = {
 
 			modifier = {
 				factor = 10
-				date > "2010.1.3"
+				date > "2020.1.3"
 			}
 		}
 	}	
 
 	outdated_howitzer_radar = {
 	
-		start_year = 2010
+		start_year = 2020
 		
 		research_cost = 1.5
 		
@@ -1050,14 +917,14 @@ technologies = {
 
 			modifier = {
 				factor = 10
-				date > "2010.1.3"
+				date > "2020.1.3"
 			}
 		}
 	}		
 
 	outdated_spg = {
 	
-		start_year = 2000
+		start_year = 2018
 		
 		enable_equipments = {
 			spg_equipment_1
@@ -1070,6 +937,7 @@ technologies = {
 	
 		categories = {
 			artillery
+			armor
 		}
 		
 		ai_will_do = {
@@ -1077,14 +945,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2000.1.3"
+				date > "2022.1.3"
 			}
 		}
 	}
 
 	outdated_anti_tank = {
 	
-		start_year = 2000
+		start_year = 2018
 		
 		enable_equipments = {
 			anti_tank_equipment_1
@@ -1095,6 +963,10 @@ technologies = {
 		enable_subunits = {
 			anti_tank_brigade
 		}
+		sub_technologies = {
+			outdated_tank_destroyer
+		}
+		
 		
 		research_cost = 1.5
 		
@@ -1115,6 +987,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_tank
 		}
 		
 		ai_will_do = {
@@ -1122,14 +995,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2000.1.3"
+				date > "2020.1.3"
 			}
 		}
 	}	
 	
 	outdated_anti_tank_gun = {
 	
-		start_year = 2010
+		start_year = 2020
 		
 		research_cost = 1.5
 		
@@ -1151,6 +1024,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_tank
 		}
 		
 		ai_will_do = {
@@ -1158,14 +1032,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2010.1.3"
+				date > "2020.1.3"
 			}
 		}
 	}	
 
 	outdated_anti_tank_radar = {
 	
-		start_year = 2010
+		start_year = 2020
 		
 		research_cost = 1.5
 		
@@ -1187,6 +1061,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_tank
 		}
 		
 		ai_will_do = {
@@ -1194,20 +1069,23 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2010.1.3"
+				date > "2020.1.3"
 			}
 		}
 	}	
 
 	outdated_mlrs = {
 	
-		start_year = 2000
+		start_year = 2018
 		
 		enable_equipments = {
-			rocket_artillery_equipment_1
+			motorized_rocket_equipment_1
 		}
 		enable_subunits = {
-			mlrs
+			tactical_missile
+		}
+		sub_technologies = {
+			outdated_tactical_missile
 		}
 		
 		research_cost = 1.5
@@ -1229,6 +1107,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			rocketry
 		}
 		
 		ai_will_do = {
@@ -1236,14 +1115,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2000.1.3"
+				date > "2018.1.3"
 			}
 		}
 	}	
 
 	outdated_mlrs_gun = {
 	
-		start_year = 2010
+		start_year = 2020
 		
 		research_cost = 1.5
 		
@@ -1262,6 +1141,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			rocketry
 		}
 		
 		ai_will_do = {
@@ -1269,14 +1149,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2010.1.3"
+				date > "2020.1.3"
 			}
 		}
 	}	
 
 	outdated_mlrs_radar = {
 	
-		start_year = 2010
+		start_year = 2020
 		
 		research_cost = 1.5
 		
@@ -1295,6 +1175,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			rocketry
 		}
 		
 		ai_will_do = {
@@ -1302,17 +1183,16 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2010.1.3"
+				date > "2020.1.3"
 			}
 		}
 	}	
 
 	basic_howitzer = {
 	
-		start_year = 2016
+		start_year = 2025
 		
 		enable_equipments = {
-			howitzer_0
 			artillery_equipment_2
 		}
 		
@@ -1346,14 +1226,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2016.1.3"
+				date > "2025.1.3"
 			}
 		}
 	}
 
 	basic_howitzer_gun = {
 	
-		start_year = 2018
+		start_year = 2026
 		
 		research_cost = 1.5
 		
@@ -1387,14 +1267,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2018.1.3"
+				date > "2026.1.3"
 			}
 		}
 	}	
 
 	basic_howitzer_radar = {
 	
-		start_year = 2018
+		start_year = 2026
 		
 		research_cost = 1.5
 		
@@ -1427,17 +1307,16 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2018.1.3"
+				date > "2026.1.3"
 			}
 		}
 	}		
 
 	basic_spg = {
 	
-		start_year = 2018
+		start_year = 2025
 		
 		enable_equipments = {
-			howitzer_0
 			spg_equipment_2
 		}
 		
@@ -1445,6 +1324,7 @@ technologies = {
 	
 		categories = {
 			artillery
+			armor
 		}
 		
 		ai_will_do = {
@@ -1452,17 +1332,20 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2018.1.3"
+				date > "2025.1.3"
 			}
 		}
 	}
 
 	basic_anti_tank = {
 	
-		start_year = 2016
+		start_year = 2025
 		
 		enable_equipments = {
 			anti_tank_equipment_2
+		}
+		sub_technologies = {
+			basic_tank_destroyer
 		}
 		
 		research_cost = 1.5
@@ -1484,6 +1367,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_tank
 		}
 		
 		ai_will_do = {
@@ -1491,14 +1375,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2016.1.3"
+				date > "2025.1.3"
 			}
 		}
 	}	
 	
 	basic_anti_tank_gun = {
 	
-		start_year = 2018
+		start_year = 2026
 		
 		research_cost = 1.5
 		
@@ -1521,6 +1405,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_tank
 		}
 		
 		ai_will_do = {
@@ -1528,14 +1413,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2018.1.3"
+				date > "2026.1.3"
 			}
 		}
 	}	
 
 	basic_anti_tank_radar = {
 	
-		start_year = 2018
+		start_year = 2026
 		
 		research_cost = 1.5
 		
@@ -1558,6 +1443,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_tank
 		}
 		
 		ai_will_do = {
@@ -1565,18 +1451,20 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2018.1.3"
+				date > "2026.1.3"
 			}
 		}
 	}	
 
 	basic_mlrs = {
 	
-		start_year = 2016
+		start_year = 2025
 		
 		enable_equipments = {
-			howitzer_0
-			artillery_equipment_1
+			motorized_rocket_equipment_2
+		}
+		sub_technologies = {
+			basic_tactical_missile
 		}
 		
 		research_cost = 1.5
@@ -1598,6 +1486,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			rocketry
 		}
 		
 		ai_will_do = {
@@ -1605,14 +1494,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2018.1.3"
+				date > "2025.1.3"
 			}
 		}
 	}	
 
 	basic_mlrs_gun = {
 	
-		start_year = 2018
+		start_year = 2026
 		
 		research_cost = 1.5
 		
@@ -1632,6 +1521,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			rocketry
 		}
 		
 		ai_will_do = {
@@ -1639,14 +1529,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2018.1.3"
+				date > "2026.1.3"
 			}
 		}
 	}	
 
 	basic_mlrs_radar = {
 	
-		start_year = 2018
+		start_year = 2026
 		
 		research_cost = 1.5
 		
@@ -1666,6 +1556,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			rocketry
 		}
 		
 		ai_will_do = {
@@ -1673,17 +1564,16 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2018.1.3"
+				date > "2026.1.3"
 			}
 		}
 	}	
 	
 	improved_howitzer = {
 	
-		start_year = 2020
+		start_year = 2027
 		
 		enable_equipments = {
-			howitzer_0
 			artillery_equipment_3
 		}
 		
@@ -1717,14 +1607,14 @@ technologies = {
 
 			modifier = {
 				factor = 10
-				date > "2020.1.3"
+				date > "2027.1.3"
 			}
 		}
 	}
 
 	improved_howitzer_gun = {
 	
-		start_year = 2022
+		start_year = 2029
 		
 		research_cost = 1.5
 		
@@ -1758,14 +1648,14 @@ technologies = {
 
 			modifier = {
 				factor = 10
-				date > "2022.1.3"
+				date > "2029.1.3"
 			}
 		}
 	}	
 
 	improved_howitzer_radar = {
 	
-		start_year = 2022
+		start_year = 2029
 		
 		research_cost = 1.5
 		
@@ -1798,26 +1688,24 @@ technologies = {
 
 			modifier = {
 				factor = 10
-				date > "2022.1.3"
+				date > "2029.1.3"
 			}
 		}
 	}		
 
 	improved_spg = {
 	
-		start_year = 2020
+		start_year = 2027
 		
 		enable_equipments = {
-			howitzer_0
 			spg_equipment_3
 		}
 		
 		research_cost = 0.5
 	
-
-		
 		categories = {
 			artillery
+			armor
 		}
 		
 		ai_will_do = {
@@ -1825,17 +1713,20 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2020.1.3"
+				date > "2027.1.3"
 			}
 		}
 	}
 
 	improved_anti_tank = {
 	
-		start_year = 2020
+		start_year = 2027
 		
 		enable_equipments = {
 			anti_tank_equipment_3
+		}
+		sub_technologies = {
+			improved_tank_destroyer
 		}
 		
 		research_cost = 1.5
@@ -1857,6 +1748,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_tank
 		}
 		
 		ai_will_do = {
@@ -1864,14 +1756,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2020.1.3"
+				date > "2027.1.3"
 			}
 		}
 	}	
 	
 	improved_anti_tank_gun = {
 	
-		start_year = 2022
+		start_year = 2029
 		
 		research_cost = 1.5
 		
@@ -1894,6 +1786,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_tank
 		}
 		
 		ai_will_do = {
@@ -1901,14 +1794,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2022.1.3"
+				date > "2029.1.3"
 			}
 		}
 	}	
 
 	improved_anti_tank_radar = {
 	
-		start_year = 2022
+		start_year = 2029
 		
 		research_cost = 1.5
 		
@@ -1931,6 +1824,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_tank
 		}
 		
 		ai_will_do = {
@@ -1938,18 +1832,20 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2022.1.3"
+				date > "2029.1.3"
 			}
 		}
 	}	
 
 	improved_mlrs = {
 	
-		start_year = 2020
+		start_year = 2027
 		
 		enable_equipments = {
-			howitzer_0
-			artillery_equipment_1
+			motorized_rocket_equipment_3
+		}
+		sub_technologies = {
+			improved_tactical_missile
 		}
 		
 		research_cost = 1.5
@@ -1971,6 +1867,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			rocketry
 		}
 		
 		ai_will_do = {
@@ -1978,14 +1875,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2020.1.3"
+				date > "2027.1.3"
 			}
 		}
 	}	
 
 	improved_mlrs_gun = {
 	
-		start_year = 2022
+		start_year = 2029
 		
 		research_cost = 1.5
 		
@@ -2005,6 +1902,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			rocketry
 		}
 		
 		ai_will_do = {
@@ -2012,14 +1910,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2022.1.3"
+				date > "2029.1.3"
 			}
 		}
 	}	
 
 	improved_mlrs_radar = {
 	
-		start_year = 2022
+		start_year = 2029
 		
 		research_cost = 1.5
 		
@@ -2039,6 +1937,7 @@ technologies = {
 
 		categories = {
 			artillery
+			rocketry
 		}
 		
 		ai_will_do = {
@@ -2046,17 +1945,16 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2022.1.3"
+				date > "2029.1.3"
 			}
 		}
 	}	
 	
 	advanced_howitzer = {
 	
-		start_year = 2025
+		start_year = 2030
 		
 		enable_equipments = {
-			howitzer_0
 			artillery_equipment_4
 		}
 		
@@ -2090,14 +1988,14 @@ technologies = {
 
 			modifier = {
 				factor = 10
-				date > "2025.1.3"
+				date > "2030.1.3"
 			}
 		}
 	}
 
 	advanced_howitzer_gun = {
 	
-		start_year = 2028
+		start_year = 2032
 		
 		research_cost = 1.5
 		
@@ -2131,14 +2029,14 @@ technologies = {
 
 			modifier = {
 				factor = 10
-				date > "2028.1.3"
+				date > "2032.1.3"
 			}
 		}
 	}	
 
 	advanced_howitzer_radar = {
 	
-		start_year = 2028
+		start_year = 2032
 		
 		research_cost = 1.5
 		
@@ -2171,17 +2069,16 @@ technologies = {
 
 			modifier = {
 				factor = 10
-				date > "2028.1.3"
+				date > "2032.1.3"
 			}
 		}
 	}		
 
 	advanced_spg = {
 	
-		start_year = 2025
+		start_year = 2030
 		
 		enable_equipments = {
-			howitzer_0
 			spg_equipment_4
 		}
 		
@@ -2190,6 +2087,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			armor
 		}
 		
 		ai_will_do = {
@@ -2197,17 +2095,20 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2025.1.3"
+				date > "2030.1.3"
 			}
 		}
 	}
 
 	advanced_anti_tank = {
 	
-		start_year = 2028
+		start_year = 2030
 		
 		enable_equipments = {
 			anti_tank_equipment_4
+		}
+		sub_technologies = {
+			advanced_tank_destroyer
 		}
 		
 		research_cost = 1.5
@@ -2229,6 +2130,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_tank
 		}
 		
 		ai_will_do = {
@@ -2236,14 +2138,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2028.1.3"
+				date > "2030.1.3"
 			}
 		}
 	}	
 	
 	advanced_anti_tank_gun = {
 	
-		start_year = 2025
+		start_year = 2032
 		
 		research_cost = 1.5
 		
@@ -2266,6 +2168,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_tank
 		}
 		
 		ai_will_do = {
@@ -2273,14 +2176,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2025.1.3"
+				date > "2032.1.3"
 			}
 		}
 	}	
 
 	advanced_anti_tank_radar = {
 	
-		start_year = 2028
+		start_year = 2032
 		
 		research_cost = 1.5
 		
@@ -2303,6 +2206,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_tank
 		}
 		
 		ai_will_do = {
@@ -2310,18 +2214,20 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2028.1.3"
+				date > "2032.1.3"
 			}
 		}
 	}	
 
 	advanced_mlrs = {
 	
-		start_year = 2025
+		start_year = 2030
 		
 		enable_equipments = {
-			howitzer_0
-			artillery_equipment_1
+			motorized_rocket_equipment_4
+		}
+		sub_technologies = {
+			advanced_tactical_missile
 		}
 		
 		research_cost = 1.5
@@ -2343,6 +2249,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			rocketry
 		}
 		
 		ai_will_do = {
@@ -2350,14 +2257,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2025.1.3"
+				date > "2030.1.3"
 			}
 		}
 	}	
 
 	advanced_mlrs_gun = {
 	
-		start_year = 2028
+		start_year = 2032
 		
 		research_cost = 1.5
 		
@@ -2377,6 +2284,7 @@ technologies = {
 
 		categories = {
 			artillery
+			rocketry
 		}
 		
 		ai_will_do = {
@@ -2384,14 +2292,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2028.1.3"
+				date > "2032.1.3"
 			}
 		}
 	}	
 
 	advanced_mlrs_radar = {
 	
-		start_year = 2028
+		start_year = 2032
 		
 		research_cost = 1.5
 		
@@ -2411,6 +2319,7 @@ technologies = {
 
 		categories = {
 			artillery
+			rocketry
 		}
 		
 		ai_will_do = {
@@ -2418,14 +2327,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2028.1.3"
+				date > "2032.1.3"
 			}
 		}
 	}
 	
 	futuristic_howitzer = {
 	
-		start_year = 2030
+		start_year = 2035
 		
 		enable_equipments = {
 			artillery_equipment_5
@@ -2461,14 +2370,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2030.1.3"
+				date > "2035.1.3"
 			}
 		}
 	}
 
 	futuristic_howitzer_gun = {
 	
-		start_year = 2032
+		start_year = 2037
 		
 		research_cost = 1.5
 		
@@ -2495,14 +2404,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2032.1.3"
+				date > "2037.1.3"
 			}
 		}
 	}	
 
 	futuristic_howitzer_radar = {
 	
-		start_year = 2032
+		start_year = 2037
 		
 		research_cost = 1.5
 		
@@ -2529,14 +2438,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2032.1.3"
+				date > "2037.1.3"
 			}
 		}
 	}		
 
 	futuristic_spg = {
 	
-		start_year = 2030
+		start_year = 2035
 		
 		enable_equipments = {
 			spg_equipment_5
@@ -2557,17 +2466,20 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2030.1.3"
+				date > "2035.1.3"
 			}
 		}
 	}
 
 	futuristic_anti_tank = {
 	
-		start_year = 2030
+		start_year = 2035
 		
 		enable_equipments = {
 			anti_tank_equipment_5
+		}
+		sub_technologies = {
+			futuristic_tank_destroyer
 		}
 		
 		research_cost = 1.5
@@ -2588,6 +2500,7 @@ technologies = {
 		}
 		
 		categories = {
+			cat_anti_tank
 			artillery
 		}
 		
@@ -2596,14 +2509,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2030.1.3"
+				date > "2035.1.3"
 			}
 		}
 	}	
 	
 	futuristic_anti_tank_gun = {
 	
-		start_year = 2032
+		start_year = 2037
 		
 		research_cost = 1.5
 		
@@ -2621,6 +2534,7 @@ technologies = {
 
 		categories = {
 			artillery
+			cat_anti_tank
 		}
 		
 		ai_will_do = {
@@ -2628,14 +2542,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2032.1.3"
+				date > "2037.1.3"
 			}
 		}
 	}	
 
 	futuristic_anti_tank_radar = {
 	
-		start_year = 2032
+		start_year = 2037
 		
 		research_cost = 1.5
 		
@@ -2653,6 +2567,7 @@ technologies = {
 
 		categories = {
 			artillery
+			cat_anti_tank
 		}
 		
 		ai_will_do = {
@@ -2660,18 +2575,20 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2032.1.3"
+				date > "2037.1.3"
 			}
 		}
 	}	
 
 	futuristic_mlrs = {
 	
-		start_year = 2030
+		start_year = 2035
 		
 		enable_equipments = {
-			howitzer_0
-			artillery_equipment_1
+			motorized_rocket_equipment_5
+		}
+		sub_technologies = {
+			futuristic_tactical_missile
 		}
 		
 		research_cost = 1.5
@@ -2693,6 +2610,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			rocketry
 		}
 		
 		ai_will_do = {
@@ -2700,14 +2618,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2030.1.3"
+				date > "2035.1.3"
 			}
 		}
 	}	
 
 	futuristic_mlrs_gun = {
 	
-		start_year = 2032
+		start_year = 2037
 		
 		research_cost = 1.5
 		
@@ -2722,6 +2640,7 @@ technologies = {
 
 		categories = {
 			artillery
+			rocketry
 		}
 		
 		ai_will_do = {
@@ -2729,14 +2648,14 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2032.1.3"
+				date > "2037.1.3"
 			}
 		}
 	}	
 
 	futuristic_mlrs_radar = {
 	
-		start_year = 2032
+		start_year = 2037
 		
 		research_cost = 1.5
 		
@@ -2751,6 +2670,7 @@ technologies = {
 
 		categories = {
 			artillery
+			rocketry
 		}
 		
 		ai_will_do = {
@@ -2758,8 +2678,259 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "2032.1.3"
+				date > "2037.1.3"
 			}
 		}
 	}	
+	outdated_tactical_missile  = {
+	
+		start_year = 2018
+		
+		enable_equipments = {
+			tactical_ballistic_missile_equipment_1
+		}
+		enable_subunits = {
+			tactical_missile 
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			rocketry
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2018.1.3"
+			}
+		}
+	}
+	basic_tactical_missile  = {
+	
+		start_year = 2025
+		
+		enable_equipments = {
+			tactical_ballistic_missile_equipment_2
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			rocketry
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2025.1.3"
+			}
+		}
+	}
+	improved_tactical_missile  = {
+	
+		start_year = 2027
+		
+		enable_equipments = {
+			tactical_ballistic_missile_equipment_3
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			rocketry
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2027.1.3"
+			}
+		}
+	}
+	advanced_tactical_missile  = {
+	
+		start_year = 2030
+		
+		enable_equipments = {
+			tactical_ballistic_missile_equipment_4
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			rocketry
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2030.1.3"
+			}
+		}
+	}
+	futuristic_tactical_missile  = {
+	
+		start_year = 2035
+		
+		enable_equipments = {
+			tactical_ballistic_missile_equipment_5
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			rocketry
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2035.1.3"
+			}
+		}
+	}
+	
+	outdated_tank_destroyer  = {
+	
+		start_year = 2018
+		
+		enable_equipments = {
+			tank_destroyer_equipment_1
+		}
+		enable_subunits = {
+			tank_destroyer
+		}
+		enable_subunits = {
+			tank_destroyer
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2018.1.3"
+			}
+		}
+	}
+	basic_tank_destroyer = {
+	
+		start_year = 2025
+		
+		enable_equipments = {
+			tank_destroyer_equipment_2
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2025.1.3"
+			}
+		}
+	}
+	improved_tank_destroyer = {
+	
+		start_year = 2027
+		
+		enable_equipments = {
+			tank_destroyer_equipment_3
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2027.1.3"
+			}
+		}
+	}
+	advanced_tank_destroyer  = {
+	
+		start_year = 2030
+		
+		enable_equipments = {
+			tank_destroyer_equipment_4
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2030.1.3"
+			}
+		}
+	}
+	futuristic_tank_destroyer  = {
+	
+		start_year = 2035
+		
+		enable_equipments = {
+			tank_destroyer_equipment_5
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2035.1.3"
+			}
+		}
+	}
 }
+
