@@ -263,6 +263,17 @@ EAG_parliament_gui_decision = {
 	}
 }
 
+EAG_klumb_parliament_gui_decision = {
+	icon = usa_congress
+
+	allowed = { original_tag = EAG }
+
+	priority = 1000
+
+	scripted_gui = klumb_parliament_gui
+	visible_when_empty = yes
+}
+
 EAG_elections = {
 	icon = GFX
 	picture = GFX
