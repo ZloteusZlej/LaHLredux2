@@ -1,19 +1,17 @@
 ﻿l_english:
 
  # Decisions
-  EAG_parliament_gui_decision:0 "The Communal Assembly"
-  EAG_parliament_gui_decision_desc:0 "A national-anarchist society is based upon collective control over the matters of state. If we are to make important decisions such as a delcaration of war or levy of troops, we have to have the support of §Ythe majority of communes§!. Under extraordinary circumstances we can override the support of the majority, however this will affect the §Ocommunal trust§! in our system.\n\n§OCommunal§! trust can affect the amount of communes that support our government every month.§!\n\nCurrently, [GetEAGAnarchistSupport]"
+  EAG_klumb_parliament_gui_decision:0 "New British Parliament"
+  EAG_klumb_parliament_gui_decision_desc:0 "Josef Maria Klumb attempts to create a functioning democracy in the hellhole that is England. Several political parties have been formed in our state since the capitulation of London. While the elections were postponed till the complete unification of the Kingdom, parties will attempt to garner influence right now. Some parties will also propose various projects we can reject or accept."
 
  # Scripted GUIs
-  EAG_anarchist_total_support:0 "[?EAG_anarchist_total_support]"
-  EAG_anarchist_communes_furious:0 "§Rthe communes are furious with our government!§!\n- Monthly Commune Support §R-2.0§!"
-  EAG_anarchist_communes_sad:0 "§Othe communes are disappointed in our government.§!\n- Monthly Commune Support §R-1.0§!"
-  EAG_anarchist_communes_content:0 "§gthe communes are content with our government.§!\n- Monthly Commune Support §Y0.0§!"
-  EAG_anarchist_communes_happy:0 "§Gthe communes trust our government!§!\n- Monthly Commune Support §G+1.0§!"
-  parliament_gui_title:0 "Grid Parliament"
-  parliament_member_text:0 "[?parliament_seat_array^parliament_member_index][GetParliamentPartyName]"
-  total_amount_of_communes_text:0 "Currently §G[?parliament_seat_array^0]§!/§Y[GetAnarchistCommunesTotalSupport]§! communes support us." 
+ klumb_parliament_gui_title:0 "Grid Parliament"
+ klumb_parliament_member_text:0 "[GetKlumbParliamentPartyName][?klumb_parliament_seat_array^klumb_parliament_member_index]"
+ klumb_total_amount_of_seats_text:0 "TEST TEST TEST" 
 
-  party_1_text:0 "§G communes support our current policy.§!"
-  party_2_text:0 "§R communes DON'T support our current policy.§!"
-  party_3_text:0 "§g communes are still occupied by statists!§!"
+ klumb_party_1_text:0 "Party 1 holds the following amount of seats: "
+ klumb_party_2_text:0 "Party 2 holds the following amount of seats: "
+ klumb_party_3_text:0 "Party 3 holds the following amount of seats: "
+ klumb_party_4_text:0 "Party 4 holds the following amount of seats: "
+ klumb_party_5_text:0 "Party 5 holds the following amount of seats: "
+ klumb_party_6_text:0 "Party 6 holds the following amount of seats: "
