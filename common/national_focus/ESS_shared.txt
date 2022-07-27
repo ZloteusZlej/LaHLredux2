@@ -20,7 +20,8 @@
 			1003 = {
 				is_controlled_by = ROOT
 				}		
-				}
+			}
+
 		completion_reward = {
 		    ESS = {
 			    country_event = {
@@ -776,7 +777,7 @@
 		id = ESS_interregnum
 		icon = GFX_goal_unknown
 		cost = 3
-		x = 13
+		x = 7
 		y = 6
 
 	} 
@@ -795,7 +796,7 @@
 				}
 			}
 		}
-		x = 11
+		x = 5
 		y = 7
 
 	} 
@@ -814,7 +815,7 @@
 				}
 			}
 		}
-		x = 13
+		x = 7
 		y = 7
 
 	} 
@@ -833,7 +834,7 @@
 				}
 			}
 		}
-		x = 15
+		x = 9
 		y = 7
 
 	}
@@ -850,7 +851,7 @@
 		prerequisite = {
 			focus = ESS_great_concils_choice
 		}
-		x = 13
+		x = 7
 		y = 8
 	} 
 	
@@ -866,77 +867,6 @@
 		y = 2
 
 	}
-
-	shared_focus = {
-		id = ESS_essexs_turmoil
-		icon = GFX_goal_unknown
-		cost = 3
-		allow_branch = {
-			has_country_flag = ESS_anarchy
-		}
-		prerequisite = {
-			focus = ESS_emergency_dictatorship
-		}
-		x = 13
-		y = 9
-
-	}
-		shared_focus = {
-		id = ESS_the_torturemaster-general
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_emergency_dictatorship
-		}
-		allow_branch = {
-			has_country_flag = ESS_collins
-		}
-		x = 13
-		y = 9
-
-	}
-		shared_focus = {
-		id = ESS_the_moon_devours_the_sun
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_emergency_dictatorship
-		}
-		allow_branch = {
-			has_country_flag = ESS_land
-		}
-		x = 13
-		y = 9
-
-	}
-		shared_focus = {
-		id = ESS_a_devils_chaplain
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_emergency_dictatorship
-		}
-		allow_branch = {
-			has_country_flag = ESS_dawkins
-		}
-		x = 13
-		y = 9
-
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 		shared_focus = {

@@ -50,6 +50,42 @@ country_event = {
 					days = 2
 				}
 			}
+		unlock_national_focus = ESS_luciferoverlondon
+		unlock_national_focus = ESS_revolutionary_ethic
+		unlock_national_focus = ESS_peoples_militia
+		unlock_national_focus = ESS_expropriating_the_expropriators
+		unlock_national_focus = ESS_civil_vigilantes
+		unlock_national_focus = ESS_correction_through_labour
+		unlock_national_focus = ESS_bread_and_circuses
+		unlock_national_focus = ESS_happiness_is_a_warm_gun
+		unlock_national_focus = ESS_revival_of_formula_one
+		unlock_national_focus = ESS_lawless_welfare
+		unlock_national_focus = ESS_catechism_of_a_nationalist
+		unlock_national_focus = ESS_milias_indoctrination
+		unlock_national_focus = ESS_praise_the_fathers_legacy
+		unlock_national_focus = ESS_greater_gangs_of_london
+		unlock_national_focus = ESS_secularization
+		unlock_national_focus = ESS_city_government
+		unlock_national_focus = ESS_secure_the_tower
+		unlock_national_focus = ESS_meet_the_anarchists
+		unlock_national_focus = ESS_awakening_of_atlas
+		unlock_national_focus = ESS_national_revolutionary_army
+		unlock_national_focus = ESS_urban_warfare
+		unlock_national_focus = ESS_elevate_warlords
+		unlock_national_focus = ESS_contacts_with_local_rebels
+		unlock_national_focus = ESS_dare_to_die_corps
+		unlock_national_focus = ESS_autonomous_recruiting
+		unlock_national_focus = ESS_initiatives_on_the_ground
+		unlock_national_focus = ESS_sword_of_the_republic
+		unlock_national_focus = ESS_revive_military_provost
+		unlock_national_focus = ESS_suppress_independent_warlords
+		unlock_national_focus = ESS_amnesty_for_royal_officers
+		unlock_national_focus = ESS_auxiliary_forces
+		unlock_national_focus = ESS_introduce_military_ranks
+		unlock_national_focus = ESS_return_honor_to_the_army
+		unlock_national_focus = ESS_preventive_strike
+	
+		}		
 	}
 		
 		kill_country_leader = yes
@@ -903,6 +939,21 @@ country_event = {
 
 		option = {
 			name = ESS_event.29.a
+			ESS = {
+				set_country_flag = ESS_london_flood_proposed
+				}
+			}
+	}
+	country_event = { 
+		id = ESS_event.30
+		title = ESS_event.30.t
+		desc = ESS_event.30.d
+		
+		fire_only_once = yes	
+		is_triggered_only = yes
+
+		option = {
+			name = ESS_event.30.a
 			ESS = {
 				set_country_flag = ESS_london_flood_proposed
 				}
