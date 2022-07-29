@@ -22,6 +22,28 @@
 		prerequisite = {
 			focus = WLS_five_years_of_independence
 		}
+		completion_reward = {
+		division_template = {
+			name = "Military Firm"
+			division_names_group = EAG_INF_02
+
+			regiments = {
+				infantry = { x = 0 y = 0 }	
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }	
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"'The Little Lamb' PMC\" division_template = \"Military Firm\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+					
+				owner = WLS
+			}
+		}
+		}
 		x = 29
 		y = 1
 	}
@@ -31,6 +53,14 @@
 		cost = 4.3
 		prerequisite = {
 			focus = WLS_order_on_streets
+		}
+		completion_reward = {
+		WLS = {
+			country_event = {
+				days = 4
+				id = WLS_event.5
+			}
+		}
 		}
 		x = 29
 		y = 2
