@@ -689,10 +689,6 @@ technologies = {
 			position = { x = 13 y = 3 }
 		}
 		
-		enable_equipments = {
-			transport_helicopters_equipment_1
-		}	
-		
 		path = {
 			leads_to_tech = helicopter
 			research_cost_coeff = 1
@@ -880,4 +876,39 @@ technologies = {
 		}
 	}
 	
+	tech_transport_helicopters = {
+	
+		land_reinforce_rate = 0.05
+		
+		enable_equipments = {
+			transport_helicopters_equipment_1
+		}	
+
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1980
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 16 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+		
+		categories = {
+			jet_technology
+		}
+	}	
 }
+
+
