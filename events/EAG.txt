@@ -131,15 +131,15 @@ country_event = {
 				value = 1
 			}
 			add_to_variable = {
-				var = mercs_dev
+				var = mercs_quality
 				value = -4
 			}
 			clamp_variable = {
-				var = mercs_dev
+				var = mercs_quality
 				min = 0
 				max = 25
 			}
-			custom_effect_tooltip = EAG_mercs_dev_remove_4
+			custom_effect_tooltip = EAG_mercs_quality_remove_4
 		EAG = {
 			country_event = {
 			days = 4
@@ -150,7 +150,7 @@ country_event = {
 	option = {
 		name = EAG_event.2.b
 		add_to_variable = {
-				var = mercs_dev
+				var = mercs_quality
 				value = 4
 			}
 			clamp_variable = {
@@ -162,7 +162,7 @@ country_event = {
 				var = help_forces
 				value = 1
 			}
-			custom_effect_tooltip = EAG_mercs_dev_add_4
+			custom_effect_tooltip = EAG_mercs_quality_add_4
 		EAG = {
 			country_event = {
 			days = 4
@@ -206,11 +206,11 @@ country_event = {
 	option = {
 		name = EAG_event.3.b
 		add_to_variable = {
-				var = mercs_dev
+				var = mercs_quality
 				value = 3
 			}
 			clamp_variable = {
-				var = mercs_dev
+				var = mercs_quality
 				min = 0
 				max = 25
 			}
@@ -278,15 +278,15 @@ country_event = {
 				}
 			}
 			add_to_variable = {
-				var = mercs_dev
+				var = mercs_quality
 				value = 3
 			}
 			clamp_variable = {
-				var = mercs_dev
+				var = mercs_quality
 				min = 0
 				max = 25
 			}
-			custom_effect_tooltip = EAG_mercs_dev_add_3
+			custom_effect_tooltip = EAG_mercs_quality_add_3
 			1004 = {
 				create_unit = {
 					division = "name = \"Cromer police\" division_template = \"Norfolk Militia\" start_experience_factor = 1 start_equipment_factor = 0.8"
@@ -2373,7 +2373,7 @@ country_event = {
 				min = 0
 				max = 25
 		}
-		custom_effect_tooltip = EAG_mercs_dev_remove_2
+		custom_effect_tooltip = EAG_mercs_quality_remove_2
 		add_to_variable = {
 				var = volk_dev
 				value = 2
@@ -2400,15 +2400,15 @@ country_event = {
 		}
 		custom_effect_tooltip = EAG_volk_mood_remove_2
 		add_to_variable = {
-				var = mercs_dev
+				var = mercs_quality
 				value = 2
 		}
 		clamp_variable = {
-				var = mercs_dev
+				var = mercs_quality
 				min = 0
 				max = 25
 		}
-		custom_effect_tooltip = EAG_mercs_dev_add_2
+		custom_effect_tooltip = EAG_mercs_quality_add_2
 		1160 = {
 			damage_building = {
 				type = industrial_complex
@@ -2498,15 +2498,15 @@ country_event = {
 		}
 		custom_effect_tooltip = EAG_mercs_mood_add_2
 		add_to_variable = {
-				var = mercs_dev
+				var = mercs_quality
 				value = -2
 		}
 		clamp_variable = {
-				var = mercs_dev
+				var = mercs_quality
 				min = 0
 				max = 25
 		}
-		custom_effect_tooltip = EAG_mercs_dev_remove_2
+		custom_effect_tooltip = EAG_mercs_quality_remove_2
 		add_offsite_building = { type = industrial_complex level = 1 }
     }
 	
@@ -2805,15 +2805,15 @@ country_event = {
 		name = EAG_event.115.f
 		add_political_power = 40
 		add_to_variable = {
-				var = mercs_dev
+				var = mercs_quality
 				value = 2
 		}
 		clamp_variable = {
-				var = mercs_dev
+				var = mercs_quality
 				min = 0
 				max = 25
 		}
-		custom_effect_tooltip = EAG_mercs_dev_add_2
+		custom_effect_tooltip = EAG_mercs_quality_add_2
     }
 }
 
