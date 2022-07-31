@@ -105,7 +105,7 @@ country_event = {
 }
 country_event = {
 	id = WLS_event.5
-	immediate = {log = "[GetDateText]: [Root.GetName]: event WLS_event.4"}
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WLS_event.5"}
 	title = WLS_event.5.t
 	desc = WLS_event.5.d
     is_triggered_only = yes
@@ -120,5 +120,27 @@ country_event = {
 	    name = WLS_event.5.b
 		ai_chance = { factor = 0 }
 		add_ideas = WLS_Please_the_workers_and_peasants
+    } 	
+}
+country_event = {
+	id = WLS_event.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WLS_event.6"}
+	title = WLS_event.6.t
+	desc = WLS_event.6.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	option = {
+	    name = WLS_event.6.a
+		ai_chance = { factor = 1 }
+		swap_ideas = {
+			remove_idea = WLS_transparent_borders
+			add_idea = WLS_transparent_borders_1
+		}
+    }
+	option = {
+	    name = WLS_event.6.b
+		ai_chance = { factor = 0 }
+		remove_ideas = WLS_transparent_borders
     } 	
 }
