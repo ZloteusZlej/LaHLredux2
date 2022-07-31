@@ -4,14 +4,10 @@ on_actions = {
 	    effect = {
 		    if = {
 			    limit = {
-			        FROM = { tag = WES }
-					ROOT = { tag = EAG }
+			        FROM = { tag = EAG }
+					ROOT = { tag = WES }
 				}
-				WES = {
-					country_event = {
-						days = 1
-						id = WES_event.21
-					}
+				EAG = {
 				}
 			}
 		}

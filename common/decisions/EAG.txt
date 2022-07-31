@@ -13226,3 +13226,378 @@ EAG_parliament_gui_decision = {
 		}
 	}
 }
+EAG_klumb_parliament_gui_decision = {
+	EAG_klumb_integrate_kent = {
+		cost = 15
+		days_remove = 10
+		fire_only_once = yes
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_integration_begun
+			}
+		}		
+		remove_effect = {
+			EAG = {
+				activate_mission = EAG_klumb_integrate_kent_mission
+			}
+		}
+		available = {
+			EAG = {
+				controls_state = 1165
+				owns_state = 1165
+				controls_state = 1002
+				owns_state = 1002
+			}
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_integration_begun
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				controls_state = 1165
+				owns_state = 1165
+				controls_state = 1002
+				owns_state = 1002	
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_klumb_integrate_sussex = {
+		cost = 15
+		days_remove = 10
+		fire_only_once = yes
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_integration_begun
+			}
+		}	
+		remove_effect = {
+			EAG = {
+				activate_mission = EAG_klumb_integrate_sussex_mission
+			}
+		}
+		available = {
+			EAG = {
+				controls_state = 1156
+				owns_state = 1156
+				controls_state = 1001
+				owns_state = 1001
+			}
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_integration_begun
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				controls_state = 1156
+				owns_state = 1156
+				controls_state = 1001
+				owns_state = 1001
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_klumb_integrate_wessex = {
+		cost = 15
+		days_remove = 10
+		fire_only_once = yes
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_integration_begun
+			}
+		}	
+		remove_effect = {
+			EAG = {
+				activate_mission = EAG_klumb_integrate_wessex_mission
+			}
+		}
+		available = {
+			EAG = {
+				controls_state = 1153
+				owns_state = 1153
+				controls_state = 1161
+				owns_state = 1161
+				controls_state = 1000
+				owns_state = 1000
+				controls_state = 1006
+				owns_state = 1006
+				controls_state = 1007
+				owns_state = 1007
+				controls_state = 999
+				owns_state = 999
+				controls_state = 998
+				owns_state = 998
+				controls_state = 1018
+				owns_state = 1018
+			}
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_integration_begun
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				controls_state = 1153
+				owns_state = 1153
+				controls_state = 1161
+				owns_state = 1161
+				controls_state = 1000
+				owns_state = 1000
+				controls_state = 1006
+				owns_state = 1006
+				controls_state = 1007
+				owns_state = 1007
+				controls_state = 999
+				owns_state = 999
+				controls_state = 998
+				owns_state = 998
+				controls_state = 1018
+				owns_state = 1018
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_klumb_integrate_mercia = {
+		cost = 15
+		days_remove = 10
+		fire_only_once = yes
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_integration_begun
+			}
+		}	
+		remove_effect = {
+			EAG = {
+				activate_mission = EAG_klumb_integrate_mercia_mission
+			}
+		}
+		available = {
+			EAG = {
+				controls_state = 1152
+				owns_state = 1152
+				controls_state = 1151
+				owns_state = 1151
+				controls_state = 1154
+				owns_state = 1154
+				controls_state = 1146
+				owns_state = 1146
+				controls_state = 1155
+				owns_state = 1155
+				controls_state = 1008
+				owns_state = 1008
+				controls_state = 1144
+				owns_state = 1144
+				controls_state = 1005
+				owns_state = 1005
+			}
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_integration_begun
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				controls_state = 1152
+				owns_state = 1152
+				controls_state = 1151
+				owns_state = 1151
+				controls_state = 1154
+				owns_state = 1154
+				controls_state = 1146
+				owns_state = 1146
+				controls_state = 1155
+				owns_state = 1155
+				controls_state = 1008
+				owns_state = 1008
+				controls_state = 1144
+				owns_state = 1144
+				controls_state = 1005
+				owns_state = 1005
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_klumb_integrate_northumbria = {
+		cost = 15
+		days_remove = 10
+		fire_only_once = yes
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_integration_begun
+			}
+		}	
+		remove_effect = {
+			EAG = {
+				activate_mission = EAG_klumb_integrate_northumbria_mission
+			}
+		}
+		available = {
+			EAG = {
+				controls_state = 1009
+				owns_state = 1009
+				controls_state = 1145
+				owns_state = 1145
+				controls_state = 1012
+				owns_state = 1012
+				controls_state = 1011
+				owns_state = 1011
+				controls_state = 1010
+				owns_state = 1010
+			}
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_integration_begun
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				controls_state = 1009
+				owns_state = 1009
+				controls_state = 1145
+				owns_state = 1145
+				controls_state = 1012
+				owns_state = 1012
+				controls_state = 1011
+				owns_state = 1011
+				controls_state = 1010
+				owns_state = 1010
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_klumb_integrate_wales = {
+		cost = 15
+		days_remove = 10
+		fire_only_once = yes
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_integration_begun
+			}
+		}	
+		remove_effect = {
+			EAG = {
+				activate_mission = EAG_klumb_integrate_wales_mission
+			}
+		}
+		available = {
+			EAG = {
+				controls_state = 1149
+				owns_state = 1149
+				controls_state = 1148
+				owns_state = 1148
+				controls_state = 1150
+				owns_state = 1150
+				controls_state = 1147
+				owns_state = 1147
+			}
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_integration_begun
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				controls_state = 1149
+				owns_state = 1149
+				controls_state = 1148
+				owns_state = 1148
+				controls_state = 1150
+				owns_state = 1150
+				controls_state = 1147
+				owns_state = 1147
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_klumb_integrate_scotland = {
+		cost = 15
+		days_remove = 10
+		fire_only_once = yes
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_integration_begun
+			}
+		}	
+		remove_effect = {
+			EAG = {
+				activate_mission = EAG_klumb_integrate_scotland_mission
+			}
+		}
+		available = {
+			EAG = {
+				controls_state = 1013
+				owns_state = 1013
+				controls_state = 1014
+				owns_state = 1014
+				controls_state = 1163
+				owns_state = 1163
+				controls_state = 1164
+				owns_state = 1164
+				controls_state = 1016
+				owns_state = 1016
+				controls_state = 1015
+				owns_state = 1015
+				controls_state = 1015
+				owns_state = 1015
+				controls_state = 1162
+				owns_state = 1162
+				controls_state = 1308
+				owns_state = 1308
+				controls_state = 1120
+				owns_state = 1120
+			}
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_integration_begun
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				controls_state = 1013
+				owns_state = 1013
+				controls_state = 1014
+				owns_state = 1014
+				controls_state = 1163
+				owns_state = 1163
+				controls_state = 1164
+				owns_state = 1164
+				controls_state = 1016
+				owns_state = 1016
+				controls_state = 1015
+				owns_state = 1015
+				controls_state = 1015
+				owns_state = 1015
+				controls_state = 1162
+				owns_state = 1162
+				controls_state = 1308
+				owns_state = 1308
+				controls_state = 1120
+				owns_state = 1120
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
