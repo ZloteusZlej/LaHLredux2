@@ -13600,4 +13600,1954 @@ EAG_klumb_parliament_gui_decision = {
 			factor = 100
 		}
 	}
+    EAG_klumb_integrate_scotland_mission = {                           
+        allowed = { 
+			tag = EAG 
+		}
+        available = {      
+			hidden_trigger = {
+				always = false
+			}
+        }
+        activation = {   
+			always = false
+        }
+        is_good = yes                      
+        days_mission_timeout = 100           
+        timeout_effect = {
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 20
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.221
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.222
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 21
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 40
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.222
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -2 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 41
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 60
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -4 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 61
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 80
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -6 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 81
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 99
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -8 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 99
+							compare = greater_than_or_equals
+						}						
+					}	
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -10 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^5 = 2 }
+				klumb_modify_parliament_seat = yes
+				
+			}
+			EAG = {
+				set_variable = { EAG_ruling_party_strenght = 0 }
+			}
+        }
+        complete_effect = {                    
+        }
+    }
+    EAG_klumb_integrate_wales_mission = {                           
+        allowed = { 
+			tag = EAG 
+		}
+        available = {      
+			hidden_trigger = {
+				always = false
+			}
+        }
+        activation = {   
+			always = false
+        }
+        is_good = yes                      
+        days_mission_timeout = 100           
+        timeout_effect = {
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 20
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.221
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.222
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 21
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 40
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.222
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -2 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 41
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 60
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -4 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 61
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 80
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -6 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 81
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 99
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -8 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 99
+							compare = greater_than_or_equals
+						}						
+					}	
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -10 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^5 = 2 }
+				klumb_modify_parliament_seat = yes
+				
+			}
+			EAG = {
+				set_variable = { EAG_ruling_party_strenght = 0 }
+			}
+        }
+        complete_effect = {                    
+        }
+    }
+    EAG_klumb_integrate_wessex_mission = {                           
+        allowed = { 
+			tag = EAG 
+		}
+        available = {      
+			hidden_trigger = {
+				always = false
+			}
+        }
+        activation = {   
+			always = false
+        }
+        is_good = yes                      
+        days_mission_timeout = 100         
+        timeout_effect = {
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 20
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.221
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.222
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 21
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 40
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.222
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -2 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 41
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 60
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -4 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 61
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 80
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -6 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 81
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 99
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -8 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 99
+							compare = greater_than_or_equals
+						}						
+					}	
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -10 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^5 = 2 }
+				klumb_modify_parliament_seat = yes
+				
+			}
+			EAG = {
+				set_variable = { EAG_ruling_party_strenght = 0 }
+			}
+        }
+        complete_effect = {                    
+        }
+    }
+    EAG_klumb_integrate_sussex_mission = {                           
+        allowed = { 
+			tag = EAG 
+		}
+        available = {      
+			hidden_trigger = {
+				always = false
+			}
+        }
+        activation = {   
+			always = false
+        }
+        is_good = yes                      
+        days_mission_timeout = 100            
+        timeout_effect = {
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 20
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.221
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.222
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 21
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 40
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.222
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -2 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 41
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 60
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -4 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 61
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 80
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -6 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 81
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 99
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -8 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 99
+							compare = greater_than_or_equals
+						}						
+					}	
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -10 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^5 = 2 }
+				klumb_modify_parliament_seat = yes
+				
+			}
+			EAG = {
+				set_variable = { EAG_ruling_party_strenght = 0 }
+			}
+        }
+        complete_effect = {                    
+        }
+    }
+    EAG_klumb_integrate_kent_mission = {                           
+        allowed = { 
+			tag = EAG 
+		}
+        available = {      
+			hidden_trigger = {
+				always = false
+			}
+        }
+        activation = {   
+			always = false
+        }
+        is_good = yes                      
+        days_mission_timeout = 100            
+        timeout_effect = {
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 20
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.221
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.222
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 21
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 40
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.222
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -2 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 41
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 60
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -4 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 61
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 80
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -6 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 81
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 99
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -8 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 99
+							compare = greater_than_or_equals
+						}						
+					}	
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -10 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^5 = 2 }
+				klumb_modify_parliament_seat = yes
+				
+			}
+			EAG = {
+				set_variable = { EAG_ruling_party_strenght = 0 }
+			}
+        }
+        complete_effect = {                    
+        }
+    }
+    EAG_klumb_integrate_northumbria_mission = {                           
+        allowed = { 
+			tag = EAG 
+		}
+        available = {      
+			hidden_trigger = {
+				always = false
+			}
+        }
+        activation = {   
+			always = false
+        }
+        is_good = yes                      
+        days_mission_timeout = 100            
+        timeout_effect = {
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 20
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.221
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.222
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 21
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 40
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.222
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -2 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 41
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 60
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -4 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 61
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 80
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -6 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 81
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 99
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -8 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 99
+							compare = greater_than_or_equals
+						}						
+					}	
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -10 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^5 = 2 }
+				klumb_modify_parliament_seat = yes
+				
+			}
+			EAG = {
+				set_variable = { EAG_ruling_party_strenght = 0 }
+			}
+        }
+        complete_effect = {                    
+        }
+    }
+    EAG_klumb_integrate_mercia_mission = {                           
+        allowed = { 
+			tag = EAG 
+		}
+        available = {      
+			hidden_trigger = {
+				always = false
+			}
+        }
+        activation = {   
+			always = false
+        }
+        is_good = yes                      
+        days_mission_timeout = 100           
+        timeout_effect = {
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 20
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.221
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.222
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 21
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 40
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.222
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -2 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 41
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 60
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.223
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -4 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 61
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 80
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.224
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -6 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 81
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 99
+							compare = less_than_or_equals
+						}							
+					}	
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.225
+					}
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -8 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+				klumb_modify_parliament_seat = yes
+			}
+			if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_ruling_party_strenght
+							value = 99
+							compare = greater_than_or_equals
+						}						
+					}	
+				}
+				EAG = {
+					clr_country_flag = EAG_klumb_integration_begun
+				}
+				subtract_from_variable = { klumb_parliament_seat_array^0 = -10 }
+				subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+				subtract_from_variable = { klumb_parliament_seat_array^5 = 2 }
+				klumb_modify_parliament_seat = yes
+				
+			}
+			EAG = {
+				set_variable = { EAG_ruling_party_strenght = 0 }
+			}
+        }
+        complete_effect = {                    
+        }
+    }
+	EAG_klumb_parliament_small_lobbying = {
+		cost = 25
+		days_remove = 25
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_lobbying_effort
+			}
+		}	
+		remove_effect = {
+			EAG = {
+				clr_country_flag = EAG_klumb_lobbying_effort
+			}
+			add_to_variable = {
+				var = EAG_ruling_party_strenght
+				value = 10
+			}
+		}
+		available = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_lobbying_effort
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_klumb_parliament_medium_lobbying = {
+		cost = 50
+		days_remove = 25
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_lobbying_effort
+			}
+		}	
+		remove_effect = {
+			EAG = {
+				clr_country_flag = EAG_klumb_lobbying_effort
+			}
+			add_to_variable = {
+				var = EAG_ruling_party_strenght
+				value = 15
+			}
+		}
+		available = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_lobbying_effort
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_klumb_parliament_big_lobbying = {
+		cost = 75
+		days_remove = 25
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_lobbying_effort
+			}
+		}	
+		remove_effect = {
+			EAG = {
+				clr_country_flag = EAG_klumb_lobbying_effort
+			}
+			add_to_variable = {
+				var = EAG_ruling_party_strenght
+				value = 20
+			}
+		}
+		available = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_lobbying_effort
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_klumb_parliament_invest_lobbying = {
+		cost = 5
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 3
+		}
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_lobbying_investment
+			}
+		}	
+		remove_effect = {
+			EAG = {
+				clr_country_flag = EAG_klumb_lobbying_investment
+			}
+			add_to_variable = {
+				var = EAG_ruling_party_strenght
+				value = 15
+			}
+		}
+		available = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_lobbying_investment
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_klumb_parliament_support_lobbying = {
+		cost = 5
+		days_remove = 25
+		modifier = {
+			political_power_gain = -0.1
+			stability_weekly = -0.05
+		}
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_lobbying_investment
+			}
+		}	
+		remove_effect = {
+			EAG = {
+				clr_country_flag = EAG_klumb_lobbying_investment
+			}
+			add_to_variable = {
+				var = EAG_ruling_party_strenght
+				value = 15
+			}
+		}
+		available = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_lobbying_investment
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_klumb_parliament_police_lobbying = {
+		cost = 5
+		days_remove = 25
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_lobbying_investment
+			}
+		}	
+		remove_effect = {
+			EAG = {
+				clr_country_flag = EAG_klumb_lobbying_investment
+			}
+			add_to_variable = {
+				var = EAG_ruling_party_strenght
+				value = 15
+			}
+			EAG = {
+				add_manpower = -1500
+			}
+		}
+		available = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_lobbying_investment
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
 }

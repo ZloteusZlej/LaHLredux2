@@ -54,6 +54,162 @@ defined_text = {
 }
 
 defined_text = {
+	name = GetKlumbParliamentIntegration
+	text = {
+		trigger = {
+			EAG = {
+				check_variable = {
+					var = EAG_ruling_party_strenght
+					value = 20
+					compare = less_than_or_equals
+				}							
+			}
+		}
+		localization_key = EAG_klumb_parliament_integration_1
+	}
+	text = {
+		trigger = {
+			EAG = {
+				check_variable = {
+					var = EAG_ruling_party_strenght
+					value = 21
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EAG_ruling_party_strenght
+					value = 40
+					compare = less_than_or_equals
+				}							
+			}
+		}
+		localization_key = EAG_klumb_parliament_integration_2
+	}
+	text = {
+		trigger = {
+			EAG = {
+				check_variable = {
+					var = EAG_ruling_party_strenght
+					value = 41
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EAG_ruling_party_strenght
+					value = 60
+					compare = less_than_or_equals
+				}							
+			}	
+		}
+		localization_key = EAG_klumb_parliament_integration_3
+	}
+	text = {
+		trigger = {
+			EAG = {
+				check_variable = {
+					var = EAG_ruling_party_strenght
+					value = 61
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EAG_ruling_party_strenght
+					value = 80
+					compare = less_than_or_equals
+				}							
+			}	
+		}
+		localization_key = EAG_klumb_parliament_integration_4
+	}
+	text = {
+		trigger = {
+			EAG = {
+				check_variable = {
+					var = EAG_ruling_party_strenght
+					value = 81
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EAG_ruling_party_strenght
+					value = 99
+					compare = less_than_or_equals
+				}							
+			}
+		}
+		localization_key = EAG_klumb_parliament_integration_5
+	}
+	text = {
+		trigger = {
+			EAG = {
+				check_variable = {
+					var = EAG_ruling_party_strenght
+					value = 99
+					compare = greater_than_or_equals
+				}						
+			}	
+		}
+		localization_key = EAG_klumb_parliament_integration_6
+	}
+}
+
+defined_text = {
+	name = GetKlumbParliamentIntegrationTerritories
+	text = {
+		trigger = {
+			EAG = {
+				has_active_mission = EAG_klumb_integrate_scotland_mission
+			}
+		}
+		localization_key = EAG_klumb_parliament_territory_integration_1
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_active_mission = EAG_klumb_integrate_wales_mission
+			}
+		}
+		localization_key = EAG_klumb_parliament_territory_integration_2
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_active_mission = EAG_klumb_integrate_wessex_mission
+			}
+		}
+		localization_key = EAG_klumb_parliament_territory_integration_3
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_active_mission = EAG_klumb_integrate_sussex_mission
+			}
+		}
+		localization_key = EAG_klumb_parliament_territory_integration_4
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_active_mission = EAG_klumb_integrate_kent_mission
+			}
+		}
+		localization_key = EAG_klumb_parliament_territory_integration_5
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_active_mission = EAG_klumb_integrate_northumbria_mission
+			}
+		}
+		localization_key = EAG_klumb_parliament_territory_integration_6
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_active_mission = EAG_klumb_integrate_mercia_mission
+			}
+		}
+		localization_key = EAG_klumb_parliament_territory_integration_7
+	}
+}
+
+defined_text = {
 	name = GetKlumbParliamentPartyDescription
 	text = {
 		trigger = {

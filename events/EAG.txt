@@ -5583,3 +5583,853 @@ country_event = {
     }
 }
 
+country_event = {
+	id = EAG_event.221
+	title = EAG_event.221.t
+	desc = EAG_event.221.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.221.a	
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 11
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^5 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		else_if = {
+			EAG = {
+				add_political_power = -50
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.222
+	title = EAG_event.222.t
+	desc = EAG_event.222.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.222.a	
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 11
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^5 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		else_if = {
+			EAG = {
+				add_political_power = -50
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.223
+	title = EAG_event.223.t
+	desc = EAG_event.223.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.223.a	
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 11
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^5 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		else_if = {
+			EAG = {
+				add_political_power = -50
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.224
+	title = EAG_event.224.t
+	desc = EAG_event.224.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.224.a	
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 11
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^5 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		else_if = {
+			EAG = {
+				add_political_power = -50
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.225
+	title = EAG_event.225.t
+	desc = EAG_event.225.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.225.a	
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 11
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		else_if = {
+			EAG = {
+				add_political_power = -50
+			}
+		}
+    }
+}
+
