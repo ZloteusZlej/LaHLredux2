@@ -13248,9 +13248,13 @@ EAG_klumb_parliament_gui_decision = {
 				controls_state = 1002
 				owns_state = 1002
 			}
-			NOT = {
-				EAG = {
+			EAG = {
+				NOT = {
 					has_country_flag = EAG_klumb_integration_begun
+					OR = {
+						has_active_mission = EAG_klumb_mission_voting_NO
+						has_active_mission = EAG_klumb_mission_voting_YES
+					}
 				}
 			}
 		}
@@ -13259,7 +13263,13 @@ EAG_klumb_parliament_gui_decision = {
 				controls_state = 1165
 				owns_state = 1165
 				controls_state = 1002
-				owns_state = 1002	
+				owns_state = 1002
+				NOT = {
+					OR = {
+						has_active_mission = EAG_klumb_mission_voting_NO
+						has_active_mission = EAG_klumb_mission_voting_YES
+					}
+				}
 			}
 		}
 		ai_will_do = {
@@ -13287,9 +13297,13 @@ EAG_klumb_parliament_gui_decision = {
 				controls_state = 1001
 				owns_state = 1001
 			}
-			NOT = {
-				EAG = {
+			EAG = {
+				NOT = {
 					has_country_flag = EAG_klumb_integration_begun
+					OR = {
+						has_active_mission = EAG_klumb_mission_voting_NO
+						has_active_mission = EAG_klumb_mission_voting_YES
+					}
 				}
 			}
 		}
@@ -13299,6 +13313,12 @@ EAG_klumb_parliament_gui_decision = {
 				owns_state = 1156
 				controls_state = 1001
 				owns_state = 1001
+				NOT = {
+					OR = {
+						has_active_mission = EAG_klumb_mission_voting_NO
+						has_active_mission = EAG_klumb_mission_voting_YES
+					}
+				}
 			}
 		}
 		ai_will_do = {
@@ -13337,10 +13357,15 @@ EAG_klumb_parliament_gui_decision = {
 				owns_state = 998
 				controls_state = 1018
 				owns_state = 1018
+			
 			}
-			NOT = {
-				EAG = {
+			EAG = {
+				NOT = {
 					has_country_flag = EAG_klumb_integration_begun
+					OR = {
+						has_active_mission = EAG_klumb_mission_voting_NO
+						has_active_mission = EAG_klumb_mission_voting_YES
+					}
 				}
 			}
 		}
@@ -13362,6 +13387,12 @@ EAG_klumb_parliament_gui_decision = {
 				owns_state = 998
 				controls_state = 1018
 				owns_state = 1018
+				NOT = {
+					OR = {
+						has_active_mission = EAG_klumb_mission_voting_NO
+						has_active_mission = EAG_klumb_mission_voting_YES
+					}
+				}
 			}
 		}
 		ai_will_do = {
@@ -13401,9 +13432,13 @@ EAG_klumb_parliament_gui_decision = {
 				controls_state = 1005
 				owns_state = 1005
 			}
-			NOT = {
-				EAG = {
+			EAG = {
+				NOT = {
 					has_country_flag = EAG_klumb_integration_begun
+					OR = {
+						has_active_mission = EAG_klumb_mission_voting_NO
+						has_active_mission = EAG_klumb_mission_voting_YES
+					}
 				}
 			}
 		}
@@ -13425,6 +13460,12 @@ EAG_klumb_parliament_gui_decision = {
 				owns_state = 1144
 				controls_state = 1005
 				owns_state = 1005
+				NOT = {
+					OR = {
+						has_active_mission = EAG_klumb_mission_voting_NO
+						has_active_mission = EAG_klumb_mission_voting_YES
+					}
+				}
 			}
 		}
 		ai_will_do = {
@@ -13458,9 +13499,13 @@ EAG_klumb_parliament_gui_decision = {
 				controls_state = 1010
 				owns_state = 1010
 			}
-			NOT = {
-				EAG = {
+			EAG = {
+				NOT = {
 					has_country_flag = EAG_klumb_integration_begun
+					OR = {
+						has_active_mission = EAG_klumb_mission_voting_NO
+						has_active_mission = EAG_klumb_mission_voting_YES
+					}
 				}
 			}
 		}
@@ -13476,6 +13521,12 @@ EAG_klumb_parliament_gui_decision = {
 				owns_state = 1011
 				controls_state = 1010
 				owns_state = 1010
+				NOT = {
+					OR = {
+						has_active_mission = EAG_klumb_mission_voting_NO
+						has_active_mission = EAG_klumb_mission_voting_YES
+					}
+				}
 			}
 		}
 		ai_will_do = {
@@ -13507,9 +13558,13 @@ EAG_klumb_parliament_gui_decision = {
 				controls_state = 1147
 				owns_state = 1147
 			}
-			NOT = {
-				EAG = {
+			EAG = {
+				NOT = {
 					has_country_flag = EAG_klumb_integration_begun
+					OR = {
+						has_active_mission = EAG_klumb_mission_voting_NO
+						has_active_mission = EAG_klumb_mission_voting_YES
+					}
 				}
 			}
 		}
@@ -13523,6 +13578,12 @@ EAG_klumb_parliament_gui_decision = {
 				owns_state = 1150
 				controls_state = 1147
 				owns_state = 1147
+				NOT = {
+					OR = {
+						has_active_mission = EAG_klumb_mission_voting_NO
+						has_active_mission = EAG_klumb_mission_voting_YES
+					}
+				}
 			}
 		}
 		ai_will_do = {
@@ -13566,9 +13627,13 @@ EAG_klumb_parliament_gui_decision = {
 				controls_state = 1120
 				owns_state = 1120
 			}
-			NOT = {
-				EAG = {
+			EAG = {
+				NOT = {
 					has_country_flag = EAG_klumb_integration_begun
+					OR = {
+						has_active_mission = EAG_klumb_mission_voting_NO
+						has_active_mission = EAG_klumb_mission_voting_YES
+					}
 				}
 			}
 		}
@@ -13594,6 +13659,12 @@ EAG_klumb_parliament_gui_decision = {
 				owns_state = 1308
 				controls_state = 1120
 				owns_state = 1120
+				NOT = {
+					OR = {
+						has_active_mission = EAG_klumb_mission_voting_NO
+						has_active_mission = EAG_klumb_mission_voting_YES
+					}
+				}
 			}
 		}
 		ai_will_do = {
@@ -15635,8 +15706,17 @@ EAG_klumb_parliament_gui_decision = {
 				}
 			}
 			else_if = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_klumb_voting_coalition
+							value = 101
+							compare = less_than_or_equals
+						}
+					}
+				}
 				EAG = {
-					add_political_power = -200
+					add_political_power = -250
 					clr_country_flag = EAG_klumb_voting_NGGU_issue_1
 					clr_country_flag = EAG_klumb_voting_NGGU_issue_2
 					clr_country_flag = EAG_klumb_voting_NGGU_issue_3
@@ -16126,7 +16206,14 @@ EAG_klumb_parliament_gui_decision = {
 				}
 			}
 			else_if = {
-				EAG = {
+				limit = {
+					EAG = {
+						check_variable = {
+							var = EAG_klumb_voting_coalition
+							value = 101
+							compare = greater_than_or_equals
+						}
+					}
 					add_political_power = 200
 					clr_country_flag = EAG_klumb_voting_NGGU_issue_1
 					clr_country_flag = EAG_klumb_voting_NGGU_issue_2
@@ -17419,7 +17506,7 @@ EAG_klumb_parliament_gui_decision = {
 				value = klumb_parliament_seat_array^1
 			}
 			EAG = {
-				has_country_flag = FPE_klumb_make_party_coalition_FPE
+				set_country_flag = EAG_klumb_make_party_coalition_FPE
 			}
 			custom_effect_tooltip = EAG_klumb_voting_need.tt
 		}

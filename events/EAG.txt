@@ -6522,27 +6522,6 @@ country_event = {
 			value = klumb_parliament_seat_array^0
 		}
     }
-	option = {
-		name = EAG_event.226.c
-		if = {
-			limit = {									
-				EAG = {
-					check_variable = {
-						var = klumb_parliament_seat_array^0
-						value = 100
-						compare = greater_than_or_equals
-					}
-				}
-			}
-			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
-			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
-			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
-			EAG = {
-				add_manpower = 25000 
-				army_experience = 15
-			}
-		}	
-    }
 }
 
 country_event = {
@@ -6630,26 +6609,6 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
-		}
-    }
-	option = {
-		name = EAG_event.227.c
-		if = {
-			limit = {									
-				EAG = {
-					check_variable = {
-						var = klumb_parliament_seat_array^0
-						value = 100
-						compare = greater_than_or_equals
-					}
-				}
-			}
-			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
-			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
-			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
-			EAG = {
-				add_ideas = EAG_advanced_training 
-			}
 		}
     }
 }
@@ -6741,41 +6700,6 @@ country_event = {
 			value = klumb_parliament_seat_array^0
 		}
     }
-	option = {
-		name = EAG_event.228.c
-		if = {
-			limit = {									
-				EAG = {
-					check_variable = {
-						var = klumb_parliament_seat_array^0
-						value = 100
-						compare = greater_than_or_equals
-					}
-				}
-			}
-			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
-			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
-			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt|
-			EAG = {
-				add_equipment_to_stockpile = {
-					type = artillery_equipment
-					amount = 100
-					producer = EAG
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 1000
-					producer = EAG
-				}
-				add_equipment_to_stockpile = {
-					type = support_equipment
-					amount = 500
-					producer = EAG
-				}
-				add_political_power = 50
-			}
-		}
-    }
 }
 
 country_event = {
@@ -6863,29 +6787,6 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
-		}
-    }
-	option = {
-		name = EAG_event.229.c
-		if = {
-			limit = {									
-				EAG = {
-					check_variable = {
-						var = klumb_parliament_seat_array^0
-						value = 100
-						compare = greater_than_or_equals
-					}
-				}
-			}
-			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
-			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
-			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
-			EAG = { 
-				add_timed_idea = { 
-					idea = EAG_fast_building 
-					days = 365
-				}
-			}
 		}
     }
 }
@@ -6977,30 +6878,6 @@ country_event = {
 			value = klumb_parliament_seat_array^0
 		}
     }
-	option = {
-		name = EAG_event.230.c
-		if = {
-			limit = {									
-				EAG = {
-					check_variable = {
-						var = klumb_parliament_seat_array^0
-						value = 100
-						compare = greater_than_or_equals
-					}
-				}
-			}
-			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
-			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
-			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
-			EAG = {
-				all_state = {
-					add_compliance = 15
-				}
-				add_political_power = -100
-				add_stability = 0.15
-			}
-		}
-    }
 }
 
 country_event = {
@@ -7088,27 +6965,6 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
-		}
-    }
-	option = {
-		name = EAG_event.231.c
-		if = {
-			limit = {									
-				EAG = {
-					check_variable = {
-						var = klumb_parliament_seat_array^0
-						value = 100
-						compare = greater_than_or_equals
-					}
-				}
-			}
-			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
-			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
-			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
-			EAG = {
-				add_manpower = -10000 
-				add_political_power = 50
-			}
 		}
     }
 }
@@ -7200,24 +7056,6 @@ country_event = {
 			value = klumb_parliament_seat_array^0
 		}
     }
-	option = {
-		name = EAG_event.232.c
-		if = {
-			limit = {									
-				EAG = {
-					check_variable = {
-						var = klumb_parliament_seat_array^0
-						value = 100
-						compare = greater_than_or_equals
-					}
-				}
-			}
-			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
-			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
-			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
-			EAG = { add_ideas = EAG_european_trading }
-		}
-    }
 }
 
 country_event = {
@@ -7306,24 +7144,6 @@ country_event = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
 		}		
-    }
-	option = {
-		name = EAG_event.233.c
-		if = {
-			limit = {									
-				EAG = {
-					check_variable = {
-						var = klumb_parliament_seat_array^0
-						value = 100
-						compare = greater_than_or_equals
-					}
-				}
-			}
-			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
-			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
-			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
-			EAG = { add_ideas = EAG_european_literature }
-		}
     }
 }
 
@@ -7414,29 +7234,6 @@ country_event = {
 			value = klumb_parliament_seat_array^0
 		}		
     }
-	option = {
-		name = EAG_event.234.c
-		if = {
-			limit = {									
-				EAG = {
-					check_variable = {
-						var = klumb_parliament_seat_array^0
-						value = 100
-						compare = greater_than_or_equals
-					}
-				}
-			}
-			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
-			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
-			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
-			EAG = { 
-				add_timed_idea = { 
-					idea = EAG_worker_holidays 
-					days = 90
-				}
-			}
-		}
-    }
 }
 
 country_event = {
@@ -7524,40 +7321,6 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
-		}
-    }
-	option = {
-		name = EAG_event.235.c
-		if = {
-			limit = {									
-				EAG = {
-					check_variable = {
-						var = klumb_parliament_seat_array^0
-						value = 100
-						compare = greater_than_or_equals
-					}
-				}
-			}
-			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
-			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
-			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
-			EAG = {
-				add_tech_bonus = {
-					bonus = 0.5
-					uses = 2
-					category = electronics
-				}
-				add_tech_bonus = {
-					bonus = 0.5
-					uses = 2
-					category = industry
-				}
-				add_tech_bonus = {
-					bonus = 0.5
-					uses = 2
-					category = armor
-				}
-			}
 		}
     }
 }
@@ -7649,29 +7412,6 @@ country_event = {
 			value = klumb_parliament_seat_array^0
 		}
     }
-	option = {
-		name = EAG_event.236.c
-		if = {
-			limit = {									
-				EAG = {
-					check_variable = {
-						var = klumb_parliament_seat_array^0
-						value = 100
-						compare = greater_than_or_equals
-					}
-				}
-			}
-			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
-			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
-			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
-			EAG = { 
-				add_timed_idea = { 
-					idea = EAG_experimental_research 
-					days = 365
-				}
-			}
-		}
-    }
 }
 
 country_event = {
@@ -7759,29 +7499,6 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
-		}
-    }
-	option = {
-		name = EAG_event.237.c
-		if = {
-			limit = {									
-				EAG = {
-					check_variable = {
-						var = klumb_parliament_seat_array^0
-						value = 100
-						compare = greater_than_or_equals
-					}
-				}
-			}
-			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
-			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
-			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
-			EAG = {
-				retire_character = EAG_wolfgang_schneiderhan
-				retire_character = EAG_georg_klein
-				retire_character = EAG_georg_pazderski
-				add_political_power = 50
-			}
 		}
     }
 }
@@ -7873,28 +7590,6 @@ country_event = {
 			value = klumb_parliament_seat_array^0
 		}
     }
-	option = {
-		name = EAG_event.238.c
-		if = {
-			limit = {									
-				EAG = {
-					check_variable = {
-						var = klumb_parliament_seat_array^0
-						value = 100
-						compare = greater_than_or_equals
-					}
-				}
-			}
-			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
-			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
-			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
-			EAG = {
-				add_stability = 0.15
-				war_support_factor = 0.15
-				add_political_power = 550
-			}
-		}
-    }
 }
 
 country_event = {
@@ -7984,39 +7679,6 @@ country_event = {
 			value = klumb_parliament_seat_array^0
 		}
     }
-	option = {
-		name = EAG_event.239.c
-		if = {
-			limit = {									
-				EAG = {
-					check_variable = {
-						var = klumb_parliament_seat_array^0
-						value = 100
-						compare = greater_than_or_equals
-					}
-				}
-			}
-			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
-			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
-			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
-			EAG = {
-				random_owned_controlled_state = {
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-					add_extra_state_shared_building_slots = 2
-				}
-				add_political_power = -75
-			}
-		}
-    }
 }
 
 country_event = {
@@ -8104,29 +7766,6 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
-		}
-    }
-	option = {
-		name = EAG_event.240.c
-		if = {
-			limit = {									
-				EAG = {
-					check_variable = {
-						var = klumb_parliament_seat_array^0
-						value = 100
-						compare = greater_than_or_equals
-					}
-				}
-			}
-			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
-			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
-			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
-			EAG = { 
-				add_timed_idea = { 
-					idea = EAG_rebuilding_sealand 
-					days = 365
-				}
-			}
 		}
     }
 }
