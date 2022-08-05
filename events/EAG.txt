@@ -4986,45 +4986,45 @@ country_event = {
 }
 
 country_event = {
-	id = EAG_event.200
+	id = EAG_event.200 #Elections start
 	title = EAG_event.200.t
 	desc = EAG_event.200.d
 	is_triggered_only = yes	
 	option = {
-		name = EAG_event.200.a	
-		set_country_flag = run_as_klumb
+		name = EAG_event.200.a	#Run as EPC
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.241
+			}
+		}
     }
 	option = {
-		name = EAG_event.200.b	
-		set_country_flag = run_as_may
+		name = EAG_event.200.b	#Run as FPE
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.242
+			}
+		}
     }
 	option = {
-		name = EAG_event.200.c 
-		set_country_flag = run_as_yea
+		name = EAG_event.200.c	#Run as EPP
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.243
+			}
+		}
     }
 	option = {
-		name = EAG_event.200.e
-		set_country_flag = run_as_whitehouse
-    }
-	option = {
-		name = EAG_event.200.f
-		set_country_flag = run_as_bushell
-    }
-	option = {
-		name = EAG_event.200.g
-		set_country_flag = run_as_starmer
-    }
-	option = {
-		name = EAG_event.200.h
-		set_country_flag = run_as_iсke
-    }
-	option = {
-		name = EAG_event.200.k
-		set_country_flag = run_as_astley
-    }
-	option = {
-		name = EAG_event.200.l
-		set_country_flag = run_as_bates
+		name = EAG_event.200.d	#RESET PAGE
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.244
+			}
+		}
     }
 }
 
@@ -6454,6 +6454,7 @@ country_event = {
 					has_active_mission = EAG_klumb_integrate_mercia_mission
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
 				}
 			}
 		}
@@ -6543,6 +6544,7 @@ country_event = {
 					has_active_mission = EAG_klumb_integrate_mercia_mission
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
 				}
 			}
 		}
@@ -6632,6 +6634,7 @@ country_event = {
 					has_active_mission = EAG_klumb_integrate_mercia_mission
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
 				}
 			}
 		}
@@ -6721,6 +6724,7 @@ country_event = {
 					has_active_mission = EAG_klumb_integrate_mercia_mission
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
 				}
 			}
 		}
@@ -6810,6 +6814,7 @@ country_event = {
 					has_active_mission = EAG_klumb_integrate_mercia_mission
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
 				}
 			}
 		}
@@ -6899,6 +6904,7 @@ country_event = {
 					has_active_mission = EAG_klumb_integrate_mercia_mission
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
 				}
 			}
 		}
@@ -6988,6 +6994,7 @@ country_event = {
 					has_active_mission = EAG_klumb_integrate_mercia_mission
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
 				}
 			}
 		}
@@ -7077,6 +7084,7 @@ country_event = {
 					has_active_mission = EAG_klumb_integrate_mercia_mission
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
 				}
 			}
 		}
@@ -7166,6 +7174,7 @@ country_event = {
 					has_active_mission = EAG_klumb_integrate_mercia_mission
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
 				}
 			}
 		}
@@ -7255,6 +7264,7 @@ country_event = {
 					has_active_mission = EAG_klumb_integrate_mercia_mission
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
 				}
 			}
 		}
@@ -7344,6 +7354,7 @@ country_event = {
 					has_active_mission = EAG_klumb_integrate_mercia_mission
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
 				}
 			}
 		}
@@ -7433,6 +7444,7 @@ country_event = {
 					has_active_mission = EAG_klumb_integrate_mercia_mission
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
 				}
 			}
 		}
@@ -7522,6 +7534,7 @@ country_event = {
 					has_active_mission = EAG_klumb_integrate_mercia_mission
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
 				}
 			}
 		}
@@ -7611,6 +7624,7 @@ country_event = {
 					has_active_mission = EAG_klumb_integrate_mercia_mission
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
 				}
 			}
 		}
@@ -7700,6 +7714,7 @@ country_event = {
 					has_active_mission = EAG_klumb_integrate_mercia_mission
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
 				}
 			}
 		}
@@ -7766,6 +7781,164 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+    }
+}
+
+#Election#
+country_event = {
+	id = EAG_event.241
+	title = EAG_event.241.t
+	desc = EAG_event.241.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.241.a	
+		EAG = {
+			set_country_flag = EAG_run_as_klumb
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+	option = {
+		name = EAG_event.241.b	
+		EAG = {
+			set_country_flag = EAG_run_as_may
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.242
+	title = EAG_event.242.t
+	desc = EAG_event.242.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.242.а
+		EAG = {
+			set_country_flag = EAG_run_as_yea
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+	option = {
+		name = EAG_event.242.b
+		EAG = {
+			set_country_flag = EAG_run_as_whitehouse
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.243
+	title = EAG_event.243.t
+	desc = EAG_event.243.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.243.a
+		EAG = {
+			set_country_flag = EAG_run_as_bushell
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.244
+	title = EAG_event.244.t
+	desc = EAG_event.244.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.244.a	#Run as Volt UK
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.245
+			}
+		}
+    }
+	option = {
+		name = EAG_event.244.b	#Run as TPV
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.246
+			}
+		}
+    }
+	option = {
+		name = EAG_event.244.c	#Run as NGGU
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.247
+			}
+		}
+    }
+	option = {
+		name = EAG_event.244.d	#RESET PAGE
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.200
+			}
+		}
+	}
+}
+
+country_event = {  
+	id = EAG_event.245
+	title = EAG_event.245.t
+	desc = EAG_event.245.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.245.a
+		EAG = {
+			set_country_flag = EAG_run_as_starmer
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+}
+
+country_event = {  
+	id = EAG_event.246
+	title = EAG_event.246.t
+	desc = EAG_event.246.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.246.a
+		EAG = {
+			set_country_flag = EAG_run_as_iсke
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.247
+	title = EAG_event.247.t
+	desc = EAG_event.247.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.247.а
+		EAG = {
+			set_country_flag = EAG_run_as_bates
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+	option = {
+		name = EAG_event.247.b
+		EAG = {
+			set_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
 		}
     }
 }

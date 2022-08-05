@@ -4431,23 +4431,37 @@ shared_focus = {
 		focus = EAG_federation_of_england
 	}
 	completion_reward = {
-		add_political_power = 25
-		set_party_name = { 
-			ideology = neocameralism 
-			long_name = EAG_neocameralism_party_legitimate_long 
-			name = EAG_neocameralism_party_legitimate
-		}
-		
-		set_party_name = { 
-			ideology = hegemonism 
-			long_name = EAG_hegemonism_party_legitimate_long 
-			name = EAG_hegemonism_party_legitimate
-		}
-		
-		set_party_name = { 
-			ideology = national_bolshevism 
-			long_name = EAG_national_bolshevism_party_legitimate_long 
-			name = EAG_national_bolshevism_party_legitimate
+		EAG = {
+			add_political_power = 25
+			set_party_name = { 
+				ideology = neocameralism 
+				long_name = EAG_neocameralism_party_legitimate_long 
+				name = EAG_neocameralism_party_legitimate
+			}
+			
+			set_party_name = { 
+				ideology = hegemonism 
+				long_name = EAG_hegemonism_party_legitimate_long 
+				name = EAG_hegemonism_party_legitimate
+			}
+			
+			set_party_name = { 
+				ideology = national_bolshevism 
+				long_name = EAG_national_bolshevism_party_legitimate_long 
+				name = EAG_national_bolshevism_party_legitimate
+			}
+			set_party_name = { 
+				ideology = millenarism
+				long_name = EAG_millenarism_party_legitimate_long 
+				name = EAG_millenarism_party_legitimate
+			}
+			set_party_name = { 
+				ideology = right_populism
+				long_name = EAG_right_populism_party_legitimate_long 
+				name = EAG_right_populism_party_legitimate
+			}
+			recruit_character = EAG_david_iсke
+			recruit_character = EAG_keir_starmer
 		}
 	}
 	x = 4
@@ -5021,19 +5035,6 @@ shared_focus = {
 				id = EAG_event.200
 			}
 		}
-		set_country_flag = elections_started
-		set_party_name = { 
-			ideology = millenarism
-			long_name = EAG_millenarism_party_legitimate_long 
-			name = EAG_millenarism_party_legitimate
-		}
-		set_party_name = { 
-			ideology = right_populism
-			long_name = EAG_right_populism_party_legitimate_long 
-			name = EAG_right_populism_party_legitimate
-		}
-		recruit_character = EAG_david_iсke
-		recruit_character = EAG_keir_starmer
 	}
 	x = 12
 	y = 17
