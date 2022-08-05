@@ -6433,3 +6433,1701 @@ country_event = {
     }
 }
 
+#PROJECTS KLUMB#
+
+country_event = {
+	id = EAG_event.226 #FPE - Conscript More Soliders
+	title = EAG_event.226.t
+	desc = EAG_event.226.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+				}
+			}
+		}
+	}
+	option = {
+		name = EAG_event.226.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_FPE_issue_1
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.226.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_FPE_issue_1
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.226.c
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			EAG = {
+				add_manpower = 25000 
+				army_experience = 15
+			}
+		}	
+    }
+}
+
+country_event = {
+	id = EAG_event.227 #FPE - Advanced training techniques
+	title = EAG_event.227.t
+	desc = EAG_event.227.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+				}
+			}
+		}
+	}
+	option = {
+		name = EAG_event.227.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_FPE_issue_2
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.227.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_FPE_issue_2
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.227.c
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			EAG = {
+				add_ideas = EAG_advanced_training 
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.228 #FPE - Sell Weapons
+	title = EAG_event.228.t
+	desc = EAG_event.228.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+				}
+			}
+		}
+	}
+	option = {
+		name = EAG_event.228.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 55
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 80
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 80
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 80
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_FPE_issue_3
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.228.b
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 55
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 80
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 80
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 80
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_FPE_issue_3
+			activate_mission = EAG_klumb_mission_voting_NO
+		}		
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.228.c
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt|
+			EAG = {
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 100
+					producer = EAG
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = EAG
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 500
+					producer = EAG
+				}
+				add_political_power = 50
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.229 #EPP - More Money for construction
+	title = EAG_event.229.t
+	desc = EAG_event.229.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+				}
+			}
+		}
+	}
+	option = {
+		name = EAG_event.229.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 35
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_EPP_issue_1
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.229.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 35
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_EPP_issue_1
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.229.c
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			EAG = { 
+				add_timed_idea = { 
+					idea = EAG_fast_building 
+					days = 365
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.230 #EPP - Redistribute Supplies
+	title = EAG_event.230.t
+	desc = EAG_event.230.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+				}
+			}
+		}
+	}
+	option = {
+		name = EAG_event.230.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 35
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_EPP_issue_2
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.230.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 35
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_EPP_issue_2
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.230.c
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			EAG = {
+				all_state = {
+					add_compliance = 15
+				}
+				add_political_power = -100
+				add_stability = 0.15
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.231 #EPP - Demobilization
+	title = EAG_event.231.t
+	desc = EAG_event.231.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+				}
+			}
+		}
+	}
+	option = {
+		name = EAG_event.231.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 90
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_EPP_issue_3
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.231.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 90
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_EPP_issue_3
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.231.c
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			EAG = {
+				add_manpower = -10000 
+				add_political_power = 50
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.232 #Volt UK - European trading
+	title = EAG_event.232.t
+	desc = EAG_event.232.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+				}
+			}
+		}
+	}
+	option = {
+		name = EAG_event.232.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_VOLT_issue_1
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.232.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_VOLT_issue_1
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.232.c
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			EAG = { add_ideas = EAG_european_trading }
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.233 #Volt UK - Literature From Europe
+	title = EAG_event.233.t
+	desc = EAG_event.233.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+				}
+			}
+		}
+	}
+	option = {
+		name = EAG_event.233.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_VOLT_issue_2
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.233.b
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_VOLT_issue_2
+			activate_mission = EAG_klumb_mission_voting_NO
+		}	
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}		
+    }
+	option = {
+		name = EAG_event.233.c
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			EAG = { add_ideas = EAG_european_literature }
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.234 #Volt UK - Worker's Rights
+	title = EAG_event.234.t
+	desc = EAG_event.234.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+				}
+			}
+		}
+	}
+	option = {
+		name = EAG_event.234.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 90
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_VOLT_issue_3
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.234.b
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 90
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_VOLT_issue_3
+			activate_mission = EAG_klumb_mission_voting_NO
+		}	
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}		
+    }
+	option = {
+		name = EAG_event.234.c
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			EAG = { 
+				add_timed_idea = { 
+					idea = EAG_worker_holidays 
+					days = 90
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.235 #TPV - Normal Research
+	title = EAG_event.235.t
+	desc = EAG_event.235.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+				}
+			}
+		}
+	}
+	option = {
+		name = EAG_event.235.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 35
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_TPV_issue_1
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.235.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 35
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_TPV_issue_1
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.235.c
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			EAG = {
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = electronics
+				}
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = industry
+				}
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = armor
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.236 #TPV - Experimental Research
+	title = EAG_event.236.t
+	desc = EAG_event.236.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+				}
+			}
+		}
+	}
+	option = {
+		name = EAG_event.236.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_TPV_issue_2
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.236.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_TPV_issue_2
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.236.c
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			EAG = { 
+				add_timed_idea = { 
+					idea = EAG_experimental_research 
+					days = 365
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.237 #TPV - Fire someone because of conspiracy
+	title = EAG_event.237.t
+	desc = EAG_event.237.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+				}
+			}
+		}
+	}
+	option = {
+		name = EAG_event.237.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 45
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 90
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_TPV_issue_3
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.237.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 45
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 90
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_TPV_issue_3
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.237.c
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			EAG = {
+				retire_character = EAG_wolfgang_schneiderhan
+				retire_character = EAG_georg_klein
+				retire_character = EAG_georg_pazderski
+				add_political_power = 50
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.238 #NGGU - Hold a Fair
+	title = EAG_event.238.t
+	desc = EAG_event.238.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+				}
+			}
+		}
+	}
+	option = {
+		name = EAG_event.238.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 100
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_NGGU_issue_1
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.238.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 100
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_NGGU_issue_1
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.238.c
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			EAG = {
+				add_stability = 0.15
+				war_support_factor = 0.15
+				add_political_power = 550
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.239 #NGGU - Children n Shit
+	title = EAG_event.239.t
+	desc = EAG_event.239.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+				}
+			}
+		}
+	}
+	option = {
+		name = EAG_event.239.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 20
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 100
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_NGGU_issue_2
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.239.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 20
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 100
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_NGGU_issue_2
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.239.c
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			EAG = {
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+				add_political_power = -75
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.240 #NGGU - Rebuild Sealand
+	title = EAG_event.240.t
+	desc = EAG_event.240.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+				}
+			}
+		}
+	}
+	option = {
+		name = EAG_event.240.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 100
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_NGGU_issue_3
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.240.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 100
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_NGGU_issue_3
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.240.c
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			EAG = { 
+				add_timed_idea = { 
+					idea = EAG_rebuilding_sealand 
+					days = 365
+				}
+			}
+		}
+    }
+}
+

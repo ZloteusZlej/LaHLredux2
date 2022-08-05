@@ -3999,4 +3999,117 @@ ideas = {
 			}
 		}
 	}
+	##Klumb Elections##
+	country = {
+		EAG_advanced_training = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = 0.15
+				max_command_power_mult = 0.05
+				experience_gain_army_factor = 0.1
+			}
+		}
+		EAG_fast_building = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.2
+				industry_free_repair_factor = 0.15
+				industry_repair_factor = 0.15
+			}
+		}
+		EAG_european_trading = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = 0.25
+				local_resources_factor = 0.05
+			}
+		}
+		EAG_european_literature = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				stability_factor = -0.10
+			}
+		}
+		EAG_worker_holidays = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1	
+			}
+		}
+		EAG_experimental_research = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.25
+				stability_factor = -0.15
+				civilian_factory_use = 5
+			}
+		}
+		EAG_rebuilding_sealand = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.20
+				civilian_factory_use = 5
+			}
+		}
+	}
 }

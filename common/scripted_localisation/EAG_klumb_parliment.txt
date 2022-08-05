@@ -64,6 +64,13 @@ defined_text = {
 					compare = less_than_or_equals
 				}							
 			}
+			EAG = {
+				check_variable = {
+					var = klumb_parliament_seat_array^0
+					value = 10
+					compare = greater_than_or_equals
+				}						
+			}	
 		}
 		localization_key = EAG_klumb_parliament_integration_1
 	}
@@ -79,8 +86,15 @@ defined_text = {
 					var = EAG_ruling_party_strenght
 					value = 40
 					compare = less_than_or_equals
-				}							
+				}				
 			}
+			EAG = {
+				check_variable = {
+					var = klumb_parliament_seat_array^0
+					value = 10
+					compare = greater_than_or_equals
+				}						
+			}	
 		}
 		localization_key = EAG_klumb_parliament_integration_2
 	}
@@ -146,6 +160,49 @@ defined_text = {
 			}	
 		}
 		localization_key = EAG_klumb_parliament_integration_6
+	}
+	text = {
+		trigger = {
+			EAG = {
+				check_variable = {
+					var = klumb_parliament_seat_array^0
+					value = 10
+					compare = less_than_or_equals
+				}						
+			}	
+			EAG = {
+				check_variable = {
+					var = EAG_ruling_party_strenght
+					value = 20
+					compare = less_than_or_equals
+				}							
+			}		
+		}
+		localization_key = EAG_klumb_parliament_integration_7
+	}
+	text = {
+		trigger = {
+			EAG = {
+				check_variable = {
+					var = klumb_parliament_seat_array^0
+					value = 10
+					compare = less_than_or_equals
+				}						
+			}	
+			EAG = {
+				check_variable = {
+					var = EAG_ruling_party_strenght
+					value = 21
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EAG_ruling_party_strenght
+					value = 40
+					compare = less_than_or_equals
+				}							
+			}		
+		}
+		localization_key = EAG_klumb_parliament_integration_8
 	}
 }
 
@@ -249,5 +306,226 @@ defined_text = {
 	}
 	text = {
 		localization_key = "Error"
+	}
+}
+
+defined_text = {
+	name = GetKlumbVotingSupportLevelFPE
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_FPE_support_level
+				value = 30
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EAG_FPE_support_level_1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_FPE_support_level
+				value = 31
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EAG_FPE_support_level
+				value = 60
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EAG_FPE_support_level_2
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_FPE_support_level
+				value = 61
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = EAG_FPE_support_level_3
+	}
+	text = {
+		localization_key = "Error"
+	}
+}
+
+defined_text = {
+	name = GetKlumbVotingSupportLevelEPP
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_EPP_support_level
+				value = 30
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EAG_EPP_support_level_1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_EPP_support_level
+				value = 31
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EAG_EPP_support_level
+				value = 60
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EAG_EPP_support_level_2
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_EPP_support_level
+				value = 61
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = EAG_EPP_support_level_3
+	}
+}
+
+defined_text = {
+	name = GetKlumbVotingSupportLevelVOLT
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_VOLT_support_level
+				value = 30
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EAG_VOLT_support_level_1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_VOLT_support_level
+				value = 31
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EAG_VOLT_support_level
+				value = 60
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EAG_VOLT_support_level_2
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_VOLT_support_level
+				value = 61
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = EAG_VOLT_support_level_3
+	}
+}
+
+defined_text = {
+	name = GetKlumbVotingSupportLevelTPV
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_TPV_support_level
+				value = 30
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EAG_TPV_support_level_1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_TPV_support_level
+				value = 31
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EAG_TPV_support_level
+				value = 60
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EAG_TPV_support_level_2
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_TPV_support_level
+				value = 61
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = EAG_TPV_support_level_3
+	}
+}
+
+defined_text = {
+	name = GetKlumbVotingSupportLevelNGGU
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_NGGU_support_level
+				value = 30
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EAG_NGGU_support_level_1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_NGGU_support_level
+				value = 31
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EAG_NGGU_support_level
+				value = 60
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EAG_NGGU_support_level_2
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = EAG_NGGU_support_level
+				value = 61
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = EAG_NGGU_support_level_3
+	}
+}
+
+defined_text = {
+	name = GetKlumbVotingTotalSupport
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_voting_YES
+			}
+		}
+		localization_key = EAG_voting_total_support_ACTIVE_YES
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_voting_NO
+			}
+		}
+		localization_key = EAG_voting_total_support_ACTIVE_NO
+	}
+	text = {
+		localization_key = EAG_voting_total_support_NON_ACTIVE
 	}
 }
