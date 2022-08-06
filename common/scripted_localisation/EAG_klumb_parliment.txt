@@ -526,6 +526,189 @@ defined_text = {
 		localization_key = EAG_voting_total_support_ACTIVE_NO
 	}
 	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_started
+				OR = {
+					has_country_flag = EAG_run_as_klumb
+					has_country_flag = EAG_run_as_may
+				}
+			}
+		}
+		localization_key = EAG_elections_EPC_number
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_started
+				OR = {
+					has_country_flag = EAG_run_as_yea
+					has_country_flag = EAG_run_as_whitehouse
+				}
+			}
+		}
+		localization_key = EAG_elections_FPE_number
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_started
+				has_country_flag = EAG_run_as_bushell
+			}
+		}
+		localization_key = EAG_elections_EPP_number
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_started
+				has_country_flag = EAG_run_as_starmer
+			}
+		}
+		localization_key = EAG_elections_VOLK_number
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_started
+				has_country_flag = EAG_run_as_iсke
+			}
+		}
+		localization_key = EAG_elections_TPV_number
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_started
+				OR = {
+					has_country_flag = EAG_run_as_bates
+					has_country_flag = EAG_run_as_astley
+				}
+			}
+		}
+		localization_key = EAG_elections_NGGU_number
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+				has_country_flag = EAG_klumb_elections_EPC_victory
+			}
+		}
+		localization_key = EAG_klumb_elections_EPC_victory
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+				has_country_flag = EAG_klumb_elections_FPE_victory
+			}
+		}
+		localization_key = EAG_klumb_elections_FPE_victory
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+				has_country_flag = EAG_klumb_elections_EPE_victory
+			}
+		}
+		localization_key = EAG_klumb_elections_EPP_victory
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+				has_country_flag = EAG_klumb_elections_VOLK_victory
+			}
+		}
+		localization_key = EAG_klumb_elections_VOLK_victory
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+				has_country_flag = EAG_klumb_elections_TPV_victory
+			}
+		}
+		localization_key = EAG_klumb_elections_TPV_victory
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+				has_country_flag = EAG_klumb_elections_NGGU_victory
+			}
+		}
+		localization_key = EAG_klumb_elections_NGGU_victory
+	}
+	text = {
 		localization_key = EAG_voting_total_support_NON_ACTIVE
+	}
+}
+defined_text = {
+	name = GetKlumbElectionsLeader
+	text = {
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^5 }
+		}
+		localization_key = EAG_elections_leader_EPC
+	}
+	text = {
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^5 }
+		}
+		localization_key = EAG_elections_leader_FPE
+	}
+	text = {
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^5 }
+		}
+		localization_key = EAG_elections_leader_EPP
+	}
+	text = {
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^5 }
+		}
+		localization_key = EAG_elections_leader_VOLK
+	}
+	text = {
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^4 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^4 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^4 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^4 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^4 > klumb_parliament_seat_array^5 }
+		}
+		localization_key = EAG_elections_leader_TPV
+	}
+	text = {
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^4 }
+		}
+		localization_key = EAG_elections_leader_NGGU
+	}
+	text = {
+		localization_key = EAG_elections_leader_UNDECIDED
 	}
 }

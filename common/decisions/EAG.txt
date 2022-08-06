@@ -10714,950 +10714,6 @@ EAG_london_referendum = {
 		}
 	}
 }
-
-EAG_elections = {
-	EAG_pro_governmental_agitation = {
-		cost = 25
-		days_remove = 10
-		days_re_enable = 12
-		complete_effect = {
-			add_popularity = {
-				ideology = hegemonism
-				popularity = 0.05
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = { 
-			OR = {
-				has_country_flag = run_as_klumb
-				has_country_flag = run_as_may
-				has_country_flag = run_as_bates
-			}
-			NOT = {
-				has_country_flag = current_election_action
-			}
-		}
-		visible = {
-			OR = {
-				has_country_flag = run_as_klumb
-				has_country_flag = run_as_may
-				has_country_flag = run_as_bates
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_encourage_loyalist_rallies = {
-		cost = 40
-		days_remove = 7
-		days_re_enable = 7
-		complete_effect = {
-			add_popularity = {
-				ideology = hegemonism
-				popularity = 0.08
-			}
-			add_command_power = -15
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = { 
-			AND = {
-				command_power > 15
-				OR = {
-					has_country_flag = run_as_klumb
-					has_country_flag = run_as_may
-					has_country_flag = run_as_bates
-				}
-				NOT = {
-					has_country_flag = current_election_action
-				}
-			}
-		}
-		visible = {
-			AND = {
-				command_power > 15
-				OR = {
-					has_country_flag = run_as_klumb
-					has_country_flag = run_as_may
-					has_country_flag = run_as_bates
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_discredit_opponents_1 = {
-		cost = 30
-		days_remove = 10
-		days_re_enable = 12
-		complete_effect = {
-			add_popularity = {
-				ideology = socialism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = right_populism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = national_bolshevism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = millenarism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = neocameralism
-				popularity = -0.04
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = {
-			OR = {
-				has_country_flag = run_as_klumb
-				has_country_flag = run_as_may
-				has_country_flag = run_as_bates
-			}
-			NOT = {
-				has_country_flag = current_election_action
-			}
-		}
-		visible = {
-			OR = {
-				has_country_flag = run_as_klumb
-				has_country_flag = run_as_may
-				has_country_flag = run_as_bates
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_right_wing_agitation = {
-		cost = 25
-		days_remove = 10
-		days_re_enable = 12
-		complete_effect = {
-			add_popularity = {
-				ideology = neocameralism
-				popularity = 0.05
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = { 
-			OR = {
-				has_country_flag = run_as_whitehouse
-				has_country_flag = run_as_yea
-			}
-			NOT = {
-				has_country_flag = current_election_action
-			}
-		}
-		visible = {
-			OR = {
-				has_country_flag = run_as_whitehouse
-				has_country_flag = run_as_yea
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_encourage_nationalist_rallies = {
-		cost = 40
-		days_remove = 7
-		days_re_enable = 7
-		complete_effect = {
-			add_popularity = {
-				ideology = neocameralism
-				popularity = 0.08
-			}
-			add_command_power = -15
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = { 
-			AND = {
-				command_power > 15
-				OR = {
-					has_country_flag = run_as_whitehouse
-					has_country_flag = run_as_yea
-				}
-				NOT = {
-					has_country_flag = current_election_action
-				}
-			}
-		}
-		visible = {
-			AND = {
-				command_power > 15
-				OR = {
-					has_country_flag = run_as_whitehouse
-					has_country_flag = run_as_yea
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_discredit_opponents_2 = {
-		cost = 30
-		days_remove = 10
-		days_re_enable = 12
-		complete_effect = {
-			add_popularity = {
-				ideology = socialism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = hegemonism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = national_bolshevism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = millenarism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = right_populism
-				popularity = -0.04
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = {
-			OR = {
-				has_country_flag = run_as_whitehouse
-				has_country_flag = run_as_yea
-			}
-			NOT = {
-				has_country_flag = current_election_action
-			}
-		}
-		visible = {
-			OR = {
-				has_country_flag = run_as_whitehouse
-				has_country_flag = run_as_yea
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_left_wing_agitation = {
-		cost = 25
-		days_remove = 10
-		days_re_enable = 12
-		complete_effect = {
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = { 
-			OR = {
-				has_country_flag = run_as_starmer
-			}
-			NOT = {
-				has_country_flag = current_election_action
-			}
-		}
-		visible = {
-			OR = {
-				has_country_flag = run_as_starmer
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_encourage_labour_rallies = {
-		cost = 40
-		days_remove = 7
-		days_re_enable = 7
-		complete_effect = {
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.08
-			}
-			add_command_power = -15
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = { 
-			AND = {
-				command_power > 15
-				OR = {
-					has_country_flag = run_as_starmer
-				}
-				NOT = {
-					has_country_flag = current_election_action
-				}
-			}
-		}
-		visible = {
-			AND = {
-				command_power > 15
-				OR = {
-					has_country_flag = run_as_starmer
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_discredit_opponents_3 = {
-		cost = 30
-		days_remove = 10
-		days_re_enable = 12
-		complete_effect = {
-			add_popularity = {
-				ideology = right_populism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = hegemonism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = national_bolshevism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = millenarism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = neocameralism
-				popularity = -0.04
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = {
-			OR = {
-				has_country_flag = run_as_starmer
-			}
-			NOT = {
-				has_country_flag = current_election_action
-			}
-		}
-		visible = {
-			OR = {
-				has_country_flag = run_as_starmer
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_regionalist_agitation = {
-		cost = 25
-		days_remove = 10
-		days_re_enable = 12
-		complete_effect = {
-			add_popularity = {
-				ideology = national_bolshevism
-				popularity = 0.05
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = { 
-			OR = {
-				has_country_flag = run_as_bushell
-			}
-			NOT = {
-				has_country_flag = current_election_action
-			}
-		}
-		visible = {
-			OR = {
-				has_country_flag = run_as_bushell
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_encourage_farmers_rallies = {
-		cost = 40
-		days_remove = 7
-		days_re_enable = 7
-		complete_effect = {
-			add_popularity = {
-				ideology = national_bolshevism
-				popularity = 0.08
-			}
-			add_command_power = -15
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = { 
-			AND = {
-				command_power > 15
-				OR = {
-					has_country_flag = run_as_bushell
-				}
-				NOT = {
-					has_country_flag = current_election_action
-				}
-			}
-		}
-		visible = {
-			AND = {
-				command_power > 15
-				OR = {
-					has_country_flag = run_as_bushell
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_discredit_opponents_4 = {
-		cost = 30
-		days_remove = 10
-		days_re_enable = 12
-		complete_effect = {
-			add_popularity = {
-				ideology = right_populism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = hegemonism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = socialism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = millenarism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = neocameralism
-				popularity = -0.04
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = {
-			OR = {
-				has_country_flag = run_as_bushell
-			}
-			NOT = {
-				has_country_flag = current_election_action
-			}
-		}
-		visible = {
-			OR = {
-				has_country_flag = run_as_bushell
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_pro_icke_agitation = {
-		cost = 25
-		days_remove = 10
-		days_re_enable = 12
-		complete_effect = {
-			add_popularity = {
-				ideology = millenarism
-				popularity = 0.05
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = { 
-			OR = {
-				has_country_flag = run_as_iсke
-			}
-			NOT = {
-				has_country_flag = current_election_action
-			}
-		}
-		visible = {
-			OR = {
-				has_country_flag = run_as_iсke
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_encourage_new_ageist_rallies = {
-		cost = 40
-		days_remove = 7
-		days_re_enable = 7
-		complete_effect = {
-			add_popularity = {
-				ideology = national_bolshevism
-				popularity = 0.08
-			}
-			add_command_power = -15
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = { 
-			AND = {
-				command_power > 15
-				OR = {
-					has_country_flag = run_as_iсke
-				}
-				NOT = {
-					has_country_flag = current_election_action
-				}
-			}
-		}
-		visible = {
-			AND = {
-				command_power > 15
-				OR = {
-					has_country_flag = run_as_iсke
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_discredit_opponents_5 = {
-		cost = 30
-		days_remove = 10
-		days_re_enable = 12
-		complete_effect = {
-			add_popularity = {
-				ideology = right_populism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = hegemonism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = socialism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = national_bolshevism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = neocameralism
-				popularity = -0.04
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = {
-			OR = {
-				has_country_flag = run_as_iсke
-			}
-			NOT = {
-				has_country_flag = current_election_action
-			}
-		}
-		visible = {
-			OR = {
-				has_country_flag = run_as_iсke
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_populist_agitation = {
-		cost = 25
-		days_remove = 10
-		days_re_enable = 12
-		complete_effect = {
-			add_popularity = {
-				ideology = right_populism
-				popularity = 0.05
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = { 
-			OR = {
-				has_country_flag = run_as_astley
-			}
-			NOT = {
-				has_country_flag = current_election_action
-			}
-		}
-		visible = {
-			OR = {
-				has_country_flag = run_as_astley
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_encourage_youth_rallies = {
-		cost = 40
-		days_remove = 7
-		days_re_enable = 7
-		complete_effect = {
-			add_popularity = {
-				ideology = right_populism
-				popularity = 0.08
-			}
-			add_command_power = -15
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = { 
-			AND = {
-				command_power > 15
-				OR = {
-					has_country_flag = run_as_astley
-				}
-				NOT = {
-					has_country_flag = current_election_action
-				}
-			}
-		}
-		visible = {
-			AND = {
-				command_power > 15
-				OR = {
-					has_country_flag = run_as_astley
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_discredit_opponents_6 = {
-		cost = 30
-		days_remove = 10
-		days_re_enable = 12
-		complete_effect = {
-			add_popularity = {
-				ideology = millenarism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = hegemonism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = socialism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = national_bolshevism
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = neocameralism
-				popularity = -0.04
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = {
-			OR = {
-				has_country_flag = run_as_astley
-			}
-			NOT = {
-				has_country_flag = current_election_action
-			}
-		}
-		visible = {
-			OR = {
-				has_country_flag = run_as_astley
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_frame_government_officials = {
-		cost = 65
-		days_remove = 15
-		days_re_enable = 45
-		complete_effect = {
-			add_popularity = {
-				ideology = hegemonism
-				popularity = -0.15
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = {
-			NOT = {
-				AND = {
-					has_country_flag = run_as_klumb
-					has_country_flag = run_as_may
-					has_country_flag = run_as_bates
-					has_country_flag = current_election_action
-				}
-			}
-		}
-		visible = {
-			NOT = {
-				AND = {
-					has_country_flag = run_as_klumb
-					has_country_flag = run_as_may
-					has_country_flag = run_as_bates
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_frame_freedom_party = {
-		cost = 65
-		days_remove = 15
-		days_re_enable = 45
-		complete_effect = {
-			add_popularity = {
-				ideology = neocameralism
-				popularity = -0.15
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = {
-			NOT = {
-				AND = {
-					has_country_flag = run_as_whitehouse
-					has_country_flag = run_as_yea
-					has_country_flag = current_election_action
-				}
-			}
-		}
-		visible = {
-			NOT = {
-				AND = {
-					has_country_flag = run_as_whitehouse
-					has_country_flag = run_as_yea
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_frame_uk_volt = {
-		cost = 65
-		days_remove = 15
-		days_re_enable = 45
-		complete_effect = {
-			add_popularity = {
-				ideology = socialism
-				popularity = -0.15
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = {
-			NOT = {
-				AND = {
-					has_country_flag = run_as_starmer
-					has_country_flag = current_election_action
-				}
-			}
-		}
-		visible = {
-			NOT = {
-				AND = {
-					has_country_flag = run_as_starmer
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_frame_peoples_party = {
-		cost = 65
-		days_remove = 15
-		days_re_enable = 45
-		complete_effect = {
-			add_popularity = {
-				ideology = national_bolshevism
-				popularity = -0.15
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = {
-			NOT = {
-				AND = {
-					has_country_flag = run_as_bushell
-					has_country_flag = current_election_action
-				}
-			}
-		}
-		visible = {
-			NOT = {
-				AND = {
-					has_country_flag = run_as_bushell
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_frame_icke = {
-		cost = 65
-		days_remove = 15
-		days_re_enable = 45
-		complete_effect = {
-			add_popularity = {
-				ideology = millenarism
-				popularity = -0.15
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = {
-			NOT = {
-				AND = {
-					has_country_flag = run_as_iсke
-					has_country_flag = current_election_action
-				}
-			}
-		}
-		visible = {
-			NOT = {
-				AND = {
-					has_country_flag = run_as_iсke
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
-	EAG_frame_astley = {
-		cost = 65
-		days_remove = 15
-		days_re_enable = 45
-		complete_effect = {
-			add_popularity = {
-				ideology = right_populism
-				popularity = -0.15
-			}
-			set_country_flag = current_election_action
-		}
-		remove_effect = {
-			clr_country_flag = current_election_action
-		}
-		available = {
-			NOT = {
-				AND = {
-					has_country_flag = run_as_astley
-					has_country_flag = current_election_action
-				}
-			}
-		}
-		visible = {
-			NOT = {
-				AND = {
-					has_country_flag = run_as_astley
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-}
 ###PARLIAMENT STUFF###
 EAG_parliament_gui_decision = {
 	EAG_integrate_kent = {
@@ -17177,7 +16233,7 @@ EAG_klumb_parliament_gui_decision = {
 		cancel_trigger = {
 			EAG = {
 				OR = {
-					has_country_flag = EAG_elections_ended
+					has_country_flag = EAG_klumb_elections_ended
 					has_country_flag = EAG_elections_sabotaged
 				}
 			}
@@ -17232,7 +16288,7 @@ EAG_klumb_parliament_gui_decision = {
 		cancel_trigger = {
 			EAG = {
 				OR = {
-					has_country_flag = EAG_elections_ended
+					has_country_flag = EAG_klumb_elections_ended
 					has_country_flag = EAG_elections_sabotaged
 				}
 			}
@@ -17313,7 +16369,7 @@ EAG_klumb_parliament_gui_decision = {
 		cancel_trigger = {
 			EAG = {
 				OR = {
-					has_country_flag = EAG_elections_ended
+					has_country_flag = EAG_klumb_elections_ended
 					has_country_flag = EAG_elections_sabotaged
 				}
 			}
@@ -17396,7 +16452,7 @@ EAG_klumb_parliament_gui_decision = {
 		cancel_trigger = {
 			EAG = {
 				OR = {
-					has_country_flag = EAG_elections_ended
+					has_country_flag = EAG_klumb_elections_ended
 					has_country_flag = EAG_elections_sabotaged
 				}
 			}
@@ -17479,7 +16535,7 @@ EAG_klumb_parliament_gui_decision = {
 		cancel_trigger = {
 			EAG = {
 				OR = {
-					has_country_flag = EAG_elections_ended
+					has_country_flag = EAG_klumb_elections_ended
 					has_country_flag = EAG_elections_sabotaged
 				}
 			}
@@ -17562,7 +16618,7 @@ EAG_klumb_parliament_gui_decision = {
 		cancel_trigger = {
 			EAG = {
 				OR = {
-					has_country_flag = EAG_elections_ended
+					has_country_flag = EAG_klumb_elections_ended
 					has_country_flag = EAG_elections_sabotaged
 				}
 			}
@@ -17632,6 +16688,291 @@ EAG_klumb_parliament_gui_decision = {
 			factor = 100
 		}
     }
+	EAG_klumb_elections_lobbying_title = {
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+		visible = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_started
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_elections_EPC_power = { #Administrative resource
+		cost = 5
+		days_remove = 45
+		modifier = {
+			stability_weekly = -0.05
+		}
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+			}
+		}
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_lobbying_effort_elections
+			}
+		}	
+		remove_effect = {
+			set_temp_variable = { klumb_temp_member = 1 }
+			set_temp_variable = { klumb_temp_seats = 10 }
+			klumb_modify_parliament_seat = yes
+			EAG = {
+				clr_country_flag = EAG_klumb_lobbying_effort_elections
+			}
+		}
+		available = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_lobbying_effort_elections
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_started
+				OR = {
+					has_country_flag = EAG_run_as_may
+					has_country_flag = EAG_run_as_klumb
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_elections_EPP_power = { #Mass Propaganda
+		cost = 175
+		days_remove = 45
+		fire_only_once = yes
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_lobbying_effort_elections
+			}
+		}	
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { klumb_temp_member = 3 }
+			set_temp_variable = { klumb_temp_seats = 50 }
+			klumb_modify_parliament_seat = yes
+			EAG = {
+				clr_country_flag = EAG_klumb_lobbying_effort_elections
+			}
+		}
+		available = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_lobbying_effort_elections
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_started
+				has_country_flag = EAG_run_as_bushell
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_elections_VOLT_power = { #European Connections
+		cost = 75
+		days_remove = 45
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_lobbying_effort_elections
+			}
+		}	
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { klumb_temp_member = 1 }
+			set_temp_variable = { klumb_temp_seats = -10 }
+			klumb_modify_parliament_seat = yes
+			set_temp_variable = { klumb_temp_member = 2 }
+			set_temp_variable = { klumb_temp_seats = -10 }
+			klumb_modify_parliament_seat = yes
+			set_temp_variable = { klumb_temp_member = 3 }
+			set_temp_variable = { klumb_temp_seats = -10 }
+			klumb_modify_parliament_seat = yes
+			set_temp_variable = { klumb_temp_member = 5 }
+			set_temp_variable = { klumb_temp_seats = -10 }
+			klumb_modify_parliament_seat = yes
+			set_temp_variable = { klumb_temp_member = 6 }
+			set_temp_variable = { klumb_temp_seats = -10 }
+			klumb_modify_parliament_seat = yes
+			EAG = {
+				clr_country_flag = EAG_klumb_lobbying_effort_elections
+			}
+		}
+		available = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_lobbying_effort_elections
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_started
+				has_country_flag = EAG_run_as_starmer
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_elections_TPV_power = { #Spun A Conspiracy 
+		cost = 10
+		days_remove = 30
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_lobbying_effort_elections
+			}
+		}	
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+			}
+		}
+		remove_effect = {
+			random_list = {
+				25 = {
+					set_temp_variable = { klumb_temp_member = 5 }
+					set_temp_variable = { klumb_temp_seats = 1 }
+					klumb_modify_parliament_seat = yes
+				}
+				25 = {
+					set_temp_variable = { klumb_temp_member = 5 }
+					set_temp_variable = { klumb_temp_seats = 5 }
+					klumb_modify_parliament_seat = yes
+				}
+				25 = {
+					set_temp_variable = { klumb_temp_member = 5 }
+					set_temp_variable = { klumb_temp_seats = -2 }
+					klumb_modify_parliament_seat = yes
+				}
+				15 = {
+					set_temp_variable = { klumb_temp_member = 5 }
+					set_temp_variable = { klumb_temp_seats = 10 }
+					klumb_modify_parliament_seat = yes
+				}
+				10 = {
+					set_temp_variable = { klumb_temp_member = 5 }
+					set_temp_variable = { klumb_temp_seats = -5 }
+					klumb_modify_parliament_seat = yes
+				}
+			}
+			EAG = {
+				clr_country_flag = EAG_klumb_lobbying_effort_elections
+			}
+		}
+		available = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_lobbying_effort_elections
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_started
+				has_country_flag = EAG_run_as_iсke
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_elections_NGGU_power = { #Charity Campaign
+		cost = 45
+		days_remove = 45
+        complete_effect = {
+		}	
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { klumb_temp_member = 6 }
+			set_temp_variable = { klumb_temp_seats = 5 }
+			klumb_modify_parliament_seat = yes
+		}
+		available = {
+		}
+		visible = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_started
+				OR = {
+					has_country_flag = EAG_run_as_bates
+					has_country_flag = EAG_run_as_astley
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	EAG_elections_FPE_power = { #Raids
+		days_remove = 45
+		custom_cost_trigger = {
+			has_command_power > 20
+		}
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+			}
+		}
+		custom_cost_text = decision_cost_CP_20
+        complete_effect = {
+            EAG = {
+				set_country_flag = EAG_klumb_lobbying_effort_elections
+			}
+		}	
+		remove_effect = {
+			set_temp_variable = { klumb_temp_member = 2 }
+			set_temp_variable = { klumb_temp_seats = 10 }
+			klumb_modify_parliament_seat = yes
+			EAG = {
+				clr_country_flag = EAG_klumb_lobbying_effort_elections
+			}
+		}
+		available = {
+			NOT = {
+				EAG = {
+					has_country_flag = EAG_klumb_lobbying_effort_elections
+				}
+			}
+		}
+		visible = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_started
+				OR = {
+					has_country_flag = EAG_run_as_yea
+					has_country_flag = EAG_run_as_whitehouse
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
 	EAG_klumb_elections_tiny_lobbying = {
 		cost = 50
 		days_remove = 25
@@ -17639,7 +16980,12 @@ EAG_klumb_parliament_gui_decision = {
             EAG = {
 				set_country_flag = EAG_klumb_lobbying_effort_elections
 			}
-		}	
+		}
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+			}
+		}		
 		remove_effect = {
 			EAG = {
 				clr_country_flag = EAG_klumb_lobbying_effort_elections
@@ -17738,6 +17084,11 @@ EAG_klumb_parliament_gui_decision = {
 				set_country_flag = EAG_klumb_lobbying_effort_elections
 			}
 		}	
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+			}
+		}
 		remove_effect = {
 			EAG = {
 				clr_country_flag = EAG_klumb_lobbying_effort_elections
@@ -17836,6 +17187,11 @@ EAG_klumb_parliament_gui_decision = {
 				set_country_flag = EAG_klumb_lobbying_effort_elections
 			}
 		}	
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+			}
+		}
 		remove_effect = {
 			EAG = {
 				clr_country_flag = EAG_klumb_lobbying_effort_elections
@@ -17926,6 +17282,26 @@ EAG_klumb_parliament_gui_decision = {
 			factor = 100
 		}
 	}
+	EAG_klumb_elections_sabotage_title = {
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+			}
+		}
+		visible = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_started
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
 	EAG_sabotage_opponents = {
 		cost = 30
 		days_remove = 10
@@ -17933,6 +17309,11 @@ EAG_klumb_parliament_gui_decision = {
 		complete_effect = {
 			EAG = {
 				set_country_flag = EAG_elections_sabotaged
+			}
+		}
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
 			}
 		}
 		remove_effect = {
@@ -17961,6 +17342,11 @@ EAG_klumb_parliament_gui_decision = {
 		complete_effect = {
 			EAG = {
 				set_country_flag = EAG_current_election_action
+			}
+		}
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
 			}
 		}
 		remove_effect = {
@@ -18008,6 +17394,11 @@ EAG_klumb_parliament_gui_decision = {
 				set_country_flag = EAG_current_election_action
 			}
 		}
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+			}
+		}
 		remove_effect = {
 			EAG = {
 				clr_country_flag = EAG_current_election_action
@@ -18053,6 +17444,11 @@ EAG_klumb_parliament_gui_decision = {
 				set_country_flag = EAG_current_election_action
 			}
 		}
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+			}
+		}
 		remove_effect = {
 			EAG = {
 				clr_country_flag = EAG_current_election_action
@@ -18094,6 +17490,11 @@ EAG_klumb_parliament_gui_decision = {
 		complete_effect = {
 			EAG = {
 				set_country_flag = EAG_current_election_action
+			}
+		}
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
 			}
 		}
 		remove_effect = {
@@ -18139,6 +17540,11 @@ EAG_klumb_parliament_gui_decision = {
 				set_country_flag = EAG_current_election_action
 			}
 		}
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+			}
+		}
 		remove_effect = {
 			EAG = {
 				clr_country_flag = EAG_current_election_action
@@ -18182,6 +17588,11 @@ EAG_klumb_parliament_gui_decision = {
 				set_country_flag = EAG_current_election_action
 			}
 		}
+		cancel_trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_ended
+			}
+		}
 		remove_effect = {
 			EAG = {
 				clr_country_flag = EAG_current_election_action
@@ -18218,9 +17629,24 @@ EAG_klumb_parliament_gui_decision = {
 			factor = 100
 		}
 	}
+	EAG_klumb_elections_actions_title = {
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+		visible = {
+			EAG = {
+				has_country_flag = EAG_klumb_elections_started
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
 	EAG_election_campaign = {
 		is_good = yes                                        
-        days_mission_timeout = 183
+        days_mission_timeout = 40
 		allowed = { tag = EAG }
         available = {                           
 			hidden_trigger = {
@@ -18228,12 +17654,18 @@ EAG_klumb_parliament_gui_decision = {
 			}
         }
 		is_good = yes
-		activation = {                          
+		activation = {  
            has_country_flag = EAG_klumb_elections_started			
         }
 		timeout_effect = {
-			set_country_flag = EAG_klumb_elections_ended
 			clr_country_flag = EAG_klumb_elections_started
+			set_country_flag = EAG_klumb_elections_ended
+			EAG = {
+				country_event = {
+					days = 0
+					id = EAG_event.201
+				}
+			}
 		}
 		complete_effect = {
         }

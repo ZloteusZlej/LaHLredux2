@@ -5018,7 +5018,7 @@ country_event = {
 		}
     }
 	option = {
-		name = EAG_event.200.d	#RESET PAGE
+		name = EAG_event.200.e	#RESET PAGE
 		EAG = {
 			country_event = {
 				days = 0
@@ -5035,134 +5035,545 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.201.a	
-		add_stability = 0.05
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^5 }
+			EAG = {
+				has_country_flag = EAG_run_as_klumb
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			add_stability = 0.10
+			add_political_power = 100
+			clr_country_flag = EAG_run_as_klumb
+			set_country_flag = EAG_klumb_elections_EPC_victory
+		}
     }
-}
-
-country_event = {
-	id = EAG_event.202
-	title = EAG_event.202.t
-	desc = EAG_event.202.d
-	is_triggered_only = yes	
 	option = {
-		name = EAG_event.202.a	
+		name = EAG_event.201.b
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^5 }
+			EAG = {
+				has_country_flag = EAG_run_as_may
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
 		EAG = {
 			retire_country_leader = yes
 			promote_character = EAG_theresa_may
+			clr_country_flag = EAG_run_as_may
+			set_country_flag = EAG_klumb_elections_EPC_victory
 		}
     }
-}
-
-country_event = {
-	id = EAG_event.203
-	title = EAG_event.203.t
-	desc = EAG_event.203.d
-	is_triggered_only = yes	
 	option = {
-		name = EAG_event.203.a	
+		name = EAG_event.201.c
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^5 }
+			EAG = {
+				NOT = {
+					OR = {
+						has_country_flag = EAG_run_as_may
+						has_country_flag = EAG_run_as_klumb
+					}
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			retire_country_leader = yes
+			promote_character = EAG_theresa_may
+			add_political_power = -100
+			clr_country_flag = EAG_run_as_klumb
+			clr_country_flag = EAG_run_as_may
+			clr_country_flag = EAG_run_as_yea
+			clr_country_flag = EAG_run_as_whitehouse
+			clr_country_flag = EAG_run_as_bushell
+			clr_country_flag = EAG_run_as_starmer
+			clr_country_flag = EAG_run_as_iсke
+			clr_country_flag = EAG_run_as_bates
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_EPC_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.e
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^5 }
+			EAG = {
+				has_country_flag = EAG_run_as_yea
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
 		EAG = {
 			set_politics = {
 				ruling_party = neocameralism
 			}
 			retire_country_leader = yes
 			promote_character = EAG_philip_yea
+			clr_country_flag = EAG_run_as_yea
+			set_country_flag = EAG_klumb_elections_FPE_victory
 		}
     }
-}
-
-country_event = {
-	id = EAG_event.204
-	title = EAG_event.204.t
-	desc = EAG_event.204.d
-	is_triggered_only = yes	
 	option = {
-		name = EAG_event.204.a	
-		EAG = {
-			set_politics = {
-				ruling_party = socialism
-			}
-			retire_country_leader = yes
-			promote_character = EAG_keir_starmer
-		}
-    }
-}
-
-country_event = {
-	id = EAG_event.205
-	title = EAG_event.205.t
-	desc = EAG_event.205.d
-	is_triggered_only = yes	
-	option = {
-		name = EAG_event.205.a	
-		EAG = {
-			set_politics = {
-				ruling_party = national_bolshevism
-			}
-			retire_country_leader = yes
-			promote_character = EAG_garry_bushell
-		}
-    }
-}
-
-country_event = {
-	id = EAG_event.206
-	title = EAG_event.206.t
-	desc = EAG_event.206.d
-	is_triggered_only = yes	
-	option = {
-		name = EAG_event.206.a	
-		EAG = {
-			set_politics = {
-				ruling_party = millennialism
-			}
-			retire_country_leader = yes
-			promote_character = EAG_david_iсke
-		}
-    }
-}
-
-country_event = {
-	id = EAG_event.207
-	title = EAG_event.207.t
-	desc = EAG_event.207.d
-	is_triggered_only = yes	
-	option = {
-		name = EAG_event.207.a	
-		EAG = {
-			set_politics = {
-				ruling_party = right_populism
+		name = EAG_event.201.f
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^5 }
+			EAG = {
+				has_country_flag = EAG_run_as_whitehouse
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
 			}
 		}
-    }
-}
-
-country_event = {
-	id = EAG_event.208
-	title = EAG_event.208.t
-	desc = EAG_event.208.d
-	is_triggered_only = yes	
-	option = {
-		name = EAG_event.208.a	
 		EAG = {
 			set_politics = {
 				ruling_party = neocameralism
 			}
 			retire_country_leader = yes
 			promote_character = EAG_alex_whitehouse
+			clr_country_flag = EAG_run_as_whitehouse
+			set_country_flag = EAG_klumb_elections_FPE_victory
 		}
     }
-}
-
-country_event = {
-	id = EAG_event.209
-	title = EAG_event.209.t
-	desc = EAG_event.209.d
-	is_triggered_only = yes	
 	option = {
-		name = EAG_event.209.a	
+		name = EAG_event.201.g
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^5 }
+			EAG = {
+				NOT = {
+					OR = {
+						has_country_flag = EAG_run_as_yea
+						has_country_flag = EAG_run_as_whitehouse
+					}
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = neocameralism
+			}
+			retire_country_leader = yes
+			promote_character = EAG_alex_whitehouse
+			add_political_power = -100
+			clr_country_flag = EAG_run_as_klumb
+			clr_country_flag = EAG_run_as_may
+			clr_country_flag = EAG_run_as_yea
+			clr_country_flag = EAG_run_as_whitehouse
+			clr_country_flag = EAG_run_as_bushell
+			clr_country_flag = EAG_run_as_starmer
+			clr_country_flag = EAG_run_as_iсke
+			clr_country_flag = EAG_run_as_bates
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_FPE_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.h
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^5 }
+			EAG = {
+				has_country_flag = EAG_run_as_bushell
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = national_bolshevism
+			}
+			retire_country_leader = yes
+			promote_character = EAG_garry_bushell
+			clr_country_flag = EAG_run_as_bushell
+			set_country_flag = EAG_klumb_elections_EPP_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.i
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^5 }
+			EAG = {
+				NOT = {
+					has_country_flag = EAG_run_as_bushell
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = national_bolshevism
+			}
+			retire_country_leader = yes
+			promote_character = EAG_garry_bushell
+			add_political_power = -100
+			clr_country_flag = EAG_run_as_klumb
+			clr_country_flag = EAG_run_as_may
+			clr_country_flag = EAG_run_as_yea
+			clr_country_flag = EAG_run_as_whitehouse
+			clr_country_flag = EAG_run_as_bushell
+			clr_country_flag = EAG_run_as_starmer
+			clr_country_flag = EAG_run_as_iсke
+			clr_country_flag = EAG_run_as_bates
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_EPP_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.j
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^5 }
+			EAG = {
+				has_country_flag = EAG_run_as_starmer
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = socialism
+			}
+			retire_country_leader = yes
+			promote_character = EAG_keir_starmer
+			clr_country_flag = EAG_run_as_starmer
+			set_country_flag = EAG_klumb_elections_VOLK_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.k
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^5 }
+			EAG = {
+				NOT = {
+					has_country_flag = EAG_run_as_starmer
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = socialism
+			}
+			retire_country_leader = yes
+			promote_character = EAG_keir_starmer
+			add_political_power = -100
+			clr_country_flag = EAG_run_as_klumb
+			clr_country_flag = EAG_run_as_may
+			clr_country_flag = EAG_run_as_yea
+			clr_country_flag = EAG_run_as_whitehouse
+			clr_country_flag = EAG_run_as_bushell
+			clr_country_flag = EAG_run_as_starmer
+			clr_country_flag = EAG_run_as_iсke
+			clr_country_flag = EAG_run_as_bates
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_VOLK_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.l
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^4 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^4 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^4 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^4 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^4 > klumb_parliament_seat_array^5 }
+			EAG = {
+				has_country_flag = EAG_run_as_iсke
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = millenarism
+			}
+			retire_country_leader = yes
+			promote_character = EAG_david_iсke
+			clr_country_flag = EAG_run_as_iсke
+			set_country_flag = EAG_klumb_elections_TPV_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.m
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^5 }
+			EAG = {
+				NOT = {
+					has_country_flag = EAG_run_as_iсke
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = millennialism
+			}
+			retire_country_leader = yes
+			promote_character = EAG_david_iсke
+			add_political_power = -100
+			clr_country_flag = EAG_run_as_klumb
+			clr_country_flag = EAG_run_as_may
+			clr_country_flag = EAG_run_as_yea
+			clr_country_flag = EAG_run_as_whitehouse
+			clr_country_flag = EAG_run_as_bushell
+			clr_country_flag = EAG_run_as_starmer
+			clr_country_flag = EAG_run_as_iсke
+			clr_country_flag = EAG_run_as_bates
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_TPV_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.o
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^1 }
+			EAG = {
+				has_country_flag = EAG_run_as_astley
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = right_populism
+			}
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_NGGU_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.p
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^1 }
+			EAG = {
+				has_country_flag = EAG_run_as_bates
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
 		EAG = {
 			retire_country_leader = yes
 			promote_character = EAG_michael_bates
+			clr_country_flag = EAG_run_as_bates
+			set_country_flag = EAG_klumb_elections_NGGU_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.q
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^1 }
+			EAG = {
+				NOT = {
+					OR = {
+						has_country_flag = EAG_run_as_bates
+						has_country_flag = EAG_run_as_astley
+					}
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			retire_country_leader = yes
+			promote_character = EAG_michael_bates
+			add_political_power = -100
+			clr_country_flag = EAG_run_as_klumb
+			clr_country_flag = EAG_run_as_may
+			clr_country_flag = EAG_run_as_yea
+			clr_country_flag = EAG_run_as_whitehouse
+			clr_country_flag = EAG_run_as_bushell
+			clr_country_flag = EAG_run_as_starmer
+			clr_country_flag = EAG_run_as_iсke
+			clr_country_flag = EAG_run_as_bates
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_NGGU_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.r
+		trigger = {
+			EAG = {
+				check_variable = {
+					var = nsis_concession
+					value = 5
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		EAG = {
+			retire_country_leader = yes
+			set_politics = {
+				ruling_party = right_populism
+			}
+			add_political_power = -200
+			clr_country_flag = EAG_run_as_klumb
+			clr_country_flag = EAG_run_as_may
+			clr_country_flag = EAG_run_as_yea
+			clr_country_flag = EAG_run_as_whitehouse
+			clr_country_flag = EAG_run_as_bushell
+			clr_country_flag = EAG_run_as_starmer
+			clr_country_flag = EAG_run_as_iсke
+			clr_country_flag = EAG_run_as_bates
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_NGGU_victory
+			set_temp_variable = { klumb_temp_member = 6 }
+			set_temp_variable = { klumb_temp_seats = 200 }
+			klumb_modify_parliament_seat = yes
 		}
     }
 }
