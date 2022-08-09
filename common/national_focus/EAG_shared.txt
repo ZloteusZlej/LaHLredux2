@@ -5049,177 +5049,21 @@ shared_focus = {
 	}
 	available = {
 		hidden_trigger = {
-			always = false
+			EAG = {
+				NOT = {
+					OR = {
+						has_country_flag = EAG_klumb_mission_voting_YES
+						has_country_flag = EAG_klumb_mission_voting_NO
+					}
+				}
+			}
 		}
 	}
 	bypass = {
 		has_country_flag = elections_ended
 	}
 	completion_reward = {
-		custom_effect_tooltip = EAG_elections_tt
-			if = {
-				limit = {
-					AND = {
-						check_variable = {
-							var = party_popularity@hegemonism
-							value = highest_party_popularity
-							compare = equals
-						}
-						NOT = {
-							has_country_flag = run_as_may
-							has_country_flag = run_as_bates
-						}
-					}
-				}
-				EAG = {
-					country_event = {
-						days = 1
-						id = EAG_event.201
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					AND = {
-						check_variable = {
-							var = party_popularity@hegemonism
-							value = highest_party_popularity
-							compare = equals
-						}
-						has_country_flag = run_as_may
-					}
-				}
-				EAG = {
-					country_event = {
-						days = 1
-						id = EAG_event.202
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					AND = {
-						check_variable = {
-							var = party_popularity@hegemonism
-							value = highest_party_popularity
-							compare = equals
-						}
-						has_country_flag = run_as_bates
-					}
-				}
-				EAG = {
-					country_event = {
-						days = 1
-						id = EAG_event.209
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					AND = {
-						check_variable = {
-							var = party_popularity@neocameralism
-							value = highest_party_popularity
-							compare = equals
-						}
-						has_country_flag = run_as_yea
-						NOT = {
-							has_country_flag = run_as_whitehouse
-						}
-					}
-				}
-				EAG = {
-					country_event = {
-						days = 1
-						id = EAG_event.208
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					AND = {
-						check_variable = {
-							var = party_popularity@neocameralism
-							value = highest_party_popularity
-							compare = equals
-						}
-						has_country_flag = run_as_whitehouse
-					}
-				}
-				EAG = {
-					country_event = {
-						days = 1
-						id = EAG_event.209
-					}
-				}
-			}
-			else_if = {
-				limit = {
-						check_variable = {
-							var = party_popularity@socialism
-							value = highest_party_popularity
-							compare = equals
-						}
-				}
-				EAG = {
-					country_event = {
-						days = 1
-						id = EAG_event.204
-					}
-				}
-			}
-			else_if = {
-				limit = {
-						check_variable = {
-							var = party_popularity@national_bolshevism
-							value = highest_party_popularity
-							compare = equals
-						}
-				}
-				EAG = {
-					country_event = {
-						days = 1
-						id = EAG_event.205
-					}
-				}
-			}
-			else_if = {
-				limit = {
-						check_variable = {
-							var = party_popularity@millenarism
-							value = highest_party_popularity
-							compare = equals
-						}
-				}
-				EAG = {
-					country_event = {
-						days = 1
-						id = EAG_event.206
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						check_variable = {
-							var = party_popularity@right_populism
-							value = highest_party_popularity
-							compare = equals
-						}
-						check_variable = {
-							var = nsis_concession
-							value = 5
-							compare = greater_than_or_equals
-						}
-					}
-				}
-				EAG = {
-					country_event = {
-						days = 1
-						id = EAG_event.207
-					}
-				}
-			}
+		add_political_power = 100
 	}
 	x = 12
 	y = 18
