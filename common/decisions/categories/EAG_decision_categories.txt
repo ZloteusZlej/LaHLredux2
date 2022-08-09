@@ -117,11 +117,15 @@ EAG_wars = {
 	picture = GFX
 	allowed = { original_tag = EAG }
 	visible = {
+		NOT = {
+			country_exists = ESS
+		}
+		EAG = {
 			NOT = {
-				country_exists = ESS
+				has_government = national_bolshevism
 			}
-	}
-	visible_when_empty = yes	
+		}
+	}	
 }
 
 EAG_lager_diplomacy_actions = {

@@ -4907,6 +4907,7 @@ country_event = {
 	desc = EAG_event.108.d
 	is_triggered_only = yes	
 	option = {
+		name = EAG_event.108.a
 		add_province_modifier = {
 			static_modifiers = { william_the_conqueror_statue }
 			province = {
@@ -4922,6 +4923,7 @@ country_event = {
 	desc = EAG_event.109.d
 	is_triggered_only = yes
 	option = {
+		name = EAG_event.109.a
 		add_province_modifier = {
 			static_modifiers = { margaret_thatcher_statue }
 			province = {
@@ -4937,6 +4939,7 @@ country_event = {
 	desc = EAG_event.110.d
 	is_triggered_only = yes	
 	option = {
+		name = EAG_event.110.a
 		1160 = {
 			add_province_modifier = {
 				static_modifiers = { gunzel_statue }
@@ -5579,6 +5582,113 @@ country_event = {
 }
 
 ##Anarchist Stuff##
+country_event = {
+	id = EAG_event.202
+	title = EAG_event.202.t
+	desc = EAG_event.202.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_no_to_opression
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.202.a
+		EAG = {
+			add_political_power = 75
+		}
+    }
+}
+country_event = {
+	id = EAG_event.203
+	title = EAG_event.203.t
+	desc = EAG_event.203.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_no_to_opression
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.203.a
+		EAG = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+    }
+}
+country_event = {
+	id = EAG_event.204
+	title = EAG_event.204.t
+	desc = EAG_event.204.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_no_to_opression
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.204.a
+		EAG = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+    }
+}
+country_event = {
+	id = EAG_event.205
+	title = EAG_event.205.t
+	desc = EAG_event.205.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_no_to_opression
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.205.a
+		EAG = {
+			add_stability = 0.02
+			add_war_support = 0.02
+		}
+    }
+}
+country_event = {
+	id = EAG_event.206
+	title = EAG_event.206.t
+	desc = EAG_event.206.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_no_to_opression
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.206.a
+		EAG = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+    }
+}
 country_event = {
 	id = EAG_event.210
 	title = EAG_event.210.t
@@ -6866,9 +6976,9 @@ country_event = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
 					has_country_flag = EAG_klumb_elections_started
-					has_completed_focus = EAG_national_diet
 				}
 			}
+			has_completed_focus = EAG_national_diet
 		}
 	}
 	option = {
@@ -6957,9 +7067,9 @@ country_event = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
 					has_country_flag = EAG_klumb_elections_started
-					has_completed_focus = EAG_national_diet
 				}
 			}
+			has_completed_focus = EAG_national_diet
 		}
 	}
 	option = {
@@ -7048,9 +7158,9 @@ country_event = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
 					has_country_flag = EAG_klumb_elections_started
-					has_completed_focus = EAG_national_diet
 				}
 			}
+			has_completed_focus = EAG_national_diet
 		}
 	}
 	option = {
@@ -7139,9 +7249,9 @@ country_event = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
 					has_country_flag = EAG_klumb_elections_started
-					has_completed_focus = EAG_national_diet
 				}
 			}
+			has_completed_focus = EAG_national_diet
 		}
 	}
 	option = {
@@ -7230,9 +7340,9 @@ country_event = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
 					has_country_flag = EAG_klumb_elections_started
-					has_completed_focus = EAG_national_diet
 				}
 			}
+			has_completed_focus = EAG_national_diet
 		}
 	}
 	option = {
@@ -7321,9 +7431,9 @@ country_event = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
 					has_country_flag = EAG_klumb_elections_started
-					has_completed_focus = EAG_national_diet
 				}
 			}
+			has_completed_focus = EAG_national_diet
 		}
 	}
 	option = {
@@ -7412,9 +7522,9 @@ country_event = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
 					has_country_flag = EAG_klumb_elections_started
-					has_completed_focus = EAG_national_diet
 				}
 			}
+			has_completed_focus = EAG_national_diet
 		}
 	}
 	option = {
@@ -7503,9 +7613,9 @@ country_event = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
 					has_country_flag = EAG_klumb_elections_started
-					has_completed_focus = EAG_national_diet
 				}
 			}
+			has_completed_focus = EAG_national_diet
 		}
 	}
 	option = {
@@ -7594,9 +7704,9 @@ country_event = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
 					has_country_flag = EAG_klumb_elections_started
-					has_completed_focus = EAG_national_diet
 				}
 			}
+			has_completed_focus = EAG_national_diet
 		}
 	}
 	option = {
@@ -7685,9 +7795,9 @@ country_event = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
 					has_country_flag = EAG_klumb_elections_started
-					has_completed_focus = EAG_national_diet
 				}
 			}
+			has_completed_focus = EAG_national_diet
 		}
 	}
 	option = {
@@ -7776,9 +7886,9 @@ country_event = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
 					has_country_flag = EAG_klumb_elections_started
-					has_completed_focus = EAG_national_diet
 				}
 			}
+			has_completed_focus = EAG_national_diet
 		}
 	}
 	option = {
@@ -7867,9 +7977,9 @@ country_event = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
 					has_country_flag = EAG_klumb_elections_started
-					has_completed_focus = EAG_national_diet
 				}
 			}
+			has_completed_focus = EAG_national_diet
 		}
 	}
 	option = {
@@ -7958,9 +8068,9 @@ country_event = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
 					has_country_flag = EAG_klumb_elections_started
-					has_completed_focus = EAG_national_diet
 				}
 			}
+			has_completed_focus = EAG_national_diet
 		}
 	}
 	option = {
@@ -8049,9 +8159,9 @@ country_event = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
 					has_country_flag = EAG_klumb_elections_started
-					has_completed_focus = EAG_national_diet
 				}
 			}
+			has_completed_focus = EAG_national_diet
 		}
 	}
 	option = {
@@ -8140,9 +8250,9 @@ country_event = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 					has_active_mission = EAG_klumb_mission_voting_NO
 					has_country_flag = EAG_klumb_elections_started
-					has_completed_focus = EAG_national_diet
 				}
 			}
+			has_completed_focus = EAG_national_diet
 		}
 	}
 	option = {
@@ -8241,7 +8351,7 @@ country_event = {
 	desc = EAG_event.242.d
 	is_triggered_only = yes	
 	option = {
-		name = EAG_event.242.а
+		name = EAG_event.242.a
 		EAG = {
 			set_country_flag = EAG_run_as_yea
 			set_country_flag = EAG_klumb_elections_started
@@ -8352,7 +8462,7 @@ country_event = {
 	desc = EAG_event.247.d
 	is_triggered_only = yes	
 	option = {
-		name = EAG_event.247.а
+		name = EAG_event.247.a
 		EAG = {
 			set_country_flag = EAG_run_as_bates
 			set_country_flag = EAG_klumb_elections_started

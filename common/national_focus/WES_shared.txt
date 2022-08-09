@@ -835,6 +835,12 @@ shared_focus = {
 	id = WES_curious_proposal
 	icon = GFX_goal_WES_curious_proposal
 	cost = 3.5
+	available = {
+		WES = {
+			has_country_flag = WES_george_legitimacy_achieved
+			has_completed_focus = WES_return_king
+		}
+	}
 	x = 34
 	y = 5
 }
@@ -1558,6 +1564,12 @@ shared_focus = {
 	id = WES_secret_orthodox
 	icon = GFX_goal_WES_secret_orthodox
 	cost = 3.5
+	available = {
+		WES = {
+			has_country_flag = WES_george_legitimacy_achieved
+			has_completed_focus = WES_return_king
+		}
+	}
 	x = 5
 	y = 7
 }
