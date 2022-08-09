@@ -5731,6 +5731,7 @@ EAG_city_influence = {
 	}
 ##Projects##
 	EAG_project_nuclear = {
+		fire_only_once = yes
 	    visible = {
 			NOT = {
 				EAG = {
@@ -5762,6 +5763,7 @@ EAG_city_influence = {
 		}
 	}
 	EAG_project_football = {
+		fire_only_once = yes
 	    visible = {
 			NOT = {
 				EAG = {
@@ -5793,6 +5795,7 @@ EAG_city_influence = {
 		}
 	}
 	EAG_project_cctv = {
+		fire_only_once = yes
 	    visible = {
 			NOT = {
 				EAG = {
@@ -5824,6 +5827,7 @@ EAG_city_influence = {
 		}
 	}
 	EAG_project_sport = {
+		fire_only_once = yes
 	    visible = {
 			NOT = {
 				EAG = {
@@ -5855,6 +5859,7 @@ EAG_city_influence = {
 		}
 	}
 	EAG_project_doctor_who = {
+		fire_only_once = yes
 	    visible = {
 			NOT = {
 				EAG = {
@@ -5886,6 +5891,7 @@ EAG_city_influence = {
 		}
 	}
 	EAG_project_monument = {
+		fire_only_once = yes
 	    visible = {
 			NOT = {
 				EAG = {
@@ -5917,6 +5923,7 @@ EAG_city_influence = {
 		}
 	}
 	EAG_project_rebuild = {
+		fire_only_once = yes
 	    visible = {
 			NOT = {
 				EAG = {
@@ -5937,7 +5944,7 @@ EAG_city_influence = {
 			EAG = {
 				country_event = {
 					days = 0
-					id = EAG_event.111
+					id = EAG_event.121
 				}
 				set_country_flag = EAG_project_launched
 				activate_mission = EAG_project_rebuild_voting
@@ -5948,6 +5955,7 @@ EAG_city_influence = {
 		}
 	}
 	EAG_project_museum = {
+		fire_only_once = yes
 	    visible = {
 			NOT = {
 				EAG = {
@@ -5968,7 +5976,7 @@ EAG_city_influence = {
 			EAG = {
 				country_event = {
 					days = 0
-					id = EAG_event.112
+					id = EAG_event.122
 				}
 				set_country_flag = EAG_project_launched
 				activate_mission = EAG_project_museum_voting
@@ -10120,7 +10128,7 @@ EAG_european_trade = {
 		fire_only_once = yes
 		cost = 35
 		complete_effect = {
-			set_country_flag = trade_negotiations
+			set_country_flag = EAG_trade_negotiations
 		}
 		target_trigger = {
 			FROM = {
@@ -10128,12 +10136,17 @@ EAG_european_trade = {
 			}
 		}
 		remove_effect = {
-			clr_country_flag = trade_negotiations
+			clr_country_flag = EAG_trade_negotiations
 			ROOT = {
-				create_import = {
-					resource = steel
-					amount = 45
-					exporter = FROM
+				meta_effect = {
+					text = {
+						create_import = {
+							resource = steel
+							amount = 30
+							exporter = [TARGET]
+						}
+					}
+					TARGET = "[From.GetTag]"
 				}
 			}
 			FROM = {
@@ -10145,7 +10158,7 @@ EAG_european_trade = {
 		}
 		available = {
 			NOT = {
-				has_country_flag = trade_negotiations
+				has_country_flag = EAG_trade_negotiations
 			}	
 		}
 	}
@@ -10155,7 +10168,7 @@ EAG_european_trade = {
 		fire_only_once = yes
 		cost = 35
 		complete_effect = {
-			set_country_flag = trade_negotiations
+			set_country_flag = EAG_trade_negotiations
 		}
 		target_trigger = {
 			FROM = {
@@ -10163,12 +10176,17 @@ EAG_european_trade = {
 			}
 		}
 		remove_effect = {
-			clr_country_flag = trade_negotiations
+			clr_country_flag = EAG_trade_negotiations
 			ROOT = {
-				create_import = {
-					resource = aluminium
-					amount = 30
-					exporter = FROM
+				meta_effect = {
+					text = {
+						create_import = {
+							resource = aluminium
+							amount = 30
+							exporter = [TARGET]
+						}
+					}
+					TARGET = "[From.GetTag]"
 				}
 			}
 			FROM = {
@@ -10180,7 +10198,7 @@ EAG_european_trade = {
 		}
 		available = {
 			NOT = {
-				has_country_flag = trade_negotiations
+				has_country_flag = EAG_trade_negotiations
 			}	
 		}
 	}
@@ -10190,7 +10208,7 @@ EAG_european_trade = {
 		fire_only_once = yes
 		cost = 35
 		complete_effect = {
-			set_country_flag = trade_negotiations
+			set_country_flag = EAG_trade_negotiations
 		}
 		target_trigger = {
 			FROM = {
@@ -10198,12 +10216,17 @@ EAG_european_trade = {
 			}
 		}
 		remove_effect = {
-			clr_country_flag = trade_negotiations
+			clr_country_flag = EAG_trade_negotiations
 			ROOT = {
-				create_import = {
-					resource = tungsten
-					amount = 30
-					exporter = FROM
+				meta_effect = {
+					text = {
+						create_import = {
+							resource = tungsten
+							amount = 30
+							exporter = [TARGET]
+						}
+					}
+					TARGET = "[From.GetTag]"
 				}
 			}
 			FROM = {
@@ -10215,7 +10238,7 @@ EAG_european_trade = {
 		}
 		available = {
 			NOT = {
-				has_country_flag = trade_negotiations
+				has_country_flag = EAG_trade_negotiations
 			}	
 		}
 	}
@@ -10226,7 +10249,7 @@ EAG_european_trade = {
 		fire_only_once = yes
 		cost = 35
 		complete_effect = {
-			set_country_flag = trade_negotiations
+			set_country_flag = EAG_trade_negotiations
 		}
 		target_trigger = {
 			FROM = {
@@ -10234,12 +10257,17 @@ EAG_european_trade = {
 			}
 		}
 		remove_effect = {
-			clr_country_flag = trade_negotiations
+			clr_country_flag = EAG_trade_negotiations
 			ROOT = {
-				create_import = {
-					resource = chromium
-					amount = 30
-					exporter = FROM
+				meta_effect = {
+					text = {
+						create_import = {
+							resource = chromium
+							amount = 30
+							exporter = [TARGET]
+						}
+					}
+					TARGET = "[From.GetTag]"
 				}
 			}
 			FROM = {
@@ -10251,7 +10279,7 @@ EAG_european_trade = {
 		}
 		available = {
 			NOT = {
-				has_country_flag = trade_negotiations
+				has_country_flag = EAG_trade_negotiations
 			}	
 		}
 	}
@@ -10261,7 +10289,7 @@ EAG_european_trade = {
 		fire_only_once = yes
 		cost = 35
 		complete_effect = {
-			set_country_flag = trade_negotiations
+			set_country_flag = EAG_trade_negotiations
 		}
 		target_trigger = {
 			FROM = {
@@ -10269,12 +10297,17 @@ EAG_european_trade = {
 			}
 		}
 		remove_effect = {
-			clr_country_flag = trade_negotiations
+			clr_country_flag = EAG_trade_negotiations
 			ROOT = {
-				create_import = {
-					resource = rubber
-					amount = 30
-					exporter = FROM
+				meta_effect = {
+					text = {
+						create_import = {
+							resource = rubber
+							amount = 30
+							exporter = [TARGET]
+						}
+					}
+					TARGET = "[From.GetTag]"
 				}
 			}
 			FROM = {
@@ -10286,7 +10319,7 @@ EAG_european_trade = {
 		}
 		available = {
 			NOT = {
-				has_country_flag = trade_negotiations
+				has_country_flag = EAG_trade_negotiations
 			}	
 		}
 	}
@@ -10296,7 +10329,7 @@ EAG_european_trade = {
 		fire_only_once = yes
 		cost = 35
 		complete_effect = {
-			set_country_flag = trade_negotiations
+			set_country_flag = EAG_trade_negotiations
 		}
 		target_trigger = {
 			FROM = {
@@ -10304,12 +10337,17 @@ EAG_european_trade = {
 			}
 		}
 		remove_effect = {
-			clr_country_flag = trade_negotiations
+			clr_country_flag = EAG_trade_negotiations
 			ROOT = {
-				create_import = {
-					resource = oil
-					amount = 30
-					exporter = FROM
+				meta_effect = {
+					text = {
+						create_import = {
+							resource = oil
+							amount = 30
+							exporter = [TARGET]
+						}
+					}
+					TARGET = "[From.GetTag]"
 				}
 			}
 			FROM = {
@@ -10321,7 +10359,7 @@ EAG_european_trade = {
 		}
 		available = {
 			NOT = {
-				has_country_flag = trade_negotiations
+				has_country_flag = EAG_trade_negotiations
 			}	
 		}
 	}

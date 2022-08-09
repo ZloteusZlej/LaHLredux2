@@ -3048,7 +3048,7 @@ country_event = {
 		}
     }
 }
-
+####REBUILD HERE##
 country_event = {
 	id = EAG_event.121
 	title = EAG_event.121.t
@@ -3056,9 +3056,60 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.121.a
+		EAG = {
+			add_timed_idea = {
+				idea = EAG_reconstruction_project_1
+				days = 120
+			}
+		}
     }
 	option = {
 		name = EAG_event.121.b
+		EAG = {
+			add_timed_idea = {
+				idea = EAG_reconstruction_project_2
+				days = 120
+			}
+		}
+    }
+	option = {
+		name = EAG_event.121.c
+		EAG = {
+			add_timed_idea = {
+				idea = EAG_reconstruction_project_3
+				days = 120
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.122
+	title = EAG_event.122.t
+	desc = EAG_event.122.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.122.a
+		EAG = {
+			add_stability = 0.1
+			add_political_power = 75
+		}
+    }
+	option = {
+		name = EAG_event.122.b
+		EAG = {
+			add_stability = -0.05
+			add_war_support 0.05
+			add_political_power = 100
+		}
+    }
+	option = {
+		name = EAG_event.122.c
+		EAG = {
+			add_stability = 0.15
+			add_war_support -0.05
+			add_political_power = 75
+		}
     }
 }
 
@@ -4659,8 +4710,8 @@ country_event = {
 ###NEW PROJECTS###
 country_event = { #Nuclear Project
 	id = EAG_event.97
-	title = EAG_event.97
-	desc = EAG_event.97
+	title = EAG_event.97.t
+	desc = EAG_event.97.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.97.a	
@@ -4678,8 +4729,8 @@ country_event = { #Nuclear Project
 
 country_event = { #Football
 	id = EAG_event.98
-	title = EAG_event.98
-	desc = EAG_event.98
+	title = EAG_event.98.t
+	desc = EAG_event.98.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.98.a	
@@ -4698,8 +4749,8 @@ country_event = { #Football
 
 country_event = { #Football Frenzy
 	id = EAG_event.99
-	title = EAG_event.99
-	desc = EAG_event.99
+	title = EAG_event.99.t
+	desc = EAG_event.99.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.99.a	
@@ -4715,8 +4766,8 @@ country_event = { #Football Frenzy
 
 country_event = { #CCTV
 	id = EAG_event.100
-	title = EAG_event.100
-	desc = EAG_event.100
+	title = EAG_event.100.t
+	desc = EAG_event.100.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.100.a	
@@ -4734,8 +4785,8 @@ country_event = { #CCTV
 
 country_event = { #English "Sport"
 	id = EAG_event.101
-	title = EAG_event.101
-	desc = EAG_event.101
+	title = EAG_event.101.t
+	desc = EAG_event.101.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.101.a	
@@ -4756,8 +4807,8 @@ country_event = { #English "Sport"
 
 country_event = { #Doctor Who
 	id = EAG_event.102
-	title = EAG_event.102
-	desc = EAG_event.102
+	title = EAG_event.102.t
+	desc = EAG_event.102.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.102.a	
@@ -4798,8 +4849,8 @@ country_event = { #Doctor Who
 
 country_event = { #Doctor Who Sad
 	id = EAG_event.103
-	title = EAG_event.103
-	desc = EAG_event.103
+	title = EAG_event.103.t
+	desc = EAG_event.103.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.103.a	
@@ -4811,8 +4862,8 @@ country_event = { #Doctor Who Sad
 
 country_event = { #Doctor Who Happy
 	id = EAG_event.104
-	title = EAG_event.104
-	desc = EAG_event.104
+	title = EAG_event.104.t
+	desc = EAG_event.104.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.104.a	
@@ -4821,10 +4872,10 @@ country_event = { #Doctor Who Happy
     }
 }
 
-country_event = { #Doctor Who Furious
+country_event = { #Doctor Who Global P
 	id = EAG_event.105
-	title = EAG_event.105
-	desc = EAG_event.105
+	title = EAG_event.105.t
+	desc = EAG_event.105.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.105.a	
@@ -4846,8 +4897,8 @@ country_event = { #Doctor Who Furious
 
 country_event = { #Monument
 	id = EAG_event.106
-	title = EAG_event.106
-	desc = EAG_event.106
+	title = EAG_event.106.t
+	desc = EAG_event.106.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.106.a	
