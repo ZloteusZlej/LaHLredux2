@@ -381,6 +381,14 @@ shared_focus = {
 	cost = 10
 	x = 6
 	y = 6
+	completion_reward = {
+		army_experience = 10
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 2
+			category = GRAND_BATTLEPLAN_DOCTRINE
+		}
+	}
 }
 
 shared_focus = {
