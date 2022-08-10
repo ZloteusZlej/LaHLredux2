@@ -4160,4 +4160,51 @@ ideas = {
 			}
 		}
 	}
+	country = {
+	
+		EAG_project_fighting_corruption = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = -0.25
+			}
+		}
+		EAG_project_improved_system = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		EAG_challenging_research = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.75
+				political_power_gain = -0.25
+				ivilian_factory_use = 10
+			}
+		}
+	}
 }

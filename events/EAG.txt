@@ -3113,6 +3113,86 @@ country_event = {
     }
 }
 
+country_event = {
+	id = EAG_event.123
+	title = EAG_event.123.t
+	desc = EAG_event.123.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.123.a	
+    }
+}
+
+country_event = {
+	id = EAG_event.124
+	title = EAG_event.124.t
+	desc = EAG_event.124.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.124.a	
+    }
+}
+
+country_event = {
+	id = EAG_event.125
+	title = EAG_event.125.t
+	desc = EAG_event.125.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.125.a	
+    }
+}
+
+country_event = {
+	id = EAG_event.126
+	title = EAG_event.126.t
+	desc = EAG_event.126.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.126.a	
+    }
+}
+
+country_event = {
+	id = EAG_event.127
+	title = EAG_event.127.t
+	desc = EAG_event.127.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.127.a	
+    }
+}
+
+country_event = {
+	id = EAG_event.128
+	title = EAG_event.128.t
+	desc = EAG_event.128.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.128.a	
+    }
+}
+
+country_event = {
+	id = EAG_event.129
+	title = EAG_event.129.t
+	desc = EAG_event.129.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.129.a	
+    }
+}
+
+country_event = {
+	id = EAG_event.130
+	title = EAG_event.130.t
+	desc = EAG_event.130.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.130.a	
+    }
+}
+
 ##CITY EVENTS##
 country_event = {
 	id = EAG_event.65
@@ -3241,6 +3321,12 @@ country_event = {
 		clr_country_flag =	EAG_voting_mercia_agreed
 		clr_country_flag =	EAG_voting_essex_agreed
 		clr_country_flag =	EAG_voting_east_england_agreed
+		clr_country_flag =	EAG_pleading_Eastern_England
+		clr_country_flag =	EAG_pleading_Essex
+		clr_country_flag =	EAG_pleading_Mercia
+		clr_country_flag =	EAG_pleading_Northumbria
+		clr_country_flag =	EAG_pleading_Southern_England
+		clr_country_flag =	EAG_pleading_Wessex
 		EAG = {
 			clr_country_flag = EAG_project_launched
 		}
@@ -3255,6 +3341,7 @@ country_event = {
 	option = {
 		name = EAG_event.72.a
 		custom_effect_tooltip = EAG_small_city_spending.tt
+		custom_effect_tooltip = EAG_region_20_influence_give.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3283,11 +3370,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_east_england_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.72.b
 		custom_effect_tooltip = EAG_medium_city_spending.tt
+		custom_effect_tooltip = EAG_region_50_influence_give.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3316,11 +3405,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_east_england_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.72.c
-		custom_effect_tooltip = EAG_big_city_spending.tt		
+		custom_effect_tooltip = EAG_big_city_spending.tt
+		custom_effect_tooltip = EAG_region_100_influence_give.tt		
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3348,11 +3439,16 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_east_england_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.72.e
 		add_stability = -0.01
+		custom_effect_tooltip = EAG_region_0_influence_give.tt
+		EAG = {
+			clr_country_flag = EAG_currently_pleading
+		}
     }
 }
 
@@ -3364,6 +3460,7 @@ country_event = {
 	option = {
 		name = EAG_event.73.a
 		custom_effect_tooltip = EAG_small_city_spending.tt
+		custom_effect_tooltip = EAG_region_20_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3401,11 +3498,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_essex_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.73.b
 		custom_effect_tooltip = EAG_medium_city_spending.tt
+		custom_effect_tooltip = EAG_region_50_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3443,11 +3542,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_essex_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.73.c
-		custom_effect_tooltip = EAG_big_city_spending.tt		
+		custom_effect_tooltip = EAG_big_city_spending.tt
+		custom_effect_tooltip = EAG_region_100_influence_give.tt			
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3484,11 +3585,16 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_essex_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.73.e
 		add_stability = -0.01
+		custom_effect_tooltip = EAG_region_0_influence_give.tt	
+		EAG = {
+			clr_country_flag = EAG_currently_pleading
+		}
     }
 }
 
@@ -3500,6 +3606,7 @@ country_event = {
 	option = {
 		name = EAG_event.74.a
 		custom_effect_tooltip = EAG_small_city_spending.tt
+		custom_effect_tooltip = EAG_region_20_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3546,11 +3653,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_mercia_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.74.b
 		custom_effect_tooltip = EAG_medium_city_spending.tt
+		custom_effect_tooltip = EAG_region_50_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3597,11 +3706,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_mercia_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.74.c	
 		custom_effect_tooltip = EAG_big_city_spending.tt
+		custom_effect_tooltip = EAG_region_100_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3647,11 +3758,16 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_mercia_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.74.e
 		add_stability = -0.01
+		custom_effect_tooltip = EAG_region_0_influence_give.tt	
+		EAG = {
+			clr_country_flag = EAG_currently_pleading
+		}
     }
 }
 
@@ -3663,6 +3779,7 @@ country_event = {
 	option = {
 		name = EAG_event.75.a
 		custom_effect_tooltip = EAG_small_city_spending.tt
+		custom_effect_tooltip = EAG_region_20_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3700,11 +3817,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_northumbria_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.75.b
 		custom_effect_tooltip = EAG_medium_city_spending.tt
+		custom_effect_tooltip = EAG_region_50_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3742,11 +3861,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_northumbria_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.75.c	
 		custom_effect_tooltip = EAG_big_city_spending.tt
+		custom_effect_tooltip = EAG_region_100_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3783,11 +3904,16 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_northumbria_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.75.e
 		add_stability = -0.01
+		custom_effect_tooltip = EAG_region_0_influence_give.tt	
+		EAG = {
+			clr_country_flag = EAG_currently_pleading
+		}
     }
 }
 
@@ -3799,6 +3925,7 @@ country_event = {
 	option = {
 		name = EAG_event.76.a
 		custom_effect_tooltip = EAG_small_city_spending.tt
+		custom_effect_tooltip = EAG_region_20_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3833,11 +3960,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_southern_england_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.76.b
 		custom_effect_tooltip = EAG_medium_city_spending.tt
+		custom_effect_tooltip = EAG_region_50_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3872,11 +4001,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_southern_england_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.76.c	
 		custom_effect_tooltip = EAG_big_city_spending.tt
+		custom_effect_tooltip = EAG_region_100_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3910,11 +4041,16 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_southern_england_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.76.e
 		add_stability = -0.01
+		custom_effect_tooltip = EAG_region_0_influence_give.tt	
+		EAG = {
+			clr_country_flag = EAG_currently_pleading
+		}
     }
 }
 
@@ -3926,6 +4062,7 @@ country_event = {
 	option = {
 		name = EAG_event.77.a
 		custom_effect_tooltip = EAG_small_city_spending.tt
+		custom_effect_tooltip = EAG_region_20_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3969,11 +4106,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_wessex_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.77.b
 		custom_effect_tooltip = EAG_medium_city_spending.tt
+		custom_effect_tooltip = EAG_region_50_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -4017,11 +4156,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_wessex_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.77.c	
 		custom_effect_tooltip = EAG_big_city_spending.tt
+		custom_effect_tooltip = EAG_region_100_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -4064,11 +4205,16 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_wessex_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.77.e
 		add_stability = -0.01
+		custom_effect_tooltip = EAG_region_0_influence_give.tt	
+		EAG = {
+			clr_country_flag = EAG_currently_pleading
+		}
     }
 }
 
@@ -4077,6 +4223,7 @@ country_event = {
 	title = EAG_event.78.t
 	desc = EAG_event.78.d
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		EAG = {
 			NOT = {
@@ -4088,7 +4235,15 @@ country_event = {
 				has_active_mission = EAG_project_mercia_voting
 				has_active_mission = EAG_project_northumbria_voting
 				has_active_mission = EAG_project_southern_england_voting
-				has_active_mission = EAG_project_wessex_voting
+				has_active_mission = EAG_project_wessex_voting		
+				has_active_mission = EAG_project_nuclear_voting
+				has_active_mission = EAG_project_football_voting
+				has_active_mission = EAG_project_cctv_voting
+				has_active_mission = EAG_project_sport_voting
+				has_active_mission = EAG_project_doctor_who_voting
+				has_active_mission = EAG_project_monument_voting
+				has_active_mission = EAG_project_rebuild_voting
+				has_active_mission = EAG_project_museum_voting
 			}
 			has_completed_focus = EAG_electors_system
 		}
@@ -4149,6 +4304,7 @@ country_event = {
 	title = EAG_event.79.t
 	desc = EAG_event.79.d
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		EAG = {
 			NOT = {
@@ -4161,6 +4317,14 @@ country_event = {
 				has_active_mission = EAG_project_northumbria_voting
 				has_active_mission = EAG_project_southern_england_voting
 				has_active_mission = EAG_project_wessex_voting
+				has_active_mission = EAG_project_nuclear_voting
+				has_active_mission = EAG_project_football_voting
+				has_active_mission = EAG_project_cctv_voting
+				has_active_mission = EAG_project_sport_voting
+				has_active_mission = EAG_project_doctor_who_voting
+				has_active_mission = EAG_project_monument_voting
+				has_active_mission = EAG_project_rebuild_voting
+				has_active_mission = EAG_project_museum_voting
 			}
 			has_completed_focus = EAG_electors_system
 		}
@@ -4221,6 +4385,7 @@ country_event = {
 	title = EAG_event.80.t
 	desc = EAG_event.80.d
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		EAG = {
 			NOT = {
@@ -4233,6 +4398,14 @@ country_event = {
 				has_active_mission = EAG_project_northumbria_voting
 				has_active_mission = EAG_project_southern_england_voting
 				has_active_mission = EAG_project_wessex_voting
+				has_active_mission = EAG_project_nuclear_voting
+				has_active_mission = EAG_project_football_voting
+				has_active_mission = EAG_project_cctv_voting
+				has_active_mission = EAG_project_sport_voting
+				has_active_mission = EAG_project_doctor_who_voting
+				has_active_mission = EAG_project_monument_voting
+				has_active_mission = EAG_project_rebuild_voting
+				has_active_mission = EAG_project_museum_voting
 			}
 			has_completed_focus = EAG_electors_system
 		}
@@ -4302,6 +4475,7 @@ country_event = {
 	title = EAG_event.81.t
 	desc = EAG_event.81.d
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		EAG = {
 			NOT = {
@@ -4314,6 +4488,14 @@ country_event = {
 				has_active_mission = EAG_project_northumbria_voting
 				has_active_mission = EAG_project_southern_england_voting
 				has_active_mission = EAG_project_wessex_voting
+				has_active_mission = EAG_project_nuclear_voting
+				has_active_mission = EAG_project_football_voting
+				has_active_mission = EAG_project_cctv_voting
+				has_active_mission = EAG_project_sport_voting
+				has_active_mission = EAG_project_doctor_who_voting
+				has_active_mission = EAG_project_monument_voting
+				has_active_mission = EAG_project_rebuild_voting
+				has_active_mission = EAG_project_museum_voting
 			}
 			has_completed_focus = EAG_electors_system
 		}
@@ -4374,6 +4556,7 @@ country_event = {
 	title = EAG_event.82.t
 	desc = EAG_event.82.d
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		EAG = {
 			NOT = {
@@ -4386,6 +4569,14 @@ country_event = {
 				has_active_mission = EAG_project_northumbria_voting
 				has_active_mission = EAG_project_southern_england_voting
 				has_active_mission = EAG_project_wessex_voting
+				has_active_mission = EAG_project_nuclear_voting
+				has_active_mission = EAG_project_football_voting
+				has_active_mission = EAG_project_cctv_voting
+				has_active_mission = EAG_project_sport_voting
+				has_active_mission = EAG_project_doctor_who_voting
+				has_active_mission = EAG_project_monument_voting
+				has_active_mission = EAG_project_rebuild_voting
+				has_active_mission = EAG_project_museum_voting
 			}
 			has_completed_focus = EAG_electors_system
 		}
@@ -4443,6 +4634,7 @@ country_event = {
 	title = EAG_event.83.t
 	desc = EAG_event.83.d
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		EAG = {
 			NOT = {
@@ -4455,6 +4647,14 @@ country_event = {
 				has_active_mission = EAG_project_northumbria_voting
 				has_active_mission = EAG_project_southern_england_voting
 				has_active_mission = EAG_project_wessex_voting
+				has_active_mission = EAG_project_nuclear_voting
+				has_active_mission = EAG_project_football_voting
+				has_active_mission = EAG_project_cctv_voting
+				has_active_mission = EAG_project_sport_voting
+				has_active_mission = EAG_project_doctor_who_voting
+				has_active_mission = EAG_project_monument_voting
+				has_active_mission = EAG_project_rebuild_voting
+				has_active_mission = EAG_project_museum_voting
 			}
 			has_completed_focus = EAG_electors_system
 		}
@@ -4523,7 +4723,25 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.84.a	
-		add_political_power = 75
+		EAG = { 
+			add_timed_idea = { 
+				idea = EAG_project_fighting_corruption  
+				days = 120
+			}
+		}
+    }
+	option = {
+		name = EAG_event.84.b
+		EAG = { 
+			add_timed_idea = { 
+				idea = EAG_project_improved_system  
+				days = 120
+			}
+		}
+    }
+	option = {
+		name = EAG_event.84.c	
+		add_political_power = 300
     }
 }
 
@@ -4534,7 +4752,35 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.85.a	
-		add_political_power = 75
+		EAG = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = electronics
+            }
+		}
+    }
+	option = {
+		name = EAG_event.85.b
+		EAG = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = support_tech
+            }
+		}
+    }
+	option = {
+		name = EAG_event.85.c	
+		EAG = { 
+			add_timed_idea = { 
+				idea = EAG_challenging_research 
+				days = 120
+			}
+			set_technology = {
+				wireless_power_transfer = 1
+			}
+		}
     }
 }
 
@@ -4545,7 +4791,27 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.86.a	
-		add_political_power = 75
+		EAG = {
+			add_manpower = 20000
+		}
+    }
+	option = {
+		name = EAG_event.86.b
+		EAG = {
+			add_stability = 0.15
+			add_war_support = 0.15
+		}
+    }
+	option = {
+		name = EAG_event.86.c	
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 4
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 4
+		}
     }
 }
 
@@ -4556,7 +4822,84 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.87.a	
-		add_political_power = 75
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 4
+		}
+    }
+	option = {
+		name = EAG_event.87.b	
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 4
+		}
+    }
+	option = {
+		name = EAG_event.87.c	
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = radar_station
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = radar_station
+				level = 2
+				instant_build = yes
+			}
+		}
     }
 }
 
@@ -4567,7 +4910,33 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.88.a	
-		add_political_power = 75
+		EAG = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				category = armor
+            }
+		}
+    }
+	option = {
+		name = EAG_event.88.b	
+		EAG = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				category = light_air
+            }
+		}
+    }
+	option = {
+		name = EAG_event.88.c	
+		EAG = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				category = naval_equipment
+            }
+		}
     }
 }
 
@@ -4578,7 +4947,27 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.89.a	
-		add_political_power = 75
+		add_resource = {
+			type = steel
+			amount = 5
+			state = 998
+		}
+    }
+	option = {
+		name = EAG_event.89.b	
+		add_resource = {
+			type = chromium
+			amount = 5
+			state = 998
+		}
+    }
+	option = {
+		name = EAG_event.89.c
+		add_resource = {
+			type = oil
+			amount = 5
+			state = 998
+		}
     }
 }
 
@@ -4595,14 +4984,20 @@ country_event = {
 		clr_country_flag =	EAG_voting_mercia_agreed
 		clr_country_flag =	EAG_voting_essex_agreed
 		clr_country_flag =	EAG_voting_east_england_agreed		
+		clr_country_flag =	EAG_pleading_Eastern_England
+		clr_country_flag =	EAG_pleading_Essex
+		clr_country_flag =	EAG_pleading_Mercia
+		clr_country_flag =	EAG_pleading_Northumbria
+		clr_country_flag =	EAG_pleading_Southern_England
+		clr_country_flag =	EAG_pleading_Wessex
 		add_political_power = 50
     }
 }
 
 country_event = {
 	id = EAG_event.91
-	title = EAG_event.91
-	desc = EAG_event.91
+	title = EAG_event.91.t
+	desc = EAG_event.91.d
 	is_triggered_only = yes	
 	trigger = {
 		EAG = {
@@ -4619,8 +5014,8 @@ country_event = {
 
 country_event = {
 	id = EAG_event.92
-	title = EAG_event.92
-	desc = EAG_event.92
+	title = EAG_event.92.t
+	desc = EAG_event.92.d
 	is_triggered_only = yes	
 	trigger = {
 		EAG = {
@@ -4637,8 +5032,8 @@ country_event = {
 
 country_event = {
 	id = EAG_event.93
-	title = EAG_event.93
-	desc = EAG_event.93
+	title = EAG_event.93.t
+	desc = EAG_event.93.d
 	is_triggered_only = yes	
 	trigger = {
 		EAG = {
@@ -4655,8 +5050,8 @@ country_event = {
 
 country_event = {
 	id = EAG_event.94
-	title = EAG_event.94
-	desc = EAG_event.94
+	title = EAG_event.94.t
+	desc = EAG_event.94.d
 	is_triggered_only = yes	
 	trigger = {
 		EAG = {
@@ -4673,8 +5068,8 @@ country_event = {
 
 country_event = {
 	id = EAG_event.95
-	title = EAG_event.95
-	desc = EAG_event.95
+	title = EAG_event.95.t
+	desc = EAG_event.95.d
 	is_triggered_only = yes	
 	trigger = {
 		EAG = {
@@ -4691,8 +5086,8 @@ country_event = {
 
 country_event = {
 	id = EAG_event.96
-	title = EAG_event.96
-	desc = EAG_event.96
+	title = EAG_event.96.t
+	desc = EAG_event.96.d
 	is_triggered_only = yes	
 	trigger = {
 		EAG = {
@@ -4905,8 +5300,8 @@ country_event = { #Monument
 		hidden_effect = {
 			EAG = {
 				country_event = {
-				days = 75
-				id = EAG_event.107
+					days = 75
+					id = EAG_event.107
 				}
 			}
 		}
@@ -4917,8 +5312,8 @@ country_event = { #Monument
 		hidden_effect = {
 			EAG = {
 				country_event = {
-				days = 75
-				id = EAG_event.108
+					days = 75
+					id = EAG_event.108
 				}
 			}
 		}
@@ -4929,8 +5324,8 @@ country_event = { #Monument
 		hidden_effect = {
 			EAG = {
 				country_event = {
-				days = 75
-				id = EAG_event.109
+					days = 75
+					id = EAG_event.109
 				}
 			}
 		}
@@ -4941,8 +5336,8 @@ country_event = { #Monument
 		hidden_effect = {
 			EAG = {
 				country_event = {
-				days = 75
-				id = EAG_event.110
+					days = 75
+					id = EAG_event.110
 				}
 			}
 		}
@@ -5398,7 +5793,6 @@ country_event = {
 				ruling_party = socialism
 			}
 			retire_country_leader = yes
-			promote_character = EAG_keir_starmer
 			clr_country_flag = EAG_run_as_starmer
 			set_country_flag = EAG_klumb_elections_VOLK_victory
 		}
@@ -5429,7 +5823,6 @@ country_event = {
 				ruling_party = socialism
 			}
 			retire_country_leader = yes
-			promote_character = EAG_keir_starmer
 			add_political_power = -100
 			clr_country_flag = EAG_run_as_klumb
 			clr_country_flag = EAG_run_as_may
@@ -5469,7 +5862,6 @@ country_event = {
 				ruling_party = millenarism
 			}
 			retire_country_leader = yes
-			promote_character = EAG_david_iсke
 			clr_country_flag = EAG_run_as_iсke
 			set_country_flag = EAG_klumb_elections_TPV_victory
 		}
@@ -5500,7 +5892,6 @@ country_event = {
 				ruling_party = millennialism
 			}
 			retire_country_leader = yes
-			promote_character = EAG_david_iсke
 			add_political_power = -100
 			clr_country_flag = EAG_run_as_klumb
 			clr_country_flag = EAG_run_as_may
