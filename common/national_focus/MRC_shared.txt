@@ -364,9 +364,14 @@ shared_focus = {
 	prerequisite = {
 		focus = MRC_the_perfume_of_traitors
 	}
+		
 	cost = 10
 	x = 13
 	y = 5
+	completion_reward = {
+		army_experience = 20
+		country_event = MRC_event.16
+	}	
 }
 
 shared_focus = {

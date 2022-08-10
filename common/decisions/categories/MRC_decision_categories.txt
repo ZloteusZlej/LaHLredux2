@@ -16,3 +16,16 @@ MRC_reunify_isles = {
 	allowed = { original_tag = MRC }
 }
 
+MRC_army_in_black = {
+	icon = GFX_
+	 visible = {
+            MRC = {
+                has_completed_focus = MRC_luthers_army
+            }
+    }
+    available = {
+            MRC = {
+                has_completed_focus = MRC_luthers_army
+            }
+    }
+}
