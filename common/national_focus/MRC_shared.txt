@@ -365,13 +365,18 @@ shared_focus = {
 		focus = MRC_the_perfume_of_traitors
 	}
 		
+	completion_reward = {
+		army_experience = 20
+		MRC = {
+			country_event = {
+				days = 0
+				id = MRC_event.16
+			}	
+		}	
+	}		
 	cost = 10
 	x = 13
 	y = 5
-	completion_reward = {
-		army_experience = 20
-		country_event = MRC_event.16
-	}	
 }
 
 shared_focus = {
@@ -402,10 +407,19 @@ shared_focus = {
 	prerequisite = {
 		focus = MRC_strength_in_diversity
 	}
+		completion_reward = {
+		MRC = {
+			country_event = {
+				days = 0
+				id = MRC_event.18
+			}	
+		}
+	}
 	cost = 10
 	x = 6
-	y = 7
+	y = 7	
 }
+
 
 shared_focus = {
 	id = MRC_ancestor_spirit
