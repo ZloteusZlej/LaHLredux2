@@ -117,11 +117,15 @@ EAG_wars = {
 	picture = GFX
 	allowed = { original_tag = EAG }
 	visible = {
+		NOT = {
+			country_exists = ESS
+		}
+		EAG = {
 			NOT = {
-				country_exists = ESS
+				has_government = national_bolshevism
 			}
-	}
-	visible_when_empty = yes	
+		}
+	}	
 }
 
 EAG_lager_diplomacy_actions = {
@@ -272,6 +276,11 @@ EAG_klumb_parliament_gui_decision = {
 
 	scripted_gui = klumb_parliament_gui
 	visible_when_empty = yes
+	visible = { 
+		EAG = {
+			has_completed_focus = EAG_national_diet
+		}
+	}
 }
 
 EAG_elections = {

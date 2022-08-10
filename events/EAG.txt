@@ -3048,6 +3048,150 @@ country_event = {
 		}
     }
 }
+####REBUILD HERE##
+country_event = {
+	id = EAG_event.121
+	title = EAG_event.121.t
+	desc = EAG_event.121.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.121.a
+		EAG = {
+			add_timed_idea = {
+				idea = EAG_reconstruction_project_1
+				days = 120
+			}
+		}
+    }
+	option = {
+		name = EAG_event.121.b
+		EAG = {
+			add_timed_idea = {
+				idea = EAG_reconstruction_project_2
+				days = 120
+			}
+		}
+    }
+	option = {
+		name = EAG_event.121.c
+		EAG = {
+			add_timed_idea = {
+				idea = EAG_reconstruction_project_3
+				days = 120
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.122
+	title = EAG_event.122.t
+	desc = EAG_event.122.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.122.a
+		EAG = {
+			add_stability = 0.1
+			add_political_power = 75
+		}
+    }
+	option = {
+		name = EAG_event.122.b
+		EAG = {
+			add_stability = -0.05
+			add_war_support 0.05
+			add_political_power = 100
+		}
+    }
+	option = {
+		name = EAG_event.122.c
+		EAG = {
+			add_stability = 0.15
+			add_war_support -0.05
+			add_political_power = 75
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.123
+	title = EAG_event.123.t
+	desc = EAG_event.123.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.123.a	
+    }
+}
+
+country_event = {
+	id = EAG_event.124
+	title = EAG_event.124.t
+	desc = EAG_event.124.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.124.a	
+    }
+}
+
+country_event = {
+	id = EAG_event.125
+	title = EAG_event.125.t
+	desc = EAG_event.125.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.125.a	
+    }
+}
+
+country_event = {
+	id = EAG_event.126
+	title = EAG_event.126.t
+	desc = EAG_event.126.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.126.a	
+    }
+}
+
+country_event = {
+	id = EAG_event.127
+	title = EAG_event.127.t
+	desc = EAG_event.127.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.127.a	
+    }
+}
+
+country_event = {
+	id = EAG_event.128
+	title = EAG_event.128.t
+	desc = EAG_event.128.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.128.a	
+    }
+}
+
+country_event = {
+	id = EAG_event.129
+	title = EAG_event.129.t
+	desc = EAG_event.129.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.129.a	
+    }
+}
+
+country_event = {
+	id = EAG_event.130
+	title = EAG_event.130.t
+	desc = EAG_event.130.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.130.a	
+    }
+}
 
 ##CITY EVENTS##
 country_event = {
@@ -3177,6 +3321,12 @@ country_event = {
 		clr_country_flag =	EAG_voting_mercia_agreed
 		clr_country_flag =	EAG_voting_essex_agreed
 		clr_country_flag =	EAG_voting_east_england_agreed
+		clr_country_flag =	EAG_pleading_Eastern_England
+		clr_country_flag =	EAG_pleading_Essex
+		clr_country_flag =	EAG_pleading_Mercia
+		clr_country_flag =	EAG_pleading_Northumbria
+		clr_country_flag =	EAG_pleading_Southern_England
+		clr_country_flag =	EAG_pleading_Wessex
 		EAG = {
 			clr_country_flag = EAG_project_launched
 		}
@@ -3191,6 +3341,7 @@ country_event = {
 	option = {
 		name = EAG_event.72.a
 		custom_effect_tooltip = EAG_small_city_spending.tt
+		custom_effect_tooltip = EAG_region_20_influence_give.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3219,11 +3370,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_east_england_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.72.b
 		custom_effect_tooltip = EAG_medium_city_spending.tt
+		custom_effect_tooltip = EAG_region_50_influence_give.tt
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3252,11 +3405,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_east_england_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.72.c
-		custom_effect_tooltip = EAG_big_city_spending.tt		
+		custom_effect_tooltip = EAG_big_city_spending.tt
+		custom_effect_tooltip = EAG_region_100_influence_give.tt		
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3284,11 +3439,16 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_east_england_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.72.e
 		add_stability = -0.01
+		custom_effect_tooltip = EAG_region_0_influence_give.tt
+		EAG = {
+			clr_country_flag = EAG_currently_pleading
+		}
     }
 }
 
@@ -3300,6 +3460,7 @@ country_event = {
 	option = {
 		name = EAG_event.73.a
 		custom_effect_tooltip = EAG_small_city_spending.tt
+		custom_effect_tooltip = EAG_region_20_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3337,11 +3498,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_essex_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.73.b
 		custom_effect_tooltip = EAG_medium_city_spending.tt
+		custom_effect_tooltip = EAG_region_50_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3379,11 +3542,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_essex_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.73.c
-		custom_effect_tooltip = EAG_big_city_spending.tt		
+		custom_effect_tooltip = EAG_big_city_spending.tt
+		custom_effect_tooltip = EAG_region_100_influence_give.tt			
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3420,11 +3585,16 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_essex_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.73.e
 		add_stability = -0.01
+		custom_effect_tooltip = EAG_region_0_influence_give.tt	
+		EAG = {
+			clr_country_flag = EAG_currently_pleading
+		}
     }
 }
 
@@ -3436,6 +3606,7 @@ country_event = {
 	option = {
 		name = EAG_event.74.a
 		custom_effect_tooltip = EAG_small_city_spending.tt
+		custom_effect_tooltip = EAG_region_20_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3482,11 +3653,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_mercia_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.74.b
 		custom_effect_tooltip = EAG_medium_city_spending.tt
+		custom_effect_tooltip = EAG_region_50_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3533,11 +3706,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_mercia_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.74.c	
 		custom_effect_tooltip = EAG_big_city_spending.tt
+		custom_effect_tooltip = EAG_region_100_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3583,11 +3758,16 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_mercia_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.74.e
 		add_stability = -0.01
+		custom_effect_tooltip = EAG_region_0_influence_give.tt	
+		EAG = {
+			clr_country_flag = EAG_currently_pleading
+		}
     }
 }
 
@@ -3599,6 +3779,7 @@ country_event = {
 	option = {
 		name = EAG_event.75.a
 		custom_effect_tooltip = EAG_small_city_spending.tt
+		custom_effect_tooltip = EAG_region_20_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3636,11 +3817,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_northumbria_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.75.b
 		custom_effect_tooltip = EAG_medium_city_spending.tt
+		custom_effect_tooltip = EAG_region_50_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3678,11 +3861,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_northumbria_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.75.c	
 		custom_effect_tooltip = EAG_big_city_spending.tt
+		custom_effect_tooltip = EAG_region_100_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3719,11 +3904,16 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_northumbria_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.75.e
 		add_stability = -0.01
+		custom_effect_tooltip = EAG_region_0_influence_give.tt	
+		EAG = {
+			clr_country_flag = EAG_currently_pleading
+		}
     }
 }
 
@@ -3735,6 +3925,7 @@ country_event = {
 	option = {
 		name = EAG_event.76.a
 		custom_effect_tooltip = EAG_small_city_spending.tt
+		custom_effect_tooltip = EAG_region_20_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3769,11 +3960,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_southern_england_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.76.b
 		custom_effect_tooltip = EAG_medium_city_spending.tt
+		custom_effect_tooltip = EAG_region_50_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3808,11 +4001,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_southern_england_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.76.c	
 		custom_effect_tooltip = EAG_big_city_spending.tt
+		custom_effect_tooltip = EAG_region_100_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3846,11 +4041,16 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_southern_england_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.76.e
 		add_stability = -0.01
+		custom_effect_tooltip = EAG_region_0_influence_give.tt	
+		EAG = {
+			clr_country_flag = EAG_currently_pleading
+		}
     }
 }
 
@@ -3862,6 +4062,7 @@ country_event = {
 	option = {
 		name = EAG_event.77.a
 		custom_effect_tooltip = EAG_small_city_spending.tt
+		custom_effect_tooltip = EAG_region_20_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3905,11 +4106,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_wessex_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.77.b
 		custom_effect_tooltip = EAG_medium_city_spending.tt
+		custom_effect_tooltip = EAG_region_50_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -3953,11 +4156,13 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_wessex_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.77.c	
 		custom_effect_tooltip = EAG_big_city_spending.tt
+		custom_effect_tooltip = EAG_region_100_influence_give.tt	
 		trigger = {
 			EAG = {
                check_variable = {
@@ -4000,11 +4205,16 @@ country_event = {
 		}
 		EAG = {
 			set_country_flag = EAG_voting_wessex_agreed
+			clr_country_flag = EAG_currently_pleading
 		}
     }
 	option = {
 		name = EAG_event.77.e
 		add_stability = -0.01
+		custom_effect_tooltip = EAG_region_0_influence_give.tt	
+		EAG = {
+			clr_country_flag = EAG_currently_pleading
+		}
     }
 }
 
@@ -4013,6 +4223,7 @@ country_event = {
 	title = EAG_event.78.t
 	desc = EAG_event.78.d
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		EAG = {
 			NOT = {
@@ -4024,7 +4235,15 @@ country_event = {
 				has_active_mission = EAG_project_mercia_voting
 				has_active_mission = EAG_project_northumbria_voting
 				has_active_mission = EAG_project_southern_england_voting
-				has_active_mission = EAG_project_wessex_voting
+				has_active_mission = EAG_project_wessex_voting		
+				has_active_mission = EAG_project_nuclear_voting
+				has_active_mission = EAG_project_football_voting
+				has_active_mission = EAG_project_cctv_voting
+				has_active_mission = EAG_project_sport_voting
+				has_active_mission = EAG_project_doctor_who_voting
+				has_active_mission = EAG_project_monument_voting
+				has_active_mission = EAG_project_rebuild_voting
+				has_active_mission = EAG_project_museum_voting
 			}
 			has_completed_focus = EAG_electors_system
 		}
@@ -4085,6 +4304,7 @@ country_event = {
 	title = EAG_event.79.t
 	desc = EAG_event.79.d
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		EAG = {
 			NOT = {
@@ -4097,6 +4317,14 @@ country_event = {
 				has_active_mission = EAG_project_northumbria_voting
 				has_active_mission = EAG_project_southern_england_voting
 				has_active_mission = EAG_project_wessex_voting
+				has_active_mission = EAG_project_nuclear_voting
+				has_active_mission = EAG_project_football_voting
+				has_active_mission = EAG_project_cctv_voting
+				has_active_mission = EAG_project_sport_voting
+				has_active_mission = EAG_project_doctor_who_voting
+				has_active_mission = EAG_project_monument_voting
+				has_active_mission = EAG_project_rebuild_voting
+				has_active_mission = EAG_project_museum_voting
 			}
 			has_completed_focus = EAG_electors_system
 		}
@@ -4157,6 +4385,7 @@ country_event = {
 	title = EAG_event.80.t
 	desc = EAG_event.80.d
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		EAG = {
 			NOT = {
@@ -4169,6 +4398,14 @@ country_event = {
 				has_active_mission = EAG_project_northumbria_voting
 				has_active_mission = EAG_project_southern_england_voting
 				has_active_mission = EAG_project_wessex_voting
+				has_active_mission = EAG_project_nuclear_voting
+				has_active_mission = EAG_project_football_voting
+				has_active_mission = EAG_project_cctv_voting
+				has_active_mission = EAG_project_sport_voting
+				has_active_mission = EAG_project_doctor_who_voting
+				has_active_mission = EAG_project_monument_voting
+				has_active_mission = EAG_project_rebuild_voting
+				has_active_mission = EAG_project_museum_voting
 			}
 			has_completed_focus = EAG_electors_system
 		}
@@ -4238,6 +4475,7 @@ country_event = {
 	title = EAG_event.81.t
 	desc = EAG_event.81.d
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		EAG = {
 			NOT = {
@@ -4250,6 +4488,14 @@ country_event = {
 				has_active_mission = EAG_project_northumbria_voting
 				has_active_mission = EAG_project_southern_england_voting
 				has_active_mission = EAG_project_wessex_voting
+				has_active_mission = EAG_project_nuclear_voting
+				has_active_mission = EAG_project_football_voting
+				has_active_mission = EAG_project_cctv_voting
+				has_active_mission = EAG_project_sport_voting
+				has_active_mission = EAG_project_doctor_who_voting
+				has_active_mission = EAG_project_monument_voting
+				has_active_mission = EAG_project_rebuild_voting
+				has_active_mission = EAG_project_museum_voting
 			}
 			has_completed_focus = EAG_electors_system
 		}
@@ -4310,6 +4556,7 @@ country_event = {
 	title = EAG_event.82.t
 	desc = EAG_event.82.d
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		EAG = {
 			NOT = {
@@ -4322,6 +4569,14 @@ country_event = {
 				has_active_mission = EAG_project_northumbria_voting
 				has_active_mission = EAG_project_southern_england_voting
 				has_active_mission = EAG_project_wessex_voting
+				has_active_mission = EAG_project_nuclear_voting
+				has_active_mission = EAG_project_football_voting
+				has_active_mission = EAG_project_cctv_voting
+				has_active_mission = EAG_project_sport_voting
+				has_active_mission = EAG_project_doctor_who_voting
+				has_active_mission = EAG_project_monument_voting
+				has_active_mission = EAG_project_rebuild_voting
+				has_active_mission = EAG_project_museum_voting
 			}
 			has_completed_focus = EAG_electors_system
 		}
@@ -4379,6 +4634,7 @@ country_event = {
 	title = EAG_event.83.t
 	desc = EAG_event.83.d
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		EAG = {
 			NOT = {
@@ -4391,6 +4647,14 @@ country_event = {
 				has_active_mission = EAG_project_northumbria_voting
 				has_active_mission = EAG_project_southern_england_voting
 				has_active_mission = EAG_project_wessex_voting
+				has_active_mission = EAG_project_nuclear_voting
+				has_active_mission = EAG_project_football_voting
+				has_active_mission = EAG_project_cctv_voting
+				has_active_mission = EAG_project_sport_voting
+				has_active_mission = EAG_project_doctor_who_voting
+				has_active_mission = EAG_project_monument_voting
+				has_active_mission = EAG_project_rebuild_voting
+				has_active_mission = EAG_project_museum_voting
 			}
 			has_completed_focus = EAG_electors_system
 		}
@@ -4459,7 +4723,25 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.84.a	
-		add_political_power = 75
+		EAG = { 
+			add_timed_idea = { 
+				idea = EAG_project_fighting_corruption  
+				days = 120
+			}
+		}
+    }
+	option = {
+		name = EAG_event.84.b
+		EAG = { 
+			add_timed_idea = { 
+				idea = EAG_project_improved_system  
+				days = 120
+			}
+		}
+    }
+	option = {
+		name = EAG_event.84.c	
+		add_political_power = 300
     }
 }
 
@@ -4470,7 +4752,35 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.85.a	
-		add_political_power = 75
+		EAG = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = electronics
+            }
+		}
+    }
+	option = {
+		name = EAG_event.85.b
+		EAG = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = support_tech
+            }
+		}
+    }
+	option = {
+		name = EAG_event.85.c	
+		EAG = { 
+			add_timed_idea = { 
+				idea = EAG_challenging_research 
+				days = 120
+			}
+			set_technology = {
+				wireless_power_transfer = 1
+			}
+		}
     }
 }
 
@@ -4481,7 +4791,27 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.86.a	
-		add_political_power = 75
+		EAG = {
+			add_manpower = 20000
+		}
+    }
+	option = {
+		name = EAG_event.86.b
+		EAG = {
+			add_stability = 0.15
+			add_war_support = 0.15
+		}
+    }
+	option = {
+		name = EAG_event.86.c	
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 4
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 4
+		}
     }
 }
 
@@ -4492,7 +4822,84 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.87.a	
-		add_political_power = 75
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 4
+		}
+    }
+	option = {
+		name = EAG_event.87.b	
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 4
+		}
+    }
+	option = {
+		name = EAG_event.87.c	
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = radar_station
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = radar_station
+				level = 2
+				instant_build = yes
+			}
+		}
     }
 }
 
@@ -4503,7 +4910,33 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.88.a	
-		add_political_power = 75
+		EAG = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				category = armor
+            }
+		}
+    }
+	option = {
+		name = EAG_event.88.b	
+		EAG = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				category = light_air
+            }
+		}
+    }
+	option = {
+		name = EAG_event.88.c	
+		EAG = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				category = naval_equipment
+            }
+		}
     }
 }
 
@@ -4514,7 +4947,27 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.89.a	
-		add_political_power = 75
+		add_resource = {
+			type = steel
+			amount = 5
+			state = 998
+		}
+    }
+	option = {
+		name = EAG_event.89.b	
+		add_resource = {
+			type = chromium
+			amount = 5
+			state = 998
+		}
+    }
+	option = {
+		name = EAG_event.89.c
+		add_resource = {
+			type = oil
+			amount = 5
+			state = 998
+		}
     }
 }
 
@@ -4531,14 +4984,20 @@ country_event = {
 		clr_country_flag =	EAG_voting_mercia_agreed
 		clr_country_flag =	EAG_voting_essex_agreed
 		clr_country_flag =	EAG_voting_east_england_agreed		
+		clr_country_flag =	EAG_pleading_Eastern_England
+		clr_country_flag =	EAG_pleading_Essex
+		clr_country_flag =	EAG_pleading_Mercia
+		clr_country_flag =	EAG_pleading_Northumbria
+		clr_country_flag =	EAG_pleading_Southern_England
+		clr_country_flag =	EAG_pleading_Wessex
 		add_political_power = 50
     }
 }
 
 country_event = {
 	id = EAG_event.91
-	title = EAG_event.91
-	desc = EAG_event.91
+	title = EAG_event.91.t
+	desc = EAG_event.91.d
 	is_triggered_only = yes	
 	trigger = {
 		EAG = {
@@ -4555,8 +5014,8 @@ country_event = {
 
 country_event = {
 	id = EAG_event.92
-	title = EAG_event.92
-	desc = EAG_event.92
+	title = EAG_event.92.t
+	desc = EAG_event.92.d
 	is_triggered_only = yes	
 	trigger = {
 		EAG = {
@@ -4573,8 +5032,8 @@ country_event = {
 
 country_event = {
 	id = EAG_event.93
-	title = EAG_event.93
-	desc = EAG_event.93
+	title = EAG_event.93.t
+	desc = EAG_event.93.d
 	is_triggered_only = yes	
 	trigger = {
 		EAG = {
@@ -4591,8 +5050,8 @@ country_event = {
 
 country_event = {
 	id = EAG_event.94
-	title = EAG_event.94
-	desc = EAG_event.94
+	title = EAG_event.94.t
+	desc = EAG_event.94.d
 	is_triggered_only = yes	
 	trigger = {
 		EAG = {
@@ -4609,8 +5068,8 @@ country_event = {
 
 country_event = {
 	id = EAG_event.95
-	title = EAG_event.95
-	desc = EAG_event.95
+	title = EAG_event.95.t
+	desc = EAG_event.95.d
 	is_triggered_only = yes	
 	trigger = {
 		EAG = {
@@ -4627,8 +5086,8 @@ country_event = {
 
 country_event = {
 	id = EAG_event.96
-	title = EAG_event.96
-	desc = EAG_event.96
+	title = EAG_event.96.t
+	desc = EAG_event.96.d
 	is_triggered_only = yes	
 	trigger = {
 		EAG = {
@@ -4646,8 +5105,8 @@ country_event = {
 ###NEW PROJECTS###
 country_event = { #Nuclear Project
 	id = EAG_event.97
-	title = EAG_event.97
-	desc = EAG_event.97
+	title = EAG_event.97.t
+	desc = EAG_event.97.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.97.a	
@@ -4665,8 +5124,8 @@ country_event = { #Nuclear Project
 
 country_event = { #Football
 	id = EAG_event.98
-	title = EAG_event.98
-	desc = EAG_event.98
+	title = EAG_event.98.t
+	desc = EAG_event.98.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.98.a	
@@ -4685,8 +5144,8 @@ country_event = { #Football
 
 country_event = { #Football Frenzy
 	id = EAG_event.99
-	title = EAG_event.99
-	desc = EAG_event.99
+	title = EAG_event.99.t
+	desc = EAG_event.99.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.99.a	
@@ -4702,8 +5161,8 @@ country_event = { #Football Frenzy
 
 country_event = { #CCTV
 	id = EAG_event.100
-	title = EAG_event.100
-	desc = EAG_event.100
+	title = EAG_event.100.t
+	desc = EAG_event.100.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.100.a	
@@ -4721,8 +5180,8 @@ country_event = { #CCTV
 
 country_event = { #English "Sport"
 	id = EAG_event.101
-	title = EAG_event.101
-	desc = EAG_event.101
+	title = EAG_event.101.t
+	desc = EAG_event.101.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.101.a	
@@ -4743,8 +5202,8 @@ country_event = { #English "Sport"
 
 country_event = { #Doctor Who
 	id = EAG_event.102
-	title = EAG_event.102
-	desc = EAG_event.102
+	title = EAG_event.102.t
+	desc = EAG_event.102.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.102.a	
@@ -4785,8 +5244,8 @@ country_event = { #Doctor Who
 
 country_event = { #Doctor Who Sad
 	id = EAG_event.103
-	title = EAG_event.103
-	desc = EAG_event.103
+	title = EAG_event.103.t
+	desc = EAG_event.103.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.103.a	
@@ -4798,8 +5257,8 @@ country_event = { #Doctor Who Sad
 
 country_event = { #Doctor Who Happy
 	id = EAG_event.104
-	title = EAG_event.104
-	desc = EAG_event.104
+	title = EAG_event.104.t
+	desc = EAG_event.104.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.104.a	
@@ -4808,10 +5267,10 @@ country_event = { #Doctor Who Happy
     }
 }
 
-country_event = { #Doctor Who Furious
+country_event = { #Doctor Who Global P
 	id = EAG_event.105
-	title = EAG_event.105
-	desc = EAG_event.105
+	title = EAG_event.105.t
+	desc = EAG_event.105.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.105.a	
@@ -4833,16 +5292,16 @@ country_event = { #Doctor Who Furious
 
 country_event = { #Monument
 	id = EAG_event.106
-	title = EAG_event.106
-	desc = EAG_event.106
+	title = EAG_event.106.t
+	desc = EAG_event.106.d
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.106.a	
 		hidden_effect = {
 			EAG = {
 				country_event = {
-				days = 75
-				id = EAG_event.107
+					days = 75
+					id = EAG_event.107
 				}
 			}
 		}
@@ -4853,8 +5312,8 @@ country_event = { #Monument
 		hidden_effect = {
 			EAG = {
 				country_event = {
-				days = 75
-				id = EAG_event.108
+					days = 75
+					id = EAG_event.108
 				}
 			}
 		}
@@ -4865,8 +5324,8 @@ country_event = { #Monument
 		hidden_effect = {
 			EAG = {
 				country_event = {
-				days = 75
-				id = EAG_event.109
+					days = 75
+					id = EAG_event.109
 				}
 			}
 		}
@@ -4877,8 +5336,8 @@ country_event = { #Monument
 		hidden_effect = {
 			EAG = {
 				country_event = {
-				days = 75
-				id = EAG_event.110
+					days = 75
+					id = EAG_event.110
 				}
 			}
 		}
@@ -4907,6 +5366,7 @@ country_event = {
 	desc = EAG_event.108.d
 	is_triggered_only = yes	
 	option = {
+		name = EAG_event.108.a
 		add_province_modifier = {
 			static_modifiers = { william_the_conqueror_statue }
 			province = {
@@ -4922,6 +5382,7 @@ country_event = {
 	desc = EAG_event.109.d
 	is_triggered_only = yes
 	option = {
+		name = EAG_event.109.a
 		add_province_modifier = {
 			static_modifiers = { margaret_thatcher_statue }
 			province = {
@@ -4937,6 +5398,7 @@ country_event = {
 	desc = EAG_event.110.d
 	is_triggered_only = yes	
 	option = {
+		name = EAG_event.110.a
 		1160 = {
 			add_province_modifier = {
 				static_modifiers = { gunzel_statue }
@@ -4986,45 +5448,45 @@ country_event = {
 }
 
 country_event = {
-	id = EAG_event.200
+	id = EAG_event.200 #Elections start
 	title = EAG_event.200.t
 	desc = EAG_event.200.d
 	is_triggered_only = yes	
 	option = {
-		name = EAG_event.200.a	
-		set_country_flag = run_as_klumb
+		name = EAG_event.200.a	#Run as EPC
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.241
+			}
+		}
     }
 	option = {
-		name = EAG_event.200.b	
-		set_country_flag = run_as_may
+		name = EAG_event.200.b	#Run as FPE
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.242
+			}
+		}
     }
 	option = {
-		name = EAG_event.200.c 
-		set_country_flag = run_as_yea
+		name = EAG_event.200.c	#Run as EPP
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.243
+			}
+		}
     }
 	option = {
-		name = EAG_event.200.e
-		set_country_flag = run_as_whitehouse
-    }
-	option = {
-		name = EAG_event.200.f
-		set_country_flag = run_as_bushell
-    }
-	option = {
-		name = EAG_event.200.g
-		set_country_flag = run_as_starmer
-    }
-	option = {
-		name = EAG_event.200.h
-		set_country_flag = run_as_iсke
-    }
-	option = {
-		name = EAG_event.200.k
-		set_country_flag = run_as_astley
-    }
-	option = {
-		name = EAG_event.200.l
-		set_country_flag = run_as_bates
+		name = EAG_event.200.e	#RESET PAGE
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.244
+			}
+		}
     }
 }
 
@@ -5035,139 +5497,653 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.201.a	
-		add_stability = 0.05
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^5 }
+			EAG = {
+				has_country_flag = EAG_run_as_klumb
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			add_stability = 0.10
+			add_political_power = 100
+			clr_country_flag = EAG_run_as_klumb
+			set_country_flag = EAG_klumb_elections_EPC_victory
+		}
     }
-}
-
-country_event = {
-	id = EAG_event.202
-	title = EAG_event.202.t
-	desc = EAG_event.202.d
-	is_triggered_only = yes	
 	option = {
-		name = EAG_event.202.a	
+		name = EAG_event.201.b
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^5 }
+			EAG = {
+				has_country_flag = EAG_run_as_may
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
 		EAG = {
 			retire_country_leader = yes
 			promote_character = EAG_theresa_may
+			clr_country_flag = EAG_run_as_may
+			set_country_flag = EAG_klumb_elections_EPC_victory
 		}
     }
-}
-
-country_event = {
-	id = EAG_event.203
-	title = EAG_event.203.t
-	desc = EAG_event.203.d
-	is_triggered_only = yes	
 	option = {
-		name = EAG_event.203.a	
+		name = EAG_event.201.c
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^0 > klumb_parliament_seat_array^5 }
+			EAG = {
+				NOT = {
+					OR = {
+						has_country_flag = EAG_run_as_may
+						has_country_flag = EAG_run_as_klumb
+					}
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			retire_country_leader = yes
+			promote_character = EAG_theresa_may
+			add_political_power = -100
+			clr_country_flag = EAG_run_as_klumb
+			clr_country_flag = EAG_run_as_may
+			clr_country_flag = EAG_run_as_yea
+			clr_country_flag = EAG_run_as_whitehouse
+			clr_country_flag = EAG_run_as_bushell
+			clr_country_flag = EAG_run_as_starmer
+			clr_country_flag = EAG_run_as_iсke
+			clr_country_flag = EAG_run_as_bates
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_EPC_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.e
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^5 }
+			EAG = {
+				has_country_flag = EAG_run_as_yea
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
 		EAG = {
 			set_politics = {
 				ruling_party = neocameralism
 			}
 			retire_country_leader = yes
 			promote_character = EAG_philip_yea
+			clr_country_flag = EAG_run_as_yea
+			set_country_flag = EAG_klumb_elections_FPE_victory
 		}
     }
-}
-
-country_event = {
-	id = EAG_event.204
-	title = EAG_event.204.t
-	desc = EAG_event.204.d
-	is_triggered_only = yes	
 	option = {
-		name = EAG_event.204.a	
-		EAG = {
-			set_politics = {
-				ruling_party = socialism
-			}
-			retire_country_leader = yes
-			promote_character = EAG_keir_starmer
-		}
-    }
-}
-
-country_event = {
-	id = EAG_event.205
-	title = EAG_event.205.t
-	desc = EAG_event.205.d
-	is_triggered_only = yes	
-	option = {
-		name = EAG_event.205.a	
-		EAG = {
-			set_politics = {
-				ruling_party = national_bolshevism
-			}
-			retire_country_leader = yes
-			promote_character = EAG_garry_bushell
-		}
-    }
-}
-
-country_event = {
-	id = EAG_event.206
-	title = EAG_event.206.t
-	desc = EAG_event.206.d
-	is_triggered_only = yes	
-	option = {
-		name = EAG_event.206.a	
-		EAG = {
-			set_politics = {
-				ruling_party = millennialism
-			}
-			retire_country_leader = yes
-			promote_character = EAG_david_iсke
-		}
-    }
-}
-
-country_event = {
-	id = EAG_event.207
-	title = EAG_event.207.t
-	desc = EAG_event.207.d
-	is_triggered_only = yes	
-	option = {
-		name = EAG_event.207.a	
-		EAG = {
-			set_politics = {
-				ruling_party = right_populism
+		name = EAG_event.201.f
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^5 }
+			EAG = {
+				has_country_flag = EAG_run_as_whitehouse
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
 			}
 		}
-    }
-}
-
-country_event = {
-	id = EAG_event.208
-	title = EAG_event.208.t
-	desc = EAG_event.208.d
-	is_triggered_only = yes	
-	option = {
-		name = EAG_event.208.a	
 		EAG = {
 			set_politics = {
 				ruling_party = neocameralism
 			}
 			retire_country_leader = yes
 			promote_character = EAG_alex_whitehouse
+			clr_country_flag = EAG_run_as_whitehouse
+			set_country_flag = EAG_klumb_elections_FPE_victory
 		}
     }
-}
-
-country_event = {
-	id = EAG_event.209
-	title = EAG_event.209.t
-	desc = EAG_event.209.d
-	is_triggered_only = yes	
 	option = {
-		name = EAG_event.209.a	
+		name = EAG_event.201.g
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^1 > klumb_parliament_seat_array^5 }
+			EAG = {
+				NOT = {
+					OR = {
+						has_country_flag = EAG_run_as_yea
+						has_country_flag = EAG_run_as_whitehouse
+					}
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = neocameralism
+			}
+			retire_country_leader = yes
+			promote_character = EAG_alex_whitehouse
+			add_political_power = -100
+			clr_country_flag = EAG_run_as_klumb
+			clr_country_flag = EAG_run_as_may
+			clr_country_flag = EAG_run_as_yea
+			clr_country_flag = EAG_run_as_whitehouse
+			clr_country_flag = EAG_run_as_bushell
+			clr_country_flag = EAG_run_as_starmer
+			clr_country_flag = EAG_run_as_iсke
+			clr_country_flag = EAG_run_as_bates
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_FPE_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.h
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^5 }
+			EAG = {
+				has_country_flag = EAG_run_as_bushell
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = national_bolshevism
+			}
+			retire_country_leader = yes
+			promote_character = EAG_garry_bushell
+			clr_country_flag = EAG_run_as_bushell
+			set_country_flag = EAG_klumb_elections_EPP_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.i
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^2 > klumb_parliament_seat_array^5 }
+			EAG = {
+				NOT = {
+					has_country_flag = EAG_run_as_bushell
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = national_bolshevism
+			}
+			retire_country_leader = yes
+			promote_character = EAG_garry_bushell
+			add_political_power = -100
+			clr_country_flag = EAG_run_as_klumb
+			clr_country_flag = EAG_run_as_may
+			clr_country_flag = EAG_run_as_yea
+			clr_country_flag = EAG_run_as_whitehouse
+			clr_country_flag = EAG_run_as_bushell
+			clr_country_flag = EAG_run_as_starmer
+			clr_country_flag = EAG_run_as_iсke
+			clr_country_flag = EAG_run_as_bates
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_EPP_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.j
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^5 }
+			EAG = {
+				has_country_flag = EAG_run_as_starmer
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = socialism
+			}
+			retire_country_leader = yes
+			clr_country_flag = EAG_run_as_starmer
+			set_country_flag = EAG_klumb_elections_VOLK_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.k
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^5 }
+			EAG = {
+				NOT = {
+					has_country_flag = EAG_run_as_starmer
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = socialism
+			}
+			retire_country_leader = yes
+			add_political_power = -100
+			clr_country_flag = EAG_run_as_klumb
+			clr_country_flag = EAG_run_as_may
+			clr_country_flag = EAG_run_as_yea
+			clr_country_flag = EAG_run_as_whitehouse
+			clr_country_flag = EAG_run_as_bushell
+			clr_country_flag = EAG_run_as_starmer
+			clr_country_flag = EAG_run_as_iсke
+			clr_country_flag = EAG_run_as_bates
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_VOLK_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.l
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^4 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^4 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^4 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^4 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^4 > klumb_parliament_seat_array^5 }
+			EAG = {
+				has_country_flag = EAG_run_as_iсke
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = millenarism
+			}
+			retire_country_leader = yes
+			clr_country_flag = EAG_run_as_iсke
+			set_country_flag = EAG_klumb_elections_TPV_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.m
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^1 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^3 > klumb_parliament_seat_array^5 }
+			EAG = {
+				NOT = {
+					has_country_flag = EAG_run_as_iсke
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = millennialism
+			}
+			retire_country_leader = yes
+			add_political_power = -100
+			clr_country_flag = EAG_run_as_klumb
+			clr_country_flag = EAG_run_as_may
+			clr_country_flag = EAG_run_as_yea
+			clr_country_flag = EAG_run_as_whitehouse
+			clr_country_flag = EAG_run_as_bushell
+			clr_country_flag = EAG_run_as_starmer
+			clr_country_flag = EAG_run_as_iсke
+			clr_country_flag = EAG_run_as_bates
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_TPV_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.o
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^1 }
+			EAG = {
+				has_country_flag = EAG_run_as_astley
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			set_politics = {
+				ruling_party = right_populism
+			}
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_NGGU_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.p
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^1 }
+			EAG = {
+				has_country_flag = EAG_run_as_bates
+				NOT = {
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
 		EAG = {
 			retire_country_leader = yes
 			promote_character = EAG_michael_bates
+			clr_country_flag = EAG_run_as_bates
+			set_country_flag = EAG_klumb_elections_NGGU_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.q
+		trigger = {
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^0 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^2 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^3 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^4 }
+			check_variable = { klumb_parliament_seat_array^5 > klumb_parliament_seat_array^1 }
+			EAG = {
+				NOT = {
+					OR = {
+						has_country_flag = EAG_run_as_bates
+						has_country_flag = EAG_run_as_astley
+					}
+					EAG = {
+						check_variable = {
+							var = nsis_concession
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+				}
+			}
+		}
+		EAG = {
+			retire_country_leader = yes
+			promote_character = EAG_michael_bates
+			add_political_power = -100
+			clr_country_flag = EAG_run_as_klumb
+			clr_country_flag = EAG_run_as_may
+			clr_country_flag = EAG_run_as_yea
+			clr_country_flag = EAG_run_as_whitehouse
+			clr_country_flag = EAG_run_as_bushell
+			clr_country_flag = EAG_run_as_starmer
+			clr_country_flag = EAG_run_as_iсke
+			clr_country_flag = EAG_run_as_bates
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_NGGU_victory
+		}
+    }
+	option = {
+		name = EAG_event.201.r
+		trigger = {
+			EAG = {
+				check_variable = {
+					var = nsis_concession
+					value = 5
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		EAG = {
+			retire_country_leader = yes
+			set_politics = {
+				ruling_party = right_populism
+			}
+			add_political_power = -200
+			clr_country_flag = EAG_run_as_klumb
+			clr_country_flag = EAG_run_as_may
+			clr_country_flag = EAG_run_as_yea
+			clr_country_flag = EAG_run_as_whitehouse
+			clr_country_flag = EAG_run_as_bushell
+			clr_country_flag = EAG_run_as_starmer
+			clr_country_flag = EAG_run_as_iсke
+			clr_country_flag = EAG_run_as_bates
+			clr_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_NGGU_victory
+			set_temp_variable = { klumb_temp_member = 6 }
+			set_temp_variable = { klumb_temp_seats = 200 }
+			klumb_modify_parliament_seat = yes
 		}
     }
 }
 
 ##Anarchist Stuff##
+country_event = {
+	id = EAG_event.202
+	title = EAG_event.202.t
+	desc = EAG_event.202.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_no_to_opression
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.202.a
+		EAG = {
+			add_political_power = 75
+		}
+    }
+}
+country_event = {
+	id = EAG_event.203
+	title = EAG_event.203.t
+	desc = EAG_event.203.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_no_to_opression
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.203.a
+		EAG = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+    }
+}
+country_event = {
+	id = EAG_event.204
+	title = EAG_event.204.t
+	desc = EAG_event.204.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_no_to_opression
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.204.a
+		EAG = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+    }
+}
+country_event = {
+	id = EAG_event.205
+	title = EAG_event.205.t
+	desc = EAG_event.205.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_no_to_opression
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.205.a
+		EAG = {
+			add_stability = 0.02
+			add_war_support = 0.02
+		}
+    }
+}
+country_event = {
+	id = EAG_event.206
+	title = EAG_event.206.t
+	desc = EAG_event.206.d
+	trigger = {
+		EAG = {
+			has_completed_focus = EAG_no_to_opression
+		}
+	}
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.206.a
+		EAG = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+    }
+}
 country_event = {
 	id = EAG_event.210
 	title = EAG_event.210.t
@@ -5579,6 +6555,2381 @@ country_event = {
 					}
 				}
 			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.221
+	title = EAG_event.221.t
+	desc = EAG_event.221.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.221.a	
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 11
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^5 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^1 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		else_if = {
+			EAG = {
+				add_political_power = -50
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.222
+	title = EAG_event.222.t
+	desc = EAG_event.222.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.222.a	
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 11
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^5 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^2 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		else_if = {
+			EAG = {
+				add_political_power = -50
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.223
+	title = EAG_event.223.t
+	desc = EAG_event.223.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.223.a	
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 11
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^5 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^3 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		else_if = {
+			EAG = {
+				add_political_power = -50
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.224
+	title = EAG_event.224.t
+	desc = EAG_event.224.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.224.a	
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 11
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^5
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^5 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^4 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		else_if = {
+			EAG = {
+				add_political_power = -50
+			}
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.225
+	title = EAG_event.225.t
+	desc = EAG_event.225.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.225.a	
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 11
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^0 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^2 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^3 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^4 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		if = {
+			limit = {									
+				EAG = {
+					check_variable = {
+						var = klumb_parliament_seat_array^0
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^2
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^3
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^4
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = klumb_parliament_seat_array^1
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			subtract_from_variable = { klumb_parliament_seat_array^1 = 2 }
+			subtract_from_variable = { klumb_parliament_seat_array^5 = -2 }
+			custom_effect_tooltip = EAG_klumb_parliament_seat_loss.tt
+			klumb_modify_parliament_seat = yes
+		}
+		else_if = {
+			EAG = {
+				add_political_power = -50
+			}
+		}
+    }
+}
+
+#PROJECTS KLUMB#
+
+country_event = {
+	id = EAG_event.226 #FPE - Conscript More Soliders
+	title = EAG_event.226.t
+	desc = EAG_event.226.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
+				}
+			}
+			has_completed_focus = EAG_national_diet
+		}
+	}
+	option = {
+		name = EAG_event.226.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_FPE_issue_1
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.226.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_FPE_issue_1
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.227 #FPE - Advanced training techniques
+	title = EAG_event.227.t
+	desc = EAG_event.227.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
+				}
+			}
+			has_completed_focus = EAG_national_diet
+		}
+	}
+	option = {
+		name = EAG_event.227.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_FPE_issue_2
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.227.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_FPE_issue_2
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.228 #FPE - Sell Weapons
+	title = EAG_event.228.t
+	desc = EAG_event.228.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
+				}
+			}
+			has_completed_focus = EAG_national_diet
+		}
+	}
+	option = {
+		name = EAG_event.228.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 55
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 80
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 80
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 80
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_FPE_issue_3
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.228.b
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 55
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 80
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 80
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 80
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_FPE_issue_3
+			activate_mission = EAG_klumb_mission_voting_NO
+		}		
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.229 #EPP - More Money for construction
+	title = EAG_event.229.t
+	desc = EAG_event.229.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
+				}
+			}
+			has_completed_focus = EAG_national_diet
+		}
+	}
+	option = {
+		name = EAG_event.229.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 35
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_EPP_issue_1
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.229.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 35
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_EPP_issue_1
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.230 #EPP - Redistribute Supplies
+	title = EAG_event.230.t
+	desc = EAG_event.230.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
+				}
+			}
+			has_completed_focus = EAG_national_diet
+		}
+	}
+	option = {
+		name = EAG_event.230.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 35
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_EPP_issue_2
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.230.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 35
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_EPP_issue_2
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.231 #EPP - Demobilization
+	title = EAG_event.231.t
+	desc = EAG_event.231.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
+				}
+			}
+			has_completed_focus = EAG_national_diet
+		}
+	}
+	option = {
+		name = EAG_event.231.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 90
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_EPP_issue_3
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.231.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 90
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_EPP_issue_3
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.232 #Volt UK - European trading
+	title = EAG_event.232.t
+	desc = EAG_event.232.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
+				}
+			}
+			has_completed_focus = EAG_national_diet
+		}
+	}
+	option = {
+		name = EAG_event.232.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_VOLT_issue_1
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.232.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_VOLT_issue_1
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.233 #Volt UK - Literature From Europe
+	title = EAG_event.233.t
+	desc = EAG_event.233.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
+				}
+			}
+			has_completed_focus = EAG_national_diet
+		}
+	}
+	option = {
+		name = EAG_event.233.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_VOLT_issue_2
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.233.b
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_VOLT_issue_2
+			activate_mission = EAG_klumb_mission_voting_NO
+		}	
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}		
+    }
+}
+
+country_event = {
+	id = EAG_event.234 #Volt UK - Worker's Rights
+	title = EAG_event.234.t
+	desc = EAG_event.234.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
+				}
+			}
+			has_completed_focus = EAG_national_diet
+		}
+	}
+	option = {
+		name = EAG_event.234.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 90
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_VOLT_issue_3
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.234.b
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 90
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_VOLT_issue_3
+			activate_mission = EAG_klumb_mission_voting_NO
+		}	
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}		
+    }
+}
+
+country_event = {
+	id = EAG_event.235 #TPV - Normal Research
+	title = EAG_event.235.t
+	desc = EAG_event.235.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
+				}
+			}
+			has_completed_focus = EAG_national_diet
+		}
+	}
+	option = {
+		name = EAG_event.235.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 35
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_TPV_issue_1
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.235.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 35
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_TPV_issue_1
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.236 #TPV - Experimental Research
+	title = EAG_event.236.t
+	desc = EAG_event.236.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
+				}
+			}
+			has_completed_focus = EAG_national_diet
+		}
+	}
+	option = {
+		name = EAG_event.236.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_TPV_issue_2
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.236.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 10
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_TPV_issue_2
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.237 #TPV - Fire someone because of conspiracy
+	title = EAG_event.237.t
+	desc = EAG_event.237.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
+				}
+			}
+			has_completed_focus = EAG_national_diet
+		}
+	}
+	option = {
+		name = EAG_event.237.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 45
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 90
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_TPV_issue_3
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.237.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 45
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 90
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 90
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_TPV_issue_3
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.238 #NGGU - Hold a Fair
+	title = EAG_event.238.t
+	desc = EAG_event.238.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
+				}
+			}
+			has_completed_focus = EAG_national_diet
+		}
+	}
+	option = {
+		name = EAG_event.238.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 100
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_NGGU_issue_1
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.238.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 10
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 100
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_NGGU_issue_1
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.239 #NGGU - Children n Shit
+	title = EAG_event.239.t
+	desc = EAG_event.239.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
+				}
+			}
+			has_completed_focus = EAG_national_diet
+		}
+	}
+	option = {
+		name = EAG_event.239.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 20
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 100
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_NGGU_issue_2
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.239.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 0
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 35
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 20
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 100
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_NGGU_issue_2
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.240 #NGGU - Rebuild Sealand
+	title = EAG_event.240.t
+	desc = EAG_event.240.d
+	is_triggered_only = yes	
+	fire_only_ones = yes
+	trigger = {
+		EAG = {
+			NOT = {
+				OR = {
+					has_active_mission = EAG_klumb_integrate_scotland_mission
+					has_active_mission = EAG_klumb_integrate_wales_mission
+					has_active_mission = EAG_klumb_integrate_wessex_mission
+					has_active_mission = EAG_klumb_integrate_sussex_mission
+					has_active_mission = EAG_klumb_integrate_kent_mission
+					has_active_mission = EAG_klumb_integrate_northumbria_mission
+					has_active_mission = EAG_klumb_integrate_mercia_mission
+					has_active_mission = EAG_klumb_mission_voting_YES
+					has_active_mission = EAG_klumb_mission_voting_NO
+					has_country_flag = EAG_klumb_elections_started
+				}
+			}
+			has_completed_focus = EAG_national_diet
+		}
+	}
+	option = {
+		name = EAG_event.240.a
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 100
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_YES
+			set_country_flag = EAG_klumb_voting_NGGU_issue_3
+			activate_mission = EAG_klumb_mission_voting_YES
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+	option = {
+		name = EAG_event.240.b	
+		set_variable = {
+			var = EAG_FPE_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_EPP_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_VOLT_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_TPV_support_level
+			value = 100
+		}
+		set_variable = {
+			var = EAG_NGGU_support_level
+			value = 100
+		}
+		EAG = {
+			set_country_flag = EAG_klumb_voting_NO
+			set_country_flag = EAG_klumb_voting_NGGU_issue_3
+			activate_mission = EAG_klumb_mission_voting_NO
+		}
+		set_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^0
+		}
+    }
+}
+
+#Election#
+country_event = {
+	id = EAG_event.241
+	title = EAG_event.241.t
+	desc = EAG_event.241.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.241.a	
+		EAG = {
+			set_country_flag = EAG_run_as_klumb
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+	option = {
+		name = EAG_event.241.b	
+		EAG = {
+			set_country_flag = EAG_run_as_may
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.242
+	title = EAG_event.242.t
+	desc = EAG_event.242.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.242.a
+		EAG = {
+			set_country_flag = EAG_run_as_yea
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+	option = {
+		name = EAG_event.242.b
+		EAG = {
+			set_country_flag = EAG_run_as_whitehouse
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.243
+	title = EAG_event.243.t
+	desc = EAG_event.243.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.243.a
+		EAG = {
+			set_country_flag = EAG_run_as_bushell
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.244
+	title = EAG_event.244.t
+	desc = EAG_event.244.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.244.a	#Run as Volt UK
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.245
+			}
+		}
+    }
+	option = {
+		name = EAG_event.244.b	#Run as TPV
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.246
+			}
+		}
+    }
+	option = {
+		name = EAG_event.244.c	#Run as NGGU
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.247
+			}
+		}
+    }
+	option = {
+		name = EAG_event.244.d	#RESET PAGE
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.200
+			}
+		}
+	}
+}
+
+country_event = {  
+	id = EAG_event.245
+	title = EAG_event.245.t
+	desc = EAG_event.245.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.245.a
+		EAG = {
+			set_country_flag = EAG_run_as_starmer
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+}
+
+country_event = {  
+	id = EAG_event.246
+	title = EAG_event.246.t
+	desc = EAG_event.246.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.246.a
+		EAG = {
+			set_country_flag = EAG_run_as_iсke
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+}
+
+country_event = {
+	id = EAG_event.247
+	title = EAG_event.247.t
+	desc = EAG_event.247.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.247.a
+		EAG = {
+			set_country_flag = EAG_run_as_bates
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
+		}
+    }
+	option = {
+		name = EAG_event.247.b
+		EAG = {
+			set_country_flag = EAG_run_as_astley
+			set_country_flag = EAG_klumb_elections_started
+			activate_mission = EAG_election_campaign
 		}
     }
 }

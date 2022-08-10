@@ -15,10 +15,10 @@ guiTypes = {
 			}
 			
 			instantTextBoxType = {
-				name = "klumb_total_amount_of_seats"
+				name = "klumb_new_british_parliament"
 				position = { x = 35 y = 250 }
-				font = "hoi_24header"
-				text = "klumb_total_amount_of_seats_text"
+				font = "hoi_18"
+				text = "klumb_new_british_parliament_text"
 				maxWidth = 400
 				maxHeight = 24
 				format = center
@@ -41,6 +41,24 @@ guiTypes = {
 			slotsize = { width = 200 height = 18 }
 			max_slots_vertical = 8
 			add_horizontal = no
+		}
+		instantTextBoxType = {
+			name = "klumb_total_amount_of_seats_text"
+			position = { x = 45 y = 400 }
+			font = "hoi_24header"
+			text = "klumb_total_amount_of_seats_text"
+			maxWidth = 400
+			maxHeight = 24
+			format = center
+		}
+		instantTextboxType = {
+			name = "klumb_voting_support_project"
+			position = { x = 15 y = 375 }
+			font = "hoi_24header"
+			maxWidth = 600
+			maxHeight = 24
+			format = left
+			text = "klumb_voting_support_project_text"
 		}
     }
 
