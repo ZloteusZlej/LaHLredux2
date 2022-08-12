@@ -776,15 +776,20 @@
 	shared_focus = {
 		id = ESS_interregnum
 		icon = GFX_goal_unknown
-		cost = 3
+		cost = 1
 		x = 7
 		y = 6
-
+		completion_reward = {
+		ESS = {
+			add_idea = ESS_interlude
+			}
+		}	
 	} 
+	
 	shared_focus = {
 		id = ESS_great_concils_choice
 		icon = GFX_goal_unknown
-		cost = 3
+		cost = 1
 		prerequisite = {
 			focus = ESS_interregnum
 		}
@@ -794,16 +799,18 @@
 				    days = 1
 					id = ESS_event.2
 				}
+			add_idea = ESS_empty_throne
 			}
 		}
 		x = 5
 		y = 7
 
 	} 
-		shared_focus = {
+	
+	shared_focus = {
 		id = ESS_warlords_action
 		icon = GFX_goal_unknown
-		cost = 3
+		cost = 1
 		prerequisite = {
 			focus = ESS_interregnum
 		}
@@ -813,16 +820,18 @@
 				    days = 1
 					id = ESS_event.3
 				}
+			add_idea = ESS_broken_hierarchy
 			}
 		}
 		x = 7
 		y = 7
 
 	} 
-		shared_focus = {
+	
+	shared_focus = {
 		id = ESS_unrest_on_the_streets
 		icon = GFX_goal_unknown
-		cost = 3
+		cost = 1
 		prerequisite = {
 			focus = ESS_interregnum
 		}
@@ -832,16 +841,18 @@
 				    days = 1
 					id = ESS_event.4
 				}
+			add_idea = ESS_london_in_flames
 			}
 		}
 		x = 9
 		y = 7
 
 	}
-		shared_focus = {
+	
+	shared_focus = {
 		id = ESS_emergency_dictatorship
 		icon = GFX_goal_unknown
-		cost = 3
+		cost = 1
 		prerequisite = {
 			focus = ESS_unrest_on_the_streets
 		}
@@ -850,6 +861,62 @@
 		}
 		prerequisite = {
 			focus = ESS_great_concils_choice
+		}
+		completion_reward = {
+			if = { 
+			  limit = {
+				check_variable = {
+						var = ESS_land_var
+						value = 2
+						compare = greater_than_or_equals
+						}
+					}
+				ESS = {
+					country_event = {
+						days = 1
+						id = ESS_event.5a
+					}
+				}
+			}
+			else_if = {
+			 limit = {
+				check_variable = {
+						var = ESS_dawkins_var
+						value = 2
+						compare = greater_than_or_equals
+						}
+					}
+				ESS = {
+					country_event = {
+						days = 1
+						id = ESS_event.5b
+					}
+				}
+			}
+			else_if = {
+			limit = {
+				check_variable = {
+						var = ESS_collins_var
+						value = 2
+						compare = greater_than_or_equals
+						}
+					}
+				ESS = {
+					country_event = {
+						days = 1
+						id = ESS_event.5c
+					}
+				}
+			}
+			else = {
+				ESS = {
+					country_event = {
+						days = 1
+						id = ESS_event.6
+					}
+				}
+			}
+			
 		}
 		x = 7
 		y = 8
