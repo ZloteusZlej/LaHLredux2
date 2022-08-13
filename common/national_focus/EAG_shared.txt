@@ -918,6 +918,12 @@ shared_focus = {
 	prerequisite = {
 		focus = EAG_farmers_self_governance
 	}
+	prerequisite = {
+		focus = EAG_ensuring_our_place_in_heaven
+	}
+	prerequisite = {
+		focus = EAG_the_main_business
+	}
 	completion_reward = {
 		add_political_power = 125
 		add_tech_bonus = {
@@ -1716,12 +1722,6 @@ shared_focus = {
 	prerequisite = {
 		focus = EAG_liquid_gold
 	}
-	prerequisite = {
-		focus = EAG_ensuring_our_place_in_heaven
-	}
-	prerequisite = {
-		focus = EAG_the_main_business
-	}
 	available = {
 		has_country_flag = OSTANG_mercs_britain_reunified
 	}
@@ -2457,6 +2457,12 @@ shared_focus = {
 	cost = 4.3
 	prerequisite = {
 		focus = EAG_communal_mutual_aid
+	}
+	prerequisite = {
+		focus = EAG_seeds_of_wisdom
+	}
+	prerequisite = {
+		focus = EAG_army_of_the_people
 	}
 	completion_reward = {
 		swap_ideas = {
@@ -3291,12 +3297,6 @@ shared_focus = {
 	prerequisite = {
 		focus = EAG_bread_and_freedom
 	}
-	prerequisite = {
-		focus = EAG_seeds_of_wisdom
-	}
-	prerequisite = {
-		focus = EAG_army_of_the_people
-	}
 	available = {
 		has_country_flag = OSTANG_nazanarch_britain_reunified
 	}
@@ -3964,6 +3964,12 @@ shared_focus = {
 	}
 	prerequisite = {
 		focus = EAG_we_are_the_machine
+	}
+	prerequisite = {
+		focus = EAG_peacemaker
+	}
+	prerequisite = {
+		focus = EAG_we_walk_in_line
 	}
 	x = 12
 	y = 12
@@ -4729,12 +4735,6 @@ shared_focus = {
 	icon = GFX_goal_EAG_open_the_country
 	cost = 4.3
 	prerequisite = {
-		focus = EAG_peacemaker
-	}
-	prerequisite = {
-		focus = EAG_we_walk_in_line
-	}
-	prerequisite = {
 		focus = EAG_governors_care
 	}
 	available = {
@@ -5058,16 +5058,160 @@ shared_focus = {
 					OR = {
 						has_country_flag = EAG_klumb_mission_voting_YES
 						has_country_flag = EAG_klumb_mission_voting_NO
+						has_country_flag = EAG_klumb_elections_started
 					}
 				}
 			}
 		}
 	}
-	bypass = {
-		has_country_flag = elections_ended
-	}
 	completion_reward = {
-		add_political_power = 100
+		custom_effect_tooltip = EAG_elections_president_speech
+		hidden_effect = {
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_josef_maria_klumb
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.131
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_theresa_may
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.132
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_alex_whitehouse
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.133
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_philip_yea
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.134
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_garry_bushell
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.135
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_keir_starmer
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.136
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_david_iсke
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.137
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_rick_astley
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.138
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_michael_bates
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.139
+					}
+				}
+			}
+		}
 	}
 	x = 12
 	y = 18

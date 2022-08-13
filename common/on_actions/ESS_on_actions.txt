@@ -42,4 +42,22 @@ on_actions = {
 			}
 		}
 	}
+	on_weekly_ESS = {
+		effect = {
+			if = {
+				limit = {
+					ESS = {
+						has_idea = ESS_spoils_of_kent
+					}
+				}
+				ESS = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 15
+						producer = ENG
+					}
+				}
+			}
+		}
+	}
 }					  

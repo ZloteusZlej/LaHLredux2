@@ -1,0 +1,441 @@
+scripted_gui = {
+	
+	lhl_volk_mercs_screen_body = {
+		context_type = decision_category
+		parent_window_token = decision_tab
+		window_name = "lhl_volk_mercs_full"
+
+		visible = {
+			tag = EAG
+		}
+		triggers = {
+            lhl_mercs_mood_1_visible = {
+				check_variable = {
+					var = mercs_mood
+					value = 5
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_mercs_mood_2_visible = {
+				check_variable = {
+					var = mercs_mood
+					value = 6
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = mercs_mood
+					value = 10
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_mercs_mood_3_visible = {
+				check_variable = {
+					var = mercs_mood
+					value = 11
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = mercs_mood
+					value = 15
+					compare = less_than_or_equals
+				}
+		    }	
+            lhl_mercs_mood_4_visible = {
+				check_variable = {
+					var = mercs_mood
+					value = 16
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = mercs_mood
+					value = 20
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_mercs_mood_5_visible = {
+				check_variable = {
+					var = mercs_mood
+					value = 21
+					compare = greater_than_or_equals
+				}
+		    }
+            ###
+            lhl_mercs_quality_1_visible = {
+				check_variable = {
+					var = mercs_quality
+					value = 5
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_mercs_quality_2_visible = {
+				check_variable = {
+					var = mercs_quality
+					value = 6
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = mercs_quality
+					value = 10
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_mercs_quality_3_visible = {
+				check_variable = {
+					var = mercs_quality
+					value = 11
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = mercs_quality
+					value = 15
+					compare = less_than_or_equals
+				}
+		    }	
+            lhl_mercs_quality_4_visible = {
+				check_variable = {
+					var = mercs_quality
+					value = 16
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = mercs_quality
+					value = 20
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_mercs_quality_5_visible = {
+				check_variable = {
+					var = mercs_quality
+					value = 21
+					compare = greater_than_or_equals
+				}
+		    }
+			###
+            lhl_volk_mood_1_visible = {
+				check_variable = {
+					var = volk_mood
+					value = 5
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_volk_mood_2_visible = {
+				check_variable = {
+					var = volk_mood
+					value = 6
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = volk_mood
+					value = 10
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_volk_mood_3_visible = {
+				check_variable = {
+					var = volk_mood
+					value = 11
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = volk_mood
+					value = 15
+					compare = less_than_or_equals
+				}
+		    }	
+            lhl_volk_mood_4_visible = {
+				check_variable = {
+					var = volk_mood
+					value = 16
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = volk_mood
+					value = 20
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_volk_mood_5_visible = {
+				check_variable = {
+					var = volk_mood
+					value = 21
+					compare = greater_than_or_equals
+				}
+		    }
+			###
+            lhl_volk_dev_1_visible = {
+				check_variable = {
+					var = volk_dev
+					value = 5
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_volk_dev_2_visible = {
+				check_variable = {
+					var = volk_dev
+					value = 6
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = volk_dev
+					value = 10
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_volk_dev_3_visible = {
+				check_variable = {
+					var = volk_dev
+					value = 11
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = volk_dev
+					value = 15
+					compare = less_than_or_equals
+				}
+		    }	
+            lhl_volk_dev_4_visible = {
+				check_variable = {
+					var = volk_dev
+					value = 16
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = volk_dev
+					value = 20
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_volk_dev_5_visible = {
+				check_variable = {
+					var = volk_dev
+					value = 21
+					compare = greater_than_or_equals
+				}
+		    }
+        }
+	}
+	lhl_mercs_screen_body = {
+		context_type = decision_category
+		parent_window_token = decision_tab
+		window_name = "lhl_mercs_full"
+
+		visible = {
+			tag = EAG
+		}
+		triggers = {
+            lhl_mercs_mood_1_visible = {
+				check_variable = {
+					var = mercs_mood
+					value = 5
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_mercs_mood_2_visible = {
+				check_variable = {
+					var = mercs_mood
+					value = 6
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = mercs_mood
+					value = 10
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_mercs_mood_3_visible = {
+				check_variable = {
+					var = mercs_mood
+					value = 11
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = mercs_mood
+					value = 15
+					compare = less_than_or_equals
+				}
+		    }	
+            lhl_mercs_mood_4_visible = {
+				check_variable = {
+					var = mercs_mood
+					value = 16
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = mercs_mood
+					value = 20
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_mercs_mood_5_visible = {
+				check_variable = {
+					var = mercs_mood
+					value = 21
+					compare = greater_than_or_equals
+				}
+		    }
+            ###
+            lhl_mercs_quality_1_visible = {
+				check_variable = {
+					var = mercs_quality
+					value = 5
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_mercs_quality_2_visible = {
+				check_variable = {
+					var = mercs_quality
+					value = 6
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = mercs_quality
+					value = 10
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_mercs_quality_3_visible = {
+				check_variable = {
+					var = mercs_quality
+					value = 11
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = mercs_quality
+					value = 15
+					compare = less_than_or_equals
+				}
+		    }	
+            lhl_mercs_quality_4_visible = {
+				check_variable = {
+					var = mercs_quality
+					value = 16
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = mercs_quality
+					value = 20
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_mercs_quality_5_visible = {
+				check_variable = {
+					var = mercs_quality
+					value = 21
+					compare = greater_than_or_equals
+				}
+		    }
+        }
+	}
+	lhl_volk_screen_body = {
+		context_type = decision_category
+		parent_window_token = decision_tab
+		window_name = "lhl_volk_full"
+
+		visible = {
+			tag = EAG
+		}
+		triggers = {
+            lhl_volk_mood_1_visible = {
+				check_variable = {
+					var = volk_mood
+					value = 5
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_volk_mood_2_visible = {
+				check_variable = {
+					var = volk_mood
+					value = 6
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = volk_mood
+					value = 10
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_volk_mood_3_visible = {
+				check_variable = {
+					var = volk_mood
+					value = 11
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = volk_mood
+					value = 15
+					compare = less_than_or_equals
+				}
+		    }	
+            lhl_volk_mood_4_visible = {
+				check_variable = {
+					var = volk_mood
+					value = 16
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = volk_mood
+					value = 20
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_volk_mood_5_visible = {
+				check_variable = {
+					var = volk_mood
+					value = 21
+					compare = greater_than_or_equals
+				}
+		    }
+			###
+            lhl_volk_dev_1_visible = {
+				check_variable = {
+					var = volk_dev
+					value = 5
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_volk_dev_2_visible = {
+				check_variable = {
+					var = volk_dev
+					value = 6
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = volk_dev
+					value = 10
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_volk_dev_3_visible = {
+				check_variable = {
+					var = volk_dev
+					value = 11
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = volk_dev
+					value = 15
+					compare = less_than_or_equals
+				}
+		    }	
+            lhl_volk_dev_4_visible = {
+				check_variable = {
+					var = volk_dev
+					value = 16
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = volk_dev
+					value = 20
+					compare = less_than_or_equals
+				}
+		    }
+            lhl_volk_dev_5_visible = {
+				check_variable = {
+					var = volk_dev
+					value = 21
+					compare = greater_than_or_equals
+				}
+		    }
+        }
+	}
+}

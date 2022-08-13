@@ -4819,13 +4819,21 @@ EAG_wars = {
 		days_remove = 7
 		remove_effect = {
 			declare_war_on = {
-			target = KNT
-			type = annex_everything
+				target = KNT
+				type = annex_everything
 			}	
 		}
 		available = {
 			NOT = {
 				country_exists = ESS
+			}
+			country_exists = KNT
+			EAG = {
+				OR = {
+					has_completed_focus = EAG_seeds_of_wisdom
+					has_completed_focus = EAG_communal_mutual_aid
+					has_completed_focus = EAG_army_of_the_people
+				}
 			}
 		}
 		ai_will_do = {
@@ -4839,13 +4847,21 @@ EAG_wars = {
 		days_remove = 7
 		remove_effect = {
 			declare_war_on = {
-			target = MRC
-			type = annex_everything
+				target = MRC
+				type = annex_everything
 			}	
 		}
 		available = {
 			NOT = {
 				country_exists = ESS
+			}
+			country_exists = MRC
+			EAG = {
+				OR = {
+					has_completed_focus = EAG_seeds_of_wisdom
+					has_completed_focus = EAG_communal_mutual_aid
+					has_completed_focus = EAG_army_of_the_people
+				}
 			}
 		}
 		ai_will_do = {
@@ -4859,13 +4875,21 @@ EAG_wars = {
 		days_remove = 7
 		remove_effect = {
 			declare_war_on = {
-			target = SUS
-			type = annex_everything
+				target = SUS
+				type = annex_everything
 			}	
 		}
 		available = {
 			NOT = {
 				country_exists = ESS
+			}
+			country_exists = SUS
+			EAG = {
+				OR = {
+					has_completed_focus = EAG_seeds_of_wisdom
+					has_completed_focus = EAG_communal_mutual_aid
+					has_completed_focus = EAG_army_of_the_people
+				}
 			}
 		}
 		ai_will_do = {
@@ -4879,13 +4903,21 @@ EAG_wars = {
 		days_remove = 7
 		remove_effect = {
 			declare_war_on = {
-			target = WES
-			type = annex_everything
+				target = WES
+				type = annex_everything
 			}	
 		}
 		available = {
 			NOT = {
 				country_exists = ESS
+			}
+			country_exists = WES
+			EAG = {
+				OR = {
+					has_completed_focus = EAG_seeds_of_wisdom
+					has_completed_focus = EAG_communal_mutual_aid
+					has_completed_focus = EAG_army_of_the_people
+				}
 			}
 		}
 		ai_will_do = {
@@ -4899,13 +4931,21 @@ EAG_wars = {
 		days_remove = 7
 		remove_effect = {
 			declare_war_on = {
-			target = NTH
-			type = annex_everything
+				target = NTH
+				type = annex_everything
 			}	
 		}
 		available = {
 			NOT = {
 				country_exists = ESS
+			}
+			country_exists = NTH
+			EAG = {
+				OR = {
+					has_completed_focus = EAG_seeds_of_wisdom
+					has_completed_focus = EAG_communal_mutual_aid
+					has_completed_focus = EAG_army_of_the_people
+				}
 			}
 		}
 		ai_will_do = {
@@ -19457,6 +19497,7 @@ EAG_klumb_parliament_gui_decision = {
 					has_country_flag = EAG_run_as_iсke
 					has_country_flag = EAG_run_as_astley
 					has_country_flag = EAG_run_as_yea
+					has_country_flag = EAG_run_as_bates
 				}
 			}
         }
@@ -19469,6 +19510,7 @@ EAG_klumb_parliament_gui_decision = {
 					has_country_flag = EAG_run_as_iсke
 					has_country_flag = EAG_run_as_astley
 					has_country_flag = EAG_run_as_yea
+					has_country_flag = EAG_run_as_bates
 				}
 			}			
         }

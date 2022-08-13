@@ -395,6 +395,35 @@ country_event = {
 }
 
 country_event = {
+	id = MRC_event.18
+	title = MRC_event.18.t
+	desc = MRC_event.18.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.18.a
+		add_ideas = MRC_Spirit_Of_Neofolk
+	}
+	option = {
+		name = MRC_event.18.b
+		add_ideas = MRC_Rage_Of_Neofolk
+	}
+	option = {
+		name = MRC_event.18.c
+		add_ideas = MRC_Sound_Of_Neofolk
+	}
+	option = {
+		name = MRC_event.18.d
+		add_tech_bonus = {
+			bonus = 1
+			uses = 3
+			category = electronic_mechanical_engineering
+		}
+	}
+}
+
+country_event = {
 	id = MRC_event.17
 	title = MRC_event.17.t
 	desc = MRC_event.17.d
@@ -523,34 +552,6 @@ country_event = {
 			start_equipment_factor = 1 
 			start_manpower_factor = 1
 			owner = MRC
-		}
-	}
-}
-country_event = {
-	id = MRC_event.18
-	title = MRC_event.18.t
-	desc = MRC_event.18.d
-	picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = MRC_event.18.a
-		add_ideas = MRC_Spirit_Of_Neofolk
-	}
-	option = {
-		name = MRC_event.18.b
-		add_ideas = MRC_Rage_Of_Neofolk
-	}
-	option = {
-		name = MRC_event.18.c
-		add_ideas = MRC_Sound_Of_Neofolk
-	}
-	option = {
-		name = MRC_event.18.d
-		add_tech_bonus = {
-			bonus = 1
-			uses = 3
-			category = electronic_mechanical_engineering
 		}
 	}
 }
