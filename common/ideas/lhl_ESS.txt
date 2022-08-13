@@ -37,6 +37,46 @@ ideas = {
 			}
 		}
 		
+		ESS_accelerated_army_2a = {
+			
+			picture = GFX_idea_ESS_accelerated_army
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.10
+				army_org_factor = -0.10
+				army_morale_factor = 0.10
+				non_core_manpower = 0.02
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+		
+		ESS_accelerated_army_2b = {
+			
+			picture = GFX_idea_ESS_accelerated_army
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.10
+				army_org_factor = -0.10
+				army_morale_factor = 0.10
+				non_core_manpower = 0.02
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+			}
+		}
+		
 		ESS_granddad_of_nation = {
 			
 			picture = GFX_idea_ESS_granddad_of_nation
@@ -341,6 +381,27 @@ ideas = {
 	}
 	
 	hidden_ideas = {
+		ESS_temporary_serfdom = {
+			
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.25
+				}
+			}
+		}
+	
 		ESS_kent_proxy_trade = {
 			
 			picture = 

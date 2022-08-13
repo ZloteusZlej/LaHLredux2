@@ -247,7 +247,7 @@ country_event = { ###Land###
 			    
 				}
 		  }
-	}
+	}	
 	
 country_event = { ###Dawkins###
 	id = ESS_event.5b
@@ -267,7 +267,7 @@ country_event = { ###Dawkins###
 				}
 			}
 	}
-	
+}
 country_event = { ###Collins###
 	id = ESS_event.5c
 	title = ESS_event.5c.t
@@ -426,9 +426,9 @@ country_event = {
 						instant_build = yes
 					}		
 		
-    }
-   }
-      }
+			}
+		}
+}
 	  
 country_event = {
 	id = ESS_event.8
@@ -463,12 +463,7 @@ country_event = {
     option = {
 		name = ESS_event.9.a
 		custom_effect_tooltip = ESS_event9.a.tt
-		
 		    ESS = {
-			    add_to_variable = { 
-				var = ESS_control
-				value = 10
-					}
 				add_stability = -0.05
 		    }
 		add_tech_bonus = {
@@ -483,26 +478,26 @@ country_event = {
 		name = ESS_event.9.b
 		custom_effect_tooltip = ESS_event9.b.tt
 		   ESS = {
-			    add_to_variable = { 
-				var = ESS_control
-				value = 5
+		   add_stability = -0.1
+			swap_ideas = {
+				remove_idea = ESS_accelerated_army_1
+				add_idea = ESS_accelerated_army_2a
 				}
-				add_ideas = ESS_accelerated_army
-					}
+			}
 					
     }
 	
 	option = {
 		name = ESS_event.9.c
 		custom_effect_tooltip = ESS_event9.c.tt
-		    ESS = {
-			    subtract_from_variable = { 
-				var = ESS_control
-				value = 20
-				}
-				
+		ESS = {
+		add_stability = -0.15
+			swap_ideas = {
+				remove_idea = ESS_accelerated_army_1
+				add_idea = ESS_accelerated_army_2b
+			}
 		}
-    }
+	}
 }	
 country_event = {
 	id = ESS_event.10
@@ -515,35 +510,36 @@ country_event = {
 
     option = {
 		name = ESS_event.10.a 
-		
-		
+			add_timed_idea = {
+				ESS_temporary_serfdom
+				days = 125
+			}
 		}
 	option = {
 		name = ESS_event.10.b 
-		hidden_effect = {
-		ESS = {
-			    country_event = {
-				    days = 180
-					id = ESS_event.11
-				}
-		
+		add_stability = 0.1
+		1160 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
 		}
-		}
-		}
+	}
 	option = {
 		name = ESS_event.10.c 
-		hidden_effect = {
-		ESS = {
-			    country_event = {
-				    days = 30
-					id = ESS_event.11
+		add_war_support = -0.05
+		add_manpower = 10000
+			ESS = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = support_tech
 				}
-		
+			}
 		}
 	}
-	}
-	}
-	
+
 country_event = {
 	id = ESS_event.11
 	title = ESS_event.11.t
