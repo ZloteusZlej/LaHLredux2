@@ -259,10 +259,13 @@ country_event = { ###Dawkins###
 	is_triggered_only = yes
     option = {
 		name = ESS_event.5b.a
+		    load_focus_tree = ESS_dawkins_1
 		    ESS = {
-			    
+				retire_country_leader = yes
+				set_politics = {
+					ruling_party = socialism
 				}
-		  }
+			}
 	}
 	
 country_event = { ###Collins###
@@ -275,9 +278,12 @@ country_event = { ###Collins###
 	is_triggered_only = yes
     option = {
 		name = ESS_event.5c.a
+		    load_focus_tree = ESS_collins_1
 		    ESS = {
-			    
+				set_politics = {
+					ruling_party = hegemonism
 				}
+			}
 		  }
 	}
 
