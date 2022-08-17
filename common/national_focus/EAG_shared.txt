@@ -412,6 +412,13 @@ shared_focus = {
 	prerequisite = {
 		focus = EAG_gather_our_wealth
 	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 8
+			date > 2021.01.01
+		}
+	}
 	x = 12
 	y = 4
 }

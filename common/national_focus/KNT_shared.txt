@@ -2717,6 +2717,30 @@ shared_focus = {
 				}
 			}
 			add_political_power = 50
+			if = {
+				limit = {
+					NOT = {
+						country_exists = EAG
+					}
+				}
+				set_global_flag = east_anglia_rejects_kent_offer
+			}
+			if = {
+				limit = {
+					NOT = {
+						country_exists = MRC
+					}
+				}
+				set_global_flag = pearce_rejects_kent_offer
+			}
+			if = {
+				limit = {
+					NOT = {
+						country_exists = ESS
+					}
+				}
+				set_global_flag = essex_rejects_kent_offer
+			}
 		}
 		x = 53
 		y = 8
@@ -3271,8 +3295,8 @@ shared_focus = {
 				dismantle_faction = yes
 				MRC = {
 					country_event = {
-					days = 1
-					id = MRC_event.13
+						days = 1
+						id = MRC_event.13
 					}
 				}
 				add_political_power = 100

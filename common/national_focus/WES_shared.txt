@@ -619,6 +619,13 @@ shared_focus = {
 			}
 		}
 	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 8
+			date > 2021.01.01
+		}
+	}
 	cost = 3.5
 	x = 29
 	y = 2
@@ -663,6 +670,12 @@ shared_focus = {
 		}
 		custom_effect_tooltip = WES_road_unification.tt
 	}
+	available = {
+		NOT = {
+			country_exists = SUS
+			country_exists = KNT
+		}
+	}
 	cost = 3.5
 	x = 29
 	y = 4
@@ -676,6 +689,11 @@ shared_focus = {
 		WES = {
 			set_country_flag = WES_diplomacy_open
 			set_country_flag = WES_diplomacy_orthodox_open
+		}
+	}
+	available = {
+		WES = {
+			has_completed_focus = WES_return_king
 		}
 	}
 	x = 25
@@ -726,6 +744,12 @@ shared_focus = {
 	icon = GFX_goal_WES_knight_mercia
 	prerequisite = {
         focus = WES_arise_folk
+	}
+	available = {
+		WES = {
+			has_country_flag = WES_george_legitimacy_achieved
+			has_completed_focus = WES_return_king
+		}
 	}
 	bypass = {
 	    NOT = {

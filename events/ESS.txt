@@ -595,12 +595,12 @@ country_event = {
 
 		option = {
 			name = ESS_event.13.a 
-			ai_chance = { factor = 10 }
-				set_global_flag = essex_accepts_kent_offer
-			}
+			ai_chance = { factor = 0 }
+			set_global_flag = essex_accepts_kent_offer
+		}
 		option = {
 			name = ESS_event.13.b 
-			ai_chance = { factor = 0 }
+			ai_chance = { factor = 10 }
 			set_global_flag = essex_rejects_kent_offer
 		}
 	}
