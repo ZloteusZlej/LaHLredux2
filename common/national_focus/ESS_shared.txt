@@ -1515,8 +1515,8 @@
 		icon = GFX_goal_unknown
 		cost = 3
 	
-		x = 13
-		y = 11
+		x = 3
+		y = 9
 	}
 	shared_focus = {
 		id = ESS_Noocracy
@@ -1525,8 +1525,8 @@
 		prerequisite = {
 			focus = ESS_deadly_race
 		}
-		x = 10
-		y = 12
+		x = 0
+		y = 10
 
 	}
 	shared_focus = {
@@ -1536,8 +1536,8 @@
 		prerequisite = {
 			focus = ESS_Noocracy
 		}
-		x = 9
-		y = 13
+		x = -1
+		y = 11
 
 	}
 	shared_focus = {
@@ -1548,8 +1548,8 @@
 		prerequisite = {
 			focus = ESS_programing_cult
 		}
-		x = 9
-		y = 15
+		x = -1
+		y = 13
 
 	}
 	shared_focus = {
@@ -1559,8 +1559,8 @@
 		prerequisite = {
 			focus = ESS_Noocracy
 		}
-		x = 10
-		y = 14
+		x = 0
+		y = 12
 
 	}
 	shared_focus = {
@@ -1571,8 +1571,8 @@
 			focus = ESS_aristocracy_of_the_mind
 			focus = ESS_specialized_education
 		}
-		x = 10
-		y = 16
+		x = 0
+		y = 14
 
 	}
 	shared_focus = {
@@ -1582,8 +1582,8 @@
 		prerequisite = {
 			focus = ESS_deadly_race
 		}
-		x = 13
-		y = 12
+		x = 3
+		y = 10
 
 	}
 	shared_focus = {
@@ -1593,8 +1593,8 @@
 		prerequisite = {
 			focus = ESS_exaltation_of_capitalism
 		}
-		x = 12
-		y = 13
+		x = 2
+		y = 11
 
 	}
 	shared_focus = {
@@ -1604,8 +1604,8 @@
 		prerequisite = {
 			focus = ESS_total_privatization
 		}
-		x = 12
-		y = 15
+		x = 2
+		y = 13
 
 	}
 	shared_focus = {
@@ -1615,8 +1615,8 @@
 		prerequisite = {
 			focus = ESS_exaltation_of_capitalism
 		}
-		x = 13
-		y = 14
+		x = 3
+		y = 12
 
 	}
 	shared_focus = {
@@ -1626,8 +1626,8 @@
 		prerequisite = {
 			focus = ESS_special_entrepreneurial_privileges
 		}
-		x = 14
-		y = 15
+		x = 4
+		y = 13
 
 	}
 	shared_focus = {
@@ -1641,8 +1641,8 @@
 		prerequisite  = {
 			focus = ESS_special_entrepreneurial_privileges
 		}
-		x = 13
-		y = 16
+		x = 3
+		y = 14
 
 	}
 	shared_focus = {
@@ -1652,8 +1652,8 @@
 		prerequisite = {
 			focus = ESS_deadly_race
 		}
-		x = 16
-		y = 12
+		x = 6
+		y = 10
 
 	}
 	shared_focus = {
@@ -1663,8 +1663,8 @@
 		prerequisite = {
 			focus = ESS_twilight_of_the_idols
 		}
-		x = 15
-		y = 13
+		x = 4
+		y = 11
 
 	}
 	shared_focus = {
@@ -1674,8 +1674,8 @@
 		prerequisite = {
 			focus = ESS_dehumanization_of_science
 		}
-		x = 16
-		y = 14
+		x = 6
+		y = 12
 
 	}
 
@@ -1687,8 +1687,8 @@
 			focus = ESS_militarysciencecomplex
 			focus = ESS_encourage_rivalry
 		}
-		x = 16
-		y = 16
+		x = 6
+		y = 14
 
 	}
 	shared_focus = {
@@ -1698,8 +1698,8 @@
 		prerequisite = {
 			focus = ESS_twilight_of_the_idols
 		}
-		x = 17
-		y = 13
+		x = 7
+		y = 11
 
 	}
 	shared_focus = {
@@ -1709,8 +1709,8 @@
 		prerequisite = {
 			focus = ESS_thelema
 		}
-		x = 17
-		y = 15
+		x = 7
+		y = 13
 
 	}
 	shared_focus = {
@@ -1726,7 +1726,326 @@
 		prerequisite = {
 			focus = ESS_social_darwinism
 		}
+		x = 3
+		y = 15
+
+	}
+###Land sciensce###
+
+	shared_focus = {
+		id = ESS_technological_revival_l
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+	
+		}
+		x = 14
+		y = 9
+
+	}
+
+	shared_focus = {
+		id = ESS_restore_the_scientific_base_l
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_technological_revival_l
+		}
+		completion_reward = {
+	
+		}
+		x = 10
+		y = 10
+
+	}
+
+	shared_focus = {
+		id = ESS_new_frontiers_l
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_restore_the_scientific_base_l
+		}
+		completion_reward = {
+	
+		}
+		x = 9
+		y = 11
+
+	}
+	
+	shared_focus = {
+		id = ESS_operaiton_paperclip_l
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_restore_the_scientific_base_l
+		}
+		completion_reward = {
+	
+		}
+		x = 11
+		y = 11
+
+	}
+	
+	shared_focus = {
+		id = ESS_think_tanks_l
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_new_frontiers_l
+			focus = ESS_operaiton_paperclip_l
+		}
+		completion_reward = {
+	
+		}
+		x = 10
+		y = 12
+
+	}
+	
+	shared_focus = {
+		id = ESS_chimerian_science_l
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_think_tanks_l
+		}
+		completion_reward = {
+	
+		}
+		x = 10
+		y = 13
+
+	}
+
+	shared_focus = {
+		id = ESS_information_revolution_l
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_technological_revival_l
+		}
+		completion_reward = {
+	
+		}
+		x = 14
+		y = 10
+
+	}
+
+	shared_focus = {
+		id = ESS_communication_systems_l
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_information_revolution_l
+		}
+		completion_reward = {
+	
+		}
 		x = 13
-		y = 17
+		y = 11
+
+	}
+	
+	shared_focus = {
+		id = ESS_cybernetic_research_unit_l
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_information_revolution_l
+		}
+		completion_reward = {
+	
+		}
+		x = 15
+		y = 11
+
+	}
+	
+	shared_focus = {
+		id = ESS_dark_enlightenment_l
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_communication_systems_l
+			focus = ESS_cybernetic_research_unit_l
+		}
+		completion_reward = {
+	
+		}
+		x = 14
+		y = 12
+
+	}
+	
+	shared_focus = {
+		id = ESS_ai_research_l
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_dark_enlightenment_l
+		}
+		completion_reward = {
+	
+		}
+		x = 14
+		y = 13
+
+	}
+
+	shared_focus = {
+		id = ESS_experimental_lanes_l
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_technological_revival_l
+		}
+		completion_reward = {
+	
+		}
+		x = 18
+		y = 10
+
+	}
+
+	shared_focus = {
+		id = ESS_accelerated_technology_l
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_experimental_lanes_l
+		}
+		completion_reward = {
+	
+		}
+		x = 17
+		y = 11
+
+	}
+
+	shared_focus = {
+		id = ESS_hyper_units_l ###HyperMemes###
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_experimental_lanes_l
+		}
+		completion_reward = {
+	
+		}
+		x = 19
+		y = 11
+
+	}
+
+	shared_focus = {
+		id = ESS_metal_machines_l 
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_accelerated_technology_l
+			focus = ESS_hyper_units_l
+		}
+		completion_reward = {
+	
+		}
+		x = 18
+		y = 12
+
+	}
+
+	shared_focus = {
+		id = ESS_glushkin_osvoboditel_l
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_metal_machines_l
+		}
+		completion_reward = {
+	
+		}
+		x = 18
+		y = 13
+
+	}
+	
+	shared_focus = {
+		id = ESS_final_omega_l 
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_chimerian_science_l
+		}
+		prerequisite = {
+			focus = ESS_ai_research_l
+		}
+		prerequisite = {
+			focus = ESS_glushkin_osvoboditel_l
+		}
+		completion_reward = {
+		ESS = {
+			set_country_flag = ESS_ai_here_l
+			}
+		}
+		x = 16
+		y = 14
+
+	}
+	
+	shared_focus = {
+		id = ESS_matters_of_the_state_l 
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_final_omega_l
+		}
+		allow_branch = {
+            has_country_flag = ESS_ai_here_l
+        }
+		completion_reward = {
+		
+		}
+		x = 14
+		y = 15
+
+	}
+	
+	shared_focus = {
+		id = ESS_ideological_framework_l
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_final_omega_l
+		}
+		allow_branch = {
+            has_country_flag = ESS_ai_here_l
+        }
+		completion_reward = {
+		
+		}
+		x = 18
+		y = 15
+
+	}
+	
+	shared_focus = {
+		id = ESS_ideological_framework_l 
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_matters_of_the_state_l
+			focus = ESS_ideological_framework_l
+		}
+		allow_branch = {
+            has_country_flag = ESS_ai_here_l
+        }
+		completion_reward = {
+		
+		}
+		x = 16
+		y = 16
 
 	}
