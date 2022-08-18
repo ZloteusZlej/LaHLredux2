@@ -139,3 +139,737 @@ news_event = {
 	}
 }
 
+###BRITAIN REUNIFICATION###
+news_event = {
+	id = lhl_news.7 #Sussex - Absolutists
+	title = lhl_news.7.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.7"}
+	desc = lhl_news.7.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.7.a
+		trigger = {
+			original_tag = SUS
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = absolutists_Victory
+		sound_effect = "absolutists_vict"
+	}
+	option = {
+		name = lhl_news.7.b
+		trigger = {
+			NOT = {
+				original_tag = SUS
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.8 #Sussex - Spyocracy
+	title = lhl_news.8.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.8"}
+	desc = lhl_news.8.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.8.a
+		trigger = {
+			original_tag = SUS
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = spy_victory
+		sound_effect = "spy_vict"
+	}
+	option = {
+		name = lhl_news.8.b
+		trigger = {
+			NOT = {
+				original_tag = SUS
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.9 #Sussex - Labourists
+	title = lhl_news.9.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.9"}
+	desc = lhl_news.9.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.9.a
+		trigger = {
+			original_tag = SUS
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = labourists_victory
+		sound_effect = "labourists_vict"
+	}
+	option = {
+		name = lhl_news.9.b
+		trigger = {
+			NOT = {
+				original_tag = SUS
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.10 #Sussex - Emancipationists
+	title = lhl_news.10.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.10"}
+	desc = lhl_news.10.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.10.a
+		trigger = {
+			original_tag = SUS
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = witches_victory
+		sound_effect = "witches_vict"
+	}
+	option = {
+		name = lhl_news.10.b
+		trigger = {
+			NOT = {
+				original_tag = SUS
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.11 #Wessex - Royalists
+	title = lhl_news.11.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.11"}
+	desc = lhl_news.11.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.11.a
+		trigger = {
+			original_tag = WES
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = royalists_victory
+		sound_effect = "royalists_vict"
+	}
+	option = {
+		name = lhl_news.11.b
+		trigger = {
+			NOT = {
+				original_tag = WES
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.12 #Kent - Neovictorians
+	title = lhl_news.12.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.12"}
+	desc = lhl_news.12.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.12.a
+		trigger = {
+			original_tag = KNT
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = neovictorians_victory
+		sound_effect = "neovictorians_vict"
+	}
+	option = {
+		name = lhl_news.12.b
+		trigger = {
+			NOT = {
+				original_tag = KNT
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.13 #Kent - High Tories
+	title = lhl_news.13.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.13"}
+	desc = lhl_news.13.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.13.a
+		trigger = {
+			original_tag = KNT
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = conservatives_victory
+		sound_effect = "conservatives_vict"
+	}
+	option = {
+		name = lhl_news.13.b
+		trigger = {
+			NOT = {
+				original_tag = KNT
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.14 #Essex - Accelerationists
+	title = lhl_news.14.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.14"}
+	desc = lhl_news.14.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.14.a
+		trigger = {
+			original_tag = ESS
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = leviathan_victory
+		sound_effect = "leviathan_vict"
+	}
+	option = {
+		name = lhl_news.14.b
+		trigger = {
+			NOT = {
+				original_tag = ESS
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.15 #Essex - Progressivists
+	title = lhl_news.15.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.15"}
+	desc = lhl_news.15.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.15.a
+		trigger = {
+			original_tag = ESS
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = progressivists_victory
+		sound_effect = "progressivists_vict"
+	}
+	option = {
+		name = lhl_news.15.b
+		trigger = {
+			NOT = {
+				original_tag = ESS
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.16 #Essex - Nationalists
+	title = lhl_news.16.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.16"}
+	desc = lhl_news.16.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.16.a
+		trigger = {
+			original_tag = ESS
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = bandits_victory
+		sound_effect = "bandits_vict"
+	}
+	option = {
+		name = lhl_news.16.b
+		trigger = {
+			NOT = {
+				original_tag = ESS
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.17 #East Anglia - Mercenaries
+	title = lhl_news.17.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.17"}
+	desc = lhl_news.17.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.17.a
+		trigger = {
+			original_tag = EAG
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = mercenaries_victory
+		sound_effect = "mercenaries_vict"
+	}
+	option = {
+		name = lhl_news.17.b
+		trigger = {
+			NOT = {
+				original_tag = EAG
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.18 #East Anglia - Interventionists
+	title = lhl_news.18.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.18"}
+	desc = lhl_news.18.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.18.a
+		trigger = {
+			original_tag = EAG
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = interventionists_victory
+		sound_effect = "interventionists_vict"
+	}
+	option = {
+		name = lhl_news.18.b
+		trigger = {
+			NOT = {
+				original_tag = EAG
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.19 #East Anglia - Anarchists
+	title = lhl_news.19.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.19"}
+	desc = lhl_news.19.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.19.a
+		trigger = {
+			original_tag = EAG
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = anarchy_victory
+		sound_effect = "anarchy_vict"
+	}
+	option = {
+		name = lhl_news.19.b
+		trigger = {
+			NOT = {
+				original_tag = EAG
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.20 #Mercia - Occultists
+	title = lhl_news.20.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.20"}
+	desc = lhl_news.20.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.20.a
+		trigger = {
+			original_tag = MRC
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = occultists_victory
+		sound_effect = "occultists_vict"
+	}
+	option = {
+		name = lhl_news.20.b
+		trigger = {
+			NOT = {
+				original_tag = MRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.21 #Mercia - Pagans
+	title = lhl_news.21.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.21"}
+	desc = lhl_news.21.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.21.a
+		trigger = {
+			original_tag = MRC
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = sexists_victory
+		sound_effect = "sexists_vict"
+	}
+	option = {
+		name = lhl_news.21.b
+		trigger = {
+			NOT = {
+				original_tag = MRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.22 #Mercia - Gnostics
+	title = lhl_news.22.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.22"}
+	desc = lhl_news.22.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.22.a
+		trigger = {
+			original_tag = MRC
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = gnostic_victory
+		sound_effect = "gnostic_vict"
+	}
+	option = {
+		name = lhl_news.22.b
+		trigger = {
+			NOT = {
+				original_tag = MRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.23 #Mercia - Romanists
+	title = lhl_news.23.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.23"}
+	desc = lhl_news.23.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.23.a
+		trigger = {
+			original_tag = MRC
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = romanists_victory
+		sound_effect = "romanists_vict"
+	}
+	option = {
+		name = lhl_news.23.b
+		trigger = {
+			NOT = {
+				original_tag = MRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.24 #Northumbria - Republicans
+	title = lhl_news.24.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.24"}
+	desc = lhl_news.24.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.24.a
+		trigger = {
+			original_tag = NTH
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = republicans_victory
+		sound_effect = "republicans_vict"
+	}
+	option = {
+		name = lhl_news.24.b
+		trigger = {
+			NOT = {
+				original_tag = NTH
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.25 #Northumbria - Revolutionaries
+	title = lhl_news.25.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.25"}
+	desc = lhl_news.25.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.25.a
+		trigger = {
+			original_tag = NTH
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = revolutionaries_victory
+		sound_effect = "revolutionaries_vict"
+	}
+	option = {
+		name = lhl_news.25.b
+		trigger = {
+			NOT = {
+				original_tag = NTH
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.26 #Northumbria - Revisionists
+	title = lhl_news.26.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.26"}
+	desc = lhl_news.26.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.26.a
+		trigger = {
+			original_tag = NTH
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = revisionists_victory
+		sound_effect = "revisionists_vict"
+	}
+	option = {
+		name = lhl_news.26.b
+		trigger = {
+			NOT = {
+				original_tag = NTH
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.27 #Wales - Unionists
+	title = lhl_news.27.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.27"}
+	desc = lhl_news.27.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.27.a
+		trigger = {
+			original_tag = WLS
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = unionists_victory
+		sound_effect = "unionists_vict"
+	}
+	option = {
+		name = lhl_news.27.b
+		trigger = {
+			NOT = {
+				original_tag = WLS
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.28 #Wales - Federalists
+	title = lhl_news.28.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.28"}
+	desc = lhl_news.28.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.28.a
+		trigger = {
+			original_tag = WLS
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = federalists_victory
+		sound_effect = "federalists_vict"
+	}
+	option = {
+		name = lhl_news.28.b
+		trigger = {
+			NOT = {
+				original_tag = WLS
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.29 #Ulster - Oranjists
+	title = lhl_news.29.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.29"}
+	desc = lhl_news.29.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.29.a
+		trigger = {
+			original_tag = ULS
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = oranjists_victory
+		sound_effect = "oranjists_vict"
+	}
+	option = {
+		name = lhl_news.29.b
+		trigger = {
+			NOT = {
+				original_tag = ULS
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.30 #Scotland - Jacobites
+	title = lhl_news.30.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.30"}
+	desc = lhl_news.30.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.30.a
+		trigger = {
+			original_tag = SCO
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = jacobites_victory
+		sound_effect = "jacobites_vict"
+	}
+	option = {
+		name = lhl_news.30.b
+		trigger = {
+			NOT = {
+				original_tag = SCO
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.31 #Scotland - Separatists
+	title = lhl_news.31.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.31"}
+	desc = lhl_news.31.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.31.a
+		trigger = {
+			original_tag = SCO
+		}
+        set_global_flag = Super_Event_Visible
+        set_global_flag = separatists_victory
+		sound_effect = "separatists_vict"
+	}
+	option = {
+		name = lhl_news.31.b
+		trigger = {
+			NOT = {
+				original_tag = SCO
+			}
+		}
+	}
+}
+
+news_event = {
+	id = lhl_news.32 #Second Britain Collapse
+	title = lhl_news.32.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.32"}
+	desc = lhl_news.32.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.32.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = northumbriansystem_victory
+		sound_effect = "northumbriansystem_vict"
+	}
+}
+
+
+news_event = {
+	id = lhl_news.33 #Third Britain Collapse
+	title = lhl_news.33.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.33"}
+	desc = lhl_news.33.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {
+		name = lhl_news.33.a
+	}
+}
+
+

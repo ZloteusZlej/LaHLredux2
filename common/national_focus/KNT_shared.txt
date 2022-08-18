@@ -3345,28 +3345,6 @@ shared_focus = {
 			}
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_country_flag = KENT_hightories_britain_reunified
-				}
-				country_event = {
-				days = 1
-				id = super.3
-				}
-			}
-			else_if = {
-				limit = {
-					has_country_flag = KENT_neovictorians_britain_reunified
-				}
-				country_event = {
-				days = 1
-				id = super.10
-				}
-			}
-			set_capital = {
-				state = 1160
-				remember_old_capital = no
-			}
 			KNT = {
 				country_event = {
 				days = 1
