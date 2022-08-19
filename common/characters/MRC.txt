@@ -6,6 +6,9 @@ characters={
 				large="gfx/leaders/MRC/Portrait_MRC_Douglas_Pierce.dds"
 				small = "gfx/interface/ideas/MRC/idea_MRC_douglas_pearce.dds"
 			}
+			army = {
+				large="gfx/leaders/MRC/Portrait_MRC_Douglas_Pierce.dds"
+			}
 		}
 		advisor = {
 			cost = 120
@@ -25,6 +28,43 @@ characters={
 			ideology=charismatic_dictatorship
 			expire="1.1.1.1"
 			id=-1
+		}
+		field_marshal = {
+			traits = { inspirational_leader }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = MRC_douglas_pearce
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = MRC_douglas_pearce
+			ledger = army
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	MRC_vivianne_crowley={
@@ -917,7 +957,438 @@ characters={
 			}
 	    }
 	}
+	MRC_stuart_peach = {
+		name = "Stuart Peach"
+		portraits = {
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_stuart_peach.dds"
+			}
+		}
+
+		advisor = {	
+			slot = air_chief
+			idea_token = MRC_stuart_peach
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = MRC_stuart_peach
+			ledger = army
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	MRC_andrew_pulford = {
+		name = "Andrew Pulford"
+		portraits = {
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_andrew_pulford.dds"
+			}
+		}
+
+		advisor = {	
+			slot = air_chief
+			idea_token = MRC_andrew_pulford
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = MRC_andrew_pulford
+			ledger = army
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}			
+	}
+	MRC_edward_stringer = {
+		name = "Edward Stringer"
+		portraits = {
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_edward_stringer.dds"
+			}
+		}
+
+		advisor = {	
+			slot = air_chief
+			idea_token = MRC_edward_stringer
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}	
+	}
+	MRC_tim_anderson = {
+		name = "Tim Anderson"
+		portraits = {
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_tim_anderson.dds"
+			}
+		}
+
+		advisor = {	
+			slot = air_chief
+			idea_token = MRC_tim_anderson
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}	
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = MRC_tim_anderson
+			ledger = army
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	MRC_christina_elliot ={
+		name="Christina Elliot"
+		portraits={
+			army={
+				small = "gfx/interface/ideas/MRC/idea_MRC_christina_elliot.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = MRC_christina_elliot
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 	##GENERALS##
+	MRC_celia_harvey={
+		name="Celia Harvey"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/MRC/.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			traits = { engineer_officer	}
+			attack_skill=1
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	MRC_adrian_bradshaw={
+		name="Adrian Bradshaw"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/MRC/.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			traits = { commando old_guard inflexible_strategist }
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = MRC_adrian_bradshaw
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = MRC_adrian_bradshaw
+			ledger = army
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	MRC_shaun_alex_burley={
+		name="Shaun Alex Burley"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/MRC/.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			traits = {  }
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	MRC_chris_brown={
+		name="Chris Brown"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/MRC/.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			traits = { fortress_buster cavalry_officer }
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	MRC_gerald_berragan={
+		name="Gerald Berragan"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/MRC/.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			traits = { fortress_buster }
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	MRC_charles_bronson={
+		name="Charles Bronson"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/MRC/.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			traits = { harsh_leader media_personality }
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = MRC_charles_bronson
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = MRC_charles_bronson
+			ledger = army
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	MRC_chris_bell={
+		name="Chris Bell"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/MRC/.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			traits = { demoted ambusher }
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	MRC_mark_mans ={
+		name="Mark Mans"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/MRC/.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			traits = { engineer_officer }
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	MRC_simon_mayall ={
+		name="Simon Mayall"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/MRC/.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			traits = { cavalry_officer combined_arms_expert }
+			attack_skill=4
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	MRC_nick_pope ={
+		name="Nick Pope"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/MRC/.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			traits = { brilliant_strategist }
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	MRC_michael_john_stone ={
+		name="Michael John Stone"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/MRC/.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			traits = { }
+			attack_skill=1
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
 	MRC_patrick_sanders={
 		name="Patrick Sanders"
 		portraits={
@@ -935,6 +1406,160 @@ characters={
 			planning_skill=1
 			logistics_skill=2
 			legacy_id=-1
+		}
+	}
+	MRC_tim_fraser ={
+		name="Tim Fraser"
+		portraits={
+			army={
+				large="gfx/leaders/MRC/.dds"
+				small = "gfx/interface/ideas/MRC/idea_MRC_tim_fraser.dds"
+			}
+		}
+		navy_leader = {
+			traits = { flight_deck_manager }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = MRC_tim_fraser
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	MRC_trevor_soar ={
+		name="Trevor Soar"
+		portraits={
+			army={
+				large="gfx/leaders/MRC/.dds"
+				small = "gfx/interface/ideas/MRC/idea_MRC_trevor_soar.dds"
+			}
+		}
+		navy_leader = {
+			traits = { torpedo_expert }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = MRC_trevor_soar
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = MRC_trevor_soar
+			ledger = army
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	MRC_nicholas_hine ={
+		name="Nicholas Hine"
+		portraits={
+			army={
+				large="gfx/leaders/MRC/.dds"
+				small = "gfx/interface/ideas/MRC/idea_MRC_nicholas_hine.dds"
+			}
+		}
+		navy_leader = {
+			traits = { seawolf }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = MRC_nicholas_hine
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = MRC_nicholas_hine
+			ledger = army
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	MRC_ben_key ={
+		name="Ben Key"
+		portraits={
+			army={
+				large="gfx/leaders/MRC/.dds"
+				small = "gfx/interface/ideas/MRC/idea_MRC_ben_key.dds"
+			}
+		}
+		navy_leader = {
+			traits = { mine_sweeper }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = MRC_ben_key
+			allowed = {
+				original_tag = MRC
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 }
