@@ -56,12 +56,27 @@ characters={
 		}
 	}
 	SUS_jeremy_corbin={
-		name="Jeremy Corbin"
+		name="Jeremy Corbyn"
 		portraits={
 			civilian={
 				large="gfx/leaders/SUS/Portrait_SUS_Jeremy_Corbin.dds"
+				small = "gfx/interface/ideas/SUS/idea_SUS_jeremy_corbyn.dds"
 			}
 		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = SUS_jeremy_corbin
+			traits = {
+				
+			}
+			allowed = {
+				original_tag = SUS
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
 		country_leader={
 			ideology=progressivism
 			expire="1.1.1.1"

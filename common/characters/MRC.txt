@@ -4,7 +4,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/MRC/Portrait_MRC_Douglas_Pierce.dds"
-				small = "gfx/leaders/MRC/GFX_idea_MRC_douglas_pearce.dds"
+				small = "gfx/interface/ideas/MRC/idea_MRC_douglas_pearce.dds"
 			}
 		}
 		advisor = {
@@ -45,7 +45,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/MRC/Portrait_MRC_David_Tibet.dds"
-				small = "gfx/leaders/MRC/GFX_idea_MRC_David_Tibet.dds"
+				small = "gfx/interface/ideas/MRC/idea_MRC_David_Tibet.dds"
 			}
 		}
 		advisor = {
@@ -73,12 +73,6 @@ characters={
 			id=-1
 		}
 	}
-	
-
-	
-	
-	
-	
 	MRC_jeff_kent={
 		name="Jeff Kent"
 		portraits={
@@ -110,6 +104,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/MRC/Portrait_MRC_Marina_Ann_Hantzis.dds"
+				small = "gfx/interface/ideas/MRC/idea_MRC_marina_ann_hantzis.dds"
 			}
 		}
 		country_leader={
@@ -117,6 +112,20 @@ characters={
 			expire="1.1.1.1"
 			id=-1
 		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_marina_ann_hantzis
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
 	}
 	MRC_nerina_pallot={
 		name="Nerina Pallot"
@@ -149,7 +158,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/MRC/Portrait_MRC_Michael_Moynichan.dds"
-				small = "gfx/leaders/MRC/GFX_idea_MRC_Michael_Moynichan.dds"
+				small = "gfx/interface/ideas/MRC/idea_MRC_Michael_Moynichan.dds"
 				
 			}
 		}
@@ -179,7 +188,7 @@ characters={
 		name="Tony Wakeford"
 		portraits={
 			civilian={
-				small = "gfx/leaders/MRC/GFX_idea_MRC_tony_wakeford.dds"
+				small = "gfx/interface/ideas/MRC/idea_MRC_tony_wakeford.dds"
 				
 			}
 		}
@@ -202,7 +211,7 @@ characters={
 		name="Ronald Hutton"
 		portraits={
 			civilian={
-				small = "gfx/leaders/MRC/GFX_idea_MRC_ronald_hutton.dds"
+				small = "gfx/interface/ideas/MRC/idea_MRC_ronald_hutton.dds"
 				
 			}
 		}
@@ -225,7 +234,7 @@ characters={
 		name="Archbishop of Canterbury"
 		portraits={
 			civilian={
-				small = "gfx/leaders/MRC/GFX_idea_MRC_archbishop_of_canterbury.dds"
+				small = "gfx/interface/ideas/MRC/idea_MRC_archbishop_of_canterbury.dds"
 				
 			}
 		}
@@ -248,7 +257,7 @@ characters={
 		name="Daniele Liotta"
 		portraits={
 			civilian={
-				small = "gfx/leaders/MRC/GFX_idea_MRC_daniele_liotta.dds"
+				small = "gfx/interface/ideas/MRC/idea_MRC_daniele_liotta.dds"
 				
 			}
 		}
@@ -271,8 +280,7 @@ characters={
 		name="Freya Aswynn"
 		portraits={
 			civilian={
-				small = "gfx/leaders/MRC/GFX_idea_MRC_freya_aswynn.dds"
-				
+				small = "gfx/interface/ideas/MRC/idea_MRC_freya_aswynn.dds"
 			}
 		}
 		advisor = {
@@ -289,10 +297,627 @@ characters={
 				factor  = 1.000
 			}
 	    }
+	}	
+	##Advisers##
+	MRC_michael_york = {
+		name="Michael York"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_michael_york.dds"
+				
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_michael_york
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}	
+	MRC_ronald_hutton = {
+		name="Ronald Hutton"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_ronald_hutton.dds"
+				
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_ronald_hutton
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}	
+	MRC_boyd_rice = {
+		name="Boyd Rice"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_boyd_rice.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_boyd_rice
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
 	}
-	
-	
-	
+	MRC_genesis_breyer_p-orridge = {
+		name="Genesis Breyer P-Orridge"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_genesis_breyer_p-orridge.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_genesis_breyer_p-orridge
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_philip_shallcrass = {
+		name="Philip Shallcrass"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_philip_shallcrass.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_philip_shallcrass
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_patrick_leagas = {
+		name="Patrick Leagas"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_patrick_leagas.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_patrick_leagas
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_mogg_morgan = {
+		name="Mogg Morgan"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_mogg_morgan.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_mogg_morgan
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_kate_west = {
+		name="Kate West"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_kate_west.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_kate_west
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_william_breeze = {
+		name="William Breeze"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_william_breeze.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_william_breeze
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_christina_oakley_harrington = {
+		name="Christina Oakley-Harrington"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_christina_oakley_harrington.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_christina_oakley_harrington
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_tam_campbell  = {
+		name="Tam Campbell"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_tam_campbell.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_tam_campbell
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_barbara_meiklejohn_free  = {
+		name="Barbara Meiklejohn-Free"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_barbara_meiklejohn_free.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_barbara_meiklejohn_free
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_andre_cox  = {
+		name="André Cox"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_andre_cox.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_andre_cox
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_clinton_langston  = {
+		name="Clinton Langston"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_clinton_langston.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_clinton_langston
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_tony_robinson  = {
+		name="Tony Robinson"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_tony_robinson.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_tony_robinson
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_michael_cashmore  = {
+		name="Michael Cashmore"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_michael_cashmore.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_michael_cashmore
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_loretta_minghella  = {
+		name="Loretta Minghella"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_loretta_minghella.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_loretta_minghella
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_tim_hughes  = {
+		name="Tim Hughes"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_tim_hughes.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_tim_hughes
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_kevin_groves  = {
+		name="Kevin Groves"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_kevin_groves.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_kevin_groves
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_john_richardson = {
+		name="John Richardson"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_john_richardson.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_john_richardson
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_gnaeus_cornelius_lentulus = {
+		name="Gnaeus Cornelius Lentulus"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_gnaeus_cornelius_lentulus.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_gnaeus_cornelius_lentulus
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_aulus_apollonius_cordus = {
+		name="Aulus Apollonius Cordus"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_aulus_apollonius_cordus.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_aulus_apollonius_cordus
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_a_gratius_avitus = {
+		name="A. Gratius Avitus"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_a_gratius_avitus.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_a_gratius_avitus
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_pete_jennings = {
+		name="Pete Jennings"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_pete_jennings.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_pete_jennings
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_damh_the_bard = {
+		name="Damh The Bard"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_damh_the_bard.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_damh_the_bard
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_heimgest = {
+		name="Heimgest"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_heimgest.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_heimgest
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_nigel_pennick = {
+		name="Nigel Pennick"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_nigel_pennick.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_nigel_pennick
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	MRC_ian_read = {
+		name="Ian Read"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/MRC/idea_MRC_ian_read.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = MRC_ian_read
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	##GENERALS##
 	MRC_patrick_sanders={
 		name="Patrick Sanders"
 		portraits={

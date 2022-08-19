@@ -1,9 +1,45 @@
 characters={
+	ESS_nick_land = {
+		name="Nick Land"
+		portraits = {
+			civilian={
+				large="gfx/leaders/ESS/Portrait_ESS_Nick_Land.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_nick_land.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_government
+			idea_token = nick_land
+			allowed = {
+				original_tag = ESS
+			}
+			traits = {
+				the_father_of_accelerationism 
+			}
+		}
+		country_leader={
+			ideology=accelerationism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
 	ESS_Richard_Dawkins={
 		name="Richard Dawkins"
 		portraits={
 			civilian={
 				large="gfx/leaders/ESS/Portrait_ESS_Richard_Dawkins.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_richard_dawkins.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_government
+			idea_token = ESS_richard_dawkins
+			allowed = {
+				original_tag = ESS
+			}
+			traits = {
 			}
 		}
 		country_leader={
@@ -96,6 +132,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/ESS/Portrait_ESS_Tim_Collins.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_tim_collins.dds"
 			}
 		}
 		field_marshal={
@@ -106,6 +143,16 @@ characters={
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_government
+			idea_token = ESS_tim_collins
+			allowed = {
+				original_tag = ESS
+			}
+			traits = {
+			}
 		}
 		country_leader={
 			ideology=autocracy
@@ -459,24 +506,6 @@ characters={
 			legacy_id=4
 		}
 	}
-	ESS_nick_land = {
-	name="Nick Land"
-	portraits = {
-			army = {
-				small = "ESS_nick_land"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = nick_land
-			allowed = {
-				original_tag = ESS
-			}
-			traits = {
-				the_father_of_accelerationism 
-			}
-		}
-	}
 	
 	###Pol_adv###
 	
@@ -485,7 +514,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_amy_ireland.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_amy_ireland.dds"
 			}
 		}
 		advisor = {
@@ -508,7 +537,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_sadie_plant.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_sadie_plant.dds"
 			}
 		}
 		advisor = {
@@ -531,7 +560,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_sadie_plant.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_sadie_plant.dds"
 			}
 		}
 		advisor = {
@@ -554,7 +583,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_ray_brassier.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_ray_brassier.dds"
 			}
 		}
 		advisor = {
@@ -577,7 +606,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_reza_negarestani.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_reza_negarestani.dds"
 			}
 		}
 		advisor = {
@@ -600,7 +629,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_curtis_yarvin.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_curtis_yarvin.dds"
 			}
 		}
 		advisor = {
@@ -623,7 +652,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_kodwo_eshun.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_kodwo_eshun.dds"
 			}
 		}
 		advisor = {
@@ -646,7 +675,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_matthew_fuller.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_matthew_fuller.dds"
 			}
 		}
 		advisor = {
@@ -669,7 +698,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_steve_goodman.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_steve_goodman.dds"
 			}
 		}
 		advisor = {
@@ -692,7 +721,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_anna_greenspan.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_anna_greenspan.dds"
 			}
 		}
 		advisor = {
@@ -715,7 +744,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_bill_cash.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_bill_cash.dds"
 			}
 		}
 		advisor = {
@@ -738,7 +767,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_joanne_rowling.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_joanne_rowling.dds"
 			}
 		}
 		advisor = {
@@ -761,7 +790,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_martin_amis.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_martin_amis.dds"
 			}
 		}
 		advisor = {
@@ -784,7 +813,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_suzanne_moore.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_suzanne_moore.dds"
 			}
 		}
 		advisor = {
@@ -807,7 +836,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_polly_toynbee.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_polly_toynbee.dds"
 			}
 		}
 		advisor = {
@@ -830,7 +859,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_peter_wilby.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_peter_wilby.dds"
 			}
 		}
 		advisor = {
@@ -853,7 +882,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_julian_baggini.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_julian_baggini.dds"
 			}
 		}
 		advisor = {
@@ -876,7 +905,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_acgraylin.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_acgraylin.dds"
 			}
 		}
 		advisor = {
@@ -899,7 +928,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_maryam_namazie.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_maryam_namazie.dds"
 			}
 		}
 		advisor = {
@@ -922,7 +951,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_aliyah_saleem.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_aliyah_saleem.dds"
 			}
 		}
 		advisor = {
@@ -945,7 +974,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_ringo_starr.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_ringo_starr.dds"
 			}
 		}
 		advisor = {
@@ -968,7 +997,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_alan_sugar.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_alan_sugar.dds"
 			}
 		}
 		advisor = {
@@ -995,7 +1024,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_simon_cowell.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_simon_cowell.dds"
 			}
 		}
 		advisor = {
@@ -1018,7 +1047,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_piers_morgan.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_piers_morgan.dds"
 			}
 		}
 		advisor = {
@@ -1041,7 +1070,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_niall_ferguson.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_niall_ferguson.dds"
 			}
 		}
 		advisor = {
@@ -1064,7 +1093,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_katie_hopkins.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_katie_hopkins.dds"
 			}
 		}
 		advisor = {
@@ -1087,7 +1116,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_raheem_kassam.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_raheem_kassam.dds"
 			}
 		}
 		advisor = {
@@ -1110,7 +1139,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_andrew_rosindell.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_andrew_rosindell.dds"
 			}
 		}
 		advisor = {
@@ -1133,7 +1162,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_david_starkey.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_david_starkey.dds"
 			}
 		}
 		advisor = {
@@ -1156,7 +1185,7 @@ characters={
 		portraits = {
 			civilian={
 				large=""
-				small = "gfx/leaders/ESS/GFX_idea_ESS_william_legge.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_william_legge.dds"
 			}
 		}
 		advisor = {
