@@ -1730,6 +1730,10 @@ country_event = {
 		clear_variable = volk_mood
 		load_focus_tree = EAG_mercenary
 		add_ideas = EAG_illegitimate_government
+		swap_ideas = {
+			remove_idea = lhl_regime_provisional_government
+			add_idea = lhl_regime_military_junta
+		}
     }
 	
 	 option = {
@@ -1755,6 +1759,10 @@ country_event = {
 		clear_variable = mercs_mood
 		load_focus_tree = EAG_anarchists
 		add_ideas = EAG_illegitimate_government
+		swap_ideas = {
+			remove_idea = lhl_regime_provisional_government
+			add_idea = lhl_regime_anarchy
+		}
 		
     }
 	
@@ -1766,6 +1774,10 @@ country_event = {
 		}
 		load_focus_tree = EAG_hitler
 		add_ideas = EAG_illegitimate_government
+		swap_ideas = {
+			remove_idea = lhl_regime_provisional_government
+			add_idea = lhl_regime_oligarchy
+		}
 		hidden_effect = {
 			EAG = {
 				country_event = {

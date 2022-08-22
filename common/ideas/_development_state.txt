@@ -1,0 +1,66 @@
+ideas = {
+
+	development_state = { 
+		law = yes
+		use_list_view = yes
+		lhl_development_modern_nation = {
+						
+			cost = -1
+			picture = GFX_law_01
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			modifier = {
+				monthly_population = -0.05
+			}
+		}
+		lhl_development_developing_nation = {
+						
+			cost = -1
+			picture = GFX_law_01
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				local_resources_factor = -0.1
+				monthly_population = 0.5
+			}
+		}
+		lhl_development_pre_industrial_society = {
+						
+			cost = -1
+			picture = GFX_law_01
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = -0.5
+				production_factory_efficiency_gain_factor = -0.25
+				production_factory_max_efficiency_factor = -0.25
+				local_resources_factor = -0.25
+				monthly_population = 1.0
+			}
+		}
+		lhl_development_future_nation = {
+						
+			cost = -1
+			picture = GFX_law_01
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				local_resources_factor = 0.1
+			}
+		}
+	}
+}
