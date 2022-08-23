@@ -10,9 +10,16 @@ MRC_prisoners_of_war = {
 	allowed = { original_tag = MRC }
 }
 
-MRC_reunify_isles = {
+MRC_army_in_black = {
 	icon = GFX_
-	visible_when_empty = yes
-	allowed = { original_tag = MRC }
+	 visible = {
+            MRC = {
+                has_completed_focus = MRC_luthers_army
+            }
+    }
+    available = {
+            MRC = {
+                has_completed_focus = MRC_luthers_army
+            }
+    }
 }
-

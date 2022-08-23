@@ -176,9 +176,6 @@ set_technology = {
 }
 starting_train_buffer = 200
 set_convoys = 50
-add_ideas = {
-	Salma_Yaqoob
-}
 set_politics = {
 	ruling_party = national_bolshevism
 	elections_allowed = no
@@ -195,130 +192,86 @@ set_popularities = {
 	right_populism = 6
 	ur_fascism = 20
 }
-
-create_country_leader = {
-	name = "Andrew Wakefield"
-	desc = ""
-	picture = "Portrait_NTH_Andrew_Wakefield.dds"
-	ideology = ethical_millennialism
-	traits = {
-	}
+add_ideas = {
+	NTH_unfinished_industrialization
+	NTH_anglophobia
 }
 
-create_country_leader = {
-	name = "Salma Yaqoob"
-	desc = ""
-	picture = "Portrait_NTH_Salma_Yaqoob.dds"
-	ideology = ultrahegelianism
-	traits = {
-	}
+add_ideas = {
+	lhl_economy_civil_war_economy
+	lhl_development_modern_nation 
+	lhl_regime_partocracy
 }
 
-create_country_leader = {
-	name = "Ash Sarkar"
-	desc = ""
-	picture = "Portrait_NTH_Ash_Sarkar.dds"
-	ideology = soviet_marxism
-	traits = {
-	}
-}
+##CHARACTERS##
+#leaders#
+recruit_character = NTH_george_galloway
+recruit_character = NTH_Salma_Yaqoob
+recruit_character = NTH_Claire_Fox
+recruit_character = NTH_andrew_wakefield
+recruit_character = NTH_ash_sarkar
+recruit_character = NTH_ken_livingstone
+recruit_character = NTH_parmjit_dhanda
+recruit_character = NTH_missing
+recruit_character = NTH_boris_johnson
+recruit_character = NTH_john_sentamu
+recruit_character = NTH_brendan_perry
+#generals#
+recruit_character = NTH_peter_wall
+recruit_character = NTH_johnson_gideon_beharry
+recruit_character = NTH_asim_hafiz
+recruit_character = NTH_azad_ali
+recruit_character = NTH_marc_wadsworth
+recruit_character = NTH_dan_jarvis
+recruit_character = NTH_clive_lewis
+recruit_character = NTH_sharon_nesmith
+recruit_character = NTH_john_reith
+recruit_character = NTH_graham_binns
+recruit_character = NTH_duncan_capps
+recruit_character = NTH_john_cooper
+recruit_character = NTH_paul_nanson
+recruit_character = NTH_evelyn_webb_carter
+recruit_character = NTH_patrick_sanders
+#advisers#
+recruit_character = NTH_Arthur_Scargill
+recruit_character = NTH_Munira_Mirza
+recruit_character = NTH_Yvonne_Ridley
+recruit_character = NTH_Beatrix_Campbell
+recruit_character = NTH_Chris_Williamson 
+recruit_character = NTH_Clive_Lewis
+recruit_character = NTH_Mark_Seddon
+recruit_character = NTH_Murad_Qureshi
+recruit_character = NTH_Tahir_Ali
+recruit_character = NTH_Ted_Honderich
+recruit_character = NTH_Valerie_Wise
+recruit_character = NTH_Barbara_Hewson
+recruit_character = NTH_Brendan_ONeill
+recruit_character = NTH_Fiona_Bernadette_Fox
+recruit_character = NTH_Frank_Furedi
+recruit_character = NTH_James_Heartfield
+recruit_character = NTH_Steve_Baker
+recruit_character = NTH_Stuart_Waiton 
+recruit_character = NTH_David_Gilmour
+recruit_character = NTH_Gary_Younge
+recruit_character = NTH_Ken_Loach
+recruit_character = NTH_Lee_Jasper 
+recruit_character = NTH_Neil_Faulkner
+recruit_character = NTH_Perry_Anderson
+recruit_character = NTH_Tariq_Ali
+recruit_character = NTH_Yasmin_Alibhai_Brown
+recruit_character = NTH_Aleksandr_Maksimtsev
+recruit_character = NTH_David_Richards
+recruit_character = NTH_Edzard_Ernst
+recruit_character = NTH_Gareth_Derrick
+recruit_character = NTH_Marc_Wadsworth
+recruit_character = NTH_Simon_Bryant 
+recruit_character = NTH_Elaine_West
+recruit_character = NTH_Stephen_Hillier
+recruit_character = NTH_henry_parker
+recruit_character = NTH_philip_jones
+recruit_character = NTH_david_george_steel
+recruit_character = NTH_neil_morisetti
 
-create_country_leader = {
-	name = "Claire Fox"
-	desc = ""
-	picture = "Portrait_NTH_Claire_Fox.dds"
-	ideology = nationalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Ken Livingstone"
-	desc = ""
-	picture = "Portrait_NTH_Ken_Livingstone.dds"
-	ideology = nazbol_gang
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "Parmjit Dhanda"
-	desc = ""
-	picture = "Portrait_NTH_Parmjit_Dhanda.dds"
-	ideology = labor_socialism
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "MISSING"
-	desc = ""
-	picture = ""
-	ideology = atlantic_liberalism
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "Boris Johnson"
-	desc = ""
-	picture = "Portrait_NTH_Boris_Johnson.dds"
-	ideology = social_conservatism
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "John Sentamu"
-	desc = ""
-	picture = "Portrait_NTH_John_Sentamu.dds"
-	ideology = neo_feudalism
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "Brendan Perry"
-	desc = ""
-	picture = "Portrait_NTH_Brendan_Perry.dds"
-	ideology = charismatic_dictatorship
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "George Galloway"
-	desc = ""
-	picture = "Portrait_NTH_George_Galloway.dds"
-	ideology = nazbol_gang
-	traits = {
-	}
-}
-create_field_marshal = {
-	name = "Peter Wall"
-	id = 996
-	picture = "Portrait_NTH_Peter_Wall.dds"
-	traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer }
-	skill = 4 
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
-}
-create_corps_commander = {
-	name = "Johnson Gideon Beharry"
-	picture = "Portrait_NTH_Johnson_Gideon_Beharry.dds"
-	traits = { war_hero  cavalry_leader combined_arms_expert}
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Asim Hafiz"
-	picture = "Portrait_NTH_Asim_Hafiz.dds"
-	traits = { }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
 
 set_country_flag = {
     flag = ENG_galloway_here

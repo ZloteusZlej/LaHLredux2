@@ -198,31 +198,19 @@ add_ai_strategy = {
     value = 200
 }
 
-create_country_leader = {
-	name = "Leanne Wood"
-	picture = "Portrait_WLS_Leanne_Wood.dds"
-	expire = "1953.3.1"
-	ideology = labor_socialism
-	traits = {
-	}
+add_ideas = {
+	lhl_economy_free_market_economy
+	lhl_development_modern_nation 
+	lhl_regime_parliamentary_republic
 }
 
+##CHARACTERS##
+#leaders#
+recruit_character = WLS_leanne_wood
+recruit_character = WLS_sir_mike_jackson
+#generals#
+#advisers#
 
-create_country_leader = {
-	name = "Michael Jackson"
-	picture = "Portrait_WLS_Michael_Jackson.dds"
-	expire = "1953.3.1"
-	ideology = stratocracy
-	traits = {
-	}
-}
-
-create_field_marshal = {
-	name = "Sir Mike Jackson"
-		picture = "Portrait_WLS_Sir_Mike_Jackson.dds"
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
+add_ideas = {
+	WLS_transparent_borders
 }

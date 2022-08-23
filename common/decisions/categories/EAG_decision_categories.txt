@@ -10,16 +10,11 @@ EAG_prisoners_of_war = {
 	allowed = { original_tag = EAG }
 }
 
-EAG_reunify_isles = {
-	icon = GFX_
-	visible_when_empty = yes
-	allowed = { original_tag = EAG }
-}
-
 EAG_volk_and_mercs = {
 	icon = GFX_
 	visible_when_empty = yes
 	allowed = { original_tag = EAG }
+	scripted_gui = lhl_volk_mercs_screen_body
 	available = { 
 		EAG = {
 			has_government = hegemonism
@@ -38,6 +33,7 @@ EAG_mercs = {
 	allowed = { 
 		original_tag = EAG
 	}
+	scripted_gui = lhl_mercs_screen_body
 	available = {
 		EAG = {
 			has_government = neocameralism
@@ -56,6 +52,7 @@ EAG_volk = {
 	allowed = { 
 		original_tag = EAG
 	}
+	scripted_gui = lhl_volk_screen_body
 	available = {
 		EAG = {
 			has_government = national_bolshevism
@@ -104,24 +101,20 @@ EAG_ipswich_law_implementation = {
 	}
 }
 
-EAG_britain_cores = {
-	icon = GFX_
-	visible_when_empty = yes
-	allowed = { 
-		original_tag = EAG
-	}
-}
-
 EAG_wars = {
 	icon = GFX
 	picture = GFX
 	allowed = { original_tag = EAG }
 	visible = {
+		NOT = {
+			country_exists = ESS
+		}
+		EAG = {
 			NOT = {
-				country_exists = ESS
+				has_government = national_bolshevism
 			}
-	}
-	visible_when_empty = yes	
+		}
+	}	
 }
 
 EAG_lager_diplomacy_actions = {
@@ -272,6 +265,11 @@ EAG_klumb_parliament_gui_decision = {
 
 	scripted_gui = klumb_parliament_gui
 	visible_when_empty = yes
+	visible = { 
+		EAG = {
+			has_completed_focus = EAG_national_diet
+		}
+	}
 }
 
 EAG_elections = {

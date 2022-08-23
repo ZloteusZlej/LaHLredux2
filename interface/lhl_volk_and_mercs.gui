@@ -1,0 +1,317 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "lhl_volk_mercs_full"
+		size = { width = 500 height = 175 }
+		position = { x = 100 y = 0 }
+		scale = 1.2
+		moveable = no
+		clipping = yes
+		
+		background = {
+			name = "lhl_table_opening_screen_background_1"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+		##Icons##
+	    iconType = {
+			name = "lhl_mercs_mood_1"
+			spriteType = "GFX_lhl_mercs_mood_1"
+			pdx_tooltip = "EAG_MERCS_MOOD_1"
+			position = { x = 325 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_mood_2"
+			spriteType = "GFX_lhl_mercs_mood_2"
+			pdx_tooltip = "EAG_MERCS_MOOD_2"
+			position = { x = 325 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_mood_3"
+			spriteType = "GFX_lhl_mercs_mood_3"
+			pdx_tooltip = "EAG_MERCS_MOOD_3"
+			position = { x = 325 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_mood_4"
+			spriteType = "GFX_lhl_mercs_mood_4"
+			pdx_tooltip = "EAG_MERCS_MOOD_4"
+			position = { x = 325 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_mood_5"
+			spriteType = "GFX_lhl_mercs_mood_5"
+			pdx_tooltip = "EAG_MERCS_MOOD_5"
+			position = { x = 325 y = 50 }
+		}
+		###
+	    iconType = {
+			name = "lhl_mercs_quality_1"
+			spriteType = "GFX_lhl_mercs_quality_1"
+			pdx_tooltip = "EAG_MERCS_QUALITY_1"
+			position = { x = 225 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_quality_2"
+			spriteType = "GFX_lhl_mercs_quality_2"
+			pdx_tooltip = "EAG_MERCS_QUALITY_2"
+			position = { x = 225 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_quality_3"
+			spriteType = "GFX_lhl_mercs_quality_3"
+			pdx_tooltip = "EAG_MERCS_QUALITY_3"
+			position = { x = 225 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_quality_4"
+			spriteType = "GFX_lhl_mercs_quality_4"
+			pdx_tooltip = "EAG_MERCS_QUALITY_4"
+			position = { x = 225 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_quality_5"
+			spriteType = "GFX_lhl_mercs_quality_5"
+			pdx_tooltip = "EAG_MERCS_QUALITY_5"
+			position = { x = 225 y = 50 }
+		}
+		###
+	    iconType = {
+			name = "lhl_volk_mood_1"
+			spriteType = "GFX_lhl_volk_mood_1"
+			pdx_tooltip = "EAG_VOLK_MOOD_1"
+			position = { x = 125 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_mood_2"
+			spriteType = "GFX_lhl_volk_mood_2"
+			pdx_tooltip = "EAG_VOLK_MOOD_2"
+			position = { x = 125 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_mood_3"
+			spriteType = "GFX_lhl_volk_mood_3"
+			pdx_tooltip = "EAG_VOLK_MOOD_3"
+			position = { x = 125 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_mood_4"
+			spriteType = "GFX_lhl_volk_mood_4"
+			pdx_tooltip = "EAG_VOLK_MOOD_4"
+			position = { x = 125 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_mood_5"
+			spriteType = "GFX_lhl_volk_mood_5"
+			pdx_tooltip = "EAG_VOLK_MOOD_5"
+			position = { x = 125 y = 50 }
+		}
+		###
+	    iconType = {
+			name = "lhl_volk_dev_1"
+			spriteType = "GFX_lhl_volk_dev_1"
+			pdx_tooltip = "EAG_VOLK_DEV_1"
+			position = { x = 25 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_dev_2"
+			spriteType = "GFX_lhl_volk_dev_2"
+			pdx_tooltip = "EAG_VOLK_DEV_2"
+			position = { x = 25 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_dev_3"
+			spriteType = "GFX_lhl_volk_dev_3"
+			pdx_tooltip = "EAG_VOLK_DEV_3"
+			position = { x = 25 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_dev_4"
+			spriteType = "GFX_lhl_volk_dev_4"
+			pdx_tooltip = "EAG_VOLK_DEV_4"
+			position = { x = 25 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_dev_5"
+			spriteType = "GFX_lhl_volk_dev_5"
+			pdx_tooltip = "EAG_VOLK_DEV_5"
+			position = { x = 25 y = 50 }
+		}
+		instantTextboxType = {
+			name = "lhl_eag_folk_mercs_title"
+			position = { x = 55 y = 15 }
+			font = "hoi_12header"
+			text = "EAG_FOLK_MERCS_TEXT"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+	}
+	containerWindowType = {
+		name = "lhl_mercs_full"
+		size = { width = 500 height = 175 }
+		position = { x = 100 y = 0 }
+		scale = 1.2
+		moveable = no
+		clipping = yes
+		
+		background = {
+			name = "lhl_table_opening_screen_background_1"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+		##Icons##
+	    iconType = {
+			name = "lhl_mercs_mood_1"
+			spriteType = "GFX_lhl_mercs_mood_1"
+			pdx_tooltip = "EAG_MERCS_MOOD_1"
+			position = { x = 125 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_mood_2"
+			spriteType = "GFX_lhl_mercs_mood_2"
+			pdx_tooltip = "EAG_MERCS_MOOD_2"
+			position = { x = 125 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_mood_3"
+			spriteType = "GFX_lhl_mercs_mood_3"
+			pdx_tooltip = "EAG_MERCS_MOOD_3"
+			position = { x = 125 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_mood_4"
+			spriteType = "GFX_lhl_mercs_mood_4"
+			pdx_tooltip = "EAG_MERCS_MOOD_4"
+			position = { x = 125 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_mood_5"
+			spriteType = "GFX_lhl_mercs_mood_5"
+			pdx_tooltip = "EAG_MERCS_MOOD_5"
+			position = { x = 125 y = 50 }
+		}
+		###
+	    iconType = {
+			name = "lhl_mercs_quality_1"
+			spriteType = "GFX_lhl_mercs_quality_1"
+			pdx_tooltip = "EAG_MERCS_QUALITY_1"
+			position = { x = 225 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_quality_2"
+			spriteType = "GFX_lhl_mercs_quality_2"
+			pdx_tooltip = "EAG_MERCS_QUALITY_2"
+			position = { x = 225 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_quality_3"
+			spriteType = "GFX_lhl_mercs_quality_3"
+			pdx_tooltip = "EAG_MERCS_QUALITY_3"
+			position = { x = 225 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_quality_4"
+			spriteType = "GFX_lhl_mercs_quality_4"
+			pdx_tooltip = "EAG_MERCS_QUALITY_4"
+			position = { x = 225 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mercs_quality_5"
+			spriteType = "GFX_lhl_mercs_quality_5"
+			pdx_tooltip = "EAG_MERCS_QUALITY_5"
+			position = { x = 225 y = 50 }
+		}
+		instantTextboxType = {
+			name = "lhl_eag_folk_mercs_title"
+			position = { x = 55 y = 15 }
+			font = "hoi_12header"
+			text = "EAG_FOLK_MERCS_TEXT"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+	}
+	containerWindowType = {
+		name = "lhl_volk_full"
+		size = { width = 500 height = 175 }
+		position = { x = 100 y = 0 }
+		scale = 1.2
+		moveable = no
+		clipping = yes
+		
+		background = {
+			name = "lhl_table_opening_screen_background_1"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+		##Icons##
+	    iconType = {
+			name = "lhl_volk_mood_1"
+			spriteType = "GFX_lhl_volk_mood_1"
+			pdx_tooltip = "EAG_VOLK_MOOD_1"
+			position = { x = 125 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_mood_2"
+			spriteType = "GFX_lhl_volk_mood_2"
+			pdx_tooltip = "EAG_VOLK_MOOD_2"
+			position = { x = 125 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_mood_3"
+			spriteType = "GFX_lhl_volk_mood_3"
+			pdx_tooltip = "EAG_VOLK_MOOD_3"
+			position = { x = 125 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_mood_4"
+			spriteType = "GFX_lhl_volk_mood_4"
+			pdx_tooltip = "EAG_VOLK_MOOD_4"
+			position = { x = 125 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_mood_5"
+			spriteType = "GFX_lhl_volk_mood_5"
+			pdx_tooltip = "EAG_VOLK_MOOD_5"
+			position = { x = 125 y = 50 }
+		}
+		###
+	    iconType = {
+			name = "lhl_volk_dev_1"
+			spriteType = "GFX_lhl_volk_dev_1"
+			pdx_tooltip = "EAG_VOLK_DEV_1"
+			position = { x = 225 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_dev_2"
+			spriteType = "GFX_lhl_volk_dev_2"
+			pdx_tooltip = "EAG_VOLK_DEV_2"
+			position = { x = 225 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_dev_3"
+			spriteType = "GFX_lhl_volk_dev_3"
+			pdx_tooltip = "EAG_VOLK_DEV_3"
+			position = { x = 225 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_dev_4"
+			spriteType = "GFX_lhl_volk_dev_4"
+			pdx_tooltip = "EAG_VOLK_DEV_4"
+			position = { x = 225 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_volk_dev_5"
+			spriteType = "GFX_lhl_volk_dev_5"
+			pdx_tooltip = "EAG_VOLK_DEV_5"
+			position = { x = 225 y = 50 }
+		}
+		instantTextboxType = {
+			name = "lhl_eag_folk_mercs_title"
+			position = { x = 55 y = 15 }
+			font = "hoi_12header"
+			text = "EAG_FOLK_MERCS_TEXT"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+	}
+}

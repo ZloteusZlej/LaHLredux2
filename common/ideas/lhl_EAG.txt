@@ -98,7 +98,7 @@ ideas = {
 		}
 	}
 
-	country = {
+	hidden_ideas = {
 		EAG_mercs_quality_very_low = {
 		
 			picture = 
@@ -123,9 +123,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_mercs_quality_low = {
 		
 			picture = 
@@ -150,9 +147,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_mercs_quality_medium = {
 		
 			picture = 
@@ -177,9 +171,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_mercs_quality_high = {
 		
 			picture = 
@@ -204,9 +195,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_mercs_quality_very_high = {
 		
 			picture = 
@@ -231,10 +219,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	
-	country = {
 		EAG_mercs_mood_very_low = {
 		
 			picture = 
@@ -258,9 +242,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_mercs_mood_low = {
 		
 			picture = 
@@ -284,9 +265,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_mercs_mood_medium = {
 		
 			picture = 
@@ -310,9 +288,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_mercs_mood_high = {
 		
 			picture = 
@@ -336,9 +311,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_mercs_mood_very_high = {
 		
 			picture = 
@@ -362,9 +334,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_volk_dev_very_low = {
 		
 			picture = 
@@ -390,9 +359,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_volk_dev_low = {
 
 			picture = 
@@ -418,9 +384,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_volk_dev_medium = {
 		
 			picture = 
@@ -446,9 +409,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_volk_dev_high = {
 		
 			picture = 
@@ -474,9 +434,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_volk_dev_very_high = {
 		
 			picture = 
@@ -502,9 +459,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_volk_mood_very_low = {
 		
 			picture = 
@@ -528,9 +482,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_volk_mood_low = {
 
 			picture = 
@@ -554,9 +505,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_volk_mood_medium = {
 		
 			picture = 
@@ -580,9 +528,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_volk_mood_high = {
 		
 			picture = 
@@ -606,9 +551,6 @@ ideas = {
 				tag = EAG
 			}
 		}
-	}
-	
-	country = {
 		EAG_volk_mood_very_high = {
 		
 			picture = 
@@ -3996,6 +3938,214 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.1
 				production_factory_max_efficiency_factor = -0.15		
 				production_speed_buildings_factor = -0.05
+			}
+		}
+		EAG_reconstruction_project_1 = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.25
+				repair_speed_industrial_complex_factor = 0.25
+				industry_repair_factor = 0.25
+			}
+		}
+		EAG_reconstruction_project_2 = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.25
+				repair_speed_arms_factory_factor = 0.25
+				industry_repair_factor = 0.25
+			}
+		}
+		EAG_reconstruction_project_3 = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+				repair_speed_infrastructure_factor = 0.25
+				industry_repair_factor = 0.25
+			}
+		}
+	}
+	##Klumb Elections##
+	country = {
+		EAG_advanced_training = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = 0.15
+				max_command_power_mult = 0.05
+				experience_gain_army_factor = 0.1
+			}
+		}
+		EAG_fast_building = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.2
+				industry_free_repair_factor = 0.15
+				industry_repair_factor = 0.15
+			}
+		}
+		EAG_european_trading = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = 0.25
+				local_resources_factor = 0.05
+			}
+		}
+		EAG_european_literature = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				stability_factor = -0.10
+			}
+		}
+		EAG_worker_holidays = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1	
+			}
+		}
+		EAG_experimental_research = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.25
+				stability_factor = -0.15
+				civilian_factory_use = 5
+			}
+		}
+		EAG_rebuilding_sealand = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.20
+				civilian_factory_use = 5
+			}
+		}
+	}
+	country = {
+	
+		EAG_project_fighting_corruption = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = -0.25
+			}
+		}
+		EAG_project_improved_system = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		EAG_challenging_research = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.75
+				political_power_gain = -0.25
+				ivilian_factory_use = 10
 			}
 		}
 	}

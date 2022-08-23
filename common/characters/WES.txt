@@ -53,7 +53,7 @@ characters={
 			legacy_id=-1
 		}
 	}
-	WES_prince_edward,_duke_of_kent={
+	WES_prince_edward_duke_of_kent={
 		name="Prince Edward, Duke of Kent"
 		portraits={
 			army={
@@ -337,5 +337,328 @@ characters={
 			expire="1.1.1.1"
 			id=-1
 		}
+	}
+	#Advisers#
+	WES_roger_scruton = {
+		name = "Roger Scruton"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_roger_scruton.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = WES_roger_scruton
+			traits = {
+				Black_bird
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Nikolai_Tolstoy = {
+		name = "Nikolai Tolstoy"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Nikolai_Tolstoy.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = WES_Nikolai_Tolstoy
+			traits = {
+				Aristocrat_intellectual
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Alister_McGrath = {
+		name = "Alister McGrath"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Alister_McGrath.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Alister_McGrath
+			traits = {
+				Orthodox_scholastic
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Andrew_Brownsword = {
+		name = "Andrew Brownsword"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Andrew_Brownsword.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Andrew_Brownsword
+			traits = {
+				treasurer
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Christopher_Chope = {
+		name = "Christopher Chope"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Christopher_Chope.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Christopher_Chope
+			traits = {
+				Old_Guard
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Fiona_Bruce = {
+		name = "Fiona Bruce"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Fiona_Bruce.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token =  WES_Fiona_Bruce
+			traits = {
+				goodwill_ambassador
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_John_Hayes = {
+		name = "John Hayes"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_John_Hayes.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_John_Hayes
+			traits = {
+				hospitaller
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Kallistos_Ware = {
+		name = "Kallistos Ware"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Kallistos_Ware.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Kallistos_Ware
+			traits = {
+				england_metropolitan
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Laurence_Robertson = {
+		name = "Laurence Robertson"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Laurence_Robertson.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Laurence_Robertson
+			traits = {
+				protectionist
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Melanie_Phillips = {
+		name = "Melanie Phillips"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Melanie_Phillips.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Melanie_Phillips
+			traits = {
+				Herald
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Nadine_Dorries = {
+		name = "Nadine Dorries"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Nadine_Dorries.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Nadine_Dorries
+			traits = {
+				Mother_teresa
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Peter_Hitchens = {
+		name = "Peter Hitchens"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Peter_Hitchens.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Peter_Hitchens
+			traits = {
+				Follower_of_Burke
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Simon_Heffer = {
+		name = "Simon Heffer"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Simon_Heffer.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Simon_Heffer
+			traits = {
+				Social_Crusader
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Sir_David_Amess = {
+		name = "Sir David Amess"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Sir_David_Amess.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Sir_David_Amess
+			traits = {
+				
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
 	}
 }

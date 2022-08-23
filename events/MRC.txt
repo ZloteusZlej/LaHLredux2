@@ -269,12 +269,12 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = MRC_event.10.a
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 0 }
 		set_global_flag = pearce_accepts_kent_offer
 	}
 	option = {
 		name = MRC_event.10.b
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 10 }
 		set_global_flag = pearce_rejects_kent_offer
 	}
 }
@@ -377,6 +377,181 @@ country_event = {
 				days = 1
 				id = WES_event.43
 			}
+		}
+	}
+}
+
+country_event = {
+	id = MRC_event.16
+	title = MRC_event.16.t
+	desc = MRC_event.16.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.16.a
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = MRC_event.18
+	title = MRC_event.18.t
+	desc = MRC_event.18.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.18.a
+		add_ideas = MRC_Spirit_Of_Neofolk
+	}
+	option = {
+		name = MRC_event.18.b
+		add_ideas = MRC_Rage_Of_Neofolk
+	}
+	option = {
+		name = MRC_event.18.c
+		add_ideas = MRC_Sound_Of_Neofolk
+	}
+	option = {
+		name = MRC_event.18.d
+		add_tech_bonus = {
+			bonus = 1
+			uses = 3
+			category = electronic_mechanical_engineering
+		}
+	}
+}
+
+country_event = {
+	id = MRC_event.17
+	title = MRC_event.17.t
+	desc = MRC_event.17.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.17.a
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = armoured_personnel_carrier_equipment, infantry_fighting_vehicle_equipment
+		}
+
+		division_template = {
+			name = "Luther's Infantry Fighting Vehicle"
+			priority = 1
+			is_locked = yes
+			division_names_group = MRC_IFV_01
+			regiments = {
+				infantry_fighting_vehicle = { x = 0 y = 0 }
+				infantry_fighting_vehicle = { x = 0 y = 1 }
+				infantry_fighting_vehicle = { x = 0 y = 2 }
+				infantry_fighting_vehicle = { x = 0 y = 3 }
+				infantry_fighting_vehicle = { x = 0 y = 4 }
+			}
+		}
+		
+		create_unit = {
+			division = "name = \"Luther's Armored Boyz\" 
+			division_template = \"Luther's Infantry Fighting Vehicle\" 
+			start_experience_factor = 1 
+			start_equipment_factor = 1 
+			start_manpower_factor = 1"
+			owner = MRC
+		}	
+		
+			create_unit = {
+			division = "name = \"Luther's Armored Guyz\" 
+			division_template = \"Luther's Infantry Fighting Vehicle\" 
+			start_experience_factor = 1 
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			owner = MRC
+		}	
+	}
+	option = {
+		name = MRC_event.17.b
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 3
+			category = motorized_equipment
+		}
+		division_template = {
+			name = "Luther's Armored Cars"
+			priority = 1
+			is_locked = yes
+			division_names_group = MRC_AC_01
+			regiments = {
+				armored_car = { x = 0 y = 0 }
+				armored_car = { x = 0 y = 1 }
+				armored_car = { x = 0 y = 2 }
+				armored_car = { x = 0 y = 3 }
+			}
+		}
+		create_unit = {
+			division = "name = \"Armored Cars Division\" 
+			division_template = \"Luther's Armored Cars\" 
+			start_experience_factor = 1 
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			owner = MRC
+		}
+		create_unit = {
+			division = "name = \"Armored Cars Division\" 
+			division_template = \"Luther's Armored Cars\" 
+			start_experience_factor = 1 
+			start_equipment_factor = 1 
+			start_manpower_factor = 1"
+			owner = MRC
+		}
+		create_unit = {
+			division = "name = \"Armored Cars Division\" 
+			division_template = \"Luther's Armored Cars\" 
+			start_experience_factor = 1 
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			owner = MRC
+		}
+		create_unit = {
+			division = "name = \"Armored Cars Division\" 
+			division_template = \"Luther's Armored Cars\" 
+			start_experience_factor = 1 
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			owner = MRC
+		}
+	}
+	option = {
+		name = MRC_event.17.c
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = armor
+		}
+		division_template = {
+			name = "Luther's Tank Division\"
+			priority = 1
+			is_locked = yes
+			division_names_group = MRC_MBT_01
+			regiments = {
+				MBT = { x = 0 y = 0 }
+				MBT = { x = 0 y = 1 }
+				MBT = { x = 0 y = 2 }
+				MBT = { x = 0 y = 3 }
+				MBT = { x = 0 y = 4 }
+				infantry_fighting_vehicle = { x = 1 y = 0 }
+				infantry_fighting_vehicle = { x = 1 y = 1 }
+				infantry_fighting_vehicle = { x = 1 y = 2 }
+			}
+		}
+		create_unit = {
+			division = "name = \"Luther's Tankz\" 
+			division_template = \"Luther's Tank Division\" 
+			start_experience_factor = 1 
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			owner = MRC
 		}
 	}
 }

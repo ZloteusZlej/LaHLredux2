@@ -412,6 +412,13 @@ shared_focus = {
 	prerequisite = {
 		focus = EAG_gather_our_wealth
 	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 8
+			date > 2021.01.01
+		}
+	}
 	x = 12
 	y = 4
 }
@@ -847,6 +854,10 @@ shared_focus = {
 			}
 				add_extra_state_shared_building_slots = 1
 		}
+		swap_ideas = {
+			remove_idea = lhl_economy_civil_war_economy
+			add_idea = lhl_economy_dirgisme
+		}
 	}
 	x = 12
 	y = 9
@@ -917,6 +928,12 @@ shared_focus = {
 	cost = 4.3
 	prerequisite = {
 		focus = EAG_farmers_self_governance
+	}
+	prerequisite = {
+		focus = EAG_ensuring_our_place_in_heaven
+	}
+	prerequisite = {
+		focus = EAG_the_main_business
 	}
 	completion_reward = {
 		add_political_power = 125
@@ -1716,26 +1733,12 @@ shared_focus = {
 	prerequisite = {
 		focus = EAG_liquid_gold
 	}
-	prerequisite = {
-		focus = EAG_ensuring_our_place_in_heaven
-	}
-	prerequisite = {
-		focus = EAG_the_main_business
-	}
 	available = {
 		has_country_flag = OSTANG_mercs_britain_reunified
 	}
 	completion_reward = {
 		add_political_power = 250
 		add_stability = 0.2
-		country_event = {
-			days = 1
-			id = super.9
-		}
-		set_capital = {
-			state = 1160
-			remember_old_capital = no
-		}
 		EAG = {
 			country_event = {
 				days = 1
@@ -2347,6 +2350,10 @@ shared_focus = {
 				}
 		custom_effect_tooltip = EAG_volk_dev_add_2
 		add_ideas = EAG_non_capitalist_economy
+		swap_ideas = {
+			remove_idea = lhl_economy_civil_war_economy
+			add_idea = lhl_economy_anarchism
+		}
 	}
 	x = 12
 	y = 9
@@ -2457,6 +2464,12 @@ shared_focus = {
 	cost = 4.3
 	prerequisite = {
 		focus = EAG_communal_mutual_aid
+	}
+	prerequisite = {
+		focus = EAG_seeds_of_wisdom
+	}
+	prerequisite = {
+		focus = EAG_army_of_the_people
 	}
 	completion_reward = {
 		swap_ideas = {
@@ -3291,26 +3304,12 @@ shared_focus = {
 	prerequisite = {
 		focus = EAG_bread_and_freedom
 	}
-	prerequisite = {
-		focus = EAG_seeds_of_wisdom
-	}
-	prerequisite = {
-		focus = EAG_army_of_the_people
-	}
 	available = {
 		has_country_flag = OSTANG_nazanarch_britain_reunified
 	}
 	completion_reward = {
 		add_political_power = 250
 		add_stability = 0.2
-		country_event = {
-			days = 1
-			id = super.21
-		}
-		set_capital = {
-			state = 1160
-			remember_old_capital = no
-		}
 		EAG = {
 			country_event = {
 				days = 1
@@ -3855,6 +3854,10 @@ shared_focus = {
 			}
 				add_extra_state_shared_building_slots = 2
 		}
+		swap_ideas = {
+			remove_idea = lhl_economy_civil_war_economy
+			add_idea = lhl_economy_free_market_economy
+		}
 	}
 	prerequisite = {
 		focus = EAG_let_the_rains_go
@@ -3964,6 +3967,12 @@ shared_focus = {
 	}
 	prerequisite = {
 		focus = EAG_we_are_the_machine
+	}
+	prerequisite = {
+		focus = EAG_peacemaker
+	}
+	prerequisite = {
+		focus = EAG_we_walk_in_line
 	}
 	x = 12
 	y = 12
@@ -4431,23 +4440,41 @@ shared_focus = {
 		focus = EAG_federation_of_england
 	}
 	completion_reward = {
-		add_political_power = 25
-		set_party_name = { 
-			ideology = neocameralism 
-			long_name = EAG_neocameralism_party_legitimate_long 
-			name = EAG_neocameralism_party_legitimate
-		}
-		
-		set_party_name = { 
-			ideology = hegemonism 
-			long_name = EAG_hegemonism_party_legitimate_long 
-			name = EAG_hegemonism_party_legitimate
-		}
-		
-		set_party_name = { 
-			ideology = national_bolshevism 
-			long_name = EAG_national_bolshevism_party_legitimate_long 
-			name = EAG_national_bolshevism_party_legitimate
+		EAG = {
+			add_political_power = 25
+			set_party_name = { 
+				ideology = neocameralism 
+				long_name = EAG_neocameralism_party_legitimate_long 
+				name = EAG_neocameralism_party_legitimate
+			}
+			
+			set_party_name = { 
+				ideology = hegemonism 
+				long_name = EAG_hegemonism_party_legitimate_long 
+				name = EAG_hegemonism_party_legitimate
+			}
+			
+			set_party_name = { 
+				ideology = socialism
+				long_name = EAG_socialism_party_legitimate_long 
+				name = EAG_socialism_party_legitimate
+			}
+			
+			set_party_name = { 
+				ideology = national_bolshevism 
+				long_name = EAG_national_bolshevism_party_legitimate_long 
+				name = EAG_national_bolshevism_party_legitimate
+			}
+			set_party_name = { 
+				ideology = millenarism
+				long_name = EAG_millenarism_party_legitimate_long 
+				name = EAG_millenarism_party_legitimate
+			}
+			set_party_name = { 
+				ideology = right_populism
+				long_name = EAG_right_populism_party_legitimate_long 
+				name = EAG_right_populism_party_legitimate
+			}
 		}
 	}
 	x = 4
@@ -4711,12 +4738,6 @@ shared_focus = {
 	icon = GFX_goal_EAG_open_the_country
 	cost = 4.3
 	prerequisite = {
-		focus = EAG_peacemaker
-	}
-	prerequisite = {
-		focus = EAG_we_walk_in_line
-	}
-	prerequisite = {
 		focus = EAG_governors_care
 	}
 	available = {
@@ -4725,14 +4746,6 @@ shared_focus = {
 	completion_reward = {
 		add_political_power = 250
 		add_stability = 0.2
-		country_event = {
-			days = 1
-			id = super.7
-		}
-		set_capital = {
-			state = 1160
-			remember_old_capital = no
-		}
 		EAG = {
 			country_event = {
 				days = 1
@@ -5021,19 +5034,6 @@ shared_focus = {
 				id = EAG_event.200
 			}
 		}
-		set_country_flag = elections_started
-		set_party_name = { 
-			ideology = millenarism
-			long_name = EAG_millenarism_party_legitimate_long 
-			name = EAG_millenarism_party_legitimate
-		}
-		set_party_name = { 
-			ideology = right_populism
-			long_name = EAG_right_populism_party_legitimate_long 
-			name = EAG_right_populism_party_legitimate
-		}
-		recruit_character = EAG_david_iсke
-		recruit_character = EAG_keir_starmer
 	}
 	x = 12
 	y = 17
@@ -5048,177 +5048,169 @@ shared_focus = {
 	}
 	available = {
 		hidden_trigger = {
-			always = false
+			EAG = {
+				NOT = {
+					OR = {
+						has_country_flag = EAG_klumb_mission_voting_YES
+						has_country_flag = EAG_klumb_mission_voting_NO
+						has_country_flag = EAG_klumb_elections_started
+					}
+				}
+			}
 		}
 	}
-	bypass = {
-		has_country_flag = elections_ended
-	}
 	completion_reward = {
-		custom_effect_tooltip = EAG_elections_tt
+		custom_effect_tooltip = EAG_elections_president_speech
+		swap_ideas = {
+			remove_idea = lhl_regime_oligarchy
+			add_idea = lhl_regime_presidential_republic
+		}
+		hidden_effect = {
 			if = {
 				limit = {
-					AND = {
-						check_variable = {
-							var = party_popularity@hegemonism
-							value = highest_party_popularity
-							compare = equals
-						}
-						NOT = {
-							has_country_flag = run_as_may
-							has_country_flag = run_as_bates
+					EAG = {
+						has_country_leader = {
+							character = EAG_josef_maria_klumb
+							ruling_only = yes
 						}
 					}
 				}
 				EAG = {
 					country_event = {
-						days = 1
-						id = EAG_event.201
+						days = 0
+						id = EAG_event.131
 					}
 				}
 			}
-			else_if = {
+			if = {
 				limit = {
-					AND = {
-						check_variable = {
-							var = party_popularity@hegemonism
-							value = highest_party_popularity
-							compare = equals
+					EAG = {
+						has_country_leader = {
+							character = EAG_theresa_may
+							ruling_only = yes
 						}
-						has_country_flag = run_as_may
 					}
 				}
 				EAG = {
 					country_event = {
-						days = 1
-						id = EAG_event.202
+						days = 0
+						id = EAG_event.132
 					}
 				}
 			}
-			else_if = {
+			if = {
 				limit = {
-					AND = {
-						check_variable = {
-							var = party_popularity@hegemonism
-							value = highest_party_popularity
-							compare = equals
+					EAG = {
+						has_country_leader = {
+							character = EAG_alex_whitehouse
+							ruling_only = yes
 						}
-						has_country_flag = run_as_bates
 					}
 				}
 				EAG = {
 					country_event = {
-						days = 1
-						id = EAG_event.209
+						days = 0
+						id = EAG_event.133
 					}
 				}
 			}
-			else_if = {
+			if = {
 				limit = {
-					AND = {
-						check_variable = {
-							var = party_popularity@neocameralism
-							value = highest_party_popularity
-							compare = equals
-						}
-						has_country_flag = run_as_yea
-						NOT = {
-							has_country_flag = run_as_whitehouse
+					EAG = {
+						has_country_leader = {
+							character = EAG_philip_yea
+							ruling_only = yes
 						}
 					}
 				}
 				EAG = {
 					country_event = {
-						days = 1
-						id = EAG_event.208
+						days = 0
+						id = EAG_event.134
 					}
 				}
 			}
-			else_if = {
+			if = {
 				limit = {
-					AND = {
-						check_variable = {
-							var = party_popularity@neocameralism
-							value = highest_party_popularity
-							compare = equals
+					EAG = {
+						has_country_leader = {
+							character = EAG_garry_bushell
+							ruling_only = yes
 						}
-						has_country_flag = run_as_whitehouse
 					}
 				}
 				EAG = {
 					country_event = {
-						days = 1
-						id = EAG_event.209
+						days = 0
+						id = EAG_event.135
 					}
 				}
 			}
-			else_if = {
+			if = {
 				limit = {
-						check_variable = {
-							var = party_popularity@socialism
-							value = highest_party_popularity
-							compare = equals
+					EAG = {
+						has_country_leader = {
+							character = EAG_keir_starmer
+							ruling_only = yes
 						}
+					}
 				}
 				EAG = {
 					country_event = {
-						days = 1
-						id = EAG_event.204
+						days = 0
+						id = EAG_event.136
 					}
 				}
 			}
-			else_if = {
+			if = {
 				limit = {
-						check_variable = {
-							var = party_popularity@national_bolshevism
-							value = highest_party_popularity
-							compare = equals
+					EAG = {
+						has_country_leader = {
+							character = EAG_david_iсke
+							ruling_only = yes
 						}
+					}
 				}
 				EAG = {
 					country_event = {
-						days = 1
-						id = EAG_event.205
+						days = 0
+						id = EAG_event.137
 					}
 				}
 			}
-			else_if = {
+			if = {
 				limit = {
-						check_variable = {
-							var = party_popularity@millenarism
-							value = highest_party_popularity
-							compare = equals
+					EAG = {
+						has_country_leader = {
+							character = EAG_rick_astley
+							ruling_only = yes
 						}
+					}
 				}
 				EAG = {
 					country_event = {
-						days = 1
-						id = EAG_event.206
+						days = 0
+						id = EAG_event.138
 					}
 				}
 			}
-			else_if = {
+			if = {
 				limit = {
-					OR = {
-						check_variable = {
-							var = party_popularity@right_populism
-							value = highest_party_popularity
-							compare = equals
-						}
-						check_variable = {
-							var = nsis_concession
-							value = 5
-							compare = greater_than_or_equals
+					EAG = {
+						has_country_leader = {
+							character = EAG_michael_bates
+							ruling_only = yes
 						}
 					}
 				}
 				EAG = {
 					country_event = {
-						days = 1
-						id = EAG_event.207
+						days = 0
+						id = EAG_event.139
 					}
 				}
 			}
+		}
 	}
 	x = 12
 	y = 18

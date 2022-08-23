@@ -31,12 +31,20 @@ add_ai_strategy = {
     value = 200
 }
 
-create_country_leader = {
-	name = "Micheál Martin"
-	desc = ""
-	picture = "Portrait_IRE_Micheál_Martin.dds"
-	ideology = social_conservatism
-	traits = {
-		#
-	}
+country_event = {
+	days = 365
+	id = IRE_event.5
 }
+
+add_ideas = {
+	lhl_economy_free_market_economy
+	lhl_development_modern_nation 
+	lhl_regime_parliamentary_republic
+}
+
+##CHARACTERS##
+#leaders#
+recruit_character = IRE_micheál_martin
+#generals#
+#advisers#
+

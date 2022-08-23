@@ -86,7 +86,7 @@ country_event = {
 		unlock_national_focus = ESS_preventive_strike
 	
 		}		
-	}
+
 		
 		kill_country_leader = yes
 		set_global_flag = ENG_Mosley_is_dead  
@@ -114,33 +114,33 @@ country_event = {
 	is_triggered_only = yes
     option = {
 		name = ESS_event.2.a
-		custom_effect_tooltip = ESS_event2.a.tt
 		hidden_effect = {
 		    ESS = {
 			    add_to_variable = { 
-				var = ESS_control
-				value = 20
+				var = ESS_land_var
+				value = 1
 				}
 		    }
 		}
     }   
 	option = {
 		name = ESS_event.2.b
-		custom_effect_tooltip = ESS_event2.b.tt
 		hidden_effect = {
 		    ESS = {
-			    add_stability = 0.05
+			    add_to_variable = { 
+				var = ESS_dawkins_var
+				value = 1
+				}
 		    }
 		}
     }
 	option = {
 		name = ESS_event.2.c
-		custom_effect_tooltip = ESS_event2.c.tt
 		hidden_effect = {
-		    ESS = {
-			    subtract_from_variable = { 
-				var = ESS_control
-				value = 20
+		     ESS = {
+			    add_to_variable = { 
+				var = ESS_collins_var
+				value = 1
 				}
 		    }
 		}
@@ -157,35 +157,35 @@ country_event = {
 	
     fire_only_once = yes	
 	is_triggered_only = yes
-    option = {
+   option = {
 		name = ESS_event.3.a
-		custom_effect_tooltip = ESS_event3.a.tt
 		hidden_effect = {
 		    ESS = {
 			    add_to_variable = { 
-				var = ESS_control
-				value = 20
+				var = ESS_land_var
+				value = 1
 				}
 		    }
 		}
     }   
 	option = {
 		name = ESS_event.3.b
-		custom_effect_tooltip = ESS_event3.b.tt
 		hidden_effect = {
 		    ESS = {
-			    add_stability = 0.05
+			    add_to_variable = { 
+				var = ESS_dawkins_var
+				value = 1
+				}
 		    }
 		}
     }
 	option = {
 		name = ESS_event.3.c
-		custom_effect_tooltip = ESS_event3.c.tt
 		hidden_effect = {
-		    ESS = {
-			    subtract_from_variable = { 
-				var = ESS_control
-				value = 20
+		     ESS = {
+			    add_to_variable = { 
+				var = ESS_collins_var
+				value = 1
 				}
 		    }
 		}
@@ -201,77 +201,93 @@ country_event = {
 	is_triggered_only = yes
     option = {
 		name = ESS_event.4.a
-		custom_effect_tooltip = ESS_event4.a.tt
 		hidden_effect = {
 		    ESS = {
 			    add_to_variable = { 
-				var = ESS_control
-				value = 20
+				var = ESS_land_var
+				value = 1
 				}
 		    }
 		}
     }   
 	option = {
 		name = ESS_event.4.b
-		custom_effect_tooltip = ESS_event4.b.tt
 		hidden_effect = {
 		    ESS = {
-			    add_stability = 0.05
+			    add_to_variable = { 
+				var = ESS_dawkins_var
+				value = 1
+				}
 		    }
 		}
     }
 	option = {
 		name = ESS_event.4.c
-		custom_effect_tooltip = ESS_event4.c.tt
 		hidden_effect = {
-		    ESS = {
-			    subtract_from_variable = { 
-				var = ESS_control
-				value = 20
+		     ESS = {
+			    add_to_variable = { 
+				var = ESS_collins_var
+				value = 1
 				}
 		    }
 		}
     }	
 }
-country_event = {
-	id = ESS_event.5
-	title = ESS_event.5.t
-	desc = ESS_event.5.d
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.5"}
+country_event = { ###Land###
+	id = ESS_event.5a
+	title = ESS_event.5a.t
+	desc = ESS_event.5a.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.5.1"}
 	
     fire_only_once = yes	
 	is_triggered_only = yes
     option = {
-		name = ESS_event.5.a
-		custom_effect_tooltip = ESS_event4.a.tt
-		hidden_effect = {
+		name = ESS_event.5a.a
 		    ESS = {
-			    set_country_flag = ESS_land
+			    
 				}
-		    }
-		}
-     
-	option = {
-		name = ESS_event.5.b
-		custom_effect_tooltip = ESS_event5.b.tt
-		hidden_effect = {
+		  }
+	}	
+	
+country_event = { ###Dawkins###
+	id = ESS_event.5b
+	title = ESS_event.5b.t
+	desc = ESS_event.5b.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.5.2"}
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+		name = ESS_event.5b.a
+		    load_focus_tree = ESS_dawkins_1
 		    ESS = {
-			    set_country_flag = ESS_collins
-		    }
-		}
-    }
-	option = {
-		name = ESS_event.5.c
-		custom_effect_tooltip = ESS_event5.c.tt
-		hidden_effect = {
-		    ESS = {
-			    set_country_flag = ESS_dawkins
+				retire_country_leader = yes
+				set_politics = {
+					ruling_party = socialism
 				}
-		    }
-		}
-    }	
+			}
+	}
+}
+country_event = { ###Collins###
+	id = ESS_event.5c
+	title = ESS_event.5c.t
+	desc = ESS_event.5c.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.5.2"}
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+		name = ESS_event.5c.a
+		    load_focus_tree = ESS_collins_1
+		    ESS = {
+				set_politics = {
+					ruling_party = hegemonism
+				}
+			}
+		  }
+	}
 
-country_event = {
+country_event = { ###Direct Choice###
 	id = ESS_event.6
 	title = ESS_event.6.t
 	desc = ESS_event.6.d
@@ -281,33 +297,33 @@ country_event = {
 	is_triggered_only = yes
     option = {
 		name = ESS_event.6.a
-		custom_effect_tooltip = ESS_event6.a.tt
-		hidden_effect = {
+		load_focus_tree = ESS_land_1
 		    ESS = {
-			    set_country_flag = ESS_land
-				}
-		    }
-		}
-       
+				retire_country_leader = yes
+				promote_character = ESS_nick_land
+			}
+    }  
 	option = {
 		name = ESS_event.6.b
-		custom_effect_tooltip = ESS_event6.b.tt
-		hidden_effect = {
+		load_focus_tree = ESS_dawkins_1
 		    ESS = {
-			    set_country_flag = ESS_collins
-		    }
-		}
-    }
+				retire_country_leader = yes
+				set_politics = {
+					ruling_party = socialism
+				}
+			}
+	}
+		
 	option = {
 		name = ESS_event.6.c
-		custom_effect_tooltip = ESS_event6.c.tt
-		hidden_effect = {
+		load_focus_tree = ESS_collins_1
 		    ESS = {
-			    set_country_flag = ESS_dawkins
+				set_politics = {
+					ruling_party = hegemonism
 				}
-		    }
-		}
-    }	
+			}
+	}
+}	
 
 country_event = {
 	id = ESS_event.7
@@ -410,9 +426,9 @@ country_event = {
 						instant_build = yes
 					}		
 		
-    }
-   }
-      }
+			}
+		}
+}
 	  
 country_event = {
 	id = ESS_event.8
@@ -447,12 +463,7 @@ country_event = {
     option = {
 		name = ESS_event.9.a
 		custom_effect_tooltip = ESS_event9.a.tt
-		
 		    ESS = {
-			    add_to_variable = { 
-				var = ESS_control
-				value = 10
-					}
 				add_stability = -0.05
 		    }
 		add_tech_bonus = {
@@ -467,26 +478,26 @@ country_event = {
 		name = ESS_event.9.b
 		custom_effect_tooltip = ESS_event9.b.tt
 		   ESS = {
-			    add_to_variable = { 
-				var = ESS_control
-				value = 5
+		   add_stability = -0.1
+			swap_ideas = {
+				remove_idea = ESS_accelerated_army_1
+				add_idea = ESS_accelerated_army_2a
 				}
-				add_ideas = ESS_accelerated_army
-					}
+			}
 					
     }
 	
 	option = {
 		name = ESS_event.9.c
 		custom_effect_tooltip = ESS_event9.c.tt
-		    ESS = {
-			    subtract_from_variable = { 
-				var = ESS_control
-				value = 20
-				}
-				
+		ESS = {
+		add_stability = -0.15
+			swap_ideas = {
+				remove_idea = ESS_accelerated_army_1
+				add_idea = ESS_accelerated_army_2b
+			}
 		}
-    }
+	}
 }	
 country_event = {
 	id = ESS_event.10
@@ -499,35 +510,36 @@ country_event = {
 
     option = {
 		name = ESS_event.10.a 
-		
-		
+			add_timed_idea = {
+				ESS_temporary_serfdom
+				days = 125
+			}
 		}
 	option = {
 		name = ESS_event.10.b 
-		hidden_effect = {
-		ESS = {
-			    country_event = {
-				    days = 180
-					id = ESS_event.11
-				}
-		
+		add_stability = 0.1
+		1160 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
 		}
-		}
-		}
+	}
 	option = {
 		name = ESS_event.10.c 
-		hidden_effect = {
-		ESS = {
-			    country_event = {
-				    days = 30
-					id = ESS_event.11
+		add_war_support = -0.05
+		add_manpower = 10000
+			ESS = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = support_tech
 				}
-		
+			}
 		}
 	}
-	}
-	}
-	
+
 country_event = {
 	id = ESS_event.11
 	title = ESS_event.11.t
@@ -583,12 +595,12 @@ country_event = {
 
 		option = {
 			name = ESS_event.13.a 
-			ai_chance = { factor = 10 }
-				set_global_flag = essex_accepts_kent_offer
-			}
+			ai_chance = { factor = 0 }
+			set_global_flag = essex_accepts_kent_offer
+		}
 		option = {
 			name = ESS_event.13.b 
-			ai_chance = { factor = 0 }
+			ai_chance = { factor = 10 }
 			set_global_flag = essex_rejects_kent_offer
 		}
 	}
@@ -860,12 +872,6 @@ country_event = {
 		is_triggered_only = yes		
 		option = {
 			name = ESS_event.26.a
-			ESS = {
-				declare_war_on = {
-					target = EAG
-					type = annex_everything
-				}
-			}
 		}
 	}
 	country_event = { 

@@ -730,6 +730,10 @@
 			}
 			add_ideas = KNT_neovictorians_economic_plan 
 			add_political_power = 75
+			swap_ideas = {
+				remove_idea = lhl_economy_civil_war_economy
+				add_idea = lhl_economy_free_market_economy
+			}
 		}
 		x = 16
 		y = 8
@@ -989,6 +993,10 @@
 				add_idea = export_focus
 			}
 			add_political_power = 75
+			swap_ideas = {
+				remove_idea = lhl_economy_civil_war_economy
+				add_idea = lhl_economy_free_market_economy
+			}
 		}
 		x = 24
 		y = 8
@@ -2717,6 +2725,30 @@ shared_focus = {
 				}
 			}
 			add_political_power = 50
+			if = {
+				limit = {
+					NOT = {
+						country_exists = EAG
+					}
+				}
+				set_global_flag = east_anglia_rejects_kent_offer
+			}
+			if = {
+				limit = {
+					NOT = {
+						country_exists = MRC
+					}
+				}
+				set_global_flag = pearce_rejects_kent_offer
+			}
+			if = {
+				limit = {
+					NOT = {
+						country_exists = ESS
+					}
+				}
+				set_global_flag = essex_rejects_kent_offer
+			}
 		}
 		x = 53
 		y = 8
@@ -3271,8 +3303,8 @@ shared_focus = {
 				dismantle_faction = yes
 				MRC = {
 					country_event = {
-					days = 1
-					id = MRC_event.13
+						days = 1
+						id = MRC_event.13
 					}
 				}
 				add_political_power = 100
@@ -3321,28 +3353,6 @@ shared_focus = {
 			}
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_country_flag = KENT_hightories_britain_reunified
-				}
-				country_event = {
-				days = 1
-				id = super.3
-				}
-			}
-			else_if = {
-				limit = {
-					has_country_flag = KENT_neovictorians_britain_reunified
-				}
-				country_event = {
-				days = 1
-				id = super.10
-				}
-			}
-			set_capital = {
-				state = 1160
-				remember_old_capital = no
-			}
 			KNT = {
 				country_event = {
 				days = 1
