@@ -429,6 +429,11 @@ shared_focus = {
 	id = EAG_fresh_meat
 	icon = GFX_goal_EAG_fresh_meat
 	cost = 4.3
+	available = {
+		EAG = {
+			has_war_with = ESS
+		}
+	}
 	completion_reward = {
 		add_timed_idea = {
 			idea = EAG_simplified_training

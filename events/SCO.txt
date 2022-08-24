@@ -50,8 +50,9 @@ country_event = {
 		ai_chance = { factor = 1 }
 		WES = {
 		    annex_country = {
-            target = SCO
-            transfer_troops = yes
+				target = SCO
+				transfer_troops = yes
+			}
         }
 		WES = {
 			country_event = {
@@ -67,5 +68,32 @@ country_event = {
             target = WES
             type = annex_everything
         }
+    } 	
+}
+
+country_event = {
+	id = SCO_event.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SCO_event.3"}
+	title = SCO_event.3.t
+	desc = SCO_event.3.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	option = {
+	    name = SCO_event.3.a
+		ai_chance = { factor = 10 }
+		WES = {
+			puppet = SCO
+		}
+    }
+	option = {
+	    name = SCO_event.3.b
+		ai_chance = { factor = 0 }
+		WES = {
+			country_event = {
+				days = 1
+				id = WES_event.60
+			}
+		}
     } 	
 }

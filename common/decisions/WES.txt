@@ -1,4 +1,163 @@
-
+WES_wars = {
+	WES_war_on_kent = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = KNT
+				type = annex_everything
+			}	
+		}
+		available = {
+			WES = {
+				has_completed_focus = WES_battle_camlann
+				has_completed_focus = WES_sword_stone
+				has_completed_focus = WES_virtue_test
+				has_completed_focus = WES_kings_speech
+			}
+			NOT = {
+				country_exists = SUS
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	WES_war_on_northumbria = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = NTH
+				type = annex_everything
+			}	
+		}
+		available = {
+			NOT = {
+				country_exists = SUS
+				country_exists = KNT
+			}
+			WES = {
+				has_completed_focus = WES_english_spirit
+				has_completed_focus = WES_connect_nature
+				has_completed_focus = WES_dismantle_cities
+				has_completed_focus = WES_rural_paradise
+				has_completed_focus = WES_kings_speech
+				has_completed_focus = WES_road_unification
+			}
+			OR = {
+				WES = {
+					has_completed_focus = WES_law_england
+					has_completed_focus = WES_law_king
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	WES_war_on_sussex = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = SUS
+				type = annex_everything
+			}	
+		}
+		available = {
+			WES = {
+				has_completed_focus = WES_battle_camlann
+				has_completed_focus = WES_sword_stone
+				has_completed_focus = WES_virtue_test
+				has_completed_focus = WES_kings_speech
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	WES_war_on_east_england = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = EAG
+				type = annex_everything
+			}	
+		}
+		available = {
+			NOT = {
+				country_exists = SUS
+				country_exists = KNT
+			}
+			WES = {
+				has_completed_focus = WES_english_spirit
+				has_completed_focus = WES_connect_nature
+				has_completed_focus = WES_dismantle_cities
+				has_completed_focus = WES_rural_paradise
+				has_completed_focus = WES_road_unification
+			}
+			OR = {
+				WES = {
+					has_completed_focus = WES_law_england
+					has_completed_focus = WES_law_king
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	WES_war_on_mercia = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = MRC
+				type = annex_everything
+			}	
+		}
+		available = {
+			NOT = {
+				country_exists = SUS
+				country_exists = KNT
+			}
+			WES = {
+				has_completed_focus = WES_english_spirit
+				has_completed_focus = WES_connect_nature
+				has_completed_focus = WES_dismantle_cities
+				has_completed_focus = WES_rural_paradise
+				has_completed_focus = WES_road_unification
+			}
+			OR = {
+				WES = {
+					has_completed_focus = WES_law_england
+					has_completed_focus = WES_law_king
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				WES = {
+					has_completed_focus = WES_final_decision
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
 WES_king_legitimacy = {
 }	
 
