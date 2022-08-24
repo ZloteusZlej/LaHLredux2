@@ -6,12 +6,11 @@ country = {
 				original_tag = MRC
 			}
 			removal_cost = -1
-			picture = 
+			picture = GFX_
 			modifier = {
 				army_morale_factor = 0.03
 				army_attack_factor = 0.02
 				war_support_factor = 0.05
-				
 			}
 		}
 	}
@@ -22,7 +21,7 @@ country = {
 				original_tag = MRC
 			}
 			removal_cost = -1
-			picture = 
+			picture = GFX_
 			modifier = {
 				army_morale_factor = 0.08
 				army_attack_factor = 0.02
@@ -39,11 +38,23 @@ country = {
 				original_tag = MRC
 			}
 			removal_cost = -1
-			picture = 
-			modifier = {
-				armor_attack_factor = 0.02
-				armoured_personnel_carrier_attack_factor = 0.02
-				infantry_fighting_vehicle_attack_factor = 0.02
+			picture = GFX
+			equipment_bonus = {
+				MBT = {
+					hard_attack = 0.02
+					soft_attack = 0.02
+					instant = yes
+				}
+				IFV = {
+					hard_attack = 0.02
+					soft_attack = 0.02
+					instant = yes
+				}
+				APC = {
+					hard_attack = 0.02
+					soft_attack = 0.02
+					instant = yes
+				}
 			}
 		}
 	}
@@ -54,13 +65,27 @@ country = {
 				original_tag = MRC
 			}
 			removal_cost = -1
-			picture = 
+			picture = GFX_
 			modifier = {
-				armor_attack_factor = 0.02
-				armoured_personnel_carrier_attack_factor = 0.02
-				infantry_fighting_vehicle_attack_factor = 0.02
 				army_org_factor = 0.05
 				army_morale_factor = 0.05
+			}
+			equipment_bonus = {
+				MBT = {
+					hard_attack = 0.02
+					soft_attack = 0.02
+					instant = yes
+				}
+				IFV = {
+					hard_attack = 0.02
+					soft_attack = 0.02
+					instant = yes
+				}
+				APC = {
+					hard_attack = 0.02
+					soft_attack = 0.02
+					instant = yes
+				}
 			}
 		}
 	}
@@ -71,7 +96,7 @@ country = {
 				original_tag = MRC
 			}
 			removal_cost = -1
-			picture = 
+			picture = GFX_
 			modifier = {
 				stability_factor = 0.15
 			}
@@ -84,7 +109,7 @@ country = {
 				original_tag = MRC
 			}
 			removal_cost = -1
-			picture = 
+			picture = GFX_
 			modifier = {
 				stability_factor = 0.15
 				army_org_factor = 0.05
@@ -99,7 +124,7 @@ country = {
 				original_tag = MRC
 			}
 			removal_cost = -1
-			picture = 
+			picture = GFX_
 			modifier = {
 				conscription = 0.05
 				army_attack_factor = 0.025
@@ -110,7 +135,7 @@ country = {
 	hidden_ideas = {
 		MRC_exorcists_in_mercia = {
 		
-			picture = 
+			picture = GFX_
 			
 			allowed = {
 				always = no
@@ -130,7 +155,7 @@ country = {
 	hidden_ideas = {	
 		MRC_cambridge_protection = {
 		
-			picture = 
+			picture = GFX_
 			
 			allowed = {
 				always = no
