@@ -131,3 +131,30 @@ country_event = {
 		}
     }
 }
+
+country_event = {
+	id = IRE_event.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event IRE_event.6"}
+	title = IRE_event.6.t
+	desc = IRE_event.6.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	option = {
+	    name = IRE_event.6.a
+		ai_chance = { factor = 10 }
+        WES = { 
+		    transfer_state = 1019
+		}
+    }
+	option = {
+	    name = IRE_event.6.b
+		ai_chance = { factor = 0 }
+		WES = {
+			country_event = {
+				days = 1
+				id = WES_event.61
+			}
+		}
+    } 	
+}
