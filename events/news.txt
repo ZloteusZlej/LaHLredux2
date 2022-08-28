@@ -873,3 +873,24 @@ news_event = {
 }
 
 
+news_event = {
+	id = lhl_news.34
+	title = lhl_news.34.t 
+    desc = lhl_news.34.d
+	picture = GFX_
+
+	is_triggered_only = yes 
+
+	fire_only_once = yes
+	
+	option = { 
+		name = lhl_news.34.a
+		add_political_power = -75
+		EAG = {
+			country_event = {
+				days = 7
+				id = EAG_event.360
+			}
+		}
+	}
+}
