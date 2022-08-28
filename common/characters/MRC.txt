@@ -80,6 +80,19 @@ characters={
 			id=-1
 		}
 	}
+	MRC_russell_brand={
+		name="Russell Brand"
+		portraits={
+			civilian={
+				large="gfx/leaders/MRC/Portrait_MRC_Russell_Brand.dds"
+			}
+		}
+		country_leader={
+			ideology=soviet_marxism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
 	MRC_david_tibet={
 		name="David Tibet"
 		portraits={
@@ -122,19 +135,6 @@ characters={
 		}
 		country_leader={
 			ideology=leftwing_chauvinism
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-	MRC_nobody={
-		name="NOBODY"
-		portraits={
-			civilian={
-				large="gfx/leaders/MRC/.dds"
-			}
-		}
-		country_leader={
-			ideology=soviet_marxism
 			expire="1.1.1.1"
 			id=-1
 		}
@@ -1141,6 +1141,11 @@ characters={
 			army={
 				large="gfx/leaders/MRC/.dds"
 			}
+		}
+		country_leader={
+			ideology=christian_democracy
+			expire="1.1.1.1"
+			id=-1
 		}
 		corps_commander={
 			skill=4

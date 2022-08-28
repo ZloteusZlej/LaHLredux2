@@ -4629,6 +4629,257 @@ country_event = {
 		}
 	}
 	
+	##SIR KNIGHTHOOD##
+	country_event = { #
+		id = KNT_event.172
+		title = KNT_event.172.t
+		desc = KNT_event.172.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.172.a #Restore Knighthood#
+			KNT = {
+				set_character_name = {
+					character = KNT_patrick_cormack
+					name = KNT_patrick_cormack_2
+				}
+				set_character_name = {
+					character = KNT_edward_leigh
+					name =  KNT_edward_leigh_2
+				}					
+				add_trait = {
+					character = KNT_patrick_cormack
+					slot = head_of_government
+					trait = knight_parliament
+			    }
+			    add_trait = {
+					character = KNT_edward_leigh
+					slot = political_advisor
+					trait = knight_public_servant
+			    }
+				country_event = {
+					days = 10
+					id = KNT_event.173
+				}
+			}
+		}
+		option = {	
+			name = KNT_event.172.b #Effective Functioneers#
+			KNT = {
+				set_character_name = {
+					character = KNT_ben_bradley
+					name = KNT_ben_bradley_2
+				}
+				set_character_name = {
+					character = KNT_peter_bone
+					name =  KNT_peter_bone_2
+				}	
+				add_trait = {
+					character = KNT_ben_bradley
+					slot = political_advisor
+					trait = knight_conservative
+			    }
+			    add_trait = {
+					character = KNT_peter_bone
+					slot = political_advisor
+					trait = knight_state_defender
+			    }
+				country_event = {
+					days = 10
+					id = KNT_event.173
+				}
+			}
+		}
+		option = {	
+			name = KNT_event.172.c #Youngsters#
+			KNT = {
+				set_character_name = {
+					character = KNT_darren_grimes
+					name = KNT_darren_grimes_2
+				}
+				set_character_name = {
+					character = KNT_rupert_grint
+					name =  KNT_rupert_grint_2
+				}
+				add_trait = {
+					character = KNT_darren_grimes
+					slot = political_advisor
+					trait = knight_young
+			    }
+			    add_trait = {
+					character = KNT_rupert_grint
+					slot = political_advisor
+					trait = knight_humanist
+			    }
+				country_event = {
+					days = 10
+					id = KNT_event.173
+				}
+			}
+		}
+	}
+	country_event = { #
+		id = KNT_event.173
+		title = KNT_event.173.t
+		desc = KNT_event.173.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.173.a #Restore Knighthood#
+			KNT = {
+				set_character_name = {
+					character = KNT_james_dyson
+					name = KNT_james_dyson_2
+				}
+				set_character_name = {
+					character = KNT_john_hayes
+					name =  KNT_john_hayes_2
+				}
+				add_trait = {
+					character = KNT_james_dyson
+					slot = political_advisor
+					trait = knight_businessman
+			    }
+			    add_trait = {
+					character = KNT_john_hayes
+					slot = political_advisor
+					trait = knight_executioner
+			    }
+				country_event = {
+					days = 10
+					id = KNT_event.174
+				}
+			}
+		}
+		option = {	
+			name = KNT_event.173.b #Neovictorians#
+			KNT = {
+				set_character_name = {
+					character = KNT_neal_asher
+					name = KNT_neal_asher_2
+				}
+				set_character_name = {
+					character = KNT_tim_montgomerie
+					name =  KNT_tim_montgomerie_2
+				}
+				add_trait = {
+					character = KNT_neal_asher
+					slot = political_advisor
+					trait = knight_sci_fi
+			    }
+			    add_trait = {
+					character = KNT_tim_montgomerie
+					slot = political_advisor
+					trait = knight_blogger
+			    }
+				country_event = {
+					days = 10
+					id = KNT_event.174
+				}
+			}
+		}
+		option = {	
+			name = KNT_event.173.c #Help Old Friends#
+			KNT = {
+				set_character_name = {
+					character = KNT_annunziata_reesmogg
+					name = KNT_annunziata_reesmogg_2
+				}
+				set_character_name = {
+					character = KNT_nigel_farage
+					name =  KNT_nigel_farage_2
+				}
+				add_trait = {
+					character = KNT_annunziata_reesmogg
+					slot = political_advisor
+					trait = knight_dame_spades
+			    }
+			    add_trait = {
+					character = KNT_nigel_farage
+					slot = political_advisor
+					trait = knight_protector
+			    }
+				country_event = {
+					days = 10
+					id = KNT_event.174
+				}
+			}
+		}
+	}
+	country_event = { #
+		id = KNT_event.174
+		title = KNT_event.174.t
+		desc = KNT_event.174.d
+		is_triggered_only = yes
+		option = {	
+			name = KNT_event.174.a #Restore Knighthood#
+			KNT = {
+				set_character_name = {
+					character = KNT_tim_berners_lee
+					name = KNT_tim_berners_lee_2
+				}
+				set_character_name = {
+					character = KNT_merlin_hanbury_tracy
+					name =  KNT_merlin_hanbury_tracy_2
+				}
+				add_trait = {
+					character = KNT_tim_berners_lee
+					slot = political_advisor
+					trait = knight_pioneer
+			    }
+			    add_trait = {
+					character = KNT_merlin_hanbury_tracy
+					slot = political_advisor
+					trait = knight_baron
+			    }
+			}
+		}
+		option = {	
+			name = KNT_event.174.b #Propaganda#
+			KNT = {
+				set_character_name = {
+					character = KNT_james_glancy
+					name = KNT_james_glancy_2
+				}
+				set_character_name = {
+					character = KNT_simon_heffer
+					name =  KNT_simon_heffer_2
+				}
+				add_trait = {
+					character = KNT_james_glancy
+					slot = political_advisor
+					trait = knight_of_propaganda
+			    }
+			    add_trait = {
+					character = KNT_simon_heffer
+					slot = political_advisor
+					trait = knight_journalist
+			    }
+			}
+		}
+		option = {	
+			name = KNT_event.174.c #Sciences#
+			KNT = {
+				set_character_name = {
+					character = KNT_andrew_roberts
+					name = KNT_andrew_roberts_2
+				}
+				set_character_name = {
+					character = KNT_john_joseph_haldane
+					name =  KNT_john_joseph_haldane_2
+				}
+				add_trait = {
+					character = KNT_andrew_roberts
+					slot = political_advisor
+					trait = knight_historian
+			    }
+			    add_trait = {
+					character = KNT_john_joseph_haldane
+					slot = political_advisor
+					trait = knight_analytic
+			    }
+			}
+		}
+	}
+	
 	######THERE'LL ALWAYS BE AN ENGLAND####### 
 	
 	country_event = {
