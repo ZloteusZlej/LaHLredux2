@@ -28,7 +28,7 @@ news_event = {
 	id = EAG_nsis.2
 	title = EAG_nsis.2.t 
     desc = EAG_nsis.2.d
-	picture = 
+	picture = GFX_
 
 	is_triggered_only = yes 
 
@@ -38,10 +38,7 @@ news_event = {
 		name = EAG_nsis.2.a 
 		trigger = {
             NOT = {
-				OR = {	
-					tag = GER 
-					tag = EAG
-				}
+				tag = GER
 			}
         }
 	}
@@ -55,15 +52,8 @@ news_event = {
 		EAG = {
 			country_event = {
 				days = 7
-				id = EAG_event.1111
+				id = EAG_event.360
 			}
-		}
-	}
-	
-	option = { 
-		name = EAG_nsis.2.c 
-		trigger = {
-			tag = EAG
 		}
 	}
 }

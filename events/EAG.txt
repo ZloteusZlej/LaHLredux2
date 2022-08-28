@@ -76,15 +76,12 @@ country_event = {
 }
 
 country_event = {
-	id = EAG_event.1111
-	title = EAG_event.1111.t
-	desc = EAG_event.1111.d
-	is_triggered_only = yes	
+	id = EAG_event.360
+	title = EAG_event.360.t
+	desc = EAG_event.360.d
+	is_triggered_only = yes
 	option = {
-		name = EAG_event.1111.a	
-		GER = {
-			end_puppet = EAG
-		}
+		name = EAG_event.360.a	
 		GER = {
 			country_event = {
 				days = 3
@@ -614,7 +611,12 @@ country_event = {
 	is_triggered_only = yes
     option = {
 		name = EAG_event.10.a
-		army_experience = 10
+		hidden_effect = {
+		 news_event = {
+				id = EAG_nsis.2
+				days = 1
+			}
+		}
     }
 }
 
