@@ -874,17 +874,27 @@ news_event = {
 
 
 news_event = {
-	id = lhl_news.34
-	title = lhl_news.34.t 
-    desc = lhl_news.34.d
-	picture = GFX_
-	major = yes
+	id = lhl_news.34 #NSIS uncovers
+	title = lhl_news.34.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: lhl_news.34"}
+	desc = lhl_news.34.d
+	picture = GFX_report_event_diplomatic_message
+	major = yes 
 	is_triggered_only = yes 
-
-	fire_only_once = yes
-	
-	option = { 
+	fire_only_once = no
+	option = {
 		name = lhl_news.34.a
+		trigger = {
+			NOT = {
+				original_tag = GER
+			}
+		}
+	}
+	option = {
+		name = lhl_news.34.b
+		trigger = {
+			original_tag = GER
+		}
 		add_political_power = -75
 		EAG = {
 			country_event = {
