@@ -632,9 +632,9 @@ shared_focus = {
         focus = WES_battle_camlann
 	}
 	available = {
-			WES = {
-				has_country_flag = ENG_henry_here
-			}
+		WES = {
+			has_country_flag = ENG_henry_here
+		}
 	}
 	completion_reward = {
 		WES = {
@@ -945,6 +945,14 @@ shared_focus = {
 	prerequisite = {
         focus = WES_road_unification
 	}
+	available = {
+		NOT = {
+		    country_exists = EAG
+			country_exists = SUS
+			country_exists = NTH
+			country_exists = MRC
+		}
+	}
 	completion_reward = {
 		WES = {
 			country_event = {
@@ -964,6 +972,14 @@ shared_focus = {
 	prerequisite = {
         focus = WES_road_unification
 	}
+	available = {
+		NOT = {
+		    country_exists = EAG
+			country_exists = SUS
+			country_exists = NTH
+			country_exists = MRC
+		}
+	}
 	completion_reward = {
 		WES = {
 			country_event = {
@@ -982,6 +998,14 @@ shared_focus = {
 	icon = GFX_goal_WES_the_teuton_menace
 	prerequisite = {
         focus = WES_road_unification
+	}
+	available = {
+		NOT = {
+		    country_exists = EAG
+			country_exists = SUS
+			country_exists = NTH
+			country_exists = MRC
+		}
 	}
 	completion_reward = {
 		WES = {
