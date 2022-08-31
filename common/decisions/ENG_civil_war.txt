@@ -156,7 +156,39 @@ ENG_coring_decisions = {
 		modifier = {
 			political_power_gain = -0.10
 		}
-		cost = 50
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost				
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost_tt
 		ai_will_do = {
 			factor = 100
 		}
@@ -166,6 +198,11 @@ ENG_coring_decisions = {
 			log = "[GetDateText]: [Root.GetName]: Decision ENG_coring_cornwall"
 			add_state_core = 999
 			add_state_core = 998
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = var:EAG_coring_cost
+			}
 		}
 		ai_will_do = {
 			factor = 100
