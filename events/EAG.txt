@@ -2529,8 +2529,14 @@ country_event = {
 				max = 25
 		}
 		custom_effect_tooltip = EAG_volk_mood_add_2
-		1160 = {
-			add_compliance = 10
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -5
 		}
     }
 }
