@@ -12879,6 +12879,7 @@ EAG_klumb_parliament_gui_decision = {
 						var = EAG_klumb_voting_coalition
 						value = 0
 					}
+					custom_effect_tooltip = EAG_klumb_project_fails_BAD.tt
 				}
 			}
 			EAG = {
@@ -12888,13 +12889,12 @@ EAG_klumb_parliament_gui_decision = {
 				clr_country_flag = EAG_klumb_interaction_menu_open_VOLT
 				clr_country_flag = EAG_klumb_interaction_menu_open_TPV
 				clr_country_flag = EAG_klumb_interaction_menu_open_NGGU
-				clr_country_flag = FPE_klumb_make_party_coalition_FPE
-				clr_country_flag = FPE_klumb_make_party_coalition_EPP
-				clr_country_flag = FPE_klumb_make_party_coalition_VOLT
-				clr_country_flag = FPE_klumb_make_party_coalition_TPV
-				clr_country_flag = FPE_klumb_make_party_coalition_NGGU
+				clr_country_flag = EAG_klumb_make_party_coalition_FPE
+				clr_country_flag = EAG_klumb_make_party_coalition_EPP
+				clr_country_flag = EAG_klumb_make_party_coalition_VOLT
+				clr_country_flag = EAG_klumb_make_party_coalition_TPV
+				clr_country_flag = EAG_klumb_make_party_coalition_NGGU
 			}
-			custom_effect_tooltip = EAG_klumb_project_fails_BAD.tt
         }
         complete_effect = {                    
         }
@@ -13372,28 +13372,29 @@ EAG_klumb_parliament_gui_decision = {
 							compare = greater_than_or_equals
 						}
 					}
-					add_political_power = 200
-					clr_country_flag = EAG_klumb_voting_NGGU_issue_1
-					clr_country_flag = EAG_klumb_voting_NGGU_issue_2
-					clr_country_flag = EAG_klumb_voting_NGGU_issue_3
-					clr_country_flag = EAG_klumb_voting_FPE_issue_1
-					clr_country_flag = EAG_klumb_voting_FPE_issue_2
-					clr_country_flag = EAG_klumb_voting_FPE_issue_3
-					clr_country_flag = EAG_klumb_voting_EPP_issue_1
-					clr_country_flag = EAG_klumb_voting_EPP_issue_2
-					clr_country_flag = EAG_klumb_voting_EPP_issue_3
-					clr_country_flag = EAG_klumb_voting_VOLT_issue_1
-					clr_country_flag = EAG_klumb_voting_VOLT_issue_2
-					clr_country_flag = EAG_klumb_voting_VOLT_issue_3
-					clr_country_flag = EAG_klumb_voting_TPV_issue_1
-					clr_country_flag = EAG_klumb_voting_TPV_issue_2
-					clr_country_flag = EAG_klumb_voting_TPV_issue_3
-					clr_country_flag = EAG_klumb_voting_NO
-					set_variable = {
-						var = EAG_klumb_voting_coalition
-						value = 0
-					}
 				}
+				add_political_power = 200
+				clr_country_flag = EAG_klumb_voting_NGGU_issue_1
+				clr_country_flag = EAG_klumb_voting_NGGU_issue_2
+				clr_country_flag = EAG_klumb_voting_NGGU_issue_3
+				clr_country_flag = EAG_klumb_voting_FPE_issue_1
+				clr_country_flag = EAG_klumb_voting_FPE_issue_2
+				clr_country_flag = EAG_klumb_voting_FPE_issue_3
+				clr_country_flag = EAG_klumb_voting_EPP_issue_1
+				clr_country_flag = EAG_klumb_voting_EPP_issue_2
+				clr_country_flag = EAG_klumb_voting_EPP_issue_3
+				clr_country_flag = EAG_klumb_voting_VOLT_issue_1
+				clr_country_flag = EAG_klumb_voting_VOLT_issue_2
+				clr_country_flag = EAG_klumb_voting_VOLT_issue_3
+				clr_country_flag = EAG_klumb_voting_TPV_issue_1
+				clr_country_flag = EAG_klumb_voting_TPV_issue_2
+				clr_country_flag = EAG_klumb_voting_TPV_issue_3
+				clr_country_flag = EAG_klumb_voting_NO
+				set_variable = {
+					var = EAG_klumb_voting_coalition
+					value = 0
+				}
+				custom_effect_tooltip = EAG_klumb_project_fails_GOOD.tt
 			}
 			EAG = {
 				clr_country_flag = EAG_klumb_interaction_menu_open
@@ -13402,13 +13403,12 @@ EAG_klumb_parliament_gui_decision = {
 				clr_country_flag = EAG_klumb_interaction_menu_open_VOLT
 				clr_country_flag = EAG_klumb_interaction_menu_open_TPV
 				clr_country_flag = EAG_klumb_interaction_menu_open_NGGU
-				clr_country_flag = FPE_klumb_make_party_coalition_FPE
-				clr_country_flag = FPE_klumb_make_party_coalition_EPP
-				clr_country_flag = FPE_klumb_make_party_coalition_VOLT
-				clr_country_flag = FPE_klumb_make_party_coalition_TPV
-				clr_country_flag = FPE_klumb_make_party_coalition_NGGU
+				clr_country_flag = EAG_klumb_make_party_coalition_FPE
+				clr_country_flag = EAG_klumb_make_party_coalition_EPP
+				clr_country_flag = EAG_klumb_make_party_coalition_VOLT
+				clr_country_flag = EAG_klumb_make_party_coalition_TPV
+				clr_country_flag = EAG_klumb_make_party_coalition_NGGU
 			}
-			custom_effect_tooltip = EAG_klumb_project_fails_GOOD.tt
         }
         complete_effect = {                    
         }
