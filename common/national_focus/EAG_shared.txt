@@ -942,6 +942,15 @@ shared_focus = {
 	cost = 4.3
 	completion_reward = {
 		add_political_power = 100
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -15
+		}
 	}
 	x = 5
 	y = 5
@@ -1094,6 +1103,15 @@ shared_focus = {
 				}
 			}
 		}
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -10
+		}
 	}
 	x = 6
 	y = 7
@@ -1243,6 +1261,15 @@ shared_focus = {
 		}
 		add_political_power = 50
 		add_stability = 0.1
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -10
+		}
 	}
 	x = 4
 	y = 10
@@ -1731,6 +1758,15 @@ shared_focus = {
 				id = EAG_event.1337
 			}
 		}
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -5
+		}
 	}
 	x = 12
 	y = 13
@@ -2163,6 +2199,15 @@ shared_focus = {
 					max = 25
 				}
 			custom_effect_tooltip = EAG_volk_mood_add_5
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -25
+		}
 	}
 	x = 12
 	y = 5
@@ -2537,6 +2582,15 @@ shared_focus = {
 				character = ESS_suzanne_moore
 			}
 		}
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -25
+		}
 	}
 	x = 5
 	y = 5
@@ -2726,6 +2780,15 @@ shared_focus = {
 		swap_ideas = {
 			remove_idea = EAG_year_one_2
 			add_idea = EAG_year_one_3
+		}
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -10
 		}
 	}
 	x = 4
@@ -3301,6 +3364,15 @@ shared_focus = {
 				days = 1
 				id = EAG_event.777
 			}
+		}
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -20
 		}
 	}
 	x = 12
@@ -3950,6 +4022,15 @@ shared_focus = {
 				max = 25
 		}
 		custom_effect_tooltip = EAG_volk_mood_add_3	
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -20
+		}
 	}
 	prerequisite = {
 		focus = EAG_we_are_the_machine
@@ -4373,9 +4454,14 @@ shared_focus = {
 	cost = 4.3
 	completion_reward = {
 		add_political_power = 65
-		1160 = {
-			add_compliance = 15
-			add_resistance = -15
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -20
 		}
 	}
 	x = 5
@@ -4461,6 +4547,15 @@ shared_focus = {
 				long_name = EAG_right_populism_party_legitimate_long 
 				name = EAG_right_populism_party_legitimate
 			}
+		}
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -10
 		}
 	}
 	x = 4
@@ -4598,6 +4693,15 @@ shared_focus = {
 	}
 	completion_reward = {
 		add_ideas = EAG_english_wave_bonus
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -5
+		}
 	}
 	x = 6
 	y = 9
