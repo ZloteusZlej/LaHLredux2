@@ -160,11 +160,7 @@ ENG_coring_decisions = {
 			OR = {
 				AND = {
 					original_tag = EAG
-					check_variable = {
-						var = EAG_coring_cost
-						value = 10
-						compare = greater_than_or_equals
-					}				
+					has_political_power > EAG_coring_cost						
 				}
 				AND = {
 					original_tag = ESS
@@ -192,7 +188,7 @@ ENG_coring_decisions = {
 				}
 			}
 		}
-		custom_cost_text = ENG_coring_cost_tt
+		custom_cost_text = ENG_coring_cost
 		ai_will_do = {
 			factor = 100
 		}
@@ -205,7 +201,7 @@ ENG_coring_decisions = {
 		}
 		complete_effect = {
 			hidden_effect = {
-				add_political_power = var:	EAG_coring_cost
+				ENG_remove_political_power = yes
 			}
 		}
 		ai_will_do = {
@@ -256,7 +252,44 @@ ENG_coring_decisions = {
 		modifier = {
 			political_power_gain = -0.10
 		}
-		cost = 50
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -291,6 +324,44 @@ ENG_coring_decisions = {
 				1156 = {
 					is_core_of = ROOT
 				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
 			}
 		}
 		highlight_states = {
@@ -328,6 +399,44 @@ ENG_coring_decisions = {
 				1165 = {
 					is_core_of = ROOT
 				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
 			}
 		}
 		highlight_states = {
@@ -371,6 +480,44 @@ ENG_coring_decisions = {
 				}
 			}
 		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
 		highlight_states = {
 			state = 1160
 		}
@@ -408,6 +555,44 @@ ENG_coring_decisions = {
 				}
 			}
 		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
 		highlight_states = {
 			state = 1157
 		}
@@ -442,6 +627,44 @@ ENG_coring_decisions = {
 				1143 = {
 					is_core_of = ROOT
 				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
 			}
 		}
 		highlight_states = {
@@ -488,6 +711,44 @@ ENG_coring_decisions = {
 				1151 = {
 					is_core_of = ROOT
 				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
 			}
 		}
 		highlight_states = {
@@ -538,6 +799,44 @@ ENG_coring_decisions = {
 				}
 			}
 		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
 		highlight_states = {
 			state = 1155
 		}
@@ -576,6 +875,44 @@ ENG_coring_decisions = {
 				}
 			}
 		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
 		highlight_states = {
 			state = 1009
 		}
@@ -605,6 +942,44 @@ ENG_coring_decisions = {
 				1010 = {
 					is_core_of = ROOT
 				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
 			}
 		}
 		highlight_states = {
@@ -640,6 +1015,44 @@ ENG_coring_decisions = {
 				1012 = {
 					is_core_of = ROOT
 				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
 			}
 		}
 		highlight_states = {
