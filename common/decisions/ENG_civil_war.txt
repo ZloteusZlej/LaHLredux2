@@ -160,7 +160,11 @@ ENG_coring_decisions = {
 			OR = {
 				AND = {
 					original_tag = EAG
-					has_political_power > EAG_coring_cost				
+					check_variable = {
+						var = EAG_coring_cost
+						value = 10
+						compare = greater_than_or_equals
+					}				
 				}
 				AND = {
 					original_tag = ESS
@@ -201,7 +205,7 @@ ENG_coring_decisions = {
 		}
 		complete_effect = {
 			hidden_effect = {
-				add_political_power = var:EAG_coring_cost
+				add_political_power = var:	EAG_coring_cost
 			}
 		}
 		ai_will_do = {
