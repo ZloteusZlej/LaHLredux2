@@ -606,16 +606,15 @@ country_event = {
 	id = EAG_event.10
 	title = EAG_event.10.t
 	desc = EAG_event.10.d
-	
     fire_only_once = yes	
 	is_triggered_only = yes
     option = {
 		name = EAG_event.10.a
 		hidden_effect = {
-				news_event = {
-					id = lhl_news.34
-					days = 1
-				}
+			news_event = {
+				id = lhl_news.34
+				days = 1
+			}
 		}
     }
 }
