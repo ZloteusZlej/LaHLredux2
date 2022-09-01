@@ -286,7 +286,7 @@ shared_focus = {
 	icon = GFX_goal_EAG_gather_our_wealth
 	cost = 4.3
 	completion_reward = {
-		add_political_power = 100
+		add_political_power = 75
 		EAG = {
 			country_event = {
 				days = 1
@@ -461,7 +461,7 @@ shared_focus = {
 		focus = EAG_fresh_meat
 	}
 	completion_reward = {
-		add_manpower = 6300
+		add_manpower = 15000
 		add_to_variable = {
 				var = mercs_quality
 				value = 3
@@ -489,7 +489,7 @@ shared_focus = {
 		focus = EAG_fresh_meat
 	}
 	completion_reward = {
-		add_fuel = 4000
+		add_fuel = 40000
 		1004 = {
 			add_resource = {
 				type = oil
@@ -873,7 +873,7 @@ shared_focus = {
 			}
 		}
 	}
-	x = 11
+	x = 10
 	y = 10
 }
 
@@ -887,7 +887,7 @@ shared_focus = {
 	completion_reward = {
 		add_ideas = EAG_english_kontore_codex
 	}
-	x = 13
+	x = 14
 	y = 10
 }
 
@@ -896,16 +896,13 @@ shared_focus = {
 	icon = GFX_goal_EAG_farmers_self_governance
 	cost = 4.3
 	prerequisite = {
-		focus = EAG_englisch_kontore
-	}
-	prerequisite = {
-		focus = EAG_trusted_partners
+		focus = EAG_our_own_guns
 	}
 	completion_reward = {
 		add_ideas = EAG_peasant_autonomy
 	}
 	x = 12
-	y = 11
+	y = 10
 }
 
 shared_focus = {
@@ -914,12 +911,6 @@ shared_focus = {
 	cost = 4.3
 	prerequisite = {
 		focus = EAG_farmers_self_governance
-	}
-	prerequisite = {
-		focus = EAG_ensuring_our_place_in_heaven
-	}
-	prerequisite = {
-		focus = EAG_the_main_business
 	}
 	completion_reward = {
 		add_political_power = 125
@@ -931,7 +922,7 @@ shared_focus = {
 		
 	}
 	x = 12
-	y = 12
+	y = 11
 }
 
 ###MERCS TREE ADMINISTRATION###
@@ -1746,6 +1737,12 @@ shared_focus = {
 	prerequisite = {
 		focus = EAG_liquid_gold
 	}
+	prerequisite = {
+		focus = EAG_ensuring_our_place_in_heaven
+	}
+	prerequisite = {
+		focus = EAG_the_main_business
+	}
 	available = {
 		has_country_flag = OSTANG_mercs_britain_reunified
 	}
@@ -2402,7 +2399,7 @@ shared_focus = {
 		add_offsite_building = { type = industrial_complex level = 2 }
 		add_ideas = EAG_death_of_usury
 	}
-	x = 11
+	x = 10
 	y = 10
 }
 
@@ -2465,7 +2462,7 @@ shared_focus = {
 			}
 		}
 	}
-	x = 13
+	x = 14
 	y = 10
 }
 
@@ -2474,10 +2471,7 @@ shared_focus = {
 	icon = GFX_goal_EAG_communal_mutual_aid
 	cost = 4.3
 	prerequisite = {
-		focus = EAG_hands_off_the_commune
-	}
-	prerequisite = {
-		focus = EAG_the_end_of_banking
+		focus = EAG_eternal_powers
 	}
 	completion_reward = {
 		swap_ideas = {
@@ -2486,7 +2480,7 @@ shared_focus = {
 		}
 	}
 	x = 12
-	y = 11
+	y = 10
 }
 
 shared_focus = {
@@ -2497,10 +2491,10 @@ shared_focus = {
 		focus = EAG_communal_mutual_aid
 	}
 	prerequisite = {
-		focus = EAG_seeds_of_wisdom
+		focus = EAG_hands_off_the_commune
 	}
 	prerequisite = {
-		focus = EAG_army_of_the_people
+		focus = EAG_the_end_of_banking
 	}
 	completion_reward = {
 		swap_ideas = {
@@ -2530,7 +2524,7 @@ shared_focus = {
 		custom_effect_tooltip = EAG_volk_mood_add_3			
 	}
 	x = 12
-	y = 12
+	y = 11
 }
 
 ##NATIONAL ANARCHISTS TREE ADMINISTRATION##
@@ -3353,6 +3347,12 @@ shared_focus = {
 	prerequisite = {
 		focus = EAG_bread_and_freedom
 	}
+	prerequisite = {
+		focus = EAG_army_of_the_people
+	}
+	prerequisite = {
+		focus = EAG_seeds_of_wisdom
+	}
 	available = {
 		has_country_flag = OSTANG_nazanarch_britain_reunified
 	}
@@ -3950,7 +3950,7 @@ shared_focus = {
 	prerequisite = {
 		focus = EAG_merge_companies
 	}
-	x = 11
+	x = 10
 	y = 10
 }
 
@@ -3967,7 +3967,7 @@ shared_focus = {
 	prerequisite = {
 		focus = EAG_merge_companies
 	}
-	x = 13
+	x = 14
 	y = 10
 }
 
@@ -3982,13 +3982,10 @@ shared_focus = {
 		}
 	}
 	prerequisite = {
-		focus = EAG_bring_the_specialists
-	}
-	prerequisite = {
-		focus = EAG_blueprints_leftovers
+		focus = EAG_merge_companies
 	}
 	x = 12
-	y = 11
+	y = 10
 }
 
 shared_focus = {
@@ -4036,13 +4033,13 @@ shared_focus = {
 		focus = EAG_we_are_the_machine
 	}
 	prerequisite = {
-		focus = EAG_peacemaker
+		focus = EAG_bring_the_specialists
 	}
 	prerequisite = {
-		focus = EAG_we_walk_in_line
+		focus = EAG_blueprints_leftovers
 	}
 	x = 12
-	y = 12
+	y = 11
 }
 
 ##KLUMB TREE ARMY##
@@ -4830,6 +4827,12 @@ shared_focus = {
 	prerequisite = {
 		focus = EAG_governors_care
 	}
+	prerequisite = {
+		focus = EAG_we_walk_in_line
+	}
+	prerequisite = {
+		focus = EAG_peacemaker
+	}
 	available = {
 		has_country_flag = OSTANG_klumb_britain_reunified
 	}
@@ -5130,7 +5133,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = 
+	id = EAG_and_the_winner_is
 	
 	icon = GFX_goal_EAG_and_the_winner_is
 	cost = 4.3
