@@ -109,7 +109,7 @@ country_event = {
 	title = ESS_event.2.t
 	desc = ESS_event.2.d
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.2"}
-	
+	picture = GFX_ESS_concils
     fire_only_once = yes	
 	is_triggered_only = yes
     option = {
@@ -243,8 +243,9 @@ country_event = { ###Land###
 	is_triggered_only = yes
     option = {
 		name = ESS_event.5a.a
-		    ESS = {
-			    
+		   ESS = {
+				retire_country_leader = yes
+				set_country_flag = ESS_nick_here
 				}
 		  }
 	}	
@@ -300,9 +301,10 @@ country_event = { ###Direct Choice###
 		load_focus_tree = ESS_land_1
 		    ESS = {
 				retire_country_leader = yes
-				promote_character = ESS_nick_land
+				set_country_flag = ESS_nick_here
+				}
 			}
-    }  
+
 	option = {
 		name = ESS_event.6.b
 		load_focus_tree = ESS_dawkins_1
