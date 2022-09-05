@@ -584,3 +584,129 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = MRC_event.19
+	title = MRC_event.19.t
+	desc = MRC_event.19.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.19.a
+		swap_ideas = {
+			remove_idea = MRC_Spirit_Of_Neofolk
+			add_idea = MRC_Spirit_Of_Neofolk_b
+		}
+		swap_ideas = {
+			remove_idea = MRC_Rage_Of_Neofolk
+			add_idea = MRC_Rage_Of_Neofolk_b
+		}
+		swap_ideas = {
+			remove_idea = MRC_Sound_Of_Neofolk
+			add_idea = MRC_Sound_Of_Neofolk_b
+		}
+		country_event = {
+			days = 0
+			id = MRC_event.20
+	}	
+}
+
+country_event = {
+	id = MRC_event.20
+	title = MRC_event.20.t
+	desc = MRC_event.20.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.20.a
+		MRC = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_equipment
+			}	
+			add_political_power = 50
+		}	
+	}
+}	
+
+country_event = {
+	id = MRC_event.21
+	title = MRC_event.21.t
+	desc = MRC_event.21.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.21.a
+		MRC = {
+			division_template = {
+				name = "Luther's Infantry"
+				priority = 1
+				is_locked = yes
+				division_names_group = Infantry_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					line_artillery = { x = 0 y = 4 }
+					line_artillery = { x = 1 y = 4 }
+				}	
+			}
+			create_unit = {
+				division = "name = \"Luther's Boyz\" 
+				division_template = \"Luther's Infantry\" 
+				start_experience_factor = 1 
+				start_equipment_factor = 1 
+				start_manpower_factor = 1
+				owner = MRC
+			}
+			create_unit = {
+				division = "name = \"Luther's Guyz\" 
+				division_template = \"Luther's Infantry\" 
+				start_experience_factor = 1 
+				start_equipment_factor = 1 
+				start_manpower_factor = 1
+				owner = MRC
+			}
+			create_unit = {
+				division = "name = \"Luther's Girlz(OwO?)\" 
+				division_template = \"Luther's Infantry\" 
+				start_experience_factor = 1 
+				start_equipment_factor = 1 
+				start_manpower_factor = 1
+				owner = MRC
+			}
+			country_event = {
+				days = 0
+				id = MRC_event.22
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = MRC_event.22
+	title = MRC_event.22.t
+	desc = MRC_event.22.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.22.a
+		MRC = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_equipment
+			}	
+		}
+	}
+}	
