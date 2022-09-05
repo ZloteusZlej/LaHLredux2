@@ -1,0 +1,54 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "lhl_london_bands_screen_full"
+		size = { width = 1000 height = 450 }
+		position = { x = 150 y = 0 }
+		scale = 1.4
+		moveable = no
+		clipping = yes
+		
+		background = {
+			name = "lhl_table_opening_screen_background_1"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+		###Background###
+		iconType = {
+			name = "lhl_table_opening_screen_background"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_lhl_london_bands_screen"
+			alwaystransparent = yes
+		}
+		##STATES##
+	    buttonType = {
+			name = "lhl_ess_central_region"
+			spriteType = "GFX_lhl_ess_central_region"
+			pdx_tooltip = "ESS_central_region"
+			position = { x = 130 y = 130}
+		}
+		buttonType = {
+			name = "lhl_ess_south_west_region"
+			spriteType = "GFX_lhl_ess_south_west_region"
+			pdx_tooltip = "ESS_south_west_region"
+			position = { x = 70 y = 170}
+		}
+		buttonType = {
+			name = "lhl_ess_south_east_region"
+			spriteType = "GFX_lhl_ess_south_east_region"
+			pdx_tooltip = "ESS_south_east_region"
+			position = { x = 190 y = 190}
+		}
+		buttonType = {
+			name = "lhl_ess_north_west_region"
+			spriteType = "GFX_lhl_ess_north_west_region"
+			pdx_tooltip = "ESS_north_west_region"
+			position = { x = 40 y = 30}
+		}
+		buttonType = {
+			name = "lhl_ess_north_east_region"
+			spriteType = "GFX_lhl_ess_north_east_region"
+			pdx_tooltip = "ESS_north_east_region"
+			position = { x = 170 y = 50}
+		}
+	}
+}
