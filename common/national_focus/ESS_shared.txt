@@ -250,8 +250,10 @@
 			focus = ESS_luciferoverlondon 
 		}
 		completion_reward = {
-		    
-			}
+			ESS = {
+				set_country_flag = ESS_greater_gangs_unlock
+			} 
+		}
 		
 		x = 7
 		y = 2
@@ -263,6 +265,12 @@
 		cost = 3
 		prerequisite = {
 			focus = ESS_greater_gangs_of_london
+		}
+		completion_reward = {
+			remove_ideas = ESS_mild_case_of_distributism
+			ESS = {
+				set_country_flag = ESS_hounds_gone
+			} 
 		}
 		
 		x = 5
@@ -286,6 +294,12 @@
 		cost = 3
 		prerequisite = {
 			focus = ESS_greater_gangs_of_london
+		}
+		completion_reward = {
+			remove_ideas  = ESS_towers_troubles
+			ESS = {
+				set_country_flag = ESS_towers_gone
+			} 
 		}
 		x = 9
 		y = 3
