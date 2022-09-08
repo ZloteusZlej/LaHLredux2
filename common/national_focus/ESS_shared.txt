@@ -250,6 +250,7 @@
 			focus = ESS_luciferoverlondon 
 		}
 		completion_reward = {
+		add_political_power = 100
 			ESS = {
 				set_country_flag = ESS_greater_gangs_unlock
 			} 
@@ -300,6 +301,12 @@
 			ESS = {
 				set_country_flag = ESS_towers_gone
 			} 
+			ESS = {
+			    country_event = {
+				    days = 1
+					id = ESS_event.31
+				}
+			}
 		}
 		x = 9
 		y = 3
