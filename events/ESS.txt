@@ -968,6 +968,55 @@ country_event = {
 			}
 	}
 	
+	country_event = { 
+		id = ESS_event.31
+		title = ESS_event.31.t
+		desc = ESS_event.31.d
+		
+		fire_only_once = yes	
+		is_triggered_only = yes
+
+		option = {
+			name = ESS_event.31.a
+				WES = {
+					country_event = {
+						days = 1
+						id = WES_event.89
+					}
+				}
+			add_political_power = 75
+			}
+		option = {
+			name = ESS_event.31.b
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 600
+					producer = WES
+				}
+			}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 country_event = {
 	id = ESS_event.666
 	title = ESS_event.666.t

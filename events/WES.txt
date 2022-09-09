@@ -2236,3 +2236,31 @@ country_event = {
 		}	
 	}	
 }	
+country_event = {
+	id = WES_event.89
+	title = WES_event.89.t
+	desc = WES_event.89.d
+    is_triggered_only = yes
+	fire_only_once = yes	
+	option = {
+		name = WES_event.89.a
+		division_template = {
+				name = "Tower Guard"
+				division_names_group = WES_INF_01
+				is_locked = no
+				regiments = {
+					urban_forces = { x = 0 y = 0 }	
+					urban_forces = { x = 0 y = 1 }
+					urban_forces = { x = 0 y = 2 }	
+				}
+			}
+			1161 = {
+				create_unit = {
+					division = "name = \"London's Veteran Unit\" division_template = \"Tower Guard\" start_experience_factor = 2.0 start_equipment_factor = 0.9"
+						
+					owner = WES
+				}
+			}	
+		add_political_power = -150
+	}	
+}
