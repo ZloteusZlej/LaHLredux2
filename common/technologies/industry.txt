@@ -849,21 +849,6 @@ technologies = {
 	
 		production_factory_max_efficiency_factor = 0.1
 		
-		path = {
-			leads_to_tech = automatization_left_1
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = automatization_centre_1 
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = automatization_right_1 
-			research_cost_coeff = 1
-		}
-		
 		research_cost = 1.5
 		start_year = 2020
 		folder = {
@@ -898,6 +883,10 @@ technologies = {
 		production_speed_buildings_factor = 0.05
 		industry_repair_factor = 0.05
 		local_resources_factor = 0.02
+		
+		allow_branch = {
+			has_tech = automatization_overall
+		}
 		
 		path = {
 			leads_to_tech = automatization_left_2
@@ -1071,6 +1060,10 @@ technologies = {
 		global_building_slots_factor = 0.15
 		industry_air_damage_factor = 0.05
 		
+		allow_branch = {
+			has_tech = automatization_overall
+		}
+		
 		path = {
 			leads_to_tech = automatization_right_2
 			research_cost_coeff = 1
@@ -1235,6 +1228,10 @@ technologies = {
 		production_factory_efficiency_gain_factor = 0.15
 		production_factory_start_efficiency_factor = 0.05
 		recruitable_population = 0.02
+		
+		allow_branch = {
+			has_tech = automatization_overall
+		}
 	
 		path = {
 			leads_to_tech = automatization_centre_2
