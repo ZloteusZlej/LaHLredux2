@@ -272,6 +272,12 @@
 			ESS = {
 				set_country_flag = ESS_hounds_gone
 			} 
+			ESS = {
+			    country_event = {
+				    days = 1
+					id = ESS_event.32
+				}
+			}
 		}
 		
 		x = 5
@@ -284,6 +290,33 @@
 		cost = 3
 		prerequisite = {
 			focus = ESS_greater_gangs_of_london
+		}
+		completion_reward = {
+		custom_effect_tooltip = ESS_band_loyalty_all_plus.tt
+			add_to_variable = {
+				var = ESS_central_region_loyalty
+				value = 10
+			}
+			add_to_variable = {
+				var = ESS_south_west_region_loyalty
+				value = 10
+			}
+			add_to_variable = {
+				var = ESS_south_west_region_loyalty
+				value = 10
+			}
+			add_to_variable = {
+				var = ESS_south_east_region_loyalty
+				value = 10
+			}
+			add_to_variable = {
+				var = ESS_north_west_region_loyalty
+				value = 10
+			}
+			add_to_variable = {
+				var = ESS_north_east_region_loyalty
+				value = 10
+			}
 		}
 		x = 7
 		y = 3
