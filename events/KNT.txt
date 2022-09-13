@@ -7413,3 +7413,17 @@ country_event = {
 			}
 		}
 	}
+	country_event = {
+		id = KNT_event.336
+		title = KNT_event.336.t
+		desc = KNT_event.336.d
+		is_triggered_only = yes
+		option = {
+			name = KNT_event.336.a
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 250
+				producer = ESS
+			}
+		}
+	}
