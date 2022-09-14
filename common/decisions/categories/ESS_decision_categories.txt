@@ -9,39 +9,27 @@ ESS_london_bands = {
 	scripted_gui = lhl_london_bands_screen_body
 	allowed = { original_tag = ESS }
 }
-ESS_control_over_london = {
-	icon = GFX_
-	visible_when_empty = yes
-	allowed = { original_tag = ESS }
-}
+
 ESS_prisoners_of_war = {
 	icon = GFX_
 	visible_when_empty = no
 	allowed = { original_tag = ESS }
 }
 ESS_desperate_measures = {
-	icon = GFX_visible = { 
+	icon = GFX_
 		visible = {
 			has_completed_focus = ESS_catechism_of_a_nationalist
-			NOT = {
-			ESS = {	
-				has_country_flag = ENG_mosley_here 
-			}
-		}
+			
 		}
 	}
-	visible_when_empty = no
+	visible_when_empty = yes
 	allowed = { original_tag = ESS }
 }
 ESS_our_great_revolution = {
 icon = GFX_
 	visible = {
 	    has_completed_focus = ESS_contacts_with_local_rebels
-		NOT = {
-			ESS = {	
-				has_country_flag = ENG_mosley_here 
-			}
-		}
+		
 	}
 	visible_when_empty = no
 	allowed = { original_tag = ESS }
