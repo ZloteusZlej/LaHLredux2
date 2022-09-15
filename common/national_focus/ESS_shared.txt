@@ -250,6 +250,7 @@
 			focus = ESS_luciferoverlondon 
 		}
 		completion_reward = {
+		custom_effect_tooltip = ESS_greater_gangs_of_london.tt
 		add_political_power = 100
 			ESS = {
 				set_country_flag = ESS_greater_gangs_unlock
@@ -667,12 +668,16 @@
 					armored_car = { x = 0 y = 0 }	
 					armored_car = { x = 0 y = 1 }
 					armored_car = { x = 0 y = 2 }	
-					armored_car = { x = 0 y = 3 }	
-					armored_car = { x = 0 y = 4 }	
+					motorized = { x = 1 y = 0 }	
+					motorized = { x = 1 y = 1 }
+					motorized = { x = 2 y = 0 }	
+					motorized = { x = 2 y = 1 }					
 					}
 					support = {
 						military_police = { x = 0 y = 0 } 
 						signal_company = { x = 0 y = 1 } 
+						maintenance_company = { x = 0 y = 2 } 
+						armored_car_recon = { x = 0 y = 3 } 
 					}
 				}
 				random_owned_controlled_state = {

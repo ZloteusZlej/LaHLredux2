@@ -23,8 +23,8 @@ units = {
 		}
 		location = 2559
 		division_template = "London Guards"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.1
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
 
 	}	
 
@@ -35,8 +35,8 @@ units = {
 		}
 		location = 5582
 		division_template = "London Guards"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.1
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
 
 	}
 
@@ -47,18 +47,75 @@ units = {
 		}
 		location = 10680
 		division_template = "London Guards"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.1
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
 
 	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 17539
+		division_template = "London Guards"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 17554
+		division_template = "London Guards"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 4631
+		division_template = "London Guards"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+
+	}
+}	
+instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0
 			creator = "ESS"
 		}
-		requested_factories = 2
+		requested_factories = 3
 		progress = 0.1
 		efficiency = 50
 	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ESS"
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "ESS"
+		}
+		requested_factories = 1
+		progress = 0.90
+		efficiency = 50
+	}
+	
 	
 }
