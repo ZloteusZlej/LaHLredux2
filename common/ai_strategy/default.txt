@@ -861,6 +861,15 @@ addintelligence_agency_normal_upgrade_prio = {
 	}
 }
 
+ai_default_diplo = {
+	ai_strategy = {
+		type = diplo_action_desire 
+		id = ai 
+		target = improve_relation
+		value = -800
+	}
+}
+
 ask_foreign_manpower_as_major = {
 	enable = {
 		is_major = yes
