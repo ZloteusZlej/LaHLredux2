@@ -710,3 +710,103 @@ country_event = {
 		}
 	}
 }	
+
+country_event = {
+	id = MRC_event.23
+	title = MRC_event.23.t
+	desc = MRC_event.23.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.23.a
+		MRC = {
+			add_tech_bonus = {
+				bonus = 0,5
+				uses = 2
+				category = marines
+			}	
+		}
+	}
+}	
+
+country_event = {
+	id = MRC_event.24
+	title = MRC_event.24.t
+	desc = MRC_event.24.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.24.a
+		MRC = {
+			add_tech_bonus = {
+				bonus = 0,5
+				uses = 2
+				category = infantry_equipment
+			}	
+			add_political_power = 50
+		}
+	}
+}	
+
+country_event = {
+	id = MRC_event.25
+	title = MRC_event.25.t
+	desc = MRC_event.25.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.25.a
+		MRC = {
+			create_unit = {
+				division = "name = \"Luther's Boyz\" 
+				division_template = \"Luther's Infantry\" 
+				start_experience_factor = 1 
+				start_equipment_factor = 1 
+				start_manpower_factor = 1
+				owner = MRC
+			}	
+			create_unit = {
+				division = "name = \"Luther's Boyz\" 
+				division_template = \"Luther's Infantry\" 
+				start_experience_factor = 1 
+				start_equipment_factor = 1 
+				start_manpower_factor = 1
+				owner = MRC
+			}	
+			create_unit = {
+				division = "name = \"Luther's Boyz\" 
+				division_template = \"Luther's Infantry\" 
+				start_experience_factor = 1 
+				start_equipment_factor = 1 
+				start_manpower_factor = 1
+				owner = MRC
+			}
+			country_event = {
+				days = 0
+				id = MRC_event.26
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MRC_event.26
+	title = MRC_event.26.t
+	desc = MRC_event.26.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.26.a
+		MRC = {	
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_equipment
+			}	
+		}
+	}
+}	
