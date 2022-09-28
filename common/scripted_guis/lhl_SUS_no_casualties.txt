@@ -1,0 +1,13 @@
+scripted_gui = {
+	lhl_sus_no_casualties_window = {
+		context_type = player_context
+		parent_window_name = war_ally_entry
+		window_name = "lhl_sus_no_casualties_screen"
+		visible = {
+			tag = SUS
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+}

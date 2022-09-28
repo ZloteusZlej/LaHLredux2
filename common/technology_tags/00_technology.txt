@@ -96,6 +96,8 @@ technology_categories = {
 	industrialization_industry_category
 	green_industry_category
 	unorthodox_industry_category
+	ai_industry_category
+	regressionist_industry_category
 }
 
 technology_folders = {
@@ -127,6 +129,18 @@ technology_folders = {
 		ledger = navy
 	}
 	industry_folder = {
+		available = {
+			NOT = {
+				OR = {
+					has_tech = automatization_overall
+					has_tech = industrialization_overall
+					has_tech = green_overall
+					has_tech = unorthodox_overall
+					has_tech = ai_industry_overall
+					has_tech = regressionist_overall
+				}
+			}
+		}
 		ledger = civilian
 	}
 	land_doctrine_folder = {
@@ -146,6 +160,96 @@ technology_folders = {
 	}
 	spectech_folder = {
 		ledger = army
+	}
+	automatization_folder = {
+		available = {
+			has_tech = automatization_overall
+			NOT = {
+				OR = {
+					has_tech = industrialization_overall
+					has_tech = green_overall
+					has_tech = unorthodox_overall
+					has_tech = ai_industry_overall
+					has_tech = regressionist_overall
+				}
+			}
+		}
+		ledger = civilian
+	}
+	industrialization_folder = {
+		available = {
+			has_tech = industrialization_overall
+			NOT = {
+				OR = {
+					has_tech = automatization_overall
+					has_tech = green_overall
+					has_tech = unorthodox_overall
+					has_tech = ai_industry_overall
+					has_tech = regressionist_overall
+				}
+			}
+		}
+		ledger = civilian
+	}
+	green_folder = {
+		available = {
+			has_tech = green_overall
+			NOT = {
+				OR = {
+					has_tech = automatization_overall
+					has_tech = industrialization_overall
+					has_tech = unorthodox_overall
+					has_tech = ai_industry_overall
+					has_tech = regressionist_overall
+				}
+			}
+		}
+		ledger = civilian
+	}
+	unorthodox_folder = {
+		available = {
+			has_tech = unorthodox_overall
+			NOT = {
+				OR = {
+					has_tech = automatization_overall
+					has_tech = industrialization_overall
+					has_tech = green_overall
+					has_tech = ai_industry_overall
+					has_tech = regressionist_overall
+				}
+			}
+		}
+		ledger = civilian
+	}
+	ai_industry_folder = {
+		available = {
+			has_tech = ai_industry_overall
+			NOT = {
+				OR = {
+					has_tech = automatization_overall
+					has_tech = industrialization_overall
+					has_tech = green_overall
+					has_tech = unorthodox_overall
+					has_tech = regressionist_overall
+				}
+			}
+		}
+		ledger = civilian
+	}
+	regressionist_folder = {
+		available = {
+			has_tech = regressionist_overall
+			NOT = {
+				OR = {
+					has_tech = automatization_overall
+					has_tech = industrialization_overall
+					has_tech = green_overall
+					has_tech = unorthodox_overall
+					has_tech = ai_industry_overall
+				}
+			}
+		}
+		ledger = civilian
 	}
 	#secret_weapons_folder
 }
