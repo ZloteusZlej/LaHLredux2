@@ -49,7 +49,6 @@ ESS_london_bands = {
 			stability_weekly = -0.01
 		}
 		visible = {
-			has_completed_focus = ESS_greater_gangs_of_london
 			has_country_flag = lhl_london_bands_central_region_open
 		}
 		ai_will_do = {
@@ -91,7 +90,7 @@ ESS_london_bands = {
 	}
 	
 	ESS_continue_thames_shipment = {
-		cost = 40
+		cost = 20
 		days_remove = 30
 		fire_only_once = yes
 		remove_effect = {
@@ -164,8 +163,8 @@ ESS_london_bands = {
 	}
 	
 	ESS_build_charon = {
-		cost = 40
-		days_remove = 30
+		cost = 60
+		days_remove = 120
 		fire_only_once = yes
 		remove_effect = {
 			1160 = {
@@ -225,7 +224,6 @@ ESS_london_bands = {
 			stability_weekly = -0.01
 		}
 		visible = {
-			has_completed_focus = ESS_greater_gangs_of_london
 			has_country_flag = lhl_london_bands_south_west_region_open
 		}
 		ai_will_do = {
@@ -235,7 +233,7 @@ ESS_london_bands = {
 	
 	ESS_metroguns = {
 		cost = 40
-		days_remove = 120
+		days_remove = 30
 		remove_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -272,7 +270,7 @@ ESS_london_bands = {
 		remove_effect = {
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
-				amount = 20
+				amount = 30
 				producer = ESS	
 			}
 		}
@@ -351,7 +349,6 @@ ESS_london_bands = {
 			stability_weekly = -0.01
 		}
 		visible = {
-			has_completed_focus = ESS_greater_gangs_of_london
 			has_country_flag = lhl_london_bands_south_east_region_open
 		}
 		ai_will_do = {
@@ -438,7 +435,6 @@ ESS_london_bands = {
 			stability_weekly = -0.01
 		}
 		visible = {
-			has_completed_focus = ESS_greater_gangs_of_london
 			has_country_flag = lhl_london_bands_north_west_region_open
 		}
 		ai_will_do = {
@@ -483,7 +479,7 @@ ESS_london_bands = {
 	}
 	
 	ESS_polish_workforce = {
-		cost = 40
+		cost = 20
 		days_remove = 30
 		remove_effect = {
 			
@@ -517,7 +513,7 @@ ESS_london_bands = {
 	}
 	
 	ESS_polish_workforce = {
-		cost = 40
+		cost = 20
 		days_remove = 30
 		remove_effect = {
 			
@@ -566,7 +562,6 @@ ESS_london_bands = {
 			stability_weekly = -0.01
 		}
 		visible = {
-			has_completed_focus = ESS_greater_gangs_of_london
 			has_country_flag = lhl_london_bands_north_east_region_open
 		}
 		ai_will_do = {
@@ -575,7 +570,7 @@ ESS_london_bands = {
 	}
 	
 	ESS_radicalise_the_commoners = {
-		cost = 40
+		cost = 20
 		days_remove = 30
 		remove_effect = {
 			add_manpower = 25000
@@ -605,7 +600,7 @@ ESS_london_bands = {
 	}
 	
 	ESS_football_and_feasts = {
-		cost = 40
+		cost = 20
 		days_remove = 30
 		modifier = {
 			war_support_weekly = 0.01
@@ -617,6 +612,29 @@ ESS_london_bands = {
 				var = ESS_north_east_region_loyalty
 				value = -10
 			}
+		}	
+		available = {
+			check_variable = {
+					var = ESS_north_west_region_loyalty
+					value > 10
+					compare = greater_than_or_equals
+			}
+		}
+		visible = {
+			has_completed_focus = ESS_greater_gangs_of_london
+			has_country_flag = lhl_london_bands_north_east_region_open
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	ESS_ideological_craze = {
+		days_remove = 60
+
+		complete_effect = {
+			custom_effect_tooltip = ESS_band_loyalty_minus.tt
+			add_political_power = 120
 		}	
 		available = {
 			check_variable = {
