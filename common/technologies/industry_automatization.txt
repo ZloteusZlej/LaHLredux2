@@ -809,7 +809,14 @@ technologies = {
 		XOR = {
 			industrialization_overall_dummy
 			industrialization_overall
-			change_economy
+			green_overall_dummy
+			green_overall
+			unorthodox_overall
+			unorthodox_overall_dummy
+			change_economy_a
+			change_economy_i
+			change_economy_g
+			change_economy_u
 		}
 		
 		production_factory_max_efficiency_factor = 0.1
@@ -1075,10 +1082,6 @@ technologies = {
 				factor = 0
 				has_tech = automatization_steady_production_1
 			}
-			modifier = {
-				factor = 0
-				has_tech = automatization_accelerated_line_1
-			}
 		}
 		
 		categories = {
@@ -1306,10 +1309,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 50
-			modifier = {
-				factor = 0
-				has_tech = automatization_accelerated_line_1
-			}
 			modifier = {
 				factor = 0
 				has_tech = automatization_full_robotization_1
@@ -1890,13 +1889,20 @@ technologies = {
 		}
 	}
 	##SWITCH TECHNOLOGY##
-	change_economy = {
+	change_economy_a = {
 	
 		XOR = {
 			automatization_overall
 			automatization_overall_dummy
 			industrialization_overall
 			industrialization_overall_dummy
+			green_overall
+			green_overall_dummy
+			unorthodox_overall
+			unorthodox_overall_dummy
+			change_economy_i
+			change_economy_g
+			change_economy_u
 		}	
 		
 		research_cost = 0.01

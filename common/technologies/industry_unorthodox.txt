@@ -20,8 +20,8 @@ technologies = {
 		start_year = 2020
 
 		folder = {
-			name = industrialization_folder
-			position = { x = 2 y = 10 }
+			name = unorthodox_folder
+			position = { x = 2 y = 3 }
 		}
 		
 		categories = {
@@ -111,7 +111,7 @@ technologies = {
 		start_year = 2022
 
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = 4 y = 5 }
 		}
 		
@@ -173,7 +173,7 @@ technologies = {
 		start_year = 2024
 
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = 4 y = 7 }
 		}
 		
@@ -226,7 +226,7 @@ technologies = {
 		start_year = 2026
 
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = 4 y = 9 }
 		}
 		
@@ -270,7 +270,7 @@ technologies = {
 		start_year = 2028
 
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = 4 y = 11 }
 		}
 		
@@ -310,7 +310,7 @@ technologies = {
 		start_year = 2030
 
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = 4 y = 13 }
 		}
 		
@@ -361,7 +361,7 @@ technologies = {
 		start_year = 2022
 
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = 1 y = 5 }
 		}
 		
@@ -409,7 +409,7 @@ technologies = {
 		research_cost = 1.5
 		
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = 0 y = 7 }
 		}
 		
@@ -458,7 +458,7 @@ technologies = {
 		start_year = 2026
 		
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = 0 y = 9 }
 		}
 		
@@ -511,7 +511,7 @@ technologies = {
 		start_year = 2028
 		
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = 0 y = 11 }
 		}
 		
@@ -555,7 +555,7 @@ technologies = {
 		start_year = 2030
 		
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = 0 y = 13 }
 		}
 		
@@ -607,7 +607,7 @@ technologies = {
 		start_year = 2024
 		
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = 2 y = 7 }
 		}
 		
@@ -663,7 +663,7 @@ technologies = {
 		start_year = 2026
 		
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = 2 y = 9 }
 		}
 		
@@ -719,7 +719,7 @@ technologies = {
 		start_year = 2028
 		
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = 2 y = 11 }
 		}
 		
@@ -770,7 +770,7 @@ technologies = {
 		start_year = 2030
 		
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = 2 y = 13 }
 		}
 		
@@ -804,44 +804,44 @@ technologies = {
 	}
 	
 	###Main Techs###
-	industrialization_overall_dummy = {
+	unorthodox_overall_dummy = {
 		
 		XOR = {
-			automatization_overall_dummy
-			automatization_overall
+			industrialization_overall_dummy
+			industrialization_overall
 			green_overall_dummy
 			green_overall
-			unorthodox_overall
-			unorthodox_overall_dummy
+			automatization_overall_dummy
+			automatization_overall
 			change_economy_a
 			change_economy_i
 			change_economy_g
 			change_economy_u
 		}
 		
-		industrial_capacity_factory = 0.1
+		global_building_slots_factor = 0.20
 		
 		research_cost = 1.5
 		start_year = 2020
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -12 y = 0 }
 		}
 		
 		path = {
-			leads_to_tech = industrialization_line_production_1
+			leads_to_tech = unorthodox_total_mobilization_1
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_military_1
+			leads_to_tech = unorthodox_war_economy_1
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_civilian_production_1
+			leads_to_tech = unorthodox_great_leap_1
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_construction_1
+			leads_to_tech = unorthodox_construction_1
 			research_cost_coeff = 1
 		}
 		
@@ -851,18 +851,20 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			cat_production
+			unorthodox_industry_category
 		}
 	}
-    ##LINE PRODUCTION##
-	industrialization_line_production_1 = {
+##FACTORY OUTPUT##
+	unorthodox_total_mobilization_1 = {
 	
-		production_factory_max_efficiency_factor = 0.05
-		conversion_cost_civ_to_mil_factor = -0.1
-		conversion_cost_mil_to_civ_factor = -0.1
+		resistance_growth_on_our_occupied_states = 0.15
+		resistance_damage_to_garrison_on_our_occupied_states = 0.15
+		recruitable_population = 0.03
+		consumer_goods_factor = -0.08
 		
 		path = {
-			leads_to_tech = industrialization_line_production_2
+			leads_to_tech = unorthodox_total_mobilization_2
 			research_cost_coeff = 1
 		}
 		
@@ -875,7 +877,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2022
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -12 y = 3 }
 		}
 		
@@ -885,18 +887,18 @@ technologies = {
 		
 		categories = {
 			industry
-			cat_production
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	industrialization_line_production_2 = {
+	unorthodox_total_mobilization_2 = {
 	
-		production_factory_max_efficiency_factor = 0.05
-		conversion_cost_civ_to_mil_factor = -0.1
-		conversion_cost_mil_to_civ_factor = -0.1
+		resistance_growth_on_our_occupied_states = 0.15
+		resistance_damage_to_garrison_on_our_occupied_states = 0.15
+		recruitable_population = 0.03
+		consumer_goods_factor = -0.08
 		
 		path = {
-			leads_to_tech = industrialization_line_production_3
+			leads_to_tech = unorthodox_total_mobilization_3
 			research_cost_coeff = 1
 		}
 		
@@ -909,7 +911,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2024
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -12 y = 5 }
 		}
 		
@@ -919,18 +921,18 @@ technologies = {
 		
 		categories = {
 			industry
-			cat_production
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	industrialization_line_production_3 = {
+	unorthodox_total_mobilization_3 = {
 	
-		production_factory_max_efficiency_factor = 0.05
-		conversion_cost_civ_to_mil_factor = -0.1
-		conversion_cost_mil_to_civ_factor = -0.1
+		resistance_growth_on_our_occupied_states = 0.15
+		resistance_damage_to_garrison_on_our_occupied_states = 0.15
+		recruitable_population = 0.03
+		consumer_goods_factor = -0.08
 		
 		path = {
-			leads_to_tech = industrialization_line_production_4
+			leads_to_tech = unorthodox_total_mobilization_4
 			research_cost_coeff = 1
 		}
 		
@@ -943,7 +945,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2026
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -12 y = 7 }
 		}
 		
@@ -953,18 +955,18 @@ technologies = {
 		
 		categories = {
 			industry
-			cat_production
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	industrialization_line_production_4 = {
+	unorthodox_total_mobilization_4 = {
 	
-		production_factory_max_efficiency_factor = 0.05
-		conversion_cost_civ_to_mil_factor = -0.1
-		conversion_cost_mil_to_civ_factor = -0.1
+		resistance_growth_on_our_occupied_states = 0.15
+		resistance_damage_to_garrison_on_our_occupied_states = 0.15
+		recruitable_population = 0.03
+		consumer_goods_factor = -0.08
 		
 		path = {
-			leads_to_tech = industrialization_line_production_5
+			leads_to_tech = unorthodox_total_mobilization_5
 			research_cost_coeff = 1
 		}
 		
@@ -977,7 +979,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2028
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -12 y = 9 }
 		}
 		
@@ -987,18 +989,18 @@ technologies = {
 		
 		categories = {
 			industry
-			cat_production
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	industrialization_line_production_5 = {
+	unorthodox_total_mobilization_5 = {
 	
-		production_factory_max_efficiency_factor = 0.05
-		conversion_cost_civ_to_mil_factor = -0.1
-		conversion_cost_mil_to_civ_factor = -0.1
+		resistance_growth_on_our_occupied_states = 0.15
+		resistance_damage_to_garrison_on_our_occupied_states = 0.15
+		recruitable_population = 0.03
+		consumer_goods_factor = -0.08
 		
 		path = {
-			leads_to_tech = industrialization_line_production_6
+			leads_to_tech = unorthodox_total_mobilization_6
 			research_cost_coeff = 1
 		}
 		
@@ -1011,7 +1013,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2030
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -12 y = 11 }
 		}
 		
@@ -1021,27 +1023,27 @@ technologies = {
 		
 		categories = {
 			industry
-			cat_production
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	industrialization_line_production_6 = {
+	unorthodox_total_mobilization_6 = {
 	
-		production_factory_max_efficiency_factor = 0.05
-		conversion_cost_civ_to_mil_factor = -0.1
-		conversion_cost_mil_to_civ_factor = -0.1		
-		
-		research_cost = 1.5
-		start_year = 2032
-		folder = {
-			name = industrialization_folder
-			position = { x = -12 y = 13 }
-		}
+		resistance_growth_on_our_occupied_states = 0.15
+		resistance_damage_to_garrison_on_our_occupied_states = 0.15
+		recruitable_population = 0.03
+		consumer_goods_factor = -0.08
 		
 		on_research_complete = {
 			ROOT = {
 				set_country_flag = industry_left_6
 			}
+		}
+		
+		research_cost = 1.5
+		start_year = 2032
+		folder = {
+			name = unorthodox_folder
+			position = { x = -12 y = 13 }
 		}
 		
 		ai_will_do = {
@@ -1050,24 +1052,26 @@ technologies = {
 		
 		categories = {
 			industry
-			cat_production
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	##INDUSTRIALIZATION: MILITARY##
-	industrialization_military_1 = {
+	##UNORTHODOX: WAR ECONOMY##
+	unorthodox_war_economy_1 = {
 	
 		XOR = {
-			industrialization_civilian_production_1
+			unorthodox_great_leap_1
 		}
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
+		line_change_production_efficiency_factor = 0.2
+		industry_air_damage_factor = -0.30
+		industry_repair_factor = 0.30
+		conversion_cost_civ_to_mil_factor = -0.5
+		conversion_cost_mil_to_civ_factor = -0.5
 		production_speed_arms_factory_factor = 0.15
 		repair_speed_arms_factory_factor = 0.15
 		
 		path = {
-			leads_to_tech = industrialization_military_2
+			leads_to_tech = unorthodox_war_economy_2
 			research_cost_coeff = 1
 		}
 		
@@ -1080,7 +1084,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2022
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -9 y = 3 }
 		}
 		
@@ -1088,27 +1092,31 @@ technologies = {
 			factor = 50
 			modifier = {
 				factor = 0
-				has_tech = industrialization_civilian_production_1
+				has_tech = unorthodox_great_leap_1
 			}
 		}
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			cat_production
+			unorthodox_industry_category
 		}
 	}
-	industrialization_military_2 = {
-	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
+	unorthodox_war_economy_2 = {
+		
+		line_change_production_efficiency_factor = 0.2
+		industry_air_damage_factor = -0.30
+		industry_repair_factor = 0.30
+		conversion_cost_civ_to_mil_factor = -0.5
+		conversion_cost_mil_to_civ_factor = -0.5
 		production_speed_arms_factory_factor = 0.15
 		repair_speed_arms_factory_factor = 0.15
 		
 		path = {
-			leads_to_tech = industrialization_military_3
+			leads_to_tech = unorthodox_war_economy_3
 			research_cost_coeff = 1
 		}
-	
+		
 		on_research_complete = {
 			ROOT = {
 				set_country_flag = industry_centre_left_2
@@ -1118,7 +1126,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2024
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -9 y = 5 }
 		}
 		
@@ -1128,18 +1136,22 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			cat_production
+			unorthodox_industry_category
 		}
 	}
-	industrialization_military_3 = {
+	unorthodox_war_economy_3 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
+	    line_change_production_efficiency_factor = 0.2 
+		industry_air_damage_factor = -0.30
+		industry_repair_factor = 0.30
+		conversion_cost_civ_to_mil_factor = -0.5
+		conversion_cost_mil_to_civ_factor = -0.5
 		production_speed_arms_factory_factor = 0.15
 		repair_speed_arms_factory_factor = 0.15
 		
 		path = {
-			leads_to_tech = industrialization_military_4
+			leads_to_tech = unorthodox_war_economy_4
 			research_cost_coeff = 1
 		}
 		
@@ -1152,7 +1164,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2026
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -9 y = 7 }
 		}
 		
@@ -1162,18 +1174,22 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			cat_production
+			unorthodox_industry_category
 		}
 	}
-	industrialization_military_4 = {
+	unorthodox_war_economy_4 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
+		line_change_production_efficiency_factor = 0.2
+		industry_air_damage_factor = -0.30
+		industry_repair_factor = 0.30
+		conversion_cost_civ_to_mil_factor = -0.5
+		conversion_cost_mil_to_civ_factor = -0.5
 		production_speed_arms_factory_factor = 0.15
 		repair_speed_arms_factory_factor = 0.15
 		
 		path = {
-			leads_to_tech = industrialization_military_5
+			leads_to_tech = unorthodox_war_economy_5
 			research_cost_coeff = 1
 		}
 		
@@ -1186,7 +1202,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2028
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -9 y = 9 }
 		}
 		
@@ -1196,18 +1212,22 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			cat_production
+			unorthodox_industry_category
 		}
 	}
-	industrialization_military_5 = {
+	unorthodox_war_economy_5 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
+		line_change_production_efficiency_factor = 0.2
+		industry_air_damage_factor = -0.30
+		industry_repair_factor = 0.30
+		conversion_cost_civ_to_mil_factor = -0.5
+		conversion_cost_mil_to_civ_factor = -0.5
 		production_speed_arms_factory_factor = 0.15
 		repair_speed_arms_factory_factor = 0.15
 		
 		path = {
-			leads_to_tech = industrialization_military_6
+			leads_to_tech = unorthodox_war_economy_6
 			research_cost_coeff = 1
 		}
 		
@@ -1220,7 +1240,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2030
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -9 y = 11 }
 		}
 		
@@ -1230,23 +1250,19 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			cat_production
+			unorthodox_industry_category
 		}
 	}
-	industrialization_military_6 = {
+	unorthodox_war_economy_6 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
+		line_change_production_efficiency_factor = 0.2
+		industry_air_damage_factor = -0.30
+		industry_repair_factor = 0.30
+		conversion_cost_civ_to_mil_factor = -0.5
+		conversion_cost_mil_to_civ_factor = -0.5
 		production_speed_arms_factory_factor = 0.15
 		repair_speed_arms_factory_factor = 0.15
-		
-		
-		research_cost = 1.5
-		start_year = 2032
-		folder = {
-			name = industrialization_folder
-			position = { x = -9 y = 13 }
-		}
 		
 		on_research_complete = {
 			ROOT = {
@@ -1254,41 +1270,60 @@ technologies = {
 			}
 		}
 		
+		research_cost = 1.5
+		start_year = 2032
+		folder = {
+			name = unorthodox_folder
+			position = { x = -9 y = 13 }
+		}
+		
 		ai_will_do = {
 			factor = 50
 		}
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			cat_production
+			unorthodox_industry_category
 		}
 	}
-	##INDUSTRIALIZATION: CIVILIAN##
-	industrialization_civilian_production_1 = {
+	##UNORTHODOX: GREAT LEAP##
+	unorthodox_great_leap_1 = {
 		XOR = {
-			industrialization_military_1
+			unorthodox_war_economy_1
 		}
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_industrial_complex_factor = 0.15
-		repair_speed_industrial_complex_factor = 0.15
+		production_factory_max_efficiency_factor = 0.12
+		line_change_production_efficiency_factor = 0.12
+		production_factory_efficiency_gain_factor = 0.12
+		production_factory_start_efficiency_factor = 0.12
+		industrial_capacity_factory = 0.12
+		industrial_capacity_dockyard = 0.12
+		production_speed_buildings_factor = 0.12
+		recruitable_population = -0.1
+		stability_factor = -0.15
+		war_support_factor = -0.15
 		
 		path = {
-			leads_to_tech = industrialization_civilian_production_2
+			leads_to_tech = unorthodox_great_leap_2
 			research_cost_coeff = 1
 		}
 		
 		on_research_complete = {
 			ROOT = {
 				set_country_flag = industry_centre_right_1
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = industry
+				}
 			}
 		}
 		
-		research_cost = 1.5
+		research_cost = 0.5
 		start_year = 2022
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -6 y = 3 }
 		}
 		
@@ -1296,37 +1331,49 @@ technologies = {
 			factor = 50
 			modifier = {
 				factor = 0
-				has_tech = industrialization_military_1
+				has_tech = unorthodox_war_economy_1
 			}
 		}
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			cat_production
+			unorthodox_industry_category
 		}
 	}
-	industrialization_civilian_production_2 = {
+	unorthodox_great_leap_2 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_industrial_complex_factor = 0.15
-		repair_speed_industrial_complex_factor = 0.15
+		production_factory_max_efficiency_factor = 0.12
+		line_change_production_efficiency_factor = 0.12
+		production_factory_efficiency_gain_factor = 0.12
+		production_factory_start_efficiency_factor = 0.12
+		industrial_capacity_factory = 0.12
+		industrial_capacity_dockyard = 0.12
+		production_speed_buildings_factor = 0.12
+		recruitable_population = -0.15
+		stability_factor = -0.2
+		war_support_factor = -0.2
 		
 		path = {
-			leads_to_tech = industrialization_civilian_production_3
+			leads_to_tech = unorthodox_great_leap_3
 			research_cost_coeff = 1
 		}
 		
 		on_research_complete = {
 			ROOT = {
 				set_country_flag = industry_centre_right_2
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = industry
+				}
 			}
 		}
 		
-		research_cost = 1.5
+		research_cost = 0.5
 		start_year = 2024
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -6 y = 5 }
 		}
 		
@@ -1336,31 +1383,43 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			cat_production
+			unorthodox_industry_category
 		}
 	}
-	industrialization_civilian_production_3 = {
+	unorthodox_great_leap_3 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_industrial_complex_factor = 0.15
-		repair_speed_industrial_complex_factor = 0.15
+		production_factory_max_efficiency_factor = 0.12
+		line_change_production_efficiency_factor = 0.12
+		production_factory_efficiency_gain_factor = 0.12
+		production_factory_start_efficiency_factor = 0.12
+		industrial_capacity_factory = 0.12
+		industrial_capacity_dockyard = 0.12
+		production_speed_buildings_factor = 0.12
+		recruitable_population = -0.3
+		stability_factor = -0.35
+		war_support_factor = -0.35
 		
 		path = {
-			leads_to_tech = industrialization_civilian_production_4
+			leads_to_tech = unorthodox_great_leap_4
 			research_cost_coeff = 1
 		}
-		
+
 		on_research_complete = {
 			ROOT = {
 				set_country_flag = industry_centre_right_3
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = industry
+				}
 			}
 		}
 		
-		research_cost = 1.5
+		research_cost = 0.5
 		start_year = 2026
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -6 y = 7 }
 		}
 		
@@ -1370,31 +1429,43 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			cat_production
+			unorthodox_industry_category
 		}
 	}
-	industrialization_civilian_production_4 = {
+	unorthodox_great_leap_4 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_industrial_complex_factor = 0.15
-		repair_speed_industrial_complex_factor = 0.15
+		production_factory_max_efficiency_factor = 0.12
+		line_change_production_efficiency_factor = 0.12
+		production_factory_efficiency_gain_factor = 0.12
+		production_factory_start_efficiency_factor = 0.12
+		industrial_capacity_factory = 0.12
+		industrial_capacity_dockyard = 0.12
+		production_speed_buildings_factor = 0.12
+		recruitable_population = -0.35
+		stability_factor = -0.5
+		war_support_factor = -0.5
 		
 		path = {
-			leads_to_tech = industrialization_civilian_production_5
+			leads_to_tech = unorthodox_great_leap_5
 			research_cost_coeff = 1
 		}
 		
 		on_research_complete = {
 			ROOT = {
 				set_country_flag = industry_centre_right_4
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = industry
+				}
 			}
 		}
 		
-		research_cost = 1.5
+		research_cost = 0.5
 		start_year = 2028
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -6 y = 9 }
 		}
 		
@@ -1404,31 +1475,43 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			cat_production
+			unorthodox_industry_category
 		}
 	}
-	industrialization_civilian_production_5 = {
+	unorthodox_great_leap_5 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_industrial_complex_factor = 0.15
-		repair_speed_industrial_complex_factor = 0.15
+		production_factory_max_efficiency_factor = 0.12
+		line_change_production_efficiency_factor = 0.12
+		production_factory_efficiency_gain_factor = 0.12
+		production_factory_start_efficiency_factor = 0.12
+		industrial_capacity_factory = 0.12
+		industrial_capacity_dockyard = 0.12
+		production_speed_buildings_factor = 0.12
+		recruitable_population = -0.4
+		stability_factor = -0.6
+		war_support_factor = -0.6
 		
 		path = {
-			leads_to_tech = industrialization_civilian_production_6
+			leads_to_tech = unorthodox_great_leap_6
 			research_cost_coeff = 1
 		}
 		
 		on_research_complete = {
 			ROOT = {
 				set_country_flag = industry_centre_right_5
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = industry
+				}
 			}
 		}
 		
-		research_cost = 1.5
+		research_cost = 0.5
 		start_year = 2030
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -6 y = 11 }
 		}
 		
@@ -1438,28 +1521,42 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			cat_production
+			unorthodox_industry_category
 		}
 	}
-	industrialization_civilian_production_6 = {
+	unorthodox_great_leap_6 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_industrial_complex_factor = 0.15
-		repair_speed_industrial_complex_factor = 0.15
-		
-		
-		research_cost = 1.5
-		start_year = 2032
-		folder = {
-			name = industrialization_folder
-			position = { x = -6 y = 13 }
-		}
+		production_factory_max_efficiency_factor = 0.12
+		line_change_production_efficiency_factor = 0.12
+		production_factory_efficiency_gain_factor = 0.12
+		production_factory_start_efficiency_factor = 0.12
+		industrial_capacity_factory = 0.12
+		industrial_capacity_dockyard = 0.12
+		production_speed_buildings_factor = 0.12
+		recruitable_population = -0.5
+		stability_factor = -1.0
+		war_support_factor = -1.0
 		
 		on_research_complete = {
 			ROOT = {
 				set_country_flag = industry_centre_right_6
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = industry
+				}
+				set_technology = {
+					change_economy_u = 1
+				}
 			}
+		}
+		
+		research_cost = 0.5
+		start_year = 2032
+		folder = {
+			name = unorthodox_folder
+			position = { x = -6 y = 13 }
 		}
 		
 		ai_will_do = {
@@ -1468,21 +1565,23 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			cat_production
+			unorthodox_industry_category
 		}
 	}
 	##CONSTRUCTION##
-	industrialization_construction_1 = {
+	unorthodox_construction_1 = {
 	
-		production_speed_buildings_factor = 0.15
-		industry_repair_factor = 0.15
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
+		global_building_slots_factor = 0.35
 		
 		path = {
-			leads_to_tech = industrialization_construction_2
+			leads_to_tech = unorthodox_construction_2
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_resource_gain_1
+			leads_to_tech = unorthodox_salvage_1
 			research_cost_coeff = 1
 		}
 		
@@ -1495,7 +1594,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2022
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -3 y = 3 }
 		}
 		
@@ -1506,20 +1605,21 @@ technologies = {
 		categories = {
 			industry
 			construction_tech
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	industrialization_construction_2 = {
+	unorthodox_construction_2 = {
 	
-		production_speed_buildings_factor = 0.15
-		industry_repair_factor = 0.15
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
+		global_building_slots_factor = 0.35
 		
 		path = {
-			leads_to_tech = industrialization_construction_3
+			leads_to_tech = unorthodox_construction_3
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_resource_gain_2
+			leads_to_tech = unorthodox_salvage_2
 			research_cost_coeff = 1
 		}
 		
@@ -1532,7 +1632,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2024
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -3 y = 5 }
 		}
 		
@@ -1543,20 +1643,21 @@ technologies = {
 		categories = {
 			industry
 			construction_tech
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	industrialization_construction_3 = {
+	unorthodox_construction_3 = {
 	
-		production_speed_buildings_factor = 0.15
-		industry_repair_factor = 0.15
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
+		global_building_slots_factor = 0.35
 		
 		path = {
-			leads_to_tech = industrialization_construction_4
+			leads_to_tech = unorthodox_construction_4
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_resource_gain_3
+			leads_to_tech = unorthodox_salvage_3
 			research_cost_coeff = 1
 		}
 		
@@ -1569,7 +1670,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2026
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -3 y = 7 }
 		}
 		
@@ -1580,20 +1681,21 @@ technologies = {
 		categories = {
 			industry
 			construction_tech
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	industrialization_construction_4 = {
+	unorthodox_construction_4 = {
 	
-		production_speed_buildings_factor = 0.15
-		industry_repair_factor = 0.15
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
+		global_building_slots_factor = 0.35
 		
 		path = {
-			leads_to_tech = industrialization_construction_5
+			leads_to_tech = unorthodox_construction_5
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_resource_gain_4
+			leads_to_tech = unorthodox_salvage_4
 			research_cost_coeff = 1
 		}
 		
@@ -1606,7 +1708,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2028
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -3 y = 9 }
 		}
 		
@@ -1617,20 +1719,21 @@ technologies = {
 		categories = {
 			industry
 			construction_tech
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	industrialization_construction_5 = {
+	unorthodox_construction_5 = {
 	
-		production_speed_buildings_factor = 0.15
-		industry_repair_factor = 0.15
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
+		global_building_slots_factor = 0.35
 		
 		path = {
-			leads_to_tech = industrialization_construction_6
+			leads_to_tech = unorthodox_construction_6
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_resource_gain_5
+			leads_to_tech = unorthodox_salvage_5
 			research_cost_coeff = 1
 		}
 		
@@ -1643,7 +1746,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2030
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -3 y = 11 }
 		}
 		
@@ -1654,18 +1757,19 @@ technologies = {
 		categories = {
 			industry
 			construction_tech
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	industrialization_construction_6 = {
+	unorthodox_construction_6 = {
 	
-		production_speed_buildings_factor = 0.15
-		industry_repair_factor = 0.15
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
+		global_building_slots_factor = 0.35
 		
 		path = {
-			leads_to_tech = industrialization_resource_gain_6
+			leads_to_tech = unorthodox_salvage_6
 			research_cost_coeff = 1
-		}
+		}	
 
 		on_research_complete = {
 			ROOT = {
@@ -1676,7 +1780,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2032
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -3 y = 13 }
 		}
 		
@@ -1687,18 +1791,20 @@ technologies = {
 		categories = {
 			industry
 			construction_tech
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
 	##RESOURCE GAIN##
-	industrialization_resource_gain_1 = {
+	unorthodox_salvage_1 = {
 	
 		local_resources_factor = 0.05
+		equipment_capture_factor = 0.10
+		equipment_conversion_speed = 0.10
 
 		research_cost = 1.5
 		start_year = 2022
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -1 y = 3 }
 		}
 		
@@ -1715,17 +1821,19 @@ technologies = {
 		categories = {
 			industry
 			excavation_tech
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	industrialization_resource_gain_2 = {
+	unorthodox_salvage_2 = {
 	
 		local_resources_factor = 0.05
+		equipment_capture_factor = 0.10
+		equipment_conversion_speed = 0.10
 		
 		research_cost = 1.5
 		start_year = 2024
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -1 y = 5 }
 		}
 		
@@ -1742,17 +1850,19 @@ technologies = {
 		categories = {
 			industry
 			excavation_tech
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	industrialization_resource_gain_3 = {
+	unorthodox_salvage_3 = {
 	
 		local_resources_factor = 0.05
+		equipment_capture_factor = 0.10
+		equipment_conversion_speed = 0.10
 		
 		research_cost = 1.5
 		start_year = 2026
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -1 y = 7 }
 		}
 		
@@ -1769,17 +1879,19 @@ technologies = {
 		categories = {
 			industry
 			excavation_tech
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	industrialization_resource_gain_4 = {
+	unorthodox_salvage_4 = {
 	
 		local_resources_factor = 0.05
+		equipment_capture_factor = 0.10
+		equipment_conversion_speed = 0.10
 		
 		research_cost = 1.5
 		start_year = 2028
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -1 y = 9 }
 		}
 		
@@ -1796,17 +1908,19 @@ technologies = {
 		categories = {
 			industry
 			excavation_tech
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	industrialization_resource_gain_5 = {
+	unorthodox_salvage_5 = {
 	
 		local_resources_factor = 0.05
+		equipment_capture_factor = 0.10
+		equipment_conversion_speed = 0.10
 		
 		research_cost = 1.5
 		start_year = 2030
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -1 y = 11 }
 		}
 		
@@ -1823,17 +1937,19 @@ technologies = {
 		categories = {
 			industry
 			excavation_tech
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
-	industrialization_resource_gain_6 = {
+	unorthodox_salvage_6 = {
 	
-		local_resources_factor = 0.05		
+		local_resources_factor = 0.05
+		equipment_capture_factor = 0.10
+		equipment_conversion_speed = 0.10		
 		
 		research_cost = 1.5
 		start_year = 2032
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = -1 y = 13 }
 		}
 		
@@ -1850,11 +1966,11 @@ technologies = {
 		categories = {
 			industry
 			excavation_tech
-			industrialization_industry_category
+			unorthodox_industry_category
 		}
 	}
 	##SWITCH TECHNOLOGY##
-	change_economy_i = {
+	change_economy_u = {
 	
 		XOR = {
 			automatization_overall
@@ -1865,15 +1981,15 @@ technologies = {
 			green_overall_dummy
 			unorthodox_overall
 			unorthodox_overall_dummy
+			change_economy_i
 			change_economy_a
 			change_economy_g
-			change_economy_u
 		}	
 		
 		research_cost = 0.01
 		start_year = 2020
 		folder = {
-			name = industrialization_folder
+			name = unorthodox_folder
 			position = { x = 12 y = 7 }
 		}
 		
