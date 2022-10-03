@@ -1,44 +1,43 @@
 technologies = {
-
 	###Main Techs###
-	industrialization_overall_dummy = {
+	green_overall_dummy = {
 		
 		XOR = {
 			automatization_overall_dummy
 			automatization_overall
-			green_overall_dummy
-			green_overall
-			unorthodox_overall
+			industrialization_overall_dummy
+			industrialization_overall
 			unorthodox_overall_dummy
+			unorthodox_overall
 			change_economy_a
 			change_economy_i
 			change_economy_g
 			change_economy_u
 		}
 		
-		industrial_capacity_factory = 0.1
+		consumer_goods_factor = -0.05
 		
 		research_cost = 1.5
 		start_year = 2020
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -12 y = 0 }
 		}
 		
 		path = {
-			leads_to_tech = industrialization_line_production_1
+			leads_to_tech = green_production_line_1
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_military_1
+			leads_to_tech = green_recycling_1
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_civilian_production_1
+			leads_to_tech = green_traditional_1
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_construction_1
+			leads_to_tech = green_modern_economics_1
 			research_cost_coeff = 1
 		}
 		
@@ -48,18 +47,16 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-    ##LINE PRODUCTION##
-	industrialization_line_production_1 = {
+    ##AGRARIAN SOCIETY##
+	green_production_line_1 = {
 	
-		production_factory_max_efficiency_factor = 0.05
-		conversion_cost_civ_to_mil_factor = -0.1
-		conversion_cost_mil_to_civ_factor = -0.1
+		production_factory_efficiency_gain_factor = 0.5 
 		
 		path = {
-			leads_to_tech = industrialization_line_production_2
+			leads_to_tech = green_production_line_2
 			research_cost_coeff = 1
 		}
 		
@@ -72,7 +69,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2022
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -12 y = 3 }
 		}
 		
@@ -82,18 +79,15 @@ technologies = {
 		
 		categories = {
 			industry
-			cat_production
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_line_production_2 = {
+	green_production_line_2 = {
 	
-		production_factory_max_efficiency_factor = 0.05
-		conversion_cost_civ_to_mil_factor = -0.1
-		conversion_cost_mil_to_civ_factor = -0.1
+		production_factory_efficiency_gain_factor = 0.5 
 		
 		path = {
-			leads_to_tech = industrialization_line_production_3
+			leads_to_tech = green_production_line_3
 			research_cost_coeff = 1
 		}
 		
@@ -106,7 +100,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2024
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -12 y = 5 }
 		}
 		
@@ -116,18 +110,15 @@ technologies = {
 		
 		categories = {
 			industry
-			cat_production
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_line_production_3 = {
+	green_production_line_3 = {
 	
-		production_factory_max_efficiency_factor = 0.05
-		conversion_cost_civ_to_mil_factor = -0.1
-		conversion_cost_mil_to_civ_factor = -0.1
+		production_factory_efficiency_gain_factor = 0.5 
 		
 		path = {
-			leads_to_tech = industrialization_line_production_4
+			leads_to_tech = green_production_line_4
 			research_cost_coeff = 1
 		}
 		
@@ -140,7 +131,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2026
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -12 y = 7 }
 		}
 		
@@ -150,18 +141,15 @@ technologies = {
 		
 		categories = {
 			industry
-			cat_production
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_line_production_4 = {
+	green_production_line_4 = {
 	
-		production_factory_max_efficiency_factor = 0.05
-		conversion_cost_civ_to_mil_factor = -0.1
-		conversion_cost_mil_to_civ_factor = -0.1
+		production_factory_efficiency_gain_factor = 0.5 
 		
 		path = {
-			leads_to_tech = industrialization_line_production_5
+			leads_to_tech = green_production_line_5
 			research_cost_coeff = 1
 		}
 		
@@ -174,7 +162,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2028
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -12 y = 9 }
 		}
 		
@@ -184,18 +172,15 @@ technologies = {
 		
 		categories = {
 			industry
-			cat_production
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_line_production_5 = {
+	green_production_line_5 = {
 	
-		production_factory_max_efficiency_factor = 0.05
-		conversion_cost_civ_to_mil_factor = -0.1
-		conversion_cost_mil_to_civ_factor = -0.1
+		production_factory_efficiency_gain_factor = 0.5 
 		
 		path = {
-			leads_to_tech = industrialization_line_production_6
+			leads_to_tech = green_production_line_6
 			research_cost_coeff = 1
 		}
 		
@@ -208,7 +193,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2030
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -12 y = 11 }
 		}
 		
@@ -218,20 +203,17 @@ technologies = {
 		
 		categories = {
 			industry
-			cat_production
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_line_production_6 = {
+	green_production_line_6 = {
 	
-		production_factory_max_efficiency_factor = 0.05
-		conversion_cost_civ_to_mil_factor = -0.1
-		conversion_cost_mil_to_civ_factor = -0.1		
+		production_factory_efficiency_gain_factor = 0.5 	
 		
 		research_cost = 1.5
 		start_year = 2032
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -12 y = 13 }
 		}
 		
@@ -247,24 +229,28 @@ technologies = {
 		
 		categories = {
 			industry
-			cat_production
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	##INDUSTRIALIZATION: MILITARY##
-	industrialization_military_1 = {
+	##GREEN: RECYCLING##
+	green_recycling_1 = {
 	
 		XOR = {
-			industrialization_civilian_production_1
+			green_traditional_1
 		}
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_arms_factory_factor = 0.15
-		repair_speed_arms_factory_factor = 0.15
+		line_change_production_efficiency_factor = 0.15
+		production_oil_factor = 0.1
+		base_fuel_gain_factor = 0.3
+		local_resources_factor = 0.15
+		min_export = -0.1
+		equipment_capture_factor = 0.15
+		equipment_conversion_speed = 0.15
+		production_lack_of_resource_penalty_factor = -0.15
+		equipment_upgrade_xp_cost = -0.2
 		
 		path = {
-			leads_to_tech = industrialization_military_2
+			leads_to_tech = green_recycling_2
 			research_cost_coeff = 1
 		}
 		
@@ -277,7 +263,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2022
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -9 y = 3 }
 		}
 		
@@ -285,24 +271,29 @@ technologies = {
 			factor = 50
 			modifier = {
 				factor = 0
-				has_tech = industrialization_civilian_production_1
+				has_tech = green_traditional_1
 			}
 		}
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_military_2 = {
+	green_recycling_2 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_arms_factory_factor = 0.15
-		repair_speed_arms_factory_factor = 0.15
+		line_change_production_efficiency_factor = 0.15
+		production_oil_factor = 0.1
+		base_fuel_gain_factor = 0.3
+		local_resources_factor = 0.15
+		min_export = -0.1
+		equipment_capture_factor = 0.15
+		equipment_conversion_speed = 0.15
+		production_lack_of_resource_penalty_factor = -0.15
+		equipment_upgrade_xp_cost = -0.2
 		
 		path = {
-			leads_to_tech = industrialization_military_3
+			leads_to_tech = green_recycling_3
 			research_cost_coeff = 1
 		}
 	
@@ -315,7 +306,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2024
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -9 y = 5 }
 		}
 		
@@ -325,18 +316,23 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_military_3 = {
+	green_recycling_3 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_arms_factory_factor = 0.15
-		repair_speed_arms_factory_factor = 0.15
+		line_change_production_efficiency_factor = 0.15
+		production_oil_factor = 0.1
+		base_fuel_gain_factor = 0.3
+		local_resources_factor = 0.15
+		min_export = -0.1
+		equipment_capture_factor = 0.15
+		equipment_conversion_speed = 0.15
+		production_lack_of_resource_penalty_factor = -0.15
+		equipment_upgrade_xp_cost = -0.2
 		
 		path = {
-			leads_to_tech = industrialization_military_4
+			leads_to_tech = green_recycling_4
 			research_cost_coeff = 1
 		}
 		
@@ -349,7 +345,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2026
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -9 y = 7 }
 		}
 		
@@ -359,18 +355,23 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_military_4 = {
+	green_recycling_4 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_arms_factory_factor = 0.15
-		repair_speed_arms_factory_factor = 0.15
+		line_change_production_efficiency_factor = 0.15
+		production_oil_factor = 0.1
+		base_fuel_gain_factor = 0.3
+		local_resources_factor = 0.15
+		min_export = -0.1
+		equipment_capture_factor = 0.15
+		equipment_conversion_speed = 0.15
+		production_lack_of_resource_penalty_factor = -0.15
+		equipment_upgrade_xp_cost = -0.2
 		
 		path = {
-			leads_to_tech = industrialization_military_5
+			leads_to_tech = green_recycling_5
 			research_cost_coeff = 1
 		}
 		
@@ -383,7 +384,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2028
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -9 y = 9 }
 		}
 		
@@ -393,18 +394,23 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_military_5 = {
+	green_recycling_5 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_arms_factory_factor = 0.15
-		repair_speed_arms_factory_factor = 0.15
+		line_change_production_efficiency_factor = 0.15
+		production_oil_factor = 0.1
+		base_fuel_gain_factor = 0.3
+		local_resources_factor = 0.15
+		min_export = -0.1
+		equipment_capture_factor = 0.15
+		equipment_conversion_speed = 0.15
+		production_lack_of_resource_penalty_factor = -0.15
+		equipment_upgrade_xp_cost = -0.2
 		
 		path = {
-			leads_to_tech = industrialization_military_6
+			leads_to_tech = green_recycling_6
 			research_cost_coeff = 1
 		}
 		
@@ -417,7 +423,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2030
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -9 y = 11 }
 		}
 		
@@ -427,21 +433,26 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_military_6 = {
+	green_recycling_6 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_arms_factory_factor = 0.15
-		repair_speed_arms_factory_factor = 0.15
+		line_change_production_efficiency_factor = 0.15
+		production_oil_factor = 0.1
+		base_fuel_gain_factor = 0.3
+		local_resources_factor = 0.15
+		min_export = -0.1
+		equipment_capture_factor = 0.15
+		equipment_conversion_speed = 0.15
+		production_lack_of_resource_penalty_factor = -0.15
+		equipment_upgrade_xp_cost = -0.2
 		
 		
 		research_cost = 1.5
 		start_year = 2032
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -9 y = 13 }
 		}
 		
@@ -457,22 +468,29 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
 	##INDUSTRIALIZATION: CIVILIAN##
-	industrialization_civilian_production_1 = {
+	green_traditional_1 = {
 		XOR = {
-			industrialization_military_1
+			green_recycling_1
 		}
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_industrial_complex_factor = 0.15
-		repair_speed_industrial_complex_factor = 0.15
+		line_change_production_efficiency_factor = 0.1
+		local_resources_factor = 0.15
+		min_export = -0.2
+		equipment_capture_factor = 0.2
+		equipment_conversion_speed = 0.2
+		production_lack_of_resource_penalty_factor = -0.2
+		supply_factor = 0.2
+		out_of_supply_factor = -0.2
+		recruitable_population = 0.05
+		monthly_population = 0.1
+		consumer_goods_factor = -0.05
 		
 		path = {
-			leads_to_tech = industrialization_civilian_production_2
+			leads_to_tech = green_traditional_2
 			research_cost_coeff = 1
 		}
 		
@@ -485,7 +503,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2022
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -6 y = 3 }
 		}
 		
@@ -493,24 +511,31 @@ technologies = {
 			factor = 50
 			modifier = {
 				factor = 0
-				has_tech = industrialization_military_1
+				has_tech = green_recycling_1
 			}
 		}
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_civilian_production_2 = {
+	green_traditional_2 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_industrial_complex_factor = 0.15
-		repair_speed_industrial_complex_factor = 0.15
+		line_change_production_efficiency_factor = 0.1
+		local_resources_factor = 0.15
+		min_export = -0.2
+		equipment_capture_factor = 0.2
+		equipment_conversion_speed = 0.2
+		production_lack_of_resource_penalty_factor = -0.2
+		supply_factor = 0.2
+		out_of_supply_factor = -0.2
+		recruitable_population = 0.05
+		monthly_population = 0.1
+		consumer_goods_factor = -0.05
 		
 		path = {
-			leads_to_tech = industrialization_civilian_production_3
+			leads_to_tech = green_traditional_3
 			research_cost_coeff = 1
 		}
 		
@@ -523,7 +548,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2024
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -6 y = 5 }
 		}
 		
@@ -533,18 +558,25 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_civilian_production_3 = {
+	green_traditional_3 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_industrial_complex_factor = 0.15
-		repair_speed_industrial_complex_factor = 0.15
+		line_change_production_efficiency_factor = 0.1
+		local_resources_factor = 0.15
+		min_export = -0.2
+		equipment_capture_factor = 0.2
+		equipment_conversion_speed = 0.2
+		production_lack_of_resource_penalty_factor = -0.2
+		supply_factor = 0.2
+		out_of_supply_factor = -0.2
+		recruitable_population = 0.05
+		monthly_population = 0.1
+		consumer_goods_factor = -0.05
 		
 		path = {
-			leads_to_tech = industrialization_civilian_production_4
+			leads_to_tech = green_traditional_4
 			research_cost_coeff = 1
 		}
 		
@@ -557,7 +589,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2026
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -6 y = 7 }
 		}
 		
@@ -567,18 +599,25 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_civilian_production_4 = {
+	green_traditional_4 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_industrial_complex_factor = 0.15
-		repair_speed_industrial_complex_factor = 0.15
+		line_change_production_efficiency_factor = 0.1
+		local_resources_factor = 0.15
+		min_export = -0.2
+		equipment_capture_factor = 0.2
+		equipment_conversion_speed = 0.2
+		production_lack_of_resource_penalty_factor = -0.2
+		supply_factor = 0.2
+		out_of_supply_factor = -0.2
+		recruitable_population = 0.05
+		monthly_population = 0.1
+		consumer_goods_factor = -0.05
 		
 		path = {
-			leads_to_tech = industrialization_civilian_production_5
+			leads_to_tech = green_traditional_5
 			research_cost_coeff = 1
 		}
 		
@@ -591,7 +630,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2028
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -6 y = 9 }
 		}
 		
@@ -601,18 +640,25 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_civilian_production_5 = {
+	green_traditional_5 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_industrial_complex_factor = 0.15
-		repair_speed_industrial_complex_factor = 0.15
+		line_change_production_efficiency_factor = 0.1
+		local_resources_factor = 0.15
+		min_export = -0.2
+		equipment_capture_factor = 0.2
+		equipment_conversion_speed = 0.2
+		production_lack_of_resource_penalty_factor = -0.2
+		supply_factor = 0.2
+		out_of_supply_factor = -0.2
+		recruitable_population = 0.05
+		monthly_population = 0.1
+		consumer_goods_factor = -0.05
 		
 		path = {
-			leads_to_tech = industrialization_civilian_production_6
+			leads_to_tech = green_traditional_6
 			research_cost_coeff = 1
 		}
 		
@@ -625,7 +671,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2030
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -6 y = 11 }
 		}
 		
@@ -635,21 +681,28 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_civilian_production_6 = {
+	green_traditional_6 = {
 	
-		industrial_capacity_factory = 0.2
-		industrial_capacity_dockyard = 0.2
-		production_speed_industrial_complex_factor = 0.15
-		repair_speed_industrial_complex_factor = 0.15
+		line_change_production_efficiency_factor = 0.1
+		local_resources_factor = 0.15
+		min_export = -0.2
+		equipment_capture_factor = 0.2
+		equipment_conversion_speed = 0.2
+		production_lack_of_resource_penalty_factor = -0.2
+		supply_factor = 0.2
+		out_of_supply_factor = -0.2
+		recruitable_population = 0.05
+		monthly_population = 0.1
+		consumer_goods_factor = -0.05
 		
 		
 		research_cost = 1.5
 		start_year = 2032
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -6 y = 13 }
 		}
 		
@@ -665,21 +718,21 @@ technologies = {
 		
 		categories = {
 			industry
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
 	##CONSTRUCTION##
-	industrialization_construction_1 = {
+	green_modern_economics_1 = {
 	
-		production_speed_buildings_factor = 0.15
-		industry_repair_factor = 0.15
+		production_factory_max_efficiency_factor = 0.05
+		global_building_slots_factor = 0.05
 		
 		path = {
-			leads_to_tech = industrialization_construction_2
+			leads_to_tech = green_modern_economics_2
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_resource_gain_1
+			leads_to_tech = green_modern_construction_1
 			research_cost_coeff = 1
 		}
 		
@@ -692,7 +745,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2022
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -3 y = 3 }
 		}
 		
@@ -702,21 +755,20 @@ technologies = {
 		
 		categories = {
 			industry
-			construction_tech
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_construction_2 = {
+	green_modern_economics_2 = {
 	
-		production_speed_buildings_factor = 0.15
-		industry_repair_factor = 0.15
+		production_factory_max_efficiency_factor = 0.05
+		global_building_slots_factor = 0.05
 		
 		path = {
-			leads_to_tech = industrialization_construction_3
+			leads_to_tech = green_modern_economics_3
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_resource_gain_2
+			leads_to_tech = green_modern_construction_2
 			research_cost_coeff = 1
 		}
 		
@@ -729,7 +781,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2024
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -3 y = 5 }
 		}
 		
@@ -739,21 +791,20 @@ technologies = {
 		
 		categories = {
 			industry
-			construction_tech
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_construction_3 = {
+	green_modern_economics_3 = {
 	
-		production_speed_buildings_factor = 0.15
-		industry_repair_factor = 0.15
+		production_factory_max_efficiency_factor = 0.05
+		global_building_slots_factor = 0.05
 		
 		path = {
-			leads_to_tech = industrialization_construction_4
+			leads_to_tech = green_modern_economics_4
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_resource_gain_3
+			leads_to_tech = green_modern_construction_3
 			research_cost_coeff = 1
 		}
 		
@@ -766,7 +817,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2026
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -3 y = 7 }
 		}
 		
@@ -776,21 +827,20 @@ technologies = {
 		
 		categories = {
 			industry
-			construction_tech
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_construction_4 = {
+	green_modern_economics_4 = {
 	
-		production_speed_buildings_factor = 0.15
-		industry_repair_factor = 0.15
+		production_factory_max_efficiency_factor = 0.05
+		global_building_slots_factor = 0.05
 		
 		path = {
-			leads_to_tech = industrialization_construction_5
+			leads_to_tech = green_modern_economics_5
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_resource_gain_4
+			leads_to_tech = green_modern_construction_4
 			research_cost_coeff = 1
 		}
 		
@@ -803,7 +853,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2028
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -3 y = 9 }
 		}
 		
@@ -813,21 +863,20 @@ technologies = {
 		
 		categories = {
 			industry
-			construction_tech
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_construction_5 = {
+	green_modern_economics_5 = {
 	
-		production_speed_buildings_factor = 0.15
-		industry_repair_factor = 0.15
+		production_factory_max_efficiency_factor = 0.05
+		global_building_slots_factor = 0.05
 		
 		path = {
-			leads_to_tech = industrialization_construction_6
+			leads_to_tech = green_modern_economics_6
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = industrialization_resource_gain_5
+			leads_to_tech = green_modern_construction_5
 			research_cost_coeff = 1
 		}
 		
@@ -840,7 +889,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2030
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -3 y = 11 }
 		}
 		
@@ -850,17 +899,16 @@ technologies = {
 		
 		categories = {
 			industry
-			construction_tech
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
-	industrialization_construction_6 = {
+	green_modern_economics_6 = {
 	
-		production_speed_buildings_factor = 0.15
-		industry_repair_factor = 0.15
+		production_factory_max_efficiency_factor = 0.05
+		global_building_slots_factor = 0.05
 		
 		path = {
-			leads_to_tech = industrialization_resource_gain_6
+			leads_to_tech = green_modern_construction_6
 			research_cost_coeff = 1
 		}
 
@@ -873,7 +921,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2032
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -3 y = 13 }
 		}
 		
@@ -883,19 +931,19 @@ technologies = {
 		
 		categories = {
 			industry
-			construction_tech
-			industrialization_industry_category
+			green_industry_category
 		}
 	}
 	##RESOURCE GAIN##
-	industrialization_resource_gain_1 = {
+	green_modern_construction_1 = {
 	
-		local_resources_factor = 0.05
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
 
 		research_cost = 1.5
 		start_year = 2022
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -1 y = 3 }
 		}
 		
@@ -911,18 +959,19 @@ technologies = {
 		
 		categories = {
 			industry
-			excavation_tech
-			industrialization_industry_category
+			construction_tech
+			green_industry_category
 		}
 	}
-	industrialization_resource_gain_2 = {
+	green_modern_construction_2 = {
 	
-		local_resources_factor = 0.05
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
 		
 		research_cost = 1.5
 		start_year = 2024
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -1 y = 5 }
 		}
 		
@@ -938,18 +987,19 @@ technologies = {
 		
 		categories = {
 			industry
-			excavation_tech
-			industrialization_industry_category
+			construction_tech
+			green_industry_category
 		}
 	}
-	industrialization_resource_gain_3 = {
+	green_modern_construction_3 = {
 	
-		local_resources_factor = 0.05
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
 		
 		research_cost = 1.5
 		start_year = 2026
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -1 y = 7 }
 		}
 		
@@ -965,18 +1015,19 @@ technologies = {
 		
 		categories = {
 			industry
-			excavation_tech
-			industrialization_industry_category
+			construction_tech
+			green_industry_category
 		}
 	}
-	industrialization_resource_gain_4 = {
+	green_modern_construction_4 = {
 	
-		local_resources_factor = 0.05
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
 		
 		research_cost = 1.5
 		start_year = 2028
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -1 y = 9 }
 		}
 		
@@ -992,18 +1043,19 @@ technologies = {
 		
 		categories = {
 			industry
-			excavation_tech
-			industrialization_industry_category
+			construction_tech
+			green_industry_category
 		}
 	}
-	industrialization_resource_gain_5 = {
+	green_modern_construction_5 = {
 	
-		local_resources_factor = 0.05
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
 		
 		research_cost = 1.5
 		start_year = 2030
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -1 y = 11 }
 		}
 		
@@ -1019,18 +1071,19 @@ technologies = {
 		
 		categories = {
 			industry
-			excavation_tech
-			industrialization_industry_category
+			construction_tech
+			green_industry_category
 		}
 	}
-	industrialization_resource_gain_6 = {
+	green_modern_construction_6 = {
 	
-		local_resources_factor = 0.05		
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05		
 		
 		research_cost = 1.5
 		start_year = 2032
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = -1 y = 13 }
 		}
 		
@@ -1046,12 +1099,12 @@ technologies = {
 		
 		categories = {
 			industry
-			excavation_tech
-			industrialization_industry_category
+			construction_tech
+			green_industry_category
 		}
 	}
 	##SWITCH TECHNOLOGY##
-	change_economy_i = {
+	change_economy_g = {
 	
 		XOR = {
 			automatization_overall
@@ -1060,17 +1113,17 @@ technologies = {
 			industrialization_overall_dummy
 			green_overall
 			green_overall_dummy
-			unorthodox_overall
 			unorthodox_overall_dummy
+			unorthodox_overall
 			change_economy_a
-			change_economy_g
+			change_economy_i
 			change_economy_u
 		}	
 		
 		research_cost = 0.01
 		start_year = 2020
 		folder = {
-			name = industrialization_folder
+			name = green_folder
 			position = { x = 12 y = 7 }
 		}
 		

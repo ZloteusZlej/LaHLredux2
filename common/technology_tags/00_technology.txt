@@ -96,8 +96,6 @@ technology_categories = {
 	industrialization_industry_category
 	green_industry_category
 	unorthodox_industry_category
-	ai_industry_category
-	regressionist_industry_category
 }
 
 technology_folders = {
@@ -136,8 +134,6 @@ technology_folders = {
 					has_tech = industrialization_overall
 					has_tech = green_overall
 					has_tech = unorthodox_overall
-					has_tech = ai_industry_overall
-					has_tech = regressionist_overall
 				}
 			}
 		}
@@ -169,8 +165,6 @@ technology_folders = {
 					has_tech = industrialization_overall
 					has_tech = green_overall
 					has_tech = unorthodox_overall
-					has_tech = ai_industry_overall
-					has_tech = regressionist_overall
 				}
 			}
 		}
@@ -184,8 +178,6 @@ technology_folders = {
 					has_tech = automatization_overall
 					has_tech = green_overall
 					has_tech = unorthodox_overall
-					has_tech = ai_industry_overall
-					has_tech = regressionist_overall
 				}
 			}
 		}
@@ -199,8 +191,6 @@ technology_folders = {
 					has_tech = automatization_overall
 					has_tech = industrialization_overall
 					has_tech = unorthodox_overall
-					has_tech = ai_industry_overall
-					has_tech = regressionist_overall
 				}
 			}
 		}
@@ -214,38 +204,6 @@ technology_folders = {
 					has_tech = automatization_overall
 					has_tech = industrialization_overall
 					has_tech = green_overall
-					has_tech = ai_industry_overall
-					has_tech = regressionist_overall
-				}
-			}
-		}
-		ledger = civilian
-	}
-	ai_industry_folder = {
-		available = {
-			has_tech = ai_industry_overall
-			NOT = {
-				OR = {
-					has_tech = automatization_overall
-					has_tech = industrialization_overall
-					has_tech = green_overall
-					has_tech = unorthodox_overall
-					has_tech = regressionist_overall
-				}
-			}
-		}
-		ledger = civilian
-	}
-	regressionist_folder = {
-		available = {
-			has_tech = regressionist_overall
-			NOT = {
-				OR = {
-					has_tech = automatization_overall
-					has_tech = industrialization_overall
-					has_tech = green_overall
-					has_tech = unorthodox_overall
-					has_tech = ai_industry_overall
 				}
 			}
 		}
