@@ -2790,8 +2790,8 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = EAG_congress_of_communities
-	icon = GFX_goal_EAG_congress_of_communities
+	id = EAG_frequent_rotation
+	icon = GFX_goal_EAG_frequent_rotation
 	cost = 4.3
 	prerequisite = {
 		focus = EAG_witan_revival
@@ -2804,6 +2804,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		add_political_power = 30
+		add_stability = 0.05
 	}
 	x = 6
 	y = 9
@@ -2831,7 +2832,7 @@ shared_focus = {
 	icon = GFX_goal_EAG_revolt_into_style
 	cost = 4.3
 	prerequisite = {
-		focus = EAG_congress_of_communities
+		focus = EAG_frequent_rotation
 	}
 	completion_reward = {
 		swap_ideas = {
