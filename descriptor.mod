@@ -41,6 +41,7 @@ replace_path="common/ideologies"
 replace_path="gfx/loadingscreens"
 replace_path="gfx/interface/equipmentdesigner/tanks"
 replace_path="localisation"
+replace_path="common/bop"
 tags={
 	"Map"
 }
