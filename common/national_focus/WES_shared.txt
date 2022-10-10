@@ -1141,6 +1141,17 @@ shared_focus = {
 			}
 		}
 	}
+	completion_reward = {
+		WES = {
+			add_political_power = 120
+			add_stability = 0.15
+			add_war_support = 0.15
+			country_event = {
+				days = 0
+				id = WES_event.90
+			}
+		}
+	}
 	x = 17
 	y = 6
 }
@@ -1152,6 +1163,14 @@ shared_focus = {
         focus = WES_rule_george
 	}
 	cost = 3.5
+	completion_reward = {
+		WES = {
+			country_event = {
+				days = 1
+				id = WES_event.92
+			}
+		}
+	}
 	x = 17
 	y = 7
 }
@@ -1216,6 +1235,28 @@ shared_focus = {
 	icon = GFX_goal_WES_Jousing
 	prerequisite = {
         focus = WES_competetive_spirit
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = WES_transformation_deurbanization_progress
+			value = 10
+		}
+		add_to_variable = {
+			var = WES_total_transformation_level
+			value = 10
+		}
+		clamp_variable = {
+			var = WES_transformation_deurbanization_progress
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = WES_total_transformation_level
+			min = 0
+			max = 800
+		}
+		custom_effect_tooltip = WES_jousting.tt
+		custom_effect_tooltip =	WES_transformation_culture_big.tt		
 	}
 	cost = 3.5
 	x = 20
@@ -1296,6 +1337,38 @@ shared_focus = {
 	prerequisite = {
         focus = WES_medieval_state
 	}
+	completion_reward = {
+		WES = {
+			hidden_effect = {
+				set_technology = {
+					green_overall = 1
+					automatization_overall = 0
+					industrialization_overall = 0
+					unorthodox_overall = 0
+				}
+			}
+			add_to_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 15
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 15
+			}
+			clamp_variable = {
+				var = WES_transformation_deurbanization_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			custom_effect_tooltip = WES_end_of_industrial_society.tt
+			custom_effect_tooltip =	WES_transformation_deurbanization_big.tt
+		}
+	}
 	cost = 3.5
 	x = 11
 	y = 8
@@ -1317,6 +1390,50 @@ shared_focus = {
 	icon = GFX_goal_WES_Simplified_Infrastructure
 	prerequisite = {
         focus = WES_end_industrial_society
+	}
+	completion_reward = {
+		WES = {
+			add_to_variable = {
+				var = WES_transformation_environment_progress
+				value = 5
+			}
+			add_to_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 10
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 15
+			}
+			clamp_variable = {
+				var = WES_transformation_environment_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_transformation_deurbanization_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_timed_idea = {
+				idea = WES_transformation_build_infrastructure
+				days = 360
+			}
+			custom_effect_tooltip = WES_transformation_environment_small.tt
+			custom_effect_tooltip =	WES_transformation_deurbanization_big.tt
+		}
 	}
 	cost = 3.5
 	x = 12
@@ -1518,6 +1635,31 @@ shared_focus = {
 	icon = GFX_goal_WES_The_English_Tongue
 	prerequisite = {
         focus = WES_clean_start
+	}
+	completion_reward = {
+		WES = {
+			add_political_power = 150
+			add_to_variable = {
+				var = WES_transformation_language_progress
+				value = 15
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 15
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			clamp_variable = {
+				var = WES_transformation_language_progress
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip =	WES_transformation_language_big.tt
+			custom_effect_tooltip = WES_rename_cities.tt
+		}
 	}
 	cost = 3.5
 	x = 26

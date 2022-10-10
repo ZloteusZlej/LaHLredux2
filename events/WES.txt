@@ -2264,3 +2264,241 @@ country_event = {
 		add_political_power = -150
 	}	
 }
+###LOWER TREE###
+country_event = {
+	id = WES_event.90
+	title = WES_event.90.t
+	desc = WES_event.90.d
+    is_triggered_only = yes
+	fire_only_once = yes	
+	option = {
+		name = WES_event.90.a
+		WES = {
+			add_ideas = WES_rule_of_george_1_1
+		}
+	}
+	option = {
+		name = WES_event.90.b
+		WES = {
+			add_ideas = WES_rule_of_george_1_2
+		}
+	}
+	option = {
+		name = WES_event.90.c
+		WES = {
+			add_ideas = WES_rule_of_george_1_3
+		}
+	}	
+}
+country_event = {
+	id = WES_event.91
+	title = WES_event.91.t
+	desc = WES_event.91.d
+    is_triggered_only = yes
+	fire_only_once = yes	
+	option = {
+		name = WES_event.91.a
+		WES = {
+		}
+	}	
+}
+country_event = {
+	id = WES_event.92
+	title = WES_event.92.t
+	desc = WES_event.92.d
+    is_triggered_only = yes
+	fire_only_once = yes	
+	option = {
+		name = WES_event.92.a
+		WES = {
+		}
+	}	
+}
+
+country_event = { #Jousting hidden 1
+	id = WES_event.93
+	title = WES_event.93.t
+	desc = WES_event.93.d
+	hidden = yes
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.93.a
+		WES = {
+			random_army_leader = {
+				limit = {
+					NOT = {
+						has_character_flag = WES_victor_of_jousting
+					}
+				}
+				set_character_flag = WES_jousting_contender_1
+				ROOT = { set_variable = { WES_number_contender_1 = PREV } }
+			}
+			country_event = {
+				days = 20
+				id = WES_event.94
+			}
+		}
+	}
+}
+
+country_event = { #Jousting hidden 2
+	id = WES_event.94
+	title = WES_event.94.t
+	desc = WES_event.94.d
+	hidden = yes
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.94.a
+		WES = {
+			random_army_leader = {
+				limit = {
+					NOT = {
+						has_character_flag = WES_victor_of_jousting
+						has_character_flag = WES_jousting_contender_1
+					}
+				}
+				set_character_flag = WES_jousting_contender_2
+				ROOT = { set_variable = { WES_number_contender_2 = PREV } }
+			}
+		}
+	}
+}
+
+country_event = { #Jousting Begin
+	id = WES_event.95
+	title = WES_event.95.t
+	desc = WES_event.95.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.95.a
+		WES = {
+			set_country_flag = WES_jousting_bet_1
+			random_list = {
+				70 = {
+					WES = {
+						country_event = {
+							days = 10
+							id = WES_event.96
+						}
+					}
+				}
+				30 = {
+					WES = {
+						country_event = {
+							days = 10
+							id = WES_event.97
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = WES_event.95.b
+		WES = {
+			set_country_flag = WES_jousting_bet_2
+			random_list = {
+				70 = {
+					WES = {
+						country_event = {
+							days = 10
+							id = WES_event.97
+						}
+					}
+				}
+				30 = {
+					WES = {
+						country_event = {
+							days = 10
+							id = WES_event.96
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Jousting Victor 1
+	id = WES_event.96
+	title = WES_event.96.t
+	desc = WES_event.96.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.96.a
+		WES = {
+			if = {
+				limit = {
+					WES = {
+						has_country_flag = WES_jousting_bet_1
+					}
+				}
+				add_political_power = 75
+			}
+			else_if = {
+				add_political_power = -25
+			}
+			random_army_leader = {
+				limit = {
+					has_character_flag = WES_jousting_contender_1
+				}
+				set_character_flag = WES_victor_of_jousting
+				clr_character_flag = WES_jousting_contender_1
+				add_unit_leader_trait = jousting_victor
+				gain_xp = 50
+			}
+			hidden_effect = {
+				random_army_leader = {
+					limit = {
+						has_character_flag = WES_jousting_contender_2
+					}
+					clr_character_flag = WES_jousting_contender_2
+				}
+			}
+			clear_variable = WES_number_contender_1
+			clear_variable = WES_number_contender_2
+		}
+	}
+}
+
+country_event = { #Jousting Victor 2
+	id = WES_event.97
+	title = WES_event.97.t
+	desc = WES_event.97.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.97.a
+		WES = {
+			if = {
+				limit = {
+					WES = {
+						has_country_flag = WES_jousting_bet_2
+					}
+				}
+				add_political_power = 75
+			}
+			else_if = {
+				add_political_power = -25
+			}
+			random_army_leader = {
+				limit = {
+					has_character_flag = WES_jousting_contender_2
+				}
+				set_character_flag = WES_victor_of_jousting
+				clr_character_flag = WES_jousting_contender_2
+				add_unit_leader_trait = jousting_victor
+				gain_xp = 50
+			}
+			hidden_effect = {
+				random_army_leader = {
+					limit = {
+						has_character_flag = WES_jousting_contender_1
+					}
+					clr_character_flag = WES_jousting_contender_1
+				}
+			}
+			clear_variable = WES_number_contender_1
+			clear_variable = WES_number_contender_2
+		}
+	}
+}

@@ -2036,3 +2036,566 @@ WES_diplomacy = {
 		}
 	}
 }
+WES_england_transformation = {
+	WES_culture_dummy = {	
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+	}
+    WES_jousting_competition = {
+		cost = 50
+		days_remove = 60
+		days_re_enable = 60
+        modifier = {
+            command_power_gain = 0.25
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_jousting
+			}
+        } 
+		available = {
+			WES = {
+				any_unit_leader = {
+					NOT = {
+						has_character_flag = WES_victor_of_jousting
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			hidden_effect = {
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.93
+					}
+				}
+			}
+		}
+		remove_effect = {
+			WES = {
+				country_event = {
+					days = 1
+					id = WES_event.95
+				}
+			}
+			add_to_variable = {
+				var = WES_transformation_culture_progress
+				value = 5
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 5
+			}
+			clamp_variable = {
+				var = WES_transformation_culture_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			add_war_support = 0.1
+			custom_effect_tooltip = WES_transformation_culture_small.tt
+		}
+	}
+	WES_economy_dummy = {	
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+	}
+	WES_region_dummy = {	
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+	}
+    WES_rename_cities_kent = {
+		cost = 150
+		fire_only_once = yes
+		days_remove = 120
+		modifier = {
+            stability_factor = -0.05
+			civilian_factory_use = 1
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_english_tongue
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1165
+				owns_state = 1165
+				controls_state = 1002
+				owns_state = 1002
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			set_province_name = { id = 17530 name = "Gelingeham"}
+			set_province_name = { id = 3644 name = "Mayndenstan"}
+			set_province_name = { id = 17510 name = "Burne"}
+			set_province_name = { id = 6426 name = "Hæstingaceaster"}
+			set_province_name = { id = 17514 name = "Folcanstan"}
+			set_province_name = { id = 17520 name = "Cantwareburh"}
+			set_province_name = { id = 17523 name = "Dubrae"}
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_language_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 5
+				}
+				clamp_variable = {
+					var = WES_transformation_deurbanization_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				add_stability = 0.1
+				custom_effect_tooltip = WES_transformation_language_small.tt
+			}
+		}
+	}
+    WES_rename_cities_sussex = {
+		cost = 150
+		fire_only_once = yes
+		days_remove = 120
+        modifier = {
+            stability_factor = -0.05
+			civilian_factory_use = 1
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_english_tongue
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1156
+				owns_state = 1156
+				controls_state = 1001
+				owns_state = 1001
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			set_province_name = { id = 10742 name = "Bristelmestune"}
+			set_province_name = { id = 17508 name = "Ordinges"}
+			set_province_name = { id = 10763 name = "Cisseceastre"}
+			set_province_name = { id = 10732 name = "Portesmuða"}
+			set_province_name = { id = 10733 name = " Crauleia"}
+			set_province_name = { id = 17529 name = "Gyldeforda"}
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_language_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 5
+				}
+				clamp_variable = {
+					var = WES_transformation_deurbanization_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				add_stability = 0.1
+				custom_effect_tooltip = WES_transformation_language_small.tt
+			}
+		}
+	}
+    WES_rename_cities_wessex = {
+		cost = 150
+		fire_only_once = yes
+		days_remove = 120
+        modifier = {
+            stability_factor = -0.05
+			civilian_factory_use = 1
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_english_tongue
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1153
+				owns_state = 1153
+				controls_state = 1161
+				owns_state = 1161
+				controls_state = 1000
+				owns_state = 1000
+				controls_state = 1006
+				owns_state = 1006
+				controls_state = 1007
+				owns_state = 1007
+				controls_state = 999
+				owns_state = 999
+				controls_state = 998
+				owns_state = 998
+				controls_state = 1018
+				owns_state = 1018
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			set_province_name = { id = 10850 name = "Pennsans"}
+			set_province_name = { id = 9091 name = "Trivereu"}
+			set_province_name = { id = 8046 name = "Sudtone"}
+			set_province_name = { id = 15037 name = "Torquay"}
+			set_province_name = { id = 17504 name = "Escanceaster"}
+			set_province_name = { id = 1522 name = "Barum"}
+			set_province_name = { id = 17515 name = "Tone Tun"}
+			set_province_name = { id = 10771 name = "Dornwaraceaster" }
+			set_province_name = { id = 10741 name = "Caer Badden"}
+			set_province_name = { id = 5008 name = "Brycgstow"}
+			set_province_name = { id = 17516 name = "Sarisberie"}
+			set_province_name = { id = 17506 name = "Bournemowthe"}
+			set_province_name = { id = 10725 name = "Hamwic"}
+			set_province_name = { id = 15071 name = "Nodehill"}
+			set_province_name = { id = 6624 name = "Basingestoches"}
+			set_province_name = { id = 17532 name = "Suindune"}
+			set_province_name = { id = 17551 name = "Caer Glow"}
+			set_province_name = { id = 10617 name = "Celtan hom"}
+			set_province_name = { id = 17552 name = "Oxnaford"}
+			set_province_name = { id = 15066 name = "Duboglassio"}
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_language_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 5
+				}
+				clamp_variable = {
+					var = WES_transformation_deurbanization_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				add_stability = 0.1
+				custom_effect_tooltip = WES_transformation_language_small.tt
+			}
+		}
+	}
+    WES_rename_cities_mercia = {
+		cost = 150
+		fire_only_once = yes
+		days_remove = 120
+        modifier = {
+            stability_factor = -0.05
+			civilian_factory_use = 1
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_english_tongue
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1152
+				owns_state = 1152
+				controls_state = 1151
+				owns_state = 1151
+				controls_state = 1154
+				owns_state = 1154
+				controls_state = 1146
+				owns_state = 1146
+				controls_state = 1155
+				owns_state = 1155
+				controls_state = 1008
+				owns_state = 1008
+				controls_state = 1144
+				owns_state = 1144
+				controls_state = 1005
+				owns_state = 1005
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			set_province_name = { id = 17559 name = "Henffordd"}
+			set_province_name = { id = 17567 name = "Weogorna ceastre"}
+			set_province_name = { id = 5183 name = "Scrobbesburh"}
+			set_province_name = { id = 17609 name = "Wrockwardine"}
+			set_province_name = { id = 17614 name = "Stoc"}
+			set_province_name = { id = 17626 name = "Legacæstir"}
+			set_province_name = { id = 17593 name = "Wulfrūnehēantū"}
+			set_province_name = { id = 9731 name = "Beormingahām"}
+			set_province_name = { id = 17581 name = "Cofa"}
+			set_province_name = { id = 9396 name = "Hrocaberg"}
+			set_province_name = { id = 17583 name = "Ham tune"}
+			set_province_name = { id = 17584 name = "Cytringan"}
+			set_province_name = { id = 17603 name = "Ledecestre"}
+			set_province_name = { id = 17613 name = "Loughburne"}
+			set_province_name = { id = 10603 name = "Grantebrycge"}
+			set_province_name = { id = 6101 name = "Medeshamstede"}
+			set_province_name = { id = 17620 name = "Saint Botolph"}
+			set_province_name = { id = 10496 name = "Grímsbœ"}
+			set_province_name = { id = 5939 name = "Escumesthorpe"}
+			set_province_name = { id = 17612 name = "Deoraby"}
+			set_province_name = { id = 7790 name = "Oderesfelt"}
+			set_province_name = { id = 17648 name = "Ladenses"}
+			set_province_name = { id = 4653 name = "Niweweorche"}
+			set_province_name = { id = 10509 name = "Snotingaham"}
+			set_province_name = { id = 17635 name = "Dore"}
+			set_province_name = { id = 10471 name = "Cair Daun"}
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_language_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 5
+				}
+				clamp_variable = {
+					var = WES_transformation_deurbanization_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				add_stability = 0.1
+				custom_effect_tooltip = WES_transformation_language_small.tt
+			}
+		}
+	}
+    WES_rename_cities_northumbria = {
+		cost = 150
+		fire_only_once = yes
+		days_remove = 120
+        modifier = {
+            stability_factor = -0.05
+			civilian_factory_use = 1
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_english_tongue
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1009
+				owns_state = 1009
+				controls_state = 1145
+				owns_state = 1145
+				controls_state = 1012
+				owns_state = 1012
+				controls_state = 1011
+				owns_state = 1011
+				controls_state = 1010
+				owns_state = 1010
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			set_province_name = { id = 17641 name = "Mameceaster"}
+			set_province_name = { id = 17640 name = "Weringtun"}
+			set_province_name = { id = 17639 name = "Liuerpul"}
+			set_province_name = { id = 3896 name = "Blackpoole"}
+			set_province_name = { id = 10429 name = "Blachebourne"}
+			set_province_name = { id = 6261 name = "Luguwaljon"}
+			set_province_name = { id = 6430 name = "Dearthington"}
+			set_province_name = { id = 17686 name = "Mydilsburgh"}
+			set_province_name = { id = 17695 name = "Wearmouth–Jarrow"}
+			set_province_name = { id = 17694 name = "Munucceaster"}
+			set_province_name = { id = 17660 name = "Eburākon"}
+			set_province_name = { id = 17670 name = "Skarðaborg"}
+			set_province_name = { id = 17653 name = "Wyke"}
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_language_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 5
+				}
+				clamp_variable = {
+					var = WES_transformation_deurbanization_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				add_stability = 0.1
+				custom_effect_tooltip = WES_transformation_language_small.tt
+			}
+		}
+	}
+    WES_rename_cities_east_anglia = {
+		cost = 150
+		fire_only_once = yes
+		days_remove = 120
+        modifier = {
+            stability_factor = -0.05
+			civilian_factory_use = 1
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_english_tongue
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1004
+				owns_state = 1004
+				controls_state = 1143
+				owns_state = 1143
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			set_province_name = { id = 17595 name = "Lun"}
+			set_province_name = { id = 17597 name = "Northwic"}
+			set_province_name = { id = 5108 name = "Yernemuth"}
+			set_province_name = { id = 8334 name = "Beodericsworth"}
+			set_province_name = { id = 9793 name = "Lothnwistoft"}
+			set_province_name = { id = 17569 name = "Gippeswich"}
+
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_language_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 5
+				}
+				clamp_variable = {
+					var = WES_transformation_deurbanization_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				add_stability = 0.1
+				custom_effect_tooltip = WES_transformation_language_small.tt
+			}
+		}
+	}
+    WES_rename_cities_london = {
+		cost = 150
+		fire_only_once = yes
+		days_remove = 120
+        modifier = {
+            stability_factor = -0.05
+			civilian_factory_use = 1
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_english_tongue
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1003
+				owns_state = 1003
+				controls_state = 1157
+				owns_state = 1157
+				controls_state = 1160
+				owns_state = 1160
+				controls_state = 1159
+				owns_state = 1159
+				controls_state = 1158
+				owns_state = 1158
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			set_province_name = { id = 17544 name = "Reada"}
+			set_province_name = { id = 17538 name = "Slo"}
+			set_province_name = { id = 17546 name = "Wichama"}
+			set_province_name = { id = 17548 name = "Ēanafeld"}
+			set_province_name = { id = 10574 name = "Æglesburgh"}
+			set_province_name = { id = 17573 name = "Bletchley"}
+			set_province_name = { id = 2559 name = "Lygea-Byrig"}
+			set_province_name = { id = 14950 name = "Hlaw"}
+			set_province_name = { id = 17540 name = "Romfort"}
+			set_province_name = { id = 5582 name = "Celmeresfort"}
+			set_province_name = { id = 17556 name = "Colneceastre"}
+			set_province_name = { id = 10680 name = "Prittlewell"}
+			set_province_name = { id = 17557 name = "Claccingtun"}
+			set_province_name = { id = 17539 name = "Lundenwic"}
+			set_province_name = { id = 6654 name = "Watforda"}
+			set_province_name = { id = 17534 name = "Cyninges tun"}
+			set_province_name = { id = 17531 name = "Badrices īeg"}
+			set_province_name = { id = 4631 name = "Crai-din"}
+			set_province_name = { id = 15007 name = "Gronewic"}
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_language_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 5
+				}
+				clamp_variable = {
+					var = WES_transformation_deurbanization_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				add_stability = 0.1
+				custom_effect_tooltip = WES_transformation_language_small.tt
+			}
+		}
+	}
+}
