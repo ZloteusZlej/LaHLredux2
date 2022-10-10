@@ -2266,7 +2266,7 @@ country_event = {
 }
 ###LOWER TREE###
 country_event = {
-	id = WES_event.90
+	id = WES_event.90 #Rule of George
 	title = WES_event.90.t
 	desc = WES_event.90.d
     is_triggered_only = yes
@@ -2274,19 +2274,31 @@ country_event = {
 	option = {
 		name = WES_event.90.a
 		WES = {
-			add_ideas = WES_rule_of_george_1_1
+			add_to_variable = {
+				var = WES_rule_of_george_compliance_gain
+				value = 0.25
+			}
+			custom_effect_tooltip = WES_dynamic_localization_1.tt
 		}
 	}
 	option = {
 		name = WES_event.90.b
 		WES = {
-			add_ideas = WES_rule_of_george_1_2
+			add_to_variable = {
+				var = WES_rule_of_george_non_core_manpower
+				value = 0.05
+			}
+			custom_effect_tooltip = WES_dynamic_localization_2.tt
 		}
 	}
 	option = {
 		name = WES_event.90.c
 		WES = {
-			add_ideas = WES_rule_of_george_1_3
+			add_to_variable = {
+				var = WES_rule_of_george_political_advisor_cost_factor
+				value = -0.1
+			}
+			custom_effect_tooltip = WES_dynamic_localization_3.tt
 		}
 	}	
 }

@@ -53,4 +53,7 @@ WES_england_transformation = {
 	scripted_gui = lhl_WES_transformation_screen_body
 	allowed = { original_tag = WES }
 	visible_when_empty = yes
+	visible = {
+	    has_completed_focus = WES_medieval_state		
+	}
 }

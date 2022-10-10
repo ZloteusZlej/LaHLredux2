@@ -1150,6 +1150,11 @@ shared_focus = {
 				days = 0
 				id = WES_event.90
 			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = WES_rule_of_george_dynamic_modifier
+				}
+			}
 		}
 	}
 	x = 17
@@ -1170,6 +1175,7 @@ shared_focus = {
 				id = WES_event.92
 			}
 		}
+		custom_effect_tooltip = WES_mechanic_activated.tt
 	}
 	x = 17
 	y = 7
@@ -1237,6 +1243,13 @@ shared_focus = {
         focus = WES_competetive_spirit
 	}
 	completion_reward = {
+		WES = {
+			add_to_variable = {
+				var = WES_rule_of_george_experience_gain_army
+				value = 0.15
+			}
+			custom_effect_tooltip = WES_dynamic_localization_4.tt
+		}
 		add_to_variable = {
 			var = WES_transformation_deurbanization_progress
 			value = 10
@@ -1300,6 +1313,19 @@ shared_focus = {
 	prerequisite = {
         focus = WES_jousting
 	}
+	completion_reward = {
+		WES = {
+			add_to_variable = {
+				var = WES_rule_of_george_offence
+				value = 0.10
+			}
+			add_to_variable = {
+				var = WES_rule_of_george_defence
+				value = 0.10
+			}
+			custom_effect_tooltip = WES_dynamic_localization_5.tt
+		}
+	}
 	cost = 3.5
 	x = 19
 	y = 12
@@ -1325,6 +1351,19 @@ shared_focus = {
 	}
 	prerequisite = {
         focus = WES_careful_reform
+	}
+	completion_reward = {
+		WES = {
+			add_to_variable = {
+				var = WES_rule_of_george_war_support_factor
+				value = 0.15
+			}
+			add_to_variable = {
+				var = WES_rule_of_george_stability_factor
+				value = 0.15
+			}
+			custom_effect_tooltip = WES_dynamic_localization_6.tt
+		}
 	}
 	cost = 3.5
 	x = 17
@@ -1449,6 +1488,15 @@ shared_focus = {
 	prerequisite = {
         focus = WES_simplifid_infrastructure
 	}
+	completion_reward = {
+		WES = {
+			add_to_variable = {
+				var = WES_rule_of_george_consumer_goods_factor
+				value = -0.15
+			}
+			custom_effect_tooltip = WES_dynamic_localization_8.tt
+		}
+	}
 	cost = 3.5
 	x = 11
 	y = 10
@@ -1529,6 +1577,19 @@ shared_focus = {
 	prerequisite = {
         focus = WES_relocation_programmes
 	}
+	completion_reward = {
+		WES = {
+			add_to_variable = {
+				var = WES_rule_of_george_monthly_population
+				value = 0.45
+			}
+			add_to_variable = {
+				var = WES_rule_of_george_conscription_factor
+				value = 0.10
+			}
+			custom_effect_tooltip = WES_dynamic_localization_7.tt
+		}
+	}
 	cost = 3.5
 	x = 23
 	y = 12
@@ -1590,6 +1651,15 @@ shared_focus = {
 	icon = GFX_goal_WES_heroic_absolutism
 	prerequisite = {
         focus = WES_clinging_present
+	}
+	completion_reward = {
+		WES = {
+			add_to_variable = {
+				var = WES_rule_of_george_political_power_gain
+				value = 0.50
+			}
+			custom_effect_tooltip = WES_dynamic_localization_9.tt
+		}
 	}
 	cost = 3.5
 	x = 31
