@@ -798,236 +798,579 @@ country_event = {
 		}
 	}
 	
-	country_event = { 
-		id = ESS_event.24
-		title = ESS_event.24.t
-		desc = ESS_event.24.d
-		
-		fire_only_once = yes	
-		is_triggered_only = yes
+country_event = { 
+	id = ESS_event.24
+	title = ESS_event.24.t
+	desc = ESS_event.24.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
 
-		option = {
-			name = ESS_event.24.a
-			ESS = {
-				add_timed_idea = {
-					idea = ESS_mil_purge
-					days = 125
+	option = {
+		name = ESS_event.24.a
+		ESS = {
+			add_timed_idea = {
+				idea = ESS_mil_purge
+				days = 125
+			}
+			
+				random_unit_leader = {
+					retire = yes
 				}
-				
-					random_unit_leader = {
-						retire = yes
-					}
+		}
+	}
+	
+	option = {
+		name = ESS_event.24.b
+		KNT = {
+			country_event = {
+				days = 2
+				id = KNT_event.46
 			}
 		}
-		
-		option = {
-			name = ESS_event.24.b
+	}
+}
+
+country_event = { 
+	id = ESS_event.25
+	title = ESS_event.25.t
+	desc = ESS_event.25.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.25.a
+		ESS = {
+			add_timed_idea = {
+				idea = ESS_mil_purge_2
+				days = 125
+			}
+			
+				delete_unit = {
+					id = Big Boyz
+					disband = yes
+				}
+		}
+	}
+	
+	option = {
+		name = ESS_event.25.b
+		KNT = {
+			country_event = {
+				days = 2
+				id = KNT_event.47
+			}
+		}
+	}
+}
+	
+country_event = { #TEMPORARY EVENT DELETE#
+	id = ESS_event.26
+	title = ESS_event.26.t
+	desc = ESS_event.26.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes		
+	option = {
+		name = ESS_event.26.a
+	}
+}
+country_event = { 
+	id = ESS_event.27
+	title = ESS_event.27.t
+	desc = ESS_event.27.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.27.a
+		}
+}
+	
+country_event = { 
+	id = ESS_event.28
+	title = ESS_event.28.t
+	desc = ESS_event.28.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = ESS_event.28.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 300
+			producer = ESS
+		}
+		add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 200
+		producer = ESS
+		}
+		add_war_support = -0.05
+		add_stability = -0.05
+		custom_effect_tooltip = ESS_big_b_loyalty_plus.tt
+		add_to_variable = {
+			var = ESS_north_east_region_loyalty
+			value = 10
+		}	
+	}
+	option = {
+		name = ESS_event.28.b
+			1160 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+		add_war_support = -0.1
+		custom_effect_tooltip = ESS_sharpers_loyalty_plus.tt
+		add_to_variable = {
+			var = ESS_central_region_loyalty
+			value = 10
+		}
+	}
+	option = {
+		name = ESS_event.28.c
+			1160 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			add_stability = -0.1
+		custom_effect_tooltip = ESS_undergrounders_loyalty_plus.tt
+		add_to_variable = {
+			var = ESS_south_west_region_loyalty
+			value = 10
+		}
+	}
+}
+	
+country_event = { 
+	id = ESS_event.29
+	title = ESS_event.29.t
+	desc = ESS_event.29.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.29.a
+		ESS = {
+			set_country_flag = ESS_london_flood_proposed
+			}
+		}
+	}
+	
+country_event = { 
+	id = ESS_event.30
+	title = ESS_event.30.t
+	desc = ESS_event.30.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = ESS_event.30.a
 			KNT = {
 				country_event = {
-				    days = 2
-					id = KNT_event.46
+					days = 1
+					id = KNT_event.336
 				}
 			}
+		add_political_power = 75
 		}
+	option = {
+		name = ESS_event.30.b
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 150
+			producer = ESS
+		}
+			}
 	}
 	
-	country_event = { 
-		id = ESS_event.25
-		title = ESS_event.25.t
-		desc = ESS_event.25.d
-		
-		fire_only_once = yes	
-		is_triggered_only = yes
+country_event = { 
+	id = ESS_event.31
+	title = ESS_event.31.t
+	desc = ESS_event.31.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
 
-		option = {
-			name = ESS_event.25.a
-			ESS = {
-				add_timed_idea = {
-					idea = ESS_mil_purge_2
-					days = 125
-				}
-				
-					delete_unit = {
-						id = Big Boyz
-						disband = yes
-					}
-			}
-		}
-		
-		option = {
-			name = ESS_event.25.b
-			KNT = {
+	option = {
+		name = ESS_event.31.a
+			WES = {
 				country_event = {
-				    days = 2
-					id = KNT_event.47
+					days = 1
+					id = WES_event.89
 				}
 			}
+		add_political_power = 75
 		}
-	}
-	
-	country_event = { #TEMPORARY EVENT DELETE#
-		id = ESS_event.26
-		title = ESS_event.26.t
-		desc = ESS_event.26.d
-		
-		fire_only_once = yes
-		is_triggered_only = yes		
-		option = {
-			name = ESS_event.26.a
-		}
-	}
-	country_event = { 
-		id = ESS_event.27
-		title = ESS_event.27.t
-		desc = ESS_event.27.d
-		
-		fire_only_once = yes	
-		is_triggered_only = yes
-
-		option = {
-			name = ESS_event.27.a
-			}
-	}
-	
-	country_event = { 
-		id = ESS_event.28
-		title = ESS_event.28.t
-		desc = ESS_event.28.d
-		
-		fire_only_once = yes	
-		is_triggered_only = yes
-		option = {
-			name = ESS_event.28.a
+	option = {
+		name = ESS_event.31.b
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 300
-				producer = ESS
+				amount = 600
+				producer = WES
 			}
-			add_equipment_to_stockpile = {
-			type = support_equipment
-			amount = 200
-			producer = ESS
-			}
-			add_war_support = -0.05
-			add_stability = -0.05
-			}
-		option = {
-			name = ESS_event.28.b
-				1160 = {
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-						}
-						add_extra_state_shared_building_slots = 2
-					}
-				add_war_support = -0.1
-			}
-		option = {
-			name = ESS_event.28.c
-				1160 = {
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-						}
-						add_extra_state_shared_building_slots = 1
-					}
-				add_stability = -0.1
-			}
-
+		}
 	}
-	country_event = { 
-		id = ESS_event.29
-		title = ESS_event.29.t
-		desc = ESS_event.29.d
-		
-		fire_only_once = yes	
-		is_triggered_only = yes
+	
 
-		option = {
-			name = ESS_event.29.a
+	
+	###Formula 1 event chain###
+	
+country_event = { ###Starting one###
+	id = ESS_event.32
+	title = ESS_event.32.t
+	desc = ESS_event.32.d
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = ESS_event.32.a
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.33
+			}
+		}
+	}
+}
+	
+country_event = { ###First one###
+	id = ESS_event.33
+	title = ESS_event.33.t
+	desc = ESS_event.33.d
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = ESS_event.33.a ###Lewis Hamilton###
+		custom_effect_tooltip = ESS_race_lewis_hamilton.tt
+		set_country_flag = ESS_race_lewis_hamilton_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.34
+			}
+		}
+	}
+	option = {
+		name = ESS_event.33.b ###David Beckham###
+		custom_effect_tooltip = ESS_race_david_beckham.tt
+		set_country_flag = ESS_race_david_beckham_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.34
+			}
+		}
+	}
+	option = {
+		name = ESS_event.33.c ###Daniel Radcliffe###
+		if = {
+			limit = {
+				has_completed_focus = ESS_elevate_warlords
+				}
+				custom_effect_tooltip = ESS_race_daniel_radcliffe_general.tt
+			}
+		else = {
+			custom_effect_tooltip = ESS_race_daniel_radcliffe.tt
+		}
+		set_country_flag = ESS_race_daniel_radcliffe_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.34
+			}
+		}
+	}
+}
+
+country_event = { ###Second one###
+	id = ESS_event.34
+	title = ESS_event.34.t
+	desc = ESS_event.34.d
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = ESS_event.34.a ###Michael Grylls###
+		custom_effect_tooltip = ESS_race_michael_grylls.tt
+		set_country_flag = ESS_race_michael_grylls_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.35
+			}
+		}
+	}
+	option = {
+		name = ESS_event.34.b ###Rowan Atkinson###
+		custom_effect_tooltip = ESS_race_rowan_atkinson.tt
+		set_country_flag = ESS_race_rowan_atkinson_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.35
+			}
+		}
+	}
+	option = {
+		name = ESS_event.34.c ###Miles Routledge###
+		custom_effect_tooltip = ESS_race_miles_routledge.tt
+		set_country_flag = ESS_race_miles_routledge_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.35
+			}
+		}
+	}
+}
+country_event = { ###Third one###
+	id = ESS_event.35
+	title = ESS_event.35.t
+	desc = ESS_event.35.d
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = ESS_event.35.a ###Miron Fyodorov###
+		custom_effect_tooltip = ESS_race_miron_fyodorov.tt
+		set_country_flag = ESS_race_miron_fyodorov_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.36
+			}
+		}
+	}
+	option = {
+		name = ESS_event.35.b ###Nigel Mansell###
+		custom_effect_tooltip = ESS_race_nigel_mansell.tt
+		set_country_flag = ESS_race_nigel_mansell_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.36
+			}
+		}
+	}
+	option = {
+		name = ESS_event.35.c ###Liz Truss###
+		custom_effect_tooltip = ESS_race_liz_truss.tt
+		set_country_flag = ESS_race_liz_truss_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.36
+			}
+		}
+	}
+}
+
+country_event = { ###Finale###
+	id = ESS_event.36
+	title = ESS_event.36.t
+	desc = ESS_event.36.d
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = ESS_event.36.a ###Lewis Hamilton###
+		custom_effect_tooltip = ESS_race_lewis_hamilton.tt
+		set_country_flag = ESS_race_lewis_hamilton_won_flag
+		trigger = {
+			has_country_flag = ESS_race_lewis_hamilton_flag
+		}
+		clr_country_flag = ESS_race_lewis_hamilton_flag
+		hidden_effect = {
 			ESS = {
-				set_country_flag = ESS_london_flood_proposed
+				country_event = {
+					days = 1
+					id = ESS_event.37
 				}
 			}
+		}
 	}
-	country_event = { 
-		id = ESS_event.30
-		title = ESS_event.30.t
-		desc = ESS_event.30.d
-		
-		fire_only_once = yes	
-		is_triggered_only = yes
-
-		option = {
-			name = ESS_event.30.a
+	option = {
+		name = ESS_event.36.b ###David Beckham###
+		custom_effect_tooltip = ESS_race_david_beckham.tt
+		set_country_flag = ESS_race_david_beckham_won_flag
+		trigger = {
+			has_country_flag =  ESS_race_david_beckham_flag
+		}
+		clr_country_flag = ESS_race_david_beckham_flag
+		hidden_effect = {
 			ESS = {
-				set_country_flag = ESS_london_flood_proposed
+				country_event = {
+					days = 1
+					id = ESS_event.37
 				}
 			}
+		}
 	}
+	option = {
+		name = ESS_event.36.c ###Daniel Radcliffe###
+		custom_effect_tooltip = ESS_race_daniel_radcliffe.tt
+		set_country_flag = ESS_race_daniel_radcliffe_won_flag
+		trigger = {
+			has_country_flag =  ESS_race_daniel_radcliffe_flag
+		} 
+		clr_country_flag = ESS_race_daniel_radcliffe_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+	option = {
+		name = ESS_event.36.z ###Michael Grylls###
+		custom_effect_tooltip = ESS_race_michael_grylls.tt
+		set_country_flag = ESS_race_michael_grylls_won_flag
+		trigger = {
+			has_country_flag =  ESS_race_michael_grylls_flag
+		}  
+		clr_country_flag = ESS_race_michael_grylls_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+	option = {
+		name = ESS_event.36.e ###Rowan Atkinson###
+		custom_effect_tooltip = ESS_race_rowan_atkinson.tt
+		set_country_flag = ESS_race_rowan_atkinson_won_flag
+		trigger = {
+			has_country_flag =  ESS_race_rowan_atkinson_flag
+		}  
+		clr_country_flag = ESS_race_rowan_atkinson_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+	option = {
+		name = ESS_event.36.f ###Miles Routledge###
+		custom_effect_tooltip = ESS_race_miles_routledge.tt
+		set_country_flag = ESS_race_miles_routledge_won_flag
+		trigger = {
+			has_country_flag =  ESS_race_miles_routledge_flag
+		}   
+		clr_country_flag = ESS_race_miles_routledge_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+	option = {
+		name = ESS_event.36.g ###Miron Fyodorov###
+		custom_effect_tooltip = ESS_race_miron_fyodorov.tt
+		set_country_flag = ESS_race_miron_fyodorov_won_flag
+		trigger = {
+			has_country_flag = ESS_race_miron_fyodorov_flag
+		}  
+		clr_country_flag = ESS_race_miron_fyodorov_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+	option = {
+		name = ESS_event.36.h ###Nigel Mansell###
+		custom_effect_tooltip = ESS_race_nigel_mansell.tt
+		set_country_flag = ESS_race_nigel_mansell_won_flag
+		trigger = {
+			has_country_flag =  ESS_race_nigel_mansell_flag
+		}   
+		clr_country_flag = ESS_race_nigel_mansell_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+	option = {
+		name = ESS_event.36.i ###Liz Truss###
+		custom_effect_tooltip = ESS_race_liz_truss.tt
+		set_country_flag = ESS_race_liz_truss_won_flag
+		trigger = {
+			has_country_flag = ESS_race_liz_truss_flag
+		}  
+		clr_country_flag = ESS_race_liz_truss_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+}
 	
-	country_event = { 
-		id = ESS_event.31
-		title = ESS_event.31.t
-		desc = ESS_event.31.d
+country_event = { ###Hidden effects###
+	id = ESS_event.37
+	title = ESS_event.37.t
+	desc = ESS_event.37.d
+	fire_only_once = yes	
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = ESS_race_lewis_hamilton_won_flag
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_lewis_hamilton_flag
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+		}
 		
-		fire_only_once = yes	
-		is_triggered_only = yes
-
-		option = {
-			name = ESS_event.31.a
-				WES = {
-					country_event = {
-						days = 1
-						id = WES_event.89
-					}
-				}
-			add_political_power = 75
-			}
-		option = {
-			name = ESS_event.31.b
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 600
-					producer = WES
-				}
-			}
 	}
-	
-	country_event = { 
-		id = ESS_event.32
-		title = ESS_event.32.t
-		desc = ESS_event.32.d
-		
-		fire_only_once = yes	
-		is_triggered_only = yes
-
-		option = {
-			name = ESS_event.32.a
-				KNT = {
-					country_event = {
-						days = 1
-						id = KNT_event.336
-					}
-				}
-			add_political_power = 75
-			}
-		option = {
-			name = ESS_event.32.b
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = 150
-				producer = ESS
-			}
-			}
-	}
-	
-	
-	
-	
-	
+}	
 	
 	
 	

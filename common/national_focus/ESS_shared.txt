@@ -164,7 +164,14 @@
 		prerequisite = {
 			focus = ESS_correction_through_labour
 		}
-
+		completion_reward = {
+		    ESS = {
+			    country_event = {
+				    days = 1
+					id = ESS_event.32
+				}
+			}
+		}
 		x = 1
 		y = 5
 
@@ -276,7 +283,7 @@
 			ESS = {
 			    country_event = {
 				    days = 1
-					id = ESS_event.32
+					id = ESS_event.30
 				}
 			}
 		}
@@ -388,6 +395,7 @@
 				level = 1
 				instant_build = yes
 				}	
+			remove_ideas = ESS_fallen_london
 		}	
 		x = 7
 		y = 5
@@ -920,6 +928,20 @@
 				}
 			}
 			add_ideas = ESS_london_in_flames
+			every_owned_state = {
+				damage_building = {
+					type = industrial_complex
+					damage = 1
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 1
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
 		}
 		x = 9
 		y = 7	
