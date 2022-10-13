@@ -1216,7 +1216,15 @@ country_event = { ###Finale###
 	}
 	option = {
 		name = ESS_event.36.c ###Daniel Radcliffe###
-		custom_effect_tooltip = ESS_race_daniel_radcliffe.tt
+		if = {
+			limit = {
+				has_completed_focus = ESS_elevate_warlords
+				}
+				custom_effect_tooltip = ESS_race_daniel_radcliffe_general.tt
+			}
+		else = {
+			custom_effect_tooltip = ESS_race_daniel_radcliffe.tt
+		}
 		set_country_flag = ESS_race_daniel_radcliffe_won_flag
 		trigger = {
 			has_country_flag =  ESS_race_daniel_radcliffe_flag
@@ -1369,6 +1377,42 @@ country_event = { ###Hidden effects###
 			}
 		}
 		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_david_beckham_won_flag
+			}
+			1160 = {
+				add_province_modifier = {
+					static_modifiers = { beckham_football_plaza }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			add_political_power = 60
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_david_beckham_flag
+			}
+			add_political_power = 60
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_daniel_radcliffe_won_flag
+			}
+			if = {
+				limit = {
+					has_completed_focus = ESS_elevate_warlords
+				}
+				event_target:ESS_daniel_radcliffe = {
+					add_unit_leader_trait = formla_one_champion
+				}	
+			}
+		}
+
+	
 	}
 }	
 	
