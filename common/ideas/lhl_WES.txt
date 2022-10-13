@@ -870,5 +870,21 @@ ideas = {
 				production_speed_infrastructure_factor = 0.25
 			}
 		}
+		WES_transformation_careful_planning = {
+			
+			picture = WES_test
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.3
+				industry_repair_factor = 0.3
+				production_factory_max_efficiency_factor = 0.3
+				production_lack_of_resource_penalty_factor = -0.3
+			}
+		}
 	}
 }

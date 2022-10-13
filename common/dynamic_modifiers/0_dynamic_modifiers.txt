@@ -405,3 +405,44 @@ WES_rule_of_george_dynamic_modifier = {
 	consumer_goods_factor = WES_rule_of_george_consumer_goods_factor #
 }
 
+WES_pastoral_state_dynamic_modifier = { 
+	icon = GFX_sex
+	recruitable_population_factor = 0.35
+	mobilization_speed = 0.35
+	production_speed_buildings_factor = -0.5
+	production_speed_nuclear_reactor_factor = -10.0
+}
+
+WES_guild_state_dynamic_modifier = { 
+	icon = GFX_sex
+	production_speed_buildings_factor = 0.25
+	local_building_slots_factor = 0.25
+	local_factories = 0.25
+	state_repair_speed_arms_factory_factor = 0.25
+	
+}
+
+WES_fair_state_dynamic_modifier = { 
+	icon = GFX_sex
+	local_building_slots_factor = 0.25
+	state_resources_factor = 0.25
+	state_production_speed_infrastructure_factor = 0.15
+	state_repair_speed_industrial_complex_factor = 0.25
+}
+
+WES_exclusion_zone_state_dynamic_modifier = { 
+	icon = GFX_sex
+	disable_strategic_redeployment = 1
+	disable_strategic_redeployment_for_controller = 1
+	local_resources = 1.0
+	production_speed_buildings_factor = -10.0
+	local_building_slots_factor = -1.0
+}
+
+WES_competitive_spirit_modifier = { 
+	icon = GFX_sex
+	production_speed_buildings_factor =  WES_temp_1
+	production_factory_start_efficiency_factor = WES_temp_2
+	political_power_gain = WES_temp_3
+}
+
