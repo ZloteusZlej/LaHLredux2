@@ -269,6 +269,7 @@ characters={
 	}
 	ESS_paul_mccartney={
 		name="Paul McCartney"
+		desc = "Co-lead vocalist and bassist for the Beatles"
 		portraits={
 			army={
 				small=""
@@ -304,6 +305,27 @@ characters={
 			attack_skill=1
 			defense_skill=1
 			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ESS_gerald_strickland={
+		name="Gerald Strickland"
+		desc = "Gerald Strickland desc"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_KNT_Gerald_Strickland.dds"
+			}
+		}
+		corps_commander={
+			traits={ militiaman }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
 			logistics_skill=1
 			legacy_id=-1
 		}
@@ -1406,6 +1428,32 @@ characters={
 			}
 			ai_will_do  = {
 				factor  = 1.000
+			}
+	    }
+	}
+	ESS_michael_grylls = {
+		name = "Michael Grylls"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_michael_grylls.dds"
+			}
+		}
+		advisor = {
+			cost = 50
+			slot = high_command
+			idea_token = ESS_michael_grylls
+			traits = {
+				survivial_specialist
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			visible = {
+				has_country_flag = ESS_michael_grylls_avaliable
+			}
+			ai_will_do  = {
+				factor  = 2.000
 			}
 	    }
 	}

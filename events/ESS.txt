@@ -1406,13 +1406,105 @@ country_event = { ###Hidden effects###
 				limit = {
 					has_completed_focus = ESS_elevate_warlords
 				}
-				event_target:ESS_daniel_radcliffe = {
-					add_unit_leader_trait = formla_one_champion
+				ESS_daniel_radcliffe = {
+					add_corps_commander_role = {
+						traits = { 
+							formla_one_champion
+						}
+						skill = 3
+						attack_skill = 3
+						defense_skill = 3
+						planning_skill = 3
+						logistics_skill = 3
+						legacy_id = 444
+					}
 				}	
 			}
 		}
-
+		if = {
+			limit = {
+				has_country_flag = ESS_race_daniel_radcliffe_flag
+			}
+			if = {
+				limit = {
+					has_completed_focus = ESS_elevate_warlords
+				}
+				ESS_daniel_radcliffe = {
+					add_corps_commander_role = {
+						skill = 2
+						attack_skill = 2
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 2
+						legacy_id = 444
+					}
+				}	
+			}
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_daniel_radcliffe_won_flag
+			}
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ESS_elevate_warlords
+					}
+				}
+					
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_daniel_radcliffe_flag
+			}
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ESS_elevate_warlords
+					}
+				}
+					
+			}
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_michael_grylls_won_flag
+			}
+			set_country_flag = ESS_michael_grylls_avaliable
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_michael_grylls_flag
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = support_equipment
+			}
+		}
 	
+		if = {
+			limit = {
+				has_country_flag = ESS_race_rowan_atkinson_won_flag
+			}
+			set_country_flag = ESS_michael_grylls_avaliable
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_rowan_atkinson_flag
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = support_equipment
+			}
+		}
+		
 	}
 }	
 	

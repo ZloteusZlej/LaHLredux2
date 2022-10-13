@@ -483,32 +483,9 @@
 		focus = ESS_decentralized_command
 	}
 		completion_reward = {
-			create_corps_commander = {
-				name = "Gerald Strickland"
-				picture = "Portrait_KNT_Gerald_Strickland.dds"
-				traits = {  }
-				skill = 3
-				attack_skill = 2
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 2
-			}
-			add_corps_commander_role = {
-				character = ESS_daniel_radcliffe
-				
-				desc = ESS_londons_legacy
-			}
-			create_corps_commander = {
-				name = "Paul McCartney"
-				desc = "Co-lead vocalist and bassist for the Beatles"
-				picture = "Portrait_ESS_Paul_McCartney.dds"
-				traits = { militiaman }
-				skill = 2
-				attack_skill = 1
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 1
-			}
+			recruit_character = ESS_paul_mccartney
+			recruit_character = ESS_daniel_radcliffe
+			recruit_character = ESS_gerald_strickland
 		}
 		x = 14
 		y = 3
