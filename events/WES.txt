@@ -2514,3 +2514,318 @@ country_event = { #Jousting Victor 2
 		}
 	}
 }
+
+country_event = { #Deurbanize Factories
+	id = WES_event.98
+	title = WES_event.98.t
+	desc = WES_event.98.d
+    is_triggered_only = yes
+	fire_only_once = yes	
+	option = {
+		name = WES_event.98.a
+		WES = {
+			add_to_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 10
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 10
+			}
+			clamp_variable = {
+				var = WES_transformation_deurbanization_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			hidden_effect = {
+				WES = {
+					random_owned_state = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = WES_careful_planning_3.tt
+			custom_effect_tooltip =	WES_transformation_deurbanization_big.tt
+		}
+	}	
+}
+
+country_event = { #Deurbanize Factories
+	id = WES_event.99
+	title = WES_event.99.t
+	desc = WES_event.99.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.99.a
+		WES_build_forests_wessex = yes
+	}	
+}
+
+state_event = { #Change State
+	id = WES_event.100
+	title = WES_event.100.t
+	desc = WES_event.100.d
+    is_triggered_only = yes	
+	option = {
+		trigger = {
+			check_variable = { WES_pastoral_zone_count > 0 }
+		}
+		name = WES_event.100.a
+		set_state_category = rural
+		event_target:WES_chosen_state = {
+			add_dynamic_modifier = {
+				modifier = WES_pastoral_state_dynamic_modifier
+			}
+		}
+		add_to_variable = {
+			var =  WES_pastoral_zone_count
+			value = -1
+		}
+		add_to_variable = {
+			var = WES_transformation_environment_progress
+			value = 5
+		}
+		add_to_variable = {
+			var = WES_transformation_deurbanization_progress
+			value = 5
+		}
+		add_to_variable = {
+			var = WES_total_transformation_level
+			value = 10
+		}
+		clamp_variable = {
+			var = WES_transformation_environment_progress
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = WES_transformation_deurbanization_progress
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = WES_total_transformation_level
+			min = 0
+			max = 800
+		}
+		custom_effect_tooltip = WES_transformation_environment_small.tt
+		custom_effect_tooltip = WES_transformation_deurbanization_small.tt
+		custom_effect_tooltip = WES_pastoral_zone.tt
+	}	
+	option = {
+		trigger = {
+			check_variable = { WES_guild_zone_count > 0 }
+		}
+		name = WES_event.100.b
+		set_state_category = urban
+		event_target:WES_chosen_state = {
+			add_dynamic_modifier = {
+				modifier = WES_guild_state_dynamic_modifier
+			}
+		}
+		add_to_variable = {
+			var =  WES_guild_zone_count
+			value = -1
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+		add_to_variable = {
+			var = WES_transformation_society_progress
+			value = 5
+		}
+		add_to_variable = {
+			var = WES_total_transformation_level
+			value = 5
+		}
+		clamp_variable = {
+			var = WES_transformation_society_progress
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = WES_total_transformation_level
+			min = 0
+			max = 800
+		}
+		custom_effect_tooltip = WES_transformation_society_small.tt
+		custom_effect_tooltip = WES_guild_zone.tt
+	}
+	option = {
+		trigger = {
+			check_variable = { WES_fair_zone_count > 0 }
+		}
+		name = WES_event.100.c
+		set_state_category = urban
+		event_target:WES_chosen_state = {
+			add_dynamic_modifier = {
+				modifier = WES_fair_state_dynamic_modifier
+			}
+		}
+		add_to_variable = {
+			var =  WES_fair_zone_count
+			value = -1
+		}
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+		add_to_variable = {
+			var = WES_transformation_society_progress
+			value = 5
+		}
+		add_to_variable = {
+			var = WES_total_transformation_level
+			value = 5
+		}
+		clamp_variable = {
+			var = WES_transformation_society_progress
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = WES_total_transformation_level
+			min = 0
+			max = 800
+		}
+		custom_effect_tooltip = WES_transformation_society_small.tt
+		custom_effect_tooltip = WES_fair_zone.tt
+	}
+	option = {
+		trigger = {
+			check_variable = { WES_exclusion_zone_count > 0 }
+		}
+		name = WES_event.100.e
+		set_state_category = pastoral
+		add_resource = {
+			type = oil
+			amount = 2
+		}
+		add_resource = {
+			type = rubber
+			amount = 2
+		}
+		add_resource = {
+			type = steel
+			amount = 2
+		}
+		event_target:WES_chosen_state = {
+			add_dynamic_modifier = {
+				modifier = WES_exclusion_zone_state_dynamic_modifier
+			}
+		}
+		add_to_variable = {
+			var =  WES_exclusion_zone_count
+			value = -1
+		}
+		add_to_variable = {
+			var = WES_transformation_environment_progress
+			value = 8
+		}
+		add_to_variable = {
+			var = WES_transformation_deurbanization_progress
+			value = 8
+		}
+		add_to_variable = {
+			var = WES_total_transformation_level
+			value = 16
+		}
+		clamp_variable = {
+			var = WES_transformation_environment_progress
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = WES_transformation_deurbanization_progress
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = WES_total_transformation_level
+			min = 0
+			max = 800
+		}
+		WES_state_category_exclusion_zone = yes
+		custom_effect_tooltip = WES_transformation_environment_big.tt
+		custom_effect_tooltip = WES_transformation_deurbanization_big.tt
+		custom_effect_tooltip = WES_exclusion_zone.tt
+	}
+}
+
+country_event = { #Deurbanize Factories
+	id = WES_event.101
+	title = WES_event.101.t
+	desc = WES_event.101.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.101.a
+		add_dynamic_modifier = {
+			modifier = WES_competitive_spirit_modifier
+		}
+	}	
+}

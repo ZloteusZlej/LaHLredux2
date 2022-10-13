@@ -1,0 +1,835 @@
+WES_state_category_exclusion_zone = {
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					state = 1160
+					state = 1154
+					state = 1008
+					state = 1155
+					state = 1009
+					state_population > 2145000
+				}
+			}
+		}
+		event_target:WES_chosen_state = {
+			set_temp_variable = { WES_total_manpower_pastoral = state_population }
+			add_to_temp_variable = { WES_total_manpower_pastoral = -100 }
+			multiply_temp_variable = { WES_total_manpower_pastoral = -1 }
+			add_manpower = WES_total_manpower_pastoral
+			multiply_temp_variable = { WES_total_manpower_pastoral = -1 }
+			random_neighbor_state  = {
+				add_manpower = WES_total_manpower_pastoral
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					state = 1160
+					state = 1154
+					state = 1008
+					state = 1155
+					state = 1009
+				}
+			}
+			state_population > 2145000
+		}
+		event_target:WES_chosen_state = {
+			add_manpower = -1145000
+			add_manpower = -1000000
+			add_manpower = -100
+			random_neighbor_state  = {
+				add_manpower = 2145000
+			}
+		}
+	}
+	set_demilitarized_zone = yes
+	hidden_effect = {
+		set_building_level = {
+			type = infrastructure
+			level = 1
+			instant_build = yes
+		}
+		set_building_level = {
+			type = arms_factory
+			level = 0
+			instant_build = yes
+		}
+		set_building_level = {
+			type = industrial_complex
+			level = 0
+			instant_build = yes
+		}
+		set_building_level = {
+			type = air_base
+			level = 0
+			instant_build = yes
+		}
+		set_building_level = {
+			type = naval_base
+			level = 0
+			instant_build = yes
+		}
+		set_building_level = {
+			type = dockyard
+			level = 0
+			instant_build = yes
+		}
+		set_building_level = {
+			type = anti_air_building
+			level = 0
+			instant_build = yes
+		}
+		set_building_level = {
+			type = synthetic_refinery 
+			level = 0
+			instant_build = yes
+		}
+		set_building_level = {
+			type = fuel_silo
+			level = 0
+			instant_build = yes
+		}
+		set_building_level = {
+			type = radar_station
+			level = 0
+			instant_build = yes
+		}
+		set_building_level = {
+			type = rocket_site 
+			level = 0
+			instant_build = yes
+		}
+		set_building_level = {
+			type = nuclear_reactor
+			level = 0
+			instant_build = yes
+		}
+	}
+	hidden_effect = {
+		if = {
+			limit = {
+				state = 998
+			}
+			set_victory_points = {
+				province = 10850
+				value = 0
+			}
+			set_victory_points = {
+				province = 9091
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 999
+			}
+			set_victory_points = {
+				province = 1522
+				value = 0
+			}
+			set_victory_points = {
+				province = 15037
+				value = 0
+			}
+			set_victory_points = {
+				province = 8046
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1007
+			}
+			set_victory_points = {
+				province = 17504
+				value = 0
+			}
+			set_victory_points = {
+				province = 10771
+				value = 0
+			}
+			set_victory_points = {
+				province = 17506
+				value = 0
+			}
+			set_victory_points = {
+				province = 17516
+				value = 0
+			}
+		}
+	}
+	if = {
+		limit = {
+			state = 1006 #Bristol
+		}
+		hidden_effect = {
+			set_victory_points = {
+				province = 17515
+				value = 0
+			}
+			set_victory_points = {
+				province = 10741
+				value = 0
+			}
+			set_victory_points = {
+				province = 5008
+				value = 1
+			}
+		}
+		set_province_name = { id = 5008 name = "Somerset National Park"}
+		add_stability = -0.25
+		custom_effect_tooltip = WES_pastoral_major_metropolitan.tt
+		WES = {
+			set_country_flag = WES_bristol_destroyed
+		}
+	}
+	hidden_effect = {
+		if = {
+			limit = {
+				state = 1000
+			}
+			set_victory_points = {
+				province = 10725
+				value = 0
+			}
+			set_victory_points = {
+				province = 15071
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1161
+			}
+			set_victory_points = {
+				province = 17532
+				value = 0
+			}
+			set_victory_points = {
+				province = 6624
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1153
+			}
+			set_victory_points = {
+				province = 17551
+				value = 0
+			}
+			set_victory_points = {
+				province = 10617
+				value = 0
+			}
+			set_victory_points = {
+				province = 17552
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1018
+			}
+			set_victory_points = {
+				province = 15066
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1001
+			}
+			set_victory_points = {
+				province = 10732
+				value = 0
+			}
+			set_victory_points = {
+				province = 10763
+				value = 0
+			}
+			set_victory_points = {
+				province = 17508
+				value = 0
+			}
+			set_victory_points = {
+				province = 10742
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1156
+			}
+			set_victory_points = {
+				province = 10733
+				value = 0
+			}
+			set_victory_points = {
+				province = 17529
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1002
+			}
+			set_victory_points = {
+				province = 17510
+				value = 0
+			}
+			set_victory_points = {
+				province = 6426
+				value = 0
+			}
+			set_victory_points = {
+				province = 17514
+				value = 0
+			}
+			set_victory_points = {
+				province = 17523
+				value = 0
+			}
+			set_victory_points = {
+				province = 17520
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1165
+			}
+			set_victory_points = {
+				province = 3644
+				value = 0
+			}
+			set_victory_points = {
+				province = 17530
+				value = 0
+			}
+		}
+	}
+	if = {
+		limit = {
+			state = 1160 #London
+		}
+		hidden_effect = {
+			set_victory_points = {
+				province = 17531
+				value = 0
+			}
+			set_victory_points = {
+				province = 17534
+				value = 0
+			}
+			set_victory_points = {
+				province = 4631
+				value = 0
+			}
+			set_victory_points = {
+				province = 15007
+				value = 0
+			}
+			set_victory_points = {
+				province = 5956
+				value = 0
+			}
+			set_victory_points = {
+				province = 6654
+				value = 0
+			}
+			set_victory_points = {
+				province = 17539
+				value = 1
+			}
+		}
+		set_province_name = { id = 17539 name = "Thames National Park"}
+		set_state_name = "Thames Valley"
+		add_stability = -0.50
+		event_target:WES_chosen_state = {
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -1000000
+			add_manpower = -245275
+			random_neighbor_state  = {
+				add_manpower = 2000000
+			}
+			random_neighbor_state  = {
+				add_manpower = 2000000
+			}
+			random_neighbor_state  = {
+				add_manpower = 2000000
+			}
+			random_neighbor_state  = {
+				add_manpower = 2000000
+			}
+			random_neighbor_state  = {
+				add_manpower = 245275
+			}
+		}
+		custom_effect_tooltip = WES_pastoral_london.tt
+		WES = {
+			set_country_flag = WES_london_destroyed
+		}
+	}
+	hidden_effect = {
+		if = {
+			limit = {
+				state = 1159
+			}
+			set_victory_points = {
+				province = 17538
+				value = 0
+			}
+			set_victory_points = {
+				province = 17548
+				value = 0
+			}
+			set_victory_points = {
+				province = 17546
+				value = 0
+			}
+			set_victory_points = {
+				province = 17544
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1159
+			}
+			set_victory_points = {
+				province = 2559
+				value = 0
+			}
+			set_victory_points = {
+				province = 17573
+				value = 0
+			}
+			set_victory_points = {
+				province = 10574
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1157
+			}
+			set_victory_points = {
+				province = 14950
+				value = 0
+			}
+			set_victory_points = {
+				province = 17540
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1003
+			}
+			set_victory_points = {
+				province = 10680
+				value = 0
+			}
+			set_victory_points = {
+				province = 5582
+				value = 0
+			}
+			set_victory_points = {
+				province = 17556
+				value = 0
+			}
+			set_victory_points = {
+				province = 17557
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1143
+			}
+			set_victory_points = {
+				province = 8334
+				value = 0
+			}
+			set_victory_points = {
+				province = 17569
+				value = 0
+			}
+			set_victory_points = {
+				province = 9793
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1004
+			}
+			set_victory_points = {
+				province = 5108
+				value = 0
+			}
+			set_victory_points = {
+				province = 9542
+				value = 0
+			}
+			set_victory_points = {
+				province = 17597
+				value = 0
+			}
+			set_victory_points = {
+				province = 17595
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1005
+			}
+			set_victory_points = {
+				province = 10603
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1144
+			}
+			set_victory_points = {
+				province = 6101
+				value = 0
+			}
+			set_victory_points = {
+				province = 17620
+				value = 0
+			}
+			set_victory_points = {
+				province = 10496
+				value = 0
+			}
+			set_victory_points = {
+				province = 5939
+				value = 0
+			}
+		}
+	}
+	if = {
+		limit = {
+			state = 1155 #Leicester
+		}
+		hidden_effect = {
+			set_victory_points = {
+				province = 17613
+				value = 0
+			}
+			set_victory_points = {
+				province = 17603
+				value = 0
+			}
+			set_victory_points = {
+				province = 17584
+				value = 0
+			}
+			set_victory_points = {
+				province = 17583
+				value = 0
+			}
+			set_victory_points = {
+				province = 9396
+				value = 0
+			}
+		}
+		add_stability = -0.25
+		event_target:WES_chosen_state = {
+			add_manpower = -2000000
+			add_manpower = -917567
+			random_neighbor_state  = {
+				add_manpower = 2000000
+			}
+			random_neighbor_state  = {
+				add_manpower = 917567
+			}
+		}
+		custom_effect_tooltip = WES_pastoral_major_metropolitan.tt
+		WES = {
+			set_country_flag = WES_leicester_destroyed
+		}
+	}
+	if = {
+		limit = {
+			state = 1154 #Birmingham
+		}
+		hidden_effect = {
+			set_victory_points = {
+				province = 9731
+				value = 0
+			}
+			set_victory_points = {
+				province = 17581
+				value = 0
+			}
+			set_victory_points = {
+				province = 17593
+				value = 0
+			}
+		}
+		add_stability = -0.25
+		event_target:WES_chosen_state = {
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -489397
+			random_neighbor_state  = {
+				add_manpower = 2000000
+			}
+			random_neighbor_state  = {
+				add_manpower = 2000000
+			}
+			random_neighbor_state  = {
+				add_manpower = 489397
+			}
+		}
+		custom_effect_tooltip = WES_pastoral_major_metropolitan.tt
+		WES = {
+			set_country_flag = WES_birmingham_destroyed
+		}
+	}
+	hidden_effect = {
+		if = {
+			limit = {
+				state = 1152
+			}
+			set_victory_points = {
+				province = 17559
+				value = 0
+			}
+			set_victory_points = {
+				province = 17567
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1151
+			}
+			set_victory_points = {
+				province = 17626
+				value = 0
+			}
+			set_victory_points = {
+				province = 5183
+				value = 0
+			}
+			set_victory_points = {
+				province = 17609
+				value = 0
+			}
+			set_victory_points = {
+				province = 17614
+				value = 0
+			}
+		}
+	}
+	if = {
+		limit = {
+			state = 1146 #Leeds
+		}
+		hidden_effect = {
+			set_victory_points = {
+				province = 17612
+				value = 0
+			}
+			set_victory_points = {
+				province = 7790
+				value = 0
+			}
+			set_victory_points = {
+				province = 17648
+				value = 0
+			}
+		}
+		add_stability = -0.25
+		custom_effect_tooltip = WES_pastoral_major_metropolitan.tt
+		WES = {
+			set_country_flag = WES_leeds_destroyed
+		}
+	}
+	if = {
+		limit = {
+			state = 1008 #Sheffield
+		}
+		hidden_effect = {
+			set_victory_points = {
+				province = 10509
+				value = 0
+			}
+			set_victory_points = {
+				province = 4653
+				value = 0
+			}
+			set_victory_points = {
+				province = 17635
+				value = 0
+			}
+			set_victory_points = {
+				province = 10471
+				value = 0
+			}
+		}
+		add_stability = -0.25
+		event_target:WES_chosen_state = {
+			add_manpower = -2000000
+			add_manpower = -835892
+			random_neighbor_state  = {
+				add_manpower = 2000000
+			}
+			random_neighbor_state  = {
+				add_manpower = 835892
+			}
+		}
+		custom_effect_tooltip = WES_pastoral_major_metropolitan.tt
+		WES = {
+			set_country_flag = WES_sheffield_destroyed
+		}
+	}
+	if = {
+		limit = {
+			state = 1009 #Manchester-Liverpool
+		}
+		hidden_effect = {
+			set_victory_points = {
+				province = 17639
+				value = 0
+			}
+			set_victory_points = {
+				province = 17640
+				value = 0
+			}
+			set_victory_points = {
+				province = 17641
+				value = 0
+			}
+			set_victory_points = {
+				province = 10429
+				value = 0
+			}
+			set_victory_points = {
+				province = 3896
+				value = 0
+			}
+		}
+		add_stability = -0.25
+		event_target:WES_chosen_state = {
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -1000000
+			add_manpower = -779258
+			random_neighbor_state  = {
+				add_manpower = 2000000
+			}
+			random_neighbor_state  = {
+				add_manpower = 2000000
+			}
+			random_neighbor_state  = {
+				add_manpower = 1000000
+			}
+			random_neighbor_state  = {
+				add_manpower = 779258
+			}
+		}
+		custom_effect_tooltip = WES_pastoral_major_metropolitan.tt
+		WES = {
+			set_country_flag = WES_manchester_destroyed
+		}
+	}
+	hidden_effect = {
+		if = {
+			limit = {
+				state = 1145
+			}
+			set_victory_points = {
+				province = 6261
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1011
+			}
+			set_victory_points = {
+				province = 6430
+				value = 0
+			}
+			set_victory_points = {
+				province = 17686
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1012
+			}
+			set_victory_points = {
+				province = 17694
+				value = 0
+			}
+			set_victory_points = {
+				province = 17695
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				state = 1010
+			}
+			set_victory_points = {
+				province = 17660
+				value = 0
+			}
+			set_victory_points = {
+				province = 17670
+				value = 0
+			}
+			set_victory_points = {
+				province = 17653
+				value = 0
+			}
+		}
+	}
+}
+
+WES_build_forests_wessex = {
+	create_entity = {
+	  entity = WES_reforrestation_entity
+	  x = 4
+	  y = 3
+	  z = 0
+	  province = 10850
+	  state = 42
+	  rotation = 1.2
+	  scale = 1.0
+	}
+	  entity = WES_reforrestation_entity
+	  x = 5
+	  y = 3
+	  z = 0
+	  province = 10850
+	  state = 42
+	  rotation = 1.2
+	  scale = 1.0
+	}
+	  entity = WES_reforrestation_entity
+	  x = 2
+	  y = 3
+	  z = 0
+	  province = 10850
+	  state = 42
+	  rotation = 1.2
+	  scale = 1.0
+	}
+)
