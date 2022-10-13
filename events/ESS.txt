@@ -1451,8 +1451,27 @@ country_event = { ###Hidden effects###
 					not = {
 						has_completed_focus = ESS_elevate_warlords
 					}
+					add_to_variable = {
+						var = ESS_central_region_loyalty
+						value = 10
+					}
+					add_to_variable = {
+						var = ESS_south_west_region_loyalty
+						value = 10
+					}
+					add_to_variable = {
+						var = ESS_south_east_region_loyalty
+						value = 10
+					}
+					add_to_variable = {
+						var = ESS_north_west_region_loyalty
+						value = 10
+					}
+					add_to_variable = {
+						var = ESS_north_east_region_loyalty
+						value = 10
+					}
 				}
-					
 			}
 		}
 		if = {
@@ -1465,7 +1484,11 @@ country_event = { ###Hidden effects###
 						has_completed_focus = ESS_elevate_warlords
 					}
 				}
-					
+				add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = ESS
+			}	
 			}
 		}
 		
@@ -1493,7 +1516,6 @@ country_event = { ###Hidden effects###
 			}
 			set_country_flag = ESS_michael_grylls_avaliable
 		}
-		
 		if = {
 			limit = {
 				has_country_flag = ESS_race_rowan_atkinson_flag
@@ -1505,12 +1527,155 @@ country_event = { ###Hidden effects###
 			}
 		}
 		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_miles_routledge_won_flag
+			}
+			set_country_flag = ESS_miles_routledge_avaliable
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_miles_routledge_flag
+			}
+			add_political_power = 70
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_rowan_atkinson_won_flag
+			}
+			
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_rowan_atkinson_flag
+			}
+			add_equipment_to_stockpile = {
+				type = armored_car_equipment_1
+				amount = 50
+				producer = ESS
+			}
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_miron_fyodorov_won_flag
+			}
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.38
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_miron_fyodorov_flag
+			}
+			hidden_effect = {
+				ESS = {
+					country_event = {
+						days = 1
+						id = ESS_event.39
+					}
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_nigel_mansell_won_flag
+			}
+			ESS = {
+				add_idea = ESS_red_five_spirit
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_nigel_mansell_flag
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = support_equipment
+			}
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_liz_truss_won_flag
+			}
+			set_country_flag = 
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_liz_truss_avaliable
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = armour
+			}
+		}
 	}
 }	
 	
+country_event = { 
+	id = ESS_event.38
+	title = ESS_event.38.t
+	desc = ESS_event.38.d
 	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.38.a
+			ESS = {
+				country_event = {
+					days = 120
+					id = ESS_event.40
+				}
+			}
+		}
+	}	
 	
+country_event = { 
+	id = ESS_event.39
+	title = ESS_event.39.t
+	desc = ESS_event.39.d
 	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.39.a
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	
+country_event = { 
+	id = ESS_event.40
+	title = ESS_event.40.t
+	desc = ESS_event.40.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.40.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = MSC
+			}
+			add_equipment_to_stockpile = {
+				type = armoured_personnel_carrier_equipment
+				amount = 100
+				producer = MSC
+			}
+		}
+	}
 	
 	
 	

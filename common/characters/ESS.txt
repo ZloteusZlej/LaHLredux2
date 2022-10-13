@@ -1442,6 +1442,7 @@ characters={
 		advisor = {
 			cost = 50
 			slot = high_command
+			ledger = army
 			idea_token = ESS_michael_grylls
 			traits = {
 				survivial_specialist
@@ -1451,6 +1452,58 @@ characters={
 			}
 			visible = {
 				has_country_flag = ESS_michael_grylls_avaliable
+			}
+			ai_will_do  = {
+				factor  = 2.000
+			}
+	    }
+	}
+	ESS_miles_routledge = {
+		name = "Miles Routledge"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_miles_routledge.dds"
+			}
+		}
+		advisor = {
+			cost = 50
+			slot = political_advisor
+			idea_token = ESS_miles_routledge
+			traits = {
+				hermit
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			visible = {
+				has_country_flag = ESS_race_miles_routledge_flag
+			}
+			ai_will_do  = {
+				factor  = 2.000
+			}
+	    }
+	}
+	ESS_liz_truss = {
+		name = "Liz Truss"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_liz_truss.dds"
+			}
+		}
+		advisor = {
+			cost = 50
+			slot = political_advisor
+			idea_token = ESS_liz_truss
+			traits = {
+				iron_lady
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			visible = {
+				has_country_flag = ESS_race_liz_truss_flag
 			}
 			ai_will_do  = {
 				factor  = 2.000
