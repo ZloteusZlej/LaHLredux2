@@ -17,4 +17,34 @@ on_actions = {
 			}
 		}
 	}
+	on_weekly_WES = {
+		effect = {
+		    WES = {
+				set_variable = {
+					var = WES_competitive_spirit_building
+					value = WES.manpower_k
+				}
+				set_variable = {
+					var = WES_competitive_spirit_production
+					value = WES.political_power
+				}
+				set_variable = {
+					var = WES_competitive_spirit_political_power
+					value = WES.num_of_available_civilian_factories
+				}		
+				divide_variable = {
+					var = WES_competitive_spirit_building
+					value = 1000
+				}
+				divide_variable = {
+					var = WES_competitive_spirit_production
+					value = 1000
+				}
+				divide_variable = {
+					var = WES_competitive_spirit_political_power
+					value = 50
+				}
+			}
+		}
+	}
 }

@@ -2107,6 +2107,346 @@ WES_england_transformation = {
 			custom_effect_tooltip = WES_transformation_culture_small.tt
 		}
 	}
+	WES_retrain_general_nick_houghton = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_nick_houghton
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_nick_houghton ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_nick_houghton ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_graeme_lamb = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_graeme_lamb
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_graeme_lamb ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_graeme_lamb ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_nick_parker = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_nick_parker
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_nick_parker ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_nick_parker ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_richard_dannatt = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_richard_dannatt
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_richard_dannatt ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_richard_dannatt ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_dave_gahan = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_dave_gahan
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_dave_gahan ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_dave_gahan ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_timothy_cross = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_timothy_cross
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_timothy_cross ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_timothy_cross ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_john_drewienkiewicz = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_john_drewienkiewicz
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_john_drewienkiewicz ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_john_drewienkiewicz ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_peter_thomas_clayton_pearson = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_peter_thomas_clayton_pearson
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_peter_thomas_clayton_pearson ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_peter_thomas_clayton_pearson ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_jonathon_riley = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_jonathon_riley
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_jonathon_riley ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_jonathon_riley ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_ashley_truluck = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_ashley_truluck
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_ashley_truluck ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_ashley_truluck ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
 	WES_economy_dummy = {	
 		available = {
 			hidden_trigger = {

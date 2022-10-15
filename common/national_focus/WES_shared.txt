@@ -1210,15 +1210,39 @@ shared_focus = {
         focus = WES_human_nauture
 	}
 	completion_reward = {
-		set_temp_variable = { WES_competitive_spirit_building = WES.manpower_k }
-		divide_temp_variable = { WES_competitive_spirit_building = 100 }
-		set_variable = { WES_competitive_spirit_building = WES_temp_1 }
-		set_temp_variable = { WES_competitive_spirit_production = WES.political_power }
-		divide_temp_variable = { WES_competitive_spirit_production = 1000 }
-		set_variable = { WES_competitive_spirit_production = WES_temp_2 }
-		set_temp_variable = { WES_competitive_spirit_pp = WES.num_of_available_civilian_factories }
-		divide_temp_variable = { WES_competitive_spirit_pp = 100 }
-		set_variable = { WES_competitive_spirit_pp = WES_temp_3 }
+		add_political_power = 50
+		add_dynamic_modifier = {
+			modifier = WES_competitive_spirit_modifier
+		}
+		add_to_variable = {
+			var = WES_transformation_law_progress
+			value = 10
+		}
+		add_to_variable = {
+			var = WES_transformation_society_progress
+			value = 5
+		}
+		add_to_variable = {
+			var = WES_total_transformation_level
+			value = 15
+		}
+		clamp_variable = {
+			var = WES_transformation_law_progress
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = WES_transformation_society_progress
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = WES_total_transformation_level
+			min = 0
+			max = 800
+		}
+		custom_effect_tooltip =	WES_transformation_law_big.tt	
+		custom_effect_tooltip =	WES_transformation_culture_small.tt	
 	}
 	cost = 3.5
 	x = 19
@@ -1334,7 +1358,27 @@ shared_focus = {
 				var = WES_rule_of_george_defence
 				value = 0.10
 			}
+			add_to_variable = {
+				var = WES_transformation_society_progress
+				value = 10
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 10
+			}
+			clamp_variable = {
+				var = WES_transformation_deurbanization_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
 			custom_effect_tooltip = WES_dynamic_localization_5.tt
+			custom_effect_tooltip = WES_new_chivilary.tt
+			custom_effect_tooltip =	WES_transformation_society_big.tt
 		}
 	}
 	cost = 3.5
