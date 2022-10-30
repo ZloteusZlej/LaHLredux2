@@ -160,38 +160,6 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}	
-	
-		WES_Royal_military = {
-			
-			picture = 
-
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-			  	army_org_factor = 0.02
-		        land_reinforce_rate = 0.02
-			}
-		}
-	
-		WES_Fight_for_the_monarchy = {
-			
-			picture = 
-
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-			  	army_core_defence_factor = 0.1
-		        army_core_attack_factor = 0.1
-			}
-		}
 		
 		WES_Mons_pro_officers = {
 			
@@ -225,24 +193,6 @@ ideas = {
 			}
 		}
 		
-		WES_Top_grade_arsenal = {
-		
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			equipment_bonus = {
-				infantry_equipment = {
-					reliability = 0.15
-					instant = yes
-				}
-			}
-		}
-		
 		WES_flight_heroes = {
 			
 			picture = 
@@ -256,23 +206,6 @@ ideas = {
 			modifier = {
 			war_support_factor = 0.10
 			political_power_factor = 0.05
-			}
-		}
-		WES_weapon_guilds = {
-			
-			picture = 
-
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-			    production_speed_arms_factory_factor = 0.2
-			    production_factory_max_efficiency_factor = 0.15
-			    production_factory_max_efficiency_factor = 0.2
-			    production_factory_efficiency_gain_factor = 0.15
 			}
 		}
 		WES_dynastic_crisis = {   
@@ -353,7 +286,7 @@ ideas = {
 			
 			visible = { has_idea = WES_Tank_guilds_w_armor_emphasis }
 			
-			removal_cost = -1
+			removal_cost = 100
 			
 			equipment_bonus = {
 				MBT = {
@@ -381,7 +314,7 @@ ideas = {
 			
 			visible = { has_idea = WES_Tank_guilds_w_speed_emphasis }
 			
-			removal_cost = -1
+			removal_cost = 100
 			
 			equipment_bonus = {
 				MBT = {
@@ -396,6 +329,33 @@ ideas = {
 				MBT = {
 					reliability = -0.05
 					armor_value = -0.05
+					instant = yes
+				}
+			}
+		}
+		WES_Tank_guilds_w_experimental_emphasis = {
+			
+			allowed = {
+				original_tag = WES
+			}
+			
+			visible = { has_idea = WES_Tank_guilds_w_experimental_emphasis }
+			
+			removal_cost = 100
+			
+			equipment_bonus = {
+				MBT = {
+					maximum_speed = 0.15
+					soft_attack = 0.15
+					instant = yes
+				}
+			    MBT = {
+					build_cost_ic = 0.15
+					instant = yes
+				}
+				MBT = {
+					reliability = -0.2
+					armor_value =  0.1
 					instant = yes
 				}
 			}
@@ -621,46 +581,6 @@ ideas = {
 		}
 	}
 	
-	
-	
-	hidden_ideas = {
-		
-		WES_Concentrated_strikes = { 
-		
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			equipment_bonus = {
-				APC = {
-				    soft_attack = 0.02
-				    hard_attack = 0.02
-					maximum_speed = 0.05
-					instant = yes
-				}
-			    IFV = {
-				    soft_attack = 0.02
-				    hard_attack = 0.02
-					maximum_speed = 0.05
-					instant = yes
-				}
-				motorized = {
-				    soft_attack = 0.02
-				    hard_attack = 0.02
-					maximum_speed = 0.05
-					instant = yes
-				}			
-			}
-			modifier = {	
-		        cavalry_attack_factor = 0.10
-			}
-		}
-	}
-	
 	naval_manufacturer = { 
 		designer = yes
 		
@@ -847,11 +767,6 @@ ideas = {
 				tag = SUS 
 				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
-			}
-			
-			cancel = {
-				country_exists = SUS
-				country_exists = WES
 			}
 		}
 		###RULE OF HELL##

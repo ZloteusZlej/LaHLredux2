@@ -723,8 +723,6 @@ country_event = { #Naval
     fire_only_once = yes	
 	option = {
 	    name = WES_event.32.a
-		    navy_experience = 20
-		    load_oob = WES_Academy_Marines
     } 	
 }
 
@@ -839,33 +837,43 @@ country_event = {
     }	
 }
 
-
-country_event = { #Loading Tank Knights OOBs
-	id = WES_event.38
-	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.38"}
-	title = WES_event.38.t
-	desc = WES_event.38.d
-    is_triggered_only = yes
-	
-    fire_only_once = yes	
-	option = {
-	    name = WES_event.38.a
-	    load_oob = WES_Tank_Forces
-    } 	  
-}
-
 country_event = { #Battle for Britain
 	id = WES_event.39
 	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.39"}
 	title = WES_event.39.t
 	desc = WES_event.39.d
     is_triggered_only = yes
-	
-    fire_only_once = yes	
+	fire_only_once = yes	
 	option = {
-	    name = WES_event.39.a
-	    
-    } 	  
+	    name = WES_event.39.a  
+		WES = {
+			add_to_variable = {
+				var = WES_royal_army_air_agility
+				value = 0.05
+			}
+			custom_effect_tooltip = WES_army_localization_5.tt
+		}
+    } 
+	option = {
+	    name = WES_event.39.b
+		WES = {
+			add_to_variable = {
+				var = WES_royal_army_air_accidents
+				value = -0.05
+			}
+			custom_effect_tooltip = WES_army_localization_6.tt
+		}
+    } 
+	option = {
+	    name = WES_event.39.c
+		WES = {
+			add_to_variable = {
+				var = WES_royal_army_air_defence
+				value = 0.05
+			}
+			custom_effect_tooltip = WES_army_localization_7.tt
+		}
+    } 	
 }
 
 country_event = { #British Army
@@ -2817,7 +2825,7 @@ state_event = { #Change State
 	}
 }
 
-country_event = { #Deurbanize Factories
+country_event = { #Competitive Spirit
 	id = WES_event.101
 	title = WES_event.101.t
 	desc = WES_event.101.d
@@ -2827,5 +2835,70 @@ country_event = { #Deurbanize Factories
 		add_dynamic_modifier = {
 			modifier = WES_competitive_spirit_modifier
 		}
+	}	
+}
+
+country_event = { #Museum Pieces
+	id = WES_event.102
+	title = WES_event.102.t
+	desc = WES_event.102.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.102.a #Melt All of It
+		WES = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = steel
+					amount = 2
+				}
+			}
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				category = jet_technology
+			}
+		}
+	}
+	option = {
+		name = WES_event.102.b #Target Practice
+		WES = {
+			add_to_variable = {
+				var = WES_royal_army_anti_air
+				value = 0.02
+			}
+			custom_effect_tooltip = WES_army_localization_3.tt
+		}
+	}	
+	option = {
+		name = WES_event.102.c #Parade
+		WES = {
+			add_political_power = 75
+			add_war_support = 0.02
+		}
+	}
+	option = {
+		name = WES_event.102.e #Train Pilots
+		WES = {
+			air_experience = 5
+		}
+	}
+}
+
+country_event = { #Navy Stuff
+	id = WES_event.103
+	title = WES_event.103.t
+	desc = WES_event.103.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.103.a #Melt Navy
+		random_owned_controlled_state = {
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+		}
+	}
+	option = {
+		name = WES_event.103.b #Save Navy
 	}	
 }

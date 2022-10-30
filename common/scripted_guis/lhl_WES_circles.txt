@@ -1,0 +1,164 @@
+scripted_gui = {
+	
+	lhl_WES_guilds_screen_body = {
+		context_type = decision_category
+		parent_window_token = decision_tab
+		window_name = "lhl_WES_guilds_full"
+
+		visible = {
+			tag = WES
+		}
+		triggers = {
+			#Infantry#
+            lhl_infantry_guild_1_visible = {
+				WES = {
+					has_country_flag = WES_infantry_guild_1
+				}
+		    }
+            lhl_infantry_guild_2_visible = {
+				WES = {
+					has_country_flag = WES_infantry_guild_2
+				}
+		    }
+            lhl_infantry_guild_3_visible = {
+				WES = {
+					has_country_flag = WES_infantry_guild_3
+				}
+		    }
+            lhl_infantry_guild_no_visible = {
+				NOT = {
+					OR = {
+						has_country_flag = WES_infantry_guild_1
+						has_country_flag = WES_infantry_guild_2
+						has_country_flag = WES_infantry_guild_3
+					}
+				}
+		    }
+			#Armor#
+            lhl_armor_guild_1_visible = {
+				WES = {
+					has_country_flag = WES_armor_guild_1
+				}
+		    }
+            lhl_armor_guild_2_visible = {
+				WES = {
+					has_country_flag = WES_armor_guild_2
+				}
+		    }
+            lhl_armor_guild_3_visible = {
+				WES = {
+					has_country_flag = WES_armor_guild_3
+				}
+		    }
+            lhl_armor_guild_no_visible = {
+				NOT = {
+					OR = {
+						has_country_flag = WES_armor_guild_1
+						has_country_flag = WES_armor_guild_2
+						has_country_flag = WES_armor_guild_3
+					}
+				}
+		    }
+			#Mechanized#
+            lhl_mechanized_guild_1_visible = {
+				WES = {
+					has_country_flag = WES_mechanized_guild_1
+				}
+		    }
+            lhl_mechanized_guild_2_visible = {
+				WES = {
+					has_country_flag = WES_mechanized_guild_2
+				}
+		    }
+            lhl_mechanized_guild_3_visible = {
+				WES = {
+					has_country_flag = WES_mechanized_guild_3
+				}
+		    }
+            lhl_mechanized_guild_no_visible = {
+				NOT = {
+					OR = {
+						has_country_flag = WES_mechanized_guild_1
+						has_country_flag = WES_mechanized_guild_2
+						has_country_flag = WES_mechanized_guild_3
+					}
+				}
+		    }
+			#Air#
+            lhl_air_guild_1_visible = {
+				WES = {
+					has_country_flag = WES_air_guild_1
+				}
+		    }
+            lhl_air_guild_2_visible = {
+				WES = {
+					has_country_flag = WES_air_guild_2
+				}
+		    }
+            lhl_air_guild_3_visible = {
+				WES = {
+					has_country_flag = WES_air_guild_3
+				}
+		    }
+            lhl_air_guild_no_visible = {
+				NOT = {
+					OR = {
+						has_country_flag = WES_air_guild_1
+						has_country_flag = WES_air_guild_2
+						has_country_flag = WES_air_guild_3
+					}
+				}
+		    }
+			#Artillery#
+            lhl_artillery_guild_1_visible = {
+				WES = {
+					has_country_flag = WES_artillery_guild_1
+				}
+		    }
+            lhl_artillery_guild_2_visible = {
+				WES = {
+					has_country_flag = WES_artillery_guild_2
+				}
+		    }
+            lhl_artillery_guild_3_visible = {
+				WES = {
+					has_country_flag = WES_artillery_guild_3
+				}
+		    }
+            lhl_artillery_guild_no_visible = {
+				NOT = {
+					OR = {
+						has_country_flag = WES_artillery_guild_1
+						has_country_flag = WES_artillery_guild_2
+						has_country_flag = WES_artillery_guild_3
+					}
+				}
+		    }
+			#Ships#
+            lhl_ships_guild_1_visible = {
+				WES = {
+					has_country_flag = WES_ships_guild_1
+				}
+		    }
+            lhl_ships_guild_2_visible = {
+				WES = {
+					has_country_flag = WES_ships_guild_2
+				}
+		    }
+            lhl_ships_guild_3_visible = {
+				WES = {
+					has_country_flag = WES_ships_guild_3
+				}
+		    }
+            lhl_ships_guild_no_visible = {
+				NOT = {
+					OR = {
+						has_country_flag = WES_ships_guild_1
+						has_country_flag = WES_ships_guild_2
+						has_country_flag = WES_ships_guild_3
+					}
+				}
+		    }
+		}
+	}
+}

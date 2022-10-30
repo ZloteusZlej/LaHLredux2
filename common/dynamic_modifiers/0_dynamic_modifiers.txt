@@ -446,3 +446,29 @@ WES_competitive_spirit_modifier = {
 	political_power_gain = WES_competitive_spirit_political_power
 }
 
+WES_royal_army = { 
+	icon = GFX_sex
+	army_org_factor = 0.02
+	land_reinforce_rate = 0.02
+	army_core_defence_factor = WES_royal_army_core_defence
+	army_core_attack_factor  = WES_royal_army_core_attack
+	air_ace_bonuses_factor = WES_royal_army_ace_bonuses_factor
+	air_ace_generation_chance_factor = WES_royal_army_ace_generation_chance
+	ace_effectiveness_factor = WES_royal_army_ace_effectiveness
+	static_anti_air_hit_chance_factor = WES_royal_army_anti_air
+	air_attack_factor = WES_royal_army_air_attack
+	air_agility_factor = WES_royal_army_air_agility
+	air_accidents_factor = WES_royal_army_air_accidents
+	air_defence_factor = WES_royal_army_air_defence
+	#
+	mechanized_attack_factor = WES_royal_army_mechanized_attack
+	mechanized_defence_factor = WES_royal_army_mechanized_defence
+	#
+	army_armor_speed_factor = WES_royal_army_armor_speed
+	army_armor_attack_factor = WES_royal_army_armor_attack
+	army_armor_defence_factor = WES_royal_army_armor_defence
+	#
+	army_artillery_attack_factor = WES_royal_army_artillery_attack
+	army_artillery_defence_factor = WES_royal_army_artillery_defence
+}
+
