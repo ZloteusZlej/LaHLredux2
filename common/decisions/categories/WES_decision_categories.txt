@@ -57,3 +57,23 @@ WES_england_transformation = {
 	    has_completed_focus = WES_medieval_state		
 	}
 }
+
+WES_unification_defence = {
+	icon = GFX_
+	allowed = { original_tag = WES }
+	visible = {
+		WES = {
+			has_country_flag = WES_unification_defence
+		}
+	}
+}
+
+WES_unification_offence = {
+	icon = GFX_
+	allowed = { original_tag = WES }
+	visible = {
+		WES = {
+			has_country_flag = WES_unification_offence
+		}
+	}
+}

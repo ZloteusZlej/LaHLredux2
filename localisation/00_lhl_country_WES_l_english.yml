@@ -82,6 +82,9 @@
  WES_Peter_Hitchens:0 "Peter Hitchens"
  WES_Simon_Heffer:0 "Simon Heffer"
  WES_Sir_David_Amess:0 "Sir David Amess"
+ WES_james_glancy:0 "James Glancy"
+ WES_merlin_hanbury_tracy:0 "Merlin Hanbury Tracy"
+ WES_andrew_roberts:0 "Andrew Roberts"
  ##COUNTRY IDEAS##
  WES_dynastic_crisis:0 "Dynastic Crisis"
  WES_Royal_military:0 "Loyal and Royal Army"
@@ -147,7 +150,7 @@
  WES_ideological_conflict:0 "Ideological Conflict"
  WES_final_decision:0 "The Final Decision"
  WES_catholic_scourge:0 "Former Allies"
- WES_retake_capital:0 "Rebuild London"
+ WES_retake_capital:0 "Pacify London"
  WES_place_anglophobes:0 "Hunt Down Republicans"
  WES_teuton_intruders:0 "Deal With Germans"
  WES_protector_england:0 "Protector Of England"
@@ -358,11 +361,17 @@
  #
  WES_event.12.t:0 "A Long Road Ahead"
  WES_event.12.d:0 "We have defeated the false king Henry and opened a road for the unification of our beloved Homeland. Yet, there are many enemies that we would have to face in the future:\nIn the East lies the domain of Jacob Rees-Mogg, a former friend of King George, who betrayed him in the time of need. He must be eliminated first, before we move on to our next targets.\nTo North-East lies our former capital - the city of London. Its rotten carcass is being fought over by local gangs led by Max Mosley and a rogue band of german invaders. It doesn't matter who of them controls the capital. Both of them are vicious fiends, who prey on the weak and must be put down.\nIn the far north lays a land of chaos and banditry. Yet, one man stands out among them. Douglas Pearce is a true english patriot, who can help us reunite our Island home.\nThis, however, is only if his armies haven't been already annihiliated by the most vile force in the former United Kingdom\nThe so called Republicans are a gang of psychotic maniacs, following the teachings of eurasianism. They want to destroy the english culture and plunge us into an age of darkness.\n This won't happen!\nWe shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills..." 
- WES_event.12.a:0 "We shall never surrender!"
+ WES_event.12.a:0 "We have to focus on defence!"
+ WES_event.12.b:0 "We have to focus of offence!"
+ WES_event.12.tt:0 "§YNew decisions will become available on the map§!.\n"
+ WES_build_bunkers:0 "Build Bunkers"
+ WES_prepare_operations:0 "Prepare Assault"
  #
  WES_event.13.t:0 "Dealing With Tories"
  WES_event.13.d:0 "We have to do something with tories. Do we forgive some of them, or just pruge everyone." 
- WES_event.13.a:0 "Recruit as many as we can"
+ WES_event.13.a:0 "Traitors don't deserve mercy. Imprison them."
+ WES_event.13.b:0 "Recruit certain civilian advisers and exile the generals."
+ WES_event.13.c:0 "Recruit both generals and advisers."
  #
  WES_event.14.t:0 "City Of Thieves"
  WES_event.14.d:0 "Kill the Nationalists" 
@@ -373,8 +382,9 @@
  WES_event.15.a:0 "We march north"
  #
  WES_event.16.t:0 "The Invaders"
- WES_event.16.d:0 "Kill the Germans!" 
- WES_event.16.a:0 "To Norfolk!"
+ WES_event.16.d:0 "We have succesfully defeated the menace that were the german interventionists. We will have to deal with the collaborators, mercenaries and national anarchists, to pacify this region. We will begin with collaborators - what we shall do with them?" 
+ WES_event.16.a:0 "Spare some collaborators"
+ WES_event.16.b:0 "Imprison them all!"
  #
  WES_event.17.t:0 "London has fallen!"
  WES_event.17.d:0 "Hang Land, kill Mosley!" 
@@ -476,9 +486,10 @@
  WES_event.37.b:0 "SUPERIOR FIREPOWER DOCTRINE"
  WES_event.37.c:0 "GRAND BATTLEPLAN DOCTRINE"
  #
- WES_event.38.t:0 "Solid Steel, Royal Armour"
- WES_event.38.d:0 "explaining the founding of the Royal Tank Corp (2 units)"
- WES_event.38.a:0 "Insert Insult as a placeholder"
+ WES_event.38.t:0 "The Anarchists"
+ WES_event.38.d:0 "The National-Anarchists, acted together with the germans - what we should do with them?" 
+ WES_event.38.a:0 "Indoctrinate and conscript their militia, we need manpower."
+ WES_event.38.b:0 "Total crackdown."
  #
  WES_event.39.t:0 "The Second Battle for Britain"
  WES_event.39.d:0 "I couldn't find how to put air attack cause am tired"
@@ -549,6 +560,12 @@
  WES_event.53.a:0 "Create an alliance"
  WES_event.53.b:0 "Betray him!"
  #
+ WES_event.64.t:0 "The Mercenaries"
+ WES_event.64.d:0 "We are finally dealing with the germans themselves. These bastards invaded our country and killed our people. What should we do with them?"
+ WES_event.64.a:0 "Deport them back to Germany. No exceptions."
+ WES_event.64.b:0 "Give them proper justice in England."
+ WES_event.64.c:0 "These mercenaries may prove useful."
+ #
  WES_event.89.t:0 "News from Tower's captives!"
  WES_event.89.d:0 "Mosleys' clique proposes the 'Green Corridor' for our loyal elements in the Tower of London. For a 'reasonable' price they would allow Tower's troops to safely leave the City of Theifes and let them reunite with our forces."
  WES_event.89.a:0 "Give them what they want, now!"
@@ -561,7 +578,7 @@
  KNIGHT_MENU:0 "Open the knight menu"
  ##TOOLTIP##
  ENG_henry_here:0 "Prince Harry has been captured"
- WES_road_unification.tt:0 "§GWe will be able to core states of England.§!"
+ WES_road_unification.tt:0 "§GThis will decrease coring time of all states.§!"
  WES_reunify_country1.tt:0 "\n§GWe have succesfully reunited Great Britain by crushing other warlords as well as annexing Scotland and Wales§!"
  WES_reunify_country2.tt:0 "\n§YWe have succesfully reunited England by crushing other warlords as well as installing friendly regimes in Wales and Scotland§!"
  WES_masters_and_slaves.tt:0 "§GWe will be able to take Scotland, Wales and Ulster by force and integrate them back into United Kingdom,§!§R but this will cause severe unrest among the local population and it will take some time to integrate the new lands§!"
@@ -713,10 +730,5 @@
  WES_army_localization_9.tt:0 "(§Y[WES.GetNameWithFlag]§!) Modify §YRoyal Army§! by \nArtillery Attack: §G+10.0%§!\nArtillery Defense: §G+10.0%§!\n"
  WES_army_localization_10.tt:0 "(§Y[WES.GetNameWithFlag]§!) Modify §YRoyal Army§! by \nArmor Division Attack: §G+10.0%§!\nArmor Division Defense: §G+10.0%§!\nArmor speed: §G+10.0%§!\n"
  #
- WES_infantry_guild_no:0 "No §Yinfantry equipment§! guild has been selected."
- WES_armor_guild_no:0 "No §Ymain battle tank§! guild has been selected."
- WES_mechanized_guild_no:0 "No §Ymechanized§! guild has been selected."
- WES_artillery_guild_no:0 "No §Yartillery§! guild has been selected."
- WES_air_guild_no:0 "No §Yaircraft§! guild has been selected."
- WES_ships_guild_no:0 "No §Ynavy§! guild has been selected."
+ WES_republicans_complaince.tt:0 "§YAll Northumbrian and Mercian states§!:\n     Complaince: §G+30.0%§!\n     Resistance: §G-30.0%§!"
  

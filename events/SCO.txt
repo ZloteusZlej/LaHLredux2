@@ -5,12 +5,163 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event SCO_event.1"}
 	title = SCO_event.1.t
 	desc = SCO_event.1.d
-    is_triggered_only = yes
-	
     fire_only_once = yes	
+	trigger = {
+		original_tag = SCO
+		OR = {
+			AND ={
+				country_exists = WES
+				NOT = {
+					country_exists = SUS
+				}
+				NOT = {
+					country_exists = MRC
+				}
+				NOT = {
+					country_exists = EAG
+				}
+				NOT = {
+					country_exists = KNT
+				}
+				NOT = {
+					country_exists = ESS
+				}
+				NOT = {
+					country_exists = NTH
+				}
+			}
+			AND ={
+				country_exists = SUS
+				NOT = {
+					country_exists = WES
+				}
+				NOT = {
+					country_exists = MRC
+				}
+				NOT = {
+					country_exists = EAG
+				}
+				NOT = {
+					country_exists = KNT
+				}
+				NOT = {
+					country_exists = ESS
+				}
+				NOT = {
+					country_exists = NTH
+				}
+			}
+			AND ={
+				country_exists = MRC
+				NOT = {
+					country_exists = SUS
+				}
+				NOT = {
+					country_exists = WES
+				}
+				NOT = {
+					country_exists = EAG
+				}
+				NOT = {
+					country_exists = KNT
+				}
+				NOT = {
+					country_exists = ESS
+				}
+				NOT = {
+					country_exists = NTH
+				}
+			}
+			AND ={
+				country_exists = EAG
+				NOT = {
+					country_exists = SUS
+				}
+				NOT = {
+					country_exists = MRC
+				}
+				NOT = {
+					country_exists = WES
+				}
+				NOT = {
+					country_exists = KNT
+				}
+				NOT = {
+					country_exists = ESS
+				}
+				NOT = {
+					country_exists = NTH
+				}
+			}
+			AND ={
+				country_exists = KNT
+				NOT = {
+					country_exists = SUS
+				}
+				NOT = {
+					country_exists = MRC
+				}
+				NOT = {
+					country_exists = EAG
+				}
+				NOT = {
+					country_exists = WES
+				}
+				NOT = {
+					country_exists = ESS
+				}
+				NOT = {
+					country_exists = NTH
+				}
+			}
+			AND ={
+				country_exists = ESS
+				NOT = {
+					country_exists = SUS
+				}
+				NOT = {
+					country_exists = MRC
+				}
+				NOT = {
+					country_exists = EAG
+				}
+				NOT = {
+					country_exists = KNT
+				}
+				NOT = {
+					country_exists = WES
+				}
+				NOT = {
+					country_exists = NTH
+				}
+			}
+			AND ={
+				country_exists = NTH
+				NOT = {
+					country_exists = SUS
+				}
+				NOT = {
+					country_exists = MRC
+				}
+				NOT = {
+					country_exists = EAG
+				}
+				NOT = {
+					country_exists = KNT
+				}
+				NOT = {
+					country_exists = ESS
+				}
+				NOT = {
+					country_exists = WES
+				}
+			}
+		}
+	}
 	option = {
 	    name = SCO_event.1.a
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 10 }
+		create_faction = CELTIC_ALLIANCE
 		WLS = {
 			country_event = {
 				days = 1
@@ -23,11 +174,10 @@ country_event = {
 				id = WES_event.23
 			}
 		}
-        create_faction = CELTIC_ALLIANCE
     }
 	option = {
 	    name = SCO_event.2.b
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 0 }
 		WLS = {
 			country_event = {
 				days = 1

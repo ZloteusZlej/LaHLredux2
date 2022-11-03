@@ -361,7 +361,19 @@ country_event = {
     fire_only_once = yes	
 	option = {
 	    name = WES_event.12.a
-	    add_war_support = 0.1
+		WES = {
+			set_country_flag = WES_unification_defence
+			add_command_power = 35
+			custom_effect_tooltip = WES_event.12.tt
+		}
+    } 
+	option = {
+	    name = WES_event.12.b
+		WES = {
+			set_country_flag = WES_unification_offence
+			add_command_power = 35
+			custom_effect_tooltip = WES_event.12.tt
+		}
     } 
 }
 
@@ -374,6 +386,49 @@ country_event = {
     fire_only_once = yes	
 	option = {
 	    name = WES_event.13.a
+		WES = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+    } 
+	option = {
+	    name = WES_event.13.b
+		WES = {
+			add_stability = -0.05
+			recruit_character = WES_james_glancy
+			recruit_character = WES_merlin_hanbury_tracy
+			recruit_character = WES_andrew_roberts
+		}
+    } 
+	option = {
+	    name = WES_event.13.c
+		WES = {
+			add_stability = -0.01
+			recruit_character = WES_james_glancy
+			recruit_character = WES_merlin_hanbury_tracy
+			recruit_character = WES_andrew_roberts
+			every_possible_country = {
+				limit = { has_character = KNT_paul_william_jaques }
+				random_character = {
+					limit = { is_character = KNT_paul_william_jaques }
+					set_nationality = WES
+				}
+			}
+			every_possible_country = {
+				limit = { has_character = KNT_david_rutherford_jones }
+				random_character = {
+					limit = { is_character = KNT_david_rutherford_jones }
+					set_nationality = WES
+				}
+			}
+			every_possible_country = {
+				limit = { has_character = KNT_jeremy_rowan }
+				random_character = {
+					limit = { is_character = KNT_jeremy_rowan }
+					set_nationality = WES
+				}
+			}
+		}
     } 
 }
 
@@ -401,7 +456,7 @@ country_event = {
     } 
 }
 
-country_event = {
+country_event = { #Deal with collabs
 	id = WES_event.16
 	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.16"}
 	title = WES_event.16.t
@@ -410,6 +465,23 @@ country_event = {
     fire_only_once = yes	
 	option = {
 	    name = WES_event.16.a
+		WES = {
+			add_stability = -0.05
+			recruit_character = WES_robin_tilbrook
+			recruit_character = WES_julia_gasper
+			country_event = {
+				days = 5
+				id = WES_event.38
+			}
+		}
+    } 
+	option = {
+	    name = WES_event.16.b
+		add_political_power = 50
+		country_event = {
+			days = 5
+			id = WES_event.38
+		}
     } 
 }
 
@@ -488,12 +560,6 @@ country_event = {
 	option = {
 	    name = WES_event.22.a
 		hidden_effect = {
-			SCO = {
-				country_event = {
-					days = 1
-					id = SCO_event.1
-				}
-			}
 			WES = {
 				set_cosmetic_tag = WES_ENGLAND
 			}
@@ -835,6 +901,40 @@ country_event = {
 			category = cat_grand_battle_plan
 		}
     }	
+}
+
+country_event = { #Deal with anarchists
+	id = WES_event.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.38"}
+	title = WES_event.38.t
+	desc = WES_event.38.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+	option = {
+	    name = WES_event.38.a
+		WES = {
+			add_stability = -0.1
+			add_manpower = 50000
+			country_event = {
+				days = 5
+				id = WES_event.64
+			}
+		}
+    } 
+	option = {
+	    name = WES_event.38.b
+		add_stability = 0.05
+		1004 = {
+			add_resistance = 45
+		}
+		1143 = {
+			add_resistance = 45
+		}
+		country_event = {
+			days = 5
+			id = WES_event.64
+		}
+    } 
 }
 
 country_event = { #Battle for Britain
@@ -1470,6 +1570,66 @@ country_event = {
 		add_political_power = 100
 		WES = {
 			set_country_flag = WES_george_legitimacy_achieved
+		}
+    }
+}
+
+country_event = { #Deal with mercenaries
+	id = WES_event.64
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.64"}
+	title = WES_event.64.t
+	desc = WES_event.64.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+	option = {
+	    name = WES_event.64.a
+		WES = {
+			add_stability = 0.1
+			add_political_power = 100
+			1004 = {
+				add_manpower = -5000
+			}
+			1143 = {
+				add_manpower = -2500
+			}
+		}
+		GER = {
+			country_event = {
+				days = 10
+				id = GER_event.11
+			}
+		}
+    } 
+	option = {
+	    name = WES_event.64.b
+		add_stability = 0.05
+		add_political_power = 25
+    } 
+	option = {
+	    name = WES_event.64.c
+		add_stability = -0.1
+		add_political_power = -25
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 250
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 100
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = main_battle_tank_equipment
+			amount = 15
+			producer = GER
+		}
+		every_possible_country = {
+			limit = { has_character = EAG_erich_vad }
+			random_character = {
+				limit = { is_character = EAG_erich_vad }
+				set_nationality = WES
+			}
 		}
     }
 }
@@ -2902,3 +3062,6 @@ country_event = { #Navy Stuff
 		name = WES_event.103.b #Save Navy
 	}	
 }
+
+##PURGING PEOPLE##
+
