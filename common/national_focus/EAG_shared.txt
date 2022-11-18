@@ -14,6 +14,7 @@ shared_focus = {
 				}
 			}
 		}
+		custom_effect_tooltip = EAG_norfolk_expedition_tt
 	}
 	select_effect = {
 		EAG = {
@@ -55,11 +56,6 @@ shared_focus = {
 	icon = GFX_goal_EAG_american_relicts
 	cost = 4.3
 	completion_reward = {
-		add_equipment_to_stockpile = {
-			type = attack_helicopter_equipment
-			amount = 20
-			producer = EAG
-		}
 		add_equipment_to_stockpile = {
 			type = fighter_equipment
 			amount = 10
@@ -226,6 +222,7 @@ shared_focus = {
 				max = 25
 		}
 		custom_effect_tooltip = EAG_mercs_quality_add_3
+		custom_effect_tooltip = EAG_additional_company_tt
 	}
 	prerequisite = {
 		focus = EAG_delivery_for_the_front
@@ -270,6 +267,7 @@ shared_focus = {
 				owner = EAG
 			}
 		}
+		custom_effect_tooltip = EAG_anarchist_divisions_tt
 	}
 	prerequisite = {
 		focus = EAG_delivery_for_the_front
@@ -774,6 +772,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		add_political_power = 25
+		custom_effect_tooltip = EAG_industry_relocation_tt
 	}
 	x = 11
 	y = 8
@@ -802,6 +801,7 @@ shared_focus = {
 				id = EAG_event.40
 			}
 		}
+		custom_effect_tooltip = EAG_greek_scheme_tt
 	}
 	x = 13
 	y = 8
@@ -948,6 +948,7 @@ shared_focus = {
 			var = EAG_coring_cost
 			value = -15
 		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_15_tt
 	}
 	x = 5
 	y = 5
@@ -1109,6 +1110,8 @@ shared_focus = {
 			var = EAG_coring_cost
 			value = -10
 		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_10_tt
+		custom_effect_tooltip = EAG_ipswich_law_tt
 	}
 	x = 6
 	y = 7
@@ -1267,6 +1270,7 @@ shared_focus = {
 			var = EAG_coring_cost
 			value = -10
 		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_10_tt
 	}
 	x = 4
 	y = 10
@@ -1770,6 +1774,7 @@ shared_focus = {
 			var = EAG_coring_cost
 			value = -5
 		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_5_tt
 	}
 	x = 12
 	y = 13
@@ -1807,6 +1812,7 @@ shared_focus = {
 			remove_idea = EAG_english_reconstruction
 			add_idea = EAG_english_reconstruction_2
 		}
+		custom_effect_tooltip = EAG_lager_diplomacy_tt
 	}
 	x = 10
 	y = 15
@@ -1840,6 +1846,7 @@ shared_focus = {
 		focus = EAG_peace_in_england
 	}
 	completion_reward = {
+		custom_effect_tooltip = EAG_ipswich_law_reform_tt
 	}
 	x = 14
 	y = 15
@@ -1860,6 +1867,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		add_ideas = EAG_economy_of_entertainment
+		custom_effect_tooltip = EAG_tropico_tt
 	}
 	x = 9
 	y = 16
@@ -2071,6 +2079,7 @@ shared_focus = {
 				id = EAG_event.51
 			}
 		}
+		custom_effect_tooltip = EAG_sell_trophies_tt
 	}
 	x = 10
 	y = 19
@@ -2108,6 +2117,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		add_political_power = 40
+		custom_effect_tooltip = EAG_boheme_resort_tt
 	}
 	x = 14
 	y = 19
@@ -2211,6 +2221,7 @@ shared_focus = {
 			var = EAG_coring_cost
 			value = -25
 		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_25_tt
 	}
 	x = 12
 	y = 5
@@ -2330,6 +2341,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		add_political_power = 45
+		custom_effect_tooltip = EAG_diggers_cooperatives_tt
 	}
 	x = 11
 	y = 8
@@ -2591,6 +2603,8 @@ shared_focus = {
 			var = EAG_coring_cost
 			value = -25
 		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_25_tt
+		custom_effect_tooltip = EAG_congress_of_communes_created_tt
 	}
 	x = 5
 	y = 5
@@ -2790,6 +2804,7 @@ shared_focus = {
 			var = EAG_coring_cost
 			value = -10
 		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_10_tt
 	}
 	x = 4
 	y = 9
@@ -3019,6 +3034,7 @@ shared_focus = {
 			amount = 200
 			producer = EAG
 		}
+		custom_effect_tooltip = EAG_tachanka_tt
 	}
 	x = 19
 	y = 7
@@ -3195,6 +3211,7 @@ shared_focus = {
 			max = 25
 		}
 		custom_effect_tooltip = EAG_volk_dev_remove_3
+		custom_effect_tooltip = EAG_guardians_of_the_revolution_tt
 	}
 	x = 18
 	y = 10
@@ -3319,6 +3336,7 @@ shared_focus = {
 					max = 25
 				}
 		custom_effect_tooltip = EAG_volk_mood_remove_3		
+		custom_effect_tooltip = EAG_the_finniest_men_of_communes_tt
 	}
 	x = 20
 	y = 10
@@ -3381,6 +3399,7 @@ shared_focus = {
 			var = EAG_coring_cost
 			value = -20
 		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_20_tt
 	}
 	x = 12
 	y = 13
@@ -3828,6 +3847,7 @@ shared_focus = {
 	icon = GFX_goal_EAG_new_partners
 	cost = 4.3
 	completion_reward = {
+		custom_effect_tooltip = EAG_new_partners_tt
 	}
 	prerequisite = {
 		focus = EAG_standards_of_quality
@@ -4035,6 +4055,7 @@ shared_focus = {
 			var = EAG_coring_cost
 			value = -20
 		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_20_tt
 	}
 	prerequisite = {
 		focus = EAG_we_are_the_machine
@@ -4160,6 +4181,7 @@ shared_focus = {
 				owner = EAG
 			}
 		}
+		custom_effect_tooltip = EAG_wilhelm_the_conqueror_division_tt
 	}
 	x = 17
 	y = 8
@@ -4241,6 +4263,7 @@ shared_focus = {
 				owner = EAG
 			}
 		}
+		custom_effect_tooltip = EAG_english_panzergrenadiers_tt
 	}
 	x = 19
 	y = 8
@@ -4467,6 +4490,8 @@ shared_focus = {
 			var = EAG_coring_cost
 			value = -20
 		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_20_tt
+		custom_effect_tooltip = EAG_cleansing_of_london_tt
 	}
 	x = 5
 	y = 5
@@ -4561,6 +4586,8 @@ shared_focus = {
 			var = EAG_coring_cost
 			value = -10
 		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_10_tt
+		custom_effect_tooltip = EAG_national_diet_focus_tt
 	}
 	x = 4
 	y = 7
@@ -4706,6 +4733,7 @@ shared_focus = {
 			var = EAG_coring_cost
 			value = -5
 		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_5_tt
 	}
 	x = 6
 	y = 9
