@@ -1,0 +1,136 @@
+# Scripted AI desire for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_ai_desires = {
+	
+	take_our_cores = {
+        peace_action_type = { take_states }
+        enable = {
+            ROOT = { tag = ROOT.FROM } #We are negotiating for ourselves
+            ROOT.FROM.FROM.FROM = { is_core_of = ROOT.FROM } #It is ours
+        }
+        ai_desire = 200
+    }
+	dont_liberate = {
+        peace_action_type = liberate
+        enable = {
+        always = yes
+        }
+
+        ai_desire = -200
+    }
+
+    dont_grab_exclaves = {
+        peace_action_type = take_states
+        enable = {
+            ROOT.FROM.FROM.FROM = {
+                NOT = {
+                    OR = {
+                        is_claimed_by = ROOT.FROM
+						any_neighbor_state = {
+                            OR = {
+                                is_owned_by = ROOT.FROM
+                                pc_is_state_claimed_by = ROOT.FROM
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        ai_desire = -50
+    }
+
+    dont_grab_friendly_cores = {
+        peace_action_type = take_states
+        enable = {
+            ROOT.FROM = {
+                NOT = { tag = ROOT } # We are allied with ourselves
+                OR = {
+                    is_ally_with = ROOT
+                    has_war_together_with = ROOT
+                }
+            }
+            ROOT.FROM.FROM.FROM = {
+                is_core_of = ROOT.FROM
+                NOT = { is_core_of = ROOT }
+            }
+        }
+        ai_desire = -200
+    }
+
+
+    do_grab_stuff_near_us = {
+        peace_action_type = take_states
+        enable = {
+            ROOT.FROM.FROM.FROM = {
+                OR = {
+                    any_neighbor_state = {
+                        OR = {
+                            is_owned_by = ROOT.FROM
+                        }
+                    }
+                    is_claimed_by = ROOT.FROM
+                }
+            }
+            ROOT = {
+                tag = ROOT.FROM
+            }
+        }
+        ai_desire = 10
+    }
+
+
+    dont_puppet = {
+        peace_action_type = { puppet }
+
+        enable = {
+            always = yes
+        }
+        ai_desire = -200
+    }
+
+    dont_forve_govt = {
+        peace_action_type = force_government
+        enable = {
+        always = yes
+        }
+        ai_desire = -200
+    }
+
+
+    prefer_take_states_for_puppets_with_cores = {
+        peace_action_type = take_states
+        enable = {
+            ROOT.FROM = {
+                is_subject_of = ROOT
+                has_civil_war = yes
+            }
+            ROOT.FROM.FROM.FROM = {
+                is_core_of = ROOT.FROM
+            }
+        }
+        ai_desire = 100
+    }
+
+	return_puppet_cores = { #This simply has to be the highest priority.
+		peace_action_type = take_states
+		enable = {
+			ROOT.FROM = {
+				OR = {
+					is_subject_of = ROOT
+					AND = {
+						pc_is_puppeted_by = ROOT
+						NOT = { original_tag = GER } #This messes with yalta too much.
+					}
+				}
+			}
+			ROOT.FROM.FROM.FROM = {
+				is_core_of = ROOT.FROM
+				NOT = { is_core_of = ROOT }
+			}
+		}
+		ai_desire = 70 #Acceptable values
+	}
+
+
+}
