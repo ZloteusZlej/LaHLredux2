@@ -523,3 +523,49 @@ maximum_fort_level = {
 
 
 # Long_and_Happy_Life
+
+enable_mtg_ships = {
+	name = "RULE_MTG_SHIPS"
+	group = "RULE_GROUP_MODULAR_TECHNOLOGIES"
+	icon = "GFX_lend_lease"
+	default = {
+		name = "ALLOW_MTG_SHIPS"
+		text = "RULE_OPTION_ALLOW_MTG_SHIPS"
+		desc = "RULE_ALLOW_MTG_SHIPS_DESC"
+	}
+	option = {
+		name = "BAN_MTG_SHIPS"
+		text = "RULE_OPTION_BAN_MTG_SHIPS"
+		desc = "RULE_BAN_MTG_SHIPS_DESC"
+	}
+}
+enable_bba_planes = {
+	name = "RULE_BBA_PLANES"
+	group = "RULE_GROUP_MODULAR_TECHNOLOGIES"
+	icon = "GFX_lend_lease"
+	option = {
+		name = "ALLOW_RULE_BBA_PLANES"
+		text = "RULE_OPTION_ALLOW_RULE_BBA_PLANES"
+		desc = "RULE_ALLOW_RULE_BBA_PLANES_DESC"
+	}
+	default = {
+		name = "BAN_RULE_BBA_PLANES"
+		text = "RULE_OPTION_BAN_RULE_BBA_PLANES"
+		desc = "RULE_BAN_RULE_BBA_PLANES_DESC"
+	}
+}
+enable_nsb_tanks = {
+	name = "RULE_NSB_TANKS"
+	group = "RULE_GROUP_MODULAR_TECHNOLOGIES"
+	icon = "GFX_lend_lease"
+	option = {
+		name = "ALLOW_NSB_TANKS"
+		text = "RULE_OPTION_ALLOW_NSB_TANKS"
+		desc = "RULE_ALLOW_NSB_TANKS_DESC"
+	}
+	default = {
+		name = "BAN_NSB_TANKS"
+		text = "RULE_OPTION_BAN_NSB_TANKS"
+		desc = "RULE_BAN_NSB_TANKS_DESC"
+	}
+}
