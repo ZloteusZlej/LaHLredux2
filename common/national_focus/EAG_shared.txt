@@ -56,15 +56,17 @@ shared_focus = {
 	icon = GFX_goal_EAG_american_relicts
 	cost = 4.3
 	completion_reward = {
-		add_equipment_to_stockpile = {
-			type = fighter_equipment
-			amount = 10
-			producer = EAG
-		}
-		add_equipment_to_stockpile = {
-			type = CAS_equipment
-			amount = 15
-			producer = EAG
+		EAG = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 10
+				producer = EAG
+			}
+			add_equipment_to_stockpile = {
+				type = CAS_equipment
+				amount = 15
+				producer = EAG
+			}
 		}
 	}
 	prerequisite = {
