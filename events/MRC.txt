@@ -35,7 +35,7 @@ country_event = {
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
-			stics_skill = 1
+			logistics_skill = 1
 		}
 		create_corps_commander = {
 			name = "General Kogda"
@@ -45,7 +45,7 @@ country_event = {
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
-			stics_skill = 1
+			logistics_skill = 1
 		}
 	}
 }
@@ -69,7 +69,7 @@ country_event = {
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
-			stics_skill = 1
+			logistics_skill = 1
 		}
 	}
 	option = {
@@ -84,7 +84,7 @@ country_event = {
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
-			stics_skill = 1
+			logistics_skill = 1
 		}
 	}
 }
@@ -114,7 +114,7 @@ country_event = {
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
-			stics_skill = 1
+			logistics_skill = 1
 		}
 		create_corps_commander = {
 			name = "General Plokhoy"
@@ -124,7 +124,7 @@ country_event = {
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
-			stics_skill = 1
+			logistics_skill = 1
 		}
 	}
 }
@@ -148,7 +148,7 @@ country_event = {
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
-			stics_skill = 1
+			logistics_skill = 1
 		}
 	}
 	option = {
@@ -183,7 +183,7 @@ country_event = {
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
-			stics_skill = 1
+			logistics_skill = 1
 		}
 		create_corps_commander = {
 			name = "General Zaebalsya"
@@ -193,7 +193,7 @@ country_event = {
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
-			stics_skill = 1
+			logistics_skill = 1
 		}
 	}	
 	option = {
@@ -283,7 +283,7 @@ country_event = {
 	id = MRC_event.11
 	title = MRC_event.11.t
 	desc = MRC_event.11.d
-	picture = 
+	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -333,7 +333,9 @@ country_event = {
 		name = MRC_event.13.a
 		if = {
 			limit = { 
-				check_variable { pearce_trust > 80 } 
+				check_variable = { 
+					pearce_trust > 80 
+				}
 			}
 			retire_country_leader = yes
 			create_country_leader = {
@@ -385,7 +387,7 @@ country_event = {
 	id = MRC_event.16
 	title = MRC_event.16.t
 	desc = MRC_event.16.d
-	picture =
+	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -398,7 +400,7 @@ country_event = {
 	id = MRC_event.18
 	title = MRC_event.18.t
 	desc = MRC_event.18.d
-	picture =
+	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -427,7 +429,7 @@ country_event = {
 	id = MRC_event.17
 	title = MRC_event.17.t
 	desc = MRC_event.17.d
-	picture =
+	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -435,20 +437,25 @@ country_event = {
 		add_tech_bonus = {
 			bonus = 0.5
 			uses = 2
-			category = armoured_personnel_carrier_equipment, infantry_fighting_vehicle_equipment
+			category = motorized_equipment
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cat_mechanized_equipment
 		}
 
 		division_template = {
 			name = "Luther's Infantry Fighting Vehicle"
 			priority = 1
 			is_locked = yes
-			division_names_group = MRC_IFV_01
+			division_names_group = MRC_INF_01
 			regiments = {
-				infantry_fighting_vehicle = { x = 0 y = 0 }
-				infantry_fighting_vehicle = { x = 0 y = 1 }
-				infantry_fighting_vehicle = { x = 0 y = 2 }
-				infantry_fighting_vehicle = { x = 0 y = 3 }
-				infantry_fighting_vehicle = { x = 0 y = 4 }
+				IFV = { x = 0 y = 0 }
+				IFV = { x = 0 y = 1 }
+				IFV = { x = 0 y = 2 }
+				IFV = { x = 0 y = 3 }
+				IFV = { x = 0 y = 4 }
 			}
 		}
 		
@@ -456,17 +463,15 @@ country_event = {
 			division = "name = \"Luther's Armored Boyz\" 
 			division_template = \"Luther's Infantry Fighting Vehicle\" 
 			start_experience_factor = 1 
-			start_equipment_factor = 1 
-			start_manpower_factor = 1"
+			start_equipment_factor = 1"
 			owner = MRC
 		}	
 		
-			create_unit = {
+		create_unit = {
 			division = "name = \"Luther's Armored Guyz\" 
 			division_template = \"Luther's Infantry Fighting Vehicle\" 
 			start_experience_factor = 1 
-			start_equipment_factor = 1 
-			start_manpower_factor = 1
+			start_equipment_factor = 1" 
 			owner = MRC
 		}	
 	}
@@ -481,7 +486,7 @@ country_event = {
 			name = "Luther's Armored Cars"
 			priority = 1
 			is_locked = yes
-			division_names_group = MRC_AC_01
+			division_names_group = MRC_INF_01
 			regiments = {
 				armored_car = { x = 0 y = 0 }
 				armored_car = { x = 0 y = 1 }
@@ -493,32 +498,28 @@ country_event = {
 			division = "name = \"Armored Cars Division\" 
 			division_template = \"Luther's Armored Cars\" 
 			start_experience_factor = 1 
-			start_equipment_factor = 1 
-			start_manpower_factor = 1
+			start_equipment_factor = 1"
 			owner = MRC
 		}
 		create_unit = {
 			division = "name = \"Armored Cars Division\" 
 			division_template = \"Luther's Armored Cars\" 
 			start_experience_factor = 1 
-			start_equipment_factor = 1 
-			start_manpower_factor = 1"
+			start_equipment_factor = 1"
 			owner = MRC
 		}
 		create_unit = {
 			division = "name = \"Armored Cars Division\" 
 			division_template = \"Luther's Armored Cars\" 
 			start_experience_factor = 1 
-			start_equipment_factor = 1 
-			start_manpower_factor = 1
+			start_equipment_factor = 1"
 			owner = MRC
 		}
 		create_unit = {
 			division = "name = \"Armored Cars Division\" 
 			division_template = \"Luther's Armored Cars\" 
 			start_experience_factor = 1 
-			start_equipment_factor = 1 
-			start_manpower_factor = 1
+			start_equipment_factor = 1"
 			owner = MRC
 		}
 	}
@@ -530,10 +531,10 @@ country_event = {
 			category = armor
 		}
 		division_template = {
-			name = "Luther's Tank Division\"
+			name = "Luther's Tank Division"
 			priority = 1
 			is_locked = yes
-			division_names_group = MRC_MBT_01
+			division_names_group = MRC_INF_01
 			regiments = {
 				MBT = { x = 0 y = 0 }
 				MBT = { x = 0 y = 1 }
@@ -549,38 +550,8 @@ country_event = {
 			division = "name = \"Luther's Tankz\" 
 			division_template = \"Luther's Tank Division\" 
 			start_experience_factor = 1 
-			start_equipment_factor = 1 
-			start_manpower_factor = 1
+			start_equipment_factor = 1"
 			owner = MRC
-		}
-	}
-}
-
-country_event = {
-	id = MRC_event.18
-	title = MRC_event.18.t
-	desc = MRC_event.18.d
-	picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = MRC_event.18.a
-		add_ideas = MRC_Spirit_Of_Neofolk
-	}
-	option = {
-		name = MRC_event.18.b
-		add_ideas = MRC_Rage_Of_Neofolk
-	}
-	option = {
-		name = MRC_event.18.с
-		add_ideas = MRC_Sound_Of_Neofolk
-	}
-	option = {
-		name = MRC_event.18.e
-		add_tech_bonus = {
-			bonus = 1
-			uses = 3
-			category = electronic_mechanical_engineering
 		}
 	}
 }
@@ -589,7 +560,7 @@ country_event = {
 	id = MRC_event.19
 	title = MRC_event.19.t
 	desc = MRC_event.19.d
-	picture =
+	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -609,6 +580,7 @@ country_event = {
 		country_event = {
 			days = 0
 			id = MRC_event.20
+		}
 	}	
 }
 
@@ -616,7 +588,7 @@ country_event = {
 	id = MRC_event.20
 	title = MRC_event.20.t
 	desc = MRC_event.20.d
-	picture =
+	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -665,7 +637,7 @@ country_event = {
 				division_template = \"Luther's Infantry\" 
 				start_experience_factor = 1 
 				start_equipment_factor = 1 
-				start_manpower_factor = 1
+				start_manpower_factor = 1"
 				owner = MRC
 			}
 			create_unit = {
@@ -673,7 +645,7 @@ country_event = {
 				division_template = \"Luther's Infantry\" 
 				start_experience_factor = 1 
 				start_equipment_factor = 1 
-				start_manpower_factor = 1
+				start_manpower_factor = 1"
 				owner = MRC
 			}
 			create_unit = {
@@ -681,7 +653,7 @@ country_event = {
 				division_template = \"Luther's Infantry\" 
 				start_experience_factor = 1 
 				start_equipment_factor = 1 
-				start_manpower_factor = 1
+				start_manpower_factor = 1"
 				owner = MRC
 			}
 			country_event = {
@@ -765,7 +737,7 @@ country_event = {
 				division_template = \"Luther's Infantry\" 
 				start_experience_factor = 1 
 				start_equipment_factor = 1 
-				start_manpower_factor = 1
+				start_manpower_factor = 1"
 				owner = MRC
 			}	
 			create_unit = {
@@ -773,7 +745,7 @@ country_event = {
 				division_template = \"Luther's Infantry\" 
 				start_experience_factor = 1 
 				start_equipment_factor = 1 
-				start_manpower_factor = 1
+				start_manpower_factor = 1"
 				owner = MRC
 			}	
 			create_unit = {
@@ -781,7 +753,7 @@ country_event = {
 				division_template = \"Luther's Infantry\" 
 				start_experience_factor = 1 
 				start_equipment_factor = 1 
-				start_manpower_factor = 1
+				start_manpower_factor = 1"
 				owner = MRC
 			}
 			country_event = {

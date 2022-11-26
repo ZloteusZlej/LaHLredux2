@@ -257,6 +257,20 @@ characters={
 		}
 		advisor = {
 			cost = 120
+			slot = political_advisor
+			idea_token = MRC_ronald_hutton
+			traits = {
+			
+			}
+			allowed = {
+				original_tag = MRC
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+		advisor = {
+			cost = 120
 			slot = head_of_government
 			idea_token = MRC_ronald_hutton
 			traits = {
@@ -361,30 +375,7 @@ characters={
 				factor  = 1.000
 			}
 	    }
-	}	
-	MRC_ronald_hutton = {
-		name="Ronald Hutton"
-		portraits={
-			civilian={
-				small = "gfx/interface/ideas/MRC/idea_MRC_ronald_hutton.dds"
-				
-			}
-		}
-		advisor = {
-			cost = 120
-			slot = political_advisor
-			idea_token = MRC_ronald_hutton
-			traits = {
-			
-			}
-			allowed = {
-				original_tag = MRC
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-	    }
-	}	
+	}		
 	MRC_boyd_rice = {
 		name="Boyd Rice"
 		portraits={
