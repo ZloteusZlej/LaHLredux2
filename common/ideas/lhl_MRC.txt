@@ -40,17 +40,17 @@ country = {
 			removal_cost = -1
 			picture = GFX
 			equipment_bonus = {
-				MBT = {
+				main_battle_tank_equipment  = {
 					hard_attack = 0.02
 					soft_attack = 0.02
 					instant = yes
 				}
-				IFV = {
+				infantry_fighting_vehicle_equipment = {
 					hard_attack = 0.02
 					soft_attack = 0.02
 					instant = yes
 				}
-				APC = {
+				armoured_personnel_carrier_equipment  = {
 					hard_attack = 0.02
 					soft_attack = 0.02
 					instant = yes
@@ -71,17 +71,17 @@ country = {
 				army_morale_factor = 0.05
 			}
 			equipment_bonus = {
-				MBT = {
+				main_battle_tank_equipment  = {
 					hard_attack = 0.02
 					soft_attack = 0.02
 					instant = yes
 				}
-				IFV = {
+				infantry_fighting_vehicle_equipment = {
 					hard_attack = 0.02
 					soft_attack = 0.02
 					instant = yes
 				}
-				APC = {
+				armoured_personnel_carrier_equipment  = {
 					hard_attack = 0.02
 					soft_attack = 0.02
 					instant = yes
@@ -249,10 +249,8 @@ country = {
 				}
 			}
 			
-			modifier = {
-				research_bonus = {
-					motorized_equipment = 0.1
-				}
+			research_bonus = {
+				motorized_equipment = 0.1
 			}
 		}
 	}
@@ -306,10 +304,8 @@ country = {
 				}
 			}
 			
-			modifier = {
-				research_bonus = {
-					light_air = 0.1
-				}
+			research_bonus = {
+				light_air = 0.1
 			}
 		}
 	}
