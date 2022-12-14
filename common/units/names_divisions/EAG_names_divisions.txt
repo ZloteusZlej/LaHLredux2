@@ -1,6 +1,6 @@
 ﻿EAG_INF_01 = 
 {
-	name = "Englische Milizia"
+	name = "English Militia"
 
 	for_countries = { EAG }
 
@@ -8,19 +8,19 @@
 
 	division_types = { "infantry" }
 
-	fallback_name = "%d. Milizia"
+	fallback_name = "%d. Militia"
 
 	ordered =
 	{
-		1 = { "Englische Milizia" }
-		2 = { "Englische Milizia" }
-		3 = { "Englische Milizia" }
+		1 = { "English Militia" }
+		2 = { "English Militia" }
+		3 = { "English Militia" }
 		
 	}
 }
 EAG_INF_02 = 
 {
-	name = "Deutsch Korps"
+	name = "Peacekeeping Brigades"
 
 	for_countries = { EAG }
 
@@ -28,12 +28,12 @@ EAG_INF_02 =
 
 	division_types = { "infantry" }
 
-	fallback_name = "%d. Korps"
+	fallback_name = "%d. Peacekeepers Brigade"
 
 	ordered =
 	{
-		1 = { "Befriedungsbrigade" }
-		2 = { "Befriedungsbrigade" }
+		1 = { "%d Peacekeepers Brigade" }
+		2 = { "%d Peacekeepers Brigade" }
 				
 	}
 }
@@ -41,7 +41,7 @@ EAG_INF_02 =
 
 EAG_ARM_01 = 
 {
-	name = "Deutsch Panzer Divisions"
+	name = "Expeditionary Armoured Divisions"
 
 	for_countries = { EAG }
 
@@ -49,14 +49,14 @@ EAG_ARM_01 =
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
-	fallback_name = "%d. Panzer-Division"
+	fallback_name = "%d. Armoured Division"
 
 	ordered =
 	{
-		1 = { "%d Panzer-Division" }
-		2 = { "%d Panzer-Division" }
-		3 = { "%d Panzer-Division" }
-		4 = { "%d Panzer-Division" }
+		1 = { "%d Armoured Division" }
+		2 = { "%d Armoured Division" }
+		3 = { "%d Armoured Division" }
+		4 = { "%d Armoured Division" }
 				
 	}
 }
