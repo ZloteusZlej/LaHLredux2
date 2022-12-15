@@ -41,6 +41,31 @@ technologies = {
 		}
 	}
 	
+	hypersonic_engine = {
+		
+		start_year = 2027
+		research_cost = 3
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "2027.1.3"
+			}
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
 	helicopter_engines = {
 		
 		start_year = 1945
@@ -268,10 +293,55 @@ technologies = {
 		
 		folder = {
 			name = air_techs_folder
-			position = { x = -6 y = 12 }
+			position = { x = -6 y = 14 }
 		}
 		enable_equipments = {
 		   CAS_equipment_4
+		}
+		
+		dependencies = {
+			hypersonic_engine = 1
+		}
+		
+		path = {
+			leads_to_tech = cas_5
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "2020.1.3"
+			}
+			modifier = {
+				factor = 10
+				date > "2025.1.3"
+			}
+		}
+	}
+	
+	cas_5 = {
+		
+		research_cost = 2
+		start_year = 2025
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = -6 y = 16 }
+		}
+		enable_equipments = {
+		   CAS_equipment_5
+		}
+		
+		dependencies = {
+			hypersonic_engine = 1
 		}
 		
 		categories = {
@@ -395,10 +465,55 @@ technologies = {
 		
 		folder = {
 			name = air_techs_folder
-			position = { x = -2 y = 12 }
+			position = { x = -2 y = 14 }
 		}
 		enable_equipments = {
 		   tac_bomber_equipment_4
+		}
+		
+		dependencies = {
+			hypersonic_engine = 1
+		}
+		
+		path = {
+			leads_to_tech = tactical_5
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "2022.1.3"
+			}
+			modifier = {
+				factor = 10
+				date > "2023.1.3"
+			}
+		}
+	}
+	
+	tactical_5 = {
+		
+		research_cost = 2
+		start_year = 2025
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = -2 y = 16 }
+		}
+		enable_equipments = {
+		   tac_bomber_equipment_5
+		}
+		
+		dependencies = {
+			hypersonic_engine = 1
 		}
 		
 		categories = {
@@ -526,10 +641,55 @@ technologies = {
 		
 		folder = {
 			name = air_techs_folder
-			position = { x = 2 y = 12 }
+			position = { x = 2 y = 14 }
 		}
 		enable_equipments = {
 		   fighter_equipment_4
+		}
+		
+		dependencies = {
+			hypersonic_engine = 1
+		}
+		
+		path = {
+			leads_to_tech = fighter_5
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "2022.1.3"
+			}
+			modifier = {
+				factor = 10
+				date > "2023.1.3"
+			}
+		}
+	}
+	
+	fighter_5 = {
+		
+		research_cost = 2
+		start_year = 2025
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = 16 }
+		}
+		enable_equipments = {
+		   fighter_equipment_5
+		}
+		
+		dependencies = {
+			hypersonic_engine = 1
 		}
 		
 		categories = {
@@ -653,10 +813,47 @@ technologies = {
 		
 		folder = {
 			name = air_techs_folder
-			position = { x = 6 y = 12 }
+			position = { x = 6 y = 14 }
 		}
 		enable_equipments = {
 		   strat_bomber_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = bomber_5
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "2022.1.3"
+			}
+			modifier = {
+				factor = 10
+				date > "2023.1.3"
+			}
+		}
+	}
+	
+	bomber_5 = {
+		
+		research_cost = 2.5
+		start_year = 2025
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 6 y = 16 }
+		}
+		enable_equipments = {
+		   strat_bomber_equipment_5
 		}
 		
 		categories = {
@@ -795,7 +992,7 @@ technologies = {
 		
 		folder = {
 			name = air_techs_folder
-			position = { x = 10 y = 10 }
+			position = { x = 10 y = 12 }
 		}
 		enable_equipments = {
 			attack_helicopter_equipment_2
@@ -827,7 +1024,7 @@ technologies = {
 		
 		folder = {
 			name = air_techs_folder
-			position = { x = 10 y = 12 }
+			position = { x = 10 y = 16 }
 		}
 		enable_equipments = {
 			attack_helicopter_equipment_3
@@ -885,6 +1082,7 @@ technologies = {
 		}	
 
 		path = {
+			leads_to_tech = tech_transport_helicopters_2
 			research_cost_coeff = 1
 		}
 		
@@ -908,7 +1106,112 @@ technologies = {
 		categories = {
 			jet_technology
 		}
-	}	
+	}
+
+	tech_transport_helicopters_2 = {
+	
+		land_reinforce_rate = 0.05
+		
+		enable_equipments = {
+			transport_helicopters_equipment_2
+		}	
+
+		path = {
+			leads_to_tech = tech_transport_helicopters_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1980
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 14 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+		
+		categories = {
+			jet_technology
+		}
+	}
+
+	tech_transport_helicopters_3 = {
+	
+		land_reinforce_rate = 0.05
+		
+		enable_equipments = {
+			transport_helicopters_equipment_3
+		}	
+
+		path = {
+			leads_to_tech = tech_transport_helicopters_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1980
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 14 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+		
+		categories = {
+			jet_technology
+		}
+	}
+
+	tech_transport_helicopters_4 = {
+	
+		land_reinforce_rate = 0.05
+		
+		enable_equipments = {
+			transport_helicopters_equipment_4
+		}	
+
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1980
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 14 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+		
+		categories = {
+			jet_technology
+		}
+	}
+	
 }
 
 

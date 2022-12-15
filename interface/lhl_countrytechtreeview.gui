@@ -223,6 +223,13 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
+			##Fuel##
+			gridboxtype = {
+				name = "normal_fuel_tree"
+				position = { x = 2250 y = 750 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 			##Static Upgrades##
 			gridboxtype = {
 				name = "biofuel_tree"
@@ -263,6 +270,18 @@ guiTypes = {
 			gridboxtype = {
 				name = "supersoldier_rations_tree"
 				position = { x = 825 y = 750 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			gridboxtype = {
+				name = "concrete_armor_tree"
+				position = { x = 925 y = 750 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			gridboxtype = {
+				name = "active_denial_system_tree"
+				position = { x = 150 y = 875 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
@@ -3048,6 +3067,18 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
+			
+			containerWindowType = {
+				name = "tiled_research_bg"
+				position = { x=195 y=800 }
+				size = { width = 800 height = 450 }
+				clipping = no
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_research_bg"
+				}
+			}
 
 			containerWindowType = {
 				name = "techtree_stripes"
@@ -3347,6 +3378,14 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "jet_engines_tree"
+				position = { x = 540 y = 0 }
+				size = { width = 400 height = 400 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "hypersonic_engine_tree"
 				position = { x = 540 y = 0 }
 				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }

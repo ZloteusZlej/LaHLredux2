@@ -705,6 +705,10 @@ technologies = {
 			modern_heavy_tank_equipment_1
 		}
 		
+		enable_subunits = {
+			modern_heavy_tank
+		}
+		
 		dependencies = {
 			modern_heavy_tank = 1
 		}
@@ -729,6 +733,10 @@ technologies = {
 	
 		enable_equipments = {
 			modern_light_tank_equipment_1
+		}
+		
+		enable_subunits = {
+			modern_light_tank
 		}
 		
 		dependencies = {
@@ -757,6 +765,10 @@ technologies = {
 			modern_helicopter_tank_equipment_1
 		}
 		
+		enable_subunits = {
+			modern_helicopter_tank
+		}
+		
 		dependencies = {
 			modern_helicopter_tank = 1
 		}
@@ -783,6 +795,10 @@ technologies = {
 			modern_railgun_tank_equipment_1
 		}
 		
+		enable_subunits = {
+			modern_railgun_tank
+		}
+		
 		dependencies = {
 			modern_railgun_tank = 1
 		}
@@ -803,4 +819,316 @@ technologies = {
 			armor
 		}
 	}
+	
+	normal_fuel = {
+		start_year = 2020
+		
+		path = {
+			leads_to_tech = classic_combustion_engine
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = atomic_engine
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = biofuel_engine
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = electric_engine
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = classic_combustion_engine
+			research_cost_coeff = 1
+		}
+		
+		dependencies = {
+			normal_fuel = 1
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = spectech_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			construction_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+    }
+	
+	classic_combustion_engine = {
+		start_year = 2020
+		
+		motorized = {
+			maximum_speed = 0.01
+		}
+		
+		mechanized = {
+			maximum_speed = 0.01
+		}	
+		
+		path = {
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			classic_combustion_engine = 1
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = spectech_folder
+			position = { x = 2 y = -4 }
+		}
+		
+		categories = {
+			construction_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+    }
+	
+	atomic_engine = {
+		start_year = 2020
+		
+		motorized = {
+			maximum_speed = -0.1
+			reliability = 0.1
+			fuel_consumption = -0.1
+		}
+		
+		mechanized = {
+			maximum_speed = -0.1
+			reliability = 0.1
+			fuel_consumption = -0.1
+		}	
+		
+		armor = {
+			maximum_speed = -0.1
+			reliability = 0.1
+			fuel_consumption = -0.1
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			atomic_engine = 1
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = spectech_folder
+			position = { x = 2 y = -2 }
+		}
+		
+		categories = {
+			construction_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+    }
+	
+	biofuel_engine = {
+		start_year = 2020
+		
+		fuel_cost = -200
+		stability_factor = -0.05
+		monthly_population = -0.1
+		
+		MBT = {
+			maximum_speed = -0.05
+			fuel_consumption = -0.15
+		}
+		
+		IFV = {
+			maximum_speed = -0.05
+			fuel_consumption = -0.15
+		}	
+		
+		APC = {
+			maximum_speed = -0.05
+			fuel_consumption = -0.15
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			biofuel_engine = 1
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = spectech_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		categories = {
+			construction_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+    }
+	
+	electric_engine = {
+		start_year = 2020
+		
+		fuel_cost = -250
+		
+		motorized = {
+			maximum_speed = 0.1
+			fuel_consumption = -0.3
+		}
+		
+		mechanized = {
+			maximum_speed = 0.1
+			fuel_consumption = -0.3
+		}	
+		
+		armor = {
+			maximum_speed = 0.1
+			fuel_consumption = -0.3
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			electric_engine = 1
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = spectech_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		categories = {
+			construction_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+    }
+	
+	concrete_armor = {
+		start_year = 2020
+		
+		MBT = {
+			armor_value = 0.1
+		}
+		
+		production_speed_buildings_factor = -0.07 
+		
+		path = {
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			concrete_armor = 1
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = spectech_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			air_doctrine
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+    }
+	
+	active_denial_system = {
+		start_year = 2020
+		
+		military_police = {
+			suppression_factor = 0.3
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			active_denial_system = 1
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = spectech_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			air_doctrine
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+    }
+	
+	modern_gunship = {
+
+		enable_equipments = {
+			modern_gunship_equipment_1
+		}
+		
+		enable_subunits = {
+			modern_gunship
+		}
+		
+		start_year = 2020
+
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		dependencies = {
+			modern_gunship = 1
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = spectech_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+    }
 }
