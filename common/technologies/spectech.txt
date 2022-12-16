@@ -820,36 +820,34 @@ technologies = {
 		}
 	}
 	
-	normal_fuel = {
+	classic_combustion_engine = {
 		start_year = 2020
 		
-		path = {
-			leads_to_tech = classic_combustion_engine
-			research_cost_coeff = 1
+		XOR = {
+			electric_engine
+			biofuel_engine
+			atomic_engine
 		}
 		
-		path = {
-			leads_to_tech = atomic_engine
-			research_cost_coeff = 1
+		MBT = {
+			maximum_speed = 0.05
 		}
 		
-		path = {
-			leads_to_tech = biofuel_engine
-			research_cost_coeff = 1
-		}
+		APC = {
+			maximum_speed = 0.05
+		}	
+		
+		APC = {
+			maximum_speed = 0.05
+		}	
+		
+		army_fuel_consumption_factor = 0.1
 		
 		path = {
-			leads_to_tech = electric_engine
 			research_cost_coeff = 1
 		}
-		
-		path = {
-			leads_to_tech = classic_combustion_engine
-			research_cost_coeff = 1
-		}
-		
 		dependencies = {
-			normal_fuel = 1
+			classic_combustion_engine = 1
 		}
 		
 		research_cost = 1.5
@@ -868,60 +866,31 @@ technologies = {
 		}
     }
 	
-	classic_combustion_engine = {
-		start_year = 2020
-		
-		motorized = {
-			maximum_speed = 0.01
-		}
-		
-		mechanized = {
-			maximum_speed = 0.01
-		}	
-		
-		path = {
-			research_cost_coeff = 1
-		}
-		dependencies = {
-			classic_combustion_engine = 1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = spectech_folder
-			position = { x = 2 y = -4 }
-		}
-		
-		categories = {
-			construction_tech
-		}
-		
-		ai_will_do = {
-			factor = 2
-		}
-    }
-	
 	atomic_engine = {
 		start_year = 2020
 		
-		motorized = {
-			maximum_speed = -0.1
-			reliability = 0.1
-			fuel_consumption = -0.1
+		XOR = {
+			electric_engine
+			biofuel_engine
+			classic_combustion_engine
 		}
 		
-		mechanized = {
-			maximum_speed = -0.1
-			reliability = 0.1
-			fuel_consumption = -0.1
+		MBT = {
+			maximum_speed = 0.1
+			reliability = -0.15
+		}
+		
+		APC = {
+			maximum_speed = 0.1
+			reliability = -0.15
 		}	
 		
-		armor = {
-			maximum_speed = -0.1
-			reliability = 0.1
-			fuel_consumption = -0.1
+		IFV = {
+			maximum_speed = 0.1
+			reliability = -0.15
 		}
+		
+		army_fuel_consumption_factor = 0.05
 		
 		path = {
 			research_cost_coeff = 1
@@ -934,7 +903,7 @@ technologies = {
 		
 		folder = {
 			name = spectech_folder
-			position = { x = 2 y = -2 }
+			position = { x = 0 y = 0 }
 		}
 		
 		categories = {
@@ -949,24 +918,30 @@ technologies = {
 	biofuel_engine = {
 		start_year = 2020
 		
-		fuel_cost = -200
-		stability_factor = -0.05
-		monthly_population = -0.1
+		XOR = {
+			electric_engine
+			atomic_engine
+			classic_combustion_engine
+		}
 		
 		MBT = {
-			maximum_speed = -0.05
+			maximum_speed = 0.02
 			fuel_consumption = -0.15
 		}
 		
-		IFV = {
-			maximum_speed = -0.05
+		APC = {
+			maximum_speed = 0.02
 			fuel_consumption = -0.15
 		}	
 		
-		APC = {
-			maximum_speed = -0.05
+		IFV = {
+			maximum_speed = 0.02
 			fuel_consumption = -0.15
 		}
+		
+		army_fuel_consumption_factor = -0.05
+		stability_factor = -0.05
+		monthly_population = -0.1
 		
 		path = {
 			research_cost_coeff = 1
@@ -979,7 +954,7 @@ technologies = {
 		
 		folder = {
 			name = spectech_folder
-			position = { x = 2 y = 2 }
+			position = { x = 0 y = 0 }
 		}
 		
 		categories = {
@@ -996,20 +971,25 @@ technologies = {
 		
 		fuel_cost = -250
 		
-		motorized = {
-			maximum_speed = 0.1
+		XOR = {
+			biofuel_engine
+			atomic_engine
+			classic_combustion_engine
+		}
+		
+		MBT = {
 			fuel_consumption = -0.3
 		}
 		
-		mechanized = {
-			maximum_speed = 0.1
+		APC = {
 			fuel_consumption = -0.3
 		}	
 		
-		armor = {
-			maximum_speed = 0.1
+		IFV = {
 			fuel_consumption = -0.3
 		}
+		
+		army_fuel_consumption_factor = -0.1
 		
 		path = {
 			research_cost_coeff = 1
@@ -1022,7 +1002,7 @@ technologies = {
 		
 		folder = {
 			name = spectech_folder
-			position = { x = 2 y = 4 }
+			position = { x = 0 y = 0 }
 		}
 		
 		categories = {
