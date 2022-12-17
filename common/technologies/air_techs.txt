@@ -206,8 +206,8 @@ technologies = {
 		
 		sub_technologies = {
 			stealth_cas_1
+			cv_cas_1
 		}
-		
 		path = {
 			leads_to_tech = cas_2
 			research_cost_coeff = 1
@@ -241,6 +241,7 @@ technologies = {
 		
 		sub_technologies = {
 			stealth_cas_2
+			cv_cas_2
 		}
 		
 		path = {
@@ -277,6 +278,7 @@ technologies = {
 		
 		sub_technologies = {
 			stealth_cas_3
+			cv_cas_3
 		}
 		
 		path = {
@@ -313,6 +315,7 @@ technologies = {
 		
 		sub_technologies = {
 			stealth_cas_4
+			cv_cas_4
 		}
 		
 		dependencies = {
@@ -358,6 +361,7 @@ technologies = {
 		
 		sub_technologies = {
 			stealth_cas_5
+			cv_cas_5
 		}
 		
 		dependencies = {
@@ -398,6 +402,7 @@ technologies = {
 		
 		sub_technologies = {
 			stealth_tactical_1
+			cv_tactical_1
 		}
 		
 		path = {
@@ -433,6 +438,7 @@ technologies = {
 		
 		sub_technologies = {
 			stealth_tactical_2
+			cv_tactical_2
 		}
 		
 		path = {
@@ -469,6 +475,7 @@ technologies = {
 		
 		sub_technologies = {
 			stealth_tactical_3
+			cv_tactical_3
 		}
 		
 		path = {
@@ -505,6 +512,7 @@ technologies = {
 		
 		sub_technologies = {
 			stealth_tactical_4
+			cv_tactical_4
 		}
 		
 		dependencies = {
@@ -550,6 +558,7 @@ technologies = {
 		
 		sub_technologies = {
 			stealth_tactical_5
+			cv_tactical_5
 		}
 		
 		dependencies = {
@@ -590,6 +599,7 @@ technologies = {
 		
 		sub_technologies = {
 			stealth_fighter_1
+			cv_fighter_1
 		}
 		
 		path = {
@@ -625,6 +635,7 @@ technologies = {
 		
 		sub_technologies = {
 			stealth_fighter_2
+			cv_fighter_2
 		}
 		
 		path = {
@@ -661,6 +672,7 @@ technologies = {
 		
 		sub_technologies = {
 			stealth_fighter_3
+			cv_fighter_3
 		}
 		
 		path = {
@@ -697,6 +709,7 @@ technologies = {
 		
 		sub_technologies = {
 			stealth_fighter_4
+			cv_fighter_4
 		}
 		
 		dependencies = {
@@ -742,6 +755,7 @@ technologies = {
 		
 		sub_technologies = {
 			stealth_fighter_5
+			cv_fighter_5
 		}
 		
 		dependencies = {
@@ -1789,6 +1803,388 @@ technologies = {
 		
 		categories = {
 			jet_technology
+		}
+	}
+	
+	##Aircraft Carrier Planes##
+	cv_cas_1 = {
+		
+		research_cost = 2
+		start_year = 1980
+
+		enable_equipments = {
+		   cv_CAS_equipment_1
+		}
+
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+	}
+	cv_cas_2 = {
+		
+		research_cost = 2
+		start_year = 1980
+
+		enable_equipments = {
+		   cv_CAS_equipment_2
+		}
+
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+	}
+	cv_cas_3 = {
+		
+		research_cost = 2
+		start_year = 1980
+
+		enable_equipments = {
+		   cv_CAS_equipment_3
+		}
+
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+	}
+	cv_cas_4 = {
+		
+		research_cost = 2
+		start_year = 1980
+
+		enable_equipments = {
+		   cv_CAS_equipment_4
+		}
+		
+		dependencies = {
+			hypersonic_engine = 1
+		}
+
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+	}
+	
+	cv_cas_5 = {
+		
+		research_cost = 2
+		start_year = 1980
+
+		enable_equipments = {
+		   cv_CAS_equipment_5
+		}
+		
+		dependencies = {
+			hypersonic_engine = 1
+		}
+
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+	}
+	
+	cv_tactical_1 = {
+		
+		research_cost = 2
+		start_year = 1980
+
+		enable_equipments = {
+		   cv_tac_bomber_equipment_1
+		}
+
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+	}
+	
+	cv_tactical_2 = {
+		
+		research_cost = 2
+		start_year = 1980
+
+		enable_equipments = {
+		   cv_tac_bomber_equipment_2
+		}
+
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+	}
+	
+	cv_tactical_3 = {
+		
+		research_cost = 2
+		start_year = 1980
+
+		enable_equipments = {
+		   cv_tac_bomber_equipment_3
+		}
+
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+	}
+	
+	cv_tactical_4 = {
+		
+		research_cost = 2
+		start_year = 1980
+
+		enable_equipments = {
+		   cv_tac_bomber_equipment_4
+		}
+		
+		dependencies = {
+			hypersonic_engine = 1
+		}
+
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+	}
+	
+	cv_tactical_5 = {
+		
+		research_cost = 2
+		start_year = 1980
+
+		enable_equipments = {
+		   cv_tac_bomber_equipment_5
+		}
+		
+		dependencies = {
+			hypersonic_engine = 1
+		}
+
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+	}
+	
+	cv_fighter_1 = {
+		
+		research_cost = 2
+		start_year = 1980
+
+		enable_equipments = {
+		   cv_fighter_equipment_1
+		}
+
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+	}
+	
+	cv_fighter_2 = {
+		
+		research_cost = 2
+		start_year = 1980
+
+		enable_equipments = {
+		   cv_fighter_equipment_2
+		}
+
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+	}
+	
+	cv_fighter_3 = {
+		
+		research_cost = 2
+		start_year = 1980
+
+		enable_equipments = {
+		   cv_fighter_equipment_3
+		}
+
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+	}
+	
+	cv_fighter_4 = {
+		
+		research_cost = 2
+		start_year = 1980
+
+		enable_equipments = {
+		   cv_fighter_equipment_4
+		}
+		
+		dependencies = {
+			hypersonic_engine = 1
+		}
+
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+	}
+	
+	cv_fighter_5 = {
+		
+		research_cost = 2
+		start_year = 1980
+
+		enable_equipments = {
+		   cv_fighter_equipment_5
+		}
+		
+		dependencies = {
+			hypersonic_engine = 1
+		}
+
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
 		}
 	}
 	
