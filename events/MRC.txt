@@ -405,15 +405,41 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = MRC_event.18.a
-		add_ideas = MRC_Spirit_Of_Neofolk
+		add_dynamic_modifier = { 
+            modifier = MRC_Spirit_Of_Neofolk
+		}
+		add_to_variable = {
+			var = MRC_neospirit_army_morale_factor
+			value = 0.03
+		}
+		add_to_variable = {
+			var = MRC_neospirit_army_attack_factor
+			value = 0.02
+		}
+		add_to_variable = {
+			var = MRC_neospirit_war_support_factor
+			value = 0.05
+		}
 	}
 	option = {
 		name = MRC_event.18.b
-		add_ideas = MRC_Rage_Of_Neofolk
+		add_dynamic_modifier = { 
+            modifier = MRC_Rage_Of_Neofolk
+		}
+		add_to_variable = {
+			var = MRC_ragefolk_army_armor_attack_factor
+			value = 0.02
+		}
 	}
 	option = {
 		name = MRC_event.18.c
-		add_ideas = MRC_Sound_Of_Neofolk
+		add_dynamic_modifier = { 
+            modifier = MRC_Sound_Of_Neofolk
+		}
+		add_to_variable = {
+			var = MRC_soundfolk_stability_factor
+			value = 0.15
+		}
 	}
 	option = {
 		name = MRC_event.18.d
