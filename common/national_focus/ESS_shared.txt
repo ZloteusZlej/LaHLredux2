@@ -839,7 +839,15 @@
 		y = 6
 		completion_reward = {
 			add_ideas = ESS_interlude
-		}	
+		}
+		available = {
+		ESS = {
+			NOT = {
+				has_war_with = EAG
+			}
+		}
+	}
+		
 	} 
 	
 	shared_focus = {
@@ -992,17 +1000,6 @@
 	} 
 	
 
-	shared_focus = {
-		id = ESS_suppress_independent_warlords
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_centralized_command
-		}
-		x = 25
-		y = 2
-
-	}
 	###Dawkins###
 	
 	shared_focus = {
@@ -1011,6 +1008,90 @@
 		cost = 3
 		x = 3
 		y = 9
+
+	}
+	shared_focus = {
+		id = ESS_cultural_revolution
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_tame_the_leviathan
+
+		}
+		x = 0
+		y = 10
+
+	}
+	shared_focus = {
+		id = ESS_encourage_wastefullness
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_cultural_revolution
+
+		}
+		x = 1
+		y = 11
+
+	}
+	shared_focus = {
+		id = ESS_propaganda_of_hedonism
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_encourage_wastefullness
+
+		}
+		x = 1
+		y = 12
+
+	}
+	shared_focus = {
+		id = ESS_gods_delusion
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_cultural_revolution
+
+		}
+		x = -1
+		y = 11
+
+	}
+	shared_focus = {
+		id = ESS_informational_units
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_gods_delusion
+
+		}
+		x = -1
+		y = 12
+
+	}
+	shared_focus = {
+		id = ESS_psychical_nomadism
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_informational_units
+
+		}
+		x = -1
+		y = 13
+
+	}
+	shared_focus = {
+		id = ESS_consumer_society
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_propaganda_of_hedonism
+			focus = ESS_psychical_nomadism
+		}
+		x = 0
+		y = 14
 
 	}
 	shared_focus = {
@@ -1031,19 +1112,8 @@
 		prerequisite = {
 			focus = ESS_protective_economy
 		}
-		x = 4
+		x = 3
 		y = 11
-
-	}
-	shared_focus = {
-		id = ESS_universal_basic_income
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_trade_unionism
-		}
-		x = 4
-		y = 13
 
 	}
 	shared_focus = {
@@ -1051,7 +1121,7 @@
 		icon = GFX_goal_unknown
 		cost = 3
 		prerequisite = {
-			focus = ESS_protective_economy
+			focus = ESS_trade_unionism
 		}
 		x = 3
 		y = 12
@@ -1065,6 +1135,17 @@
 			focus = ESS_work_projects_administration
 		}
 		x = 2
+		y = 13
+
+	}
+	shared_focus = {
+		id = ESS_universal_basic_income
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_work_projects_administration
+		}
+		x = 4
 		y = 13
 
 	}
@@ -1083,7 +1164,7 @@
 		y = 14
 
 	}
-		shared_focus = {
+	shared_focus = {
 		id = ESS_state_and_party
 		icon = GFX_goal_unknown
 		cost = 3
@@ -1094,7 +1175,30 @@
 		y = 10
 
 	}
-		shared_focus = {
+	shared_focus = {
+		id = ESS_cultural_tyranny
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_state_and_party
+		}
+		x = 5
+		y = 11
+
+	}
+	shared_focus = {
+		id = ESS_galtons_legacy
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_cultural_tyranny
+		}
+		
+		x = 5
+		y = 12
+
+	}
+	shared_focus = {
 		id = ESS_new_academic_policy
 		icon = GFX_goal_unknown
 		cost = 3
@@ -1106,22 +1210,23 @@
 
 	}
 	shared_focus = {
-		id = ESS_peoples_guards
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_state_and_party
-		}
-		x = 6
-		y = 12
-
-	}
-	shared_focus = {
 		id = ESS_political_education
 		icon = GFX_goal_unknown
 		cost = 3
 		prerequisite = {
 			focus = ESS_new_academic_policy
+		}
+		
+		x = 7
+		y = 12
+
+	}
+	shared_focus = {
+		id = ESS_peoples_guards
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ESS_political_education
 		}
 		
 		x = 7
@@ -1133,8 +1238,8 @@
 		icon = GFX_goal_unknown
 		cost = 3
 		prerequisite = {
+			focus = ESS_galtons_legacy
 			focus = ESS_peoples_guards
-			focus = ESS_political_education
 		}
 		x = 6
 		y = 14
@@ -1166,78 +1271,7 @@
 
 	}
 	
-	shared_focus = {
-		id = ESS_cultural_revolution
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_tame_the_leviathan
 
-		}
-		x = 0
-		y = 10
-
-	}
-	shared_focus = {
-		id = ESS_encourage_wastefullness
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_cultural_revolution
-
-		}
-		x = 1
-		y = 11
-
-	}
-		shared_focus = {
-		id = ESS_secularization2-booba_obosralsya
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_cultural_revolution
-
-		}
-		x = -1
-		y = 11
-
-	}
-		shared_focus = {
-		id = ESS_propaganda_of_hedonism
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_encourage_wastefullness
-
-		}
-		x = 0
-		y = 12
-
-	}
-		shared_focus = {
-		id = ESS_psychical_nomadism
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_secularization2-booba_obosralsya
-
-		}
-		x = -1
-		y = 13
-
-	}
-	shared_focus = {
-		id = ESS_consumer_society
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_propaganda_of_hedonism
-			focus = ESS_psychical_nomadism
-		}
-		x = 0
-		y = 14
-
-	}
 
 ###Dawkins sciensce###
 
@@ -1436,7 +1470,7 @@
 	}
 
 	shared_focus = {
-		id = ESS_information_units_d ###Memes###
+		id = ESS_poetry_of_reality_d 
 		icon = GFX_goal_unknown
 		cost = 3
 		prerequisite = {
@@ -1456,7 +1490,7 @@
 		cost = 3
 		prerequisite = {
 			focus = ESS_biological_research_d
-			focus = ESS_information_units_d
+			focus = ESS_poetry_of_reality_d
 		}
 		completion_reward = {
 	
@@ -1482,7 +1516,7 @@
 	}
 	
 	shared_focus = {
-		id = ESS_final_omega_d 
+		id = ESS_final_omega_d ###Colossus computer###
 		icon = GFX_goal_unknown
 		cost = 3
 		prerequisite = {
@@ -1499,7 +1533,7 @@
 			set_country_flag = ESS_ai_here_d
 			}
 		}
-		x = 16
+		x = 14
 		y = 14
 
 	}
@@ -1511,13 +1545,13 @@
 		prerequisite = {
 			focus = ESS_final_omega_d
 		}
-		allow_branch = {
+		visible = {
             has_country_flag = ESS_ai_here_d
         }
 		completion_reward = {
 		
 		}
-		x = 14
+		x = 13
 		y = 15
 
 	}
@@ -1529,32 +1563,32 @@
 		prerequisite = {
 			focus = ESS_final_omega_d
 		}
-		allow_branch = {
+		visible = {
             has_country_flag = ESS_ai_here_d
         }
 		completion_reward = {
 		
 		}
-		x = 18
+		x = 15
 		y = 15
 
 	}
 	
 	shared_focus = {
-		id = ESS_ideological_framework_d 
+		id = ESS_chto-to_pizdatoye_d 
 		icon = GFX_goal_unknown
 		cost = 3
 		prerequisite = {
 			focus = ESS_matters_of_the_state_d
 			focus = ESS_ideological_framework_d
 		}
-		allow_branch = {
+		visible = {
             has_country_flag = ESS_ai_here_d
         }
 		completion_reward = {
 		
 		}
-		x = 16
+		x = 14
 		y = 16
 
 	}
