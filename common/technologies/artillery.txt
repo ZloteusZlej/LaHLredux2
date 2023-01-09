@@ -1,4 +1,59 @@
 technologies = {
+
+	obsolete_howitzer = {
+	
+		start_year = 1980
+		
+		enable_equipments = {
+			howitzer_0
+		}
+		enable_subunits = {
+			artillery
+		}
+		enable_subunits = {
+			artillery_brigade
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 0 }
+		}
+		
+		path = {
+			leads_to_tech = outdated_howitzer
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = outdated_anti_air
+			research_cost_coeff = 1
+		}
+	
+		path = {
+			leads_to_tech = outdated_anti_tank
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = outdated_mlrs
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 10
+				date > "1980.1.3"
+			}
+		}
+	}
 	
 	outdated_anti_air = {
 	
@@ -732,68 +787,12 @@ technologies = {
 		}
 	}
 
-	obsolete_howitzer = {
-	
-		start_year = 1980
-		
-		enable_equipments = {
-			howitzer_0
-			artillery_equipment_1
-		}
-		
-		research_cost = 1.5
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 6 y = 0 }
-		}
-		
-		path = {
-			leads_to_tech = outdated_howitzer
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = outdated_anti_air
-			research_cost_coeff = 1
-		}
-	
-		path = {
-			leads_to_tech = outdated_anti_tank
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = outdated_mlrs
-			research_cost_coeff = 1
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 10
-				date > "1980.1.3"
-			}
-		}
-	}
-
 	outdated_howitzer = {
 	
 		start_year = 2010
 		
 		enable_equipments = {
-			artillery_equipment_2
-		}
-		enable_subunits = {
-			artillery
-		}
-		enable_subunits = {
-			artillery_brigade
+			artillery_equipment_1
 		}
 		
 		research_cost = 1.5

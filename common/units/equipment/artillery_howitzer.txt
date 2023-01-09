@@ -38,13 +38,25 @@ equipments = {
 			steel = 2
 		}
 	}
+	
+	howitzer_0 = {
+		year = 1980
+		archetype = artillery_equipment
+		priority = 50
+		visual_level = 0
+	}
 
 	artillery_equipment_1 = {
 		year = 2018
 
 		archetype = artillery_equipment
+		parent = howitzer_0
 		priority = 50
 		visual_level = 0
+		defense = 12
+		breakthrough = 6
+		soft_attack = 26
+		
 	}
 	
 	artillery_equipment_2 = {
