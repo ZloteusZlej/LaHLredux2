@@ -51,89 +51,6 @@ duplicate_archetypes = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
 		}
 	}
-	
-	# armoured_car
-
-	armored_car_aa_chassis = {
-		archetype = armored_car_chassis
-		type = { armor anti_air }
-
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.5 }
-		}
-	}
-
-	armored_car_artillery_chassis = {
-		archetype = armored_car_chassis
-		type = { armor artillery }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.5 }
-		}
-	}
-
-	armored_car_destroyer_chassis = {
-		archetype = armored_car_chassis
-		type = { armor anti_tank }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-		}
-	}
-
-	armored_car_flame_chassis = {
-		archetype = armored_car_chassis
-		type = { armor flame }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-		}
-	}
-	
-	# IFV
-
-	ifv_aa_chassis = {
-		archetype = ifv_chassis
-		type = { armor anti_air }
-
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.6 }
-		}
-	}
-
-	ifv_artillery_chassis = {
-		archetype = ifv_chassis
-		type = { armor artillery }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.6 }
-		}
-	}
-
-	ifv_destroyer_chassis = {
-		archetype = ifv_chassis
-		type = { armor anti_tank }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-		}
-	}
-
-	ifv_amphibious_chassis = {
-		archetype = ifv_chassis
-		type = { armor amphibious }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.65 }
-		}
-	}
-
-	ifv_flame_chassis = {
-		archetype = ifv_chassis
-		type = { armor flame }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-		}
-	}
 
 	# medium_tank
 
@@ -252,11 +169,13 @@ duplicate_archetypes = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
 		}
 	}
+	
+	#LAHL#
 
-	# modern tank
+	# Main Battle Tank
 
-	modern_tank_aa_chassis = {
-		archetype = modern_tank_chassis
+	main_battle_tank_aa_chassis = {
+		archetype = main_battle_tank_chassis
 		type = { armor anti_air }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
@@ -264,8 +183,8 @@ duplicate_archetypes = {
 		}
 	}
 
-	modern_tank_artillery_chassis = {
-		archetype = modern_tank_chassis
+	main_battle_tank_artillery_chassis = {
+		archetype = main_battle_tank_chassis
 		type = { armor artillery }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
@@ -273,9 +192,138 @@ duplicate_archetypes = {
 		}
 	}
 
-	modern_tank_destroyer_chassis = {
-		archetype = modern_tank_chassis
+	main_battle_tank_destroyer_chassis = {
+		archetype = main_battle_tank_chassis
 		type = { armor anti_tank }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+		}
+	}
+	
+	# IFV
+
+	ifv_aa_chassis = {
+		archetype = ifv_chassis
+		type = { armor anti_air }
+
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			hardness = { set = 0.6 }
+		}
+	}
+
+	ifv_artillery_chassis = {
+		archetype = ifv_chassis
+		type = { armor artillery }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			hardness = { set = 0.6 }
+		}
+	}
+
+	ifv_destroyer_chassis = {
+		archetype = ifv_chassis
+		type = { armor anti_tank }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+		}
+	}
+
+	ifv_amphibious_chassis = {
+		archetype = ifv_chassis
+		type = { armor amphibious }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			hardness = { set = 0.65 }
+		}
+	}
+
+	ifv_flame_chassis = {
+		archetype = ifv_chassis
+		type = { armor flame }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+		}
+	}
+	
+	# APC
+
+	apc_aa_chassis = {
+		archetype = apc_chassis
+		type = { armor anti_air }
+
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			hardness = { set = 0.6 }
+		}
+	}
+
+	apc_artillery_chassis = {
+		archetype = apc_chassis
+		type = { armor artillery }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			hardness = { set = 0.6 }
+		}
+	}
+
+	apc_destroyer_chassis = {
+		archetype = apc_chassis
+		type = { armor anti_tank }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+		}
+	}
+
+	apc_amphibious_chassis = {
+		archetype = apc_chassis
+		type = { armor amphibious }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			hardness = { set = 0.65 }
+		}
+	}
+
+	apc_flame_chassis = {
+		archetype = apc_chassis
+		type = { armor flame }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+		}
+	}
+	
+	# armoured_car
+
+	armored_car_aa_chassis = {
+		archetype = armored_car_chassis
+		type = { armor anti_air }
+
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			hardness = { set = 0.5 }
+		}
+	}
+
+	armored_car_artillery_chassis = {
+		archetype = armored_car_chassis
+		type = { armor artillery }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			hardness = { set = 0.5 }
+		}
+	}
+
+	armored_car_destroyer_chassis = {
+		archetype = armored_car_chassis
+		type = { armor anti_tank }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+		}
+	}
+
+	armored_car_flame_chassis = {
+		archetype = armored_car_chassis
+		type = { armor flame }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
 		}
@@ -798,6 +846,7 @@ equipments = {
 		#Misc Abilities
 		maximum_speed = 9
 		reliability = 0.8
+		
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 51
@@ -910,6 +959,7 @@ equipments = {
 		}	
 	}
 	
+	########
 
 	medium_tank_artillery_equipment_1 = {
 		year = 1939

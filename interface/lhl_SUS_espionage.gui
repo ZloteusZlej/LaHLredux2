@@ -1,0 +1,50 @@
+guiTypes = {
+	containerWindowType = {
+		name = "lhl_SUS_espionage_full"
+		size = { width = 1000 height = 250 }
+		position = { x = 100 y = 0 }
+		scale = 1.2
+		moveable = yes
+		clipping = yes
+		
+		background = {
+			name = "lhl_table_opening_screen_background_1"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+		###Buttons###
+	    buttonType = {
+			name = "SUS_gadget_button"
+			spriteType = "GFX_lhl_SUS_espionage_button"
+			buttonText = "SUS_gadged_button"
+			position = { x = 115 y = 90 }
+		}
+	    buttonType = {
+			name = "SUS_artifact_button"
+			spriteType = "GFX_lhl_SUS_espionage_button"
+			buttonText = "SUS_artifact_button"
+			position = { x = 115 y = 150 }
+		}
+		background = {
+			name = "lhl_table_opening_screen_background_1"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+		instantTextboxType = {
+			name = "lhl_SUS_espionage_title"
+			position = { x = 50 y = 0 }
+			font = "hoi_12header"
+			text = "SUS_ESPIONAGE_TITLE_TEXT"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = ""lhl_SUS_agent_number"
+			position = { x = 50 y = 20 }
+			font = "hoi_12header"
+			text = "SUS_ESPIONAGE_AGENT_TEXT"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+	}
+}
