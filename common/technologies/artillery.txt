@@ -2,7 +2,7 @@ technologies = {
 
 	obsolete_howitzer = {
 	
-		start_year = 1980
+		start_year = 1990
 		
 		enable_equipments = {
 			howitzer_0
@@ -50,7 +50,7 @@ technologies = {
 
 			modifier = {
 				factor = 10
-				date > "1980.1.3"
+				date > "1980.1.1"
 			}
 		}
 	}
@@ -85,7 +85,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			outdated_spaag
+			outdated_ac_aa
+			outdated_ifv_aa
+			outdated_mbt_aa
 		}
 				
 		research_cost = 1.5
@@ -153,10 +155,10 @@ technologies = {
 
 		
 		anti_air = {
-		     reliability = 0.02
+		    reliability = 0.02
 		}
 		anti_air_brigade = {
-		     reliability = 0.02
+		    reliability = 0.02
 		}
 		spaag = {
 		     armor_value = 0.05
@@ -179,35 +181,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "2015.1.3"
-			}
-		}
-	}
-	
-	outdated_spaag = {
-	
-		start_year = 2010
-		
-		enable_equipments = {
-			sp_anti_air_equipment_1
-		}
-		enable_subunits = {
-			spaag
-		}
-		
-		research_cost = 0.5
-		
-		categories = {
-			artillery
-			cat_anti_air
-			armor
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2010.1.3"
 			}
 		}
 	}
@@ -236,7 +209,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			basic_spaag
+			basic_ac_aa
+			basic_ifv_aa
+			basic_mbt_aa
 		}
 		
 		research_cost = 1.5
@@ -331,33 +306,6 @@ technologies = {
 		}
 	}
 	
-	basic_spaag = {
-	
-		start_year = 2020
-		
-		enable_equipments = {
-			sp_anti_air_equipment_2
-		}
-		
-		research_cost = 0.5
-		
-		categories = {
-			artillery
-			cat_anti_air
-			armor
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2020.1.3"
-			}
-		}
-	}
-	
-	
 	improved_anti_air = {
 	
 		start_year = 2025
@@ -382,7 +330,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			improved_spaag
+			improved_ac_aa
+			improved_ifv_aa
+			improved_mbt_aa
 		}
 				
 		research_cost = 1.5
@@ -477,32 +427,6 @@ technologies = {
 		}
 	}
 	
-	improved_spaag = {
-	
-		start_year = 2025
-		
-		enable_equipments = {
-			sp_anti_air_equipment_3
-		}
-		
-		research_cost = 0.5
-		
-		categories = {
-			artillery
-			cat_anti_air
-			armor
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2025.1.3"
-			}
-		}
-	}
-	
 	advanced_anti_air = {
 	
 		start_year = 2028
@@ -527,7 +451,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			advanced_spaag
+			advanced_ac_aa
+			advanced_ifv_aa
+			advanced_mbt_aa
 		}
 				
 		research_cost = 1.5
@@ -622,33 +548,6 @@ technologies = {
 		}
 	}
 	
-	advanced_spaag = {
-	
-		start_year = 2028
-		
-		enable_equipments = {
-			sp_anti_air_equipment_4
-		}
-		
-		research_cost = 0.5
-		
-		categories = {
-			artillery
-			cat_anti_air
-			armor
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2028.1.3"
-			}
-		}
-	}
-	
-	
 	futuristic_anti_air = {
 	
 		start_year = 2030
@@ -668,7 +567,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			futuristic_spaag
+			futuristic_ac_aa
+			futuristic_ifv_aa
+			futuristic_mbt_aa
 		}
 		
 		research_cost = 1.5
@@ -760,32 +661,6 @@ technologies = {
 			}
 		}
 	}
-	
-	futuristic_spaag = {
-	
-		start_year = 2030
-		
-		enable_equipments = {
-			sp_anti_air_equipment_5
-		}
-		
-		research_cost = 0.5
-
-		categories = {
-			artillery
-			cat_anti_air
-			armor
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2030.1.3"
-			}
-		}
-	}
 
 	outdated_howitzer = {
 	
@@ -803,7 +678,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			outdated_spg
+			outdated_ac_spaa
+			outdated_ifv_spaa
+			outdated_mbt_spaa
 		}
 		
 		path = {
@@ -904,34 +781,6 @@ technologies = {
 		}
 	}		
 
-	outdated_spg = {
-	
-		start_year = 2010
-		
-		enable_equipments = {
-			spg_equipment_1
-		}
-		enable_subunits = {
-			spg
-		}
-		
-		research_cost = 0.5
-	
-		categories = {
-			artillery
-			armor
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2010.1.3"
-			}
-		}
-	}
-
 	outdated_anti_tank = {
 	
 		start_year = 2010
@@ -946,7 +795,9 @@ technologies = {
 			anti_tank_brigade
 		}
 		sub_technologies = {
-			outdated_tank_destroyer
+			outdated_ac_at
+			outdated_ifv_at
+			outdated_mbt_at
 		}
 		path = {
 			leads_to_tech = basic_anti_tank
@@ -1054,10 +905,10 @@ technologies = {
 		start_year = 2010
 		
 		enable_equipments = {
-			motorized_rocket_equipment_1
+			multiple_rocket_equipment_1
 		}
 		enable_subunits = {
-			tactical_missile
+			mlrs
 		}
 		sub_technologies = {
 			outdated_tactical_missile
@@ -1174,7 +1025,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			basic_spg
+			basic_ac_spaa
+			basic_ifv_spaa
+			basic_mbt_spaa
 		}
 		
 		path = {
@@ -1277,31 +1130,6 @@ technologies = {
 		}
 	}		
 
-	basic_spg = {
-	
-		start_year = 2020
-		
-		enable_equipments = {
-			spg_equipment_2
-		}
-		
-		research_cost = 0.5
-	
-		categories = {
-			artillery
-			armor
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2020.1.3"
-			}
-		}
-	}
-
 	basic_anti_tank = {
 	
 		start_year = 2020
@@ -1310,7 +1138,9 @@ technologies = {
 			anti_tank_equipment_2
 		}
 		sub_technologies = {
-			basic_tank_destroyer
+			basic_ac_at
+			basic_ifv_at
+			basic_mbt_at
 		}
 		
 		research_cost = 1.5
@@ -1421,7 +1251,7 @@ technologies = {
 		start_year = 2020
 		
 		enable_equipments = {
-			motorized_rocket_equipment_2
+			multiple_rocket_equipment_2
 		}
 		sub_technologies = {
 			basic_tactical_missile
@@ -1554,7 +1384,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			improved_spg
+			improved_ac_spaa
+			improved_ifv_spaa
+			improved_mbt_spaa
 		}
 		
 		categories = {
@@ -1642,31 +1474,6 @@ technologies = {
 		}
 	}		
 
-	improved_spg = {
-	
-		start_year = 2025
-		
-		enable_equipments = {
-			spg_equipment_3
-		}
-		
-		research_cost = 0.5
-	
-		categories = {
-			artillery
-			armor
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2025.1.3"
-			}
-		}
-	}
-
 	improved_anti_tank = {
 	
 		start_year = 2025
@@ -1675,7 +1482,9 @@ technologies = {
 			anti_tank_equipment_3
 		}
 		sub_technologies = {
-			improved_tank_destroyer
+			improved_ac_at
+			improved_ifv_at
+			improved_mbt_at
 		}
 		
 		research_cost = 1.5
@@ -1786,7 +1595,7 @@ technologies = {
 		start_year = 2025
 		
 		enable_equipments = {
-			motorized_rocket_equipment_3
+			multiple_rocket_equipment_3
 		}
 		sub_technologies = {
 			improved_tactical_missile
@@ -1906,7 +1715,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			advanced_spg
+			advanced_ac_spaa
+			advanced_ifv_spaa
+			advanced_mbt_spaa
 		}
 		
 		path = {
@@ -2010,32 +1821,6 @@ technologies = {
 		}
 	}		
 
-	advanced_spg = {
-	
-		start_year = 2028
-		
-		enable_equipments = {
-			spg_equipment_4
-		}
-		
-		research_cost = 0.5
-
-		
-		categories = {
-			artillery
-			armor
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2028.1.3"
-			}
-		}
-	}
-
 	advanced_anti_tank = {
 	
 		start_year = 2028
@@ -2044,7 +1829,9 @@ technologies = {
 			anti_tank_equipment_4
 		}
 		sub_technologies = {
-			advanced_tank_destroyer
+			advanced_ac_at
+			advanced_ifv_at
+			advanced_mbt_at
 		}
 		
 		research_cost = 1.5
@@ -2155,7 +1942,7 @@ technologies = {
 		start_year = 2028
 		
 		enable_equipments = {
-			motorized_rocket_equipment_4
+			multiple_rocket_equipment_4
 		}
 		sub_technologies = {
 			advanced_tactical_missile
@@ -2284,7 +2071,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			futuristic_spg
+			futuristic_ac_spaa
+			futuristic_ifv_spaa
+			futuristic_mbt_spaa
 		}
 		
 		categories = {
@@ -2369,34 +2158,6 @@ technologies = {
 		}
 	}		
 
-	futuristic_spg = {
-	
-		start_year = 2032
-		
-		enable_equipments = {
-			spg_equipment_5
-		}
-		enable_subunits = {
-			spg
-		}
-		
-		research_cost = 0.5
-	
-		categories = {
-			artillery
-			armor
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				date > "2032.1.3"
-			}
-		}
-	}
-
 	futuristic_anti_tank = {
 	
 		start_year = 2030
@@ -2405,7 +2166,9 @@ technologies = {
 			anti_tank_equipment_5
 		}
 		sub_technologies = {
-			futuristic_tank_destroyer
+			futuristic_ac_at
+			futuristic_ifv_at
+			futuristic_mbt_at
 		}
 		
 		research_cost = 1.5
@@ -2511,7 +2274,7 @@ technologies = {
 		start_year = 2030
 		
 		enable_equipments = {
-			motorized_rocket_equipment_5
+			multiple_rocket_equipment_5
 		}
 		sub_technologies = {
 			futuristic_tactical_missile
@@ -2613,7 +2376,7 @@ technologies = {
 		start_year = 2010
 		
 		enable_equipments = {
-			tactical_ballistic_missile_equipment_1
+			multiple_rocket_missile_equipment_1
 		}
 		enable_subunits = {
 			tactical_missile 
@@ -2640,7 +2403,7 @@ technologies = {
 		start_year = 2020
 		
 		enable_equipments = {
-			tactical_ballistic_missile_equipment_2
+			multiple_rocket_missile_equipment_2
 		}
 		
 		research_cost = 0.5
@@ -2664,7 +2427,7 @@ technologies = {
 		start_year = 2025
 		
 		enable_equipments = {
-			tactical_ballistic_missile_equipment_3
+			multiple_rocket_missile_equipment_3
 		}
 		
 		research_cost = 0.5
@@ -2688,7 +2451,7 @@ technologies = {
 		start_year = 2028
 		
 		enable_equipments = {
-			tactical_ballistic_missile_equipment_4
+			multiple_rocket_missile_equipment_4
 		}
 		
 		research_cost = 0.5
@@ -2712,7 +2475,7 @@ technologies = {
 		start_year = 2030
 		
 		enable_equipments = {
-			tactical_ballistic_missile_equipment_5
+			multiple_rocket_missile_equipment_5
 		}
 		
 		research_cost = 0.5
@@ -2732,15 +2495,15 @@ technologies = {
 		}
 	}
 	
-	outdated_tank_destroyer  = {
+	##SUB TECHNOLOGIES##
+	##TANK DESTROYERS##
+	
+	outdated_mbt_at  = {
 	
 		start_year = 2010
 		
 		enable_equipments = {
-			tank_destroyer_equipment_1
-		}
-		enable_subunits = {
-			tank_destroyer
+			main_battle_tank_destroyer_equipment_1
 		}
 		enable_subunits = {
 			tank_destroyer
@@ -2762,12 +2525,68 @@ technologies = {
 			}
 		}
 	}
-	basic_tank_destroyer = {
+	outdated_ifv_at  = {
+	
+		start_year = 2010
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_destroyer_equipment_1
+		}
+		enable_subunits = {
+		}
+		enable_subunits = {
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2010.1.3"
+			}
+		}
+	}
+	outdated_ac_at  = {
+	
+		start_year = 2010
+		
+		enable_equipments = {
+			armored_car_destroyer_equipment_1
+		}
+		enable_subunits = {
+		}
+		enable_subunits = {
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2010.1.3"
+			}
+		}
+	}
+	basic_mbt_at = {
 	
 		start_year = 2020
 		
 		enable_equipments = {
-			tank_destroyer_equipment_2
+			main_battle_tank_destroyer_equipment_2
 		}
 		
 		research_cost = 0.5
@@ -2786,12 +2605,60 @@ technologies = {
 			}
 		}
 	}
-	improved_tank_destroyer = {
+	basic_ifv_at = {
+	
+		start_year = 2020
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_destroyer_equipment_2
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2020.1.3"
+			}
+		}
+	}
+	basic_ac_at = {
+	
+		start_year = 2020
+		
+		enable_equipments = {
+			armored_car_destroyer_equipment_2
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2020.1.3"
+			}
+		}
+	}
+	improved_mbt_at = {
 	
 		start_year = 2025
 		
 		enable_equipments = {
-			tank_destroyer_equipment_3
+			main_battle_tank_destroyer_equipment_3
 		}
 		
 		research_cost = 0.5
@@ -2810,12 +2677,60 @@ technologies = {
 			}
 		}
 	}
-	advanced_tank_destroyer  = {
+	improved_ifv_at = {
+	
+		start_year = 2025
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_destroyer_equipment_3
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2025.1.3"
+			}
+		}
+	}
+	improved_ac_at = {
+	
+		start_year = 2025
+		
+		enable_equipments = {
+			armored_car_destroyer_equipment_3
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2025.1.3"
+			}
+		}
+	}
+	advanced_mbt_at  = {
 	
 		start_year = 2028
 		
 		enable_equipments = {
-			tank_destroyer_equipment_4
+			main_battle_tank_destroyer_equipment_4
 		}
 		
 		research_cost = 0.5
@@ -2834,12 +2749,12 @@ technologies = {
 			}
 		}
 	}
-	futuristic_tank_destroyer  = {
+	advanced_ifv_at  = {
 	
-		start_year = 2030
+		start_year = 2028
 		
 		enable_equipments = {
-			tank_destroyer_equipment_5
+			infantry_fighting_vehicle_destroyer_equipment_4
 		}
 		
 		research_cost = 0.5
@@ -2847,6 +2762,856 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2028.1.3"
+			}
+		}
+	}
+	advanced_ac_at  = {
+	
+		start_year = 2028
+		
+		enable_equipments = {
+			armored_car_destroyer_equipment_4
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2028.1.3"
+			}
+		}
+	}
+	futuristic_mbt_at  = {
+	
+		start_year = 2030
+		
+		enable_equipments = {
+			main_battle_tank_destroyer_equipment_5
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2030.1.3"
+			}
+		}
+	}
+	futuristic_ifv_at  = {
+	
+		start_year = 2030
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_destroyer_equipment_5
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2030.1.3"
+			}
+		}
+	}
+	futuristic_ac_at  = {
+	
+		start_year = 2030
+		
+		enable_equipments = {
+			armored_car_destroyer_equipment_5
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2030.1.3"
+			}
+		}
+	}
+	##ANTI-AIR##
+	outdated_mbt_aa = {
+	
+		start_year = 2010
+		
+		enable_equipments = {
+			main_battle_tank_aa_equipment_1
+		}
+		enable_subunits = {
+			spaag
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_air
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2010.1.3"
+			}
+		}
+	}
+	outdated_ifv_aa = {
+	
+		start_year = 2010
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_aa_equipment_1
+		}
+		enable_subunits = {
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_air
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2010.1.3"
+			}
+		}
+	}
+	outdated_ac_aa = {
+	
+		start_year = 2010
+		
+		enable_equipments = {
+			armored_car_aa_equipment_1
+		}
+		enable_subunits = {
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_air
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2010.1.3"
+			}
+		}
+	}
+	basic_mbt_aa = {
+	
+		start_year = 2020
+		
+		enable_equipments = {
+			main_battle_tank_aa_equipment_2
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_air
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2020.1.3"
+			}
+		}
+	}
+	basic_ifv_aa = {
+	
+		start_year = 2020
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_aa_equipment_2
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_air
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2020.1.3"
+			}
+		}
+	}
+	basic_ac_aa = {
+	
+		start_year = 2020
+		
+		enable_equipments = {
+			armored_car_aa_equipment_2
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_air
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2020.1.3"
+			}
+		}
+	}
+	improved_mbt_aa = {
+	
+		start_year = 2025
+		
+		enable_equipments = {
+			main_battle_tank_aa_equipment_3
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_air
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2025.1.3"
+			}
+		}
+	}
+	improved_ifv_aa = {
+	
+		start_year = 2025
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_aa_equipment_3
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_air
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2025.1.3"
+			}
+		}
+	}
+	improved_ac_aa = {
+	
+		start_year = 2025
+		
+		enable_equipments = {
+			armored_car_aa_equipment_3
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_air
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2025.1.3"
+			}
+		}
+	}
+	advanced_mbt_aa = {
+	
+		start_year = 2028
+		
+		enable_equipments = {
+			main_battle_tank_aa_equipment_4
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_air
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2028.1.3"
+			}
+		}
+	}
+	advanced_ifv_aa = {
+	
+		start_year = 2028
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_aa_equipment_4
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_air
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2028.1.3"
+			}
+		}
+	}
+	advanced_ac_aa = {
+	
+		start_year = 2028
+		
+		enable_equipments = {
+			armored_car_aa_equipment_4
+		}
+		
+		research_cost = 0.5
+		
+		categories = {
+			artillery
+			cat_anti_air
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2028.1.3"
+			}
+		}
+	}
+	futuristic_mbt_aa = {
+	
+		start_year = 2030
+		
+		enable_equipments = {
+			main_battle_tank_aa_equipment_5
+		}
+		
+		research_cost = 0.5
+
+		categories = {
+			artillery
+			cat_anti_air
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2030.1.3"
+			}
+		}
+	}
+	futuristic_ifv_aa = {
+	
+		start_year = 2030
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_aa_equipment_5
+		}
+		
+		research_cost = 0.5
+
+		categories = {
+			artillery
+			cat_anti_air
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2030.1.3"
+			}
+		}
+	}
+	futuristic_ac_aa = {
+	
+		start_year = 2030
+		
+		enable_equipments = {
+			armored_car_aa_equipment_5
+		}
+		
+		research_cost = 0.5
+
+		categories = {
+			artillery
+			cat_anti_air
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2030.1.3"
+			}
+		}
+	}
+	##ARTILLERY##
+	outdated_mbt_spaa = {
+	
+		start_year = 2010
+		
+		enable_equipments = {
+			main_battle_tank_artillery_equipment_1
+		}
+		enable_subunits = {
+			spg
+		}
+		
+		research_cost = 0.5
+	
+		categories = {
+			artillery
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2010.1.3"
+			}
+		}
+	}
+	outdated_ifv_spaa = {
+	
+		start_year = 2010
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_artillery_equipment_1
+		}
+		enable_subunits = {
+		}
+		
+		research_cost = 0.5
+	
+		categories = {
+			artillery
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2010.1.3"
+			}
+		}
+	}
+	outdated_ac_spaa = {
+	
+		start_year = 2010
+		
+		enable_equipments = {
+			armored_car_artillery_equipment_1
+		}
+		enable_subunits = {
+		}
+		
+		research_cost = 0.5
+	
+		categories = {
+			artillery
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2010.1.3"
+			}
+		}
+	}
+	basic_mbt_spaa = {
+	
+		start_year = 2020
+		
+		enable_equipments = {
+			main_battle_tank_artillery_equipment_2
+		}
+		
+		research_cost = 0.5
+	
+		categories = {
+			artillery
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2020.1.3"
+			}
+		}
+	}
+	basic_ifv_spaa = {
+	
+		start_year = 2020
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_artillery_equipment_2
+		}
+		
+		research_cost = 0.5
+	
+		categories = {
+			artillery
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2020.1.3"
+			}
+		}
+	}
+	basic_ac_spaa = {
+	
+		start_year = 2020
+		
+		enable_equipments = {
+			armored_car_artillery_equipment_2
+		}
+		
+		research_cost = 0.5
+	
+		categories = {
+			artillery
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2020.1.3"
+			}
+		}
+	}
+	improved_mbt_spaa = {
+	
+		start_year = 2025
+		
+		enable_equipments = {
+			main_battle_tank_artillery_equipment_3
+		}
+		
+		research_cost = 0.5
+	
+		categories = {
+			artillery
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2025.1.3"
+			}
+		}
+	}
+	improved_ifv_spaa = {
+	
+		start_year = 2025
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_artillery_equipment_3
+		}
+		
+		research_cost = 0.5
+	
+		categories = {
+			artillery
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2025.1.3"
+			}
+		}
+	}
+	improved_ac_spaa = {
+	
+		start_year = 2025
+		
+		enable_equipments = {
+			armored_car_artillery_equipment_3
+		}
+		
+		research_cost = 0.5
+	
+		categories = {
+			artillery
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2025.1.3"
+			}
+		}
+	}
+	advanced_mbt_spaa = {
+	
+		start_year = 2028
+		
+		enable_equipments = {
+			main_battle_tank_artillery_equipment_4
+		}
+		
+		research_cost = 0.5
+
+		
+		categories = {
+			artillery
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2028.1.3"
+			}
+		}
+	}
+	advanced_ifv_spaa = {
+	
+		start_year = 2028
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_artillery_equipment_4
+		}
+		
+		research_cost = 0.5
+
+		
+		categories = {
+			artillery
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2028.1.3"
+			}
+		}
+	}
+	advanced_ac_spaa = {
+	
+		start_year = 2028
+		
+		enable_equipments = {
+			armored_car_artillery_equipment_4
+		}
+		
+		research_cost = 0.5
+
+		
+		categories = {
+			artillery
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2028.1.3"
+			}
+		}
+	}
+	futuristic_mbt_spaa = {
+	
+		start_year = 2030
+		
+		enable_equipments = {
+			main_battle_tank_artillery_equipment_5
+		}
+		
+		research_cost = 0.5
+	
+		categories = {
+			artillery
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2030.1.3"
+			}
+		}
+	}
+	futuristic_ifv_spaa = {
+	
+		start_year = 2030
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_artillery_equipment_5
+		}
+		
+		research_cost = 0.5
+	
+		categories = {
+			artillery
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				date > "2030.1.3"
+			}
+		}
+	}
+	futuristic_ac_spaa = {
+	
+		start_year = 2030
+		
+		enable_equipments = {
+			armored_car_artillery_equipment_5
+		}
+		
+		research_cost = 0.5
+	
+		categories = {
+			artillery
+			armor
 		}
 		
 		ai_will_do = {
