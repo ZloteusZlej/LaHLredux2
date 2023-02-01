@@ -1,0 +1,37 @@
+﻿add_namespace = ENG_news
+
+news_event = {
+	id = ENG_news.1
+	title = ENG_news.1.t
+	desc = ENG_news.1.d
+	picture = GFX_death_of_ded
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+		name = ENG_news.1.a
+		trigger = { TAG = EAG }
+	}
+	option = {
+		name = ENG_news.1.b
+		trigger = { TAG = KNT }
+	}
+	option = {
+		name = ENG_news.1.c
+		trigger = { TAG = SUS }
+	}   	
+	option = {
+		name = ENG_news.1.e
+		trigger = { TAG = WES }
+	}  
+	option = {
+		name = ENG_news.1.f
+		trigger = { TAG = MRC }
+	}  
+	option = {
+		name = ENG_news.1.g
+		trigger = { TAG = NTH }
+	}  
+}
+
+

@@ -1,35 +1,3 @@
-#	Triggers to control if diplomatic actions are enabled:
-#		Format:
-#
-#		<diplomatic action tag>_enabled_trigger = {
-#			<trigger contents>
-#		}
-#
-#		ROOT is the country initiating the diplomatic action.
-#		FROM is the recipient or target of the diplomatic action.
-#
-#		Note:  For cleaner tooltips, it is recommended that you use
-#			if triggers within the enable triggers, and a single
-#			custom_trigger_tooltip trigger within each if trigger.
-#
-#		Example: (Germany is prevented from declaring war on the Soviet Union.)
-#
-#		DIPLOMACY_WAR_ENABLE_TRIGGER = {
-#			if = {
-#				limit = {
-#					tag = GER
-#				}
-#				custom_trigger_tooltip = {
-#					tooltip = PREVENT_GER_WAR_ON_SOV
-#					FROM = {
-#						NOT = {
-#							tag = SOV
-#						}
-#					}
-#				}
-#			}
-#		}
-
 # This specifically overrides the rule check as to whether or not you can guarantee other ideologies
 DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
 	NOT = {
@@ -107,32 +75,17 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				rule = allow_release_nations
 				option = FREE
 			}
+			OR = {
+				NOT = { has_dlc = "Man the Guns" }
+			}
+			OR = {
+				NOT = { has_dlc = "La Resistance" }
+			}
+			OR = {
+				NOT = { has_dlc = "Death or Dishonor" }
+			}
 		}
 		always = yes
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = PEACE_ONLY
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
-			has_war = no
-		}
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_BLOCKED_TOOLTIP
-			always = no
-		}
 	}
 }
 DIPLOMACY_MILACC_ENABLE_TRIGGER = {
@@ -501,6 +454,42 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_wargoals
+				option = FOCUSES_ONLY_UNTIL_38
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_WARGOALS_FOCUSES_ONLY_38_DESC
+			date > 1938.1.1
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_wargoals
+				option = FOCUSES_ONLY_UNTIL_39
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_WARGOALS_FOCUSES_ONLY_39_DESC
+			date > 1939.1.1
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_wargoals
+				option = FOCUSES_ONLY_UNTIL_40
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_WARGOALS_FOCUSES_ONLY_40_DESC
+			date > 1940.1.1
+		}
+	}
 }
 DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
 	if = {
@@ -634,7 +623,9 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				option = ALWAYS_FREE
 			}
 		}
-		always = yes
+		else = {
+			always = yes
+		}
 	}
 	if = {
 		limit = {
@@ -643,7 +634,9 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				option = LIMITED
 			}
 		}
-		always = yes
+		else = {
+			always = yes
+		}
 	}
 	if = {
 		limit = {

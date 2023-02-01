@@ -1,0 +1,43 @@
+﻿capital = 54
+
+create_faction = Idelural
+add_to_faction = CHS
+add_to_faction = BSK
+
+oob = "TAT_2020"
+set_research_slots = 3
+set_technology = {
+	infantry_equipment = 1
+	infantry_equipment_2 = 1
+
+}
+
+set_politics = {
+	ruling_party = left_authoritarianism
+	elections_allowed = no
+}
+set_popularities = {
+    left_authoritarianism = 100
+}
+
+add_ai_strategy = {
+    type = alliance
+    id = CHS
+    value = 200
+}
+
+add_ai_strategy = {
+    type = alliance
+    id = BSK
+    value = 200
+}
+
+create_country_leader = {
+	name = "Mintimer Shaimiev"
+	desc = "POLITICS_SHAMIEV_DESC"
+	picture = "Portrait_TAT_Mintimer_Shaimiev.dds"
+	ideology = paternalism 
+	traits = {
+		old_boar
+	}
+}

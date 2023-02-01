@@ -1,0 +1,167 @@
+KNT_debug = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = KNT }
+}
+
+KNT_prisoners_of_war = {
+	icon = GFX_
+	visible_when_empty = yes
+	allowed = { original_tag = KNT }
+}
+
+
+
+KNT_channel_tunnel = {
+	icon = GFX_
+	visible = {
+	    has_completed_focus = KNT_caravans_of_the_channel_tunnel
+		NOT = { has_completed_focus = KNT_commons_of_house }
+	}
+	allowed = { original_tag = KNT }
+}
+
+KNT_maglev = {
+icon = GFX_
+	visible = {
+	    has_completed_focus = KNT_new_era_of_railways
+	}
+	allowed = { original_tag = KNT }
+}
+
+KNT_special_projects = {
+icon = GFX_
+	visible = {
+	    has_completed_focus = KNT_commons_of_house
+	}
+	visible_when_empty = yes
+	allowed = { original_tag = KNT }
+}
+
+KNT_thermonuclear_reactor = {
+picture = GFX_decision_KNT_ITER_project_decisions
+	visible = {
+		KNT = {
+	    has_variable = kent_thermonuclear_plant_completion
+		}
+	}
+	visible_when_empty = yes
+	allowed = { original_tag = KNT }
+}
+
+KNT_cultural_progress = {
+picture = GFX_decision_KNT_cultural_decisions
+	visible = {
+		KNT = {
+			has_completed_focus = KNT_stop_cultural_decadence
+		}
+	}
+	visible_when_empty = yes
+	allowed = { original_tag = KNT }
+}
+KNT_sabotages = {
+	icon = GFX_
+	visible_when_empty = yes
+	visible = {
+		KNT = {
+			AND = {
+				has_completed_focus = KNT_sabotage_experience 
+				has_war	= yes
+			}
+		}
+	}
+	allowed = { original_tag = KNT }
+}
+
+KNT_air_strikes = {
+	icon = GFX_
+	visible_when_empty = yes
+	visible = {
+		KNT = {
+			AND = {
+				has_completed_focus = KNT_strike_from_above 
+				has_war	= yes
+			}
+		}
+	}
+	allowed = { original_tag = KNT }
+}
+
+KNT_essex_diplomacy = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = KNT }
+	visible = {
+			KNT = {
+				has_completed_focus = KNT_the_chimes_of_big_ben
+				NOT = { has_completed_focus = KNT_it's_treason_then }
+			}
+	}
+}
+
+KNT_east_anglia_diplomacy = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = KNT }
+	visible = {
+			KNT = {
+				has_completed_focus = KNT_our_germanic_brothers
+				NOT = { has_completed_focus = KNT_it's_treason_then }
+			}
+	}
+}
+
+KNT_mercia_diplomacy = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = KNT }
+	visible = {
+			KNT = {
+				has_completed_focus = KNT_the_patriot
+				NOT = { has_completed_focus = KNT_it's_treason_then }
+			}
+	}
+}
+
+KNT_wars = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = KNT }
+	visible_when_empty = yes	
+}
+
+KNT_international_aid = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = KNT }
+	visible = {
+			KNT = {
+				has_completed_focus = KNT_the_grand_embassy
+			}
+	}
+}
+
+KNT_selling_shit = {
+	icon = GFX_
+	visible = {
+	    has_completed_focus = KNT_dumping_strategy
+	}
+	allowed = { original_tag = KNT }
+}
+
+KNT_exhibition_preparation = {
+	icon = GFX_
+	visible = {
+	    has_completed_focus = KNT_the_great_exhibition
+	}
+	allowed = { original_tag = KNT }
+}
+
+KNT_britain_pacification = {
+	icon = GFX_
+	scripted_gui = lhl_britain_control_screen_body
+	visible = {
+	    has_completed_focus = KNT_there_always_be_an_england
+	}
+	allowed = { original_tag = KNT }
+}

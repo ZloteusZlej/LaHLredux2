@@ -1,0 +1,119 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "lhl_uk_monarchy_screen_upper_button"
+		position = { x = 418 y = 10 }
+		size = { width = 100% height = 100% }
+
+		buttonType = {
+			name = "uk_monarchy_upper_tab_button"
+			position = { x = 1  y = 2 }
+			quadTextureSprite = "GFX_lhl_uk_monarchy_upper_tab_button"
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "UK_MONARCHY_MENU"
+			scale = 1.5
+		}
+	}
+
+	containerWindowType = {
+		name = "lhl_uk_monarchy_screen_full"
+		size = { width = 476 height = 456 }
+		position = { x = 546 y = 1 }
+		scale = 1
+		moveable = no
+		clipping = no
+		
+	    iconType = {
+			name = "lhl_uk_monarchy_slot_1"
+			spriteType = "GFX_lhl_uk_monarchy_george"
+			pdx_tooltip = "KING_GEORGE"
+			position = { x = 160 y = 70 }
+		}
+		
+	    iconType = {
+			name = "lhl_uk_monarchy_slot_2"
+			spriteType = "GFX_lhl_uk_monarchy_Frederick_Windsor"
+			pdx_tooltip = "KING_FREDERICK"
+			position = { x = 160 y = 70 }
+		}
+		
+	    iconType = {
+			name = "lhl_uk_monarchy_slot_3"
+			spriteType = "GFX_lhl_uk_monarchy_George_Windsor_Earl_of_St_Andrews"
+			pdx_tooltip = "KING_ST_ANDREWS"
+			position = { x = 160 y = 70 }
+		}
+		
+	    iconType = {
+			name = "lhl_uk_monarchy_slot_4"
+			spriteType = "GFX_lhl_uk_monarchy_Peter_Phillips"
+			pdx_tooltip = "KING_PETER"
+			position = { x = 160 y = 70 }
+		}
+		
+	    iconType = {
+			name = "lhl_uk_monarchy_slot_5"
+			spriteType = "GFX_lhl_uk_monarchy_Prince_Edward_Earl_of_Wessex"
+			pdx_tooltip = "KING_EDWARD"
+			position = { x = 160 y = 70 }
+		}
+		
+	    iconType = {
+			name = "lhl_uk_monarchy_slot_6"
+			spriteType = "GFX_lhl_uk_monarchy_Prince_Michael_of_Kent"
+			pdx_tooltip = "KING_MICHAEL"
+			position = { x = 160 y = 70 }
+		}
+		
+	    iconType = {
+			name = "lhl_uk_monarchy_slot_7"
+			spriteType = "GFX_lhl_uk_monarchy_Prince_William_Duke_of_Cambridge"
+			pdx_tooltip = "KING_WILLIAM"
+			position = { x = 160 y = 70 }
+		}
+		
+	    iconType = {
+			name = "lhl_uk_monarchy_slot_8"
+			spriteType = "GFX_lhl_uk_monarchy_Princess_Diana"
+			pdx_tooltip = "KING_DIANA"
+			position = { x = 160 y = 70 }
+		}
+		
+	    iconType = {
+			name = "lhl_uk_monarchy_slot_9"
+			spriteType = "GFX_lhl_uk_monarchy_The_Princess_Anne"
+			pdx_tooltip = "KING_ANNE"
+			position = { x = 160 y = 70 }
+		}
+		
+	    iconType = {
+			name = "lhl_uk_monarchy_slot_10"
+			spriteType = "GFX_lhl_uk_monarchy_no_king"
+			pdx_tooltip = "KING_GONE"
+			position = { x = 160 y = 70 }
+		}
+		
+		background = {
+			name = "lhl_table_opening_screen_background_1"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+		###Background###
+		iconType = {
+			name = "lhl_table_opening_screen_background"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_lhl_uk_monarchy_screen"
+			alwaystransparent = yes
+		}
+		###HEADING###
+		instantTextboxType = {
+			name = "lhl_ruling_monarch_title"
+			position = { x = -570 y = 145 }
+			font = "hoi_24header"
+			text = "KNT_MONARCHY_SCREEN"
+			Orientation = CENTER
+			format = centre
+			maxWidth = 1150
+			maxHeight = 30
+		}
+	}
+}

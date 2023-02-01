@@ -1,0 +1,115 @@
+ideas = {
+
+	country = {
+        #ENGLAND#	
+		ENG_dynastic_crisis = {
+			
+			picture = ENG_dynastic_crisis
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			war_support_factor = 0.10
+			political_power_factor = 0.05
+			}
+		}
+		
+		
+		#RUSSIA#
+    	RUS_russian_civl_war_disaster = {
+			
+			picture = RUS_russian_civl_war_disaster
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.6
+				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5			
+				production_factory_max_efficiency_factor = -0.3
+
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		sabotage_from_kent = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				attrition = 0.2
+				army_morale_factor = -0.2
+				army_org = -0.1
+				army_org_regain = -0.3
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		horny_gas_bombings = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_defence_factor = -0.25
+				army_attack_factor = -0.25
+				army_morale_factor = -0.2
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		electromagnetic_shock_bombings = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_defence_factor = -0.2
+				recon_factor = -0.25
+				max_planning = -0.2
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		volcanic_bombings = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				max_dig_in = -0.2
+				dig_in_speed_factor	= -0.2
+				attrition = 0.2
+			}
+		}
+	}
+}

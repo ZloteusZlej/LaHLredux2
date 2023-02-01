@@ -1,0 +1,62 @@
+﻿EAG_INF_01 = 
+{
+	name = "English Militia"
+
+	for_countries = { EAG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Militia"
+
+	ordered =
+	{
+		1 = { "English Militia" }
+		2 = { "English Militia" }
+		3 = { "English Militia" }
+		
+	}
+}
+EAG_INF_02 = 
+{
+	name = "Peacekeeping Brigades"
+
+	for_countries = { EAG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Peacekeepers Brigade"
+
+	ordered =
+	{
+		1 = { "%d Peacekeepers Brigade" }
+		2 = { "%d Peacekeepers Brigade" }
+				
+	}
+}
+
+
+EAG_ARM_01 = 
+{
+	name = "Expeditionary Armoured Divisions"
+
+	for_countries = { EAG }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%d. Armoured Division"
+
+	ordered =
+	{
+		1 = { "%d Armoured Division" }
+		2 = { "%d Armoured Division" }
+		3 = { "%d Armoured Division" }
+		4 = { "%d Armoured Division" }
+				
+	}
+}

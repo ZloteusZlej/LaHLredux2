@@ -1,0 +1,67 @@
+equipments = {
+
+	support_equipment = {
+		year = 2012
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			infantry
+			motorized
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 4
+		resources = {
+			aluminium = 1
+			steel = 2
+		}
+	}
+
+	support_equipment_1 = {
+		year = 2012
+
+		archetype = support_equipment
+		priority = 20	
+	}	
+
+	uav_equipment = {
+		year = 2020
+
+		is_archetype = yes
+		picture = archetype_uav_equipment
+		is_buildable = no
+		type = {
+			infantry
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 4
+		resources = {
+			aluminium = 1
+			steel = 2
+		}
+	}
+	
+	uav_equipment_1 = {
+		year = 2020
+
+		archetype = uav_equipment
+		priority = 20	
+	}	
+}

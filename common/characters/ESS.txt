@@ -1,0 +1,1514 @@
+characters={
+	ESS_nick_land = {
+		name="Nick Land"
+		portraits = {
+			civilian={
+				large="gfx/leaders/ESS/Portrait_ESS_Nick_Land.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_nick_land.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_government
+			idea_token = nick_land
+			allowed = {
+				original_tag = ESS
+			}
+			traits = {
+				the_father_of_accelerationism 
+			}
+		}
+		country_leader={
+			ideology=accelerationism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	ESS_Richard_Dawkins={
+		name="Richard Dawkins"
+		portraits={
+			civilian={
+				large="gfx/leaders/ESS/Portrait_ESS_Richard_Dawkins.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_richard_dawkins.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_government
+			idea_token = ESS_richard_dawkins
+			allowed = {
+				original_tag = ESS
+			}
+			traits = {
+			}
+		}
+		country_leader={
+			ideology=progressivism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	ESS_david_pearce={
+		name="David Pearce"
+		portraits={
+			civilian={
+				large="gfx/leaders/ESS/Portrait_ESS_David_Pearce.dds"
+			}
+		}
+		country_leader={
+			ideology=ethical_millennialism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	ESS_nick_srnicek={
+		name="Nick Srnicek"
+		portraits={
+			civilian={
+				large="gfx/leaders/ESS/.dds"
+			}
+		}
+		country_leader={
+			ideology=ultrahegelianism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	ESS_steve_ignorant={
+		name="Steve Ignorant"
+		portraits={
+			civilian={
+				large="gfx/leaders/ESS/Portrait_ESS_Steve_Ignorant.dds"
+			}
+		}
+		country_leader={
+			ideology=soviet_marxism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	ESS_max_mosley={
+		name="Max Mosley"
+		portraits={
+			civilian={
+				large="gfx/leaders/ESS/Portrait_ESS_Max_Mosley.dds"
+			}
+		}
+		country_leader={
+			ideology=accelerationism
+			traits={ mad_max }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	ESS_richard_williamson={
+		name="Richard Williamson"
+		portraits={
+			civilian={
+				large="gfx/leaders/ESS/.dds"
+			}
+		}
+		country_leader={
+			ideology=national_anarchism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	ESS_carl_benjamin={
+		name="Carl Benjamin"
+		portraits={
+			civilian={
+				large="gfx/leaders/ESS/.dds"
+			}
+		}
+		country_leader={
+			ideology=social_conservatism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	ESS_tim_collins={
+		name="Tim Collins"
+		portraits={
+			civilian={
+				large="gfx/leaders/ESS/Portrait_ESS_Tim_Collins.dds"
+				small = "gfx/interface/ideas/ESS/idea_ESS_tim_collins.dds"
+			}
+		}
+		field_marshal={
+			traits={ infantry_officer loyalist organizer }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_government
+			idea_token = ESS_tim_collins
+			allowed = {
+				original_tag = ESS
+			}
+			traits = {
+			}
+		}
+		country_leader={
+			ideology=autocracy
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	ESS_moira_cameron={
+		name="Moira Cameron"
+		portraits={
+			civilian={
+				large="gfx/leaders/ESS/Portrait_ESS_Moira_Cameron.dds"
+			}
+		}
+		country_leader={
+			ideology=neo_feudalism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	ESS_richard_williamson ={
+		name="Richard Williamson"
+		portraits={
+			civilian={
+				large="gfx/leaders/ESS/.dds"
+			}
+		}
+		country_leader={
+			ideology=charismatic_dictatorship
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	
+	ESS_bob_stewart_={
+		name="Bob Stewart "
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Bob_Stewart.dds"
+			}
+		}
+		field_marshal={
+			traits={ media_personality politically_connected war_hero loyalist }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	ESS_philip_hollobone={
+		name="Philip Hollobone"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Philip_Hollobone.dds"
+			}
+		}
+		corps_commander={
+			traits={ loyalist }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	ESS_freddie_viggers={
+		name="Freddie Viggers"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Freddie_Viggers.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery Old_Guard loyalist }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	ESS_roger_waters={
+		name="Roger Waters"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Roger_Waters.dds"
+			}
+		}
+		corps_commander={
+			traits={ militiaman }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ESS_paul_mccartney={
+		name="Paul McCartney"
+		desc = "Co-lead vocalist and bassist for the Beatles"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Paul_McCartney.dds"
+			}
+		}
+		corps_commander={
+			traits={ militiaman }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ESS_daniel_radcliffe={
+		name="Daniel Radcliffe"
+		desc = "NAZI HARRY POTTER"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Daniel_Radcliffe.dds"
+			}
+		}
+		corps_commander={
+			traits={ militiaman }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ESS_gerald_strickland={
+		name="Gerald Strickland"
+		desc = "Gerald Strickland desc"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_KNT_Gerald_Strickland.dds"
+			}
+		}
+		corps_commander={
+			traits={ militiaman }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	
+	ESS_john_reesevans={
+		name="John Rees-Evans"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_John_Rees-Evans.dds"
+			}
+		}
+		corps_commander={
+			traits={ militiaman }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ESS_winston_mckenzie={
+		name="Winston McKenzie"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Winston_McKenzie.dds"
+			}
+		}
+		corps_commander={
+			traits={ militiaman }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ESS_ben_bathurst={
+		name="Ben Bathurst"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Ben_Bathurst.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer military_specialist }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	ESS_christopher_tickell={
+		name="Christopher Tickell"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Christopher_Tickell.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer military_specialist trait_engineer }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	ESS_richard_shirreff={
+		name="Richard Shirreff"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Richard_Shirreff.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer military_specialist panzer_leader panzer_expert }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	ESS_barney_whitespunner={
+		name="Barney White-Spunner"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Barney_White-Spunner.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer military_specialist cavalry_leader combined_arms_expert }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	ESS_rupert_smith={
+		name="Rupert Smith"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Rupert_Smith.dds"
+			}
+		}
+		field_marshal={
+			traits={ career_officer military_specialist logistics_wizard }
+			skill=5
+			attack_skill=3
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	ESS_mark_stanhope={
+		name="Mark Stanhope"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Mark_Stanhope.dds"
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer seawolf }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1
+		}
+	}
+	ESS_philip_wilcocks={
+		name="Philip Wilcocks"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Philip_Wilcocks.dds"
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer fleet_protector }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=2
+		}
+	}
+	ESS_michael_bath={
+		name="Michael Bath"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Michael_Bath.dds"
+			}
+		}
+		navy_leader={
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=3
+		}
+	}
+	ESS_jeffrey_maurice_sterling={
+		name="Jeffrey Maurice Sterling"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ESS/Portrait_ESS_Jeffrey_Maurice_Sterling.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=4
+		}
+	}
+	
+	###Pol_adv###
+	
+	ESS_amy_ireland = {
+		name = "Amy Ireland"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_amy_ireland.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_amy_ireland
+			traits = {
+				cyberfemenist
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_country_flag = ESS_nick_here 
+				}
+			}
+			visible = {
+				has_country_flag = ESS_nick_here 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_sadie_plant = {
+		name = "Sadie Plant"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_sadie_plant.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_sadie_plant
+			traits = {
+				situationist
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_country_flag = ESS_nick_here 
+				}
+			}
+			visible = {
+				has_country_flag = ESS_nick_here 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_lain_hamilton_grant = {
+		name = "Lain Hamilton Grant"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_sadie_plant.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_lain_hamilton_grant
+			traits = {
+				perfect_subjectivist
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_country_flag = ESS_nick_here 
+				}
+			}
+			visible = {
+				has_country_flag = ESS_nick_here 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_ray_brassier  = {
+		name = "Ray Brassier"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_ray_brassier.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_ray_brassier
+			traits = {
+				courts_scott
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_country_flag = ESS_nick_here 
+				}
+			}
+			visible = {
+				has_country_flag = ESS_nick_here 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_reza_negarestani  = {
+		name = "reza Negarestani"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_reza_negarestani.dds"
+			}
+		}
+		advisor = {
+			cost = 200
+			slot = political_advisor
+			idea_token = ESS_reza_negarestani
+			traits = {
+				shadow_hand
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_country_flag = ESS_nick_here 
+				}
+			}
+			visible = {
+				has_country_flag = ESS_nick_here 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_curtis_yarvin  = {
+		name = "Curtis Yarvin"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_curtis_yarvin.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_curtis_yarvin
+			traits = {
+				american_moldbug
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_country_flag = ESS_nick_here 
+				}
+			}
+			visible = {
+				has_country_flag = ESS_nick_here 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_kodwo_eshun  = {
+		name = "Kodwo Eshun"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_kodwo_eshun.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_kodwo_eshun
+			traits = {
+				afrofuturist
+			}
+			available = {
+				hidden_trigger = {
+					has_country_flag = ESS_nick_here 
+				}
+			}
+			visible = {
+				has_country_flag = ESS_nick_here 
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_matthew_fuller  = {
+		name = "Mattew Fuller"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_matthew_fuller.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_matthew_fuller
+			traits = {
+				megalomediac
+			}
+			available = {
+				hidden_trigger = {
+					has_country_flag = ESS_nick_here 
+				}
+			}
+			visible = {
+				has_country_flag = ESS_nick_here 
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_steve_goodman  = {
+		name = "Steeve Goodman"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_steve_goodman.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_steve_goodman
+			traits = {
+				sole_goodman
+			}
+			available = {
+				hidden_trigger = {
+					has_country_flag = ESS_nick_here 
+				}
+			}
+			visible = {
+				has_country_flag = ESS_nick_here 
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+	    }
+	}
+	ESS_anna_greenspan  = {
+		name = "Anna Greenspan"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_anna_greenspan.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_anna_greenspan
+			traits = {
+				practical_cybermancer
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_country_flag = ESS_nick_here 
+				}
+			}
+			visible = {
+				has_country_flag = ESS_nick_here 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_bill_cash  = {
+		name = "Bill Cash"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_bill_cash.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_bill_cash
+			traits = {
+				cash_grabber
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = hegemonism
+				}
+			}
+			visible = {
+				has_government = hegemonism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_joanne_rowling  = {
+		name = "Joanne Rowling"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_joanne_rowling.dds"
+			}
+		}
+		advisor = {
+			cost = 200
+			slot = political_advisor
+			idea_token = ESS_joanne_rowling
+			traits = {
+				radical_conservative
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = hegemonism
+				}
+			}
+			visible = {
+				has_government = hegemonism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_martin_amis  = {
+		name = "Martin Amis"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_martin_amis.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_martin_amis
+			traits = {
+				aimless_hater
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = socialism
+				}
+			}
+			visible = {
+				has_government = socialism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_suzanne_moore  = {
+		name = "Suzanne Moore"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_suzanne_moore.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_suzanne_moore
+			traits = {
+				femenne
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = socialism
+				}
+			}
+			visible = {
+				has_government = socialism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_polly_toynbee  = {
+		name = "Polly Toynbee"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_polly_toynbee.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_polly_toynbee
+			traits = {
+				peoples_aristocrat
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = socialism
+				}
+			}
+			visible = {
+				has_government = socialism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}	
+	ESS_peter_wilby  = {
+		name = "Peter Wilby"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_peter_wilby.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_peter_wilby
+			traits = {
+				oxbridge_man
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = socialism
+				}
+			}
+			visible = {
+				has_government = socialism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_julian_baggini  = {
+		name = "Julian Baggini"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_julian_baggini.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_julian_baggini
+			traits = {
+				humanist
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = socialism
+				}
+			}
+			visible = {
+				has_government = socialism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_acgraylin  = {
+		name = "A. C. Graylin"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_acgraylin.dds"
+			}
+		}
+		advisor = {
+			cost = 200
+			slot = political_advisor
+			idea_token = ESS_acgraylin
+			traits = {
+				second_dawkins
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = socialism
+				}
+			}
+			visible = {
+				has_government = socialism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_maryam_namazie  = {
+		name = "Maryam Namazie"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_maryam_namazie.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_maryam_namazie
+			traits = {
+				iranian_system
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = socialism
+				}
+			}
+			visible = {
+				has_government = socialism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_aliyah_saleem  = {
+		name = "Aliyah Saleem"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_aliyah_saleem.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_aliyah_saleem
+			traits = {
+				secular_academician
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = socialism
+				}
+			}
+			visible = {
+				has_government = socialism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_ringo_starr  = {
+		name = "Ringo Starr"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_ringo_starr.dds"
+			}
+		}
+		advisor = {
+			cost = 200
+			slot = political_advisor
+			idea_token = ESS_ringo_starr
+			traits = {
+				famous_popstarr
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = socialism
+				}
+			}
+			visible = {
+				has_government = socialism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_alan_sugar  = {
+		name = "Alan Shugar"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_alan_sugar.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_alan_sugar
+			research_bonus = {
+				industry = 0.10
+				electronics = 0.10
+			}
+			traits = { 
+				sugar_boss 
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_simon_cowell  = {
+		name = "Simon Cowell"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_simon_cowell.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_simon_cowell
+			traits = {
+				talent_seeker
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_piers_morgan  = {
+		name = "Piers Morgan"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_piers_morgan.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_piers_morgan
+			traits = {
+				london_tonight
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_niall_ferguson  = {
+		name = "Naill Ferguson"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_niall_ferguson.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_niall_ferguson
+			traits = {
+				panenglish_imperialist
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = hegemonism
+				}
+			}
+			visible = {
+				has_government = hegemonism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_katie_hopkins = {
+		name = "Katie Hopkins"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_katie_hopkins.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_katie_hopkins
+			traits = {
+				rules_the_world
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_raheem_kassam = {
+		name = "Rahem Kassam"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_raheem_kassam.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_raheem_kassam
+			traits = {
+				londons_cheif
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_andrew_rosindell = {
+		name = "Andrew Rosindell"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_andrew_rosindell.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_andrew_rosindell
+			traits = {
+				oldest_youngest
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = hegemonism
+				}
+			}
+			visible = {
+				has_government = hegemonism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_david_starkey = {
+		name = "David Starkey"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_david_starkey.dds"
+			}
+		}
+		advisor = {
+			cost = 60
+			slot = political_advisor
+			idea_token = ESS_david_starkey
+			traits = {
+				rival_in_power
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_william_legge = {
+		name = "William Legge"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_william_legge.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = ESS_william_legge
+			traits = {
+				10th_earl
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	ESS_michael_grylls = {
+		name = "Michael Grylls"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_michael_grylls.dds"
+			}
+		}
+		advisor = {
+			cost = 50
+			slot = high_command
+			ledger = army
+			idea_token = ESS_michael_grylls
+			traits = {
+				survivial_specialist
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			visible = {
+				has_country_flag = ESS_michael_grylls_avaliable
+			}
+			ai_will_do  = {
+				factor  = 2.000
+			}
+	    }
+	}
+	ESS_miles_routledge = {
+		name = "Miles Routledge"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_miles_routledge.dds"
+			}
+		}
+		advisor = {
+			cost = 50
+			slot = political_advisor
+			idea_token = ESS_miles_routledge
+			traits = {
+				hermit
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			visible = {
+				has_country_flag = ESS_race_miles_routledge_flag
+			}
+			ai_will_do  = {
+				factor  = 2.000
+			}
+	    }
+	}
+	ESS_liz_truss = {
+		name = "Liz Truss"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/interface/ideas/ESS/idea_ESS_liz_truss.dds"
+			}
+		}
+		advisor = {
+			cost = 50
+			slot = political_advisor
+			idea_token = ESS_liz_truss
+			traits = {
+				iron_lady
+			}
+			allowed = {
+				original_tag = ESS
+			}
+			visible = {
+				has_country_flag = ESS_race_liz_truss_flag
+			}
+			ai_will_do  = {
+				factor  = 2.000
+			}
+	    }
+	}
+
+}

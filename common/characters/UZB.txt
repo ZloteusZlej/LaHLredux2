@@ -1,0 +1,564 @@
+characters={
+	UZB_gulnara_karimova={
+		name="Gulnara Karimova"
+		portraits={
+			civilian={
+				large="gfx/leaders/UZB/Portrait_UZB_Gulnara_Karimova.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_KARIMOVA_DESC"
+			ideology=accelerationism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	UZB_abdulla_mustafin={
+		name="Abdulla Mustafin"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=ethical_millennialism
+			traits={ armaments_organizer dealbroker }
+			expire="2027.1.1.14"
+			id=-1
+		}
+	}
+	UZB_arslon_ergashev={
+		name="Arslon Ergashev"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=leftwing_chauvinism
+			expire="2027.1.1.14"
+			id=-1
+		}
+	}
+	UZB_djavohir_abdullaev={
+		name="Djavohir Abdullaev"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=soviet_marxism
+			traits={ eager_collaborator }
+			expire="2026.1.1.14"
+			id=-1
+		}
+	}
+	UZB_ishoq_sulaymanov={
+		name="Ishoq Sulaymanov"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=left_greens
+			expire="2025.1.1.14"
+			id=-1
+		}
+	}
+	UZB_mirzo_nuraliev={
+		name="Mirzo Nuraliev"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=larouche_movement
+			traits={ compassionate_gentleman tenacious_negotiator }
+			expire="2025.1.1.14"
+			id=-1
+		}
+	}
+	UZB_polat_haydarov={
+		name="Po'lat Haydarov"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=social_conservatism
+			traits={ financial_expert }
+			expire="2040.1.1.14"
+			id=-1
+		}
+	}
+	UZB_sayfullo_aliev={
+		name="Sayfullo Aliev"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=green_autocracy
+			traits={ ideological_crusader hawk }
+			expire="2039.1.1.14"
+			id=-1
+		}
+	}
+	UZB_ulugbek_yunusov={
+		name="Ulug'bek Yunusov"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=ecofascism
+			traits={ compassionate_gentleman financial_expert }
+			expire="2039.1.1.14"
+			id=-1
+		}
+	}
+	UZB_abdurahmin_niyazov={
+		name="Abdurahmin Niyazov"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=charismatic_dictatorship
+			expire="2038.1.1.14"
+			id=-1
+		}
+	}
+	UZB_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = UZB_stc
+			allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="UZB_stc"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+	}
+	UZB_aa2={
+		advisor={
+			slot = high_command
+			idea_token = UZB_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="UZB_aa2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}
+	}
+	UZB_ncs={
+		advisor={
+			slot = high_command
+			idea_token = UZB_ncs
+			ledger  = navy 
+				allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="UZB_ncs"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_2"
+			}
+		}
+	}
+	UZB_nt={
+		advisor={
+			slot = theorist
+			idea_token = UZB_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="UZB_nt"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+	}
+	UZB_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = UZB_democratic_guy
+			allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					democratic_reformer
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="UZB_democratic_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+	}
+	UZB_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = UZB_fascist_guy
+			allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					fascist_demagogue
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="UZB_fascist_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+	}
+	UZB_ai2={
+		advisor={
+			slot = high_command
+			idea_token = UZB_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="UZB_ai2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_3"
+			}
+		}
+	}
+	UZB_acas={
+		advisor={
+			slot = high_command
+			idea_token = UZB_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="UZB_acas"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+	}
+	UZB_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = UZB_acd2
+			allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="UZB_acd2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+	}
+	UZB_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = UZB_pot
+			allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="UZB_pot"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+	}
+	UZB_mt={
+		advisor={
+			slot = theorist
+			idea_token = UZB_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="UZB_mt"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_6"
+			}
+		}
+	}
+	UZB_awt={
+		advisor={
+			slot = theorist
+			idea_token = UZB_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="UZB_awt"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+	}
+	UZB_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = UZB_acgs
+			allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="UZB_acgs"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}
+	}
+	UZB_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = UZB_communist_guy
+			allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					communist_revolutionary
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="UZB_communist_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+	}
+	UZB_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = UZB_coi
+			allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="UZB_coi"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+	}
+	UZB_ar={
+		advisor={
+			slot = high_command
+			idea_token = UZB_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="UZB_ar"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_5"
+			}
+		}
+	}
+	UZB_acr={
+		advisor={
+			slot = air_chief
+			idea_token = UZB_acr
+			allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="UZB_acr"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}
+	}
+	UZB_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = UZB_nccr
+			allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="UZB_nccr"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_2"
+			}
+		}
+	}
+	UZB_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = UZB_ncm
+			allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="UZB_ncm"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+	}
+	UZB_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = UZB_aco2
+			allowed  = {
+					original_tag  = UZB
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="UZB_aco2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_4"
+			}
+		}
+	}
+}

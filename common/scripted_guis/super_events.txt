@@ -1,0 +1,343 @@
+scripted_gui = {
+
+	Pax_Super_Event_Window = {
+		context_type = player_context
+		window_name = "Super_Event_Window"
+
+		visible = {
+			has_global_flag  = Super_Event_Visible
+		}
+
+		triggers = {
+			Super_Event_anarchy_victory_visible = {
+				has_global_flag  = anarchy_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_bandits_victory_visible = {
+				has_global_flag  = bandits_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_conservatives_victory_visible = {
+				has_global_flag  = conservatives_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_absolutists_victory_visible = {
+				has_global_flag  = absolutists_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_federalists_victory_visible = {
+				has_global_flag  = federalists_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_gnostic_victory_visible = {
+				has_global_flag  = gnostic_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_jacobites_victory_visible = {
+				has_global_flag  = jacobites_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_interventionists_victory_visible = {
+				has_global_flag  = interventionists_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_labourists_victory_visible = {
+				has_global_flag  = labourists_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_leviathan_victory_visible = {
+				has_global_flag  = leviathan_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_mercenaries_victory_visible = {
+				has_global_flag  = mercenaries_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_nationalists_victory_visible = {
+				has_global_flag  = nationalists_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_neovictorians_victory_visible = {
+				has_global_flag  = neovictorians_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_northumbriansystem_victory_visible = {
+				has_global_flag  = northumbriansystem_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_occultists_victory_visible = {
+				has_global_flag  = occultists_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_spy_victory_visible = {
+				has_global_flag  = spy_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_oranjists_victory_visible = {
+				has_global_flag  = oranjists_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_progressivists_victory_visible = {
+				has_global_flag  = progressivists_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_republicans_victory_visible = {
+				has_global_flag  = republicans_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_revisionists_victory_visible = {
+				has_global_flag  = revisionists_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_revolutionaries_victory_visible = {
+				has_global_flag  = revolutionaries_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_romanists_victory_visible = {
+				has_global_flag  = romanists_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_royalists_victory_visible = {
+				has_global_flag  = royalists_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_separatists_victory_visible = {
+				has_global_flag  = separatists_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_sexists_victory_visible = {
+				has_global_flag  = sexists_victory
+			}
+		}
+
+		triggers = {
+			Super_Event_unionists_victory_visible = {
+				has_global_flag  = unionists_victory
+			}
+		}
+		
+		triggers = {
+			Super_Event_witches_victory_visible = {
+				has_global_flag  = witches_victory
+			}
+		}
+
+		properties = {
+			Super_Event_Default = {
+				image = "[get_my_superevent_texture]"
+			}
+		}
+
+		effects = {
+			Super_Event_Close_click = {
+				clr_global_flag = Super_Event_Visible
+
+				if = {
+					limit = {	
+						has_global_flag = absolutists_victory
+					}
+					clr_global_flag  = absolutists_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = leviathan_victory
+					}
+					clr_global_flag  = leviathan_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = conservatives_victory
+					}
+					clr_global_flag  = conservatives_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = labourists_victory
+					}
+					clr_global_flag  = labourists_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = spy_victory
+					}
+					clr_global_flag  = spy_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = witches_victory
+					}
+					clr_global_flag  = witches_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = interventionists_victory
+					}
+					clr_global_flag  = interventionists_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = jacobites_victory
+					}
+					clr_global_flag  = jacobites_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = mercenaries_victory
+					}
+					clr_global_flag  = mercenaries_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = neovictorians_victory
+					}
+					clr_global_flag  = neovictorians_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = progressivists_victory
+					}
+					clr_global_flag  = progressivists_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = republicans_victory
+					}
+					clr_global_flag  = republicans_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = northumbriansystem_victory
+					}
+					clr_global_flag  = northumbriansystem_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = revisionists_victory
+					}
+					clr_global_flag  = revisionists_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = revolutionaries_victory
+					}
+					clr_global_flag  = revolutionaries_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = romanists_victory
+					}
+					clr_global_flag  = romanists_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = royalists_victory
+					}
+					clr_global_flag  = royalists_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = gnostic_victory
+					}
+					clr_global_flag  = gnostic_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = occultists_victory
+					}
+					clr_global_flag  = occultists_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = sexists_victory
+					}
+					clr_global_flag  = sexists_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = anarchy_victory
+					}
+					clr_global_flag  = anarchy_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = bandits_victory
+					}
+					clr_global_flag  = bandits_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = federalists_victory
+					}
+					clr_global_flag  = federalists_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = oranjists_victory
+					}
+					clr_global_flag  = oranjists_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = separatists_victory
+					}
+					clr_global_flag  = separatists_victory
+				}
+				if = {
+					limit = {	
+						has_global_flag = unionists_victory
+					}
+					clr_global_flag  = unionists_victory
+				}
+				
+			}
+		}
+	}
+}

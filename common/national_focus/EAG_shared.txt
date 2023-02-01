@@ -1,0 +1,5348 @@
+
+###FIRST TREE###
+
+shared_focus = {
+	id = EAG_norfolk_expedition
+	icon = GFX_goal_EAG_norfolk_expedition
+	cost = 4.3
+	completion_reward = {
+		hidden_effect = {
+			EAG = {
+				country_event = {
+					days = 0
+					id = EAG_event.33
+				}
+			}
+		}
+		custom_effect_tooltip = EAG_norfolk_expedition_tt
+	}
+	select_effect = {
+		EAG = {
+			country_event = {
+				days = 4
+				id = EAG_event.1
+			}
+		}
+	}
+	x = 12
+	y = 0
+}
+
+shared_focus = {
+	id = EAG_delivery_for_the_front
+	icon = GFX_goal_EAG_delivery_for_the_front
+	cost = 4.3
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3500
+			producer = EAG
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 250
+			producer = EAG
+		}
+	}
+	prerequisite = {
+		focus = EAG_norfolk_expedition
+	}
+	x = 10
+	y = 1
+}
+
+shared_focus = {
+	id = EAG_american_relicts
+	icon = GFX_goal_EAG_american_relicts
+	cost = 4.3
+	completion_reward = {
+		EAG = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 10
+				producer = EAG
+			}
+			add_equipment_to_stockpile = {
+				type = CAS_equipment
+				amount = 15
+				producer = EAG
+			}
+		}
+	}
+	prerequisite = {
+		focus = EAG_norfolk_expedition
+	}
+	x = 14
+	y = 1
+}
+
+shared_focus = {
+	id = EAG_panem
+	icon = GFX_goal_EAG_panem
+	cost = 4.3
+	completion_reward = {
+		add_ideas = EAG_panem_a
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.34
+			}
+		}
+	}
+	prerequisite = {
+		focus = EAG_delivery_for_the_front
+	}
+	prerequisite = {
+		focus = EAG_american_relicts
+	}
+	x = 11
+	y = 2
+}
+
+shared_focus = {
+	id = EAG_circenses
+	icon = GFX_goal_EAG_circenses
+	cost = 4.3
+	completion_reward = {
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.35
+			}
+		}
+		add_ideas = EAG_circenses_bonus
+	}
+	prerequisite = {
+		focus = EAG_delivery_for_the_front
+	}
+	prerequisite = {
+		focus = EAG_american_relicts
+	}
+	x = 13
+	y = 2
+}
+
+shared_focus = {
+	id = EAG_raid_on_ports
+	icon = GFX_goal_EAG_raid_on_ports
+	cost = 4.3
+	completion_reward = {
+		1143 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+	prerequisite = {
+		focus = EAG_delivery_for_the_front
+	}
+	prerequisite = {
+		focus = EAG_american_relicts
+	}
+	x = 9
+	y = 2
+}
+
+shared_focus = {
+	id = EAG_heart_of_suffolk
+	icon = GFX_goal_EAG_heart_of_suffolk
+	cost = 4.3
+	completion_reward = {
+		1143 = {
+			add_building_construction = {
+				type = nuclear_reactor
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	prerequisite = {
+		focus = EAG_delivery_for_the_front
+	}
+	prerequisite = {
+		focus = EAG_american_relicts
+	}
+	x = 7
+	y = 2
+}
+
+shared_focus = {
+	id = EAG_the_last_hire
+	icon = GFX_goal_EAG_the_last_hire
+	cost = 4.3
+	completion_reward = {
+		division_template = {
+			name = "Military Firm"
+			division_names_group = EAG_INF_02
+
+			regiments = {
+				infantry = { x = 0 y = 0 }	
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }	
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				artillery_brigade = { x = 1 y = 2 }
+				artillery_brigade = { x = 1 y = 3 }
+			}
+			support = { 
+				engineer = { x = 0 y = 0 } 		
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Saxon Firm\" division_template = \"Military Firm\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = -4
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_mood_remove_4
+		add_to_variable = {
+				var = mercs_quality
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_quality
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_quality_add_3
+		custom_effect_tooltip = EAG_additional_company_tt
+	}
+	prerequisite = {
+		focus = EAG_delivery_for_the_front
+	}
+	prerequisite = {
+		focus = EAG_american_relicts
+	}
+	x = 15
+	y = 2
+}
+
+shared_focus = {
+	id = EAG_black_guards
+	icon = GFX_goal_EAG_black_guards
+	cost = 4.3
+	completion_reward = {
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Pruhdonist Squad\" division_template = \"English Militia\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+		}
+		random_owned_controlled_state = {	
+			create_unit = {
+				division = "name = \"Ipswich Dockyards Militia\" division_template = \"English Militia\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+		}
+		random_owned_controlled_state = {	
+			create_unit = {
+				division = "name = \"Nechayev's Brigade\" division_template = \"English Militia\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Batalion Gazza\" division_template = \"English Militia\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+		}
+		custom_effect_tooltip = EAG_anarchist_divisions_tt
+	}
+	prerequisite = {
+		focus = EAG_delivery_for_the_front
+	}
+	prerequisite = {
+		focus = EAG_american_relicts
+	}
+	x = 17
+	y = 2
+}
+
+shared_focus = {
+	id = EAG_gather_our_wealth
+	icon = GFX_goal_EAG_gather_our_wealth
+	cost = 4.3
+	completion_reward = {
+		add_political_power = 75
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.36
+			}
+		}
+	}
+	prerequisite = {
+		focus = EAG_panem
+	}
+	prerequisite = {
+		focus = EAG_circenses
+	}
+	x = 12
+	y = 3
+}
+
+shared_focus = {
+	id = EAG_protect_the_farmer
+	icon = GFX_goal_EAG_protect_the_farmer
+	cost = 4.3
+	completion_reward = {
+		1143 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		1004 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+			add_ideas = EAG_secured_foodchain
+	}
+	prerequisite = {
+		focus = EAG_heart_of_suffolk
+	}
+	prerequisite = {
+		focus = EAG_raid_on_ports
+	}
+	x = 8
+	y = 3
+}
+shared_focus = {
+	id = EAG_peoples_storm
+	icon = GFX_goal_EAG_peoples_storm
+	cost = 4.3
+	completion_reward = {
+		add_to_variable = {
+				var = volk_mood
+				value = -6
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		swap_ideas = {
+			remove_idea = volunteer_only
+			add_idea = extensive_conscription
+		}
+		custom_effect_tooltip = EAG_volk_mood_remove_6
+	}
+	prerequisite = {
+		focus = EAG_the_last_hire
+	}
+	prerequisite = {
+		focus = EAG_black_guards
+	}
+	x = 16
+	y = 3
+}
+
+shared_focus = {
+	id = EAG_march_of_liberators
+	icon = GFX_goal_EAG_march_of_liberators
+	cost = 4.3
+	select_effect = {
+		EAG = {
+			country_event = {
+				days = 5
+				id = EAG_event.37
+			}
+		}
+	}
+	completion_reward = {
+		declare_war_on = {
+			target = ESS
+			type = annex_everything
+		}
+	}
+	prerequisite = {
+		focus = EAG_peoples_storm
+	}
+	prerequisite = {
+		focus = EAG_protect_the_farmer
+	}
+	prerequisite = {
+		focus = EAG_gather_our_wealth
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 8
+			date > 2021.01.01
+		}
+	}
+	x = 12
+	y = 4
+}
+
+###ADDITIONAL TREE###
+
+shared_focus = {
+	id = EAG_fresh_meat
+	icon = GFX_goal_EAG_fresh_meat
+	cost = 4.3
+	available = {
+		EAG = {
+			has_war_with = ESS
+		}
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = EAG_simplified_training
+			days = 255
+		}
+	}
+	x = 28
+	y = 0
+}
+
+shared_focus = {
+	id = EAG_from_under_their_nose
+	icon = GFX_goal_EAG_from_under_their_nose
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_fresh_meat
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 75
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_fighting_vehicle_equipment
+			amount = 25
+			producer = FRA
+		}
+		add_equipment_to_stockpile = {
+			type = main_battle_tank_equipment
+			amount = 25
+			producer = HOL
+		}
+	}
+	x = 28
+	y = 1
+}
+
+shared_focus = {
+	id = EAG_outreach_the_right
+	icon = GFX_goal_EAG_outreach_the_right
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_fresh_meat
+	}
+	completion_reward = {
+		add_manpower = 15000
+		add_to_variable = {
+				var = mercs_quality
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_quality
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_quality_add_3
+		add_popularity = {
+			ideology = hegemonism
+			popularity = 0.1
+		}
+	}
+	x = 26
+	y = 1
+}
+
+shared_focus = {
+	id = EAG_secure_the_shelfs
+	icon = GFX_goal_EAG_secure_the_shelfs
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_fresh_meat
+	}
+	completion_reward = {
+		add_fuel = 40000
+		1004 = {
+			add_resource = {
+				type = oil
+				amount = 15
+			}
+			add_building_construction = {
+				type = fuel_silo 
+				level = 2
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+	x = 30
+	y = 1
+}
+
+shared_focus = {
+	id = EAG_no_to_marauders
+	icon = GFX_goal_EAG_no_to_marauders
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_secure_the_shelfs
+	}
+	prerequisite = {
+		focus = EAG_outreach_the_right
+	}
+	prerequisite = {
+		focus = EAG_from_under_their_nose
+	}
+	completion_reward = {
+		add_to_variable = {
+				var = mercs_mood
+				value = -6
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_mood_remove_6
+		add_to_variable = {
+				var = volk_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_volk_mood_add_3
+		add_timed_idea = {
+			idea = EAG_discipline_campaign
+			days = 180
+		}
+	}
+	x = 27
+	y = 2
+}
+
+shared_focus = {
+	id = EAG_contest_for_lucksmen 
+	icon = GFX_goal_EAG_contest_for_lucksmen
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_secure_the_shelfs
+	}
+	prerequisite = {
+		focus = EAG_outreach_the_right
+	}
+	prerequisite = {
+		focus = EAG_from_under_their_nose
+	}
+	completion_reward = {
+		add_to_variable = {
+				var = mercs_quality
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_quality
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_quality_add_3
+		add_to_variable = {
+				var = mercs_mood
+				value = 4
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_mood_add_4
+		add_war_support = 0.15
+	}
+	x = 29
+	y = 2
+}
+
+shared_focus = {
+	id = EAG_ask_smugglers_for_a_kickback 
+	icon = GFX_goal_EAG_ask_smugglers_for_a_kickback 
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_contest_for_lucksmen
+	}
+	prerequisite = {
+		focus = EAG_no_to_marauders
+	}
+	completion_reward = {
+		add_to_variable = {
+				var = volk_dev
+				value = 5
+		}
+		clamp_variable = {
+				var = volk_dev
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_volk_dev_add_5
+		1004 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		add_political_power = 100
+	}
+	x = 28
+	y = 3
+}
+
+###MERCS TREE ECONOMY###
+
+shared_focus = {
+	id = EAG_haven_for_smugglers
+	icon = GFX_goal_EAG_haven_for_smugglers
+	cost = 4.3
+	completion_reward = {
+		1004 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		add_offsite_building = { type = industrial_complex level = 1 }
+		add_ideas = EAG_port_of_ipswich
+	}
+	x = 12
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_acmesation
+	icon = GFX_goal_EAG_acmesation
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_haven_for_smugglers
+	}
+	completion_reward = {
+		add_ideas = EAG_english_laundromat
+	}
+	x = 12
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_gunzel_pounds
+	icon = GFX_goal_EAG_gunzel_pounds
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_haven_for_smugglers
+	}
+	completion_reward = {
+		add_political_power = 125
+		add_timed_idea = {
+			idea = EAG_currency_introduction
+			days = 60
+		}
+	}
+	x = 10
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_revise_lands_blueprints
+	icon = GFX_goal_EAG_revise_lands_blueprints
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_haven_for_smugglers
+	}
+	completion_reward = {
+		add_ideas = EAG_lands_blueprints
+	}
+	x = 14
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_flat_taxation
+	icon = GFX_goal_EAG_flat_taxation
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_revise_lands_blueprints
+	}
+	prerequisite = {
+		focus = EAG_gunzel_pounds
+	}
+	prerequisite = {
+		focus = EAG_acmesation
+	}
+	completion_reward = {
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+	}
+	x = 11
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_rebrand_oxford
+	icon = GFX_goal_EAG_rebrand_oxford
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_revise_lands_blueprints
+	}
+	prerequisite = {
+		focus = EAG_gunzel_pounds
+	}
+	prerequisite = {
+		focus = EAG_acmesation
+	}
+	completion_reward = {
+		add_ideas = EAG_new_universities
+		add_political_power = 75
+	}
+	x = 13
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_deal_for_regressionists
+	icon = GFX_goal_EAG_deal_for_regressionists
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_rebrand_oxford
+	}
+	prerequisite = {
+		focus = EAG_flat_taxation
+	}
+	mutually_exclusive = {
+		focus = EAG_the_moneybag
+	}
+	completion_reward = {
+		add_political_power = 25
+		custom_effect_tooltip = EAG_industry_relocation_tt
+	}
+	x = 11
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_the_moneybag
+	icon = GFX_goal_EAG_the_moneybag
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_rebrand_oxford
+	}
+	prerequisite = {
+		focus = EAG_flat_taxation
+	}
+	mutually_exclusive = {
+		focus = EAG_deal_for_regressionists
+	}
+	available = {
+		country_exists = GRE
+	}
+	completion_reward = {
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.40
+			}
+		}
+		custom_effect_tooltip = EAG_greek_scheme_tt
+	}
+	x = 13
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_our_own_guns
+	icon = GFX_goal_EAG_our_own_guns
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_deal_for_regressionists
+		focus = EAG_the_moneybag
+	}
+	completion_reward = {
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		swap_ideas = {
+			remove_idea = lhl_economy_civil_war_economy
+			add_idea = lhl_economy_dirgisme
+		}
+	}
+	x = 12
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_trusted_partners	
+	icon = GFX_goal_EAG_trusted_partners
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_our_own_guns
+	}
+	select_effect = {
+		add_political_power = -25
+		EAG = {
+			country_event = {
+					days = 2
+					id = EAG_event.42
+			}
+		}
+	}
+	completion_reward = {
+		EAG = {
+			country_event = {
+					days = 0
+					id = EAG_event.45
+			}
+		}
+	}
+	x = 10
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_englisch_kontore	
+	icon = GFX_goal_EAG_englisch_kontore
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_our_own_guns
+	}
+	completion_reward = {
+		add_ideas = EAG_english_kontore_codex
+	}
+	x = 14
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_farmers_self_governance	
+	icon = GFX_goal_EAG_farmers_self_governance
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_our_own_guns
+	}
+	completion_reward = {
+		add_ideas = EAG_peasant_autonomy
+	}
+	x = 12
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_liquid_gold
+	icon = GFX_goal_EAG_liquid_gold
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_farmers_self_governance
+	}
+	prerequisite = {
+		focus = EAG_englisch_kontore
+	}
+	prerequisite = {
+		focus = EAG_trusted_partners
+	}
+	completion_reward = {
+		add_political_power = 125
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = industry
+		}
+		
+	}
+	x = 12
+	y = 11
+}
+
+###MERCS TREE ADMINISTRATION###
+
+shared_focus = {
+	id = EAG_price_for_freedom
+	icon = GFX_goal_EAG_price_for_freedom
+	cost = 4.3
+	completion_reward = {
+		add_political_power = 100
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -15
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_15_tt
+	}
+	x = 5
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_see_genossenschaft
+	icon = GFX_goal_EAG_see_genossenschaft
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_price_for_freedom
+	}
+	mutually_exclusive = {
+		focus = EAG_survival_of_the_fittest
+	}
+	completion_reward = {
+		add_to_variable = {
+				var = mercs_quality
+				value = -4
+		}
+		clamp_variable = {
+				var = mercs_quality
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_quality_remove_4
+		add_to_variable = {
+				var = mercs_mood
+				value = 4
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_mood_add_4
+		add_war_support = 0.1
+	}
+	x = 4
+	y = 6
+}
+shared_focus = {
+	id = EAG_survival_of_the_fittest
+	icon = GFX_goal_EAG_survival_of_the_fittest
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_price_for_freedom
+	}
+	mutually_exclusive = {
+		focus = EAG_see_genossenschaft
+	}
+	completion_reward = {
+		add_to_variable = {
+				var = mercs_quality
+				value = 4
+		}
+		clamp_variable = {
+				var = mercs_quality
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_quality_add_4
+		add_to_variable = {
+				var = mercs_mood
+				value = -4
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_mood_remove_4
+		every_character = {
+			limit = {
+				is_unit_leader = yes
+			}
+			add_skill_level = 1
+		}
+	}
+	x = 6
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_talking_toms
+	icon = GFX_goal_EAG_talking_toms
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_see_genossenschaft
+		focus = EAG_survival_of_the_fittest
+	}
+	completion_reward = {
+		add_advisor_role = {
+		  Character = EAG_nicholas_patrick_carter
+		  advisor = {
+			slot = head_of_government
+			cost = 50
+			idea_token = EAG_nicholas_patrick_carter
+			traits = {
+				house_manager
+			}
+			allowed = {
+				always = yes
+			}
+		  }
+		activate = yes
+		}
+	}
+	x = 4
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_ipswich_law
+	icon = GFX_goal_EAG_ipswich_law
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_see_genossenschaft
+		focus = EAG_survival_of_the_fittest
+	}
+	completion_reward = {
+		add_ideas = EAG_ipswich_league
+			1143 = {
+				add_province_modifier = {
+						static_modifiers = { ipswich_league_member }
+						province = {
+						all_provinces = yes
+						}
+					}
+			}
+		random_list = {
+				50 = {
+							1143 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 1
+						}
+					}
+			50 = {
+				1143 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -10
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_10_tt
+		custom_effect_tooltip = EAG_ipswich_law_tt
+	}
+	x = 6
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_camouflage_for_dinner_suits
+	icon = GFX_goal_EAG_camouflage_for_dinner_suits
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_ipswich_law
+	}
+	prerequisite = {
+		focus = EAG_talking_toms
+	}
+	completion_reward = {
+		remove_idea = EAG_illegitimate_government
+		add_political_power = 50
+		set_party_name = { 
+			ideology = neocameralism 
+			long_name = EAG_neocameralism_party_legitimate_long 
+			name = EAG_neocameralism_party_legitimate
+		}
+	}
+	x = 3
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_privacy_above_all
+	icon = GFX_goal_EAG_privacy_above_all
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_ipswich_law
+	}
+	prerequisite = {
+		focus = EAG_talking_toms
+	}
+	completion_reward = {
+		add_political_power = 50
+		add_ideas = EAG_privacy_laws
+		add_offsite_building = { type = arms_factory level = 2 }
+		add_offsite_building = { type = industrial_complex level = 2 }
+	}
+	x = 5
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_cops_for_hire
+	icon = GFX_goal_EAG_cops_for_hire
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_ipswich_law
+	}
+	prerequisite = {
+		focus = EAG_talking_toms
+	}
+	completion_reward = {
+		add_to_variable = {
+				var = mercs_quality
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_quality
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_quality_add_3
+		add_to_variable = {
+				var = mercs_mood
+				value = -2
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_mood_remove_2
+		add_ideas = EAG_polizei
+	}
+	x = 7
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_common_enemy
+	icon = GFX_goal_EAG_common_enemy
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_cops_for_hire
+	}
+	prerequisite = {
+		focus = EAG_privacy_above_all
+	}
+	prerequisite = {
+		focus = EAG_camouflage_for_dinner_suits
+	}
+	completion_reward = {
+		create_intelligence_agency = {
+				name = "Werwolf"
+				icon = GFX_intelligence_agency_logo_eag_1
+			}
+		EAG = {
+				country_event = {
+						days = 0
+						id = EAG_event.46
+				}
+			}
+	}
+	x = 4
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_our_friends_in_berlin
+	icon = GFX_goal_EAG_our_friends_in_berlin
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_cops_for_hire
+	}
+	prerequisite = {
+		focus = EAG_privacy_above_all
+	}
+	prerequisite = {
+		focus = EAG_camouflage_for_dinner_suits
+	}
+	completion_reward = {
+		add_ideas = EAG_exiles_of_berlin
+		add_research_slot = 1
+	}
+	x = 6
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_herr_justice
+	icon = GFX_goal_EAG_herr_justice
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_common_enemy
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_polizei
+			add_idea = EAG_polizei_1
+		}
+		add_political_power = 50
+		add_stability = 0.1
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -10
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_10_tt
+	}
+	x = 4
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_fate_of_the_crown
+	icon = GFX_goal_EAG_fate_of_the_crown
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_our_friends_in_berlin
+	}
+	completion_reward = {
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.49
+			}
+		}
+	}
+	x = 6
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_ensuring_our_place_in_heaven
+	icon = GFX_goal_EAG_ensuring_our_place_in_heaven
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_fate_of_the_crown
+	}
+	prerequisite = {
+		focus = EAG_herr_justice
+	}
+	completion_reward = {
+		add_ideas = EAG_company_charity
+	}
+	x = 5
+	y = 11
+}
+
+###MERCS TREE ARMY###
+
+shared_focus = {
+	id = EAG_take_care_of_the_company
+	icon = GFX_goal_EAG_take_care_of_the_company
+	cost = 4.3
+	completion_reward = {
+		army_experience = 15
+		add_political_power = 45
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 3
+			category = land_doctrine
+		}
+	}
+	x = 19
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_prussian_discipline
+	icon = GFX_goal_EAG_prussian_discipline
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_take_care_of_the_company
+	}
+	completion_reward = {
+		add_to_variable = {
+				var = mercs_quality
+				value = 4
+		}
+		clamp_variable = {
+				var = mercs_quality
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_quality_add_4
+		add_to_variable = {
+				var = mercs_mood
+				value = -2
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_mood_remove_2
+		add_ideas = EAG_improved_discipline
+	}
+	x = 18
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_learn_from_the_guru
+	icon = GFX_goal_EAG_learn_from_the_guru
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_take_care_of_the_company
+	}
+	completion_reward = {
+		add_political_power = 35
+		add_ideas = EAG_gunzel_group
+	}
+	x = 20
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_spezialkrafte
+	icon = GFX_goal_EAG_spezialkrafte
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_learn_from_the_guru
+	}
+	prerequisite = {
+		focus = EAG_prussian_discipline
+	}
+	completion_reward = {
+		add_ideas = EAG_spezialkrafte_bonus
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = mountaineers_tech
+		}
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = marine_tech
+		}
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = para_tech
+		}
+	}
+	x = 17
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_panzer_reiters
+	icon = GFX_goal_EAG_panzer_reiters
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_learn_from_the_guru
+	}
+	prerequisite = {
+		focus = EAG_prussian_discipline
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_gunzel_group
+			add_idea = EAG_gunzel_group_tanks_department
+		}
+		army_experience = 15
+	}
+	x = 19
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_rob_the_raf
+	icon = GFX_goal_EAG_rob_the_raf
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_learn_from_the_guru
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = fighter_equipment
+			amount = 120
+			producer = EAG
+		}
+		add_equipment_to_stockpile = {
+			type = CAS_equipment
+			amount = 75
+			producer = EAG
+		}
+		add_equipment_to_stockpile = {
+			type = strat_bomber_equipment
+			amount = 75
+			producer = EAG
+		}
+		add_political_power = 25
+	}
+	x = 21
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_street_fighters
+	icon = GFX_goal_EAG_street_fighters
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_spezialkrafte
+	}
+	completion_reward = {
+		add_ideas = EAG_urban_warfare_forces
+		division_template = {
+			name = "Home Defence"
+			division_names_group = EAG_INF_02
+			is_locked = no
+			regiments = {
+				urban_forces = { x = 0 y = 0 }	
+				urban_forces = { x = 0 y = 1 }
+				urban_forces = { x = 0 y = 2 }	
+				urban_forces = { x = 0 y = 3 }
+				urban_forces = { x = 1 y = 0 }
+				urban_forces = { x = 1 y = 1 }
+				artillery_brigade = { x = 1 y = 2 }
+			}
+			support = { 
+				engineer = { x = 0 y = 0 } 		
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Section A\" division_template = \"Home Defence\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+			create_unit = {
+				division = "name = \"Section B\" division_template = \"Home Defence\" start_experience_factor = 1.8 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+		}
+	}
+	x = 17
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_native_armor
+	icon = GFX_goal_EAG_native_armor
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_panzer_reiters
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_gunzel_group_tanks_department
+			add_idea = EAG_gunzel_group_tanks_department_upgrade
+		}
+		add_political_power = 30
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+	}
+	x = 19
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_united_cities_fleet
+	icon = GFX_goal_EAG_united_cities_fleet
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_rob_the_raf
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = convoy
+			amount = 75
+			producer = EAG
+		}
+		EAG = {
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "Ostanglien"
+				creator = EAG
+				name = "UFS Dover"
+			}
+			
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "Ostanglien"
+				creator = EAG
+				name = "UFS Ipswich"
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Ostanglien"
+				creator = EAG
+				name = "UFS Thames"
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Ostanglien"
+				creator = EAG
+				name = "UFS Müller"
+			}
+		}
+		add_political_power = 20
+	}
+	x = 21
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_english_foreign_legion
+	icon = GFX_goal_EAG_english_foreign_legion
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_united_cities_fleet
+	}
+	prerequisite = {
+		focus = EAG_native_armor
+	}
+	prerequisite = {
+		focus = EAG_street_fighters
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_gunzel_group_tanks_department_upgrade
+			add_idea = EAG_gunzel_group_legion
+		}
+		add_manpower = 25000
+		army_experience = 20
+		add_war_support	= 15
+	}
+	x = 19
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_bellum_se_ipsum_alet 
+	icon = GFX_goal_EAG_bellum_se_ipsum_alet
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_english_foreign_legion
+	}
+	mutually_exclusive = {
+		focus = EAG_ubersoldiers
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_gunzel_group_legion
+			add_idea = EAG_gunzel_group_robbers
+		}
+		add_to_variable = {
+				var = mercs_quality
+				value = -2
+		}
+		clamp_variable = {
+				var = mercs_quality
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_quality_remove_2
+		add_to_variable = {
+				var = mercs_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_mood_remove_3
+		add_political_power = 35
+		add_offsite_building = { type = industrial_complex level = 1 }
+	}
+	x = 18
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_ubersoldiers 
+	icon = GFX_goal_EAG_ubersoldiers
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_english_foreign_legion
+	}
+	mutually_exclusive = {
+		focus = EAG_bellum_se_ipsum_alet
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_gunzel_group_legion
+			add_idea = EAG_gunzel_group_uber
+		}
+		add_to_variable = {
+				var = mercs_quality
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_quality
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_quality_add_3
+		add_to_variable = {
+				var = mercs_mood
+				value = -2
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_mood_remove_2
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.25
+			uses = 3
+			category = land_doctrine
+		}
+	}
+	x = 20
+	y = 10
+}
+
+
+shared_focus = {
+	id = EAG_the_main_business
+	icon = GFX_goal_EAG_the_main_business
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_bellum_se_ipsum_alet 
+		focus = EAG_ubersoldiers
+	}
+	completion_reward = {
+		set_rule = {
+			desc = EAG_hui_ne_sosi
+			can_send_volunteers = yes
+		}
+		add_to_variable = {
+				var = mercs_quality
+				value = 5
+		}
+		clamp_variable = {
+				var = mercs_quality
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_quality_add_5
+		add_to_variable = {
+				var = mercs_mood
+				value = 4
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_mood_add_4
+		add_political_power = 50
+	}
+	x = 19
+	y = 11
+}
+
+##MERCS FINAL##
+
+shared_focus = {
+	id = EAG_the_end_of_expedition
+	icon = GFX_goal_EAG_the_end_of_expedition
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_liquid_gold
+	}
+	prerequisite = {
+		focus = EAG_ensuring_our_place_in_heaven
+	}
+	prerequisite = {
+		focus = EAG_the_main_business
+	}
+	available = {
+		has_country_flag = OSTANG_mercs_britain_reunified
+	}
+	completion_reward = {
+		add_political_power = 250
+		add_stability = 0.2
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.1337
+			}
+		}
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -5
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_5_tt
+	}
+	x = 12
+	y = 13
+}
+
+shared_focus = {
+	id = EAG_peace_in_england
+	icon = GFX_goal_EAG_peace_in_england
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_the_end_of_expedition
+	}
+	completion_reward = {
+		EAG = {
+			every_controlled_state = {
+				 add_compliance = 15
+				 add_resistance = -25
+			}
+		}
+		add_ideas = EAG_english_reconstruction
+	}
+	x = 12
+	y = 14
+}
+
+shared_focus = {
+	id = EAG_lager_diplomacy
+	icon = GFX_goal_EAG_lager_diplomacy
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_peace_in_england
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_english_reconstruction
+			add_idea = EAG_english_reconstruction_2
+		}
+		custom_effect_tooltip = EAG_lager_diplomacy_tt
+	}
+	x = 10
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_wash_the_reputation
+	icon = GFX_goal_EAG_wash_the_reputation
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_peace_in_england
+	}
+	completion_reward = {
+		EAG = {
+			every_controlled_state = {
+				 add_compliance = 15
+			}
+			add_stability = 0.1
+			add_political_power = 50
+		}
+	}
+	x = 12
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_electors_system
+	icon = GFX_goal_EAG_electors_system
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_peace_in_england
+	}
+	completion_reward = {
+		custom_effect_tooltip = EAG_ipswich_law_reform_tt
+	}
+	x = 14
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_what_happens_in_london
+	icon = GFX_goal_EAG_what_happens_in_london
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_lager_diplomacy
+	}
+	prerequisite = {
+		focus = EAG_electors_system
+	}
+	prerequisite = {
+		focus = EAG_wash_the_reputation
+	}
+	completion_reward = {
+		add_ideas = EAG_economy_of_entertainment
+		custom_effect_tooltip = EAG_tropico_tt
+	}
+	x = 9
+	y = 16
+}
+
+
+shared_focus = {
+	id = EAG_financial_innovations
+	icon = GFX_goal_EAG_financial_innovations
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_lager_diplomacy
+	}
+	prerequisite = {
+		focus = EAG_electors_system
+	}
+	prerequisite = {
+		focus = EAG_wash_the_reputation
+	}
+	completion_reward = {
+		add_ideas = EAG_schemes_and_machinations
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.50
+			}
+		}
+	}
+	x = 11
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_to_the_last_drop
+	icon = GFX_goal_EAG_to_the_last_drop
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_lager_diplomacy
+	}
+	prerequisite = {
+		focus = EAG_electors_system
+	}
+	prerequisite = {
+		focus = EAG_wash_the_reputation
+	}
+	completion_reward = {
+		add_stability = -0.05
+		add_political_power = 75
+		swap_ideas = {
+			remove_idea = EAG_english_reconstruction_2
+			add_idea = EAG_english_reconstruction_3
+		}
+	}
+	x = 13
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_connecting_people
+	icon = GFX_goal_EAG_connecting_people
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_lager_diplomacy
+	}
+	prerequisite = {
+		focus = EAG_electors_system
+	}
+	prerequisite = {
+		focus = EAG_wash_the_reputation
+	}
+	completion_reward = {
+		add_ideas = EAG_internets
+	}
+	x = 15
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_golden_english_republic
+	icon = GFX_goal_EAG_golden_english_republic
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_what_happens_in_london
+	}
+	prerequisite = {
+		focus = EAG_financial_innovations
+	}
+	prerequisite = {
+		focus = EAG_to_the_last_drop
+	}
+	prerequisite = {
+		focus = EAG_connecting_people
+	}
+	mutually_exclusive = {
+		focus = EAG_guilds_control
+	}
+	completion_reward = {
+		add_ideas = EAG_golden_english_republic_bonus
+	}
+	x = 11
+	y = 17
+}
+
+shared_focus = {
+	id = EAG_guilds_control
+	icon = GFX_goal_EAG_guilds_control
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_what_happens_in_london
+	}
+	prerequisite = {
+		focus = EAG_financial_innovations
+	}
+	prerequisite = {
+		focus = EAG_to_the_last_drop
+	}
+	prerequisite = {
+		focus = EAG_connecting_people
+	}
+	mutually_exclusive = {
+		focus = EAG_golden_english_republic
+	}
+	completion_reward = {
+		add_ideas = EAG_guilds_control_bonus
+	}
+	x = 13
+	y = 17
+}
+
+shared_focus = {
+	id = EAG_one_state_two_armies
+	icon = GFX_goal_EAG_one_state_two_armies
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_guilds_control
+		focus = EAG_golden_english_republic
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_polizei_1
+			add_idea = EAG_polizei_2
+		}
+	}
+	x = 11
+	y = 18
+}
+
+shared_focus = {
+	id = EAG_agreement_with_lords
+	icon = GFX_goal_EAG_agreement_with_lords
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_guilds_control
+		focus = EAG_golden_english_republic
+	}
+	completion_reward = {
+		add_political_power = 45
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+	}
+	x = 13
+	y = 18
+}
+
+shared_focus = {
+	id = EAG_sell_trophies
+	icon = GFX_goal_EAG_sell_trophies
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_agreement_with_lords
+	}
+	prerequisite = {
+		focus = EAG_one_state_two_armies
+	}
+	completion_reward = {
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.51
+			}
+		}
+		custom_effect_tooltip = EAG_sell_trophies_tt
+	}
+	x = 10
+	y = 19
+}
+
+shared_focus = {
+	id = EAG_free_lunch
+	icon = GFX_goal_EAG_free_lunch
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_agreement_with_lords
+	}
+	prerequisite = {
+		focus = EAG_one_state_two_armies
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_english_reconstruction_3
+			add_idea = EAG_english_reconstruction_4
+		}
+	}
+	x = 12
+	y = 19
+}
+
+shared_focus = {
+	id = EAG_boheme_resort
+	icon = GFX_goal_EAG_boheme_resort
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_agreement_with_lords
+	}
+	prerequisite = {
+		focus = EAG_one_state_two_armies
+	}
+	completion_reward = {
+		add_political_power = 40
+		custom_effect_tooltip = EAG_boheme_resort_tt
+	}
+	x = 14
+	y = 19
+}
+
+shared_focus = {
+	id = EAG_evolved_but_untamed
+	icon = GFX_goal_EAG_evolved_but_untamed
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_sell_trophies
+	}
+	prerequisite = {
+		focus = EAG_free_lunch
+	}
+	prerequisite = {
+		focus = EAG_boheme_resort
+	}
+	completion_reward = {
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.52
+			}
+		}
+		add_to_variable = {
+				var = mercs_quality
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_quality
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_quality_add_3
+		add_to_variable = {
+				var = mercs_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_mood_add_3
+	}
+	x = 12
+	y = 20
+}
+
+##NATIONAL ANARCHISTS TREE ECONOMY##
+
+shared_focus = {
+	id = EAG_end_of_the_exploitation
+	icon = GFX_goal_EAG_end_of_the_exploitation
+	cost = 4.3
+	completion_reward = {
+		1160 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		1160 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		add_political_power = 125
+			add_to_variable = {
+					var = volk_dev
+					value = 2
+				}
+				clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+			custom_effect_tooltip = EAG_volk_dev_add_2
+			add_to_variable = {
+					var = volk_mood
+					value = 5
+				}
+				clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+			custom_effect_tooltip = EAG_volk_mood_add_5
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -25
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_25_tt
+	}
+	x = 12
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_simpler_life 
+	icon = GFX_goal_EAG_simpler_life
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_end_of_the_exploitation
+	}
+	completion_reward = {
+		add_ideas = EAG_anticonsumerism
+	}
+	x = 10
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_new_dwellings 
+	icon = GFX_goal_EAG_new_dwellings
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_end_of_the_exploitation
+	}
+	completion_reward = {
+		add_ideas = EAG_simplified_building
+	}
+	x = 12
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_exchange_trading_services
+	icon = GFX_goal_EAG_exchange_trading_services
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_end_of_the_exploitation
+	}
+	completion_reward = {
+		add_ideas = EAG_service_exchange
+	}
+	x = 14
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_cottage_industry
+	icon = GFX_goal_EAG_cottage_industry
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_simpler_life
+	}
+	prerequisite = {
+		focus = EAG_new_dwellings
+	}
+	prerequisite = {
+		focus = EAG_exchange_trading_services
+	}
+	completion_reward = {
+		add_ideas = EAG_cottage_industry_bonus
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 2
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 1
+		}
+	}
+	x = 11
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_currency_for_every_commune
+	icon = GFX_goal_EAG_currency_for_every_commune
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_simpler_life
+	}
+	prerequisite = {
+		focus = EAG_new_dwellings
+	}
+	prerequisite = {
+		focus = EAG_exchange_trading_services
+	}
+	completion_reward = {
+		add_ideas = EAG_local_currency
+		add_political_power = 55
+	}
+	x = 13
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_diggers_cooperatives 
+	icon = GFX_goal_EAG_diggers_cooperatives
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_currency_for_every_commune
+	}
+	prerequisite = {
+		focus = EAG_cottage_industry
+	}
+	mutually_exclusive = {
+		focus = EAG_encourage_recycling
+	}
+	completion_reward = {
+		add_political_power = 45
+		custom_effect_tooltip = EAG_diggers_cooperatives_tt
+	}
+	x = 11
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_encourage_recycling 
+	icon = GFX_goal_EAG_encourage_recycling
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_currency_for_every_commune
+	}
+	prerequisite = {
+		focus = EAG_cottage_industry
+	}
+	mutually_exclusive = {
+		focus = EAG_diggers_cooperatives
+	}
+	completion_reward = {
+		add_political_power = 35
+		add_ideas = EAG_recycling
+	}
+	x = 13
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_eternal_powers
+	icon = GFX_goal_EAG_eternal_powers
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_encourage_recycling
+		focus = EAG_diggers_cooperatives
+	}
+	completion_reward = {
+		add_political_power = 35
+		remove_ideas = {
+			EAG_local_currency
+			EAG_cottage_industry_bonus
+			EAG_service_exchange
+			EAG_anticonsumerism
+			EAG_simplified_building
+		}
+		add_to_variable = {
+					var = volk_dev
+					value = 2
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+		custom_effect_tooltip = EAG_volk_dev_add_2
+		add_ideas = EAG_non_capitalist_economy
+		swap_ideas = {
+			remove_idea = lhl_economy_civil_war_economy
+			add_idea = lhl_economy_anarchism
+		}
+	}
+	x = 12
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_the_end_of_banking 
+	icon = GFX_goal_EAG_the_end_of_banking
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_eternal_powers
+	}
+	completion_reward = {
+		add_political_power = 65
+		add_offsite_building = { type = industrial_complex level = 2 }
+		add_ideas = EAG_death_of_usury
+	}
+	x = 10
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_hands_off_the_commune
+	icon = GFX_goal_EAG_hands_off_the_commune
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_eternal_powers
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_non_capitalist_economy
+			add_idea = EAG_non_capitalist_economy_2
+		}
+		if = {
+			limit = {
+				has_idea = free_trade
+			}
+			swap_ideas = {
+				remove_idea = free_trade
+				add_idea = limited_exports
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = export_focus
+			}
+			swap_ideas = {
+				remove_idea = export_focus
+				add_idea = limited_exports
+			}
+		}
+		
+		if = {
+			limit = {
+				has_idea = civilian_economy
+			}
+			swap_ideas = {
+				remove_idea = civilian_economy
+				add_idea = partial_economic_mobilisation
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = low_economic_mobilisation
+			}
+			swap_ideas = {
+				remove_idea = low_economic_mobilisation
+				add_idea = partial_economic_mobilisation
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = partial_economic_mobilisation
+			}
+			swap_ideas = {
+				remove_idea = partial_economic_mobilisation
+				add_idea = war_economy
+			}
+		}
+	}
+	x = 14
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_communal_mutual_aid
+	icon = GFX_goal_EAG_communal_mutual_aid
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_eternal_powers
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_non_capitalist_economy_2
+			add_idea = EAG_non_capitalist_economy_3
+		}
+	}
+	x = 12
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_bread_and_freedom
+	icon = GFX_goal_EAG_bread_and_freedom
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_communal_mutual_aid
+	}
+	prerequisite = {
+		focus = EAG_hands_off_the_commune
+	}
+	prerequisite = {
+		focus = EAG_the_end_of_banking
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_non_capitalist_economy_3
+			add_idea = EAG_non_capitalist_economy_4
+		}
+		add_political_power = 100
+		add_to_variable = {
+					var = volk_dev
+					value = 4
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+		custom_effect_tooltip = EAG_volk_dev_add_4
+		add_to_variable = {
+					var = volk_mood
+					value = 3
+				}
+		clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}	
+		custom_effect_tooltip = EAG_volk_mood_add_3			
+	}
+	x = 12
+	y = 11
+}
+
+##NATIONAL ANARCHISTS TREE ADMINISTRATION##
+
+shared_focus = {
+	id = EAG_no_to_opression
+	icon = GFX_goal_EAG_no_to_opression
+	cost = 4.3
+	completion_reward = {
+		add_political_power = 100
+		custom_effect_tooltip = EAG_rehab_for_advisors_tt
+		EAG = {
+			country_event = {
+				days = 5
+				id = EAG_event.54
+			}
+		}
+		hidden_effect = {
+			set_nationality = {
+				target_country = EAG
+				character = ESS_paul_mccartney
+			}
+			set_nationality = {
+				target_country = EAG
+				character = ESS_tim_collins
+			}
+			set_nationality = {
+				target_country = EAG
+				character = ESS_david_starkey
+			}
+			set_nationality = {
+				target_country = EAG
+				character = ESS_andrew_rosindell
+			}
+			set_nationality = {
+				target_country = EAG
+				character = ESS_raheem_kassam
+			}
+			set_nationality = {
+				target_country = EAG
+				character = ESS_ringo_starr
+			}
+			set_nationality = {
+				target_country = EAG
+				character = ESS_maryam_namazie
+			}
+			set_nationality = {
+				target_country = EAG
+				character = ESS_suzanne_moore
+			}
+		}
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -25
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_25_tt
+		custom_effect_tooltip = EAG_congress_of_communes_created_tt
+	}
+	x = 5
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_compromise_with_the_left
+	icon = GFX_goal_EAG_compromise_with_the_left
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_no_to_opression
+	}
+	mutually_exclusive = {
+		focus = EAG_conservative_revolution
+	}
+	completion_reward = {
+		1160 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 3
+		}
+		add_to_variable = {
+					var = volk_dev
+					value = 3
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+		custom_effect_tooltip = EAG_volk_dev_add_3		
+	}
+	x = 4
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_conservative_revolution
+	icon = GFX_goal_EAG_conservative_revolution
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_no_to_opression
+	}
+	mutually_exclusive = {
+		focus = EAG_сompromise_with_the_left
+	}
+	completion_reward = {
+		every_controlled_state = {
+			limit = {
+				state = 1160
+			}
+			add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+		}	
+		add_to_variable = {
+					var = volk_mood
+					value = 3
+				}
+		clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+		custom_effect_tooltip = EAG_volk_mood_add_3		
+	}
+	x = 6
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_begin_the_decentralization
+	icon = GFX_goal_EAG_begin_the_decentralization
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_conservative_revolution
+		focus = EAG_сompromise_with_the_left
+	}
+	completion_reward = {
+		add_ideas = EAG_year_one_1
+	}
+	x = 4
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_london_exodus
+	icon = GFX_goal_EAG_london_exodus
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_conservative_revolution
+		focus = EAG_сompromise_with_the_left
+	}
+	select_effect = {
+		EAG = {
+			country_event = {
+				days = 5
+				id = EAG_event.55
+			}
+		}
+	}
+	x = 6
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_natural_hierarchy
+	icon = GFX_goal_EAG_natural_hierarchy
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_london_exodus
+	}
+	prerequisite = {
+		focus = EAG_begin_the_decentralization
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_year_one_1
+			add_idea = EAG_year_one_2
+		}
+		every_character = {
+			limit = {
+				is_unit_leader = yes
+			}
+			add_skill_level = 1
+		}
+	}
+	x = 3
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_witan_revival
+	icon = GFX_goal_EAG_witan_revival
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_london_exodus
+	}
+	prerequisite = {
+		focus = EAG_begin_the_decentralization
+	}
+	completion_reward = {
+		add_ideas = EAG_witenagemots
+		add_political_power = 25
+		remove_ideas = EAG_illegitimate_government
+	}
+	x = 5
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_racial_separatism
+	icon = GFX_goal_EAG_racial_separatism
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_london_exodus
+	}
+	prerequisite = {
+		focus = EAG_begin_the_decentralization
+	}
+	completion_reward = {
+		add_ideas = EAG_right_face_of_anarchism
+	}
+	x = 7
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_freedom_beacon_of_europe
+	icon = GFX_goal_EAG_freedom_beacon_of_europe
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_witan_revival
+	}
+	prerequisite = {
+		focus = EAG_racial_separatism
+	}
+	prerequisite = {
+		focus = EAG_natural_hierarchy
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_year_one_2
+			add_idea = EAG_year_one_3
+		}
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -10
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_10_tt
+	}
+	x = 4
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_frequent_rotation
+	icon = GFX_goal_EAG_frequent_rotation
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_witan_revival
+	}
+	prerequisite = {
+		focus = EAG_racial_separatism
+	}
+	prerequisite = {
+		focus = EAG_natural_hierarchy
+	}
+	completion_reward = {
+		add_political_power = 30
+		add_stability = 0.05
+	}
+	x = 6
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_landsknecht_paradise
+	icon = GFX_goal_EAG_landsknecht_paradise
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_freedom_beacon_of_europe
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_year_one_3
+			add_idea = EAG_year_one_4
+		}
+	}
+	x = 4
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_revolt_into_style
+	icon = GFX_goal_EAG_revolt_into_style
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_frequent_rotation
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_right_face_of_anarchism
+			add_idea = EAG_right_face_of_anarchism_2
+		}
+		add_political_power = 45
+		set_rule = {
+			desc = EAG_hui_ne_sosi
+			can_send_volunteers = yes
+		}
+	}
+	x = 6
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_seeds_of_wisdom
+	icon = GFX_goal_EAG_seeds_of_wisdom
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_revolt_into_style
+	}
+	prerequisite = {
+		focus = EAG_landsknecht_paradise
+	}
+	completion_reward = {
+		remove_ideas = {
+			EAG_right_face_of_anarchism_2
+			EAG_year_one_4
+			EAG_witenagemots
+		}
+		add_ideas = EAG_triumph_of_communities
+		add_research_slot = 1
+		add_political_power = 75
+	}
+	x = 5
+	y = 11
+}
+
+##NATIONAL ANARCHISTS TREE ARMY##
+
+shared_focus = {
+	id = EAG_to_the_barricades
+	icon = GFX_goal_EAG_to_the_barricades
+	cost = 4.3
+	completion_reward = {
+		army_experience = 15
+		add_political_power = 50
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 3
+			category = land_doctrine
+		}
+	}
+	x = 19
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_communards_duty
+	icon = GFX_goal_EAG_communards_duty
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_to_the_barricades
+	}
+	completion_reward = {
+		add_ideas = EAG_communards_duty_bonus
+	}
+	x = 18
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_mass_weaponization
+	icon = GFX_goal_EAG_mass_weaponization
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_to_the_barricades
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = EAG_weapons_distribution
+			days = 365
+		}
+		add_ideas = EAG_free_english_army
+	}
+	x = 20
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_irregular_service
+	icon = GFX_goal_EAG_irregular_service
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_mass_weaponization
+	}
+	prerequisite = {
+		focus = EAG_communards_duty
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_free_english_army
+			add_idea = EAG_free_english_army_2
+		}
+	}
+	army_experience = 10
+	x = 17
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_self_made_generals
+	icon = GFX_goal_EAG_self_made_generals
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_irregular_service
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_free_english_army_2
+			add_idea = EAG_free_english_army_3
+		}
+		every_character = {
+			limit = {
+				is_unit_leader = yes
+			}
+			add_skill_level = 1
+		}
+		army_experience = 15
+	}
+	x = 17
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_english_tachanka
+	icon = GFX_goal_EAG_english_tachanka
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_mass_weaponization
+	}
+	prerequisite = {
+		focus = EAG_communards_duty
+	}
+	completion_reward = {
+		army_experience = 5
+		EAG = {
+			set_technology = {
+				battle_bus = 1
+			}
+		}
+		division_template = {
+			name = "Battle Bus Brigade"
+			division_names_group = EAG_INF_01
+			is_locked = no
+			regiments = {
+				battle_bus = { x = 0 y = 0 }	
+				battle_bus = { x = 0 y = 1 }
+				battle_bus = { x = 0 y = 2 }	
+				battle_bus = { x = 0 y = 3 }
+				battle_bus = { x = 1 y = 0 }
+				battle_bus = { x = 1 y = 1 }
+			}
+			support = { 
+				recon = { x = 0 y = 0 }
+			}
+		}
+		add_ideas = EAG_toyotta_tactics
+		add_equipment_to_stockpile = {
+			type = battle_bus_equipment
+			amount = 200
+			producer = EAG
+		}
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 200
+			producer = EAG
+		}
+		custom_effect_tooltip = EAG_tachanka_tt
+	}
+	x = 19
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_killdosers
+	icon = GFX_goal_EAG_killdosers
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_english_tachanka
+	}
+	completion_reward = {
+		army_experience = 10
+		add_ideas = EAG_improvised_armor
+		add_equipment_to_stockpile = {
+			type = infantry_fighting_vehicle_equipment
+			amount = 300
+			producer = EAG
+		}
+	}
+	x = 19
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_communal_air_defence
+	icon = GFX_goal_EAG_communal_air_defence
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_mass_weaponization
+	}
+	prerequisite = {
+		focus = EAG_communards_duty
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				NOT = {
+					has_tech = obsolete_anti_air
+				}
+			}
+			EAG = {
+				set_technology = {
+					obsolete_anti_air = 1
+				}
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				is_fully_controlled_by = EAG
+			}
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		air_experience = 10
+	}
+	x = 21
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_free_the_skies
+	icon = GFX_goal_EAG_free_the_skies
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_communal_air_defence
+	}
+	completion_reward = {
+		add_ideas = EAG_free_aviators
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.53
+			}
+		}
+		air_experience = 15
+	}
+	x = 21
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_iron_rain
+	icon = GFX_goal_EAG_iron_rain
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_self_made_generals
+	}
+	prerequisite = {
+		focus = EAG_killdosers
+	}
+	prerequisite = {
+		focus = EAG_free_the_skies
+	}
+	completion_reward = {
+		army_experience = 15
+		swap_ideas = {
+			remove_idea = EAG_free_english_army_3
+			add_idea = EAG_free_english_army_4
+		}
+	}
+	x = 19
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_guardians_of_the_revolution
+	icon = GFX_goal_EAG_guardians_of_the_revolution
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_iron_rain
+	}
+	mutually_exclusive = {
+		focus = EAG_the_finest_men_of_communes
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_free_english_army_4
+			add_idea = EAG_free_english_army_5
+		}
+		division_template = {
+			name = "English Revolutionary Guards"
+			division_names_group = EAG_INF_01
+			is_locked = no
+			regiments = {
+				urban_forces = { x = 0 y = 0 }	
+				urban_forces = { x = 0 y = 1 }
+				urban_forces = { x = 0 y = 2 }	
+				urban_forces = { x = 0 y = 3 }
+				urban_forces = { x = 1 y = 0 }
+				urban_forces = { x = 1 y = 1 }
+				artillery_brigade = { x = 1 y = 2 }
+			}
+			support = { 
+				engineer = { x = 0 y = 0 } 	
+				recon = { x = 0 y = 1 }
+				signal_company = { x = 0 y = 2 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Batalion Winstanley\" division_template = \"English Revolutionary Guards\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+			create_unit = {
+				division = "name = \"Batalion Everard\" division_template = \"English Revolutionary Guards\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+			create_unit = {
+				division = "name = \"Batalion Coppe\" division_template = \"English Revolutionary Guards\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+			create_unit = {
+				division = "name = \"Batalion Bauthumley\" division_template = \"English Revolutionary 	Guards\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+				
+				owner = EAG
+			}
+		}
+		add_to_variable = {
+			var = volk_dev
+			value = -3
+		}
+		clamp_variable = {
+			var = volk_dev
+			min = 0
+			max = 25
+		}
+		custom_effect_tooltip = EAG_volk_dev_remove_3
+		custom_effect_tooltip = EAG_guardians_of_the_revolution_tt
+	}
+	x = 18
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_the_finest_men_of_communes
+	icon = GFX_goal_EAG_the_finest_men_of_communes
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_iron_rain
+	}
+	mutually_exclusive = {
+		focus = EAG_guardians_of_the_revolution
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_free_english_army_4
+			add_idea = EAG_free_english_army_5
+		}
+		division_template = {
+			name = "Black Jagers"
+			division_names_group = EAG_INF_01
+			is_locked = no
+			regiments = {
+				mountaineers = { x = 0 y = 0 }	
+				mountaineers = { x = 0 y = 1 }
+				mountaineers = { x = 0 y = 2 }	
+				mountaineers = { x = 0 y = 3 }
+				mountaineers = { x = 1 y = 0 }
+				mountaineers = { x = 1 y = 1 }
+				mountaineers = { x = 1 y = 2 }
+				mountaineers = { x = 1 y = 3 }
+			}
+			support = { 
+				recon = { x = 0 y = 0 }
+			}
+		}
+		division_template = {
+			name = "Revolutionary Marines"
+			division_names_group = EAG_INF_01
+			is_locked = no
+			regiments = {
+				marine = { x = 0 y = 0 }	
+				marine = { x = 0 y = 1 }
+				marine = { x = 0 y = 2 }	
+				marine = { x = 0 y = 3 }
+				marine = { x = 1 y = 0 }
+				marine = { x = 1 y = 1 }
+				marine = { x = 1 y = 2 }
+				marine = { x = 1 y = 3 }
+			}
+			support = { 
+				engineer = { x = 0 y = 0 }
+			}
+		}
+		division_template = {
+			name = "Stormtroopers"
+			division_names_group = EAG_INF_01
+			is_locked = no
+			regiments = {
+				urban_forces = { x = 0 y = 0 }	
+				urban_forces = { x = 0 y = 1 }
+				urban_forces = { x = 0 y = 2 }	
+				urban_forces = { x = 0 y = 3 }
+				urban_forces = { x = 1 y = 0 }
+				urban_forces = { x = 1 y = 1 }
+				urban_forces = { x = 1 y = 2 }
+				urban_forces = { x = 1 y = 3 }
+			}
+			support = { 
+				signal_company = { x = 0 y = 0 }
+			}
+		}
+		division_template = {
+			name = "Mobile Company"
+			division_names_group = EAG_INF_01
+			is_locked = no
+			regiments = {
+				motorized = { x = 0 y = 0 }	
+				motorized = { x = 0 y = 1 }
+				motorized = { x = 0 y = 2 }	
+				motorized = { x = 0 y = 3 }
+				motorized = { x = 1 y = 0 }
+				motorized = { x = 1 y = 1 }
+				motorized = { x = 1 y = 2 }
+				motorized = { x = 1 y = 3 }
+			}
+			support = { 
+				engineer = { x = 0 y = 0 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Norwich Riflemen\" division_template = \"Black Jagers\" start_experience_factor = 1.5 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+			create_unit = {
+				division = "name = \"Thames Marines\" division_template = \"Revolutionary Marines"\" start_experience_factor = 1.5 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+			create_unit = {
+				division = "name = \"Londoneers\" division_template = \"Stormtroopers"\" start_experience_factor = 1.5 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+			create_unit = {
+				division = "name = \"Free Truckers\" division_template = \"Mobile Company"\" start_experience_factor = 1.5 start_equipment_factor = 0.9"
+					
+				owner = EAG
+			}
+		}
+		add_to_variable = {
+					var = volk_mood
+					value = -3
+				}
+		clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+		custom_effect_tooltip = EAG_volk_mood_remove_3		
+		custom_effect_tooltip = EAG_the_finest_men_of_communes_tt
+	}
+	x = 20
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_army_of_the_people
+	icon = GFX_goal_EAG_army_of_the_people
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_the_finest_men_of_communes
+		focus = EAG_guardians_of_the_revolution
+	}
+	completion_reward = {
+		add_political_power = 100
+		army_experience = 50
+		swap_ideas = {
+			remove_idea = EAG_free_english_army_5
+			add_idea = EAG_free_english_army_6
+		}
+		
+	}
+	x = 19
+	y = 11
+}
+
+##NATIONAL ANARCHISTS FINAL##
+
+shared_focus = {
+	id = EAG_the_standard_of_revolt
+	icon = GFX_goal_EAG_the_standard_of_revolt
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_bread_and_freedom
+	}
+	prerequisite = {
+		focus = EAG_army_of_the_people
+	}
+	prerequisite = {
+		focus = EAG_seeds_of_wisdom
+	}
+	available = {
+		has_country_flag = OSTANG_nazanarch_britain_reunified
+	}
+	completion_reward = {
+		add_political_power = 250
+		add_stability = 0.2
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.777
+			}
+		}
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -20
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_20_tt
+	}
+	x = 12
+	y = 13
+}
+
+shared_focus = {
+	id = EAG_home_sweet_home
+	icon = GFX_goal_EAG_home_sweet_home
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_the_standard_of_revolt
+	}
+	completion_reward = {
+		add_ideas = EAG_order_of_anarchy
+		delete_unit_template_and_units = {
+			division_template = "English Militia"
+			disband = yes 
+		}
+	}
+	x = 11
+	y = 14
+}
+
+shared_focus = {
+	id = EAG_palaces_for_the_people
+	icon = GFX_goal_EAG_palaces_for_the_people
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_the_standard_of_revolt
+	}
+	completion_reward = {
+		EAG = {
+			every_controlled_state = {
+				 add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	x = 13
+	y = 14
+}
+
+shared_focus = {
+	id = EAG_life_and_labour
+	icon = GFX_goal_EAG_life_and_labour
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_home_sweet_home
+	}
+	prerequisite = {
+		focus = EAG_palaces_for_the_people
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_order_of_anarchy
+			add_idea = EAG_order_of_anarchy_2
+		}
+	}
+	x = 9
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_expand_cooperatives
+	icon = GFX_goal_EAG_expand_cooperatives
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_life_and_labour
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_order_of_anarchy_2
+			add_idea = EAG_order_of_anarchy_3
+		}
+		add_to_variable = {
+					var = volk_dev
+					value = 3
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+		custom_effect_tooltip = EAG_volk_dev_add_3		
+	}
+	x = 9
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_neofolk_revolution
+	icon = GFX_goal_EAG_neofolk_revolution
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_home_sweet_home
+	}
+	prerequisite = {
+		focus = EAG_palaces_for_the_people
+	}
+	completion_reward = {
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.61
+			}
+		}
+	}
+	x = 11
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_lancasterian_system
+	icon = GFX_goal_EAG_lancasterian_system
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_home_sweet_home
+	}
+	prerequisite = {
+		focus = EAG_palaces_for_the_people
+	}
+	completion_reward = {
+		add_research_slot = 1
+		swap_ideas = {
+			remove_idea = EAG_triumph_of_communities
+			add_idea = EAG_triumph_of_communities_2
+		}
+	}
+	x = 13
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_mens_sana_in_corpore_sano
+	icon = GFX_goal_EAG_mens_sana_in_corpore_sano
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_lancasterian_system
+	}
+	prerequisite = {
+		focus = EAG_neofolk_revolution
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_free_english_army_6
+			add_idea = EAG_free_english_army_7
+		}
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.59
+			}
+		}
+	}
+	x = 12
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_return_treasury
+	icon = GFX_goal_EAG_return_treasury
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_home_sweet_home
+	}
+	prerequisite = {
+		focus = EAG_palaces_for_the_people
+	}
+	completion_reward = {
+		add_political_power = 100
+		add_to_variable = {
+					var = volk_dev
+					value = 2
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+		custom_effect_tooltip = EAG_volk_dev_add_2	
+	}
+	x = 15
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_insurrection_agency
+	icon = GFX_goal_EAG_insurrection_agency
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_home_sweet_home
+	}
+	prerequisite = {
+		focus = EAG_palaces_for_the_people
+	}
+	completion_reward = {
+		create_intelligence_agency = {
+				name = "Revolutionary Information Service"
+				icon = GFX_intelligence_agency_logo_eag_3
+			}
+	}
+	x = 15
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_let_them_be
+	icon = GFX_goal_EAG_let_them_be
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_expand_cooperatives
+	}
+	prerequisite = {
+		focus = EAG_mens_sana_in_corpore_sano
+	}
+	prerequisite = {
+		focus = EAG_insurrection_agency
+	}
+	mutually_exclusive = {
+		focus = EAG_abandon_ship
+	}
+	completion_reward = {
+		add_to_variable = {
+					var = volk_dev
+					value = -2
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+		custom_effect_tooltip = EAG_volk_dev_remove_2			
+		add_to_variable = {
+					var = volk_mood
+					value = 2
+				}
+		clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+		custom_effect_tooltip = EAG_volk_mood_add_2
+		swap_ideas = {
+			remove_idea = EAG_order_of_anarchy_3
+			add_idea = EAG_order_of_anarchy_4a
+		}
+	}
+	x = 11
+	y = 17
+}
+
+shared_focus = {
+	id = EAG_abandon_ship
+	icon = GFX_goal_EAG_abandon_ship
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_expand_cooperatives
+	}
+	prerequisite = {
+		focus = EAG_mens_sana_in_corpore_sano
+	}
+	prerequisite = {
+		focus = EAG_insurrection_agency
+	}
+	mutually_exclusive = {
+		focus = EAG_let_them_be
+	}
+	completion_reward = {
+		add_to_variable = {
+					var = volk_dev
+					value = 2
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+		custom_effect_tooltip = EAG_volk_dev_add_2		
+		add_to_variable = {
+					var = volk_mood
+					value = -2
+				}
+		clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+		custom_effect_tooltip = EAG_volk_mood_remove_2	
+		swap_ideas = {
+			remove_idea = EAG_order_of_anarchy_3
+			add_idea = EAG_order_of_anarchy_4b
+		}
+	}
+	x = 13
+	y = 17
+}
+
+shared_focus = {
+	id = EAG_joy_of_liberty
+	icon = GFX_goal_EAG_joy_of_liberty
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_abandon_ship
+		focus = EAG_let_them_be
+	}
+	completion_reward = {
+		add_to_variable = {
+					var = volk_dev
+					value = 4
+				}
+		clamp_variable = {
+					var = volk_dev
+					min = 0
+					max = 25
+				}
+		custom_effect_tooltip = EAG_volk_dev_add_4		
+		add_to_variable = {
+					var = volk_mood
+					value = 4
+				}
+		clamp_variable = {
+					var = volk_mood
+					min = 0
+					max = 25
+				}
+		custom_effect_tooltip = EAG_volk_mood_add_4		
+		add_political_power = 200
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.60
+			}
+		}
+	}
+	x = 12
+	y = 18
+}
+
+##KLUMB TREE ECONOMY##
+
+shared_focus = {
+	id = EAG_community_services
+	icon = GFX_goal_EAG_community_services
+	cost = 4.3
+	completion_reward = {
+		add_ideas = EAG_community_services_bonus
+	}
+	x = 12
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_english_autharky
+	icon = GFX_goal_EAG_english_autharky
+	cost = 4.3
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = free_trade
+			}
+			swap_ideas = {
+				remove_idea = free_trade
+				add_idea = limited_exports
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = export_focus
+			}
+			swap_ideas = {
+				remove_idea = export_focus
+				add_idea = limited_exports
+			}
+		}	
+		add_ideas = EAG_wartime_protectionism
+		add_resource = {
+			type = steel
+			amount = 30
+			state = 1160
+		}
+		add_resource = {
+			type = oil
+			amount = 30
+			state = 1004
+		}
+	}
+	prerequisite = {
+		focus = EAG_community_services
+	}
+	x = 10
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_english_florins
+	icon = GFX_goal_EAG_english_florins
+	cost = 4.3
+	completion_reward = {
+		add_ideas = EAG_federal_bank_of_england
+		add_political_power = 75
+	}
+	prerequisite = {
+		focus = EAG_community_services
+	}
+	x = 12
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_standards_of_quality
+	icon = GFX_goal_EAG_standards_of_quality
+	cost = 4.3
+	completion_reward = {
+		add_ideas = EAG_quality_commision
+	}
+	prerequisite = {
+		focus = EAG_community_services
+	}
+	x = 14
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_short_term_commitments
+	icon = GFX_goal_EAG_short_term_commitments
+	cost = 4.3
+	completion_reward = {
+		add_ideas = EAG_klumb_wechsels
+		add_political_power = 100
+	}
+	prerequisite = {
+		focus = EAG_standards_of_quality
+	}
+	prerequisite = {
+		focus = EAG_english_florins
+	}
+	prerequisite = {
+		focus = EAG_english_autharky
+	}
+	x = 11
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_new_partners
+	icon = GFX_goal_EAG_new_partners
+	cost = 4.3
+	completion_reward = {
+		custom_effect_tooltip = EAG_new_partners_tt
+	}
+	prerequisite = {
+		focus = EAG_standards_of_quality
+	}
+	prerequisite = {
+		focus = EAG_english_florins
+	}
+	prerequisite = {
+		focus = EAG_english_autharky
+	}
+	x = 13
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_regulated_resources
+	icon = GFX_goal_EAG_regulated_resources
+	cost = 4.3
+	completion_reward = {
+		add_ideas = EAG_privileges_for_industry
+	}
+	prerequisite = {
+		focus = EAG_new_partners
+	}
+	prerequisite = {
+		focus = EAG_short_term_commitments
+	}
+	mutually_exclusive = {
+		focus = EAG_let_the_rains_go
+	}
+	x = 11
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_let_the_rains_go
+	icon = GFX_goal_EAG_let_the_rains_go
+	cost = 4.3
+	completion_reward = {
+		add_ideas = EAG_relaxed_regulations
+	}
+	prerequisite = {
+		focus = EAG_new_partners
+	}
+	prerequisite = {
+		focus = EAG_short_term_commitments
+	}
+	mutually_exclusive = {
+		focus = EAG_regulated_resources
+	}
+	x = 13
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_merge_companies
+	icon = GFX_goal_EAG_merge_companies
+	cost = 4.3
+	completion_reward = {
+		remove_ideas = {
+			EAG_community_services_bonus
+			EAG_wartime_protectionism
+			EAG_federal_bank_of_england
+			EAG_quality_commision
+			EAG_klumb_wechsels
+		}
+		add_ideas = EAG_miracle_on_thames
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 2
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 3
+		}
+		random_owned_controlled_state = {	
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 2
+		}
+		swap_ideas = {
+			remove_idea = lhl_economy_civil_war_economy
+			add_idea = lhl_economy_free_market_economy
+		}
+	}
+	prerequisite = {
+		focus = EAG_let_the_rains_go
+		focus = EAG_regulated_resources
+	}
+	x = 12
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_blueprints_leftovers
+	icon = GFX_goal_EAG_blueprints_leftovers
+	cost = 4.3
+	completion_reward = {
+		add_research_slot = 1
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = motorized_equipment
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = armor
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = electronics
+		}
+	}
+	prerequisite = {
+		focus = EAG_merge_companies
+	}
+	x = 10
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_bring_the_specialists
+	icon = GFX_goal_EAG_bring_the_specialists
+	cost = 4.3
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_miracle_on_thames
+			add_idea = EAG_miracle_on_thames_2
+		}
+	}
+	prerequisite = {
+		focus = EAG_merge_companies
+	}
+	x = 14
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_we_are_the_machine
+	icon = GFX_goal_EAG_we_are_the_machine
+	cost = 4.3
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_miracle_on_thames_2
+			add_idea = EAG_miracle_on_thames_3
+		}
+	}
+	prerequisite = {
+		focus = EAG_merge_companies
+	}
+	x = 12
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_governors_care
+	icon = GFX_goal_EAG_governors_care
+	cost = 4.3
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_miracle_on_thames_3
+			add_idea = EAG_miracle_on_thames_4
+		}
+		add_political_power = 100
+		add_stability = 0.1
+		add_to_variable = {
+				var = volk_dev
+				value = 3
+		}
+		clamp_variable = {
+				var = volk_dev
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_volk_dev_add_3	
+		add_to_variable = {
+				var = volk_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_volk_mood_add_3	
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -20
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_20_tt
+	}
+	prerequisite = {
+		focus = EAG_we_are_the_machine
+	}
+	prerequisite = {
+		focus = EAG_bring_the_specialists
+	}
+	prerequisite = {
+		focus = EAG_blueprints_leftovers
+	}
+	x = 12
+	y = 11
+}
+
+##KLUMB TREE ARMY##
+
+shared_focus = {
+	id = EAG_dressed_in_uniforms
+	icon = GFX_goal_EAG_dressed_in_uniforms
+	cost = 4.3
+	completion_reward = {
+		army_experience = 25
+		add_political_power = 50
+	}
+	x = 19
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_great_general_staff
+	icon = GFX_goal_EAG_great_general_staff
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_dressed_in_uniforms
+	}
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 3
+			category = cat_superior_firepower
+		}
+	}
+	x = 18
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_valuable_personnel
+	icon = GFX_goal_EAG_valuable_personnel
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_dressed_in_uniforms
+	}
+	completion_reward = {
+		add_ideas = EAG_trainings_reorganisation
+	}
+	x = 20
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_careful_exploitation
+	icon = GFX_goal_EAG_careful_exploitation
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_valuable_personnel
+	}
+	prerequisite = {
+		focus = EAG_great_general_staff
+	}
+	completion_reward = {
+		add_ideas = EAG_supply_reorganisation
+	}
+	x = 17
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_wilhelm_the_conqueror_division
+	icon = GFX_goal_EAG_wilhelm_the_conqueror_division
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_careful_exploitation
+	}
+	completion_reward = {
+		division_template = {
+			name = "Elite Tank Division"
+			division_names_group = EAG_ARM_01
+			is_locked = no
+			regiments = {
+				MBT = { x = 0 y = 0 }	
+				MBT = { x = 0 y = 1 }
+				MBT = { x = 0 y = 2 }	
+				MBT = { x = 0 y = 3 }
+				MBT = { x = 0 y = 4 }
+				MBT = { x = 1 y = 0 }	
+				MBT = { x = 1 y = 1 }
+				MBT = { x = 1 y = 2 }	
+				MBT = { x = 1 y = 3 }
+				MBT = { x = 1 y = 4 }
+				APC = { x = 2 y = 0 }	
+				APC = { x = 2 y = 1 }
+				APC = { x = 2 y = 2 }	
+				APC = { x = 2 y = 3 }
+				APC = { x = 2 y = 4 }
+				APC = { x = 3 y = 0 }	
+				APC = { x = 3 y = 1 }
+				APC = { x = 3 y = 2 }	
+				APC = { x = 3 y = 3 }
+				APC = { x = 3 y = 4 }
+				anti_tank_brigade = { x = 4 y = 0 }
+			}
+			support = { 
+				engineer = { x = 0 y = 0 }
+				maintenance_company = { x = 0 y = 1 }
+			}
+		}
+		
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Wilhelm the Conqueror\" division_template = \"Elite Tank Division\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+		}
+		custom_effect_tooltip = EAG_wilhelm_the_conqueror_division_tt
+	}
+	x = 17
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_motorization_priority
+	icon = GFX_goal_EAG_motorization_priority
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_valuable_personnel
+	}
+	prerequisite = {
+		focus = EAG_great_general_staff
+	}
+	completion_reward = {
+		add_ideas = EAG_motorization_effort
+		add_political_power = 75
+		army_experience = 10
+	}
+	x = 19
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_english_panzergrenadiers 
+	icon = GFX_goal_EAG_english_panzergrenadiers
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_motorization_priority
+	}
+	completion_reward = {
+		division_template = {
+			name = "Panzergrenadiers"
+			division_names_group = EAG_ARM_01
+			is_locked = no
+			regiments = {
+				IFV = { x = 0 y = 0 }	
+				IFV = { x = 0 y = 1 }
+				IFV = { x = 0 y = 2 }	
+				IFV = { x = 0 y = 3 }
+				IFV = { x = 0 y = 4 }
+				IFV = { x = 1 y = 0 }	
+				IFV = { x = 1 y = 1 }
+				IFV = { x = 1 y = 2 }	
+				IFV = { x = 1 y = 3 }
+				IFV = { x = 1 y = 4 }
+				anti_tank_brigade = { x = 2 y = 0 }
+			}
+			support = { 
+				engineer = { x = 0 y = 0 }
+				maintenance_company = { x = 0 y = 1 }
+				recon = { x = 0 y = 2 }
+			}
+		}
+		
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Brigade Alpha\" division_template = \"Panzergrenadiers\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+			
+			create_unit = {
+				division = "name = \"Brigade Beta\" division_template = \"Panzergrenadiers\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+			
+			create_unit = {
+				division = "name = \"Brigade Gamma\" division_template = \"Panzergrenadiers\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+			
+			create_unit = {
+				division = "name = \"Brigade Delta\" division_template = \"Panzergrenadiers\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					
+				owner = EAG
+			}
+		}
+		custom_effect_tooltip = EAG_english_panzergrenadiers_tt
+	}
+	x = 19
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_fill_the_skies
+	icon = GFX_goal_EAG_fill_the_skies
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_valuable_personnel
+	}
+	prerequisite = {
+		focus = EAG_great_general_staff
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = fighter_equipment
+			amount = 75
+			producer = EAG
+		}
+	}
+	x = 21
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_bomb_into_the_stone_age
+	icon = GFX_goal_EAG_bomb_into_the_stone_age
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_fill_the_skies
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = CAS_equipment
+			amount = 50
+			producer = EAG
+		}
+		add_equipment_to_stockpile = {
+			type = strat_bomber_equipment
+			amount = 50
+			producer = EAG
+		}
+		add_ideas = EAG_air_support
+		air_experience = 25
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.75
+			uses = 1
+			category = air_doctrine
+		}
+	}
+	x = 21
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_border_protection_group
+	icon = GFX_goal_EAG_border_protection_group
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_bomb_into_the_stone_age
+	}
+	prerequisite = {
+		focus = EAG_english_panzergrenadiers
+	}
+	prerequisite = {
+		focus = EAG_wilhelm_the_conqueror_division
+	}
+	completion_reward = {
+		remove_ideas = {
+			EAG_motorization_effort
+			EAG_supply_reorganisation
+			EAG_trainings_reorganisation
+			EAG_air_support
+		}
+		add_ideas = EAG_federal_defence
+		army_experience = 10
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = mountaineers_tech
+		}
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = marine_tech
+		}
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = para_tech
+		}
+	}
+	x = 19
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_teach_tommies
+	icon = GFX_goal_EAG_teach_tommies
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_border_protection_group
+	}
+	mutually_exclusive = {
+		focus = EAG_circle_of_friends
+	}
+	completion_reward = {
+		add_ideas = EAG_brit_presence_in_general_staff
+		every_character	= {
+			limit = {
+				has_trait = angloid
+			}
+			add_skill_level = 1
+			add_attack = 1
+		}
+		add_to_variable = {
+				var = volk_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_volk_mood_add_3
+	}
+	x = 18
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_circle_of_friends
+	icon = GFX_goal_EAG_circle_of_friends
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_border_protection_group
+	}
+	mutually_exclusive = {
+		focus = EAG_teach_tommies
+	}
+	completion_reward = {
+		every_character	= {
+			limit = {
+				has_trait = german
+			}
+			add_skill_level = 1
+			add_defense = 1
+		}
+		add_to_variable = {
+				var = mercs_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_mood_add_3
+	}
+	x = 20
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_we_walk_in_line
+	icon = GFX_goal_EAG_we_walk_in_line
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_circle_of_friends
+		focus = EAG_teach_tommies
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_federal_defence
+			add_idea = EAG_federal_defence_2
+		}
+		add_to_variable = {
+				var = mercs_quality
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_quality
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_quality_add_3	
+		add_to_variable = {
+				var = mercs_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_mood_add_3	
+		army_experience = 20
+		add_political_power = 50
+		set_rule = {
+			desc = EAG_hui_ne_sosi
+			can_send_volunteers = yes
+		}
+	}
+	x = 19
+	y = 11
+}
+
+##KLUMB ADMINISTRATION TREE##
+
+shared_focus = {
+	id = EAG_safer_city
+	icon = GFX_goal_EAG_safer_city
+	cost = 4.3
+	completion_reward = {
+		add_political_power = 65
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -20
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_20_tt
+		custom_effect_tooltip = EAG_cleansing_of_london_tt
+	}
+	x = 5
+	y = 5
+}
+
+shared_focus = {
+	id = EAG_federation_of_england
+	icon = GFX_goal_EAG_federation_of_england
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_safer_city
+	}
+	mutually_exclusive = {
+		focus = EAG_forge_the_state
+	}
+	completion_reward = {
+		add_ideas = EAG_federalization_reforms
+	}
+	x = 4
+	y = 6
+}
+
+shared_focus = {
+	id = EAG_forge_the_state
+	icon = GFX_goal_EAG_forge_the_state
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_safer_city
+	}
+	mutually_exclusive = {
+		focus = EAG_federation_of_england
+	}
+	completion_reward = {
+		add_ideas = EAG_centralization_reforms
+	}
+	x = 6
+	y = 6
+}
+
+
+shared_focus = {
+	id = EAG_national_diet
+	icon = GFX_goal_EAG_national_diet
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_forge_the_state
+		focus = EAG_federation_of_england
+	}
+	completion_reward = {
+		EAG = {
+			add_political_power = 25
+			set_party_name = { 
+				ideology = neocameralism 
+				long_name = EAG_neocameralism_party_legitimate_long 
+				name = EAG_neocameralism_party_legitimate
+			}
+			
+			set_party_name = { 
+				ideology = hegemonism 
+				long_name = EAG_hegemonism_party_legitimate_long 
+				name = EAG_hegemonism_party_legitimate
+			}
+			
+			set_party_name = { 
+				ideology = socialism
+				long_name = EAG_socialism_party_legitimate_long 
+				name = EAG_socialism_party_legitimate
+			}
+			
+			set_party_name = { 
+				ideology = national_bolshevism 
+				long_name = EAG_national_bolshevism_party_legitimate_long 
+				name = EAG_national_bolshevism_party_legitimate
+			}
+			set_party_name = { 
+				ideology = millenarism
+				long_name = EAG_millenarism_party_legitimate_long 
+				name = EAG_millenarism_party_legitimate
+			}
+			set_party_name = { 
+				ideology = right_populism
+				long_name = EAG_right_populism_party_legitimate_long 
+				name = EAG_right_populism_party_legitimate
+			}
+		}
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -10
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_10_tt
+		custom_effect_tooltip = EAG_national_diet_focus_tt
+	}
+	x = 4
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_rebrand_the_administration
+	icon = GFX_goal_EAG_rebrand_the_administration
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_forge_the_state
+		focus = EAG_federation_of_england
+	}
+	completion_reward = {
+		remove_idea = EAG_illegitimate_government
+		every_character	= {
+			limit = {
+				is_character = EAG_josef_maria_klumb
+			}
+			add_country_leader_trait = founding_father
+		}
+	}
+	x = 6
+	y = 7
+}
+
+shared_focus = {
+	id = EAG_new_bill_of_rights
+	icon = GFX_goal_EAG_new_bill_of_rights
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_rebrand_the_administration
+	}
+	prerequisite = {
+		focus = EAG_national_diet
+	}
+	completion_reward = {
+		add_political_power = 75
+		add_stability = 0.15
+		add_to_variable = {
+				var = volk_mood
+				value = 3
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_volk_mood_add_3	
+		add_to_variable = {
+				var = volk_dev
+				value = 3
+		}
+		clamp_variable = {
+				var = volk_dev
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_volk_dev_add_3	
+	}
+	x = 3
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_improving_the_justice
+	icon = GFX_goal_EAG_improving_the_justice
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_rebrand_the_administration
+	}
+	prerequisite = {
+		focus = EAG_national_diet
+	}
+	completion_reward = {
+		add_ideas = EAG_new_supreme_court
+	}
+	x = 5
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_eyes_and_ears_of_democracy
+	icon = GFX_goal_EAG_eyes_and_ears_of_democracy
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_rebrand_the_administration
+	}
+	prerequisite = {
+		focus = EAG_national_diet
+	}
+	completion_reward = {
+		create_intelligence_agency = {
+				name = "Federal Intelligence Service"
+				icon = GFX_intelligence_agency_logo_eag_2
+			}
+	}
+	x = 7
+	y = 8
+}
+
+shared_focus = {
+	id = EAG_government_of_the_people
+	icon = GFX_goal_EAG_government_of_the_people
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_eyes_and_ears_of_democracy
+	}
+	prerequisite = {
+		focus = EAG_improving_the_justice
+	}
+	prerequisite = {
+		focus = EAG_new_bill_of_rights
+	}
+	completion_reward = {
+		add_ideas = EAG_meritocracy
+	}
+	x = 4
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_english_wave
+	icon = GFX_goal_EAG_english_wave
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_eyes_and_ears_of_democracy
+	}
+	prerequisite = {
+		focus = EAG_improving_the_justice
+	}
+	prerequisite = {
+		focus = EAG_new_bill_of_rights
+	}
+	completion_reward = {
+		add_ideas = EAG_english_wave_bonus
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -5
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_5_tt
+	}
+	x = 6
+	y = 9
+}
+
+shared_focus = {
+	id = EAG_restore_universities
+	icon = GFX_goal_EAG_restore_universities
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_government_of_the_people
+	}
+	prerequisite = {
+		focus = EAG_english_wave
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_meritocracy
+			add_idea = EAG_meritocracy_1
+		}
+		add_research_slot = 1
+	}
+	x = 4
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_fate_of_the_church
+	icon = GFX_goal_EAG_fate_of_the_church
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_government_of_the_people
+	}
+	prerequisite = {
+		focus = EAG_english_wave
+	}
+	completion_reward = {
+		add_political_power = 25
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.112
+			}
+		}
+	}
+	x = 6
+	y = 10
+}
+
+shared_focus = {
+	id = EAG_peacemaker
+	icon = GFX_goal_EAG_peacemaker
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_fate_of_the_church
+	}
+	prerequisite = {
+		focus = EAG_restore_universities
+	}
+	completion_reward = {
+		add_political_power = 100
+		add_stability = 0.05
+		add_to_variable = {
+				var = volk_mood
+				value = 2
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_volk_mood_add_2
+		add_to_variable = {
+				var = volk_dev
+				value = 2
+		}
+		clamp_variable = {
+				var = volk_dev
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_volk_dev_add_2
+		add_to_variable = {
+				var = mercs_quality
+				value = 2
+		}
+		clamp_variable = {
+				var = mercs_quality
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_quality_add_2
+		add_to_variable = {
+				var = mercs_mood
+				value = 2
+		}
+		clamp_variable = {
+				var = mercs_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_mood_add_2
+		every_character	= {
+			limit = {
+				is_character = EAG_josef_maria_klumb
+			}
+			add_country_leader_trait = peacemaker
+		}
+		remove_ideas = {
+			EAG_meritocracy_1
+			EAG_english_wave_bonus
+			EAG_new_supreme_court
+		}
+		add_ideas = EAG_e_pluribus_unum
+	}
+	x = 5
+	y = 11
+}
+
+###KLUMB FINAL###
+
+shared_focus = {
+	id = EAG_open_the_country
+	icon = GFX_goal_EAG_open_the_country
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_governors_care
+	}
+	prerequisite = {
+		focus = EAG_we_walk_in_line
+	}
+	prerequisite = {
+		focus = EAG_peacemaker
+	}
+	available = {
+		has_country_flag = OSTANG_klumb_britain_reunified
+	}
+	completion_reward = {
+		add_political_power = 250
+		add_stability = 0.2
+		EAG = {
+			country_event = {
+				days = 1
+				id = EAG_event.420
+			}
+		}
+		if = {
+			limit = {
+				has_idea = export_focus
+			}
+			swap_ideas = {
+				remove_idea = export_focus
+				add_idea = free_trade
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = limited_exports
+			}
+			swap_ideas = {
+				remove_idea = limited_exports
+				add_idea = free_trade
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = closed_economy
+			}
+			swap_ideas = {
+				remove_idea = closed_economy
+				add_idea = free_trade
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = closed_economy
+			}
+			swap_ideas = {
+				remove_idea = closed_economy
+				add_idea = free_trade
+			}
+		}	
+	}
+	x = 12
+	y = 13
+}
+
+shared_focus = {
+	id = EAG_refugees_welcome
+	icon = GFX_goal_EAG_refugees_welcome
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_open_the_country
+	}
+	completion_reward = {
+		every_controlled_state = {
+			add_manpower = 50000
+		}
+		1160 = {
+			add_manpower = 500000
+		}
+		1154 = {
+			add_manpower = 500000
+		}
+		1146 = {
+			add_manpower = 250000
+		}
+		1009 = {
+			add_manpower = 500000
+		}
+		add_offsite_building = { type = industrial_complex level = 3 }
+	}
+	x = 11
+	y = 14
+}
+
+shared_focus = {
+	id = EAG_not_so_fast
+	icon = GFX_goal_EAG_not_so_fast
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_open_the_country
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_e_pluribus_unum
+			add_idea = EAG_e_pluribus_unum_1
+		}
+		add_research_slot = 1
+	}
+	x = 13
+	y = 14
+}
+
+shared_focus = {
+	id = EAG_unstopabble_growth
+	icon = GFX_goal_EAG_unstopabble_growth
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_refugees_welcome
+	}
+	prerequisite = {
+		focus = EAG_not_so_fast
+	}
+	mutually_exclusive = {
+		focus = EAG_expand_welfare
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_miracle_on_thames_4
+			add_idea = EAG_miracle_on_thames_5a
+		}
+	}
+	x = 11
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_expand_welfare
+	icon = GFX_goal_EAG_expand_welfare
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_refugees_welcome
+	}
+	prerequisite = {
+		focus = EAG_not_so_fast
+	}
+	mutually_exclusive = {
+		focus = EAG_non_stopabble_growth
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EAG_miracle_on_thames_4
+			add_idea = EAG_miracle_on_thames_5b
+		}
+	}
+	x = 13
+	y = 15
+}
+
+shared_focus = {
+	id = EAG_house_the_folk
+	icon = GFX_goal_EAG_house_the_folk
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_expand_welfare
+		focus = EAG_unstopabble_growth
+	}
+	completion_reward = {
+		add_ideas = EAG_mass_social_housing
+		add_political_power = 15
+		add_to_variable = {
+				var = volk_mood
+				value = 2
+		}
+		clamp_variable = {
+				var = volk_mood
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_volk_mood_add_2
+		add_to_variable = {
+				var = volk_dev
+				value = 2
+		}
+		clamp_variable = {
+				var = volk_dev
+				min = 0
+				max = 25
+		}
+		custom_effect_tooltip = EAG_volk_dev_add_2
+	}
+	x = 11
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_mass_conversion
+	icon = GFX_goal_EAG_mass_conversion
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_expand_welfare
+		focus = EAG_unstopabble_growth
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		add_to_variable = {
+			var = volk_dev
+			value = 2
+		}
+		clamp_variable = {
+			var = volk_dev
+			min = 0
+			max = 25
+		}
+		custom_effect_tooltip = EAG_volk_dev_add_2
+	}
+	x = 13
+	y = 16
+}
+
+shared_focus = {
+	id = EAG_vote_or_lose
+	icon = GFX_goal_EAG_vote_or_lose
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_mass_conversion
+	}
+	prerequisite = {
+		focus = EAG_house_the_folk
+	}
+	completion_reward = {
+		add_political_power = 100
+		EAG = {
+			country_event = {
+				days = 0
+				id = EAG_event.200
+			}
+		}
+	}
+	x = 12
+	y = 17
+}
+
+shared_focus = {
+	id = EAG_and_the_winner_is
+	
+	icon = GFX_goal_EAG_and_the_winner_is
+	cost = 4.3
+	prerequisite = {
+		focus = EAG_vote_or_lose
+	}
+	available = {
+		hidden_trigger = {
+			EAG = {
+				NOT = {
+					OR = {
+						has_country_flag = EAG_klumb_mission_voting_YES
+						has_country_flag = EAG_klumb_mission_voting_NO
+						has_country_flag = EAG_klumb_elections_started
+					}
+				}
+			}
+		}
+	}
+	completion_reward = {
+		custom_effect_tooltip = EAG_elections_president_speech
+		swap_ideas = {
+			remove_idea = lhl_regime_oligarchy
+			add_idea = lhl_regime_presidential_republic
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_josef_maria_klumb
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.131
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_theresa_may
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.132
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_alex_whitehouse
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.133
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_philip_yea
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.134
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_garry_bushell
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.135
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_keir_starmer
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.136
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_david_iсke
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.137
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_rick_astley
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.138
+					}
+				}
+			}
+			if = {
+				limit = {
+					EAG = {
+						has_country_leader = {
+							character = EAG_michael_bates
+							ruling_only = yes
+						}
+					}
+				}
+				EAG = {
+					country_event = {
+						days = 0
+						id = EAG_event.139
+					}
+				}
+			}
+		}
+	}
+	x = 12
+	y = 18
+}

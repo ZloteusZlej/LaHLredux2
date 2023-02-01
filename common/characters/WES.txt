@@ -1,0 +1,788 @@
+characters={
+	WES_george_vii={
+		name="George VII"
+		portraits={
+			civilian={
+				large="gfx/leaders/WES/Portrait_WES_George_Windsor.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_GEORGE_WEAK_DESC"
+			ideology=neo_feudalism
+			traits={ fisher_king }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	WES_nick_houghton={
+		name="Nick Houghton"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/WES/Portrait_WES_Nick_Houghton.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+			visible = { NOT = { has_character_flag = WES_knight_training } }
+		}
+	}
+	WES_graeme_lamb={
+		name="Graeme Lamb"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/WES/Portrait_WES_Graeme_Lamb.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+			visible = { NOT = { has_character_flag = WES_knight_training } }
+		}
+	}
+	WES_prince_edward_duke_of_kent={
+		name="Prince Edward, Duke of Kent"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		field_marshal={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=stratocracy
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	WES_nick_parker={
+		name="Nick Parker"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/WES/Portrait_WES_Nick_Parker.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = { NOT = { has_character_flag = WES_knight_training } }
+		}
+	}
+	WES_richard_dannatt={
+		name="Richard Dannatt"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/WES/Portrait_WES_Richard_Dannatt.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = { NOT = { has_character_flag = WES_knight_training } }
+		}
+	}
+	WES_dave_gahan={
+		name="Dave Gahan"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/WES/Portrait_WES_Dave_Gahan.dds"
+			}
+		}
+		corps_commander={
+			traits={ media_personality substance_abuser }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+			visible = { NOT = { has_character_flag = WES_knight_training } }
+		}
+	}
+	WES_timothy_cross={
+		name="Timothy Cross"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/WES/Portrait_WES_Timothy_Cross.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+			visible = { NOT = { has_character_flag = WES_knight_training } }
+		}
+	}
+	WES_john_drewienkiewicz={
+		name="John Drewienkiewicz"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/WES/Portrait_WES_John_Drewienkiewicz.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+			visible = { NOT = { has_character_flag = WES_knight_training } }
+		}
+	}
+	WES_peter_thomas_clayton_pearson={
+		name="Peter Thomas Clayton Pearson"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=30
+			visible = { NOT = { has_character_flag = WES_knight_training } }
+		}
+	}
+	WES_jonathon_riley={
+		name="Jonathon Riley"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/WES/Portrait_WES_Jonathon_Riley.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+			visible = { NOT = { has_character_flag = WES_knight_training } }
+		}
+	}
+	WES_ashley_truluck={
+		name="Ashley Truluck"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/WES/Portrait_WES_Ashley_Truluck.dds"
+			}
+		}
+		corps_commander={
+			traits={ urban_assault_specialist }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+			visible = { NOT = { has_character_flag = WES_knight_training } }
+		}
+	}
+	WES_arthur_uther_pendragon={
+		name="Arthur Uther Pendragon"
+		portraits={
+			civilian={
+				large="gfx/leaders/WES/Portrait_WES_Arthur_Uther_Pendragon_.dds"
+			}
+		}
+		country_leader={
+			ideology=religious_millennialism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	WES_davyth_fear={
+		name="Davyth Fear"
+		portraits={
+			civilian={
+				large="gfx/leaders/WES/Portrait_WES_Davyth_Fear.dds"
+			}
+		}
+		country_leader={
+			ideology=ultrahegelianism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	WES_neil_kinnock={
+		name="Neil Kinnock"
+		portraits={
+			civilian={
+				large="gfx/leaders/WES/Portrait_WES_Neil_Kinnock.dds"
+			}
+		}
+		country_leader={
+			ideology=paternalism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	WES_roy_rickhuss={
+		name="Roy Rickhuss"
+		portraits={
+			civilian={
+				large="gfx/leaders/WES/Portrait_WES_Roy_Rickhuss.dds"
+			}
+		}
+		country_leader={
+			ideology=agrarian_socialism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	WES_mark_littlewood={
+		name="Mark Littlewood"
+		portraits={
+			civilian={
+				large="gfx/leaders/WES/.dds"
+			}
+		}
+		country_leader={
+			ideology=atlantic_liberalism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	WES_sadiq_khan={
+		name="Sadiq Khan"
+		portraits={
+			civilian={
+				large="gfx/leaders/WES/Portrait_WES_Sadiq_Khan.dds"
+			}
+		}
+		country_leader={
+			ideology=national_anarchism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	WES_mark_spencer={
+		name="Mark Spencer"
+		portraits={
+			civilian={
+				large="gfx/leaders/WES/Portrait_WES_Mark_Spencer.dds"
+			}
+		}
+		country_leader={
+			ideology=national_populism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	WES_bernard_moffatt={
+		name="Bernard Moffatt"
+		portraits={
+			civilian={
+				large="gfx/leaders/WES/Portrait_WES_Bernard_Moffatt.dds"
+			}
+		}
+		country_leader={
+			ideology=charismatic_dictatorship
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	#Advisers#
+	WES_roger_scruton = {
+		name = "Roger Scruton"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_roger_scruton.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = WES_roger_scruton
+			traits = {
+				Black_bird
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Nikolai_Tolstoy = {
+		name = "Nikolai Tolstoy"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Nikolai_Tolstoy.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = WES_Nikolai_Tolstoy
+			traits = {
+				Aristocrat_intellectual
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Alister_McGrath = {
+		name = "Alister McGrath"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Alister_McGrath.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Alister_McGrath
+			traits = {
+				Orthodox_scholastic
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Andrew_Brownsword = {
+		name = "Andrew Brownsword"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Andrew_Brownsword.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Andrew_Brownsword
+			traits = {
+				treasurer
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Christopher_Chope = {
+		name = "Christopher Chope"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Christopher_Chope.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Christopher_Chope
+			traits = {
+				Old_Guard
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Fiona_Bruce = {
+		name = "Fiona Bruce"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Fiona_Bruce.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token =  WES_Fiona_Bruce
+			traits = {
+				goodwill_ambassador
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_John_Hayes = {
+		name = "John Hayes"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_John_Hayes.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_John_Hayes
+			traits = {
+				hospitaller
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Kallistos_Ware = {
+		name = "Kallistos Ware"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Kallistos_Ware.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Kallistos_Ware
+			traits = {
+				england_metropolitan
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Laurence_Robertson = {
+		name = "Laurence Robertson"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Laurence_Robertson.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Laurence_Robertson
+			traits = {
+				protectionist
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Melanie_Phillips = {
+		name = "Melanie Phillips"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Melanie_Phillips.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Melanie_Phillips
+			traits = {
+				Herald
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Nadine_Dorries = {
+		name = "Nadine Dorries"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Nadine_Dorries.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Nadine_Dorries
+			traits = {
+				Mother_teresa
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Peter_Hitchens = {
+		name = "Peter Hitchens"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Peter_Hitchens.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Peter_Hitchens
+			traits = {
+				Follower_of_Burke
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Simon_Heffer = {
+		name = "Simon Heffer"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Simon_Heffer.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Simon_Heffer
+			traits = {
+				Social_Crusader
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	WES_Sir_David_Amess = {
+		name = "Sir David Amess"
+		portraits = {
+			civilian={
+				small="gfx/interface/ideas/WES/idea_WES_Sir_David_Amess.dds"
+			}
+		}
+
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_Sir_David_Amess
+			traits = {
+				
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }	
+	}
+	###DUMMY CHARACTERS##
+	WES_james_glancy = {
+		name = WES_james_glancy
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_james_glancy.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_james_glancy
+			traits = {
+				war_hero
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	WES_merlin_hanbury_tracy = {
+		name = WES_merlin_hanbury_tracy
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_merlin_hanbury_tracy.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_merlin_hanbury_tracy
+			traits = {
+				influential_ideologist
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	WES_andrew_roberts = {
+		name = WES_andrew_roberts
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_andrew_roberts.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_andrew_roberts 
+			traits = {
+				regime_defender
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	WES_robin_tilbrook ={
+		name="Robin Tilbrook"
+		portraits={
+			civilian={
+				small="gfx/ideas/EAG/GFX_idea_EAG_Robin_Tilbrook.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_robin_tilbrook
+			traits = {
+				freeman_of_london
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	WES_julia_gasper ={
+		name="Julia Gasper"
+		portraits={
+			civilian={
+				small="gfx/ideas/EAG/GFX_idea_EAG_Julia_Gasper.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = WES_julia_gasper
+			traits = {
+				deregulator
+			}
+			allowed = {
+				original_tag = WES
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+}

@@ -1,0 +1,79 @@
+WES_king_legitimacy = {
+	icon = GFX_
+	scripted_gui = lhl_george_legitimacy_screen_body
+	visible = {
+	    has_completed_focus = WES_return_king		
+	}
+	allowed = { original_tag = WES }
+	visible_when_empty = yes
+}
+
+WES_diplomacy = {
+	icon = GFX_
+	scripted_gui = lhl_WES_diplomacy_screen_body
+	allowed = { original_tag = WES }
+	visible_when_empty = yes
+	visible = {
+	    has_country_flag = WES_diplomacy_open	
+	}
+}
+
+WES_prisoners_of_war = {
+	icon = GFX_
+	visible_when_empty = yes
+	allowed = { original_tag = WES }
+}
+
+WES_Royal_military_schools = {
+	icon = GFX_
+	visible = {
+	    has_completed_focus = WES_rebuild_schools		
+	}
+	allowed = { original_tag = WES }
+}
+
+WES_Weapon_Guilds = {
+	icon = GFX_
+	visible = {
+	    has_completed_focus = WES_weapon_guilds		
+	}
+	allowed = { original_tag = WES }
+}
+
+WES_wars = {
+	icon = GFX_
+	visible = {
+	    has_completed_focus = WES_return_king		
+	}
+	allowed = { original_tag = WES }
+}
+
+WES_england_transformation = {
+	icon = GFX_
+	scripted_gui = lhl_WES_transformation_screen_body
+	allowed = { original_tag = WES }
+	visible_when_empty = yes
+	visible = {
+	    has_completed_focus = WES_medieval_state		
+	}
+}
+
+WES_unification_defence = {
+	icon = GFX_
+	allowed = { original_tag = WES }
+	visible = {
+		WES = {
+			has_country_flag = WES_unification_defence
+		}
+	}
+}
+
+WES_unification_offence = {
+	icon = GFX_
+	allowed = { original_tag = WES }
+	visible = {
+		WES = {
+			has_country_flag = WES_unification_offence
+		}
+	}
+}

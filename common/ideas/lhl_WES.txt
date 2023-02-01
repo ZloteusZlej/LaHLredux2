@@ -1,0 +1,805 @@
+ideas = {
+
+	country = {
+	
+	
+	#WES ARMY TREE IDEAS - R.M
+		
+		WES_the_king_is_wounded = {
+			
+			picture = 
+
+		allowed = {
+			always = no
+		}
+
+		removal_cost = -1
+		
+		modifier = {
+				stability_factor = -0.5
+				war_support_factor = -0.3
+			}
+		}
+			
+		WES_statewide_investment_programme_1 = {
+		
+			picture = 
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.02
+		        political_power_gain = -0.05
+			}
+		}
+		
+		WES_statewide_investment_programme_2 = {
+		
+			picture = 
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.02
+				production_speed_buildings_factor = 0.05
+		        political_power_gain = -0.1
+			}
+		}
+		
+		WES_statewide_investment_programme_3 = {
+		
+			picture = 
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.02
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.05
+		        political_power_gain = -0.2
+			}
+		}
+		
+		WES_statewide_investment_programme_4 = {
+		
+			picture = 
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.02
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.15
+				compliance_growth_on_our_occupied_states = -0.05
+		        political_power_gain = -0.3
+			}
+		}
+		
+		WES_statewide_investment_programme_5 = {
+		
+			picture = 
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.02
+				production_speed_buildings_factor = 0.1
+				stability_factor = 0.15
+				compliance_growth_on_our_occupied_states = -0.05
+		        political_power_gain = -0.15
+			}
+		}
+		
+		WES_mass_celebrations = {
+			
+			picture = 
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+		        political_power_gain = 0.2
+			}
+		}
+		
+		WES_military_parades = {
+			
+			picture = 
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 750
+		        experience_gain_army = 0.1
+				war_support_factor = 0.15
+			}
+		}
+		
+		WES_construction_engineering = {
+			
+			picture = 
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+		        consumer_goods_factor = -0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}	
+		
+		WES_Mons_pro_officers = {
+			
+			picture = 
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  	army_infantry_attack_factor = 0.02
+		        army_infantry_defence_factor = 0.02
+			}
+		}
+		
+		WES_Communications_Information_Academy= {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			  	encryption_factor = 0.05
+		        decryption_factor = 0.05
+			}
+		}
+		
+		WES_flight_heroes = {
+			
+			picture = 
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			war_support_factor = 0.10
+			political_power_factor = 0.05
+			}
+		}
+		WES_dynastic_crisis = {   
+			picture = GFX_idea_WES_dynastic_crisis
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+                war_support_factor = -0.30
+			    political_power_factor = -0.10			
+			}
+		}
+		WES_neofolk = {   
+			picture = GFX_idea_WES_neofolk
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+                stability_factor = -0.05
+			    political_power_gain = -0.1	
+			}
+		}
+		WES_advanced_cheese_techniques = {   
+			picture = GFX_idea_WES_advanced_cheese_techniques 
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+                stability_factor = 0.02
+				consumer_goods_factor = -0.02
+			}
+		}
+		WES_fresh_food = {   
+			picture = GFX_idea_WES_fresh_food
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		WES_royal_science_fund = {
+			picture = GFX_idea_WES_royal_science_fund
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+				political_power_factor = 0.05
+			}
+		}
+		
+		WES_royal_infrastructure_investment = {
+			picture = GFX_idea_WES_royal_infrastructure_investment
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+	}
+	
+	tank_manufacturer = {
+		WES_Tank_guilds_w_armor_emphasis = {
+		
+			allowed = {
+				original_tag = WES
+			}
+			
+			visible = { has_idea = WES_Tank_guilds_w_armor_emphasis }
+			
+			removal_cost = 100
+			
+			equipment_bonus = {
+				MBT = {
+					armor_value = 0.10
+					hard_attack = 0.10
+					instant = yes
+				}
+			    MBT = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				MBT = {
+					reliability = -0.05
+					maximum_speed = -0.05
+					instant = yes
+				}
+			}
+		}
+		
+		WES_Tank_guilds_w_speed_emphasis = {
+			
+			allowed = {
+				original_tag = WES
+			}
+			
+			visible = { has_idea = WES_Tank_guilds_w_speed_emphasis }
+			
+			removal_cost = 100
+			
+			equipment_bonus = {
+				MBT = {
+					maximum_speed = 0.10
+					soft_attack = 0.10
+					instant = yes
+				}
+			    MBT = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				MBT = {
+					reliability = -0.05
+					armor_value = -0.05
+					instant = yes
+				}
+			}
+		}
+		WES_Tank_guilds_w_experimental_emphasis = {
+			
+			allowed = {
+				original_tag = WES
+			}
+			
+			visible = { has_idea = WES_Tank_guilds_w_experimental_emphasis }
+			
+			removal_cost = 100
+			
+			equipment_bonus = {
+				MBT = {
+					maximum_speed = 0.15
+					soft_attack = 0.15
+					instant = yes
+				}
+			    MBT = {
+					build_cost_ic = 0.15
+					instant = yes
+				}
+				MBT = {
+					reliability = -0.2
+					armor_value =  0.1
+					instant = yes
+				}
+			}
+		}
+	}
+	
+	materiel_manufacturer = {
+		designer = yes
+		WES_conventional_artillery_emphasis = {
+		
+			allowed = {
+				original_tag = WES
+			}
+			
+			visible = { has_idea = WES_conventional_artillery_emphasis }
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				artillery = {
+					soft_attack = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			    anti_tank = {
+				    hard_attack = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				anti_air = {
+					air_attack = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+		}
+		
+		WES_sp_artillery_emphasis = {
+		
+			allowed = {
+				original_tag = WES
+			}
+			
+			visible = { has_idea = WES_sp_artillery_emphasis }
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				mlrs = {
+				    soft_attack = 0.05
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			    spaag = {
+				    soft_attack = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				sam = {
+			    	air_attack = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+		}
+		
+		WES_infantry_guild_1 = {
+		
+			allowed = {
+				original_tag = WES
+			}
+			
+			visible = { has_idea = WES_infantry_guild_1 }
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.05
+		        cavalry_attack_factor = 0.20
+		        cavalry_defence_factor = 0.25
+			    army_infantry_attack_factor = 0.05
+		        army_infantry_defence_factor = 0.05
+			}
+			
+			equipment_bonus = {
+				APC = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+			    IFV = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+			}
+		}
+	
+		WES_infantry_guild_2 = {
+			
+				allowed = {
+					original_tag = WES
+				}
+				
+				visible = { has_idea = WES_infantry_guild_2 }
+				
+				modifier = {
+					army_infantry_attack_factor = 0.05
+					army_infantry_defence_factor = -0.05
+				}
+				
+				removal_cost = -1
+				
+				equipment_bonus = {
+					APC = {
+						maximum_speed = 0.05
+						build_cost_ic = -0.10
+						armor_value = -0.10
+						instant = yes
+					}
+					IFV = {
+						maximum_speed = 0.05
+						build_cost_ic = -0.10
+						armor_value = -0.10
+						instant = yes
+					}
+					motorized = {
+						maximum_speed = 0.05
+						build_cost_ic = -0.15
+						armor_value = -0.10
+						instant = yes
+					}
+				}
+		}
+	
+		WES_infantry_guild_3 = {	
+				
+			allowed = {
+				original_tag = WES
+			}
+			
+			visible = { has_idea = WES_infantry_guild_3 }
+			
+            modifier = {
+			    army_artillery_attack_factor = 0.07
+                army_artillery_defence_factor = 0.07
+			}
+				
+			removal_cost = -1
+				
+			equipment_bonus = {
+				APC = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				IFV = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.05
+					instant = yes
+				}			
+				infantry_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+		}
+		
+		ww_greener = {
+			cost = 100
+			
+			available = {
+				ROOT = {
+					owns_state = 1161
+				}
+			}
+			
+			visible = {
+				ROOT = {
+					owns_state = 1161
+				}
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					hard_attack = 0.2
+				}
+			}
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+	}
+	
+	industrial_concern = {
+		chemring_group = {
+			cost = 100
+			
+			available = {
+				ROOT = {
+					owns_state = 1007
+				}
+			}
+			
+			visible = {
+				ROOT = {
+					owns_state = 1007
+				}
+			}
+			
+			modifier = {
+				research_bonus = {
+					industry = 0.1
+			}
+				air_cas_efficiency = 0.1
+				breakthrough_factor = 0.1
+			}
+		}
+	}
+	
+	naval_manufacturer = { 
+		designer = yes
+		
+		bae_systems_weymouth = {
+			
+			cost = 100
+			
+			available = {
+				ROOT = {
+					owns_state = 1007
+				}
+			}
+			
+			visible = {
+				ROOT = {
+					owns_state = 1007
+				}
+			}
+			
+			equipment_bonus = {
+				submarine = {
+					build_cost_ic = -0.1
+					sub_attack = 0.2
+					surface_visibility = -0.1
+					naval_speed = 0.1
+				}
+			}
+			
+			modifier = {
+				research_bonus = {
+					submarine_doctrine = 0.1
+				}
+				navy_submarine_defence_factor = 0.15
+			}
+		}
+	}
+	
+	tank_manufacturer = {
+		designer = yes
+		
+		sc_group = {
+			cost = 100
+			
+			available = {
+				ROOT = {
+					owns_state = 1007
+				}
+			}
+			
+			visible = {
+				ROOT = {
+					owns_state = 1007
+				}
+			}
+			
+			equipment_bonus = {
+				armored_car_equipment = {
+					build_cost_ic = -0.1
+					soft_attack = 0.1
+					armor_value = 0.1
+				}
+			}
+			
+			modifier = {
+				research_bonus = {
+					motorized_equipment = 0.1
+				}
+			}
+		}
+		
+		ovik = {
+			cost = 100
+			
+			available = {
+				ROOT = {
+					owns_state = 1007
+				}
+			}
+			
+			visible = {
+				ROOT = {
+					owns_state = 1007
+				}
+			}
+			
+			equipment_bonus = {
+				armoured_personnel_carrier_equipment = {
+					build_cost_ic = -0.1
+					hard_attack = 0.1
+					hardness = 0.1
+				}
+			}
+			
+			modifier = {
+				research_bonus = {
+					motorized_equipment = 0.1
+				}
+			}
+		}
+	}
+	
+	aircraft_manufacturer = { 
+	
+		designer = yes
+		
+		bae_systems_yeovil = {
+			cost = 100
+			
+			available = {
+				ROOT = {
+					owns_state = 1007
+				}
+			}
+			
+			visible = {
+				ROOT = {
+					owns_state = 1007
+				}
+			}
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1
+					air_attack = 0.1
+					air_defence = 0.1
+				}
+			}
+			
+			modifier = {
+				research_bonus = {
+					light_air = 0.1
+				}
+			}
+		}
+		
+		rolls_royce_bristol = {
+			cost = 100
+			
+			available = {
+				ROOT = {
+					owns_state = 1006
+				}
+			}
+			
+			visible = {
+				ROOT = {
+					owns_state = 1006
+				}
+			}
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1
+					air_agility = 0.1
+					air_range = 0.1
+				}
+			}
+			
+			modifier = {
+				research_bonus = {
+					light_air = 0.1
+				}
+			}
+		}
+	}
+	country = {
+	
+		WES_battle_camlann = {
+			
+			picture = WES_test
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = { 
+				tag = KNT 
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = { 
+				tag = SUS 
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		###RULE OF HELL##
+		WES_transformation_build_infrastructure = {
+			
+			picture = WES_test
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				supply_node_range = 0.1
+				production_speed_supply_node_factor = 8.0
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+		WES_transformation_careful_planning = {
+			
+			picture = WES_test
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.3
+				industry_repair_factor = 0.3
+				production_factory_max_efficiency_factor = 0.3
+				production_lack_of_resource_penalty_factor = -0.3
+			}
+		}
+	}
+}

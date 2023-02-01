@@ -1,0 +1,119 @@
+ideas = {
+
+	country = {
+	
+		WLS_Indepenpent_state = {
+			
+			picture = WLS_Indepenpent_state
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			war_support_factor = 0.10
+			political_power_factor = 0.05
+			}
+		}
+		WLS_Negativly_descending_taxes = {
+			
+			picture = WLS_Negativly_descending_taxes
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = -0.05
+			}
+		}
+		WLS_transparent_borders = {
+			
+			picture = WLS_transparent_borders
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.20
+			political_power_factor = -0.1
+			}
+		}
+		WLS_transparent_borders_1 = {
+			
+			picture = WLS_transparent_borders_1
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.1
+			consumer_goods_factor = -0.05
+			}
+		}
+	}
+	hidden_ideas = {
+	WLS_Beat_the_workers_and_peasants = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.02
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+	}
+	hidden_ideas = {
+	WLS_Please_the_workers_and_peasants = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = +0.02
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+	}
+	head_of_government = {
+	
+		ATH_iera_koinotita = {
+
+			picture = ATH_iera_koinotita
+			allowed = {
+				original_tag = "ATH"
+			}
+
+			traits = { ideological_crusader }
+
+			do_effect = {
+				#
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}

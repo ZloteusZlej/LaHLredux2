@@ -1,0 +1,35 @@
+division_template = {
+    is_locked = yes
+	name = "Royal Marines"
+	division_names_group = #
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+	}
+}
+
+units = {
+
+	division= {	
+		name = "First R-M Regiment"
+		location = 9091
+		division_template = "Royal Marines"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+
+	division= {	
+		name = "Second R-M Regiment"
+		location = 17527
+		division_template = "Royal Marines"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+}

@@ -1,0 +1,2699 @@
+ENG_annexation_decisions = {
+
+	# Scotland
+	annexation_SCO = {
+		icon = generic_form_nation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		available = {
+            NOT = {
+			    original_tag = SCO
+			}
+        }
+        activation = {                     
+			controls_state = 1013
+			owns_state = 1013
+			controls_state = 1014
+			owns_state = 1014
+			controls_state = 1162
+			owns_state = 1162
+			controls_state = 1015
+			owns_state = 1015
+			controls_state = 1164
+			owns_state = 1164
+			controls_state = 1163
+			owns_state = 1163
+			controls_state = 1016
+			owns_state = 1016
+			controls_state = 1120
+			owns_state = 1120 	
+            NOT = {
+			    original_tag = SCO
+			}				
+        }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision annexation_SCO"
+			country_event = ENG_annex.1
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout annexation_SCO"
+			ROOT = {
+			    add_stability = -0.5
+				add_political_power = -200
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+	}
+
+	# Ireland
+	annexation_IRE = {
+		icon = generic_form_nation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		available = {
+            NOT = {
+			    original_tag = IRE
+			}
+        }
+        activation = {                     
+			controls_state = 1022
+			owns_state = 1022
+			controls_state = 1023
+			owns_state = 1023
+			controls_state = 1024
+			owns_state = 1024
+			controls_state = 1021
+			owns_state =  1021
+			controls_state = 1020
+			owns_state = 1020
+            NOT = {
+			    original_tag = IRE
+			}				
+        }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision annexation_IRE"
+			country_event = ENG_annex.2
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout annexation_IRE"
+			ROOT = {
+			    add_stability = -0.5
+				add_political_power = -200
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+	}	
+
+	# Wales
+	annexation_WLS = {
+		icon = generic_form_nation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		available = {
+            NOT = {
+			    original_tag = WLS
+			}
+        }
+        activation = {                     
+			controls_state = 1148
+			owns_state = 1148
+			controls_state = 1149
+			owns_state = 1149
+			controls_state = 1150
+			owns_state = 1150
+			controls_state = 1147
+			owns_state = 1147  
+            NOT = {
+			    original_tag = WLS
+			}				
+        }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision annexation_WLS"
+			country_event = ENG_annex.3
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout annexation_WLS"
+			ROOT = {
+			    add_stability = -0.5
+				add_political_power = -200
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	    fire_only_once = yes
+	}
+}
+
+ENG_coring_decisions = {
+	ENG_coring_cornwall = {
+		icon = GFX_decision_generic_form_nation
+		available = {
+			controls_state = 999
+			controls_state = 998
+		}
+		visible = {
+			owns_state = 999
+			owns_state = 998
+			NOT = {
+				999 = {
+					is_core_of = ROOT
+				}
+				998 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		highlight_states = {
+			state = 999
+		}
+		modifier = {
+			political_power_gain = -0.10
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost						
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect  = {
+			log = "[GetDateText]: [Root.GetName]: Decision ENG_coring_cornwall"
+			add_state_core = 999
+			add_state_core = 998
+		}
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_coring_wessex = {
+		icon = GFX_decision_generic_form_nation
+		available = {
+			controls_state = 1153
+			controls_state = 1161
+			controls_state = 1007
+			controls_state = 1006
+			controls_state = 1018
+			controls_state = 1000
+		}
+		visible = {
+			owns_state = 1153
+			owns_state = 1161
+			owns_state = 1007
+			owns_state = 1006
+			owns_state = 1018
+			owns_state = 1000
+			NOT = {
+				1153 = {
+					is_core_of = ROOT
+				}
+				1161 = {
+					is_core_of = ROOT
+				}
+				1007 = {
+					is_core_of = ROOT
+				}
+				1006 = {
+					is_core_of = ROOT
+				}
+				1000 = {
+					is_core_of = ROOT
+				}
+				1018 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		highlight_states = {
+			state = 1006
+		}
+		modifier = {
+			political_power_gain = -0.10
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect  = {
+			log = "[GetDateText]: [Root.GetName]: Decision ENG_coring_wessex"
+			add_state_core = 1153
+			add_state_core = 1161
+			add_state_core = 1007
+			add_state_core = 1006
+			add_state_core = 1018
+			add_state_core = 1000
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_coring_sussex = {
+		icon = GFX_decision_generic_form_nation
+		available = {
+			controls_state = 1001
+			controls_state = 1156				
+		}
+		visible = {
+			owns_state = 1001
+			owns_state = 1156
+			NOT = {
+				1001 = {
+					is_core_of = ROOT
+				}
+				1156 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
+		highlight_states = {
+			state = 1001
+			state = 1156
+		}
+		modifier = {
+			political_power_gain = -0.10
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect  = {
+			log = "[GetDateText]: [Root.GetName]: Decision ENG_coring_sussex"
+			add_state_core = 1001
+			add_state_core = 1156
+		}
+	}
+	ENG_coring_kent = {
+		icon = GFX_decision_generic_form_nation
+		available = {
+			controls_state = 1002
+			controls_state = 1165				
+		}
+		visible = {
+			owns_state = 1002
+			owns_state = 1165
+			NOT = {
+				1002 = {
+					is_core_of = ROOT
+				}
+				1165 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
+		highlight_states = {
+			state = 1002
+		}
+		modifier = {
+			political_power_gain = -0.10
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect  = {
+			log = "[GetDateText]: [Root.GetName]: Decision ENG_coring_kent"
+			add_state_core = 1002
+			add_state_core = 1165
+		}
+	}
+	ENG_coring_london = {
+		icon = GFX_decision_generic_form_nation
+		available = {
+			controls_state = 1160
+			controls_state = 1159
+			controls_state = 1158				
+		}
+		visible = {
+			owns_state = 1160
+			owns_state = 1159
+			owns_state = 1158
+			NOT = {
+				1160 = {
+					is_core_of = ROOT
+				}
+				1159 = {
+					is_core_of = ROOT
+				}
+				1158 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
+		highlight_states = {
+			state = 1160
+		}
+		modifier = {
+			political_power_gain = -0.10
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect  = {
+			log = "[GetDateText]: [Root.GetName]: Decision ENG_coring_london"
+			add_state_core = 1160
+			add_state_core = 1159
+			add_state_core = 1158
+		}
+	}
+	ENG_coring_essex = {
+		icon = GFX_decision_generic_form_nation
+		available = {
+			controls_state = 1157
+			controls_state = 1003				
+		}
+		visible = {
+			owns_state = 1157
+			owns_state = 1003
+			NOT = {
+				1157 = {
+					is_core_of = ROOT
+				}
+				1003 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
+		highlight_states = {
+			state = 1157
+		}
+		modifier = {
+			political_power_gain = -0.10
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect  = {
+			log = "[GetDateText]: [Root.GetName]: Decision ENG_coring_essex"
+			add_state_core = 1157
+			add_state_core = 1003
+		}
+	}
+	ENG_coring_east_anglia = {
+		icon = GFX_decision_generic_form_nation
+		available = {
+			controls_state = 1004
+			controls_state = 1143				
+		}
+		visible = {
+			owns_state = 1004
+			owns_state = 1143
+			NOT = {
+				1004 = {
+					is_core_of = ROOT
+				}
+				1143 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
+		highlight_states = {
+			state = 1004
+		}
+		modifier = {
+			political_power_gain = -0.10
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect  = {
+			log = "[GetDateText]: [Root.GetName]: Decision ENG_coring_east_anglia"
+			add_state_core = 1004
+			add_state_core = 1143
+		}
+	}
+	ENG_coring_west_midlands = {
+		icon = GFX_decision_generic_form_nation
+		available = {
+			controls_state = 1152
+			controls_state = 1154
+			controls_state = 1146
+			controls_state = 1151		
+		}
+		visible = {
+			owns_state = 1152
+			owns_state = 1154
+			owns_state = 1146
+			owns_state = 1151
+			NOT = {
+				1152 = {
+					is_core_of = ROOT
+				}
+				1154 = {
+					is_core_of = ROOT
+				}
+				1146 = {
+					is_core_of = ROOT
+				}
+				1151 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
+		highlight_states = {
+			state = 1154
+		}
+		modifier = {
+			political_power_gain = -0.10
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect  = {
+			log = "[GetDateText]: [Root.GetName]: Decision ENG_coring_west_midlands"
+			add_state_core = 1152
+			add_state_core = 1154
+			add_state_core = 1146
+			add_state_core = 1151
+		}
+	}
+	ENG_coring_east_midlands = {
+		icon = GFX_decision_generic_form_nation
+		available = {
+			controls_state = 1008
+			controls_state = 1155
+			controls_state = 1144
+			controls_state = 1005			
+		}
+		visible = {
+			owns_state = 1008
+			owns_state = 1155
+			owns_state = 1144
+			owns_state = 1005
+			NOT = {
+				1008 = {
+					is_core_of = ROOT
+				}
+				1155 = {
+					is_core_of = ROOT
+				}
+				1144 = {
+					is_core_of = ROOT
+				}
+				1005 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
+		highlight_states = {
+			state = 1155
+		}
+		modifier = {
+			political_power_gain = -0.10
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect  = {
+			log = "[GetDateText]: [Root.GetName]: Decision ENG_coring_east_midlands"
+			add_state_core = 1008
+			add_state_core = 1155
+			add_state_core = 1144
+			add_state_core = 1005
+		}
+	}
+	ENG_coring_northwest_england = {
+		icon = GFX_decision_generic_form_nation
+		available = {
+			controls_state = 1009
+			controls_state = 1145				
+		}
+		visible = {
+			owns_state = 1009
+			owns_state = 1145
+			NOT = {
+				1009 = {
+					is_core_of = ROOT
+				}
+				1145 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
+		highlight_states = {
+			state = 1009
+		}
+		modifier = {
+			political_power_gain = -0.10
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect  = {
+			log = "[GetDateText]: [Root.GetName]: Decision ENG_coring_northwest_england"
+			add_state_core = 1009
+			add_state_core = 1145
+		}
+	}
+	ENG_coring_yorkshire = {
+		icon = GFX_decision_generic_form_nation
+		available = {
+			controls_state = 1010			
+		}
+		visible = {
+			owns_state = 1010
+			NOT = {
+				1010 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
+		highlight_states = {
+			state = 1010
+		}
+		modifier = {
+			political_power_gain = -0.10
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect  = {
+			log = "[GetDateText]: [Root.GetName]: Decision ENG_coring_yorkshire"
+			add_state_core = 1010
+		}
+	}
+	ENG_coring_northeast= {
+		icon = GFX_decision_generic_form_nation
+		available = {
+			controls_state = 1011
+			controls_state = 1012			
+		}
+		visible = {
+			owns_state = 1011
+			owns_state = 1012
+			NOT = {
+				1011 = {
+					is_core_of = ROOT
+				}
+				1012 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				AND = {
+					original_tag = EAG
+					has_political_power > EAG_coring_cost			
+				}
+				AND = {
+					original_tag = ESS
+					has_political_power > ESS_coring_cost				
+				}
+				AND = {
+					original_tag = KNT
+					has_political_power > KNT_coring_cost				
+				}
+				AND = {
+					original_tag = WES
+					has_political_power > WES_coring_cost				
+				}
+				AND = {
+					original_tag = SUS
+					has_political_power > SUS_coring_cost				
+				}
+				AND = {
+					original_tag = MRC
+					has_political_power > MRC_coring_cost				
+				}
+				AND = {
+					original_tag = NTH
+					has_political_power > NTH_coring_cost				
+				}
+			}
+		}
+		custom_cost_text = ENG_coring_cost
+		complete_effect = {
+			hidden_effect = {
+				ENG_remove_political_power = yes
+			}
+		}
+		highlight_states = {
+			state = 1012
+		}
+		modifier = {
+			political_power_gain = -0.10
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect  = {
+			log = "[GetDateText]: [Root.GetName]: Decision ENG_coring_northeast"
+			add_state_core = 1011
+			add_state_core = 1112
+		}
+	}
+	###UNIFICATION###
+    WES_reunify_country = {
+		available = {
+		    OR = {
+				custom_trigger_tooltip = { 
+					tooltip = WES_reunify_country1.tt
+					controls_state = 998
+					owns_state = 998
+					controls_state = 999 
+					owns_state = 999
+					controls_state = 1007
+					owns_state = 1007
+					controls_state = 1006
+					owns_state = 1006
+					controls_state = 1000
+					owns_state = 1000
+					controls_state = 1161
+					owns_state = 1161
+					controls_state = 1153
+					owns_state = 1153
+					controls_state = 1001
+					owns_state = 1001
+					controls_state = 1156
+					owns_state = 1156
+					controls_state = 1159
+					owns_state = 1159
+					controls_state = 1158
+					owns_state = 1158
+					controls_state = 1160
+					owns_state = 1160
+					controls_state = 1157
+					owns_state = 1157
+					controls_state = 1003
+					owns_state = 1003
+					controls_state = 1002
+					owns_state = 1002
+					controls_state = 1165
+					owns_state = 1165
+					controls_state = 1143
+					owns_state = 1143
+					controls_state = 1004
+					owns_state = 1004
+					controls_state = 1152
+					owns_state = 1152
+					controls_state = 1154
+					owns_state = 1154
+					controls_state = 1151
+					owns_state = 1151
+					controls_state = 1146
+					owns_state = 1146
+					controls_state = 1155
+					owns_state = 1155
+					controls_state = 1008
+					owns_state = 1008
+					controls_state = 1144
+					owns_state = 1144
+					controls_state = 1005
+					owns_state = 1005
+					controls_state = 1009
+					owns_state = 1009
+					controls_state = 1145
+					owns_state = 1145
+					controls_state = 1011
+					owns_state = 1011
+					controls_state = 1012
+					owns_state = 1012
+					controls_state = 1010
+					owns_state = 1010
+					controls_state = 1018
+					owns_state = 1018
+					#Wales#
+					controls_state = 1148
+					owns_state = 1148
+					controls_state = 1149
+					owns_state = 1149
+					controls_state = 1150
+					owns_state = 1150
+					controls_state = 1147
+					owns_state = 1147
+					#Scotland#
+					controls_state = 1013
+					owns_state = 1013
+					controls_state = 1014
+					owns_state = 1014
+					controls_state = 1162
+					owns_state = 1162
+					controls_state = 1015
+					owns_state = 1015
+					controls_state = 1164
+					owns_state = 1164
+					controls_state = 1163
+					owns_state = 1163
+					controls_state = 1016
+					owns_state = 1016
+					controls_state = 1120
+					owns_state = 1120
+				}
+				custom_trigger_tooltip = { 
+					tooltip = WES_reunify_country2.tt
+					controls_state = 998
+					owns_state = 998
+					controls_state = 999 
+					owns_state = 999
+					controls_state = 1007
+					owns_state = 1007
+					controls_state = 1006
+					owns_state = 1006
+					controls_state = 1000
+					owns_state = 1000
+					controls_state = 1161
+					owns_state = 1161
+					controls_state = 1153
+					owns_state = 1153
+					controls_state = 1001
+					owns_state = 1001
+					controls_state = 1156
+					owns_state = 1156
+					controls_state = 1159
+					owns_state = 1159
+					controls_state = 1158
+					owns_state = 1158
+					controls_state = 1160
+					owns_state = 1160
+					controls_state = 1157
+					owns_state = 1157
+					controls_state = 1003
+					owns_state = 1003
+					controls_state = 1002
+					owns_state = 1002
+					controls_state = 1165
+					owns_state = 1165
+					controls_state = 1143
+					owns_state = 1143
+					controls_state = 1004
+					owns_state = 1004
+					controls_state = 1152
+					owns_state = 1152
+					controls_state = 1154
+					owns_state = 1154
+					controls_state = 1151
+					owns_state = 1151
+					controls_state = 1146
+					owns_state = 1146
+					controls_state = 1155
+					owns_state = 1155
+					controls_state = 1008
+					owns_state = 1008
+					controls_state = 1144
+					owns_state = 1144
+					controls_state = 1005
+					owns_state = 1005
+					controls_state = 1009
+					owns_state = 1009
+					controls_state = 1145
+					owns_state = 1145
+					controls_state = 1011
+					owns_state = 1011
+					controls_state = 1012
+					owns_state = 1012
+					controls_state = 1010
+					owns_state = 1010
+					controls_state = 1018
+					owns_state = 1018
+					SCO = {
+						is_puppet_of = WES
+					}
+					WLS = {
+						is_puppet_of = WES
+					}
+				}
+            }				
+		}
+	    cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		complete_effect = {
+            WES = { 
+			    set_cosmetic_tag = WES_REUNIFIED
+			}
+			if = {
+			    limit = {
+					SCO = {
+						is_puppet_of = WES
+					}
+					WLS = {
+						is_puppet_of = WES
+					}
+				}
+				SCO = {
+				    set_cosmetic_tag = WES_SCO_PUPPET2
+				}
+				WLS = {
+				    set_cosmetic_tag = WES_WLS_PUPPET2
+				}
+			}
+			if = {
+			    limit = {
+					IRE = {
+						is_puppet_of = WES
+					}
+				}
+				IRE = {
+				    set_cosmetic_tag = WES_IRE_PUPPET2
+				}
+			}
+			news_event = {
+				id = lhl_news.11
+				days = 0
+			}
+			set_capital = {
+				state = 1160
+				remember_old_capital = no
+			}
+		}
+		visible = {
+			original_tag = WES
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+    KNT_reunify_country = {
+		available = {
+		    OR = {
+				custom_trigger_tooltip = { 
+					tooltip = KNT_reunify_country1.tt
+					controls_state = 998
+					owns_state = 998
+					controls_state = 999 
+					owns_state = 999
+					controls_state = 1007
+					owns_state = 1007
+					controls_state = 1006
+					owns_state = 1006
+					controls_state = 1000
+					owns_state = 1000
+					controls_state = 1161
+					owns_state = 1161
+					controls_state = 1153
+					owns_state = 1153
+					controls_state = 1001
+					owns_state = 1001
+					controls_state = 1156
+					owns_state = 1156
+					controls_state = 1159
+					owns_state = 1159
+					controls_state = 1158
+					owns_state = 1158
+					controls_state = 1160
+					owns_state = 1160
+					controls_state = 1157
+					owns_state = 1157
+					controls_state = 1003
+					owns_state = 1003
+					controls_state = 1002
+					owns_state = 1002
+					controls_state = 1165
+					owns_state = 1165
+					controls_state = 1143
+					owns_state = 1143
+					controls_state = 1004
+					owns_state = 1004
+					controls_state = 1152
+					owns_state = 1152
+					controls_state = 1154
+					owns_state = 1154
+					controls_state = 1151
+					owns_state = 1151
+					controls_state = 1146
+					owns_state = 1146
+					controls_state = 1155
+					owns_state = 1155
+					controls_state = 1008
+					owns_state = 1008
+					controls_state = 1144
+					owns_state = 1144
+					controls_state = 1005
+					owns_state = 1005
+					controls_state = 1009
+					owns_state = 1009
+					controls_state = 1145
+					owns_state = 1145
+					controls_state = 1011
+					owns_state = 1011
+					controls_state = 1012
+					owns_state = 1012
+					controls_state = 1010
+					owns_state = 1010
+					controls_state = 1018
+					owns_state = 1018
+					#Wales#
+					controls_state = 1148
+					owns_state = 1148
+					controls_state = 1149
+					owns_state = 1149
+					controls_state = 1150
+					owns_state = 1150
+					controls_state = 1147
+					owns_state = 1147
+					#Scotland#
+					controls_state = 1013
+					owns_state = 1013
+					controls_state = 1014
+					owns_state = 1014
+					controls_state = 1162
+					owns_state = 1162
+					controls_state = 1015
+					owns_state = 1015
+					controls_state = 1164
+					owns_state = 1164
+					controls_state = 1163
+					owns_state = 1163
+					controls_state = 1016
+					owns_state = 1016
+					controls_state = 1120
+					owns_state = 1120
+				}
+            }				
+		}
+	    cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		complete_effect = {
+            KNT = { 
+				if = {
+					limit = {
+						KNT = {
+							has_government = right_populism
+						}
+					}
+					KNT = {
+						set_cosmetic_tag = KNT_REUNIFIED1
+						set_country_flag = KENT_hightories_britain_reunified
+					}
+					news_event = {
+						id = lhl_news.13
+						days = 0
+					}
+				}
+				if = {
+					limit = {
+						KNT = {
+							has_government = neocameralism
+						}
+					}
+					KNT = {
+						set_cosmetic_tag = KNT_REUNIFIED2
+						set_country_flag = KENT_neovictorians_britain_reunified
+					}
+					news_event = {
+						id = lhl_news.12
+						days = 0
+					}
+				}
+				set_capital = {
+					state = 1160
+					remember_old_capital = no
+				}
+			}
+		}
+		visible = {
+			original_tag = KNT
+		}
+		ai_will_do = {
+			factor = 100
+		}	
+	}
+    SUS_reunify_country = {
+		available = {
+		    OR = {
+				custom_trigger_tooltip = { 
+					tooltip = SUS_reunify_country1.tt
+					controls_state = 998
+					owns_state = 998
+					controls_state = 999 
+					owns_state = 999
+					controls_state = 1007
+					owns_state = 1007
+					controls_state = 1006
+					owns_state = 1006
+					controls_state = 1000
+					owns_state = 1000
+					controls_state = 1161
+					owns_state = 1161
+					controls_state = 1153
+					owns_state = 1153
+					controls_state = 1001
+					owns_state = 1001
+					controls_state = 1156
+					owns_state = 1156
+					controls_state = 1159
+					owns_state = 1159
+					controls_state = 1158
+					owns_state = 1158
+					controls_state = 1160
+					owns_state = 1160
+					controls_state = 1157
+					owns_state = 1157
+					controls_state = 1003
+					owns_state = 1003
+					controls_state = 1002
+					owns_state = 1002
+					controls_state = 1165
+					owns_state = 1165
+					controls_state = 1143
+					owns_state = 1143
+					controls_state = 1004
+					owns_state = 1004
+					controls_state = 1152
+					owns_state = 1152
+					controls_state = 1154
+					owns_state = 1154
+					controls_state = 1151
+					owns_state = 1151
+					controls_state = 1146
+					owns_state = 1146
+					controls_state = 1155
+					owns_state = 1155
+					controls_state = 1008
+					owns_state = 1008
+					controls_state = 1144
+					owns_state = 1144
+					controls_state = 1005
+					owns_state = 1005
+					controls_state = 1009
+					owns_state = 1009
+					controls_state = 1145
+					owns_state = 1145
+					controls_state = 1011
+					owns_state = 1011
+					controls_state = 1012
+					owns_state = 1012
+					controls_state = 1010
+					owns_state = 1010
+					controls_state = 1018
+					owns_state = 1018
+					#Wales#
+					controls_state = 1148
+					owns_state = 1148
+					controls_state = 1149
+					owns_state = 1149
+					controls_state = 1150
+					owns_state = 1150
+					controls_state = 1147
+					owns_state = 1147
+					#Scotland#
+					controls_state = 1013
+					owns_state = 1013
+					controls_state = 1014
+					owns_state = 1014
+					controls_state = 1162
+					owns_state = 1162
+					controls_state = 1015
+					owns_state = 1015
+					controls_state = 1164
+					owns_state = 1164
+					controls_state = 1163
+					owns_state = 1163
+					controls_state = 1016
+					owns_state = 1016
+					controls_state = 1120
+					owns_state = 1120
+				}
+            }				
+		}
+	    cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		complete_effect = {
+            SUS = { 
+				if = {
+					limit = {
+						SUS = {
+							has_government = left_authoritarianism
+						}
+					}
+					SUS = {
+						set_cosmetic_tag = SUS_REUNIFIED3
+					}
+					news_event = {
+						id = lhl_news.7
+						days = 0
+					}
+				}
+				if = {
+					limit = {
+						SUS = {
+							has_government = socialism
+						}
+					}
+					SUS = {
+						set_cosmetic_tag = SUS_REUNIFIED1
+					}
+					news_event = {
+						id = lhl_news.9
+						days = 0
+					}
+				}
+				if = {
+					limit = {
+						SUS = {
+							has_government = commendationism
+						}
+					}
+					SUS = {
+						set_cosmetic_tag = SUS_REUNIFIED2
+					}
+					news_event = {
+						id = lhl_news.10
+						days = 0
+					}
+				}
+				if = {
+					limit = {
+						SUS = {
+							has_government = neocameralism
+						}
+					}
+					SUS = {
+						set_cosmetic_tag = SUS_REUNIFIED4
+					}
+					news_event = {
+						id = lhl_news.8
+						days = 0
+					}
+				}
+				set_capital = {
+					state = 1160
+					remember_old_capital = no
+				}
+			}
+		}
+		visible = {
+			original_tag = SUS
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+    MRC_reunify_country = {
+		available = {
+		    OR = {
+				custom_trigger_tooltip = { 
+					tooltip = MRC_reunify_country1.tt
+					controls_state = 998
+					owns_state = 998
+					controls_state = 999 
+					owns_state = 999
+					controls_state = 1007
+					owns_state = 1007
+					controls_state = 1006
+					owns_state = 1006
+					controls_state = 1000
+					owns_state = 1000
+					controls_state = 1161
+					owns_state = 1161
+					controls_state = 1153
+					owns_state = 1153
+					controls_state = 1001
+					owns_state = 1001
+					controls_state = 1156
+					owns_state = 1156
+					controls_state = 1159
+					owns_state = 1159
+					controls_state = 1158
+					owns_state = 1158
+					controls_state = 1160
+					owns_state = 1160
+					controls_state = 1157
+					owns_state = 1157
+					controls_state = 1003
+					owns_state = 1003
+					controls_state = 1002
+					owns_state = 1002
+					controls_state = 1165
+					owns_state = 1165
+					controls_state = 1143
+					owns_state = 1143
+					controls_state = 1004
+					owns_state = 1004
+					controls_state = 1152
+					owns_state = 1152
+					controls_state = 1154
+					owns_state = 1154
+					controls_state = 1151
+					owns_state = 1151
+					controls_state = 1146
+					owns_state = 1146
+					controls_state = 1155
+					owns_state = 1155
+					controls_state = 1008
+					owns_state = 1008
+					controls_state = 1144
+					owns_state = 1144
+					controls_state = 1005
+					owns_state = 1005
+					controls_state = 1009
+					owns_state = 1009
+					controls_state = 1145
+					owns_state = 1145
+					controls_state = 1011
+					owns_state = 1011
+					controls_state = 1012
+					owns_state = 1012
+					controls_state = 1010
+					owns_state = 1010
+					controls_state = 1018
+					owns_state = 1018
+					#Wales#
+					controls_state = 1148
+					owns_state = 1148
+					controls_state = 1149
+					owns_state = 1149
+					controls_state = 1150
+					owns_state = 1150
+					controls_state = 1147
+					owns_state = 1147
+					#Scotland#
+					controls_state = 1013
+					owns_state = 1013
+					controls_state = 1014
+					owns_state = 1014
+					controls_state = 1162
+					owns_state = 1162
+					controls_state = 1015
+					owns_state = 1015
+					controls_state = 1164
+					owns_state = 1164
+					controls_state = 1163
+					owns_state = 1163
+					controls_state = 1016
+					owns_state = 1016
+					controls_state = 1120
+					owns_state = 1120
+				}
+            }				
+		}
+	    cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		complete_effect = {
+            MRC = { 
+				if = {
+					limit = {
+						MRC = {
+							has_government = millenarism
+						}
+					}
+					MRC = {
+						set_cosmetic_tag = MRC_REUNIFIED1
+					}
+					news_event = {
+						id = lhl_news.20
+						days = 0
+					}
+				}
+				if = {
+					limit = {
+						MRC = {
+							has_government = socialism
+						}
+					}
+					MRC = {
+						set_cosmetic_tag = MRC_REUNIFIED2
+					}
+					news_event = {
+						id = lhl_news.22
+						days = 0
+					}
+				}
+				if = {
+					limit = {
+						MRC = {
+							has_government = hegemonism
+						}
+					}
+					MRC = {
+						set_cosmetic_tag = MRC_REUNIFIED3
+					}
+					news_event = {
+						id = lhl_news.21
+						days = 0
+					}
+				}
+				if = {
+					limit = {
+						MRC = {
+							has_government = ur_fascism
+						}
+					}
+					MRC = {
+						retire_ideology_leader = ur_fascism
+						create_country_leader = {
+						name = "Tony Wakeford"
+						desc = ""
+						picture = "Portrait_MRC_Tony_Wakeford.dds"
+						ideology = charismatic_dictatorship
+						traits = {
+						}
+						}
+						set_cosmetic_tag = MRC_REUNIFIED4
+					}
+					news_event = {
+						id = lhl_news.23
+						days = 0
+					}
+				}
+				set_capital = {
+					state = 1160
+					remember_old_capital = no
+				}
+			}
+		}
+		visible = {
+			original_tag = MRC
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+    NTH_reunify_country = {
+		available = {
+		    OR = {
+				custom_trigger_tooltip = { 
+					tooltip = NTH_reunify_country1.tt
+					controls_state = 998
+					owns_state = 998
+					controls_state = 999 
+					owns_state = 999
+					controls_state = 1007
+					owns_state = 1007
+					controls_state = 1006
+					owns_state = 1006
+					controls_state = 1000
+					owns_state = 1000
+					controls_state = 1161
+					owns_state = 1161
+					controls_state = 1153
+					owns_state = 1153
+					controls_state = 1001
+					owns_state = 1001
+					controls_state = 1156
+					owns_state = 1156
+					controls_state = 1159
+					owns_state = 1159
+					controls_state = 1158
+					owns_state = 1158
+					controls_state = 1160
+					owns_state = 1160
+					controls_state = 1157
+					owns_state = 1157
+					controls_state = 1003
+					owns_state = 1003
+					controls_state = 1002
+					owns_state = 1002
+					controls_state = 1165
+					owns_state = 1165
+					controls_state = 1143
+					owns_state = 1143
+					controls_state = 1004
+					owns_state = 1004
+					controls_state = 1152
+					owns_state = 1152
+					controls_state = 1154
+					owns_state = 1154
+					controls_state = 1151
+					owns_state = 1151
+					controls_state = 1146
+					owns_state = 1146
+					controls_state = 1155
+					owns_state = 1155
+					controls_state = 1008
+					owns_state = 1008
+					controls_state = 1144
+					owns_state = 1144
+					controls_state = 1005
+					owns_state = 1005
+					controls_state = 1009
+					owns_state = 1009
+					controls_state = 1145
+					owns_state = 1145
+					controls_state = 1011
+					owns_state = 1011
+					controls_state = 1012
+					owns_state = 1012
+					controls_state = 1010
+					owns_state = 1010
+					controls_state = 1018
+					owns_state = 1018
+					#Wales#
+					controls_state = 1148
+					owns_state = 1148
+					controls_state = 1149
+					owns_state = 1149
+					controls_state = 1150
+					owns_state = 1150
+					controls_state = 1147
+					owns_state = 1147
+					#Scotland#
+					controls_state = 1013
+					owns_state = 1013
+					controls_state = 1014
+					owns_state = 1014
+					controls_state = 1162
+					owns_state = 1162
+					controls_state = 1015
+					owns_state = 1015
+					controls_state = 1164
+					owns_state = 1164
+					controls_state = 1163
+					owns_state = 1163
+					controls_state = 1016
+					owns_state = 1016
+					controls_state = 1120
+					owns_state = 1120
+				}
+            }				
+		}
+	    cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		complete_effect = {
+            NTH = { 
+				if = {
+					limit = {
+						NTH = {
+							has_government = national_bolshevism
+						}
+					}
+					NTH = {
+						set_cosmetic_tag = NTH_REUNIFIED1
+						
+						create_country_leader = {
+							name = "Ken Livingstone"
+							desc = ""
+							picture = "Portrait_NTH_Ken_Livingstone.dds"
+							ideology = nazbol_gang
+							traits = {
+							}
+						}
+					}
+					news_event = {
+						id = lhl_news.24
+						days = 0
+					}
+				}
+				if = {
+					limit = {
+						NTH = {
+							has_government = commendationism
+						}
+					}
+					NTH = {
+						set_cosmetic_tag = NTH_REUNIFIED2
+					}
+					news_event = {
+						id = lhl_news.25
+						days = 0
+					}
+				}
+				if = {
+					limit = {
+						NTH = {
+							has_government = left_authoritarianism
+						}
+					}
+					NTH = {
+						set_cosmetic_tag = NTH_REUNIFIED3
+					}
+					news_event = {
+						id = lhl_news.26
+						days = 0
+					}
+				}
+				set_capital = {
+					state = 1160
+					remember_old_capital = no
+				}
+			}
+		}
+		visible = {
+			original_tag = NTH
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+    ESS_reunify_country = {
+		available = {
+		    OR = {
+				custom_trigger_tooltip = { 
+					tooltip = ESS_reunify_country1.tt
+					controls_state = 998
+					owns_state = 998
+					controls_state = 999 
+					owns_state = 999
+					controls_state = 1007
+					owns_state = 1007
+					controls_state = 1006
+					owns_state = 1006
+					controls_state = 1000
+					owns_state = 1000
+					controls_state = 1161
+					owns_state = 1161
+					controls_state = 1153
+					owns_state = 1153
+					controls_state = 1001
+					owns_state = 1001
+					controls_state = 1156
+					owns_state = 1156
+					controls_state = 1159
+					owns_state = 1159
+					controls_state = 1158
+					owns_state = 1158
+					controls_state = 1160
+					owns_state = 1160
+					controls_state = 1157
+					owns_state = 1157
+					controls_state = 1003
+					owns_state = 1003
+					controls_state = 1002
+					owns_state = 1002
+					controls_state = 1165
+					owns_state = 1165
+					controls_state = 1143
+					owns_state = 1143
+					controls_state = 1004
+					owns_state = 1004
+					controls_state = 1152
+					owns_state = 1152
+					controls_state = 1154
+					owns_state = 1154
+					controls_state = 1151
+					owns_state = 1151
+					controls_state = 1146
+					owns_state = 1146
+					controls_state = 1155
+					owns_state = 1155
+					controls_state = 1008
+					owns_state = 1008
+					controls_state = 1144
+					owns_state = 1144
+					controls_state = 1005
+					owns_state = 1005
+					controls_state = 1009
+					owns_state = 1009
+					controls_state = 1145
+					owns_state = 1145
+					controls_state = 1011
+					owns_state = 1011
+					controls_state = 1012
+					owns_state = 1012
+					controls_state = 1010
+					owns_state = 1010
+					controls_state = 1018
+					owns_state = 1018
+					#Wales#
+					controls_state = 1148
+					owns_state = 1148
+					controls_state = 1149
+					owns_state = 1149
+					controls_state = 1150
+					owns_state = 1150
+					controls_state = 1147
+					owns_state = 1147
+					#Scotland#
+					controls_state = 1013
+					owns_state = 1013
+					controls_state = 1014
+					owns_state = 1014
+					controls_state = 1162
+					owns_state = 1162
+					controls_state = 1015
+					owns_state = 1015
+					controls_state = 1164
+					owns_state = 1164
+					controls_state = 1163
+					owns_state = 1163
+					controls_state = 1016
+					owns_state = 1016
+					controls_state = 1120
+					owns_state = 1120
+				}
+            }				
+		}
+	    cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		complete_effect = {
+            ESS = { 
+				if = {
+					limit = {
+						ESS = {
+							has_government = neocameralism
+						}
+					}
+					ESS = {
+						set_cosmetic_tag = ESS_REUNIFIED1
+						
+						create_country_leader = {
+							name = "Nick Land"
+							desc = ""
+							picture = "Portrait_ESS_Nick_Land.dds"
+							ideology = accelerationism
+							traits = {
+							}
+						}
+					}
+					news_event = {
+						id = lhl_news.14
+						days = 0
+					}
+				}
+				if = {
+					limit = {
+						ESS = {
+							has_government = socialism
+						}
+					}
+					ESS = {
+						set_cosmetic_tag = ESS_REUNIFIED2
+					}
+					news_event = {
+						id = lhl_news.15
+						days = 0
+					}
+				}
+				if = {
+					limit = {
+						ESS = {
+							has_government = hegemonism
+						}
+					}
+					ESS = {
+						set_cosmetic_tag = ESS_REUNIFIED3
+					}
+					news_event = {
+						id = lhl_news.16
+						days = 0
+					}
+				}
+				set_capital = {
+					state = 1160
+					remember_old_capital = no
+				}
+			}
+		}
+		visible = {
+			original_tag = ESS
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+    EAG_reunify_country = {
+		available = {
+		    OR = {
+				custom_trigger_tooltip = { 
+					tooltip = EAG_reunify_country1.tt
+					controls_state = 998
+					owns_state = 998
+					controls_state = 999 
+					owns_state = 999
+					controls_state = 1007
+					owns_state = 1007
+					controls_state = 1006
+					owns_state = 1006
+					controls_state = 1000
+					owns_state = 1000
+					controls_state = 1161
+					owns_state = 1161
+					controls_state = 1153
+					owns_state = 1153
+					controls_state = 1001
+					owns_state = 1001
+					controls_state = 1156
+					owns_state = 1156
+					controls_state = 1159
+					owns_state = 1159
+					controls_state = 1158
+					owns_state = 1158
+					controls_state = 1160
+					owns_state = 1160
+					controls_state = 1157
+					owns_state = 1157
+					controls_state = 1003
+					owns_state = 1003
+					controls_state = 1002
+					owns_state = 1002
+					controls_state = 1165
+					owns_state = 1165
+					controls_state = 1143
+					owns_state = 1143
+					controls_state = 1004
+					owns_state = 1004
+					controls_state = 1152
+					owns_state = 1152
+					controls_state = 1154
+					owns_state = 1154
+					controls_state = 1151
+					owns_state = 1151
+					controls_state = 1146
+					owns_state = 1146
+					controls_state = 1155
+					owns_state = 1155
+					controls_state = 1008
+					owns_state = 1008
+					controls_state = 1144
+					owns_state = 1144
+					controls_state = 1005
+					owns_state = 1005
+					controls_state = 1009
+					owns_state = 1009
+					controls_state = 1145
+					owns_state = 1145
+					controls_state = 1011
+					owns_state = 1011
+					controls_state = 1012
+					owns_state = 1012
+					controls_state = 1010
+					owns_state = 1010
+					controls_state = 1018
+					owns_state = 1018
+					#Wales#
+					controls_state = 1148
+					owns_state = 1148
+					controls_state = 1149
+					owns_state = 1149
+					controls_state = 1150
+					owns_state = 1150
+					controls_state = 1147
+					owns_state = 1147
+					#Scotland#
+					controls_state = 1013
+					owns_state = 1013
+					controls_state = 1014
+					owns_state = 1014
+					controls_state = 1162
+					owns_state = 1162
+					controls_state = 1015
+					owns_state = 1015
+					controls_state = 1164
+					owns_state = 1164
+					controls_state = 1163
+					owns_state = 1163
+					controls_state = 1016
+					owns_state = 1016
+					controls_state = 1120
+					owns_state = 1120
+				}
+            }				
+		}
+	    cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		complete_effect = {
+            EAG = { 
+				if = {
+					limit = {
+						EAG = {
+							has_government = hegemonism
+						}
+					}
+					EAG = {
+						set_cosmetic_tag = EAG_REUNIFIED1
+						set_country_flag = OSTANG_klumb_britain_reunified
+					}
+					news_event = {
+						id = lhl_news.18
+						days = 0
+					}
+				}
+				if = {
+					limit = {
+						EAG = {
+							has_government = neocameralism
+						}
+					}
+					EAG = {
+						set_cosmetic_tag = EAG_REUNIFIED2
+						set_country_flag = OSTANG_mercs_britain_reunified
+					}
+					news_event = {
+						id = lhl_news.17
+						days = 0
+					}
+				}
+				if = {
+					limit = {
+						EAG = {
+							has_government = national_bolshevism
+						}
+					}
+					EAG = {
+						set_cosmetic_tag = EAG_REUNIFIED3
+						set_country_flag = OSTANG_nazanarch_britain_reunified
+					}
+					news_event = {
+						id = lhl_news.19
+						days = 0
+					}
+				}
+				set_capital = {
+					state = 1160
+					remember_old_capital = no
+				}
+			}
+		}
+		visible = {
+			original_tag = EAG
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+  WLS_reunify_country = {
+		available = {
+		    OR = {
+				custom_trigger_tooltip = { 
+					tooltip = WLS_reunify_country1.tt
+					controls_state = 998
+					owns_state = 998
+					controls_state = 999 
+					owns_state = 999
+					controls_state = 1007
+					owns_state = 1007
+					controls_state = 1006
+					owns_state = 1006
+					controls_state = 1000
+					owns_state = 1000
+					controls_state = 1161
+					owns_state = 1161
+					controls_state = 1153
+					owns_state = 1153
+					controls_state = 1001
+					owns_state = 1001
+					controls_state = 1156
+					owns_state = 1156
+					controls_state = 1159
+					owns_state = 1159
+					controls_state = 1158
+					owns_state = 1158
+					controls_state = 1160
+					owns_state = 1160
+					controls_state = 1157
+					owns_state = 1157
+					controls_state = 1003
+					owns_state = 1003
+					controls_state = 1002
+					owns_state = 1002
+					controls_state = 1165
+					owns_state = 1165
+					controls_state = 1143
+					owns_state = 1143
+					controls_state = 1004
+					owns_state = 1004
+					controls_state = 1152
+					owns_state = 1152
+					controls_state = 1154
+					owns_state = 1154
+					controls_state = 1151
+					owns_state = 1151
+					controls_state = 1146
+					owns_state = 1146
+					controls_state = 1155
+					owns_state = 1155
+					controls_state = 1008
+					owns_state = 1008
+					controls_state = 1144
+					owns_state = 1144
+					controls_state = 1005
+					owns_state = 1005
+					controls_state = 1009
+					owns_state = 1009
+					controls_state = 1145
+					owns_state = 1145
+					controls_state = 1011
+					owns_state = 1011
+					controls_state = 1012
+					owns_state = 1012
+					controls_state = 1010
+					owns_state = 1010
+					controls_state = 1018
+					owns_state = 1018
+					#Wales#
+					controls_state = 1148
+					owns_state = 1148
+					controls_state = 1149
+					owns_state = 1149
+					controls_state = 1150
+					owns_state = 1150
+					controls_state = 1147
+					owns_state = 1147
+					#Scotland#
+					controls_state = 1013
+					owns_state = 1013
+					controls_state = 1014
+					owns_state = 1014
+					controls_state = 1162
+					owns_state = 1162
+					controls_state = 1015
+					owns_state = 1015
+					controls_state = 1164
+					owns_state = 1164
+					controls_state = 1163
+					owns_state = 1163
+					controls_state = 1016
+					owns_state = 1016
+					controls_state = 1120
+					owns_state = 1120
+				}
+            }				
+		}
+	    cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		complete_effect = {
+            WLS = { 
+				if = {
+					limit = {
+						WLS = {
+							has_government = socialism
+						}
+					}
+					WLS = {
+						set_cosmetic_tag = WLS_REUNIFIED1
+					}
+					news_event = {
+						id = lhl_news.28
+						days = 0
+					}
+				}
+				if = {
+					limit = {
+						WLS = {
+							has_government = hegemonism
+						}
+					}
+					WLS = {
+						set_cosmetic_tag = WLS_REUNIFIED2
+					}
+					news_event = {
+						id = lhl_news.27
+						days = 0
+					}
+				}
+				set_capital = {
+					state = 1160
+					remember_old_capital = no
+				}
+			}
+		}
+		visible = {
+			original_tag = WLS
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+  SCO_reunify_country = {
+		available = {
+		    OR = {
+				custom_trigger_tooltip = { 
+					tooltip = SCO_reunify_country1.tt
+					controls_state = 998
+					owns_state = 998
+					controls_state = 999 
+					owns_state = 999
+					controls_state = 1007
+					owns_state = 1007
+					controls_state = 1006
+					owns_state = 1006
+					controls_state = 1000
+					owns_state = 1000
+					controls_state = 1161
+					owns_state = 1161
+					controls_state = 1153
+					owns_state = 1153
+					controls_state = 1001
+					owns_state = 1001
+					controls_state = 1156
+					owns_state = 1156
+					controls_state = 1159
+					owns_state = 1159
+					controls_state = 1158
+					owns_state = 1158
+					controls_state = 1160
+					owns_state = 1160
+					controls_state = 1157
+					owns_state = 1157
+					controls_state = 1003
+					owns_state = 1003
+					controls_state = 1002
+					owns_state = 1002
+					controls_state = 1165
+					owns_state = 1165
+					controls_state = 1143
+					owns_state = 1143
+					controls_state = 1004
+					owns_state = 1004
+					controls_state = 1152
+					owns_state = 1152
+					controls_state = 1154
+					owns_state = 1154
+					controls_state = 1151
+					owns_state = 1151
+					controls_state = 1146
+					owns_state = 1146
+					controls_state = 1155
+					owns_state = 1155
+					controls_state = 1008
+					owns_state = 1008
+					controls_state = 1144
+					owns_state = 1144
+					controls_state = 1005
+					owns_state = 1005
+					controls_state = 1009
+					owns_state = 1009
+					controls_state = 1145
+					owns_state = 1145
+					controls_state = 1011
+					owns_state = 1011
+					controls_state = 1012
+					owns_state = 1012
+					controls_state = 1010
+					owns_state = 1010
+					controls_state = 1018
+					owns_state = 1018
+					#Wales#
+					controls_state = 1148
+					owns_state = 1148
+					controls_state = 1149
+					owns_state = 1149
+					controls_state = 1150
+					owns_state = 1150
+					controls_state = 1147
+					owns_state = 1147
+					#Scotland#
+					controls_state = 1013
+					owns_state = 1013
+					controls_state = 1014
+					owns_state = 1014
+					controls_state = 1162
+					owns_state = 1162
+					controls_state = 1015
+					owns_state = 1015
+					controls_state = 1164
+					owns_state = 1164
+					controls_state = 1163
+					owns_state = 1163
+					controls_state = 1016
+					owns_state = 1016
+					controls_state = 1120
+					owns_state = 1120
+				}
+            }				
+		}
+	    cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		complete_effect = {
+            SCO = { 
+				if = {
+					limit = {
+						SCO = {
+							has_government = right_populism
+						}
+					}
+					SCO = {
+						set_cosmetic_tag = SCO_REUNIFIED1
+					}
+					news_event = {
+						id = lhl_news.30
+						days = 0
+					}
+				}
+				if = {
+					limit = {
+						SCO = {
+							has_government = hegemonism
+						}
+					}
+					SCO = {
+						set_cosmetic_tag = SCO_REUNIFIED2
+					}
+					news_event = {
+						id = lhl_news.31
+						days = 0
+					}
+				}
+				set_capital = {
+					state = 1160
+					remember_old_capital = no
+				}
+			}
+		}
+		visible = {
+			original_tag = SCO
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+   ULS_reunify_country = {
+		available = {
+		    OR = {
+				custom_trigger_tooltip = { 
+					tooltip = ULS_reunify_country1.tt
+					controls_state = 998
+					owns_state = 998
+					controls_state = 999 
+					owns_state = 999
+					controls_state = 1007
+					owns_state = 1007
+					controls_state = 1006
+					owns_state = 1006
+					controls_state = 1000
+					owns_state = 1000
+					controls_state = 1161
+					owns_state = 1161
+					controls_state = 1153
+					owns_state = 1153
+					controls_state = 1001
+					owns_state = 1001
+					controls_state = 1156
+					owns_state = 1156
+					controls_state = 1159
+					owns_state = 1159
+					controls_state = 1158
+					owns_state = 1158
+					controls_state = 1160
+					owns_state = 1160
+					controls_state = 1157
+					owns_state = 1157
+					controls_state = 1003
+					owns_state = 1003
+					controls_state = 1002
+					owns_state = 1002
+					controls_state = 1165
+					owns_state = 1165
+					controls_state = 1143
+					owns_state = 1143
+					controls_state = 1004
+					owns_state = 1004
+					controls_state = 1152
+					owns_state = 1152
+					controls_state = 1154
+					owns_state = 1154
+					controls_state = 1151
+					owns_state = 1151
+					controls_state = 1146
+					owns_state = 1146
+					controls_state = 1155
+					owns_state = 1155
+					controls_state = 1008
+					owns_state = 1008
+					controls_state = 1144
+					owns_state = 1144
+					controls_state = 1005
+					owns_state = 1005
+					controls_state = 1009
+					owns_state = 1009
+					controls_state = 1145
+					owns_state = 1145
+					controls_state = 1011
+					owns_state = 1011
+					controls_state = 1012
+					owns_state = 1012
+					controls_state = 1010
+					owns_state = 1010
+					controls_state = 1018
+					owns_state = 1018
+					#Wales#
+					controls_state = 1148
+					owns_state = 1148
+					controls_state = 1149
+					owns_state = 1149
+					controls_state = 1150
+					owns_state = 1150
+					controls_state = 1147
+					owns_state = 1147
+					#ULStland#
+					controls_state = 1013
+					owns_state = 1013
+					controls_state = 1014
+					owns_state = 1014
+					controls_state = 1162
+					owns_state = 1162
+					controls_state = 1015
+					owns_state = 1015
+					controls_state = 1164
+					owns_state = 1164
+					controls_state = 1163
+					owns_state = 1163
+					controls_state = 1016
+					owns_state = 1016
+					controls_state = 1120
+					owns_state = 1120
+				}
+            }				
+		}
+	    cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		visible = {
+			original_tag = ULS
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+            ULS = { 
+				if = {
+					limit = {
+						ULS = {
+							has_government = hegemonism
+						}
+					}
+					ULS = {
+						set_cosmetic_tag = ULS_REUNIFIED1
+					}
+					news_event = {
+						id = lhl_news.29
+						days = 0
+					}
+				}
+				set_capital = {
+					state = 1160
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+}

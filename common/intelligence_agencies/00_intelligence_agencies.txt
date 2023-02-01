@@ -1,0 +1,65 @@
+# List of names and logos for intelligence agencies
+# available trigger will determine if the logo is in the list of available logos or not
+# names is a list of names. Can be a localization entry, or the name directly. A random name will be picked from them.
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_msc
+	names = { "Service of Vigilance" }
+	
+	default = { tag = MSC }
+	available = { original_tag = MSC }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_knt
+	names = { "Security Service Section Five" }
+	
+	default = { tag = KNT }
+	available = { original_tag = KNT }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_eag_1
+	names = { "Werwolf" }
+	
+	default = { tag = EAG }
+	available = { 
+		AND = {
+			original_tag = EAG 
+			has_government = neocameralism
+			has_completed_focus = EAG_common_enemy
+		}
+	}
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_eag_2
+	names = { "Federal Intelligence Service" }
+	
+	default = { tag = EAG }
+	available = { 
+		AND = {
+			original_tag = EAG 
+			has_government = hegemonism
+		}
+	}
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_eag_3
+	names = { "Revolutionary Information Service" }
+	
+	default = { tag = EAG }
+	available = { 
+		AND = {
+			original_tag = EAG 
+			has_government = national_bolshevism
+			has_completed_focus = EAG_insurrection_agency
+		}
+	}
+}

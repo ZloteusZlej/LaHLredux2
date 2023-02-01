@@ -1,0 +1,1720 @@
+﻿add_namespace = ESS_event
+
+country_event = {
+	id = ESS_event.1
+	title = ESS_event.1.t
+	desc = ESS_event.1.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.1"}
+	picture = GFX_death_of_ded
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+	custom_effect_tooltip = ESS_event1.tt
+		name = ESS_event.1.a
+		hidden_effect = {
+		    load_focus_tree = ESS_max_1
+			EAG = {
+			    country_event = {
+					id = ENG_news.1
+					days = 2
+				}
+			}
+			SUS = {
+			    country_event = {
+					id = ENG_news.1
+					days = 2
+				}
+			}
+			KNT = {
+			    country_event = {
+					id = ENG_news.1
+					days = 2
+				}
+			}
+			WES = {
+			    country_event = {
+					id = ENG_news.1
+					days = 2
+				}
+			}
+			MRC = {
+			    country_event = {
+					id = ENG_news.1
+					days = 2
+				}
+			}
+			NTH = {
+			    country_event = {
+					id = ENG_news.1
+					days = 2
+				}
+			}
+		unlock_national_focus = ESS_luciferoverlondon
+		unlock_national_focus = ESS_revolutionary_ethic
+		unlock_national_focus = ESS_peoples_militia
+		unlock_national_focus = ESS_expropriating_the_expropriators
+		unlock_national_focus = ESS_civil_vigilantes
+		unlock_national_focus = ESS_correction_through_labour
+		unlock_national_focus = ESS_bread_and_circuses
+		unlock_national_focus = ESS_happiness_is_a_warm_gun
+		unlock_national_focus = ESS_revival_of_formula_one
+		unlock_national_focus = ESS_lawless_welfare
+		unlock_national_focus = ESS_catechism_of_a_nationalist
+		unlock_national_focus = ESS_milias_indoctrination
+		unlock_national_focus = ESS_praise_the_fathers_legacy
+		unlock_national_focus = ESS_greater_gangs_of_london
+		unlock_national_focus = ESS_secularization
+		unlock_national_focus = ESS_city_government
+		unlock_national_focus = ESS_secure_the_tower
+		unlock_national_focus = ESS_meet_the_anarchists
+		unlock_national_focus = ESS_awakening_of_atlas
+		unlock_national_focus = ESS_national_revolutionary_army
+		unlock_national_focus = ESS_urban_warfare
+		unlock_national_focus = ESS_elevate_warlords
+		unlock_national_focus = ESS_contacts_with_local_rebels
+		unlock_national_focus = ESS_dare_to_die_corps
+		unlock_national_focus = ESS_autonomous_recruiting
+		unlock_national_focus = ESS_initiatives_on_the_ground
+		unlock_national_focus = ESS_sword_of_the_republic
+		unlock_national_focus = ESS_revive_military_provost
+		unlock_national_focus = ESS_suppress_independent_warlords
+		unlock_national_focus = ESS_amnesty_for_royal_officers
+		unlock_national_focus = ESS_auxiliary_forces
+		unlock_national_focus = ESS_introduce_military_ranks
+		unlock_national_focus = ESS_return_honor_to_the_army
+		unlock_national_focus = ESS_preventive_strike
+	
+		}		
+
+		
+		kill_country_leader = yes
+		set_global_flag = ENG_Mosley_is_dead  
+ 		clr_country_flag = ENG_mosley_here
+		create_country_leader = {
+	        name = "Interregnum"
+            desc = "POLITICS_INTERREGNUM_DESC"
+	        picture = "Portrait_ESS_Interregnum.dds"
+	        expire = "9999.1.1"
+			ideology = accelerationism
+			set_variable = {
+			var = ESS_control
+			value = 0
+	        }
+		}
+    }   	
+}
+country_event = {
+	id = ESS_event.2
+	title = ESS_event.2.t
+	desc = ESS_event.2.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.2"}
+	picture = GFX_ESS_concils
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+		name = ESS_event.2.a
+		hidden_effect = {
+		    ESS = {
+			    add_to_variable = { 
+				var = ESS_land_var
+				value = 1
+				}
+		    }
+		}
+    }   
+	option = {
+		name = ESS_event.2.b
+		hidden_effect = {
+		    ESS = {
+			    add_to_variable = { 
+				var = ESS_dawkins_var
+				value = 1
+				}
+		    }
+		}
+    }
+	option = {
+		name = ESS_event.2.c
+		hidden_effect = {
+		     ESS = {
+			    add_to_variable = { 
+				var = ESS_collins_var
+				value = 1
+				}
+		    }
+		}
+    }	
+}
+
+
+
+country_event = {
+	id = ESS_event.3
+	title = ESS_event.3.t
+	desc = ESS_event.3.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.3"}
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+   option = {
+		name = ESS_event.3.a
+		hidden_effect = {
+		    ESS = {
+			    add_to_variable = { 
+				var = ESS_land_var
+				value = 1
+				}
+		    }
+		}
+    }   
+	option = {
+		name = ESS_event.3.b
+		hidden_effect = {
+		    ESS = {
+			    add_to_variable = { 
+				var = ESS_dawkins_var
+				value = 1
+				}
+		    }
+		}
+    }
+	option = {
+		name = ESS_event.3.c
+		hidden_effect = {
+		     ESS = {
+			    add_to_variable = { 
+				var = ESS_collins_var
+				value = 1
+				}
+		    }
+		}
+    }	
+}
+country_event = {
+	id = ESS_event.4
+	title = ESS_event.4.t
+	desc = ESS_event.4.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.4"}
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+		name = ESS_event.4.a
+		hidden_effect = {
+		    ESS = {
+			    add_to_variable = { 
+				var = ESS_land_var
+				value = 1
+				}
+		    }
+		}
+    }   
+	option = {
+		name = ESS_event.4.b
+		hidden_effect = {
+		    ESS = {
+			    add_to_variable = { 
+				var = ESS_dawkins_var
+				value = 1
+				}
+		    }
+		}
+    }
+	option = {
+		name = ESS_event.4.c
+		hidden_effect = {
+		     ESS = {
+			    add_to_variable = { 
+				var = ESS_collins_var
+				value = 1
+				}
+		    }
+		}
+    }	
+}
+country_event = { ###Land###
+	id = ESS_event.5a
+	title = ESS_event.5a.t
+	desc = ESS_event.5a.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.5.1"}
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+		name = ESS_event.5a.a
+		   ESS = {
+				retire_country_leader = yes
+				set_country_flag = ESS_nick_here
+				}
+		  }
+	}	
+	
+country_event = { ###Dawkins###
+	id = ESS_event.5b
+	title = ESS_event.5b.t
+	desc = ESS_event.5b.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.5.2"}
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+		name = ESS_event.5b.a
+		    load_focus_tree = ESS_dawkins_1
+		    ESS = {
+				retire_country_leader = yes
+				set_politics = {
+					ruling_party = socialism
+				}
+			}
+	}
+}
+country_event = { ###Collins###
+	id = ESS_event.5c
+	title = ESS_event.5c.t
+	desc = ESS_event.5c.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.5.2"}
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+		name = ESS_event.5c.a
+		    load_focus_tree = ESS_collins_1
+		    ESS = {
+				set_politics = {
+					ruling_party = hegemonism
+				}
+			}
+		  }
+	}
+
+country_event = { ###Direct Choice###
+	id = ESS_event.6
+	title = ESS_event.6.t
+	desc = ESS_event.6.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.6"}
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+		name = ESS_event.6.a
+		load_focus_tree = ESS_land_1
+		    ESS = {
+				retire_country_leader = yes
+				set_country_flag = ESS_nick_here
+				}
+			}
+
+	option = {
+		name = ESS_event.6.b
+		load_focus_tree = ESS_dawkins_1
+		    ESS = {
+				retire_country_leader = yes
+				set_politics = {
+					ruling_party = socialism
+				}
+			}
+	}
+		
+	option = {
+		name = ESS_event.6.c
+		load_focus_tree = ESS_collins_1
+		    ESS = {
+				set_politics = {
+					ruling_party = hegemonism
+				}
+			}
+	}
+}	
+
+country_event = {
+	id = ESS_event.7
+	title = ESS_event.7.t
+	desc = ESS_event.7.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.7"}
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+
+    option = {
+		name = ESS_event.7.a 
+		
+		1158 = {
+				
+			add_building_construction = {
+						type = bunker
+						level = 2
+						province = 10574
+						instant_build = yes
+					}
+			add_building_construction = {
+						type = bunker
+						level = 2
+						province = 17573
+						instant_build = yes
+					}
+			add_building_construction = {
+						type = bunker
+						level = 2
+						province = 2559
+						instant_build = yes
+					}
+				}
+		1157 = {		
+			add_building_construction = {
+						type = bunker
+						level = 2
+						province = 13587
+						instant_build = yes
+					}
+			add_building_construction = {
+						type = bunker
+						level = 2
+						province = 17553
+						instant_build = yes
+					}	
+				}
+		1003 = {		
+			add_building_construction = {
+						type = bunker
+						level = 2
+						province = 17571
+						instant_build = yes
+					}
+				}
+		}
+							
+				
+	option = {
+		name = ESS_event.7.b 
+		1156 = {
+				
+			add_building_construction = {
+						type = bunker
+						level = 2
+						province = 4631
+						instant_build = yes
+					}
+			add_building_construction = {
+						type = bunker
+						level = 2
+						province = 17531
+						instant_build = yes
+					}
+			add_building_construction = {
+						type = bunker
+						level = 2
+						province = 17534
+						instant_build = yes
+					}
+				}
+		1159 = {		
+			add_building_construction = {
+						type = bunker
+						level = 2
+						province = 17538
+						instant_build = yes
+					}
+			add_building_construction = {
+						type = bunker
+						level = 2
+						province = 17537
+						instant_build = yes
+					}
+			add_building_construction = {
+						type = bunker
+						level = 2
+						province = 17544
+						instant_build = yes
+					}		
+		
+			}
+		}
+}
+	  
+country_event = {
+	id = ESS_event.8
+	title = ESS_event.8.t
+	desc = ESS_event.8.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.8"}
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+
+    option = {
+		name = ESS_event.8.a 
+		
+		
+		}
+	
+	option = {
+		name = ESS_event.8.b 
+		
+		
+		}
+	}
+	
+country_event = {
+	id = ESS_event.9
+	title = ESS_event.9.t
+	desc = ESS_event.9.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.9"}
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+    option = {
+		name = ESS_event.9.a
+		custom_effect_tooltip = ESS_event9.a.tt
+		    ESS = {
+				add_stability = -0.05
+		    }
+		add_tech_bonus = {
+			name = maintenance_company
+			bonus = 0.5
+			uses = 2
+			technology = tech_maintenance_company
+		
+		}
+    }   
+	option = {
+		name = ESS_event.9.b
+		custom_effect_tooltip = ESS_event9.b.tt
+		   ESS = {
+		   add_stability = -0.1
+			swap_ideas = {
+				remove_idea = ESS_accelerated_army_1
+				add_idea = ESS_accelerated_army_2a
+				}
+			}
+					
+    }
+	
+	option = {
+		name = ESS_event.9.c
+		custom_effect_tooltip = ESS_event9.c.tt
+		ESS = {
+		add_stability = -0.15
+			swap_ideas = {
+				remove_idea = ESS_accelerated_army_1
+				add_idea = ESS_accelerated_army_2b
+			}
+		}
+	}
+}	
+country_event = {
+	id = ESS_event.10
+	title = ESS_event.10.t
+	desc = ESS_event.10.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.10"}
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+
+    option = {
+		name = ESS_event.10.a 
+			add_timed_idea = {
+				ESS_temporary_serfdom
+				days = 125
+			}
+		}
+	option = {
+		name = ESS_event.10.b 
+		add_stability = 0.1
+		1160 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = ESS_event.10.c 
+		add_war_support = -0.05
+		add_manpower = 10000
+			ESS = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = support_tech
+				}
+			}
+		}
+	}
+
+country_event = {
+	id = ESS_event.11
+	title = ESS_event.11.t
+	desc = ESS_event.11.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.11"}
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+
+    option = {
+		name = ESS_event.11.a 
+		
+		EAG = {
+			    country_event = {
+				    days = 7
+					id = EAG_event.4
+				}
+		
+		}
+		
+		}
+	}
+country_event = { 
+	id = ESS_event.12
+	title = ESS_event.12.t
+	desc = ESS_event.12.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.12"} 
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+
+    option = {
+		name = ESS_event.12.a 
+		
+		}
+	option = {
+		name = ESS_event.12.b 
+		
+		}
+	option = {
+		name = ESS_event.12.c 
+		
+		}
+	}
+	
+	country_event = { 
+		id = ESS_event.13
+		title = ESS_event.13.t
+		desc = ESS_event.13.d
+		
+		fire_only_once = yes	
+		is_triggered_only = yes
+
+		option = {
+			name = ESS_event.13.a 
+			ai_chance = { factor = 0 }
+			set_global_flag = essex_accepts_kent_offer
+		}
+		option = {
+			name = ESS_event.13.b 
+			ai_chance = { factor = 10 }
+			set_global_flag = essex_rejects_kent_offer
+		}
+	}
+	
+	country_event = { 
+		id = ESS_event.14
+		title = ESS_event.14.t
+		desc = ESS_event.14.d
+		
+		fire_only_once = yes	
+		is_triggered_only = yes
+
+		option = {
+			name = ESS_event.14.a
+			add_equipment_to_stockpile = {
+				type = power_armor_weapon_equipment
+				amount = 100
+				producer = KNT
+			}
+		}
+	}
+	
+	country_event = { 
+		id = ESS_event.15
+		title = ESS_event.15.t
+		desc = ESS_event.15.d
+		
+		fire_only_once = yes	
+		is_triggered_only = yes
+
+		option = {
+			name = ESS_event.15.a
+			add_equipment_to_stockpile = {
+				type = suicide_drones_equipment
+				amount = 50
+				producer = KNT
+			}
+		}
+	}
+	
+	country_event = { 
+		id = ESS_event.16
+		title = ESS_event.16.t
+		desc = ESS_event.16.d
+		
+		fire_only_once = yes	
+		is_triggered_only = yes
+
+		option = {
+			name = ESS_event.16.a
+			add_equipment_to_stockpile = {
+				type = railgun_equipment
+				amount = 75
+				producer = KNT
+			}
+		}
+	}
+	
+	country_event = { 
+		id = ESS_event.17
+		title = ESS_event.17.t
+		desc = ESS_event.17.d
+		
+		fire_only_once = yes	
+		is_triggered_only = yes
+
+		option = {
+			name = ESS_event.17.a
+			add_equipment_to_stockpile = {
+				type = evangelion_equipment
+				amount = 15
+				producer = KNT
+			}
+		}
+	}
+	
+	country_event = { 
+		id = ESS_event.18
+		title = ESS_event.18.t
+		desc = ESS_event.18.d
+		
+		fire_only_once = yes	
+		is_triggered_only = yes
+
+		option = {
+			name = ESS_event.18.a
+			add_equipment_to_stockpile = {
+				type = supercannons_equipment
+				amount = 20
+				producer = KNT
+			}
+		}
+	}
+	
+	country_event = { 
+		id = ESS_event.19
+		title = ESS_event.19.t
+		desc = ESS_event.19.d
+		
+		fire_only_once = yes	
+		is_triggered_only = yes
+
+		option = {
+			name = ESS_event.19.a
+			add_equipment_to_stockpile = {
+				type = unmanned_tank_equipment
+				amount = 50
+				producer = KNT
+			}
+		}
+	}
+	
+	country_event = { 
+		id = ESS_event.20
+		title = ESS_event.20.t
+		desc = ESS_event.20.d
+		
+		fire_only_once = yes	
+		is_triggered_only = yes
+
+		option = {
+			name = ESS_event.20.a
+			add_stability = 0.05
+		}
+	}
+	
+	country_event = { 
+		id = ESS_event.21
+		title = ESS_event.21.t
+		desc = ESS_event.21.d
+		
+		fire_only_once = yes	
+		is_triggered_only = yes
+
+		option = {
+			name = ESS_event.21.a
+			add_timed_idea = {
+				idea = ESS_anti_gangs_riots
+				days = 125
+			}
+		}
+	}
+	
+	country_event = { 
+		id = ESS_event.22
+		title = ESS_event.22.t
+		desc = ESS_event.22.d
+		
+		fire_only_once = yes	
+		is_triggered_only = yes
+
+		option = {
+			name = ESS_event.22.a
+			KNT = {
+				country_event = {
+				    days = 2
+					id = KNT_event.44
+				}
+			}
+		}
+	}
+	
+	country_event = { 
+		id = ESS_event.23
+		title = ESS_event.23.t
+		desc = ESS_event.23.d
+		
+		fire_only_once = yes	
+		is_triggered_only = yes
+
+		option = {
+			name = ESS_event.23.a
+			ESS = {
+				add_timed_idea = {
+					idea = ESS_gov_purge
+					days = 125
+				}
+				remove_advisor_role = {
+					character = ESS_Simon_Cowell
+					slot = political_advisor
+				}
+			}
+		}
+		
+		option = {
+			name = ESS_event.23.b
+			KNT = {
+				country_event = {
+				    days = 2
+					id = KNT_event.45
+				}
+			}
+		}
+	}
+	
+country_event = { 
+	id = ESS_event.24
+	title = ESS_event.24.t
+	desc = ESS_event.24.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.24.a
+		ESS = {
+			add_timed_idea = {
+				idea = ESS_mil_purge
+				days = 125
+			}
+			
+				random_unit_leader = {
+					retire = yes
+				}
+		}
+	}
+	
+	option = {
+		name = ESS_event.24.b
+		KNT = {
+			country_event = {
+				days = 2
+				id = KNT_event.46
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = ESS_event.25
+	title = ESS_event.25.t
+	desc = ESS_event.25.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.25.a
+		ESS = {
+			add_timed_idea = {
+				idea = ESS_mil_purge_2
+				days = 125
+			}
+			
+				delete_unit = {
+					id = Big Boyz
+					disband = yes
+				}
+		}
+	}
+	
+	option = {
+		name = ESS_event.25.b
+		KNT = {
+			country_event = {
+				days = 2
+				id = KNT_event.47
+			}
+		}
+	}
+}
+	
+country_event = { #TEMPORARY EVENT DELETE#
+	id = ESS_event.26
+	title = ESS_event.26.t
+	desc = ESS_event.26.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes		
+	option = {
+		name = ESS_event.26.a
+	}
+}
+country_event = { 
+	id = ESS_event.27
+	title = ESS_event.27.t
+	desc = ESS_event.27.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.27.a
+		}
+}
+	
+country_event = { 
+	id = ESS_event.28
+	title = ESS_event.28.t
+	desc = ESS_event.28.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = ESS_event.28.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 300
+			producer = ESS
+		}
+		add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 200
+		producer = ESS
+		}
+		add_war_support = -0.05
+		add_stability = -0.05
+		custom_effect_tooltip = ESS_big_b_loyalty_plus.tt
+		add_to_variable = {
+			var = ESS_north_east_region_loyalty
+			value = 10
+		}	
+	}
+	option = {
+		name = ESS_event.28.b
+			1160 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+		add_war_support = -0.1
+		custom_effect_tooltip = ESS_sharpers_loyalty_plus.tt
+		add_to_variable = {
+			var = ESS_central_region_loyalty
+			value = 10
+		}
+	}
+	option = {
+		name = ESS_event.28.c
+			1160 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			add_stability = -0.1
+		custom_effect_tooltip = ESS_undergrounders_loyalty_plus.tt
+		add_to_variable = {
+			var = ESS_south_west_region_loyalty
+			value = 10
+		}
+	}
+}
+	
+country_event = { 
+	id = ESS_event.29
+	title = ESS_event.29.t
+	desc = ESS_event.29.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.29.a
+		ESS = {
+			set_country_flag = ESS_london_flood_proposed
+			}
+		}
+	}
+	
+country_event = { 
+	id = ESS_event.30
+	title = ESS_event.30.t
+	desc = ESS_event.30.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = ESS_event.30.a
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.336
+				}
+			}
+		add_political_power = 75
+		}
+	option = {
+		name = ESS_event.30.b
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 150
+			producer = ESS
+		}
+			}
+	}
+	
+country_event = { 
+	id = ESS_event.31
+	title = ESS_event.31.t
+	desc = ESS_event.31.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.31.a
+			WES = {
+				country_event = {
+					days = 1
+					id = WES_event.89
+				}
+			}
+		add_political_power = 75
+		}
+	option = {
+		name = ESS_event.31.b
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 600
+				producer = WES
+			}
+		}
+	}
+	
+
+	
+	###Formula 1 event chain###
+	
+country_event = { ###Starting one###
+	id = ESS_event.32
+	title = ESS_event.32.t
+	desc = ESS_event.32.d
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = ESS_event.32.a
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.33
+			}
+		}
+	}
+}
+	
+country_event = { ###First one###
+	id = ESS_event.33
+	title = ESS_event.33.t
+	desc = ESS_event.33.d
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = ESS_event.33.a ###Lewis Hamilton###
+		custom_effect_tooltip = ESS_race_lewis_hamilton.tt
+		set_country_flag = ESS_race_lewis_hamilton_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.34
+			}
+		}
+	}
+	option = {
+		name = ESS_event.33.b ###David Beckham###
+		custom_effect_tooltip = ESS_race_david_beckham.tt
+		set_country_flag = ESS_race_david_beckham_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.34
+			}
+		}
+	}
+	option = {
+		name = ESS_event.33.c ###Daniel Radcliffe###
+		if = {
+			limit = {
+				has_completed_focus = ESS_elevate_warlords
+				}
+				custom_effect_tooltip = ESS_race_daniel_radcliffe_general.tt
+			}
+		else = {
+			custom_effect_tooltip = ESS_race_daniel_radcliffe.tt
+		}
+		set_country_flag = ESS_race_daniel_radcliffe_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.34
+			}
+		}
+	}
+}
+
+country_event = { ###Second one###
+	id = ESS_event.34
+	title = ESS_event.34.t
+	desc = ESS_event.34.d
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = ESS_event.34.a ###Michael Grylls###
+		custom_effect_tooltip = ESS_race_michael_grylls.tt
+		set_country_flag = ESS_race_michael_grylls_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.35
+			}
+		}
+	}
+	option = {
+		name = ESS_event.34.b ###Rowan Atkinson###
+		custom_effect_tooltip = ESS_race_rowan_atkinson.tt
+		set_country_flag = ESS_race_rowan_atkinson_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.35
+			}
+		}
+	}
+	option = {
+		name = ESS_event.34.c ###Miles Routledge###
+		custom_effect_tooltip = ESS_race_miles_routledge.tt
+		set_country_flag = ESS_race_miles_routledge_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.35
+			}
+		}
+	}
+}
+country_event = { ###Third one###
+	id = ESS_event.35
+	title = ESS_event.35.t
+	desc = ESS_event.35.d
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = ESS_event.35.a ###Miron Fyodorov###
+		custom_effect_tooltip = ESS_race_miron_fyodorov.tt
+		set_country_flag = ESS_race_miron_fyodorov_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.36
+			}
+		}
+	}
+	option = {
+		name = ESS_event.35.b ###Nigel Mansell###
+		custom_effect_tooltip = ESS_race_nigel_mansell.tt
+		set_country_flag = ESS_race_nigel_mansell_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.36
+			}
+		}
+	}
+	option = {
+		name = ESS_event.35.c ###Liz Truss###
+		custom_effect_tooltip = ESS_race_liz_truss.tt
+		set_country_flag = ESS_race_liz_truss_flag
+		ESS = {
+			country_event = {
+				days = 1
+				id = ESS_event.36
+			}
+		}
+	}
+}
+
+country_event = { ###Finale###
+	id = ESS_event.36
+	title = ESS_event.36.t
+	desc = ESS_event.36.d
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = ESS_event.36.a ###Lewis Hamilton###
+		custom_effect_tooltip = ESS_race_lewis_hamilton.tt
+		set_country_flag = ESS_race_lewis_hamilton_won_flag
+		trigger = {
+			has_country_flag = ESS_race_lewis_hamilton_flag
+		}
+		clr_country_flag = ESS_race_lewis_hamilton_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+	option = {
+		name = ESS_event.36.b ###David Beckham###
+		custom_effect_tooltip = ESS_race_david_beckham.tt
+		set_country_flag = ESS_race_david_beckham_won_flag
+		trigger = {
+			has_country_flag =  ESS_race_david_beckham_flag
+		}
+		clr_country_flag = ESS_race_david_beckham_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+	option = {
+		name = ESS_event.36.c ###Daniel Radcliffe###
+		if = {
+			limit = {
+				has_completed_focus = ESS_elevate_warlords
+				}
+				custom_effect_tooltip = ESS_race_daniel_radcliffe_general.tt
+			}
+		else = {
+			custom_effect_tooltip = ESS_race_daniel_radcliffe.tt
+		}
+		set_country_flag = ESS_race_daniel_radcliffe_won_flag
+		trigger = {
+			has_country_flag =  ESS_race_daniel_radcliffe_flag
+		} 
+		clr_country_flag = ESS_race_daniel_radcliffe_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+	option = {
+		name = ESS_event.36.z ###Michael Grylls###
+		custom_effect_tooltip = ESS_race_michael_grylls.tt
+		set_country_flag = ESS_race_michael_grylls_won_flag
+		trigger = {
+			has_country_flag =  ESS_race_michael_grylls_flag
+		}  
+		clr_country_flag = ESS_race_michael_grylls_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+	option = {
+		name = ESS_event.36.e ###Rowan Atkinson###
+		custom_effect_tooltip = ESS_race_rowan_atkinson.tt
+		set_country_flag = ESS_race_rowan_atkinson_won_flag
+		trigger = {
+			has_country_flag =  ESS_race_rowan_atkinson_flag
+		}  
+		clr_country_flag = ESS_race_rowan_atkinson_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+	option = {
+		name = ESS_event.36.f ###Miles Routledge###
+		custom_effect_tooltip = ESS_race_miles_routledge.tt
+		set_country_flag = ESS_race_miles_routledge_won_flag
+		trigger = {
+			has_country_flag =  ESS_race_miles_routledge_flag
+		}   
+		clr_country_flag = ESS_race_miles_routledge_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+	option = {
+		name = ESS_event.36.g ###Miron Fyodorov###
+		custom_effect_tooltip = ESS_race_miron_fyodorov.tt
+		set_country_flag = ESS_race_miron_fyodorov_won_flag
+		trigger = {
+			has_country_flag = ESS_race_miron_fyodorov_flag
+		}  
+		clr_country_flag = ESS_race_miron_fyodorov_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+	option = {
+		name = ESS_event.36.h ###Nigel Mansell###
+		custom_effect_tooltip = ESS_race_nigel_mansell.tt
+		set_country_flag = ESS_race_nigel_mansell_won_flag
+		trigger = {
+			has_country_flag =  ESS_race_nigel_mansell_flag
+		}   
+		clr_country_flag = ESS_race_nigel_mansell_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+	option = {
+		name = ESS_event.36.i ###Liz Truss###
+		custom_effect_tooltip = ESS_race_liz_truss.tt
+		set_country_flag = ESS_race_liz_truss_won_flag
+		trigger = {
+			has_country_flag = ESS_race_liz_truss_flag
+		}  
+		clr_country_flag = ESS_race_liz_truss_flag
+		hidden_effect = {
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.37
+				}
+			}
+		}
+	}
+}
+	
+country_event = { ###Hidden effects###
+	id = ESS_event.37
+	title = ESS_event.37.t
+	desc = ESS_event.37.d
+	fire_only_once = yes	
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = ESS_race_lewis_hamilton_won_flag
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_lewis_hamilton_flag
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_david_beckham_won_flag
+			}
+			1160 = {
+				add_province_modifier = {
+					static_modifiers = { beckham_football_plaza }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			add_political_power = 60
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_david_beckham_flag
+			}
+			add_political_power = 60
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_daniel_radcliffe_won_flag
+			}
+			if = {
+				limit = {
+					has_completed_focus = ESS_elevate_warlords
+				}
+				ESS_daniel_radcliffe = {
+					add_corps_commander_role = {
+						traits = { 
+							formla_one_champion
+						}
+						skill = 3
+						attack_skill = 3
+						defense_skill = 3
+						planning_skill = 3
+						logistics_skill = 3
+						legacy_id = 444
+					}
+				}	
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_daniel_radcliffe_flag
+			}
+			if = {
+				limit = {
+					has_completed_focus = ESS_elevate_warlords
+				}
+				ESS_daniel_radcliffe = {
+					add_corps_commander_role = {
+						skill = 2
+						attack_skill = 2
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 2
+						legacy_id = 444
+					}
+				}	
+			}
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_daniel_radcliffe_won_flag
+			}
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ESS_elevate_warlords
+					}
+					add_to_variable = {
+						var = ESS_central_region_loyalty
+						value = 10
+					}
+					add_to_variable = {
+						var = ESS_south_west_region_loyalty
+						value = 10
+					}
+					add_to_variable = {
+						var = ESS_south_east_region_loyalty
+						value = 10
+					}
+					add_to_variable = {
+						var = ESS_north_west_region_loyalty
+						value = 10
+					}
+					add_to_variable = {
+						var = ESS_north_east_region_loyalty
+						value = 10
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_daniel_radcliffe_flag
+			}
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ESS_elevate_warlords
+					}
+				}
+				add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = ESS
+			}	
+			}
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_michael_grylls_won_flag
+			}
+			set_country_flag = ESS_michael_grylls_avaliable
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_michael_grylls_flag
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = support_equipment
+			}
+		}
+	
+		if = {
+			limit = {
+				has_country_flag = ESS_race_rowan_atkinson_won_flag
+			}
+			set_country_flag = ESS_michael_grylls_avaliable
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_rowan_atkinson_flag
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = support_equipment
+			}
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_miles_routledge_won_flag
+			}
+			set_country_flag = ESS_miles_routledge_avaliable
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_miles_routledge_flag
+			}
+			add_political_power = 70
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_rowan_atkinson_won_flag
+			}
+			
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_rowan_atkinson_flag
+			}
+			add_equipment_to_stockpile = {
+				type = armored_car_equipment_1
+				amount = 50
+				producer = ESS
+			}
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_miron_fyodorov_won_flag
+			}
+			ESS = {
+				country_event = {
+					days = 1
+					id = ESS_event.38
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_miron_fyodorov_flag
+			}
+			hidden_effect = {
+				ESS = {
+					country_event = {
+						days = 1
+						id = ESS_event.39
+					}
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_nigel_mansell_won_flag
+			}
+			ESS = {
+				add_idea = ESS_red_five_spirit
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_race_nigel_mansell_flag
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = support_equipment
+			}
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = ESS_race_liz_truss_won_flag
+			}
+			set_country_flag = 
+		}
+		if = {
+			limit = {
+				has_country_flag = ESS_liz_truss_avaliable
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = armour
+			}
+		}
+	}
+}	
+	
+country_event = { 
+	id = ESS_event.38
+	title = ESS_event.38.t
+	desc = ESS_event.38.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.38.a
+			ESS = {
+				country_event = {
+					days = 120
+					id = ESS_event.40
+				}
+			}
+		}
+	}	
+	
+country_event = { 
+	id = ESS_event.39
+	title = ESS_event.39.t
+	desc = ESS_event.39.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.39.a
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	
+country_event = { 
+	id = ESS_event.40
+	title = ESS_event.40.t
+	desc = ESS_event.40.d
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.40.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = MSC
+			}
+			add_equipment_to_stockpile = {
+				type = armoured_personnel_carrier_equipment
+				amount = 100
+				producer = MSC
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+country_event = {
+	id = ESS_event.666
+	title = ESS_event.666.t
+	desc = ESS_event.666.d 
+	
+    fire_only_once = yes	
+	is_triggered_only = yes
+
+    option = {
+		name = ESS_event.666.a 
+		
+		kill_country_leader = yes
+		
+		create_country_leader = {
+	        name = "K.N.Y.A.Z.H.N.A."
+            desc = "POLITICS_KNYAZHNA_DESC"
+	        picture = "GFX_portrait_knyazhna"
+	        expire = "9999.1.1"
+			ideology = ethical_millennialism
+			set_variable = {
+			var = ESS_control
+			value = 0
+	        }
+		}
+
+	}
+}
+
+}

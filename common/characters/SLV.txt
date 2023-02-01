@@ -1,0 +1,564 @@
+characters={
+	SLV_slavoj_Žižek={
+		name="Slavoj Žižek"
+		portraits={
+			civilian={
+				large="gfx/leaders/SLV/Portrait_SLV_Slavoj_Žižek.dds"
+			}
+		}
+		country_leader={
+			ideology=ultrahegelianism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	SLV_maj_babic={
+		name="Maj Babic"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=ethical_millennialism
+			traits={ eager_collaborator ideological_crusader }
+			expire="2038.1.1.14"
+			id=-1
+		}
+	}
+	SLV_nik_zupan={
+		name="Nik Zupan"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=paternalism
+			traits={ hawk }
+			expire="2031.1.1.14"
+			id=-1
+		}
+	}
+	SLV_gal_grbic={
+		name="Gal Grbic"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=labor_socialism
+			expire="2025.1.1.14"
+			id=-1
+		}
+	}
+	SLV_maj_klements={
+		name="Maj Klements"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=accelerationism
+			traits={ captain_of_industry }
+			expire="2034.1.1.14"
+			id=-1
+		}
+	}
+	SLV_nace_kaluza={
+		name="Nace Kaluza"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=distributism
+			traits={ reluctant_interventionist silent_workhorse }
+			expire="2027.1.1.14"
+			id=-1
+		}
+	}
+	SLV_patrik_jez={
+		name="Patrik Jez"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=christian_democracy
+			expire="2036.1.1.14"
+			id=-1
+		}
+	}
+	SLV_tian_korosec={
+		name="Tian Korosec"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=nationalism
+			traits={ smooth_talking_charmer editor }
+			expire="2029.1.1.14"
+			id=-1
+		}
+	}
+	SLV_luka_kolar={
+		name="Luka Kolar"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=ecofascism
+			traits={ national_integralist }
+			expire="2038.1.1.14"
+			id=-1
+		}
+	}
+	SLV_vid_plesko={
+		name="Vid Plesko"
+		portraits={
+			civilian={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=theodemocracy
+			traits={ compassionate_gentleman tenacious_negotiator }
+			expire="2032.1.1.14"
+			id=-1
+		}
+	}
+	SLV_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = SLV_stc
+			allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="SLV_stc"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	SLV_aa2={
+		advisor={
+			slot = high_command
+			idea_token = SLV_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SLV_aa2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	SLV_ncs={
+		advisor={
+			slot = high_command
+			idea_token = SLV_ncs
+			ledger  = navy 
+				allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SLV_ncs"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	SLV_nt={
+		advisor={
+			slot = theorist
+			idea_token = SLV_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="SLV_nt"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	SLV_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = SLV_democratic_guy
+			allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					democratic_reformer
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="SLV_democratic_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	SLV_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = SLV_fascist_guy
+			allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					fascist_demagogue
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="SLV_fascist_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	SLV_ai2={
+		advisor={
+			slot = high_command
+			idea_token = SLV_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SLV_ai2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	SLV_acas={
+		advisor={
+			slot = high_command
+			idea_token = SLV_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SLV_acas"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	SLV_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = SLV_acd2
+			allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SLV_acd2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	SLV_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = SLV_pot
+			allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="SLV_pot"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	SLV_mt={
+		advisor={
+			slot = theorist
+			idea_token = SLV_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="SLV_mt"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_6"
+			}
+		}
+	}
+	SLV_awt={
+		advisor={
+			slot = theorist
+			idea_token = SLV_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="SLV_awt"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	SLV_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = SLV_acgs
+			allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SLV_acgs"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	SLV_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = SLV_communist_guy
+			allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					communist_revolutionary
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="SLV_communist_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	SLV_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = SLV_coi
+			allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="SLV_coi"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	SLV_ar={
+		advisor={
+			slot = high_command
+			idea_token = SLV_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SLV_ar"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	SLV_acr={
+		advisor={
+			slot = air_chief
+			idea_token = SLV_acr
+			allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SLV_acr"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	SLV_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = SLV_nccr
+			allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SLV_nccr"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	SLV_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = SLV_ncm
+			allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SLV_ncm"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	SLV_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = SLV_aco2
+			allowed  = {
+					original_tag  = SLV
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SLV_aco2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+}

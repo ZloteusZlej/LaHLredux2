@@ -1,0 +1,56 @@
+add_namespace = UAS_event
+
+country_event = {
+	id = UAS_event.1
+	title = UAS_event.1.t
+	desc = UAS_event.1.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = { 
+		name = UAS_event.1.a
+		KNT = {
+			country_event = {
+			days = 1
+			id = KNT_event.20
+			}
+		}
+		add_timed_idea = {
+			idea = UAS_uk_libyan_uranium_deal
+			days = 270
+		}
+		set_global_flag = kent_libya_deal_accepted
+		ai_chance = {
+			factor = 1 
+		}
+    }
+	option = {
+		name = UAS_event.1.b
+		KNT = {
+			country_event = {
+			days = 1
+			id = KNT_event.21
+			}
+		}
+		ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+country_event = {
+	id = UAS_event.2
+	title = UAS_event.2.t
+	desc = UAS_event.2.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes
+	option = { 
+		name = UAS_event.2.a
+		add_to_variable = { var = kent_exhibition_preparedness value = 8 }
+    }
+	option = {
+		name = UAS_event.2.b
+		add_political_power = 5
+    }
+}

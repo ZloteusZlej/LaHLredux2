@@ -1,0 +1,75 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "lhl_eag_commune_construction_screen"
+		position = { x = 418 y = 10 }
+		size = { width = 100% height = 100% }
+
+		iconType = {
+			name = "lhl_EAG_commune_construction_image_1"
+			position = { x = 20  y = 189 }
+			quadTextureSprite = "GFX_lhl_EAG_commune_construction_image"
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "EAG_COMMUNE_CONSTRUCTION_TT"
+			scale = 1.0
+		}
+		iconType = {
+			name = "lhl_EAG_commune_construction_image_2"
+			position = { x = 20  y = 43 }
+			quadTextureSprite = "GFX_lhl_EAG_commune_construction_image_small"
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "EAG_COMMUNE_CONSTRUCTION_TT"
+			scale = 1.0
+		}
+		iconType = {
+			name = "lhl_EAG_commune_construction_image_3"
+			position = { x = 20  y = 417 }
+			quadTextureSprite = "GFX_lhl_EAG_commune_construction_image_big"
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "EAG_COMMUNE_CONSTRUCTION_TT"
+			scale = 1.0
+		}
+	}
+	containerWindowType = {
+		name = "lhl_eag_commune_research_screen"
+		position = { x = 0 y = 0 }
+		size = { width = 100%% height = 100%% }
+		pdx_tooltip = "EAG_COMMUNE_CONSTRUCTION_TT"
+		
+		background = {
+			name = "Background"
+			position = { x=0 y=-1 }
+			quadTextureSprite="GFX_lhl_EAG_anarchist_research_image"
+		}
+		instantTextboxType = {
+			name = "lhl_anarchist_communes_research_text"
+			position = { x = 125 y = 600 }
+			font = "hoi_24header"
+			text = "EAG_ANARCHIST_RESEARCH_TEXT_1"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+	}
+	containerWindowType = {
+		name = "lhl_eag_commune_politics_screen"
+		position = { x = 0 y = 0 }
+		size = { width = 100%% height = 100%% }
+		pdx_tooltip = "EAG_COMMUNE_CONSTRUCTION_TT"
+		
+		background = {
+			name = "Background"
+			position = { x=0 y=-1 }
+			quadTextureSprite="GFX_lhl_EAG_anarchist_research_image"
+		}
+		instantTextboxType = {
+			name = "lhl_anarchist_communes_politics_text"
+			position = { x = 125 y = 600 }
+			font = "hoi_24header"
+			text = "EAG_ANARCHIST_POLITICS_TEXT_1"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+	}
+}

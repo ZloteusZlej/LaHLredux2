@@ -1,0 +1,34 @@
+division_template = {
+    is_locked = yes
+	name = "Urban Defence Forces"
+	division_names_group = #
+
+	regiments = {
+		urban_forces = { x = 0 y = 0 }
+		urban_forces = { x = 0 y = 1 }
+		urban_forces = { x = 1 y = 0 }
+		urban_forces = { x = 1 y = 1 }
+		urban_forces = { x = 2 y = 0 }
+		urban_forces = { x = 2 y = 1 }
+	}
+}
+
+units = {
+	division= {	
+		name = "'Reading' UDF"
+		location = 17542
+		division_template = "Urban Defence Forces"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+
+	division= {	
+		name = "'Salisbury' UDF"
+		location = 17516
+		division_template = "Urban Defence Forces"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+}

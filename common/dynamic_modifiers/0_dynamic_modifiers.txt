@@ -1,0 +1,498 @@
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#       attacker_modifier = no  # if yes this modifier will also be read in combat for 
+#                               # people engaging in the combat even if not in the state
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+sabotaged_resources = {
+	remove_trigger = { 
+		has_resistance = no
+	}
+	
+	icon = GFX_modifiers_sabotaged_resource
+	
+	temporary_state_resource_oil = sabotaged_oil
+	temporary_state_resource_aluminium = sabotaged_aluminium
+	temporary_state_resource_rubber = sabotaged_rubber
+	temporary_state_resource_tungsten = sabotaged_tungsten
+	temporary_state_resource_steel = sabotaged_steel
+	temporary_state_resource_chromium = sabotaged_chromium
+}
+
+autonomous_state = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = -0.5
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+}
+
+semi_autonomous_state = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+}
+
+kurdish_agitation = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_kurdish_agitation
+	
+	resistance_growth = 0.03
+	resistance_target = 0.1
+	resistance_decay = -0.1
+	state_resources_factor = -0.15
+}
+
+kurdish_separatism = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_kurdish_separatism
+	
+	compliance_growth = -0.05
+	resistance_growth = 0.05
+	resistance_target = 0.20
+	resistance_decay = -0.20
+	state_resources_factor = -0.33
+	disable_strategic_redeployment = 1
+}
+
+kurdish_rebellion = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_kurdish_rebellion
+	
+	compliance_growth = -0.1
+	resistance_growth = 0.07
+	resistance_target = 0.35
+	resistance_decay = -0.25
+	state_resources_factor = -0.33
+	disable_strategic_redeployment = 1
+}
+
+separatist_fatigue = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_kurdish_fatigue
+	
+	compliance_growth = 0.05
+	resistance_decay = 0.15
+	state_resources_factor = -0.33
+}
+
+turanist_assimilation = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_pan_turkic_propaganda
+	
+	non_core_manpower = 0.25
+	compliance_growth = 0.05
+	resistance_growth = -0.1
+}
+
+conscription_exemptions_granted = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_conscription_exemptions_granted
+	
+	recruitable_population_factor = -0.85
+}
+
+islamist_opposition = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_traditionalist_unrest
+	
+	recruitable_population_factor = -0.05
+	local_building_slots_factor = -0.1
+	state_resources_factor = -0.1
+	state_production_speed_buildings_factor = -0.15
+}
+
+islamist_sedition = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_traditionalist_sedition
+	
+	recruitable_population_factor = -0.25
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+	army_speed_factor_for_controller = -0.15
+}
+
+islamist_insurgency = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_traditionalist_insurgency
+	
+	recruitable_population_factor = -0.5
+	local_building_slots_factor = -0.33
+	state_resources_factor = -0.5
+	state_production_speed_buildings_factor = -0.33
+	army_speed_factor_for_controller = -0.33
+}
+
+islamists_placated = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_traditionalist_placated
+	
+	state_production_speed_buildings_factor = 0.05
+}
+
+devout_islamists = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_traditionalist_placated
+	
+	recruitable_population_factor = 0.15
+	state_production_speed_buildings_factor = 0.1
+}
+
+kemalist_loyalties = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_kemalist_loyalties
+	
+	recruitable_population_factor = 0.15
+	state_production_speed_buildings_factor = 0.1
+}
+
+kemalist_schemers = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_kemalist_unrest
+	
+	recruitable_population_factor = -0.33
+	state_production_speed_buildings_factor = -0.25
+	army_speed_factor_for_controller = -0.5
+}
+
+BUL_foreign_industry_dynamic_modifier = { #Used as National Spirit
+	enable = { always = yes }
+
+	icon = GFX_idea_man_five_year_plan_industry
+
+	political_power_gain = 0.05
+	production_speed_buildings_factor = BUL_foreign_industry_construction_speed_modifier
+	industrial_capacity_factory = -0.02
+	production_factory_efficiency_gain_factor = BUL_foreign_industry_production_efficiency_modifier
+	production_factory_max_efficiency_factor = BUL_foreign_industry_production_efficiency_modifier
+	consumer_goods_factor = BUL_foreign_industry_consumer_goods_modifier
+}
+
+skirmishes_against_imro = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_bul_macedonian_revolutionaries
+	
+	state_resources_factor = -0.75
+	state_production_speed_buildings_factor = -0.75
+	army_speed_factor_for_controller = -0.25
+	attrition_for_controller = 1
+	local_org_regain = -0.75
+	disable_strategic_redeployment = 1
+}
+
+widespread_bulgarian_sentiment_01 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_bul_arranged_bulgarian_occupation
+	
+	compliance_growth = -0.1
+	resistance_growth = 0.1
+	resistance_target = 0.1
+	resistance_decay = -0.1
+	state_resources_factor = -0.1
+	local_factories = -0.1
+}
+
+widespread_bulgarian_sentiment_02 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_bul_arranged_bulgarian_occupation
+	
+	compliance_growth = 0.1
+	resistance_growth = -0.1
+	resistance_target = -0.1
+	resistance_decay = 0.1
+	state_resources_factor = 0.1
+	local_factories = 0.1
+}
+
+bulgarian_territorial_expansion_arranged = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_bul_arranged_territorial_expansion
+	
+	custom_modifier_tooltip = BUL_bulgarian_territorial_expansion_arranged_tt
+}
+
+BUL_our_duty_in_the_balkans_dynamic_modifier = { #Used as National Spirit
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_fortify_the_borders
+
+	consumer_goods_factor = BUL_our_duty_in_the_balkans_consumer_goods_modifier
+	stability_factor = BUL_our_duty_in_the_balkans_stability_modifier
+	weekly_manpower = 1000
+}
+
+international_city = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -1
+	recruitable_population_factor = -1
+	local_factories = -1
+	disable_strategic_redeployment = yes
+}
+
+international_city_2 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.75
+	recruitable_population_factor = -0.75
+	local_factories = -0.75
+	resistance_growth = 1.2
+	disable_strategic_redeployment = yes
+}
+
+international_city_3 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.5
+	recruitable_population_factor = -0.5
+	local_factories = -0.5
+	resistance_growth = 0.6
+	compliance_gain = 0.1
+	disable_strategic_redeployment = yes
+}
+
+international_city_4 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.25
+	recruitable_population_factor = -0.25
+	local_factories = -0.25
+	resistance_growth = 0.2
+	compliance_gain = 0.4
+	disable_strategic_redeployment = yes
+}
+
+unity_propaganda = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	compliance_gain = 0.7
+}
+
+military_appeasement = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	resistance_growth = -0.5
+}
+
+POL_plan_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_military_plans
+	
+	state_production_speed_bunker_factor = 0.3
+}
+
+POL_anti_soviet_offensive = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	army_attack_factor = 0.1
+	army_defence_factor = 0.2
+    breakthrough_factor = 0.15
+}
+
+POL_anti_german_offensive = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	army_attack_factor = 0.1
+	army_defence_factor = 0.2
+    breakthrough_factor = 0.15
+}
+
+POL_peasant_communities = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+
+	state_production_speed_rail_way_factor = 0.1
+	state_production_speed_supply_node_factor = 0.05
+}
+
+BALTIC_soviet_settlers = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_fortify_the_borders
+	weekly_manpower = 2000
+}
+
+unplanned_offensive = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+
+	air_cas_present_factor = -0.75
+	army_attack_factor = -0.9
+	army_speed_factor = -0.75
+	ground_attack_factor = -0.75
+	local_org_regain = -0.5
+}
+
+#LAHL DYNAMIC MODIFIERS##
+WES_rule_of_george_dynamic_modifier = { 
+	icon = GFX_sex
+	compliance_gain = WES_rule_of_george_compliance_gain #
+	non_core_manpower = WES_rule_of_george_non_core_manpower #
+	political_advisor_cost_factor = WES_rule_of_george_political_advisor_cost_factor #
+	experience_gain_army = WES_rule_of_george_experience_gain_army #
+	offence = WES_rule_of_george_offence #
+	defence = WES_rule_of_george_defence #
+	war_support_factor = WES_rule_of_george_war_support_factor #
+	stability_factor = WES_rule_of_george_stability_factor #
+	political_power_gain = WES_rule_of_george_political_power_gain #
+	monthly_population = WES_rule_of_george_monthly_population #
+	conscription_factor = WES_rule_of_george_conscription_factor #
+	consumer_goods_factor = WES_rule_of_george_consumer_goods_factor #
+}
+
+WES_pastoral_state_dynamic_modifier = { 
+	icon = GFX_sex
+	recruitable_population_factor = 0.35
+	mobilization_speed = 0.35
+	production_speed_buildings_factor = -0.5
+	production_speed_nuclear_reactor_factor = -10.0
+}
+
+WES_guild_state_dynamic_modifier = { 
+	icon = GFX_sex
+	production_speed_buildings_factor = 0.25
+	local_building_slots_factor = 0.25
+	local_factories = 0.25
+	state_repair_speed_arms_factory_factor = 0.25
+	
+}
+
+WES_fair_state_dynamic_modifier = { 
+	icon = GFX_sex
+	local_building_slots_factor = 0.25
+	state_resources_factor = 0.25
+	state_production_speed_infrastructure_factor = 0.15
+	state_repair_speed_industrial_complex_factor = 0.25
+}
+
+WES_exclusion_zone_state_dynamic_modifier = { 
+	icon = GFX_sex
+	disable_strategic_redeployment = 1
+	disable_strategic_redeployment_for_controller = 1
+	local_resources = 1.0
+	production_speed_buildings_factor = -10.0
+	local_building_slots_factor = -1.0
+}
+
+WES_competitive_spirit_modifier = { 
+	icon = GFX_sex
+	production_speed_buildings_factor =  WES_competitive_spirit_building
+	production_factory_start_efficiency_factor = WES_competitive_spirit_production
+	political_power_gain = WES_competitive_spirit_political_power
+}
+
+WES_royal_army = { 
+	icon = GFX_sex
+	army_org_factor = 0.02
+	land_reinforce_rate = 0.02
+	army_core_defence_factor = WES_royal_army_core_defence
+	army_core_attack_factor  = WES_royal_army_core_attack
+	air_ace_bonuses_factor = WES_royal_army_ace_bonuses_factor
+	air_ace_generation_chance_factor = WES_royal_army_ace_generation_chance
+	ace_effectiveness_factor = WES_royal_army_ace_effectiveness
+	static_anti_air_hit_chance_factor = WES_royal_army_anti_air
+	air_attack_factor = WES_royal_army_air_attack
+	air_agility_factor = WES_royal_army_air_agility
+	air_accidents_factor = WES_royal_army_air_accidents
+	air_defence_factor = WES_royal_army_air_defence
+	#
+	mechanized_attack_factor = WES_royal_army_mechanized_attack
+	mechanized_defence_factor = WES_royal_army_mechanized_defence
+	#
+	army_armor_speed_factor = WES_royal_army_armor_speed
+	army_armor_attack_factor = WES_royal_army_armor_attack
+	army_armor_defence_factor = WES_royal_army_armor_defence
+	#
+	army_artillery_attack_factor = WES_royal_army_artillery_attack
+	army_artillery_defence_factor = WES_royal_army_artillery_defence
+}
+
+WES_planned_offensive = {
+	icon = GFX_unplanned_offensive
+	army_attack_factor = 0.25
+	army_speed_factor = 0.3
+	ground_attack_factor = 0.25
+	local_org_regain = 0.25
+}
+
+MRC_Spirit_Of_Neofolk = {
+	icon = GFX_
+	army_morale_factor = MRC_neospirit_army_morale_factor
+	army_attack_factor = MRC_neospirit_army_attack_factor
+	war_support_factor = MRC_neospirit_war_support_factor
+}	
+
+MRC_Rage_Of_Neofolk = {
+	icon = GFX_
+	army_armor_attack_factor = MRC_ragefolk_army_armor_attack_factor
+}	
+
+MRC_Sound_Of_Neofolk = {
+	icon = GFX_
+	stability_factor = MRC_soundfolk_stability_factor
+}	

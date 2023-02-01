@@ -1,4 +1,809 @@
 technologies = {
+
+
+	fuel_silos = {
+
+		enable_building = {
+			building = fuel_silo
+			level = 3
+		}
+				
+		path = {
+			leads_to_tech = synth_oil_experiments 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fuel_refining 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2020
+
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 3 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				oil > 10
+			}
+			modifier = {
+				factor = 3
+				oil > 20
+			}	
+			modifier = {
+				factor = 4
+				oil > 30
+			}	
+			
+			modifier = {
+				factor = 2
+				num_of_military_factories > 10
+			}	
+			modifier = {
+				factor = 3
+				num_of_military_factories > 20
+			}	
+			modifier = {
+				factor = 4
+				num_of_military_factories > 30
+			}	
+			modifier = {
+				factor = 4
+				num_of_military_factories > 40
+			}	
+			modifier = {
+				factor = 4
+				num_of_military_factories > 50
+			}	
+
+			modifier = {
+				factor = 2
+				num_of_naval_factories > 10
+			}	
+			modifier = {
+				factor = 3
+				num_of_naval_factories > 20
+			}	
+			modifier = {
+				factor = 4
+				num_of_naval_factories > 30
+			}	
+			modifier = {
+				factor = 4
+				num_of_naval_factories > 40
+			}
+			modifier = {
+				factor = 4
+				num_of_naval_factories > 50
+			}
+			
+			modifier = {
+				factor = 0.2
+				date < "2020.1.1"
+			}
+			modifier = {
+				factor = 0.4
+				date < "2022.1.1"
+			}
+		}
+	}
+
+	fuel_refining = {
+
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.1
+					
+		path = {
+			leads_to_tech = fuel_refining2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		start_year = 2022
+
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 5 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0.25
+			}
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 10
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 20
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 30
+			}	
+
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 10
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 20
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 30
+			}
+		}
+		
+	}
+
+	fuel_refining2 = {
+		
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.1
+
+		path = {
+			leads_to_tech = fuel_refining3 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		start_year = 2024
+
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 7 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5	
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0.25
+			}
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 20
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 30
+			}	
+
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 20
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 30
+			}			
+		}
+		
+	}
+
+	fuel_refining3 = {
+		
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.1
+
+		path = {
+			leads_to_tech = fuel_refining4 
+			research_cost_coeff = 1
+		}
+		research_cost = 3
+		start_year = 2026
+
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 9 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5	
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0.25
+			}
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 30
+			}	
+
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 30
+			}				
+		}		
+	}
+
+	fuel_refining4 = {
+		
+		fuel_gain_factor = 0.20
+		fuel_gain_factor_from_states = 0.1
+
+		path = {
+			leads_to_tech = fuel_refining5
+			research_cost_coeff = 1
+		}
+		research_cost = 3
+		start_year = 2028
+
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 11 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0.25
+			}
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 30
+			}	
+
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 30
+			}				
+		}		
+	}
+
+	fuel_refining5 = {
+		
+		fuel_gain_factor = 0.20
+		fuel_gain_factor_from_states = 0.1
+
+		research_cost = 3
+		start_year = 2030
+
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 13 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0.25
+			}
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 40
+			}	
+
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 40
+			}				
+		}		
+	}
+	
+	synth_oil_experiments = {
+
+		enable_building = {
+			building = synthetic_refinery
+			level = 3
+		}
+				
+		path = {
+			leads_to_tech = oil_processing 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = rubber_processing 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		start_year = 2022
+
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 5 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 5
+			}
+			modifier = {
+				factor = 0.5
+				oil > 10
+			}
+			modifier = {
+				factor = 0.5
+				oil > 20
+			}	
+			modifier = {
+				factor = 0.5
+				oil > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			oil = -2.0
+		}
+	}
+	
+	oil_processing = {
+		
+		fuel_gain_factor_from_states = 0.5
+
+		start_year = 2024
+
+		path = {
+			leads_to_tech = improved_oil_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 7 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 25
+			}
+			modifier = {
+				factor = 0.5
+				oil > 10
+			}
+			modifier = {
+				factor = 0.5
+				oil > 20
+			}	
+			modifier = {
+				factor = 0.5
+				oil > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			oil = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+	
+	improved_oil_processing = {
+		
+		fuel_gain_factor_from_states = 0.5
+
+		path = {
+			leads_to_tech = advanced_oil_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2026
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 9 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 25
+			}
+			modifier = {
+				factor = 0.5
+				oil > 10
+			}
+			modifier = {
+				factor = 0.5
+				oil > 20
+			}	
+			modifier = {
+				factor = 0.5
+				oil > 30
+			}	
+			modifier = {	
+				has_war = yes
+				factor = 3
+			}		
+		}
+		
+		ai_research_weights = {
+			oil = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+	
+	advanced_oil_processing = {
+
+		fuel_gain_factor_from_states = 0.5
+
+		path = {
+			leads_to_tech = modern_oil_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2028
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 11 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 25
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 10
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 20
+			}	
+			modifier = {
+				factor = 0.5
+				rubber > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+
+	modern_oil_processing = {
+
+		fuel_gain_factor_from_states = 0.5
+		
+		research_cost = 1.5
+		start_year = 2030
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 13 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0.5
+				oil > 10
+			}
+			modifier = {
+				factor = 0.5
+				oil > 20
+			}	
+			modifier = {
+				factor = 0.5
+				oil > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			oil = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+	
+	#####################################
+	rubber_processing = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 1
+			}
+		}
+
+		path = {
+			leads_to_tech = improved_rubber_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2024
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 7 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+			cat_synth_rubber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 15
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 10
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 20
+			}	
+			modifier = {
+				factor = 0.5
+				rubber > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+	
+	improved_rubber_processing = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 1
+			}
+		}
+
+		path = {
+			leads_to_tech = advanced_rubber_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2026
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 9 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+			cat_synth_rubber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 15
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 10
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 20
+			}	
+			modifier = {
+				factor = 0.5
+				rubber > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+	
+	advanced_rubber_processing = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 1
+			}
+		}
+
+		path = {
+			leads_to_tech = modern_rubber_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2028
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 11 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+			cat_synth_rubber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 15
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 10
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 20
+			}	
+			modifier = {
+				factor = 0.5
+				rubber > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+
+	modern_rubber_processing = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 1
+			}
+		}
+		
+		research_cost = 1.5
+		start_year = 2030
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 13 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+			cat_synth_rubber
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0.5
+				rubber > 10
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 20
+			}	
+			modifier = {
+				factor = 0.5
+				rubber > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+	
 	electronic_mechanical_engineering = {
 
 		# small boost to research speed
@@ -18,7 +823,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1980
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 0 }
@@ -30,7 +835,7 @@ technologies = {
 			
 			modifier = {
 				factor = 3
-				date > "1937.1.1"
+				date > "2022.1.1"
 			}
 		}
 		
@@ -52,6 +857,7 @@ technologies = {
 		}
 		
 		research_cost = 1.75
+		start_year = 1990
 		
 		folder = {
 			name = electronics_folder
@@ -60,7 +866,7 @@ technologies = {
 		
 		folder = {
 			name = support_folder
-			position = { x = 11 y = 9 } # x = 12 y = 0
+			position = { x = 13 y = 9 } # x = 12 y = 0
 		}
 		
 		ai_will_do = {
@@ -71,12 +877,8 @@ technologies = {
 				has_war = yes
 			}
 			modifier = {
-				is_major = yes
-				factor = 2
-			}
-			modifier = {
 				factor = 5
-				date > "1939.8.1"
+				date > "1990.8.1"
 			}
 		}
 		
@@ -99,6 +901,7 @@ technologies = {
 		}
 		
 		research_cost = 1.75
+		start_year = 2000
 		
 		folder = {
 			name = electronics_folder
@@ -108,8 +911,8 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = USA
-				factor = 4
+				factor = 2
+				date > "2000.1.1"
 			}
 		}
 		
@@ -129,7 +932,7 @@ technologies = {
 		}
 		
 		research_cost = 1.25
-		start_year = 1938
+		start_year = 2010
 		enable_equipment_modules = { 
 			ship_radar_1
 		}
@@ -141,15 +944,8 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				factor = 5
-			}
-			modifier = {
-				date < "1938.1.1"
-				factor = 0.5
+				factor = 2
+				date > "2010.1.1"
 			}
 		}
 		
@@ -182,7 +978,7 @@ technologies = {
 		}
 		
 		research_cost = 1.25
-		start_year = 1939
+		start_year = 2015
 		
 		folder = {
 			name = electronics_folder
@@ -192,15 +988,8 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				factor = 5
-			}
-			modifier = {
-				date < "1939.1.1"
-				factor = 0.5
+				factor = 2
+				date > "2015.1.1"
 			}
 		}
 		
@@ -230,7 +1019,7 @@ technologies = {
 		}
 		
 		research_cost = 1.25
-		start_year = 1940
+		start_year = 2020
 		
 		folder = {
 			name = electronics_folder
@@ -240,15 +1029,8 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				factor = 4
-			}
-			modifier = {
-				date < "1940.1.1"
-				factor = 0.5
+				factor = 2
+				date > "2020.1.1"
 			}
 		}
 		
@@ -276,7 +1058,7 @@ technologies = {
 		}
 		
 		research_cost = 1.25
-		start_year = 1941
+		start_year = 2022
 		
 		folder = {
 			name = electronics_folder
@@ -286,15 +1068,8 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				factor = 4
-			}
-			modifier = {
-				date < "1941.1.1"
-				factor = 0.5
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 		
@@ -319,7 +1094,7 @@ technologies = {
 		static_anti_air_hit_chance_factor = 0.2
 		
 		research_cost = 1.25
-		start_year = 1942
+		start_year = 2025
 		
 		folder = {
 			name = electronics_folder
@@ -329,11 +1104,8 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				factor = 5
+				factor = 2
+				date > "2025.1.1"
 			}
 		}
 		
@@ -359,6 +1131,7 @@ technologies = {
 		}
 		
 		research_cost = 2.5
+		start_year = 1990
 		
 		folder = {
 			name = electronics_folder
@@ -397,7 +1170,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2.5
-		start_year = 1938
+		start_year = 2010
 		
 		folder = {
 			name = electronics_folder
@@ -406,16 +1179,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 6
-			
-			modifier = {
-				factor = 3
-				date > "1938.1.6"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1939.1.1"
-			}
 		}
 		
 		categories = {
@@ -450,7 +1213,7 @@ technologies = {
 		}
 		
 		research_cost = 2.5
-		start_year = 1940
+		start_year = 2020
 		
 		folder = {
 			name = electronics_folder
@@ -461,18 +1224,8 @@ technologies = {
 			factor = 3
 			
 			modifier = {
-				factor = 3
-				date > "1940.1.6"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1941.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				tag = GER
+				factor = 4
+				date > "2020.1.1"
 			}
 		}
 		
@@ -499,7 +1252,7 @@ technologies = {
 		}
 		
 		research_cost = 2.5
-		start_year = 1942
+		start_year = 2025
 		
 		folder = {
 			name = electronics_folder
@@ -510,13 +1263,8 @@ technologies = {
 			factor = 3
 			
 			modifier = {
-				factor = 3
-				date > "1942.1.6"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1943.1.1"
+				factor = 4
+				date > "2025.1.1"
 			}
 		}
 		
@@ -534,7 +1282,7 @@ technologies = {
 		encryption = 1
 		
 		research_cost = 1
-		start_year = 1938
+		start_year = 2000
 		allow_branch = {
 			NOT = { has_dlc = "La Resistance" }
 		}
@@ -545,24 +1293,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1.75
-			modifier = {
-				has_war = yes
-				factor = 3
-			}
-			modifier = {
-				num_of_military_factories < 50
-				factor = 1.5 # not a major
-			}
-			modifier = {
-				factor = 3
-
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -579,7 +1309,7 @@ technologies = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1
-		start_year = 1940
+		start_year = 2010
 		
 		folder = {
 			name = electronics_folder
@@ -588,24 +1318,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1.75
-			modifier = {
-				has_war = yes
-				factor = 3
-			}
-			modifier = {
-				num_of_military_factories < 50
-				factor = 1.5 # not a major
-			}
-			modifier = {
-				factor = 3
-
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -622,7 +1334,7 @@ technologies = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1
-		start_year = 1942
+		start_year = 2015
 		
 		folder = {
 			name = electronics_folder
@@ -631,24 +1343,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1.75
-			modifier = {
-				has_war = yes
-				factor = 3
-			}
-			modifier = {
-				num_of_military_factories < 50
-				factor = 1.5 # not a major
-			}
-			modifier = {
-				factor = 3
-
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -665,7 +1359,7 @@ technologies = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1.5
-		start_year = 1938
+		start_year = 2000
 		
 		folder = {
 			name = electronics_folder
@@ -674,20 +1368,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1.5
-			modifier = {
-				num_of_military_factories < 50
-				factor = 1.5 # not a major
-			}
-			modifier = {
-				factor = 3
-
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -704,7 +1384,7 @@ technologies = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1.5
-		start_year = 1940
+		start_year = 2010
 		
 		folder = {
 			name = electronics_folder
@@ -713,20 +1393,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1.5
-			modifier = {
-				num_of_military_factories < 50
-				factor = 1.5 # not a major
-			}
-			modifier = {
-				factor = 3
-
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -743,7 +1409,7 @@ technologies = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1.5
-		start_year = 1942
+		start_year = 2020
 		
 		folder = {
 			name = electronics_folder
@@ -752,20 +1418,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1.5
-			modifier = {
-				num_of_military_factories < 50
-				factor = 1.5 # not a major
-			}
-			modifier = {
-				factor = 3
-
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -785,6 +1437,7 @@ technologies = {
 		}
 		
 		research_cost = 1
+		start_year = 2000
 		
 		folder = {
 			name = electronics_folder
@@ -792,22 +1445,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.75
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 3
-			}
-			modifier = {
-				OR = {
-					can_research = improved_fire_control_system
-					has_tech = improved_fire_control_system
-				}
-				factor = 0
-			}
+			factor = 0.2
 		}
 		
 		categories = {
@@ -824,6 +1462,7 @@ technologies = {
 		}
 		
 		research_cost = 1
+		start_year = 2015
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
@@ -833,22 +1472,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.75
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 3
-			}
-			modifier = {
-				OR = {
-					can_research = advanced_fire_control_system
-					has_tech = advanced_fire_control_system
-				}
-				factor = 0
-			}
+			factor = 0.2
 		}
 		
 		categories = {
@@ -868,6 +1492,7 @@ technologies = {
 		}
 		
 		research_cost = 1
+		start_year = 2022
 		
 		folder = {
 			name = electronics_folder
@@ -875,16 +1500,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.75
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 3
-			}
-			
+			factor = 0.2
 		}
 		
 		categories = {
@@ -908,7 +1524,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1943
+		start_year = 1980
 		
 		folder = {
 			name = electronics_folder
@@ -916,7 +1532,7 @@ technologies = {
 		}
 	
 		ai_will_do = {
-			factor = 1
+			factor = 0.8
 		}
 		
 		categories = {
@@ -950,14 +1566,9 @@ technologies = {
 		path = {
 			leads_to_tech = improved_rocket_engines 
 			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = jet_engines 
-			research_cost_coeff = 1
-		}
-		
+		}		
 		research_cost = 2
-		start_year = 1944
+		start_year = 2000
 		
 		folder = {
 			name = electronics_folder
@@ -970,7 +1581,7 @@ technologies = {
 		
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.8
 		}
 		
 		categories = {
@@ -1008,7 +1619,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1945
+		start_year = 2020
 		
 		folder = {
 			name = electronics_folder
@@ -1016,7 +1627,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.8
 		}
 		
 		categories = {
@@ -1049,7 +1660,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1946
+		start_year = 2025
 		
 		folder = {
 			name = electronics_folder
@@ -1057,42 +1668,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.8
 		}
 		
 		categories = {
 			rocketry
-		}
-	}
-	
-	jet_engines = {
-	
-		folder = {
-			name = electronics_folder
-			position = { x = 2 y = 2 }
-		}
-		
-		start_year = 1944
-		research_cost = 2
-
-		folder = {
-			name = air_techs_folder
-			position = { x = 2 y = 11 }
-		}
-		
-		desc = "JET_ENGINES_SPECIAL"
-
-		on_research_complete = {
-			custom_effect_tooltip = JET_ENGINES_RESEARCHED
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-			jet_technology
 		}
 	}
 	
@@ -1105,7 +1685,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		start_year = 1940
+		start_year = 1945
 		research_cost = 5
 		
 		folder = {
@@ -1114,26 +1694,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.5
 			
 			modifier = {
-				factor = 1.2
-				date > "1941.1.1"
+				factor = 1
+				date > "2021.1.1"
 			}
 			
 			modifier = {
-				factor = 1.2
-				date > "1942.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1943.1.1"
+				factor = 1.5
+				date > "2022.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				date > "2023.1.1"
+			}
+			
+			modifier = {
+				factor = 2.5
+				date > "2024.1.1"
 			}
 		}
 		
@@ -1148,24 +1728,35 @@ technologies = {
 
 		# can build reactors
 		
-		start_year = 1943
+		start_year = 1980
 		research_cost = 5
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 2 }
 		}
-
-		path = {
-			leads_to_tech = nukes 
-			research_cost_coeff = 1
-		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0.5
+			
 			modifier = {
-				tag = USA
+				factor = 1
+				date > "2021.1.1"
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > "2022.1.1"
+			}
+			
+			modifier = {
 				factor = 2
+				date > "2023.1.1"
+			}
+			
+			modifier = {
+				factor = 2.5
+				date > "2024.1.1"
 			}
 		}
 		
@@ -1179,39 +1770,10 @@ technologies = {
 		}
 	}
 
-	nukes = {
-	
-		start_year = 1945
-		research_cost = 5
-		
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		nuclear_production = 1
-		on_research_complete = {
-			if = {
-				limit = {
-					tag = USA
-					has_war_with = JAP
-				}
-				play_warning_to_japan_effect = yes
-			}
-		}
-		categories = {
-			nuclear
-		}
-	}
-
 	lar_decryption_bonus_tech = {
 				
 		research_cost = 1.5 #Carrier Variant
-		start_year = 1944
+		start_year = 2020
 
 		# only from focus!!! #####
 		allow = {

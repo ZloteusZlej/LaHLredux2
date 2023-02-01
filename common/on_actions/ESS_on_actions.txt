@@ -1,0 +1,83 @@
+on_actions = {
+    on_capitulation = {
+	    effect = {
+		    if = {
+			    limit = {
+			        FROM = { tag = WES }
+					ROOT = { tag = ESS }
+				}
+				WES = {
+					country_event = {
+						days = 1
+						id = WES_event.17
+					}
+				}
+			}
+		}
+	}
+	
+	 on_capitulation = {
+	    effect = {
+		    if = {
+			    limit = {
+			        FROM = { tag = EAG }
+					ROOT = { tag = ESS }
+				}
+				EAG = {
+					country_event = {
+						days = 1
+						id = EAG_event.39
+					}
+					
+					delete_unit_template_and_units = {
+						division_template = "Military Firm"
+						disband = yes
+					}
+					
+					delete_unit_template_and_units = {
+						division_template = "Norfolk Militia"
+						disband = yes
+					}
+				}
+			}
+		}
+	}
+	
+on_startup = {
+	effect = {
+		ESS = {
+			every_owned_state = {
+				damage_building = {
+					type = industrial_complex
+					damage = 1
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 1
+				}
+			}
+		
+		}
+	}
+}
+	
+on_weekly_ESS = {
+	effect = {
+		if = {
+			limit = {
+				ESS = {
+					has_idea = ESS_spoils_of_kent
+				}
+			}
+			ESS = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 15
+					producer = KNT
+				}
+			}
+		}
+	}
+}
+
+}					  

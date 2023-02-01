@@ -1,0 +1,204 @@
+capital = 1004
+
+oob = "EAG_2020"
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.8
+# Starting tech
+set_technology = {
+	classic_combustion_engine = 1
+	obsolete_main_battle_tank = 1
+	outdated_main_battle_tank = 1
+	support_weapons1 = 1
+	infantry_equipment = 1
+	infantry_equipment_2 = 1
+	infantry_weapons_1 = 1
+	outdated_armoured_personnel_carrier = 1
+	outdated_infantry_fighting_vehicle = 1
+	obsolete_armored_car = 1
+	outdated_armored_car = 1
+	motorised_infantry = 1
+	ww2_fighter = 1
+	cas_1 = 1
+	interceptor_1 = 1
+	fighter_1 = 1
+	tactical_1 = 1
+	ww2_bomber = 1
+	bomber_1 = 1
+	jet_engines = 1
+	support_weapons = 1
+	light_anti_air = 1
+	anti_tank_weapon1 = 1
+	night_vision1 = 1
+	tech_mountaineers = 1
+	tech_special_forces = 1
+	marines = 1
+	paratroopers = 1
+	urban_special_forces = 1
+	tech_support = 1
+	tech_uav = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	tech_uav_company = 1
+	tech_transport_helicopters_company = 1
+	tech_assault_helicopters_company = 1
+	tech_military_police = 1
+	outdated_anti_air = 1
+	outdated_anti_air_gun = 1
+	outdated_anti_air_radar = 1
+	outdated_spaag = 1
+	outdated_spaag_gun = 1
+	outdated_spaag_radar = 1
+	outdated_sam = 1
+	outdated_sam_gun = 1
+	outdated_sam_radar = 1
+	obsolete_tbm = 1
+	obsolete_howitzer = 1
+	outdated_howitzer = 1
+	outdated_howitzer_gun = 1
+	outdated_howitzer_radar = 1
+	outdated_spg = 1
+	outdated_spg_gun = 1
+	outdated_spg_radar = 1
+	outdated_anti_tank = 1
+	outdated_anti_tank_gun = 1
+	outdated_anti_tank_radar = 1
+	outdated_mlrs = 1
+	outdated_mlrs_gun = 1
+	outdated_mlrs_radar = 1
+	helicopter_engines = 1
+	prototype_helicopter = 1
+	tech_transport_helicopters = 1
+	tech_assault_helicopters = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	atomic_research = 1
+	basic_train = 1
+}
+set_convoys = 50
+
+set_politics = {
+	ruling_party = hegemonism
+	elections_allowed = no
+}
+set_popularities = {
+	regressionism  = 4
+	millenarism = 5
+	commendationism = 5
+	left_authoritarianism = 5
+	socialism = 5
+	neocameralism = 20
+	national_bolshevism = 20
+	right_populism = 10
+	hegemonism = 25
+	ur_fascism = 1
+}
+
+add_ai_strategy = {
+    type = alliance
+    id = KNT
+    value = 200
+}
+
+set_rule = {
+    desc = EAG_hui_sosi
+    can_send_volunteers = no
+}
+add_ideas = {
+	lhl_economy_civil_war_economy
+	lhl_development_modern_nation
+	lhl_regime_provisional_government	
+}
+
+add_manpower = 75000
+
+##CHARACTERS##
+recruit_character = EAG_josef_maria_klumb
+recruit_character = EAG_ozzy_osbourne
+recruit_character = EAG_robert_griffiths
+recruit_character = EAG_reinchard_gunzel
+recruit_character = EAG_national_comittee
+recruit_character = EAG_samuel_vestey
+recruit_character = EAG_john_smith
+recruit_character = EAG_nicholas_patrick_carter
+recruit_character = EAG_troy_southgate
+recruit_character = EAG_garry_bushell
+recruit_character = EAG_wayne_john_sturgeon
+recruit_character = EAG_christopher_houghton_budd
+recruit_character = EAG_alexander_thynn
+recruit_character = EAG_jeff_kent
+recruit_character = EAG_emma_restall_orr
+recruit_character = EAG_rick_astley
+recruit_character = EAG_michael_bates
+recruit_character = EAG_harold_elletson
+recruit_character = EAG_robin_tilbrook
+recruit_character = EAG_julia_gasper
+recruit_character = EAG_wolfgang_schneiderhan
+recruit_character = EAG_martin_hohmann
+recruit_character = EAG_andreas_kalbitz
+recruit_character = EAG_georg_klein
+recruit_character = EAG_erich_vad
+recruit_character = EAG_georg_pazderski
+recruit_character = EAG_joachim_wundrak
+recruit_character = EAG_dag_baehr
+recruit_character = EAG_heinz_feldmann
+recruit_character = EAG_christian_freudingn
+recruit_character = EAG_david_iсke
+recruit_character = EAG_alan_moore
+recruit_character = EAG_keir_starmer
+
+
+set_country_flag = {
+    flag = ENG_southgate_here
+	value = 1
+}
+
+set_country_flag = {
+    flag = ENG_klumb_here
+	value = 1
+}
+
+set_country_flag = {
+    flag = ENG_gunzel_here
+	value = 1
+}
+
+country_event = {
+		days = 100
+		id = EAG_event.10
+}
+
+set_variable = {
+    var = EAG_coring_cost
+    value = 225
+}
+
+set_variable = {
+	var = volk_mood
+	value = 11	
+}
+
+set_variable = {
+	var = volk_dev
+	value = 8
+}
+
+set_variable = {
+	var = mercs_mood
+	value = 12
+}
+
+set_variable = {
+	var = mercs_quality
+	value = 13
+}
+
+set_variable = {
+	var = EAG_anarchist_mood
+	value = 51
+}

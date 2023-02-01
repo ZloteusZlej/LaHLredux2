@@ -1,9 +1,40 @@
+
 state={
 	id=1002
 	name="STATE_1002"
-	provinces={
-		3644 6426 
+
+	history={
+		owner = KNT
+		add_core_of = KNT
+		victory_points = {
+			17510 3
+		}
+		victory_points = {
+			6426 3 
+		}
+		victory_points = {
+			17514 2
+		}
+		victory_points = {
+			17523 2
+		}
+		victory_points = {
+			17520 2
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+			17523 = {
+				naval_base = 2
+			}
+		}
+
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
+
+	provinces={
+		3702 6426 17509 17510 17514 17520 17523 
+	}
+	manpower=1643017
+	state_category=city
 }

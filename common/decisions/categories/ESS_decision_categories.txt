@@ -1,0 +1,48 @@
+ESS_debug = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = ESS }
+}
+ESS_london_bands = {
+	icon = GFX_
+	visible_when_empty = yes
+	scripted_gui = lhl_london_bands_screen_body
+	allowed = { original_tag = ESS }
+}
+
+ESS_prisoners_of_war = {
+	icon = GFX_
+	visible_when_empty = no
+	allowed = { original_tag = ESS }
+}
+ESS_desperate_measures = {
+	icon = GFX_
+		visible = {
+			has_completed_focus = ESS_catechism_of_a_nationalist
+			
+		}
+	}
+	visible_when_empty = yes
+	allowed = { original_tag = ESS }
+}
+ESS_our_great_revolution = {
+icon = GFX_
+	visible = {
+	    has_completed_focus = ESS_contacts_with_local_rebels
+		
+	}
+	visible_when_empty = no
+	allowed = { original_tag = ESS }
+}
+ESS_take_what_is_ours = {
+	icon = GFX_
+	visible = {
+	    has_completed_focus = ESS_preventive_strike
+				ESS = {	
+			has_country_flag = ENG_mosley_here 
+			}
+		}
+	}
+	visible_when_empty = no
+	allowed = { original_tag = ESS }
+}

@@ -1,0 +1,173 @@
+﻿add_namespace = WLS_event
+
+country_event = {
+	id = WLS_event.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WLS_event.1"}
+	title = WLS_event.1.t
+	desc = WLS_event.1.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	option = {
+	    name = WLS_event.1.a
+		ai_chance = { factor = 10 }
+		IRE = {
+			country_event = {
+				days = 1
+				id = IRE_event.1
+			}
+		}
+        SCO = { 
+		    add_to_faction = WLS
+		}
+    }
+	option = {
+	    name = WLS_event.1.b
+		ai_chance = { factor = 0 }
+    } 	
+}
+
+country_event = {
+	id = WLS_event.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WLS_event.2"}
+	title = WLS_event.2.t
+	desc = WLS_event.2.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	option = {
+	    name = WLS_event.2.a
+		ai_chance = { factor = 1 }
+		WES = {
+		    annex_country = {
+				target = WLS
+				transfer_troops = yes
+			}
+        }
+		WES = {
+			country_event = {
+				days = 1
+				id = WES_event.26
+			}
+		}
+    }
+	option = {
+	    name = WLS_event.2.b
+		ai_chance = { factor = 0 }
+        declare_war_on = {
+            target = WES
+            type = annex_everything
+        }
+    } 	
+}
+
+country_event = {
+	id = WLS_event.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WLS_event.3"}
+	title = WLS_event.3.t
+	desc = WLS_event.3.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	option = {
+	    name = WLS_event.3.a
+		ai_chance = { factor = 1 }
+		IRE = {
+			country_event = {
+				days = 1
+				id = IRE_event.2
+			}
+		}
+        create_faction = CELTIC_ALLIANCE
+    }
+	option = {
+	    name = WLS_event.3.b
+		ai_chance = { factor = 0 }
+    } 	
+}
+country_event = {
+	id = WLS_event.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WLS_event.4"}
+	title = WLS_event.4.t
+	desc = WLS_event.4.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	option = {
+	    name = WLS_event.4.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.1
+    }
+	option = {
+	    name = WLS_event.4.b
+		ai_chance = { factor = 0 }
+    } 	
+}
+country_event = {
+	id = WLS_event.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WLS_event.5"}
+	title = WLS_event.5.t
+	desc = WLS_event.5.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	option = {
+	    name = WLS_event.5.a
+		ai_chance = { factor = 1 }
+		add_ideas = WLS_Beat_the_workers_and_peasants
+    }
+	option = {
+	    name = WLS_event.5.b
+		ai_chance = { factor = 0 }
+		add_ideas = WLS_Please_the_workers_and_peasants
+    } 	
+}
+country_event = {
+	id = WLS_event.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WLS_event.6"}
+	title = WLS_event.6.t
+	desc = WLS_event.6.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	option = {
+	    name = WLS_event.6.a
+		ai_chance = { factor = 1 }
+		swap_ideas = {
+			remove_idea = WLS_transparent_borders
+			add_idea = WLS_transparent_borders_1
+		}
+    }
+	option = {
+	    name = WLS_event.6.b
+		ai_chance = { factor = 0 }
+		remove_ideas = WLS_transparent_borders
+    } 	
+}
+
+country_event = {
+	id = WLS_event.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WLS_event.7"}
+	title = WLS_event.7.t
+	desc = WLS_event.7.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	option = {
+	    name = WLS_event.7.a
+		ai_chance = { factor = 10 }
+		WES = {
+			puppet = WLS
+		}
+    }
+	option = {
+	    name = WLS_event.7.b
+		ai_chance = { factor = 0 }
+		WES = {
+			country_event = {
+				days = 1
+				id = WES_event.62
+			}
+		}
+    } 	
+}

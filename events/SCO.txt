@@ -1,0 +1,249 @@
+﻿add_namespace = SCO_event
+
+country_event = {
+	id = SCO_event.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SCO_event.1"}
+	title = SCO_event.1.t
+	desc = SCO_event.1.d
+    fire_only_once = yes	
+	trigger = {
+		original_tag = SCO
+		OR = {
+			AND ={
+				country_exists = WES
+				NOT = {
+					country_exists = SUS
+				}
+				NOT = {
+					country_exists = MRC
+				}
+				NOT = {
+					country_exists = EAG
+				}
+				NOT = {
+					country_exists = KNT
+				}
+				NOT = {
+					country_exists = ESS
+				}
+				NOT = {
+					country_exists = NTH
+				}
+			}
+			AND ={
+				country_exists = SUS
+				NOT = {
+					country_exists = WES
+				}
+				NOT = {
+					country_exists = MRC
+				}
+				NOT = {
+					country_exists = EAG
+				}
+				NOT = {
+					country_exists = KNT
+				}
+				NOT = {
+					country_exists = ESS
+				}
+				NOT = {
+					country_exists = NTH
+				}
+			}
+			AND ={
+				country_exists = MRC
+				NOT = {
+					country_exists = SUS
+				}
+				NOT = {
+					country_exists = WES
+				}
+				NOT = {
+					country_exists = EAG
+				}
+				NOT = {
+					country_exists = KNT
+				}
+				NOT = {
+					country_exists = ESS
+				}
+				NOT = {
+					country_exists = NTH
+				}
+			}
+			AND ={
+				country_exists = EAG
+				NOT = {
+					country_exists = SUS
+				}
+				NOT = {
+					country_exists = MRC
+				}
+				NOT = {
+					country_exists = WES
+				}
+				NOT = {
+					country_exists = KNT
+				}
+				NOT = {
+					country_exists = ESS
+				}
+				NOT = {
+					country_exists = NTH
+				}
+			}
+			AND ={
+				country_exists = KNT
+				NOT = {
+					country_exists = SUS
+				}
+				NOT = {
+					country_exists = MRC
+				}
+				NOT = {
+					country_exists = EAG
+				}
+				NOT = {
+					country_exists = WES
+				}
+				NOT = {
+					country_exists = ESS
+				}
+				NOT = {
+					country_exists = NTH
+				}
+			}
+			AND ={
+				country_exists = ESS
+				NOT = {
+					country_exists = SUS
+				}
+				NOT = {
+					country_exists = MRC
+				}
+				NOT = {
+					country_exists = EAG
+				}
+				NOT = {
+					country_exists = KNT
+				}
+				NOT = {
+					country_exists = WES
+				}
+				NOT = {
+					country_exists = NTH
+				}
+			}
+			AND ={
+				country_exists = NTH
+				NOT = {
+					country_exists = SUS
+				}
+				NOT = {
+					country_exists = MRC
+				}
+				NOT = {
+					country_exists = EAG
+				}
+				NOT = {
+					country_exists = KNT
+				}
+				NOT = {
+					country_exists = ESS
+				}
+				NOT = {
+					country_exists = WES
+				}
+			}
+		}
+	}
+	option = {
+	    name = SCO_event.1.a
+		ai_chance = { factor = 10 }
+		create_faction = CELTIC_ALLIANCE
+		WLS = {
+			country_event = {
+				days = 1
+				id = WLS_event.1
+			}
+		}
+		WES = {
+			country_event = {
+				days = 1
+				id = WES_event.23
+			}
+		}
+    }
+	option = {
+	    name = SCO_event.2.b
+		ai_chance = { factor = 0 }
+		WLS = {
+			country_event = {
+				days = 1
+				id = WLS_event.3
+			}
+		}
+    } 	
+}
+
+country_event = {
+	id = SCO_event.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SCO_event.2"}
+	title = SCO_event.2.t
+	desc = SCO_event.2.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	option = {
+	    name = SCO_event.2.a
+		ai_chance = { factor = 1 }
+		WES = {
+		    annex_country = {
+				target = SCO
+				transfer_troops = yes
+			}
+        }
+		WES = {
+			country_event = {
+				days = 1
+				id = WES_event.25
+			}
+		}
+    }
+	option = {
+	    name = SCO_event.2.b
+		ai_chance = { factor = 10 }
+        declare_war_on = {
+            target = WES
+            type = annex_everything
+        }
+    } 	
+}
+
+country_event = {
+	id = SCO_event.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SCO_event.3"}
+	title = SCO_event.3.t
+	desc = SCO_event.3.d
+    is_triggered_only = yes
+	
+    fire_only_once = yes	
+	option = {
+	    name = SCO_event.3.a
+		ai_chance = { factor = 10 }
+		WES = {
+			puppet = SCO
+		}
+    }
+	option = {
+	    name = SCO_event.3.b
+		ai_chance = { factor = 0 }
+		WES = {
+			country_event = {
+				days = 1
+				id = WES_event.60
+			}
+		}
+    } 	
+}

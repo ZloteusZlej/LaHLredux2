@@ -1,0 +1,190 @@
+equipments = {
+
+	tank_destroyer_equipment = {
+		year = 1980
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_medium_tank_equipment		
+		is_buildable = no
+		type = { 
+			armor
+			anti_tank
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_at_upgrade
+		}
+		
+		#Misc Abilities#
+		maximum_speed = 8
+		reliability = 0.8
+
+		#Defensive Abilities#
+		defense = 5
+		breakthrough = 1.3
+		hardness = 0.9
+		armor_value = 60
+
+		#Offensive Abilities#
+		soft_attack = 5
+		hard_attack = 20
+		ap_attack = 88
+		air_attack = 0
+		
+		build_cost_ic = 12
+		
+		resources = {
+			oil = 1
+			tungsten = 4
+			steel = 2
+		}
+		fuel_consumption = 1.8
+	}
+
+	tank_destroyer_equipment_1 = {
+		year = 2018
+
+		archetype = tank_destroyer_equipment
+		priority = 80
+		visual_level = 0
+	}
+
+	tank_destroyer_equipment_2 = {
+		year = 2025
+
+		archetype = tank_destroyer_equipment
+		parent = tank_destroyer_equipment_1
+		priority = 80
+		visual_level = 1
+		can_convert_from = { 
+			tank_destroyer_equipment_1 
+		}
+
+		#Misc Abilities#
+		maximum_speed = 9
+
+		#Defensive Abilities#
+		defense = 6
+		breakthrough = 1.5
+		armor_value = 80
+
+		#Offensive Abilities#
+		soft_attack = 6
+		hard_attack = 26
+		ap_attack = 110
+		
+		build_cost_ic = 13
+		
+		resources = {
+			oil = 1
+			tungsten = 4
+			steel = 3
+		}		
+	}
+
+	tank_destroyer_equipment_3 = {
+		year = 2027
+
+		archetype = tank_destroyer_equipment
+		parent = tank_destroyer_equipment_2
+		priority = 80
+		visual_level = 2
+		can_convert_from = { 
+			tank_destroyer_equipment_2
+		}
+
+		#Misc Abilities#
+		maximum_speed = 10
+
+		#Defensive Abilities#
+		defense = 7
+		breakthrough = 1.8
+		armor_value = 90
+
+		#Offensive Abilities#
+		soft_attack = 8
+		hard_attack = 32
+		ap_attack = 120
+		
+		build_cost_ic = 14
+		
+		resources = {
+			oil = 2
+			tungsten = 4
+			steel = 4
+		}
+	}
+	
+	tank_destroyer_equipment_4 = {
+		year = 2030
+
+		archetype = tank_destroyer_equipment
+		parent = tank_destroyer_equipment_3
+		priority = 80
+		visual_level = 3
+		can_convert_from = { 
+			tank_destroyer_equipment_3
+		}
+
+		#Misc Abilities#
+		maximum_speed = 11
+
+		#Defensive Abilities#
+		defense = 8
+		breakthrough = 2.1
+		armor_value = 100
+
+		#Offensive Abilities#
+		soft_attack = 10
+		hard_attack = 38
+		ap_attack = 130
+		
+		build_cost_ic = 15
+		
+		resources = {
+			oil = 3
+			tungsten = 4
+			steel = 4
+		}		
+	}
+	
+	tank_destroyer_equipment_5 = {
+		year = 2035
+
+		archetype = tank_destroyer_equipment
+		parent = tank_destroyer_equipment_4
+		priority = 80
+		visual_level = 4
+		can_convert_from = { 
+			tank_destroyer_equipment_3
+		}
+
+		#Misc Abilities#
+		maximum_speed = 13
+
+		#Defensive Abilities#
+		defense = 9
+		breakthrough = 2.5
+		armor_value = 110
+
+		#Offensive Abilities#
+		soft_attack = 12
+		hard_attack = 48
+		ap_attack = 140
+		
+		build_cost_ic = 15
+		
+		resources = {
+			oil = 3
+			tungsten = 5
+			steel = 5
+		}
+	}
+}

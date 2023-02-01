@@ -1,0 +1,45 @@
+add_namespace = GRE_event
+
+country_event = {
+	id = GRE_event.1
+	title = GRE_event.1.t
+	desc = GRE_event.1.d
+	is_triggered_only = yes	
+	option = {
+		name = GRE_event.1.a
+		add_political_power = -15
+		EAG = {
+			country_event = {
+					days = 5
+					id = EAG_event.41
+			}
+		}
+		GRE = {
+			country_event = {
+					days = 30
+					id = GRE_event.2
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {
+		name = GRE_event.1.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+country_event = {
+	id = GRE_event.2
+	title = GRE_event.2.t
+	desc = GRE_event.2.d
+	is_triggered_only = yes	
+	option = {
+		name = GRE_event.2.a
+		add_political_power = 5
+		add_offsite_building = { type = industrial_complex level = 1 }
+	}
+}

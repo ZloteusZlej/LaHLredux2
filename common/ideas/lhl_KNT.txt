@@ -1,0 +1,3119 @@
+ideas = {
+
+	
+	country = {
+	
+		KNT_security_service_section_five = {
+			
+			picture = KNT_security_service_section_five
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			encryption = 0.15
+			decryption = 0.15
+			compliance_growth = 0.10
+			resistance_growth = -0.10
+			}
+		}
+	}
+###GLUSHKIN'S IDEAS###
+	country = {
+	
+		KNT_cultural_abyss = {
+			
+			picture = KNT_cultural_despair
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.15
+				war_support_factor = -0.2
+				monthly_population = -0.15
+				research_speed_factor = -0.3
+				political_advisor_cost_factor = 0.35
+			}
+		}
+		
+		KNT_freedom_of_expression_1 = {
+			
+			picture = KNT_cultural_despair
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.02
+				stability_factor = 0.05
+				research_speed_factor = 0.1
+			}
+		}
+		KNT_freedom_of_expression_2 = {
+			
+			picture = KNT_cultural_despair
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.02
+				stability_factor = 0.05
+				research_speed_factor = 0.1
+				war_support_factor = -0.15			
+			}
+		}
+		KNT_lessons_of_dickens = {
+			
+			picture = KNT_cultural_despair
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.08
+				
+			}
+		}
+		KNT_recent_celebrations = {
+			
+			picture = KNT_cultural_despair
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.01
+				civilian_factory_use = 2
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_cultural_death = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.15
+				war_support_factor = -0.2
+				monthly_population = -0.15
+				research_speed_factor = -0.3
+				political_advisor_cost_factor = 0.35
+			}
+		}
+		
+		KNT_cultural_battered = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				monthly_population = -0.10
+				research_speed_factor = -0.2
+				political_advisor_cost_factor = 0.20
+			}
+		}
+		
+		KNT_cultural_recovering = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.02
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				monthly_population = -0.05
+				research_speed_factor = -0.05
+				political_advisor_cost_factor = 0.05
+			}
+		}
+	
+		KNT_cultural_great = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.02
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				monthly_population = 0.05
+				research_speed_factor = 0.05
+				political_advisor_cost_factor = -0.05
+			}
+		}
+	
+		KNT_cultural_soaring = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.08
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				monthly_population = 0.10
+				research_speed_factor = 0.10
+				political_advisor_cost_factor = -0.08
+			}
+		}
+	
+		KNT_cultural_golden_age = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.30
+				war_support_factor = 0.30
+				monthly_population = 0.18
+				research_speed_factor = 0.20
+				political_advisor_cost_factor = -0.15
+			}
+		}
+		KNT_buidling_underway = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				civilian_factory_use = 2
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_king_george = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				war_support_factor = -0.25
+				stability_factor = -0.05
+				political_power_gain = -0.05
+			}
+		}
+		KNT_king_frederick = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+		KNT_king_george_VIII = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				stability_factor = 0.2
+				trade_opinion_factor = 0.2
+			}
+		}
+		KNT_king_peter = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				stability_factor = -0.05
+				political_advisor_cost_factor = -0.25
+				political_power_gain = 0.75
+			}
+		}
+		KNT_king_edward = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				stability_factor = 0.15
+				political_advisor_cost_factor = 0.30
+				recon_factor = 0.05
+			}
+		}
+		KNT_king_michael = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				war_support_factor = -0.05
+				stability_factor = 0.05
+				political_power_gain = 0.25
+				trade_opinion_factor = 0.1
+			}
+		}
+		KNT_king_william = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				war_support_factor = 0.1
+				air_attack_factor = 0.05
+				air_defence_factor = 0.05
+				air_cas_efficiency = 0.05
+			}
+		}
+		KNT_king_diana = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				war_support_factor = 0.1
+				stability_factor = 0.1
+				political_power_gain = 0.25
+				army_attack_factor = 0.1
+				compliance_gain = 0.75
+				
+			}
+		}
+		KNT_king_anne = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				war_support_factor = 0.05
+				stability_factor = 0.05
+				political_power_gain = 0.25
+				consumer_goods_factor = -0.1
+				
+			}
+		}
+		KNT_king_dead = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				war_support_factor = -0.75
+				stability_factor = -0.75
+				political_power_gain = -0.5		
+				army_attack_factor = -0.5
+				army_defence_factor = -0.5
+				army_morale_factor = -0.3
+			}
+		}
+	}
+	
+	country = {
+	
+		KNT_stand_against_the_false_king = {
+			
+			picture = KNT_stand_against_the_false_king
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = 
+			{ tag = WES attack_bonus_against = 0.1
+			defense_bonus_against = 0.1}
+						
+			targeted_modifier = 
+			{tag = SUS attack_bonus_against = 0.1 
+			defense_bonus_against = 0.1}
+			
+			cancel = {
+				country_exists = SUS
+				country_exists = WES
+			}
+		}
+	}
+	
+	country = {
+	
+		KNT_thin_purple_line = {
+			
+			picture = GFX_idea_KNT_thin_purple_line
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_buildings_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.1
+			production_factory_max_efficiency_factor = 0.1
+			consumer_goods_factor =-0.07
+			stability_factor = -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_multitool_rifle = {
+			
+			picture = KNT_multitool_rifle
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					soft_attack = 0.1
+					ap_attack = 0.05
+					build_cost_ic = 0.15
+					entrenchment = 0.15
+					}
+				}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_potato_grenade_launcher = {
+			
+			picture = KNT_potato_grenade_launcher
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+					reliability = 0.05
+					ap_attack = 0.1
+					hard_attack = 0.1
+					entrenchment = -0.15
+					}
+				}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_printed_rifle = {
+			
+			picture = KNT_printed_rifle
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+				instant = yes
+					build_cost_ic = -0.15
+					reliability = 0.1
+					movement = 0.1
+					breakthrough = 0.05
+					defense = 0.05
+				}
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_oxymiron_group = {
+			
+			picture = KNT_oxymiron_group
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+				modifier = {
+				political_advisor_cost_factor = -0.15
+				economy_cost_factor = -0.15
+				trade_laws_cost_factor = -0.15
+				mobilization_laws_cost_factor = -0.1
+				theorist_cost_factor = -0.1
+				high_command_cost_factor = -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_cambridge_group = {
+			
+			picture = KNT_cambridge_group
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				industry = 0.1
+				electronics = 0.1
+				support_tech = 0.05
+				armor = 0.05
+				artillery = 0.05
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_guilds_unionized = {
+			
+			picture = KNT_guilds_unionized
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_buildings_factor = -0.05
+			stability_factor = 0.05
+			production_factory_start_efficiency_factor = 0.15
+			production_factory_efficiency_gain_factor = 0.15
+			industrial_capacity_factory = 0.15
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_guilds_integrated = {
+			
+			picture = KNT_guilds_integrated
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_buildings_factor = 0.05
+			production_factory_max_efficiency_factor = 0.1
+			production_lack_of_resource_penalty_factor = -0.1
+			production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+	}
+	
+	country = {
+	
+		KNT_security_service_section_five_upgrade = {
+			
+			picture = KNT_security_service_section_five_upgrade
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			encryption = 0.2
+			decryption = 0.2
+			compliance_growth = 0.10
+			resistance_growth = -0.10
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_inovations_introduction_act = {
+			
+			picture = KNT_inovations_introduction_act
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_buildings_factor = 0.07
+			production_factory_efficiency_gain_factor = 0.15
+			research_speed_factor = 0.07
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_railorads_revival = {
+			
+			picture = KNT_railorads_revival
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			supply_consumption_factor = -0.15
+			attrition = -0.1
+			air_fuel_consumption_factor	= -0.1
+			production_speed_infrastructure_factor = 0.15
+			production_speed_rail_way_factor = 0.25
+			production_speed_supply_node_factor = 0.3
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_green_energy_subsidies = {
+			
+			picture = KNT_green_energy_subsidies
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			monthly_population = 0.01
+			fuel_gain = -0.25
+			production_lack_of_resource_penalty_factor = -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_recent_public_investments_small_crowdfunding = {
+			
+			picture = KNT_recent_public_investments_small_crowdfunding
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = -0.02
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_recent_public_investments_medium_crowdfunding = {
+			
+			picture = KNT_recent_public_investments_medium_crowdfunding
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = -0.05
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_recent_public_investments_big_crowdfunding = {
+			
+			picture = KNT_recent_public_investments_big_crowdfunding
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_plant_parts_manufacturing = {
+			
+			picture = KNT_plant_parts_manufacturing
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = 0.05
+			min_export = 0.05
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_border_guard = {
+			
+			picture = KNT_border_guard
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			army_core_defence_factor = 0.1
+			dig_in_speed_factor = 0.1
+			recon_factor = 0.1
+			army_morale_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_left_supression = {
+			
+			picture = KNT_left_supression
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			compliance_gain = 0.15
+			resistance_growth = -0.15
+			political_power_factor = 0.2
+			}
+		}
+	}
+	
+	hidden_ideas = {
+	
+		KNT_economic_terrarium = {
+			
+			picture = KNT_economic_terrarium 
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain = 0.15
+			industrial_capacity_factory = 0.1
+			production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+	}
+	
+	tank_manufacturer = {
+		designer = yes
+		KNT_Tank_guilds_w_armor_emphasis = {
+		
+			picture = 
+			
+			allowed = {
+				original_tag = KNT
+			}
+			
+			visible = { has_idea = KNT_Tank_guilds_w_armor_emphasis }
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				MBT = {
+					armor_value = 0.10
+					hard_attack = 0.10
+					instant = yes
+				}
+			    MBT = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				MBT = {
+					reliability = -0.05
+					maximum_speed = -0.05
+					instant = yes
+				}
+			}
+		}
+		
+		KNT_Tank_guilds_w_speed_emphasis = {
+		
+			picture = 
+			
+			allowed = {
+				original_tag = KNT
+			}
+			
+			visible = { has_idea = KNT_Tank_guilds_w_speed_emphasis }
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				MBT = {
+					maximum_speed = 0.10
+					soft_attack = 0.10
+					instant = yes
+				}
+			    MBT = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				MBT = {
+					reliability = -0.05
+					armor_value = -0.05
+					instant = yes
+				}
+			}
+		}
+	}
+	
+	industrial_concern = {
+		bae_systems_rochester = {
+			cost = 100
+			
+			available = {
+				ROOT = {
+					owns_state = 1165
+				}
+			}
+			
+			visible = {
+				ROOT = {
+					owns_state = 1165
+				}
+			}
+			
+			modifier = {
+				research_bonus = {
+					electronics = 0.1
+			}
+				air_mission_efficiency = 0.1
+				air_night_penalty = -0.1
+			}
+		}
+	}
+	
+	materiel_manufacturer = {
+		designer = yes
+		KNT_conventional_artillery_emphasis = {
+		
+			picture = 
+			
+			allowed = {
+				original_tag = KNT
+			}
+			
+			visible = { has_idea = KNT_conventional_artillery_emphasis }
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				artillery = {
+					soft_attack = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			    anti_tank = {
+				    hard_attack = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				anti_air = {
+					air_attack = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+		}
+		
+		KNT_sp_artillery_emphasis = {
+		
+			picture = 
+			
+			allowed = {
+				original_tag = KNT
+			}
+			
+			visible = { has_idea = KNT_sp_artillery_emphasis }
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				mlrs = {
+				    soft_attack = 0.05
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			    spaag = {
+				    soft_attack = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				sam = {
+			    	air_attack = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+		}
+		
+		KNT_infantry_guild_1 = {
+		
+			picture = 
+			
+			allowed = {
+				original_tag = KNT
+			}
+			
+			visible = { has_idea = KNT_infantry_guild_1 }
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.05
+		        cavalry_attack_factor = 0.20
+		        cavalry_defence_factor = 0.25
+			    army_infantry_attack_factor = 0.05
+		        army_infantry_defence_factor = 0.05
+			}
+			
+			equipment_bonus = {
+				APC = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+			    IFV = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+			}
+		}
+	
+		KNT_infantry_guild_2 = {
+			
+			picture = 
+				
+			allowed = {
+				original_tag = KNT
+			}
+			
+			visible = { has_idea = KNT_infantry_guild_2 }
+			
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = -0.05
+			}
+				
+			removal_cost = -1
+				
+			equipment_bonus = {
+				APC = {
+					maximum_speed = 0.05
+					build_cost_ic = -0.10
+					armor_value = -0.10
+					instant = yes
+				}
+				IFV = {
+					maximum_speed = 0.05
+					build_cost_ic = -0.10
+					armor_value = -0.10
+					instant = yes
+				}
+				motorized = {
+					maximum_speed = 0.05
+					build_cost_ic = -0.15
+					armor_value = -0.10
+					instant = yes
+				}
+			}
+		}
+	
+		KNT_infantry_guild_3 = {	
+			
+			picture = 
+				
+			allowed = {
+				original_tag = KNT
+			}
+			
+			visible = { has_idea = KNT_infantry_guild_3 }
+			
+            modifier = {
+			    army_artillery_attack_factor = 0.07
+                army_artillery_defence_factor = 0.07
+			}
+				
+			removal_cost = -1
+				
+			equipment_bonus = {
+				APC = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				IFV = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.05
+					instant = yes
+				}			
+				infantry_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_medium_manufacturers_suport = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				state_production_speed_industrial_complex_factor = 0.02
+				state_production_speed_arms_factory_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_workshopers_suport = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				state_production_speed_industrial_complex_factor = 0.1
+				state_production_speed_arms_factory_factor = 0.02
+				industrial_capacity_factory = 0.15
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_recent_imports = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.03
+			}
+		}
+	}
+	
+	country = {
+		KNT_the_iter_project = {
+	
+			picture = GFX_idea_KNT_the_iter_project
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				production_speed_buildings_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_max_efficiency_factor = 0.33
+				local_resources_factor = 0.2
+				research_speed_factor = 0.25
+			}
+		}
+	}
+	
+	country = {
+		KNT_neovictorians_economic_plan = {
+	
+			picture = GFX_idea_KNT_neovictorians_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_gain = -0.1
+				line_change_production_efficiency_factor = 0.2
+				production_speed_buildings_factor = 0.1
+				supply_node_range = -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_protection_of_patents = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+	}
+	
+	country = {
+		KNT_neovictorians_economic_plan_2 = {
+	
+			picture = GFX_idea_KNT_neovictorians_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_gain = -0.12
+				line_change_production_efficiency_factor = 0.2
+				production_speed_buildings_factor = 0.1
+				supply_node_range = -0.1
+				research_speed_factor = 0.05
+				political_advisor_cost_factor = -0.15
+			}
+		}
+	}
+	
+	country = {
+		KNT_neovictorians_economic_plan_3a = {
+	
+			picture = GFX_idea_KNT_neovictorians_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_gain = -0.06
+				line_change_production_efficiency_factor = 0.2
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				supply_node_range = -0.1
+				research_speed_factor = 0.15
+				political_advisor_cost_factor = -0.15
+				production_lack_of_resource_penalty_factor = -0.3
+				local_resources_factor = 0.15 
+				war_support_factor = -0.1
+			}
+		}
+	}
+	
+	country = {
+		KNT_neovictorians_economic_plan_3b = {
+	
+			picture = GFX_idea_KNT_neovictorians_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_gain = -0.08
+				line_change_production_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				political_advisor_cost_factor = -0.15
+				local_resources_factor = 0.1 
+				production_lack_of_resource_penalty_factor = -0.3
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_antimonopoly_taxation = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_factor = 0.25
+				production_speed_industrial_complex_factor = -0.05
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_antimonopoly_comission = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_factor = -0.25
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+	}
+	
+	country = {
+		KNT_neovictorians_economic_plan_4a = {
+	
+			picture = GFX_idea_KNT_neovictorians_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				line_change_production_efficiency_factor = 0.2
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				supply_node_range = -0.1
+				research_speed_factor = 0.15
+				political_advisor_cost_factor = -0.15
+				local_resources_factor = 0.15
+				war_support_factor = -0.1
+				production_lack_of_resource_penalty_factor = -0.3
+			}
+		}
+	}
+	
+	country = {
+		KNT_neovictorians_economic_plan_4b = {
+	
+			picture = GFX_idea_KNT_neovictorians_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_gain = -0.02
+				line_change_production_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.2
+				political_advisor_cost_factor = -0.15
+				local_resources_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.3
+			}
+		}
+	}
+	
+	country = {
+		KNT_neovictorians_economic_plan_5a = {
+	
+			picture = GFX_idea_KNT_neovictorians_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_gain = 0.07
+				line_change_production_efficiency_factor = 0.2
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				supply_node_range = -0.1
+				research_speed_factor = 0.2
+				political_advisor_cost_factor = -0.15
+				local_resources_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.3
+			}
+		}
+	}
+	
+	country = {
+		KNT_neovictorians_economic_plan_5b = {
+	
+			picture = GFX_idea_KNT_neovictorians_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_gain = 0.05
+				line_change_production_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				political_advisor_cost_factor = -0.15
+				local_resources_factor = 0.15
+				production_lack_of_resource_penalty_factor = -0.3
+			}
+		}
+	}
+	
+	country = {
+		KNT_hightories_economic_plan = {
+	
+			picture = GFX_idea_KNT_hightories_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_gain = -0.1
+				production_factory_start_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				political_advisor_cost_factor = 0.05
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_rewarded_scientists = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				research_speed_factor = 0.12
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_privileged_scientists = {
+	
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				research_speed_factor = 0.18
+				consumer_goods_factor = 0.02
+			}
+		}
+	}
+	
+	country = {
+		KNT_hightories_economic_plan_2 = {
+	
+			picture = GFX_idea_KNT_hightories_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_gain = -0.12
+				production_factory_start_efficiency_factor = 0.2
+				production_speed_arms_factory_factor = 0.12
+				production_speed_industrial_complex_factor = 0.07
+				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				political_advisor_cost_factor = 0.05
+			}
+		}
+	}
+	
+	country = {
+		KNT_hightories_economic_plan_3a = {
+	
+			picture = GFX_idea_KNT_hightories_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_gain = -0.02
+				production_factory_start_efficiency_factor = 0.2
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				political_advisor_cost_factor = 0.05
+				local_resources_factor = 0.1
+				min_export = 0.05
+				trade_opinion_factor = 0.1
+				consumer_goods_factor = 0.03
+			}
+		}
+	}
+	
+	country = {
+		KNT_hightories_economic_plan_3b = {
+	
+			picture = GFX_idea_KNT_hightories_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_gain = -0.02
+				production_factory_start_efficiency_factor = 0.2
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				min_export = -0.1
+				trade_opinion_factor = -0.05
+				political_advisor_cost_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.2
+				consumer_goods_factor = 0.03
+				local_resources_factor = 0.17
+			}
+		}
+	}
+	
+	country = {
+		KNT_hightories_economic_plan_4a = {
+	
+			picture = GFX_idea_KNT_hightories_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_gain = 0.05
+				production_factory_start_efficiency_factor = 0.2
+				production_speed_arms_factory_factor = 0.18
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+				production_speed_rail_way_factor = 0.1
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = 0.1
+				political_advisor_cost_factor = 0.05
+				min_export = 0.05
+				trade_opinion_factor = 0.1
+				local_resources_factor = 0.1
+				consumer_goods_factor = 0.03
+			}
+		}
+	}
+	
+	country = {
+		KNT_hightories_economic_plan_4b = {
+	
+			picture = GFX_idea_KNT_hightories_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_gain = 0.05
+				production_factory_start_efficiency_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.18
+				production_speed_infrastructure_factor = 0.15
+				production_speed_rail_way_factor = 0.05
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.1
+				min_export = -0.1
+				trade_opinion_factor = -0.05
+				political_advisor_cost_factor = 0.05
+				local_resources_factor = 0.17
+				production_lack_of_resource_penalty_factor = -0.2
+				consumer_goods_factor = 0.03
+			}
+		}
+	}
+	
+	country = {
+		KNT_hightories_economic_plan_5a = {
+	
+			picture = GFX_idea_KNT_hightories_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_gain = 0.1
+				production_factory_start_efficiency_factor = 0.2
+				production_speed_arms_factory_factor = 0.22
+				production_speed_industrial_complex_factor = 0.18
+				production_speed_infrastructure_factor = 0.18
+				production_speed_rail_way_factor = 0.12
+				consumer_goods_factor = 0.03
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.1
+				political_advisor_cost_factor = 0.02
+				min_export = 0.05
+				trade_opinion_factor = 0.1
+				army_leader_start_level	= 1
+				local_resources_factor = 0.1
+				consumer_goods_factor = 0.03
+			}
+		}
+	}
+	
+	country = {
+		KNT_hightories_economic_plan_5b = {
+	
+			picture = GFX_idea_KNT_hightories_economic_plan
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				political_power_gain = 0.1
+				production_factory_start_efficiency_factor = 0.2
+				production_speed_arms_factory_factor = 0.22
+				production_speed_industrial_complex_factor = 0.18
+				production_speed_infrastructure_factor = 0.18
+				production_speed_rail_way_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				min_export = -0.1
+				trade_opinion_factor = -0.05
+				political_advisor_cost_factor = 0.02
+				army_leader_start_level	= 1
+				local_resources_factor = 0.17
+				production_lack_of_resource_penalty_factor = -0.2
+				consumer_goods_factor = 0.03
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_dockyard_expansion = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.3 
+			}
+		}
+	}
+	country = {
+		KNT_student_riots = {
+			picture = GFX_idea_KNT_student_riots
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+            modifier = {
+				political_power_gain = -0.1
+				consumer_goods_factor = 0.05
+				research_speed_factor = -0.1
+			}
+		}
+	}
+	hidden_ideas = {
+		KNT_security_service_section_five_upgrade_2b = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				encryption	= 1
+				decryption_factor = 0.6
+				required_garrison_factor = -0.6
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_radium_bullets = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_morale_factor = -0.1
+				breakthrough_factor = 0.1
+				army_attack_factor = 0.1
+			}
+			targeted_modifier = {
+				every_army_leader = {
+					is_leading_army = yes
+				}
+				wounded_chance_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_infrasound_guns = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_attack_factor = 0.15
+				resistance_decay_on_our_occupied_states = 0.2
+				land_night_attack = 0.1
+				army_defence_factor = -0.1
+			}
+			targeted_modifier = {
+				every_army_leader = {
+					is_leading_army = yes
+				}
+				sickness_chance = 0.05
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_plasma_guns = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_attack_factor = 0.18
+				army_speed_factor = -0.1
+				supply_consumption_factor = 0.1
+				max_dig_in_factor = 0.1
+				army_defence_factor = 0.05
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_sticky_bomb_launcher = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				dig_in_speed_factor	= 0.1
+				army_defence_factor	= 0.15
+				army_morale_factor = 0.1
+				supply_consumption_factor = 0.1
+				attrition = 0.1
+			}
+		}
+	}
+	
+	country = {
+		KNT_professional_army_path = {
+			picture = GFX_idea_KNT_professional_army_path
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				planning_speed = 0.1
+				special_forces_cap = 0.5
+				experience_gain_army_unit_factor = 0.2
+				army_org_regain = 0.1
+			}
+		}
+	}
+	
+	country = {
+		KNT_professional_army_path_2 = {
+			picture = GFX_idea_KNT_professional_army_path
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				planning_speed = 0.2
+				special_forces_cap = 0.5
+				experience_gain_army_unit_factor = 0.2
+				army_org_regain = 0.1
+				experience_gain_army_factor = 0.2
+				special_forces_training_time_factor	= 0.1
+				special_forces_attack_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_pyro_brigades = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				recon_factor = 0.3
+				breakthrough_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_jagers = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				recon_factor = 0.2
+				land_night_attack = 0.2
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_capsule_fighters = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_defence_factor = 0.15
+				army_org_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_armor_sollution_1 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_armor_attack_factor = 0.2
+				army_armor_speed_factor = -0.1
+				army_armor_defence_factor = -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_armor_sollution_2 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_armor_defence_factor = 0.2
+				army_armor_speed_factor = -0.1
+				army_armor_attack_factor = -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_armor_sollution_3 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_armor_defence_factor = -0.1
+				army_armor_speed_factor = 0.2
+				army_armor_attack_factor = -0.1
+			}
+		}
+	}
+	
+	country = {
+		KNT_professional_army_path_3 = {
+			picture = GFX_idea_KNT_professional_army_path
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				planning_speed = 0.2
+				special_forces_cap = 0.5
+				experience_gain_army_unit_factor = 0.2
+				army_org_regain = 0.1
+				experience_gain_army_factor = 0.2
+				special_forces_training_time_factor	= 0.1
+				special_forces_attack_factor = 0.1
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.2
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_armored_powerboat = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				river_crossing_factor = -0.45
+				org_loss_when_moving = -0.3
+			}
+		}
+	}
+	country = {
+		KNT_banditism = {
+	
+			removal_cost = -1
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+            modifier = {
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.1
+				stability_weekly_factor = -0.05
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_trench_digging_machine = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				max_dig_in = 0.1
+				dont_lose_dig_in_on_attack = 1
+			}
+		}
+	}
+	
+	country = {
+		KNT_professional_army_path_4 = {
+			picture = GFX_idea_KNT_professional_army_path
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				planning_speed = 0.2
+				special_forces_cap = 0.5
+				experience_gain_army_unit_factor = 0.2
+				army_org_regain = 0.1
+				experience_gain_army_factor = 0.2
+				special_forces_training_time_factor	= 0.1
+				special_forces_attack_factor = 0.1
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.2
+				recon_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_the_marauder = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				motorized = {
+					build_cost_ic = 0.07
+					weight = 0.1
+					max_strength = 0.2
+					reliability = 0.1
+					defense = 0.07
+				}			
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_the_kombat = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				motorized = {
+					build_cost_ic = 0.07
+					maximum_speed = 0.15
+					attack = 0.05
+					movement = 0.1 
+					breakthrough = 0.05
+				}			
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_ARV = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				motorized = {
+					build_cost_ic = 0.07
+					reliability = 0.15
+					default_morale = 0.1
+					entrenchment = 0.2
+					defense = 0.1
+				}			
+			}
+		}
+	}
+	
+	country = {
+		KNT_professional_army_path_5 = {
+			picture = GFX_idea_KNT_professional_army_path
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				planning_speed = 0.2
+				special_forces_cap = 0.5
+				experience_gain_army_unit_factor = 0.2
+				army_org_regain = 0.1
+				experience_gain_army_factor = 0.2
+				special_forces_training_time_factor	= 0.1
+				special_forces_attack_factor = 0.1
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.2
+				recon_factor = 0.1
+				army_speed_factor = 0.25
+			}
+		}
+	}
+	
+	country = {
+		KNT_army_traditions_path = {
+			picture = GFX_idea_KNT_army_traditions_path
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_core_defence_factor = 0.15
+				army_attack_factor = 0.15
+				army_morale_factor = 0.2
+				skill_bonus_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_aimbot = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.1
+					soft_attack = 0.15
+					defense = 0.05
+					breakthrough = 0.08
+					instant = yes
+				}			
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_ripple_fire_bazooka = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = 0.05
+					hard_attack = 0.15
+					ap_attack = 0.2
+					air_attack = 0.1
+					instant = yes
+				}			
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_phlogistinator = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = 0.07
+					soft_attack = 0.1
+					max_strength = 0.1
+					supply_consumption = -0.05
+					instant = yes
+				}			
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_freezing_lazer = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = 0.07
+					soft_attack = 0.15
+					defense = 0.05
+					entrenchment = 0.1
+					instant = yes
+				}			
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_snipers_striking_officers = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				breakthrough_factor = 0.12
+				land_night_attack = 0.1
+				recon_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_snipers_striking_infantry = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = 0.08
+				army_attack_factor = 0.08
+				planning_speed = 0.1
+			}
+		}
+	}
+	
+	country = {
+		KNT_army_traditions_path_2 = {
+			picture = GFX_idea_KNT_army_traditions_path
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_core_defence_factor = 0.18
+				army_attack_factor = 0.15
+				army_morale_factor = 0.2
+				skill_bonus_factor = 0.1
+				
+			}
+		}
+	}
+	
+	country = {
+		KNT_army_traditions_path_3 = {
+			picture = GFX_idea_KNT_army_traditions_path
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_defence_factor = 0.18
+				army_attack_factor = 0.15
+				army_morale_factor = 0.2
+				skill_bonus_factor = 0.1
+				training_time_factor = -0.25
+				recruitable_population_factor = 0.05
+			}
+		}
+	}
+	
+	country = {
+		KNT_army_traditions_path_4 = {
+			picture = GFX_idea_KNT_army_traditions_path
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_defence_factor = 0.2
+				army_attack_factor = 0.2
+				army_morale_factor = 0.2
+				skill_bonus_factor = 0.1
+				training_time_factor = -0.25
+				air_attack_factor = 0.2
+				air_defence_factor = 0.2
+				air_bombing_targetting = 0.2
+				recruitable_population_factor = 0.05
+			}
+		}
+	}
+	
+	country = {
+		KNT_army_traditions_path_5 = {
+			picture = GFX_idea_KNT_army_traditions_path
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_defence_factor = 0.2
+				army_attack_factor = 0.2
+				army_morale_factor = 0.2
+				skill_bonus_factor = 0.1
+				training_time_factor = -0.25
+				air_attack_factor = 0.2
+				air_defence_factor = 0.2
+				air_bombing_targetting = 0.2
+				recruitable_population_factor = 0.05
+				experience_gain_infantry_combat_factor = 0.1
+				max_training = 0.25
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_moles_in_london = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = ESS
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.1
+			}
+			modifier = {
+				recon_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_tank_sold_1 = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				political_power_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_tank_sold_2 = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				political_power_factor = 0.15
+				consumer_goods_factor = -0.15
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_tank_sold_3 = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.2
+				political_power_factor = 0.2
+				consumer_goods_factor = -0.2
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		KNT_german_enlgish_coop = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor	= 0.05
+				air_superiority_bonus_in_combat = 0.1
+				recon_factor_while_entrenched = 0.05
+			}
+			targeted_modifier = {
+				tag = EAG
+				attack_bonus_against = 0.15
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_cambridge_protection = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = MRC
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.1
+			}
+			modifier = {
+				recon_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_mercs_radio = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 200
+				minimum_training_level = 0.2
+				army_leader_cost_factor	= -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_volvo_saab_contracts = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				motorized = {
+					maximum_speed = 2
+					reliability = 0.2
+					fuel_consumption = -0.2
+				}			
+			}
+			modifier = {
+				political_power_factor = -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_recognition_from_germany = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.15
+				trade_opinion_factor = 0.2
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_exports_to_germany = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.08
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_nozhki_pola = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.07
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_bosnian_electronics = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_bonus = {
+					electronics = 0.15
+				}
+				political_power_factor = -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_dutch_biohacks = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.1
+				army_org_factor	= 0.1
+				army_org_regain = 0.08
+				org_loss_when_moving = -0.2
+				attrition = -0.2
+				political_power_factor = -0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_constitution_part1_house_of_commons_stays = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = -0.15
+				stability_factor = 0.15
+				compliance_growth_on_our_occupied_states = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_constitution_part1_house_of_commons_reformed = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = -0.15
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.15
+				political_power_factor = 0.15
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_constitution_part1_house_of_lords_empowered = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = -0.15
+				stability_factor = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				resistance_decay_on_our_occupied_states	= 0.15
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_constitution_part2_constitutional_monarchy = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				drift_defence_factor = 0.2
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_constitution_part2_parliamentary_monarchy = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.12
+				trade_opinion_factor = 0.15
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_constitution_part2_dual_monarchy = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.06
+				war_support_factor = 0.06
+				training_time_factor = -0.1	
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_constitution_part3_current_settlement = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				resistance_decay_on_our_occupied_states = 0.06
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_constitution_part3_monarch_settlement = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+				army_leader_start_level = 1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_constitution_part3_parliament_settlement = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.07
+				political_power_factor = 0.08
+			}
+		}
+	}
+	
+	country = {
+		KNT_high_tory_constitution = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				surrender_limit = 0.3
+				send_volunteer_factor = 0.5
+				production_factory_start_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.1
+			}
+		}
+	}
+	
+	country = {
+		KNT_neovic_constitution = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				research_speed_factor = 0.12
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.12
+				opinion_gain_monthly_factor	= 0.2
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_british_reconstruction = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industry_free_repair_factor = 0.15
+				industry_repair_factor = 0.2
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_successful_exhibition = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly_factor	= 0.02	
+				war_support_weekly = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+	}
+	
+	hidden_ideas = {	
+		KNT_failed_exhibition = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly_factor	= -0.01	
+				war_support_weekly = -0.02
+				production_factory_efficiency_gain_factor = -0.15
+				production_speed_buildings_factor = -0.3
+			}
+		}
+	}
+###EDUCATION##
+	hidden_ideas = {	
+		KNT_trad_education = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.05
+				stability_factor = -0.1
+			}
+		}
+		KNT_modern_education = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.08
+				stability_factor = -0.1
+			}
+		}
+		KNT_patriotic_education = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.05
+				war_support_factor = 0.1
+			}
+		}
+		KNT_truthful_education = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				war_support_factor = -0.1
+			}
+		}
+		KNT_church_education = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.05
+				political_power_gain = 0.1
+			}
+		}
+		KNT_secular_education = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.02
+				political_power_gain = -0.1
+			}
+		}
+		KNT_aesthetics_education = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.1
+				political_power_gain = 0.1
+				war_support_factor = 0.1
+				stability_factor = 0.1
+			}
+		}
+		KNT_exact_education = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1
+				political_power_gain = -0.1
+				war_support_factor = -0.1
+				stability_factor = -0.1
+			}
+		}
+		KNT_forceful_education = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				stability_factor = -0.1
+			}
+		}
+		KNT_leisure_education = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.05
+				stability_factor = 0.1
+			}
+		}
+	}
+	hidden_ideas = {	
+		KNT_steampunk = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				stability_factor = -0.1
+			}
+		}
+		KNT_aesthetics = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				civilian_factory_use = 5
+			}
+		}
+		
+	}
+}
+	
+	

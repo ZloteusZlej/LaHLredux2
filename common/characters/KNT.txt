@@ -1,0 +1,822 @@
+characters={
+	KNT_rupert_sheldrake={
+		name="Rupert Sheldrake"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Rupert_Sheldrake.dds"
+			}
+		}
+		country_leader={
+			ideology=ethical_millennialism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_china_mieville={
+		name="China Mieville"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_China_Mieville.dds"
+			}
+		}
+		country_leader={
+			ideology=ultrahegelianism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_mike_katz={
+		name="Mike Katz"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Mike_Katz.dds"
+			}
+		}
+		country_leader={
+			ideology=soviet_marxism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_philipp_gnatzy={
+		name="Philipp Gnatzy"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Philipp_Gnatzy.dds"
+			}
+		}
+		country_leader={
+			ideology=labor_socialism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_jacob_reesmogg={
+		name="Jacob Rees-Mogg"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Rees_Mogg.dds"
+			}
+		}
+		country_leader={
+			ideology=social_conservatism
+			traits={ high_handed_despot }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_anthony_giddens={
+		name="Anthony Giddens"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Anthony_Giddens.dds"
+			}
+		}
+		country_leader={
+			ideology=nazbol_gang
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_alexandra_paterson={
+		name="Alexandra Paterson"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Alexandra_Paterson.dds"
+			}
+		}
+		country_leader={
+			ideology=atlantic_liberalism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_thomas_copingersymes={
+		name="Thomas Copinger-Symes"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Thomas_Copinger-Symes.dds"
+			}
+		}
+		country_leader={
+			ideology=nationalism
+			expire="1.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=228
+		}
+	}
+	KNT_tony_johnstoneburt={
+		name="Tony Johnstone-Burt"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_Tony_Johnstone-Burt.dds"
+			}
+		}
+		country_leader={
+			ideology=neo_feudalism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	KNT_yaacov_darling_khan={
+		name="Ya'Acov Darling Khan"
+		portraits={
+			civilian={
+				large="gfx/leaders/KNT/Portrait_KNT_YaAcov_Darling_Khan.dds"
+			}
+		}
+		country_leader={
+			ideology=charismatic_dictatorship
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	
+### CORPS COMMANDERS ###
+
+	KNT_louis_lillywhite={
+		name="Louis Lillywhite"
+		portraits={
+			army={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+				
+				small="gfx/interface/ideas/KNT/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=228
+		}
+	}
+	KNT_gary_coward={
+		name="Gary Coward"
+		portraits={
+			army={
+				large="gfx/leaders/Generics/leader_unknown.dds"
+				
+				small="gfx/interface/ideas/KNT/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=229
+		}
+	}
+	
+	KNT_nick_carter={
+		name="Nick Carter"
+		portraits={
+			army={
+				large="gfx/leaders/KNT/Portrait_KNT_Nick_Carter.dds"
+				
+				small="gfx/interface/ideas/KNT/GFX_idea_KNT_nick_carter.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			traits = {  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=230
+		}
+	}
+	
+	KNT_timothy_evans = {
+		name="Timothy Evans"
+		portraits = {
+			army = {
+				large="gfx/leaders/Generics/leader_unknown.dds"
+				
+				small="gfx/interface/ideas/KNT/GFX_idea_KNT_timothy_evans.dds"
+			}
+		}
+		traits = { commando }
+		corps_commander = {
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=229
+		}
+	}
+	KNT_andrew_farquhar = {
+		name="Andrew Farquhar"
+		portraits = {
+			army = {
+				large="gfx/leaders/Generics/leader_unknown.dds"
+				
+				small="gfx/interface/ideas/KNT/GFX_idea_KNT_andrew_farquhar.dds"
+			}
+		}
+		traits = {organizer}
+		corps_commander = {
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=230
+		}
+	}	
+	KNT_paul_william_jaques = {
+		name="Paul William Jaques"
+		portraits = {
+			army = {
+				large="gfx/leaders/Generics/leader_unknown.dds"
+				
+				small="gfx/interface/ideas/KNT/GFX_idea_KNT_paul_william_jaques.dds"
+			}
+		}
+		traits = {organizer}
+		corps_commander = {
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=231
+		}
+	}	
+	KNT_john_mccoll = {
+		name="John McColl"
+		portraits = {
+			army = {
+				large="gfx/leaders/Generics/leader_unknown.dds"
+				
+				small="gfx/interface/ideas/KNT/GFX_idea_KNT_john_mccoll.dds"
+			}
+		}
+		traits = {cavalry_officer}
+		corps_commander = {
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=232
+		}
+	}	
+	KNT_jacko_page = {
+		name="Jacko Page"
+		portraits = {
+			army = {
+				large="gfx/leaders/Generics/leader_unknown.dds"
+				
+				small="gfx/interface/ideas/KNT/GFX_idea_KNT_jacko_page.dds"
+			}
+		}
+		traits = { }
+		corps_commander = {
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=233
+		}
+	}	
+	KNT_sebastian_roberts = {
+		name="Sebastian Roberts"
+		portraits = {
+			army = {
+				large="gfx/leaders/Generics/leader_unknown.dds"
+				
+				small="gfx/interface/ideas/KNT/GFX_idea_KNT_sebastian_roberts.dds"
+			}
+		}
+		traits = { }
+		corps_commander = {
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=233
+		}
+	}	
+	KNT_jeremy_rowan = {
+		name="Jeremy Rowan"
+		portraits = {
+			army = {
+				large="gfx/leaders/Generics/leader_unknown.dds"
+				
+				small="gfx/interface/ideas/KNT/GFX_idea_KNT_jeremy_rowan.dds"
+			}
+		}
+		traits = {}
+		corps_commander = {
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=233
+		}
+	}	
+	KNT_david_rutherford_jones = {
+		name="David Rutherford-Jones"
+		portraits = {
+			army = {
+				large="gfx/leaders/Generics/leader_unknown.dds"
+				
+				small="gfx/interface/ideas/KNT/GFX_idea_KNT_david_rutherford_jones.dds"
+			}
+		}
+		traits = {armor_officer}
+		corps_commander = {
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=233
+		}
+	}
+	
+### HEAD OF GOVERNMENT ###
+	
+	KNT_patrick_cormack = {
+		name = KNT_patrick_cormack
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_patrick_cormack.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = KNT_patrick_cormack
+			traits = {
+				protectionist
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	
+	###Pol_adv###
+	
+	KNT_edward_leigh = {
+		name = KNT_edward_leigh
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_edward_leigh.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_edward_leigh
+			traits = {
+				viscount
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_john_joseph_haldane  = {
+		name = KNT_john_joseph_haldane
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_john_joseph_haldane.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_john_joseph_haldane
+			traits = {
+				radio_priest
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	
+	KNT_annunziata_reesmogg = {
+		name = KNT_annunziata_reesmogg
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_annunziata_reesmogg.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_annunziata_reesmogg
+			traits = {
+				voice_of_tories
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_peter_bone = {
+		name = KNT_peter_bone
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_peter_bone.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token =KNT_peter_bone
+			traits = {
+				meanest_boss
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_nigel_farage  = {
+		name = KNT_nigel_farage 
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_nigel_farage.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_nigel_farage 
+			traits = {
+				national_fav
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_andrew_roberts = {
+		name = KNT_andrew_roberts
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_andrew_roberts.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_andrew_roberts 
+			traits = {
+				regime_defender
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_simon_heffer = {
+		name = KNT_simon_heffer
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_simon_heffer.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_simon_heffer 
+			traits = {
+				vox_populi
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_james_thompson = {
+		name = KNT_james_thompson
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_james_thompson.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_james_thompson
+			traits = {
+				blue_blood
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_merlin_hanbury_tracy = {
+		name = KNT_merlin_hanbury_tracy
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_merlin_hanbury_tracy.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_merlin_hanbury_tracy
+			traits = {
+				influential_ideologist
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_john_hayes = {
+		name = KNT_john_hayes
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_john_hayes.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_john_hayes
+			traits = {
+				inventors_lobbyist
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_tim_montgomerie = {
+		name = KNT_tim_montgomerie
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_tim_montgomerie.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_tim_montgomerie
+			traits = {
+				eurasian_specialist
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_james_glancy = {
+		name = KNT_james_glancy
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_james_glancy.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_james_glancy
+			traits = {
+				war_hero
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_james_dyson = {
+		name = KNT_james_dyson
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_james_dyson.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_james_dyson
+			traits = {
+				saviour_of_housewifes
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_rupert_grint = {
+		name = KNT_rupert_grint
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_rupert_grint.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_rupert_grint
+			traits = {
+				charity_gentlemen 
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_ben_bradley = {
+		name = KNT_ben_bradley
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_ben_bradley.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_ben_bradley
+			traits = {
+				go_getter
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_darren_grimes = {
+		name = KNT_darren_grimes
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_darren_grimes.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_darren_grimes
+			traits = {
+				it_analytic
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_neal_asher = {
+		name = KNT_neal_asher
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_neal_asher.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_neal_asher
+			traits = {
+				oraculus_of_progress
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	KNT_tim_berners_lee = {
+		name = KNT_tim_berners_lee
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_tim_berners_lee.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_tim_berners_lee
+			traits = {
+				prometheus
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	} 
+	KNT_tom_purgslove = {
+		name = KNT_tom_purgslove
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/KNT/GFX_idea_KNT_tom_purgslove.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = KNT_tom_purgslove
+			traits = {
+				whip
+			}
+			allowed = {
+				original_tag = KNT
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+}
+

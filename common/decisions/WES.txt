@@ -1,0 +1,3220 @@
+WES_wars = {
+	WES_war_on_kent = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = KNT
+				type = annex_everything
+			}	
+		}
+		available = {
+			WES = {
+				has_completed_focus = WES_battle_camlann
+				has_completed_focus = WES_sword_stone
+				has_completed_focus = WES_virtue_test
+				has_completed_focus = WES_kings_speech
+			}
+			NOT = {
+				country_exists = SUS
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	WES_war_on_northumbria = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = NTH
+				type = annex_everything
+			}	
+		}
+		available = {
+			NOT = {
+				country_exists = SUS
+				country_exists = KNT
+			}
+			WES = {
+				has_completed_focus = WES_english_spirit
+				has_completed_focus = WES_connect_nature
+				has_completed_focus = WES_dismantle_cities
+				has_completed_focus = WES_rural_paradise
+				has_completed_focus = WES_kings_speech
+				has_completed_focus = WES_road_unification
+			}
+			OR = {
+				WES = {
+					has_completed_focus = WES_law_england
+					has_completed_focus = WES_law_king
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	WES_war_on_sussex = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = SUS
+				type = annex_everything
+			}	
+		}
+		available = {
+			WES = {
+				has_completed_focus = WES_battle_camlann
+				has_completed_focus = WES_sword_stone
+				has_completed_focus = WES_virtue_test
+				has_completed_focus = WES_kings_speech
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	WES_war_on_east_england = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = EAG
+				type = annex_everything
+			}	
+		}
+		available = {
+			NOT = {
+				country_exists = SUS
+				country_exists = KNT
+			}
+			WES = {
+				has_completed_focus = WES_english_spirit
+				has_completed_focus = WES_connect_nature
+				has_completed_focus = WES_dismantle_cities
+				has_completed_focus = WES_rural_paradise
+				has_completed_focus = WES_road_unification
+			}
+			OR = {
+				WES = {
+					has_completed_focus = WES_law_england
+					has_completed_focus = WES_law_king
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	WES_war_on_mercia = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = MRC
+				type = annex_everything
+			}	
+		}
+		available = {
+			NOT = {
+				country_exists = SUS
+				country_exists = KNT
+			}
+			WES = {
+				has_completed_focus = WES_english_spirit
+				has_completed_focus = WES_connect_nature
+				has_completed_focus = WES_dismantle_cities
+				has_completed_focus = WES_rural_paradise
+				has_completed_focus = WES_road_unification
+			}
+			OR = {
+				WES = {
+					has_completed_focus = WES_law_england
+					has_completed_focus = WES_law_king
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				WES = {
+					has_completed_focus = WES_final_decision
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+WES_king_legitimacy = {
+}	
+
+WES_prisoners_of_war = {
+    WES_deal_galloway = {
+	    visible = {
+            has_country_flag = ENG_galloway_here
+        } 
+	}
+    WES_deal_mogg = {
+	    visible = {
+            has_country_flag = ENG_mogg_here
+        } 
+	}
+    WES_deal_pearce = {
+	    visible = {
+            has_country_flag = ENG_pearce_here
+        } 
+	}
+    WES_deal_gunzel = {
+	    visible = {
+            has_country_flag = ENG_gunzel_here
+        } 
+	}
+    WES_deal_klumb = {
+	    visible = {
+            has_country_flag = ENG_klumb_here
+        } 
+	}
+    WES_deal_southgate = {
+	    visible = {
+            has_country_flag = ENG_southgate_here
+        } 
+	}
+    WES_deal_mosley = {
+	    visible = {
+            has_country_flag = ENG_mosley_here
+        } 
+	}
+    WES_deal_land = {
+	    visible = {
+            has_country_flag = ENG_land_here
+        } 
+	}
+    WES_deal_dawkins = {
+	    visible = {
+            has_country_flag = ENG_dawkins_here
+        } 
+	}
+    WES_deal_corbyn = {
+	    visible = {
+            has_country_flag = ENG_corbyn_here
+        } 
+	}
+}
+
+WES_Royal_military_schools = {
+
+    Rebuild_Naval_College = {
+		icon = generic_research
+		cost = 75
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_rebuild_schools
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_rebuild_schools
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		remove_effect = {	
+			WES = {
+				add_tech_bonus = {
+					bonus = 0.33
+					uses = 3
+					category = marine_tech
+				}
+				navy_experience = 20
+				division_template = {
+					name = "Cab Brigade Team"
+					priority = 1
+					is_locked = yes
+					division_names_group = KNT_MOT_01
+					regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 0 y = 3 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+						motorized = { x = 1 y = 3 }
+					}
+				}
+					
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"1st Motorized Cab Brigade Team\" division_template = \"Cab Brigade Team\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
+						
+						owner = KNT
+					}
+				}
+				
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"2nd Motorized Cab Brigade Team\" division_template = \"Cab Brigade Team\" start_experience_factor = 0.8 start_equipment_factor = 0.9"
+						
+						owner = KNT
+					}
+				}
+			}
+		}
+	}
+	
+	Rebuild_Commando_Center = {
+		icon = generic_research
+		cost = 75
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_rebuild_schools
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_rebuild_schools
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		remove_effect = {
+		
+		custom_effect_tooltip = WES_royal_military_schools_tt
+		
+		hidden_effect = {
+			WES = { country_event = { id = WES_event.33 days = 1 } }
+		}	
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = mountaineers_tech
+				category = para_tech
+				category = marine_tech
+			}
+		}
+	}
+	
+	Rebuild_Defence_School = {
+		icon = generic_research
+		cost = 75
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_rebuild_schools
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_rebuild_schools
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		remove_effect = {
+		
+		custom_effect_tooltip = WES_royal_military_schools_tt
+		
+		hidden_effect = {
+			WES = { country_event = { id = WES_event.34 days = 1 } }
+		}	
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = support_tech
+				category = encryption_tech
+	            category = decryption_tech
+	            category = computing_tech
+	            category = radar_tech
+			}
+		}
+	}
+	
+	Rebuild_Officer_Cadet_School = {
+		icon = generic_research
+		cost = 75
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_rebuild_schools
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_rebuild_schools
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		remove_effect = {
+		
+			custom_effect_tooltip = WES_royal_military_schools_tt
+			
+			add_ideas = WES_Mons_pro_officers	
+			
+			hidden_effect = {
+				WES = { country_event = { id = WES_event.35 days = 1 } }
+			}
+		
+		}
+	}
+}
+
+
+WES_Weapon_Guilds = {
+
+	Tank_guilds_armor_emphasis = {
+		icon = generic_research
+		cost = 150
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_weapon_guilds
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_weapon_guilds
+			NOT = { 
+				OR = {
+					has_country_flag = WES_armor_guild_2
+					has_country_flag = WES_armor_guild_3
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 90
+		
+		modifier = {
+			civilian_factory_use = 3
+		}
+		
+		complete_effect = {
+			set_country_flag = WES_armor_guild_1
+        }
+		
+		remove_effect = {
+		    add_ideas = WES_Tank_guilds_w_armor_emphasis	
+		}
+	}
+	
+	Tank_guilds_speed_emphasis = {
+		icon = generic_research
+		cost = 150
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_weapon_guilds
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_weapon_guilds
+			NOT = { 
+				OR = {
+					has_country_flag = WES_armor_guild_1
+					has_country_flag = WES_armor_guild_3
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 90
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+            set_country_flag = WES_armor_guild_2
+        }
+		
+		remove_effect = {
+		    add_ideas = WES_Tank_guilds_w_speed_emphasis	
+		}
+	}
+	
+	Tank_guilds_experimental_emphasis = {
+		icon = generic_research
+		cost = 150
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_weapon_guilds
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_weapon_guilds
+			NOT = { 
+				OR = {
+					has_country_flag = WES_armor_guild_2
+					has_country_flag = WES_armor_guild_3
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 90
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+            set_country_flag = WES_armor_guild_3
+        }
+		
+		remove_effect = {
+		    add_ideas = WES_Tank_guilds_w_experimental_emphasis	
+		}
+	}
+	
+	Conventional_artillery_emphasis = {
+		icon = generic_research
+		cost = 50
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_weapon_guilds
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_weapon_guilds
+			NOT = { has_country_flag = WES_Emphasis_sp_fire_support }
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 45
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+            set_country_flag = WES_Emphasis_conventional_artillery
+        }
+		
+		remove_effect = {
+		    add_ideas = WES_conventional_artillery_emphasis	
+		}
+	}
+	
+	Self_propelled_fire_support_emphasis = {
+		icon = generic_research
+		cost = 50
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_weapon_guilds
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_weapon_guilds
+			NOT = { has_country_flag = WES_Emphasis_conventional_artillery }
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 45
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+            set_country_flag = WES_Emphasis_sp_fire_support
+        }
+		
+		remove_effect = {
+		    add_ideas = WES_sp_artillery_emphasis	
+		}
+	}
+	
+	Cavalry_and_Chivalry_emphasis = {
+		icon = generic_research
+		cost = 50
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_weapon_guilds
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_weapon_guilds
+			NOT = {
+			    OR = { 
+			        has_country_flag = WES_Emphasis_Mass_Mechanized
+			        has_country_flag = WES_Emphasis_Infantry_support
+			    }
+			}
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 45
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+            set_country_flag = WES_Emphasis_cavalry_and_chivalry
+        }
+		
+		remove_effect = {
+		    add_ideas = WES_infantry_guild_1	
+			add_ideas = WES_infantry_guild_1_subeffects	
+		}
+	}
+	
+	Mass_mechanized_emphasis = {
+		icon = generic_research
+		cost = 50
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_weapon_guilds
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_weapon_guilds
+			NOT = {
+			    OR = { 
+			        has_country_flag = WES_Emphasis_cavalry_and_chivalry
+			        has_country_flag = WES_Emphasis_Infantry_support
+			    }
+			}
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 45
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+            set_country_flag = WES_Emphasis_Mass_Mechanized
+        }
+		
+		remove_effect = {
+		    add_ideas = WES_infantry_guild_2	
+			add_ideas = WES_infantry_guild_2_subeffects	
+		}
+	}
+	
+	Infantry_and_Infantry_support_emphasis = {
+		icon = generic_research
+		cost = 50
+		fire_only_once = yes
+		available = {
+			has_completed_focus = WES_weapon_guilds
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			has_completed_focus = WES_weapon_guilds
+			NOT = {
+			    OR = { 
+			        has_country_flag = WES_Emphasis_cavalry_and_chivalry
+			        has_country_flag = WES_Emphasis_Mass_Mechanized
+			    }
+			}
+		}
+
+		ai_will_do = {
+			base = 85
+		}
+
+		days_remove = 45
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+            set_country_flag = WES_Emphasis_Infantry_support
+        }
+		
+		remove_effect = {
+		    add_ideas = WES_infantry_guild_3
+			add_ideas = WES_infantry_guild_3_subeffects	
+		}
+	}
+}
+WES_diplomacy = {
+	WES_diplomacy_meme = {	
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+	}
+##DOUGLAS##
+    WES_douglas_move = {    
+        allowed = { tag = WES }                 
+        available = {  
+			WES = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 80
+					compare = greater_than_or_equals	
+				}
+			}		
+        }
+        visible = {
+           has_country_flag = lhl_WES_diplomacy_2_open
+        }
+        activation = {                          
+			WES = {
+				has_country_flag = WES_diplomacy_douglas_open
+			}			
+        }
+        is_good = no                                        
+        days_mission_timeout = 50            
+        timeout_effect = {  
+			custom_effect_tooltip = WES_diplomacy_douglas_minus_big.tt
+			add_to_variable = {
+				var = WES_mercia_battle
+				value = -10
+			}
+        }
+        complete_effect = {                    
+        }
+		ai_will_do = {
+			factor = 100
+		}
+    }
+	
+	WES_pressure_douglas = {
+		cost = 50
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_douglas_open
+			}	
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_2_open
+        }
+		days_remove = 20
+		remove_effect = {
+			custom_effect_tooltip = WES_diplomacy_douglas_plus.tt
+			add_to_variable = {
+				var = WES_mercia_battle
+				value = 5
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	WES_send_arms_to_douglas = {
+		cost = 0
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_douglas_open
+			}	
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_2_open
+        }
+		days_remove = 25
+		complete_effect = {   
+			WES = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -300
+					producer = WES
+				}
+			}
+			MRC = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 300
+					producer = WES
+				}
+			}
+        }
+		remove_effect = {
+			custom_effect_tooltip = WES_diplomacy_douglas_plus.tt
+			add_to_variable = {
+				var = WES_mercia_battle
+				value = 5
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	WES_hold_a_debate = {
+		cost = 10
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_douglas_open
+				has_country_flag = WES_douglas_diplomacy_tier_2
+			}	
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_2_open
+		   has_country_flag = WES_douglas_diplomacy_tier_2
+        }
+		days_remove = 7
+		fire_only_once = yes
+		complete_effect = {   
+			
+        }
+		remove_effect = {
+			WES = {
+				country_event = {
+					days = 1
+					id = WES_event.45
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	WES_hold_a_ceremony = {
+		cost = 10
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_douglas_open
+				has_country_flag = WES_douglas_diplomacy_tier_2
+			}	
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_2_open
+		   has_country_flag = WES_douglas_diplomacy_tier_2
+        }
+		days_remove = 7
+		fire_only_once = yes
+		complete_effect = {   
+			
+        }
+		remove_effect = {
+			WES = {
+				country_event = {
+					days = 1
+					id = WES_event.46
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	WES_sow_discord = {
+		cost = 55
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_douglas_open
+				has_country_flag = WES_douglas_diplomacy_tier_2
+			}	
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_2_open
+		   has_country_flag = WES_douglas_diplomacy_tier_2
+        }
+		days_remove = 30
+		days_re_enable = 20
+		fire_only_once = yes
+		modifier = {
+			stability_weekly = -0.05
+        }
+		remove_effect = {
+			custom_effect_tooltip = WES_diplomacy_douglas_plus.tt
+			add_to_variable = {
+				var = WES_mercia_battle
+				value = 7
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	WES_leader_meeting = {
+		cost = 100
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_douglas_open
+				has_country_flag = WES_douglas_diplomacy_tier_2
+			}	
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_2_open
+		   has_country_flag = WES_douglas_diplomacy_tier_2
+        }
+		days_remove = 30
+		days_re_enable = 20
+		remove_effect = {
+			custom_effect_tooltip = WES_diplomacy_douglas_plus_big.tt
+			add_to_variable = {
+				var = WES_mercia_battle
+				value = 10
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	WES_a_personal_visit = {
+		cost = 10
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_douglas_open
+				has_country_flag = WES_douglas_diplomacy_tier_3
+			}	
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_2_open
+		   has_country_flag = WES_douglas_diplomacy_tier_3
+        }
+		days_remove = 7
+		fire_only_once = yes
+		complete_effect = {   
+			
+        }
+		remove_effect = {
+			WES = {
+				country_event = {
+					days = 1
+					id = WES_event.48
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	WES_ambassador_meeting = {
+		cost = 50
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_douglas_open
+				has_country_flag = WES_douglas_diplomacy_tier_3
+			}	
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_2_open
+		   has_country_flag = WES_douglas_diplomacy_tier_3
+        }
+		modifier = {
+			political_power_gain = -0.07
+        }
+		days_remove = 70
+		complete_effect = {   
+			custom_effect_tooltip = WES_diplomacy_douglas_plus_big.tt
+			add_to_variable = {
+				var = WES_mercia_battle
+				value = 8
+			}
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	WES_general_meeting = {
+		
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_douglas_open
+				has_country_flag = WES_douglas_diplomacy_tier_3
+			}	
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_2_open
+		   has_country_flag = WES_douglas_diplomacy_tier_3
+        }
+		days_remove = 25
+		days_re_enable = 20
+		remove_effect = {   
+			custom_effect_tooltip = WES_diplomacy_douglas_plus.tt
+			add_to_variable = {
+				var = WES_mercia_battle
+				value = 5
+			}
+        }
+		complete_effect = {   
+			add_command_power = -45
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_accept_douglas = {	
+		available = {
+			WES = {
+				check_variable = {
+					var = WES_mercia_battle
+					value = 80
+					compare = greater_than_or_equals	
+				}	
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_2_open
+        }
+		fire_only_once = yes
+		days_remove = 0
+		remove_effect = {   
+			set_country_flag = WES_douglas_diplomacy_accept
+        }
+		complete_effect = {
+			custom_effect_tooltip = WES_diplomacy_final_decision.tt
+			WES = {
+				clr_country_flag = lhl_WES_diplomacy_2_open
+				clr_country_flag = WES_diplomacy_douglas_open
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+##EURASIA##
+	WES_diplomacy_smuggle_volunteers_out_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 50
+		remove_effect = {   
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.1
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_smuggle_volunteers_in_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+				has_manpower > 1000
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 10
+		remove_effect = { 
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.2
+				}
+			}
+			WES = {
+				add_manpower = -1000
+			}
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_send_volunteers_out_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+			}
+			any_state = {
+				is_owned_by = MSC
+				is_coastal = yes
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 50
+		remove_effect = {   
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.3
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_send_volunteers_in_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+				has_manpower > 10000
+			}
+			any_state = {
+				is_owned_by = MSC
+				is_coastal = yes
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 15
+		remove_effect = { 
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.4
+				}
+			}
+			WES = {
+				add_manpower = -10000
+			}
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_send_division_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+				has_manpower > 6800
+				has_equipment = {
+					infantry_equipment > 609
+				}
+				has_equipment = {
+					support_equipment > 29
+				}
+				has_equipment = {
+					artillery_equipment > 35
+				}
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 100
+		cost = 50
+		remove_effect = {   
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.5
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_smuggle_weapons_out_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 50
+		remove_effect = {   
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.6
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_smuggle_weapons_in_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+				has_equipment = {
+					support_equipment > 99
+				}
+				has_equipment = {
+					infantry_equipment > 499
+				}
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 50
+		remove_effect = { 
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.7
+				}
+			}
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 500
+				target = MSC
+			}
+			send_equipment = {
+				equipment = support_equipment
+				amount = 100
+				target = MSC
+			}
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_technology_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {   
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.8
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_contractors_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 120
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {   
+        }
+		complete_effect = {
+			WES = {
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+			WES = {
+				add_offsite_building = { type = industrial_complex level = 2 }
+			}				
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_armour_MSC = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_duginist_eurasia_diplomacy_button_open
+        }
+		days_remove = 100
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {   
+        }
+		complete_effect = {
+			MSC = {
+				country_event = {
+					days = 1
+					id = MSC_event.9
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+#STERLINGOV#
+	WES_diplomacy_smuggle_volunteers_out_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 50
+		remove_effect = {   
+        }
+		complete_effect = {
+			STM = {
+				country_event = {
+					days = 1
+					id = STM_event.1
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_smuggle_volunteers_in_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+				has_manpower > 1000
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 10
+		remove_effect = { 
+        }
+		complete_effect = {
+			STM = {
+				country_event = {
+					days = 1
+					id = STM_event.2
+				}
+			}
+			WES = {
+				add_manpower = -1000
+			}
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_send_volunteers_out_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+			}
+			any_state = {
+				is_owned_by = STM
+				is_coastal = yes
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 50
+		remove_effect = {   
+        }
+		complete_effect = {
+			STM = {
+				country_event = {
+					days = 1
+					id = STM_event.3
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_send_volunteers_in_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+				has_manpower > 10000
+			}
+			any_state = {
+				is_owned_by = STM
+				is_coastal = yes
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 15
+		remove_effect = { 
+        }
+		complete_effect = {
+			STM = {
+				country_event = {
+					days = 1
+					id = STM_event.4
+				}
+			}
+			WES = {
+				add_manpower = -10000
+			}
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_send_division_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+				has_manpower > 6800
+				has_equipment = {
+					infantry_equipment > 609
+				}
+				has_equipment = {
+					support_equipment > 29
+				}
+				has_equipment = {
+					artillery_equipment > 35
+				}
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 100
+		cost = 50
+		remove_effect = {   
+        }
+		complete_effect = {
+			STM = {
+				country_event = {
+					days = 1
+					id = STM_event.5
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_smuggle_weapons_out_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 50
+		remove_effect = {   
+        }
+		complete_effect = {
+			STM = {
+				country_event = {
+					days = 1
+					id = STM_event.6
+				}
+			}		
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_diplomacy_smuggle_weapons_in_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+				has_equipment = {
+					support_equipment > 99
+				}
+				has_equipment = {
+					infantry_equipment > 499
+				}
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 50
+		remove_effect = { 
+        }
+		complete_effect = {
+			STM = {
+				country_event = {
+					days = 1
+					id = STM_event.7
+				}
+			}
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 500
+				target = STM
+			}
+			send_equipment = {
+				equipment = support_equipment
+				amount = 100
+				target = STM
+			}
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+##UNIQUE##
+	WES_diplomacy_send_knight_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+				check_variable = {
+                    var = slot_12
+                    value = 3		
+				}				
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 30
+		cost = 50
+		remove_effect = { 
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_advanced_cheese_techniques_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open				
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 75
+		cost = 100
+		fire_only_once = yes 
+		remove_effect = { 
+			add_ideas = {
+				WES_advanced_cheese_techniques
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+	WES_diplomacy_fresh_food_STM = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_sterlingov_manor_diplomacy_button_open				
+			}
+			any_state = {
+				is_owned_by = STM
+				is_coastal = yes
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_sterlingov_manor_diplomacy_button_open
+        }
+		days_remove = 75
+		cost = 125
+		remove_effect = { 
+			add_timed_idea = {
+				idea = WES_fresh_food
+				days = 90
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 0
+		}
+	}
+##RUSSKIYE IDUT##
+	WES_diplomacy_monarchists_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 100
+		cost = 100
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "Russian Monarchist Volunteers"
+						}	
+						division_template = {
+							name = "Russian Monarchist Volunteers"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								infantry = { x = 0 y = 0 }	
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }	
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
+								infantry = { x = 0 y = 5 }
+								artillery_brigade = { x = 1 y = 0 }
+							}
+								
+							support = { 
+								engineer = { x = 0 y = 0 } 	
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Russian Volunteer Unit in Great Britain\" division_template = \"Russian Monarchist Volunteers\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+					create_unit = {
+						division = "name = \"Russian Volunteer Unit in Great Britain\" division_template = \"Russian Monarchist Volunteers\" start_experience_factor = 1 start_equipment_factor = 1"		
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_agrarian_socialists_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 100
+		cost = 55
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "Revolutionary Peasant Brigade"
+						}	
+						division_template = {
+							name = "Revolutionary Peasant Brigade"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								infantry = { x = 0 y = 0 }	
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }	
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
+								infantry = { x = 0 y = 5 }
+								infantry = { x = 1 y = 0 }	
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }	
+								infantry = { x = 1 y = 3 }
+								infantry = { x = 1 y = 4 }
+								infantry = { x = 1 y = 5 }
+							}
+								
+							support = { 
+
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Revolutionary Peasant Brigade Volunteers\" division_template = \"Revolutionary Peasant Brigade\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_CHVK_Varg_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 100
+		cost = 120
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "CHVK Varg"
+						}	
+						division_template = {
+							name = "CHVK Varg"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								motorized = { x = 0 y = 0 }
+								motorized = { x = 0 y = 1 }
+								motorized = { x = 0 y = 2 }
+								motorized = { x = 0 y = 3 }
+								infantry_fighting_vehicle = { x = 1 y = 0 }
+								infantry_fighting_vehicle = { x = 1 y = 1 }
+								infantry_fighting_vehicle = { x = 1 y = 2 }
+								infantry_fighting_vehicle = { x = 1 y = 3 }
+							}
+								
+							support = { 
+
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"CHVK Varg 1st Brigade\" division_template = \"CHVK Varg\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+					create_unit = {
+						division = "name = \"CHVK Varg 2nd Brigade\" division_template = \"CHVK Varg\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_vasya_brigade_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 100
+		cost = 15
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "Vasya Brigade"
+						}	
+						division_template = {
+							name = "Vasya Brigade"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								infantry = { x = 0 y = 0 }	
+								infantry = { x = 0 y = 1 }
+							}
+								
+							support = { 
+
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Vasya's Squad\" division_template = \"Vasya Brigade\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+					create_unit = {
+						division = "name = \"Lyokha's Division\" division_template = \"Vasya Brigade\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+					create_unit = {
+						division = "name = \"Pet'ka's Brigade\" division_template = \"Vasya Brigade\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_orthodox_priests_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 100
+		cost = 100
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "Orthodox Priests"
+						}	
+						division_template = {
+							name = "Orthodox Priests"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								infantry = { x = 0 y = 0 }	
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }	
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
+								artillery_brigade = { x = 1 y = 0 }
+								artillery_brigade = { x = 1 y = 1 }
+							}
+								
+							support = { 
+								engineer = { x = 0 y = 0 }
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Orthodox Warriors\" division_template = \"Orthodox Priests\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+					create_unit = {
+						division = "name = \"Orthodox Warriors\" division_template = \"Orthodox Priests\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_night_wolf_brigade_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 100
+		cost = 75
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "Nightwolf Brigade"
+						}	
+						division_template = {
+							name = "Nightwolf Brigade"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								motorized = { x = 0 y = 0 }
+								motorized = { x = 0 y = 1 }
+								motorized = { x = 0 y = 2 }
+								motorized = { x = 0 y = 3 }
+							}
+								
+							support = { 
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Biker Gang\" division_template = \"Nightwolf Brigade\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+					create_unit = {
+						division = "name = \"Biker Gang\" division_template = \"Nightwolf Brigade\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_tankmen_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 100
+		cost = 75
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "Russian Tankists"
+						}	
+						division_template = {
+							name = "Russian Tankists"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								main_battle_tank = { x = 0 y = 0 }
+								main_battle_tank = { x = 0 y = 1 }
+								main_battle_tank = { x = 0 y = 2 }
+								main_battle_tank = { x = 0 y = 3 }
+							}
+								
+							support = { 
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"T-34 Tank Brigade\" division_template = \"Russian Tankists\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+					create_unit = {
+						division = "name = \"T-60 Tank Brigade\" division_template = \"Russian Tankists\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_siberian_shamans_RUS = {	
+		available = {
+			WES = {
+				has_country_flag = WES_diplomacy_eurasia_open
+				has_country_flag = WES_russian_volunteers_diplomacy_button_open			
+			}
+		}
+		visible = {
+           has_country_flag = lhl_WES_diplomacy_1_open
+		   has_country_flag = WES_russian_volunteers_diplomacy_button_open
+        }
+		days_remove = 100
+		cost = 100
+		remove_effect = {
+			WES = {
+				if = {
+					WES = {
+						NOT = {
+							has_template = "Siberian Shamans"
+						}	
+						division_template = {
+							name = "Siberian Shamans"
+							division_names_group = WES_INF_01
+
+							regiments = {
+								mountaineers = { x = 0 y = 0 }	
+								mountaineers = { x = 0 y = 1 }
+								mountaineers = { x = 0 y = 2 }	
+								mountaineers = { x = 0 y = 3 }
+								mountaineers = { x = 0 y = 4 }
+								mountaineers = { x = 1 y = 0 }
+								mountaineers = { x = 1 y = 1 }
+								mountaineers = { x = 1 y = 2 }
+								mountaineers = { x = 1 y = 3 }
+								mountaineers = { x = 1 y = 4 }
+							}
+								
+							support = { 
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Sons of Garbyshev\" division_template = \"Siberian Shamans\"  start_experience_factor = 1 start_equipment_factor = 1"
+						owner = WES
+					}
+				}
+			}
+        }
+		complete_effect = {
+        }
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
+WES_england_transformation = {
+	WES_culture_dummy = {	
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+	}
+    WES_jousting_competition = {
+		cost = 50
+		days_remove = 60
+		days_re_enable = 60
+        modifier = {
+            command_power_gain = 0.25
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_jousting
+			}
+        } 
+		available = {
+			WES = {
+				any_unit_leader = {
+					NOT = {
+						has_character_flag = WES_victor_of_jousting
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			hidden_effect = {
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.93
+					}
+				}
+			}
+		}
+		remove_effect = {
+			WES = {
+				country_event = {
+					days = 1
+					id = WES_event.95
+				}
+			}
+			add_to_variable = {
+				var = WES_transformation_culture_progress
+				value = 5
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 5
+			}
+			clamp_variable = {
+				var = WES_transformation_culture_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			add_war_support = 0.1
+			custom_effect_tooltip = WES_transformation_culture_small.tt
+		}
+	}
+	WES_retrain_general_nick_houghton = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_nick_houghton
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_nick_houghton ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_nick_houghton ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_graeme_lamb = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_graeme_lamb
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_graeme_lamb ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_graeme_lamb ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_nick_parker = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_nick_parker
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_nick_parker ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_nick_parker ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_richard_dannatt = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_richard_dannatt
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_richard_dannatt ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_richard_dannatt ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_dave_gahan = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_dave_gahan
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_dave_gahan ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_dave_gahan ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_timothy_cross = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_timothy_cross
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_timothy_cross ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_timothy_cross ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_john_drewienkiewicz = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_john_drewienkiewicz
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_john_drewienkiewicz ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_john_drewienkiewicz ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_peter_thomas_clayton_pearson = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_peter_thomas_clayton_pearson
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_peter_thomas_clayton_pearson ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_peter_thomas_clayton_pearson ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_jonathon_riley = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_jonathon_riley
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_jonathon_riley ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_jonathon_riley ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_retrain_general_ashley_truluck = {
+		fire_only_once = yes
+		days_remove = 120
+		cost = 100
+	    visible = {
+			WES = {
+				has_character = WES_ashley_truluck
+				has_completed_focus = WES_new_chivilary
+			}
+        } 
+		complete_effect = {
+			WES_ashley_truluck ={
+				set_character_flag = WES_knight_training
+			}
+		}
+		remove_effect = {
+			WES_ashley_truluck ={
+				clr_character_flag = WES_knight_training
+				add_skill_level = 1
+				add_random_trait = { 
+					infantry_officer
+					armor_officer
+					scavenger
+					fortress_buster
+					urban_assault_specialist
+					adaptable
+					organizer 
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	WES_economy_dummy = {	
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+	}
+    WES_overwork_military_factories = {
+		cost = 50
+		days_remove = 45
+		days_re_enable = 30
+        modifier = {
+            production_factory_start_efficiency_factor = 0.5 
+			production_factory_efficiency_gain_factor = 0.5 
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_long_planning
+			}
+        } 
+		available = {
+			WES = {
+				arms_factory > 0
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 3
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 3
+			}
+			clamp_variable = {
+				var = WES_transformation_deurbanization_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			WES = {
+				random_owned_state = {
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			custom_effect_tooltip =	WES_transformation_deurbanization_small.tt
+		}
+	}
+    WES_overwork_civilian_factories = {
+		cost = 50
+		days_remove = 45
+		days_re_enable = 30
+        modifier = {
+            production_speed_buildings_factor = 0.5 
+			industry_repair_factor = 0.5
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_long_planning
+			}
+        } 
+		available = {
+			WES = {
+				industrial_complex > 0
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 3
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 3
+			}
+			clamp_variable = {
+				var = WES_transformation_deurbanization_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			WES = {
+				random_owned_state = {
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+			custom_effect_tooltip =	WES_transformation_deurbanization_small.tt
+		}
+	}
+	WES_region_dummy = {	
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+	}
+    WES_rename_cities_kent = {
+		cost = 150
+		fire_only_once = yes
+		days_remove = 120
+		modifier = {
+            stability_factor = -0.05
+			civilian_factory_use = 1
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_english_tongue
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1165
+				owns_state = 1165
+				controls_state = 1002
+				owns_state = 1002
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			set_province_name = { id = 17530 name = "Gelingeham"}
+			set_province_name = { id = 3644 name = "Mayndenstan"}
+			set_province_name = { id = 17510 name = "Burne"}
+			set_province_name = { id = 6426 name = "Hæstingaceaster"}
+			set_province_name = { id = 17514 name = "Folcanstan"}
+			set_province_name = { id = 17520 name = "Cantwareburh"}
+			set_province_name = { id = 17523 name = "Dubrae"}
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_language_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 5
+				}
+				clamp_variable = {
+					var = WES_transformation_deurbanization_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				add_stability = 0.1
+				custom_effect_tooltip = WES_transformation_language_small.tt
+			}
+		}
+	}
+    WES_rename_cities_sussex = {
+		cost = 150
+		fire_only_once = yes
+		days_remove = 120
+        modifier = {
+            stability_factor = -0.05
+			civilian_factory_use = 1
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_english_tongue
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1156
+				owns_state = 1156
+				controls_state = 1001
+				owns_state = 1001
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			set_province_name = { id = 10742 name = "Bristelmestune"}
+			set_province_name = { id = 17508 name = "Ordinges"}
+			set_province_name = { id = 10763 name = "Cisseceastre"}
+			set_province_name = { id = 10732 name = "Portesmuða"}
+			set_province_name = { id = 10733 name = " Crauleia"}
+			set_province_name = { id = 17529 name = "Gyldeforda"}
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_language_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 5
+				}
+				clamp_variable = {
+					var = WES_transformation_deurbanization_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				add_stability = 0.1
+				custom_effect_tooltip = WES_transformation_language_small.tt
+			}
+		}
+	}
+    WES_rename_cities_wessex = {
+		cost = 150
+		fire_only_once = yes
+		days_remove = 120
+        modifier = {
+            stability_factor = -0.05
+			civilian_factory_use = 1
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_english_tongue
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1153
+				owns_state = 1153
+				controls_state = 1161
+				owns_state = 1161
+				controls_state = 1000
+				owns_state = 1000
+				controls_state = 1006
+				owns_state = 1006
+				controls_state = 1007
+				owns_state = 1007
+				controls_state = 999
+				owns_state = 999
+				controls_state = 998
+				owns_state = 998
+				controls_state = 1018
+				owns_state = 1018
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			set_province_name = { id = 10850 name = "Pennsans"}
+			set_province_name = { id = 9091 name = "Trivereu"}
+			set_province_name = { id = 8046 name = "Sudtone"}
+			set_province_name = { id = 15037 name = "Torquay"}
+			set_province_name = { id = 17504 name = "Escanceaster"}
+			set_province_name = { id = 1522 name = "Barum"}
+			set_province_name = { id = 17515 name = "Tone Tun"}
+			set_province_name = { id = 10771 name = "Dornwaraceaster" }
+			set_province_name = { id = 10741 name = "Caer Badden"}
+			set_province_name = { id = 5008 name = "Brycgstow"}
+			set_province_name = { id = 17516 name = "Sarisberie"}
+			set_province_name = { id = 17506 name = "Bournemowthe"}
+			set_province_name = { id = 10725 name = "Hamwic"}
+			set_province_name = { id = 15071 name = "Nodehill"}
+			set_province_name = { id = 6624 name = "Basingestoches"}
+			set_province_name = { id = 17532 name = "Suindune"}
+			set_province_name = { id = 17551 name = "Caer Glow"}
+			set_province_name = { id = 10617 name = "Celtan hom"}
+			set_province_name = { id = 17552 name = "Oxnaford"}
+			set_province_name = { id = 15066 name = "Duboglassio"}
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_language_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 5
+				}
+				clamp_variable = {
+					var = WES_transformation_deurbanization_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				add_stability = 0.1
+				custom_effect_tooltip = WES_transformation_language_small.tt
+			}
+		}
+	}
+    WES_rename_cities_mercia = {
+		cost = 150
+		fire_only_once = yes
+		days_remove = 120
+        modifier = {
+            stability_factor = -0.05
+			civilian_factory_use = 1
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_english_tongue
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1152
+				owns_state = 1152
+				controls_state = 1151
+				owns_state = 1151
+				controls_state = 1154
+				owns_state = 1154
+				controls_state = 1146
+				owns_state = 1146
+				controls_state = 1155
+				owns_state = 1155
+				controls_state = 1008
+				owns_state = 1008
+				controls_state = 1144
+				owns_state = 1144
+				controls_state = 1005
+				owns_state = 1005
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			set_province_name = { id = 17559 name = "Henffordd"}
+			set_province_name = { id = 17567 name = "Weogorna ceastre"}
+			set_province_name = { id = 5183 name = "Scrobbesburh"}
+			set_province_name = { id = 17609 name = "Wrockwardine"}
+			set_province_name = { id = 17614 name = "Stoc"}
+			set_province_name = { id = 17626 name = "Legacæstir"}
+			set_province_name = { id = 17593 name = "Wulfrūnehēantū"}
+			set_province_name = { id = 9731 name = "Beormingahām"}
+			set_province_name = { id = 17581 name = "Cofa"}
+			set_province_name = { id = 9396 name = "Hrocaberg"}
+			set_province_name = { id = 17583 name = "Ham tune"}
+			set_province_name = { id = 17584 name = "Cytringan"}
+			set_province_name = { id = 17603 name = "Ledecestre"}
+			set_province_name = { id = 17613 name = "Loughburne"}
+			set_province_name = { id = 10603 name = "Grantebrycge"}
+			set_province_name = { id = 6101 name = "Medeshamstede"}
+			set_province_name = { id = 17620 name = "Saint Botolph"}
+			set_province_name = { id = 10496 name = "Grímsbœ"}
+			set_province_name = { id = 5939 name = "Escumesthorpe"}
+			set_province_name = { id = 17612 name = "Deoraby"}
+			set_province_name = { id = 7790 name = "Oderesfelt"}
+			set_province_name = { id = 17648 name = "Ladenses"}
+			set_province_name = { id = 4653 name = "Niweweorche"}
+			set_province_name = { id = 10509 name = "Snotingaham"}
+			set_province_name = { id = 17635 name = "Dore"}
+			set_province_name = { id = 10471 name = "Cair Daun"}
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_language_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 5
+				}
+				clamp_variable = {
+					var = WES_transformation_deurbanization_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				add_stability = 0.1
+				custom_effect_tooltip = WES_transformation_language_small.tt
+			}
+		}
+	}
+    WES_rename_cities_northumbria = {
+		cost = 150
+		fire_only_once = yes
+		days_remove = 120
+        modifier = {
+            stability_factor = -0.05
+			civilian_factory_use = 1
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_english_tongue
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1009
+				owns_state = 1009
+				controls_state = 1145
+				owns_state = 1145
+				controls_state = 1012
+				owns_state = 1012
+				controls_state = 1011
+				owns_state = 1011
+				controls_state = 1010
+				owns_state = 1010
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			set_province_name = { id = 17641 name = "Mameceaster"}
+			set_province_name = { id = 17640 name = "Weringtun"}
+			set_province_name = { id = 17639 name = "Liuerpul"}
+			set_province_name = { id = 3896 name = "Blackpoole"}
+			set_province_name = { id = 10429 name = "Blachebourne"}
+			set_province_name = { id = 6261 name = "Luguwaljon"}
+			set_province_name = { id = 6430 name = "Dearthington"}
+			set_province_name = { id = 17686 name = "Mydilsburgh"}
+			set_province_name = { id = 17695 name = "Wearmouth–Jarrow"}
+			set_province_name = { id = 17694 name = "Munucceaster"}
+			set_province_name = { id = 17660 name = "Eburākon"}
+			set_province_name = { id = 17670 name = "Skarðaborg"}
+			set_province_name = { id = 17653 name = "Wyke"}
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_language_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 5
+				}
+				clamp_variable = {
+					var = WES_transformation_deurbanization_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				add_stability = 0.1
+				custom_effect_tooltip = WES_transformation_language_small.tt
+			}
+		}
+	}
+    WES_rename_cities_east_anglia = {
+		cost = 150
+		fire_only_once = yes
+		days_remove = 120
+        modifier = {
+            stability_factor = -0.05
+			civilian_factory_use = 1
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_english_tongue
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1004
+				owns_state = 1004
+				controls_state = 1143
+				owns_state = 1143
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			set_province_name = { id = 17595 name = "Lun"}
+			set_province_name = { id = 17597 name = "Northwic"}
+			set_province_name = { id = 5108 name = "Yernemuth"}
+			set_province_name = { id = 8334 name = "Beodericsworth"}
+			set_province_name = { id = 9793 name = "Lothnwistoft"}
+			set_province_name = { id = 17569 name = "Gippeswich"}
+
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_language_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 5
+				}
+				clamp_variable = {
+					var = WES_transformation_deurbanization_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				add_stability = 0.1
+				custom_effect_tooltip = WES_transformation_language_small.tt
+			}
+		}
+	}
+    WES_rename_cities_london = {
+		cost = 150
+		fire_only_once = yes
+		days_remove = 120
+        modifier = {
+            stability_factor = -0.05
+			civilian_factory_use = 1
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_english_tongue
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1003
+				owns_state = 1003
+				controls_state = 1157
+				owns_state = 1157
+				controls_state = 1160
+				owns_state = 1160
+				controls_state = 1159
+				owns_state = 1159
+				controls_state = 1158
+				owns_state = 1158
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			set_province_name = { id = 17544 name = "Reada"}
+			set_province_name = { id = 17538 name = "Slo"}
+			set_province_name = { id = 17546 name = "Wichama"}
+			set_province_name = { id = 17548 name = "Ēanafeld"}
+			set_province_name = { id = 10574 name = "Æglesburgh"}
+			set_province_name = { id = 17573 name = "Bletchley"}
+			set_province_name = { id = 2559 name = "Lygea-Byrig"}
+			set_province_name = { id = 14950 name = "Hlaw"}
+			set_province_name = { id = 17540 name = "Romfort"}
+			set_province_name = { id = 5582 name = "Celmeresfort"}
+			set_province_name = { id = 17556 name = "Colneceastre"}
+			set_province_name = { id = 10680 name = "Prittlewell"}
+			set_province_name = { id = 17557 name = "Claccingtun"}
+			set_province_name = { id = 17539 name = "Lundenwic"}
+			set_province_name = { id = 6654 name = "Watforda"}
+			set_province_name = { id = 17534 name = "Cyninges tun"}
+			set_province_name = { id = 17531 name = "Badrices īeg"}
+			set_province_name = { id = 4631 name = "Crai-din"}
+			set_province_name = { id = 15007 name = "Gronewic"}
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_language_progress
+					value = 5
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 5
+				}
+				clamp_variable = {
+					var = WES_transformation_deurbanization_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				add_stability = 0.1
+				custom_effect_tooltip = WES_transformation_language_small.tt
+			}
+		}
+	}
+	WES_choose_state_category = {
+		target_array = WES.core_states	
+		on_map_mode = map_only
+		fire_only_once = yes
+	    visible = {
+			WES = {
+				has_completed_focus = WES_rebuild_scenery
+			}
+        } 
+		days_remove = 90
+		icon = my_icon
+		state_target = yes
+		cost = 50
+		remove_effect = {
+			FROM = {
+				save_event_target_as = WES_chosen_state
+				state_event = {
+					id = WES_event.100
+					trigger_for = owner
+					days = 0
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
+WES_unification_defence = {
+	WES_build_bunkers = {
+		targets = {
+			1153
+			1161
+			1156
+			1165
+			1001
+		}
+		on_map_mode = map_only
+		fire_only_once = yes
+		days_remove = 45
+		icon = my_icon
+		state_target = yes
+		cost = 75
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			FROM = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
+
+WES_unification_offence = {
+	WES_prepare_operations = {
+		targets = {
+			1152
+			1154
+			1155
+			1159
+			1160
+			1003
+		}
+		on_map_mode = map_only
+		fire_only_once = yes
+		days_remove = 45
+		icon = my_icon
+		state_target = yes
+		cost = 75
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = WES_planned_offensive
+					scope = WES
+					days = 360
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+}

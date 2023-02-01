@@ -1,0 +1,92 @@
+ENG_remove_political_power = {
+	if = {
+		limit = {
+			original_tag = EAG
+		}
+		set_temp_variable = { EAG_coring_political_power = EAG_coring_cost }
+		subtract_from_temp_variable = { EAG_coring_political_power = EAG_coring_cost }
+		subtract_from_temp_variable = { EAG_coring_political_power = EAG_coring_cost }
+		add_political_power = var:EAG_coring_political_power
+	}
+	if = {
+		limit = {
+			original_tag = ESS
+		}
+		set_temp_variable = { ESS_coring_political_power = ESS_coring_cost }
+		subtract_from_temp_variable = { ESS_coring_political_power = ESS_coring_cost }
+		subtract_from_temp_variable = { ESS_coring_political_power = ESS_coring_cost }
+		add_political_power = var:ESS_coring_political_power
+	}
+	if = {
+		limit = {
+			original_tag = SUS
+		}
+		set_temp_variable = { SUS_coring_political_power = SUS_coring_cost }
+		subtract_from_temp_variable = { SUS_coring_political_power = SUS_coring_cost }
+		subtract_from_temp_variable = { SUS_coring_political_power = SUS_coring_cost }
+		add_political_power = var:SUS_coring_political_power
+	}
+	if = {
+		limit = {
+			original_tag = KNT
+		}
+		set_temp_variable = { KNT_coring_political_power = KNT_coring_cost }
+		subtract_from_temp_variable = { KNT_coring_political_power = KNT_coring_cost }
+		subtract_from_temp_variable = { KNT_coring_political_power = KNT_coring_cost }
+		add_political_power = var:KNT_coring_political_power
+	}
+	if = {
+		limit = {
+			original_tag = WES
+		}
+		set_temp_variable = { WES_coring_political_power = WES_coring_cost }
+		subtract_from_temp_variable = { WES_coring_political_power = WES_coring_cost }
+		subtract_from_temp_variable = { WES_coring_political_power = WES_coring_cost }
+		add_political_power = var:WES_coring_political_power
+	}
+	if = {
+		limit = {
+			original_tag = MRC
+		}
+		set_temp_variable = { MRC_coring_political_power = MRC_coring_cost }
+		subtract_from_temp_variable = { MRC_coring_political_power = MRC_coring_cost }
+		subtract_from_temp_variable = { MRC_coring_political_power = MRC_coring_cost }
+		add_political_power = var:MRC_coring_political_power
+	}
+	if = {
+		limit = {
+			original_tag = NTH
+		}
+		set_temp_variable = { NTH_coring_political_power = NTH_coring_cost }
+		subtract_from_temp_variable = { NTH_coring_political_power = NTH_coring_cost }
+		subtract_from_temp_variable = { NTH_coring_political_power = NTH_coring_cost }
+		add_political_power = var:NTH_coring_political_power
+	}
+	if = {
+		limit = {
+			original_tag = SCO
+		}
+		set_temp_variable = { SCO_coring_political_power = SCO_coring_cost }
+		subtract_from_temp_variable = { SCO_coring_political_power = SCO_coring_cost }
+		subtract_from_temp_variable = { SCO_coring_political_power = SCO_coring_cost }
+		add_political_power = var:SCO_coring_political_power
+	}
+	if = {
+		limit = {
+			original_tag = WLS
+		}
+		set_temp_variable = { WLS_coring_political_power = WLS_coring_cost }
+		subtract_from_temp_variable = { WLS_coring_political_power = WLS_coring_cost }
+		subtract_from_temp_variable = { WLS_coring_political_power = WLS_coring_cost }
+		add_political_power = var:WLS_coring_political_power
+	}
+	if = {
+		limit = {
+			original_tag = ULS
+		}
+		set_temp_variable = { ULS_coring_political_power = ULS_coring_cost }
+		subtract_from_temp_variable = { ULS_coring_political_power = ULS_coring_cost }
+		subtract_from_temp_variable = { ULS_coring_political_power = ULS_coring_cost }
+		add_political_power = var:ULS_coring_political_power
+	}
+}

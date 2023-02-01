@@ -1,0 +1,176 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "lhl_WES_guilds_full"
+		size = { width = 500 height = 300 }
+		position = { x = 100 y = 0 }
+		scale = 1.2
+		moveable = no
+		clipping = yes
+		
+		background = {
+			name = "lhl_table_opening_screen_background_1"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+		##Icons##
+		instantTextboxType = {
+			name = "lhl_wes_guilds_title"
+			position = { x = 65 y = 5 }
+			font = "vic_36"
+			text = "WES_GUILDS_TEXT"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
+		}
+		#Infantry#
+	    iconType = {
+			name = "lhl_infantry_guild_1"
+			spriteType = "GFX_lhl_guild_1"
+			pdx_tooltip = "WES_infantry_guild_1"
+			position = { x = 80 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_infantry_guild_2"
+			spriteType = "GFX_lhl_guild_2"
+			pdx_tooltip = "WES_infantry_guild_2"
+			position = { x = 80 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_infantry_guild_3"
+			spriteType = "GFX_lhl_guild_3"
+			pdx_tooltip = "WES_infantry_guild_3"
+			position = { x = 80 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_infantry_guild_no"
+			spriteType = "GFX_lhl_no_guild"
+			pdx_tooltip = "WES_infantry_guild_no"
+			position = { x = 80 y = 50 }
+		}
+		#Armor#
+	    iconType = {
+			name = "lhl_armor_guild_1"
+			spriteType = "GFX_lhl_guild_1"
+			pdx_tooltip = "WES_armor_guild_1"
+			position = { x = 180 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_armor_guild_2"
+			spriteType = "GFX_lhl_guild_2"
+			pdx_tooltip = "WES_armor_guild_2"
+			position = { x = 180 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_armor_guild_3"
+			spriteType = "GFX_lhl_guild_3"
+			pdx_tooltip = "WES_armor_guild_3"
+			position = { x = 180 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_armor_guild_no"
+			spriteType = "GFX_lhl_no_guild"
+			pdx_tooltip = "WES_armor_guild_no"
+			position = { x = 180 y = 50 }
+		}
+		#Mechanized#
+	    iconType = {
+			name = "lhl_mechanized_guild_1"
+			spriteType = "GFX_lhl_guild_1"
+			pdx_tooltip = "WES_mechanized_guild_1"
+			position = { x = 280 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mechanized_guild_2"
+			spriteType = "GFX_lhl_guild_2"
+			pdx_tooltip = "WES_mechanized_guild_2"
+			position = { x = 280 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mechanized_guild_3"
+			spriteType = "GFX_lhl_guild_3"
+			pdx_tooltip = "WES_mechanized_guild_3"
+			position = { x = 280 y = 50 }
+		}
+	    iconType = {
+			name = "lhl_mechanized_guild_no"
+			spriteType = "GFX_lhl_no_guild"
+			pdx_tooltip = "WES_mechanized_guild_no"
+			position = { x = 280 y = 50 }
+		}
+		#Air#
+	    iconType = {
+			name = "lhl_air_guild_1"
+			spriteType = "GFX_lhl_guild_1"
+			pdx_tooltip = "WES_air_guild_1"
+			position = { x = 80 y = 150 }
+		}
+	    iconType = {
+			name = "lhl_air_guild_2"
+			spriteType = "GFX_lhl_guild_2"
+			pdx_tooltip = "WES_air_guild_2"
+			position = { x = 80 y = 150 }
+		}
+	    iconType = {
+			name = "lhl_air_guild_3"
+			spriteType = "GFX_lhl_guild_3"
+			pdx_tooltip = "WES_air_guild_3"
+			position = { x = 80 y = 150 }
+		}
+	    iconType = {
+			name = "lhl_air_guild_no"
+			spriteType = "GFX_lhl_no_guild"
+			pdx_tooltip = "WES_air_guild_no"
+			position = { x = 80 y = 150 }
+		}
+		#Artillery#
+	    iconType = {
+			name = "lhl_artillery_guild_1"
+			spriteType = "GFX_lhl_guild_1"
+			pdx_tooltip = "WES_artillery_guild_1"
+			position = { x = 180 y = 150 }
+		}
+	    iconType = {
+			name = "lhl_artillery_guild_2"
+			spriteType = "GFX_lhl_guild_2"
+			pdx_tooltip = "WES_artillery_guild_2"
+			position = { x = 180 y = 150 }
+		}
+	    iconType = {
+			name = "lhl_artillery_guild_3"
+			spriteType = "GFX_lhl_guild_3"
+			pdx_tooltip = "WES_artillery_guild_3"
+			position = { x = 180 y = 150 }
+		}
+	    iconType = {
+			name = "lhl_artillery_guild_no"
+			spriteType = "GFX_lhl_no_guild"
+			pdx_tooltip = "WES_artillery_guild_no"
+			position = { x = 180 y = 150 }
+		}
+		#Ships#
+	    iconType = {
+			name = "lhl_ships_guild_1"
+			spriteType = "GFX_lhl_guild_1"
+			pdx_tooltip = "WES_ships_guild_1"
+			position = { x = 280 y = 150 }
+		}
+	    iconType = {
+			name = "lhl_ships_guild_2"
+			spriteType = "GFX_lhl_guild_2"
+			pdx_tooltip = "WES_ships_guild_2"
+			position = { x = 280 y = 150 }
+		}
+	    iconType = {
+			name = "lhl_ships_guild_3"
+			spriteType = "GFX_lhl_guild_3"
+			pdx_tooltip = "WES_ships_guild_3"
+			position = { x = 280 y = 150 }
+		}
+	    iconType = {
+			name = "lhl_ships_guild_no"
+			spriteType = "GFX_lhl_no_guild"
+			pdx_tooltip = "WES_ships_guild_no"
+			position = { x = 280 y = 150 }
+		}
+	}
+}

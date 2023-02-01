@@ -1,0 +1,48 @@
+﻿capital = 1051
+
+oob = "NGR_2020"
+
+set_research_slots = 1
+
+
+# Starting tech
+set_technology = {
+	infantry_equipment = 1
+}
+
+set_convoys = 10
+set_politics = {
+	ruling_party = national_bolshevism
+	elections_allowed = no
+}
+set_popularities = {
+	national_bolshevism = 100
+}
+
+add_ai_strategy = {
+    type = alliance
+    id = SIC
+    value = 200
+}
+
+add_ai_strategy = {
+    type = alliance
+    id = CHD
+    value = 200
+}
+
+add_ai_strategy = {
+    type = alliance
+    id = UAS
+    value = 200
+}
+
+create_country_leader = {
+	name = "Saif al-Islam Muammar Gaddafi"
+	desc = ""
+	picture = "Portrait_NGR_Saif_Gaddafi.dds"
+	ideology = nazbol_gang
+	traits = {
+		#
+	}
+}

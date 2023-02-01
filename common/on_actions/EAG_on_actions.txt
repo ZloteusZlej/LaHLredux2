@@ -1,0 +1,898 @@
+on_actions = {
+
+    on_capitulation = {
+	    effect = {
+		    if = {
+			    limit = {
+			        FROM = { tag = EAG }
+					ROOT = { tag = WES }
+				}
+				EAG = {
+				}
+			}
+		}
+	}
+	
+	on_daily_EAG = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = mercs_quality
+						value = 5
+						compare = less_than_or_equals
+					}
+					NOT = {
+						EAG = {
+							has_country_flag = int_mercs_quality_very_low
+						}
+					}	
+					NOT = {
+						EAG = {
+							has_government = national_bolshevism
+						}
+					}
+				}
+				clamp_variable = {
+					var = mercs_quality
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.11
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = mercs_quality
+							value = 6
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = mercs_quality
+							value = 10
+							compare = less_than_or_equals
+						}
+					NOT = {
+						EAG = {
+							has_country_flag = int_mercs_quality_low
+						}
+					}
+					NOT = {
+						EAG = {
+							has_government = national_bolshevism
+						}
+					}
+				}
+				clamp_variable = {
+					var = mercs_quality
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.12
+						days = 0
+					}
+				}
+			}	
+			else_if = {
+				limit = {
+						check_variable = {
+							var = mercs_quality
+							value = 11
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = mercs_quality
+							value = 15
+							compare = less_than_or_equals
+						}
+					NOT = {
+						EAG = {
+							has_country_flag = int_mercs_quality_medium
+						}
+					}
+					NOT = {
+						EAG = {
+							has_government = national_bolshevism
+						}
+					}
+				}
+				clamp_variable = {
+					var = mercs_quality
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.13
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = mercs_quality
+							value = 16
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = mercs_quality
+							value = 20
+							compare = less_than_or_equals
+						}
+						NOT = {
+							EAG = {
+								has_country_flag = int_mercs_quality_high
+							}
+						}	
+						NOT = {
+							EAG = {
+								has_government = national_bolshevism
+							}
+						}
+				}
+				clamp_variable = {
+					var = mercs_quality
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.14
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = mercs_quality
+						value = 21
+						compare = greater_than_or_equals
+					}
+					NOT = {
+						EAG = {
+							has_country_flag = int_mercs_quality_very_high
+						}
+					}
+					NOT = {
+						EAG = {
+							has_government = national_bolshevism
+						}
+					}
+				}
+				clamp_variable = {
+					var = mercs_quality
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.15
+						days = 0
+					}
+				}
+			}
+		}
+	}
+	
+	on_daily_EAG = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = mercs_mood
+						value = 5
+						compare = less_than_or_equals
+					}
+					NOT = {
+						EAG = {
+							has_country_flag = int_mercs_mood_very_low
+						}
+					}	
+					NOT = {
+						EAG = {
+							has_government = national_bolshevism
+						}
+					}
+				}
+				clamp_variable = {
+					var = mercs_mood
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.16
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = mercs_mood
+							value = 6
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = mercs_mood
+							value = 10
+							compare = less_than_or_equals
+						}
+					NOT = {
+						EAG = {
+							has_country_flag = int_mercs_mood_low
+						}
+					}
+					NOT = {
+						EAG = {
+							has_government = national_bolshevism
+						}
+					}
+				}
+				clamp_variable = {
+					var = mercs_mood
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.17
+						days = 0
+					}
+				}
+			}	
+			else_if = {
+				limit = {
+						check_variable = {
+							var = mercs_mood
+							value = 11
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = mercs_mood
+							value = 15
+							compare = less_than_or_equals
+						}
+					NOT = {
+						EAG = {
+							has_country_flag = int_mercs_mood_medium
+						}
+					}
+					NOT = {
+						EAG = {
+							has_government = national_bolshevism
+						}
+					}
+				}
+				clamp_variable = {
+					var = mercs_mood
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.18
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = mercs_mood
+							value = 16
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = mercs_mood
+							value = 20
+							compare = less_than_or_equals
+						}
+						NOT = {
+							EAG = {
+								has_country_flag = int_mercs_mood_high
+							}
+						}
+						NOT = {
+							EAG = {
+								has_government = national_bolshevism
+							}
+						}
+				}
+				clamp_variable = {
+					var = mercs_mood
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.19
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = mercs_mood
+						value = 21
+						compare = greater_than_or_equals
+					}
+					NOT = {
+						EAG = {
+							has_country_flag = int_mercs_mood_very_high
+						}
+					}	
+					NOT = {
+						EAG = {
+							has_government = national_bolshevism
+						}
+					}
+				}
+				clamp_variable = {
+					var = mercs_mood
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.20
+						days = 0
+					}
+				}
+			}
+		}
+	}
+	
+	on_daily_EAG = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = volk_dev
+						value = 5
+						compare = less_than_or_equals
+					}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_dev_very_low
+						}
+					}	
+					NOT = {
+						EAG = {
+							has_government = neocameralism
+						}
+					}
+				}
+				clamp_variable = {
+					var = volk_dev
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.21
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = volk_dev
+							value = 6
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = volk_dev
+							value = 10
+							compare = less_than_or_equals
+						}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_dev_low
+						}
+					}	
+					NOT = {
+						EAG = {
+							has_government = neocameralism
+						}
+					}
+				}
+				clamp_variable = {
+					var = volk_dev
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.22
+						days = 0
+					}
+				}
+			}	
+			else_if = {
+				limit = {
+						check_variable = {
+							var = volk_dev
+							value = 11
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = volk_dev
+							value = 15
+							compare = less_than_or_equals
+						}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_dev_medium
+						}
+					}
+					NOT = {
+						EAG = {
+							has_government = neocameralism
+						}
+					}
+				}
+				clamp_variable = {
+					var = volk_dev
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.23
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = volk_dev
+							value = 16
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = volk_dev
+							value = 20
+							compare = less_than_or_equals
+						}
+						NOT = {
+							EAG = {
+								has_country_flag = int_volk_dev_high
+							}
+						}	
+						NOT = {
+							EAG = {
+								has_government = neocameralism
+							}
+					}
+				}
+				clamp_variable = {
+					var = volk_dev
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.24
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = volk_dev
+						value = 21
+						compare = greater_than_or_equals
+					}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_dev_very_high
+						}
+					}
+					NOT = {
+						EAG = {
+							has_government = neocameralism
+						}
+					}
+				}
+				clamp_variable = {
+					var = volk_dev
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.25
+						days = 0
+					}
+				}
+			}
+		}
+	}
+	
+	on_daily_EAG = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = volk_mood
+						value = 5
+						compare = less_than_or_equals
+					}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_mood_very_low
+						}
+					}	
+					NOT = {
+						EAG = {
+							has_government = neocameralism
+						}
+					}
+				}
+				clamp_variable = {
+					var = volk_mood
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.26
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = volk_mood
+							value = 6
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = volk_mood
+							value = 10
+							compare = less_than_or_equals
+						}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_mood_low
+						}
+					}	
+					NOT = {
+						EAG = {
+							has_government = neocameralism
+						}
+					}
+				}
+				clamp_variable = {
+					var = volk_mood
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.27
+						days = 0
+					}
+				}
+			}	
+			else_if = {
+				limit = {
+						check_variable = {
+							var = volk_mood
+							value = 11
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = volk_mood
+							value = 15
+							compare = less_than_or_equals
+						}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_mood_medium
+						}
+					}	
+					NOT = {
+						EAG = {
+							has_government = neocameralism
+						}
+					}
+				}
+				clamp_variable = {
+					var = volk_mood
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.28
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+						check_variable = {
+							var = volk_mood
+							value = 16
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = volk_mood
+							value = 20
+							compare = less_than_or_equals
+						}
+						NOT = {
+							EAG = {
+								has_country_flag = int_volk_mood_high
+							}
+						}	
+						NOT = {
+							EAG = {
+								has_government = neocameralism
+							}
+						}
+				}
+				clamp_variable = {
+					var = volk_mood
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.29
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = volk_mood
+						value = 21
+						compare = greater_than_or_equals
+					}
+					NOT = {
+						EAG = {
+							has_country_flag = int_volk_mood_very_high
+						}
+					}	
+					NOT = {
+						EAG = {
+							has_government = neocameralism
+						}
+					}
+				}
+				clamp_variable = {
+					var = volk_mood
+					max = 25
+					min = 0
+				}
+				EAG = {
+					country_event = {
+						id = EAG_event.30
+						days = 0
+					}
+				}
+			}
+		}
+	}
+	
+	on_send_volunteers = {
+		effect = {
+			if = {
+				limit = {
+					EAG = {
+						has_government = neocameralism
+					}
+				}
+			}
+			ROOT = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+			FROM = {
+				add_ideas = active_contract
+			}
+		}
+	}
+	
+	on_recall_volunteers = {
+		effect = {
+			if = {
+				limit = {
+					EAG = {
+						has_government = neocameralism
+					}
+				}
+			}
+			ROOT = {
+				add_offsite_building = { type = industrial_complex level = -1 }
+			}
+			FROM = {
+				remove_ideas = active_contract
+			}
+		}
+	}
+	on_monthly_EAG = {
+		random_events = {
+            100 = EAG_event.78
+            100 = EAG_event.79
+			100 = EAG_event.80
+			100 = EAG_event.81
+			100 = EAG_event.82
+			100 = EAG_event.83
+        }
+	}
+	on_monthly_EAG = {
+		random_events = {
+			100 = EAG_event.210
+			100 = EAG_event.211
+			100 = EAG_event.212
+			100 = EAG_event.213
+			100 = EAG_event.214
+			100 = EAG_event.215
+			100 = EAG_event.216
+			100 = EAG_event.217
+			100 = EAG_event.218
+		}
+	}
+	on_monthly_EAG = {
+		effect = {
+            set_temp_variable = { EAG_anarchist_total_support = 0 }
+            add_to_temp_variable = { EAG_anarchist_total_support = parliament_seat_array^0 }
+			add_to_temp_variable = { EAG_anarchist_total_support = parliament_seat_array^1 }
+			if = {
+				limit = {
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 0
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 25
+						compare = less_than_or_equals
+					}	
+					check_variable = {
+						var = parliament_seat_array^0
+						value = 0
+						compare = greater_than
+					}
+				}
+				clamp_variable = {
+					var = parliament_seat_array^0
+					max = EAG_anarchist_total_support
+					min = 2
+				}
+				subtract_from_variable = { parliament_seat_array^0 = 2 }
+				subtract_from_variable = { parliament_seat_array^1 = -2 }
+				modify_parliament_seat = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 26
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 50
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = parliament_seat_array^0
+						value = 0
+						compare = greater_than
+					}
+				}
+				clamp_variable = {
+					var = parliament_seat_array^0
+					max = EAG_anarchist_total_support
+					min = 2
+				}
+				subtract_from_variable = { parliament_seat_array^0 = 1 }
+				subtract_from_variable = { parliament_seat_array^1 = -1 }
+				modify_parliament_seat = yes
+			}	
+			else_if = {
+				limit = {
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 51
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 75
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = parliament_seat_array^0
+						value = 0
+						compare = greater_than
+					}
+				}
+				clamp_variable = {
+					var = parliament_seat_array^0
+					max = EAG_anarchist_total_support
+					min = 2
+				}
+				subtract_from_variable = { parliament_seat_array^0 = 0 }
+				subtract_from_variable = { parliament_seat_array^1 = 0 }
+				modify_parliament_seat = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 76
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = EAG_anarchist_mood 
+						value = 100
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = parliament_seat_array^0
+						value = EAG_anarchist_total_support
+						compare = less_than
+					}
+				}
+				clamp_variable = {
+					var = parliament_seat_array^0
+					max = EAG_anarchist_total_support
+					min = 0
+				}
+				subtract_from_variable = { parliament_seat_array^0 = -1 }
+				subtract_from_variable = { parliament_seat_array^1 = 1 }
+				modify_parliament_seat = yes
+			}
+		}
+	}
+	on_monthly_EAG = {
+		random_events = {
+			100 = EAG_event.226
+			100 = EAG_event.227
+			100 = EAG_event.228
+			100 = EAG_event.229
+			100 = EAG_event.230
+			100 = EAG_event.231
+			100 = EAG_event.232
+			100 = EAG_event.233
+			100 = EAG_event.234
+			100 = EAG_event.235
+			100 = EAG_event.236
+			100 = EAG_event.237
+			100 = EAG_event.238
+			100 = EAG_event.239
+			100 = EAG_event.240
+		}
+	}
+	on_monthly_EAG = {
+		random_events = {
+			100 = EAG_event.202
+			100 = EAG_event.203
+			100 = EAG_event.204
+			100 = EAG_event.205
+			100 = EAG_event.206
+		}
+	}
+}
+				  

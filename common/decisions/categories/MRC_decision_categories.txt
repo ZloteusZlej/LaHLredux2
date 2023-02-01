@@ -1,0 +1,25 @@
+MRC_debug = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = MRC }
+}
+
+MRC_prisoners_of_war = {
+	icon = GFX_
+	visible_when_empty = yes
+	allowed = { original_tag = MRC }
+}
+
+MRC_army_in_black = {
+	icon = GFX_
+	 visible = {
+            MRC = {
+                has_completed_focus = MRC_luthers_army
+            }
+    }
+    available = {
+            MRC = {
+                has_completed_focus = MRC_luthers_army
+            }
+    }
+}

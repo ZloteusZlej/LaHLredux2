@@ -1,0 +1,43 @@
+ideas = {
+
+	head_of_government = {
+	
+		ALB_lulzim_basha = {
+
+			picture = ALB_lulzim_basha
+			allowed = {
+				original_tag = "ALB"
+			}
+
+			traits = { renaissance_man }
+
+			do_effect = {
+				#
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	country = {
+	
+		ALB_lithium_exports_to_the_UK = {
+			
+			picture = ALB_lithium_exports_to_the_UK
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_buildings_factor = 0.1
+			consumer_goods_factor = -0.08
+			production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+	}
+}

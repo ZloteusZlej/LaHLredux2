@@ -1,0 +1,810 @@
+add_namespace = MRC_event
+
+country_event = {
+	id = MRC_event.1
+	title = MRC_event.1.t
+	desc = MRC_event.1.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.1.a
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = MRC_event.2
+	title = MRC_event.2.t
+	desc = MRC_event.2.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.2.a
+		add_ideas = MRC_Youth_Go_War_Blyat
+		load_oob = MRC_Youth
+	}
+	option = {
+		name = MRC_event.2.b
+		create_corps_commander = {
+			name = "General Kto"
+			picture = ""
+			traits = {}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+			name = "General Kogda"
+			picture = ""
+			traits = {}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}
+
+country_event = {
+	id = MRC_event.3
+	title = MRC_event.3.t
+	desc = MRC_event.3.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.3.a
+		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_4 amount = 100 } }
+		ROOT = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 150 } }
+		create_corps_commander = {
+			name = "General Zachem"
+			picture = ""
+			traits = {}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	option = {
+		name = MRC_event.3.b
+		add_manpower = 10000
+		load_oob = MRC_Brothers
+		create_corps_commander = {
+			name = "General Pochemu"
+			picture = ""
+			traits = {}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}
+
+country_event = {
+	id = MRC_event.4
+	title = MRC_event.4.t
+	desc = MRC_event.4.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.4.a
+		add_stability = 0.2
+		add_political_power = 75
+	}
+	option = {
+		name = MRC_event.4.a
+		add_stability = -0.2
+		add_political_power = -100
+		add_war_support = 0.1
+		create_corps_commander = {
+			name = "General Horoshiy"
+			picture = ""
+			traits = {}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+			name = "General Plokhoy"
+			picture = ""
+			traits = {}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}
+
+country_event = {
+	id = MRC_event.5
+	title = MRC_event.5.t
+	desc = MRC_event.5.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.5.a
+		add_political_power = -50
+		add_stability = -0.1
+		create_corps_commander = {
+			name = "General Pizdets"
+			picture = ""
+			traits = {}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	option = {
+		name = MRC_event.5.b
+		add_political_power = 50
+		add_stability = 0.05
+		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 500 } }
+		ROOT = { add_equipment_to_stockpile = { type = support_equipment_1 amount = 50 } }
+		load_oob = MRC_Redemption
+	}
+}
+
+country_event = {
+	id = MRC_event.6
+	title = MRC_event.6.t
+	desc = MRC_event.6.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = MRC
+	}
+	option = {
+		name = MRC_event.6.a
+		add_political_power = -50
+		add_stability = -0.1
+		create_corps_commander = {
+			name = "General Ya"
+			picture = ""
+			traits = {}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+			name = "General Zaebalsya"
+			picture = ""
+			traits = {}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}	
+	option = {
+		name = MRC_event.6.a
+		add_stability = 0.15
+		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 500 } }
+		ROOT = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 50 } }
+		load_oob = MRC_Place_For_Us_All
+	}
+}
+
+country_event = {
+	id = MRC_event.7
+	title = MRC_event.7.t
+	desc = MRC_event.7.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.7.a
+		add_political_power = 50
+		ROOT = { add_equipment_to_stockpile = { type = main_battle_tank_equipment_2 amount = 50 } }
+		ROOT = { add_equipment_to_stockpile = { type = infantry_fighting_vehicle_equipment_2 amount = 100 } }
+		ROOT = { add_equipment_to_stockpile = { type = armoured_personnel_carrier_equipment_2 amount = 150 } }
+	}
+}
+
+country_event = {
+	id = MRC_event.8
+	title = MRC_event.8.t
+	desc = MRC_event.8.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.8.a
+		add_political_power = -75
+		add_manpower = -10000
+		army_experience = 15
+	}
+}
+
+country_event = {
+	id = MRC_event.9
+	title = MRC_event.9.t
+	desc = MRC_event.9.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.9.a
+		add_country_leader_trait = placeholder_1
+	}
+	option = {
+		name = MRC_event.9.b
+		add_country_leader_trait = placeholder_2
+	}
+	option = {
+		name = MRC_event.9.c
+		add_country_leader_trait = placeholder_3
+	}
+	option = {
+		name = MRC_event.9.e
+	}
+}
+
+country_event = {
+	id = MRC_event.10
+	title = MRC_event.10.t
+	desc = MRC_event.10.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.10.a
+		ai_chance = { factor = 0 }
+		set_global_flag = pearce_accepts_kent_offer
+	}
+	option = {
+		name = MRC_event.10.b
+		ai_chance = { factor = 10 }
+		set_global_flag = pearce_rejects_kent_offer
+	}
+}
+
+country_event = {
+	id = MRC_event.11
+	title = MRC_event.11.t
+	desc = MRC_event.11.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.11.a
+		add_ideas = MRC_exorcists_in_mercia
+	}
+}
+
+country_event = {
+	id = MRC_event.12
+	title = MRC_event.12.t
+	desc = MRC_event.12.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.12.a
+		random_unit_leader = {
+			limit = {
+				is_leading_army = yes
+			}
+			add_unit_leader_trait = quarreled_with_comrades
+		}
+		
+		random_unit_leader = {
+			limit = {
+				is_leading_army = yes
+			}
+			add_unit_leader_trait = quarreled_with_comrades
+		}
+		
+		random_unit_leader = {
+			limit = {
+				is_leading_army = yes
+			}
+			add_unit_leader_trait = quarreled_with_comrades
+		}
+	}
+}
+
+country_event = {
+	id = MRC_event.13
+	title = MRC_event.13.t
+	desc = MRC_event.13.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.13.a
+		if = {
+			limit = { 
+				check_variable = { 
+					pearce_trust > 80 
+				}
+			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Free Pearce"
+				picture = "Portrait_MRC_no_pearce.dds"
+				expire = "9999.1.1"
+				ideology = national_conservatism
+				traits = {
+				}
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = MRC_event.15
+	title = MRC_event.15.t
+	desc = MRC_event.15.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.15.a
+		ai_chance = {
+            base = 0
+        }
+		WES = {
+			country_event = {
+				days = 1
+				id = WES_event.42
+			}
+		}
+	}
+	option = {
+		name = MRC_event.15.b
+		ai_chance = {
+            base = 1
+		}
+		WES = {
+				country_event = {
+				days = 1
+				id = WES_event.43
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MRC_event.16
+	title = MRC_event.16.t
+	desc = MRC_event.16.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.16.a
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = MRC_event.18
+	title = MRC_event.18.t
+	desc = MRC_event.18.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.18.a
+		add_dynamic_modifier = { 
+            modifier = MRC_Spirit_Of_Neofolk
+		}
+		add_to_variable = {
+			var = MRC_neospirit_army_morale_factor
+			value = 0.03
+		}
+		add_to_variable = {
+			var = MRC_neospirit_army_attack_factor
+			value = 0.02
+		}
+		add_to_variable = {
+			var = MRC_neospirit_war_support_factor
+			value = 0.05
+		}
+	}
+	option = {
+		name = MRC_event.18.b
+		add_dynamic_modifier = { 
+            modifier = MRC_Rage_Of_Neofolk
+		}
+		add_to_variable = {
+			var = MRC_ragefolk_army_armor_attack_factor
+			value = 0.02
+		}
+	}
+	option = {
+		name = MRC_event.18.c
+		add_dynamic_modifier = { 
+            modifier = MRC_Sound_Of_Neofolk
+		}
+		add_to_variable = {
+			var = MRC_soundfolk_stability_factor
+			value = 0.15
+		}
+	}
+	option = {
+		name = MRC_event.18.d
+		add_tech_bonus = {
+			bonus = 1
+			uses = 3
+			category = electronics
+		}
+	}
+}
+
+country_event = {
+	id = MRC_event.17
+	title = MRC_event.17.t
+	desc = MRC_event.17.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.17.a
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = motorized_equipment
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cat_mechanized_equipment
+		}
+
+		division_template = {
+			name = "Luther's Infantry Fighting Vehicle"
+			priority = 1
+			is_locked = yes
+			division_names_group = MRC_INF_01
+			regiments = {
+				IFV = { x = 0 y = 0 }
+				IFV = { x = 0 y = 1 }
+				IFV = { x = 0 y = 2 }
+				IFV = { x = 0 y = 3 }
+				IFV = { x = 0 y = 4 }
+			}
+		}
+		
+		create_unit = {
+			division = "name = \"Luther's Armored Boyz\" 
+			division_template = \"Luther's Infantry Fighting Vehicle\" 
+			start_experience_factor = 1 
+			start_equipment_factor = 1"
+			owner = MRC
+		}	
+		
+		create_unit = {
+			division = "name = \"Luther's Armored Guyz\" 
+			division_template = \"Luther's Infantry Fighting Vehicle\" 
+			start_experience_factor = 1 
+			start_equipment_factor = 1" 
+			owner = MRC
+		}	
+	}
+	option = {
+		name = MRC_event.17.b
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 3
+			category = motorized_equipment
+		}
+		division_template = {
+			name = "Luther's Armored Cars"
+			priority = 1
+			is_locked = yes
+			division_names_group = MRC_INF_01
+			regiments = {
+				armored_car = { x = 0 y = 0 }
+				armored_car = { x = 0 y = 1 }
+				armored_car = { x = 0 y = 2 }
+				armored_car = { x = 0 y = 3 }
+			}
+		}
+		create_unit = {
+			division = "name = \"Armored Cars Division\" 
+			division_template = \"Luther's Armored Cars\" 
+			start_experience_factor = 1 
+			start_equipment_factor = 1"
+			owner = MRC
+		}
+		create_unit = {
+			division = "name = \"Armored Cars Division\" 
+			division_template = \"Luther's Armored Cars\" 
+			start_experience_factor = 1 
+			start_equipment_factor = 1"
+			owner = MRC
+		}
+		create_unit = {
+			division = "name = \"Armored Cars Division\" 
+			division_template = \"Luther's Armored Cars\" 
+			start_experience_factor = 1 
+			start_equipment_factor = 1"
+			owner = MRC
+		}
+		create_unit = {
+			division = "name = \"Armored Cars Division\" 
+			division_template = \"Luther's Armored Cars\" 
+			start_experience_factor = 1 
+			start_equipment_factor = 1"
+			owner = MRC
+		}
+	}
+	option = {
+		name = MRC_event.17.c
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = armor
+		}
+		division_template = {
+			name = "Luther's Tank Division"
+			priority = 1
+			is_locked = yes
+			division_names_group = MRC_INF_01
+			regiments = {
+				MBT = { x = 0 y = 0 }
+				MBT = { x = 0 y = 1 }
+				MBT = { x = 0 y = 2 }
+				MBT = { x = 0 y = 3 }
+				MBT = { x = 0 y = 4 }
+				infantry_fighting_vehicle = { x = 1 y = 0 }
+				infantry_fighting_vehicle = { x = 1 y = 1 }
+				infantry_fighting_vehicle = { x = 1 y = 2 }
+			}
+		}
+		create_unit = {
+			division = "name = \"Luther's Tankz\" 
+			division_template = \"Luther's Tank Division\" 
+			start_experience_factor = 1 
+			start_equipment_factor = 1"
+			owner = MRC
+		}
+	}
+}
+
+country_event = {
+	id = MRC_event.19
+	title = MRC_event.19.t
+	desc = MRC_event.19.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.19.a
+		swap_ideas = {
+			remove_idea = MRC_Spirit_Of_Neofolk
+			add_idea = MRC_Spirit_Of_Neofolk_b
+		}
+		swap_ideas = {
+			remove_idea = MRC_Rage_Of_Neofolk
+			add_idea = MRC_Rage_Of_Neofolk_b
+		}
+		swap_ideas = {
+			remove_idea = MRC_Sound_Of_Neofolk
+			add_idea = MRC_Sound_Of_Neofolk_b
+		}
+		country_event = {
+			days = 0
+			id = MRC_event.20
+		}
+	}	
+}
+
+country_event = {
+	id = MRC_event.20
+	title = MRC_event.20.t
+	desc = MRC_event.20.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.20.a
+		MRC = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_equipment
+			}	
+			add_political_power = 50
+		}	
+	}
+}	
+
+country_event = {
+	id = MRC_event.21
+	title = MRC_event.21.t
+	desc = MRC_event.21.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.21.a
+		MRC = {
+			division_template = {
+				name = "Luther's Infantry"
+				priority = 1
+				is_locked = yes
+				division_names_group = Infantry_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					line_artillery = { x = 0 y = 4 }
+					line_artillery = { x = 1 y = 4 }
+				}	
+			}
+			create_unit = {
+				division = "name = \"Luther's Boyz\" 
+				division_template = \"Luther's Infantry\" 
+				start_experience_factor = 1 
+				start_equipment_factor = 1 
+				start_manpower_factor = 1"
+				owner = MRC
+			}
+			create_unit = {
+				division = "name = \"Luther's Guyz\" 
+				division_template = \"Luther's Infantry\" 
+				start_experience_factor = 1 
+				start_equipment_factor = 1 
+				start_manpower_factor = 1"
+				owner = MRC
+			}
+			create_unit = {
+				division = "name = \"Luther's Girlz(OwO?)\" 
+				division_template = \"Luther's Infantry\" 
+				start_experience_factor = 1 
+				start_equipment_factor = 1 
+				start_manpower_factor = 1"
+				owner = MRC
+			}
+			country_event = {
+				days = 0
+				id = MRC_event.22
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = MRC_event.22
+	title = MRC_event.22.t
+	desc = MRC_event.22.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.22.a
+		MRC = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_equipment
+			}	
+		}
+	}
+}	
+
+country_event = {
+	id = MRC_event.23
+	title = MRC_event.23.t
+	desc = MRC_event.23.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.23.a
+		MRC = {
+			add_tech_bonus = {
+				bonus = 0,5
+				uses = 2
+				category = marines
+			}	
+		}
+	}
+}	
+
+country_event = {
+	id = MRC_event.24
+	title = MRC_event.24.t
+	desc = MRC_event.24.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.24.a
+		MRC = {
+			add_tech_bonus = {
+				bonus = 0,5
+				uses = 2
+				category = infantry_equipment
+			}	
+			add_political_power = 50
+		}
+	}
+}	
+
+country_event = {
+	id = MRC_event.25
+	title = MRC_event.25.t
+	desc = MRC_event.25.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.25.a
+		MRC = {
+			create_unit = {
+				division = "name = \"Luther's Boyz\" 
+				division_template = \"Luther's Infantry\" 
+				start_experience_factor = 1 
+				start_equipment_factor = 1 
+				start_manpower_factor = 1"
+				owner = MRC
+			}	
+			create_unit = {
+				division = "name = \"Luther's Boyz\" 
+				division_template = \"Luther's Infantry\" 
+				start_experience_factor = 1 
+				start_equipment_factor = 1 
+				start_manpower_factor = 1"
+				owner = MRC
+			}	
+			create_unit = {
+				division = "name = \"Luther's Boyz\" 
+				division_template = \"Luther's Infantry\" 
+				start_experience_factor = 1 
+				start_equipment_factor = 1 
+				start_manpower_factor = 1"
+				owner = MRC
+			}
+			country_event = {
+				days = 0
+				id = MRC_event.26
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MRC_event.26
+	title = MRC_event.26.t
+	desc = MRC_event.26.d
+	picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = MRC_event.26.a
+		MRC = {	
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_equipment
+			}	
+		}
+	}
+}	

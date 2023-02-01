@@ -1,0 +1,20 @@
+on_actions = {
+	on_startup = {
+		effect = {
+		    every_country = {
+				limit = { is_ai = no }
+				set_country_flag = lhl_opening_screen_open
+				set_country_flag = opening_screen_country
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_country = {
+				set_rule = {
+					can_join_factions = no
+				}
+			}
+		}
+	}
+}

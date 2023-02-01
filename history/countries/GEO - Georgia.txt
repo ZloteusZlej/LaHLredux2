@@ -1,0 +1,36 @@
+﻿capital = 206
+
+oob = "GEO_2020"
+
+# Starting tech
+set_technology = {
+	infantry_equipment = 1
+	mass_assault = 1
+}
+
+set_politics = {
+	ruling_party = national_bolshevism    
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	national_bolshevism = 100
+}
+
+create_country_leader = {
+	name = "Elijah II"
+	desc = "POLITICS_Elijah_DESC"
+	picture = "Portrait_GEO_Elijah_II.dds"
+	expire = "1953.3.1"
+	ideology = charismatic_dictatorship 
+	traits = {
+	spiritual_leader }
+}
+
+create_country_leader = {
+	name = "Irma Inashvili"
+	desc = "POLITICS_Inashvili_DESC"
+	picture = "Portrait_GEO_Irma_Inashvili.dds"
+	ideology = nazbol_gang 
+}

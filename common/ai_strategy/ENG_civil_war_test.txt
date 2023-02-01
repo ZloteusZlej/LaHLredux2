@@ -1,0 +1,1206 @@
+WES_civil_war_stage_1 = {
+	allowed = {
+		tag = WES
+	}
+	enable = {
+		OR = {
+			country_exists = KNT
+			country_exists = SUS
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = SUS
+		tag = KNT
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SUS
+
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = KNT
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+    ai_strategy = {
+        type = prepare_for_war
+        id = SUS
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = KNT
+        value = 100
+    }
+}
+
+WES_civil_war_stage_2 = {
+	allowed = {
+		tag = WES
+	}
+	enable = {
+		OR = {
+			country_exists = EAG
+			country_exists = ESS
+			country_exists = NTH
+			country_exists = MRC
+		}
+		NOT = {
+			country_exists = SUS
+			country_exists = KNT
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = EAG
+		tag = ESS
+		tag = NTH
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = MRC
+		value = 30
+	}
+	ai_strategy = {
+		type = front_control
+		tag = EAG
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = ESS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+	ai_strategy = {
+		type = front_control
+		tag = NTH
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+	ai_strategy = {
+		type = front_control
+		tag = MRC
+		priority = 30
+		execution_type = careful
+		execute_order = yes
+	}
+    ai_strategy = {
+        type = prepare_for_war
+        id = EAG
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = ESS
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = NTH
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = MRC
+        value = 30
+    }
+}
+
+WES_civil_war_stage_3 = {
+	allowed = {
+		tag = WES
+	}
+	enable = {
+		OR = {
+			country_exists = WLS
+			country_exists = SCO
+		}
+		NOT = {
+			country_exists = EAG
+			country_exists = ESS
+			country_exists = NTH
+			country_exists = MRC
+			country_exists = SUS
+			country_exists = KNT
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = WLS
+		tag = SCO
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SCO
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = WLS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+    ai_strategy = {
+        type = prepare_for_war
+        id = WLS
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SCO
+        value = 100
+    }
+}
+
+SUS_civil_war_stage_1 = {
+	allowed = {
+		tag = SUS
+	}
+	enable = {
+		OR = {
+			country_exists = KNT
+			country_exists = WES
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = WES
+		tag = KNT
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = KNT
+
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = WES
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+    ai_strategy = {
+        type = prepare_for_war
+        id = WES
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = KNT
+        value = 100
+    }
+}
+
+SUS_civil_war_stage_2 = {
+	allowed = {
+		tag = SUS
+	}
+	enable = {
+		OR = {
+			country_exists = EAG
+			country_exists = ESS
+			country_exists = NTH
+			country_exists = MRC
+		}
+		NOT = {
+			country_exists = WES
+			country_exists = KNT
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = EAG
+		tag = ESS
+		tag = NTH
+		tag = MRC
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = EAG
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = ESS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+	ai_strategy = {
+		type = front_control
+		tag = NTH
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+	ai_strategy = {
+		type = front_control
+		tag = MRC
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+    ai_strategy = {
+        type = prepare_for_war
+        id = EAG
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = ESS
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = NTH
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = MRC
+        value = 100
+    }
+}
+
+SUS_civil_war_stage_3 = {
+	allowed = {
+		tag = SUS
+	}
+	enable = {
+		OR = {
+			country_exists = WLS
+			country_exists = SCO
+		}
+		NOT = {
+			country_exists = EAG
+			country_exists = ESS
+			country_exists = NTH
+			country_exists = MRC
+			country_exists = WES
+			country_exists = KNT
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = WLS
+		tag = SCO
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SCO
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = WLS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+    ai_strategy = {
+        type = prepare_for_war
+        id = WLS
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SCO
+        value = 100
+    }
+}
+
+KNT_civil_war_stage_1 = {
+	allowed = {
+		tag = KNT
+	}
+	enable = {
+		OR = {
+			country_exists = SUS
+			country_exists = WES
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = WES
+		tag = SUS
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SUS
+
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = WES
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+    ai_strategy = {
+        type = prepare_for_war
+        id = WES
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SUS
+        value = 100
+    }
+}
+
+KNT_civil_war_stage_2 = {
+	allowed = {
+		tag = KNT
+	}
+	enable = {
+		OR = {
+			country_exists = EAG
+			country_exists = ESS
+			country_exists = NTH
+			country_exists = MRC
+		}
+		NOT = {
+			country_exists = WES
+			country_exists = SUS
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = EAG
+		tag = ESS
+		tag = MRC
+		value = 90
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = NTH
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = EAG
+		priority = 90
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = ESS
+		priority = 90
+		execution_type = rush
+		execute_order = yes
+	}	
+	ai_strategy = {
+		type = front_control
+		tag = NTH
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+	ai_strategy = {
+		type = front_control
+		tag = MRC
+		priority = 90
+		execution_type = rush
+		execute_order = yes
+	}
+    ai_strategy = {
+        type = prepare_for_war
+        id = EAG
+        value = 90
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = ESS
+        value = 90
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = NTH
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = MRC
+        value = 90
+    }
+}
+
+KNT_civil_war_stage_3 = {
+	allowed = {
+		tag = KNT
+	}
+	enable = {
+		OR = {
+			country_exists = WLS
+			country_exists = SCO
+		}
+		NOT = {
+			country_exists = EAG
+			country_exists = ESS
+			country_exists = NTH
+			country_exists = MRC
+			country_exists = WES
+			country_exists = SUS
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = WLS
+		tag = SCO
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SCO
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = WLS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+    ai_strategy = {
+        type = prepare_for_war
+        id = WLS
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SCO
+        value = 100
+    }
+}
+
+EAG_civil_war_stage_1 = {
+	allowed = {
+		tag = EAG
+	}
+	enable = {
+		country_exists = ESS
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = ESS
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = ESS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+    ai_strategy = {
+        type = prepare_for_war
+        id = ESS
+        value = 100
+    }
+}
+
+EAG_civil_war_stage_2 = {
+	allowed = {
+		tag = EAG
+	}
+	enable = {
+		OR = {
+			country_exists = NTH
+			country_exists = MRC
+			country_exists = KNT
+			country_exists = WES
+			country_exists = SUS
+		}
+		NOT = {
+			country_exists = ESS
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = NTH
+		tag = MRC
+		tag = KNT
+		tag = WES
+		tag = SUS
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = NTH
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = MRC
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+	ai_strategy = {
+		type = front_control
+		tag = KNT
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+	ai_strategy = {
+		type = front_control
+		tag = WES
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SUS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+    ai_strategy = {
+        type = prepare_for_war
+        id = NTH
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = MRC
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = KNT
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = WES
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SUS
+        value = 100
+    }
+}
+
+EAG_civil_war_stage_3 = {
+	allowed = {
+		tag = EAG
+	}
+	enable = {
+		OR = {
+			country_exists = WLS
+			country_exists = SCO
+		}
+		NOT = {
+			country_exists = NTH
+			country_exists = MRC
+			country_exists = KNT
+			country_exists = WES
+			country_exists = SUS
+			country_exists = ESS
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = WLS
+		tag = SCO
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SCO
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = WLS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+    ai_strategy = {
+        type = prepare_for_war
+        id = WLS
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SCO
+        value = 100
+    }
+}
+
+ESS_civil_war_stage_1 = {
+	allowed = {
+		tag = ESS
+	}
+	enable = {
+		country_exists = EAG
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = EAG
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = EAG
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+    ai_strategy = {
+        type = prepare_for_war
+        id = EAG
+        value = 100
+    }
+}
+
+ESS_civil_war_stage_2 = {
+	allowed = {
+		tag = ESS
+	}
+	enable = {
+		OR = {
+			country_exists = NTH
+			country_exists = MRC
+			country_exists = KNT
+			country_exists = WES
+			country_exists = SUS
+		}
+		NOT = {
+			country_exists = EAG
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = NTH
+		tag = MRC
+		tag = KNT
+		tag = WES
+		tag = SUS
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = NTH
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = MRC
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+	ai_strategy = {
+		type = front_control
+		tag = KNT
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+	ai_strategy = {
+		type = front_control
+		tag = WES
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SUS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+    ai_strategy = {
+        type = prepare_for_war
+        id = NTH
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = MRC
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = KNT
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = WES
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SUS
+        value = 100
+    }
+}
+
+ESS_civil_war_stage_3 = {
+	allowed = {
+		tag = ESS
+	}
+	enable = {
+		OR = {
+			country_exists = WLS
+			country_exists = SCO
+		}
+		NOT = {
+			country_exists = NTH
+			country_exists = MRC
+			country_exists = KNT
+			country_exists = WES
+			country_exists = SUS
+			country_exists = EAG
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = WLS
+		tag = SCO
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SCO
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = WLS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+    ai_strategy = {
+        type = prepare_for_war
+        id = WLS
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SCO
+        value = 100
+    }
+}
+
+NTH_civil_war_stage_1 = {
+	allowed = {
+		tag = NTH
+	}
+	enable = {
+		country_exists = MRC
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = MRC
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = MRC
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+    ai_strategy = {
+        type = prepare_for_war
+        id = MRC
+        value = 100
+    }
+}
+
+NTH_civil_war_stage_2 = {
+	allowed = {
+		tag = NTH
+	}
+	enable = {
+		OR = {
+			country_exists = EAG
+			country_exists = ESS
+			country_exists = KNT
+			country_exists = WES
+			country_exists = SUS
+		}
+		NOT = {
+			country_exists = MRC
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = EAG
+		tag = ESS
+		tag = KNT
+		tag = WES
+		tag = SUS
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = EAG
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = ESS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+	ai_strategy = {
+		type = front_control
+		tag = KNT
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+	ai_strategy = {
+		type = front_control
+		tag = WES
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SUS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+    ai_strategy = {
+        type = prepare_for_war
+        id = EAG
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = ESS
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = KNT
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = WES
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SUS
+        value = 100
+    }
+}
+
+NTH_civil_war_stage_3 = {
+	allowed = {
+		tag = NTH
+	}
+	enable = {
+		OR = {
+			country_exists = WLS
+			country_exists = SCO
+		}
+		NOT = {
+			country_exists = EAG
+			country_exists = ESS
+			country_exists = KNT
+			country_exists = WES
+			country_exists = SUS
+			country_exists = MRC
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = WLS
+		tag = SCO
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SCO
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = WLS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+    ai_strategy = {
+        type = prepare_for_war
+        id = WLS
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SCO
+        value = 100
+    }
+}
+
+MRC_civil_war_stage_1 = {
+	allowed = {
+		tag = MRC
+	}
+	enable = {
+		country_exists = NTH
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = NTH
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = NTH
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+    ai_strategy = {
+        type = prepare_for_war
+        id = NTH
+        value = 100
+    }
+}
+
+MRC_civil_war_stage_2 = {
+	allowed = {
+		tag = MRC
+	}
+	enable = {
+		OR = {
+			country_exists = EAG
+			country_exists = ESS
+			country_exists = KNT
+			country_exists = WES
+			country_exists = SUS
+		}
+		NOT = {
+			country_exists = NTH
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = EAG
+		tag = ESS
+		tag = KNT
+		tag = SUS
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = WES
+		value = 30
+	}
+	ai_strategy = {
+		type = front_control
+		tag = EAG
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = ESS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+	ai_strategy = {
+		type = front_control
+		tag = KNT
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+	ai_strategy = {
+		type = front_control
+		tag = WES
+		priority = 30
+		execution_type = careful
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SUS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+    ai_strategy = {
+        type = prepare_for_war
+        id = EAG
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = ESS
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = KNT
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = WES
+        value = 30
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SUS
+        value = 100
+    }
+}
+
+MRC_civil_war_stage_3 = {
+	allowed = {
+		tag = MRC
+	}
+	enable = {
+		OR = {
+			country_exists = WLS
+			country_exists = SCO
+		}
+		NOT = {
+			country_exists = EAG
+			country_exists = ESS
+			country_exists = KNT
+			country_exists = WES
+			country_exists = SUS
+			country_exists = NTH
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = WLS
+		tag = SCO
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SCO
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = WLS
+		priority = 100
+		execution_type = rush
+		execute_order = yes
+	}	
+    ai_strategy = {
+        type = prepare_for_war
+        id = WLS
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SCO
+        value = 100
+    }
+}

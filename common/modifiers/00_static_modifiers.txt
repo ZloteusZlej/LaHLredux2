@@ -454,40 +454,61 @@ operative_nationality_operation = {
 	operation_cost = -0.1
 }
 
-#LaR Compliance
+#lahl#
 
-FRA_host_the_german_exiles = {
-	valid_relation_trigger = {
-		ROOT = {
-			has_government = communism
-		}
-	}
-	compliance_gain = 0.25
+#EAG#
+improved_railroads = { 
+	army_speed_factor = 0.33
+	army_fuel_capacity_factor = 0.2
+	unit_upkeep_attrition_factor = -0.25
 }
 
-FRA_reorganized_departments = {
-	valid_relation_trigger = {
-		ROOT = {
-			has_government = neutrality
-		}
-	}
-	compliance_gain = 0.25
+
+ipswich_league_member = {
+	
+
+	icon = GFX_ipswich_league_member
+	
+	local_building_slots_factor = 0.25
+	local_factories = 0.35
+	state_resources_factor = 0.25
+	local_supplies_for_controller = 0.15
+	state_production_speed_buildings_factor = 0.25
 }
 
-GER_rescued_mussolini = {
-	valid_relation_trigger = {
-		ROOT = {
-			has_government = fascism
-		}
-	}
-	compliance_gain = 0.5
+henry_v_statue = { 
+	stability_factor = 0.15
+	political_power_factor = 0.05
 }
 
-FRA_carry_the_revolution_south = {
-	valid_relation_trigger = {
-		ROOT = {
-			has_government = communism
-		}
-	}
-	compliance_gain = 0.4
+william_the_conqueror_statue = { 
+	war_stability_factor = 0.15
+	political_power_factor = -0.05
+	experience_gain_army = 0.05
+	
+}
+
+margaret_thatcher_statue = { 
+	political_power_factor = 0.05
+	stability_factor = -0.1
+	consumer_goods_factor = -0.05
+	industrial_capacity_factory = 0.05
+}
+
+gunzel_statue = { 
+	political_power_factor = -0.05
+	stability_factor = -0.05
+	war_stability_factor = -0.05
+}
+#ESS#
+pure_chaos = { 
+	army_speed_factor = -0.3
+	attrition = 0.15
+}
+charon_gunboat = { 
+	attack_bonus_against = 0.1
+	defense_bonus_against = 0.1
+}
+beckham_football_plaza = {
+	stability = 0.05
 }

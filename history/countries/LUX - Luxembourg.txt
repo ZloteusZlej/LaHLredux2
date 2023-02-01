@@ -1,0 +1,63 @@
+capital = 8
+
+oob = "LUX_2020"
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.8
+# Starting tech
+set_technology = {
+	infantry_equipment = 1
+	infantry_equipment_2 = 1
+}
+set_convoys = 50
+
+set_politics = {
+	ruling_party = hegemonism
+	elections_allowed = no
+}
+set_popularities = {
+	hegemonism  = 100
+}
+
+add_ai_strategy = {
+    type = alliance
+    id = HOL
+    value = 200
+}
+
+add_ai_strategy = {
+    type = alliance
+    id = FRA
+    value = 200
+}
+
+add_ai_strategy = {
+    type = alliance
+    id = EAG
+    value = 200
+}
+
+add_ai_strategy = {
+    type = alliance
+    id = GER
+    value = 200
+}
+
+add_ai_strategy = {
+    type = alliance
+    id = BEL
+    value = 200
+}
+
+create_country_leader = {
+	name = "Jup Weber"
+	picture = "Portrait_LUX_Jup_Weber.dds"
+	ideology = green_autocracy
+	}
+
+create_country_leader = {
+	name = "Zvonimir von Habsburg-Lothringen"
+	picture = "Portrait_LUX_Ferdinand_Zvonimir.dds"
+	ideology = charismatic_dictatorship
+	}

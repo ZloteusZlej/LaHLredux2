@@ -1,0 +1,1750 @@
+characters={
+	#COUNTRY LEADERS#
+	NTH_Salma_Yaqoob={
+		name="Salma Yaqoob"
+		portraits={
+			civilian={
+				large="gfx/leaders/NTH/Portrait_NTH_Salma_Yaqoob.dds"
+			}
+		}
+		country_leader={
+			ideology=ultrahegelianism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	NTH_Claire_Fox={
+		name="Claire Fox"
+		portraits={
+			civilian={
+				large="gfx/leaders/NTH/Portrait_NTH_Claire_Fox.dds"
+			}
+		}
+		country_leader={
+			ideology=nationalism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	NTH_andrew_wakefield={
+		name="Andrew Wakefield"
+		portraits={
+			civilian={
+				large="gfx/leaders/NTH/Portrait_NTH_Andrew_Wakefield.dds"
+			}
+		}
+		country_leader={
+			ideology=ethical_millennialism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	NTH_ash_sarkar={
+		name="Ash Sarkar"
+		portraits={
+			civilian={
+				large="gfx/leaders/NTH/Portrait_NTH_Ash_Sarkar.dds"
+			}
+		}
+		country_leader={
+			ideology=soviet_marxism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	NTH_ken_livingstone={
+		name="Ken Livingstone"
+		portraits={
+			civilian={
+				large="gfx/leaders/NTH/Portrait_NTH_Ken_Livingstone.dds"
+			}
+		}
+		country_leader={
+			ideology=nazbol_gang
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	NTH_parmjit_dhanda={
+		name="Parmjit Dhanda"
+		portraits={
+			civilian={
+				large="gfx/leaders/NTH/Portrait_NTH_Parmjit_Dhanda.dds"
+			}
+		}
+		country_leader={
+			ideology=labor_socialism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	NTH_fergus_wilson={
+		name="Fergus Wilson"
+		portraits={
+			civilian={
+				small="_small"
+			}
+			civilian={
+				large=""
+			}
+		}
+		country_leader={
+			ideology=atlantic_liberalism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	NTH_boris_johnson={
+		name="Boris Johnson"
+		portraits={
+			civilian={
+				large="gfx/leaders/NTH/Portrait_NTH_Boris_Johnson.dds"
+			}
+		}
+		country_leader={
+			ideology=social_conservatism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	NTH_john_sentamu={
+		name="John Sentamu"
+		portraits={
+			civilian={
+				large="gfx/leaders/NTH/Portrait_NTH_John_Sentamu.dds"
+			}
+		}
+		country_leader={
+			ideology=neo_feudalism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	NTH_brendan_perry={
+		name="Brendan Perry"
+		portraits={
+			civilian={
+				large="gfx/leaders/NTH/Portrait_NTH_Brendan_Perry.dds"
+			}
+		}
+		country_leader={
+			ideology=charismatic_dictatorship
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	NTH_george_galloway={
+		name="George Galloway"
+		portraits={
+			civilian={
+				large="gfx/leaders/NTH/Portrait_NTH_George_Galloway.dds"
+			}
+		}
+		country_leader={
+			ideology=nazbol_gang
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	#GENERALS#
+	NTH_peter_wall={
+		name="Peter Wall"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/Portrait_NTH_Peter_Wall.dds"
+			}
+		}
+		field_marshal={
+			traits={ inflexible_strategist trait_cautious media_personality logistics_wizard disgruntled }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=996
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NTH_peter_wall
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = NTH_peter_wall
+			ledger = army
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	NTH_johnson_gideon_beharry={
+		name="Johnson Gideon Beharry"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/Portrait_NTH_Johnson_Gideon_Beharry.dds"
+			}
+		}
+		corps_commander={
+			traits={ war_hero cavalry_leader combined_arms_expert }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NTH_johnson_gideon_beharry
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = NTH_peter_wall
+			ledger = army
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	NTH_asim_hafiz={
+		name="Asim Hafiz"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/Portrait_NTH_Asim_Hafiz.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	NTH_azad_ali={
+		name="Azad Ali"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	NTH_marc_wadsworth={
+		name="Marc Wadsworth"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	NTH_dan_jarvis={
+		name="Dan Jarvis"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		corps_commander={
+			traits={ paratrooper disgruntled }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	NTH_clive_lewis={
+		name="Clive Lewis"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_expert }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	NTH_sharon_nesmith={
+		name="Sharon Nesmith"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		corps_commander={
+			traits={ skilled_staffer disgruntled }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	NTH_john_reith={
+		name="John Reith"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard war_hero disgruntled }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NTH_john_reith
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = NTH_peter_wall
+			ledger = army
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	NTH_graham_binns={
+		name="Graham Binns"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard panzer_leader disgruntled }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NTH_graham_binns
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = NTH_peter_wall
+			ledger = army
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	NTH_duncan_capps={
+		name="Duncan Capps"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard disgruntled }
+			skill=3
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	NTH_john_cooper={
+		name="John Cooper"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard panzer_leader disgruntled }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	NTH_paul_nanson={
+		name="Paul Nanson"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader disgruntled }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	NTH_evelyn_webb_carter={
+		name="Evelyn Webb-Carter"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard disgruntled infantry_expert }
+			skill=4
+			attack_skill=1
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NTH_evelyn_webb_carter
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = NTH_peter_wall
+			ledger = army
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	NTH_patrick_sanders={
+		name="Patrick Sanders"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		corps_commander={
+			traits={ disgruntled paratrooper }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	NTH_henry_parker={
+		name="Henry Parker"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		navy_leader = {
+			traits = { flight_deck_manager }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NTH_henry_parker
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = NTH_peter_wall
+			ledger = army
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	NTH_philip_jones={
+		name="Philip Jones"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		navy_leader = {
+			traits = { big_guns_expert war_hero}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NTH_philip_jones
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = NTH_peter_wall
+			ledger = army
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	NTH_david_george_steel={
+		name="David George Steel"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		navy_leader = {
+			traits = { flight_deck_manager fighter_director dive_bomber }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NTH_david_george_steel
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = NTH_peter_wall
+			ledger = army
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	NTH_neil_morisetti={
+		name="Neil Morisetti"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		navy_leader = {
+			traits = { flight_deck_manager }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NTH_neil_morisetti
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = NTH_peter_wall
+			ledger = army
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	#ADVISERS#
+	NTH_Arthur_Scargill ={
+		name="Arthur Scargill"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Arthur_Scargill.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = NTH_Arthur_Scargill
+			traits = {	
+				ambitious_union_boss
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = national_bolshevism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Munira_Mirza ={
+		name="Munira Mirza"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Munira_Mirza.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = NTH_Munira_Mirza
+			traits = {
+				RES_Supporter
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = hegemonism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Salma_Yaqoob ={
+		name="Salma Yaqoob"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_salma_yaqoob.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = NTH_Salma_Yaqoob
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = commendationism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Yvonne_Ridley ={
+		name="Yvonne Ridley"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Yvonne_Ridley.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = NTH_Yvonne_Ridley
+			traits = {
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = commendationism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Beatrix_Campbell ={
+		name="Beatrix Campbell"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Beatrix_Campbell.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Beatrix_Campbell
+			traits = {
+
+			}
+			available = {
+				has_government = national_bolshevism
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Chris_Williamson ={
+		name="Chris Williamson"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Chris_Williamson.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Chris_Williamson
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = national_bolshevism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Clive_Lewis ={
+		name="Clive Lewis"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Clive_Lewis.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Clive_Lewis
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = national_bolshevism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Mark_Seddon ={
+		name="Mark Seddon"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Mark_Seddon.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Mark_Seddon
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = national_bolshevism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Murad_Qureshi ={
+		name="Murad Qureshi"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Murad_Qureshi.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Murad_Qureshi
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = national_bolshevism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Tahir_Ali ={
+		name="Tahir Ali"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Tahir_Ali.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Tahir_Ali
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = national_bolshevism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Ted_Honderich ={
+		name="Ted Honderich"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Ted_Honderich.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Ted_Honderich
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = national_bolshevism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Valerie_Wise ={
+		name="Valerie Wise"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Valerie_Wise.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Valerie_Wise
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = national_bolshevism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Barbara_Hewson ={
+		name="Barbara Hewson"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Barbara_Hewson.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Barbara_Hewson
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = hegemonism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Brendan_ONeill ={
+		name="Brendan O'Neill"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Brendan_ONeill.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Brendan_ONeill
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = hegemonism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Claire_Fox ={
+		name=""
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Claire_Fox.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Claire_Fox
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = hegemonism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Fiona_Bernadette_Fox ={
+		name="Fiona Bernadette Fox"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Fiona_Bernadette_Fox.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Fiona_Bernadette_Fox
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = hegemonism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Frank_Furedi ={
+		name="Frank Furedi"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Frank_Furedi.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Frank_Furedi
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = hegemonism 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_James_Heartfield ={
+		name="James Heartfield"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_James_Heartfield.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_James_Heartfield
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = hegemonism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Steve_Baker ={
+		name="Steve Baker"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Steve_Baker.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Steve_Baker
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = hegemonism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Stuart_Waiton ={
+		name="Stuart Waiton"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Stuart_Waiton.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Stuart_Waiton
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = hegemonism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_David_Gilmour ={
+		name="David Gilmour"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_David_Gilmour.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_David_Gilmour
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = commendationism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Gary_Younge ={
+		name="Gary Younge"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Gary_Younge.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Gary_Younge
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = commendationism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Ken_Loach ={
+		name="Ken Loach"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Ken_Loach.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Ken_Loach
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = commendationism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Lee_Jasper ={
+		name="Lee Jasper"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Lee_Jasper.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Lee_Jasper
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = commendationism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Neil_Faulkner ={
+		name="Neil Faulkner"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Neil_Faulkner.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Neil_Faulkner
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = commendationism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Perry_Anderson ={
+		name="Perry Anderson"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Perry_Anderson.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Perry_Anderson
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = commendationism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Tariq_Ali ={
+		name="Tariq Ali"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Tariq_Ali.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Tariq_Ali
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = commendationism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Yasmin_Alibhai_Brown ={
+		name="Yasmin Alibhai Brown"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Yasmin_Alibhai_Brown.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = NTH_Yasmin_Alibhai_Brown
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			available = {
+				has_government = commendationism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Aleksandr_Maksimtsev ={
+		name="Aleksandr Maksimtsev"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Aleksandr_Maksimtsev.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = theorist
+			idea_token = NTH_Aleksandr_Maksimtsev
+			ledger = army
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+		advisor = {
+			slot = air_chief
+			idea_token = NTH_Aleksandr_Maksimtsev
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	NTH_David_Richards ={
+		name="David Richards"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_David_Richards.dds"
+			}
+			army = {
+				large="gfx/leaders/NTH/.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = theorist
+			idea_token = NTH_David_Richards
+			ledger = army
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+		field_marshal={
+			traits={ old_guard inflexible_strategist media_personality organizer unyielding_defender disgruntled }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	NTH_Edzard_Ernst ={
+		name="Edzard Ernst"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Edzard_Ernst.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = theorist
+			idea_token = NTH_Edzard_Ernst
+			ledger = army
+			traits = {
+				Scientist_showman
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Gareth_Derrick ={
+		name="Gareth Derrick"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Gareth_Derrick.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = theorist
+			idea_token = NTH_Gareth_Derrick
+			ledger = army
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+		advisor = {
+			slot = navy_chief
+			idea_token = NTH_Gareth_Derrick
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			traits = { safety_first }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	NTH_Marc_Wadsworth ={
+		name="Marc Wadsworth"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_Marc_Wadsworth.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = theorist
+			idea_token = NTH_Marc_Wadsworth
+			ledger = army
+			traits = {
+				Scientist_showman
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	NTH_Simon_Bryant ={
+		name="Simon Bryant"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NTH_Simon_Bryant
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = NTH_peter_wall
+			ledger = army
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	NTH_Elaine_West ={
+		name="Elaine West"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NTH_Elaine_West
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = NTH_peter_wall
+			ledger = army
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	NTH_Stephen_Hillier ={
+		name="Stephen Hillier"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/NTH/.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NTH_Stephen_Hillier
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = NTH_peter_wall
+			ledger = army
+			allowed = {
+				original_tag = NTH
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

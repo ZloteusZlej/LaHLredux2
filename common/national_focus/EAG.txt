@@ -1,0 +1,70 @@
+focus_tree = {
+	id = EAG_first
+	default = no
+	continuous_focus_position = { x = 20 y = 4000 }
+	shared_focus = EAG_norfolk_expedition
+	shared_focus = EAG_fresh_meat
+	country = {
+		factor = 0
+		modifier = {
+			add = 1
+			tag = EAG
+		}
+	}
+}
+
+
+focus_tree = {
+	id = EAG_governor
+	default = no
+	continuous_focus_position = { x = 20 y = 4000 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 1
+			tag = EAG
+		}
+	}
+	shared_focus = EAG_norfolk_expedition
+	shared_focus = EAG_fresh_meat
+	shared_focus = EAG_community_services
+	shared_focus = EAG_dressed_in_uniforms
+	shared_focus = EAG_safer_city
+}
+
+focus_tree = {
+	id = EAG_mercenary
+	default = no
+	continuous_focus_position = { x = 20 y = 4000 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 1
+			tag = EAG
+		}
+	}
+	shared_focus = EAG_norfolk_expedition
+	shared_focus = EAG_fresh_meat
+	shared_focus = EAG_haven_for_smugglers
+	shared_focus = EAG_price_for_freedom
+	shared_focus = EAG_take_care_of_the_company
+}
+
+
+focus_tree = {
+	id = EAG_anarchists
+	default = no
+	continuous_focus_position = { x = 20 y = 4000 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 1
+			tag = EAG
+		}
+	}
+	shared_focus = EAG_norfolk_expedition
+	shared_focus = EAG_fresh_meat
+	shared_focus = EAG_end_of_the_exploitation
+	shared_focus = EAG_to_the_barricades
+	shared_focus = EAG_no_to_opression
+}

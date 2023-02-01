@@ -1,0 +1,49 @@
+leader_traits = {
+
+	german = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no 
+		}
+		allowed = {
+			FROM = {
+				tag = EAG
+			}
+		}
+		modifier = {
+			fortification_damage = 0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	
+	angloid = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no 
+		}
+		allowed = {
+			FROM = {
+				tag = EAG
+			}
+		}
+		modifier = {
+			river_crossing_factor = -0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

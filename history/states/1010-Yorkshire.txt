@@ -1,9 +1,34 @@
+
 state={
 	id=1010
 	name="STATE_1010"
-	provinces={
-		5939 7628 8609 10418 10471 
+	resources={
+		steel=80.000
 	}
-	manpower=0
+	provinces={
+		7628 8609 10418 17652 17653 17660 17666 17670 17682 
+	}
+	history={
+		owner = NTH
+		add_core_of = NTH
+		victory_points = {
+			17660 5
+		}
+		victory_points = {
+			17670 2
+		}
+		victory_points = {
+			17653 5
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			17639 = {
+				naval_base = 3
+			}
+		}
+	}
+	manpower=1820145
 	buildings_max_level_factor=1.000
+	state_category=city
 }

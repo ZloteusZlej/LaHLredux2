@@ -1,0 +1,1169 @@
+defined_text = {
+	name = GetWessexLegitimacy
+	text = {
+		trigger = {
+            check_variable = {
+                var = WES_george_legitimacy_level
+                value = 100
+				compare = equals	
+			}
+		}
+		localization_key = WES_george_legitimacy_top
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = WES_george_legitimacy_level
+                value = 80
+				compare = greater_than_or_equals	
+			}
+		}
+		localization_key = WES_george_legitimacy_very_high
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = WES_george_legitimacy_level
+                value = 60
+				compare = greater_than_or_equals	
+			}
+		}
+		localization_key = WES_george_legitimacy_high
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = WES_george_legitimacy_level
+                value = 40
+				compare = greater_than_or_equals	
+			}
+		}
+		localization_key = WES_george_legitimacy_medium
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = WES_george_legitimacy_level
+                value = 20
+				compare = greater_than_or_equals	
+			}
+		}
+		localization_key = WES_george_legitimacy_low
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = WES_george_legitimacy_level
+                value = 5
+				compare = greater_than_or_equals	
+			}
+		}
+		localization_key = WES_george_legitimacy_very_low
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = WES_george_legitimacy_level
+                value = 0
+				compare = equals	
+			}
+		}
+		localization_key = WES_george_legitimacy_dead
+	}
+}
+
+defined_text = {
+	name = GetWessexGeorgeInfluence
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -71
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "0%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -70
+				compare = greater_than_or_equals			
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -60
+				compare = less_than				
+			}
+		}
+		localization_key = "2%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -60
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -50
+				compare = less_than				
+			}
+		}
+		localization_key = "8%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -50
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -40
+				compare = less_than				
+			}
+		}
+		localization_key = "15%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -40
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -30
+				compare = less_than				
+			}
+		}
+		localization_key = "22%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -30
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -20
+				compare = less_than				
+			}
+		}
+		localization_key = "29%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -20
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -10
+				compare = less_than				
+			}
+		}
+		localization_key = "36%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -10
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 0
+				compare = less_than				
+			}
+		}
+		localization_key = "43%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 0
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 10
+				compare = less_than				
+			}
+		}
+		localization_key = "50%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 10
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 20
+				compare = less_than				
+			}
+		}
+		localization_key = "57%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 20
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 30
+				compare = less_than				
+			}
+		}
+		localization_key = "64%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 30
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 40
+				compare = less_than				
+			}
+		}
+		localization_key = "71%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 40
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 50
+				compare = less_than				
+			}
+		}
+		localization_key = "78%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 50
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 60
+				compare = less_than				
+			}
+		}
+		localization_key = "85%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 60
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 70
+				compare = less_than				
+			}
+		}
+		localization_key = "92%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 70
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 80
+				compare = less_than				
+			}
+		}
+		localization_key = "98%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 80
+				compare = greater_than_or_equals				
+			}
+		}
+		localization_key = "100%"
+	}
+}
+defined_text = {
+	name = GetWessexDouglasInfluence
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -71
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "100%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -70
+				compare = greater_than_or_equals			
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -60
+				compare = less_than				
+			}
+		}
+		localization_key = "98%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -60
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -50
+				compare = less_than				
+			}
+		}
+		localization_key = "92%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -50
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -40
+				compare = less_than				
+			}
+		}
+		localization_key = "85%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -40
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -30
+				compare = less_than				
+			}
+		}
+		localization_key = "78%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -30
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -20
+				compare = less_than				
+			}
+		}
+		localization_key = "71%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -20
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = -10
+				compare = less_than				
+			}
+		}
+		localization_key = "64%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = -10
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 0
+				compare = less_than				
+			}
+		}
+		localization_key = "57%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 0
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 10
+				compare = less_than				
+			}
+		}
+		localization_key = "50%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 10
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 20
+				compare = less_than				
+			}
+		}
+		localization_key = "43%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 20
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 30
+				compare = less_than				
+			}
+		}
+		localization_key = "36%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 30
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 40
+				compare = less_than				
+			}
+		}
+		localization_key = "29%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 40
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 50
+				compare = less_than				
+			}
+		}
+		localization_key = "22%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 50
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 60
+				compare = less_than				
+			}
+		}
+		localization_key = "15%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 60
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 70
+				compare = less_than				
+			}
+		}
+		localization_key = "8%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 70
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_mercia_battle
+				value = 80
+				compare = less_than				
+			}
+		}
+		localization_key = "2%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_mercia_battle
+				value = 80
+				compare = greater_than_or_equals				
+			}
+		}
+		localization_key = "0%"
+	}
+}
+defined_text = {
+	name = GetWessexMonarchRussia
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_diplomacy_monarch_russia
+				value = 0
+				compare = equals				
+			}
+		}
+		localization_key = "WES_diplomacy_monarch_russia_no_king"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_diplomacy_monarch_russia
+				value = 1
+				compare = equals				
+			}
+		}
+		localization_key = "WES_diplomacy_monarch_russia_harry"
+	}
+}
+
+defined_text = {
+	name = GetWESCultureProgress
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_culture_progress
+				value = 0
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_culture_progress
+				value = 25
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_culture_progress_small"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_culture_progress
+				value = 26
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_culture_progress
+				value = 50
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_culture_progress_medium"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_culture_progress
+				value = 51
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_culture_progress
+				value = 75
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_culture_progress_big"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_culture_progress
+				value = 76
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_culture_progress
+				value = 100
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_culture_progress_massive"
+	}
+}
+
+defined_text = {
+	name = GetWESEnvironmentProgress
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_environment_progress
+				value = 0
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_environment_progress
+				value = 25
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_environment_progress_small"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_environment_progress
+				value = 26
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_environment_progress
+				value = 50
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_environment_progress_medium"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_environment_progress
+				value = 51
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_environment_progress
+				value = 75
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_environment_progress_big"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_environment_progress
+				value = 76
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_environment_progress
+				value = 100
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_environment_progress_massive"
+	}
+}
+
+defined_text = {
+	name = GetWESLawProgress
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_law_progress
+				value = 0
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_law_progress
+				value = 25
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_law_progress_small"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_law_progress
+				value = 26
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_law_progress
+				value = 50
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_law_progress_medium"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_law_progress
+				value = 51
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_law_progress
+				value = 75
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_law_progress_big"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_law_progress
+				value = 76
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_law_progress
+				value = 100
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_law_progress_massive"
+	}
+}
+
+defined_text = {
+	name = GetWESSocietyProgress
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_society_progress
+				value = 0
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_society_progress
+				value = 25
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_society_progress_small"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_society_progress
+				value = 26
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_society_progress
+				value = 50
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_society_progress_medium"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_society_progress
+				value = 51
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_society_progress
+				value = 75
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_society_progress_big"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_society_progress
+				value = 76
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_society_progress
+				value = 100
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_society_progress_massive"
+	}
+}
+
+defined_text = {
+	name = GetWESLanguageProgress
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_language_progress
+				value = 0
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_language_progress
+				value = 25
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_language_progress_small"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_language_progress
+				value = 26
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_language_progress
+				value = 50
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_language_progress_medium"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_language_progress
+				value = 51
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_language_progress
+				value = 75
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_language_progress_big"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_language_progress
+				value = 76
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_language_progress
+				value = 100
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_language_progress_massive"
+	}
+}
+
+defined_text = {
+	name = GetWESDeurbanizationProgress
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 0
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 25
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_deurbanization_progress_small"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 26
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 50
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_deurbanization_progress_medium"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 51
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 75
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_deurbanization_progress_big"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 76
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 100
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_deurbanization_progress_massive"
+	}
+}
+
+defined_text = {
+	name = GetWESDeurbanizationProgress
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 0
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 25
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_deurbanization_progress_small"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 26
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 50
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_deurbanization_progress_medium"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 51
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 75
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_deurbanization_progress_big"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 76
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 100
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_deurbanization_progress_massive"
+	}
+}
+
+defined_text = {
+	name = GetWESEducationProgress
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_education_progress
+				value = 0
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_education_progress
+				value = 25
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_education_progress_small"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_education_progress
+				value = 26
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_education_progress
+				value = 50
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_education_progress_medium"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_education_progress
+				value = 51
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_education_progress
+				value = 75
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_education_progress_big"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_education_progress
+				value = 76
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_education_progress
+				value = 100
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_education_progress_massive"
+	}
+}
+
+defined_text = {
+	name = GetWESAdministrationProgress
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_administration_progress
+				value = 0
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_administration_progress
+				value = 25
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_administration_progress_small"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_administration_progress
+				value = 26
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_administration_progress
+				value = 50
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_administration_progress_medium"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_administration_progress
+				value = 51
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_administration_progress
+				value = 75
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_administration_progress_big"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = WES_transformation_administration_progress
+				value = 76
+				compare = greater_than_or_equals				
+			}
+			check_variable = {
+				var = WES_transformation_administration_progress
+				value = 100
+				compare = less_than_or_equals				
+			}
+		}
+		localization_key = "WES_transformation_administration_progress_massive"
+	}
+}

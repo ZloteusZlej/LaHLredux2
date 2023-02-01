@@ -1,9 +1,32 @@
+
 state={
 	id=1012
 	name="STATE_1012"
-	provinces={
-		5627 6261 7825 9205 9580 10391 
+
+	history={
+		owner = NTH
+		add_core_of = NTH
+		victory_points = {
+			17695 8
+		}
+		victory_points = {
+			17694 8
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 2
+			17695 = {
+				naval_base = 5
+			}
+		}
 	}
-	manpower=0
+
+	provinces={
+		5247 5627 7825 9205 17693 17694 17695 17699 
+	}
+	manpower=1040117
 	buildings_max_level_factor=1.000
+    state_category=city	
+	
 }

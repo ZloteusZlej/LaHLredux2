@@ -1,0 +1,444 @@
+﻿###########################
+# Albion events
+###########################
+
+add_namespace = albion
+
+country_event = {
+	id = albion.1
+	title = albion.1.t
+	desc = albion.1.d
+	
+	immediate = {
+		
+	}
+	trigger = {
+	}
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = albion.1.a
+		ai_chance = {
+			base = 100
+		}
+		set_province_name = { id = 17539	name = VICTORY_POINTS_17539_NTH  }
+		set_province_name = { id = 17510	name = VICTORY_POINTS_17510_NTH  }
+		set_province_name = { id = 17520	name = VICTORY_POINTS_17520_NTH  }
+		set_province_name = { id = 10508	name = VICTORY_POINTS_10508_NTH }
+		set_province_name = { id = 10760	name = VICTORY_POINTS_10760_NTH  }
+		set_province_name = { id = 17504	name = VICTORY_POINTS_17504_NTH  }
+		set_province_name = { id = 9091 	name = VICTORY_POINTS_9091_NTH  }
+		set_province_name = { id = 10733	name = VICTORY_POINTS_10733_NTH }
+		set_province_name = { id = 17542	name = VICTORY_POINTS_17542_NTH }
+		set_province_name = { id = 17578	name = VICTORY_POINTS_17578_NTH }
+		set_province_name = { id = 9396		name = VICTORY_POINTS_9396_NTH }
+		set_province_name = { id = 17551	name = VICTORY_POINTS_17551_NTH }
+		set_province_name = { id = 17635	name = VICTORY_POINTS_17635_NTH }
+		set_province_name = { id = 7790		name = VICTORY_POINTS_7790_NTH  }
+		set_province_name = { id = 10464	name = VICTORY_POINTS_10464_NTH  }
+		set_province_name = { id = 10617	name = VICTORY_POINTS_10617_NTH  }
+		set_province_name = { id = 17597	name = VICTORY_POINTS_17597_NTH }
+		set_province_name = { id = 17595	name = VICTORY_POINTS_17595_NTH  }
+		set_province_name = { id = 10603	name = VICTORY_POINTS_10603_NTH }
+		set_province_name = { id = 10496	name = VICTORY_POINTS_10496_NTH }
+		set_province_name = { id = 10471	name = VICTORY_POINTS_10471_NTH }
+		set_province_name = { id = 9205		name = VICTORY_POINTS_9205_NTH }
+		set_province_name = { id = 7825		name = VICTORY_POINTS_7825_NTH }
+		set_province_name = { id = 10418	name = VICTORY_POINTS_10418_NTH  }
+		set_province_name = { id = 17516	name = VICTORY_POINTS_17516_NTH  }
+		set_province_name = { id = 17529	name = VICTORY_POINTS_17529_NTH  }
+		
+		set_country_flag = NTH_flag_az_buki_cromwell
+		
+	}
+	}
+	
+	
+country_event = {
+	id = albion.2
+	title = albion.2.t
+	desc = albion.2.d
+	
+	immediate = {
+		
+	}
+	trigger = {
+	}
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = albion.2.a
+		ai_chance = {
+			base = 100
+		}
+		set_province_name = { id = 5717		name = VICTORY_POINTS_5717_NTH  }
+		set_province_name = { id = 10405	name = VICTORY_POINTS_10405_NTH  }
+		set_province_name = { id = 5259		name = VICTORY_POINTS_5259_NTH  }
+		set_province_name = { id = 10570	name = VICTORY_POINTS_10570_NTH }
+		set_province_name = { id = 10658	name = VICTORY_POINTS_10658_NTH  }
+		set_province_name = { id = 10641	name = VICTORY_POINTS_10641_NTH  }
+		set_province_name = { id = 7454 	name = VICTORY_POINTS_7454_NTH  }
+			}
+}
+
+country_event = {
+	id = albion.3
+	title = albion.3.t
+	desc = albion.3.d
+	
+	immediate = {
+	}
+	trigger = {
+	}
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = albion.3.a
+		ai_chance = {
+			base = 100
+		}
+		load_focus_tree = NTH_after_galloway
+	}
+}
+
+country_event = {
+	id = albion.4
+	title = albion.4.t
+	desc = albion.4.d
+	
+	immediate = {
+	}
+	trigger = {
+	}
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = albion.4.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = 150
+	}
+}
+
+country_event = {
+	id = albion.5
+	title = albion.5.t
+	desc = albion.5.d
+	
+	immediate = {
+	}
+	trigger = {
+	}
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = albion.5.a
+		ai_chance = {
+			base = 33
+		}
+	}
+
+	option = {
+		name = albion.5.b
+		ai_chance = {
+			base = 34
+		}
+	}
+
+	option = {
+		name = albion.5.c
+		ai_chance = {
+			base = 33
+		}
+	}
+}
+
+country_event = {
+	id = albion.6
+	title = albion.6.t
+	desc = albion.6.d
+	
+	immediate = {
+	}
+	trigger = {
+	}
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = albion.6.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = albion.7
+	title = albion.7.t
+	desc = albion.7.d
+	
+	immediate = {
+	}
+	trigger = {
+	}
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = albion.7.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+country_event = {
+	id = albion.10
+	title = albion.10.t
+	desc = albion.10.d
+	
+	immediate = {
+	}
+	trigger = {
+	}
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = albion.10.a
+		ai_chance = {
+			base = 100
+		}
+		army_experience = 10
+	}
+}
+
+country_event = {
+	id = albion.11
+	title = albion.11.t
+	desc = albion.11.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.11.a
+		ai_chance = {
+			base = 100
+		}
+		army_infantry_attack_factor = 0.02
+		motorized_attack_factor = 0.02
+		mechanized_attack_factor = 0.02
+		air_cas_efficiency = 0.02
+	}
+}
+
+
+country_event = {
+	id = albion.25
+	title = albion.25.t
+	desc = albion.25.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.25.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = albion.26
+	title = albion.26.t
+	desc = albion.26.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.26.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		MRC = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.27
+	title = albion.27.t
+	desc = albion.27.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.27.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		ESS = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.28
+	title = albion.28.t
+	desc = albion.28.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.28.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		KNT = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.29
+	title = albion.29.t
+	desc = albion.29.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.29.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		EAG = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.30
+	title = albion.30.t
+	desc = albion.30.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.30.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		WES = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.31
+	title = albion.31.t
+	desc = albion.31.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.31.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		SUS = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.31
+	title = albion.31.t
+	desc = albion.31.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.31.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		SCO = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.32
+	title = albion.32.t
+	desc = albion.32.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.31.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_war_support = -0.15
+		WLS = {
+			country_event = { albion.40 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = albion.40
+	title = albion.40.t
+	desc = albion.40.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.31.a
+		ai_chance = {
+			base = 100
+		}
+		add_idea = {
+			NTH_holding_out
+		}
+	}
+}

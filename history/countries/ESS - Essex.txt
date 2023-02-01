@@ -1,0 +1,248 @@
+﻿capital = 1160
+
+oob = "ESS_2020"
+
+set_research_slots = 3
+set_stability = 0.3
+set_war_support = 0.6
+# Starting tech
+set_technology = {
+	classic_combustion_engine = 1
+	obsolete_main_battle_tank = 1
+	outdated_main_battle_tank = 1
+	support_weapons1 = 1
+	infantry_equipment = 1
+	infantry_equipment_2 = 1
+	infantry_weapons_1 = 1
+	outdated_armoured_personnel_carrier = 1
+	outdated_infantry_fighting_vehicle = 1
+	obsolete_armored_car = 1
+	outdated_armored_car = 1
+	motorised_infantry = 1
+	ww2_fighter = 1
+	cas_1 = 1
+	interceptor_1 = 1
+	fighter_1 = 1
+	tactical_1 = 1
+	ww2_bomber = 1
+	bomber_1 = 1
+	jet_engines = 1
+	support_weapons = 1
+	light_anti_air = 1
+	anti_tank_weapon1 = 1
+	night_vision1 = 1
+	tech_mountaineers = 1
+	tech_special_forces = 1
+	marines = 1
+	paratroopers = 1
+	urban_special_forces = 1
+	tech_support = 1
+	tech_uav = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	tech_uav_company = 1
+	tech_transport_helicopters_company = 1
+	tech_assault_helicopters_company = 1
+	tech_military_police = 1
+	outdated_anti_air = 1
+	outdated_anti_air_gun = 1
+	outdated_anti_air_radar = 1
+	outdated_spaag = 1
+	outdated_spaag_gun = 1
+	outdated_spaag_radar = 1
+	outdated_sam = 1
+	outdated_sam_gun = 1
+	outdated_sam_radar = 1
+	obsolete_tbm = 1
+	obsolete_howitzer = 1
+	outdated_howitzer = 1
+	outdated_howitzer_gun = 1
+	outdated_howitzer_radar = 1
+	outdated_spg = 1
+	outdated_spg_gun = 1
+	outdated_spg_radar = 1
+	outdated_anti_tank = 1
+	outdated_anti_tank_gun = 1
+	outdated_anti_tank_radar = 1
+	outdated_mlrs = 1
+	outdated_mlrs_gun = 1
+	outdated_mlrs_radar = 1
+	helicopter_engines = 1
+	prototype_helicopter = 1
+	tech_transport_helicopters = 1
+	tech_assault_helicopters = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	atomic_research = 1
+	basic_train = 1
+}
+starting_train_buffer = 200
+set_convoys = 50
+
+set_politics = {
+	ruling_party = neocameralism
+	elections_allowed = no
+}
+set_popularities = {
+	millenarism = 6
+	commendationism = 11
+	left_authoritarianism = 10
+	socialism = 12
+	neocameralism  = 16
+	national_bolshevism = 13
+	right_populism = 6
+	hegemonism = 7
+	regressionism = 9
+	ur_fascism = 10
+	
+}
+
+add_ai_strategy = {
+    type = alliance
+    id = KNT
+    value = 200
+}
+country_event = {
+	days = 504
+	id = ESS_event.1
+}
+create_country_leader = {
+	name = "David Pearce"
+	desc = ""
+	picture = "Portrait_ESS_David_Pearce.dds"
+	ideology = ethical_millennialism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Nick Srnicek"
+	desc = ""
+	picture = ".dds"
+	ideology = ultrahegelianism
+	traits = {
+		
+	}
+}
+
+add_ideas = {
+	lhl_economy_civil_war_economy
+	lhl_development_modern_nation 
+	lhl_regime_personalist_rule
+}
+
+
+##CHARACTERS##
+#leader#
+recruit_character = ESS_Richard_Dawkins
+recruit_character = ESS_david_pearce
+recruit_character = ESS_nick_srnicek
+recruit_character = ESS_steve_ignorant
+recruit_character = ESS_max_mosley
+recruit_character = ESS_richard_williamson
+recruit_character = ESS_carl_benjamin
+recruit_character = ESS_tim_collins
+recruit_character = ESS_moira_cameron
+recruit_character = ESS_richard_williamson
+recruit_character = ESS_nick_land
+#generals#
+recruit_character = ESS_bob_stewart
+recruit_character = ESS_philip_hollobone
+recruit_character = ESS_freddie_viggers
+recruit_character = ESS_roger_waters
+recruit_character = ESS_paul_mccartney
+recruit_character = ESS_john_reesevans
+recruit_character = ESS_winston_mckenzie
+recruit_character = ESS_ben_bathurst
+recruit_character = ESS_christopher_tickell
+recruit_character = ESS_richard_shirreff
+recruit_character = ESS_barney_whitespunner
+recruit_character = ESS_rupert_smith
+recruit_character = ESS_mark_stanhope
+recruit_character = ESS_philip_wilcocks
+recruit_character = ESS_michael_bath
+recruit_character = ESS_jeffrey_maurice_sterling
+#advisers#
+recruit_character = ESS_amy_ireland
+recruit_character = ESS_sadie_plant
+recruit_character = ESS_lain_hamilton_grant
+recruit_character = ESS_ray_brassier
+recruit_character = ESS_reza_negarestani
+recruit_character = ESS_curtis_yarvin
+recruit_character = ESS_kodwo_eshun
+recruit_character = ESS_matthew_fuller
+recruit_character = ESS_steve_goodman
+recruit_character = ESS_anna_greenspan
+recruit_character = ESS_bill_cash
+recruit_character = ESS_joanne_rowling
+recruit_character = ESS_martin_amis
+recruit_character = ESS_suzanne_moore
+recruit_character = ESS_will_self
+recruit_character = ESS_polly_toynbee
+recruit_character = ESS_peter_wilby
+recruit_character = ESS_julian_baggini
+recruit_character = ESS_acgraylin
+recruit_character = ESS_maryam_namazie
+recruit_character = ESS_aliyah_saleem
+recruit_character = ESS_ringo_starr
+recruit_character = ESS_alan_sugar
+recruit_character = ESS_simon_cowell
+recruit_character = ESS_piers_morgan
+recruit_character = ESS_niall_ferguson
+recruit_character = ESS_katie_hopkins
+recruit_character = ESS_raheem_kassam
+recruit_character = ESS_andrew_rosindell
+recruit_character = ESS_david_starkey
+recruit_character = ESS_william_legge
+
+set_country_flag = {
+    flag = ENG_mosley_here
+	value = 1
+}
+
+set_variable = {
+    var = ESS_coring_cost
+    value = 120
+}
+
+set_country_flag = {
+    flag = ENG_land_here
+	value = 1
+}
+
+set_country_flag = {
+    flag = ENG_dawkins_here
+	value = 1
+}
+add_ideas = {
+	ESS_fallen_london
+	ESS_spoils_of_kent
+	ESS_towers_troubles
+	ESS_mild_case_of_distributism
+	
+}
+###Bands###
+set_variable = {
+    var = ESS_central_region_loyalty
+    value = 40
+}
+set_variable = {
+    var = ESS_south_west_region_loyalty
+    value = 40
+}
+set_variable = {
+    var = ESS_south_east_region_loyalty
+    value = 40
+}
+set_variable = {
+    var = ESS_north_west_region_loyalty
+    value = 40
+}
+set_variable = {
+    var = ESS_north_east_region_loyalty
+    value = 40
+}

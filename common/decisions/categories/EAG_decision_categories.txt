@@ -1,0 +1,289 @@
+EAG_debug = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+}
+
+EAG_prisoners_of_war = {
+	icon = GFX_
+	visible_when_empty = yes
+	allowed = { original_tag = EAG }
+}
+
+EAG_volk_and_mercs = {
+	icon = GFX_
+	visible_when_empty = yes
+	allowed = { original_tag = EAG }
+	scripted_gui = lhl_volk_mercs_screen_body
+	available = { 
+		EAG = {
+			has_government = hegemonism
+		}
+	}
+	visible = { 
+		EAG = {
+			has_government = hegemonism
+		}
+	}
+}
+
+EAG_mercs = {
+	icon = GFX_
+	visible_when_empty = yes
+	allowed = { 
+		original_tag = EAG
+	}
+	scripted_gui = lhl_mercs_screen_body
+	available = {
+		EAG = {
+			has_government = neocameralism
+		}
+	}
+	visible = {
+		EAG = {
+			has_government = neocameralism
+		}
+	}
+}
+
+EAG_volk = {
+	icon = GFX_
+	visible_when_empty = yes
+	allowed = { 
+		original_tag = EAG
+	}
+	scripted_gui = lhl_volk_screen_body
+	available = {
+		EAG = {
+			has_government = national_bolshevism
+		}
+	}
+	visible = {
+		EAG = {
+			has_government = national_bolshevism
+		}
+	}
+}
+
+EAG_relocate_regressionist_industry = {
+	icon = GFX_
+	visible_when_empty = no
+	allowed = { 
+		original_tag = EAG
+	}
+	available = {
+		EAG = {
+			has_completed_focus = EAG_deal_for_regressionists
+		}
+	}
+	visible = {
+		EAG = {
+			has_completed_focus = EAG_deal_for_regressionists
+		}
+	}
+}
+
+EAG_ipswich_law_implementation = {
+	icon = GFX_
+	visible_when_empty = yes
+	allowed = { 
+		original_tag = EAG
+	}
+	available = {
+		EAG = {
+			has_completed_focus = EAG_ipswich_law
+		}
+	}
+	visible = {
+		EAG = {
+			has_completed_focus = EAG_ipswich_law
+		}
+	}
+}
+
+EAG_wars = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+		NOT = {
+			country_exists = ESS
+		}
+		EAG = {
+			NOT = {
+				has_government = national_bolshevism
+			}
+		}
+	}	
+}
+
+EAG_lager_diplomacy_actions = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			EAG = {
+				has_completed_focus = EAG_lager_diplomacy
+			}
+	}
+	available = {
+			EAG = {
+				has_completed_focus = EAG_lager_diplomacy
+			}
+	}
+}
+
+EAG_tropico = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			EAG = {
+				has_completed_focus = EAG_what_happens_in_london
+			}
+	}
+	available = {
+			EAG = {
+				has_completed_focus = EAG_what_happens_in_london
+			}
+	}
+}
+
+EAG_city_influence = {
+	icon = GFX_
+	scripted_gui = lhl_city_influence_screen_body
+	allowed = { original_tag = EAG }
+	visible_when_empty = yes
+	visible = { 
+		EAG = {
+			has_completed_focus = EAG_electors_system
+		}
+	}
+}
+
+EAG_digger_cooperatives_decisions = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			EAG = {
+				has_completed_focus = EAG_diggers_cooperatives
+			}
+	}
+	available = {
+			EAG = {
+				has_completed_focus = EAG_diggers_cooperatives
+			}
+	}
+}
+
+EAG_nsis_coop = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			EAG = {
+				has_country_flag = EAG_nsis_cooperation
+			}
+	}
+	available = {
+			EAG = {
+				has_country_flag = EAG_nsis_cooperation
+			}
+	}
+}
+
+EAG_european_trade = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			EAG = {
+				has_completed_focus = EAG_new_partners
+			}
+	}
+	available = {
+			EAG = {
+				has_completed_focus = EAG_new_partners
+			}
+	}
+}
+
+EAG_cleaning_london = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			EAG = {
+				has_completed_focus = EAG_safer_city
+			}
+	}
+	available = {
+			EAG = {
+				has_completed_focus = EAG_safer_city
+			}
+	}
+}
+
+EAG_london_referendum = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			KNT = {
+				has_completed_focus = KNT_london_referendum
+			}
+	}
+	available = {
+			KNT = {
+				has_completed_focus = KNT_london_referendum
+			}
+	}
+}
+EAG_parliament_gui_decision = {
+	icon = usa_congress
+
+	allowed = { original_tag = EAG }
+
+	priority = 1000
+
+	scripted_gui = parliament_gui
+	visible_when_empty = yes
+	visible = { 
+		EAG = {
+			has_completed_focus = EAG_no_to_opression
+		}
+	}
+}
+
+EAG_klumb_parliament_gui_decision = {
+	icon = usa_congress
+
+	allowed = { original_tag = EAG }
+
+	priority = 1000
+
+	scripted_gui = klumb_parliament_gui
+	visible_when_empty = yes
+	visible = { 
+		EAG = {
+			has_completed_focus = EAG_national_diet
+		}
+	}
+}
+
+EAG_elections = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = EAG }
+	visible = {
+			EAG = {
+				has_completed_focus = EAG_vote_or_lose
+			}
+	}
+	available = {
+			EAG = {
+				has_completed_focus = EAG_vote_or_lose
+			}
+	}
+}

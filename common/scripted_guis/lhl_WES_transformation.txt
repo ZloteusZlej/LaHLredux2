@@ -1,0 +1,127 @@
+scripted_gui = {
+	
+	lhl_WES_transformation_screen_body = {
+		context_type = decision_category
+		parent_window_token = decision_tab
+		window_name = "lhl_WES_transformation_full"
+
+		visible = {
+			tag = WES
+		}
+		triggers = {
+		#George#
+            WES_transformation_bar_15_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 50
+					compare = greater_than_or_equals				
+				}
+		    }
+            WES_transformation_bar_14_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 100
+					compare = greater_than_or_equals				
+				}
+		    }
+            WES_transformation_bar_13_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 150
+					compare = greater_than_or_equals				
+				}
+		    }
+            WES_transformation_bar_12_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 200
+					compare = greater_than_or_equals				
+				}
+		    }
+            WES_transformation_bar_11_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 250
+					compare = greater_than_or_equals				
+				}
+		    }
+            WES_transformation_bar_10_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 300
+					compare = greater_than_or_equals				
+				}
+		    }
+            WES_transformation_bar_9_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 350
+					compare = greater_than_or_equals				
+				}
+		    }
+            WES_transformation_bar_8_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 400
+					compare = greater_than_or_equals				
+				}
+		    }
+            WES_transformation_bar_7_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 450
+					compare = greater_than_or_equals				
+				}
+		    }
+            WES_transformation_bar_6_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 500
+					compare = greater_than_or_equals				
+				}
+		    }
+            WES_transformation_bar_5_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 550
+					compare = greater_than_or_equals				
+				}
+		    }
+            WES_transformation_bar_4_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 600
+					compare = greater_than_or_equals				
+				}
+		    }
+            WES_transformation_bar_3_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 650
+					compare = greater_than_or_equals				
+				}
+		    }
+            WES_transformation_bar_2_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 700
+					compare = greater_than_or_equals				
+				}
+		    }
+            WES_transformation_bar_1_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 750
+					compare = greater_than_or_equals				
+				}
+		    }
+            WES_transformation_bar_0_visible = {
+				check_variable = {
+					var = WES_total_transformation_level
+					value = 800
+					compare = greater_than_or_equals				
+				}
+		    }
+		}
+	}
+}
