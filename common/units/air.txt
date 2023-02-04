@@ -15,7 +15,7 @@ sub_units = {
 		priority = 1
 		active = yes
 		type = fighter
-		need = { small_plane_airframe = 1 }
+		need = { stl_small_plane_airframe = 1 }
 		categories = { category_fighter }
 		land_air_wing_size = 100
 	}
@@ -44,7 +44,7 @@ sub_units = {
 		priority = 2
 		active = yes
 		type = cas
-		need = { small_plane_cas_airframe = 1 }
+		need = { stl_small_plane_cas_airframe = 1 }
 		categories = { category_cas }
 		land_air_wing_size = 100
 	}
@@ -79,7 +79,7 @@ sub_units = {
 		land_air_wing_size = 100
 	}
 
-	suicide_craft = {
+	light_suicide_craft = {
 		sprite = light_plane
 		priority = 9
 		active = yes
@@ -122,22 +122,12 @@ sub_units = {
 		priority = 4
 		active = yes
 		type = tactical_bomber
-		need = { medium_plane_airframe = 1 }
+		need = { stl_medium_plane_airframe = 1 }
 		categories = { category_tac_bomber }
 		land_air_wing_size = 100
 	}
 
-	heavy_fighter = {
-		sprite = medium_plane
-		priority = 1
-		active = yes
-		type = fighter
-		need = { medium_plane_fighter_airframe = 1 }
-		categories = { category_heavy_fighter }
-		land_air_wing_size = 100
-	}
-
-	scout_plane = {
+	medium_scout_plane = {
 		sprite = light_plane
 		priority = 1
 		active = yes
@@ -145,6 +135,15 @@ sub_units = {
 		need = { medium_plane_scout_plane_airframe = 1 }
 		categories = { category_scout_plane }
 		land_air_wing_size = 10
+	}
+	
+	medium_suicide_craft = {
+		sprite = light_plane
+		priority = 9
+		active = yes
+		type = suicide
+		need = { medium_plane_suicide_airframe = 1 }
+		land_air_wing_size = 100
 	}
 
 	# Large airframe
@@ -163,7 +162,7 @@ sub_units = {
 		priority = 5
 		active = yes
 		type = strategic_bomber
-		need = { large_plane_airframe = 1 }
+		need = { stl_large_plane_airframe = 1 }
 		categories = { category_strat_bomber }
 		land_air_wing_size = 100
 	}
@@ -175,6 +174,15 @@ sub_units = {
 		type = maritime_patrol_plane
 		need = { large_plane_maritime_patrol_plane_airframe = 1 }
 		categories = { category_strat_bomber }
+		land_air_wing_size = 100
+	}
+	
+	large_suicide_craft = {
+		sprite = heavy_plane
+		priority = 9
+		active = yes
+		type = suicide
+		need = { large_plane_suicide_airframe = 1 }
 		land_air_wing_size = 100
 	}
 

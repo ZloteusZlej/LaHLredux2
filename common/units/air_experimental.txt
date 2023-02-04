@@ -1,0 +1,26 @@
+sub_units = {
+	transport_airship = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = air_transport
+		need = { transport_airship_equipment = 1 }
+		land_air_wing_size = 100
+	}
+	drone_hive_airship = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = air_transport
+		need = { transport_airship_equipment = 1 }
+		land_air_wing_size = 100
+	}
+	suicide_drones = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { suicide }
+		need = { suicide_drones_equipment = 1 }
+		land_air_wing_size = 200
+	}
+}

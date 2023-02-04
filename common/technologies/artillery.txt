@@ -46,11 +46,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
-				factor = 10
-				date > "1980.1.1"
+				factor = 2
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -103,11 +113,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2020.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2010.1.3"
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -122,9 +142,20 @@ technologies = {
 		anti_air_brigade = {
 		    air_attack = 0.05
 		}
-		
-		spaag = {
-		     air_attack = 0.05
+		ac_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		ifv_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		mbt_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		mh_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		sh_sp_anti_air_brigade = {
+			air_attack = 0.05
 		}
 				
 		research_cost = 1.5
@@ -140,11 +171,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2020.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2015.1.3"
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -154,15 +195,11 @@ technologies = {
 		start_year = 2015
 
 		
-		anti_air = {
-		    reliability = 0.02
-		}
-		anti_air_brigade = {
-		    reliability = 0.02
-		}
-		spaag = {
-		     armor_value = 0.05
-		}	
+		static_anti_air_hit_chance_factor = 0.02
+		enemy_army_bonus_air_superiority_factor = -0.02
+		cas_damage_reduction = 0.02
+		tech_air_damage_factor = -0.02
+		
 		research_cost = 1.5
 		
 		folder = {
@@ -176,11 +213,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2020.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2015.1.3"
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -227,11 +274,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2020.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2020.1.3"
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -245,10 +302,23 @@ technologies = {
 		}
 		anti_air_brigade = {
 		    air_attack = 0.05
-		}		
-		spaag = {
-		     air_attack = 0.05
-		}	
+		}
+		ac_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		ifv_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		mbt_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		mh_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		sh_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		
 		research_cost = 1.5
 		
 		folder = {
@@ -265,8 +335,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2
+				date > "2022.1.1"
+			}
+
+			modifier = {
 				factor = 5
-				date > "2022.1.3"
+				date > "2023.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2024.1.1"
 			}
 		}
 	}
@@ -275,15 +355,11 @@ technologies = {
 	
 		start_year = 2022
 		
-		anti_air = {
-		    reliability = 0.02
-		}
-		anti_air_brigade = {
-		    reliability = 0.02
-		}	
-		spaag = {
-		     armor_value = 0.05
-		}		
+		static_anti_air_hit_chance_factor = 0.02
+		enemy_army_bonus_air_superiority_factor = -0.02
+		cas_damage_reduction = 0.02
+		tech_air_damage_factor = -0.02
+		
 		research_cost = 1.5
 		
 		folder = {
@@ -300,8 +376,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2
+				date > "2022.1.1"
+			}
+
+			modifier = {
 				factor = 5
-				date > "2022.1.3"
+				date > "2023.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2024.1.1"
 			}
 		}
 	}
@@ -351,8 +437,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2
+				date > "2025.1.1"
+			}
+
+			modifier = {
 				factor = 5
-				date > "2025.1.3"
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2027.1.1"
 			}
 		}
 	}
@@ -366,10 +462,23 @@ technologies = {
 		}
 		anti_air_brigade = {
 		    air_attack = 0.05
-		}		
-		spaag = {
-		     air_attack = 0.05
-		}		
+		}
+		ac_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		ifv_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		mbt_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		mh_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		sh_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		
 		research_cost = 1.5
 		
 		folder = {
@@ -386,8 +495,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
 				factor = 5
-				date > "2026.1.3"
+				date > "2027.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2028.1.1"
 			}
 		}
 	}
@@ -396,15 +515,11 @@ technologies = {
 	
 		start_year = 2026
 		
-		anti_air = {
-		    reliability = 0.02
-		}
-		anti_air_brigade = {
-		    reliability = 0.02
-		}	
-		spaag = {
-		     armor_value = 0.05
-		}	
+		static_anti_air_hit_chance_factor = 0.02
+		enemy_army_bonus_air_superiority_factor = -0.02
+		cas_damage_reduction = 0.02
+		tech_air_damage_factor = -0.02
+		
 		research_cost = 1.5
 		
 		folder = {
@@ -421,8 +536,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
 				factor = 5
-				date > "2026.1.3"
+				date > "2027.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2028.1.1"
 			}
 		}
 	}
@@ -472,8 +597,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2
+				date > "2028.1.1"
+			}
+
+			modifier = {
 				factor = 5
-				date > "2028.1.3"
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2030.1.1"
 			}
 		}
 	}
@@ -488,9 +623,22 @@ technologies = {
 		anti_air_brigade = {
 		    air_attack = 0.05
 		}
-		spaag = {
+		ac_sp_anti_air_brigade = {
 			air_attack = 0.05
 		}
+		ifv_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		mbt_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		mh_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		sh_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		
 		research_cost = 1.5
 		
 		folder = {
@@ -507,8 +655,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
 				factor = 5
-				date > "2029.1.3"
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2031.1.1"
 			}
 		}
 	}
@@ -517,15 +675,11 @@ technologies = {
 	
 		start_year = 2029
 		
-		anti_air = {
-		    reliability = 0.02
-		}
-		anti_air_brigade = {
-		    reliability = 0.02
-		}	
-		spaag = {
-			armor_value = 0.05
-		}	
+		static_anti_air_hit_chance_factor = 0.02
+		enemy_army_bonus_air_superiority_factor = -0.02
+		cas_damage_reduction = 0.02
+		tech_air_damage_factor = -0.02
+		
 		research_cost = 1.5
 		
 		folder = {
@@ -542,8 +696,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
 				factor = 5
-				date > "2029.1.3"
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2031.1.1"
 			}
 		}
 	}
@@ -588,8 +752,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2
+				date > "2030.1.1"
+			}
+
+			modifier = {
 				factor = 5
-				date > "2030.1.3"
+				date > "2031.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2032.1.1"
 			}
 		}
 	}
@@ -599,15 +773,29 @@ technologies = {
 		start_year = 2032
 				
 		research_cost = 1.5
+		
 		anti_air = {
 		    air_attack = 0.05
 		}
 		anti_air_brigade = {
 		    air_attack = 0.05
 		}
-		spaag = {
+		ac_sp_anti_air_brigade = {
 			air_attack = 0.05
 		}
+		ifv_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		mbt_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		mh_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		sh_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
+		
 		folder = {
 			name = artillery_folder
 			position = { x = 1 y = 16 }
@@ -622,8 +810,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2
+				date > "2032.1.1"
+			}
+
+			modifier = {
 				factor = 5
-				date > "2032.1.3"
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2034.1.1"
 			}
 		}
 	}
@@ -631,21 +829,17 @@ technologies = {
 	futuristic_anti_air_radar = {
 	
 		start_year = 2032
+		
+		static_anti_air_hit_chance_factor = 0.02
+		enemy_army_bonus_air_superiority_factor = -0.02
+		cas_damage_reduction = 0.02
+		tech_air_damage_factor = -0.02
 				
 		research_cost = 1.5
 		
 		folder = {
 			name = artillery_folder
 			position = { x = 5 y = 16 }
-		}
-		anti_air = {
-		    reliability = 0.02
-		}
-		anti_air_brigade = {
-		    reliability = 0.02
-		}	
-		spaag = {
-			armor_value = 0.05
 		}
 		categories = {
 			artillery
@@ -656,8 +850,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2
+				date > "2032.1.1"
+			}
+
+			modifier = {
 				factor = 5
-				date > "2032.1.3"
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2034.1.1"
 			}
 		}
 	}
@@ -703,11 +907,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2020.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2010.1.3"
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -724,13 +938,25 @@ technologies = {
 		}
 		
 		artillery = {
-		     soft_attack = 0.05
+		   soft_attack = 0.05
 		}
 		artillery_brigade = {
-		     soft_attack = 0.05
+		   soft_attack = 0.05
 		}
-		spg = {
-			 soft_attack = 0.05
+		ac_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		ifv_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		mbt_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		mh_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		sh_sp_artillery_brigade = {
+			soft_attack = 0.05
 		}
 		
 		categories = {
@@ -738,11 +964,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
-				factor = 10
-				date > "2015.1.3"
+				factor = 2
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
 			}
 		}
 	}	
@@ -757,26 +993,31 @@ technologies = {
 			name = artillery_folder
 			position = { x = -1 y = 4 }
 		}
-		artillery = {
-		     reliability = 0.05
-		}
-		artillery_brigade = {
-		     reliability = 0.05
-		}
-		spg = {
-			 armor_value = 0.05
-		}
+		
+		experience_gain_artillery_combat_factor = 0.02
+		army_artillery_defence_factor = 0.02
+		army_artillery_attack_factor = 0.02
 		
 		categories = {
 			artillery
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
-				factor = 10
-				date > "2015.1.3"
+				factor = 2
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
 			}
 		}
 	}		
@@ -827,11 +1068,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2020.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2010.1.3"
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
 			}
 		}
 	}	
@@ -847,10 +1098,25 @@ technologies = {
 			position = { x = 7 y = 4 }
 		}
 		anti_tank = {
-		     ap_attack = 0.05
+		   ap_attack = 0.05
 		}
 		anti_tank_brigade = {
-		     ap_attack = 0.05
+		   ap_attack = 0.05
+		}
+		ac_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		ifv_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		mbt_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		mh_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		sh_destroyer_brigade = {
+			ap_attack = 0.05
 		}
 		
 		categories = {
@@ -859,11 +1125,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2020.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2015.1.3"
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
 			}
 		}
 	}	
@@ -879,10 +1155,25 @@ technologies = {
 			position = { x = 11 y = 4 }
 		}
 		anti_tank = {
-		     hard_attack = 0.05
+		   hard_attack = 0.05
 		}
 		anti_tank_brigade = {
-		     hard_attack = 0.05
+		   hard_attack = 0.05
+		}
+		ac_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		ifv_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		mbt_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		mh_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		sh_destroyer_brigade = {
+			hard_attack = 0.05
 		}
 		
 		categories = {
@@ -891,11 +1182,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2020.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2015.1.3"
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
 			}
 		}
 	}	
@@ -944,8 +1245,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2010.1.3"
+				factor = 2
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2022.1.1"
 			}
 		}
 	}	
@@ -961,9 +1272,11 @@ technologies = {
 			position = { x = 13 y = 4 }
 		}
 		mlrs = {
-		     soft_attack = 0.05
+			soft_attack = 0.05
 		}
-		
+		tactical_missile = {
+			soft_attack = 0.05
+		}	
 		
 		categories = {
 			artillery
@@ -974,8 +1287,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2015.1.3"
+				factor = 2
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2022.1.1"
 			}
 		}
 	}	
@@ -991,7 +1314,10 @@ technologies = {
 			position = { x = 17 y = 4 }
 		}
 		mlrs = {
-		     armor_value = 0.05
+			hard_attack = 0.05
+		}
+		tactical_missile = {
+			hard_attack = 0.05
 		}
 		
 		categories = {
@@ -1003,8 +1329,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2015.1.3"
+				factor = 2
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2022.1.1"
 			}
 		}
 	}	
@@ -1050,11 +1386,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2020.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2020.1.3"
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -1071,14 +1417,25 @@ technologies = {
 		}
 
 		artillery = {
-			soft_attack = 0.05
+		   soft_attack = 0.05
 		}
 		artillery_brigade = {
+		   soft_attack = 0.05
+		}
+		ac_sp_artillery_brigade = {
 			soft_attack = 0.05
-		}	
-		
-		spg = {
-			 soft_attack = 0.05
+		}
+		ifv_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		mbt_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		mh_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		sh_sp_artillery_brigade = {
+			soft_attack = 0.05
 		}
 		
 		categories = {
@@ -1086,11 +1443,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2022.1.3"
+				date > "2023.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2024.1.1"
 			}
 		}
 	}	
@@ -1105,27 +1472,31 @@ technologies = {
 			name = artillery_folder
 			position = { x = -1 y = 7 }
 		}
-		artillery = {
-			reliability = 0.05
-		}
-		artillery_brigade = {
-			reliability = 0.05
-		}		
 		
-		spg = {
-			 armor_value = 0.05
-		}
+		experience_gain_artillery_combat_factor = 0.02
+		army_artillery_defence_factor = 0.02
+		army_artillery_attack_factor = 0.02
 		
 		categories = {
 			artillery
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2022.1.3"
+				date > "2023.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2024.1.1"
 			}
 		}
 	}		
@@ -1170,11 +1541,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2020.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2020.1.3"
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
 			}
 		}
 	}	
@@ -1191,9 +1572,24 @@ technologies = {
 		}
 
 		anti_tank = {
-			ap_attack = 0.05
+		   ap_attack = 0.05
 		}
 		anti_tank_brigade = {
+		   ap_attack = 0.05
+		}
+		ac_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		ifv_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		mbt_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		mh_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		sh_destroyer_brigade = {
 			ap_attack = 0.05
 		}
 		
@@ -1203,11 +1599,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2022.1.3"
+				date > "2023.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2024.1.1"
 			}
 		}
 	}	
@@ -1224,9 +1630,24 @@ technologies = {
 		}
 
 		anti_tank = {
-			hard_attack = 0.05
+		   hard_attack = 0.05
 		}
 		anti_tank_brigade = {
+		   hard_attack = 0.05
+		}
+		ac_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		ifv_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		mbt_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		mh_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		sh_destroyer_brigade = {
 			hard_attack = 0.05
 		}
 
@@ -1237,11 +1658,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2022.1.3"
+				date > "2023.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2024.1.1"
 			}
 		}
 	}	
@@ -1284,11 +1715,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2020.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2020.1.3"
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2022.1.1"
 			}
 		}
 	}	
@@ -1307,6 +1748,9 @@ technologies = {
 		mlrs = {
 			soft_attack = 0.05
 		}
+		tactical_missile = {
+			soft_attack = 0.05
+		}
 		
 		categories = {
 			artillery
@@ -1317,8 +1761,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2022.1.3"
+				factor = 2
+				date > "2022.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2023.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2024.1.1"
 			}
 		}
 	}	
@@ -1335,7 +1789,10 @@ technologies = {
 		}
 
 		mlrs = {
-			armor_value = 0.05
+			hard_attack = 0.05
+		}
+		tactical_missile = {
+			hard_attack = 0.05
 		}
 	
 		categories = {
@@ -1347,8 +1804,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2022.1.3"
+				factor = 2
+				date > "2022.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2023.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2024.1.1"
 			}
 		}
 	}	
@@ -1394,11 +1861,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
-				factor = 10
-				date > "2025.1.3"
+				factor = 2
+				date > "2025.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2027.1.1"
 			}
 		}
 	}
@@ -1415,14 +1892,25 @@ technologies = {
 		}
 
 		artillery = {
-			soft_attack = 0.05
+		   soft_attack = 0.05
 		}
 		artillery_brigade = {
+		   soft_attack = 0.05
+		}
+		ac_sp_artillery_brigade = {
 			soft_attack = 0.05
 		}
-		
-		spg = {
-			 soft_attack = 0.05
+		ifv_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		mbt_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		mh_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		sh_sp_artillery_brigade = {
+			soft_attack = 0.05
 		}
 		
 		categories = {
@@ -1430,11 +1918,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
-				factor = 10
-				date > "2026.1.3"
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2027.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2028.1.1"
 			}
 		}
 	}	
@@ -1450,26 +1948,30 @@ technologies = {
 			position = { x = -1 y = 10 }
 		}
 		
-		artillery = {
-			reliability = 0.05
-		}
-		artillery_brigade = {
-			reliability = 0.05
-		}	
-		spg = {
-			armor_value = 0.05
-		}
+		experience_gain_artillery_combat_factor = 0.02
+		army_artillery_defence_factor = 0.02
+		army_artillery_attack_factor = 0.02
 		
 		categories = {
 			artillery
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
-				factor = 10
-				date > "2026.1.3"
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2027.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2028.1.1"
 			}
 		}
 	}		
@@ -1515,11 +2017,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2025.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2025.1.3"
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2027.1.1"
 			}
 		}
 	}	
@@ -1536,9 +2048,24 @@ technologies = {
 		}
 		
 		anti_tank = {
-			ap_attack = 0.05
+		   ap_attack = 0.05
 		}
 		anti_tank_brigade = {
+		   ap_attack = 0.05
+		}
+		ac_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		ifv_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		mbt_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		mh_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		sh_destroyer_brigade = {
 			ap_attack = 0.05
 		}
 		
@@ -1548,11 +2075,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2026.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2026.1.3"
+				date > "2027.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2028.1.1"
 			}
 		}
 	}	
@@ -1569,9 +2106,24 @@ technologies = {
 		}
 		
 		anti_tank = {
-			hard_attack = 0.05
+		   hard_attack = 0.05
 		}
 		anti_tank_brigade = {
+		   hard_attack = 0.05
+		}
+		ac_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		ifv_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		mbt_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		mh_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		sh_destroyer_brigade = {
 			hard_attack = 0.05
 		}
 		
@@ -1581,11 +2133,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2026.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2026.1.3"
+				date > "2027.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2028.1.1"
 			}
 		}
 	}	
@@ -1632,8 +2194,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2025.1.3"
+				factor = 2
+				date > "2025.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2027.1.1"
 			}
 		}
 	}	
@@ -1652,6 +2224,9 @@ technologies = {
 		mlrs = {
 			soft_attack = 0.05
 		}
+		tactical_missile = {
+			soft_attack = 0.05
+		}
 		
 		categories = {
 			artillery
@@ -1662,8 +2237,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2026.1.3"
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2027.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2028.1.1"
 			}
 		}
 	}	
@@ -1677,11 +2262,13 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 17 y = 10 }
-		}
-		
+		}	
 		
 		mlrs = {
-			armor_value = 0.05
+			hard_attack = 0.05
+		}
+		tactical_missile = {
+			hard_attack = 0.05
 		}
 
 		categories = {
@@ -1693,8 +2280,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2026.1.3"
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2027.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2028.1.1"
 			}
 		}
 	}	
@@ -1740,11 +2337,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
-				factor = 10
-				date > "2028.1.3"
+				factor = 2
+				date > "2028.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2030.1.1"
 			}
 		}
 	}
@@ -1761,13 +2368,24 @@ technologies = {
 		}
 
 		artillery = {
-			soft_attack = 0.05
+		   soft_attack = 0.05
 		}
 		artillery_brigade = {
+		   soft_attack = 0.05
+		}
+		ac_sp_artillery_brigade = {
 			soft_attack = 0.05
 		}
-		
-		spg = {
+		ifv_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		mbt_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		mh_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		sh_sp_artillery_brigade = {
 			soft_attack = 0.05
 		}
 
@@ -1777,11 +2395,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
-				factor = 10
-				date > "2029.1.3"
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2031.1.1"
 			}
 		}
 	}	
@@ -1797,26 +2425,30 @@ technologies = {
 			position = { x = -1 y = 13 }
 		}
 		
-		artillery = {
-			reliability = 0.05
-		}
-		artillery_brigade = {
-			reliability = 0.05
-		}	
-		spg = {
-			 armor_value = 0.05
-		}
+		experience_gain_artillery_combat_factor = 0.02
+		army_artillery_defence_factor = 0.02
+		army_artillery_attack_factor = 0.02
 		
 		categories = {
 			artillery
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
-				factor = 10
-				date > "2029.1.3"
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2031.1.1"
 			}
 		}
 	}		
@@ -1862,11 +2494,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2028.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2028.1.3"
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2030.1.1"
 			}
 		}
 	}	
@@ -1883,9 +2525,24 @@ technologies = {
 		}
 		
 		anti_tank = {
-			ap_attack = 0.05
+		   ap_attack = 0.05
 		}
 		anti_tank_brigade = {
+		   ap_attack = 0.05
+		}
+		ac_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		ifv_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		mbt_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		mh_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		sh_destroyer_brigade = {
 			ap_attack = 0.05
 		}
 		
@@ -1895,11 +2552,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2029.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2029.1.3"
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2031.1.1"
 			}
 		}
 	}	
@@ -1916,9 +2583,24 @@ technologies = {
 		}
 		
 		anti_tank = {
-			hard_attack = 0.05
+		   hard_attack = 0.05
 		}
 		anti_tank_brigade = {
+		   hard_attack = 0.05
+		}
+		ac_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		ifv_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		mbt_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		mh_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		sh_destroyer_brigade = {
 			hard_attack = 0.05
 		}
 		
@@ -1928,11 +2610,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2029.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2029.1.3"
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2031.1.1"
 			}
 		}
 	}	
@@ -1979,8 +2671,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2028.1.3"
+				factor = 2
+				date > "2028.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2030.1.1"
 			}
 		}
 	}	
@@ -1999,6 +2701,9 @@ technologies = {
 		mlrs = {
 			soft_attack = 0.05
 		}
+		tactical_missile = {
+			soft_attack = 0.05
+		}
 
 		categories = {
 			artillery
@@ -2009,8 +2714,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2029.1.3"
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2031.1.1"
 			}
 		}
 	}	
@@ -2027,7 +2742,10 @@ technologies = {
 		}
 		
 		mlrs = {
-			armor_value = 0.05
+			hard_attack = 0.05
+		}
+		tactical_missile = {
+			hard_attack = 0.05
 		}
 
 		categories = {
@@ -2039,8 +2757,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2029.1.3"
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2031.1.1"
 			}
 		}
 	}
@@ -2081,11 +2809,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2030.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2030.1.3"
+				date > "2031.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2032.1.1"
 			}
 		}
 	}
@@ -2102,24 +2840,47 @@ technologies = {
 		}
 		
 		artillery = {
-			soft_attack = 0.05
+		   soft_attack = 0.05
 		}
 		artillery_brigade = {
+		   soft_attack = 0.05
+		}
+		ac_sp_artillery_brigade = {
 			soft_attack = 0.05
 		}
-		spg = {
-			 soft_attack = 0.05
+		ifv_sp_artillery_brigade = {
+			soft_attack = 0.05
 		}
+		mbt_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		mh_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		sh_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		
 		categories = {
 			artillery
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2032.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2032.1.3"
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2034.1.1"
 			}
 		}
 	}	
@@ -2135,25 +2896,30 @@ technologies = {
 			position = { x = -1 y = 16 }
 		}
 		
-		artillery = {
-			reliability = 0.05
-		}
-		artillery_brigade = {
-			reliability = 0.05
-		}	
-		spg = {
-			 armor_value = 0.05
-		}
+		experience_gain_artillery_combat_factor = 0.02
+		army_artillery_defence_factor = 0.02
+		army_artillery_attack_factor = 0.02
+		
 		categories = {
 			artillery
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2032.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2032.1.3"
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2034.1.1"
 			}
 		}
 	}		
@@ -2194,11 +2960,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2030.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2030.1.3"
+				date > "2031.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2032.1.1"
 			}
 		}
 	}	
@@ -2215,9 +2991,24 @@ technologies = {
 		}
 		
 		anti_tank = {
-			ap_attack = 0.05
+		   ap_attack = 0.05
 		}
 		anti_tank_brigade = {
+		   ap_attack = 0.05
+		}
+		ac_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		ifv_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		mbt_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		mh_destroyer_brigade = {
+			ap_attack = 0.05
+		}
+		sh_destroyer_brigade = {
 			ap_attack = 0.05
 		}
 
@@ -2227,11 +3018,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2032.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2032.1.3"
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2034.1.1"
 			}
 		}
 	}	
@@ -2248,9 +3049,24 @@ technologies = {
 		}
 				
 		anti_tank = {
-			hard_attack = 0.05
+		   hard_attack = 0.05
 		}
 		anti_tank_brigade = {
+		   hard_attack = 0.05
+		}
+		ac_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		ifv_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		mbt_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		mh_destroyer_brigade = {
+			hard_attack = 0.05
+		}
+		sh_destroyer_brigade = {
 			hard_attack = 0.05
 		}
 
@@ -2260,11 +3076,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "2032.1.1"
+			}
 
 			modifier = {
 				factor = 5
-				date > "2032.1.3"
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "2034.1.1"
 			}
 		}
 	}	
@@ -2306,8 +3132,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2030.1.3"
+				factor = 2
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2031.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2032.1.1"
 			}
 		}
 	}	
@@ -2326,6 +3162,9 @@ technologies = {
 		mlrs = {
 			soft_attack = 0.05
 		}
+		tactical_missile = {
+			soft_attack = 0.05
+		}
 
 		categories = {
 			artillery
@@ -2336,8 +3175,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2032.1.3"
+				factor = 2
+				date > "2032.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2034.1.1"
 			}
 		}
 	}	
@@ -2354,7 +3203,10 @@ technologies = {
 		}
 				
 		mlrs = {
-			armor_value = 0.05
+			hard_attack = 0.05
+		}
+		tactical_missile = {
+			hard_attack = 0.05
 		}
 
 		categories = {
@@ -2366,11 +3218,25 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2032.1.3"
+				factor = 2
+				date > "2032.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "2034.1.1"
 			}
 		}
 	}	
+	
+	##SUB TECHNOLOGIES##
+	#TACTICLE MISSILE#
+	
 	outdated_tactical_missile  = {
 	
 		start_year = 2010
@@ -2393,8 +3259,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2010.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -2405,6 +3281,9 @@ technologies = {
 		enable_equipments = {
 			multiple_rocket_missile_equipment_2
 		}
+		enable_subunits = {
+			tactical_missile 
+		}
 		
 		research_cost = 0.5
 		
@@ -2417,8 +3296,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2020.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -2429,6 +3318,9 @@ technologies = {
 		enable_equipments = {
 			multiple_rocket_missile_equipment_3
 		}
+		enable_subunits = {
+			tactical_missile 
+		}
 		
 		research_cost = 0.5
 		
@@ -2441,8 +3333,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2025.1.3"
+				factor = 1
+				date > "2025.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2027.1.1"
 			}
 		}
 	}
@@ -2453,6 +3355,9 @@ technologies = {
 		enable_equipments = {
 			multiple_rocket_missile_equipment_4
 		}
+		enable_subunits = {
+			tactical_missile 
+		}
 		
 		research_cost = 0.5
 		
@@ -2465,8 +3370,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2028.1.3"
+				factor = 1
+				date > "2028.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2030.1.1"
 			}
 		}
 	}
@@ -2477,6 +3392,9 @@ technologies = {
 		enable_equipments = {
 			multiple_rocket_missile_equipment_5
 		}
+		enable_subunits = {
+			tactical_missile 
+		}
 		
 		research_cost = 0.5
 		
@@ -2489,13 +3407,22 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2030.1.3"
+				factor = 1
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2031.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2032.1.1"
 			}
 		}
 	}
 	
-	##SUB TECHNOLOGIES##
 	##TANK DESTROYERS##
 	
 	outdated_mbt_at  = {
@@ -2506,7 +3433,7 @@ technologies = {
 			main_battle_tank_destroyer_equipment_1
 		}
 		enable_subunits = {
-			tank_destroyer
+			mbt_destroyer_brigade
 		}
 		
 		research_cost = 0.5
@@ -2520,8 +3447,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2010.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -2533,9 +3470,9 @@ technologies = {
 			infantry_fighting_vehicle_destroyer_equipment_1
 		}
 		enable_subunits = {
+			ifv_destroyer_brigade
 		}
-		enable_subunits = {
-		}
+
 		
 		research_cost = 0.5
 		
@@ -2548,8 +3485,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2010.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -2561,8 +3508,7 @@ technologies = {
 			armored_car_destroyer_equipment_1
 		}
 		enable_subunits = {
-		}
-		enable_subunits = {
+			ac_destroyer_brigade
 		}
 		
 		research_cost = 0.5
@@ -2576,8 +3522,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2010.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -2588,6 +3544,9 @@ technologies = {
 		enable_equipments = {
 			main_battle_tank_destroyer_equipment_2
 		}
+		enable_subunits = {
+			mbt_destroyer_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -2600,8 +3559,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2020.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -2612,6 +3581,9 @@ technologies = {
 		enable_equipments = {
 			infantry_fighting_vehicle_destroyer_equipment_2
 		}
+		enable_subunits = {
+			ifv_destroyer_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -2624,8 +3596,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2020.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -2636,6 +3618,9 @@ technologies = {
 		enable_equipments = {
 			armored_car_destroyer_equipment_2
 		}
+		enable_subunits = {
+			ac_destroyer_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -2648,8 +3633,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2020.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -2660,6 +3655,9 @@ technologies = {
 		enable_equipments = {
 			main_battle_tank_destroyer_equipment_3
 		}
+		enable_subunits = {
+			mbt_destroyer_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -2672,8 +3670,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2025.1.3"
+				factor = 1
+				date > "2025.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2027.1.1"
 			}
 		}
 	}
@@ -2684,6 +3692,9 @@ technologies = {
 		enable_equipments = {
 			infantry_fighting_vehicle_destroyer_equipment_3
 		}
+		enable_subunits = {
+			ifv_destroyer_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -2696,8 +3707,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2025.1.3"
+				factor = 1
+				date > "2025.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2027.1.1"
 			}
 		}
 	}
@@ -2708,6 +3729,9 @@ technologies = {
 		enable_equipments = {
 			armored_car_destroyer_equipment_3
 		}
+		enable_subunits = {
+			ac_destroyer_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -2720,8 +3744,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2025.1.3"
+				factor = 1
+				date > "2025.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2027.1.1"
 			}
 		}
 	}
@@ -2732,6 +3766,9 @@ technologies = {
 		enable_equipments = {
 			main_battle_tank_destroyer_equipment_4
 		}
+		enable_subunits = {
+			mbt_destroyer_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -2744,8 +3781,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2028.1.3"
+				factor = 1
+				date > "2028.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2030.1.1"
 			}
 		}
 	}
@@ -2756,6 +3803,9 @@ technologies = {
 		enable_equipments = {
 			infantry_fighting_vehicle_destroyer_equipment_4
 		}
+		enable_subunits = {
+			ifv_destroyer_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -2768,8 +3818,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2028.1.3"
+				factor = 1
+				date > "2028.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2030.1.1"
 			}
 		}
 	}
@@ -2780,6 +3840,9 @@ technologies = {
 		enable_equipments = {
 			armored_car_destroyer_equipment_4
 		}
+		enable_subunits = {
+			ac_destroyer_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -2792,8 +3855,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2028.1.3"
+				factor = 1
+				date > "2028.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2030.1.1"
 			}
 		}
 	}
@@ -2804,6 +3877,9 @@ technologies = {
 		enable_equipments = {
 			main_battle_tank_destroyer_equipment_5
 		}
+		enable_subunits = {
+			mbt_destroyer_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -2816,8 +3892,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2030.1.3"
+				factor = 1
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2031.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2032.1.1"
 			}
 		}
 	}
@@ -2828,6 +3914,9 @@ technologies = {
 		enable_equipments = {
 			infantry_fighting_vehicle_destroyer_equipment_5
 		}
+		enable_subunits = {
+			ifv_destroyer_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -2840,8 +3929,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2030.1.3"
+				factor = 1
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2031.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2032.1.1"
 			}
 		}
 	}
@@ -2852,6 +3951,9 @@ technologies = {
 		enable_equipments = {
 			armored_car_destroyer_equipment_5
 		}
+		enable_subunits = {
+			ac_destroyer_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -2864,8 +3966,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2030.1.3"
+				factor = 1
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2031.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2032.1.1"
 			}
 		}
 	}
@@ -2878,7 +3990,7 @@ technologies = {
 			main_battle_tank_aa_equipment_1
 		}
 		enable_subunits = {
-			spaag
+			mbt_sp_anti_air_brigade
 		}
 		
 		research_cost = 0.5
@@ -2893,8 +4005,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2010.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -2906,6 +4028,7 @@ technologies = {
 			infantry_fighting_vehicle_aa_equipment_1
 		}
 		enable_subunits = {
+			ifv_sp_anti_air_brigade
 		}
 		
 		research_cost = 0.5
@@ -2920,8 +4043,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2010.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -2933,6 +4066,7 @@ technologies = {
 			armored_car_aa_equipment_1
 		}
 		enable_subunits = {
+			ac_sp_anti_air_brigade
 		}
 		
 		research_cost = 0.5
@@ -2947,8 +4081,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2010.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -2959,6 +4103,9 @@ technologies = {
 		enable_equipments = {
 			main_battle_tank_aa_equipment_2
 		}
+		enable_subunits = {
+			mbt_sp_anti_air_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -2972,8 +4119,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2020.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -2984,6 +4141,9 @@ technologies = {
 		enable_equipments = {
 			infantry_fighting_vehicle_aa_equipment_2
 		}
+		enable_subunits = {
+			ifv_sp_anti_air_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -2997,8 +4157,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2020.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -3009,6 +4179,9 @@ technologies = {
 		enable_equipments = {
 			armored_car_aa_equipment_2
 		}
+		enable_subunits = {
+			ac_sp_anti_air_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -3022,8 +4195,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2020.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -3034,6 +4217,9 @@ technologies = {
 		enable_equipments = {
 			main_battle_tank_aa_equipment_3
 		}
+		enable_subunits = {
+			mbt_sp_anti_air_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -3047,8 +4233,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2025.1.3"
+				factor = 1
+				date > "2025.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2027.1.1"
 			}
 		}
 	}
@@ -3059,6 +4255,9 @@ technologies = {
 		enable_equipments = {
 			infantry_fighting_vehicle_aa_equipment_3
 		}
+		enable_subunits = {
+			ifv_sp_anti_air_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -3072,8 +4271,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2025.1.3"
+				factor = 1
+				date > "2025.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2027.1.1"
 			}
 		}
 	}
@@ -3084,6 +4293,9 @@ technologies = {
 		enable_equipments = {
 			armored_car_aa_equipment_3
 		}
+		enable_subunits = {
+			ac_sp_anti_air_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -3097,8 +4309,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2025.1.3"
+				factor = 1
+				date > "2025.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2027.1.1"
 			}
 		}
 	}
@@ -3109,6 +4331,9 @@ technologies = {
 		enable_equipments = {
 			main_battle_tank_aa_equipment_4
 		}
+		enable_subunits = {
+			mbt_sp_anti_air_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -3122,8 +4347,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2028.1.3"
+				factor = 1
+				date > "2028.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2030.1.1"
 			}
 		}
 	}
@@ -3134,6 +4369,9 @@ technologies = {
 		enable_equipments = {
 			infantry_fighting_vehicle_aa_equipment_4
 		}
+		enable_subunits = {
+			ifv_sp_anti_air_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -3147,8 +4385,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2028.1.3"
+				factor = 1
+				date > "2028.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2030.1.1"
 			}
 		}
 	}
@@ -3159,6 +4407,9 @@ technologies = {
 		enable_equipments = {
 			armored_car_aa_equipment_4
 		}
+		enable_subunits = {
+			ac_sp_anti_air_brigade
+		}
 		
 		research_cost = 0.5
 		
@@ -3172,8 +4423,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2028.1.3"
+				factor = 1
+				date > "2028.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2030.1.1"
 			}
 		}
 	}
@@ -3184,6 +4445,9 @@ technologies = {
 		enable_equipments = {
 			main_battle_tank_aa_equipment_5
 		}
+		enable_subunits = {
+			mbt_sp_anti_air_brigade
+		}
 		
 		research_cost = 0.5
 
@@ -3197,8 +4461,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2030.1.3"
+				factor = 1
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2031.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2032.1.1"
 			}
 		}
 	}
@@ -3209,6 +4483,9 @@ technologies = {
 		enable_equipments = {
 			infantry_fighting_vehicle_aa_equipment_5
 		}
+		enable_subunits = {
+			ifv_sp_anti_air_brigade
+		}
 		
 		research_cost = 0.5
 
@@ -3222,8 +4499,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2030.1.3"
+				factor = 1
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2031.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2032.1.1"
 			}
 		}
 	}
@@ -3234,6 +4521,9 @@ technologies = {
 		enable_equipments = {
 			armored_car_aa_equipment_5
 		}
+		enable_subunits = {
+			ac_sp_anti_air_brigade
+		}
 		
 		research_cost = 0.5
 
@@ -3247,8 +4537,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2030.1.3"
+				factor = 1
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2031.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2032.1.1"
 			}
 		}
 	}
@@ -3261,7 +4561,7 @@ technologies = {
 			main_battle_tank_artillery_equipment_1
 		}
 		enable_subunits = {
-			spg
+			mbt_sp_artillery_brigade
 		}
 		
 		research_cost = 0.5
@@ -3275,8 +4575,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2010.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -3288,6 +4598,7 @@ technologies = {
 			infantry_fighting_vehicle_artillery_equipment_1
 		}
 		enable_subunits = {
+			ifv_sp_artillery_brigade
 		}
 		
 		research_cost = 0.5
@@ -3301,8 +4612,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2010.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -3314,6 +4635,7 @@ technologies = {
 			armored_car_artillery_equipment_1
 		}
 		enable_subunits = {
+			ac_sp_artillery_brigade
 		}
 		
 		research_cost = 0.5
@@ -3327,8 +4649,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2010.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -3339,6 +4671,9 @@ technologies = {
 		enable_equipments = {
 			main_battle_tank_artillery_equipment_2
 		}
+		enable_subunits = {
+			mbt_sp_artillery_brigade
+		}
 		
 		research_cost = 0.5
 	
@@ -3351,8 +4686,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2020.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -3363,6 +4708,9 @@ technologies = {
 		enable_equipments = {
 			infantry_fighting_vehicle_artillery_equipment_2
 		}
+		enable_subunits = {
+			ifv_sp_artillery_brigade
+		}
 		
 		research_cost = 0.5
 	
@@ -3375,8 +4723,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2020.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -3387,6 +4745,9 @@ technologies = {
 		enable_equipments = {
 			armored_car_artillery_equipment_2
 		}
+		enable_subunits = {
+			ac_sp_artillery_brigade
+		}
 		
 		research_cost = 0.5
 	
@@ -3399,8 +4760,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2020.1.3"
+				factor = 1
+				date > "2020.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -3411,6 +4782,9 @@ technologies = {
 		enable_equipments = {
 			main_battle_tank_artillery_equipment_3
 		}
+		enable_subunits = {
+			mbt_sp_artillery_brigade
+		}
 		
 		research_cost = 0.5
 	
@@ -3423,8 +4797,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2025.1.3"
+				factor = 1
+				date > "2025.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2027.1.1"
 			}
 		}
 	}
@@ -3435,6 +4819,9 @@ technologies = {
 		enable_equipments = {
 			infantry_fighting_vehicle_artillery_equipment_3
 		}
+		enable_subunits = {
+			ifv_sp_artillery_brigade
+		}
 		
 		research_cost = 0.5
 	
@@ -3447,8 +4834,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2025.1.3"
+				factor = 1
+				date > "2025.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2027.1.1"
 			}
 		}
 	}
@@ -3459,6 +4856,9 @@ technologies = {
 		enable_equipments = {
 			armored_car_artillery_equipment_3
 		}
+		enable_subunits = {
+			ac_sp_artillery_brigade
+		}
 		
 		research_cost = 0.5
 	
@@ -3471,8 +4871,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2025.1.3"
+				factor = 1
+				date > "2025.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2026.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2027.1.1"
 			}
 		}
 	}
@@ -3483,6 +4893,9 @@ technologies = {
 		enable_equipments = {
 			main_battle_tank_artillery_equipment_4
 		}
+		enable_subunits = {
+			mbt_sp_artillery_brigade
+		}
 		
 		research_cost = 0.5
 
@@ -3496,8 +4909,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2028.1.3"
+				factor = 1
+				date > "2028.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2030.1.1"
 			}
 		}
 	}
@@ -3508,6 +4931,9 @@ technologies = {
 		enable_equipments = {
 			infantry_fighting_vehicle_artillery_equipment_4
 		}
+		enable_subunits = {
+			ifv_sp_artillery_brigade
+		}
 		
 		research_cost = 0.5
 
@@ -3521,8 +4947,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2028.1.3"
+				factor = 1
+				date > "2028.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2030.1.1"
 			}
 		}
 	}
@@ -3533,6 +4969,9 @@ technologies = {
 		enable_equipments = {
 			armored_car_artillery_equipment_4
 		}
+		enable_subunits = {
+			ac_sp_artillery_brigade
+		}
 		
 		research_cost = 0.5
 
@@ -3546,8 +4985,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2028.1.3"
+				factor = 1
+				date > "2028.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2029.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2030.1.1"
 			}
 		}
 	}
@@ -3558,6 +5007,9 @@ technologies = {
 		enable_equipments = {
 			main_battle_tank_artillery_equipment_5
 		}
+		enable_subunits = {
+			mbt_sp_artillery_brigade
+		}
 		
 		research_cost = 0.5
 	
@@ -3570,8 +5022,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2030.1.3"
+				factor = 1
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2031.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2032.1.1"
 			}
 		}
 	}
@@ -3582,6 +5044,9 @@ technologies = {
 		enable_equipments = {
 			infantry_fighting_vehicle_artillery_equipment_5
 		}
+		enable_subunits = {
+			ifv_sp_artillery_brigade
+		}
 		
 		research_cost = 0.5
 	
@@ -3594,8 +5059,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2030.1.3"
+				factor = 1
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2031.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2032.1.1"
 			}
 		}
 	}
@@ -3606,6 +5081,9 @@ technologies = {
 		enable_equipments = {
 			armored_car_artillery_equipment_5
 		}
+		enable_subunits = {
+			ac_sp_artillery_brigade
+		}
 		
 		research_cost = 0.5
 	
@@ -3618,8 +5096,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5
-				date > "2030.1.3"
+				factor = 1
+				date > "2030.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2031.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "2032.1.1"
 			}
 		}
 	}
