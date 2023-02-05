@@ -347,39 +347,6 @@ characters={
 	    }
 	}
 	
-	EAG_jeff_kent  ={
-		name="Jeff Kent"
-		portraits={
-			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Jeff_Kent.dds"
-			}
-			army={
-				large="gfx/leaders/EAG/Portrait_EAG_Jeff_Kent.dds"
-			}
-		}
-		advisor = {
-			cost = 120
-			slot = political_advisor
-			idea_token = EAG_jeff_kent
-			traits = {
-				local_reformer
-			}
-			allowed = {
-				original_tag = EAG
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-	    }
-		corps_commander = {
-				traits = { angloid }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 2
-		}
-	}
 	
 	EAG_emma_restall_orr ={
 		name="Emma Restall Orr"
