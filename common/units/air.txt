@@ -15,7 +15,7 @@ sub_units = {
 		priority = 1
 		active = yes
 		type = fighter
-		need = { stl_small_plane_airframe = 1 }
+		need = { small_plane_airframe = 1 }
 		categories = { category_fighter }
 		land_air_wing_size = 100
 	}
@@ -44,7 +44,7 @@ sub_units = {
 		priority = 2
 		active = yes
 		type = cas
-		need = { stl_small_plane_cas_airframe = 1 }
+		need = { small_plane_cas_airframe = 1 }
 		categories = { category_cas }
 		land_air_wing_size = 100
 	}
@@ -122,7 +122,7 @@ sub_units = {
 		priority = 4
 		active = yes
 		type = tactical_bomber
-		need = { stl_medium_plane_airframe = 1 }
+		need = { medium_plane_airframe = 1 }
 		categories = { category_tac_bomber }
 		land_air_wing_size = 100
 	}
@@ -137,14 +137,14 @@ sub_units = {
 		land_air_wing_size = 10
 	}
 	
-	medium_suicide_craft = {
-		sprite = light_plane
-		priority = 9
-		active = yes
-		type = suicide
-		need = { medium_plane_suicide_airframe = 1 }
-		land_air_wing_size = 100
-	}
+	#medium_suicide_craft = {
+	#	sprite = light_plane
+	#	priority = 9
+	#	active = yes
+	#	type = suicide
+	#	need = { medium_plane_suicide_airframe = 1 }
+	#	land_air_wing_size = 100
+	#}
 
 	# Large airframe
 
@@ -162,7 +162,7 @@ sub_units = {
 		priority = 5
 		active = yes
 		type = strategic_bomber
-		need = { stl_large_plane_airframe = 1 }
+		need = { large_plane_airframe = 1 }
 		categories = { category_strat_bomber }
 		land_air_wing_size = 100
 	}
@@ -177,14 +177,14 @@ sub_units = {
 		land_air_wing_size = 100
 	}
 	
-	large_suicide_craft = {
-		sprite = heavy_plane
-		priority = 9
-		active = yes
-		type = suicide
-		need = { large_plane_suicide_airframe = 1 }
-		land_air_wing_size = 100
-	}
+	#large_suicide_craft = {
+	#	sprite = heavy_plane
+	#	priority = 9
+	#	active = yes
+	#	type = suicide
+	#	need = { large_plane_suicide_airframe = 1 }
+	#	land_air_wing_size = 100
+	#}
 
 	# Non-BBA archetypes
 
