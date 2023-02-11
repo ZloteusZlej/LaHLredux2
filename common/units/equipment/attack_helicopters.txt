@@ -1,0 +1,104 @@
+equipments = {
+	attack_helicopter_equipment = {
+
+		year = 1980
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_helicopter_equipment			
+		type =  infantry
+		group_by = archetype
+		air_map_icon_frame = 14
+
+		
+		interface_category = interface_category_air
+		
+		maximum_speed = 24
+		defense = 9
+		breakthrough = 66
+		soft_attack = 23
+		hard_attack = 28
+		ap_attack = 91
+
+		air_map_icon_frame = 14
+
+		build_cost_ic = 24
+		resources = {
+			aluminium = 2
+		}
+		fuel_consumption = 7.5
+	}
+	
+	
+	attack_helicopter_equipment_1 = {
+		year = 2015
+
+		archetype = attack_helicopter_equipment
+		parent = attack_helicopter_equipment_1
+		priority = 110
+		maximum_speed = 27
+
+		defense = 15
+		breakthrough = 102
+		soft_attack = 32
+		hard_attack = 39
+		ap_attack = 103
+
+		fuel_consumption = 8.7
+		build_cost_ic = 27
+	}
+	
+	attack_helicopter_equipment_2 = {
+		year = 2020
+
+		archetype = attack_helicopter_equipment
+		parent = attack_helicopter_equipment_1
+		priority = 110
+		maximum_speed = 27
+
+		defense = 15
+		breakthrough = 102
+		soft_attack = 32
+		hard_attack = 39
+		ap_attack = 103
+
+		fuel_consumption = 8.7
+		build_cost_ic = 27
+	}
+	
+	attack_helicopter_equipment_3 = {
+		year = 2027
+
+		archetype = attack_helicopter_equipment
+		parent = attack_helicopter_equipment_2
+		priority = 120
+		maximum_speed = 30
+
+		defense = 18
+		breakthrough = 133
+		soft_attack = 43
+		hard_attack = 54
+		ap_attack = 132
+		fuel_consumption = 10.2
+
+		build_cost_ic = 30
+	}
+	
+	attack_helicopter_equipment_4 = {
+		year = 2030
+
+		archetype = attack_helicopter_equipment
+		parent = attack_helicopter_equipment_3
+		priority = 130
+		maximum_speed = 33
+
+		defense = 11
+		breakthrough = 174
+		soft_attack = 54
+		hard_attack = 68
+		ap_attack = 183
+		fuel_consumption = 12
+
+		build_cost_ic = 33
+	}
+}

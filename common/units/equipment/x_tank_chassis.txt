@@ -2,79 +2,6 @@
 # The equipment attributes alias, type, variant_name, and derived_variant_name are not duplicated.
 
 duplicate_archetypes = {
-
-	# heavy_tank
-
-	heavy_tank_aa_chassis = {
-		archetype = heavy_tank_chassis
-		type = { armor anti_air }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.8 }
-		}
-	}
-
-	heavy_tank_artillery_chassis = {
-		archetype = heavy_tank_chassis
-		type = { armor artillery }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.8 }
-		}
-	}
-
-	heavy_tank_destroyer_chassis = {
-		archetype = heavy_tank_chassis
-		type = { armor anti_tank }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-		}
-	}
-
-	heavy_tank_amphibious_chassis = {
-		archetype = heavy_tank_chassis
-		type = { armor amphibious }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.8 }
-		}
-	}
-
-	heavy_tank_flame_chassis = {
-		archetype = heavy_tank_chassis
-		type = { armor flame }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-		}
-	}
-
-	# superheavy tank
-
-	super_heavy_tank_aa_chassis = {
-		archetype = super_heavy_tank_chassis
-		type = { armor anti_air }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.9 }
-		}
-	}
-
-	super_heavy_tank_artillery_chassis = {
-		archetype = super_heavy_tank_chassis
-		type = { armor artillery }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.9 }
-		}
-	}
-
-	super_heavy_tank_destroyer_chassis = {
-		archetype = super_heavy_tank_chassis
-		type = { armor anti_tank }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-		}
-	}
 	
 	#LAHL#
 	
@@ -116,6 +43,80 @@ duplicate_archetypes = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
 		}
 	}
+	
+	# heavy_tank
+
+	modern_heavy_tank_aa_chassis = {
+		archetype = modern_heavy_tank_chassis
+		type = { armor anti_air }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			hardness = { set = 0.8 }
+		}
+	}
+
+	modern_heavy_tank_artillery_chassis = {
+		archetype = modern_heavy_tank_chassis
+		type = { armor artillery }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			hardness = { set = 0.8 }
+		}
+	}
+
+	modern_heavy_tank_destroyer_chassis = {
+		archetype = modern_heavy_tank_chassis
+		type = { armor anti_tank }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+		}
+	}
+
+	modern_heavy_tank_amphibious_chassis = {
+		archetype = modern_heavy_tank_chassis
+		type = { armor amphibious }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			hardness = { set = 0.8 }
+		}
+	}
+
+	modern_heavy_tank_flame_chassis = {
+		archetype = heavy_tank_chassis
+		type = { armor flame }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+		}
+	}
+
+	# superheavy tank
+
+	modern_super_heavy_tank_aa_chassis = {
+		archetype = modern_super_heavy_tank_chassis
+		type = { armor anti_air }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			hardness = { set = 0.9 }
+		}
+	}
+
+	modern_super_heavy_tank_artillery_chassis = {
+		archetype = modern_super_heavy_tank_chassis
+		type = { armor artillery }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			hardness = { set = 0.9 }
+		}
+	}
+
+	modern_super_heavy_tank_destroyer_chassis = {
+		archetype = modern_super_heavy_tank_chassis
+		type = { armor anti_tank }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+		}
+	}
+	
 	
 	# IFV
 
@@ -581,8 +582,178 @@ equipments = {
 		fuel_consumption = 0.19
 	}
 	
-	#MAIN BATTLE TANK#
+	##MODERN HEAVY TANK##
+	modern_heavy_tank_equipment_1 = {
+		year = 2020
+
+		archetype = modern_heavy_tank_chassis
+		priority = 90
+		visual_level = 2
+		is_convertable = yes
+
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 9
+		breakthrough = 67
+		hardness = 0.95
+		armor_value = 130
+
+		#Offensive Abilities
+		soft_attack = 35
+		hard_attack = 40
+		ap_attack = 131
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 14
+		
+		build_cost_ic = 30
+		resources = {
+			#oil = 1
+			steel = 4
+			chromium = 3
+		}
+		
+		fuel_consumption = 4.4
+
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
+	}
 	
+	modern_heavy_tank_artillery_equipment_1 = {
+		year = 2020
+
+		archetype = modern_heavy_tank_artillery_chassis
+		family = modern_heavy_tank_equipment_1
+		can_convert_from = { 
+			modern_heavy_tank_equipment_1 
+		}
+		priority = 100
+		visual_level = 2
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_art_upgrade
+		}
+
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 7
+		hardness = 0.8
+		breakthrough = 3.5
+		armor_value = 90
+
+		#Offensive Abilities
+		soft_attack = 80
+		hard_attack = 2.5
+		ap_attack = 8
+		air_attack = 0
+		
+		build_cost_ic = 30
+		resources = {
+			#oil = 1
+			steel = 5
+			chromium = 3
+		}
+		fuel_consumption = 2.2
+	}
+	
+	modern_heavy_tank_destroyer_equipment_1 = {
+		year = 2020
+
+		archetype = modern_heavy_tank_destroyer_chassis
+		family = modern_heavy_tank_equipment_1
+		can_convert_from = { 
+			modern_heavy_tank_equipment_1
+		}
+		priority = 100
+		visual_level = 2
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_at_upgrade
+		}
+		
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.8
+		
+		#Defensive Abilities
+		defense = 7
+		hardness = 0.8
+		breakthrough = 1.8
+		armor_value = 130
+
+		#Offensive Abilities
+		soft_attack = 10
+		hard_attack = 60
+		ap_attack = 160
+		air_attack = 0
+		
+		fuel_consumption = 2.2
+		build_cost_ic = 30
+		resources = {
+			#oil = 2
+			steel = 4
+			chromium = 4
+		}
+	}
+	
+	modern_heavy_tank_aa_equipment_1 = {
+		year = 2020
+
+		archetype = modern_heavy_tank_aa_chassis
+		family = modern_heavy_tank_equipment_1
+		can_convert_from = { 
+			modern_heavy_tank_equipment_1
+		}
+		priority = 110
+		visual_level = 0
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_aa_upgrade
+		}
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 3.5
+		breakthrough = 3.5
+		hardness = 0.8
+
+		#Offensive Abilities
+		soft_attack = 7.5
+		hard_attack = 6
+		ap_attack = 88
+		air_attack = 44
+		
+		build_cost_ic = 30
+		resources = {
+			#oil = 1
+			steel = 4
+			chromium = 3
+		}
+		fuel_consumption = 1.1
+	}
+	
+	#MAIN BATTLE TANK#
 	obsolete_main_battle_tank_equipment = {
 		year = 1980
 	
@@ -2691,7 +2862,6 @@ equipments = {
 	infantry_fighting_vehicle_aa_equipment_4 = {
 		year = 2028
 
-
 		archetype = infantry_fighting_vehicle_aa_chassis
 		parent = infantry_fighting_vehicle_aa_equipment_3
 		priority = 30
@@ -2754,6 +2924,251 @@ equipments = {
 			#oil = 2
 			steel = 6
 		}
+	}
+	
+	###SUPER HEAVY TANK###
+	modern_super_heavy_tank_equipment_1 = {
+		year = 2020
+
+		archetype = modern_super_heavy_tank_chassis
+		priority = 130
+		visual_level = 0
+		is_convertable = yes
+
+		#Misc Abilities
+		maximum_speed = 4
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 10
+		breakthrough = 74
+		hardness = 0.99
+		armor_value = 145
+
+		#Offensive Abilities
+		soft_attack = 38
+		hard_attack = 45
+		ap_attack = 146
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 15
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
+		build_cost_ic = 100
+		resources = {
+			#oil = 2
+			steel = 3
+			chromium = 4
+		}
+		
+		fuel_consumption = 10
+	}
+
+	modern_super_heavy_tank_artillery_equipment_1 = {
+		year = 2020
+
+		archetype = modern_super_heavy_tank_artillery_chassis
+		priority = 140
+		visual_level = 0
+		can_convert_from = { 
+			modern_super_heavy_tank_equipment_1 
+		}
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_art_upgrade
+		}
+		#Misc Abilities
+		maximum_speed = 4
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 7
+		breakthrough = 3.5
+		hardness = 0.9
+		armor_value = 100
+
+		#Offensive Abilities
+		soft_attack = 85
+		hard_attack = 3
+		ap_attack = 9
+		air_attack = 0
+		
+		build_cost_ic = 100
+		resources = {
+			#oil = 2
+			steel = 3
+			chromium = 4
+		}
+		fuel_consumption = 5
+	}
+
+	modern_super_heavy_tank_destroyer_equipment_1 = {
+		year = 2020
+
+		archetype = modern_super_heavy_tank_destroyer_chassis
+		priority = 160
+		visual_level = 0
+		can_convert_from = { 
+			modern_super_heavy_tank_equipment_1 
+		}
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_at_upgrade
+		}
+		#Misc Abilities
+		maximum_speed = 4
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 7
+		breakthrough = 1.8
+		hardness = 0.99
+		armor_value = 145
+
+		#Offensive Abilities
+		soft_attack = 12
+		hard_attack = 70
+		ap_attack = 170
+		air_attack = 0
+		
+		build_cost_ic = 100
+		resources = {
+			#oil = 2
+			steel = 3
+			chromium = 4
+		}
+		fuel_consumption = 5
+	}
+
+	modern_super_heavy_tank_aa_equipment_1 = {
+		year = 2020
+
+		archetype = modern_super_heavy_tank_aa_chassis
+		priority = 150
+		visual_level = 0
+		can_convert_from = { 
+			modern_super_heavy_tank_equipment_1 
+		}
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_aa_upgrade
+		}
+		#Misc Abilities
+		maximum_speed = 4
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 3.5
+		breakthrough = 3.5
+		hardness = 0.9
+		armor_value = 100
+
+		#Offensive Abilities
+		soft_attack = 11.5
+		hard_attack = 9
+		ap_attack = 98
+		air_attack = 50
+		
+		build_cost_ic = 100
+		resources = {
+			#oil = 2
+			steel = 3
+			chromium = 4
+		}
+		fuel_consumption = 2.5
+	}
+	
+	###BATTLE MECHANOID###
+	evangelion_equipment_1 = {
+		year = 2020
+
+		archetype = mechanoid_tank_chassis
+		priority = 10
+		visual_level = 0
+		is_convertable = yes
+		
+		interface_category = interface_category_armor
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
+		
+		#Misc Abilities
+		maximum_speed = 4
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 11
+		breakthrough = 100
+		armor_value = 150
+
+		#Offensive Abilities
+		soft_attack = 40
+		hard_attack = 48
+		ap_attack = 146
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 15
+		
+		build_cost_ic = 110
+		resources = {
+			steel = 5
+			chromium = 5
+		}
+		
+		fuel_consumption = 0
+	}
+	###BATTLE BUS###
+	battle_bus_equipment_1 = {
+		year = 2020
+
+		archetype = battle_bus_chassis
+		priority = 20
+		visual_level = 0
+
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_art_upgrade
+		}
+
+		#Misc Abilities
+		maximum_speed = 15
+		reliability = 0.6
+
+		#Defensive Abilities
+		defense = 5
+		breakthrough = 25
+		hardness = 0.5
+		armor_value = 1
+
+		#Offensive Abilities
+		soft_attack = 14
+		hard_attack = 7
+		ap_attack = 10
+		air_attack = 1
+		
+		build_cost_ic = 2
+		resources = {
+			steel = 1
+		}
+		fuel_consumption = 1.0
 	}
 
 	amphibious_tank_equipment_1 = {

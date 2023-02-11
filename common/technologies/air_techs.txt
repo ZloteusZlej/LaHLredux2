@@ -1498,7 +1498,7 @@ technologies = {
 	prototype_helicopter = {
 		
 		research_cost = 3
-		start_year = 1960
+		start_year = 1980
 		
 		folder = {
 			name = air_techs_folder
@@ -1534,10 +1534,10 @@ technologies = {
 	
 	tech_assault_helicopters = {
 	
-		land_reinforce_rate = 0.05
+		start_year = 2015
 		
 		enable_equipments = {
-			attack_helicopter_equipment_0
+			attack_helicopter_equipment_1
 		}	
 
 		path = {
@@ -1568,6 +1568,8 @@ technologies = {
 	}	
 	
 	tech_assault_helicopters_2 = {
+	
+		start_year = 2020
 				
 		path = {
 			leads_to_tech = tech_assault_helicopters_3
@@ -1582,7 +1584,7 @@ technologies = {
 			position = { x = 10 y = 8 }
 		}
 		enable_equipments = {
-			attack_helicopter_equipment_1
+			attack_helicopter_equipment_2
 		}	
 		
 		ai_will_do = {
@@ -1600,6 +1602,8 @@ technologies = {
 	}
 	
 	tech_assault_helicopters_3 = {
+	
+		start_year = 2027
 				
 		path = {
 			leads_to_tech = tech_assault_helicopters_4
@@ -1614,7 +1618,7 @@ technologies = {
 			position = { x = 10 y = 12 }
 		}
 		enable_equipments = {
-			attack_helicopter_equipment_2
+			attack_helicopter_equipment_3
 		}	
 		
 		ai_will_do = {
@@ -1632,11 +1636,8 @@ technologies = {
 	}
 	
 	tech_assault_helicopters_4 = {
-		
-		path = {
-			leads_to_tech = tech_assault_helicopters_5
-			research_cost_coeff = 1
-		}
+	
+		start_year = 2030
 		
 		research_cost = 2
 		start_year = 2024
@@ -1646,7 +1647,7 @@ technologies = {
 			position = { x = 10 y = 16 }
 		}
 		enable_equipments = {
-			attack_helicopter_equipment_3
+			attack_helicopter_equipment_4
 		}	
 		
 		ai_will_do = {
@@ -1669,10 +1670,10 @@ technologies = {
 	
 	tech_transport_helicopters = {
 	
-		land_reinforce_rate = 0.05
+		start_year = 2015
 		
 		enable_equipments = {
-			transport_helicopters_equipment_1
+			transport_helicopter_equipment_1
 		}	
 
 		path = {
@@ -1704,10 +1705,10 @@ technologies = {
 
 	tech_transport_helicopters_2 = {
 	
-		land_reinforce_rate = 0.05
+		start_year = 2020
 		
 		enable_equipments = {
-			transport_helicopters_equipment_2
+			transport_helicopter_equipment_2
 		}	
 
 		path = {
@@ -1739,10 +1740,10 @@ technologies = {
 
 	tech_transport_helicopters_3 = {
 	
-		land_reinforce_rate = 0.05
+		start_year = 2027
 		
 		enable_equipments = {
-			transport_helicopters_equipment_3
+			transport_helicopter_equipment_3
 		}	
 
 		path = {
@@ -1774,10 +1775,10 @@ technologies = {
 
 	tech_transport_helicopters_4 = {
 	
-		land_reinforce_rate = 0.05
+		start_year = 2030
 		
 		enable_equipments = {
-			transport_helicopters_equipment_4
+			transport_helicopter_equipment_4
 		}	
 
 		path = {

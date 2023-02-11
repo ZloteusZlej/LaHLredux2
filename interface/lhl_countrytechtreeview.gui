@@ -104,19 +104,7 @@ guiTypes = {
 					maxHeight = 62
 					format = left
 					Orientation = "UPPER_LEFT"
-				}
-                instantTextBoxType = {
-					name = "spectech_subtitle_weapons_4"
-					position = { x = 2201 y = 650 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = { x = 0 y = 0}
-					text = "Engine Types"
-					maxWidth = 600
-					maxHeight = 62
-					format = left
-					Orientation = "UPPER_LEFT"
-				}				
+				}			
 			}
 			##EXPERIMENTAL GROUND VEHICLES##
 			gridboxtype = {
@@ -168,7 +156,7 @@ guiTypes = {
 				format = "LEFT"
 			}
 			gridboxtype = {
-				name = "modern_light_tank_tree"
+				name = "modern_super_heavy_tank_tree"
 				position = { x = 150 y = 500 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -210,6 +198,30 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
+			gridboxtype = {
+				name = "light_scout_tree"
+				position = { x = 1825 y = 250 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			gridboxtype = {
+				name = "heavy_scout_tree"
+				position = { x = 1150 y = 375 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			gridboxtype = {
+				name = "light_kamikadze_tree"
+				position = { x = 1375 y = 375 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			gridboxtype = {
+				name = "modern_gunship_tree"
+				position = { x = 1600 y = 375 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 			##Unique Unit Types##
 			gridboxtype = {
 				name = "jetpack_brigade_tree"
@@ -232,31 +244,6 @@ guiTypes = {
 			gridboxtype = {
 				name = "helicopter_pirates_tree"
 				position = { x = 2150 y = 375 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			##Fuel##
-			gridboxtype = {
-				name = "classic_combustion_engine_tree"
-				position = { x = 2150 y = 750 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "atomic_engine_tree"
-				position = { x = 2350 y = 750 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "biofuel_engine_tree"
-				position = { x = 2150 y = 875 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "electric_engine_tree"
-				position = { x = 2350 y = 875 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
@@ -4772,6 +4759,63 @@ guiTypes = {
 			maxWidth = 80
 			maxHeight = 20
 			format = center
+		}
+		
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=141 y=1 }
+			size = { width = 35 height = 26 }
+			clipping = no
+
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+
+			iconType = {
+				name = "picture"
+				position = { x=1 y=2 }
+				spriteType = "GFX_subtech_td"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=141 y=28 }
+			size = { width = 35 height = 26 }
+			clipping = no
+
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+
+			iconType = {
+				name = "picture"
+				position = { x=1 y=2 }
+				spriteType = "GFX_subtech_art"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "sub_technology_slot_2"
+			position = { x=141 y=55 }
+			size = { width = 35 height = 26 }
+			clipping = no
+
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+
+			iconType = {
+				name = "picture"
+				position = { x=1 y=2 }
+				spriteType = "GFX_subtech_aa"
+				alwaystransparent = yes
+			}
 		}
 	}	
 	

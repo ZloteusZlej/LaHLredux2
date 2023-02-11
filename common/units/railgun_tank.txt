@@ -1,7 +1,7 @@
 sub_units = {
 
-	modern_helicopter_tank = {
-		sprite = "light_armor"
+	modern_railgun_tank = {
+		sprite = "heavy_armor"
 		map_icon_category = armored
 		priority = 2504
 		ai_priority = 2504
@@ -18,60 +18,59 @@ sub_units = {
 			category_front_line
 			category_all_armor
 			category_army
-			category_MBT_1950
 		}
 
 
 		forest = {
-		    attack = -0.9
-			movement = 0.1
+		    attack = -0.40
+			movement = -0.40
 		}
 		hills = {
-		    attack = -0.9
-			movement = 0.1
+		    attack = -0.20
+			movement = -0.1
 		}
 		mountain = 	{
-		    attack = -0.9
-			movement = -0.2
+		    attack = -0.5
+			movement = -0.5
 		}
 		jungle = {
-		    attack = -0.9
-			movement = 0.1
+		    attack = -0.7
+			movement = -0.5
 		}
 		marsh = {
-		    attack = -0.9
-			movement = 0.1
+		    attack = -0.2 
+			movement = -0.7
 		}
 		urban = {
-			attack = -0.9
-			defence = -0.9
-			movement = 0.1
-		}
-		river = { 
-			attack = -0.9
+			attack = -0.5
+			defence = -0.2
 			movement = 0.2
 		}
+		river = { 
+			attack = -0.2 
+			movement = -0.5
+		}
 		amphibious = { 
-			attack = -0.9
-			movement = 0.1
+			attack = -0.8
+			movement = -0.8
 		}
 		fort = {
-			attack = -0.8
+			attack = 0.2
 		}
 
-		combat_width = 1.5
+		combat_width = 2
 
 		need = {
-			modern_helicopter_tank_equipment = 40
+			modern_railgun_tank_equipment = 40
 		}
 
-		manpower = 500
+		manpower = 600
 		max_organisation = 10
 		default_morale = 0.3
 		training_time = 180
 		max_strength = 2
 		weight = 1.5		
-		supply_consumption = 0.6
+		supply_consumption = 0.3
 		
 	}
 }

@@ -39,15 +39,15 @@ sub_units = {
 		categories = { category_cas }
 		land_air_wing_size = 100
 	}
-	#stealth_cas = {
-	#	sprite = light_plane
-	#	priority = 2
-	#	active = yes
-	#	type = cas
-	#	need = { stealth_small_plane_cas_airframe = 1 }
-	#	categories = { category_cas }
-	#	land_air_wing_size = 100
-	#}
+	stealth_cas = {
+		sprite = light_plane
+		priority = 2
+		active = yes
+		type = cas
+		need = { stealth_small_plane_cas_airframe = 1 }
+		categories = { category_cas }
+		land_air_wing_size = 100
+	}
 	cv_cas = {
 		sprite = light_plane
 		priority = 2
@@ -144,6 +144,15 @@ sub_units = {
 		type = suicide
 		need = { medium_plane_suicide_airframe = 1 }
 		land_air_wing_size = 100
+	}
+	
+	suicide_drones = {
+		sprite = light_plane
+		priority = 9
+		active = yes
+		type = suicide 
+		need = { suicide_drones_equipment = 1 }
+		land_air_wing_size = 300
 	}
 
 	# Large airframe
@@ -274,6 +283,15 @@ sub_units = {
 		active = yes
 		type = missile
 		need = { guided_missile_equipment = 1 }
+		land_air_wing_size = 100
+	}
+	
+	transport_airship = {
+		sprite = heavy_plane
+		priority = 6
+		active = yes
+		type = air_transport
+		need = { transport_airship_equipment = 1 }
 		land_air_wing_size = 100
 	}
 }

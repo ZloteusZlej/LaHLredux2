@@ -5,14 +5,14 @@ sub_units = {
 		map_icon_category = armored
 		priority = 301
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			armor
-			anti_air
+			support
 		}
 		
-		group = armor
+		group = support
 		
 		categories = {
 			category_all_armor
@@ -22,7 +22,7 @@ sub_units = {
 		combat_width = 1
 
 		need = {
-			modern_tank_aa_equipment = 12
+			transport_helicopter_equipment = 15
 		}
 		manpower = 500
 		max_organisation = 0

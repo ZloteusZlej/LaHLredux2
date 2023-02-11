@@ -1,7 +1,7 @@
 sub_units = {
 
 	saddam_hussein_supercannons = {
-		sprite = infantry
+		sprite = artillery
 		map_icon_category = infantry
 		priority = 301
 		ai_priority = 100
@@ -9,17 +9,18 @@ sub_units = {
 		
 		type = {
 			infantry
-			support
+			artillery
 		}
 		
-		group = support
+		group = infantry
 		
 		categories = {
-			category_support_battalions
 			category_army
+			category_line_artillery
+			category_artillery
 		}
 
-		combat_width = 1
+		combat_width = 5
 		
 		essential = {
 			supercannons_equipment
@@ -28,7 +29,7 @@ sub_units = {
 		need = {
 			supercannons_equipment = 2
 		}
-		manpower = 100
+		manpower = 1000
 		max_organisation = 0
 		default_morale = 0.1
 		max_strength = 0.7
