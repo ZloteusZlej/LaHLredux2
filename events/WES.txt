@@ -3063,5 +3063,22 @@ country_event = { #Navy Stuff
 	}	
 }
 
+country_event = { #GREEN ECONOMY
+	id = WES_event.104
+	title = WES_event.104.t
+	desc = WES_event.104.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.104.a 
+		WES = {
+			hidden_effect = {
+				set_technology = {
+					change_economy_g = 1
+				}
+			}
+		}
+	}	
+}
+
 ##PURGING PEOPLE##
 

@@ -1600,9 +1600,13 @@ shared_focus = {
 			hidden_effect = {
 				set_technology = {
 					green_overall = 1
+					green_overall_dummy = 1
 					automatization_overall = 0
+					automatization_overall_dummy = 0
 					industrialization_overall = 0
+					industrialization_overall_dummy = 0
 					unorthodox_overall = 0
+					unorthodox_overall_dummy = 0
 				}
 			}
 			add_to_variable = {
@@ -1622,6 +1626,12 @@ shared_focus = {
 				var = WES_total_transformation_level
 				min = 0
 				max = 800
+			}
+			WES = {
+				country_event = {
+					days = 1
+					id = WES_event.104
+				}
 			}
 			custom_effect_tooltip = WES_end_of_industrial_society.tt
 			custom_effect_tooltip =	WES_transformation_deurbanization_big.tt
