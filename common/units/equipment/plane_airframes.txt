@@ -190,10 +190,10 @@ equipments = {
 		}
 	}
 
-	small_plane_airframe_0 = { #Inter-War
-		abbreviation = "afs0"
-		derived_variant_name = fighter_equipment_0
-		year = 1933
+	small_plane_airframe_1 = { #Inter-War
+		abbreviation = "afs1"
+		derived_variant_name = fighter_equipment_1
+		year = 2015
 
 		archetype = small_plane_airframe
 		module_slots = inherit
@@ -208,13 +208,13 @@ equipments = {
 		naval_strike_targetting = 1
 	}
 
-	small_plane_airframe_1 = { #Basic
-		abbreviation = "afs1"
-		derived_variant_name = fighter_equipment_1
-		year = 1936
+	small_plane_airframe_2 = { #Basic
+		abbreviation = "afs2"
+		derived_variant_name = fighter_equipment_2
+		year = 2020
 
 		archetype = small_plane_airframe
-		parent = small_plane_airframe_0
+		parent = small_plane_airframe_1
 		priority = 5
 
 		air_range = 650
@@ -285,13 +285,13 @@ equipments = {
 			}
 		}
 	}
-	small_plane_airframe_2 = { #Improved
-		abbreviation = "afs2"
-		derived_variant_name = fighter_equipment_2
-		year = 1939
+	small_plane_airframe_3 = { #Improved
+		abbreviation = "afs3"
+		derived_variant_name = fighter_equipment_3
+		year = 2025
 
 		archetype = small_plane_airframe
-		parent = small_plane_airframe_1
+		parent = small_plane_airframe_2
 		priority = 5
 
 		air_range = 900
@@ -389,13 +389,13 @@ equipments = {
 		}
 	}
 
-	small_plane_airframe_3 = { #Advanced
-		abbreviation = "afs3"
-		derived_variant_name = fighter_equipment_3
-		year = 1942
+	small_plane_airframe_4 = { #Advanced
+		abbreviation = "afs4"
+		derived_variant_name = fighter_equipment_4
+		year = 2028
 
 		archetype = small_plane_airframe
-		parent = small_plane_airframe_2
+		parent = small_plane_airframe_3 
 		priority = 5
 
 		air_range = 1100
@@ -500,13 +500,13 @@ equipments = {
 		}
 	}
 
-	small_plane_airframe_4 = { #modern
-		abbreviation = "afs4"
-		derived_variant_name = jet_fighter_equipment_1 # We should use "jet" for this or any of the ones below, but this is good enough for now.
-		year = 1945
+	small_plane_airframe_5 = { #modern
+		abbreviation = "afs5"
+		derived_variant_name = fighter_equipment_5
+		year = 2030
 
 		archetype = small_plane_airframe
-		parent = small_plane_airframe_3
+		parent = small_plane_airframe_4
 		priority = 5
 
 		air_range = 2000
@@ -615,7 +615,7 @@ equipments = {
 	}
 
 	cv_small_plane_airframe = {
-		year = 1933
+		year = 1980
 
 		is_archetype = yes
 		is_convertable = yes
@@ -807,10 +807,10 @@ equipments = {
 		}
 	}
 
-	cv_small_plane_airframe_0 = { #Inter-War
-		abbreviation = "afc0"
-		derived_variant_name = cv_fighter_equipment_0
-		year = 1933
+	cv_small_plane_airframe_1 = { #Inter-War
+		abbreviation = "afc1"
+		derived_variant_name = cv_fighter_equipment_1
+		year = 2015
 
 		archetype = cv_small_plane_airframe
 		module_slots = inherit
@@ -825,13 +825,13 @@ equipments = {
 		naval_strike_targetting = 1
 	}
 
-	cv_small_plane_airframe_1 = { #Basic
-		abbreviation = "afc1"
-		derived_variant_name = cv_fighter_equipment_1
-		year = 1936
+	cv_small_plane_airframe_2 = { #Basic
+		abbreviation = "afc2"
+		derived_variant_name = cv_fighter_equipment_2
+		year = 2020
 
 		archetype = cv_small_plane_airframe
-		parent = cv_small_plane_airframe_0
+		parent = cv_small_plane_airframe_1
 		priority = 5
 
 		air_range = 570
@@ -901,13 +901,13 @@ equipments = {
 			}
 		}
 	}
-	cv_small_plane_airframe_2 = { #Improved
-		abbreviation = "afc2"
-		derived_variant_name = cv_fighter_equipment_2
-		year = 1939
+	cv_small_plane_airframe_3 = { #Improved
+		abbreviation = "afc3"
+		derived_variant_name = cv_fighter_equipment_3
+		year = 2025
 
 		archetype = cv_small_plane_airframe
-		parent = cv_small_plane_airframe_1
+		parent = cv_small_plane_airframe_2
 		priority = 5
 
 		air_range = 750
@@ -1004,13 +1004,13 @@ equipments = {
 		}
 	}
 
-	cv_small_plane_airframe_3 = { #Advanced
-		abbreviation = "afc3"
-		derived_variant_name = cv_fighter_equipment_3
-		year = 1942
+	cv_small_plane_airframe_4 = { #Advanced
+		abbreviation = "afc4"
+		derived_variant_name = cv_fighter_equipment_4
+		year = 2028
 
 		archetype = cv_small_plane_airframe
-		parent = cv_small_plane_airframe_2
+		parent = cv_small_plane_airframe_3
 		priority = 5
 
 		air_range = 900
@@ -1114,12 +1114,12 @@ equipments = {
 		}
 	}
 
-	cv_small_plane_airframe_4 = { #modern
-		abbreviation = "afc4"
-		year = 1945
+	cv_small_plane_airframe_5 = { #modern
+		abbreviation = "afc5"
+		year = 2030
 
 		archetype = cv_small_plane_airframe
-		parent = cv_small_plane_airframe_3
+		parent = cv_small_plane_airframe_4
 		priority = 5
 
 		air_range = 1700
@@ -1227,7 +1227,7 @@ equipments = {
 	}
 
 	medium_plane_airframe = {
-		year = 1933
+		year = 1980
 
 		is_archetype = yes
 		is_convertable = yes
@@ -1461,10 +1461,10 @@ equipments = {
 		}
 	}
 
-	medium_plane_airframe_0 = { #Inter-War
-		abbreviation = "afm0"
-		derived_variant_name = tac_bomber_equipment_0
-		year = 1933
+	medium_plane_airframe_1 = { #Inter-War
+		abbreviation = "afm1"
+		derived_variant_name = tac_bomber_equipment_1
+		year = 2015
 
 		archetype = medium_plane_airframe
 		module_slots = inherit
@@ -1479,13 +1479,13 @@ equipments = {
 		naval_strike_targetting = 1
 	}
 
-	medium_plane_airframe_1 = { #Basic
-		abbreviation = "afm1"
-		derived_variant_name = tac_bomber_equipment_1
-		year = 1936
+	medium_plane_airframe_2 = { #Basic
+		abbreviation = "afm2"
+		derived_variant_name = tac_bomber_equipment_2
+		year = 2020
 
 		archetype = medium_plane_airframe
-		parent = medium_plane_airframe_0
+		parent = medium_plane_airframe_1
 		priority = 5
 
 		air_range = 2200
@@ -1606,13 +1606,13 @@ equipments = {
 		}
 	}
 
-	medium_plane_airframe_2 = { #Improved
-		abbreviation = "afm2"
-		derived_variant_name = tac_bomber_equipment_2
-		year = 1939
+	medium_plane_airframe_3 = { #Improved
+		abbreviation = "afm3"
+		derived_variant_name = tac_bomber_equipment_3
+		year = 2025
 
 		archetype = medium_plane_airframe
-		parent = medium_plane_airframe_1
+		parent = medium_plane_airframe_2
 		priority = 5
 
 		air_range = 2400
@@ -1749,13 +1749,13 @@ equipments = {
 		}
 	}
 
-	medium_plane_airframe_3 = { #Advanced
-		abbreviation = "afm3"
-		derived_variant_name = tac_bomber_equipment_3
-		year = 1942
+	medium_plane_airframe_4 = { #Advanced
+		abbreviation = "afm4"
+		derived_variant_name = tac_bomber_equipment_4
+		year = 2028
 
 		archetype = medium_plane_airframe
-		parent = medium_plane_airframe_2
+		parent = medium_plane_airframe_3
 		priority = 5
 
 		air_range = 2800
@@ -1904,10 +1904,10 @@ equipments = {
 		}
 	}
 
-	medium_plane_airframe_4 = { #Modern
-		abbreviation = "afm4"
-		derived_variant_name = jet_tac_bomber_equipment_1
-		year = 1945
+	medium_plane_airframe_5 = { #Modern
+		abbreviation = "afm5"
+		derived_variant_name = tac_bomber_equipment_5
+		year = 2030
 
 		archetype = medium_plane_airframe
 		parent = medium_plane_airframe_3
@@ -2060,7 +2060,7 @@ equipments = {
 	}
 
 	large_plane_airframe = {
-		year = 1933
+		year = 1980
 
 		is_archetype = yes
 		is_convertable = yes
@@ -2286,9 +2286,10 @@ equipments = {
 		}
 	}
 
-	large_plane_airframe_0 = { #Inter-War
-		abbreviation = "afl0"
-		year = 1933
+	large_plane_airframe_1 = { #Inter-War
+		abbreviation = "afl1"
+		derived_variant_name = strat_bomber_equipment_1
+		year = 2015
 
 		archetype = large_plane_airframe
 		module_slots = inherit
@@ -2303,13 +2304,13 @@ equipments = {
 		naval_strike_targetting = 1
 	}
 
-	large_plane_airframe_1 = { #Basic
-		abbreviation = "afl1"
-		derived_variant_name = strat_bomber_equipment_1
-		year = 1936
+	large_plane_airframe_2 = { #Basic
+		abbreviation = "af12"
+		derived_variant_name = strat_bomber_equipment_2
+		year = 2020
 
 		archetype = large_plane_airframe
-		parent = large_plane_airframe_0
+		parent = large_plane_airframe_1
 		priority = 5
 
 		air_range = 2500
@@ -2438,13 +2439,13 @@ equipments = {
 		}
 	}
 
-	large_plane_airframe_2 = { #Improved
-		abbreviation = "afl2"
+	large_plane_airframe_3 = { #Improved
+		abbreviation = "afl3"
 		derived_variant_name = strat_bomber_equipment_2
-		year = 1939
+		year = 2025
 
 		archetype = large_plane_airframe
-		parent = large_plane_airframe_1
+		parent = large_plane_airframe_2
 		priority = 5
 
 		air_range = 3500
@@ -2598,13 +2599,13 @@ equipments = {
 		}
 	}
 
-	large_plane_airframe_3 = { #Advanced
-		abbreviation = "afl3"
-		derived_variant_name = strat_bomber_equipment_3
-		year = 1942
+	large_plane_airframe_4 = { #Advanced
+		abbreviation = "afl4"
+		derived_variant_name = strat_bomber_equipment_4
+		year = 2028
 
 		archetype = large_plane_airframe
-		parent = large_plane_airframe_2
+		parent = large_plane_airframe_3
 		priority = 5
 
 		air_range = 5000
@@ -2758,13 +2759,13 @@ equipments = {
 		}
 	}
 
-	large_plane_airframe_4 = { #Modern
-		abbreviation = "afl4"
-		derived_variant_name = jet_strat_bomber_equipment_1
-		year = 1945
+	large_plane_airframe_5 = { #Modern
+		abbreviation = "afl5"
+		derived_variant_name = strat_bomber_equipment_5
+		year = 2030
 
 		archetype = large_plane_airframe
-		parent = large_plane_airframe_3
+		parent = large_plane_airframe_4
 		priority = 5
 
 		air_range = 7000
@@ -3151,10 +3152,10 @@ equipments = {
 		}
 	}
 
-	airship_plane_airframe_0 = { #Inter-War
-		abbreviation = "afm0"
+	airship_plane_airframe_1 = { #Inter-War
+		abbreviation = "ars1"
 		derived_variant_name = drone_airship_equipment_1
-		year = 1933
+		year = 2020
 
 		archetype = airship_plane_airframe
 		module_slots = inherit

@@ -8,7 +8,7 @@ duplicate_archetypes = {
 	# Multiple Rocket Launcher
 
 	multiple_rocket_missile_chassis = {
-		archetype = main_battle_tank_chassis
+		archetype = multiple_rocket_chassis
 		type = { armor artillery }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
@@ -39,6 +39,14 @@ duplicate_archetypes = {
 	main_battle_tank_destroyer_chassis = {
 		archetype = main_battle_tank_chassis
 		type = { armor anti_tank }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+		}
+	}
+	
+	main_battle_tank_flame_chassis = {
+		archetype = main_battle_tank_chassis
+		type = { armor flame }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
 		}
@@ -112,6 +120,14 @@ duplicate_archetypes = {
 	modern_super_heavy_tank_destroyer_chassis = {
 		archetype = modern_super_heavy_tank_chassis
 		type = { armor anti_tank }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+		}
+	}
+	
+	modern_super_heavy_tank_flame_chassis = {
+		archetype = modern_super_heavy_tank_chassis
+		type = { armor flame }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
 		}
