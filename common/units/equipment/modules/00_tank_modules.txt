@@ -1614,7 +1614,7 @@ equipment_modules = {
 	tank_auto_cannon_light = { #BMP Cannon
 		abbreviation = "acl"
 		category = tank_small_main_armament
-		sfx = sfx_ui_sd_module_turret
+		sfx = sfx_
 		add_stats = {
 			soft_attack = 20
 			hard_attack = 7
@@ -1633,7 +1633,7 @@ equipment_modules = {
 	tank_small_cannon_light = { #BMP Gun
 		abbreviation = "scl"
 		category = tank_small_main_armament
-		sfx = sfx_ui_sd_module_turret
+		sfx = sfx_
 		parent = tank_small_cannon
 		add_stats = {
 			soft_attack = 15
@@ -1653,7 +1653,7 @@ equipment_modules = {
 	tank_anti_air_light = { #BMP Anti-Air
 		abbreviation = "aal"
 		category = tank_small_main_armament
-		sfx = sfx_ui_sd_module_turret
+		sfx = sfx_
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
 		add_stats = {
@@ -1679,7 +1679,7 @@ equipment_modules = {
 	tank_atgm_light = { #Medium ATGM
 		abbreviation = "atl"
 		category = tank_small_main_armament
-		sfx = sfx_ui_sd_module_turret
+		sfx = sfx_
 		allow_equipment_type = anti_tank
 
 		add_stats = {
@@ -1706,7 +1706,7 @@ equipment_modules = {
 	tank_small_howitzer_light = { #Small Howitzer
 		abbreviation = "shl"
 		category = tank_small_main_armament
-		sfx = sfx_ui_sd_module_turret
+		sfx = sfx_
 		allow_equipment_type = artillery
 
 		add_stats = {
@@ -1730,11 +1730,11 @@ equipment_modules = {
 		}
 	}
 	
-	#Medium Cannon
-	tank_anti_air_medium = {
-		abbreviation = "aa3"
+	#Medium Weapons
+	tank_anti_air_medium = { #Medium Anti-Air
+		abbreviation = "aam"
 		category = tank_medium_main_armament
-		sfx = sfx_ui_sd_module_turret
+		sfx = sfx_
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
 		add_stats = {
@@ -1756,10 +1756,10 @@ equipment_modules = {
 			tungsten = 1
 		}
 	}
-	tank_mbt_cannon_medium = { #Done
-		abbreviation = "mc2"
+	tank_mbt_cannon_medium = { #Tank Cannon
+		abbreviation = "mcm"
 		category = tank_medium_main_armament
-		sfx = sfx_ui_sd_module_turret
+		sfx = sfx_
 		allow_equipment_type = anti_tank
 		parent = tank_medium_cannon
 		dismantle_cost_ic = 1
@@ -1782,6 +1782,257 @@ equipment_modules = {
 			tungsten = 1
 			steel = 2
 			chromium = 1
+		}
+	}
+	
+	tank_atgm_medium = { #Heavy ATGM
+		abbreviation = "atm"
+		category = tank_medium_main_armament
+		sfx = sfx_
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 20
+			hard_attack = 35
+			ap_attack = 125
+			build_cost_ic = 5
+			maximum_speed = -0.3
+			reliability = -0.175
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = tank_medium_main_armament
+			convert_cost_ic = 5
+		}
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 2
+		}
+	}
+	
+	tank_howitzer_medium = { #Tank Artillery Cannon
+		abbreviation = "hwm"
+		category = tank_medium_main_armament
+		sfx = sfx_
+		allow_equipment_type = artillery
+		parent = tank_medium_howitzer
+		add_stats = {
+			soft_attack = 45
+			hard_attack = 2
+			ap_attack = 30
+			build_cost_ic = 5.5
+			maximum_speed = -0.4
+			reliability = -0.2
+			breakthrough = -2
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = tank_medium_main_armament
+			convert_cost_ic = 5.5
+		}
+		build_cost_resources = {
+			tungsten = 1
+			steel = 3
+			chromium = 1
+		}
+	}
+	
+	tank_auto_cannon_medium = { #Heavy Autocannon
+		abbreviation = "acm"
+		category = tank_medium_main_armament
+		sfx = sfx_
+		add_stats = {
+			soft_attack = 25
+			hard_attack = 10
+			ap_attack = 50
+			build_cost_ic = 2.5
+			maximum_speed = -0.1
+			reliability = -0.1
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = tank_medium_main_armament
+			convert_cost_ic = 2.5
+		}
+	}
+	
+	#Heavy Weapon
+	tank_anti_tank_cannon_heavy = { #Really Big Gun
+		abbreviation = "ath"
+		category = tank_heavy_main_armament
+		sfx = sfx_
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 25
+			hard_attack = 45
+			ap_attack = 200
+			build_cost_ic = 7
+			maximum_speed = -0.4
+			reliability = -0.2
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = tank_heavy_main_armament
+			convert_cost_ic = 7
+		}
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 3
+		}
+	}
+	
+	tank_mbt_cannon_heavy = { #MBT Heavy Tank
+		abbreviation = "mch"
+		category = tank_heavy_main_armament
+		sfx = sfx_
+		allow_equipment_type = anti_tank
+		add_stats = {
+			soft_attack = 30
+			hard_attack = 40
+			ap_attack = 170
+			build_cost_ic = 8
+			maximum_speed = -0.5
+			reliability = -0.3
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = tank_heavy_main_armament
+			convert_cost_ic = 8
+		}
+		build_cost_resources = {
+			tungsten = 3
+			chromium = 1
+			steel = 3
+		}
+	}
+
+	tank_howitzer_heavy = { #Heavy Artillery 
+		abbreviation = "hwh"
+		category = tank_heavy_main_armament
+		sfx = sfx_
+		allow_equipment_type = artillery
+
+		add_stats = {
+			soft_attack = 55
+			hard_attack = 2
+			ap_attack = 60
+			build_cost_ic = 7
+			maximum_speed = -0.5
+			reliability = -0.3
+			breakthrough = -4
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = tank_heavy_main_armament
+			convert_cost_ic = 7
+		}
+
+		build_cost_resources = {
+			tungsten = 1
+			chromium = 1
+			steel = 3
+		}
+	}
+	
+	tank_anti_air_heavy = { #Heavy Anti-Air
+		abbreviation = "aah"
+		category = tank_heavy_main_armament
+		sfx = sfx_
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+		add_stats = {
+			soft_attack = 12
+			hard_attack = 5
+			ap_attack = 40
+			air_attack = 54
+			build_cost_ic = 5
+			reliability = -0.1
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = tank_heavy_main_armament
+			convert_cost_ic = 5
+		}
+		build_cost_resources = {
+			steel = 3
+			chromium = 1
+			tungsten = 1
+		}
+	}
+	
+	#Superheavy Weapons
+	tank_super_heavy_cannon = { #Really Really Big Gun
+		abbreviation = "sh1"
+		category = tank_super_heavy_main_armament
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 30
+			hard_attack = 55
+			ap_attack = 275
+			build_cost_ic = 12.5
+			maximum_speed = -0.4
+			reliability = -0.2
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		build_cost_resources = {
+			tungsten = 5
+			chromium = 2
+		}
+	}
+	tank_super_heavy_cannon = { #MBT Super Heavy Gun
+		abbreviation = "sh1"
+		category = tank_super_heavy_main_armament
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 35
+			hard_attack = 45
+			ap_attack = 225
+			build_cost_ic = 12.5
+			maximum_speed = -0.6
+			reliability = -0.35
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		build_cost_resources = {
+			tungsten = 5
+			chromium = 2
+		}
+	}
+	tank_super_heavy_cannon = { #Super Heavy Artillery
+		abbreviation = "sh1"
+		category = tank_super_heavy_main_armament
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 65
+			hard_attack = 3
+			ap_attack = 60
+			build_cost_ic = 12.5
+			maximum_speed = -0.5
+			reliability = -0.3
+			breakthrough = -4
+		} 
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		build_cost_resources = {
+			tungsten = 5
+			chromium = 2
 		}
 	}
 
@@ -2098,7 +2349,7 @@ equipment_modules = {
 		}
 	}
 
-	tank_medium_howitzer_2 = {
+	tank_medium_howitzer_2 = { #Done
 		abbreviation = "mh2"
 		category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
@@ -2126,7 +2377,7 @@ equipment_modules = {
 		}
 	}
 
-	tank_rocket_launcher = {
+	tank_rocket_launcher = { #Not Used
 		abbreviation = "rk1"
 		category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
@@ -2155,7 +2406,7 @@ equipment_modules = {
 		}
 	}
 
-	tank_rocket_launcher_2 = {
+	tank_rocket_launcher_2 = { #Not Used
 		abbreviation = "rk2"
 		category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
@@ -2209,7 +2460,7 @@ equipment_modules = {
 		}
 	}
 
-	tank_high_velocity_cannon_2 = {
+	tank_high_velocity_cannon_2 = { #Done
 		abbreviation = "hv2"
 		category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
@@ -2235,7 +2486,7 @@ equipment_modules = {
 			steel = 2
 		}
 	}
-	tank_high_velocity_cannon_3 = {
+	tank_high_velocity_cannon_3 = { #Done
 		abbreviation = "hv3"
 		category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
@@ -2262,7 +2513,7 @@ equipment_modules = {
 		}
 	}
 
-	tank_heavy_cannon = {
+	tank_heavy_cannon = { #Not Used
 		abbreviation = "hc1"
 		category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
@@ -2289,7 +2540,7 @@ equipment_modules = {
 		}
 	}
 
-	tank_heavy_cannon_2 = {
+	tank_heavy_cannon_2 = { #Not Used
 		abbreviation = "hc2"
 		category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
@@ -2316,7 +2567,7 @@ equipment_modules = {
 		}
 	}
 
-	tank_heavy_cannon_3 = {
+	tank_heavy_cannon_3 = { #Done
 		abbreviation = "hc3"
 		category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
@@ -2394,6 +2645,321 @@ equipment_modules = {
 		}
 	}
 
+	###LAHL SPECIAL MODULES###
+	##Weapons
+	modern_secondary_turret_hmg = { #Heavy Machine Gun
+		abbreviation = "mhmg"
+		category = tank_secondary_turret
+		sfx = sfx_
+
+		add_stats = {
+			build_cost_ic = 1.5
+			soft_attack = 4
+		}
+		xp_cost = 1
+		multiply_stats = {
+		}
+	}
+
+	modern_secondary_turret_small_cannon = { #Small Cannon
+		abbreviation = "mscn"
+		category = tank_secondary_turret
+		sfx = sfx_
+
+		add_stats = {
+			soft_attack = 5
+			hard_attack = 3
+			build_cost_ic = 3
+			reliability = -0.1
+			breakthrough = 2
+		}
+		xp_cost = 1
+		multiply_stats = {
+		}
+	}
+	
+	modern_secondary_turret_atgm = { #ATGM
+		abbreviation = "msat"
+		category = tank_secondary_turret
+		sfx = sfx_
+
+		add_stats = {
+			soft_attack = 2
+			hard_attack = 4
+			ap_attack = 5
+			build_cost_ic = 3
+			reliability = -0.1
+			breakthrough = 1
+		}
+		xp_cost = 1
+		multiply_stats = {
+		}
+	}
+	
+	modern_secondary_turret_mortar = { #Mortar
+		abbreviation = "msmr"
+		category = tank_secondary_turret
+		sfx = sfx_
+
+		add_stats = {
+			soft_attack = 8
+			hard_attack = 1
+			build_cost_ic = 3
+			reliability = -0.1
+		}
+		xp_cost = 1
+		multiply_stats = {
+		}
+	}
+	
+	modern_secondary_turret_manpads = { #Manpads
+		abbreviation = "mmnp"
+		category = tank_secondary_turret
+		sfx = sfx_
+
+		add_stats = {
+			build_cost_ic = 2
+			air_attack = 5
+			hard_attack = 1
+		}
+		xp_cost = 1
+		multiply_stats = {
+		}
+	}
+	
+	modern_secondary_turret_agl = { #Automatic Grenade Launcher
+		abbreviation = "magl"
+		category = tank_secondary_turret
+		sfx = sfx_
+
+		add_stats = {
+			build_cost_ic = 2
+			soft_attack = 6
+			ap_attack = 1
+			hard_attack = 1
+		}
+		xp_cost = 1
+		multiply_stats = {
+		}
+	}
+	#Defence Modules
+	modern_smoke_launchers = {
+		abbreviation = "msmk"
+		category = tank_defense_module
+		sfx = sfx_
+
+		add_stats = {
+			build_cost_ic = 0.5
+			defense = 2
+			breakthrough = 1
+		}
+		xp_cost = 1
+		multiply_stats = {
+
+		}
+	}
+	slat_armour = {
+		abbreviation = "slat"
+		category = tank_defense_module
+		sfx = sfx_
+
+		add_stats = {
+			maximum_speed = -0.25
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 10
+		multiply_stats = {
+			armor_value = 0.35
+			build_cost_ic = 0.15
+		}
+	}
+	reactive_armour = {
+		abbreviation = "react"
+		category = tank_defense_module
+		sfx = sfx_
+
+		add_stats = {
+			armor_value = 3
+			breakthrough = 3
+			build_cost_ic = 0.5
+			maximum_speed = -0.25
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+	}
+	active_armour = {
+		abbreviation = "activ"
+		category = tank_defense_module
+		sfx = sfx_
+
+		add_stats = {
+			armor_value = 5
+			breakthrough = 5
+			build_cost_ic = 1
+			reliability = 0.15
+			maximum_speed = -0.15
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+	}
+	blowout_panels = {
+		abbreviation = "blow"
+		category = tank_defense_module
+		sfx = sfx_
+
+		add_stats = {
+			reliability = 0.15
+			build_cost_ic = 1
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+	}
+	
+	###SPECIAL Modules
+	modern_extra_ammo_storage = {
+		abbreviation = "mxtra"
+		category = tank_special_module
+		sfx = sfx_
+
+		add_stats = {
+			reliability = -0.1
+			breakthrough = 2
+			defense = 4
+		}
+		xp_cost = 1
+	}
+	
+	modern_expanded_fuel_tank = {
+		abbreviation = "mfuel"
+		category = tank_special_module
+		sfx = sfx_
+
+		add_stats = {
+			fuel_capacity = 100
+			build_cost_ic = 1
+			maximum_speed = -0.25
+		}
+		xp_cost = 3
+		multiply_stats = {
+			
+		}
+	}
+
+	optical_sensors = {
+		abbreviation = "sensr"
+		category = tank_special_module
+		sfx = sfx_
+
+		add_stats = {
+			build_cost_ic = 2
+			recon = 2
+		}
+		xp_cost = 3
+		multiply_stats = {
+			
+		}
+	}	
+
+	fire_control_systems = {
+		abbreviation = "fcs"
+		category = tank_special_module
+		sfx = sfx_
+
+		add_stats = {
+			build_cost_ic = 3
+			breakthrough = 5
+			soft_attack = 5
+			hard_attack = 5
+		}
+		xp_cost = 1
+
+	}
+
+	modern_dozer_blade = {
+		abbreviation = "mdozer"
+		category = tank_special_module
+		sfx = sfx_
+
+		add_stats = {
+			entrenchment = 1
+			build_cost_ic = 1
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+	}	
+	
+	network_systems = {
+		abbreviation = "netwr"
+		category = tank_special_module
+		sfx = sfx_
+
+		add_stats = {
+			build_cost_ic = 5
+			breakthrough = 5
+			reliability = 1
+			recon = 2
+			hard_attack = 6
+			ap_attack = 6
+		}
+		xp_cost = 1
+
+	}
+	
+	ai_systems = {
+		abbreviation = "ai"
+		category = tank_special_module
+		sfx = sfx_
+
+		add_stats = {
+			build_cost_ic = 8
+			breakthrough = 6
+			soft_attack = 10
+			hard_attack = 10
+			ap_attack = 10
+		}
+		xp_cost = 1
+
+	}
+	
+	recon_drones = {
+		abbreviation = "rcdrn"
+		category = tank_special_module
+		sfx = sfx_
+
+		add_stats = {
+			build_cost_ic = 1.5
+			recon = 1
+		}
+		xp_cost = 3
+		multiply_stats = {
+			
+		}
+	}	
+	
+	suicide_drones = {
+		abbreviation = "rcdrn"
+		category = tank_special_module
+		sfx = sfx_
+
+		add_stats = {
+			build_cost_ic = 2
+			soft_attack = 1.5
+			hard_attack = 1.5
+			ap_attack = 1.5
+		}
+		xp_cost = 3
+		multiply_stats = {
+			
+		}
+	}	
 
 	###Special Modules
 
@@ -2466,7 +3032,7 @@ equipment_modules = {
 		}
 	}
 
-	secondary_turret_hmg = {
+	secondary_turret_hmg = { #Done
 		abbreviation = "thmg"
 		category = tank_secondary_turret
 		sfx = sfx_ui_sd_module_turret
@@ -2480,7 +3046,7 @@ equipment_modules = {
 		}
 	}
 
-	secondary_turret_small_cannon = {
+	secondary_turret_small_cannon = { #Done
 		abbreviation = "tsc"
 		category = tank_secondary_turret
 		sfx = sfx_ui_sd_module_turret
@@ -2497,7 +3063,7 @@ equipment_modules = {
 		}
 	}
 
-	sloped_armor = {
+	sloped_armor = { #Done
 		abbreviation = "slop"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
@@ -2512,7 +3078,7 @@ equipment_modules = {
 		}
 	}
 
-	stabilizer = {
+	stabilizer = { #Not Used
 		abbreviation = "stab"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
@@ -2525,7 +3091,7 @@ equipment_modules = {
 
 	}
 
-	smoke_launchers = {
+	smoke_launchers = { #Done
 		abbreviation = "smok"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
@@ -2541,7 +3107,7 @@ equipment_modules = {
 		}
 	}
 
-	extra_ammo_storage = {
+	extra_ammo_storage = { #Done
 		abbreviation = "extra"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
@@ -2554,7 +3120,7 @@ equipment_modules = {
 		xp_cost = 1
 	}
 
-	wet_ammo_storage = {
+	wet_ammo_storage = { #Done
 		abbreviation = "wet"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
@@ -2587,7 +3153,7 @@ equipment_modules = {
 		}
 	}
 
-	armor_skirts = {
+	armor_skirts = { #Done
 		abbreviation = "skirt"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
@@ -2603,7 +3169,7 @@ equipment_modules = {
 		}
 	}
 
-	dozer_blade = {
+	dozer_blade = { #Done
 		abbreviation = "dozer"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
