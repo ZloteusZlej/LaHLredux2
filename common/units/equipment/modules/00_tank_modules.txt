@@ -173,29 +173,6 @@ equipment_modules = {
 		}
 	}
 	
-	tank_light_armor = {
-		abbreviation = "vdv"
-		category = tank_armor_type
-		allow_equipment_type = airborne
-		forbid_equipment_type_exact_match = armor
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = artillery
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = flame
-		sfx = sfx_
-
-		add_stats = {
-			defense = 1	
-		}
-		dismantle_cost_ic = 1
-		xp_cost = 8
-		multiply_stats = {
-			build_cost_ic = 0.3
-			armor_value = -0.5
-		}
-	}
-	
-
 	###Suspension Types
 
 	tank_torsion_bar_suspension = {
@@ -298,29 +275,6 @@ equipment_modules = {
 	
 	##LAHL##
 	###Turret Types - Armoured Car
-	tank_ac_battle_module_turret = {
-		abbreviation = "abm"
-		category = tank_ac_turret_type
-		sfx = sfx_
-		
-		allowed_module_categories = {
-			main_armament_slot = {
-				tank_battle_module_main_armament
-			}
-		}
-
-		add_stats = {
-			build_cost_ic = 0.2
-			breakthrough = 3
-			
-		}
-		dismantle_cost_ic = 0.5
-		xp_cost = 2
-		multiply_stats = {
-			
-		}
-
-	}
 	
 	tank_ac_cast_turret = {
 		abbreviation = "act"
@@ -329,7 +283,7 @@ equipment_modules = {
 		
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_small_main_armament
+				tank_battle_module_main_armament
 			}
 		}
 
@@ -354,7 +308,7 @@ equipment_modules = {
 		
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_small_main_armament
+				tank_battle_module_main_armament
 			}
 		}
 
@@ -378,7 +332,7 @@ equipment_modules = {
 		
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_small_main_armament
+				tank_battle_module_main_armament
 			}
 		}
 
@@ -403,7 +357,7 @@ equipment_modules = {
 		
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_small_main_armament
+				tank_battle_module_main_armament
 			}
 		}
 
@@ -430,7 +384,7 @@ equipment_modules = {
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_small_main_armament
-				tank_medium_main_armament
+				tank_battle_module_main_armament
 			}
 		}
 		forbid_equipment_type_exact_match_for_category = {
@@ -459,29 +413,6 @@ equipment_modules = {
 	}
 	
 	###Turret Types - IFV
-	tank_ifv_battle_module_turret = {
-		abbreviation = "ibm"
-		category = tank_ifv_turret_type
-		sfx = sfx_
-		
-		allowed_module_categories = {
-			main_armament_slot = {
-				tank_battle_module_main_armament
-			}
-		}
-
-		add_stats = {
-			build_cost_ic = 0.5
-			breakthrough = 5
-			
-		}
-		dismantle_cost_ic = 0.5
-		xp_cost = 2
-		multiply_stats = {
-			
-		}
-
-	}
 	
 	tank_ifv_cast_turret = {
 		abbreviation = "ict"
@@ -491,7 +422,7 @@ equipment_modules = {
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_small_main_armament
-				tank_medium_main_armament
+				tank_battle_module_main_armament
 			}
 		}
 
@@ -517,7 +448,7 @@ equipment_modules = {
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_small_main_armament
-				tank_medium_main_armament
+				tank_battle_module_main_armament
 			}
 		}
 
@@ -542,7 +473,7 @@ equipment_modules = {
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_small_main_armament
-				tank_medium_main_armament
+				tank_battle_module_main_armament
 			}
 		}
 
@@ -568,7 +499,7 @@ equipment_modules = {
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_small_main_armament
-				tank_medium_main_armament
+				tank_battle_module_main_armament
 			}
 		}
 
@@ -595,7 +526,7 @@ equipment_modules = {
 			main_armament_slot = {
 				tank_small_main_armament
 				tank_medium_main_armament
-				tank_heavy_main_armament
+				tank_battle_module_main_armament
 			}
 		}
 		forbid_equipment_type_exact_match_for_category = {
@@ -624,28 +555,6 @@ equipment_modules = {
 	}
 	
 	###Turret Types - MBT
-	tank_mbt_battle_module_turret = {
-		abbreviation = "mbm"
-		category = tank_mbt_turret_type
-		sfx = sfx_
-		
-		allowed_module_categories = {
-			main_armament_slot = {
-				tank_battle_module_main_armament
-			}
-		}
-		
-		add_stats = {
-			build_cost_ic = 0.5
-			breakthrough = 5
-			
-		}
-		dismantle_cost_ic = 0.5
-		xp_cost = 2
-		multiply_stats = {
-		}
-
-	}
 
 	tank_mbt_cast_turret = {
 		abbreviation = "mct"
@@ -654,9 +563,9 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_battle_module_main_armament
 				tank_small_main_armament
 				tank_medium_main_armament
-				tank_heavy_main_armament
 			}
 		}
 		add_stats = {
@@ -679,9 +588,9 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_battle_module_main_armament
 				tank_small_main_armament
 				tank_medium_main_armament
-				tank_heavy_main_armament
 			}
 		}
 		add_stats = {
@@ -703,9 +612,9 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_battle_module_main_armament
 				tank_small_main_armament
 				tank_medium_main_armament
-				tank_heavy_main_armament
 			}
 		}
 		add_stats = {
@@ -727,9 +636,9 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_battle_module_main_armament
 				tank_small_main_armament
 				tank_medium_main_armament
-				tank_heavy_main_armament
 			}
 		}
 		add_stats = {
@@ -752,10 +661,10 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_battle_module_main_armament
 				tank_small_main_armament
 				tank_medium_main_armament
 				tank_heavy_main_armament
-				tank_super_heavy_main_armament
 			}
 		}
 		forbid_equipment_type_exact_match_for_category = {
@@ -783,28 +692,6 @@ equipment_modules = {
 	}
 	
 	###Turret Types - Modern Heavy Tank
-	tank_mh_battle_module_turret = {
-		abbreviation = "hbm"
-		category = tank_mh_turret_type
-		sfx = sfx_
-		
-		allowed_module_categories = {
-			main_armament_slot = {
-				tank_battle_module_main_armament
-			}
-		}
-		
-		add_stats = {
-			build_cost_ic = 0.5
-			breakthrough = 5
-			
-		}
-		dismantle_cost_ic = 0.5
-		xp_cost = 2
-		multiply_stats = {
-		}
-
-	}
 	tank_mh_cast_turret = {
 		abbreviation = "hct"
 		category = tank_mh_turret_type
@@ -812,6 +699,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_battle_module_main_armament
 				tank_small_main_armament
 				tank_medium_main_armament
 				tank_heavy_main_armament
@@ -840,6 +728,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_battle_module_main_armament
 				tank_small_main_armament
 				tank_medium_main_armament
 				tank_heavy_main_armament
@@ -867,6 +756,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_battle_module_main_armament
 				tank_small_main_armament
 				tank_medium_main_armament
 				tank_heavy_main_armament
@@ -894,6 +784,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_battle_module_main_armament
 				tank_small_main_armament
 				tank_medium_main_armament
 				tank_heavy_main_armament
@@ -923,6 +814,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_battle_module_main_armament
 				tank_small_main_armament
 				tank_medium_main_armament
 				tank_heavy_main_armament
@@ -952,28 +844,6 @@ equipment_modules = {
 	}
 	
 	###Turret Types - Modern Superheavy Tank
-	tank_sh_battle_module_turret = {
-		abbreviation = "sbm"
-		category = tank_sh_turret_type
-		sfx = sfx_
-		
-		allowed_module_categories = {
-			main_armament_slot = {
-				tank_battle_module_main_armament
-			}
-		}
-		
-		add_stats = {
-			build_cost_ic = 0.5
-			breakthrough = 5
-			
-		}
-		dismantle_cost_ic = 0.5
-		xp_cost = 2
-		multiply_stats = {
-		}
-
-	}
 	
 	tank_sh_cast_turret = {
 		abbreviation = "sct"
@@ -982,6 +852,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_battle_module_main_armament
 				tank_small_main_armament
 				tank_medium_main_armament
 				tank_heavy_main_armament
@@ -1009,6 +880,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_battle_module_main_armament
 				tank_small_main_armament
 				tank_medium_main_armament
 				tank_heavy_main_armament
@@ -1037,6 +909,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_battle_module_main_armament
 				tank_small_main_armament
 				tank_medium_main_armament
 				tank_heavy_main_armament
@@ -1065,6 +938,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_battle_module_main_armament
 				tank_small_main_armament
 				tank_medium_main_armament
 				tank_heavy_main_armament
@@ -2377,7 +2251,7 @@ equipment_modules = {
 		}
 	}
 
-	tank_rocket_launcher = { #Not Used
+	tank_rocket_launcher = { #Done
 		abbreviation = "rk1"
 		category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
@@ -3260,5 +3134,199 @@ equipment_modules = {
 			build_cost_ic = -0.05
 		}
 	}
+	
+	##BATTLE BUS##
+	#Engines#
+	bus_horse_engine = {
+		abbreviation = "mlp"
+		category = bus_engine_type
+		sfx = sfx_
+
+		add_stats = {
+			build_cost_ic = 0.005
+		}
+		multiply_stats = {
+			maximum_speed = -0.3
+			breakthrough = -0.2
+		}
+
+	}
+	bus_alcohol_engine = {
+		abbreviation = "alc"
+		category = bus_engine_type
+		sfx = sfx_
+
+		add_stats = {
+			build_cost_ic = 0.075
+			fuel_consumption = 0.1
+			reliability = -0.1
+		}
+		multiply_stats = {
+			maximum_speed = -0.15
+			breakthrough = -0.05
+		}
+
+	}
+	bus_steam_engine = {
+		abbreviation = "stm"
+		category = bus_engine_type
+		sfx = sfx_
+
+		add_stats = {
+			build_cost_ic = 0.05
+			fuel_consumption = 0.5
+			reliability = -0.05
+		}
+		multiply_stats = {
+			maximum_speed = -0.18
+			breakthrough = -0.1
+		}
+
+	}
+	bus_rocket_engine = {
+		abbreviation = "rkt"
+		category = bus_engine_type
+		sfx = sfx_
+
+		add_stats = {
+			build_cost_ic = 3
+			fuel_consumption = 6
+			reliability = -0.65
+			maximum_speed = 1.5
+		}
+
+		multiply_stats = {
+			maximum_speed = 1.5
+		}
+	}
+	
+	##Weapons
+	bus_anti_tank_rifle = { 
+		abbreviation = "atr"
+		category = bus_main_armament
+		sfx = sfx_
+
+		add_stats = {
+			soft_attack = 5
+			hard_attack = 13
+			ap_attack = 30
+			build_cost_ic = 1
+			maximum_speed = -0.05
+			reliability = -0.1
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = bus_main_armament 
+			convert_cost_ic = 1
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+	}
+	bus_18XX_gun = { 
+		abbreviation = "18X"
+		category = bus_main_armament
+		sfx = sfx_
+
+		add_stats = {
+			soft_attack = 7
+			hard_attack = 7
+			ap_attack = 12
+			build_cost_ic = 0.075
+			maximum_speed = -0.05
+			reliability = -0.1
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = bus_main_armament 
+			convert_cost_ic = 0.075
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+	}
+	bus_ram = { 
+		abbreviation = "ram"
+		category = bus_main_armament
+		sfx = sfx_
+
+		add_stats = {
+			soft_attack = 15
+			hard_attack = 1
+			ap_attack = 5
+			build_cost_ic = 0.05
+			maximum_speed = -0.15
+			reliability = -0.15
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = bus_main_armament 
+			convert_cost_ic = 0.05
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+	}
+	bus_big_gun_ = {
+		abbreviation = "bgg"
+		category = bus_main_armament
+		sfx = sfx_
+
+		add_stats = {
+			soft_attack = 17
+			hard_attack = 20
+			ap_attack = 100
+			build_cost_ic = 10
+			maximum_speed = -1.2
+			reliability = -1.0
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		build_cost_resources = {
+			tungsten = 3
+			chromium = 1
+		}
+	}
+	bus_rocket_launcher = { 
+		abbreviation = "brk"
+		category = bus_main_armament
+		sfx = sfx_
+
+		add_stats = {
+			soft_attack = 25
+			hard_attack = 1
+			ap_attack = 2
+			build_cost_ic = 5
+			maximum_speed = -0.1
+			reliability = -0.15
+			breakthrough = -4
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = bus_main_armament
+			convert_cost_ic = 5
+		}
+
+		build_cost_resources = {
+			tungsten = 2
+			steel = 1
+		}
+	}
+	###Special Modules
+	bus_paint_job = {
+		abbreviation = "paint"
+		category = bus_special_module
+		sfx = sfx_
+		add_stats = {
+		}
+		multiply_stats = {
+		}
+	}
+	
+
 	
 }

@@ -180,14 +180,6 @@ duplicate_archetypes = {
 		}
 	}
 	
-	infantry_fighting_vehicle_airborne_chassis = {
-		archetype = infantry_fighting_vehicle_chassis
-		type = { armor }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-		}
-	}
-	
 	# armoured_car
 
 	armored_car_aa_chassis = {
@@ -220,14 +212,6 @@ duplicate_archetypes = {
 	armored_car_flame_chassis = {
 		archetype = armored_car_chassis
 		type = { armor flame }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-		}
-	}
-	
-	armored_car_airborne_chassis = {
-		archetype = armored_car_chassis
-		type = { armor }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
 		}
