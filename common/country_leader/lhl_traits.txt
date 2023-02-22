@@ -1976,6 +1976,26 @@ Black_bird = { #Roger Scruton#
 		}
 	}
 	
+	independent_diplomat = { #Carne Ross#
+		random = no
+		request_lease_tension = -0.25
+		send_volunteer_divisions_required = -0.3
+		trade_opinion_factor = 0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	post-anarchist_theorist = { #Saul Newman#
+		random = no
+		political_power_factor = 0.1
+		surrender_limit = 0.15
+		research_speed_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	local_reformer = { #Jeff Kent#
 		random = no
 		monthly_population = 0.10
@@ -2110,7 +2130,7 @@ Black_bird = { #Roger Scruton#
 		}
 	}
 	
-	liquidator = { #Georg Pazderski#
+	liquidator = { #Joachim Wundrak#
 		random = no
 		attrition = -0.1
 		equipment_capture_factor = 0.02
@@ -2122,6 +2142,19 @@ Black_bird = { #Roger Scruton#
 	house_manager = { #Nicholas Patrick Carter#
 		random = no
 		political_advisor_cost_factor = -0.25
+	}
+	
+	helmsman = { #Troy Southgate#
+		random = no
+		conscription_factor	= 0.05
+		army_morale_factor = 0.1
+	}
+	
+	flexible_bureaucrat = { #Theresa May#
+		random = no
+		political_power_factor = 0.05
+		consumer_goods_factor = -0.02
+		experience_gain_army_factor = 0.1
 	}
 	
 	founding_father = { #Joseph Maria Klumb#

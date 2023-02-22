@@ -135,7 +135,7 @@ characters={
 			slot = head_of_government
 			idea_token = EAG_theresa_may
 			traits = {
-				
+				flexible_bureaucrat
 			}
 			allowed = {
 				original_tag = EAG
@@ -183,6 +183,23 @@ characters={
 				large="gfx/leaders/EAG/Portrait_EAG_Nicholas_Patrick_Carter.dds"
 			}
 		}
+		allowed = {
+				original_tag = EAG
+		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = EAG_nicholas_patrick_carter
+			traits = {
+				house_manager 
+			}
+			allowed = {
+				original_tag = EAG
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
 		corps_commander = {
 				skill=2
 				traits = { angloid }
@@ -230,7 +247,7 @@ characters={
 			slot = head_of_government
 			idea_token = EAG_troy_southgate
 			traits = {
-				
+				helmsman 
 			}
 			allowed = {
 				original_tag = EAG
@@ -337,6 +354,52 @@ characters={
 			idea_token = EAG_alexander_thynn
 			traits = {
 				extraordinary_lord
+			}
+			allowed = {
+				original_tag = EAG
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	
+	EAG_carne_ross ={
+		name="Carne Ross"
+		portraits={
+			civilian={
+				small="gfx/ideas/EAG/GFX_idea_EAG_Carne_Ross.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = EAG_carne_ross
+			traits = {
+				independent_diplomat
+			}
+			allowed = {
+				original_tag = EAG
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	
+	EAG_saul_newman ={
+		name="Saul Newman"
+		portraits={
+			civilian={
+				small="gfx/ideas/EAG/GFX_idea_EAG_Saul_Newman.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = EAG_saul_newman
+			traits = {
+				post-anarchist_theorist
 			}
 			allowed = {
 				original_tag = EAG
@@ -792,15 +855,55 @@ characters={
 			id = 231
 		}
 	}
-
 	
-	EAG_fritz_zwicknagl={
-		name="Fritz Zwicknagl"
+	EAG_wattie_buchan={
+		name="Wattie Buchan"
 		portraits={
 			army={
-				large="gfx/leaders/EAG/Portrait_EAG_Fritz_Zwicknagl.dds"
+				large="gfx/leaders/EAG/Portrait_EAG_Wattie_Buchan.dds"
 				
-				small="gfx/interface/ideas/EAG/GFX_idea_EAG_fritz_zwicknagl.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Wattie_Buchan.dds"
+			}
+		}
+		corps_commander={
+			traits = { angloid }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			id = 242
+		}
+	}
+	
+	EAG_joseph_pearce ={
+		name="Joseph Pearce"
+		portraits={
+			army={
+				large="gfx/leaders/EAG/Portrait_EAG_Joseph_Pearce.dds"
+				
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Joseph_Pearce.dds"
+			}
+		}
+		corps_commander={
+			traits = { angloid }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			id = 243
+		}
+	}
+
+	
+	EAG_rudiger_von_pescatore={
+		name="Rüdiger von Pescatore"
+		portraits={
+			army={
+				large="gfx/leaders/EAG/Portrait_EAG_Rudiger_Von_Pescatore.dds"
+				
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_rudiger_von_pescatore.dds"
 			}
 		}
 		corps_commander={
