@@ -60,48 +60,71 @@ technologies = {
 			main_battle_tank_chassis_0
 		}
 		enable_equipment_modules = {
+			#Bus Test
+			bus_paint_job
+			bus_18XX_gun
+			bus_horse_engine 
+			#Turret Types
+			tank_mbt_cast_turret
+			tank_mbt_welded_turret
+			tank_mbt_oscillating_turret
+			tank_mbt_uncrewed_turret
+			tank_mbt_fixed_superstructure_turret
+			#Weapons
+			tank_heavy_machine_module
+			tank_atgm_module
+			tank_mortar_module
+			tank_manpads_module
+			tank_agl_module
+			tank_recoilless_module
+			tank_auto_cannon_module
+			tank_auto_cannon_light
+			tank_small_cannon_light
+			tank_anti_air_light
+			tank_atgm_light
+			tank_small_howitzer_light
+			tank_anti_air_medium
+			tank_mbt_cannon_medium
+			tank_atgm_medium
+			tank_howitzer_medium
+			tank_auto_cannon_medium
+			#Secondary Weapons
+			modern_secondary_turret_hmg
+			modern_secondary_turret_small_cannon
+			modern_secondary_turret_atgm
+			modern_secondary_turret_mortar
+			modern_secondary_turret_manpads
+			modern_secondary_turret_agl
+			#Defense Modules
+			modern_smoke_launchers
+			slat_armour
+			reactive_armour
+			active_armour 
+			blowout_panels
+			#Special Modules
+			modern_extra_ammo_storage
+			modern_expanded_fuel_tank 
+			optical_sensors
+			fire_control_systems
+			modern_dozer_blade
+			network_systems
+			ai_systems
+			recon_drones
+			suicide_drones
+			#Armor
+			tank_steel_armor
+			tank_composite_armor
 			tank_light_armor
+			#Suspension
 			tank_torsion_bar_suspension
-			tank_riveted_armor
-			tank_gasoline_engine
-			tank_diesel_engine
-			tank_petrol_electric_engine
-			tank_cast_armor
 			tank_christie_suspension
 			tank_bogie_suspension
 			tank_interleaved_suspension
-			tank_light_one_man_tank_turret
-			tank_light_two_man_tank_turret
-			tank_light_three_man_tank_turret
-			tank_light_fixed_superstructure_turret
-			tank_medium_one_man_tank_turret
-			tank_medium_two_man_tank_turret
-			tank_medium_three_man_tank_turret
-			tank_medium_fixed_superstructure_turret
-			tank_heavy_two_man_tank_turret
-			tank_heavy_three_man_tank_turret
-			tank_heavy_fixed_superstructure_turret
-			tank_super_heavy_four_man_tank_turret
-			tank_super_heavy_three_man_tank_turret
-			tank_modern_tank_turret
-			sloped_armor
-			extra_ammo_storage
-			wet_ammo_storage
-			smoke_launchers
-			expanded_fuel_tank
-			tank_small_cannon
-			secondary_turret_small_cannon
-			tank_small_cannon_2
-			tank_close_support_gun
-			secondary_turret_close_support_gun
-			tank_medium_howitzer
-			tank_medium_cannon
-			ship_anti_air_3
-			tank_auto_cannon_2
-			tank_anti_air_cannon_2
-			tank_high_velocity_cannon
-			tank_heavy_cannon
-			tank_buster_1
+			#Engines
+			tank_modern_electric_engine
+			tank_gasoline_engine
+			tank_diesel_engine
+			tank_petrol_electric_engine
 		}
 		enable_subunits = {
 			MBT
@@ -149,22 +172,6 @@ technologies = {
 
 		enable_equipments = {
 			main_battle_tank_chassis_1
-			main_battle_tank_chassis_2
-			main_battle_tank_chassis_3
-			main_battle_tank_chassis_4
-			main_battle_tank_chassis_5
-			main_battle_tank_destroyer_chassis
-			main_battle_tank_artillery_chassis
-			main_battle_tank_artillery_chassis_1
-			main_battle_tank_artillery_chassis_2
-			main_battle_tank_artillery_chassis_3
-			main_battle_tank_artillery_chassis_4
-			main_battle_tank_artillery_chassis_5
-			main_battle_tank_destroyer_chassis_1
-			main_battle_tank_destroyer_chassis_2
-			main_battle_tank_destroyer_chassis_3
-			main_battle_tank_destroyer_chassis_4
-			main_battle_tank_destroyer_chassis_5
 		}
 		
 		path = {
@@ -562,7 +569,7 @@ technologies = {
 
 		enable_equipments = {
 			main_battle_tank_chassis_4
-		}	
+		}
 		
 		path = {
 			leads_to_tech = NSB_futuristic_main_battle_tank
@@ -1485,8 +1492,19 @@ technologies = {
 	
 	NSB_outdated_infantry_fighting_vehicle = {
 		enable_equipments = {
-			infantry_fighting_vehicle_equipment_1
+			infantry_fighting_vehicle_chassis_1
 		}
+		
+		enable_equipment_modules = {
+			#AC Turret Types
+			tank_ifv_battle_module_turret
+			tank_ifv_cast_turret
+			tank_ifv_welded_turret
+			tank_ifv_oscillating_turret
+			tank_ifv_uncrewed_turret
+			tank_ifv_fixed_superstructure_turret
+		}
+		
 		enable_subunits = {
 			IFV
 		}	
@@ -1618,8 +1636,9 @@ technologies = {
 	
 	
 	NSB_basic_infantry_fighting_vehicle = {
+	
 		enable_equipments = {
-			infantry_fighting_vehicle_equipment_2
+			infantry_fighting_vehicle_chassis_2
 		}
 		
 		path = {
@@ -1750,7 +1769,7 @@ technologies = {
 	NSB_improved_infantry_fighting_vehicle = { 
 	
 		enable_equipments = {
-			infantry_fighting_vehicle_equipment_3 
+			infantry_fighting_vehicle_chassis_3
 		}
 		
 		path = {
@@ -1885,8 +1904,8 @@ technologies = {
 	NSB_advanced_infantry_fighting_vehicle = { 
 
 		enable_equipments = {
-			infantry_fighting_vehicle_equipment_4
-		}	
+			infantry_fighting_vehicle_chassis_4
+		}
 		
 		research_cost = 2
 		start_year = 2028
@@ -2019,7 +2038,7 @@ technologies = {
 	NSB_futuristic_infantry_fighting_vehicle = { 
 
 		enable_equipments = {
-			infantry_fighting_vehicle_equipment_5
+			infantry_fighting_vehicle_chassis_5
 		}
 
 
@@ -2148,8 +2167,18 @@ technologies = {
 
 	NSB_obsolete_armored_car = {
 		enable_equipments = {
-			armored_car_equipment_1
+			armored_car_chassis_1
 		}
+		
+		enable_equipment_modules = {
+			#AC Turret Types
+			tank_ac_cast_turret
+			tank_ac_welded_turret
+			tank_ac_oscillating_turret
+			tank_ac_uncrewed_turret
+			tank_ac_fixed_superstructure_turret
+		}
+		
 		enable_subunits = {
 			armored_car
 		}	
@@ -2194,7 +2223,7 @@ technologies = {
 	
 	NSB_basic_armored_car = {
 		enable_equipments = {
-			armored_car_equipment_2
+			armored_car_chassis_2
 		}
 		path = {
 			leads_to_tech = NSB_improved_armored_car
@@ -2238,7 +2267,7 @@ technologies = {
 	NSB_improved_armored_car = { 
 	
 		enable_equipments = {
-			armored_car_equipment_3
+			armored_car_chassis_3
 		}
 		
 		path = {
@@ -2285,7 +2314,7 @@ technologies = {
 	NSB_advanced_armored_car = { 
 
 		enable_equipments = {
-			armored_car_equipment_4
+			armored_car_chassis_4
 		}	
 		
 		research_cost = 2
@@ -2331,7 +2360,7 @@ technologies = {
 	NSB_futuristic_armored_car = { 
 
 		enable_equipments = {
-			armored_car_equipment_5
+			armored_car_chassis_5
 		}	
 		
 		research_cost = 2
