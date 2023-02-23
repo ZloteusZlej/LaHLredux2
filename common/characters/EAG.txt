@@ -131,7 +131,7 @@ characters={
 			id=-1
 		}
 		advisor = {
-			cost = 120
+			cost = -1
 			slot = head_of_government
 			idea_token = EAG_theresa_may
 			traits = {
@@ -142,6 +142,9 @@ characters={
 			}
 			ai_will_do  = {
 				factor  = 1.000
+			}
+			available = {
+				has_government = hegemonism
 			}
 	    }
 	}
@@ -187,7 +190,7 @@ characters={
 				original_tag = EAG
 		}
 		advisor = {
-			cost = 120
+			cost = -1
 			slot = head_of_government
 			idea_token = EAG_nicholas_patrick_carter
 			traits = {
@@ -198,6 +201,9 @@ characters={
 			}
 			ai_will_do  = {
 				factor  = 1.000
+			}
+			available = {
+				has_government = neocameralism
 			}
 	    }
 		corps_commander = {
@@ -243,7 +249,7 @@ characters={
 			}
 		}
 		advisor = {
-			cost = 120
+			cost = -1
 			slot = head_of_government
 			idea_token = EAG_troy_southgate
 			traits = {
@@ -254,6 +260,9 @@ characters={
 			}
 			ai_will_do  = {
 				factor  = 1.000
+			}
+			available = {
+				has_government = national_bolshevism
 			}
 	    }
 		corps_commander = {
@@ -270,7 +279,7 @@ characters={
 		name="Garry Bushell"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Garry_Bushell.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Garry_Bushell.dds"
 				large="gfx/leaders/EAG/Portrait_EAG_Garry_Bushell.dds"
 			}
 		}
@@ -283,6 +292,9 @@ characters={
 			}
 			allowed = {
 				original_tag = EAG
+			}
+			available = {
+				has_government = national_bolshevism
 			}
 			ai_will_do  = {
 				factor  = 1.000
@@ -299,7 +311,7 @@ characters={
 		name="Wayne John Sturgeon"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Wayne_John_Sturgeon.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Wayne_John_Sturgeon.dds"
 			}
 		}
 		advisor = {
@@ -312,6 +324,9 @@ characters={
 			allowed = {
 				original_tag = EAG
 			}
+			available = {
+				has_government = national_bolshevism
+			}
 			ai_will_do  = {
 				factor  = 1.000
 			}
@@ -322,7 +337,7 @@ characters={
 		name="Christopher Houghton Budd"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Christopher_Houghton_Budd.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Christopher_Houghton_Budd.dds"
 			}
 		}
 		advisor = {
@@ -335,6 +350,9 @@ characters={
 			allowed = {
 				original_tag = EAG
 			}
+			available = {
+				has_government = national_bolshevism
+			}
 			ai_will_do  = {
 				factor  = 1.000
 			}
@@ -345,7 +363,7 @@ characters={
 		name="Alexander Thynn"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Alexander_Thynn.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Alexander_Thynn.dds"
 			}
 		}
 		advisor = {
@@ -358,6 +376,12 @@ characters={
 			allowed = {
 				original_tag = EAG
 			}
+			available = {
+				OR = {
+					has_government = national_bolshevism
+					has_government = hegemonism
+				}
+			}
 			ai_will_do  = {
 				factor  = 1.000
 			}
@@ -368,7 +392,7 @@ characters={
 		name="Carne Ross"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Carne_Ross.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Carne_Ross.dds"
 			}
 		}
 		advisor = {
@@ -381,6 +405,9 @@ characters={
 			allowed = {
 				original_tag = EAG
 			}
+			available = {
+				has_government = national_bolshevism
+			}
 			ai_will_do  = {
 				factor  = 1.000
 			}
@@ -391,7 +418,7 @@ characters={
 		name="Saul Newman"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Saul_Newman.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Saul_Newman.dds"
 			}
 		}
 		advisor = {
@@ -404,6 +431,9 @@ characters={
 			allowed = {
 				original_tag = EAG
 			}
+			available = {
+				has_government = national_bolshevism
+			}
 			ai_will_do  = {
 				factor  = 1.000
 			}
@@ -414,7 +444,7 @@ characters={
 		name="Emma Restall Orr"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Emma_Restall_Orr.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Emma_Restall_Orr.dds"
 			}
 		}
 		advisor = {
@@ -427,6 +457,12 @@ characters={
 			allowed = {
 				original_tag = EAG
 			}
+			available = {
+				OR = {
+					has_government = national_bolshevism
+					has_government = hegemonism
+				}
+			}
 			ai_will_do  = {
 				factor  = 1.000
 			}
@@ -437,7 +473,7 @@ characters={
 		name="Alex Whitehouse"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Alex_Whitehouse.dds"
+				small="gfx/interface/EAG/GFX_idea_EAG_Alex_Whitehouse.dds"
 				large="gfx/leaders/EAG/Portrait_EAG_Alex_Whitehouse.dds"
 			}
 		}
@@ -454,6 +490,12 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
+			available = {
+				OR = {
+					has_government = neocameralism
+					has_government = hegemonism
+				}
+			}
 	    }
 		country_leader={
 			ideology=atlantic_liberalism
@@ -466,7 +508,7 @@ characters={
 		name="Philip Yea"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Philip_Yea.dds"
+				small="gfx/interface/EAG/GFX_idea_EAG_Philip_Yea.dds"
 				large="gfx/leaders/EAG/Portrait_EAG_Philip_Yea.dds"
 			}
 		}
@@ -483,6 +525,12 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
+			available = {
+				OR = {
+					has_government = neocameralism
+					has_government = hegemonism
+				}
+			}
 	    }
 		country_leader={
 			ideology=atlantic_liberalism
@@ -495,7 +543,7 @@ characters={
 		name="Rick Astley"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Rick_Astley.dds"
+				small="gfx/interface/EAG/GFX_idea_EAG_Rick_Astley.dds"
 				large="gfx/leaders/EAG/Portrait_EAG_Rick_Astley.dds"
 						}
 		}
@@ -512,6 +560,12 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
+			available = {
+				OR = {
+					has_government = neocameralism
+					has_government = hegemonism
+				}
+			}
 	    }
 		country_leader={
 			ideology=social_conservatism
@@ -524,7 +578,7 @@ characters={
 		name="Michael Bates"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Michael_Bates.dds"
+				small="gfx/interface/EAG/GFX_idea_EAG_Michael_Bates.dds"
 				large="gfx/leaders/EAG/Portrait_EAG_Michael_Bates.dds"
 			}
 		}
@@ -541,6 +595,12 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
+			available = {
+				OR = {
+					has_government = neocameralism
+					has_government = hegemonism
+				}
+			}
 	    }
 		country_leader={
 			ideology=stratocracy
@@ -553,7 +613,7 @@ characters={
 		name="Harold Elletson"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Harold_Elletson.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Harold_Elletson.dds"
 			}
 		}
 		advisor = {
@@ -569,6 +629,12 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
+			available = {
+				OR = {
+					has_government = national_bolshevism
+					has_government = hegemonism
+				}
+			}
 	    }
 	}
 	
@@ -576,7 +642,7 @@ characters={
 		name="Robin Tilbrook"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Robin_Tilbrook.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Robin_Tilbrook.dds"
 			}
 		}
 		advisor = {
@@ -599,7 +665,7 @@ characters={
 		name="Julia Gasper"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Julia_Gasper.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Julia_Gasper.dds"
 			}
 		}
 		advisor = {
@@ -622,7 +688,7 @@ characters={
 		name="Wolfgang Schneiderhan"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Wolfgang_Schneiderhan.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Wolfgang_Schneiderhan.dds"
 			}
 			army={
 				large="gfx/leaders/EAG/Portrait_EAG_Wolfgang_Schneiderhan.dds"
@@ -652,14 +718,24 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
+			available = {
+				has_government = neocameralism
+			}
 	    }
+		advisor = {
+			cost = 120
+			slot = theorist
+			idea_token = EAG_wolfgang_schneiderhan
+			ledger = air
+			traits = { air_support_theorist } 
+		}
 	}
 	
 	EAG_martin_hohmann ={
 		name="Martin Hohmann"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Martin_Hohmann.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Martin_Hohmann.dds"
 			}
 		}
 		advisor = {
@@ -675,6 +751,9 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
+			available = {
+				has_government = neocameralism
+			}
 	    }
 	}
 	
@@ -682,7 +761,7 @@ characters={
 		name="Andreas Kalbitz"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Andreas_Kalbitz.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Andreas_Kalbitz.dds"
 			}
 		}
 		advisor = {
@@ -698,6 +777,9 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
+			available = {
+				has_government = neocameralism
+			}
 	    }
 	}
 	
@@ -705,7 +787,7 @@ characters={
 		name="Georg Klein"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Georg_Klein.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Georg_Klein.dds"
 			}
 			army={
 				large="gfx/leaders/EAG/Portrait_EAG_Georg_Klein.dds"
@@ -726,6 +808,9 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
+			available = {
+				has_government = neocameralism
+			}
 	    }
 		corps_commander={
 			traits = { german }
@@ -742,7 +827,7 @@ characters={
 		name="Erich Vad"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Erich_Vad.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Erich_Vad.dds"
 			}
 			
 			army={
@@ -764,6 +849,9 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
+			available = {
+				has_government = neocameralism
+			}
 	    }
 		corps_commander={
 			traits = { german }
@@ -780,7 +868,7 @@ characters={
 		name="Georg Pazderski"
 		portraits={
 			civilian={
-				small="gfx/ideas/EAG/GFX_idea_EAG_Georg_Pazderski.dds"
+				small="gfx/interface/ideas/EAG/GFX_idea_EAG_Georg_Pazderski.dds"
 			}
 			army={
 				large="gfx/leaders/EAG/Portrait_EAG_Georg_Pazderski.dds"
@@ -800,6 +888,9 @@ characters={
 			}
 			ai_will_do  = {
 				factor  = 1.000
+			}
+			available = {
+				has_government = neocameralism
 			}
 	    }
 		corps_commander={
@@ -832,6 +923,9 @@ characters={
 			}
 			ai_will_do  = {
 				factor  = 1.000
+			}
+			available = {
+				has_government = neocameralism
 			}
 	    }
 	}
