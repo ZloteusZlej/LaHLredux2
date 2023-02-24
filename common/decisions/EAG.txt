@@ -12858,7 +12858,6 @@ EAG_klumb_parliament_gui_decision = {
 					}
 				}
 				EAG = {
-					add_political_power = -250
 					clr_country_flag = EAG_klumb_voting_NGGU_issue_1
 					clr_country_flag = EAG_klumb_voting_NGGU_issue_2
 					clr_country_flag = EAG_klumb_voting_NGGU_issue_3
@@ -12880,6 +12879,7 @@ EAG_klumb_parliament_gui_decision = {
 						value = 0
 					}
 					custom_effect_tooltip = EAG_klumb_project_fails_BAD.tt
+					add_political_power = -250
 				}
 			}
 			EAG = {
@@ -13434,7 +13434,10 @@ EAG_klumb_parliament_gui_decision = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 				}
 				NOT = {
-					has_country_flag = EAG_klumb_interaction_menu_open
+					OR = {
+						has_country_flag = EAG_klumb_interaction_menu_open
+						has_country_flag = EAG_klumb_make_party_coalition_FPE
+					}
 				}
 			}	
 		}
@@ -13471,7 +13474,10 @@ EAG_klumb_parliament_gui_decision = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 				}
 				NOT = {
-					has_country_flag = EAG_klumb_interaction_menu_open
+					OR = {
+						has_country_flag = EAG_klumb_interaction_menu_open
+						has_country_flag = EAG_klumb_make_party_coalition_EPP
+					}
 				}
 			}	
 		}
@@ -13508,7 +13514,10 @@ EAG_klumb_parliament_gui_decision = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 				}
 				NOT = {
-					has_country_flag = EAG_klumb_interaction_menu_open
+					OR = {
+						has_country_flag = EAG_klumb_interaction_menu_open
+						has_country_flag = EAG_klumb_make_party_coalition_VOLT
+					}
 				}
 			}	
 		}
@@ -13545,7 +13554,10 @@ EAG_klumb_parliament_gui_decision = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 				}
 				NOT = {
-					has_country_flag = EAG_klumb_interaction_menu_open
+					OR = {
+						has_country_flag = EAG_klumb_interaction_menu_open
+						has_country_flag = EAG_klumb_make_party_coalition_TPV
+					}
 				}
 			}	
 		}
@@ -13582,7 +13594,10 @@ EAG_klumb_parliament_gui_decision = {
 					has_active_mission = EAG_klumb_mission_voting_YES
 				}
 				NOT = {
-					has_country_flag = EAG_klumb_interaction_menu_open
+					OR = {
+						has_country_flag = EAG_klumb_interaction_menu_open
+						has_country_flag = EAG_klumb_make_party_coalition_NGGU
+					}
 				}
 			}	
 		}
@@ -13619,7 +13634,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_FPE_support_level
 					value = 10
 				}
-				add_political_power = 1
 			}
 			if = {
 				limit = {
@@ -13633,7 +13647,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_FPE_support_level
 					value = -10
 				}
-				add_political_power = -1
 			}
 			if = {
 				limit = {
@@ -13647,7 +13660,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_EPP_support_level
 					value = 10
 				}
-				add_political_power = 2
 			}
 			if = {
 				limit = {
@@ -13661,7 +13673,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_EPP_support_level
 					value = -10
 				}
-				add_political_power = -2
 			}
 			if = {
 				limit = {
@@ -13675,7 +13686,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_VOLT_support_level
 					value = 10
 				}
-				add_political_power = 3
 			}
 			if = {
 				limit = {
@@ -13689,7 +13699,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_VOLT_support_level
 					value = -10
 				}
-				add_political_power = -3
 			}
 			if = {
 				limit = {
@@ -13703,7 +13712,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_TPV_support_level
 					value = 10
 				}
-				add_political_power = 4
 			}
 			if = {
 				limit = {
@@ -13717,7 +13725,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_TPV_support_level
 					value = -10
 				}
-				add_political_power = -4
 			}
 			if = {
 				limit = {
@@ -13731,7 +13738,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_NGGU_support_level
 					value = 10
 				}
-				add_political_power = 5
 			}
 			if = {
 				limit = {
@@ -13745,7 +13751,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_NGGU_support_level
 					value = -10
 				}
-				add_political_power = -5
 			}
 			EAG = {
 				clr_country_flag = EAG_klumb_lobbying_voting_1
@@ -13800,7 +13805,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_FPE_support_level
 					value = 15
 				}
-				add_political_power = 1
 			}
 			if = {
 				limit = {
@@ -13814,7 +13818,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_FPE_support_level
 					value = -15
 				}
-				add_political_power = -1
 			}
 			if = {
 				limit = {
@@ -13828,7 +13831,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_EPP_support_level
 					value = 15
 				}
-				add_political_power = 2
 			}
 			if = {
 				limit = {
@@ -13842,7 +13844,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_EPP_support_level
 					value = -15
 				}
-				add_political_power = -2
 			}
 			if = {
 				limit = {
@@ -13856,7 +13857,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_VOLT_support_level
 					value = 15
 				}
-				add_political_power = 3
 			}
 			if = {
 				limit = {
@@ -13870,7 +13870,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_VOLT_support_level
 					value = -15
 				}
-				add_political_power = -3
 			}
 			if = {
 				limit = {
@@ -13884,7 +13883,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_TPV_support_level
 					value = 15
 				}
-				add_political_power = 4
 			}
 			if = {
 				limit = {
@@ -13898,7 +13896,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_TPV_support_level
 					value = -15
 				}
-				add_political_power = -4
 			}
 			if = {
 				limit = {
@@ -13912,7 +13909,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_NGGU_support_level
 					value = 15
 				}
-				add_political_power = 5
 			}
 			if = {
 				limit = {
@@ -13926,7 +13922,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_NGGU_support_level
 					value = -15
 				}
-				add_political_power = -5
 			}
 			EAG = {
 				clr_country_flag = EAG_klumb_lobbying_voting_1
@@ -13981,7 +13976,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_FPE_support_level
 					value = 20
 				}
-				add_political_power = 1
 			}
 			if = {
 				limit = {
@@ -13995,7 +13989,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_FPE_support_level
 					value = -20
 				}
-				add_political_power = -1
 			}
 			if = {
 				limit = {
@@ -14009,7 +14002,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_EPP_support_level
 					value = 20
 				}
-				add_political_power = 2
 			}
 			if = {
 				limit = {
@@ -14023,7 +14015,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_EPP_support_level
 					value = -20
 				}
-				add_political_power = -2
 			}
 			if = {
 				limit = {
@@ -14037,7 +14028,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_VOLT_support_level
 					value = 20
 				}
-				add_political_power = 3
 			}
 			if = {
 				limit = {
@@ -14051,7 +14041,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_VOLT_support_level
 					value = -20
 				}
-				add_political_power = -3
 			}
 			if = {
 				limit = {
@@ -14065,7 +14054,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_TPV_support_level
 					value = 20
 				}
-				add_political_power = 4
 			}
 			if = {
 				limit = {
@@ -14079,7 +14067,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_TPV_support_level
 					value = -20
 				}
-				add_political_power = -4
 			}
 			if = {
 				limit = {
@@ -14093,7 +14080,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_NGGU_support_level
 					value = 20
 				}
-				add_political_power = 5
 			}
 			if = {
 				limit = {
@@ -14107,7 +14093,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_NGGU_support_level
 					value = -20
 				}
-				add_political_power = -5
 			}
 			EAG = {
 				clr_country_flag = EAG_klumb_lobbying_voting_1
@@ -14165,7 +14150,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_FPE_support_level
 					value = 15
 				}
-				add_political_power = 1
 			}
 			if = {
 				limit = {
@@ -14179,7 +14163,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_FPE_support_level
 					value = -15
 				}
-				add_political_power = -1
 			}
 			if = {
 				limit = {
@@ -14193,7 +14176,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_EPP_support_level
 					value = 15
 				}
-				add_political_power = 2
 			}
 			if = {
 				limit = {
@@ -14207,7 +14189,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_EPP_support_level
 					value = -15
 				}
-				add_political_power = -2
 			}
 			if = {
 				limit = {
@@ -14221,7 +14202,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_VOLT_support_level
 					value = 15
 				}
-				add_political_power = 3
 			}
 			if = {
 				limit = {
@@ -14235,7 +14215,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_VOLT_support_level
 					value = -15
 				}
-				add_political_power = -3
 			}
 			if = {
 				limit = {
@@ -14249,7 +14228,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_TPV_support_level
 					value = 15
 				}
-				add_political_power = 4
 			}
 			if = {
 				limit = {
@@ -14263,7 +14241,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_TPV_support_level
 					value = -15
 				}
-				add_political_power = -4
 			}
 			if = {
 				limit = {
@@ -14277,7 +14254,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_NGGU_support_level
 					value = 15
 				}
-				add_political_power = 5
 			}
 			if = {
 				limit = {
@@ -14291,7 +14267,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_NGGU_support_level
 					value = -15
 				}
-				add_political_power = -5
 			}
 			EAG = {
 				clr_country_flag = EAG_klumb_lobbying_voting_2
@@ -14350,7 +14325,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_FPE_support_level
 					value = 15
 				}
-				add_political_power = 1
 			}
 			if = {
 				limit = {
@@ -14364,7 +14338,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_FPE_support_level
 					value = -15
 				}
-				add_political_power = -1
 			}
 			if = {
 				limit = {
@@ -14378,7 +14351,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_EPP_support_level
 					value = 15
 				}
-				add_political_power = 2
 			}
 			if = {
 				limit = {
@@ -14392,7 +14364,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_EPP_support_level
 					value = -15
 				}
-				add_political_power = -2
 			}
 			if = {
 				limit = {
@@ -14406,7 +14377,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_VOLT_support_level
 					value = 15
 				}
-				add_political_power = 3
 			}
 			if = {
 				limit = {
@@ -14420,7 +14390,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_VOLT_support_level
 					value = -15
 				}
-				add_political_power = -3
 			}
 			if = {
 				limit = {
@@ -14434,7 +14403,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_TPV_support_level
 					value = 15
 				}
-				add_political_power = 4
 			}
 			if = {
 				limit = {
@@ -14448,7 +14416,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_TPV_support_level
 					value = -15
 				}
-				add_political_power = -4
 			}
 			if = {
 				limit = {
@@ -14462,7 +14429,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_NGGU_support_level
 					value = 15
 				}
-				add_political_power = 5
 			}
 			if = {
 				limit = {
@@ -14476,7 +14442,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_NGGU_support_level
 					value = -15
 				}
-				add_political_power = -5
 			}
 			EAG = {
 				clr_country_flag = EAG_klumb_lobbying_voting_2
@@ -14531,7 +14496,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_FPE_support_level
 					value = 15
 				}
-				add_political_power = 1
 			}
 			if = {
 				limit = {
@@ -14545,7 +14509,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_FPE_support_level
 					value = -15
 				}
-				add_political_power = -1
 			}
 			if = {
 				limit = {
@@ -14559,7 +14522,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_EPP_support_level
 					value = 15
 				}
-				add_political_power = 2
 			}
 			if = {
 				limit = {
@@ -14573,7 +14535,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_EPP_support_level
 					value = -15
 				}
-				add_political_power = -2
 			}
 			if = {
 				limit = {
@@ -14587,7 +14548,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_VOLT_support_level
 					value = 15
 				}
-				add_political_power = 3
 			}
 			if = {
 				limit = {
@@ -14601,7 +14561,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_VOLT_support_level
 					value = -15
 				}
-				add_political_power = -3
 			}
 			if = {
 				limit = {
@@ -14615,7 +14574,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_TPV_support_level
 					value = 15
 				}
-				add_political_power = 4
 			}
 			if = {
 				limit = {
@@ -14629,7 +14587,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_TPV_support_level
 					value = -15
 				}
-				add_political_power = -4
 			}
 			if = {
 				limit = {
@@ -14643,7 +14600,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_NGGU_support_level
 					value = 15
 				}
-				add_political_power = 5
 			}
 			if = {
 				limit = {
@@ -14657,7 +14613,6 @@ EAG_klumb_parliament_gui_decision = {
 					var = EAG_NGGU_support_level
 					value = -15
 				}
-				add_political_power = -5
 			}
 			EAG = {
 				add_manpower = -7500
@@ -14693,7 +14648,6 @@ EAG_klumb_parliament_gui_decision = {
 		}
 	}
 	EAG_klumb_make_party_coalition_FPE = {
-	   cost = 50
         remove_effect = {
 		}	
 		complete_effect = {
@@ -14703,6 +14657,8 @@ EAG_klumb_parliament_gui_decision = {
 			}
 			EAG = {
 				set_country_flag = EAG_klumb_make_party_coalition_FPE
+				clr_country_flag = EAG_klumb_interaction_menu_open_FPE
+				clr_country_flag = EAG_klumb_interaction_menu_open
 			}
 			custom_effect_tooltip = EAG_klumb_voting_need_1.tt
 		}
@@ -14761,7 +14717,6 @@ EAG_klumb_parliament_gui_decision = {
 		}
 	}
 	EAG_klumb_make_party_coalition_EPP = {
-	   cost = 50
         remove_effect = {
 		}	
 		complete_effect = {
@@ -14771,6 +14726,8 @@ EAG_klumb_parliament_gui_decision = {
 			}
 			EAG = {
 				set_country_flag = EAG_klumb_make_party_coalition_EPP
+				clr_country_flag = EAG_klumb_interaction_menu_open_EPP
+				clr_country_flag = EAG_klumb_interaction_menu_open
 			}
 			custom_effect_tooltip = EAG_klumb_voting_need_1.tt
 		}
@@ -14829,7 +14786,6 @@ EAG_klumb_parliament_gui_decision = {
 		}
 	}
 	EAG_klumb_make_party_coalition_VOLT = {
-	   cost = 50
         remove_effect = {
 		}	
 		complete_effect = {
@@ -14839,6 +14795,8 @@ EAG_klumb_parliament_gui_decision = {
 			}
 			EAG = {
 				set_country_flag = EAG_klumb_make_party_coalition_VOLT
+				clr_country_flag = EAG_klumb_interaction_menu_open_VOLT
+				clr_country_flag = EAG_klumb_interaction_menu_open
 			}
 			custom_effect_tooltip = EAG_klumb_voting_need_1.tt
 		}
@@ -14898,7 +14856,6 @@ EAG_klumb_parliament_gui_decision = {
 		}
 	}
 	EAG_klumb_make_party_coalition_TPV = {
-	   cost = 50
         remove_effect = {
 		}	
 		complete_effect = {
@@ -14908,6 +14865,8 @@ EAG_klumb_parliament_gui_decision = {
 			}
 			EAG = {
 				set_country_flag = EAG_klumb_make_party_coalition_TPV
+				clr_country_flag = EAG_klumb_interaction_menu_open_TPV
+				clr_country_flag = EAG_klumb_interaction_menu_open
 			}
 			custom_effect_tooltip = EAG_klumb_voting_need_1.tt
 		}
@@ -14966,7 +14925,6 @@ EAG_klumb_parliament_gui_decision = {
 		}
 	}
 	EAG_klumb_make_party_coalition_NGGU = {
-	   cost = 50
         remove_effect = {
 		}	
 		complete_effect = {
@@ -14976,6 +14934,8 @@ EAG_klumb_parliament_gui_decision = {
 			}
 			EAG = {
 				set_country_flag = EAG_klumb_make_party_coalition_NGGU
+				clr_country_flag = EAG_klumb_interaction_menu_open_NGGU
+				clr_country_flag = EAG_klumb_interaction_menu_open
 			}
 			custom_effect_tooltip = EAG_klumb_voting_need_1.tt
 		}
