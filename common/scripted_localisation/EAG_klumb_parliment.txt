@@ -712,3 +712,132 @@ defined_text = {
 		localization_key = EAG_elections_leader_UNDECIDED
 	}
 }
+
+defined_text = {
+	name = GetKlumbNGGUSecret
+	text = {
+		trigger = {
+			EAG = {
+				NOT = {
+					has_country_flag = EAG_astley_revealed
+				}
+			}
+		}
+		localization_key = EAG_NGGU_astley_hidden
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_astley_revealed
+			}
+		}
+		localization_key = EAG_NGGU_astley_active
+	}
+}
+
+##Coalition Text##
+defined_text = {
+	name = GetKlumbCoalitionFPE
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_make_party_coalition_FPE
+			}
+		}
+		localization_key = EAG_FPE_coalition_YES
+	}
+	text = {
+		trigger = {
+			EAG = {
+				NOT = {
+					has_country_flag = EAG_klumb_make_party_coalition_FPE
+				}
+			}
+		}
+		localization_key = EAG_FPE_coalition_NOT
+	}
+}
+defined_text = {
+	name = GetKlumbCoalitionEPP
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_make_party_coalition_EPP
+			}
+		}
+		localization_key = EAG_EPP_coalition_YES
+	}
+	text = {
+		trigger = {
+			EAG = {
+				NOT = {
+					has_country_flag = EAG_klumb_make_party_coalition_EPP
+				}
+			}
+		}
+		localization_key = EAG_EPP_coalition_NOT
+	}
+}
+defined_text = {
+	name = GetKlumbCoalitionVOLT
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_make_party_coalition_VOLT
+			}
+		}
+		localization_key = EAG_VOLT_coalition_YES
+	}
+	text = {
+		trigger = {
+			EAG = {
+				NOT = {
+					has_country_flag = EAG_klumb_make_party_coalition_VOLT
+				}
+			}
+		}
+		localization_key = EAG_VOLT_coalition_NOT
+	}
+}
+defined_text = {
+	name = GetKlumbCoalitionTPV
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_make_party_coalition_TPV
+			}
+		}
+		localization_key = EAG_TPV_coalition_YES
+	}
+	text = {
+		trigger = {
+			EAG = {
+				NOT = {
+					has_country_flag = EAG_klumb_make_party_coalition_TPV
+				}
+			}
+		}
+		localization_key = EAG_TPV_coalition_NOT
+	}
+}
+defined_text = {
+	name = GetKlumbCoalitionNGGU
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_make_party_coalition_NGGU
+			}
+		}
+		localization_key = EAG_NGGU_coalition_YES
+	}
+	text = {
+		trigger = {
+			EAG = {
+				NOT = {
+					has_country_flag = EAG_klumb_make_party_coalition_NGGU
+				}
+			}
+		}
+		localization_key = EAG_NGGU_coalition_NOT
+	}
+}

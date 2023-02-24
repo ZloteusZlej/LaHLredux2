@@ -6782,6 +6782,9 @@ country_event = {
 			value = 10
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_FPE
+			#
 			set_country_flag = EAG_klumb_voting_YES
 			set_country_flag = EAG_klumb_voting_FPE_issue_1
 			activate_mission = EAG_klumb_mission_voting_YES
@@ -6789,6 +6792,10 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^1
 		}
     }
 	option = {
@@ -6815,6 +6822,11 @@ country_event = {
 			value = 10
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_VOLT
+			set_country_flag = EAG_klumb_make_party_coalition_TPV
+			set_country_flag = EAG_klumb_make_party_coalition_NGGU
+			#
 			set_country_flag = EAG_klumb_voting_NO
 			set_country_flag = EAG_klumb_voting_FPE_issue_1
 			activate_mission = EAG_klumb_mission_voting_NO
@@ -6822,6 +6834,18 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^3
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^4
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^5
 		}
     }
 }
@@ -6875,6 +6899,9 @@ country_event = {
 			value = 10
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_FPE
+			#
 			set_country_flag = EAG_klumb_voting_YES
 			set_country_flag = EAG_klumb_voting_FPE_issue_2
 			activate_mission = EAG_klumb_mission_voting_YES
@@ -6882,6 +6909,10 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^1
 		}
     }
 	option = {
@@ -6908,6 +6939,11 @@ country_event = {
 			value = 10
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_VOLT
+			set_country_flag = EAG_klumb_make_party_coalition_TPV
+			set_country_flag = EAG_klumb_make_party_coalition_NGGU
+			#
 			set_country_flag = EAG_klumb_voting_NO
 			set_country_flag = EAG_klumb_voting_FPE_issue_2
 			activate_mission = EAG_klumb_mission_voting_NO
@@ -6915,6 +6951,18 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^3
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^4
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^5
 		}
     }
 }
@@ -6968,6 +7016,12 @@ country_event = {
 			value = 80
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_FPE
+			set_country_flag = EAG_klumb_make_party_coalition_VOLT
+			set_country_flag = EAG_klumb_make_party_coalition_TPV
+			set_country_flag = EAG_klumb_make_party_coalition_NGGU
+			#
 			set_country_flag = EAG_klumb_voting_YES
 			set_country_flag = EAG_klumb_voting_FPE_issue_3
 			activate_mission = EAG_klumb_mission_voting_YES
@@ -6975,6 +7029,22 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^1
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^3
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^4
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^5
 		}
     }
 	option = {
@@ -7061,6 +7131,9 @@ country_event = {
 			value = 35
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_EPP
+			#
 			set_country_flag = EAG_klumb_voting_YES
 			set_country_flag = EAG_klumb_voting_EPP_issue_1
 			activate_mission = EAG_klumb_mission_voting_YES
@@ -7068,6 +7141,10 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^2
 		}
     }
 	option = {
@@ -7094,6 +7171,11 @@ country_event = {
 			value = 35
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_FPE
+			set_country_flag = EAG_klumb_make_party_coalition_VOLT
+			set_country_flag = EAG_klumb_make_party_coalition_TPV
+			#
 			set_country_flag = EAG_klumb_voting_NO
 			set_country_flag = EAG_klumb_voting_EPP_issue_1
 			activate_mission = EAG_klumb_mission_voting_NO
@@ -7101,6 +7183,18 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^1
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^3
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^4
 		}
     }
 }
@@ -7154,6 +7248,9 @@ country_event = {
 			value = 35
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_EPP
+			#
 			set_country_flag = EAG_klumb_voting_YES
 			set_country_flag = EAG_klumb_voting_EPP_issue_2
 			activate_mission = EAG_klumb_mission_voting_YES
@@ -7161,6 +7258,10 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^2
 		}
     }
 	option = {
@@ -7187,6 +7288,9 @@ country_event = {
 			value = 35
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_FPE
+			#
 			set_country_flag = EAG_klumb_voting_NO
 			set_country_flag = EAG_klumb_voting_EPP_issue_2
 			activate_mission = EAG_klumb_mission_voting_NO
@@ -7194,6 +7298,10 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^1
 		}
     }
 }
@@ -7247,6 +7355,12 @@ country_event = {
 			value = 90
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_EPP
+			set_country_flag = EAG_klumb_make_party_coalition_VOLT
+			set_country_flag = EAG_klumb_make_party_coalition_TPV
+			set_country_flag = EAG_klumb_make_party_coalition_NGGU
+			#
 			set_country_flag = EAG_klumb_voting_YES
 			set_country_flag = EAG_klumb_voting_EPP_issue_3
 			activate_mission = EAG_klumb_mission_voting_YES
@@ -7254,6 +7368,22 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^2
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^3
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^4
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^5
 		}
     }
 	option = {
@@ -7280,6 +7410,9 @@ country_event = {
 			value = 90
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_FPE
+			#
 			set_country_flag = EAG_klumb_voting_NO
 			set_country_flag = EAG_klumb_voting_EPP_issue_3
 			activate_mission = EAG_klumb_mission_voting_NO
@@ -7287,6 +7420,10 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^1
 		}
     }
 }
@@ -7340,6 +7477,9 @@ country_event = {
 			value = 10
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_VOLT
+			#
 			set_country_flag = EAG_klumb_voting_YES
 			set_country_flag = EAG_klumb_voting_VOLT_issue_1
 			activate_mission = EAG_klumb_mission_voting_YES
@@ -7347,6 +7487,10 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^3
 		}
     }
 	option = {
@@ -7373,6 +7517,11 @@ country_event = {
 			value = 10
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_EPP
+			set_country_flag = EAG_klumb_make_party_coalition_TPV
+			set_country_flag = EAG_klumb_make_party_coalition_NGGU
+			#
 			set_country_flag = EAG_klumb_voting_NO
 			set_country_flag = EAG_klumb_voting_VOLT_issue_1
 			activate_mission = EAG_klumb_mission_voting_NO
@@ -7380,6 +7529,18 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^2
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^4
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^5
 		}
     }
 }
@@ -7433,6 +7594,9 @@ country_event = {
 			value = 10
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_VOLT
+			#
 			set_country_flag = EAG_klumb_voting_YES
 			set_country_flag = EAG_klumb_voting_VOLT_issue_2
 			activate_mission = EAG_klumb_mission_voting_YES
@@ -7440,6 +7604,10 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^3
 		}
     }
 	option = {
@@ -7466,6 +7634,10 @@ country_event = {
 			value = 10
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_EPP
+			set_country_flag = EAG_klumb_make_party_coalition_NGGU
+			#
 			set_country_flag = EAG_klumb_voting_NO
 			set_country_flag = EAG_klumb_voting_VOLT_issue_2
 			activate_mission = EAG_klumb_mission_voting_NO
@@ -7473,6 +7645,14 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^2
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^5
 		}		
     }
 }
@@ -7526,6 +7706,11 @@ country_event = {
 			value = 90
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_EPP
+			set_country_flag = EAG_klumb_make_party_coalition_VOLT
+			set_country_flag = EAG_klumb_make_party_coalition_NGGU
+			#
 			set_country_flag = EAG_klumb_voting_YES
 			set_country_flag = EAG_klumb_voting_VOLT_issue_3
 			activate_mission = EAG_klumb_mission_voting_YES
@@ -7533,6 +7718,18 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^2
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^3
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^5
 		}
     }
 	option = {
@@ -7559,6 +7756,9 @@ country_event = {
 			value = 90
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_FPE
+			#
 			set_country_flag = EAG_klumb_voting_NO
 			set_country_flag = EAG_klumb_voting_VOLT_issue_3
 			activate_mission = EAG_klumb_mission_voting_NO
@@ -7566,6 +7766,10 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^1
 		}		
     }
 }
@@ -7619,6 +7823,9 @@ country_event = {
 			value = 35
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_TPV
+			#
 			set_country_flag = EAG_klumb_voting_YES
 			set_country_flag = EAG_klumb_voting_TPV_issue_1
 			activate_mission = EAG_klumb_mission_voting_YES
@@ -7626,6 +7833,10 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^4
 		}
     }
 	option = {
@@ -7652,6 +7863,11 @@ country_event = {
 			value = 35
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_FPE
+			set_country_flag = EAG_klumb_make_party_coalition_EPP
+			set_country_flag = EAG_klumb_make_party_coalition_VOLT
+			#
 			set_country_flag = EAG_klumb_voting_NO
 			set_country_flag = EAG_klumb_voting_TPV_issue_1
 			activate_mission = EAG_klumb_mission_voting_NO
@@ -7659,6 +7875,18 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^1
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^2
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^3
 		}
     }
 }
@@ -7712,6 +7940,9 @@ country_event = {
 			value = 10
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_TPV
+			#
 			set_country_flag = EAG_klumb_voting_YES
 			set_country_flag = EAG_klumb_voting_TPV_issue_2
 			activate_mission = EAG_klumb_mission_voting_YES
@@ -7719,6 +7950,10 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^4
 		}
     }
 	option = {
@@ -7745,6 +7980,11 @@ country_event = {
 			value = 10
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_EPP
+			set_country_flag = EAG_klumb_make_party_coalition_VOLT
+			set_country_flag = EAG_klumb_make_party_coalition_NGGU
+			#
 			set_country_flag = EAG_klumb_voting_NO
 			set_country_flag = EAG_klumb_voting_TPV_issue_2
 			activate_mission = EAG_klumb_mission_voting_NO
@@ -7752,6 +7992,18 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^2
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^3
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^5
 		}
     }
 }
@@ -7805,6 +8057,11 @@ country_event = {
 			value = 90
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_VOLT
+			set_country_flag = EAG_klumb_make_party_coalition_TPV
+			set_country_flag = EAG_klumb_make_party_coalition_NGGU
+			#
 			set_country_flag = EAG_klumb_voting_YES
 			set_country_flag = EAG_klumb_voting_TPV_issue_3
 			activate_mission = EAG_klumb_mission_voting_YES
@@ -7812,6 +8069,18 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^3
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^4
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^5
 		}
     }
 	option = {
@@ -7838,6 +8107,9 @@ country_event = {
 			value = 90
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_FPE
+			#
 			set_country_flag = EAG_klumb_voting_NO
 			set_country_flag = EAG_klumb_voting_TPV_issue_3
 			activate_mission = EAG_klumb_mission_voting_NO
@@ -7845,6 +8117,10 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^1
 		}
     }
 }
@@ -7898,6 +8174,9 @@ country_event = {
 			value = 100
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_NGGU
+			#
 			set_country_flag = EAG_klumb_voting_YES
 			set_country_flag = EAG_klumb_voting_NGGU_issue_1
 			activate_mission = EAG_klumb_mission_voting_YES
@@ -7905,6 +8184,10 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^5
 		}
     }
 	option = {
@@ -7931,6 +8214,10 @@ country_event = {
 			value = 100
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_FPE
+			set_country_flag = EAG_klumb_make_party_coalition_TPV
+			#
 			set_country_flag = EAG_klumb_voting_NO
 			set_country_flag = EAG_klumb_voting_NGGU_issue_1
 			activate_mission = EAG_klumb_mission_voting_NO
@@ -7938,6 +8225,14 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^1
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^4
 		}
     }
 }
@@ -7991,6 +8286,9 @@ country_event = {
 			value = 100
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_NGGU
+			#
 			set_country_flag = EAG_klumb_voting_YES
 			set_country_flag = EAG_klumb_voting_NGGU_issue_2
 			activate_mission = EAG_klumb_mission_voting_YES
@@ -7998,6 +8296,10 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^5
 		}
     }
 	option = {
@@ -8024,6 +8326,10 @@ country_event = {
 			value = 100
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_FPE
+			set_country_flag = EAG_klumb_make_party_coalition_TPV
+			#
 			set_country_flag = EAG_klumb_voting_NO
 			set_country_flag = EAG_klumb_voting_NGGU_issue_2
 			activate_mission = EAG_klumb_mission_voting_NO
@@ -8031,6 +8337,14 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^1
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^4
 		}
     }
 }
@@ -8084,6 +8398,13 @@ country_event = {
 			value = 100
 		}
 		EAG = {
+			#
+			set_country_flag = EAG_klumb_make_party_coalition_FPE
+			set_country_flag = EAG_klumb_make_party_coalition_EPP
+			set_country_flag = EAG_klumb_make_party_coalition_VOLT
+			set_country_flag = EAG_klumb_make_party_coalition_TPV
+			set_country_flag = EAG_klumb_make_party_coalition_NGGU
+			#
 			set_country_flag = EAG_klumb_voting_YES
 			set_country_flag = EAG_klumb_voting_NGGU_issue_3
 			activate_mission = EAG_klumb_mission_voting_YES
@@ -8091,6 +8412,26 @@ country_event = {
 		set_variable = {
 			var = EAG_klumb_voting_coalition
 			value = klumb_parliament_seat_array^0
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^1
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^2
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^3
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^4
+		}
+		add_to_variable = {
+			var = EAG_klumb_voting_coalition
+			value = klumb_parliament_seat_array^5
 		}
     }
 	option = {
