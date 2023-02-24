@@ -9496,13 +9496,17 @@ EAG_london_referendum = {
 ###PARLIAMENT STUFF###
 EAG_parliament_gui_decision = {
 	EAG_integrate_kent = {
-		cost = 15
-		days_remove = 10
+		cost = 45
+		days_remove = 50
 		fire_only_once = yes
 		remove_effect = {
 			subtract_from_variable = { parliament_seat_array^2 = 7 }
 			subtract_from_variable = { parliament_seat_array^1 = -7 }
 			modify_parliament_seat = yes
+			EAG = {
+				add_state_core = 1165
+				add_state_core = 1002
+			}
 		}
 		available = {
 			EAG = {
@@ -9525,13 +9529,17 @@ EAG_parliament_gui_decision = {
 		}
 	}
 	EAG_integrate_sussex = {
-		cost = 15
-		days_remove = 10
+		cost = 45
+		days_remove = 50
 		fire_only_once = yes
 		remove_effect = {
 			subtract_from_variable = { parliament_seat_array^2 = 10 }
 			subtract_from_variable = { parliament_seat_array^1 = -10 }
 			modify_parliament_seat = yes
+			EAG = {
+				add_state_core = 1156
+				add_state_core = 1001
+			}
 		}
 		available = {
 			EAG = {
@@ -9554,13 +9562,23 @@ EAG_parliament_gui_decision = {
 		}
 	}
 	EAG_integrate_wessex = {
-		cost = 15
-		days_remove = 10
+		cost = 45
+		days_remove = 50
 		fire_only_once = yes
 		remove_effect = {
 			subtract_from_variable = { parliament_seat_array^2 = 25 }
 			subtract_from_variable = { parliament_seat_array^1 = -25 }
 			modify_parliament_seat = yes
+			EAG = {
+				add_state_core = 1153
+				add_state_core = 1161
+				add_state_core = 1000
+				add_state_core = 1006
+				add_state_core = 1007
+				add_state_core = 999
+				add_state_core = 998
+				add_state_core = 1018
+			}
 		}
 		available = {
 			EAG = {
@@ -9607,13 +9625,23 @@ EAG_parliament_gui_decision = {
 		}
 	}
 	EAG_integrate_mercia = {
-		cost = 15
-		days_remove = 10
+		cost = 45
+		days_remove = 50
 		fire_only_once = yes
 		remove_effect = {
 			subtract_from_variable = { parliament_seat_array^2 = 46 }
 			subtract_from_variable = { parliament_seat_array^1 = -46 }
 			modify_parliament_seat = yes
+			EAG = {
+				add_state_core = 1152
+				add_state_core = 1151
+				add_state_core = 1154
+				add_state_core = 1146
+				add_state_core = 1155
+				add_state_core = 1008
+				add_state_core = 1144
+				add_state_core = 1005
+			}
 		}
 		available = {
 			EAG = {
@@ -9660,13 +9688,20 @@ EAG_parliament_gui_decision = {
 		}
 	}
 	EAG_integrate_northumbria = {
-		cost = 15
-		days_remove = 10
+		cost = 45
+		days_remove = 50
 		fire_only_once = yes
 		remove_effect = {
 			subtract_from_variable = { parliament_seat_array^2 = 31 }
 			subtract_from_variable = { parliament_seat_array^1 = -31 }
 			modify_parliament_seat = yes
+			EAG = {
+				add_state_core = 1009
+				add_state_core = 1145
+				add_state_core = 1012
+				add_state_core = 1011
+				add_state_core = 1010
+			}
 		}
 		available = {
 			EAG = {
@@ -9701,13 +9736,19 @@ EAG_parliament_gui_decision = {
 		}
 	}
 	EAG_integrate_wales = {
-		cost = 15
-		days_remove = 10
+		cost = 45
+		days_remove = 50
 		fire_only_once = yes
 		remove_effect = {
 			subtract_from_variable = { parliament_seat_array^2 = 10 }
 			subtract_from_variable = { parliament_seat_array^1 = -10 }
 			modify_parliament_seat = yes
+			EAG = {
+				add_state_core = 1149
+				add_state_core = 1148
+				add_state_core = 1150
+				add_state_core = 1147
+			}
 		}
 		available = {
 			EAG = {
@@ -9738,13 +9779,24 @@ EAG_parliament_gui_decision = {
 		}
 	}
 	EAG_integrate_scotland = {
-		cost = 15
-		days_remove = 10
+		cost = 45
+		days_remove = 50
 		fire_only_once = yes
 		remove_effect = {
 			subtract_from_variable = { parliament_seat_array^2 = 18 }
 			subtract_from_variable = { parliament_seat_array^1 = -18 }
 			modify_parliament_seat = yes
+			EAG = {
+				add_state_core = 1013
+				add_state_core = 1014
+				add_state_core = 1163
+				add_state_core = 1164
+				add_state_core = 1016
+				add_state_core = 1015
+				add_state_core = 1162
+				add_state_core = 1308
+				add_state_core = 1120
+			}
 		}
 		available = {
 			EAG = {
@@ -12855,6 +12907,7 @@ EAG_klumb_parliament_gui_decision = {
 							value = 101
 							compare = less_than_or_equals
 						}
+						has_country_flag = EAG_klumb_voting_YES
 					}
 				}
 				EAG = {
@@ -13373,7 +13426,7 @@ EAG_klumb_parliament_gui_decision = {
 						}
 					}
 				}
-				add_political_power = 200
+				add_political_power = 50
 				clr_country_flag = EAG_klumb_voting_NGGU_issue_1
 				clr_country_flag = EAG_klumb_voting_NGGU_issue_2
 				clr_country_flag = EAG_klumb_voting_NGGU_issue_3
@@ -15051,7 +15104,6 @@ EAG_klumb_parliament_gui_decision = {
 					has_country_flag = EAG_run_as_bushell
 					has_country_flag = EAG_run_as_starmer
 					has_country_flag = EAG_run_as_iсke
-					has_country_flag = EAG_run_as_astley
 					has_country_flag = EAG_run_as_yea
 					has_country_flag = EAG_run_as_bates
 				}
@@ -15064,7 +15116,6 @@ EAG_klumb_parliament_gui_decision = {
 					has_country_flag = EAG_run_as_bushell
 					has_country_flag = EAG_run_as_starmer
 					has_country_flag = EAG_run_as_iсke
-					has_country_flag = EAG_run_as_astley
 					has_country_flag = EAG_run_as_yea
 					has_country_flag = EAG_run_as_bates
 				}
@@ -15146,7 +15197,6 @@ EAG_klumb_parliament_gui_decision = {
 					has_country_flag = EAG_run_as_bushell
 					has_country_flag = EAG_run_as_starmer
 					has_country_flag = EAG_run_as_iсke
-					has_country_flag = EAG_run_as_astley
 					has_country_flag = EAG_run_as_bates
 				}
 			}
@@ -15159,7 +15209,6 @@ EAG_klumb_parliament_gui_decision = {
 					has_country_flag = EAG_run_as_bushell
 					has_country_flag = EAG_run_as_starmer
 					has_country_flag = EAG_run_as_iсke
-					has_country_flag = EAG_run_as_astley
 					has_country_flag = EAG_run_as_bates
 				}
 			}			
@@ -15231,7 +15280,6 @@ EAG_klumb_parliament_gui_decision = {
 					has_country_flag = EAG_run_as_may
 					has_country_flag = EAG_run_as_starmer
 					has_country_flag = EAG_run_as_iсke
-					has_country_flag = EAG_run_as_astley
 					has_country_flag = EAG_run_as_bates
 					has_country_flag = EAG_run_as_yea
 					has_country_flag = EAG_run_as_whitehouse
@@ -15245,7 +15293,6 @@ EAG_klumb_parliament_gui_decision = {
 					has_country_flag = EAG_run_as_may
 					has_country_flag = EAG_run_as_starmer
 					has_country_flag = EAG_run_as_iсke
-					has_country_flag = EAG_run_as_astley
 					has_country_flag = EAG_run_as_bates
 					has_country_flag = EAG_run_as_yea
 					has_country_flag = EAG_run_as_whitehouse
@@ -15318,7 +15365,6 @@ EAG_klumb_parliament_gui_decision = {
 					has_country_flag = EAG_run_as_klumb
 					has_country_flag = EAG_run_as_may
 					has_country_flag = EAG_run_as_iсke
-					has_country_flag = EAG_run_as_astley
 					has_country_flag = EAG_run_as_bates
 					has_country_flag = EAG_run_as_yea
 					has_country_flag = EAG_run_as_whitehouse
@@ -15332,7 +15378,6 @@ EAG_klumb_parliament_gui_decision = {
 					has_country_flag = EAG_run_as_klumb
 					has_country_flag = EAG_run_as_may
 					has_country_flag = EAG_run_as_iсke
-					has_country_flag = EAG_run_as_astley
 					has_country_flag = EAG_run_as_bates
 					has_country_flag = EAG_run_as_yea
 					has_country_flag = EAG_run_as_whitehouse
@@ -15407,7 +15452,6 @@ EAG_klumb_parliament_gui_decision = {
 					has_country_flag = EAG_run_as_may
 					has_country_flag = EAG_run_as_starmer
 					has_country_flag = EAG_run_as_bushell
-					has_country_flag = EAG_run_as_astley
 					has_country_flag = EAG_run_as_bates
 					has_country_flag = EAG_run_as_yea
 					has_country_flag = EAG_run_as_whitehouse
@@ -15421,7 +15465,6 @@ EAG_klumb_parliament_gui_decision = {
 					has_country_flag = EAG_run_as_may
 					has_country_flag = EAG_run_as_starmer
 					has_country_flag = EAG_run_as_bushell
-					has_country_flag = EAG_run_as_astley
 					has_country_flag = EAG_run_as_bates
 					has_country_flag = EAG_run_as_yea
 					has_country_flag = EAG_run_as_whitehouse
@@ -15798,10 +15841,7 @@ EAG_klumb_parliament_gui_decision = {
 		visible = {
 			EAG = {
 				has_country_flag = EAG_klumb_elections_started
-				OR = {
-					has_country_flag = EAG_run_as_bates
-					has_country_flag = EAG_run_as_astley
-				}
+				has_country_flag = EAG_run_as_bates
 			}
 		}
 		ai_will_do = {
@@ -15937,10 +15977,7 @@ EAG_klumb_parliament_gui_decision = {
 			if = {
 				limit = {
 					EAG = {
-						OR = {
-							has_country_flag = EAG_run_as_bates
-							has_country_flag = EAG_run_as_astley
-						}
+						has_country_flag = EAG_run_as_bates
 					}
 				}
 				set_temp_variable = { klumb_temp_member = 6 }
@@ -16041,10 +16078,7 @@ EAG_klumb_parliament_gui_decision = {
 			if = {
 				limit = {
 					EAG = {
-						OR = {
-							has_country_flag = EAG_run_as_bates
-							has_country_flag = EAG_run_as_astley
-						}
+						has_country_flag = EAG_run_as_bates
 					}
 				}
 				set_temp_variable = { klumb_temp_member = 6 }
@@ -16145,10 +16179,7 @@ EAG_klumb_parliament_gui_decision = {
 			if = {
 				limit = {
 					EAG = {
-						OR = {
-							has_country_flag = EAG_run_as_bates
-							has_country_flag = EAG_run_as_astley
-						}
+						has_country_flag = EAG_run_as_bates
 					}
 				}
 				set_temp_variable = { klumb_temp_member = 6 }
@@ -16515,7 +16546,6 @@ EAG_klumb_parliament_gui_decision = {
 					NOT = {
 						OR = {
 							has_country_flag = EAG_run_as_bates
-							has_country_flag = EAG_run_as_astley
 							has_country_flag = EAG_current_election_action
 						}
 					}
@@ -16528,7 +16558,6 @@ EAG_klumb_parliament_gui_decision = {
 				NOT = {
 					OR = {
 						has_country_flag = EAG_run_as_bates
-						has_country_flag = EAG_run_as_astley
 						has_country_flag = EAG_current_election_action
 					}
 				}
