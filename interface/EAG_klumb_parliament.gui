@@ -8,6 +8,13 @@ guiTypes = {
 			name = "klumb_parliament_semicircle_main_container"
 			position = { x = 10 y = 35 }
 			size = { width = 490 height = 300 }
+			
+			buttonType = {
+				name = "lhl_klumb_parliament_button"
+				spriteType = "GFX_lhl_parliament_button"
+				pdx_tooltip = "KLUMB_CHANGE_BUTTON"
+				position = { x = 440 y = 20 }
+			}
 
 			background = {
 				name = "Background"
@@ -32,6 +39,7 @@ guiTypes = {
 				max_slots_horizontal = 1
 				add_horizontal = no
 			}
+			
 		}
 
 		gridboxtype = {

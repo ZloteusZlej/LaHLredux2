@@ -5156,6 +5156,20 @@ shared_focus = {
 	prerequisite = {
 		focus = EAG_house_the_folk
 	}
+	available = {
+		EAG = {
+			custom_trigger_tooltip = { tooltip = EAG_klumb_integration_completed_tt }
+			hidden_trigger = {
+				has_country_flag = EAG_klumb_wessex_integrated
+				has_country_flag = EAG_klumb_sussex_integrated
+				has_country_flag = EAG_klumb_kent_integrated
+				has_country_flag = EAG_klumb_mercia_integrated
+				has_country_flag = EAG_klumb_northumbria_integrated
+				has_country_flag = EAG_klumb_scotland_integrated
+				has_country_flag = EAG_klumb_wales_integrated
+			}
+		}
+	}
 	completion_reward = {
 		add_political_power = 100
 		EAG = {

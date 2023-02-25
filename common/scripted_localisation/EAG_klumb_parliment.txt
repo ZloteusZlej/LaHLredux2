@@ -838,3 +838,37 @@ defined_text = {
 		localization_key = EAG_NGGU_coalition_NOT
 	}
 }
+defined_text = {
+	name = GetKlumbSwitchButton
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_integration_begun
+				has_country_flag = EAG_integration_menu_open
+			}
+		}
+		localization_key = EAG_Klumb_Switch_Menu_1
+	}
+	text = {
+		trigger = {
+			EAG = {
+				NOT = {
+					has_country_flag = EAG_integration_menu_open
+					has_country_flag = EAG_klumb_integration_begun
+				}
+			}
+		}
+		localization_key = EAG_Klumb_Switch_Menu_2
+	}
+	text = {
+		trigger = {
+			EAG = {
+				has_country_flag = EAG_klumb_integration_begun
+				NOT = {
+					has_country_flag = EAG_integration_menu_open
+				}
+			}
+		}
+		localization_key = EAG_Klumb_Switch_Menu_3
+	}
+}
