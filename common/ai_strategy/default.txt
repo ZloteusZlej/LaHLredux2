@@ -17,6 +17,12 @@ default_unit_production = { #If adding country-unique ones, bear in mind that th
 		id = mountaineers
 		value = 4
 	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = urban_forces
+		value = 4
+	}
 
 	ai_strategy = {
 		type = role_ratio
@@ -922,43 +928,34 @@ put_garrisons_on_high_prio = {
 
 default_spyplanes_production = {
 	enable = {
-		has_tech = spy_plane
+		has_tech = heavy_scout
 		is_major = yes
-		#OR = {
-		#	has_equipment = {
-		#		spy_plane_equipment > 50
-		#	}
-		#	has_deployed_air_force_size = {
-		#		size > 50
-		#		type = spy_plane
-		#	}
-		#}
 	}
 
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = unit_ratio
-		id = spy_plane
+		id = heavy_scout
 		value = -99
 	}
 
 	ai_strategy = {
 		type = equipment_production_factor
-		id = spy_plane
+		id = heavy_scout
 		value = -99
 	}
 
 	ai_strategy = {
 		type = equipment_production_min_factories
-		id = spy_plane
+		id = heavy_scout
 		value = 1
 	}
 }
 
 minors_dont_spy = {
 	enable = {
-		has_tech = spy_plane
+		has_tech = heavy_scout
 		is_major = no
 	}
 
@@ -966,7 +963,7 @@ minors_dont_spy = {
 
 	ai_strategy = {
 		type = unit_ratio
-		id = spy_plane
+		id = heavy_scout
 		value = -10
 	}
 }
