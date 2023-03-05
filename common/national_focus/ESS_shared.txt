@@ -1000,601 +1000,496 @@
 	} 
 	
 
-	###Dawkins###
+	###Dawkins Post Mosley###
 	
 	shared_focus = {
 		id = ESS_tame_the_leviathan
 		icon = GFX_goal_unknown
 		cost = 3
-		x = 3
-		y = 9
+		completion_reward = {
+	
+		}
+		x = 16
+		y = 6
+		
 
 	}
+
 	shared_focus = {
-		id = ESS_cultural_revolution
+		id = ESS_express_reparations
 		icon = GFX_goal_unknown
 		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_express_reparations"
+		}
+		relative_position_id = ESS_tame_the_leviathan
 		prerequisite = {
 			focus = ESS_tame_the_leviathan
-
 		}
-		x = 0
-		y = 10
+		x = -2
+		y = 1
 
 	}
-	shared_focus = {
-		id = ESS_encourage_wastefullness
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_cultural_revolution
-
-		}
-		x = 1
-		y = 11
-
-	}
-	shared_focus = {
-		id = ESS_propaganda_of_hedonism
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_encourage_wastefullness
-
-		}
-		x = 1
-		y = 12
-
-	}
+	
 	shared_focus = {
 		id = ESS_gods_delusion
 		icon = GFX_goal_unknown
 		cost = 3
-		prerequisite = {
-			focus = ESS_cultural_revolution
-
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_gods_delusion"
 		}
-		x = -1
-		y = 11
+		relative_position_id = ESS_tame_the_leviathan
+		prerequisite = {
+			focus = ESS_express_reparations
+		}
+		x = -2
+		y = 2
 
 	}
+	
+	shared_focus = {
+		id = ESS_welfare_promises
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_welfare_promises"
+		}
+		relative_position_id = ESS_tame_the_leviathan
+		prerequisite = {
+			focus = ESS_gods_delusion
+		}
+		x = -2
+		y = 3
+
+	}
+	
+	shared_focus = {
+		id = ESS_welfare_promises
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_welfare_promises"
+		}
+		relative_position_id = ESS_tame_the_leviathan
+		prerequisite = {
+			focus = ESS_tame_the_leviathan
+		}
+		x = 0
+		y = 1
+
+	}
+	
+	shared_focus = {
+		id = ESS_nutrition_trafficing
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_nutrition_trafficing"
+		}
+		relative_position_id = ESS_tame_the_leviathan
+		prerequisite = {
+			focus = ESS_tame_the_leviathan
+		}
+		x = 0
+		y = 1
+
+	}
+	
+	shared_focus = {
+		id = ESS_re_privatisation
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_re_privatisation"
+		}
+		relative_position_id = ESS_tame_the_leviathan
+		prerequisite = {
+			focus = ESS_nutrition_trafficing
+		}
+		x = 0
+		y = 2
+
+	}
+	
+	shared_focus = {
+		id = ESS_physical_nomadism
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_physical_nomadism"
+		}
+		relative_position_id = ESS_tame_the_leviathan
+		prerequisite = {
+			focus = ESS_re_privatisation
+		}
+		x = 0
+		y = 3
+
+	}
+	
+	shared_focus = {
+		id = ESS_punks_are_dead
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_punks_are_dead"
+		}
+		relative_position_id = ESS_tame_the_leviathan
+		prerequisite = {
+			focus = ESS_tame_the_leviathan
+		}
+		x = 2
+		y = 1
+
+	}
+	
+	shared_focus = {
+		id = ESS_debandify_the_government
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_debandify_the_government"
+		}
+		relative_position_id = ESS_tame_the_leviathan
+		prerequisite = {
+			focus = ESS_punks_are_dead
+		}
+		x = 2
+		y = 2
+
+	}
+	
+	shared_focus = {
+		id = ESS_reopen_thames
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_reopen_thames"
+		}
+		relative_position_id = ESS_tame_the_leviathan
+		prerequisite = {
+			focus = ESS_debandify_the_government
+		}
+		x = 2
+		y = 3
+
+	}
+	
+	shared_focus = {
+		id = ESS_constructing_utopia
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_constructing_utopia"
+		}
+		relative_position_id = ESS_tame_the_leviathan
+		prerequisite = {
+			focus = ESS_welfare_promises
+			}
+		prerequisite = {
+			focus = ESS_physical_nomadism
+			}
+		prerequisite = {
+			focus = ESS_reopen_thames
+			}
+		x = 0
+		y = 4
+
+	}
+	
+###Dawkins Politics###	
+	
+	
+	
+	
+###Dawkins science###
+
+	shared_focus = {
+		id = ESS_british_diamonds
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_british_diamonds"
+		}
+		relative_position_id = ESS_tame_the_leviathan
+		prerequisite = {
+			focus = ESS_welfare_promises
+			}
+		x = 0
+		y = 6
+
+	}
+	
+	shared_focus = {
+		id = ESS_optimised_living_space
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_optimised_living_space"
+		}
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_british_diamonds
+			}
+		x = -4
+		y = 1
+
+	}
+	
+	shared_focus = {
+		id = ESS_recycleconomy
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_recycleconomy"
+		}
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_optimised_living_space
+			}
+		x = -5
+		y = 2
+
+	}
+	
+	shared_focus = {
+		id = ESS_paperclippin
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_paperclippin"
+		}
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_optimised_living_space
+			}
+		x = -3
+		y = 2
+
+	}
+	
+	shared_focus = {
+		id = ESS_rising_tide
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_rising_tide"
+		}
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_recycleconomy
+			}
+		prerequisite = {
+			focus = ESS_paperclippin
+			}
+		x = -4
+		y = 3
+
+	}
+
+	shared_focus = {
+		id = ESS_e_m_i ###Electric Motorisation Initiative###
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_e_m_i"
+		}
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_rising_tide
+			}
+		x = -4
+		y = 4
+
+	}
+	
+	shared_focus = {
+		id = ESS_data_trade
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_data_trade"
+		}
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_british_diamonds
+			}
+		x = 0
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = ESS_webways
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_webways"
+		}
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_data_trade
+			}
+		x = -1
+		y = 2
+
+	}
+	
+	shared_focus = {
+		id = ESS_cybernetic_forces
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_webways"
+		}
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_data_trade
+			}
+		x = 1
+		y = 2
+
+	}
+	
+	shared_focus = {
+		id = ESS_civilian_integration
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_civilian_integration"
+		}
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_webways
+			}
+		prerequisite = {
+			focus = ESS_cybernetic_forces
+			}
+		x = 0
+		y = 3
+
+	}
+	
+	shared_focus = {
+		id = ESS_perplexing_neurons
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_perplexing_neurons"
+		}
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_civilian_integration
+			}
+		x = 0
+		y = 4
+
+	}
+	
+	shared_focus = {
+		id = ESS_experimental_lanes
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_experimental_lanes"
+		}
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_british_diamonds
+			}
+		x = 4
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = ESS_genes_and_matter
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_genes_and_matter"
+		}
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_experimental_lanes
+			}
+		x = 3
+		y = 2
+
+	}
+	
 	shared_focus = {
 		id = ESS_informational_units
 		icon = GFX_goal_unknown
 		cost = 3
-		prerequisite = {
-			focus = ESS_gods_delusion
-
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_informational_units"
 		}
-		x = -1
-		y = 12
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_experimental_lanes
+			}
+		x = 5
+		y = 2
 
 	}
+	
 	shared_focus = {
-		id = ESS_psychical_nomadism
+		id = ESS_second_chance
 		icon = GFX_goal_unknown
 		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_second_chance"
+		}
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_genes_and_matter
+			}
 		prerequisite = {
 			focus = ESS_informational_units
-
-		}
-		x = -1
-		y = 13
-
-	}
-	shared_focus = {
-		id = ESS_consumer_society
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_propaganda_of_hedonism
-			focus = ESS_psychical_nomadism
-		}
-		x = 0
-		y = 14
-
-	}
-	shared_focus = {
-		id = ESS_protective_economy
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_tame_the_leviathan
-		}
-		x = 3
-		y = 10
-
-	}
-	shared_focus = {
-		id = ESS_trade_unionism
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_protective_economy
-		}
-		x = 3
-		y = 11
-
-	}
-	shared_focus = {
-		id = ESS_work_projects_administration
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_trade_unionism
-		}
-		x = 3
-		y = 12
-
-	}
-	shared_focus = {
-		id = ESS_recovery_growth
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_work_projects_administration
-		}
-		x = 2
-		y = 13
-
-	}
-	shared_focus = {
-		id = ESS_universal_basic_income
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_work_projects_administration
-		}
-		x = 4
-		y = 13
-
-	}
-	shared_focus = {
-		id = ESS_dirigisme
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_recovery_growth
-			focus = ESS_universal_basic_income
-		}
-		prerequisite = {
-			focus = ESS_work_projects_administration
-		}
-		x = 3
-		y = 14
-
-	}
-	shared_focus = {
-		id = ESS_state_and_party
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_tame_the_leviathan
-		}
-		x = 6
-		y = 10
-
-	}
-	shared_focus = {
-		id = ESS_cultural_tyranny
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_state_and_party
-		}
-		x = 5
-		y = 11
-
-	}
-	shared_focus = {
-		id = ESS_galtons_legacy
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_cultural_tyranny
-		}
-		
-		x = 5
-		y = 12
-
-	}
-	shared_focus = {
-		id = ESS_new_academic_policy
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_state_and_party
-		}
-		x = 7
-		y = 11
-
-	}
-	shared_focus = {
-		id = ESS_political_education
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_new_academic_policy
-		}
-		
-		x = 7
-		y = 12
-
-	}
-	shared_focus = {
-		id = ESS_peoples_guards
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_political_education
-		}
-		
-		x = 7
-		y = 13
-
-	}
-	shared_focus = {
-		id = ESS_Partocracy
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_galtons_legacy
-			focus = ESS_peoples_guards
-		}
-		x = 6
-		y = 14
-
-	}
-	shared_focus = {
-		id = ESS_utopia_under_protection
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_consumer_society
-		}
-		prerequisite = {
-			focus = ESS_dirigisme
-		}
-		prerequisite = {
-			focus = ESS_Partocracy
-		}
-		x = 3
-		y = 15
-
-	}
-	shared_focus = {
-		id = ESS_information_revolution
-		icon = GFX_goal_unknown
-		cost = 3
-		x = 6
-		y = 8
-
-	}
-	
-
-
-###Dawkins sciensce###
-
-	shared_focus = {
-		id = ESS_technological_revival_d
-		icon = GFX_goal_unknown
-		cost = 3
-		completion_reward = {
-	
-		}
-		x = 14
-		y = 9
-
-	}
-
-	shared_focus = {
-		id = ESS_restore_the_scientific_base_d
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_technological_revival_d
-		}
-		completion_reward = {
-	
-		}
-		x = 10
-		y = 10
-
-	}
-
-	shared_focus = {
-		id = ESS_pragmatic_research_d
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_restore_the_scientific_base_d
-		}
-		completion_reward = {
-	
-		}
-		x = 9
-		y = 11
-
-	}
-	
-	shared_focus = {
-		id = ESS_operaiton_paperclip_d
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_restore_the_scientific_base_d
-		}
-		completion_reward = {
-	
-		}
-		x = 11
-		y = 11
-
-	}
-	
-	shared_focus = {
-		id = ESS_think_tanks_d
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_pragmatic_research_d
-			focus = ESS_operaiton_paperclip_d
-		}
-		completion_reward = {
-	
-		}
-		x = 10
-		y = 12
-
-	}
-	
-	shared_focus = {
-		id = ESS_alpha_project_d
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_think_tanks_d
-		}
-		completion_reward = {
-	
-		}
-		x = 10
-		y = 13
-
-	}
-
-	shared_focus = {
-		id = ESS_information_revolution_d
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_technological_revival_d
-		}
-		completion_reward = {
-	
-		}
-		x = 14
-		y = 10
-
-	}
-
-	shared_focus = {
-		id = ESS_communication_systems_d
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_information_revolution_d
-		}
-		completion_reward = {
-	
-		}
-		x = 13
-		y = 11
-
-	}
-	
-	shared_focus = {
-		id = ESS_cybernetic_research_unit_d
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_information_revolution_d
-		}
-		completion_reward = {
-	
-		}
-		x = 15
-		y = 11
-
-	}
-	
-	shared_focus = {
-		id = ESS_civilian_integration_d
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_communication_systems_d
-			focus = ESS_cybernetic_research_unit_d
-		}
-		completion_reward = {
-	
-		}
-		x = 14
-		y = 12
-
-	}
-	
-	shared_focus = {
-		id = ESS_ai_research_d
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_civilian_integration_d
-		}
-		completion_reward = {
-	
-		}
-		x = 14
-		y = 13
-
-	}
-
-	shared_focus = {
-		id = ESS_experimental_lanes_d
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_technological_revival_d
-		}
-		completion_reward = {
-	
-		}
-		x = 18
-		y = 10
-
-	}
-
-	shared_focus = {
-		id = ESS_biological_research_d
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_experimental_lanes_d
-		}
-		completion_reward = {
-	
-		}
-		x = 17
-		y = 11
-
-	}
-
-	shared_focus = {
-		id = ESS_poetry_of_reality_d 
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_experimental_lanes_d
-		}
-		completion_reward = {
-	
-		}
-		x = 19
-		y = 11
-
-	}
-
-	shared_focus = {
-		id = ESS_implant_modification_d 
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_biological_research_d
-			focus = ESS_poetry_of_reality_d
-		}
-		completion_reward = {
-	
-		}
-		x = 18
-		y = 12
-
-	}
-
-	shared_focus = {
-		id = ESS_posthumanist_approach_d 
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_implant_modification_d
-		}
-		completion_reward = {
-	
-		}
-		x = 18
-		y = 13
-
-	}
-	
-	shared_focus = {
-		id = ESS_final_omega_d ###Colossus computer###
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_alpha_project_d
-		}
-		prerequisite = {
-			focus = ESS_ai_research_d
-		}
-		prerequisite = {
-			focus = ESS_posthumanist_approach_d
-		}
-		completion_reward = {
-		ESS = {
-			set_country_flag = ESS_ai_here_d
 			}
-		}
-		x = 14
-		y = 14
+		x = 4
+		y = 3
 
 	}
 	
 	shared_focus = {
-		id = ESS_matters_of_the_state_d 
+		id = ESS_one_god_further
 		icon = GFX_goal_unknown
 		cost = 3
-		prerequisite = {
-			focus = ESS_final_omega_d
-		}
-		visible = {
-            has_country_flag = ESS_ai_here_d
-        }
 		completion_reward = {
-		
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_one_god_further"
 		}
-		x = 13
-		y = 15
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_second_chance
+			}
+		x = 4
+		y = 4
 
 	}
 	
 	shared_focus = {
-		id = ESS_ideological_framework_d 
+		id = ESS_omega_zero
 		icon = GFX_goal_unknown
 		cost = 3
-		prerequisite = {
-			focus = ESS_final_omega_d
-		}
-		visible = {
-            has_country_flag = ESS_ai_here_d
-        }
 		completion_reward = {
-		
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_omega_zero"
 		}
-		x = 15
-		y = 15
+		relative_position_id = ESS_british_diamonds
+		prerequisite = {
+			focus = ESS_perplexing_neurons
+			}
+		prerequisite = {
+			focus = ESS_e_m_i
+			}
+		prerequisite = {
+			focus = ESS_one_god_further
+			}
+		x = 0
+		y = 5
 
 	}
-	
-	shared_focus = {
-		id = ESS_chto-to_pizdatoye_d 
-		icon = GFX_goal_unknown
-		cost = 3
-		prerequisite = {
-			focus = ESS_matters_of_the_state_d
-			focus = ESS_ideological_framework_d
-		}
-		visible = {
-            has_country_flag = ESS_ai_here_d
-        }
-		completion_reward = {
-		
-		}
-		x = 14
-		y = 16
-
-	}
-	
-	
-
 
 ###Land###
 
