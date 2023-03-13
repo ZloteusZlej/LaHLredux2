@@ -29,6 +29,7 @@
 					id = ESS_event.7
 				}
 			}
+			add_stability = 0.05
 		}
 		x = 4
 		y = 1
@@ -60,7 +61,11 @@
 		}
 		completion_reward = {
 		add_manpower = 30000
-		add_stability = 0.05
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 800
+			producer = ESS
+		}
 		swap_ideas = {
 			remove_idea = ESS_accelerated_army
 			add_idea = ESS_accelerated_army_1
@@ -78,6 +83,7 @@
 			focus = ESS_revolutionary_ethic
 		}
 		completion_reward = {
+		add_stability = 0.05
 			ESS = {
 				country_event = {
 					days = 1
@@ -380,6 +386,7 @@
 		completion_reward = {
 			set_technology = { ESS_londons_legacy = 1 popup = yes }
 			custom_effect_tooltip = ESS_londons_legacy_buff
+			1160 = {
 			add_building_construction = {
 				type = industrial_complex
 				level = 2
@@ -395,6 +402,7 @@
 				level = 1
 				instant_build = yes
 				}	
+			}
 			remove_ideas = ESS_fallen_london
 		}	
 		x = 7
@@ -1004,7 +1012,7 @@
 	
 	shared_focus = {
 		id = ESS_tame_the_leviathan
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_tame_the_leviathan
 		cost = 3
 		completion_reward = {
 	
@@ -1016,11 +1024,11 @@
 	}
 
 	shared_focus = {
-		id = ESS_express_reparations
-		icon = GFX_goal_unknown
+		id = ESS_gods_delusion
+		icon = GFX_goal_ESS_gods_delusion
 		cost = 3
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_express_reparations"
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_gods_delusion"
 		}
 		relative_position_id = ESS_tame_the_leviathan
 		prerequisite = {
@@ -1032,15 +1040,15 @@
 	}
 	
 	shared_focus = {
-		id = ESS_gods_delusion
-		icon = GFX_goal_unknown
+		id = ESS_express_reparations
+		icon = GFX_goal_ESS_express_reparations
 		cost = 3
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_gods_delusion"
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_express_reparations"
 		}
 		relative_position_id = ESS_tame_the_leviathan
 		prerequisite = {
-			focus = ESS_express_reparations
+			focus = ESS_gods_delusion
 		}
 		x = -2
 		y = 2
@@ -1049,14 +1057,14 @@
 	
 	shared_focus = {
 		id = ESS_welfare_promises
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_welfare_promises
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_welfare_promises"
 		}
 		relative_position_id = ESS_tame_the_leviathan
 		prerequisite = {
-			focus = ESS_gods_delusion
+			focus = ESS_express_reparations
 		}
 		x = -2
 		y = 3
@@ -1064,24 +1072,8 @@
 	}
 	
 	shared_focus = {
-		id = ESS_welfare_promises
-		icon = GFX_goal_unknown
-		cost = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_welfare_promises"
-		}
-		relative_position_id = ESS_tame_the_leviathan
-		prerequisite = {
-			focus = ESS_tame_the_leviathan
-		}
-		x = 0
-		y = 1
-
-	}
-	
-	shared_focus = {
 		id = ESS_nutrition_trafficing
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_nutrition_trafficing
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_nutrition_trafficing"
@@ -1097,7 +1089,7 @@
 	
 	shared_focus = {
 		id = ESS_re_privatisation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_re_privatisation
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_re_privatisation"
@@ -1113,7 +1105,7 @@
 	
 	shared_focus = {
 		id = ESS_physical_nomadism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_physical_nomadism
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_physical_nomadism"
@@ -1129,7 +1121,7 @@
 	
 	shared_focus = {
 		id = ESS_punks_are_dead
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_punks_are_dead
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_punks_are_dead"
@@ -1145,7 +1137,7 @@
 	
 	shared_focus = {
 		id = ESS_debandify_the_government
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_debandify_the_government
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_debandify_the_government"
@@ -1161,7 +1153,7 @@
 	
 	shared_focus = {
 		id = ESS_reopen_thames
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_reopen_thames
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_reopen_thames"
@@ -1177,7 +1169,7 @@
 	
 	shared_focus = {
 		id = ESS_constructing_utopia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_constructing_utopia
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_constructing_utopia"

@@ -382,12 +382,34 @@ country_event = {
 						instant_build = yes
 					}
 				}
+		1158 = {
+				create_unit = {
+					division = "name = \"Luton Defence Forces\" division_template = \"London Guards\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
+			}
+		1157 = {
+				create_unit = {
+					division = "name = \"Harlow Protectors\" division_template = \"London Guards\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
+			}
+		1003 = {
+				create_unit = {
+					division = "name = \"Clacton Territorial Brigade\" division_template = \"London Guards\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
+			}
+			
 		}
 							
 				
 	option = {
 		name = ESS_event.7.b 
-		1156 = {
+		1160 = {
 				
 			add_building_construction = {
 						type = bunker
@@ -428,6 +450,27 @@ country_event = {
 						instant_build = yes
 					}		
 		
+			}
+		1160 = {
+				create_unit = {
+					division = "name = \"Croydon Homefront\" division_template = \"London Guards\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
+			}
+		1160 = {
+				create_unit = {
+					division = "name = \"Greenwich Protectors\" division_template = \"London Guards\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
+			}
+		1159 = {
+				create_unit = {
+					division = "name = \"Harrow Keepers\" division_template = \"London Guards\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
 			}
 		}
 }
