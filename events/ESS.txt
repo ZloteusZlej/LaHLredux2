@@ -1,5 +1,25 @@
 ﻿add_namespace = ESS_event
 
+country_event = { 
+	id = ESS_event.00
+	log = "[GetDateText]: [Root.GetName]: Event ESS_event.00"
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.00.a
+		if = {
+			limit = {
+				is_ai = yes
+			}
+		set_country_flag = lhl_london_bands_central_region_open
+		set_country_flag = lhl_london_bands_south_west_region_open
+		set_country_flag = lhl_london_bands_south_east_region_open
+		set_country_flag = lhl_london_bands_north_west_region_open
+		set_country_flag = lhl_london_bands_north_east_region_open
+		}
+	}
+}
 country_event = {
 	id = ESS_event.1
 	title = ESS_event.1.t
@@ -86,9 +106,11 @@ country_event = {
 		unlock_national_focus = ESS_preventive_strike
 	
 		}		
-
-		
 		kill_country_leader = yes
+		swap_ideas = {
+			remove_idea = lhl_regime_provisional_government
+			add_idea = lhl_regime_personalist_rule
+		} 
 		set_global_flag = ENG_Mosley_is_dead  
  		clr_country_flag = ENG_mosley_here
 		create_country_leader = {
@@ -1720,7 +1742,28 @@ country_event = {
 		}
 	}
 	
-	
+country_event = { 
+	id = ESS_event.41
+	title = ESS_event.41.t
+	desc = ESS_event.41.d
+	log = "[GetDateText]: [Root.GetName]: Event ESS_event.41"
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.41.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = MSC
+		}
+		add_equipment_to_stockpile = {
+			type = armoured_personnel_carrier_equipment
+			amount = 100
+			producer = MSC
+		}
+	}
+}
 	
 	
 	

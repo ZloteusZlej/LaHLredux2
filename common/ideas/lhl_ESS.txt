@@ -136,7 +136,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				experience_gain_army = 0.03
+				experience_gain_army = 0.06
+				experience_gain_army_factor = 0.20
 
 			}
 		}
@@ -151,11 +152,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				experience_gain_army = 0.03
+				experience_gain_army = 0.06
+				experience_gain_army_factor = 0.20
 				command_power_gain_mult = -0.3
-				max_dig_in = 0.3
-				planning_speed = -0.3
-				army_morale_factor = 0.1
+				max_dig_in = 0.6
+				planning_speed = -0.6
+				army_morale_factor = 0.2
+				out_of_supply_factor = -0.15
 			}
 		}
 		ESS_decentralized_army_2 = {
@@ -169,14 +172,15 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				experience_gain_army = 0.03
+				experience_gain_army = 0.06
+				experience_gain_army_factor = 0.20
 				command_power_gain_mult = -0.3
-				max_dig_in = 0.3
-				planning_speed = -0.3
-				army_morale_factor = 0.1
-				special_forces_attack_factor = 0.1
-				land_reinforce_rate = 0.05
-				out_of_supply_factor = 0.1
+				max_dig_in = 0.6
+				planning_speed = -0.6
+				army_morale_factor = 0.2
+				special_forces_attack_factor = 0.15
+				land_reinforce_rate = 0.1
+				out_of_supply_factor = -0.15
 			}
 		}
 		ESS_decentralized_army_3 = {
@@ -191,14 +195,15 @@ ideas = {
 			
 			modifier = {
 				experience_gain_army = 0.06
-				command_power_gain_mult = -0.5
-				max_dig_in = 0.8
-				planning_speed = -0.3
-				army_morale_factor = 0.1
+				experience_gain_army_factor = 0.20
+				command_power_gain_mult = -0.3
+				max_dig_in = 0.6
+				planning_speed = -0.6
+				army_morale_factor = 0.2
 				special_forces_attack_factor = 0.15
 				land_reinforce_rate = 0.1
-				out_of_supply_factor = 0.1
-				army_speed_factor = 0.10
+				out_of_supply_factor = -0.15
+				army_speed_factor = 0.15
 				recon_factor = 0.04
 			}
 		}
@@ -323,7 +328,6 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				surrender_limit = -0.15
-				no_supply_grace = -70
 			}
 		}
 		
@@ -338,7 +342,6 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				surrender_limit = -0.15
-				no_supply_grace = -70
 			}
 		}
 		
@@ -357,6 +360,23 @@ ideas = {
 				conscription_factor = -0.50
 				planning_speed = -0.50
 				army_speed_factor = -0.50
+			}
+		}
+		ESS_interlude_1 = {
+			
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.25
+				conscription_factor = -0.25
+				planning_speed = -0.25
+				army_speed_factor = -0.25
 			}
 		}
 		ESS_empty_throne = {
@@ -407,6 +427,42 @@ ideas = {
 				resistance_decay = -0.05
 				local_non_core_manpower = -0.2
 				consumer_goods_factor = 0.15
+			}
+		}
+		ESS_london_in_flames_1 = {
+			
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.20
+				industrial_capacity_factory = -0.20
+				resistance_decay = -0.04
+				local_non_core_manpower = -0.2
+				consumer_goods_factor = 0.13
+			}
+		}
+		ESS_london_in_flames_2 = {
+			
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.15
+				resistance_decay = -0.03
+				local_non_core_manpower = -0.2
+				consumer_goods_factor = 0.11
 			}
 		}
 		ESS_temporary_serfdom = {
