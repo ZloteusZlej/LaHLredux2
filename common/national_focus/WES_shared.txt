@@ -1291,6 +1291,8 @@ shared_focus = {
 	y = 7
 }
 
+##DESTRUCTION OF BRITAIN##
+
 shared_focus = {
 	id = WES_rule_george
 	icon = GFX_goal_WES_Rule_of_george
@@ -1319,6 +1321,7 @@ shared_focus = {
 					modifier = WES_rule_of_george_dynamic_modifier
 				}
 			}
+			custom_effect_tooltip = WES_mechanic_activated.tt
 		}
 	}
 	x = 17
@@ -1334,12 +1337,40 @@ shared_focus = {
 	cost = 3.5
 	completion_reward = {
 		WES = {
-			country_event = {
-				days = 1
-				id = WES_event.92
+			add_to_variable = {
+				var = WES_transformation_education_progress
+				value = 5
 			}
+			add_to_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 10
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 10
+			}
+			clamp_variable = {
+				var = WES_transformation_education_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_transformation_deurbanization_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			custom_effect_tooltip =	WES_transformation_education_small.tt	
+			custom_effect_tooltip =	WES_transformation_deurbanization_small.tt	
+			custom_effect_tooltip =	WES_careful_planning_1.tt
 		}
-		custom_effect_tooltip = WES_mechanic_activated.tt
 	}
 	x = 17
 	y = 7
@@ -1349,21 +1380,36 @@ shared_focus = {
 	id = WES_days_old
 	icon = GFX_goal_WES_The_Days_of_Old
 	prerequisite = {
-        focus = WES_medieval_state
+        focus = WES_rule_george
 	}
 	cost = 3.5
-	x = 17
-	y = 8
+	x = 23
+	y = 7
 }
 
 shared_focus = {
 	id = WES_human_nauture
 	icon = GFX_goal_WES_Embrace_The_Human_Nature
 	prerequisite = {
-        focus = WES_days_old
+        focus = WES_long_planning
+	}
+	prerequisite = {
+        focus = WES_voluntarily_colony
+	}
+	completion_reward = {
+		WES = {
+			add_political_power = 25
+			add_stability = 0.035
+			add_to_variable = {
+				var = WES_rule_of_george_production_factory_efficiency_gain_factor
+				value = 0.05
+			}
+			custom_effect_tooltip = WES_dynamic_localization_10.tt
+			custom_effect_tooltip =	WES_careful_planning_1.tt
+		}
 	}
 	cost = 3.5
-	x = 17
+	x = 16
 	y = 9
 }
 
@@ -1372,6 +1418,9 @@ shared_focus = {
 	icon = GFX_goal_WES_competetive_spirit
 	prerequisite = {
         focus = WES_human_nauture
+	}
+	prerequisite = {
+        focus = WES_relocation_programmes
 	}
 	completion_reward = {
 		add_political_power = 50
@@ -1409,37 +1458,38 @@ shared_focus = {
 		custom_effect_tooltip =	WES_transformation_culture_small.tt	
 	}
 	cost = 3.5
-	x = 19
+	x = 17
 	y = 10
 }
 
-shared_focus = {
+shared_focus = { #1
 	id = WES_societal_roles
 	icon = GFX_goal_WES_societal_roles
 	prerequisite = {
-        focus = WES_human_nauture
+		focus = WES_return_tradition
 	}
 	cost = 3.5
-	x = 15
-	y = 10
+	x = 14
+	y = 16
 }
 
-shared_focus = {
+shared_focus = { #2
 	id = WES_mannerbunds
 	icon = GFX_goal_WES_Mannerbunds
 	prerequisite = {
-        focus = WES_competetive_spirit
+		focus = WES_clean_start
+		focus = WES_clinging_present
 	}
 	cost = 3.5
-	x = 18
-	y = 11
+	x = 17
+	y = 14
 }
 
-shared_focus = {
+shared_focus = { #3
 	id = WES_jousting
 	icon = GFX_goal_WES_Jousing
 	prerequisite = {
-        focus = WES_competetive_spirit
+		focus = WES_english_tongue
 	}
 	completion_reward = {
 		WES = {
@@ -1471,46 +1521,37 @@ shared_focus = {
 		custom_effect_tooltip =	WES_transformation_culture_big.tt		
 	}
 	cost = 3.5
-	x = 20
-	y = 11
+	x = 16
+	y = 16
 }
 
-shared_focus = {
+shared_focus = { #4
 	id = WES_return_tradition
 	icon = GFX_goal_WES_return_tradition
 	prerequisite = {
-        focus = WES_societal_roles
-	}
-	mutually_exclusive = {
-        focus = WES_embrace_modernity
+		focus = WES_pop_culture
 	}
 	cost = 3.5
 	x = 14
-	y = 11
+	y = 15
 }
 
-shared_focus = {
+shared_focus = { #5
 	id = WES_embrace_modernity
 	icon = GFX_goal_WES_embrace_modernity
 	prerequisite = {
-        focus = WES_societal_roles
-	}
-	mutually_exclusive = {
-        focus = WES_return_tradition
+		focus = WES_cultural_symbiosis
 	}
 	cost = 3.5
-	x = 16
-	y = 11
+	x = 20
+	y = 15
 }
 
-shared_focus = {
+shared_focus = { #7
 	id = WES_new_chivilary
 	icon = GFX_goal_WES_A_new_age_of_Chilvary
 	prerequisite = {
-        focus = WES_mannerbunds
-	}
-	prerequisite = {
-        focus = WES_jousting
+		focus = WES_cult_shakespeare
 	}
 	completion_reward = {
 		WES = {
@@ -1546,30 +1587,26 @@ shared_focus = {
 		}
 	}
 	cost = 3.5
-	x = 19
-	y = 12
+	x = 18
+	y = 16
 }
 
 shared_focus = {
 	id = WES_careful_reform
 	icon = GFX_goal_WES_careful_reform
 	prerequisite = {
-        focus = WES_return_tradition
-		focus = WES_embrace_modernity
+        focus = WES_days_old
 	}
 	cost = 3.5
-	x = 15
-	y = 12
+	x = 23
+	y = 8
 }
 
-shared_focus = {
+shared_focus = { #8
 	id = WES_english_spirit
 	icon = GFX_goal_WES_the_english_spirit
 	prerequisite = {
-        focus = WES_new_chivilary
-	}
-	prerequisite = {
-        focus = WES_careful_reform
+		focus = WES_embrace_modernity
 	}
 	completion_reward = {
 		WES = {
@@ -1585,15 +1622,15 @@ shared_focus = {
 		}
 	}
 	cost = 3.5
-	x = 17
-	y = 13
+	x = 20
+	y = 16
 }
 
 shared_focus = {
 	id = WES_end_industrial_society
 	icon = GFX_goal_WES_End_of_the_Industrial_Society
 	prerequisite = {
-        focus = WES_medieval_state
+        focus = WES_rule_george
 	}
 	completion_reward = {
 		WES = {
@@ -1639,14 +1676,14 @@ shared_focus = {
 	}
 	cost = 3.5
 	x = 11
-	y = 8
+	y = 7
 }
 
 shared_focus = {
 	id = WES_long_planning
 	icon = GFX_goal_WES_Long_Term_Planning
 	prerequisite = {
-        focus = WES_end_industrial_society
+        focus = WES_medieval_state
 	}
 	completion_reward = {
 		WES = {
@@ -1686,8 +1723,8 @@ shared_focus = {
 		}
 	}
 	cost = 3.5
-	x = 10
-	y = 9
+	x = 15
+	y = 8
 }
 
 shared_focus = {
@@ -1741,18 +1778,15 @@ shared_focus = {
 		}
 	}
 	cost = 3.5
-	x = 12
-	y = 9
+	x = 11
+	y = 8
 }
 
 shared_focus = {
 	id = WES_voluntarily_colony
 	icon = GFX_goal_WES_voluntary_colonialism
 	prerequisite = {
-        focus = WES_long_planning
-	}
-	prerequisite = {
-        focus = WES_simplifid_infrastructure
+        focus = WES_medieval_state
 	}
 	completion_reward = {
 		WES = {
@@ -1766,15 +1800,15 @@ shared_focus = {
 		}
 	}
 	cost = 3.5
-	x = 11
-	y = 10
+	x = 17
+	y = 8
 }
 
 shared_focus = {
 	id = WES_rebuild_scenery
 	icon = GFX_goal_WES_rebuild_the_scenery
 	prerequisite = {
-        focus = WES_voluntarily_colony
+        focus = WES_connect_nature
 	}
 	completion_reward = {
 		WES = {
@@ -1828,73 +1862,129 @@ shared_focus = {
 		}
 	}
 	cost = 3.5
-	x = 11
-	y = 11
+	x = 13
+	y = 9
 }
 
 shared_focus = {
 	id = WES_dismantle_cities
 	icon = GFX_goal_WES_dismantle_cities
 	prerequisite = {
-        focus = WES_rebuild_scenery
+        focus = WES_pastoral_life
 	}
 	cost = 3.5
-	x = 10
-	y = 12
+	x = 9
+	y = 9
 }
 
 shared_focus = {
 	id = WES_connect_nature
 	icon = GFX_goal_WES_Connect_With_Nature
 	prerequisite = {
-        focus = WES_rebuild_scenery
+        focus = WES_end_industrial_society
+	}
+	completion_reward = {
+		WES = {
+			add_to_variable = {
+				var = WES_transformation_environment_progress
+				value = 10
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 10
+			}
+			clamp_variable = {
+				var = WES_transformation_environment_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			add_stability = 0.1
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = green_industry_category
+			}
+			custom_effect_tooltip = WES_transformation_environment_big.tt
+		}		
 	}
 	cost = 3.5
-	x = 12
-	y = 12
+	x = 13
+	y = 8
 }
 
 shared_focus = {
 	id = WES_pastoral_life
 	icon = GFX_goal_WES_a_pastoral_life
 	prerequisite = {
-        focus = WES_days_old
+        focus = WES_end_industrial_society
 	}
 	cost = 3.5
-	x = 23
-	y = 10
+	x = 9
+	y = 8
 }
 
 shared_focus = {
 	id = WES_subsistence_economy
 	icon = GFX_goal_WES_A_subsistence_economy
 	prerequisite = {
-        focus = WES_pastoral_life
+        focus = WES_medieval_state
+	}
+	completion_reward = {
+		WES = {
+			add_ideas = closed_economy
+			add_to_variable = {
+				var = WES_transformation_education_progress
+				value = 10
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 10
+			}
+			clamp_variable = {
+				var = WES_transformation_education_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			custom_effect_tooltip = WES_transformation_education_big.tt
+		}		
 	}
 	cost = 3.5
-	x = 22
-	y = 11
+	x = 19
+	y = 8
 }
 
 shared_focus = {
 	id = WES_relocation_programmes
 	icon = GFX_goal_WES_relocation_programs
 	prerequisite = {
-        focus = WES_pastoral_life
+        focus = WES_voluntarily_colony
+	}
+	prerequisite = {
+        focus = WES_subsistence_economy
 	}
 	cost = 3.5
-	x = 24
-	y = 11
+	x = 18
+	y = 9
 }
 
 shared_focus = {
 	id = WES_rural_paradise
 	icon = GFX_goal_WES_rural_paradise
 	prerequisite = {
-        focus = WES_subsistence_economy
+        focus = WES_dismantle_cities
 	}
 	prerequisite = {
-        focus = WES_relocation_programmes
+        focus = WES_rebuild_scenery
 	}
 	completion_reward = {
 		WES = {
@@ -1910,66 +2000,73 @@ shared_focus = {
 		}
 	}
 	cost = 3.5
-	x = 23
-	y = 12
-}
-
-shared_focus = {
-	id = WES_matters_future
-	icon = GFX_goal_WES_Matters_of_The_future
-	prerequisite = {
-        focus = WES_days_old
-	}
-	cost = 3.5
-	x = 29
+	x = 11
 	y = 10
 }
 
-shared_focus = {
+shared_focus = { 
+	id = WES_matters_future
+	icon = GFX_goal_WES_Matters_of_The_future
+	available = {
+		WES = {
+			has_completed_focus = WES_rule_george
+		}
+	}
+	prerequisite = {
+	}
+	cost = 3.5
+	x = 17
+	y = 12
+}
+
+shared_focus = { #
 	id = WES_clean_start
 	icon = GFX_goal_WES_A_Clean_Start
 	prerequisite = {
-        focus = WES_matters_future
+		focus = WES_matters_future
 	}
 	mutually_exclusive = {
         focus = WES_clinging_present
 	}
 	cost = 3.5
-	x = 27
-	y = 11
+	x = 15
+	y = 13
 }
 
 
-shared_focus = {
+shared_focus = { #
 	id = WES_clinging_present
 	icon = GFX_goal_WES_Clinging_to_the_Present
 	prerequisite = {
-        focus = WES_matters_future
+		focus = WES_matters_future
 	}
 	mutually_exclusive = {
-        focus = WES_clean_start
+		focus = WES_clean_start
 	}
 	cost = 3.5
-	x = 31
-	y = 11
+	x = 19
+	y = 13
 }
 
 shared_focus = {
 	id = WES_new_fiefdoms
 	icon = GFX_goal_WES_Local_Administrations
 	prerequisite = {
-        focus = WES_clean_start
+        focus = WES_days_old
 	}
 	cost = 3.5
-	x = 27
-	y = 13
+	x = 21
+	y = 8
 }
 
-shared_focus = {
+shared_focus = { #
 	id = WES_heroic_absolutism
 	icon = GFX_goal_WES_heroic_absolutism
 	prerequisite = {
-        focus = WES_clinging_present
+		focus = WES_jousting
+	}
+	prerequisite = {
+		focus = WES_new_chivilary
 	}
 	completion_reward = {
 		WES = {
@@ -1981,49 +2078,43 @@ shared_focus = {
 		}
 	}
 	cost = 3.5
-	x = 31
-	y = 13
+	x = 17
+	y = 17
 }
 
 shared_focus = {
 	id = WES_law_england
 	icon = GFX_goal_WES_The_Law_of_England
 	prerequisite = {
-        focus = WES_new_fiefdoms
+        focus = WES_new_curriculum
 	}
-	prerequisite = {
-        focus = WES_pop_culture
-	}
-	prerequisite = {
-        focus = WES_perish_thought
+	mutually_exclusive = {
+        focus = WES_law_king
 	}
 	cost = 3.5
-	x = 27
-	y = 15
+	x = 22
+	y = 10
 }
 
 shared_focus = {
 	id = WES_law_king
 	icon = GFX_goal_WES_The_Law_of_the_king
 	prerequisite = {
-        focus = WES_heroic_absolutism
+        focus = WES_new_curriculum
 	}
-	prerequisite = {
-        focus = WES_cult_shakespeare
-	}
-	prerequisite = {
-        focus = WES_cultural_symbiosis
+	mutually_exclusive = {
+        focus = WES_law_england
 	}
 	cost = 3.5
-	x = 31
-	y = 15
+	x = 24
+	y = 10
 }
 
-shared_focus = {
+shared_focus = { #
 	id = WES_english_tongue
 	icon = GFX_goal_WES_The_English_Tongue
 	prerequisite = {
-        focus = WES_clean_start
+		focus = WES_mannerbunds
 	}
 	completion_reward = {
 		WES = {
@@ -2051,40 +2142,47 @@ shared_focus = {
 		}
 	}
 	cost = 3.5
-	x = 26
-	y = 12
+	x = 16
+	y = 15
 }
 
-shared_focus = {
+shared_focus = { #
 	id = WES_perish_thought
 	icon = GFX_goal_WES_Perish_The_Thought
 	prerequisite = {
-        focus = WES_english_tongue
+		focus = WES_new_chivilary
+		focus = WES_english_spirit
 	}
 	cost = 3.5
-	x = 26
-	y = 14
+	x = 19
+	y = 17
 }
 
 shared_focus = {
 	id = WES_new_curriculum
 	icon = GFX_goal_WES_New_Curriculum
 	prerequisite = {
-        focus = WES_clean_start
+        focus = WES_new_fiefdoms
+	}
+	prerequisite = {
+        focus = WES_careful_reform
+	}
+	prerequisite = {
+        focus = WES_many_tongues
 	}
 	cost = 3.5
-	x = 28
-	y = 12
+	x = 23
+	y = 9
 }
 
-shared_focus = {
+shared_focus = { #
 	id = WES_pop_culture
 	icon = GFX_goal_WES_Death_Of_Pop_Culture
 	prerequisite = {
-        focus = WES_new_curriculum
+		focus = WES_clean_start
 	}
 	cost = 3.5
-	x = 28
+	x = 14
 	y = 14
 }
 
@@ -2092,33 +2190,34 @@ shared_focus = {
 	id = WES_many_tongues
 	icon = GFX_goal_WES_many_tongues_of_britain
 	prerequisite = {
-        focus = WES_clinging_present
+        focus = WES_days_old
 	}
 	cost = 3.5
-	x = 30
-	y = 12
+	x = 25
+	y = 8
 }
 
-shared_focus = {
+shared_focus = { #
 	id = WES_cult_shakespeare
 	icon = GFX_goal_WES_the_cult_of_shakespear
 	prerequisite = {
-        focus = WES_many_tongues
+		focus = WES_mannerbunds
 	}
 	cost = 3.5
-	x = 30
-	y = 14
+	x = 18
+	y = 15
 }
 
-shared_focus = {
+shared_focus = { #
 	id = WES_centralized_education
 	icon = GFX_goal_WES_Centralized_Education
 	prerequisite = {
-        focus = WES_clinging_present
+		focus = WES_jousting
+		focus = WES_societal_roles
 	}
 	cost = 3.5
-	x = 32
-	y = 12
+	x = 15
+	y = 17
 }
 
 shared_focus = {
@@ -2297,10 +2396,10 @@ shared_focus = {
 	id = WES_cultural_symbiosis
 	icon = GFX_goal_WES_cultural_symbiosis
 	prerequisite = {
-        focus = WES_centralized_education
+        focus = WES_clinging_present
 	}
 	cost = 3.5
-	x = 32
+	x = 20
 	y = 14
 }
 

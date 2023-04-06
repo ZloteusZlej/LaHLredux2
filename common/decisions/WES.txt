@@ -2530,6 +2530,267 @@ WES_england_transformation = {
 			}
 		}
 	}
+	WES_dismantle_tank_companies = {
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		modifier = {
+			war_support_factor = -0.08
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_human_nauture
+			}
+        } 
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = WES_transformation_education_progress
+				value = 4
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 4
+			}
+			clamp_variable = {
+				var = WES_transformation_deurbanization_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			WES = {
+				add_political_power = 100
+				random_owned_state = {
+					remove_building = {
+						type = arms_factory
+						level = 3
+					}
+				}
+				remove_ideas = {
+					sc_group
+				}
+				remove_ideas = {
+					ovik
+				}
+			}
+			custom_effect_tooltip =	WES_transformation_education_small.tt
+		}
+	}
+	WES_dismantle_ship_companies = {
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		modifier = {
+			war_support_factor = -0.08
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_human_nauture
+			}
+        } 
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = WES_transformation_education_progress
+				value = 4
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 4
+			}
+			clamp_variable = {
+				var = WES_transformation_deurbanization_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			WES = {
+				add_political_power = 100
+				random_owned_state = {
+					remove_building = {
+						type = dockyard
+						level = 3
+					}
+				}
+				remove_ideas = {
+					bae_systems_weymouth
+				}
+			}
+			custom_effect_tooltip =	WES_transformation_education_small.tt
+		}
+	}
+	WES_dismantle_plane_companies = {
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		modifier = {
+			war_support_factor = -0.08
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_human_nauture
+			}
+        } 
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = WES_transformation_education_progress
+				value = 4
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 4
+			}
+			clamp_variable = {
+				var = WES_transformation_deurbanization_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			WES = {
+				add_political_power = 100
+				random_owned_state = {
+					remove_building = {
+						type = air_base
+						level = 3
+					}
+				}
+				remove_ideas = {
+					bae_systems_yeovil
+				}
+				remove_ideas = {
+					rolls_royce_bristol
+				}
+			}
+			custom_effect_tooltip =	WES_transformation_education_small.tt
+		}
+	}
+	WES_dismantle_rifle_companies = {
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		modifier = {
+			war_support_factor = -0.08
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_human_nauture
+			}
+        } 
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = WES_transformation_education_progress
+				value = 4
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 4
+			}
+			clamp_variable = {
+				var = WES_transformation_deurbanization_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			WES = {
+				add_political_power = 100
+				random_owned_state = {
+					remove_building = {
+						type = arms_factory
+						level = 3
+					}
+				}
+				remove_ideas = {
+					ww_greener
+				}
+			}
+			custom_effect_tooltip =	WES_transformation_education_small.tt
+		}
+	}
+	WES_dismantle_industrial_companies = {
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		modifier = {
+			stability_factor = -0.08
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_human_nauture
+			}
+        } 
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = WES_transformation_education_progress
+				value = 4
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 4
+			}
+			clamp_variable = {
+				var = WES_transformation_deurbanization_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			WES = {
+				add_political_power = 100
+				random_owned_state = {
+					remove_building = {
+						type = industrial_complex
+						level = 3
+					}
+				}
+				remove_ideas = {
+					chemring_group
+				}
+			}
+			custom_effect_tooltip =	WES_transformation_education_small.tt
+		}
+	}
     WES_overwork_military_factories = {
 		cost = 50
 		days_remove = 45
@@ -2636,6 +2897,8 @@ WES_england_transformation = {
 			custom_effect_tooltip =	WES_transformation_deurbanization_small.tt
 		}
 	}
+	
+	##REGION RENAMING##
 	WES_region_dummy = {	
 		available = {
 			hidden_trigger = {

@@ -412,16 +412,15 @@ ideas = {
 		free_trade = {
 
 			available = {
-
-				# Long_and_Happy_Life
-				# if = {
-					# limit = {
-						# original_tag = SPR
-						# has_dlc = "La Resistance"
-					# }
-					# NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				# }
-
+				if = {
+					hidden_trigger = {
+						WES = {
+							NOT = {
+								has_completed_focus = WES_subsistence_economy
+							}
+						}
+					}
+				}
 			}
 						
 			cost = 150
@@ -472,23 +471,15 @@ ideas = {
 		export_focus = {
 			
 			available = {
-
-				# Long_and_Happy_Life
-				# if = {
-					# limit = {
-						# original_tag = CHI
-						# has_dlc = "Waking the Tiger"
-					# }
-					# NOT = { has_idea = CHI_nine_power_treaty }
-				# }
-				# if = {
-					# limit = {
-						# original_tag = SPR
-						# has_dlc = "La Resistance"
-					# }
-					# NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				# }
-
+				if = {
+					hidden_trigger = {
+						WES = {
+							NOT = {
+								has_completed_focus = WES_subsistence_economy
+							}
+						}
+					}
+				}
 			}
 
 
@@ -538,44 +529,18 @@ ideas = {
 			
 			
 			available = {
-				# Long_and_Happy_Life
-				# OR = {
-					# AND = {
-						# has_government = democratic
-						# has_war = yes
-						# any_enemy_country = {
-							# ic_ratio = { 
-								# tag = ROOT 
-								# ratio > 0.2
-							# }
-						# }
-					# }
-					# AND = {
-						# NOT = { has_government = democratic }
-						OR = {
-							has_idea = partial_economic_mobilisation
-							has_idea = war_economy
-							has_idea = tot_economic_mobilisation
+				OR = {
+					has_idea = partial_economic_mobilisation
+					has_idea = war_economy
+					has_idea = tot_economic_mobilisation
+					hidden_trigger = {
+						WES = {
+							NOT = {
+								has_completed_focus = WES_subsistence_economy
+							}
 						}
-					# }
-				# }
-
-				# Long_and_Happy_Life
-				# if = {
-					# limit = {
-						# original_tag = CHI
-						# has_dlc = "Waking the Tiger"
-					# }
-					# NOT = { has_idea = CHI_nine_power_treaty }
-				# }
-				# if = {
-					# limit = {
-						# original_tag = SPR
-						# has_dlc = "La Resistance"
-					# }
-					# NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				# }
-
+					}
+				}
 			}
   
 			cost = 150
