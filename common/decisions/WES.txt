@@ -2906,6 +2906,476 @@ WES_england_transformation = {
 			}
 		}
 	}
+	#Rebuild Region#
+    WES_rebuild_cities_kent = {
+		cost = 75
+		fire_only_once = yes
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_medieval_state
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1165
+				owns_state = 1165
+				controls_state = 1002
+				owns_state = 1002
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_education_progress
+					value = 2
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 2
+				}
+				clamp_variable = {
+					var = WES_transformation_education_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				1165 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1002 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				add_stability = 0.025
+				custom_effect_tooltip = WES_transformation_education_small.tt
+			}
+		}
+	}
+    WES_rebuild_cities_sussex = {
+		cost = 75
+		fire_only_once = yes
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_medieval_state
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1156
+				owns_state = 1156
+				controls_state = 1001
+				owns_state = 1001
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_education_progress
+					value = 2
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 2
+				}
+				clamp_variable = {
+					var = WES_transformation_education_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				1156 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1001 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				add_stability = 0.025
+				custom_effect_tooltip = WES_transformation_education_small.tt
+			}
+		}
+	}
+    WES_rebuild_cities_wessex = {
+		cost = 75
+		fire_only_once = yes
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 4
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_medieval_state
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1153
+				owns_state = 1153
+				controls_state = 1161
+				owns_state = 1161
+				controls_state = 1000
+				owns_state = 1000
+				controls_state = 1006
+				owns_state = 1006
+				controls_state = 1007
+				owns_state = 1007
+				controls_state = 999
+				owns_state = 999
+				controls_state = 998
+				owns_state = 998
+				controls_state = 1018
+				owns_state = 1018
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_education_progress
+					value = 2
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 2
+				}
+				clamp_variable = {
+					var = WES_transformation_education_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				1153 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1161 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1000 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1006 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1007 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				999 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				998 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				101 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				add_stability = 0.025
+				custom_effect_tooltip = WES_transformation_education_small.tt
+			}
+		}
+	}
+    WES_rebuild_cities_mercia = {
+		cost = 75
+		fire_only_once = yes
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 4
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_medieval_state
+			}
+        } 
+		available = {
+			WES = {
+				controls_state = 1152
+				owns_state = 1152
+				controls_state = 1151
+				owns_state = 1151
+				controls_state = 1154
+				owns_state = 1154
+				controls_state = 1146
+				owns_state = 1146
+				controls_state = 1155
+				owns_state = 1155
+				controls_state = 1008
+				owns_state = 1008
+				controls_state = 1144
+				owns_state = 1144
+				controls_state = 1005
+				owns_state = 1005
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_education_progress
+					value = 2
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 2
+				}
+				clamp_variable = {
+					var = WES_transformation_education_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				1152 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1151 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1154 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1146 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1155 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1008 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1144 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1005 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				add_stability = 0.025
+				custom_effect_tooltip = WES_transformation_education_small.tt
+			}
+		}
+	}
+    WES_rebuild_cities_northumbria = {
+		cost = 75
+		fire_only_once = yes
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 4
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_medieval_state
+			}
+        }  
+		available = {
+			WES = {
+				controls_state = 1009
+				owns_state = 1009
+				controls_state = 1145
+				owns_state = 1145
+				controls_state = 1012
+				owns_state = 1012
+				controls_state = 1011
+				owns_state = 1011
+				controls_state = 1010
+				owns_state = 1010
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_education_progress
+					value = 2
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 2
+				}
+				clamp_variable = {
+					var = WES_transformation_education_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				1009 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1145 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1012 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1011 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1010 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				add_stability = 0.025
+				custom_effect_tooltip = WES_transformation_education_small.tt
+			}
+		}
+	}
+    WES_rebuild_cities_east_anglia = {
+		cost = 75
+		fire_only_once = yes
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 4
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_medieval_state
+			}
+        }  
+		available = {
+			WES = {
+				controls_state = 1004
+				owns_state = 1004
+				controls_state = 1143
+				owns_state = 1143
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_education_progress
+					value = 2
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 2
+				}
+				clamp_variable = {
+					var = WES_transformation_education_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				1004 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1143 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				add_stability = 0.025
+				custom_effect_tooltip = WES_transformation_education_small.tt
+			}
+		}
+	}
+    WES_rebuild_cities_london = {
+		cost = 75
+		fire_only_once = yes
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 4
+        }
+	    visible = {
+			WES = {
+				has_completed_focus = WES_medieval_state
+			}
+        }  
+		available = {
+			WES = {
+				controls_state = 1003
+				owns_state = 1003
+				controls_state = 1157
+				owns_state = 1157
+				controls_state = 1160
+				owns_state = 1160
+				controls_state = 1159
+				owns_state = 1159
+				controls_state = 1158
+				owns_state = 1158
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			WES = {
+				add_to_variable = {
+					var = WES_transformation_education_progress
+					value = 2
+				}
+				add_to_variable = {
+					var = WES_total_transformation_level
+					value = 2
+				}
+				clamp_variable = {
+					var = WES_transformation_education_progress
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = WES_total_transformation_level
+					min = 0
+					max = 800
+				}
+				1003 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1157 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1160 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1159 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				1158 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				add_stability = 0.025
+				custom_effect_tooltip = WES_transformation_education_small.tt
+			}
+		}
+	}
+	#Renaming Cities#
     WES_rename_cities_kent = {
 		cost = 150
 		fire_only_once = yes
@@ -3410,6 +3880,184 @@ WES_england_transformation = {
 			base = 100
 		}
 	}
+##MISSIONS##
+#Build Railways#
+    WES_railroads_stage_1 = {                           
+        allowed = { 
+			tag = WES
+		}
+        available = {      
+			hidden_trigger = {
+				always = false
+			}
+        }
+        activation = {   
+			always = false
+        }
+        is_good = no                  
+        days_mission_timeout = 360             
+        timeout_effect = {
+			WES = {
+				add_political_power = -250
+				add_stability = -0.15
+			}
+        }
+        complete_effect = {   
+			if = {
+				limit = {
+					has_railway_level = {
+							state = 998
+							level = 3
+					}
+					has_railway_level = {
+							state = 999
+							level = 3
+					}
+					has_railway_level = {
+							state = 1007
+							level = 3
+					}
+					has_railway_level = {
+							state = 1006
+							level = 3
+					}
+					has_railway_level = {
+							state = 1153
+							level = 3
+					}
+					has_railway_level = {
+							state = 1161
+							level = 3
+					}
+					has_railway_level = {
+							state = 1000
+							level = 3
+					}
+					has_railway_level = {
+							state = 1001
+							level = 3
+					}
+					has_railway_level = {
+							state = 1156
+							level = 3
+					}
+					has_railway_level = {
+							state = 1002
+							level = 3
+					}
+					has_railway_level = {
+							state = 1165
+							level = 3
+					}
+				}
+				WES = {
+					add_political_power = 25
+				}
+			}
+			if = {
+				limit = {
+					has_railway_level = {
+							state = 998
+							level = 4
+					}
+					has_railway_level = {
+							state = 999
+							level = 4
+					}
+					has_railway_level = {
+							state = 1007
+							level = 4
+					}
+					has_railway_level = {
+							state = 1006
+							level = 4
+					}
+					has_railway_level = {
+							state = 1153
+							level = 4
+					}
+					has_railway_level = {
+							state = 1161
+							level = 4
+					}
+					has_railway_level = {
+							state = 1000
+							level = 4
+					}
+					has_railway_level = {
+							state = 1001
+							level = 4
+					}
+					has_railway_level = {
+							state = 1156
+							level = 4
+					}
+					has_railway_level = {
+							state = 1002
+							level = 4
+					}
+					has_railway_level = {
+							state = 1165
+							level = 4
+					}
+				}
+				WES = {
+					add_political_power = 50
+				}
+			}
+			if = {
+				limit = {
+					has_railway_level = {
+							state = 998
+							level = 5
+					}
+					has_railway_level = {
+							state = 999
+							level = 5
+					}
+					has_railway_level = {
+							state = 1007
+							level = 5
+					}
+					has_railway_level = {
+							state = 1006
+							level = 5
+					}
+					has_railway_level = {
+							state = 1153
+							level = 5
+					}
+					has_railway_level = {
+							state = 1161
+							level = 5
+					}
+					has_railway_level = {
+							state = 1000
+							level = 5
+					}
+					has_railway_level = {
+							state = 1001
+							level = 5
+					}
+					has_railway_level = {
+							state = 1156
+							level = 5
+					}
+					has_railway_level = {
+							state = 1002
+							level = 5
+					}
+					has_railway_level = {
+							state = 1165
+							level = 5
+					}
+				}
+				WES = {
+					add_political_power = 100
+				}
+			}			
+        }
+    }
 }
 WES_unification_defence = {
 	WES_build_bunkers = {
@@ -3481,3 +4129,4 @@ WES_unification_offence = {
 		}
 	}
 }
+
