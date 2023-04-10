@@ -1765,7 +1765,35 @@ country_event = {
 	}
 }
 	
-	
+country_event = { 
+	id = ESS_event.42
+	title = ESS_event.42.t
+	desc = ESS_event.42.d
+	log = "[GetDateText]: [Root.GetName]: Event ESS_event.42"
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = ESS_event.42.a
+		add_to_variable = {
+			var = ESS_coring_cost
+			value = -20
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_20_tt
+		add_political_power = 40
+	}
+	option = {
+		name = ESS_event.42.b
+		1003 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+		add_ideas = ESS_maslow_wartime_measures
+	}
+}
 	
 	
 	

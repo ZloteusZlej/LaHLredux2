@@ -1137,6 +1137,12 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_nutrition_trafficing"
+			ESS = {
+			country_event = {
+				days = 0
+				id = ESS_event.42
+			}
+		}
 		}
 		relative_position_id = ESS_tame_the_leviathan
 		prerequisite = {
@@ -1153,6 +1159,26 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_re_privatisation"
+			add_timed_idea = { 
+				idea = ESS_property_de_distribution
+				days = 100 
+			}
+			1159 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			1003 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 		relative_position_id = ESS_tame_the_leviathan
 		prerequisite = {
@@ -1253,7 +1279,7 @@
 	
 	shared_focus = {
 		id = ESS_kickstart_institutions
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_kickstart_institutions
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_kickstart_institutions"
@@ -1269,7 +1295,7 @@
 	
 	shared_focus = {
 		id = ESS_outgrowing_god
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_outgrowing_god
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_outgrowing_god"
@@ -1288,7 +1314,7 @@
 	
 	shared_focus = {
 		id = ESS_militant_atheism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_militant_atheism
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_militant_atheism"
@@ -1304,7 +1330,7 @@
 	
 	shared_focus = {
 		id = ESS_renovationism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_renovationism
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_renovationism"
@@ -1323,7 +1349,7 @@
 	
 	shared_focus = {
 		id = ESS_sincere_donation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_sincere_donation
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_sincere_donation"
@@ -1339,7 +1365,7 @@
 	
 	shared_focus = {
 		id = ESS_civil_control
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_civil_control
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_civil_control"
@@ -1356,7 +1382,7 @@
 	
 	shared_focus = {
 		id = ESS_vote_smart_not_hard
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_vote_smart_not_hard
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_vote_smart_not_hard"
@@ -1378,7 +1404,7 @@
 	
 	shared_focus = {
 		id = ESS_artisans_groups
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_artisans_groups
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_artisans_groups"
@@ -1396,7 +1422,7 @@
 	
 	shared_focus = {
 		id = ESS_light_in_the_dark
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_light_in_the_dark
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_light_in_the_dark"
@@ -1413,7 +1439,7 @@
 	
 	shared_focus = {
 		id = ESS_control_the_growth
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_control_the_growth
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_control_the_growth"
@@ -1438,7 +1464,7 @@
 	
 	shared_focus = {
 		id = ESS_universal_basic_income
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_universal_basic_income
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_universal_basic_income"
@@ -1463,7 +1489,7 @@
 	
 	shared_focus = {
 		id = ESS_big_print_contracts
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_big_print_contracts
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_big_print_contracts"
@@ -1488,7 +1514,7 @@
 	
 	shared_focus = {
 		id = ESS_dirigisme
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ESS_dirigisme
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_dirigisme"

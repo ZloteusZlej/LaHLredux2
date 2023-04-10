@@ -534,7 +534,44 @@ ideas = {
 	
 	hidden_ideas = {
 	
+		ESS_maslow_wartime_measures = {
 		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				
+			}
+			targeted_modifier = {
+				tag = ESS
+			}
+		}
+		
+		ESS_property_de_distribution = {
+		
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.3
+				production_factory_efficiency_gain_factor = 0.2
+				
+			}
+			targeted_modifier = {
+				tag = ESS
+			}
+		}
 	
 		ESS_kent_proxy_trade = {
 			
