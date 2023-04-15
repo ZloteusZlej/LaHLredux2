@@ -3880,6 +3880,69 @@ WES_england_transformation = {
 			base = 100
 		}
 	}
+	WES_develop_villages_category = {
+		target_array = WES.core_states	
+		on_map_mode = map_only
+		fire_only_once = yes
+        available = {
+			FROM = {
+				NOT = { 
+					has_dynamic_modifier = { 
+						modifier = WES_developed_villages_dynamic_modifier 
+					} 
+					has_state_flag = WES_villages_developed
+				}
+			}
+		}
+	    visible = {
+			WES = {
+				has_completed_focus = WES_relocation_programmes
+			}
+			FROM = {
+				NOT = { 
+					has_dynamic_modifier = { 
+						modifier = WES_developed_villages_dynamic_modifier 
+					} 
+					has_state_flag = WES_villages_developed
+				}
+				is_owned_and_controlled_by = WES
+			}
+        } 
+		days_remove = 90
+		icon = my_icon
+		state_target = yes
+		cost = 50
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = { 
+					modifier = WES_developed_villages_dynamic_modifier 
+				}
+				set_state_flag = WES_villages_developed
+			}
+			add_to_variable = {
+				var = WES_transformation_deurbanization_progress
+				value = 2
+			}
+			add_to_variable = {
+				var = WES_total_transformation_level
+				value = 2
+			}
+			clamp_variable = {
+				var = WES_transformation_deurbanization_progress
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = WES_total_transformation_level
+				min = 0
+				max = 800
+			}
+			custom_effect_tooltip =	WES_transformation_deurbanization_small.tt	
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
 ##MISSIONS##
 #Build Railways#
     WES_railroads_stage_1 = {                           
