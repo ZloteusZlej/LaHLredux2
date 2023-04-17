@@ -1795,9 +1795,22 @@ country_event = {
 	}
 }
 	
+
 	
+country_event = { 
+	id = ESS_event.43
+	title = ESS_event.43.t
+	desc = ESS_event.43.d
+	log = "[GetDateText]: [Root.GetName]: Event ESS_event.43"
+	fire_only_once = yes	
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+ 		clr_global_flag = ENG_Mosley_is_dead  	
+		set_country_flag = ESS_dawkins_here
+	}
 	
-	
+}	
 	
 	
 	

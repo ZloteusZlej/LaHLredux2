@@ -1211,6 +1211,14 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_punks_are_dead"
+			hidden_effect = {
+				ESS = {
+					country_event = {
+						days = 0
+						id = ESS_event.43
+					}
+				}
+			}
 		}
 		relative_position_id = ESS_tame_the_leviathan
 		prerequisite = {
@@ -1274,272 +1282,6 @@
 		y = 4
 
 	}
-	
-###Dawkins Politics###	
-	
-	shared_focus = {
-		id = ESS_kickstart_institutions
-		icon = GFX_goal_ESS_kickstart_institutions
-		cost = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_kickstart_institutions"
-		}
-		relative_position_id = ESS_constructing_utopia
-		prerequisite = {
-			focus = ESS_constructing_utopia
-			}
-		x = 0
-		y = 2
-
-	}
-	
-	shared_focus = {
-		id = ESS_outgrowing_god
-		icon = GFX_goal_ESS_outgrowing_god
-		cost = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_outgrowing_god"
-		}
-		mutually_exclusive = {
-			focus = ESS_renovationism
-		}
-		relative_position_id = ESS_kickstart_institutions
-		prerequisite = {
-			focus = ESS_kickstart_institutions
-			}
-		x = -2
-		y = 1
-
-	}
-	
-	shared_focus = {
-		id = ESS_militant_atheism
-		icon = GFX_goal_ESS_militant_atheism
-		cost = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_militant_atheism"
-		}
-		relative_position_id = ESS_kickstart_institutions
-		prerequisite = {
-			focus = ESS_outgrowing_god
-			}
-		x = -2
-		y = 2
-
-	}
-	
-	shared_focus = {
-		id = ESS_renovationism
-		icon = GFX_goal_ESS_renovationism
-		cost = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_renovationism"
-		}
-		mutually_exclusive = {
-			focus = ESS_renovationism
-		}
-		relative_position_id = ESS_kickstart_institutions
-		prerequisite = {
-			focus = ESS_kickstart_institutions
-			}
-		x = 2
-		y = 1
-
-	}
-	
-	shared_focus = {
-		id = ESS_sincere_donation
-		icon = GFX_goal_ESS_sincere_donation
-		cost = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_sincere_donation"
-		}
-		relative_position_id = ESS_kickstart_institutions
-		prerequisite = {
-			focus = ESS_renovationism
-			}
-		x = 2
-		y = 2
-
-	}
-	
-	shared_focus = {
-		id = ESS_civil_control
-		icon = GFX_goal_ESS_civil_control
-		cost = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_civil_control"
-		}
-		relative_position_id = ESS_kickstart_institutions
-		prerequisite = {
-			focus = ESS_militant_atheism
-			focus = ESS_sincere_donation
-			}
-		x = 3
-		y = 3
-
-	}
-	
-	shared_focus = {
-		id = ESS_vote_smart_not_hard
-		icon = GFX_goal_ESS_vote_smart_not_hard
-		cost = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_vote_smart_not_hard"
-			swap_ideas = {
-				remove_idea = lhl_regime_provisional_government
-				add_idea = lhl_regime_partocracy
-			} 
-		}
-		relative_position_id = ESS_kickstart_institutions
-		prerequisite = {
-			focus = ESS_militant_atheism
-			focus = ESS_sincere_donation
-			}
-			
-		x = 1
-		y = 3
-
-	}
-	
-	shared_focus = {
-		id = ESS_artisans_groups
-		icon = GFX_goal_ESS_artisans_groups
-		cost = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_artisans_groups"
-		}
-		relative_position_id = ESS_kickstart_institutions
-		prerequisite = {
-			focus = ESS_militant_atheism
-			focus = ESS_sincere_donation
-			}
-			
-		x = -1
-		y = 3
-
-	}
-	
-	shared_focus = {
-		id = ESS_light_in_the_dark
-		icon = GFX_goal_ESS_light_in_the_dark
-		cost = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_light_in_the_dark"
-		}
-		relative_position_id = ESS_kickstart_institutions
-		prerequisite = {
-			focus = ESS_militant_atheism
-			focus = ESS_sincere_donation
-			}
-		x = -3
-		y = 3
-
-	}
-	
-	shared_focus = {
-		id = ESS_control_the_growth
-		icon = GFX_goal_ESS_control_the_growth
-		cost = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_control_the_growth"
-		}
-		relative_position_id = ESS_kickstart_institutions
-		prerequisite = {
-			focus = ESS_light_in_the_dark
-			}
-		prerequisite = {
-			focus = ESS_artisans_groups
-			}
-		prerequisite = {
-			focus = ESS_vote_smart_not_hard
-			}
-		prerequisite = {
-			focus = ESS_civil_control
-			}
-		x = -2
-		y = 4
-
-	}
-	
-	shared_focus = {
-		id = ESS_universal_basic_income
-		icon = GFX_goal_ESS_universal_basic_income
-		cost = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_universal_basic_income"
-		}
-		relative_position_id = ESS_kickstart_institutions
-		prerequisite = {
-			focus = ESS_light_in_the_dark
-			}
-		prerequisite = {
-			focus = ESS_artisans_groups
-			}
-		prerequisite = {
-			focus = ESS_vote_smart_not_hard
-			}
-		prerequisite = {
-			focus = ESS_civil_control
-			}
-		x = 0
-		y = 4
-
-	}
-	
-	shared_focus = {
-		id = ESS_big_print_contracts
-		icon = GFX_goal_ESS_big_print_contracts
-		cost = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_big_print_contracts"
-		}
-		relative_position_id = ESS_kickstart_institutions
-		prerequisite = {
-			focus = ESS_light_in_the_dark
-			}
-		prerequisite = {
-			focus = ESS_artisans_groups
-			}
-		prerequisite = {
-			focus = ESS_vote_smart_not_hard
-			}
-		prerequisite = {
-			focus = ESS_civil_control
-			}
-		x = 2
-		y = 4
-
-	}
-	
-	shared_focus = {
-		id = ESS_dirigisme
-		icon = GFX_goal_ESS_dirigisme
-		cost = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ESS_dirigisme"
-			swap_ideas = {
-				remove_idea = lhl_economy_civil_war_economy
-				add_idea = lhl_economy_dirgisme
-			} 
-		}
-		relative_position_id = ESS_kickstart_institutions
-		prerequisite = {
-			focus = ESS_control_the_growth
-			}
-		prerequisite = {
-			focus = ESS_universal_basic_income
-			}
-		prerequisite = {
-			focus = ESS_big_print_contracts
-			}
-			
-		x = 0
-		y = 5
-
-	}
-	
-	
 	
 ###Dawkins science###
 
@@ -1829,7 +1571,269 @@
 		y = 5
 
 	}
+###Dawkins Politics###	
+	
+	shared_focus = {
+		id = ESS_kickstart_institutions
+		icon = GFX_goal_ESS_kickstart_institutions
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_kickstart_institutions"
+		}
+		relative_position_id = ESS_constructing_utopia
+		prerequisite = {
+			focus = ESS_constructing_utopia
+			}
+		x = 0
+		y = 2
 
+	}
+	
+	shared_focus = {
+		id = ESS_outgrowing_god
+		icon = GFX_goal_ESS_outgrowing_god
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_outgrowing_god"
+		}
+		mutually_exclusive = {
+			focus = ESS_renovationism
+		}
+		relative_position_id = ESS_kickstart_institutions
+		prerequisite = {
+			focus = ESS_kickstart_institutions
+			}
+		x = -2
+		y = 1
+
+	}
+	
+	shared_focus = {
+		id = ESS_militant_atheism
+		icon = GFX_goal_ESS_militant_atheism
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_militant_atheism"
+		}
+		relative_position_id = ESS_kickstart_institutions
+		prerequisite = {
+			focus = ESS_outgrowing_god
+			}
+		x = -2
+		y = 2
+
+	}
+	
+	shared_focus = {
+		id = ESS_renovationism
+		icon = GFX_goal_ESS_renovationism
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_renovationism"
+		}
+		mutually_exclusive = {
+			focus = ESS_renovationism
+		}
+		relative_position_id = ESS_kickstart_institutions
+		prerequisite = {
+			focus = ESS_kickstart_institutions
+			}
+		x = 2
+		y = 1
+
+	}
+	
+	shared_focus = {
+		id = ESS_sincere_donation
+		icon = GFX_goal_ESS_sincere_donation
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_sincere_donation"
+		}
+		relative_position_id = ESS_kickstart_institutions
+		prerequisite = {
+			focus = ESS_renovationism
+			}
+		x = 2
+		y = 2
+
+	}
+	
+	shared_focus = {
+		id = ESS_civil_control
+		icon = GFX_goal_ESS_civil_control
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_civil_control"
+		}
+		relative_position_id = ESS_kickstart_institutions
+		prerequisite = {
+			focus = ESS_militant_atheism
+			focus = ESS_sincere_donation
+			}
+		x = 3
+		y = 3
+
+	}
+	
+	shared_focus = {
+		id = ESS_vote_smart_not_hard
+		icon = GFX_goal_ESS_vote_smart_not_hard
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_vote_smart_not_hard"
+			swap_ideas = {
+				remove_idea = lhl_regime_provisional_government
+				add_idea = lhl_regime_partocracy
+			} 
+		}
+		relative_position_id = ESS_kickstart_institutions
+		prerequisite = {
+			focus = ESS_militant_atheism
+			focus = ESS_sincere_donation
+			}
+			
+		x = 1
+		y = 3
+
+	}
+	
+	shared_focus = {
+		id = ESS_artisans_groups
+		icon = GFX_goal_ESS_artisans_groups
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_artisans_groups"
+		}
+		relative_position_id = ESS_kickstart_institutions
+		prerequisite = {
+			focus = ESS_militant_atheism
+			focus = ESS_sincere_donation
+			}
+			
+		x = -1
+		y = 3
+
+	}
+	
+	shared_focus = {
+		id = ESS_light_in_the_dark
+		icon = GFX_goal_ESS_light_in_the_dark
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_light_in_the_dark"
+		}
+		relative_position_id = ESS_kickstart_institutions
+		prerequisite = {
+			focus = ESS_militant_atheism
+			focus = ESS_sincere_donation
+			}
+		x = -3
+		y = 3
+
+	}
+	
+	shared_focus = {
+		id = ESS_control_the_growth
+		icon = GFX_goal_ESS_control_the_growth
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_control_the_growth"
+		}
+		relative_position_id = ESS_kickstart_institutions
+		prerequisite = {
+			focus = ESS_light_in_the_dark
+			}
+		prerequisite = {
+			focus = ESS_artisans_groups
+			}
+		prerequisite = {
+			focus = ESS_vote_smart_not_hard
+			}
+		prerequisite = {
+			focus = ESS_civil_control
+			}
+		x = -2
+		y = 4
+
+	}
+	
+	shared_focus = {
+		id = ESS_universal_basic_income
+		icon = GFX_goal_ESS_universal_basic_income
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_universal_basic_income"
+		}
+		relative_position_id = ESS_kickstart_institutions
+		prerequisite = {
+			focus = ESS_light_in_the_dark
+			}
+		prerequisite = {
+			focus = ESS_artisans_groups
+			}
+		prerequisite = {
+			focus = ESS_vote_smart_not_hard
+			}
+		prerequisite = {
+			focus = ESS_civil_control
+			}
+		x = 0
+		y = 4
+
+	}
+	
+	shared_focus = {
+		id = ESS_big_print_contracts
+		icon = GFX_goal_ESS_big_print_contracts
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_big_print_contracts"
+		}
+		relative_position_id = ESS_kickstart_institutions
+		prerequisite = {
+			focus = ESS_light_in_the_dark
+			}
+		prerequisite = {
+			focus = ESS_artisans_groups
+			}
+		prerequisite = {
+			focus = ESS_vote_smart_not_hard
+			}
+		prerequisite = {
+			focus = ESS_civil_control
+			}
+		x = 2
+		y = 4
+
+	}
+	
+	shared_focus = {
+		id = ESS_dirigisme
+		icon = GFX_goal_ESS_dirigisme
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ESS_dirigisme"
+			swap_ideas = {
+				remove_idea = lhl_economy_civil_war_economy
+				add_idea = lhl_economy_dirgisme
+			} 
+		}
+		relative_position_id = ESS_kickstart_institutions
+		prerequisite = {
+			focus = ESS_control_the_growth
+			}
+		prerequisite = {
+			focus = ESS_universal_basic_income
+			}
+		prerequisite = {
+			focus = ESS_big_print_contracts
+			}
+			
+		x = 0
+		y = 5
+
+	}
 
 	###Dawkins War###
 	

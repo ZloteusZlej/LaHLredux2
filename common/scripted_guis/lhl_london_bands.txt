@@ -9,6 +9,7 @@ scripted_gui = {
 			tag = ESS
 		}
 		effects = {
+		#bands
 			lhl_ess_central_region_band_click = {
 					set_country_flag = lhl_london_bands_central_region_open
 					clr_country_flag = lhl_london_bands_south_west_region_open
@@ -44,24 +45,91 @@ scripted_gui = {
 					clr_country_flag = lhl_london_bands_north_west_region_open
 					set_country_flag = lhl_london_bands_north_east_region_open
 			}
+		#dawkins
+		lhl_ess_central_region_dawkins_click = {
+					set_country_flag = lhl_london_dawkins_central_region_open
+					clr_country_flag = lhl_london_dawkins_south_west_region_open
+					clr_country_flag = lhl_london_dawkins_south_east_region_open
+					clr_country_flag = lhl_london_dawkins_north_west_region_open
+					clr_country_flag = lhl_london_dawkins_north_east_region_open
+			}
+			lhl_ess_south_west_region_dawkins_click = {
+					clr_country_flag = lhl_london_dawkin_central_region_open
+					set_country_flag = lhl_london_dawkin_south_west_region_open
+					clr_country_flag = lhl_london_dawkin_south_east_region_open
+					clr_country_flag = lhl_london_dawkin_north_west_region_open
+					clr_country_flag = lhl_london_dawkin_north_east_region_open
+			}
+			lhl_ess_south_east_region_dawkin_click = {
+					clr_country_flag = lhl_london_dawkin_central_region_open
+					clr_country_flag = lhl_london_dawkin_south_west_region_open
+					set_country_flag = lhl_london_dawkin_south_east_region_open
+					clr_country_flag = lhl_london_dawkin_north_west_region_open
+					clr_country_flag = lhl_london_dawkin_north_east_region_open
+			}
+			lhl_ess_north_west_region_dawkin_click = {
+					clr_country_flag = lhl_london_dawkin_central_region_open
+					clr_country_flag = lhl_london_dawkin_south_west_region_open
+					clr_country_flag = lhl_london_dawkin_south_east_region_open
+					set_country_flag = lhl_london_dawkin_north_west_region_open
+					clr_country_flag = lhl_london_dawkin_north_east_region_open
+			}
+			lhl_ess_north_east_region_dawkin_click = {
+					clr_country_flag = lhl_london_dawkin_central_region_open
+					clr_country_flag = lhl_london_dawkin_south_west_region_open
+					clr_country_flag = lhl_london_dawkin_south_east_region_open
+					clr_country_flag = lhl_london_dawkin_north_west_region_open
+					set_country_flag = lhl_london_dawkin_north_east_region_open
+			}
 			
 		}
 		triggers = {
+		##Bands##
             lhl_ess_central_region_loyal_visible = {
 				NOT = {
 					has_country_flag = ESS_towers_gone
 				}
+				has_country_flag = ENG_mosley_here
 		    }
 			lhl_ess_central_region_band_visible = {
 				has_country_flag = ESS_towers_gone
+				has_country_flag = ENG_mosley_here
+				
 		    }
 			lhl_ess_south_east_region_dist_visible = {
 				NOT = {
 					has_country_flag = ESS_hounds_gone
 				}
+				has_country_flag = ENG_mosley_here
 		    }
 			lhl_ess_south_east_region_band_visible = {
 				has_country_flag = ESS_hounds_gone
+				has_country_flag = ENG_mosley_here
+		    }
+			lhl_ess_south_west_region_band_visible = {
+				has_country_flag = ENG_mosley_here
+		    }
+			lhl_ess_north_west_region_band_visible = {
+				has_country_flag = ENG_mosley_here
+		    }
+			lhl_ess_north_east_region_band_visible = {
+				has_country_flag = ENG_mosley_here
+		    }
+			##Dawkins##
+			lhl_ess_central_region_dawkins_visible = {
+				has_country_flag = ESS_dawkins_here
+		    }
+			lhl_ess_south_east_region_dawkins_visible = {
+				has_country_flag = ESS_dawkins_here
+		    }
+			lhl_ess_south_west_region_dawkins_visible = {
+				has_country_flag = ESS_dawkins_here
+		    }
+			lhl_ess_north_west_region_dawkins_visible = {
+				has_country_flag = ESS_dawkins_here
+		    }
+			lhl_ess_north_east_region_dawkins_visible = {
+				has_country_flag = ESS_dawkins_here
 		    }
 			lhl_block_visible = {
 				has_global_flag = ENG_Mosley_is_dead
