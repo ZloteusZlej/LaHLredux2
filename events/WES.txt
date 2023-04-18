@@ -3080,5 +3080,114 @@ country_event = { #GREEN ECONOMY
 	}	
 }
 
+country_event = { #SUBSTIENCE ECONOMY I (Railway) #Begin
+	id = WES_event.105
+	title = WES_event.105.t
+	desc = WES_event.105.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.105.a 
+		WES = {
+			add_dynamic_modifier = {
+				modifier = WES_agrarian_economy
+			}
+			activate_mission = WES_railroads_stage_1
+		}
+	}	
+}
+
+country_event = { #SUBSTIENCE ECONOMY I (Railway) #Success
+	id = WES_event.106
+	title = WES_event.106.t
+	desc = WES_event.106.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.106.a 
+		add_political_power = 50
+		custom_effect_tooltip =  WES_agrarian_economy_next_stage_tt
+		hidden_effect = {
+			WES = {
+				country_event = {
+					days = 90
+					id = WES_event.108
+				}
+			}
+		}
+	}	
+}
+
+country_event = { #SUBSTIENCE ECONOMY I (Railway) #Failure
+	id = WES_event.107
+	title = WES_event.107.t
+	desc = WES_event.107.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.107.a 
+		add_political_power = -25
+		custom_effect_tooltip =  WES_agrarian_economy_next_stage_tt
+		hidden_effect = {
+			WES = {
+				country_event = {
+					days = 90
+					id = WES_event.108
+				}
+			}
+		}
+	}	
+}
+
+country_event = { #SUBSTIENCE ECONOMY II (Military) #Begin
+	id = WES_event.108
+	title = WES_event.108.t
+	desc = WES_event.108.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.108.a 
+		WES = {
+			activate_mission = WES_railroads_stage_2
+		}
+	}	
+}
+
+country_event = { #SUBSTIENCE ECONOMY II (Military) #Success
+	id = WES_event.109
+	title = WES_event.109.t
+	desc = WES_event.109.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.109.a 
+		add_political_power = 50
+		custom_effect_tooltip =  WES_agrarian_economy_next_stage_tt
+		hidden_effect = {
+			WES = {
+				country_event = {
+					days = 90
+					id = WES_event.111
+				}
+			}
+		}
+	}	
+}
+
+country_event = { #SUBSTIENCE ECONOMY II (Military) #Failure
+	id = WES_event.110
+	title = WES_event.110.t
+	desc = WES_event.110.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.110.a 
+		add_political_power = -25
+		custom_effect_tooltip =  WES_agrarian_economy_next_stage_tt
+		hidden_effect = {
+			WES = {
+				country_event = {
+					days = 90
+					id = WES_event.111
+				}
+			}
+		}
+	}	
+}
+
 ##PURGING PEOPLE##
 

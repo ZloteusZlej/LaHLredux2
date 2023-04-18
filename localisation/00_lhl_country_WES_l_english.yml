@@ -197,7 +197,7 @@
  WES_centralized_education:0 "Centralized Education"
  WES_cultural_symbiosis:0 "A Cultural Symbiosis"
  WES_law_king:0 "The Law Of The King"
- WES_return_king: "Return Of The King"
+ WES_return_king:0 "Return Of The King"
  WES_orthodox_diplomacy:0 "An Orthodox Diplomacy"
  WES_keepers_athos:0 "The Keepers of Mount Athos"
  WES_plead_help:0 "A Plead For Help"
@@ -626,6 +626,7 @@
  rolls_royce_bristol:0 "Rolls Royce Bristol"
  ##ENGLAND TRANSFORMATION##
  WES_villages_development_tt:0 "§YNew decisions to develop local villages will become available on the map.§!"
+ WES_subsistence_economy_tt:0 "\n§RAfter finishing this focus, a mission to create the new subsistence economy will begin.\n§!"
  #
  WES_TRANSFORMATION_TITLE:0 "§YThe "Medieval Society"§!"
  WES_TRANSFORMATION_TITLE_1:0 "Our §CCULTURAL§! effort is [GetWESCultureProgress] ([?WES_transformation_culture_progress])."
@@ -673,6 +674,7 @@
  WES_culture_dummy:0"§YCURRENT CULTURE OPTIONS§!"
  WES_economy_dummy:0"§YCURRENT ECONOMY OPTIONS§!"
  WES_region_dummy:0"§YCURRENT REGION OPTIONS§!"
+ WES_diplomacy_dummy:0"§YCURRENT DIPLOMACY OPTIONS§!"
  #
  WES_transformation_culture_small.tt:0 "§7This will slightly improve our §CCULTURAL§! progress§!\n"
  WES_transformation_culture_big.tt:0 "§GThis will massively improve our §CCULTURAL§! progress§!\n"
@@ -743,4 +745,116 @@
  WES_army_localization_10.tt:0 "(§Y[WES.GetNameWithFlag]§!) Modify §YRoyal Army§! by \nArmor Division Attack: §G+10.0%§!\nArmor Division Defense: §G+10.0%§!\nArmor speed: §G+10.0%§!\n"
  #
  WES_republicans_complaince.tt:0 "§YAll Northumbrian and Mercian states§!:\n     Complaince: §G+30.0%§!\n     Resistance: §G-30.0%§!"
- 
+ #Substience Economy#
+ ##RAILWAYS##
+ WES_railway_bonus_1_tt:0 "(§Y[WES.GetNameWithFlag]§!) Modify §YAgrarian Economy§! by Resource Gain Efficiency: §G+10.00%§!"
+ WES_railway_bonus_2_tt:0 "(§Y[WES.GetNameWithFlag]§!) Modify §YAgrarian Economy§! by Resource Gain Efficiency: §G+15.00%§!"
+ WES_railway_bonus_3_tt:0 "(§Y[WES.GetNameWithFlag]§!) Modify §YAgrarian Economy§! by Resource Gain Efficiency: §G+20.00%§!"
+ #
+ WES_agrarian_economy_next_stage_tt:0 "§YThe next stage of economic development will begin shortly§!"
+ WES_railroads_stage_1:0 "Agrarian Economy Development Stage 1/4"
+ WES_railroads_stage_1_desc:0 "\nTo boost the new internal economy of our realm, it is necessary to construct a sufficient logistics network within our borders. Building §O3§!, §74§! and §G5§! level railways in each of our states will provide us with progressively more advantageous bonuses. If we fail to meet the minimum quota of a §O3 level§! railway in each state, §Rwe will get no bonus from this mission§!.\n\n§GRAILWAY CONSTRUCTION PROGRESS§!\n\n§Y[?998.GetName]§!: [GetWESRailwayLevel_998]\n§Y[?999.GetName]§!: [GetWESRailwayLevel_999]\n§Y[?1007.GetName]§!: [GetWESRailwayLevel_1007]\n§Y[?1006.GetName]§!: [GetWESRailwayLevel_1006]\n§Y[?1153.GetName]§!: [GetWESRailwayLevel_1153]\n§Y[?1161.GetName]§!: [GetWESRailwayLevel_1161]\n§Y[?1000.GetName]§!: [GetWESRailwayLevel_1000]\n§Y[?1001.GetName]§!: [GetWESRailwayLevel_1001]\n§Y[?1156.GetName]§!: [GetWESRailwayLevel_1156]\n§Y[?1002.GetName]§!: [GetWESRailwayLevel_1002]\n§Y[?1165.GetName]§!: [GetWESRailwayLevel_1165]"
+ #railways custom loc#
+ WES_998_railway_level_0:0 "§R0/5§!"
+ WES_998_railway_level_1:0 "§R1/5§!"
+ WES_998_railway_level_2:0 "§R2/5§!"
+ WES_998_railway_level_3:0 "§O3/5§!"
+ WES_998_railway_level_4:0 "§74/5§!"
+ WES_998_railway_level_5:0 "§G5/5§!"
+ #
+ WES_999_railway_level_0:0 "§R0/5§!"
+ WES_999_railway_level_1:0 "§R1/5§!"
+ WES_999_railway_level_2:0 "§R2/5§!"
+ WES_999_railway_level_3:0 "§O3/5§!"
+ WES_999_railway_level_4:0 "§74/5§!"
+ WES_999_railway_level_5:0 "§G5/5§!"
+ #
+ WES_1007_railway_level_0:0 "§R0/5§!"
+ WES_1007_railway_level_1:0 "§R1/5§!"
+ WES_1007_railway_level_2:0 "§R2/5§!"
+ WES_1007_railway_level_3:0 "§O3/5§!"
+ WES_1007_railway_level_4:0 "§74/5§!"
+ WES_1007_railway_level_5:0 "§G5/5§!"
+ #
+ WES_1006_railway_level_0:0 "§R0/5§!"
+ WES_1006_railway_level_1:0 "§R1/5§!"
+ WES_1006_railway_level_2:0 "§R2/5§!"
+ WES_1006_railway_level_3:0 "§O3/5§!"
+ WES_1006_railway_level_4:0 "§74/5§!"
+ WES_1006_railway_level_5:0 "§G5/5§!"
+ #
+ WES_1153_railway_level_0:0 "§R0/5§!"
+ WES_1153_railway_level_1:0 "§R1/5§!"
+ WES_1153_railway_level_2:0 "§R2/5§!"
+ WES_1153_railway_level_3:0 "§O3/5§!"
+ WES_1153_railway_level_4:0 "§74/5§!"
+ WES_1153_railway_level_5:0 "§G5/5§!"
+ #
+ WES_1161_railway_level_0:0 "§R0/5§!"
+ WES_1161_railway_level_1:0 "§R1/5§!"
+ WES_1161_railway_level_2:0 "§R2/5§!"
+ WES_1161_railway_level_3:0 "§O3/5§!"
+ WES_1161_railway_level_4:0 "§74/5§!"
+ WES_1161_railway_level_5:0 "§G5/5§!"
+ #
+ WES_1000_railway_level_0:0 "§R0/5§!"
+ WES_1000_railway_level_1:0 "§R1/5§!"
+ WES_1000_railway_level_2:0 "§R2/5§!"
+ WES_1000_railway_level_3:0 "§O3/5§!"
+ WES_1000_railway_level_4:0 "§74/5§!"
+ WES_1000_railway_level_5:0 "§G5/5§!"
+ #
+ WES_1001_railway_level_0:0 "§R0/5§!"
+ WES_1001_railway_level_1:0 "§R1/5§!"
+ WES_1001_railway_level_2:0 "§R2/5§!"
+ WES_1001_railway_level_3:0 "§O3/5§!"
+ WES_1001_railway_level_4:0 "§74/5§!"
+ WES_1001_railway_level_5:0 "§G5/5§!"
+ #
+ WES_1156_railway_level_0:0 "§R0/5§!"
+ WES_1156_railway_level_1:0 "§R1/5§!"
+ WES_1156_railway_level_2:0 "§R2/5§!"
+ WES_1156_railway_level_3:0 "§O3/5§!"
+ WES_1156_railway_level_4:0 "§74/5§!"
+ WES_1156_railway_level_5:0 "§G5/5§!"
+ #
+ WES_1002_railway_level_0:0 "§R0/5§!"
+ WES_1002_railway_level_1:0 "§R1/5§!"
+ WES_1002_railway_level_2:0 "§R2/5§!"
+ WES_1002_railway_level_3:0 "§O3/5§!"
+ WES_1002_railway_level_4:0 "§74/5§!"
+ WES_1002_railway_level_5:0 "§G5/5§!"
+ #
+ WES_1165_railway_level_0:0 "§R0/5§!"
+ WES_1165_railway_level_1:0 "§R1/5§!"
+ WES_1165_railway_level_2:0 "§R2/5§!"
+ WES_1165_railway_level_3:0 "§O3/5§!"
+ WES_1165_railway_level_4:0 "§74/5§!"
+ WES_1165_railway_level_5:0 "§G5/5§!"
+ ##MILITARY FAIR##
+ WES_railroads_stage_2:0 "Agrarian Economy Development Stage 2/4"
+ WES_railroads_stage_2_desc:0 "\nTo boost the new internal economy of our realm, it is necessary to strengthen our army with domestically-produced military equipment. To this effect, our government decided to hold several "military fairs" throughout the country to incentivize young professionals to join the industry. §YThe more military equipment required for the fairs we produce, the bigger the bonus at the end of the mission will be.§! §!\n\n§YWEAPONS PRODUCTION PROGRESS§!\n\n[GetWESInfantryEquipment]\n[GetWESMotorizedEquipment]\n[GetWESArtilleryEquipment]\n[GetWESTransportHelicopter]"
+ #
+ WES_infantry_equipment_level_0:0 "§YInfantry Equipment Stockpiled:§! §R[?WES.num_equipment@infantry_equipment]/1000 Level 0§!"
+ WES_infantry_equipment_level_1:0 "§YInfantry Equipment Stockpiled:§! §O[?WES.num_equipment@infantry_equipment]/1500 Level I§!"
+ WES_infantry_equipment_level_2:0 "§YInfantry Equipment Stockpiled:§! §L[?WES.num_equipment@infantry_equipment]/2000 Level II§!"
+ WES_infantry_equipment_level_3:0 "§YInfantry Equipment Stockpiled:§! §7[?WES.num_equipment@infantry_equipment]/3000 Level III§!"
+ WES_infantry_equipment_level_4:0 "§YInfantry Equipment Stockpiled:§! §G[?WES.num_equipment@infantry_equipment]/∞ Level IV§!"
+ #
+ WES_motorized_equipment_level_0:0 "§YTrucks Stockpiled:§! §R[?WES.num_equipment@motorized_equipment]/100 Level 0§!"
+ WES_motorized_equipment_level_1:0 "§YTrucks Stockpiled:§! §O[?WES.num_equipment@motorized_equipment]/150 Level I§!"
+ WES_motorized_equipment_level_2:0 "§YTrucks Stockpiled:§! §L[?WES.num_equipment@motorized_equipment]/250 Level II§!"
+ WES_motorized_equipment_level_3:0 "§YTrucks Stockpiled:§! §7[?WES.num_equipment@motorized_equipment]/350 Level III§!"
+ WES_motorized_equipment_level_4:0 "§YTrucks Stockpiled:§! §G[?WES.num_equipment@motorized_equipment]/∞ Level IV§!"
+ #
+ WES_artillery_equipment_level_0:0 "§YHowitzers Stockpiled:§! §R[?WES.num_equipment@artillery_equipment]/100 Level 0§!"
+ WES_artillery_equipment_level_1:0 "§YHowitzers Stockpiled:§! §O[?WES.num_equipment@artillery_equipment]/150 Level I§!"
+ WES_artillery_equipment_level_2:0 "§YHowitzers Stockpiled:§! §L[?WES.num_equipment@artillery_equipment]/250 Level II§!"
+ WES_artillery_equipment_level_3:0 "§YHowitzers Stockpiled:§! §7[?WES.num_equipment@artillery_equipment]/350 Level III§!"
+ WES_artillery_equipment_level_4:0 "§YHowitzers Stockpiled:§! §G[?WES.num_equipment@artillery_equipment]/∞ Level IV§!"
+ #
+ WES_transport_helicopter_equipment_level_0:0 "§YTranspot Helicopters Stockpiled:§! §R[?WES.num_equipment@transport_helicopter_equipment]/50 Level 0§!"
+ WES_transport_helicopter_equipment_level_1:0 "§YTranspot Helicopters Stockpiled:§! §O[?WES.num_equipment@transport_helicopter_equipment]/100 Level I§!"
+ WES_transport_helicopter_equipment_level_2:0 "§YTranspot Helicopters Stockpiled:§! §L[?WES.num_equipment@transport_helicopter_equipment]/200 Level II§!"
+ WES_transport_helicopter_equipment_level_3:0 "§YTranspot Helicopters Stockpiled:§! §7[?WES.num_equipment@transport_helicopter_equipment]/300 Level III§!"
+ WES_transport_helicopter_equipment_level_4:0 "§YTranspot Helicopters Stockpiled:§! §G[?WES.num_equipment@transport_helicopter_equipment]/∞ Level IV§!"

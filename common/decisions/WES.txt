@@ -3943,6 +3943,14 @@ WES_england_transformation = {
 			base = 100
 		}
 	}
+	##Diplomatic Action##
+	WES_diplomacy_dummy = {	
+		available = {
+			hidden_trigger = {
+				always = false
+			}
+		}
+	}
 ##MISSIONS##
 #Build Railways#
     WES_railroads_stage_1 = {                           
@@ -3958,167 +3966,571 @@ WES_england_transformation = {
 			always = false
         }
         is_good = no                  
-        days_mission_timeout = 360             
+        days_mission_timeout = 150            
         timeout_effect = {
-			WES = {
-				add_political_power = -250
-				add_stability = -0.15
+			if = {
+				limit = {
+					has_railway_level = {
+						state = 998
+						level = 3
+					}
+					has_railway_level = {
+						state = 999
+						level = 3
+					}
+					has_railway_level = {
+						state = 1007
+						level = 3
+					}
+					has_railway_level = {
+						state = 1006
+						level = 3
+					}
+					has_railway_level = {
+						state = 1153
+						level = 3
+					}
+					has_railway_level = {
+						state = 1161
+						level = 3
+					}
+					has_railway_level = {
+						state = 1000
+						level = 3
+					}
+					has_railway_level = {
+						state = 1001
+						level = 3
+					}
+					has_railway_level = {
+						state = 1156
+						level = 3
+					}
+					has_railway_level = {
+						state = 1002
+						level = 3
+					}
+					has_railway_level = {
+						state = 1165
+						level = 3
+					}
+					NOT = {
+						OR = {
+							AND = {
+								has_railway_level = {
+									state = 998
+									level = 4
+								}
+								has_railway_level = {
+									state = 999
+									level = 4
+								}
+								has_railway_level = {
+									state = 1007
+									level = 4
+								}
+								has_railway_level = {
+									state = 1006
+									level = 4
+								}
+								has_railway_level = {
+									state = 1153
+									level = 4
+								}
+								has_railway_level = {
+									state = 1161
+									level = 4
+								}
+								has_railway_level = {
+									state = 1000
+									level = 4
+								}
+								has_railway_level = {
+									state = 1001
+									level = 4
+								}
+								has_railway_level = {
+									state = 1156
+									level = 4
+								}
+								has_railway_level = {
+									state = 1002
+									level = 4
+								}
+								has_railway_level = {
+									state = 1165
+									level = 4
+								}
+							}
+							AND = {
+								has_railway_level = {
+									state = 998
+									level = 5
+								}
+								has_railway_level = {
+									state = 999
+									level = 5
+								}
+								has_railway_level = {
+									state = 1007
+									level = 5
+								}
+								has_railway_level = {
+									state = 1006
+									level = 5
+								}
+								has_railway_level = {
+									state = 1153
+									level = 5
+								}
+								has_railway_level = {
+									state = 1161
+									level = 5
+								}
+								has_railway_level = {
+									state = 1000
+									level = 5
+								}
+								has_railway_level = {
+									state = 1001
+									level = 5
+								}
+								has_railway_level = {
+									state = 1156
+									level = 5
+								}
+								has_railway_level = {
+									state = 1002
+									level = 5
+								}
+								has_railway_level = {
+									state = 1165
+									level = 5
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					WES_agrarian_economy_local_resources_factor = 0.1
+				}
+				custom_effect_tooltip = WES_railway_bonus_1_tt
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.106
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_railway_level = {
+							state = 998
+							level = 4
+					}
+					has_railway_level = {
+							state = 999
+							level = 4
+					}
+					has_railway_level = {
+							state = 1007
+							level = 4
+					}
+					has_railway_level = {
+							state = 1006
+							level = 4
+					}
+					has_railway_level = {
+							state = 1153
+							level = 4
+					}
+					has_railway_level = {
+							state = 1161
+							level = 4
+					}
+					has_railway_level = {
+							state = 1000
+							level = 4
+					}
+					has_railway_level = {
+							state = 1001
+							level = 4
+					}
+					has_railway_level = {
+							state = 1156
+							level = 4
+					}
+					has_railway_level = {
+							state = 1002
+							level = 4
+					}
+					has_railway_level = {
+							state = 1165
+							level = 4
+					}
+					NOT = {
+						AND = {
+							has_railway_level = {
+								state = 998
+								level = 5
+							}
+							has_railway_level = {
+								state = 999
+								level = 5
+							}
+							has_railway_level = {
+								state = 1007
+								level = 5
+							}
+							has_railway_level = {
+								state = 1006
+								level = 5
+							}
+							has_railway_level = {
+								state = 1153
+								level = 5
+							}
+							has_railway_level = {
+								state = 1161
+								level = 5
+							}
+							has_railway_level = {
+								state = 1000
+								level = 5
+							}
+							has_railway_level = {
+								state = 1001
+								level = 5
+							}
+							has_railway_level = {
+								state = 1156
+								level = 5
+							}
+							has_railway_level = {
+								state = 1002
+								level = 5
+							}
+							has_railway_level = {
+								state = 1165
+								level = 5
+							}
+						}
+					}
+				}
+				set_variable = {
+					WES_agrarian_economy_local_resources_factor = 0.15
+				}
+				custom_effect_tooltip = WES_railway_bonus_2_tt
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.106
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_railway_level = {
+							state = 998
+							level = 5
+					}
+					has_railway_level = {
+							state = 999
+							level = 5
+					}
+					has_railway_level = {
+							state = 1007
+							level = 5
+					}
+					has_railway_level = {
+							state = 1006
+							level = 5
+					}
+					has_railway_level = {
+							state = 1153
+							level = 5
+					}
+					has_railway_level = {
+							state = 1161
+							level = 5
+					}
+					has_railway_level = {
+							state = 1000
+							level = 5
+					}
+					has_railway_level = {
+							state = 1001
+							level = 5
+					}
+					has_railway_level = {
+							state = 1156
+							level = 5
+					}
+					has_railway_level = {
+							state = 1002
+							level = 5
+					}
+					has_railway_level = {
+							state = 1165
+							level = 5
+					}
+				}
+				set_variable = {
+					WES_agrarian_economy_local_resources_factor = 0.2
+				}
+				custom_effect_tooltip = WES_railway_bonus_3_tt
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.106
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_railway_level = {
+								state = 998
+								level = 3
+							}
+							has_railway_level = {
+								state = 999
+								level = 3
+							}
+							has_railway_level = {
+								state = 1007
+								level = 3
+							}
+							has_railway_level = {
+								state = 1006
+								level = 3
+							}
+							has_railway_level = {
+								state = 1153
+								level = 3
+							}
+							has_railway_level = {
+								state = 1161
+								level = 3
+							}
+							has_railway_level = {
+								state = 1000
+								level = 3
+							}
+							has_railway_level = {
+								state = 1001
+								level = 3
+							}
+							has_railway_level = {
+								state = 1156
+								level = 3
+							}
+							has_railway_level = {
+								state = 1002
+								level = 3
+							}
+							has_railway_level = {
+								state = 1165
+								level = 3
+							}
+						}
+					}
+				}
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.107
+					}
+				}
 			}
         }
-        complete_effect = {   
+        complete_effect = { 			
+        }
+    }
+    WES_railroads_stage_2 = {                           
+        allowed = { 
+			tag = WES
+		}
+        available = {      
+			hidden_trigger = {
+				always = false
+			}
+        }
+        activation = {   
+			always = false
+        }
+        is_good = no                  
+        days_mission_timeout = 150            
+        timeout_effect = {
 			if = {
 				limit = {
-					has_railway_level = {
-							state = 998
-							level = 3
-					}
-					has_railway_level = {
-							state = 999
-							level = 3
-					}
-					has_railway_level = {
-							state = 1007
-							level = 3
-					}
-					has_railway_level = {
-							state = 1006
-							level = 3
-					}
-					has_railway_level = {
-							state = 1153
-							level = 3
-					}
-					has_railway_level = {
-							state = 1161
-							level = 3
-					}
-					has_railway_level = {
-							state = 1000
-							level = 3
-					}
-					has_railway_level = {
-							state = 1001
-							level = 3
-					}
-					has_railway_level = {
-							state = 1156
-							level = 3
-					}
-					has_railway_level = {
-							state = 1002
-							level = 3
-					}
-					has_railway_level = {
-							state = 1165
-							level = 3
+					AND = {
+						WES = {
+							has_equipment = {
+								infantry_equipment > 1000
+							}
+							has_equipment = {
+								infantry_equipment < 1500
+							}
+							has_equipment = {
+								motorized_equipment > 100
+							}
+							has_equipment = {
+								motorized_equipment < 150
+							}
+							has_equipment = {
+								artillery_equipment > 100
+							}
+							has_equipment = {
+								artillery_equipment < 150
+							}
+							has_equipment = {
+								transport_helicopter_equipment > 50
+							}
+							has_equipment = {
+								transport_helicopter_equipment < 100
+							}
+						}
 					}
 				}
 				WES = {
-					add_political_power = 25
+					country_event = {
+						days = 0
+						id = WES_event.109
+					}
 				}
 			}
 			if = {
 				limit = {
-					has_railway_level = {
-							state = 998
-							level = 4
-					}
-					has_railway_level = {
-							state = 999
-							level = 4
-					}
-					has_railway_level = {
-							state = 1007
-							level = 4
-					}
-					has_railway_level = {
-							state = 1006
-							level = 4
-					}
-					has_railway_level = {
-							state = 1153
-							level = 4
-					}
-					has_railway_level = {
-							state = 1161
-							level = 4
-					}
-					has_railway_level = {
-							state = 1000
-							level = 4
-					}
-					has_railway_level = {
-							state = 1001
-							level = 4
-					}
-					has_railway_level = {
-							state = 1156
-							level = 4
-					}
-					has_railway_level = {
-							state = 1002
-							level = 4
-					}
-					has_railway_level = {
-							state = 1165
-							level = 4
+					AND = {
+						WES = {
+							has_equipment = {
+								infantry_equipment > 1500
+							}
+							has_equipment = {
+								infantry_equipment < 2000
+							}
+							has_equipment = {
+								motorized_equipment > 150
+							}
+							has_equipment = {
+								motorized_equipment < 250
+							}
+							has_equipment = {
+								artillery_equipment > 150
+							}
+							has_equipment = {
+								artillery_equipment < 250
+							}
+							has_equipment = {
+								transport_helicopter_equipment > 100
+							}
+							has_equipment = {
+								transport_helicopter_equipment < 200
+							}
+						}
 					}
 				}
 				WES = {
-					add_political_power = 50
+					country_event = {
+						days = 0
+						id = WES_event.109
+					}
 				}
 			}
 			if = {
 				limit = {
-					has_railway_level = {
-							state = 998
-							level = 5
-					}
-					has_railway_level = {
-							state = 999
-							level = 5
-					}
-					has_railway_level = {
-							state = 1007
-							level = 5
-					}
-					has_railway_level = {
-							state = 1006
-							level = 5
-					}
-					has_railway_level = {
-							state = 1153
-							level = 5
-					}
-					has_railway_level = {
-							state = 1161
-							level = 5
-					}
-					has_railway_level = {
-							state = 1000
-							level = 5
-					}
-					has_railway_level = {
-							state = 1001
-							level = 5
-					}
-					has_railway_level = {
-							state = 1156
-							level = 5
-					}
-					has_railway_level = {
-							state = 1002
-							level = 5
-					}
-					has_railway_level = {
-							state = 1165
-							level = 5
+					AND = {
+						WES = {
+							has_equipment = {
+								infantry_equipment > 2000
+							}
+							has_equipment = {
+								infantry_equipment < 3000
+							}
+							has_equipment = {
+								motorized_equipment > 250
+							}
+							has_equipment = {
+								motorized_equipment < 350
+							}
+							has_equipment = {
+								artillery_equipment > 250
+							}
+							has_equipment = {
+								artillery_equipment < 350
+							}
+							has_equipment = {
+								transport_helicopter_equipment > 200
+							}
+							has_equipment = {
+								transport_helicopter_equipment < 300
+							}
+						}
 					}
 				}
 				WES = {
-					add_political_power = 100
+					country_event = {
+						days = 0
+						id = WES_event.109
+					}
 				}
-			}			
+			}
+			if = {
+				limit = {
+					AND = {
+						WES = {
+							has_equipment = {
+								infantry_equipment > 3000
+							}
+							has_equipment = {
+								motorized_equipment > 350
+							}
+							has_equipment = {
+								artillery_equipment > 350
+							}
+							has_equipment = {
+								transport_helicopter_equipment > 300
+							}
+						}
+					}
+				}
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.109
+					}
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						WES = {
+							has_equipment = {
+								infantry_equipment < 1000
+							}
+							has_equipment = {
+								motorized_equipment < 100
+							}
+							has_equipment = {
+								artillery_equipment < 100
+							}
+							has_equipment = {
+								transport_helicopter_equipment < 50
+							}
+						}
+					}
+				}
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.110
+					}
+				}
+			}
+		}
+        complete_effect = { 			
         }
     }
 }
