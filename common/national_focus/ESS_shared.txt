@@ -1267,6 +1267,23 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_constructing_utopia"
+				swap_ideas = {
+					remove_idea = ESS_empty_throne
+					add_idea = ESS_empty_throne_1
+				}
+			custom_effect_tooltip = ESS_constructing_utopia_techswap.tt
+			hidden_effect = {
+				set_technology = {
+					green_overall = 1
+					green_overall_dummy = 1
+					automatization_overall = 0
+					automatization_overall_dummy = 0
+					industrialization_overall = 0
+					industrialization_overall_dummy = 0
+					unorthodox_overall = 0
+					unorthodox_overall_dummy = 0
+				}
+			}
 		}
 		relative_position_id = ESS_tame_the_leviathan
 		prerequisite = {
