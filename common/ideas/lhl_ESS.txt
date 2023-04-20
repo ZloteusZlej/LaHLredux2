@@ -394,6 +394,21 @@ ideas = {
 				stability_factor = -0.25
 			}
 		}
+		ESS_empty_throne_1 = {
+			
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.15
+			}
+		}
 		ESS_broken_hierarchy = {
 			
 			picture = 
@@ -729,7 +744,7 @@ ideas = {
 			equipment_bonus = {
 				infantry_equipment = {
 					build_cost_ic = -0.10
-					soft_attack = 0.2
+					soft_attack = 0.1
 				}
 			}
 			modifier = {
@@ -753,13 +768,39 @@ ideas = {
 					owns_state = 1003
 				}
 			}
-			
-			modifier = {
-				research_bonus = {
-					electronics = 0.1
+			research_bonus = {
+				electronics = 0.1
 			}
+			modifier = {
 				encryption_factor = 0.1
 				resistance_damage_to_garrison = -0.1
+			}
+		}
+	}
+	industrial_concern = {
+		housing_improvment_and_optimisation_bureau = {
+			cost = 0
+			
+			available = {
+				ESS = {
+					has_completed_focus = ESS_optimised_living_space
+				}
+			}
+			
+			visible = {
+				ESS = {
+					has_completed_focus = ESS_tame_the_leviathan
+				}
+			}
+			
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			modifier = {
+				industry_repair_factor = 0.20
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
 			}
 		}
 	}
