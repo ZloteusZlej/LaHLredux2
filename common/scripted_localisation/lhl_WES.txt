@@ -2717,10 +2717,10 @@ defined_text = {
 			WES = {
 				OR = {
 					has_equipment = {
-						infantry_equipment = 2500
+						infantry_equipment = 2000
 					}
 					has_equipment = {
-						infantry_equipment > 2500
+						infantry_equipment > 2000
 					}
 				}
 				has_equipment = {
@@ -2993,6 +2993,207 @@ defined_text = {
 			}
 		}
 		localization_key = "WES_transport_helicopter_equipment_level_4"
+	}
+}
+
+defined_text = {
+	name = GetWESTabSwitch
+	text = {
+		trigger = {
+			WES = {
+				has_completed_focus = WES_end_industrial_society
+			}
+		}
+		localization_key = "GetWESTabSwitch_1"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				WES = {
+					has_completed_focus = WES_end_industrial_society
+				}
+			}
+		}
+		localization_key = "GetWESTabSwitch_2"
+	}
+}
+
+defined_text = {
+	name = GetWESGreenTech_1
+	text = {
+		trigger = {
+			NOT = {
+				WES = {
+					has_tech = green_modern_economics_1
+				}
+			}
+		}
+		localization_key = "GetWESGreenTech_1_1"
+	}
+	text = {
+		trigger = {
+			WES = {
+				is_researching_technology = green_modern_economics_1
+			}
+		}
+		localization_key = "GetWESGreenTech_1_2"
+	}
+	text = {
+		trigger = {
+			WES = {
+				has_tech = green_modern_economics_1
+			}
+		}
+		localization_key = "GetWESGreenTech_1_3"
+	}
+}
+
+defined_text = {
+	name = GetWESGreenTech_2
+	text = {
+		trigger = {
+			NOT = {
+				WES = {
+					has_tech = green_modern_economics_2
+				}
+			}
+		}
+		localization_key = "GetWESGreenTech_2_1"
+	}
+	text = {
+		trigger = {
+			WES = {
+				is_researching_technology = green_modern_economics_2
+			}
+		}
+		localization_key = "GetWESGreenTech_2_2"
+	}
+	text = {
+		trigger = {
+			WES = {
+				has_tech = green_modern_economics_2
+			}
+		}
+		localization_key = "GetWESGreenTech_2_3"
+	}
+}
+
+defined_text = {
+	name = GetWESGreenTech_3
+	text = {
+		trigger = {
+			NOT = {
+				WES = {
+					has_tech = green_modern_economics_3
+				}
+			}
+		}
+		localization_key = "GetWESGreenTech_3_1"
+	}
+	text = {
+		trigger = {
+			WES = {
+				is_researching_technology = green_modern_economics_3
+			}
+		}
+		localization_key = "GetWESGreenTech_3_2"
+	}
+	text = {
+		trigger = {
+			WES = {
+				has_tech = green_modern_economics_3
+			}
+		}
+		localization_key = "GetWESGreenTech_3_3"
+	}
+}
+
+defined_text = {
+	name = GetWESEconomyManpower
+	text = {
+		trigger = {
+			WES = {
+				has_manpower < 50000
+			}
+		}
+		localization_key = "WES_economy_manpower_0"
+	}
+	text = {
+		trigger = {
+			OR = {
+				WES = {
+					has_manpower = 50000
+				}
+				WES = {
+					has_manpower > 50000
+				}
+			}
+			WES = {
+				has_manpower < 100000
+			}
+		}
+		localization_key = "WES_economy_manpower_1"
+	}
+	text = {
+		trigger = {
+			OR = {
+				WES = {
+					has_manpower = 100000
+				}
+				WES = {
+					has_manpower > 100000
+				}
+			}
+			WES = {
+				has_manpower < 200000
+			}
+		}
+		localization_key = "WES_economy_manpower_2"
+	}
+	text = {
+		trigger = {
+			OR = {
+				WES = {
+					has_manpower = 200000
+				}
+				WES = {
+					has_manpower > 200000
+				}
+			}
+			WES = {
+				has_manpower < 400000
+			}
+		}
+		localization_key = "WES_economy_manpower_3"
+	}
+	text = {
+		trigger = {
+			OR = {
+				WES = {
+					has_manpower = 400000
+				}
+				WES = {
+					has_manpower > 400000
+				}
+			}
+			WES = {
+				has_manpower < 550000
+			}
+		}
+		localization_key = "WES_economy_manpower_4"
+	}
+	text = {
+		trigger = {
+			OR = {
+				WES = {
+					has_manpower = 550000
+				}
+				WES = {
+					has_manpower > 550000
+				}
+			}
+		}
+		localization_key = "WES_economy_manpower_5"
 	}
 }
 

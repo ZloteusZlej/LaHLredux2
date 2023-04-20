@@ -1393,9 +1393,6 @@ shared_focus = {
 	prerequisite = {
         focus = WES_long_planning
 	}
-	prerequisite = {
-        focus = WES_voluntarily_colony
-	}
 	completion_reward = {
 		WES = {
 			add_political_power = 25
@@ -1786,7 +1783,7 @@ shared_focus = {
 	id = WES_voluntarily_colony
 	icon = GFX_goal_WES_voluntary_colonialism
 	prerequisite = {
-        focus = WES_medieval_state
+        focus = WES_eurasian_connections
 	}
 	completion_reward = {
 		WES = {
@@ -1800,8 +1797,8 @@ shared_focus = {
 		}
 	}
 	cost = 3.5
-	x = 17
-	y = 8
+	x = 25
+	y = 5
 }
 
 shared_focus = {
@@ -1979,9 +1976,6 @@ shared_focus = {
 shared_focus = {
 	id = WES_relocation_programmes
 	icon = GFX_goal_WES_relocation_programs
-	prerequisite = {
-        focus = WES_voluntarily_colony
-	}
 	prerequisite = {
         focus = WES_subsistence_economy
 	}

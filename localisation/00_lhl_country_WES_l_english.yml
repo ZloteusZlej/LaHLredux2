@@ -858,3 +858,42 @@
  WES_transport_helicopter_equipment_level_2:0 "§YTranspot Helicopters Stockpiled:§! §L[?WES.num_equipment@transport_helicopter_equipment]/200 Level II§!"
  WES_transport_helicopter_equipment_level_3:0 "§YTranspot Helicopters Stockpiled:§! §7[?WES.num_equipment@transport_helicopter_equipment]/300 Level III§!"
  WES_transport_helicopter_equipment_level_4:0 "§YTranspot Helicopters Stockpiled:§! §G[?WES.num_equipment@transport_helicopter_equipment]/∞ Level IV§!"
+ ##GREEN TECHNOLOGY##
+ WES_railroads_stage_3:0 "Agrarian Economy Development Stage 3/4"
+ WES_railroads_stage_3_desc:0 "\nIn our attempt to bring the territories of our realm to a more pastoral condition, we will have to apply modern eco-technologies to deter any form of pollution of our homeland. It is imperative that we research as many §YGreen Construction Technologies§! as possible, to achieve this goal. Beforehand, it is required that we switch to a §Ynew mode of production§!, by §RDestroying The Industrial Society§! in its current form.§! §!\n\n§YGREEN CONSTRUCTION RESEARCH PROGRESS§!\n\n[GetWESTabSwitch]\n[GetWESGreenTech_1]\n[GetWESGreenTech_2]\n[GetWESGreenTech_3]"
+ #
+ GetWESTabSwitch_2:0 "§RWe didn't switched to a green mode of production!§!"
+ GetWESTabSwitch_1:0 "§GWe have switched to a green mode of production!§!"
+ #
+ GetWESGreenTech_1_1:0 "§RGreen Construction I hasn't been researched!§!"
+ GetWESGreenTech_1_2:0 "§YResearch is in progress...§!"
+ GetWESGreenTech_1_3:0 "§GGreen Construction I has been researched!§!"
+ #
+ GetWESGreenTech_2_1:0 "§RGreen Construction II hasn't been researched!§!"
+ GetWESGreenTech_2_2:0 "§YResearch is in progress...§!"
+ GetWESGreenTech_2_3:0 "§GGreen Construction II has been researched!§!"
+ #
+ GetWESGreenTech_3_1:0 "§RGreen Construction III hasn't been researched!§!"
+ GetWESGreenTech_3_2:0 "§YResearch is in progress...§!"
+ GetWESGreenTech_3_3:0 "§GGreen Construction III has been researched!§!"
+ #
+ WES_greentech_bonus_1_tt:0 "(§Y[WES.GetNameWithFlag]§!) Modify §YAgrarian Economy§! by Production Efficiency growth: §G+5.00%§!"
+ WES_greentech_bonus_2_tt:0 "(§Y[WES.GetNameWithFlag]§!) Modify §YAgrarian Economy§! by Production Efficiency growth: §G+10.00%§!"
+ WES_greentech_bonus_3_tt:0 "(§Y[WES.GetNameWithFlag]§!) Modify §YAgrarian Economy§! by Production Efficiency growth: §G+15.00%§!"
+ ##MANPOWER FOR CONSTRUCTION##
+ WES_railroads_stage_4:0 "Agrarian Economy Development Stage 4/4"
+ WES_railroads_stage_4_desc:0 "\nIf we want out economy to actually work, we need a lot of manpower. Wars can wait, construction and economics can't.§! §!\n\n§YWORKER ACCUMULATION PROGRESS§!\n\n[GetWESEconomyManpower]"
+ #
+ WES_economy_manpower_0:0 "§YRequired Manpower:§! §R[?WES.manpower]§!/50000"
+ WES_economy_manpower_1:0 "§YRequired Manpower:§! §O[?WES.manpower]§!/100000"
+ WES_economy_manpower_2:0 "§YRequired Manpower:§! §L[?WES.manpower]§!/200000"
+ WES_economy_manpower_3:0 "§YRequired Manpower:§! §7[?WES.manpower]§!/400000"
+ WES_economy_manpower_4:0 "§YRequired Manpower:§! §G[?WES.manpower]§!/550000"
+ WES_economy_manpower_5:0 "§YRequired Manpower:§! §C[?WES.manpower]§!/∞"
+ #
+ WES_manpower_bonus_1_tt:0 "(§Y[WES.GetNameWithFlag]§!) Modify §YAgrarian Economy§! by Construction Speed: §G+5.00%§!"
+ WES_manpower_bonus_2_tt:0 "(§Y[WES.GetNameWithFlag]§!) Modify §YAgrarian Economy§! by Construction Speed: §G+10.00%§!"
+ WES_manpower_bonus_3_tt:0 "(§Y[WES.GetNameWithFlag]§!) Modify §YAgrarian Economy§! by Construction Speed: §G+15.00%§!"
+ WES_manpower_bonus_4_tt:0 "(§Y[WES.GetNameWithFlag]§!) Modify §YAgrarian Economy§! by Construction Speed: §G+20.00%§!"
+ WES_manpower_bonus_5_tt:0 "(§Y[WES.GetNameWithFlag]§!) Modify §YAgrarian Economy§! by Construction Speed: §G+25.00%§!"
+ 

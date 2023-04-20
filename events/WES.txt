@@ -3189,5 +3189,93 @@ country_event = { #SUBSTIENCE ECONOMY II (Military) #Failure
 	}	
 }
 
+country_event = { #SUBSTIENCE ECONOMY III (Technology) #Begin
+	id = WES_event.111
+	title = WES_event.111.t
+	desc = WES_event.111.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.111.a 
+		WES = {
+			activate_mission = WES_railroads_stage_3
+		}
+	}	
+}
+
+country_event = { #SUBSTIENCE ECONOMY III (Technology) #Success
+	id = WES_event.112
+	title = WES_event.112.t
+	desc = WES_event.112.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.112.a 
+		add_political_power = 50
+		custom_effect_tooltip =  WES_agrarian_economy_next_stage_tt
+		hidden_effect = {
+			WES = {
+				country_event = {
+					days = 90
+					id = WES_event.114
+				}
+			}
+		}
+	}	
+}
+
+country_event = { #SUBSTIENCE ECONOMY III (Technology) #Failure
+	id = WES_event.113
+	title = WES_event.113.t
+	desc = WES_event.113.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.113.a 
+		add_political_power = -25
+		custom_effect_tooltip =  WES_agrarian_economy_next_stage_tt
+		hidden_effect = {
+			WES = {
+				country_event = {
+					days = 90
+					id = WES_event.114
+				}
+			}
+		}
+	}	
+}
+
+country_event = { #SUBSTIENCE ECONOMY IV (Manpower) #Begin
+	id = WES_event.114
+	title = WES_event.114.t
+	desc = WES_event.114.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.114.a 
+		WES = {
+			activate_mission = WES_railroads_stage_4
+		}
+	}	
+}
+
+country_event = { #SUBSTIENCE ECONOMY IV (Manpower) #Success
+	id = WES_event.115
+	title = WES_event.115.t
+	desc = WES_event.115.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.115.a 
+		add_political_power = 50
+	}	
+}
+
+country_event = { #SUBSTIENCE ECONOMY IV (Manpower) #Failure
+	id = WES_event.116
+	title = WES_event.116.t
+	desc = WES_event.116.d
+    is_triggered_only = yes	
+	option = {
+		name = WES_event.116.a 
+		add_political_power = -25
+	}	
+}
+
 ##PURGING PEOPLE##
 

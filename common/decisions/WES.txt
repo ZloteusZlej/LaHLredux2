@@ -4371,25 +4371,27 @@ WES_england_transformation = {
 								infantry_equipment > 1000
 							}
 							has_equipment = {
-								infantry_equipment < 1500
-							}
-							has_equipment = {
 								motorized_equipment > 100
-							}
-							has_equipment = {
-								motorized_equipment < 150
 							}
 							has_equipment = {
 								artillery_equipment > 100
 							}
 							has_equipment = {
-								artillery_equipment < 150
-							}
-							has_equipment = {
 								transport_helicopter_equipment > 50
 							}
-							has_equipment = {
-								transport_helicopter_equipment < 100
+							OR = {
+								has_equipment = {
+									infantry_equipment < 1500
+								}
+								has_equipment = {
+									motorized_equipment < 150
+								}
+								has_equipment = {
+									artillery_equipment < 150
+								}
+								has_equipment = {
+									transport_helicopter_equipment < 100
+								}
 							}
 						}
 					}
@@ -4398,6 +4400,16 @@ WES_england_transformation = {
 					country_event = {
 						days = 0
 						id = WES_event.109
+					}
+					add_tech_bonus = {
+						bonus = 0.5
+						uses = 1
+						category = infantry_weapons
+					}
+					add_tech_bonus = {
+						bonus = 0.5
+						uses = 1
+						category = artillery
 					}
 				}
 			}
@@ -4409,25 +4421,27 @@ WES_england_transformation = {
 								infantry_equipment > 1500
 							}
 							has_equipment = {
-								infantry_equipment < 2000
-							}
-							has_equipment = {
 								motorized_equipment > 150
-							}
-							has_equipment = {
-								motorized_equipment < 250
 							}
 							has_equipment = {
 								artillery_equipment > 150
 							}
 							has_equipment = {
-								artillery_equipment < 250
-							}
-							has_equipment = {
 								transport_helicopter_equipment > 100
 							}
-							has_equipment = {
-								transport_helicopter_equipment < 200
+							OR = {
+								has_equipment = {
+									infantry_equipment < 2000
+								}
+								has_equipment = {
+									motorized_equipment < 250
+								}
+								has_equipment = {
+									artillery_equipment < 250
+								}
+								has_equipment = {
+									transport_helicopter_equipment < 200
+								}
 							}
 						}
 					}
@@ -4436,6 +4450,29 @@ WES_england_transformation = {
 					country_event = {
 						days = 0
 						id = WES_event.109
+					}
+					random_owned_controlled_state = {	
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+								instant_build = yes
+						}
+							add_extra_state_shared_building_slots = 2
+					}
+					add_tech_bonus = {
+						bonus = 0.5
+						uses = 2
+						category = infantry_weapons
+					}
+					add_tech_bonus = {
+						bonus = 0.5
+						uses = 1
+						category = artillery
+					}
+					add_tech_bonus = {
+						bonus = 0.5
+						uses = 1
+						category = cat_mechanized_equipment
 					}
 				}
 			}
@@ -4447,25 +4484,27 @@ WES_england_transformation = {
 								infantry_equipment > 2000
 							}
 							has_equipment = {
-								infantry_equipment < 3000
-							}
-							has_equipment = {
 								motorized_equipment > 250
-							}
-							has_equipment = {
-								motorized_equipment < 350
 							}
 							has_equipment = {
 								artillery_equipment > 250
 							}
 							has_equipment = {
-								artillery_equipment < 350
-							}
-							has_equipment = {
 								transport_helicopter_equipment > 200
 							}
-							has_equipment = {
-								transport_helicopter_equipment < 300
+							OR = {
+								has_equipment = {
+									infantry_equipment < 3000
+								}
+								has_equipment = {
+									motorized_equipment < 350
+								}
+								has_equipment = {
+									artillery_equipment < 350
+								}
+								has_equipment = {
+									transport_helicopter_equipment < 300
+								}
 							}
 						}
 					}
@@ -4474,6 +4513,37 @@ WES_england_transformation = {
 					country_event = {
 						days = 0
 						id = WES_event.109
+					}
+					random_owned_controlled_state = {	
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+								instant_build = yes
+						}
+							add_extra_state_shared_building_slots = 2
+					}
+					random_owned_controlled_state = {	
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+								instant_build = yes
+						}
+							add_extra_state_shared_building_slots = 2
+					}
+					add_tech_bonus = {
+						bonus = 1.0
+						uses = 2
+						category = infantry_weapons
+					}
+					add_tech_bonus = {
+						bonus = 1.0
+						uses = 2
+						category = artillery
+					}
+					add_tech_bonus = {
+						bonus = 1.0
+						uses = 2
+						category = cat_mechanized_equipment
 					}
 				}
 			}
@@ -4501,11 +4571,34 @@ WES_england_transformation = {
 						days = 0
 						id = WES_event.109
 					}
+					every_owned_state = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 1
+					}
+					add_tech_bonus = {
+						bonus = 1.0
+						uses = 3
+						category = infantry_weapons
+					}
+					add_tech_bonus = {
+						bonus = 1.0
+						uses = 3
+						category = artillery
+					}
+					add_tech_bonus = {
+						bonus = 1.0
+						uses = 3
+						category = cat_mechanized_equipment
+					}
 				}
 			}
 			if = {
 				limit = {
-					AND = {
+					OR = {
 						WES = {
 							has_equipment = {
 								infantry_equipment < 1000
@@ -4526,6 +4619,273 @@ WES_england_transformation = {
 					country_event = {
 						days = 0
 						id = WES_event.110
+					}
+				}
+			}
+		}
+        complete_effect = { 			
+        }
+    }
+	WES_railroads_stage_3 = {                           
+        allowed = { 
+			tag = WES
+		}
+        available = {      
+			hidden_trigger = {
+				always = false
+			}
+        }
+        activation = {   
+			always = false
+        }
+        is_good = no                  
+        days_mission_timeout = 150            
+        timeout_effect = {
+			if = {
+				limit = {
+					WES = {
+						has_tech = green_modern_economics_1
+					}
+					NOT = {
+						WES = {
+							has_tech = green_modern_economics_2
+						}
+						WES = {
+							has_tech = green_modern_economics_3
+						}
+					}
+				}
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.112
+					}
+				}
+				set_variable = {
+					WES_agrarian_economy_production_factory_efficiency_gain_factor = 0.05
+				}
+				custom_effect_tooltip = WES_greentech_bonus_1_tt
+			}
+			if = {
+				limit = {
+					WES = {
+						has_tech = green_modern_economics_1
+					}
+					WES = {
+						has_tech = green_modern_economics_2
+					}
+					NOT = {
+						WES = {
+							has_tech = green_modern_economics_3
+						}
+					}
+				}
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.112
+					}
+				}
+				set_variable = {
+					WES_agrarian_economy_production_factory_efficiency_gain_factor = 0.1
+				}
+				custom_effect_tooltip = WES_greentech_bonus_2_tt
+			}
+			if = {
+				limit = {
+					WES = {
+						has_tech = green_modern_economics_1
+					}
+					WES = {
+						has_tech = green_modern_economics_2
+					}
+					WES = {
+						has_tech = green_modern_economics_3
+					}
+				}
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.112
+					}
+				}
+				set_variable = {
+					WES_agrarian_economy_production_factory_efficiency_gain_factor = 0.15
+				}
+				custom_effect_tooltip = WES_greentech_bonus_3_tt
+			}
+			if = {
+				limit = {
+					NOT = {
+						WES = {
+							has_tech = green_modern_economics_1
+						}
+						WES = {
+							has_tech = green_modern_economics_2
+						}
+						WES = {
+							has_tech = green_modern_economics_3
+						}
+					}
+				}
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.113
+					}
+				}
+			}
+		}
+        complete_effect = { 			
+        }
+    }
+	WES_railroads_stage_4 = {                           
+        allowed = { 
+			tag = WES
+		}
+        available = {      
+			hidden_trigger = {
+				always = false
+			}
+        }
+        activation = {   
+			always = false
+        }
+        is_good = no                  
+        days_mission_timeout = 150            
+        timeout_effect = {
+			if = {
+				limit = {
+					OR = {
+						WES = {
+							has_manpower = 50000
+						}
+						WES = {
+							has_manpower > 50000
+						}
+					}
+					WES = {
+						has_manpower < 100000
+					}
+				}
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.115
+					}
+				}
+				set_variable = {
+					WES_agrarian_economy_production_speed_buildings_factor = 0.05
+				}
+				custom_effect_tooltip = WES_manpower_bonus_1_tt
+			}
+			if = {
+				limit = {
+					OR = {
+						WES = {
+							has_manpower = 100000
+						}
+						WES = {
+							has_manpower > 100000
+						}
+					}
+					WES = {
+						has_manpower < 200000
+					}
+				}
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.115
+					}
+				}
+				set_variable = {
+					WES_agrarian_economy_production_speed_buildings_factor = 0.1
+				}
+				custom_effect_tooltip = WES_manpower_bonus_2_tt
+			}
+			if = {
+				limit = {
+					OR = {
+						WES = {
+							has_manpower = 200000
+						}
+						WES = {
+							has_manpower > 200000
+						}
+					}
+					WES = {
+						has_manpower < 400000
+					}
+				}
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.115
+					}
+				}
+				set_variable = {
+					WES_agrarian_economy_production_speed_buildings_factor = 0.15
+				}
+				custom_effect_tooltip = WES_manpower_bonus_3_tt
+			}
+			if = {
+				limit = {
+					OR = {
+						WES = {
+							has_manpower = 400000
+						}
+						WES = {
+							has_manpower > 400000
+						}
+					}
+					WES = {
+						has_manpower < 550000
+					}
+				}
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.115
+					}
+				}
+				set_variable = {
+					WES_agrarian_economy_production_speed_buildings_factor = 0.2
+				}
+				custom_effect_tooltip = WES_manpower_bonus_4_tt
+			}
+			if = {
+				limit = {
+					OR = {
+						WES = {
+							has_manpower = 550000
+						}
+						WES = {
+							has_manpower > 550000
+						}
+					}
+				}
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.115
+					}
+				}
+				set_variable = {
+					WES_agrarian_economy_production_speed_buildings_factor = 0.25
+				}
+				custom_effect_tooltip = WES_manpower_bonus_5_tt
+			}
+			if = {
+				limit = {
+					WES = {
+						has_manpower < 50000
+					}
+				}
+				WES = {
+					country_event = {
+						days = 0
+						id = WES_event.116
 					}
 				}
 			}
