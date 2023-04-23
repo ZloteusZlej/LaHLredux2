@@ -2,6 +2,9 @@ shared_focus = {
 	id = SUS_the_crimson_king
 	icon = GFX_goal_SUS_the_crimson_king
 	cost = 4.3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_the_crimson_king"
+    }
 	x = 25
 	y = 0
 }
@@ -9,6 +12,9 @@ shared_focus = {
 	id = SUS_shock_brigades
 	icon = GFX_goal_SUS_shock_brigades
 	cost = 4.3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_shock_brigades"
+    }
 	prerequisite = {
 		focus = SUS_the_crimson_king
 	}
@@ -22,6 +28,9 @@ shared_focus = {
 	prerequisite = {
 		focus = SUS_shock_brigades
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_emergency_nationalization"
+    }
 	mutually_exclusive = {
 		focus = SUS_trade_union_fundings
 	}
@@ -35,6 +44,9 @@ shared_focus = {
 	prerequisite = {
 		focus = SUS_shock_brigades
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_trade_union_fundings"
+    }
 	mutually_exclusive = {
 		focus = SUS_emergency_nationalization
 	}
@@ -45,6 +57,9 @@ shared_focus = {
 	id = SUS_free_british_youth
 	icon = GFX_goal_SUS_free_british_youth
 	cost = 4.3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_free_british_youth"
+    }
 	prerequisite = {
 		focus = SUS_trade_union_fundings
 		focus = SUS_emergency_nationalization
@@ -57,6 +72,9 @@ shared_focus = {
 	id = SUS_witches_squadrons
 	icon = GFX_goal_SUS_witches_squadrons
 	cost = 4.3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_witches_squadrons"
+    }
 	prerequisite = {
 		focus = SUS_the_crimson_king
 	}
@@ -71,6 +89,9 @@ shared_focus = {
 	prerequisite = {
 		focus = SUS_witches_squadrons
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_assault_trainings"
+    }
 	mutually_exclusive = {
 		focus = SUS_tory_menace 
 	}
@@ -85,6 +106,9 @@ shared_focus = {
 	prerequisite = {
 		focus = SUS_witches_squadrons
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_tory_menace"
+    }
 	mutually_exclusive = {
 		focus = SUS_assault_trainings 
 	}
@@ -96,6 +120,9 @@ shared_focus = {
 	id = SUS_korean_present 
 	icon = GFX_goal_SUS_korean_present
 	cost = 4.3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_korean_present"
+    }
 	prerequisite = {
 		focus = SUS_tory_menace
 		focus = SUS_assault_trainings
@@ -108,6 +135,9 @@ shared_focus = {
 	id = SUS_croydon_route
 	icon = GFX_goal_SUS_croydon_route
 	cost = 4.3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_croydon_route"
+    }
 	prerequisite = {
 		focus = SUS_the_crimson_king
 	}
@@ -119,6 +149,9 @@ shared_focus = {
 	id = SUS_cherry_ripe
 	icon = GFX_goal_SUS_cherry_ripe
 	cost = 4.3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_cherry_ripe"
+    }
 	prerequisite = {
 		focus = SUS_croydon_route
 	}
@@ -133,6 +166,9 @@ shared_focus = {
 	id = SUS_operation_argo
 	icon = GFX_goal_SUS_operation_argo
 	cost = 4.3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_operation_argo"
+    }
 	prerequisite = {
 		focus = SUS_croydon_route
 	}
@@ -147,6 +183,9 @@ shared_focus = {
 	id = SUS_his_majestys_bureau
 	icon = GFX_goal_SUS_his_majestys_bureau
 	cost = 4.3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_his_majestys_bureau"
+    }
 	prerequisite = {
 		focus = SUS_operation_argo
 		focus = SUS_cherry_ripe
@@ -159,6 +198,9 @@ shared_focus = {
 	id = SUS_tame_the_red_dragon
 	icon = GFX_goal_SUS_tame_the_red_dragon
 	cost = 4.3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_tame_the_red_dragon"
+    }
 	prerequisite = {
 		focus = SUS_his_majestys_bureau
 	}
@@ -175,6 +217,9 @@ shared_focus = {
 shared_focus = {
 	id = SUS_no_empty_seats
 	icon = GFX_goal_SUS_no_empty_seats
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_no_empty_seats"
+    }
 	cost = 4.3
 	x = 40
 	y = 0
@@ -183,6 +228,9 @@ shared_focus = {
 shared_focus = {
 	id = SUS_serious_treasons_office
 	icon = GFX_goal_SUS_serious_treasons_office
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_serious_treasons_office"
+    }
 	prerequisite = {
 		focus = SUS_no_empty_seats
 	}
@@ -194,6 +242,9 @@ shared_focus = {
 shared_focus = {
 	id = SUS_aircraft_cannibalization
 	icon = GFX_goal_SUS_aircraft_cannibalization
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_aircraft_cannibalization"
+    }
 	prerequisite = {
 		focus = SUS_no_empty_seats
 	}
@@ -205,6 +256,9 @@ shared_focus = {
 shared_focus = {
 	id = SUS_plan_vecta
 	icon = GFX_goal_SUS_plan_vecta
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_plan_vecta"
+    }
 	prerequisite = {
 		focus = SUS_aircraft_cannibalization
 	}
@@ -219,6 +273,9 @@ shared_focus = {
 shared_focus = {
 	id = SUS_penal_auxiliaries
 	icon = GFX_goal_SUS_penal_auxiliaries
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_penal_auxiliaries"
+    }
 	prerequisite = {
 		focus = SUS_aircraft_cannibalization
 	}
@@ -233,6 +290,9 @@ shared_focus = {
 shared_focus = {
 	id = SUS_chollima_on_the_wing
 	icon = GFX_goal_SUS_chollima_on_the_wing
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_chollima_on_the_wing"
+    }
 	prerequisite = {
 		focus = SUS_aircraft_cannibalization
 	}
