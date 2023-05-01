@@ -388,7 +388,8 @@ unplanned_offensive = {
 	local_org_regain = -0.5
 }
 
-#LAHL DYNAMIC MODIFIERS##
+##LAHL DYNAMIC MODIFIERS##
+##WES##
 WES_rule_of_george_dynamic_modifier = { 
 	icon = GFX_sex
 	compliance_gain = WES_rule_of_george_compliance_gain #
@@ -496,7 +497,7 @@ WES_agrarian_economy = {
 	production_speed_buildings_factor = WES_agrarian_economy_production_speed_buildings_factor #
 	local_resources_factor =  WES_agrarian_economy_local_resources_factor #
 }
-
+##MRC##
 MRC_Spirit_Of_Neofolk = {
 	icon = GFX_
 	army_morale_factor = MRC_neospirit_army_morale_factor
@@ -513,3 +514,26 @@ MRC_Sound_Of_Neofolk = {
 	icon = GFX_
 	stability_factor = MRC_soundfolk_stability_factor
 }	
+##ESS##
+ESS_superb_british_forces = { 
+	icon = GFX_sex
+	mobilization_laws_cost_factor = ESS_superb_british_forces_mobilization_laws_cost_factor
+	conscription_factor = ESS_superb_british_forces_conscription_factor
+	#
+	army_org_factor = ESS_superb_british_forces_army_org
+	land_reinforce_rate =  ESS_superb_british_forces_army_land_reinforce_rate
+	#
+	special_forces_cap = ESS_superb_british_forces_special_forces_cap
+	special_forces_attack_factor = ESS_superb_british_forces_special_forces_attack_factor
+	special_forces_defence_factor = ESS_superb_british_forces_special_forces_defence_factor
+	#
+	mechanized_attack_factor = WES_royal_army_mechanized_attack
+	mechanized_defence_factor = WES_royal_army_mechanized_defence
+	#
+	army_armor_speed_factor = WES_royal_army_armor_speed
+	army_armor_attack_factor = WES_royal_army_armor_attack
+	army_armor_defence_factor = WES_royal_army_armor_defence
+	#
+	army_artillery_attack_factor = ESS_superb_british_forces_artillery_attack
+	air_close_air_support_org_damage_factor = ESS_superb_british_forces_air_close_air_support_org_damage_factor
+}
