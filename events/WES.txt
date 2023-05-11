@@ -1635,14 +1635,13 @@ country_event = { #Deal with mercenaries
 }
 
 country_event = { 
-	id = WES_event.70
+	id = WES_event.70 #George Arrives
 	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.70"}
 	title = WES_event.70.t
 	desc = WES_event.70.d
 	is_triggered_only = yes
 	option = {
 	    name = WES_event.70.a
-		add_political_power = 100
 		add_to_variable = { 
 			WES_george_legitimacy_level = 10
 		}
@@ -1694,7 +1693,7 @@ country_event = {
     }
 }
 
-country_event = { 
+country_event = { #George Trait
 	id = WES_event.72
 	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.72"}
 	title = WES_event.72.t
@@ -1706,45 +1705,42 @@ country_event = {
 				WES_george_legitimacy_level = 3
 			}
 			add_trait = {
-				 character = WES_george_vii
-				 slot = country_leader
-				 trait = patron_of_medicine
+				character = WES_george_vii
+				slot = country_leader
+				trait = patron_of_medicine
 			}
 	}
-	
 	option = {
 	    name = WES_event.72.b
 			add_to_variable = { 
 				WES_george_legitimacy_level = 3
 			}
 			add_trait = {
-				 character = WES_george_vii
-				 slot = country_leader
-				 trait = chief_of_raf
+				character = WES_george_vii
+				slot = country_leader
+				trait = chief_of_raf
 			}
 	}
-	
 	option = {
 	    name = WES_event.72.c
 			add_to_variable = { 
 				WES_george_legitimacy_level = 3
 			}
 			add_trait = {
-				 character = WES_george_vii
-				 slot = country_leader
-				 trait = spiritual_leader_g
+				character = WES_george_vii
+				slot = country_leader
+				trait = spiritual_leader_g
 			}
 	}
-	
 	option = {
 	    name = WES_event.72.e
-		add_to_variable = { 
-			WES_george_legitimacy_level = 3
-		}
+			add_to_variable = { 
+				WES_george_legitimacy_level = 3
+			}
 			add_trait = {
-				 character = WES_george_vii
-				 slot = country_leader
-				 trait = new_classical_connoisseur
+				character = WES_george_vii
+				slot = country_leader
+				trait = new_classical_connoisseur
 			}
 	}
 }
