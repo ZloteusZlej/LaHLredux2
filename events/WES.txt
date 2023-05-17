@@ -1635,6 +1635,44 @@ country_event = { #Deal with mercenaries
 }
 
 country_event = { 
+	id = WES_event.65 #Soldier King
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.65"}
+	title = WES_event.65.t
+	desc = WES_event.65.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.65.a
+		add_to_variable = { 
+			WES_george_legitimacy_level = 10
+		}
+		WES = {
+			add_political_power = 45
+			add_war_support = 0.05
+		}
+		custom_effect_tooltip = WES_legitimacy_medium_plus
+    }
+	option = {
+	    name = WES_event.65.b
+		WES = {
+			army_experience = 25
+		}
+    }
+	option = {
+	    name = WES_event.65.c
+		WES = {
+			random_owned_controlled_state = {	
+				add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+    }
+}
+
+country_event = { 
 	id = WES_event.70 #George Arrives
 	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.70"}
 	title = WES_event.70.t
@@ -1645,6 +1683,10 @@ country_event = {
 		add_to_variable = { 
 			WES_george_legitimacy_level = 10
 		}
+		WES = {
+			activate_advisor = WES_roger_scruton
+		}
+		custom_effect_tooltip = WES_legitimacy_medium_plus
     }
 }
 
@@ -1999,6 +2041,7 @@ country_event = {
 			var = WES_george_legitimacy_level
 			value = 5
 		}
+		custom_effect_tooltip = WES_legitimacy_small_plus
 	}
 	
 	option = {
@@ -2013,6 +2056,7 @@ country_event = {
 			var = WES_george_legitimacy_level
 			value = 5
 		}
+		custom_effect_tooltip = WES_legitimacy_small_plus
 	}
 	
 	option = {
@@ -2020,33 +2064,24 @@ country_event = {
 		WES = {
 			add_timed_idea = {
 				idea = WES_construction_engineering
-				days = 180
+				days = 200
 			}
-		}
-		add_to_variable = { 
-			var = WES_george_legitimacy_level
-			value = 5
+			add_political_power = -100
 		}
 	}
 	
 	option = {
-		name = WES_event.78.d
+		name = WES_event.78.e
 		WES = {
 			random_owned_controlled_state = {	
 				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				
-				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
-				}
-			
-				add_extra_state_shared_building_slots = 4
+				}	
+				add_extra_state_shared_building_slots = 1
 			}
+			add_political_power = -25
 		}
 	}
 }
@@ -2070,6 +2105,7 @@ country_event = {
 				days = 1
 				id = WES_event.80
 			}
+			custom_effect_tooltip = WES_legitimacy_small_plus
 		}
 	}	
 	option = {
@@ -2108,6 +2144,7 @@ country_event = {
 				days = 1
 				id = WES_event.81
 			}
+			custom_effect_tooltip = WES_legitimacy_small_plus
 		}
 	}	
 	option = {
@@ -2146,6 +2183,7 @@ country_event = {
 				days = 1
 				id = WES_event.82
 			}
+			custom_effect_tooltip = WES_legitimacy_small_plus
 		}
 	}
 	option = {
@@ -2184,6 +2222,7 @@ country_event = {
 				days = 1
 				id = WES_event.83
 			}
+			custom_effect_tooltip = WES_legitimacy_small_plus
 		}
 	}
 	option = {
@@ -2192,10 +2231,10 @@ country_event = {
 			random_owned_controlled_state = {	
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 3
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 			}
 		}	
 	}		
@@ -2218,6 +2257,7 @@ country_event = {
 				var = WES_george_legitimacy_level
 				value = 2
 			}
+			custom_effect_tooltip = WES_legitimacy_small_plus
 		}
 	}		
 		
@@ -2227,10 +2267,10 @@ country_event = {
 			random_owned_controlled_state = {	
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 			}
 		}	
 	}		
