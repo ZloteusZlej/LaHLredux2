@@ -425,6 +425,40 @@ ideas = {
 				required_garrison_factor = 0.25
 			}
 		}
+		ESS_broken_hierarchy_1 = {
+			
+			picture = GFX_idea_ESS_broken_hierarchy
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = -0.15
+				conscription_factor = -0.15
+				war_support_factor = -0.15
+				required_garrison_factor = 0.15
+			}
+		}
+		ESS_broken_hierarchy_2 = {
+			
+			picture = GFX_idea_ESS_broken_hierarchy
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = -0.08
+				conscription_factor = -0.08
+				war_support_factor = -0.08
+				required_garrison_factor = 0.08
+			}
+		}
 		ESS_london_in_flames = {
 			
 			picture = GFX_idea_ESS_london_in_flames
@@ -479,6 +513,25 @@ ideas = {
 				consumer_goods_factor = 0.11
 			}
 		}
+		ESS_london_in_flames_3 = {
+			
+			picture = GFX_idea_ESS_london_in_flames
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.10
+				industrial_capacity_factory = -0.10
+				resistance_decay = -0.02
+				local_non_core_manpower = -0.2
+				consumer_goods_factor = 0.08
+			}
+		}
+		
 		ESS_temporary_serfdom = {
 			
 			picture = 

@@ -1385,54 +1385,132 @@ ESS_take_what_is_ours = {
 		}
 	}
 	
+ESS_repolish_brilliants = {
+	ESS_aboba = {
+		cost = 20
+		days_remove = 30
+		remove_effect = {
+			
+		}
+		modifier = {
+			production_speed_buildings_factor = 0.15
+			production_lack_of_resource_penalty_factor = -0.15
+			production_factory_efficiency_gain_factor = 0.1
+		}
+		complete_effect = {
+			custom_effect_tooltip = ESS_band_loyalty_minus.tt
+			add_to_variable = {
+				var = ESS_north_west_region_loyalty
+				value = -10
+			}
+		}	
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ESS_rebuild_oxford = {
+	    available = {
+			1153 = {
+				is_controlled_by = ESS
+			}	
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1153
+			}
+		}
+		complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision Complete ESS_rebuild_oxford"
+		}
+		days_remove = 50
+		cost = 80
+		remove_effect = {
+		
+		}
+	}
+	ESS_rebuild_cambridge = {
+	    available = {
+			1005 = {
+				is_controlled_by = ESS
+			}	
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1005
+			}
+		}
+		complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision Complete ESS_rebuild_cambridge"
+		}
+		days_remove = 50
+		cost = 80
+		remove_effect = {
+		
+		}
+	}
+	ESS_rebuild_republican_college = {
+	    available = {
+			1160 = {
+				is_controlled_by = ESS
+			}	
+		}
+		visible = {
+			1160 = {
+				is_controlled_by = ESS
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1160
+			}
+		}
+		complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision Complete ESS_rebuild_republican_college"
+		}
+		days_remove = 50
+		cost = 80
+		remove_effect = {
+		
+		}
+	}
+	ESS_rebuild_bristol = {
+	    available = {
+			1006 = {
+				is_controlled_by = ESS
+			}	
+		}
+		
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1006
+			}
+		}
+		complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision Complete ESS_rebuild_bristol"
+		}
+		days_remove = 50
+		cost = 80
+		remove_effect = {
+		
+		}
+	}
+}
 
 
 
-
-ESS_prisoners_of_war = {
-    ESS_deal_galloway = {
-	    visible = {
-            has_country_flag = ENG_galloway_here
-        } 
-	}
-    ESS_deal_mogg = {
-	    visible = {
-            has_country_flag = ENG_mogg_here
-        } 
-	}
-    ESS_deal_pearce = {
-	    visible = {
-            has_country_flag = ENG_pearce_here
-        } 
-	}
-    ESS_deal_gunzel = {
-	    visible = {
-            has_country_flag = ENG_gunzel_here
-        } 
-	}
-    ESS_deal_klumb = {
-	    visible = {
-            has_country_flag = ENG_klumb_here
-        } 
-	}
-    ESS_deal_southgate = {
-	    visible = {
-            has_country_flag = ENG_southgate_here
-        } 
-	}
-    ESS_deal_corbyn = {
-	    visible = {
-            has_country_flag = ENG_corbyn_here
-        } 
-	}
-    ESS_deal_george = {
-	    visible = {
-            has_country_flag = ENG_george_here
-        } 
-	}
-    ESS_deal_henry = {
-	    visible = {
-            has_country_flag = ENG_henry_here
-        } 
-	}
-}	    

@@ -1625,6 +1625,10 @@
 					idea = ESS_repuzzling_social_order
 					days = 130
 				}
+			swap_ideas = {
+				remove_idea = ESS_broken_hierarchy
+				add_idea = ESS_broken_hierarchy_1
+			}
 			}
 		relative_position_id = ESS_constructing_utopia
 		prerequisite = {
@@ -1641,6 +1645,10 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_outgrowing_god"
+			swap_ideas = {
+				remove_idea = ESS_broken_hierarchy_1
+				add_idea = ESS_broken_hierarchy_2
+			}
 		}
 		mutually_exclusive = {
 			focus = ESS_renovationism
@@ -1660,6 +1668,12 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_militant_atheism"
+			 ESS = {
+			    country_event = {
+				    days = 1
+					id = ESS_event.44
+				}
+			}
 		}
 		relative_position_id = ESS_kickstart_institutions
 		prerequisite = {
@@ -1676,6 +1690,10 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_renovationism"
+			swap_ideas = {
+				remove_idea = ESS_broken_hierarchy_1
+				add_idea = ESS_broken_hierarchy_2
+			}
 		}
 		mutually_exclusive = {
 			focus = ESS_renovationism
@@ -1743,6 +1761,7 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_civil_control"
+			remove_idea = ESS_broken_hierarchy_2
 		}
 		relative_position_id = ESS_kickstart_institutions
 		prerequisite = {
@@ -1764,6 +1783,7 @@
 				remove_idea = lhl_regime_provisional_government
 				add_idea = lhl_regime_partocracy
 			} 
+			
 		}
 		relative_position_id = ESS_kickstart_institutions
 		prerequisite = {
@@ -1832,6 +1852,10 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_light_in_the_dark"
+			swap_ideas = {
+				remove_idea = ESS_london_in_flames_2
+				add_idea = ESS_london_in_flames_3
+			}
 		}
 		relative_position_id = ESS_kickstart_institutions
 		prerequisite = {
@@ -1874,6 +1898,8 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_universal_basic_income"
+			remove_idea = ESS_london_in_flames_3
+
 		}
 		relative_position_id = ESS_kickstart_institutions
 		prerequisite = {
