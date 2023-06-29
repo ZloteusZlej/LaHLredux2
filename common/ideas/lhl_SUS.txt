@@ -86,4 +86,147 @@ ideas = {
 			}
 		}
 	}
+
+	country = {
+		SUS_Red_Brigades_1 = {
+
+			allowed = {
+				original_tag = SUS
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_Red_Brigades_1"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				supply_factor = 0.15
+				production_speed_buildings_factor = 0.05
+			}
+
+		}
+		SUS_Red_Brigades_2 = {
+
+			allowed = {
+				original_tag = SUS
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_Red_Brigades_2"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				supply_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				conscription_factor = 0.2
+			}
+
+		}
+
+		SUS_Wessex = {
+
+			allowed = {
+				original_tag = SUS
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_Wessex"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			targeted_modifier = {
+                tag = WES
+                attack_bonus_against = 0.1
+                breakthrough_bonus_against = 0.15
+            }
+
+		}
+
+		SUS_Kent = {
+
+			allowed = {
+				original_tag = SUS
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_Kent"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			targeted_modifier = {
+                tag = KNT
+                defense_bonus_against = 0.1
+            }
+			modifier = {
+				army_defence_factor = 0.05
+			}
+
+		}
+
+		SUS_Cherry_Ripe = {
+
+			allowed = {
+				original_tag = SUS
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_Cherry_Ripe"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				decryption_factor = 0.05
+				initiative_factor = 0.1
+				recon_factor_while_entrenched = 0.2
+				planning_speed = 0.25
+			}
+
+		}
+	}
+	hidden_ideas = {
+		SUS_initial_push = {
+			allowed = { original_tag = SUS }
+			modifier = {
+				army_attack_factor = 0.05
+				experience_gain_army = -0.05
+				army_speed_factor = 0.1
+			}
+		}
+	}
 }
