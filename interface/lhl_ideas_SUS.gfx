@@ -10,5 +10,23 @@ spriteTypes = {
 		name = "GFX_idea_ENG_dynastic_crisis"
 		texturefile = "gfx/interface/ideas/ENG/idea_ENG_dynastic_crisis.dds"
 	}	
+
+   spriteType = { 
+     name = "GFX_unit_amazon_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/unit_militia_icon.dds"  
+   }
+
+   spriteType = { 
+     name = "GFX_unit_amazon_icon_medium_white" # Do not omit "medium"						
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_militia_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = {
+     name = "GFX_unit_amazon_icon_small"
+     texturefile = "gfx/texticons/unit_militia_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }	
 }
 

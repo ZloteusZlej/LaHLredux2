@@ -64,6 +64,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_trade_union_fundings"
 		add_political_power = 100
 		add_stability = -0.025
+		add_ideas = SUS_Daily_PP_Gain
     }
 	mutually_exclusive = {
 		focus = SUS_emergency_nationalization
@@ -246,6 +247,17 @@ shared_focus = {
 	cost = 4.3
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_operation_argo"
+        #add_equipment_to_stockpile = {
+        #    type = tac_bomber
+        #    amount = 75
+        #    producer = PER
+        #}
+		PER = {
+		    add_opinion_modifier = {
+                target = SUS
+                modifier = medium_decrease
+            }
+		}
     }
 	prerequisite = {
 		focus = SUS_croydon_route
@@ -278,8 +290,16 @@ shared_focus = {
 	cost = 4.3
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_tame_the_red_dragon"
-        country_event = { id = SUS_event.300 }
+		declare_war_on = { 
+			target = WES 
+			type = annex_everything
+		}
+        add_timed_idea = {
+            idea = SUS_initial_push
+            days = 30
+        }
     }
+	select_effect = { country_event = { id = SUS_event.300 } }
 	prerequisite = {
 		focus = SUS_his_majestys_bureau
 	}
