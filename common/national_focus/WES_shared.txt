@@ -56,7 +56,7 @@ shared_focus = {
 		}
 	}
 	cost = 3.5
-	x = 17
+	x = 21
 	y = 2
 }
 
@@ -64,7 +64,7 @@ shared_focus = {
 	id = WES_trial_wisdom
 	icon = GFX_goal_WES_test_of_wisdom
 	prerequisite = {
-        focus = WES_strength_monarchy
+        focus = WES_kings_speech
 	}
 	select_effect = {
 		WES = {
@@ -91,7 +91,7 @@ shared_focus = {
 	id = WES_trial_courage
 	icon = GFX_goal_WES_trial_of_courage
 	prerequisite = {
-        focus = WES_strength_monarchy
+        focus = WES_kings_speech
 	}
 	select_effect = {
 		WES = {
@@ -154,7 +154,7 @@ shared_focus = {
         focus = WES_virtue_test
 	}
 	prerequisite = {
-        focus = WES_kings_speech
+        focus = WES_charity_campaigns
 	}
 	cost = 3.5
 	x = 17
@@ -212,7 +212,7 @@ shared_focus = {
 	id = WES_common_men
 	icon = GFX_goal_WES_common_men
 	prerequisite = {
-        focus = WES_worthie_england
+        focus = WES_strength_monarchy
 	}
 	completion_reward = {
 		WES = {
@@ -225,8 +225,8 @@ shared_focus = {
 		}
 	}
 	cost = 3.5
-	x = 21
-	y = 2
+	x = 20
+	y = 3
 }
 
 shared_focus = {
@@ -234,6 +234,9 @@ shared_focus = {
 	icon = GFX_goal_WES_Charity
 	prerequisite = {
         focus = WES_common_men
+	}
+	prerequisite = {
+        focus = WES_soldier_king
 	}
 	completion_reward = {
 		 WES = {
@@ -247,15 +250,15 @@ shared_focus = {
 		}
 	}
 	cost = 3.5
-	x = 20
-	y = 3
+	x = 21
+	y = 4
 }
 
 shared_focus = {
 	id = WES_soldier_king
 	icon = GFX_goal_WES_Soldier_King
 	prerequisite = {
-        focus = WES_common_men
+        focus = WES_strength_monarchy
 	}
 	completion_reward = {
 		WES = {
@@ -291,14 +294,11 @@ shared_focus = {
 	id = WES_kings_speech
 	icon = GFX_goal_WES_Kings_speech
 	prerequisite = {
-        focus = WES_charity_campaigns
-	}
-	prerequisite = {
-        focus = WES_soldier_king
+        focus = WES_worthie_england
 	}
 	cost = 3.5
-	x = 21
-	y = 4
+	x = 17
+	y = 2
 }
 
 shared_focus = {
