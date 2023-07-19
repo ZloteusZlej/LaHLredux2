@@ -318,6 +318,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_no_empty_seats
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_no_empty_seats"
+		add_ideas = SUS_no_empty_seats_idea
     }
 	cost = 4.3
 	x = 40
@@ -329,6 +330,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_serious_treasons_office
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_serious_treasons_office"
+		custom_effect_tooltip = SUS_serious_treasons_office_tt
     }
 	prerequisite = {
 		focus = SUS_no_empty_seats
@@ -343,6 +345,18 @@ shared_focus = {
 	icon = GFX_goal_SUS_aircraft_cannibalization
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_aircraft_cannibalization"
+		SUS = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_1
+				amount = 10
+				producer = SUS
+			}
+			add_equipment_to_stockpile = {
+				type = CAS_equipment_1
+				amount = 15
+				producer = SUS
+			}
+		}
     }
 	prerequisite = {
 		focus = SUS_no_empty_seats
@@ -357,6 +371,18 @@ shared_focus = {
 	icon = GFX_goal_SUS_plan_vecta
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_plan_vecta"
+		add_timed_idea = {
+			idea = SUS_plan_vecta_idea
+			days = 90
+		}
+		1000 = {
+			add_state_modifier = {
+				modifier = {
+					army_attack_factor = 0.1
+				}
+				days = 90
+			}
+		}
     }
 	prerequisite = {
 		focus = SUS_aircraft_cannibalization
@@ -374,6 +400,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_penal_auxiliaries
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_penal_auxiliaries"
+		add_timed_idea = {
+			idea = SUS_penal_auxiliaries_idea
+			days = 100
+		}
     }
 	prerequisite = {
 		focus = SUS_aircraft_cannibalization
@@ -391,7 +421,30 @@ shared_focus = {
 	icon = GFX_goal_SUS_chollima_on_the_wing
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_chollima_on_the_wing"
-    }
+		custom_effect_tooltip = SUS_chollima_on_the_wing_tt
+		division_template = {
+			name = "DPRK Expeditionary Corps"
+			division_names_group = KOR_ARM_01
+
+			regiments = {
+				MBT = { x = 0 y = 0 }	
+				MBT = { x = 0 y = 1 }
+				MBT = { x = 0 y = 2 }	
+				MBT = { x = 0 y = 3 }
+				MBT = { x = 0 y = 4 }
+				IFV = { x = 1 y = 0 }
+				IFV = { x = 1 y = 1 }
+				IFV = { x = 1 y = 2 }
+				IFV = { x = 1 y = 3 }
+				IFV = { x = 1 y = 4 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 } 
+				artillery = { x = 0 y = 1 } 		
+			}
+			priority = 2
+		}
+	}
 	prerequisite = {
 		focus = SUS_aircraft_cannibalization
 	}

@@ -30,12 +30,53 @@ ideas = {
 			
 			available = {
 				ROOT = {
+					NOT = {has_completed_focus = SUS_serious_treasons_office}
 					owns_state = 1001
 				}
 			}
 			
 			visible = {
 				ROOT = {
+					NOT = {has_completed_focus = SUS_serious_treasons_office}
+					owns_state = 1001
+				}
+			}
+			
+			equipment_bonus = {
+				screen_ship = {
+					build_cost_ic = -0.2
+					fire_range = 0.2
+					naval_range = 0.2
+					naval_speed = 0.1
+				}
+			}
+			
+			modifier = {
+				research_bonus = {
+					naval_equipment = 0.1
+				}
+				navy_screen_attack_factor = 0.15
+			}
+		}
+	}
+	
+	naval_manufacturer = { 
+		designer = yes
+		
+		bae_systems_portsmouth_cheap = {
+			
+			cost = 75
+			
+			available = {
+				ROOT = {
+					has_completed_focus = SUS_serious_treasons_office
+					owns_state = 1001
+				}
+			}
+			
+			visible = {
+				ROOT = {
+					has_completed_focus = SUS_serious_treasons_office
 					owns_state = 1001
 				}
 			}
@@ -215,6 +256,80 @@ ideas = {
 				initiative_factor = 0.1
 				recon_factor_while_entrenched = 0.2
 				planning_speed = 0.25
+			}
+
+		}
+		
+		SUS_no_empty_seats_idea = {
+
+			allowed = {
+				original_tag = SUS
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_no_empty_seats_idea"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				base_fuel_gain_factor = 0.1
+			}
+
+		}
+		
+		SUS_penal_auxiliaries_idea = {
+
+			allowed = {
+				original_tag = SUS
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_penal_auxiliaries_idea"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				dig_in_speed_factor = 0.1
+				supply_factor = 0.1
+			}
+
+		}
+		
+		SUS_plan_vecta_idea = {
+
+			allowed = {
+				original_tag = SUS
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_plan_vecta_idea"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			targeted_modifier = {
+				tag = WES
+				breakthrough_bonus_against = 0.1
 			}
 
 		}
