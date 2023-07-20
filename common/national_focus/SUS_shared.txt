@@ -375,13 +375,11 @@ shared_focus = {
 			idea = SUS_plan_vecta_idea
 			days = 90
 		}
-		1000 = {
-			add_state_modifier = {
-				modifier = {
-					army_attack_factor = 0.1
-				}
-				days = 90
-			}
+		add_province_modifier = {
+			tag = WES
+			static_modifiers = { SUS_plan_vecta_mod }
+			province = 15071
+			days = 90
 		}
     }
 	prerequisite = {
@@ -422,28 +420,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_chollima_on_the_wing"
 		custom_effect_tooltip = SUS_chollima_on_the_wing_tt
-		division_template = {
-			name = "DPRK Expeditionary Corps"
-			division_names_group = KOR_ARM_01
-
-			regiments = {
-				MBT = { x = 0 y = 0 }	
-				MBT = { x = 0 y = 1 }
-				MBT = { x = 0 y = 2 }	
-				MBT = { x = 0 y = 3 }
-				MBT = { x = 0 y = 4 }
-				IFV = { x = 1 y = 0 }
-				IFV = { x = 1 y = 1 }
-				IFV = { x = 1 y = 2 }
-				IFV = { x = 1 y = 3 }
-				IFV = { x = 1 y = 4 }
-			}
-			support = {
-				engineer = { x = 0 y = 0 } 
-				artillery = { x = 0 y = 1 } 		
-			}
-			priority = 2
-		}
+		load_oob = "SUS_Dprk_Expeditionaries"
 	}
 	prerequisite = {
 		focus = SUS_aircraft_cannibalization
@@ -453,5 +430,73 @@ shared_focus = {
 	}
 	cost = 4.3
 	x = 42
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_dance_to_the_radio
+	icon = GFX_goal_SUS_dance_to_the_radio
+	available = {
+		SUS = {
+			has_completed_focus = SUS_the_crimson_king
+			NOT = {
+				country_exists = WES
+				country_exists = KNT
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_dance_to_the_radio"
+	}
+	cost = 4.3
+	x = 25
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_court_and_country
+	icon = GFX_goal_SUS_dance_to_the_radio
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_court_and_country"
+	}
+	prerequisite = {
+		focus = SUS_dance_to_the_radio
+	}
+	relative_position_id = SUS_dance_to_the_radio
+	cost = 4.3
+	x = -1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_secure_human_capital
+	icon = GFX_goal_SUS_secure_human_capital
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_secure_human_capital"
+	}
+	prerequisite = {
+		focus = SUS_dance_to_the_radio
+	}
+	relative_position_id = SUS_dance_to_the_radio
+	cost = 4.3
+	x = 1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_a_scapegoat
+	icon = GFX_goal_SUS_a_scapegoat
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_a_scapegoat"
+	}
+	prerequisite = {
+		focus = SUS_court_and_country
+	}
+	prerequisite = {
+		focus = SUS_secure_human_capital
+	}
+	relative_position_id = SUS_dance_to_the_radio
+	cost = 4.3
+	x = 0
 	y = 2
 }
