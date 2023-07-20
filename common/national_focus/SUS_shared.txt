@@ -512,6 +512,16 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_dance_to_the_radio"
+		clamp_variable = {
+			var = EAG_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = EAG_coring_cost
+			value = -20
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_20_tt
 	}
 	cost = 4.3
 	x = 25
@@ -523,6 +533,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_dance_to_the_radio
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_court_and_country"
+		country_event = { id = SUS_event.500 }
 	}
 	prerequisite = {
 		focus = SUS_dance_to_the_radio
@@ -554,6 +565,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_a_scapegoat
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_a_scapegoat"
+		country_event = { id = SUS_event.501 }
 	}
 	prerequisite = {
 		focus = SUS_court_and_country
