@@ -256,15 +256,15 @@ country_event = {
     }	
 }
 country_event = { ###Land###
-	id = ESS_event.5a
-	title = ESS_event.5a.t
-	desc = ESS_event.5a.d
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.5.1"}
+	id = ESS_event.5_1
+	title =ESS_event.5_1.t
+	desc = ESS_event.5_1.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.5_1"}
 	
     fire_only_once = yes	
 	is_triggered_only = yes
     option = {
-		name = ESS_event.5a.a
+		name = ESS_event.5_1.a
 		   ESS = {
 				retire_country_leader = yes
 				set_country_flag = ESS_nick_here
@@ -273,15 +273,15 @@ country_event = { ###Land###
 	}	
 	
 country_event = { ###Dawkins###
-	id = ESS_event.5b
-	title = ESS_event.5b.t
-	desc = ESS_event.5b.d
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.5.2"}
+	id = ESS_event.5_2
+	title = ESS_event.5_2.t
+	desc = ESS_event.5_2.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.5_2"}
 	
     fire_only_once = yes	
 	is_triggered_only = yes
     option = {
-		name = ESS_event.5b.a
+		name = ESS_event.5_2.a
 		    load_focus_tree = ESS_dawkins_1
 		    ESS = {
 				retire_country_leader = yes
@@ -292,17 +292,18 @@ country_event = { ###Dawkins###
 	}
 }
 country_event = { ###Collins###
-	id = ESS_event.5c
-	title = ESS_event.5c.t
-	desc = ESS_event.5c.d
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.5.2"}
+	id = ESS_event.5_3
+	title = ESS_event.5_3.t
+	desc = ESS_event.5_3.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.5_3"}
 	
     fire_only_once = yes	
 	is_triggered_only = yes
     option = {
-		name = ESS_event.5c.a
+		name = ESS_event.5_3.a
 		    load_focus_tree = ESS_collins_1
 		    ESS = {
+			retire_country_leader = yes
 				set_politics = {
 					ruling_party = hegemonism
 				}
