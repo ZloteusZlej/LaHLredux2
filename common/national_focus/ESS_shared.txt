@@ -1345,6 +1345,13 @@
 					instant_build = yes
 				}
 			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		relative_position_id = ESS_british_diamonds
 		prerequisite = {
@@ -1377,6 +1384,8 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_paperclippin"
+			add_research_slot = 1
+			###Add scientist advisors###
 		}
 		relative_position_id = ESS_british_diamonds
 		prerequisite = {
@@ -1393,6 +1402,21 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_rising_tide"
+			###Add descisions to build more in Somerset, Kent, Manchester###
+			5304 = {
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_province_modifier = {
+					static_modifiers = { tidal_powerplants_infrastructure }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
 		}
 		relative_position_id = ESS_british_diamonds
 		prerequisite = {
@@ -1412,6 +1436,31 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_e_m_i"
+			###Add new/buff electric motors/PROBABLY WITH THE NEW DLC SHIT###
+			random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 		relative_position_id = ESS_british_diamonds
 		prerequisite = {
@@ -1428,6 +1477,7 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_data_trade"
+			###Buff for support / New DLC content##
 		}
 		relative_position_id = ESS_british_diamonds
 		prerequisite = {
@@ -1464,6 +1514,7 @@
 				name = "Hadrian's Firewall"
 				icon = GFX_intelligence_agency_logo_ess_1
 			}
+			
 		}
 		relative_position_id = ESS_british_diamonds
 		prerequisite = {
@@ -2022,7 +2073,7 @@
 	}
 	
 	shared_focus = {
-		id = ESS_hyperelite_army_forces
+		id = ESS_hyperelite_army_forces ###REDO DUE TO THE NEW DLC###
 		icon = GFX_goal_ESS_hyperelite_army_forces
 		cost = 3
 		completion_reward = {
