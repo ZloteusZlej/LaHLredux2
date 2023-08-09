@@ -1681,7 +1681,7 @@
 				remove_idea = ESS_broken_hierarchy
 				add_idea = ESS_broken_hierarchy_1
 			}
-			}
+		}
 		relative_position_id = ESS_constructing_utopia
 		prerequisite = {
 			focus = ESS_constructing_utopia
@@ -3151,7 +3151,11 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_summon_the_congress"
-			
+			###Add some meat###
+			swap_ideas = {
+				remove_idea = ESS_interlude
+				add_idea = ESS_interlude_1
+			} 
 		}
 		x = 16
 		y = 7
@@ -3182,7 +3186,10 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_patris_carde"
-			
+			swap_ideas = {
+				remove_idea = ESS_london_in_flames
+				add_idea = ESS_london_in_flames_1
+			} 
 		}
 		relative_position_id = ESS_summon_the_congress
 		prerequisite = {
@@ -3283,6 +3290,10 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_generals_ministers"
+			swap_ideas = {
+				remove_idea = ESS_broken_hierarchy
+				add_idea = ESS_broken_hierarchy_1
+			} 
 		}
 		relative_position_id = ESS_summon_the_congress
 		prerequisite = {
@@ -3299,7 +3310,10 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_2nd_battle_of_cable_street"
-			
+			swap_ideas = {
+				remove_idea = ESS_empty_throne
+				add_idea = ESS_empty_throne_1
+			} 
 		}
 		relative_position_id = ESS_summon_the_congress
 		prerequisite = {
@@ -3316,7 +3330,10 @@
 		cost = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ESS_beating_heart"
-			
+			swap_ideas = {
+				remove_idea = ESS_interlude_1
+				add_idea = ESS_interlude_2
+			}
 		}
 		relative_position_id = ESS_summon_the_congress
 		prerequisite = {
