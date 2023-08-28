@@ -119,7 +119,10 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_assault_trainings"
 		add_war_support = 0.05
-		add_ideas = SUS_Wessex
+		add_timed_idea = {
+			idea = SUS_Wessex
+			days = 225
+		}
 		add_popularity = {
 			ideology = regressionism
 			popularity = -0.03
@@ -146,7 +149,10 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_tory_menace"
 		add_war_support = 0.05
-		add_ideas = SUS_Kent
+		add_timed_idea = { 
+		idea = SUS_Kent
+		days = 225
+		}
 		add_popularity = {
 			ideology = right_populism
 			popularity = -0.05
@@ -247,11 +253,11 @@ shared_focus = {
 	cost = 4.3
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_operation_argo"
-        #add_equipment_to_stockpile = {
-        #    type = tac_bomber
-        #    amount = 75
-        #    producer = PER
-        #}
+        add_equipment_to_stockpile = {
+            type = uav_equipment
+            amount = 75
+            producer = PER
+        }
 		PER = {
 		    add_opinion_modifier = {
                 target = SUS
@@ -298,6 +304,42 @@ shared_focus = {
             idea = SUS_initial_push
             days = 30
         }
+		if = {
+			limit = {
+				SUS = {
+					has_country_flag = SUS_landing
+				}
+			}
+			SUS = {
+				create_unit = {
+					prioritize_location = 2310
+					division = "name = \"Black Widows\" division_template = \"Amazon Regiment\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+					owner = SUS
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				SUS = {
+					has_country_flag = SUS_uprising
+				}
+			}
+			load_oob = SUS_workers_uprising
+		}
+		if = {
+			limit = {
+				SUS = {
+					has_country_flag = SUS_blackout
+				}
+			}
+			WES = {
+				add_timed_idea = {
+				ideas = WES_electromagnetic_warfare
+				days = 35
+				}
+			}
+		}
     }
 	select_effect = { country_event = { id = SUS_event.300 } }
 	prerequisite = {
