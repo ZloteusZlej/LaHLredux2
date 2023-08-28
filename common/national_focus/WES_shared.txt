@@ -48,13 +48,17 @@ shared_focus = {
         focus = WES_worthie_england
 	}
 	completion_reward = {
-		 WES = {
+		WES = {
 			add_political_power = 75
 			country_event = {
 				days = 1
 				id = WES_event.71
 			}
 		}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 5
+		}
+		custom_effect_tooltip =  WES_legitimacy_small_plus
 	}
 	cost = 3.5
 	x = 21

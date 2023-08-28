@@ -51,18 +51,20 @@ country_event = {
 		name = WES_event.2.a
 		add_popularity = {
 		    ideology = regressionism
-            popularity = 1.00
+            popularity = 0.3
         }
-		create_country_leader = {
-	        name = "George VII"
-            desc = "POLITICS_GEORGE_BASED_DESC"
-	        picture = "Portrait_WES_George_VII.dds"
-	        expire = "9999.1.1"
-	        ideology = neo_feudalism 
-	        traits = {
-		        new_pendragon
-	        }
+		set_country_leader_portrait = {
+			ideology = regressionism
+			portrait = GFX_George_Based_Portrait
 		}
+		add_country_leader_trait = new_pendragon
+		remove_country_leader_trait = fisher_king
+		set_country_leader_description = {
+			ideology = regressionism
+			desc = POLITICS_GEORGE_BASED_DESC
+		}
+		remove_ideas = WES_george_legitimacy
+		set_variable = { WES_george_legitimacy_level = 0 }
     } 
 }
 
@@ -78,6 +80,10 @@ country_event = {
 	    name = WES_event.3.a
 		custom_effect_tooltip = WES_event3.tt
 	    add_political_power = 150
+		WES = {
+			add_ideas = WES_george_legitimacy
+		}
+
     } 
 }
 
@@ -1743,47 +1749,31 @@ country_event = { #George Trait
 	is_triggered_only = yes
 	option = {
 	    name = WES_event.72.a
-			add_to_variable = { 
-				WES_george_legitimacy_level = 3
-			}
-			add_trait = {
-				character = WES_george_vii
-				slot = country_leader
-				trait = patron_of_medicine
-			}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 3
+		}
+		add_country_leader_trait = patron_of_medicine
 	}
 	option = {
 	    name = WES_event.72.b
-			add_to_variable = { 
-				WES_george_legitimacy_level = 3
-			}
-			add_trait = {
-				character = WES_george_vii
-				slot = country_leader
-				trait = chief_of_raf
-			}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 3
+		}
+		add_country_leader_trait = chief_of_raf
 	}
 	option = {
 	    name = WES_event.72.c
-			add_to_variable = { 
-				WES_george_legitimacy_level = 3
-			}
-			add_trait = {
-				character = WES_george_vii
-				slot = country_leader
-				trait = spiritual_leader_g
-			}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 3
+		}
+		add_country_leader_trait = spiritual_leader_g
 	}
 	option = {
 	    name = WES_event.72.e
-			add_to_variable = { 
-				WES_george_legitimacy_level = 3
-			}
-			add_trait = {
-				character = WES_george_vii
-				slot = country_leader
-				trait = new_classical_connoisseur
-			}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 3
+		}
+		add_country_leader_trait = new_classical_connoisseur
 	}
 }
 
@@ -1812,11 +1802,7 @@ country_event = {
 	
 	option = {
 	    name = WES_event.73.c
-		add_trait = {
-				 character = WES_george_vii
-				 slot = country_leader
-				 trait = enlightened
-		}
+		add_country_leader_trait = enlightened
 		add_to_variable = { 
 			WES_george_legitimacy_level = -5
 		}
