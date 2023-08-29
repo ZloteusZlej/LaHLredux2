@@ -1679,6 +1679,17 @@ country_event = {
 }
 
 country_event = { 
+	id = WES_event.66 #Sussex invades Us!
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.66"}
+	title = WES_event.66.t
+	desc = WES_event.66.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.66.a
+    }
+}
+
+country_event = { 
 	id = WES_event.70 #George Arrives
 	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.70"}
 	title = WES_event.70.t
