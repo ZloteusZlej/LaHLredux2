@@ -685,6 +685,16 @@ shared_focus = {
 	prerequisite = {
         focus = WES_return_king
 	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = WES_legitimacy_required_75	
+			check_variable = {
+				var = WES_george_legitimacy_level
+				value = 75
+				compare = greater_than_or_equals
+			}
+		}
+	}
 	completion_reward = {
 		WES = {
 			country_event = {
@@ -706,9 +716,12 @@ shared_focus = {
         focus = WES_arise_folk
 	}
 	bypass = {
-	    NOT = {
-		    country_exists = SUS
-		}			
+		OR = {
+			NOT = {
+				country_exists = SUS
+			}		
+			has_defensive_war_with = SUS
+		}
 	}
 	completion_reward = {
 		WES = {
