@@ -103,7 +103,11 @@
 			focus = ESS_peoples_militia
 		}
 		completion_reward = {
-		custom_effect_tooltip = ESS_civil_vigilantes.tt
+		add_to_variable = {
+			var = ESS_coring_cost
+			value = -20
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_20_tt
 			add_stability = 0.1
 			}
 		
