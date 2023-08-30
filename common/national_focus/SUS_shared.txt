@@ -631,6 +631,9 @@ shared_focus = {
 			remove_idea = SUS_labourists_strikes_1_of_3
 			add_idea = SUS_labourists_strikes_2_of_3
 		}
+		add_dynamic_modifier = {
+			modifier = SUS_king_economy_spirit
+		}
 	}
 	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
@@ -722,6 +725,7 @@ shared_focus = {
 					level = 2
 					instant_build = yes
 			}
+			add_extra_state_shared_building_slots = 2
 		}
 		random_controlled_state = {
 			add_building_construction = {
@@ -729,6 +733,7 @@ shared_focus = {
 					level = 1
 					instant_build = yes
 			}
+			add_extra_state_shared_building_slots = 1
 		}
 		random_controlled_state = {
 			add_building_construction = {
@@ -736,6 +741,7 @@ shared_focus = {
 					level = 1
 					instant_build = yes
 			}
+			add_extra_state_shared_building_slots = 1
 		}
 	}
 	prerequisite = {
@@ -819,6 +825,8 @@ shared_focus = {
 					level = 2
 					instant_build = yes
 			}
+			add_extra_state_shared_building_slots = 2
+
 		}
 		random_controlled_state = {
 			add_building_construction = {
@@ -826,6 +834,8 @@ shared_focus = {
 					level = 1
 					instant_build = yes
 			}
+			add_extra_state_shared_building_slots = 1
+
 		}
 		random_controlled_state = {
 			add_building_construction = {
@@ -833,6 +843,7 @@ shared_focus = {
 					level = 1
 					instant_build = yes
 			}
+			add_extra_state_shared_building_slots = 1
 		}
 		random_controlled_state = {
 			add_building_construction = {
@@ -840,6 +851,7 @@ shared_focus = {
 					level = 1
 					instant_build = yes
 			}
+			add_extra_state_shared_building_slots = 1
 		}
 		random_controlled_state = {
 			add_building_construction = {
@@ -847,6 +859,7 @@ shared_focus = {
 					level = 1
 					instant_build = yes
 			}
+			add_extra_state_shared_building_slots = 1
 		}
 		if = {
 			limit = {

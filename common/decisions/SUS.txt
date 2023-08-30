@@ -12,3 +12,450 @@ SUS_espionage_window = {
 
 SUS_power_struggle = {
 }
+
+SUS_his_majestys_subsidies = {
+	SUS_royal_docks_sussex = {
+		days_remove = 30
+		fire_only_once = yes
+		cost = 65
+		modifier = {
+            civilian_factory_use = 2
+        }
+		available = {
+			1001 = {
+				is_controlled_by = SUS
+			}
+		}
+		visible = {
+			1001 = {
+				is_controlled_by = SUS
+			}
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1001
+			}
+		}
+		remove_effect = {
+			1001 = {
+				add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+				}
+				add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 6
+				add_province_modifier = {
+					static_modifiers = { SUS_industrial_park }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+	
+	SUS_BAE_systems_dorset = {
+		days_remove = 50
+		fire_only_once = yes
+		cost = 100
+		modifier = {
+            civilian_factory_use = 3
+        }
+		available = {
+			1007 = {
+				is_controlled_by = SUS
+			}
+		}
+		visible = {
+			1007 = {
+				is_controlled_by = SUS
+			}
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1007
+			}
+		}
+		remove_effect = {
+			1007 = {
+				add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+				}
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 6
+				add_province_modifier = {
+					static_modifiers = { SUS_industrial_park }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+	
+	SUS_kent_silicon_valley = {
+		days_remove = 50
+		fire_only_once = yes
+		cost = 100
+		modifier = {
+            civilian_factory_use = 3
+        }
+		available = {
+			1165 = {
+				is_controlled_by = SUS
+			}
+			1002 = {
+				is_controlled_by = SUS
+			}
+		}
+		visible = {
+			1165 = {
+				is_controlled_by = SUS
+			}
+			1002 = {
+				is_controlled_by = SUS
+			}
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1165
+				state = 1002
+			}
+		}
+		remove_effect = {
+			1165 = {
+				add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_province_modifier = {
+					static_modifiers = { SUS_industrial_park }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			1002 = {
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+				}
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_province_modifier = {
+					static_modifiers = { SUS_industrial_park }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+	
+	SUS_reindustrialization_of_london = {
+		days_remove = 70
+		fire_only_once = yes
+		cost = 110
+		modifier = {
+            civilian_factory_use = 5
+        }
+		available = {
+			1160 = {
+				is_controlled_by = SUS
+			}
+		}
+		visible = {
+			1160 = {
+				is_controlled_by = SUS
+			}
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1160
+			}
+		}
+		remove_effect = {
+			1160 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+				}
+				add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+				}
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+				}
+				add_building_construction = {
+						type = air_base
+						level = 3
+						instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 6
+				add_province_modifier = {
+					static_modifiers = { SUS_industrial_park }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+	
+	SUS_east_anglia_agricultural_complex = {
+		days_remove = 45
+		fire_only_once = yes
+		cost = 40
+		modifier = {
+            civilian_factory_use = 2
+        }
+		available = {
+			1004 = {
+				is_controlled_by = SUS
+			}
+			1143 = {
+				is_controlled_by = SUS
+			}
+		}
+		visible = {
+			1004 = {
+				is_controlled_by = SUS
+			}
+			1143 = {
+				is_controlled_by = SUS
+			}
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1004
+				state = 1143
+			}
+		}
+		remove_effect = {
+			1004 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+				}
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_province_modifier = {
+					static_modifiers = { SUS_industrial_park }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			1143 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+				}
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_province_modifier = {
+					static_modifiers = { SUS_industrial_park }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+	
+	SUS_arsenal_of_midlands = {
+		days_remove = 55
+		fire_only_once = yes
+		cost = 60
+		modifier = {
+            civilian_factory_use = 4
+        }
+		available = {
+			1008 = {
+				is_controlled_by = SUS
+			}
+			1146 = {
+				is_controlled_by = SUS
+			}
+		}
+		visible = {
+			1008 = {
+				is_controlled_by = SUS
+			}
+			1146 = {
+				is_controlled_by = SUS
+			}
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1008
+				state = 1146
+			}
+		}
+		remove_effect = {
+			1146 = {
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_province_modifier = {
+					static_modifiers = { SUS_industrial_park }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			1008 = {
+				add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_province_modifier = {
+					static_modifiers = { SUS_industrial_park }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			add_resource = {
+				type = steel
+				amount = 35
+				state = 1008
+			}
+		}
+	}
+	
+	SUS_arsenal_of_midlands = {
+		days_remove = 55
+		fire_only_once = yes
+		cost = 60
+		modifier = {
+            civilian_factory_use = 4
+        }
+		available = {
+			1009 = {
+				is_controlled_by = SUS
+			}
+		}
+		visible = {
+			1009 = {
+				is_controlled_by = SUS
+			}
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1009
+
+			}
+		}
+		remove_effect = {
+			1009 = {
+				add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_province_modifier = {
+					static_modifiers = { SUS_industrial_park }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			add_resource = {
+				type = steel
+				amount = 35
+				state = 1009
+			}
+		}
+	}
+	
+	SUS_reopen_mines = {
+		days_remove = 65
+		fire_only_once = yes
+		cost = 65
+		modifier = {
+            civilian_factory_use = 5
+        }
+		available = {
+			1012 = {
+				is_controlled_by = SUS
+			}
+		}
+		visible = {
+			1012 = {
+				is_controlled_by = SUS
+			}
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1012
+
+			}
+		}
+		remove_effect = {
+			1012 = {
+				add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+				}
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 5
+				add_province_modifier = {
+					static_modifiers = { SUS_industrial_park }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			add_resource = {
+				type = steel
+				amount = 45
+				state = 1009
+			}
+		}
+	}
+}
