@@ -55,10 +55,6 @@ shared_focus = {
 				id = WES_event.71
 			}
 		}
-		add_to_variable = { 
-			WES_george_legitimacy_level = 5
-		}
-		custom_effect_tooltip =  WES_legitimacy_small_plus
 	}
 	cost = 3.5
 	x = 21
@@ -81,6 +77,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		 WES = {
+			add_stability = 0.05
 			country_event = {
 				days = 0
 				id = WES_event.73
@@ -116,6 +113,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		 WES = {
+			add_war_support = 0.05
 			country_event = {
 				days = 0
 				id = WES_event.77
@@ -221,7 +219,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		WES = {
-			add_stability = 0.1
+			add_stability = 0.05
 			country_event = {
 				days = 0
 				id = WES_event.78
@@ -266,7 +264,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		WES = {
-			add_war_support =  0.1
+			add_war_support =  0.05
 			random_owned_controlled_state = {	
 				add_building_construction = {
 						type = arms_factory
@@ -299,6 +297,18 @@ shared_focus = {
 	icon = GFX_goal_WES_Kings_speech
 	prerequisite = {
         focus = WES_worthie_england
+	}
+	completion_reward = {
+		WES = {
+			country_event = {
+				days = 0
+				id = WES_event.67
+			}
+		}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 5
+		}
+		custom_effect_tooltip =  WES_legitimacy_small_plus
 	}
 	cost = 3.5
 	x = 17
