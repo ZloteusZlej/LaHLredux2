@@ -513,6 +513,27 @@ SUS_king_economy_spirit = {
 	research_production_cost_factor = SUS_research_production_cost_factor
 	monthly_population = SUS_monthly_population 
 }
+
+SUS_concessions_spirit = { 
+	icon = GFX_SUS_concessions_spirit
+	production_speed_buildings_factor = SUS_concessions_production_speed_buildings_factor
+	consumer_goods_factor = SUS_concessions_consumer_goods_factor
+	unit_upkeep_attrition_factor = SUS_concessions_unit_upkeep_attrition_factor 
+	production_factory_efficiency_gain_factor = SUS_concessions_production_factory_efficiency_gain_factor
+	political_advisor_cost_factor = SUS_concessions_political_advisor_cost_factor
+	political_power_factor = SUS_concessions_political_power_factor
+	local_resources_factor = SUS_concessions_local_resources_factor
+	equipment_bonus = {
+		support_equipment = {
+			instant = yes
+			build_cost_ic = SUS_concessions_support_equipment_build_cost_ic
+
+		}
+	}
+	research_bonus = {
+		electronics = SUS_concessions_electronics_research_bonus
+	}
+}
 ##MRC##
 MRC_Spirit_Of_Neofolk = {
 	icon = GFX_

@@ -1033,7 +1033,9 @@ shared_focus = {
 	icon = GFX_goal_SUS_exclusive_investments
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_exclusive_investments"
-		
+		add_dynamic_modifier = {
+			modifier = SUS_concessions_spirit
+		}
 	}
 	prerequisite = {
 		focus = SUS_patronage_of_the_hitech
