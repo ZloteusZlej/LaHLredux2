@@ -700,7 +700,7 @@ SUS_foreign_investors = {
 			AND = {
 				has_character = SUS_sushanta_kumar_bhattacharyya
 				has_equipment = {
-					transport_plane_equipment_1 > 20
+					transport_plane_equipment_1 > 40
 				}
 			}
 		}
@@ -717,6 +717,11 @@ SUS_foreign_investors = {
 			add_to_variable = {
 				var = SUS_concessions_unit_upkeep_attrition_factor
 				value = -0.2
+			}
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 40
+				target = IND
 			}
 		}
 	}
