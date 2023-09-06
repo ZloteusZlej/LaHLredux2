@@ -119,10 +119,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_assault_trainings"
 		add_war_support = 0.05
-		add_timed_idea = {
-			idea = SUS_Wessex
-			days = 225
-		}
+		add_ideas = SUS_Wessex
 		add_popularity = {
 			ideology = regressionism
 			popularity = -0.03
@@ -149,10 +146,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_tory_menace"
 		add_war_support = 0.05
-		add_timed_idea = { 
-		idea = SUS_Kent
-		days = 225
-		}
+		add_ideas = SUS_Kent
 		add_popularity = {
 			ideology = right_populism
 			popularity = -0.05
@@ -302,7 +296,7 @@ shared_focus = {
 		}
         add_timed_idea = {
             idea = SUS_initial_push
-            days = 30
+            days = 45
         }
 		if = {
 			limit = {
@@ -336,7 +330,7 @@ shared_focus = {
 			WES = {
 				add_timed_idea = {
 				ideas = WES_electromagnetic_warfare
-				days = 35
+				days = 45
 				}
 			}
 		}
@@ -470,10 +464,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_penal_auxiliaries"
-		add_timed_idea = {
-			idea = SUS_penal_auxiliaries_idea
-			days = 100
-		}
+		add_ideas = SUS_penal_auxiliaries_idea
     }
 	prerequisite = {
 		focus = SUS_aircraft_cannibalization
@@ -564,6 +555,10 @@ shared_focus = {
 			value = -20
 		}
 		custom_effect_tooltip = EAG_coring_cost_lowered_20_tt
+		hidden_effect = {
+			remove_ideas = SUS_Kent
+			remove_ideas = SUS_Wessex
+		}
 	}
 	cost = 4.3
 	x = 25
