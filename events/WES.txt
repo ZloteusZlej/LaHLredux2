@@ -1671,13 +1671,80 @@ country_event = {
 }
 
 country_event = { 
-	id = WES_event.66 #Sussex invades Us! ##FIX THIS##
+	id = WES_event.66 #Trial of Courage I#
 	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.66"}
 	title = WES_event.66.t
 	desc = WES_event.66.d
 	is_triggered_only = yes
 	option = {
 	    name = WES_event.66.a
+		ai_chance = { factor = 0 }
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 1161
+				num_provinces = 2
+				on_win = WES_event.122
+				on_lose = WES_event.120
+				on_cancel = WES_event.119
+				modifier = 0.3
+			}	
+			defender = {
+				state = 1159
+				num_provinces = 3
+			}
+		}
+    }
+	option = {
+	    name = WES_event.66.b
+		ai_chance = { factor = 0 }
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 1000
+				num_provinces = 2
+				on_win = WES_event.121
+				on_lose = WES_event.120
+				on_cancel = WES_event.119
+				modifier = 0.3
+			}	
+			defender = {
+				state = 1001
+				num_provinces = 2
+			}
+		}
+    }
+	option = {
+	    name = WES_event.66.c
+		ai_chance = { factor = 0 }
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 1153
+				num_provinces = 2
+				on_win = WES_event.123
+				on_lose = WES_event.120
+				on_cancel = WES_event.119
+				modifier = 0.3
+			}	
+			defender = {
+				state = 1155
+				num_provinces = 3
+			}
+		}
+		WES = {
+			set_country_flag = WES_attacked_mercia
+		}
+    }
+	option = {
+	    name = WES_event.66.e
+		ai_chance = { factor = 10 }
+		WES = {
+			country_event = {
+				days = 0
+				id = GER_event.125
+			}
+		}
     }
 }
 
@@ -2187,202 +2254,256 @@ country_event = {
 }
 
 country_event = { 
-	id = WES_event.74
+	id = WES_event.74 #George becomes Marshall#
 	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.74"}
 	title = WES_event.74.t
 	desc = WES_event.74.d
 	is_triggered_only = yes
 	option = {
 	    name = WES_event.74.a
-		army_experience = 25
 		add_field_marshal_role = {
 		  character = WES_george_vii
-		  skill = 4
+		  skill = 1
 		  attack_skill = 2
-		  defense_skill = 3
-		  planning_skill = 3
-		  logistics_skill = 5
+		  defense_skill = 2
+		  planning_skill = 2
+		  logistics_skill = 2
 		  traits = {
 				old_guard
 				media_personality
+			}
+		}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 2
+		}
+		custom_effect_tooltip = WES_legitimacy_small_plus
+		hidden_effect = {
+			WES = {
+				country_event = {
+					days = 5
+					id = WES_event.75
+				}
 			}
 		}
     }
 }
 
 country_event = { 
-	id = WES_event.75
+	id = WES_event.75 #Upgrade George 1#
 	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.75"}
 	title = WES_event.75.t
 	desc = WES_event.75.d
 	is_triggered_only = yes
 	option = {
 	    name = WES_event.75.a
-		all_character = {
-			limit = {
-				is_character = WES_george_vii
-			}
+		WES_george_vii = {
 			add_planning = 2
 		}
 		add_to_variable = { 
-			WES_george_legitimacy_level = 3
+			WES_george_legitimacy_level = 2
+		}
+		custom_effect_tooltip = WES_legitimacy_small_plus
+		hidden_effect = {
+			WES = {
+				country_event = {
+					days = 5
+					id = WES_event.76
+				}
+			}
 		}
     }
 	
 	option = {
 	    name = WES_event.75.b
-		all_character = {
-			limit = {
-				is_character = WES_george_vii
-			}
+		WES_george_vii = {
 			add_defense = 2
 		}
 		add_to_variable = { 
-			WES_george_legitimacy_level = 3
+			WES_george_legitimacy_level = 2
+		}
+		custom_effect_tooltip = WES_legitimacy_small_plus
+		hidden_effect = {
+			WES = {
+				country_event = {
+					days = 5
+					id = WES_event.76
+				}
+			}
 		}
     }
 	
 	option = {
 	    name = WES_event.75.с
-		all_character = {
-			limit = {
-				is_character = WES_george_vii
-			}
+		WES_george_vii = {
 			add_attack = 2
 		}
 		add_to_variable = { 
-			WES_george_legitimacy_level = 3
+			WES_george_legitimacy_level = 2
+		}
+		custom_effect_tooltip = WES_legitimacy_small_plus
+		hidden_effect = {
+			WES = {
+				country_event = {
+					days = 5
+					id = WES_event.76
+				}
+			}
 		}
     }
 	
 	option = {
 	    name = WES_event.75.e
-		random_owned_controlled_state = {	
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
+		WES_george_vii = {
+			add_logistics = 2
+		}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 2
+		}
+		custom_effect_tooltip = WES_legitimacy_small_plus
+		hidden_effect = {
+			WES = {
+				country_event = {
+					days = 5
+					id = WES_event.76
+				}
 			}
-				add_extra_state_shared_building_slots = 2
 		}
     }
 }
 
 country_event = { 
-	id = WES_event.76
+	id = WES_event.76 #Upgrade George 2#
 	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.76"}
 	title = WES_event.76.t
 	desc = WES_event.76.d
 	is_triggered_only = yes
 	option = {
 	    name = WES_event.76.a
-		all_character = {
-			limit = {
-				is_character = WES_george_vii
-			}
-			add_unit_leader_trait = logistics_wizard
+		WES_george_vii = {
+			add_unit_leader_trait = organisational_leader
 		}
 		add_to_variable = { 
-			WES_george_legitimacy_level = 3
+			WES_george_legitimacy_level = 2
+		}
+		custom_effect_tooltip = WES_legitimacy_small_plus
+		hidden_effect = {
+			WES = {
+				country_event = {
+					days = 5
+					id = WES_event.77
+				}
+			}
 		}
     }
 	
 	option = {
 	    name = WES_event.76.b
-		all_character = {
-			limit = {
-				is_character = WES_george_vii
-			}
-			add_unit_leader_trait = infantry_leader
+		WES_george_vii = {
+			add_unit_leader_trait = adaptable
 		}
 		add_to_variable = { 
-			WES_george_legitimacy_level = 3
+			WES_george_legitimacy_level = 2
+		}
+		custom_effect_tooltip = WES_legitimacy_small_plus
+		hidden_effect = {
+			WES = {
+				country_event = {
+					days = 5
+					id = WES_event.77
+				}
+			}
 		}
     }
 	
 	option = {
-	    name = WES_event.76.с
-		all_character = {
-			limit = {
-				is_character = WES_george_vii
-			}
-			add_unit_leader_trait = charismatic
+	    name = WES_event.76.c
+		WES_george_vii = {
+			add_unit_leader_trait = logistics_wizard
 		}
 		add_to_variable = { 
-			WES_george_legitimacy_level = 3
+			WES_george_legitimacy_level = 2
+		}
+		custom_effect_tooltip = WES_legitimacy_small_plus
+		hidden_effect = {
+			WES = {
+				country_event = {
+					days = 5
+					id = WES_event.77
+				}
+			}
 		}
     }
 	
 	option = {
 	    name = WES_event.76.e
-		random_owned_controlled_state = {	
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+		WES_george_vii = {
+			add_unit_leader_trait = inspirational_leader
+		}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 2
+		}
+		custom_effect_tooltip = WES_legitimacy_small_plus
+		hidden_effect = {
+			WES = {
+				country_event = {
+					days = 5
+					id = WES_event.77
+				}
 			}
-				add_extra_state_shared_building_slots = 2
 		}
     }
 }
 
 country_event = { 
-	id = WES_event.77
+	id = WES_event.77 #George Upgrade 3#
 	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.77"}
 	title = WES_event.77.t
 	desc = WES_event.77.d
 	is_triggered_only = yes
 	option = {
 	    name = WES_event.77.a
-		all_character = {
-			limit = {
-				is_character = WES_george_vii
-			}
+		WES_george_vii = {
 			remove_unit_leader_trait = old_guard
 		}
-		add_to_variable = { 
-			WES_george_legitimacy_level = 3
+		WES_george_vii = {
+			remove_unit_leader_trait = media_personality
 		}
+		add_to_variable = { 
+			WES_george_legitimacy_level = 2
+		}
+		custom_effect_tooltip = WES_legitimacy_small_plus
     }
 	
 	option = {
 	    name = WES_event.77.b
-		all_character = {
-			limit = {
-				is_character = WES_george_vii
-			}
-			add_skill_level = 1
+		WES_george_vii = {
+			gain_xp = 300
 		}
 		add_to_variable = { 
-			WES_george_legitimacy_level = 3
+			WES_george_legitimacy_level = 2
 		}
+		custom_effect_tooltip = WES_legitimacy_small_plus
     }
 	
 	option = {
-	    name = WES_event.77.с
-		all_character = {
-			limit = {
-				is_character = WES_george_vii
-			}
-			add_skill_level = 2
+	    name = WES_event.77.c
+		WES_george_vii = {
+			add_planning = 1
 		}
-		add_political_power = -100
+		WES_george_vii = {
+			add_attack = 1
+		}
+		WES_george_vii = {
+			add_defense = 1
+		}
+		WES_george_vii = {
+			add_logistics = 1
+		}
 		add_to_variable = { 
-			WES_george_legitimacy_level = 3
+			WES_george_legitimacy_level = 2
 		}
+		custom_effect_tooltip = WES_legitimacy_small_plus
     }
-	
-	option = {
-	    name = WES_event.77.e
-		random_owned_controlled_state = {	
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-			}
-				add_extra_state_shared_building_slots = 2
-		}
-	}
 }
 
 country_event = {
@@ -3885,6 +4006,284 @@ country_event = {
 			}
 			custom_effect_tooltip = WES_legitimacy_small_plus
 		}		
+    }
+}
+
+country_event = { 
+	id = WES_event.119 #Trial of Courage# #Cancel#
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.119"}
+	title = WES_event.119.t
+	desc = WES_event.119.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.119.a
+		WES_george_vii = {
+			gain_xp = 150
+		}
+		WES = {
+			army_experience = 10
+			add_to_variable = { 
+				WES_george_legitimacy_level = 5
+			}
+			custom_effect_tooltip = WES_legitimacy_small_plus
+		}
+    }
+}
+
+country_event = { 
+	id = WES_event.120 #Trial of Courage# #Cancel#
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.120"}
+	title = WES_event.120.t
+	desc = WES_event.120.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.120.a
+		WES_george_vii = {
+			gain_xp = 150
+		}
+		WES = {
+			add_political_power = -50
+			army_experience = 10
+			add_to_variable = { 
+				WES_george_legitimacy_level = 5
+			}
+			custom_effect_tooltip = WES_legitimacy_small_plus
+		}
+    }
+}
+
+country_event = { 
+	id = WES_event.121 #Trial of Courage# #Sussex Defeated#
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.121"}
+	title = WES_event.121.t
+	desc = WES_event.121.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.121.a
+		WES_george_vii = {
+			gain_xp = 350
+		}
+		WES_george_vii = {
+			add_unit_leader_trait = brilliant_strategist
+		}
+		WES_george_vii = {
+			add_unit_leader_trait = aggressive_assaulter
+		}
+		WES = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 750
+				producer = SUS
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 100
+				producer = SUS
+			}
+			add_political_power = 100
+			army_experience = 25
+			add_to_variable = { 
+				WES_george_legitimacy_level = 10
+			}
+			custom_effect_tooltip = WES_legitimacy_medium_plus
+		}
+    }
+}
+
+country_event = { 
+	id = WES_event.122 #Trial of Courage# #Essex Defeated#
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.122"}
+	title = WES_event.122.t
+	desc = WES_event.122.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.122.a
+		WES_george_vii = {
+			gain_xp = 350
+		}
+		WES_george_vii = {
+			add_unit_leader_trait = brilliant_strategist
+		}
+		WES_george_vii = {
+			add_unit_leader_trait = expert_delegator
+		}
+		WES = {
+			add_manpower = 7500
+			add_political_power = 75
+			army_experience = 30
+			add_to_variable = { 
+				WES_george_legitimacy_level = 10
+			}
+			custom_effect_tooltip = WES_legitimacy_medium_plus
+		}
+    }
+}
+
+country_event = { 
+	id = WES_event.123 #Trial of Courage# #Mercia Defeated#
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.123"}
+	title = WES_event.123.t
+	desc = WES_event.123.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.123.a
+		WES_george_vii = {
+			gain_xp = 350
+		}
+		WES_george_vii = {
+			add_unit_leader_trait = brilliant_strategist
+		}
+		WES_george_vii = {
+			add_unit_leader_trait = thorough_planner
+		}
+		WES = {
+			random_owned_controlled_state = {	
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+					add_extra_state_shared_building_slots = 1
+			}
+			add_political_power = 50
+			army_experience = 35
+			add_to_variable = { 
+				WES_george_legitimacy_level = 10
+			}
+			custom_effect_tooltip = WES_legitimacy_medium_plus
+		}
+    }
+}
+
+country_event = { 
+	id = WES_event.124 #Douglas will remember this#
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.124"}
+	title = WES_event.124.t
+	desc = WES_event.124.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.124.a
+    }
+}
+
+country_event = { 
+	id = WES_event.125 #Trial of Courage# #Stealth Choice#
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.125"}
+	title = WES_event.125.t
+	desc = WES_event.125.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.125.a
+		WES = {
+			country_event = {
+				days = 0
+				id = WES_event.126
+			}
+		}
+    }
+	option = {
+	    name = WES_event.125.b
+		WES = {
+			country_event = {
+				days = 0
+				id = WES_event.127
+			}
+		}
+    }
+	option = {
+	    name = WES_event.125.c
+		WES = {
+			country_event = {
+				days = 0
+				id = WES_event.128
+			}
+		}
+    }
+}
+
+country_event = { 
+	id = WES_event.126 #Trial of Courage# #Sussex Stealth#
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.126"}
+	title = WES_event.126.t
+	desc = WES_event.126.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.126.a
+		WES_george_vii = {
+			gain_xp = 250
+		}
+		WES_george_vii = {
+			add_unit_leader_trait = brilliant_strategist
+		}
+		WES = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 150
+				producer = SUS
+			}		
+			add_political_power = 40
+			army_experience = 25
+			add_to_variable = { 
+				WES_george_legitimacy_level = 10
+			}
+			custom_effect_tooltip = WES_legitimacy_medium_plus
+		}
+    }
+}
+
+country_event = { 
+	id = WES_event.127 #Trial of Courage# #Essex Stealth#
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.127"}
+	title = WES_event.127.t
+	desc = WES_event.127.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.127.a
+		WES_george_vii = {
+			gain_xp = 250
+		}
+		WES_george_vii = {
+			add_unit_leader_trait = brilliant_strategist
+		}
+		WES = {
+			add_manpower = 500
+			add_political_power = 40
+			army_experience = 25
+			add_to_variable = { 
+				WES_george_legitimacy_level = 10
+			}
+			custom_effect_tooltip = WES_legitimacy_medium_plus
+		}
+    }
+}
+
+country_event = { 
+	id = WES_event.128 #Trial of Courage# #Mercia Stealth#
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WES_event.128"}
+	title = WES_event.128.t
+	desc = WES_event.128.d
+	is_triggered_only = yes
+	option = {
+	    name = WES_event.128.a
+		WES_george_vii = {
+			gain_xp = 250
+		}
+		WES_george_vii = {
+			add_unit_leader_trait = brilliant_strategist
+		}
+		WES = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_political_power = 40
+			army_experience = 25
+			add_to_variable = { 
+				WES_george_legitimacy_level = 10
+			}
+			custom_effect_tooltip = WES_legitimacy_medium_plus
+		}
     }
 }
 
