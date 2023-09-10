@@ -28,6 +28,275 @@ country_event = {
     }
 }
 
+country_event = { 
+	id = SUS_event.2
+	title = SUS_event.2.t
+	desc = SUS_event.2.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.2.a
+		random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+		}
+		random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+		}
+    }
+}
+
+country_event = { 
+	id = SUS_event.3
+	title = SUS_event.3.t
+	desc = SUS_event.3.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.3.a
+		random_owned_controlled_state = {
+				add_building_construction = {
+					type = industial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		random_owned_controlled_state = {
+				add_building_construction = {
+					type = industial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+		}
+    }
+}
+
+country_event = { 
+	id = SUS_event.4
+	title = SUS_event.4.t
+	desc = SUS_event.4.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.4.a
+		add_to_variable = {
+			var = SUS_concessions_consumer_goods_factor
+			value = -0.03
+		}
+    }
+}
+
+country_event = { 
+	id = SUS_event.5
+	title = SUS_event.5.t
+	desc = SUS_event.5.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.5.a
+		add_research_slot = 1
+    }
+}
+
+country_event = { 
+	id = SUS_event.6
+	title = SUS_event.6.t
+	desc = SUS_event.6.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.6.a
+		add_political_power = -100
+    }
+}
+
+country_event = { 
+	id = SUS_event.7
+	title = SUS_event.7.t
+	desc = SUS_event.7.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.7.a
+		add_manpower = -1000
+		add_tech_bonus = {
+			bonus = 0.6
+			uses = 1
+			category = nbcb_tech
+		}
+		add_tech_bonus = {
+			bonus = 0.6
+			uses = 1
+			category = hospital_tech
+		}
+		add_tech_bonus = {
+			bonus = 0.6
+			uses = 1
+			category = electronics
+		}
+    }
+}
+
+country_event = { 
+	id = SUS_event.8
+	title = SUS_event.8.t
+	desc = SUS_event.8.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.8.a
+		add_to_variable = {
+			var = SUS_concessions_supply_node_range
+			value = -0.15
+		}
+		add_to_variable = {
+			var = SUS_concessions_production_speed_rail_way_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_concessions_supply_factor
+			value = -0.15
+		}
+    }
+}
+
+country_event = { 
+	id = SUS_event.9
+	title = SUS_event.9.t
+	desc = SUS_event.9.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.9.a
+		random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		random_owned_controlled_state = {
+				add_building_construction = {
+					type = industial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+		}
+    }
+}
+
+country_event = { 
+	id = SUS_event.10
+	title = SUS_event.10.t
+	desc = SUS_event.10.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.10.a
+		add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 1200
+				producer = JAP
+		}
+		add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1200
+				producer = JAP
+		}
+		add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 200
+				producer = JAP
+		}
+		add_equipment_to_stockpile = {
+				type = convoy
+				amount = 120
+				producer = JAP
+		}
+    }
+}
+
+country_event = { 
+	id = SUS_event.11
+	title = SUS_event.11.t
+	desc = SUS_event.11.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.11.a
+		recruit_character = SUS_fergus_drake
+		random_character = {
+			limit = {
+				is_advisor = yes
+			}
+			retire = yes
+		}
+		activate_advisor = SUS_fergus_drake
+		set_can_be_fired_in_advisor_role = {
+			character = SUS_fergus_drake
+			value = no
+		}
+    }
+}
+
+country_event = { 
+	id = SUS_event.12
+	title = SUS_event.12.t
+	desc = SUS_event.12.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.12.a
+		give_resource_rights = { receiver = ZZZ state = 1011 }
+		give_resource_rights = { receiver = ZZZ state = 1010 }
+    }
+}
+
 country_event = { #Coronation
 	id = SUS_event.100
 	title = SUS_event.100.t

@@ -13,6 +13,26 @@ on_actions = {
 		}
 	}
 	
+	on_capitulation = {
+	    effect = {
+		    if = {
+			    limit = {
+			        FROM = { tag = SUS }
+					ROOT = { tag = EAG }
+					SUS = {
+						has_country_flag = SUS_rio_tinto_promise
+					}
+				}
+				SUS = {
+					country_event = {
+						days = 1
+						id = SUS_event.12
+					}
+				}
+			}
+		}
+	}
+	
 	on_daily_EAG = {
 		effect = {
 			if = {

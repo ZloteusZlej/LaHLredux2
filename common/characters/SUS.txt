@@ -21,7 +21,6 @@ characters={
 		}
 		country_leader={
 			ideology=paternalism
-			traits={ comrade_king }
 			expire="1.1.1.1"
 			id=-1
 		}
@@ -481,6 +480,27 @@ characters={
 			cost = 175
 			slot = political_advisor
 			idea_token = SUS_sushanta_kumar_bhattacharyya
+			allowed = {
+				original_tag = SUS
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	
+	SUS_fergus_drake = {
+		name = "Fergus Drake"
+		portraits = {
+			civilian={
+				large=""
+				small = "gfx/leaders/SUS/GFX_idea_SUS_fergus_drake.dds"
+			}
+		}
+		advisor = {
+			cost = 175
+			slot = political_advisor
+			idea_token = SUS_fergus_drake
 			allowed = {
 				original_tag = SUS
 			}

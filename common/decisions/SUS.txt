@@ -594,6 +594,77 @@ SUS_foreign_investors = {
 		}
 	}
 	
+	SUS_petronas = {
+		days_remove = 1095
+		cost = 45
+        complete_effect = {
+			SUS = {
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = synth_resources
+				}
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = motorized_equipment
+				}
+				random_owned_controlled_state = {	
+						add_building_construction = {
+							type = synthetic_refinery
+							level = 1
+							instant_build = yes
+					}
+						add_extra_state_shared_building_slots = 1
+				}
+				random_owned_controlled_state = {	
+						add_building_construction = {
+							type = synthetic_refinery
+							level = 1
+							instant_build = yes
+					}
+						add_extra_state_shared_building_slots = 1
+				}
+			}
+			set_variable = {
+				var = SUS_concessions_army_fuel_consumption_factor
+				value = -0.05
+			}
+			set_variable = {
+				var = SUS_concessions_air_fuel_consumption_factor
+				value = -0.05
+			}
+			set_variable = {
+				var = SUS_concessions_navy_fuel_consumption_factor
+				value = -0.05
+			}
+			custom_effect_tooltip = SUS_concessions_shell
+        }
+		available = {
+			1018 = {
+				is_controlled_by = SUS
+			}
+		}
+		target_trigger = {
+			FROM = {
+				controls_state = 775
+			}
+		}
+		remove_effect = {
+			add_resource = {
+				type = oil
+				amount = 30
+				state = 1004
+			}
+			give_resource_rights = {
+				receiver = FROM
+				state = 1004
+				resources = { oil }
+			}
+			
+		}
+	}
+	
 	SUS_mann_co = {
 		days_remove = 120
 		fire_only_once = yes
@@ -764,6 +835,585 @@ SUS_foreign_investors = {
 				amount = 40
 				target = IND
 			}
+		}
+	}
+	
+	SUS_binladin_group = {
+		days_remove = 60
+		fire_only_once = yes
+		cost = 65
+		modifier = {
+            civilian_factory_use = 3
+        }
+		available = {
+			country_exists = BHR
+			has_navy_size = {
+				size > 6
+				type = submarine
+			}
+		}
+		
+		remove_effect = {
+			add_to_variable = {
+				var = SUS_concessions_production_speed_buildings_factor
+				value = 0.25
+			}
+			
+			transfer_ship = {
+				prefer_name = "HMS Najran"
+				type = submarine
+				target = BHR
+				exclude_refitting = no
+			}
+			
+			transfer_ship = {
+				prefer_name = "HMS Al-Qatif"
+				type = submarine
+				target = BHR
+				exclude_refitting = no
+			}
+			
+			transfer_ship = {
+				prefer_name = "HMS Salman"
+				type = submarine
+				target = BHR
+				exclude_refitting = no
+			}
+			
+			transfer_ship = {
+				prefer_name = "HMS Jeddah"
+				type = submarine
+				target = BHR
+				exclude_refitting = no
+			}
+			
+			transfer_ship = {
+				prefer_name = "HMS Jizan"
+				type = submarine
+				target = BHR
+				exclude_refitting = no
+			}
+			
+			transfer_ship = {
+				prefer_name = "HMS Dawasir"
+				type = submarine
+				target = BHR
+				exclude_refitting = no
+			}
+		}
+	}
+	
+	
+	SUS_kora_group = {
+		days_remove = 60
+		fire_only_once = yes
+		cost = 30
+		modifier = {
+            civilian_factory_use = 1
+        }
+		
+		remove_effect = {
+			add_to_variable = {
+				var = SUS_concessions_electronics_research_bonus
+				value = 0.25
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = electronics
+			}
+		random_owned_controlled_state = {	
+			add_extra_state_shared_building_slots = 1
+		}	
+		random_owned_controlled_state = {	
+			add_extra_state_shared_building_slots = 1
+		}	
+	}
+	
+	
+	SUS_barclays = {
+		days_remove = 70
+		fire_only_once = yes
+		cost = 75
+		modifier = {
+            civilian_factory_use = 4
+        }
+		
+		remove_effect = {
+			set_country_flag = SUS_barclays_banking_descisions 
+			1006 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_barclays_concession }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+	
+	SUS_barclays_sabotage_essex_finances = {
+		days_remove = 15
+		days_re_enable = 200
+		cost = 55
+		available = {
+			country_exists = ESS
+			has_country_flag = SUS_barclays_banking_descisions
+			NOT = {
+				has_country_flag = SUS_barclays_banking_descision_is_going 
+			}
+		}
+		complete_effect = {
+			set_country_flag = SUS_barclays_banking_descision_is_going
+		}
+		remove_effect = {
+			ESS = {
+				add_timed_idea = {
+					idea = SUS_sabotaged_finances
+					days = 45
+				}
+			}
+			clr_country_flag = SUS_barclays_banking_descision_is_going
+		}
+	}
+	
+	SUS_barclays_sabotage_east_anglia_finances = {
+		days_remove = 15
+		days_re_enable = 200
+		cost = 55
+		available = {
+			AND = {
+				country_exists = EAG
+				EAG = {
+					NOT = {
+						has_government = national_bolshevism
+					}
+				}
+			}			
+			has_country_flag = SUS_barclays_banking_descisions
+			NOT = {
+				has_country_flag = SUS_barclays_banking_descision_is_going 
+			}
+		}
+		complete_effect = {
+			set_country_flag = SUS_barclays_banking_descision_is_going
+		}
+		remove_effect = {
+			EAG = {
+				add_timed_idea = {
+					idea = SUS_sabotaged_finances
+					days = 45
+				}
+			}
+			clr_country_flag = SUS_barclays_banking_descision_is_going
+		}
+	}
+	
+	SUS_barclays_sabotage_mercia_finances = {
+		days_remove = 15
+		days_re_enable = 200
+		cost = 55
+		available = {
+			country_exists = MRC
+			has_country_flag = SUS_barclays_banking_descisions
+			NOT = {
+				has_country_flag = SUS_barclays_banking_descision_is_going 
+			}
+		}
+		complete_effect = {
+			set_country_flag = SUS_barclays_banking_descision_is_going
+		}
+		remove_effect = {
+			MRC = {
+				add_timed_idea = {
+					idea = SUS_sabotaged_finances
+					days = 45
+				}
+			}
+			clr_country_flag = SUS_barclays_banking_descision_is_going
+		}
+	}
+	
+	SUS_barclays_sabotage_northumbria_finances = {
+		days_remove = 15
+		days_re_enable = 200
+		cost = 55
+		available = {
+			country_exists = NTH		
+			has_country_flag = SUS_barclays_banking_descisions
+			NOT = {
+				has_country_flag = SUS_barclays_banking_descision_is_going 
+			}
+		}
+		complete_effect = {
+			set_country_flag = SUS_barclays_banking_descision_is_going
+		}
+		remove_effect = {
+			NTH = {
+				add_timed_idea = {
+					idea = SUS_sabotaged_finances
+					days = 45
+				}
+			}
+			clr_country_flag = SUS_barclays_banking_descision_is_going
+		}
+	}
+	
+	SUS_barclays_sabotage_welsh_finances = {
+		days_remove = 15
+		days_re_enable = 200
+		cost = 55
+		available = {
+			country_exists = WLS		
+			has_country_flag = SUS_barclays_banking_descisions
+			NOT = {
+				has_country_flag = SUS_barclays_banking_descision_is_going 
+			}
+		}
+		complete_effect = {
+			set_country_flag = SUS_barclays_banking_descision_is_going
+		}
+		remove_effect = {
+			WLS = {
+				add_timed_idea = {
+					idea = SUS_sabotaged_finances
+					days = 45
+				}
+			}
+			clr_country_flag = SUS_barclays_banking_descision_is_going
+		}
+	}
+	
+	SUS_barclays_sabotage_scottish_finances = {
+		days_remove = 15
+		days_re_enable = 200
+		cost = 55
+		available = {
+			country_exists = SCO			
+			has_country_flag = SUS_barclays_banking_descisions
+			NOT = {
+				has_country_flag = SUS_barclays_banking_descision_is_going 
+			}
+			
+		}
+		complete_effect = {
+			set_country_flag = SUS_barclays_banking_descision_is_going
+		}
+		remove_effect = {
+			SCO = {
+				add_timed_idea = {
+					idea = SUS_sabotaged_finances
+					days = 45
+				}
+			}
+			clr_country_flag = SUS_barclays_banking_descision_is_going
+		}
+	}
+	
+	SUS_barclays_syphone_funds_1 = {
+		days_remove = 75
+		days_re_enable = 125
+		available = {
+			NOT = {
+				has_country_flag = SUS_barclays_banking_descision_is_going 
+			}
+		}
+		complete_effect = {
+			set_country_flag = SUS_barclays_banking_descision_is_going
+			add_political_power = 100
+		}
+		remove_effect = {
+			clr_country_flag = SUS_barclays_banking_descision_is_going
+		}
+		target_trigger = {
+			FROM = {
+				controls_state = 145
+			}
+		}
+		targeted_modifier = {
+			tag = FROM
+			cic_to_target_factor = 0.05
+		}
+	}
+	
+	SUS_barclays_invest_into_mic = {
+		days_remove = 75
+		days_re_enable = 125
+		cost = 60
+		available = {
+			NOT = {
+				has_country_flag = SUS_barclays_banking_descision_is_going 
+			}
+		}
+		complete_effect = {
+			set_country_flag = SUS_barclays_banking_descision_is_going
+		}
+		remove_effect = {
+			clr_country_flag = SUS_barclays_banking_descision_is_going
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		target_trigger = {
+			FROM = {
+				controls_state = 145
+			}
+		}
+		targeted_modifier = {
+			tag = FROM
+			cic_to_target_factor = 0.02
+		}
+	}
+	
+	SUS_barclays_invest_into_cic = {
+		days_remove = 75
+		days_re_enable = 125
+		cost = 60
+		available = {
+			NOT = {
+				has_country_flag = SUS_barclays_banking_descision_is_going 
+			}
+		}
+		complete_effect = {
+			set_country_flag = SUS_barclays_banking_descision_is_going
+		}
+		remove_effect = {
+			clr_country_flag = SUS_barclays_banking_descision_is_going
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		target_trigger = {
+			FROM = {
+				controls_state = 145
+			}
+		}
+		targeted_modifier = {
+			tag = FROM
+			cic_to_target_factor = 0.02
+		}
+	}
+	
+	SUS_muscovy_company = {
+		days_remove = 70
+		fire_only_once = yes
+		cost = 45
+		available = {
+			has_manpower > 4999
+			command_power > 24
+			has_army_experience > 49
+			has_equipment = {
+				infantry_equipment_1 > 8999
+			}
+			has_equipment = {
+				attack_helicopter_equipment > 14
+			}
+		}
+		modifier = {
+            civilian_factory_use = 1
+        }
+		complete_effect = {
+			add_manpower = -5000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -9000
+				producer = SUS
+			}
+			add_equipment_to_stockpile = {
+				type = attack_helicopter_equipment
+				amount = -15
+				producer = SUS
+			}
+			add_command_power = -25
+			army_experience = -50
+		}
+		remove_effect = {
+			add_offsite_building = { type = industrial_complex level = 5 }
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = armor
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = rocketry
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = air_equipment
+			}
+			set_technology = {
+				modern_heavy_tank = 1
+			}
+			set_technology = {
+				landing_tank = 1
+			}
+		}
+	}
+	
+	SUS_crown_agency = {
+		days_remove = 60
+		fire_only_once = yes
+		cost = 55
+		modifier = {
+            civilian_factory_use = 1
+        }
+		complete_effect = {
+			SUS = {
+				country_event = {
+					days = 10
+					id = SUS_event.2
+				}
+			}
+		}
+		remove_effect = {
+			SUS = {
+				country_event = {
+					random = 5
+					random_days = 365
+					id = SUS_event.3
+				}
+				country_event = {
+					random = 5
+					random_days = 365
+					id = SUS_event.4
+				}
+				country_event = {
+					random = 5
+					random_days = 365
+					id = SUS_event.5
+				}
+				country_event = {
+					random = 5
+					random_days = 365
+					id = SUS_event.6
+				}
+				country_event = {
+					random = 5
+					random_days = 365
+					id = SUS_event.7
+				}
+				country_event = {
+					random = 5
+					random_days = 365
+					id = SUS_event.8
+				}
+				country_event = {
+					random = 5
+					random_days = 365
+					id = SUS_event.9
+				}
+				country_event = {
+					random = 5
+					random_days = 365
+					id = SUS_event.10
+				}
+				country_event = {
+					random = 5
+					random_days = 365
+					id = SUS_event.11
+				}
+			}
+		}
+	}
+	
+	SUS_rio_tinto = {
+		days_remove = 70
+		fire_only_once = yes
+		cost = 85
+		modifier = {
+            civilian_factory_use = 2
+        }
+		complete_effect = {
+			create_import = {
+				resource = steel
+				amount = 150
+				exporter = ZZZ
+			}
+			create_import = {
+				resource = chromium
+				amount = 50
+				exporter = ZZZ
+			}
+			create_import = {
+				resource = tungsten
+				amount = 50
+				exporter = ZZZ
+			}
+			create_import = {
+				resource = rubber
+				amount = 50
+				exporter = ZZZ
+			}
+			
+		}
+		remove_effect = {
+			set_country_flag = SUS_rio_tinto_promise
+		}
+	}
+	
+	SUS_al_fayed = {
+		days_remove = 70
+		fire_only_once = yes
+		cost = 85
+		modifier = {
+            civilian_factory_use = 3
+        }
+		available = {
+			1018 = {
+				is_controlled_by = SUS
+			}
+			bunker > 4
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = SUS_concessions_political_power_factor
+				value = 0.1
+			}
+			add_to_variable = {
+				var = SUS_concessions_political_advisor_cost_factor
+				value = -0.2
+			}
+			add_to_variable = {
+				var = SUS_concessions_production_speed_buildings_factor
+				value = 0.1
+			}
+		}
+	}
+	
+	SUS_uniliver = {
+		days_remove = 1095
+		cost = 55
+        complete_effect = {
+			set_variable = {
+				var = SUS_concessions_consumer_goods_factor
+				value = -0.15
+			}
+			
+        }
+		target_trigger = {
+			FROM = {
+				controls_state = 298
+			}
+		}
+		targeted_modifier = {
+			tag = FROM
+			extra_trade_to_target_factor  = 0.6
 		}
 	}
 }
