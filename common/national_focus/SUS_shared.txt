@@ -354,15 +354,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_no_empty_seats
 	available = {
 		AND = {
-			has_war_with = WES
-			has_war_with = KNT
+			has_war = yes
 		}
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_no_empty_seats"
 		add_ideas = SUS_no_empty_seats_idea
     }
-	cost = 4.3
+	cost = 4
 	x = 40
 	y = 0
 }
@@ -372,8 +371,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_serious_treasons_office
 	available = {
 		AND = {
-			has_war_with = WES
-			has_war_with = KNT
+			has_war = yes
 		}
 	}
 	completion_reward = {
@@ -383,7 +381,7 @@ shared_focus = {
 	prerequisite = {
 		focus = SUS_no_empty_seats
 	}
-	cost = 4.3
+	cost = 4
 	x = 39
 	y = 1
 }
@@ -393,8 +391,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_aircraft_cannibalization
 	available = {
 		AND = {
-			has_war_with = WES
-			has_war_with = KNT
+			has_war = yes
 		}
 	}
 	completion_reward = {
@@ -415,7 +412,7 @@ shared_focus = {
 	prerequisite = {
 		focus = SUS_no_empty_seats
 	}
-	cost = 4.3
+	cost = 4
 	x = 41
 	y = 1
 }
@@ -425,8 +422,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_plan_vecta
 	available = {
 		AND = {
-			has_war_with = WES
-			has_war_with = KNT
+			has_war = yes
 		}
 	}
 	completion_reward = {
@@ -444,11 +440,9 @@ shared_focus = {
     }
 	prerequisite = {
 		focus = SUS_aircraft_cannibalization
-	}
-	prerequisite = {
 		focus = SUS_serious_treasons_office
 	}
-	cost = 4.3
+	cost = 4
 	x = 38
 	y = 2
 }
@@ -458,8 +452,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_penal_auxiliaries
 	available = {
 		AND = {
-			has_war_with = WES
-			has_war_with = KNT
+			has_war = yes
 		}
 	}
 	completion_reward = {
@@ -468,11 +461,9 @@ shared_focus = {
     }
 	prerequisite = {
 		focus = SUS_aircraft_cannibalization
-	}
-	prerequisite = {
 		focus = SUS_serious_treasons_office
 	}
-	cost = 4.3
+	cost = 4
 	x = 40
 	y = 2
 }
@@ -482,8 +473,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_chollima_on_the_wing
 	available = {
 		AND = {
-			has_war_with = WES
-			has_war_with = KNT
+			has_war = yes
 		}
 	}
 	completion_reward = {
@@ -522,11 +512,9 @@ shared_focus = {
 	}
 	prerequisite = {
 		focus = SUS_aircraft_cannibalization
-	}
-	prerequisite = {
 		focus = SUS_serious_treasons_office
 	}
-	cost = 4.3
+	cost = 4
 	x = 42
 	y = 2
 }
@@ -649,6 +637,7 @@ shared_focus = {
 			var = SUS_production_factory_start_efficiency_factor
 			value = 0.15
 		}
+		custom_effect_tooltip = SUS_penal_servitude_act_tt
 	}
 	prerequisite = {
 		focus = SUS_cut_tributes
@@ -672,6 +661,7 @@ shared_focus = {
 			var = SUS_industrial_capacity_factory
 			value = 0.1
 		}
+		custom_effect_tooltip = SUS_liberty_bond_tt
 	}
 	prerequisite = {
 		focus = SUS_cut_tributes
@@ -695,6 +685,7 @@ shared_focus = {
 			var = SUS_local_resources_factor
 			value = 0.25
 		}
+		custom_effect_tooltip = SUS_energy_security_tt
 	}
 	prerequisite = {
 		focus = SUS_cut_tributes
@@ -738,6 +729,7 @@ shared_focus = {
 			}
 			add_extra_state_shared_building_slots = 1
 		}
+		custom_effect_tooltip = SUS_encourage_cooperatives_tt
 	}
 	prerequisite = {
 		focus = SUS_energy_security
@@ -770,6 +762,7 @@ shared_focus = {
 			var = SUS_production_factory_efficiency_gain_factor
 			value = 0.1
 		}
+		custom_effect_tooltip = SUS_iron_heel_tt
 	}
 	prerequisite = {
 		focus = SUS_energy_security
@@ -798,6 +791,7 @@ shared_focus = {
 			var = SUS_consumer_goods_factor
 			value = -0.05
 		}
+		custom_effect_tooltip = SUS_make_do_and_mend_tt
 	}
 	prerequisite = {
 		focus = SUS_iron_heel
@@ -932,6 +926,7 @@ shared_focus = {
 			var = SUS_monthly_population
 			value = 0.05
 		}
+		custom_effect_tooltip = SUS_crowned_socialism_tt
 	}
 	prerequisite = {
 		focus = SUS_pass_the_ammunition
@@ -974,17 +969,16 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_patronage_of_the_hitech"
 		add_tech_bonus = {
-			bonus = 0.2
-			uses = 1
+			bonus = 0.3
+			uses = 2
 			category = industry
 		}
 		add_tech_bonus = {
-			bonus = 0.2
-			uses = 1
+			bonus = 0.3
+			uses = 2
 			category = electronics
 		}
 		add_research_slot = 1
-
 	}
 	prerequisite = {
 		focus = SUS_pass_the_ammunition
@@ -1003,7 +997,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_royal_protection
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_royal_protection"
-		
+		unlock_decision_category_tooltip = SUS_his_majestys_subsidies
 	}
 	prerequisite = {
 		focus = SUS_patronage_of_the_hitech
@@ -1031,6 +1025,7 @@ shared_focus = {
 		add_dynamic_modifier = {
 			modifier = SUS_concessions_spirit
 		}
+		unlock_decision_category_tooltip = SUS_foreign_investors
 	}
 	prerequisite = {
 		focus = SUS_patronage_of_the_hitech

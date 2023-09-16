@@ -363,7 +363,7 @@ SUS_his_majestys_subsidies = {
 		}
 	}
 	
-	SUS_arsenal_of_midlands = {
+	SUS_reindustrialization_of_manchester = {
 		days_remove = 55
 		fire_only_once = yes
 		cost = 60
@@ -482,6 +482,7 @@ SUS_foreign_investors = {
 				var = SUS_concessions_production_factory_efficiency_gain_factor
 				value = -0.03
 			}
+			custom_effect_tooltip = SUS_concessions_hudsons_bay_company
 			add_manpower = -7000
 		}
 	}	
@@ -511,6 +512,7 @@ SUS_foreign_investors = {
 				var = SUS_concessions_local_resources_factor
 				value = 0.1
 			}
+			custom_effect_tooltip = SUS_concessions_de_beers
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -9000
@@ -563,7 +565,16 @@ SUS_foreign_investors = {
 				var = SUS_concessions_navy_fuel_consumption_factor
 				value = -0.15
 			}
-			custom_effect_tooltip = SUS_concessions_shell
+			add_resource = {
+				type = oil
+				amount = 25
+				state = 1018
+			}
+			give_resource_rights = {
+				receiver = FROM
+				state = 1018
+				resources = { oil }
+			}
         }
 		available = {
 			1018 = {
@@ -580,17 +591,20 @@ SUS_foreign_investors = {
 			cic_to_target_factor = 0.25
 		}
 		remove_effect = {
-			add_resource = {
-				type = oil
-				amount = 25
-				state = 1018
+			set_variable = {
+				var = SUS_concessions_army_fuel_consumption_factor
+				value = 0.15
 			}
-			give_resource_rights = {
-				receiver = FROM
-				state = 1018
-				resources = { oil }
+			set_variable = {
+				var = SUS_concessions_air_fuel_consumption_factor
+				value = 0.15
 			}
-			
+			set_variable = {
+				var = SUS_concessions_navy_fuel_consumption_factor
+				value = 0.15
+			}
+			FROM = { remove_resource_rights = 1018 }
+			custom_effect_tooltip = SUS_concessions_shell_2
 		}
 	}
 	
@@ -625,6 +639,16 @@ SUS_foreign_investors = {
 					}
 						add_extra_state_shared_building_slots = 1
 				}
+				add_resource = {
+				type = oil
+				amount = 30
+				state = 1004
+				}
+				give_resource_rights = {
+					receiver = FROM
+					state = 1004
+					resources = { oil }
+				}
 			}
 			set_variable = {
 				var = SUS_concessions_army_fuel_consumption_factor
@@ -638,10 +662,10 @@ SUS_foreign_investors = {
 				var = SUS_concessions_navy_fuel_consumption_factor
 				value = -0.05
 			}
-			custom_effect_tooltip = SUS_concessions_shell
+			custom_effect_tooltip = SUS_concessions_petronas
         }
 		available = {
-			1018 = {
+			1004 = {
 				is_controlled_by = SUS
 			}
 		}
@@ -651,17 +675,20 @@ SUS_foreign_investors = {
 			}
 		}
 		remove_effect = {
-			add_resource = {
-				type = oil
-				amount = 30
-				state = 1004
+			set_variable = {
+				var = SUS_concessions_army_fuel_consumption_factor
+				value = 0.05
 			}
-			give_resource_rights = {
-				receiver = FROM
-				state = 1004
-				resources = { oil }
+			set_variable = {
+				var = SUS_concessions_air_fuel_consumption_factor
+				value = 0.05
 			}
-			
+			set_variable = {
+				var = SUS_concessions_navy_fuel_consumption_factor
+				value = 0.05
+			}
+			FROM = { remove_resource_rights = 1004 }
+			custom_effect_tooltip = SUS_concessions_petronas_2
 		}
 	}
 	
@@ -812,7 +839,7 @@ SUS_foreign_investors = {
 			AND = {
 				has_character = SUS_sushanta_kumar_bhattacharyya
 				has_equipment = {
-					transport_plane_equipment_1 > 40
+					transport_plane_equipment_1 > 19
 				}
 			}
 		}
@@ -831,10 +858,11 @@ SUS_foreign_investors = {
 				value = -0.2
 			}
 			send_equipment = {
-				equipment = infantry_equipment
-				amount = 40
+				equipment = transport_plane_equipment
+				amount = 20
 				target = IND
 			}
+			custom_effect_tooltip = SUS_concessions_wadia_group
 		}
 	}
 	
@@ -848,7 +876,7 @@ SUS_foreign_investors = {
 		available = {
 			country_exists = BHR
 			has_navy_size = {
-				size > 6
+				size > 5
 				type = submarine
 			}
 		}
@@ -900,6 +928,8 @@ SUS_foreign_investors = {
 				target = BHR
 				exclude_refitting = no
 			}
+			
+			custom_effect_tooltip = SUS_concessions_binladin_group
 		}
 	}
 	
@@ -922,12 +952,14 @@ SUS_foreign_investors = {
 				uses = 3
 				category = electronics
 			}
-		random_owned_controlled_state = {	
-			add_extra_state_shared_building_slots = 1
-		}	
-		random_owned_controlled_state = {	
-			add_extra_state_shared_building_slots = 1
-		}	
+			custom_effect_tooltip = SUS_concessions_kora_group
+			random_owned_controlled_state = {	
+				add_extra_state_shared_building_slots = 1
+			}	
+			random_owned_controlled_state = {	
+				add_extra_state_shared_building_slots = 1
+			}
+		}		
 	}
 	
 	
@@ -963,6 +995,10 @@ SUS_foreign_investors = {
 				has_country_flag = SUS_barclays_banking_descision_is_going 
 			}
 		}
+		visible = {
+			has_country_flag = SUS_barclays_banking_descisions
+			country_exists = ESS
+		}
 		complete_effect = {
 			set_country_flag = SUS_barclays_banking_descision_is_going
 		}
@@ -995,6 +1031,10 @@ SUS_foreign_investors = {
 				has_country_flag = SUS_barclays_banking_descision_is_going 
 			}
 		}
+		visible = {
+			has_country_flag = SUS_barclays_banking_descisions
+			country_exists = EAG
+		}
 		complete_effect = {
 			set_country_flag = SUS_barclays_banking_descision_is_going
 		}
@@ -1019,6 +1059,10 @@ SUS_foreign_investors = {
 			NOT = {
 				has_country_flag = SUS_barclays_banking_descision_is_going 
 			}
+		}
+		visible = {
+			has_country_flag = SUS_barclays_banking_descisions
+			country_exists = MRC
 		}
 		complete_effect = {
 			set_country_flag = SUS_barclays_banking_descision_is_going
@@ -1045,6 +1089,10 @@ SUS_foreign_investors = {
 				has_country_flag = SUS_barclays_banking_descision_is_going 
 			}
 		}
+		visible = {
+			has_country_flag = SUS_barclays_banking_descisions
+			country_exists = NTH	
+		}
 		complete_effect = {
 			set_country_flag = SUS_barclays_banking_descision_is_going
 		}
@@ -1069,6 +1117,10 @@ SUS_foreign_investors = {
 			NOT = {
 				has_country_flag = SUS_barclays_banking_descision_is_going 
 			}
+		}
+		visible = {
+			has_country_flag = SUS_barclays_banking_descisions
+			country_exists = WLS
 		}
 		complete_effect = {
 			set_country_flag = SUS_barclays_banking_descision_is_going
@@ -1096,6 +1148,10 @@ SUS_foreign_investors = {
 			}
 			
 		}
+		visible = {
+			has_country_flag = SUS_barclays_banking_descisions
+			country_exists = SCO	
+		}
 		complete_effect = {
 			set_country_flag = SUS_barclays_banking_descision_is_going
 		}
@@ -1117,6 +1173,9 @@ SUS_foreign_investors = {
 			NOT = {
 				has_country_flag = SUS_barclays_banking_descision_is_going 
 			}
+		}
+		visible = {
+			has_country_flag = SUS_barclays_banking_descisions
 		}
 		complete_effect = {
 			set_country_flag = SUS_barclays_banking_descision_is_going
@@ -1144,6 +1203,9 @@ SUS_foreign_investors = {
 			NOT = {
 				has_country_flag = SUS_barclays_banking_descision_is_going 
 			}
+		}
+		visible = {
+			has_country_flag = SUS_barclays_banking_descisions
 		}
 		complete_effect = {
 			set_country_flag = SUS_barclays_banking_descision_is_going
@@ -1178,6 +1240,10 @@ SUS_foreign_investors = {
 			NOT = {
 				has_country_flag = SUS_barclays_banking_descision_is_going 
 			}
+		}
+		visible = {
+			has_country_flag = SUS_barclays_banking_descisions
+			
 		}
 		complete_effect = {
 			set_country_flag = SUS_barclays_banking_descision_is_going
@@ -1280,50 +1346,52 @@ SUS_foreign_investors = {
 		}
 		remove_effect = {
 			SUS = {
-				country_event = {
-					random = 5
-					random_days = 365
-					id = SUS_event.3
-				}
-				country_event = {
-					random = 5
-					random_days = 365
-					id = SUS_event.4
-				}
-				country_event = {
-					random = 5
-					random_days = 365
-					id = SUS_event.5
-				}
-				country_event = {
-					random = 5
-					random_days = 365
-					id = SUS_event.6
-				}
-				country_event = {
-					random = 5
-					random_days = 365
-					id = SUS_event.7
-				}
-				country_event = {
-					random = 5
-					random_days = 365
-					id = SUS_event.8
-				}
-				country_event = {
-					random = 5
-					random_days = 365
-					id = SUS_event.9
-				}
-				country_event = {
-					random = 5
-					random_days = 365
-					id = SUS_event.10
-				}
-				country_event = {
-					random = 5
-					random_days = 365
-					id = SUS_event.11
+				hidden_effect = {
+					country_event = {
+						random = 5
+						random_days = 365
+						id = SUS_event.3
+					}
+					country_event = {
+						random = 5
+						random_days = 365
+						id = SUS_event.4
+					}
+					country_event = {
+						random = 5
+						random_days = 365
+						id = SUS_event.5
+					}
+					country_event = {
+						random = 5
+						random_days = 365
+						id = SUS_event.6
+					}
+					country_event = {
+						random = 5
+						random_days = 365
+						id = SUS_event.7
+					}
+					country_event = {
+						random = 5
+						random_days = 365
+						id = SUS_event.8
+					}
+					country_event = {
+						random = 5
+						random_days = 365
+						id = SUS_event.9
+					}
+					country_event = {
+						random = 5
+						random_days = 365
+						id = SUS_event.10
+					}
+					country_event = {
+						random = 5
+						random_days = 365
+						id = SUS_event.11
+					}
 				}
 			}
 		}
@@ -1361,6 +1429,7 @@ SUS_foreign_investors = {
 		}
 		remove_effect = {
 			set_country_flag = SUS_rio_tinto_promise
+			custom_effect_tooltip = SUS_concessions_rio_tinto
 		}
 	}
 	
@@ -1393,6 +1462,7 @@ SUS_foreign_investors = {
 				var = SUS_concessions_production_speed_buildings_factor
 				value = 0.1
 			}
+			custom_effect_tooltip = SUS_concessions_al_fayed
 		}
 	}
 	
@@ -1402,9 +1472,9 @@ SUS_foreign_investors = {
         complete_effect = {
 			set_variable = {
 				var = SUS_concessions_consumer_goods_factor
-				value = -0.15
+				value = -0.1
 			}
-			
+			custom_effect_tooltip = SUS_concessions_uniliver
         }
 		target_trigger = {
 			FROM = {
@@ -1414,6 +1484,13 @@ SUS_foreign_investors = {
 		targeted_modifier = {
 			tag = FROM
 			extra_trade_to_target_factor  = 0.6
+		}
+		remove_effect = {
+			set_variable = {
+				var = SUS_concessions_consumer_goods_factor
+				value = 0.1
+			}
+			custom_effect_tooltip = SUS_concessions_uniliver_2
 		}
 	}
 }
