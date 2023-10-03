@@ -1,0 +1,45 @@
+# Valid unit modifiers are not exhaustive
+# Currently supported:
+# army_morale
+# army_morale_factor
+# army_org
+# army_org_factor
+# supply_consumption_factor
+# equipment_capture
+# equipment_capture_factor
+# army_fuel_capacity_factor
+# army_fuel_consumption_factor
+# recon_factor
+# recon_factor_while_entrenched
+# transport_capacity (?)
+# breakthrough_factor
+# armor_factor
+# army_strength_factor
+# experience_loss_factor
+# leader_modifier applies unit modifiers to all units under them as a general, similarly to traits.
+# army_attack_factor
+# army_defence_factor
+# max_dig_in
+# max_dig_in_factor
+
+@cost = 25
+
+unit_medals = {
+	##SUS##
+	SUS_medal_1 = {	 #Conspicuous Gallantry Cross#
+		available = { should_have_sussex_medals_trigger = yes }
+		rame = 1
+		icon = "GFX_medal_icon_SUS"
+		cost = 50
+			
+		unit_modifiers = {
+			experience_gain_factor = 0.1
+			experience_loss_factor = -0.15
+			army_morale_factor = 0.1
+		}
+			
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+}

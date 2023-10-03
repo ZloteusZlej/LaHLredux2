@@ -604,6 +604,8 @@ shared_focus = {
 	y = 2
 }
 
+##KING ECONOMY##
+
 shared_focus = {
 	id = SUS_cut_tributes
 	icon = GFX_goal_SUS_cut_tributes
@@ -1063,6 +1065,579 @@ shared_focus = {
 		}
 	}
 	relative_position_id = SUS_cut_tributes
+	cost = 4.3
+	x = 0
+	y = 6
+}
+
+##KING POLITICS##
+
+shared_focus = {
+	id = SUS_semper_fidelis
+	icon = GFX_goal_SUS_semper_fidelis
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_semper_fidelis"
+		random_country_division = {	
+			limit = {
+				NOT = {
+					division_has_battalion_in_template = amazon
+				}
+			}
+			add_unit_medal_to_latest_entry = {
+				unit_medals = SUS_medal_1
+			}
+		}
+		random_country_division = {	
+			limit = {
+				NOT = {
+					division_has_battalion_in_template = amazon
+				}
+			}
+			add_unit_medal_to_latest_entry = {
+				unit_medals = SUS_medal_1
+			}
+		}
+		random_country_division = {	
+			limit = {
+				NOT = {
+					division_has_battalion_in_template = amazon
+				}
+			}
+			add_unit_medal_to_latest_entry = {
+				unit_medals = SUS_medal_1
+			}
+		}
+		random_country_division = {	
+			limit = {
+				NOT = {
+					division_has_battalion_in_template = amazon
+				}
+			}
+			add_unit_medal_to_latest_entry = {
+				unit_medals = SUS_medal_1
+			}
+		}
+		swap_ideas = {
+            remove_idea = SUS_spies_intrigues_1_of_3
+            add_idea = SUS_spies_intrigues_2_of_3
+        }	
+		add_dynamic_modifier = {
+			modifier = SUS_king_political_spirit 	
+		}
+		add_to_variable = {
+			var = SUS_left_authoritarianism_drift
+			value = -0.1
+		}
+		add_to_variable = {
+			var = SUS_socialism_drift
+			value = 0.04
+		}
+		add_to_variable = {
+			var = SUS_neocameralism_drift
+			value = 0.04
+		}
+		add_to_variable = {
+			var = SUS_commendationism_drift
+			value = 0.04
+		}
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = -6
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_personal_rule
+	icon = GFX_goal_SUS_personal_rule
+	prerequisite = {
+		focus = SUS_semper_fidelis
+	}
+	mutually_exclusive = {
+		focus = SUS_loyal_parliament
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_personal_rule"
+	}
+	relative_position_id = SUS_semper_fidelis
+	cost = 4.3
+	x = -1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_loyal_parliament
+	icon = GFX_goal_SUS_loyal_parliament
+	mutually_exclusive = {
+		focus = SUS_personal_rule
+	}
+	prerequisite = {
+		focus = SUS_semper_fidelis
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_loyal_parliament"
+	}
+	relative_position_id = SUS_semper_fidelis
+	cost = 4.3
+	x = 1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_central_office_of_information
+	icon = GFX_goal_SUS_central_office_of_information
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_central_office_of_information"
+	}
+	prerequisite = {
+		focus = SUS_loyal_parliament
+		focus = SUS_personal_rule
+	}
+	relative_position_id = SUS_semper_fidelis
+	cost = 4.3
+	x = -2
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_prestel
+	icon = GFX_goal_SUS_prestel
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_prestel"
+	}
+	prerequisite = {
+		focus = SUS_loyal_parliament
+		focus = SUS_personal_rule
+	}
+	relative_position_id = SUS_semper_fidelis
+	cost = 4.3
+	x = 0
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_high_church
+	icon = GFX_goal_SUS_high_church
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_high_church"
+	}
+	prerequisite = {
+		focus = SUS_loyal_parliament
+		focus = SUS_personal_rule
+	}
+	relative_position_id = SUS_semper_fidelis
+	cost = 4.3
+	x = 2
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_general_synod
+	icon = GFX_goal_SUS_general_synod
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_general_synod"
+	}
+	prerequisite = {
+		focus = SUS_high_church
+	}
+	prerequisite = {
+		focus = SUS_prestel
+	}
+	prerequisite = {
+		focus = SUS_central_office_of_information
+	}
+	relative_position_id = SUS_semper_fidelis
+	cost = 4.3
+	x = -1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_church_urban_fund
+	icon = GFX_goal_SUS_church_urban_fund
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_church_urban_fund"
+	}
+	prerequisite = {
+		focus = SUS_high_church
+	}
+	prerequisite = {
+		focus = SUS_prestel
+	}
+	prerequisite = {
+		focus = SUS_central_office_of_information
+	}
+	relative_position_id = SUS_semper_fidelis
+	cost = 4.3
+	x = 1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_studium_generale
+	icon = GFX_goal_SUS_studium_generale
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_studium_generale"
+	}
+	prerequisite = {
+		focus = SUS_church_urban_fund
+	}
+	prerequisite = {
+		focus = SUS_general_synod
+	}
+	relative_position_id = SUS_semper_fidelis
+	cost = 4.3
+	x = 0
+	y = 4
+}
+
+shared_focus = {
+	id = SUS_test_act
+	icon = GFX_goal_SUS_test_act
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_test_act"
+	}
+	prerequisite = {
+		focus = SUS_studium_generale
+	}
+	relative_position_id = SUS_semper_fidelis
+	cost = 4.3
+	x = -1
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_majors_generals
+	icon = GFX_goal_SUS_majors_generals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_majors_generals"
+	}
+	prerequisite = {
+		focus = SUS_test_act
+	}
+	relative_position_id = SUS_semper_fidelis
+	cost = 4.3
+	x = -1
+	y = 6
+}
+
+shared_focus = {
+	id = SUS_ACPO
+	icon = GFX_goal_SUS_ACPO
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_ACPO"
+	}
+	prerequisite = {
+		focus = SUS_studium_generale
+	}
+	relative_position_id = SUS_semper_fidelis
+	cost = 4.3
+	x = 1
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_the_merlin_mystery
+	icon = GFX_goal_SUS_the_merlin_mystery
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_the_merlin_mystery"
+	}
+	prerequisite = {
+		focus = SUS_ACPO
+	}
+	relative_position_id = SUS_semper_fidelis
+	cost = 4.3
+	x = 1
+	y = 6
+}
+
+shared_focus = {
+	id = SUS_dieu_et_mon_droit
+	icon = GFX_goal_SUS_dieu_et_mon_droit
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_dieu_et_mon_droit"
+	}
+	prerequisite = {
+		focus = SUS_the_merlin_mystery
+	}
+	prerequisite = {
+		focus = SUS_majors_generals
+	}
+	relative_position_id = SUS_semper_fidelis
+	cost = 4.3
+	x = 0
+	y = 7
+}
+
+##KING ARMY##
+shared_focus = {
+	id = SUS_king_s_academies
+	icon = GFX_goal_SUS_king_s_academies
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_king_s_academies"
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 9
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_autonomous_recruiting
+	icon = GFX_goal_SUS_autonomous_recruiting
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_autonomous_recruiting"
+	}
+	prerequisite = {
+		focus = SUS_king_s_academies
+	}
+
+	relative_position_id = SUS_king_s_academies
+	cost = 4.3
+	x = -3
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_project_nimrod
+	icon = GFX_goal_SUS_project_nimrod
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_project_nimrod"
+	}
+	prerequisite = {
+		focus = SUS_autonomous_recruiting
+	}	
+	relative_position_id = SUS_autonomous_recruiting
+	cost = 4.3
+	x = -2
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_reorganise_trainings
+	icon = GFX_goal_SUS_reorganise_trainings
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_battle_for_britain"
+	}
+	prerequisite = {
+		focus = SUS_autonomous_recruiting
+	}
+
+	relative_position_id = SUS_autonomous_recruiting
+	cost = 4.3
+	x = 0
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_who_dares_wins
+	icon = GFX_goal_SUS_who_dares_wins
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_who_dares_wins"
+	}
+	prerequisite = {
+		focus = SUS_autonomous_recruiting
+	}
+
+	relative_position_id = SUS_autonomous_recruiting
+	cost = 4.3
+	x = 2
+	y = 1
+}
+
+
+
+shared_focus = {
+	id = SUS_battle_for_britain
+	icon = GFX_goal_SUS_battle_for_britain
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_battle_for_britain"
+	}
+	prerequisite = {
+		focus = SUS_who_dares_wins
+	}
+	prerequisite = {
+		focus = SUS_reorganise_trainings
+	}
+	prerequisite = {
+		focus = SUS_project_nimrod
+	}
+	mutually_exclusive = {
+		focus = SUS_noble_anvil
+	}
+	relative_position_id = SUS_autonomous_recruiting
+	cost = 4.3
+	x = 1
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_noble_anvil
+	icon = GFX_goal_SUS_noble_anvil
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_noble_anvil"
+	}
+	prerequisite = {
+		focus = SUS_who_dares_wins
+	}
+	prerequisite = {
+		focus = SUS_reorganise_trainings
+	}
+	prerequisite = {
+		focus = SUS_project_nimrod
+	}
+	mutually_exclusive = {
+		focus = SUS_battle_for_britain
+	}
+	relative_position_id = SUS_autonomous_recruiting
+	cost = 4.3
+	x = -1
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_improvised_armor
+	icon = GFX_goal_SUS_improvised_armor
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_improvised_armor"
+	}
+	prerequisite = {
+		focus = SUS_battle_for_britain
+		focus = SUS_noble_anvil
+	}
+
+	relative_position_id = SUS_autonomous_recruiting
+	cost = 4.3
+	x = 0
+	y = 3
+}
+
+
+shared_focus = {
+	id = SUS_legion_of_frontiersmen
+	icon = GFX_goal_SUS_legion_of_frontiersmen
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_legion_of_frontiersmen"
+	}
+	prerequisite = {
+		focus = SUS_king_s_academies
+	}
+	
+	relative_position_id = SUS_king_s_academies
+	cost = 4.3
+	x = 3
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_land_for_blood
+	icon = GFX_goal_SUS_land_for_blood
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_land_for_blood"
+	}
+	prerequisite = {
+		focus = SUS_legion_of_frontiersmen
+	}
+	
+	relative_position_id = SUS_legion_of_frontiersmen
+	cost = 4.3
+	x = -1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_honourable_gentlemen
+	icon = GFX_goal_SUS_honourable_gentlemen
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_honourable_gentlemen"
+	}
+	prerequisite = {
+		focus = SUS_legion_of_frontiersmen
+	}
+	
+	relative_position_id = SUS_legion_of_frontiersmen
+	cost = 4.3
+	x = 1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_local_defence_volunteers
+	icon = GFX_goal_SUS_local_defence_volunteers
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_local_defence_volunteers"
+	}
+	
+	prerequisite = {
+		focus = SUS_land_for_blood
+		focus = SUS_honourable_gentlemen
+	}
+	
+	mutually_exclusive = {
+		focus = SUS_pardon_for_scum
+	}
+		
+	relative_position_id = SUS_legion_of_frontiersmen
+	cost = 4.3
+	x = -1
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_pardon_for_scum
+	icon = GFX_goal_SUS_pardon_for_scum
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_pardon_for_scum"
+	}
+	
+	prerequisite = {
+		focus = SUS_land_for_blood
+		focus = SUS_honourable_gentlemen
+	}
+	
+	mutually_exclusive = {
+		focus = SUS_local_defence_volunteers
+	}
+	relative_position_id = SUS_legion_of_frontiersmen
+	cost = 4.3
+	x = 1
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_sovereigns_parade
+	icon = GFX_goal_SUS_sovereigns_parade
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_sovereigns_parade"
+	}
+	prerequisite = {
+		focus = SUS_local_defence_volunteers
+	}
+	prerequisite = {
+		focus = SUS_pardon_for_scum
+	}
+		
+	relative_position_id = SUS_legion_of_frontiersmen
+	cost = 4.3
+	x = 0
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_witch_hunt
+	icon = GFX_goal_SUS_witch_hunt
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_witch_hunt"
+	}
+	
+	prerequisite = {
+		focus = SUS_improvised_armor
+	}
+	prerequisite = {
+		focus = SUS_sovereigns_parade
+	}
+ 	
+	relative_position_id = SUS_king_s_academies
 	cost = 4.3
 	x = 0
 	y = 6
