@@ -129,6 +129,29 @@ ideas = {
 	}
 
 	country = {
+		SUS_Underground_Factories = {
+
+			allowed = {
+				original_tag = SUS
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_Underground_Factories"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				industry_air_damage_factor = -0.5
+			}
+
+		}
 		SUS_Red_Brigades_1 = {
 
 			allowed = {

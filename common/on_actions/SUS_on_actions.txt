@@ -14,4 +14,46 @@ on_actions = {
 			}
 		}
 	}
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					THIS = {
+						has_country_flag = SUS_partisans_active
+					}
+				}
+				THIS = {
+					random_owned_controlled_state = {
+						create_unit = {
+							allow_spawning_on_enemy_provs = yes
+							division = "name = \"Resistance Regiment\" division_template = \"Resistance Regiment\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+							owner = SUS
+						}
+					}	
+					random_owned_controlled_state = {
+						create_unit = {
+							allow_spawning_on_enemy_provs = yes
+							division = "name = \"Resistance Regiment\" division_template = \"Resistance Regiment\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+							owner = SUS
+						}
+					}	
+					random_owned_controlled_state = {
+						create_unit = {
+							allow_spawning_on_enemy_provs = yes
+							division = "name = \"Resistance Regiment\" division_template = \"Resistance Regiment\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+							owner = SUS
+						}
+					}						
+				}
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+			add_to_variable = {
+				var = SUS_number_of_agents
+				value = SUS_recruitment_of_agents
+			}
+		}
+	}
 }					  

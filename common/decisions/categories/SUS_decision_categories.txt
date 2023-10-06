@@ -55,19 +55,35 @@ SUS_foreign_investors = {
 	visible_when_empty = yes
 }
 
-SUS_central_office_of_information_descisions = {
-	icon = GFX_
 
+SUS_his_majestys_bureau_decision = {
+	icon = GFX_
 	allowed = { original_tag = SUS }
 	visible = {
-			SUS = {
-				has_completed_focus = SUS_central_office_of_information
-			}
+		SUS = {
+			has_completed_focus = SUS_his_majestys_bureau
+		}
 	}
 	available = {
-			SUS = {
-				has_completed_focus = SUS_central_office_of_information
-			}
+		SUS = {
+			has_completed_focus = SUS_his_majestys_bureau
+		}
+	}
+	visible_when_empty = yes
+}
+
+SUS_central_office_of_information_descisions = {
+	icon = GFX_
+	allowed = { original_tag = SUS }
+	visible = {
+		SUS = {
+			has_completed_focus = SUS_central_office_of_information
+		}
+	}
+	available = {
+		SUS = {
+			has_completed_focus = SUS_central_office_of_information
+		}
 	}
 	visible_when_empty = yes
 }

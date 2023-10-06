@@ -442,3 +442,16 @@ country_event = {
 		}
 	}
 }
+
+country_event = { #Sussex sabotaged us
+	id = albion.41
+	title = albion.41.t
+	desc = albion.41.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = albion.41.a
+		custom_effect_tooltip = ENG_sussex_sabotage_tt
+	}
+}

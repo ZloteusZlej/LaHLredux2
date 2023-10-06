@@ -37,21 +37,21 @@ country_event = {
 	option = {
 		name = SUS_event.2.a
 		random_owned_controlled_state = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
 			}
+			add_extra_state_shared_building_slots = 2
+		}
 		random_owned_controlled_state = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
 			}
+			add_extra_state_shared_building_slots = 2
+		}
 		random_owned_controlled_state = {
 				add_building_construction = {
 					type = infrastructure
@@ -296,6 +296,125 @@ country_event = {
 		name = SUS_event.12.a
 		give_resource_rights = { receiver = ZZZ state = 1011 }
 		give_resource_rights = { receiver = ZZZ state = 1010 }
+    }
+}
+
+country_event = { #Anti-Smuggling 1
+	id = SUS_event.13
+	title = SUS_event.13.t
+	desc = SUS_event.13.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.13.a
+		SUS = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = FRA
+			}
+			hidden_effect = {
+				country_event = {
+					days = 20
+					id = SUS_event.14
+				}
+			}
+		}
+    }
+}
+
+country_event = { #Anti-Smuggling 2
+	id = SUS_event.14
+	title = SUS_event.14.t
+	desc = SUS_event.14.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.14.a
+		SUS = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 100
+				producer = GER
+			}
+			hidden_effect = {
+				country_event = {
+					days = 20
+					id = SUS_event.15
+				}
+			}
+		}
+    }
+}
+
+country_event = { #Anti-Smuggling 3
+	id = SUS_event.15
+	title = SUS_event.15.t
+	desc = SUS_event.15.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.15.a
+		SUS = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = electronics
+			}
+			hidden_effect = {
+				country_event = {
+					days = 20
+					id = SUS_event.16
+				}
+			}
+		}
+    }
+}
+
+country_event = { #Anti-Smuggling 4
+	id = SUS_event.16
+	title = SUS_event.16.t
+	desc = SUS_event.16.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.16.a
+		SUS = {
+			add_equipment_to_stockpile = {
+				type = main_battle_tank_equipment_1
+				amount = 15
+				producer = SUS
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_fighting_vehicle_equipment_1
+				amount = 20
+				producer = SUS
+			}
+			hidden_effect = {
+				country_event = {
+					days = 20
+					id = SUS_event.17
+				}
+			}
+		}
+    }
+}
+
+country_event = { #Anti-Smuggling 5
+	id = SUS_event.17
+	title = SUS_event.17.t
+	desc = SUS_event.17.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.17.a
+		SUS = {
+			add_equipment_to_stockpile = {
+				type = CAS_equipment_1
+				amount = 15
+				producer = SUS
+			}
+		}
     }
 }
 

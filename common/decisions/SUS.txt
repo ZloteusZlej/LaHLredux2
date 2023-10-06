@@ -1710,3 +1710,565 @@ SUS_central_office_of_information_descisions = {
 		}
 	}
 }
+SUS_his_majestys_bureau_decision = {
+	SUS_operation_revolt_TITLE = {
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+	}
+	SUS_operation_lionheart = {
+		days_remove = 120
+		fire_only_once = yes
+		custom_cost_trigger = {
+			command_power > 19
+			has_equipment = {
+				infantry_equipment_1 > 249
+			}
+		}
+		remove_effect = {
+			SUS = {
+				set_country_flag = SUS_lionheart_stage_1
+			}
+			add_to_variable = {
+				var = SUS_number_of_agents
+				value = 15
+			}
+			EAG = {
+				set_country_flag = SUS_partisans_active
+			}
+			custom_effect_tooltip = SUS_operation_lionheart_effect
+		}
+		custom_cost_text = SUS_SABOTAGE_COST
+		available = {
+			country_exists = EAG
+		}
+		visible = {
+			country_exists = EAG
+		}
+		complete_effect = {
+			hidden_effect = {
+				SUS = {
+					add_command_power = -20
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = -250
+						producer = SUS
+					}
+				}
+			}
+		}
+	}
+	SUS_operation_frost = {
+		days_remove = 5
+		fire_only_once = yes
+		custom_cost_trigger = {
+			command_power > 19
+			has_equipment = {
+				infantry_equipment_1 > 249
+			}
+		}
+		remove_effect = {
+			SUS = {
+				set_country_flag = SUS_frost_stage_1
+			}
+			add_to_variable = {
+				var = SUS_number_of_agents
+				value = 15
+			}
+			NTH = {
+				set_country_flag = SUS_partisans_active
+			}
+			custom_effect_tooltip = SUS_operation_frost_effect
+		}
+		custom_cost_text = SUS_SABOTAGE_COST
+		available = {
+			country_exists = NTH
+		}
+		visible = {
+			country_exists = NTH
+		}
+		complete_effect = {
+			hidden_effect = {
+				SUS = {
+					add_command_power = -20
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = -250
+						producer = SUS
+					}
+				}
+			}
+		}
+	}
+	SUS_operation_monastery = {
+		days_remove = 5
+		fire_only_once = yes
+		custom_cost_trigger = {
+			command_power > 19
+			has_equipment = {
+				infantry_equipment_1 > 249
+			}
+		}
+		remove_effect = {
+			SUS = {
+				set_country_flag = SUS_monastery_stage_1
+			}
+			add_to_variable = {
+				var = SUS_number_of_agents
+				value = 15
+			}
+			MRC = {
+				set_country_flag = SUS_partisans_active
+			}
+			custom_effect_tooltip = SUS_operation_monastery_effect
+		}
+		custom_cost_text = SUS_SABOTAGE_COST
+		available = {
+			country_exists = MRC
+		}
+		visible = {
+			country_exists = MRC
+		}
+		complete_effect = {
+			hidden_effect = {
+				SUS = {
+					add_command_power = -20
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = -250
+						producer = SUS
+					}
+				}
+			}
+		}
+	}
+	SUS_operation_hummingbird = {
+		days_remove = 120
+		fire_only_once = yes
+		custom_cost_trigger = {
+			check_variable = { SUS_number_of_agents > 39 }
+		}
+		custom_cost_text = SUS_AGENT_NUMBER_MEDIUM
+		remove_effect = {
+			SUS = {
+				clr_country_flag = SUS_lionheart_stage_1
+			}
+			EAG = {
+				country_event = {
+					days = 0
+					id = EAG_event.248
+				}
+				add_timed_idea = {
+					idea = ENG_sussex_sabotage
+					days = 100
+				}
+			}
+		}
+		available = {
+			country_exists = EAG
+			has_country_flag = SUS_lionheart_stage_1
+		}
+		visible = {
+			country_exists = EAG
+			has_country_flag = SUS_lionheart_stage_1
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_number_of_agents
+				value = -40
+			}
+		}
+	}
+	SUS_operation_disinformation = {
+		days_remove = 120
+		fire_only_once = yes
+		custom_cost_trigger = {
+			check_variable = { SUS_number_of_agents > 39 }
+		}
+		custom_cost_text = SUS_AGENT_NUMBER_MEDIUM
+		remove_effect = {
+			SUS = {
+				clr_country_flag = SUS_frost_stage_1
+			}
+			NTH = {
+				country_event = {
+					days = 0
+					id = albion.41
+				}
+				add_timed_idea = {
+					idea = ENG_sussex_sabotage
+					days = 100
+				}
+			}
+		}
+		available = {
+			country_exists = NTH
+			has_country_flag = SUS_frost_stage_1
+		}
+		visible = {
+			country_exists = NTH
+			has_country_flag = SUS_frost_stage_1
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_number_of_agents
+				value = -40
+			}
+		}
+	}
+	SUS_operation_confession = {
+		days_remove = 120
+		fire_only_once = yes
+		custom_cost_trigger = {
+			check_variable = { SUS_number_of_agents > 39 }
+		}
+		custom_cost_text = SUS_AGENT_NUMBER_MEDIUM
+		remove_effect = {
+			SUS = {
+				clr_country_flag = SUS_monastery_stage_1
+			}
+			MRC = {
+				country_event = {
+					days = 0
+					id = MRC_event.27
+				}
+				add_timed_idea = {
+					idea = ENG_sussex_sabotage
+					days = 100
+				}
+			}
+		}
+		available = {
+			country_exists = MRC
+			has_country_flag = SUS_monastery_stage_1
+		}
+		visible = {
+			country_exists = MRC
+			has_country_flag = SUS_monastery_stage_1
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_number_of_agents
+				value = -40
+			}
+		}
+	}
+	SUS_operation_generic_TITLE = {
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+	}
+	SUS_radio_free_britain = {
+		days_remove = 120
+		fire_only_once = yes
+		cost = 100
+		remove_effect = {
+			SUS = {
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = radar_station
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = radar_station
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = radar_station
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+				add_collaboration = {
+					target = WES
+					value = 0.3
+			    }
+				add_collaboration = {
+					target = KNT
+					value = 0.3
+			    }
+				add_collaboration = {
+					target = EAG
+					value = 0.3
+			    }
+				add_collaboration = {
+					target = ESS
+					value = 0.3
+			    }
+				add_collaboration = {
+					target = MRC
+					value = 0.3
+			    }
+				add_collaboration = {
+					target = NTH
+					value = 0.3
+			    }
+			}
+			custom_effect_tooltip = SUS_radio_free_britain_effect
+			add_to_variable = {
+				var = SUS_recruitment_of_agents
+				value = 5
+			}
+		}
+		modifier = {
+			decryption_factor = 0.25
+			civilian_factory_use = 2
+		}
+	}
+	SUS_project_old_crows = {
+		days_remove = 120
+		days_re_enable = 100
+		custom_cost_trigger = {
+			check_variable = { SUS_number_of_agents > 39 }
+		}
+		custom_cost_text = SUS_AGENT_NUMBER_MEDIUM
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_number_of_agents
+				value = -40
+			}
+		}
+		available = {
+			SUS = {
+				has_government = left_authoritarianism
+			}
+		}
+		visible = {
+			SUS = {
+				has_government = left_authoritarianism
+			}
+		}
+		modifier = {
+			encryption_factor = 0.25
+			drift_defence_factor = 0.3
+			left_authoritarianism_drift = 0.1
+		}
+	}
+	SUS_operation_fishnet = {
+		days_remove = 120
+		fire_only_once = yes
+		custom_cost_trigger = {
+			check_variable = { SUS_number_of_agents > 59 }
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_number_of_agents
+				value = -60
+			}
+			SUS = {
+				country_event = {
+					days = 20
+					id = SUS_event.13
+				}
+			}
+		}
+		custom_cost_text = SUS_AGENT_NUMBER_BIG
+
+	}
+	SUS_merlin_mystery = {
+		days_remove = 60
+		days_re_enable = 30
+		cost = 25
+		available = {
+			SUS = {
+				has_completed_focus = SUS_the_merlin_mystery
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_the_merlin_mystery
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = SUS_merlin_mystery_effect
+			add_to_variable = {
+				var = SUS_recruitment_of_agents
+				value = 2
+			}
+		}
+	}
+	SUS_mass_appeal = {
+		days_remove = 60
+		days_re_enable = 30
+		cost = 25
+		available = {
+			SUS = {
+				OR = {
+					has_government = commendationism
+					has_government = socialism
+				}
+			}
+		}
+		visible = {
+			SUS = {
+				OR = {
+					has_government = commendationism
+					has_government = socialism
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = SUS_merlin_mystery_effect
+			add_to_variable = {
+				var = SUS_recruitment_of_agents
+				value = 2
+			}
+		}
+	}
+	SUS_project_central_works = {
+		days_remove = 120
+		fire_only_once = yes
+		custom_cost_trigger = {
+			check_variable = { SUS_number_of_agents > 79 }
+		}
+		custom_cost_text = SUS_AGENT_NUMBER_HUGE
+		remove_effect = {
+			SUS = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+				}
+				add_offsite_building = { type = arms_factory level = 4 }
+				add_ideas = SUS_Underground_Factories
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_number_of_agents
+				value = -80
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+	}
+	SUS_operation_generic_TITLE = {
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+	}
+	SUS_sabotage_actions_TITLE = {
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+	}
+	SUS_operation_playbacks = {
+		targets = { WES KNT EAG ESS NTH MRC }
+		days_remove = 120
+		days_re_enable = 90
+		custom_cost_trigger = {
+			check_variable = { SUS_number_of_agents > 19 }
+		}
+		custom_cost_text = SUS_AGENT_NUMBER_LOW
+        modifier = {
+            encryption_factor = 0.25
+			decryption_factor = 0.25
+			army_org_factor = 0.1
+        }
+		targeted_modifier = {
+			tag = FROM
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+		available = {
+			check_variable = { SUS_number_of_agents > 19 }
+			SUS = {
+				NOT = {
+					has_country_flag = SUS_playbacks_active
+				}
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_number_of_agents
+				value = -20
+			}
+			SUS = {	
+				set_country_flag = SUS_playbacks_active
+			}
+		}
+		remove_effect = {
+			SUS = {
+				clr_country_flag = SUS_playbacks_active
+			}
+		}
+	}
+	SUS_operation_sabotage = {
+		targets = { WES KNT EAG ESS NTH MRC }
+		days_remove = 30
+		days_re_enable = 90
+		custom_cost_trigger = {
+			check_variable = { SUS_number_of_agents > 19 }
+		}
+		custom_cost_text = SUS_AGENT_NUMBER_LOW
+        modifier = {
+			SUS = {
+				political_power_gain = -0.1
+			}
+        }
+		available = {
+			check_variable = { SUS_number_of_agents > 19 }
+			SUS = {
+				NOT = {
+					has_country_flag = SUS_sabotage_active
+				}
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_number_of_agents
+				value = -20
+			}
+			SUS = {	
+				set_country_flag = SUS_sabotage_active
+			}
+		}
+		remove_effect = {
+			SUS = {
+				clr_country_flag = SUS_sabotage_active
+			}
+			FROM = {
+				random_owned_controlled_state = {
+					damage_building = {
+						type = arms_factory
+						damage = 1
+				    }	
+				}
+				random_owned_controlled_state = {
+					damage_building = {
+						type = infrastructure
+						damage = 1
+				    }	
+				}
+				random_owned_controlled_state = {
+					damage_building = {
+						type = air_base
+						damage = 1
+				    }	
+				}
+			}
+		}
+	}
+}

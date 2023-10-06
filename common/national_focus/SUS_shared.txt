@@ -275,6 +275,7 @@ shared_focus = {
 	cost = 4.3
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_his_majestys_bureau"
+		custom_effect_tooltip = SUS_bureau_created_tt
     }
 	prerequisite = {
 		focus = SUS_operation_argo
@@ -1344,6 +1345,9 @@ shared_focus = {
 	}
 	prerequisite = {
 		focus = SUS_ACPO
+	}
+	completion_rewards = {
+		custom_effect_tooltip = SUS_merlin_mystery_tt
 	}
 	relative_position_id = SUS_semper_fidelis
 	cost = 4.3

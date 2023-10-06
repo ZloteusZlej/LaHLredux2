@@ -8541,3 +8541,15 @@ country_event = {
     }
 }
 
+###ZE END##
+country_event = { #We have been sabotaged! (Sussex is to blame)
+	id = EAG_event.248
+	title = EAG_event.248.t
+	desc = EAG_event.248.d
+	is_triggered_only = yes	
+	option = {
+		name = EAG_event.248.a
+		custom_effect_tooltip = ENG_sussex_sabotage_tt
+    }
+}
+
