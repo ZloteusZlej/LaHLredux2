@@ -445,7 +445,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "leader_name"
-			position = { x = 18 y = 271 }
+			position = { x = 18 y = 262 }
 			font = "hoi_18mbs"
 			text = "leader_name"
 			maxWidth = 155
@@ -802,6 +802,19 @@ guiTypes = {
 			centerposition = yes
 			alwaystransparent = yes
 			frame = 1
+		}
+	}
+	containerWindowType = {
+		name = "industrial_org_entry"
+		size = { width = 53 height = 53 }
+		clipping = no
+
+		buttonType = {
+			name = "open_roster_button"
+			position = { x = 31 y = 31 }
+			spriteType = "GFX_add_pol_idea_button"
+			centerposition = yes
+			clicksound = click_default
 		}
 	}
 	
