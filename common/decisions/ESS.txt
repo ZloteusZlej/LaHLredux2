@@ -1333,9 +1333,9 @@ ESS_take_what_is_ours = {
 			}
 		}
 		ESS_disband_guerrillas = {
-		effect_tooltip = {
-		delete_unit_template_and_units = { division_template = \"Saboteurs\" }
-		}
+			remove_effect = {
+				delete_unit_template_and_units = { division_template = \"Saboteurs\" }
+			}
 		}
 	}
 	

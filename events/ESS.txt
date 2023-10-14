@@ -2,7 +2,7 @@
 
 country_event = { 
 	id = ESS_event.00
-	log = "[GetDateText]: [Root.GetName]: Event ESS_event.00"
+	immediate = { log = "[GetDateText]: [Root.GetName]: Event ESS_event.00" }
 	fire_only_once = yes	
 	is_triggered_only = yes
 
@@ -1747,7 +1747,7 @@ country_event = {
 	id = ESS_event.41
 	title = ESS_event.41.t
 	desc = ESS_event.41.d
-	log = "[GetDateText]: [Root.GetName]: Event ESS_event.41"
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.41"}
 	fire_only_once = yes	
 	is_triggered_only = yes
 
@@ -1770,7 +1770,7 @@ country_event = {
 	id = ESS_event.42
 	title = ESS_event.42.t
 	desc = ESS_event.42.d
-	log = "[GetDateText]: [Root.GetName]: Event ESS_event.42"
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.42"}
 	fire_only_once = yes	
 	is_triggered_only = yes
 
@@ -1802,7 +1802,7 @@ country_event = {
 	id = ESS_event.43
 	title = ESS_event.43.t
 	desc = ESS_event.43.d
-	log = "[GetDateText]: [Root.GetName]: Event ESS_event.43"
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.43"}
 	fire_only_once = yes	
 	is_triggered_only = yes
 	hidden = yes
@@ -1817,15 +1817,14 @@ country_event = {
 	id = ESS_event.44
 	title = ESS_event.44.t
 	desc = ESS_event.44.d
-	log = "[GetDateText]: [Root.GetName]: Event ESS_event.44"
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ESS_event.44"}
 	fire_only_once = yes	
 	is_triggered_only = yes
-	picture =  
+	picture = GFX_
 	option = {
 		name = ESS_event.44.a
 		
-	}
-	
+	}	
 }	
 	
 	
@@ -1856,6 +1855,4 @@ country_event = {
 		}
 
 	}
-}
-
 }

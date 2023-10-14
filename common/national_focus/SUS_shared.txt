@@ -1054,16 +1054,18 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_a_bountiful_harvest"
 		remove_ideas = SUS_labourists_strikes_3_of_3
-	}
-	prerequisite = {
-		focus = SUS_exclusive_investments
-		focus = SUS_royal_protection
 		every_character	= {
 			limit = {
 				is_character = SUS_henry_ix
 			}
 			add_country_leader_trait = mister_king
 		}
+	}
+	prerequisite = {
+		focus = SUS_exclusive_investments
+	}
+	prerequisite = {
+			focus = SUS_royal_protection
 	}
 	relative_position_id = SUS_cut_tributes
 	cost = 4.3
@@ -1342,12 +1344,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_the_merlin_mystery
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_the_merlin_mystery"
+		custom_effect_tooltip = SUS_merlin_mystery_tt
 	}
 	prerequisite = {
 		focus = SUS_ACPO
-	}
-	completion_rewards = {
-		custom_effect_tooltip = SUS_merlin_mystery_tt
 	}
 	relative_position_id = SUS_semper_fidelis
 	cost = 4.3
