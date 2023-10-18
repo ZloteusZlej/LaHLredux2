@@ -3366,7 +3366,7 @@ state_event = { #Change State
 			check_variable = { WES_guild_zone_count > 0 }
 		}
 		name = WES_event.100.b
-		set_state_category = urban
+		set_state_category = town
 		event_target:WES_chosen_state = {
 			add_dynamic_modifier = {
 				modifier = WES_guild_state_dynamic_modifier
@@ -3407,7 +3407,7 @@ state_event = { #Change State
 			check_variable = { WES_fair_zone_count > 0 }
 		}
 		name = WES_event.100.c
-		set_state_category = urban
+		set_state_category = town
 		event_target:WES_chosen_state = {
 			add_dynamic_modifier = {
 				modifier = WES_fair_state_dynamic_modifier
