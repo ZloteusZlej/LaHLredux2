@@ -176,32 +176,6 @@ characters={
 			}
 		}
 	}
-	TAJ_communist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = TAJ_communist_guy
-			allowed  = {
-					original_tag  = TAJ
-				}
-				traits  = {
-					communist_revolutionary
-				}
-				do_effect  = {
-					not  = {
-						has_government  = communism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="TAJ_communist_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_3"
-			}
-		}
-	}
 	TAJ_pot={
 		advisor={
 			slot = political_advisor
@@ -364,58 +338,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_army_asia_1"
-			}
-		}
-	}
-	TAJ_democratic_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = TAJ_democratic_guy
-			allowed  = {
-					original_tag  = TAJ
-				}
-				traits  = {
-					democratic_reformer
-				}
-				do_effect  = {
-					not  = {
-						has_government  = democratic
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="TAJ_democratic_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_1"
-			}
-		}
-	}
-	TAJ_fascist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = TAJ_fascist_guy
-			allowed  = {
-					original_tag  = TAJ
-				}
-				traits  = {
-					fascist_demagogue
-				}
-				do_effect  = {
-					not  = {
-						has_government  = fascism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="TAJ_fascist_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_2"
 			}
 		}
 	}

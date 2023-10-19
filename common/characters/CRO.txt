@@ -363,32 +363,6 @@ characters={
 			}
 		}
 	}
-	CRO_communist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = CRO_communist_guy
-			allowed  = {
-					original_tag  = CRO
-				}
-				traits  = {
-					communist_revolutionary
-				}
-				do_effect  = {
-					not  = {
-						has_government  = communism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="CRO_communist_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_3"
-			}
-		}
-	}
 	CRO_vilko_begic={
 		advisor={
 			slot = high_command
@@ -411,32 +385,6 @@ characters={
 			}
 		}
 	}
-	CRO_fascist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = CRO_fascist_guy
-			allowed  = {
-					original_tag  = CRO
-				}
-				traits  = {
-					fascist_demagogue
-				}
-				do_effect  = {
-					not  = {
-						has_government  = fascism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="CRO_fascist_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_2"
-			}
-		}
-	}
 	CRO_fedor_dragojlov={
 		advisor={
 			slot = army_chief
@@ -455,32 +403,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_2"
-			}
-		}
-	}
-	CRO_democratic_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = CRO_democratic_guy
-			allowed  = {
-					original_tag  = CRO
-				}
-				traits  = {
-					democratic_reformer
-				}
-				do_effect  = {
-					not  = {
-						has_government  = democratic
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="CRO_democratic_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
 			}
 		}
 	}

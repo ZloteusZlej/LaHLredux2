@@ -1278,11 +1278,11 @@ shared_focus = {
 	completion_reward = {
 	    if = { 
 		    limit = {
-			    country_exists = SCO
-			}
-			OR = {
-			    country_exists = WLS
-            }			
+				OR = {
+					country_exists = WLS
+					country_exists = SCO
+				}	
+			}		
 			WES = {
 				country_event = {
 					days = 1

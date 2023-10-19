@@ -133,32 +133,6 @@ characters={
 			id=-1
 		}
 	}
-	GMB_GAM_fascist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = GAM_fascist_guy
-			allowed  = {
-					original_tag  = GAM
-				}
-				traits  = {
-					fascist_demagogue
-				}
-				do_effect  = {
-					not  = {
-						has_government  = fascism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="GAM_fascist_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_african_2"
-			}
-		}
-	}
 	GMB_GAM_coi={
 		advisor={
 			slot = political_advisor
@@ -424,32 +398,6 @@ characters={
 			}
 		}
 	}
-	GMB_GAM_communist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = GAM_communist_guy
-			allowed  = {
-					original_tag  = GAM
-				}
-				traits  = {
-					communist_revolutionary
-				}
-				do_effect  = {
-					not  = {
-						has_government  = communism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="GAM_communist_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_african_3"
-			}
-		}
-	}
 	GMB_GAM_ar={
 		advisor={
 			slot = high_command
@@ -469,32 +417,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_army_african_5"
-			}
-		}
-	}
-	GMB_GAM_democratic_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = GAM_democratic_guy
-			allowed  = {
-					original_tag  = GAM
-				}
-				traits  = {
-					democratic_reformer
-				}
-				do_effect  = {
-					not  = {
-						has_government  = democratic
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="GAM_democratic_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_african_1"
 			}
 		}
 	}

@@ -1797,7 +1797,7 @@ KNT_special_projects = {
 				}
 			}
 		}
-		remove_effect = {C
+		remove_effect = {
 			KNT = {
 				set_technology = {
 					rubber_bomb = 1
@@ -3409,6 +3409,9 @@ KNT_air_strikes = {
 		}
 		days_remove = 14
 		days_re_enable = 55
+		modifier = {
+			air_fuel_consumption_factor = 0.2
+		}	
         complete_effect = {
             add_command_power = -30
 			FROM = {
@@ -3417,9 +3420,6 @@ KNT_air_strikes = {
 				days = 14
 				}
 			}
-			modifier = {
-				air_fuel_consumption_factor = 0.2
-			}	
 		}
 		ai_will_do = {
 			factor = 100
@@ -3438,6 +3438,10 @@ KNT_air_strikes = {
 		}
 		days_remove = 14
 		days_re_enable = 55
+		modifier = {
+			air_fuel_consumption_factor = 0.2
+			air_cas_efficiency = 0.2
+		}
         complete_effect = {
             add_command_power = -30
 			FROM = {
@@ -3445,10 +3449,6 @@ KNT_air_strikes = {
 				idea = electromagnetic_shock_bombings
 				days = 14
 				}
-			}
-			modifier = {
-				air_fuel_consumption_factor = 0.2
-				air_cas_efficiency = 0.2
 			}	
 		}
 		ai_will_do = {
@@ -3468,6 +3468,10 @@ KNT_air_strikes = {
 		}
 		days_remove = 14
 		days_re_enable = 55
+		modifier = {
+			air_fuel_consumption_factor = 0.2
+			air_cas_efficiency = 0.2
+		}
         complete_effect = {
             add_command_power = -30
 			FROM = {
@@ -3475,10 +3479,6 @@ KNT_air_strikes = {
 				idea = volcanic_bombings
 				days = 14
 				}
-			}
-			modifier = {
-				air_fuel_consumption_factor = 0.2
-				air_cas_efficiency = 0.2
 			}	
 		}
 		ai_will_do = {

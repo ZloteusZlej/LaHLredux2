@@ -65,7 +65,7 @@ characters={
 		name="Nick Srnicek"
 		portraits={
 			civilian={
-				large="gfx/leaders/ESS/.dds"
+				large="gfx/leaders/ESS/Portrait_ESS_Nick_Srnicek.dds"
 			}
 		}
 		country_leader={
@@ -105,7 +105,7 @@ characters={
 		name="Richard Williamson"
 		portraits={
 			civilian={
-				large="gfx/leaders/ESS/.dds"
+				large="gfx/leaders/ESS/Portrait_ESS_Richard_Williamson.dds"
 			}
 		}
 		country_leader={
@@ -118,7 +118,7 @@ characters={
 		name="Carl Benjamin"
 		portraits={
 			civilian={
-				large="gfx/leaders/ESS/.dds"
+				large="gfx/leaders/ESS/Portrait_ESS_Carl_Benjamin.dds"
 			}
 		}
 		country_leader={
@@ -169,19 +169,6 @@ characters={
 		}
 		country_leader={
 			ideology=neo_feudalism
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-	ESS_richard_williamson ={
-		name="Richard Williamson"
-		portraits={
-			civilian={
-				large="gfx/leaders/ESS/.dds"
-			}
-		}
-		country_leader={
-			ideology=charismatic_dictatorship
 			expire="1.1.1.1"
 			id=-1
 		}
@@ -269,7 +256,6 @@ characters={
 	}
 	ESS_paul_mccartney={
 		name="Paul McCartney"
-		desc = PAUL_MCCRARTNEY_DESC
 		portraits={
 			army={
 				small=""
@@ -279,6 +265,7 @@ characters={
 			}
 		}
 		corps_commander={
+			desc = PAUL_MCCRARTNEY_DESC
 			traits={ militiaman }
 			skill=2
 			attack_skill=1
@@ -290,7 +277,6 @@ characters={
 	}
 	ESS_daniel_radcliffe={
 		name="Daniel Radcliffe"
-		desc = DANIEL_RADCLIFFE_DESC
 		portraits={
 			army={
 				small=""
@@ -300,6 +286,7 @@ characters={
 			}
 		}
 		corps_commander={
+			desc = DANIEL_RADCLIFFE_DESC
 			traits={ militiaman }
 			skill=2
 			attack_skill=1

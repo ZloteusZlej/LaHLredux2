@@ -214,58 +214,6 @@ characters={
 			}
 		}
 	}
-	SRI_SRL_democratic_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = SRL_democratic_guy
-			allowed  = {
-					original_tag  = SRL
-				}
-				traits  = {
-					democratic_reformer
-				}
-				do_effect  = {
-					not  = {
-						has_government  = democratic
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="SRL_democratic_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_1"
-			}
-		}
-	}
-	SRI_SRL_fascist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = SRL_fascist_guy
-			allowed  = {
-					original_tag  = SRL
-				}
-				traits  = {
-					fascist_demagogue
-				}
-				do_effect  = {
-					not  = {
-						has_government  = fascism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="SRL_fascist_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_2"
-			}
-		}
-	}
 	SRI_SRL_ai2={
 		advisor={
 			slot = high_command
@@ -405,32 +353,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_3"
-			}
-		}
-	}
-	SRI_SRL_communist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = SRL_communist_guy
-			allowed  = {
-					original_tag  = SRL
-				}
-				traits  = {
-					communist_revolutionary
-				}
-				do_effect  = {
-					not  = {
-						has_government  = communism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="SRL_communist_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_3"
 			}
 		}
 	}

@@ -5,7 +5,12 @@ shared_focus = {
 	x = 26
 	y = 0
 	completion_reward = {
-		NTH = { country_event = albion.4 days = 1 }
+		NTH = { 
+			country_event = {
+				id = albion.4 
+				days = 1 
+			}
+		}
 	}
 }
 
@@ -19,7 +24,12 @@ shared_focus = {
 	x = 23
 	y = 1
 	completion_reward = {
-		NTH = { country_event = albion.5 days = 1 }
+		NTH = { 
+			country_event = {
+				id = albion.5
+				days = 1 
+			}
+		}
 	}
 }
 
@@ -33,7 +43,12 @@ shared_focus = {
 	x = 21
 	y = 2
 	completion_reward = { 
-		NTH = { country_event = albion.6 days = 1 }
+		NTH = { 
+			country_event = {
+				id = albion.6
+				days = 1 
+			}
+		}
 	}
 }
 
@@ -47,7 +62,12 @@ shared_focus = {
 	x = 23
 	y = 2
 	completion_reward = {
-		NTH = {	 country_event = albion.7 days = 1 }
+		NTH = { 
+			country_event = {
+				id = albion.7
+				days = 1 
+			}
+		}
 	}
 }
 
@@ -396,7 +416,12 @@ shared_focus = {
 	x = 11
 	y = 0
 	completion_reward = {
-		NTH = { country_event = albion.10 days = 1 }
+		NTH = { 
+			country_event = {
+				id = albion.10
+				days = 1 
+			}
+		}
 	}
 }
 
@@ -592,8 +617,8 @@ shared_focus = {
 		focus = NTH_doctrine_of_the_new_millennium
 	}
 	completion_reward = {
-		add_idea = NTH_eurasian_doctrine_m 
-		remove_idea = NTH_eurasian_doctrine 
+		add_ideas = NTH_eurasian_doctrine_m 
+		remove_ideas = NTH_eurasian_doctrine 
 	}
 	cost = 10
 	x = 10
@@ -607,9 +632,6 @@ shared_focus = {
 		focus = NTH_doctrine_of_the_new_millennium
 	}
 	completion_reward = {
-		NTH = {
-			research_speed_factor = 0.5
-		}
 	}
 	cost = 10
 	x = 12

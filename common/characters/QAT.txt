@@ -320,32 +320,6 @@ characters={
 			}
 		}
 	}
-	QAT_democratic_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = QAT_democratic_guy
-			allowed  = {
-					original_tag  = QAT
-				}
-				traits  = {
-					democratic_reformer
-				}
-				do_effect  = {
-					not  = {
-						has_government  = democratic
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="QAT_democratic_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_1"
-			}
-		}
-	}
 	QAT_acd2={
 		advisor={
 			slot = army_chief
@@ -386,32 +360,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_air_arab_2"
-			}
-		}
-	}
-	QAT_communist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = QAT_communist_guy
-			allowed  = {
-					original_tag  = QAT
-				}
-				traits  = {
-					communist_revolutionary
-				}
-				do_effect  = {
-					not  = {
-						has_government  = communism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="QAT_communist_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_3"
 			}
 		}
 	}
@@ -468,32 +416,6 @@ characters={
 				}
 		}
 		name="QAT_pot"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
-			}
-		}
-	}
-	QAT_fascist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = QAT_fascist_guy
-			allowed  = {
-					original_tag  = QAT
-				}
-				traits  = {
-					fascist_demagogue
-				}
-				do_effect  = {
-					not  = {
-						has_government  = fascism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="QAT_fascist_guy"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_arab_2"

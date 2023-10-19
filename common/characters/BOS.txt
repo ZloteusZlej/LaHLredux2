@@ -135,32 +135,6 @@ characters={
 			id=-1
 		}
 	}
-	BOS_communist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = BOS_communist_guy
-			allowed  = {
-					original_tag  = BOS
-				}
-				traits  = {
-					communist_revolutionary
-				}
-				do_effect  = {
-					not  = {
-						has_government  = communism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="BOS_communist_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_3"
-			}
-		}
-	}
 	BOS_aa2={
 		advisor={
 			slot = high_command
@@ -366,32 +340,6 @@ characters={
 			}
 		}
 	}
-	BOS_democratic_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = BOS_democratic_guy
-			allowed  = {
-					original_tag  = BOS
-				}
-				traits  = {
-					democratic_reformer
-				}
-				do_effect  = {
-					not  = {
-						has_government  = democratic
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="BOS_democratic_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-	}
 	BOS_ncs={
 		advisor={
 			slot = high_command
@@ -513,32 +461,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_3"
-			}
-		}
-	}
-	BOS_fascist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = BOS_fascist_guy
-			allowed  = {
-					original_tag  = BOS
-				}
-				traits  = {
-					fascist_demagogue
-				}
-				do_effect  = {
-					not  = {
-						has_government  = fascism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="BOS_fascist_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_2"
 			}
 		}
 	}

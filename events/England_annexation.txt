@@ -57,12 +57,12 @@ country_event = { #Fate of Scotland
 	}
 	option = { 
 		name = ENG_annex.1.wes.b
+		ai_chance = {
+			base = 0
+		}
 	    if = { 
 		    limit = {
                 original_tag = WES
-			}
-			ai_chance = {
-				base = 0
 			}
 			add_stability = -0.5
 		}
@@ -132,12 +132,12 @@ country_event = { #Fate of Ireland
 	}
 	option = { 
 		name = ENG_annex.2.wes.b
+		ai_chance = {
+			base = 0
+		}
 	    if = { 
 		    limit = {
                 original_tag = WES
-			}
-			ai_chance = {
-				base = 0
 			}
 			add_stability = -0.5
 		}

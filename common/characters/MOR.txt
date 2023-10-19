@@ -154,32 +154,6 @@ characters={
 			}
 		}
 	}
-	MOR_democratic_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = MOR_democratic_guy
-			allowed  = {
-					original_tag  = MOR
-				}
-				traits  = {
-					democratic_reformer
-				}
-				do_effect  = {
-					not  = {
-						has_government  = democratic
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="MOR_democratic_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_1"
-			}
-		}
-	}
 	MOR_acgs={
 		advisor={
 			slot = air_chief
@@ -339,32 +313,6 @@ characters={
 			}
 		}
 	}
-	MOR_communist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = MOR_communist_guy
-			allowed  = {
-					original_tag  = MOR
-				}
-				traits  = {
-					communist_revolutionary
-				}
-				do_effect  = {
-					not  = {
-						has_government  = communism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="MOR_communist_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_3"
-			}
-		}
-	}
 	MOR_aco2={
 		advisor={
 			slot = army_chief
@@ -383,32 +331,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_army_arab_2"
-			}
-		}
-	}
-	MOR_fascist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = MOR_fascist_guy
-			allowed  = {
-					original_tag  = MOR
-				}
-				traits  = {
-					fascist_demagogue
-				}
-				do_effect  = {
-					not  = {
-						has_government  = fascism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="MOR_fascist_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
 			}
 		}
 	}

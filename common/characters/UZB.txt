@@ -217,58 +217,6 @@ characters={
 			}
 		}
 	}
-	UZB_democratic_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = UZB_democratic_guy
-			allowed  = {
-					original_tag  = UZB
-				}
-				traits  = {
-					democratic_reformer
-				}
-				do_effect  = {
-					not  = {
-						has_government  = democratic
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="UZB_democratic_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_1"
-			}
-		}
-	}
-	UZB_fascist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = UZB_fascist_guy
-			allowed  = {
-					original_tag  = UZB
-				}
-				traits  = {
-					fascist_demagogue
-				}
-				do_effect  = {
-					not  = {
-						has_government  = fascism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="UZB_fascist_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_2"
-			}
-		}
-	}
 	UZB_ai2={
 		advisor={
 			slot = high_command
@@ -408,32 +356,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_3"
-			}
-		}
-	}
-	UZB_communist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = UZB_communist_guy
-			allowed  = {
-					original_tag  = UZB
-				}
-				traits  = {
-					communist_revolutionary
-				}
-				do_effect  = {
-					not  = {
-						has_government  = communism
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="UZB_communist_guy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_3"
 			}
 		}
 	}
