@@ -8,7 +8,6 @@ country_event = {
 	
     fire_only_once = yes	
 	immediate = {
-	SPA_release_CAT = yes
 	hidden_effect = {
 		    CAT = {
 		        add_state_core = 662
@@ -41,31 +40,30 @@ country_event = {
 	
     fire_only_once = yes	
 	immediate = {
-	SPA_release_AND = yes
-	hidden_effect = {
-		    AND = {
-		        add_state_core = 675
-		        transfer_state = 675
-				add_state_core = 687
-		        transfer_state = 687
-			}
-			UAS = {
-				transfer_state = 688
-			}
-    }
+		hidden_effect = {
+				AND = {
+					add_state_core = 675
+					transfer_state = 675
+					add_state_core = 687
+					transfer_state = 687
+				}
+				UAS = {
+					transfer_state = 688
+				}
+		}
+	}
 	option = {
 		name = SPA_event.2.a
 		add_stability = -0.20
     }	
-		option = {
-			name = SPA_event.2.b
-			trigger = {
-	        is_ai = no
-			}
-			hidden_effect = {
-				AND = {
-	            change_tag_from = SPA
-				}
+	option = {
+		name = SPA_event.2.b
+		trigger = {
+		is_ai = no
+		}
+		hidden_effect = {
+			AND = {
+			change_tag_from = SPA
 			}
 		}
 	}
@@ -79,7 +77,6 @@ country_event = {
 	
     fire_only_once = yes	
 	immediate = {
-	SPA_release_AND = yes
 	hidden_effect = {
 		    POR = {
 		        add_state_core = 679

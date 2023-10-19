@@ -241,10 +241,6 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		army_infantry_attack_factor = 0.02
-		motorized_attack_factor = 0.02
-		mechanized_attack_factor = 0.02
-		air_cas_efficiency = 0.02
 	}
 }
 
@@ -280,7 +276,10 @@ country_event = {
 		add_political_power = -100
 		add_war_support = -0.15
 		MRC = {
-			country_event = { albion.40 days = 1 }
+			country_event = { 
+				id = albion.40 
+				days = 1 
+			}
 		}
 	}
 }
@@ -300,7 +299,10 @@ country_event = {
 		add_political_power = -100
 		add_war_support = -0.15
 		ESS = {
-			country_event = { albion.40 days = 1 }
+			country_event = { 
+				id = albion.40 
+				days = 1 
+			}
 		}
 	}
 }
@@ -320,7 +322,10 @@ country_event = {
 		add_political_power = -100
 		add_war_support = -0.15
 		KNT = {
-			country_event = { albion.40 days = 1 }
+			country_event = { 
+				id = albion.40 
+				days = 1 
+			}
 		}
 	}
 }
@@ -340,7 +345,10 @@ country_event = {
 		add_political_power = -100
 		add_war_support = -0.15
 		EAG = {
-			country_event = { albion.40 days = 1 }
+			country_event = { 
+				id = albion.40 
+				days = 1 
+			}
 		}
 	}
 }
@@ -360,7 +368,10 @@ country_event = {
 		add_political_power = -100
 		add_war_support = -0.15
 		WES = {
-			country_event = { albion.40 days = 1 }
+			country_event = { 
+				id = albion.40 
+				days = 1 
+			}
 		}
 	}
 }
@@ -380,7 +391,10 @@ country_event = {
 		add_political_power = -100
 		add_war_support = -0.15
 		SUS = {
-			country_event = { albion.40 days = 1 }
+			country_event = { 
+				id = albion.40 
+				days = 1 
+			}
 		}
 	}
 }
@@ -400,7 +414,10 @@ country_event = {
 		add_political_power = -100
 		add_war_support = -0.15
 		SCO = {
-			country_event = { albion.40 days = 1 }
+			country_event = { 
+				id = albion.40 
+				days = 1 
+			}
 		}
 	}
 }
@@ -420,7 +437,10 @@ country_event = {
 		add_political_power = -100
 		add_war_support = -0.15
 		WLS = {
-			country_event = { albion.40 days = 1 }
+			country_event = { 
+				id = albion.40 
+				days = 1 
+			}
 		}
 	}
 }
@@ -437,9 +457,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		add_idea = {
-			NTH_holding_out
-		}
+		add_ideas = NTH_holding_out
 	}
 }
 

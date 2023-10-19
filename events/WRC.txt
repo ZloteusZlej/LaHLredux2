@@ -9,17 +9,14 @@ country_event = {
 	picture = GFX_WRC_fall_of_northern_china
 
     immediate = {
-       WRC_release_CHC = yes
-       WRC_release_DAL = yes
-       WRC_release_BMR = yes
        hidden_effect = {
            WRC = {
-                 set_capital = 1182
+                set_capital = {state = 1182}
            }
            CHC = {
                 add_state_core = 415
 				transfer_state = 415
-				set_capital = 415
+				set_capital = {state = 415}
 
 				set_state_owner = 415
 				set_state_owner = 416
@@ -33,14 +30,14 @@ country_event = {
            DAL = {
                 add_state_core = 471
 				transfer_state = 471
-				set_capital = 471
+				set_capital = {state = 471}
 				set_state_owner = 471
            }
 
            BMR = {
                 add_state_core = 477
 				transfer_state = 477
-				set_capital = 477
+				set_capital = {state = 477}
 				set_state_owner = 477
 
 				set_state_owner = 414
@@ -119,7 +116,6 @@ country_event = {
 	picture = GFX_WRC_fall_of_west
 
 	immediate = {
-       WRC_release_FHT = yes
        hidden_effect = {
        
 		   country_event = {
@@ -129,7 +125,7 @@ country_event = {
               FHT = {
                 add_state_core = 1213
 				transfer_state = 1213
-				set_capital = 1213
+				set_capital = {state = 1213}
 				set_state_owner = 1213
 
 				set_state_owner = 432
@@ -193,8 +189,6 @@ country_event = {
 	picture = GFX_WRC_fall_of_shandong
 
 	immediate = {
-       WRC_release_NFM = yes
-       WRC_release_SOL = yes
        hidden_effect = {
 		   country_event = {
 			   id = WRC_event.4
@@ -204,7 +198,7 @@ country_event = {
               SOL = {
                 add_state_core = 1179
 				transfer_state = 1179
-				set_capital = 1179
+				set_capital = {state = 1179}
 				set_state_owner = 1179
 
 				set_state_owner = 1264
@@ -220,7 +214,7 @@ country_event = {
               NFM = {
                 add_state_core = 1177
 				transfer_state = 1177
-				set_capital = 1177
+				set_capital = {state = 1177}
 				set_state_owner = 1177
 
                 set_state_owner = 1178

@@ -201,12 +201,12 @@ country_event = { #Fate of Wales
 	}
 	option = { 
 		name = ENG_annex.3.wes.b
+		ai_chance = {
+			base = 0
+		}
 	    if = { 
 		    limit = {
                 original_tag = WES
-			}
-			ai_chance = {
-				base = 0
 			}
 			add_stability = -0.5
 		}
