@@ -909,11 +909,11 @@ ideas = {
 					owns_state = 1165
 				}
 			}
+			research_bonus = {
+				electronics = 0.1
+			}
 			
 			modifier = {
-				research_bonus = {
-					electronics = 0.1
-			}
 				air_mission_efficiency = 0.1
 				air_night_penalty = -0.1
 			}
@@ -1742,12 +1742,9 @@ ideas = {
 				army_morale_factor = -0.1
 				breakthrough_factor = 0.1
 				army_attack_factor = 0.1
-			}
-			targeted_modifier = {
-				every_army_leader = {
-					is_leading_army = yes
+				all_unit_leader = {
+					wounded_chance_factor = 0.1
 				}
-				wounded_chance_factor = 0.1
 			}
 		}
 	}
@@ -1768,12 +1765,9 @@ ideas = {
 				resistance_decay_on_our_occupied_states = 0.2
 				land_night_attack = 0.1
 				army_defence_factor = -0.1
-			}
-			targeted_modifier = {
-				every_army_leader = {
-					is_leading_army = yes
+				all_unit_leader = {
+					sickness_chance = 0.05
 				}
-				sickness_chance = 0.05
 			}
 		}
 	}
@@ -2639,10 +2633,11 @@ ideas = {
 			
 			removal_cost = -1
 			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
 			modifier = {
-				research_bonus = {
-					electronics = 0.15
-				}
 				political_power_factor = -0.1
 			}
 		}

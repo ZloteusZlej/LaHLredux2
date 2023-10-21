@@ -2224,9 +2224,7 @@ SUS_his_majestys_bureau_decision = {
 		}
 		custom_cost_text = SUS_AGENT_NUMBER_LOW
         modifier = {
-			SUS = {
-				political_power_gain = -0.1
-			}
+			political_power_gain = -0.1		
         }
 		available = {
 			check_variable = { SUS_number_of_agents > 19 }

@@ -39,7 +39,7 @@ leader_traits = {
 	}
 	maenad = { #Natella Speranskaja#
 		random = no
-		enemy_partisan_effect = -0.05
+		resistance_activity = -0.05
 		army_morale_factor = 0.02
 
 		ai_will_do = {
@@ -213,8 +213,8 @@ leader_traits = {
 	Socrates = { #Aleksej_Sutuga#
 		random = no
 		training_time_army_factor = -0.1
-			partisan_effect = 0.1
-				enemy_partisan_effect = -0.1
+			resistance_growth_on_our_occupied_states = 0.1
+			resistance_activity = -0.1
 		ai_will_do = {
 			factor = 1
 		}
@@ -236,7 +236,7 @@ leader_traits = {
 		random = no
 		political_power_gain = -0.1
 		stability_factor = -0.10
-		war_support = -0.5
+		war_support_factor = -0.5
 		
 		ai_will_do = {
 			factor = 1
@@ -795,7 +795,7 @@ leader_traits = {
 ##IDEAS_ROMAN_SOCIAL_TSARDOM##
 	tyrant = { #Valerij_Chudinov#
 		random = no
-		enemy_partisan_effect = -0.05
+		resistance_activity  = -0.05
 		army_morale_factor = 0.02
 
 		ai_will_do = {
@@ -829,7 +829,7 @@ leader_traits = {
 ##LEADERS_NEW_SOVIET_UNION##
 	lead_investigator = { #Dmitrij_Puchkov#
 		random = no
-		enemy_partisan_effect = -0.05
+		resistance_activity  = -0.05
 		army_morale_factor = 0.02
 
 		ai_will_do = {
@@ -929,7 +929,7 @@ leader_traits = {
 		}
 	}
 	priest_slayer = { #Andrej_Rudoj#
-		enemy_partisan_effect = -0.25
+		resistance_activity  = -0.25
 		war_support_factor = 0.05
 		stability_factor = -0.10 
 
@@ -1391,7 +1391,7 @@ leader_traits = {
 	rules_the_world = { #Katie Hopkins#
 		random = no
 		stability_factor = -0.1
-		enemy_partisan_effect = -0.1
+		resistance_activity  = -0.1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1862,7 +1862,7 @@ leader_traits = {
 	}	
 	knight_blogger = { #Tim Montgomerie#
 		random = no
-		occupation_cost = -0.25
+		compliance_gain = 0.25
 		ai_will_do = {
 			factor = 1
 		}
@@ -2055,7 +2055,7 @@ leader_traits = {
 	
 	charming_justifier = { #Harold Elletson#
 		random = no
-		war_support = 0.03
+		war_support_factor = 0.03
 		stability_factor = 0.1
 		non_core_manpower = 0.03
 		ai_will_do = {
@@ -2100,7 +2100,7 @@ leader_traits = {
 	provocateur = { #Martin Hohmann#
 		random = no
 		drift_defence_factor = -0.15
-		enemy_partisan_effect = -0.1
+		resistance_activity  = -0.1
 		political_power_factor = 0.1
 		ai_will_do = {
 			factor = 1
@@ -2328,7 +2328,7 @@ leader_traits = {
 	}
 	butcher = { #Aleksandr_Muzychko#
 		random = no
-		enemy_partisan_effect = -0.3
+		resistance_activity  = -0.3
 		consumer_goods_factor = -0.03
 
 		ai_will_do = {
