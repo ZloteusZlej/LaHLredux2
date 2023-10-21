@@ -738,7 +738,7 @@ country_event = {
 		option = {
 			name = ESS_event.17.a
 			add_equipment_to_stockpile = {
-				type = evangelion_equipment
+				type = evangelion_equipment_1
 				amount = 15
 				producer = KNT
 			}
@@ -774,7 +774,7 @@ country_event = {
 		option = {
 			name = ESS_event.19.a
 			add_equipment_to_stockpile = {
-				type = unmanned_tank_equipment
+				type = unmanned_tank_equipment_1
 				amount = 50
 				producer = KNT
 			}
@@ -1517,26 +1517,26 @@ country_event = { ###Hidden effects###
 					not = {
 						has_completed_focus = ESS_elevate_warlords
 					}
-					add_to_variable = {
-						var = ESS_central_region_loyalty
-						value = 10
-					}
-					add_to_variable = {
-						var = ESS_south_west_region_loyalty
-						value = 10
-					}
-					add_to_variable = {
-						var = ESS_south_east_region_loyalty
-						value = 10
-					}
-					add_to_variable = {
-						var = ESS_north_west_region_loyalty
-						value = 10
-					}
-					add_to_variable = {
-						var = ESS_north_east_region_loyalty
-						value = 10
-					}
+				}
+				add_to_variable = {
+					var = ESS_central_region_loyalty
+					value = 10
+				}
+				add_to_variable = {
+					var = ESS_south_west_region_loyalty
+					value = 10
+				}
+				add_to_variable = {
+					var = ESS_south_east_region_loyalty
+					value = 10
+				}
+				add_to_variable = {
+					var = ESS_north_west_region_loyalty
+					value = 10
+				}
+				add_to_variable = {
+					var = ESS_north_east_region_loyalty
+					value = 10
 				}
 			}
 		}

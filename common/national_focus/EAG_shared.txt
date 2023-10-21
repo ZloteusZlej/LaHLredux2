@@ -439,12 +439,12 @@ shared_focus = {
 			producer = GER
 		}
 		add_equipment_to_stockpile = {
-			type = infantry_fighting_vehicle_equipment
+			type = infantry_fighting_vehicle_equipment_1
 			amount = 25
 			producer = FRA
 		}
 		add_equipment_to_stockpile = {
-			type = main_battle_tank_equipment
+			type = main_battle_tank_equipment_1
 			amount = 25
 			producer = HOL
 		}
@@ -1444,17 +1444,17 @@ shared_focus = {
 	}
 	completion_reward = {
 		add_equipment_to_stockpile = {
-			type = fighter_equipment
+			type = fighter_equipment_1
 			amount = 120
 			producer = EAG
 		}
 		add_equipment_to_stockpile = {
-			type = CAS_equipment
+			type = CAS_equipment_1
 			amount = 75
 			producer = EAG
 		}
 		add_equipment_to_stockpile = {
-			type = strat_bomber_equipment
+			type = strat_bomber_equipment_0
 			amount = 75
 			producer = EAG
 		}
@@ -1556,26 +1556,26 @@ shared_focus = {
 		}
 		EAG = {
 			create_ship = {
-				type = ship_hull_cruiser_2
+				type = modern_ship_hull_cruiser_2
 				equipment_variant = "Ostanglien"
 				creator = EAG
 				name = "UFS Dover"
 			}
 			
 			create_ship = {
-				type = ship_hull_cruiser_2
+				type = modern_ship_hull_cruiser_2
 				equipment_variant = "Ostanglien"
 				creator = EAG
 				name = "UFS Ipswich"
 			}
 			create_ship = {
-				type = ship_hull_submarine_1
+				type = modern_ship_hull_submarine_1
 				equipment_variant = "Ostanglien"
 				creator = EAG
 				name = "UFS Thames"
 			}
 			create_ship = {
-				type = ship_hull_submarine_1
+				type = modern_ship_hull_submarine_1
 				equipment_variant = "Ostanglien"
 				creator = EAG
 				name = "UFS Müller"
@@ -3029,7 +3029,7 @@ shared_focus = {
 		}
 		add_ideas = EAG_toyotta_tactics
 		add_equipment_to_stockpile = {
-			type = battle_bus_equipment
+			type = battle_bus_equipment_1
 			amount = 200
 			producer = EAG
 		}
@@ -3055,7 +3055,7 @@ shared_focus = {
 		army_experience = 10
 		add_ideas = EAG_improvised_armor
 		add_equipment_to_stockpile = {
-			type = infantry_fighting_vehicle_equipment
+			type = infantry_fighting_vehicle_equipment_1
 			amount = 300
 			producer = EAG
 		}
@@ -3078,12 +3078,12 @@ shared_focus = {
 		if = {
 			limit = {
 				NOT = {
-					has_tech = obsolete_anti_air
+					has_tech = outdated_anti_air
 				}
 			}
 			EAG = {
 				set_technology = {
-					obsolete_anti_air = 1
+					outdated_anti_air = 1
 				}
 			}
 		}
@@ -4285,7 +4285,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		add_equipment_to_stockpile = {
-			type = fighter_equipment
+			type = fighter_equipment_1
 			amount = 75
 			producer = EAG
 		}
@@ -4303,12 +4303,12 @@ shared_focus = {
 	}
 	completion_reward = {
 		add_equipment_to_stockpile = {
-			type = CAS_equipment
+			type = CAS_equipment_1
 			amount = 50
 			producer = EAG
 		}
 		add_equipment_to_stockpile = {
-			type = strat_bomber_equipment
+			type = strat_bomber_equipment_0
 			amount = 50
 			producer = EAG
 		}

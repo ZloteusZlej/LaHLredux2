@@ -671,19 +671,10 @@ ESS_desperate_measures = {
 		}
 	}
 	ESS_drain_london = {
-	days_remove = 60
-	visible = {
-	NOT = {
-			has_country_flag = ESS_london_flood_proposed
-			}
-		}
-	available = {
-		NOT = {
-			has_country_flag = ESS_londons_aquapark
-			}
+		days_remove = 60
 		ai_will_do = {
 			factor = 100
-			}
+		}
 		highlight_states = {
 			highlight_state_targets = { state = 1160 }
 			highlight_provinces = {
@@ -693,8 +684,18 @@ ESS_desperate_measures = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-	remove_effect = {
-		clr_country_flag = ESS_londons_aquapark
+		visible = {
+			NOT = {
+				has_country_flag = ESS_london_flood_proposed
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = ESS_londons_aquapark
+			}
+		}
+		remove_effect = {
+			clr_country_flag = ESS_londons_aquapark
 			1160 = {
 				remove_province_modifier = {
 					static_modifiers = { flooded }
@@ -703,9 +704,8 @@ ESS_desperate_measures = {
 					}
 				}
 			}
-		}
-	}	
-}
+		}	
+	}
 }
 ESS_take_what_is_ours = {
 	ESS_raid_KNT = {

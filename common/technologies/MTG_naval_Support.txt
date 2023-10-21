@@ -122,27 +122,27 @@ technologies = {
 		}
 
 
-		destroyer = {
+		modern_corvette = {
 			lg_attack = 0.05
 			lg_armor_piercing = 0.05
 		}
-		light_cruiser = {
+		modern_frigate = {
 			lg_attack = 0.05
 			lg_armor_piercing = 0.05
 		}
-		heavy_cruiser = {
+		modern_destroyer = {
 			lg_attack = 0.05
 			lg_armor_piercing = 0.05
 		}
-		battleship = {
+		modern_cruiser = {
 			lg_attack = 0.05
 			lg_armor_piercing = 0.05
 		}
-		battle_cruiser = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
-		}
-		carrier = {
+		#battle_cruiser = {
+		#	lg_attack = 0.05
+		#	lg_armor_piercing = 0.05
+		#}
+		modern_carrier = {
 			lg_attack = 0.05
 			lg_armor_piercing = 0.05
 		}
@@ -223,27 +223,27 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		destroyer = {
+		modern_corvette = {
 			lg_attack = 0.05
 			lg_armor_piercing = 0.05
 		}
-		light_cruiser = {
+		modern_frigate = {
 			lg_attack = 0.05
 			lg_armor_piercing = 0.05
 		}
-		heavy_cruiser = {
+		modern_destroyer = {
 			lg_attack = 0.05
 			lg_armor_piercing = 0.05
 		}
-		battleship = {
+		modern_cruiser = {
 			lg_attack = 0.05
 			lg_armor_piercing = 0.05
 		}
-		battle_cruiser = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
-		}
-		carrier = {
+		#battle_cruiser = {
+		#	lg_attack = 0.05
+		#	lg_armor_piercing = 0.05
+		#}
+		modern_carrier = {
 			lg_attack = 0.05
 			lg_armor_piercing = 0.05
 		}
@@ -358,11 +358,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		light_cruiser = {
+		modern_frigate = {
 			lg_attack = 0.05
 			lg_armor_piercing = 0.05
 		}
-		heavy_cruiser = {
+		modern_destroyer = {
 			hg_attack = 0.05
 			hg_armor_piercing = 0.05
 		}
@@ -442,11 +442,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		light_cruiser = {
+		modern_frigate = {
 			lg_attack = 0.05
 			lg_armor_piercing = 0.05
 		}
-		heavy_cruiser = {
+		modern_destroyer = {
 			hg_attack = 0.05
 			hg_armor_piercing = 0.05
 		}
@@ -533,13 +533,6 @@ technologies = {
 				has_tech = basic_ship_hull_heavy
 				factor = 20
 			}
-			modifier = {
-				OR = {
-					tag = GER
-					tag = JAP
-				}
-				factor = 2
-			}
 		}
 
 		categories = {
@@ -578,13 +571,6 @@ technologies = {
 				has_tech = improved_ship_hull_heavy
 				factor = 20
 			}
-			modifier = {
-				OR = {
-					tag = GER
-					tag = JAP
-				}
-				factor = 2
-			}
 		}
 
 		categories = {
@@ -618,13 +604,6 @@ technologies = {
 				has_tech = advanced_ship_hull_heavy
 				factor = 20
 			}
-			modifier = {
-				OR = {
-					tag = GER
-					tag = JAP
-				}
-				factor = 2
-			}
 		}
 
 		categories = {
@@ -644,14 +623,14 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		battleship = {
+		modern_cruiser = {
 			hg_attack = 0.05
 			hg_armor_piercing = 0.05
 		}
-		battle_cruiser = {
-			hg_attack = 0.05
-			hg_armor_piercing = 0.05
-		}
+		#battle_cruiser = {
+		#	hg_attack = 0.05
+		#	hg_armor_piercing = 0.05
+		#}
 
 		folder = {
 			name = mtgnavalsupportfolder
@@ -683,14 +662,14 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		battleship = {
+		modern_cruiser = {
 			hg_attack = 0.05
 			hg_armor_piercing = 0.05
 		}
-		battle_cruiser = {
-			hg_attack = 0.05
-			hg_armor_piercing = 0.05
-		}
+		#battle_cruiser = {
+		#	hg_attack = 0.05
+		#	hg_armor_piercing = 0.05
+		#}
 
 		folder = {
 			name = mtgnavalsupportfolder
@@ -740,14 +719,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 20
-			}
 		}
 
 		categories = {
@@ -783,14 +754,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 20
-			}
 		}
 
 		categories = {
@@ -821,14 +784,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 20
-			}
 		}
 
 		categories = {
@@ -858,14 +813,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 20
-			}
 		}
 
 		categories = {
@@ -913,14 +860,6 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 			modifier = {
-				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
-				}
-				factor = 5
-			}
-			modifier = {
 				has_war = yes
 				factor = 3
 			}
@@ -952,16 +891,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		destroyer = {
+		modern_corvette = {
 			torpedo_attack = 0.2
 		}
-		submarine = {
+		modern_submarine = {
 			torpedo_attack = 0.2
 		}
-		light_cruiser = {
+		modern_frigate = {
 			torpedo_attack = 0.2
 		}
-		heavy_cruiser = {
+		modern_destroyer = {
 			torpedo_attack = 0.2
 		}
 
@@ -975,20 +914,8 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 			modifier = {
-				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
-				}
-				factor = 5
-			}
-			modifier = {
 				has_war = yes
 				factor = 3
-			}
-			modifier = {
-				tag = JAP #Japan wants torpedoes EXTRA HARD
-				factor = 2
 			}
 		}
 
@@ -1007,16 +934,16 @@ technologies = {
 		research_cost = 2.5
 
 		start_year = 1942
-		destroyer = {
+		modern_corvette = {
 			naval_torpedo_hit_chance_factor = 0.1
 		}
-		submarine = {
+		modern_submarine = {
 			naval_torpedo_hit_chance_factor = 0.1
 		}
-		light_cruiser = {
+		modern_frigate = {
 			naval_torpedo_hit_chance_factor = 0.1
 		}
-		heavy_cruiser = {
+		modern_destroyer = {
 			naval_torpedo_hit_chance_factor = 0.1
 		}
 		folder = {
@@ -1026,14 +953,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
-				}
-				factor = 5
-			}
 			modifier = {
 				has_war = yes
 				factor = 3
@@ -1067,14 +986,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
-				}
-				factor = 5
-			}
 		}
 
 		categories = {
@@ -1112,10 +1023,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				tag = JAP
-				factor = 5
-			}
 		}
 
 		categories = {
@@ -1152,10 +1059,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				tag = JAP
-				factor = 5
-			}
 		}
 
 		categories = {
@@ -1186,10 +1089,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				tag = JAP
-				factor = 5
-			}
 		}
 
 		categories = {
@@ -1226,15 +1125,6 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 			modifier = {
-				is_historical_focus_on = yes
-				tag = JAP
-				factor = 0.25
-			}
-			modifier = {
-				tag = USA
-				factor = 3
-			}
-			modifier = {
 				has_war = yes
 				factor = 2
 			}
@@ -1266,15 +1156,6 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 			modifier = {
-				is_historical_focus_on = yes
-				tag = JAP
-				factor = 0.25
-			}
-			modifier = {
-				tag = USA
-				factor = 3
-			}
-			modifier = {
 				has_war = yes
 				factor = 2
 			}
@@ -1302,15 +1183,6 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 			modifier = {
-				is_historical_focus_on = yes
-				tag = JAP
-				factor = 0.25
-			}
-			modifier = {
-				tag = USA
-				factor = 3
-			}
-			modifier = {
 				has_war = yes
 				factor = 2
 			}
@@ -1337,14 +1209,14 @@ technologies = {
 			leads_to_tech = fire_control_methods_2
 			research_cost_coeff = 1
 		}
-		battleship = {
+		modern_cruiser = {
 			lg_attack = 0.05
 			hg_attack = 0.05
 		}
-		battle_cruiser = {
-			lg_attack = 0.05
-			hg_attack = 0.05
-		}
+		#battle_cruiser = {
+		#	lg_attack = 0.05
+		#	hg_attack = 0.05
+		#}
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
@@ -1358,10 +1230,6 @@ technologies = {
 			modifier = {
 				has_war = yes
 				factor = 2
-			}
-			modifier = {
-				tag = JAP
-				factor = 5
 			}
 		}
 
@@ -1380,15 +1248,15 @@ technologies = {
 			leads_to_tech = fire_control_methods_3
 			research_cost_coeff = 1
 		}
-		battleship = {
+		modern_cruiser = {
 			lg_attack = 0.1
 			hg_attack = 0.1
 		}
-		battle_cruiser = {
-			lg_attack = 0.1
-			hg_attack = 0.1
-		}
-		heavy_cruiser = {
+		#battle_cruiser = {
+		#	lg_attack = 0.1
+		#	hg_attack = 0.1
+		#}
+		modern_destroyer = {
 			lg_attack = 0.05
 			hg_attack = 0.05
 		}
@@ -1404,10 +1272,6 @@ technologies = {
 				has_war = yes
 				factor = 2
 			}
-			modifier = {
-				tag = JAP
-				factor = 5
-			}
 		}
 
 		categories = {
@@ -1419,23 +1283,23 @@ technologies = {
 	fire_control_methods_3 = {
 
 		research_cost = 2.5
-		battleship = {
+		modern_cruiser = {
 			lg_attack = 0.15
 			hg_attack = 0.15
 		}
-		battle_cruiser = {
-			lg_attack = 0.15
-			hg_attack = 0.15
-		}
-		heavy_cruiser = {
+		#battle_cruiser = {
+		#	lg_attack = 0.15
+		#	hg_attack = 0.15
+		#}
+		modern_destroyer = {
 			lg_attack = 0.1
 			hg_attack = 0.1
 		}
-		light_cruiser = {
+		modern_frigate = {
 			lg_attack = 0.1
 			hg_attack = 0.1
 		}
-		destroyer = {
+		modern_corvette = {
 			lg_attack = 0.05
 			hg_attack = 0.05
 		}
@@ -1452,10 +1316,6 @@ technologies = {
 			modifier = {
 				has_war = yes
 				factor = 2
-			}
-			modifier = {
-				tag = JAP
-				factor = 5
 			}
 		}
 
@@ -1484,7 +1344,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = submarine_mine_laying
+			leads_to_tech = modern_submarine_mine_laying
 			research_cost_coeff = 1
 		}
 
@@ -1504,15 +1364,6 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
-				}
-				factor = 6
-			}
-			modifier = {
 				has_war = yes
 				factor = 2
 			}
@@ -1529,14 +1380,14 @@ technologies = {
 		}
 	}
 
-	submarine_mine_laying = {
+	modern_submarine_mine_laying = {
 
 		research_cost = 2
 
 		start_year = 1922
 
 		path = {
-			leads_to_tech = improved_submarine_mine_laying
+			leads_to_tech = improved_modern_submarine_mine_laying
 			research_cost_coeff = 1
 		}
 
@@ -1551,15 +1402,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
-				}
-				factor = 6
-			}
 		}
 
 		categories = {
@@ -1570,13 +1412,13 @@ technologies = {
 		}
 	}
 
-	improved_submarine_mine_laying = {
+	improved_modern_submarine_mine_laying = {
 
 		research_cost = 2
 
 		start_year = 1940
 
-		submarine = {
+		modern_submarine = {
 			mines_planting = 0.2
 		}
 
@@ -1587,15 +1429,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1.5
-			modifier = {
-				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
-				}
-				factor = 6
-			}
 		}
 
 		categories = {
@@ -1633,15 +1466,6 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
-				}
-				factor = 6
-			}
-			modifier = {
 				has_war = yes
 				factor = 2
 			}
@@ -1673,15 +1497,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
-				}
-				factor = 5
-			}
 		}
 
 		categories = {
@@ -1719,13 +1534,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				OR = {
-					tag = USA
-					tag = ENG
-				}
-				factor = 5
-			}
 		}
 
 		categories = {
@@ -1761,14 +1569,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-				}
-				factor = 7
-			}
 		}
 
 		categories = {
@@ -1798,14 +1598,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-				}
-				factor = 7
-			}
 		}
 
 		categories = {
@@ -1838,10 +1630,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				tag = USA
-				factor = 3
-			}
 		}
 
 		categories = {
@@ -1938,25 +1726,6 @@ technologies = {
 				factor = 0.5
 				has_war = no
 			}
-
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			modifier = {
-				has_war_with = JAP
-				factor = 2
-			}
-
-			modifier = {
-				factor = 3
-				tag = JAP
-			}
-
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
 		}
 
 		categories = {
@@ -1997,44 +1766,6 @@ technologies = {
 				factor = 0.5
 				has_war = no
 			}
-
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			modifier = {
-				has_war_with = JAP
-				factor = 2
-			}
-			modifier = {
-				factor = 50
-				tag = JAP
-				OR = {
-					has_war_with = USA
-					CHI = {
-						OR = {
-							has_capitulated = yes
-							exists = no
-		                    is_subject_of = JAP
-						}
-					}
-				}
-			}
-
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
-
-			modifier = {
-				factor = 10
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				has_war_with = GER
-				GER = { has_war_with = SOV }
-			}
 		}
 
 		categories = {
@@ -2062,24 +1793,6 @@ technologies = {
 			modifier = {
 				factor = 0.5
 				has_war = no
-			}
-
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			modifier = {
-				factor = 2
-				has_war_with = JAP
-			}
-			modifier = {
-				factor = 3
-				tag = JAP
-			}
-
-			modifier = {
-				factor = 2
-				tag = ENG
 			}
 		}
 

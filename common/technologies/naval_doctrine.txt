@@ -3,24 +3,24 @@ technologies = {
 	fleet_in_being = {
 		doctrine_name = "TITLE_FLEET_IN_BEING"
 		
-		#Fleet in being is mainly focused on Battleships (and Battlecrusiers/Heavy cruisers) and ASW with carriers and submarines being used to a lesser extent. The fleet may not have to do anything at all to be useful - simply having a powerful fleet in a protected port forces your enemies to keep a fleet of their own nearby in order you fight you if you emerge
+		#Fleet in being is mainly focused on modern_cruisers (and Battlecrusiers/Heavy cruisers) and ASW with modern_carriers and modern_submarines being used to a lesser extent. The fleet may not have to do anything at all to be useful - simply having a powerful fleet in a protected port forces your enemies to keep a fleet of their own nearby in order you fight you if you emerge
 		#Bonus org for BB/BC/CA
 		
 		
 		# EFFECT #############
-		battleship = {
+		modern_cruiser = {
 			max_organisation = 5			
 		}
-		battle_cruiser = {
+		#battle_cruiser = {
+		#	max_organisation = 5			
+		#}
+		modern_destroyer = {
 			max_organisation = 5			
 		}
-		heavy_cruiser = {
-			max_organisation = 5			
-		}
-		light_cruiser = {
+		modern_frigate = {
 			surface_detection = 0.10
 		}
-		destroyer = {
+		modern_corvette = {
 			surface_detection = 0.10
 		}
 		mines_planting_by_fleets_factor = 0.1
@@ -66,20 +66,20 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 1.0
+			modern_cruiser = 1.0
 			cruiser = 1.0
 		}
 	}
 	
 	battlefleet_concentration = {
 		# EFFECT #############
-		battleship = {
+		modern_cruiser = {
 			max_organisation = 5
 		}
-		battle_cruiser = {
-			max_organisation = 5
-		}
-		heavy_cruiser = {
+		#battle_cruiser = {
+		#	max_organisation = 5
+		#}
+		modern_destroyer = {
 			max_organisation = 5
 		}
 		strike_force_movement_org_loss = -0.2
@@ -113,7 +113,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -124,16 +123,16 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 1.0
+			modern_cruiser = 1.0
 			cruiser = 1.5
 		}
 	}
 	
 	subsidiary_carrier_role = {
-		#Carriers support the Battleships
+		#modern_carriers support the modern_cruisers
 		
 		# EFFECT #############
-		carrier = {
+		modern_carrier = {
 			max_organisation = 10			
 		}
 		sortie_efficiency = 0.1
@@ -167,7 +166,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -186,21 +184,21 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 1.0
-			carrier = 1.5
+			modern_cruiser = 1.0
+			modern_carrier = 1.5
 			naval_air = 0.75
 		}
 	}
 	
 	hunter_killer_groups = {
-		#Groups of Destroyers (and CVEs should those ever be added) formed to hunt down enemy subs
+		#Groups of modern_corvettes (and CVEs should those ever be added) formed to hunt down enemy subs
 		
 		# EFFECT #############
-		destroyer = {
+		modern_corvette = {
 			max_organisation = 5
 			sub_detection = 0.1
 		}
-		light_cruiser = {
+		modern_frigate = {
 			max_organisation = 5
 			sub_detection = 0.2
 		}
@@ -232,11 +230,9 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				has_war_with = GER
 				factor = 5
 			}
 			modifier = {
-				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -251,7 +247,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 1.5
+			modern_cruiser = 1.5
 			cruiser = 1.0
 		}
 	}
@@ -260,7 +256,7 @@ technologies = {
 		#Large, powerful gun armed ships are clearly the best ships
 		
 		# EFFECT #############
-		battleship = {
+		modern_cruiser = {
 			max_organisation = 20
 		}
 		
@@ -303,7 +299,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 2.0
+			modern_cruiser = 2.0
 		}
 	}
 	
@@ -311,7 +307,7 @@ technologies = {
 		#Non base strike trees get a late CV booster
 		
 		# EFFECT #############
-		carrier = {
+		modern_carrier = {
 			max_organisation = 20
 		}
 		sortie_efficiency = 0.2
@@ -352,7 +348,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			carrier = 2.0
+			modern_carrier = 2.0
 			naval_air = 0.75
 		}
 	}
@@ -361,15 +357,15 @@ technologies = {
 		#Top tech for the Battlefleet tree. 
 		
 		# EFFECT #############
-		battleship = {
+		modern_cruiser = {
 			max_organisation = 20
 		}
 
-		battle_cruiser = {
-			max_organisation = 20
-		}
+		#battle_cruiser = {
+		#	max_organisation = 20
+		#}
 
-		heavy_cruiser = {
+		modern_destroyer = {
 			max_organisation = 20
 		}
 
@@ -396,7 +392,6 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -415,7 +410,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 2.0
+			modern_cruiser = 2.0
 		}
 	}
 	
@@ -423,7 +418,7 @@ technologies = {
 		#Convoy escort/ ASW branch
 		
 		# EFFECT #############
-		destroyer = {
+		modern_corvette = {
 			max_organisation = 5
 			sub_detection = 0.05
 		}
@@ -460,7 +455,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -471,7 +465,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 1.0
+			modern_cruiser = 1.0
 			naval_equipment = 1.0
 		}
 	}
@@ -480,7 +474,7 @@ technologies = {
 		#Assigning dedicated convoy escorts to keep them safe
 		
 		# EFFECT #############
-		destroyer = {
+		modern_corvette = {
 			max_organisation = 5
 			sub_detection = 0.05
 		}
@@ -517,7 +511,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -536,16 +529,16 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 1.5
+			modern_cruiser = 1.5
 			naval_equipment = 1.0
 		}
 	}
 	
 	escort_carriers = {
-		#Small carriers/converted merchant ships sail with convoys for increased defense against subs and raiders
+		#Small modern_carriers/converted merchant ships sail with convoys for increased defense against subs and raiders
 
 		# EFFECT #############
-		carrier = {
+		modern_carrier = {
 			sub_detection = 0.25
 		}
 		convoy_escort_efficiency = 0.15
@@ -581,7 +574,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -600,7 +592,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 1.0
+			modern_cruiser = 1.0
 			naval_equipment = 1.5
 		}
 	}
@@ -609,15 +601,15 @@ technologies = {
 		#The top convoy tech, basically now all the earlier concepts are working well with each other for maximum effect
 		
 		# EFFECT #############
-		destroyer = {
+		modern_corvette = {
 			max_organisation = 5
 			sub_detection = 0.1
 		}
-		light_cruiser = {
+		modern_frigate = {
 			max_organisation = 10
 			sub_detection = 0.15
 		}
-		carrier = {
+		modern_carrier = {
 			sub_detection = 0.25
 		}
 		convoy_escort_efficiency = 0.10
@@ -653,7 +645,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -672,7 +663,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 1.0
+			modern_cruiser = 1.0
 			naval_equipment = 1.0
 		}
 	}
@@ -681,7 +672,7 @@ technologies = {
 		# Basic sub-boosting tree, not as good as Trade Interdiction's 
 				
 		# EFFECT ##############
-		submarine = {
+		modern_submarine = {
 			max_organisation = 10
 			surface_detection = 0.05
 		}
@@ -716,7 +707,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			submarine = 2.0
+			modern_submarine = 2.0
 		}
 	}
 	
@@ -724,7 +715,7 @@ technologies = {
 		# Sub boost
 
 		# EFFECT ##############
-		submarine = {
+		modern_submarine = {
 			max_organisation = 10
 			surface_detection = 0.1
 		}
@@ -767,14 +758,14 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			submarine = 2.0
+			modern_submarine = 2.0
 		}
 	}
 	
 	convoy_interdiction = {
 		# Sub boost
 		# EFFECT ##############
-		submarine = {
+		modern_submarine = {
 			max_organisation = 10
 			surface_detection = 0.05
 			convoy_raiding_coordination = 0.05
@@ -818,14 +809,14 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			submarine = 2.0
+			modern_submarine = 2.0
 		}
 	}
 	
 	submarine_offensive = {
 		# Sub boost
 		# EFFECT ##############
-		submarine = {
+		modern_submarine = {
 			max_organisation = 10
 			surface_detection = 0.05
 			convoy_raiding_coordination = 0.1
@@ -863,29 +854,29 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			submarine = 2.0
+			modern_submarine = 2.0
 		}
 	}
 	
 	trade_interdiction = {
 		doctrine_name = "TITLE_TRADE_INTERDICTION"
 		
-		# This tree is focused on sinking convoys, and boosting Subs and all types of Cruiser. It has some boosts for CVs and Battleships, but the CVs should be a bit worse and the BBs a lot worse than Fleet in being's.
+		# This tree is focused on sinking convoys, and boosting Subs and all types of Cruiser. It has some boosts for CVs and modern_cruisers, but the CVs should be a bit worse and the BBs a lot worse than Fleet in being's.
 
 		xp_research_type = navy
 		
 		# EFFECT ##############
-		submarine = {
+		modern_submarine = {
 			max_organisation = 10
 			surface_detection = 0.05	
 		}
 
-		light_cruiser = {
+		modern_frigate = {
 			max_organisation = 10
 			surface_detection = 0.05		
 		}
 
-		heavy_cruiser = {
+		modern_destroyer = {
 			max_organisation = 10
 			surface_detection = 0.05
 		}
@@ -934,7 +925,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = GER
 				factor = 3
 			}
 			modifier = {
@@ -945,7 +935,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			submarine = 1.0
+			modern_submarine = 1.0
 			cruiser = 1.0
 		}
 	}
@@ -954,7 +944,7 @@ technologies = {
 
 		# same as convoy interdiction
 		# EFFECT ##############
-		submarine = {
+		modern_submarine = {
 			max_organisation = 10
 			surface_detection = 0.05
 			convoy_raiding_coordination = 0.05
@@ -992,7 +982,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = GER
 				factor = 3
 			}
 			modifier = {
@@ -1003,15 +992,15 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			submarine = 2.0
+			modern_submarine = 2.0
 		}
 	}
 	
-	unrestricted_submarine_warfare = {
+	modern_submarine_warfare = {
 		#Nice bonus for subs vs convoys
 		
 		# EFFECT ##############
-		submarine = {
+		modern_submarine = {
 			surface_detection = 0.1
 			convoy_raiding_coordination = 0.05
 		}
@@ -1048,7 +1037,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = GER
 				factor = 3
 			}
 			modifier = {
@@ -1067,7 +1055,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			submarine = 2.0
+			modern_submarine = 2.0
 		}
 	}
 	
@@ -1075,7 +1063,7 @@ technologies = {
 		# More sub bonuses - subs operate in groups to sink convoys
 		
 		# EFFECT ##############
-		submarine = {
+		modern_submarine = {
 			max_organisation = 10
 			convoy_raiding_coordination = 0.15
 			surface_detection = 0.10
@@ -1114,7 +1102,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = GER
 				factor = 3
 			}
 			modifier = {
@@ -1133,7 +1120,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			submarine = 2.0
+			modern_submarine = 2.0
 		}
 	}
 	
@@ -1141,7 +1128,7 @@ technologies = {
 		# More sub bonuses - subs are deployed in numbers and the navy is better at putting them in the right places
 		
 		# EFFECT ##############
-		submarine = {
+		modern_submarine = {
 			max_organisation = 10
 			convoy_raiding_coordination = 0.2
 			surface_detection = 0.1
@@ -1178,7 +1165,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = GER
 				factor = 2
 			}
 			modifier = {
@@ -1197,36 +1183,36 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			submarine = 2.0
+			modern_submarine = 2.0
 		}
 	}
 	
 	combined_operations_raiding = {
 		#top raiding idea - subs and surface raiders act in harmony to destroy convoys
 		# EFFECT ##############
-		submarine = {
+		modern_submarine = {
 			max_organisation = 10
 			convoy_raiding_coordination = 0.05
 			surface_detection = 0.1
 		}
 
-		light_cruiser = {
+		modern_frigate = {
 			max_organisation = 10
 			convoy_raiding_coordination = 0.35
 			surface_detection = 0.15
 		}
 
-		heavy_cruiser = {
+		modern_destroyer = {
 			max_organisation = 10
 			convoy_raiding_coordination = 0.35
 			surface_detection = 0.15
 		}
 
-		battle_cruiser = {
-			max_organisation = 10
-			convoy_raiding_coordination = 0.35
-			surface_detection = 0.15
-		}
+		#battle_cruiser = {
+		#	max_organisation = 10
+		#	convoy_raiding_coordination = 0.35
+		#	surface_detection = 0.15
+		#}
 		
 		xp_research_type = navy
 		xp_unlock_cost = 100
@@ -1253,7 +1239,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = GER
 				factor = 2
 			}
 			modifier = {
@@ -1273,21 +1258,21 @@ technologies = {
 		ai_research_weights = {
 			naval_doctrine = -1.0
 			cruiser = 1.5
-			submarine = 1.0
+			modern_submarine = 1.0
 		}
 	}
 	
 	raider_patrols = {
-		#Surface raiding Branch + some boosts for Battleships
+		#Surface raiding Branch + some boosts for modern_cruisers
 		
 		# EFFECT ##############		
-		light_cruiser = {
+		modern_frigate = {
 			max_organisation = 10
 			convoy_raiding_coordination = 0.15
 			surface_detection = 0.10
 		}
 
-		heavy_cruiser = {
+		modern_destroyer = {
 			max_organisation = 10
 			convoy_raiding_coordination = 0.15
 			surface_detection = 0.10
@@ -1323,21 +1308,21 @@ technologies = {
 		ai_research_weights = {
 			naval_doctrine = -1.0
 			cruiser = 1.5
-			battleship = 1.0
+			modern_cruiser = 1.0
 		}
 	}
 	
 	capital_ship_raiders = {
-		#Battleships/Battlecrusiers are used as raiders rather than in the line of battle in a fleet
+		#modern_cruisers/Battlecrusiers are used as raiders rather than in the line of battle in a fleet
 
 		# EFFECT ##############		
-		battle_cruiser = {
-			max_organisation = 20
-			convoy_raiding_coordination = 0.15
-			surface_detection = 0.15
-		}
+		#battle_cruiser = {
+		#	max_organisation = 20
+		#	convoy_raiding_coordination = 0.15
+		#	surface_detection = 0.15
+		#}
 
-		battleship = {
+		modern_cruiser = {
 			max_organisation = 20
 			convoy_raiding_coordination = 0.5
 			surface_detection = 0.25
@@ -1381,7 +1366,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 1.0
+			modern_cruiser = 1.0
 			cruiser = 1.0
 		}
 	}
@@ -1390,13 +1375,13 @@ technologies = {
 
 		#same as battlefleet_concentration
 		# EFFECT #############
-		battleship = {
+		modern_cruiser = {
 			max_organisation = 10
 		}
-		battle_cruiser = {
-			max_organisation = 10
-		}
-		heavy_cruiser = {
+		#battle_cruiser = {
+		#	max_organisation = 10
+		#}
+		modern_destroyer = {
 			max_organisation = 10
 		}		
 		strike_force_movement_org_loss = -0.2
@@ -1437,7 +1422,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 2.0
+			modern_cruiser = 2.0
 		}
 	}
 	
@@ -1445,7 +1430,7 @@ technologies = {
 
 		#same as floating_fortress
 		# EFFECT #############
-		battleship = {
+		modern_cruiser = {
 			max_organisation = 20
 		}
 		navy_capital_ship_defence_factor = 0.10
@@ -1486,7 +1471,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 2.0
+			modern_cruiser = 2.0
 		}
 	}
 	
@@ -1494,7 +1479,7 @@ technologies = {
 
 		#same as floating_airfield
 		# EFFECT #############
-		carrier = {
+		modern_carrier = {
 			max_organisation = 20
 		}
 		sortie_efficiency = 0.2
@@ -1530,16 +1515,16 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			carrier = 2.0
+			modern_carrier = 2.0
 			naval_air = 0.75
 		}
 	}
 	
 	carrier_operations = {
-		# Carrier/Convoy defense branch - not great at either of them, should have worse CVs than Fleet in Being
+		# modern_carrier/Convoy defense branch - not great at either of them, should have worse CVs than Fleet in Being
 
 		# EFFECT #############
-		carrier = {
+		modern_carrier = {
 			max_organisation = 20
 		}
 		modifier = {
@@ -1572,7 +1557,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				has_navy_size = {
-					type = carrier
+					type = modern_carrier
 					size < 1
 				}
 				factor = 0
@@ -1581,7 +1566,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			carrier = 2.0
+			modern_carrier = 2.0
 			naval_air = 0.75
 		}
 	}
@@ -1590,7 +1575,7 @@ technologies = {
 
 		#same as convoy_sailing
 		# EFFECT #############
-		destroyer = {
+		modern_corvette = {
 			max_organisation = 5
 			sub_detection = 0.05
 		}
@@ -1625,16 +1610,16 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 1.0
+			modern_cruiser = 1.0
 			naval_equipment = 1.0
 		}
 	}
 	
 	subsidiary_carrier_role_ti = {
 
-		#same as subsidiary_carrier_role
+		#same as subsidiary_modern_carrier_role
 		# EFFECT #############
-		carrier = {
+		modern_carrier = {
 			max_organisation = 10			
 		}
 		sortie_efficiency = 0.1
@@ -1667,7 +1652,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			carrier = 2.0
+			modern_carrier = 2.0
 			naval_air = 0.75
 		}
 	}
@@ -1676,7 +1661,7 @@ technologies = {
 		# slightly improved CV operation
 
 		# EFFECT #############
-		carrier = {
+		modern_carrier = {
 			max_organisation = 10			
 		}
 		modifier = {
@@ -1711,19 +1696,19 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			carrier = 2.0
+			modern_carrier = 2.0
 			naval_air = 0.75
 		}
 	}
 	
 	base_strike = {
 		doctrine_name = "TITLE_BASE_STRIKE"
-		#This tree is primarily focused on Carriers. It should have the best Carriers, Battleships that are better than Trade interdiction but worse than Fleet in being, and has the same Sub tree as FiB. Convoy defense is better than TI but worse than FiB
+		#This tree is primarily focused on modern_carriers. It should have the best modern_carriers, modern_cruisers that are better than Trade interdiction but worse than Fleet in being, and has the same Sub tree as FiB. Convoy defense is better than TI but worse than FiB
 		
 		xp_research_type = navy
 		
 		# EFFECT ##############
-		carrier = {
+		modern_carrier = {
 			max_organisation = 20
 		}
 		port_strike = 0.5
@@ -1768,10 +1753,6 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				OR = {
-					tag = USA
-					tag = JAP
-				}
 				factor = 2.5
 			}
 			modifier = {
@@ -1782,15 +1763,15 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			carrier = 2.0
+			modern_carrier = 2.0
 			naval_air = 0.75
 		}
 	}
 	
 	carrier_primacy = {
-		#The idea that the carrier is the primary naval weapon and that other ships, even the BB, exist to support them
+		#The idea that the modern_carrier is the primary naval weapon and that other ships, even the BB, exist to support them
 		# EFFECT ##############
-		carrier = {
+		modern_carrier = {
 			max_organisation = 20
 		}
 		sortie_efficiency = 0.1
@@ -1829,17 +1810,9 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				OR = {
-					tag = USA
-					tag = JAP
-				}
 				factor = 2.5
 			}
 			modifier = {
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-				}
 				factor = 2
 			}
 			modifier = {
@@ -1850,18 +1823,18 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			carrier = 2.5
+			modern_carrier = 2.5
 			naval_air = 1.0
 		}
 	}
 	
 	carrier_task_forces = {
-		#Task forces are based around carrier flagship 
+		#Task forces are based around modern_carrier flagship 
 		# EFFECT ##############
-		carrier = {
+		modern_carrier = {
 			max_organisation = 20
 		}
-		light_cruiser = {
+		modern_frigate = {
 			max_organisation = 20
 		}
 		modifier = {
@@ -1898,17 +1871,9 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				OR = {
-					tag = USA
-					tag = JAP
-				}
 				factor = 2.5
 			}
 			modifier = {
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-				}
 				factor = 2
 			}
 			modifier = {
@@ -1923,7 +1888,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			carrier = 1.0
+			modern_carrier = 1.0
 			naval_air = 0.75
 			cruiser = 1.0
 		}
@@ -1933,7 +1898,7 @@ technologies = {
 
 		#same as floating_airfield
 		# EFFECT #############
-		carrier = {
+		modern_carrier = {
 			max_organisation = 20
 		}
 		sortie_efficiency = 0.2
@@ -1968,17 +1933,9 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				OR = {
-					tag = USA
-					tag = JAP
-				}
 				factor = 2.5
 			}
 			modifier = {
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-				}
 				factor = 2
 			}
 			modifier = {
@@ -1997,7 +1954,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			carrier = 2.0
+			modern_carrier = 2.0
 			naval_air = 0.75
 		}
 	}
@@ -2005,7 +1962,7 @@ technologies = {
 	massed_strikes = {
 		#CAGs are larger and more effort is made to have all planes arrive at the target at the same time, even when launched from multiple CVs
 		# EFFECT #############
-		carrier = {
+		modern_carrier = {
 			max_organisation = 20			
 		}
 		carrier_capacity_penalty_reduction = -0.2
@@ -2046,10 +2003,6 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				OR = {
-					tag = USA
-					tag = JAP
-				}
 				factor = 2.5
 			}
 			modifier = {
@@ -2061,10 +2014,6 @@ technologies = {
 				factor = 0.75
 			}
 			modifier = {
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-				}
 				factor = 2
 			}
 			modifier = {
@@ -2075,7 +2024,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			carrier = 2.0
+			modern_carrier = 2.0
 			naval_air = 0.75
 		}
 	}
@@ -2084,7 +2033,7 @@ technologies = {
 
 		#same as floating_fortress
 		# EFFECT #############
-		battleship = {
+		modern_cruiser = {
 			max_organisation = 20
 		}
 		navy_capital_ship_defence_factor = 0.10
@@ -2114,17 +2063,9 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = USA
-					tag = JAP
-				}
 				factor = 4
 			}
 			modifier = {
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-				}
 				factor = 2
 			}
 			modifier = {
@@ -2139,18 +2080,18 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 2.0
+			modern_cruiser = 2.0
 		}
 	}
 	
 	carrier_battlegroups = {
-		#Larger carrier-lead fleets
+		#Larger modern_carrier-lead fleets
 		
 		# EFFECT ##############
-		carrier = {
+		modern_carrier = {
 			max_organisation = 20
 		}
-		light_cruiser = {
+		modern_frigate = {
 			max_organisation = 20
 		}
 
@@ -2182,17 +2123,9 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				OR = {
-					tag = USA
-					tag = JAP
-				}
 				factor = 2.5
 			}
 			modifier = {
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-				}
 				factor = 2
 			}
 			modifier = {
@@ -2211,7 +2144,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			carrier = 1.5
+			modern_carrier = 1.5
 			naval_air = 0.75
 			naval_equipment = 1.0
 		}
@@ -2219,9 +2152,9 @@ technologies = {
 	
 	submarine_operations_bs = {
 
-		# same as submarine_operations
+		# same as modern_submarine_operations
 		# EFFECT ##############
-		submarine = {
+		modern_submarine = {
 			max_organisation = 10
 			surface_detection = 0.05
 		}
@@ -2255,7 +2188,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = USA
 				factor = 2
 			}
 			modifier = {
@@ -2266,7 +2198,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			submarine = 2.0
+			modern_submarine = 2.0
 		}
 	}
 	
@@ -2274,7 +2206,7 @@ technologies = {
 
 		# same as undersea_blockade
 		# EFFECT ##############
-		submarine = {
+		modern_submarine = {
 			max_organisation = 10
 			surface_detection = 0.1
 		}
@@ -2307,7 +2239,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = USA
 				factor = 2
 			}
 			modifier = {
@@ -2326,7 +2257,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			submarine = 2.0
+			modern_submarine = 2.0
 		}
 	}
 	
@@ -2334,7 +2265,7 @@ technologies = {
 
 		# same as convoy_interdiction
 		# EFFECT ##############
-		submarine = {
+		modern_submarine = {
 			max_organisation = 10
 			surface_detection = 0.05
 			convoy_raiding_coordination = 0.05
@@ -2369,7 +2300,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = USA
 				factor = 2
 			}
 			modifier = {
@@ -2388,14 +2318,14 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			submarine = 2.0
+			modern_submarine = 2.0
 		}
 	}
 	
 	submarine_offensive_bs = {
-		# same as submarine_offensive
+		# same as modern_submarine_offensive
 		# EFFECT ##############
-		submarine = {
+		modern_submarine = {
 			max_organisation = 10
 			surface_detection = 0.05
 			convoy_raiding_coordination = 0.10
@@ -2424,7 +2354,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = USA
 				factor = 2
 			}
 			modifier = {
@@ -2443,7 +2372,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			submarine = 2.0
+			modern_submarine = 2.0
 		}
 	}
 	
@@ -2451,7 +2380,7 @@ technologies = {
 
 		#same as convoy_escorts
 		# EFFECT #############
-		destroyer = {
+		modern_corvette = {
 			max_organisation = 5
 			sub_detection = 0.05
 		}
@@ -2486,7 +2415,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = USA
 				factor = 2
 			}
 			modifier = {
@@ -2497,7 +2425,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 1.0
+			modern_cruiser = 1.0
 			naval_equipment = 1.0
 		}
 	}
@@ -2506,11 +2434,11 @@ technologies = {
 		# Lesser version of hunter-killer groups
 		
 		# EFFECT ##############
-		destroyer = {
+		modern_corvette = {
 			max_organisation = 5
 			sub_detection = 0.05
 		}
-		light_cruiser = {
+		modern_frigate = {
 			max_organisation = 5
 			sub_detection = 0.1
 		}
@@ -2546,7 +2474,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = USA
 				factor = 2
 			}
 			modifier = {
@@ -2565,7 +2492,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 1.0
+			modern_cruiser = 1.0
 			naval_equipment = 1.0
 		}
 	}
@@ -2574,7 +2501,7 @@ technologies = {
 
 		#same as convoy_sailing
 		# EFFECT #############
-		destroyer = {
+		modern_corvette = {
 			max_organisation = 5
 			sub_detection = 0.05
 		}
@@ -2609,7 +2536,6 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = USA
 				factor = 2
 			}
 			modifier = {
@@ -2628,7 +2554,7 @@ technologies = {
 		
 		ai_research_weights = {
 			naval_doctrine = -1.0
-			battleship = 1.0
+			modern_cruiser = 1.0
 			naval_equipment = 1.0
 		}
 	}
@@ -2637,15 +2563,15 @@ technologies = {
 
 		#same as integrated_convoy_defence
 		# EFFECT #############
-		destroyer = {
+		modern_corvette = {
 			max_organisation = 5
 			sub_detection = 0.10
 		}
-		light_cruiser = {
+		modern_frigate = {
 			max_organisation = 5
 			sub_detection = 0.15
 		}
-		carrier = {
+		modern_carrier = {
 			sub_detection = 0.25
 		}
 		convoy_escort_efficiency = 0.1
@@ -2674,7 +2600,7 @@ technologies = {
 		ai_research_weights = {
 			naval_doctrine = -1.0
 			naval_equipment = 1.0
-			battleship = 1.0
+			modern_cruiser = 1.0
 		}
 	}
 	

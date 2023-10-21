@@ -1886,18 +1886,18 @@ KNT_special_projects = {
 				has_completed_focus	= KNT_strike_from_above
 			}
 		}
+		complete_effect = {
+			KNT = {
+				country_event = {
+					days = 1
+					id = KNT_event.13
+				}
+			}
+		}
 		available = {
 			KNT = {
 				has_completed_focus	= KNT_strike_from_above
 			}													
-			complete_effect = {
-				KNT = {
-					country_event = {
-						days = 1
-						id = KNT_event.13
-					}
-				}
-			}
 		}
 		remove_effect = {
 			KNT = {
@@ -3614,7 +3614,7 @@ KNT_essex_diplomacy = {
 		}
 		complete_effect = {
 			add_equipment_to_stockpile = {
-				type = evangelion_equipment
+				type = mechanoid_tank_chassis
 				amount = -15
 				producer = KNT
 			}
@@ -3704,7 +3704,7 @@ KNT_essex_diplomacy = {
 		}
 		complete_effect = {
 			add_equipment_to_stockpile = {
-				type = unmanned_tank_equipment
+				type = unmanned_tank_chassis
 				amount = -50
 				producer = KNT
 			}
@@ -4444,7 +4444,7 @@ KNT_selling_shit = {
         complete_effect = {
 			KNT = {
 				add_equipment_to_stockpile = {
-					type = evangelion_equipment
+					type = mechanoid_tank_chassis
 					amount = -25
 					producer = KNT
 				}
@@ -4481,7 +4481,7 @@ KNT_selling_shit = {
         complete_effect = {
 			KNT = {
 				add_equipment_to_stockpile = {
-					type = unmanned_tank_equipment
+					type = unmanned_tank_chassis
 					amount = -35
 					producer = KNT
 				}

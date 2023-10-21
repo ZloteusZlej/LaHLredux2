@@ -11,32 +11,30 @@
 
 mio_cat_eq_all_light_tank = { #Includes (standalone) Amphibious Tank Chassis
 	equipment_type = {
-		light_tank_chassis
+		infantry_fighting_vehicle_chassis
 		amphibious_tank_chassis
 	}	
 }
 
 mio_cat_eq_all_medium_tank = { #Includes Modern Tank Chassis
 	equipment_type = {
-		medium_tank_chassis
-		modern_tank_chassis
+		main_battle_tank_chassis
 	}
 }
 
 mio_cat_eq_all_heavy_tank = { #Includes Super Heavy Tank Chassis
 	equipment_type = {
-		heavy_tank_chassis
-		super_heavy_tank_chassis
+		modern_heavy_tank_chassis
+		super_modern_heavy_tank_chassis
 	}
 }
 
 mio_cat_eq_all_tank_destroyers = { #Includes Super Heavy Tank Chassis
 	equipment_type = {
-		light_tank_destroyer_chassis 
-		medium_tank_destroyer_chassis
-		heavy_tank_destroyer_chassis
-		super_heavy_tank_destroyer_chassis
-		modern_tank_destroyer_chassis
+		infantry_fighting_vehicle_destroyer_chassis
+		main_battle_tank_destroyer_chassis
+		modern_heavy_tank_destroyer_chassis
+		modern_super_heavy_tank_destroyer_chassis
 	}
 }
 
@@ -51,25 +49,25 @@ mio_cat_eq_all_tank_destroyers = { #Includes Super Heavy Tank Chassis
 
 mio_cat_eq_all_carrier = { #Includes all CV --- Used due to custom loc capabilities
 	equipment_type = {
-		ship_hull_carrier
+		modern_ship_hull_carrier
 	}
 }
 
 mio_cat_eq_all_cruiser = { #Includes all Cruiser (CA, CL, Coastal Defense, Torpedo Cruiser, Panzerschiff) --- Used due to custom loc capabilities
 	equipment_type = {
-		ship_hull_cruiser
+		modern_ship_hull_cruiser
 	}
 }
 
 mio_cat_eq_all_destroyer = { #Includes all Destroyers --- Used due to custom loc capabilities (loc for ship_hull_light just sucks)
 	equipment_type = {
-		ship_hull_light
+		modern_ship_hull_light
 	}
 }
 
 mio_cat_eq_all_battleship = { #Includes all Battleships (BB, BC, SHBB, Pre-Dreadnought)
 	equipment_type = {
-		ship_hull_heavy
+		modern_ship_hull_heavy
 	}
 }
 
