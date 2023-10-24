@@ -1714,7 +1714,10 @@ shared_focus = {
 		}
 		completion_reward = {
 			army_experience = 35
-			skill_bonus_factor = 0.2
+				
+			every_unit_leader = {
+				add_skill_level = 1
+			}
 			add_political_power = 125
 		}
 		available = {

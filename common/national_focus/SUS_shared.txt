@@ -183,6 +183,11 @@ shared_focus = {
 			ideology = millenarism
 			popularity = 0.03
 		}
+		add_equipment_to_stockpile = {
+				type = CAS_equipment_1
+				amount = 5
+				producer = SUS
+			}
 		add_war_support = 0.025
 		add_political_power = 25
 		custom_effect_tooltip = SUS_korean_present_tt
@@ -405,7 +410,7 @@ shared_focus = {
 			}
 			add_equipment_to_stockpile = {
 				type = CAS_equipment_1
-				amount = 15
+				amount = 5
 				producer = SUS
 			}
 		}
@@ -1387,10 +1392,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = SUS_autonomous_recruiting
-	icon = GFX_goal_SUS_autonomous_recruiting
+	id = SUS_impressment
+	icon = GFX_goal_SUS_impressment
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SUS_autonomous_recruiting"
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_impressment"
 	}
 	prerequisite = {
 		focus = SUS_king_s_academies
@@ -1409,9 +1414,9 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_project_nimrod"
 	}
 	prerequisite = {
-		focus = SUS_autonomous_recruiting
+		focus = SUS_impressment
 	}	
-	relative_position_id = SUS_autonomous_recruiting
+	relative_position_id = SUS_impressment
 	cost = 4.3
 	x = -2
 	y = 1
@@ -1424,10 +1429,10 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_battle_for_britain"
 	}
 	prerequisite = {
-		focus = SUS_autonomous_recruiting
+		focus = SUS_impressment
 	}
 
-	relative_position_id = SUS_autonomous_recruiting
+	relative_position_id = SUS_impressment
 	cost = 4.3
 	x = 0
 	y = 1
@@ -1440,7 +1445,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_who_dares_wins"
 	}
 	prerequisite = {
-		focus = SUS_autonomous_recruiting
+		focus = SUS_impressment
 	}
 
 	relative_position_id = SUS_autonomous_recruiting
@@ -1469,7 +1474,7 @@ shared_focus = {
 	mutually_exclusive = {
 		focus = SUS_noble_anvil
 	}
-	relative_position_id = SUS_autonomous_recruiting
+	relative_position_id = SUS_impressment
 	cost = 4.3
 	x = 1
 	y = 2
@@ -1493,7 +1498,7 @@ shared_focus = {
 	mutually_exclusive = {
 		focus = SUS_battle_for_britain
 	}
-	relative_position_id = SUS_autonomous_recruiting
+	relative_position_id = SUS_impressment
 	cost = 4.3
 	x = -1
 	y = 2
@@ -1510,7 +1515,7 @@ shared_focus = {
 		focus = SUS_noble_anvil
 	}
 
-	relative_position_id = SUS_autonomous_recruiting
+	relative_position_id = SUS_impressment
 	cost = 4.3
 	x = 0
 	y = 3
@@ -1644,5 +1649,5 @@ shared_focus = {
 	relative_position_id = SUS_king_s_academies
 	cost = 4.3
 	x = 0
-	y = 6
+	y = 5
 }
