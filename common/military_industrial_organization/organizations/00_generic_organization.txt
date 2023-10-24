@@ -16,6 +16,10 @@ generic_tank_organization = {
 
 	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
 	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules }
+	
+	allowed = {
+		always = no # Archetype only - countries using it have their own verisons
+	}
 
 	tree_header_text = {
 		text = mio_header_tank_construction
@@ -2031,6 +2035,10 @@ generic_battle_line_ship_organization = {
 #ESCORT FLEET MANUFACTURER - Based on Yarrow Shipbuilders (ENG)
 generic_escort_ship_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_1
+	
+	allowed = {
+		always = no # Archetype only - countries using it have their own verisons
+	}
 
 	equipment_type = {
 		screen_ship
@@ -3451,6 +3459,10 @@ generic_refurbishment_repair_organization = {
 #GENERAL AIRCRAFT MANUFACTURER - Based on Focker (HOL)
 generic_general_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
+	
+	allowed = {
+		always = no # Archetype only - countries using it have their own verisons
+	}
 
 	equipment_type = {
 		mio_cat_eq_all_small_plane
@@ -6166,6 +6178,10 @@ generic_range_focused_aircraft_organization = {
 
 generic_artillery_organization = {
 	icon = GFX_idea_generic_artillery_manufacturer_2
+	
+	allowed = {
+		always = no # Archetype only - countries using it have their own verisons
+	}
 
 	equipment_type = {
 		artillery_equipment
@@ -6473,6 +6489,10 @@ generic_artillery_organization = {
 
 generic_infantry_equipment_organization = {
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	
+	allowed = {
+		always = no # Archetype only - countries using it have their own verisons
+	}
 
 	equipment_type = {
 		infantry_equipment
@@ -7024,6 +7044,10 @@ generic_support_equipment_organization = {
 
 generic_motorized_mechanized_organization = {
 	icon = GFX_idea_generic_motorized_equipment_manufacturer_3
+	
+	allowed = {
+		always = no # Archetype only - countries using it have their own verisons
+	}
 
 	equipment_type = {
 		motorized_equipment
