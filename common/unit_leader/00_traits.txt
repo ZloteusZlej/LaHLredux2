@@ -535,9 +535,9 @@ leader_traits = {
 		unit_trigger = {
 			OR = {
 				division_has_battalion_in_template = engineer
-				division_has_battalion_in_template = light_flame_tank
-				division_has_battalion_in_template = medium_flame_tank
-				division_has_battalion_in_template = heavy_flame_tank
+				#division_has_battalion_in_template = light_flame_tank
+				#division_has_battalion_in_template = medium_flame_tank
+				#division_has_battalion_in_template = heavy_flame_tank
 				owner = {
 					has_idea = superior_firepower_academy_spirit
 				}
@@ -2036,7 +2036,7 @@ leader_traits = {
 			#}
 		}
 		sub_unit_modifiers = {
-			destroyer = {
+			modern_corvette = {
 				naval_damage_factor = 0.1
 				naval_torpedo_hit_chance_factor = 0.1
 				navy_visibility = -0.1
@@ -2096,11 +2096,11 @@ leader_traits = {
 			
 		}
 		sub_unit_modifiers = {
-			light_cruiser = {
+			modern_frigate = {
 				naval_damage_factor = 0.1
 				naval_speed_factor = 0.1
 			}
-			heavy_cruiser = {
+			modern_destroyer = {
 				naval_damage_factor = 0.1
 				naval_speed_factor = 0.1
 			}

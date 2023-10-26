@@ -828,10 +828,8 @@ EAG_debug = {
 			}
 			modifier = {
 				political_advisor_cost_factor = -0.25
-				all_controlled_state = {
-					compliance_gain = 0.01
-					resistance_decay = 0.02
-				}
+				compliance_gain = 0.01
+				resistance_decay = 0.02
 				production_speed_buildings_factor = 0.1
 			}
 			complete_effect = {
@@ -1285,9 +1283,7 @@ EAG_debug = {
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.15
 				production_speed_buildings_factor = 0.1
-				all_controlled_state = {
-					resistance_decay = 0.1
-				}
+				resistance_decay = 0.1
 			}
 			complete_effect = {
 				add_to_variable = {
@@ -1362,9 +1358,7 @@ EAG_debug = {
 			}
 			modifier = {
 				industrial_capacity_factory = 0.25
-				all_controlled_state = {
-					local_resources_factor = 0.3
-				}
+				local_resources_factor = 0.3
 				fuel_gain_factor = 0.15
 				supply_node_range = 0.15
 			}
@@ -9196,7 +9190,6 @@ EAG_cleaning_london = {
 
 EAG_london_referendum = {
 	EAG_london_referendum_mission = {
-		cost = 0
 		is_good = no                                        
         days_mission_timeout = 65
 		allowed = { tag = EAG }
@@ -14898,7 +14891,6 @@ EAG_klumb_parliament_gui_decision = {
 			custom_effect_tooltip = EAG_klumb_voting_need_1.tt
 		}
 		available = {
-			custom_trigger_tooltip = EAG_klumb_voting_need_2.tt
 			custom_trigger_tooltip = { tooltip = EAG_klumb_voting_need_2.tt }
 			hidden_trigger = {
 				EAG = {
