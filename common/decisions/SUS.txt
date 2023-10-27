@@ -710,7 +710,7 @@ SUS_foreign_investors = {
 			has_manpower > 4999
 		}
 		complete_effect = {
-			any_character = {
+			every_character = {
 				limit = {
 					AND = {
 						has_nationality = SUS
@@ -719,13 +719,13 @@ SUS_foreign_investors = {
 				}
 				add_nationality = GHA
 			}
-			any_character = {
+			every_character = {
 				limit = {
 					is_character = SUS_michael_walker_baron_of_aldringham
 				}
 				add_nationality = GHA
 			}
-			any_character = {
+			every_character = {
 				limit = {
 					is_character = SUS_matthew_holmes
 				}
@@ -734,13 +734,13 @@ SUS_foreign_investors = {
 			add_manpower = -5000
 		}
 		remove_effect = {
-			any_character = {
+			every_character = {
 				limit = {
 					is_character = SUS_michael_walker_baron_of_aldringham
 				}
 				add_nationality = SUS
 			}
-			any_character = {
+			every_character = {
 				limit = {
 					is_character = SUS_matthew_holmes
 				}
@@ -748,7 +748,7 @@ SUS_foreign_investors = {
 			}
 			division_template = {
 				name = "Sandline International"
-				division_names_group = SUS_INF_02
+				division_names_group = SUS_INF_01
 				division_cap = 4
 					regiments = {
 						infantry = { x = 0 y = 0 }	
@@ -2167,13 +2167,6 @@ SUS_his_majestys_bureau_decision = {
 		}
 		modifier = {
 			civilian_factory_use = 3
-		}
-	}
-	SUS_operation_generic_TITLE = {
-		available = {
-			hidden_trigger = {
-				always = no
-			}
 		}
 	}
 	SUS_sabotage_actions_TITLE = {

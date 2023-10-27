@@ -1,18 +1,4 @@
-﻿search_filter_prios = {
-	FOCUS_FILTER_POLITICAL = 1010
-
-	
- 
-	
-	
-	FOCUS_FILTER_RESEARCH = 522
-
-	
-	FOCUS_FILTER_INDUSTRY = 509
-
-}
-
-focus_tree = {
+﻿focus_tree = {
 	id = generic_focus
 	
 	country = {
@@ -22,17 +8,12 @@ focus_tree = {
 	default = yes
 	reset_on_civilwar = no
 
-	initial_show_position = {
-		focus = industrial_effort
-	}
-
 	focus = {
 		id = army_effort
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 1
 		y = 0
 		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		available_if_capitulated = yes
 

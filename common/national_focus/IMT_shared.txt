@@ -646,17 +646,6 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = IMT_1_ammo_types
-	icon = GFX_IMT
-	prerequisite = {
-        focus = IMT_1_advanced_infantry
-	}
-	cost = 10
-	x = 6
-	y = 4
-}
-
-shared_focus = {
 	id = IMT_1_modern_artillery
 	icon = GFX_IMT
 	prerequisite = {
@@ -2296,6 +2285,9 @@ shared_focus = {
 	icon = GFX_IMT
 	prerequisite = {
         focus = IMT_1_future_russia
+	}
+	mutually_exclusive = {
+	    focus = IMT_1_takes_control
 	}
 	cost = 10
 	x = 15

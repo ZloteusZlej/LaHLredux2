@@ -3496,9 +3496,6 @@ KNT_essex_diplomacy = {
 			has_tech = power_armor_weapon
 			has_equipment = { power_armor_weapon_equipment_1 > 100 }
 		}
-		research_bonus = {
-			electronics = 0.4
-		}
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = power_armor_weapon_equipment
@@ -3507,22 +3504,29 @@ KNT_essex_diplomacy = {
 			}
 		}
 		remove_effect = {
-				ESS = {
-					country_event = {
-					days = 1
-					id = ESS_event.14
+			ESS = {
+				country_event = {
+				days = 1
+				id = ESS_event.14
+				}
+			}
+			if = {
+				limit = {
+					ESS = {
+						NOT = { has_tech = power_armor_weapon }
 					}
 				}
-				if = {
-					limit = {
-						ESS = {
-							NOT = { has_tech = power_armor_weapon }
-						}
-					}
-					ESS = {
+				ESS = {
 						set_technology = {
 						power_armor_weapon = 1
 					}
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = electronics
 				}
 			}
 		}
@@ -3539,9 +3543,6 @@ KNT_essex_diplomacy = {
 			has_tech = suicide_drones 
 			has_equipment = { suicide_drones_equipment_1 > 50 }
 		}
-		research_bonus = {
-			radar_tech = 0.4
-		}
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = suicide_drones_equipment
@@ -3554,6 +3555,13 @@ KNT_essex_diplomacy = {
 				country_event = {
 				days = 1
 				id = ESS_event.15
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = radar_tech
 				}
 			}
 		}
@@ -3570,9 +3578,6 @@ KNT_essex_diplomacy = {
 			has_tech = railgun 
 			has_equipment = { railgun_equipment_1 > 75 }
 		}
-		research_bonus = {
-			computing_tech = 0.4
-		}
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = railgun_equipment
@@ -3585,6 +3590,13 @@ KNT_essex_diplomacy = {
 				country_event = {
 				days = 1
 				id = ESS_event.16
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = computing_tech
 				}
 			}
 		}
@@ -3601,9 +3613,6 @@ KNT_essex_diplomacy = {
 			has_tech = evangelion 
 			has_equipment = { evangelion_equipment_1 > 15 }
 		}
-		research_bonus = {
-			nuclear = 0.4
-		}
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = mechanoid_tank_chassis
@@ -3618,16 +3627,23 @@ KNT_essex_diplomacy = {
 				id = ESS_event.17
 				}
 			}
-				if = {
+			if = {
 				limit = {
-						ESS = {
+					ESS = {
 						NOT = { has_tech = evangelion }
 					}
 				}
 				ESS = {
 					set_technology = {
-					evangelion = 1
+						evangelion = 1
 					}
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = nuclear
 				}
 			}
 		}
@@ -3644,9 +3660,6 @@ KNT_essex_diplomacy = {
 			has_tech = supercannons 
 			has_equipment = { supercannons_equipment_1 > 20 }
 		}
-		research_bonus = {
-			industry = 0.4
-		}
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = supercannons_equipment
@@ -3661,7 +3674,7 @@ KNT_essex_diplomacy = {
 				id = ESS_event.18
 				}
 			}
-				if = {
+			if = {
 				limit = {
 						ESS = {
 						NOT = { has_tech = supercannons }
@@ -3671,6 +3684,13 @@ KNT_essex_diplomacy = {
 					set_technology = {
 					supercannons = 1
 					}
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = industry
 				}
 			}
 		}
@@ -3687,9 +3707,6 @@ KNT_essex_diplomacy = {
 			has_tech = unmanned_tank 
 			has_equipment = { unmanned_tank_equipment_1 > 50 }
 		}
-		research_bonus = {
-			infantry_weapons = 0.4
-		}
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = unmanned_tank_chassis
@@ -3698,23 +3715,29 @@ KNT_essex_diplomacy = {
 			}
 		}
 		remove_effect = {
-				ESS = {
-					country_event = {
+			ESS = {
+				country_event = {
 					days = 1
 					id = ESS_event.19
-					}
 				}
-				
-				if = {
+			}			
+			if = {
 				limit = {
-						ESS = {
+					ESS = {
 						NOT = { has_tech = unmanned_tank  }
 					}
 				}
 				ESS = {
 					set_technology = {
-					unmanned_tank = 1
+						unmanned_tank = 1
 					}
+				}
+			}
+			KNT = {
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = infantry_weapons
 				}
 			}
 		}
@@ -3743,7 +3766,6 @@ KNT_essex_diplomacy = {
 
 KNT_east_anglia_diplomacy = {
     KNT_london_referendum_mission = {
-		cost = 0
 		is_good = no                                        
         days_mission_timeout = 65
 		allowed = { tag = KNT }
@@ -3898,7 +3920,6 @@ KNT_mercia_diplomacy = {
 	}
 	
 	KNT_tradness_race = {
-		cost = 0
 		is_good = no                                        
         days_mission_timeout = 45
 		allowed = { tag = KNT }
@@ -4721,7 +4742,6 @@ KNT_selling_shit = {
 
 KNT_exhibition_preparation = {
     KNT_exhibition_mission = {
-		cost = 0
 		is_good = no                                        
         days_mission_timeout = 70
 		allowed = { tag = KNT }
@@ -4996,7 +5016,7 @@ KNT_exhibition_preparation = {
 }
 
 KNT_britain_pacification  = {
-	WES_diplomacy_meme = {	
+	KNT_diplomacy_meme = {	
 		available = {
 			hidden_trigger = {
 				always = no
@@ -6960,7 +6980,6 @@ KNT_britain_pacification  = {
 	}
 ###MISSION###
     KNT_partisan_uprising = {
-		cost = 0
 		is_good = no                                        
         days_mission_timeout = 75
 		allowed = { tag = KNT }

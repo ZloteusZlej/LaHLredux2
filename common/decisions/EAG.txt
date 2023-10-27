@@ -15899,9 +15899,7 @@ EAG_klumb_parliament_gui_decision = {
 	EAG_elections_FPE_power = { #Raids
 		days_remove = 45
 		custom_cost_trigger = {
-			EAG = {
-				has_command_power > 20
-			}
+			command_power > 20
 		}
 		cancel_trigger = {
 			EAG = {

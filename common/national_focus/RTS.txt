@@ -26,9 +26,6 @@ focus_tree = {
 	default = no
 	reset_on_civilwar = no
 
-	initial_show_position = {
-		focus = industrial_effort
-	}
 focus = {
 		id = RTS_Beautiful_Saffron
 		icon = GFX_goal_generic_position_armies
@@ -1246,24 +1243,7 @@ focus = {
 			
 			}
 		}
-		focus = {
-		id = RTS_TsarTank
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = RTS_Increase_the_power_of_the_MIC }
-		
-		x = 0
-		y = 1
-		relative_position_id = RTS_Increase_the_power_of_the_MIC
-		cost = 1
-		
-		
-		available_if_capitulated = yes
 
-		completion_reward = {
-		
-			
-			}
-		}
 		focus = {
 		id = RTS_Free_Market
 		icon = GFX_goal_generic_position_armies

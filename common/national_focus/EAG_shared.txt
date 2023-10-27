@@ -1044,19 +1044,19 @@ shared_focus = {
 	}
 	completion_reward = {
 		add_advisor_role = {
-		  Character = EAG_nicholas_patrick_carter
-		  advisor = {
-			slot = head_of_government
-			cost = 50
-			idea_token = EAG_nicholas_patrick_carter
-			traits = {
-				house_manager
+			Character = EAG_nicholas_patrick_carter
+			activate = yes
+			advisor = {
+				slot = head_of_government
+				cost = 50
+				idea_token = EAG_nicholas_patrick_carter
+				traits = {
+					house_manager
+				}
+				#allowed = {
+				#	always = yes
+				#}
 			}
-			allowed = {
-				always = yes
-			}
-		  }
-		activate = yes
 		}
 	}
 	x = 4
@@ -5006,7 +5006,7 @@ shared_focus = {
 		focus = EAG_not_so_fast
 	}
 	mutually_exclusive = {
-		focus = EAG_non_stopabble_growth
+		focus = EAG_unstopabble_growth
 	}
 	completion_reward = {
 		swap_ideas = {

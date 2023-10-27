@@ -1617,10 +1617,14 @@ WES_diplomacy = {
 		remove_effect = {
 			WES = {
 				if = {
+					limit = {
+						WES = {
+							NOT = {
+								has_template = "Russian Monarchist Volunteers"
+							}
+						}
+					}
 					WES = {
-						NOT = {
-							has_template = "Russian Monarchist Volunteers"
-						}	
 						division_template = {
 							name = "Russian Monarchist Volunteers"
 							division_names_group = WES_INF_01
@@ -1675,10 +1679,14 @@ WES_diplomacy = {
 		remove_effect = {
 			WES = {
 				if = {
+					limit = {
+						WES = {
+							NOT = {
+								has_template = "Revolutionary Peasant Brigade"
+							}	
+						}
+					}
 					WES = {
-						NOT = {
-							has_template = "Revolutionary Peasant Brigade"
-						}	
 						division_template = {
 							name = "Revolutionary Peasant Brigade"
 							division_names_group = WES_INF_01
@@ -1734,10 +1742,14 @@ WES_diplomacy = {
 		remove_effect = {
 			WES = {
 				if = {
+					limit = {
+						WES = {
+							NOT = {
+								has_template = "CHVK Varg"
+							}	
+						}
+					}
 					WES = {
-						NOT = {
-							has_template = "CHVK Varg"
-						}	
 						division_template = {
 							name = "CHVK Varg"
 							division_names_group = WES_INF_01
@@ -1793,10 +1805,14 @@ WES_diplomacy = {
 		remove_effect = {
 			WES = {
 				if = {
+					limit = {
+						WES = {
+							NOT = {
+								has_template = "Vasya Brigade"
+							}
+						}
+					}
 					WES = {
-						NOT = {
-							has_template = "Vasya Brigade"
-						}	
 						division_template = {
 							name = "Vasya Brigade"
 							division_names_group = WES_INF_01
@@ -1850,10 +1866,14 @@ WES_diplomacy = {
 		remove_effect = {
 			WES = {
 				if = {
+					limit = {
+						WES = {
+							NOT = {
+								has_template = "Orthodox Priests"
+							}
+						}
+					}
 					WES = {
-						NOT = {
-							has_template = "Orthodox Priests"
-						}	
 						division_template = {
 							name = "Orthodox Priests"
 							division_names_group = WES_INF_01
@@ -1908,10 +1928,14 @@ WES_diplomacy = {
 		remove_effect = {
 			WES = {
 				if = {
+					limit = {
+						WES = {
+							NOT = {
+								has_template = "Nightwolf Brigade"
+							}	
+						}
+					}
 					WES = {
-						NOT = {
-							has_template = "Nightwolf Brigade"
-						}	
 						division_template = {
 							name = "Nightwolf Brigade"
 							division_names_group = WES_INF_01
@@ -1962,19 +1986,23 @@ WES_diplomacy = {
 		remove_effect = {
 			WES = {
 				if = {
+					limit = {
+						WES = {
+							NOT = {
+								has_template = "Russian Tankists"
+							}	
+						}
+					}
 					WES = {
-						NOT = {
-							has_template = "Russian Tankists"
-						}	
 						division_template = {
 							name = "Russian Tankists"
 							division_names_group = WES_INF_01
 
 							regiments = {
-								main_battle_tank = { x = 0 y = 0 }
-								main_battle_tank = { x = 0 y = 1 }
-								main_battle_tank = { x = 0 y = 2 }
-								main_battle_tank = { x = 0 y = 3 }
+								MBT = { x = 0 y = 0 }
+								MBT = { x = 0 y = 1 }
+								MBT = { x = 0 y = 2 }
+								MBT = { x = 0 y = 3 }
 							}
 								
 							support = { 
@@ -2016,10 +2044,14 @@ WES_diplomacy = {
 		remove_effect = {
 			WES = {
 				if = {
+					limit = {
+						WES = {
+							NOT = {
+								has_template = "Siberian Shamans"
+							}
+						}
+					}
 					WES = {
-						NOT = {
-							has_template = "Siberian Shamans"
-						}	
 						division_template = {
 							name = "Siberian Shamans"
 							division_names_group = WES_INF_01

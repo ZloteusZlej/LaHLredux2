@@ -723,6 +723,9 @@
 		available = {
 			has_government = neocameralism
 		}
+		mutually_exclusive = {
+			focus = KNT_the_gospel_of_wealth
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = closed_economy
@@ -2426,16 +2429,16 @@ shared_focus = {
 				division_names_group = ESS_INF_02
 
 				regiments = {
-					infantry_fighting_vehicle = { x = 0 y = 0 }	
-					infantry_fighting_vehicle = { x = 0 y = 1 }
-					infantry_fighting_vehicle = { x = 0 y = 2 }	
-					infantry_fighting_vehicle = { x = 0 y = 3 }
-					infantry_fighting_vehicle = { x = 0 y = 4 }
-					infantry_fighting_vehicle = { x = 1 y = 0 }
-					infantry_fighting_vehicle = { x = 1 y = 1 }
-					infantry_fighting_vehicle = { x = 1 y = 2 }
-					infantry_fighting_vehicle = { x = 1 y = 3 }
-					infantry_fighting_vehicle = { x = 1 y = 4 }
+					IFV = { x = 0 y = 0 }	
+					IFV = { x = 0 y = 1 }
+					IFV = { x = 0 y = 2 }	
+					IFV = { x = 0 y = 3 }
+					IFV = { x = 0 y = 4 }
+					IFV = { x = 1 y = 0 }
+					IFV = { x = 1 y = 1 }
+					IFV = { x = 1 y = 2 }
+					IFV = { x = 1 y = 3 }
+					IFV = { x = 1 y = 4 }
 				}
 					support = {
 					military_police = { x = 0 y = 0 }
@@ -2452,7 +2455,7 @@ shared_focus = {
 			}
 			
 			add_equipment_to_stockpile = {
-				type = armored_car_equipment	
+				type = armored_car_equipment_1	
 				amount = 300
 			}
 			add_equipment_to_stockpile = {

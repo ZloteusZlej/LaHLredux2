@@ -499,12 +499,41 @@
 		icon = GFX_goal_ESS_elevate_warlords
 		cost = 3
 		prerequisite = {
-		focus = ESS_decentralized_command
-	}
+			focus = ESS_decentralized_command
+		}
 		completion_reward = {
-			recruit_character = ESS_paul_mccartney
-			recruit_character = ESS_daniel_radcliffe
-			recruit_character = ESS_gerald_strickland
+			add_corps_commander_role = {
+				Character = ESS_paul_mccartney
+				desc = PAUL_MCCRARTNEY_DESC
+				traits={ militiaman }
+				skill=2
+				attack_skill=1
+				defense_skill=2
+				planning_skill=1
+				logistics_skill=1
+				legacy_id=-1
+			}
+			add_corps_commander_role = {
+				Character = ESS_daniel_radcliffe
+				desc = DANIEL_RADCLIFFE_DESC
+				traits={ militiaman }
+				skill=2
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				legacy_id=-1
+			}
+			add_corps_commander_role = {
+				Character = ESS_gerald_strickland
+				traits={ militiaman }
+				skill=2
+				attack_skill=2
+				defense_skill=1
+				planning_skill=2
+				logistics_skill=1
+				legacy_id=-1
+			}
 		}
 		x = 14
 		y = 3
@@ -1752,7 +1781,7 @@
 			}
 		}
 		mutually_exclusive = {
-			focus = ESS_renovationism
+			focus = ESS_outgrowing_god
 		}
 		relative_position_id = ESS_kickstart_institutions
 		prerequisite = {
