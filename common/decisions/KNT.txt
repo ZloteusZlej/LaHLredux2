@@ -4825,26 +4825,6 @@ KNT_exhibition_preparation = {
 		}
 	}
 	
-	KNT_send_mic_manufacturers = {
-		cost = 15
-		days_remove = 6
-		days_re_enable = 5
-		complete_effect = {
-			add_to_variable = { var = kent_exhibition_preparedness value = 7 }
-		}
-		modifier = {
-			production_factory_max_efficiency_factor = -0.15
-			production_factory_efficiency_gain_factor = -0.1
-		}
-		available = { has_completed_focus = KNT_the_great_exhibition }
-		visible = { 
-			has_active_mission = KNT_exhibition_mission 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
 	KNT_invite_inventors = {
 		cost = 15
 		days_remove = 5
@@ -5787,7 +5767,7 @@ KNT_britain_pacification  = {
 			factor = 100
 		}
 	}
-	KNT_humanitarian_help = {
+	KNT_humanitarian_help_1 = {
 		cost = 30
 		days_remove = 30
 		complete_effect = {	
@@ -5815,7 +5795,7 @@ KNT_britain_pacification  = {
 			factor = 100
 		}
 	}
-	KNT_neovictorian_propaganda = {
+	KNT_neovictorian_propaganda_1 = {
 		cost = 75
 		days_remove = 30
 		complete_effect = {	
@@ -6014,7 +5994,7 @@ KNT_britain_pacification  = {
 			factor = 100
 		}
 	}
-	KNT_humanitarian_help = {
+	KNT_humanitarian_help_2 = {
 		cost = 30
 		days_remove = 30
 		complete_effect = {	
@@ -6042,7 +6022,7 @@ KNT_britain_pacification  = {
 			factor = 100
 		}
 	}
-	KNT_neovictorian_propaganda = {
+	KNT_neovictorian_propaganda_2 = {
 		cost = 75
 		days_remove = 30
 		complete_effect = {	
@@ -6241,7 +6221,7 @@ KNT_britain_pacification  = {
 			factor = 100
 		}
 	}
-	KNT_humanitarian_help = {
+	KNT_humanitarian_help_3 = {
 		cost = 30
 		days_remove = 30
 		complete_effect = {	
@@ -6269,7 +6249,7 @@ KNT_britain_pacification  = {
 			factor = 100
 		}
 	}
-	KNT_neovictorian_propaganda = {
+	KNT_neovictorian_propaganda_3 = {
 		cost = 75
 		days_remove = 30
 		complete_effect = {	
@@ -6496,7 +6476,7 @@ KNT_britain_pacification  = {
 			factor = 100
 		}
 	}
-	KNT_neovictorian_propaganda = {
+	KNT_neovictorian_propaganda_4 = {
 		cost = 75
 		days_remove = 30
 		complete_effect = {	
@@ -6695,7 +6675,7 @@ KNT_britain_pacification  = {
 			factor = 100
 		}
 	}
-	KNT_restore_local_infrastructure = {
+	KNT_restore_local_infrastructure_1 = {
 		cost = 30
 		days_remove = 30
 		complete_effect = {	
@@ -6723,7 +6703,7 @@ KNT_britain_pacification  = {
 			factor = 100
 		}
 	}
-	KNT_neovictorian_propaganda = {
+	KNT_neovictorian_propaganda_5 = {
 		cost = 75
 		days_remove = 30
 		complete_effect = {	
@@ -6922,7 +6902,7 @@ KNT_britain_pacification  = {
 			factor = 100
 		}
 	}
-	KNT_restore_local_infrastructure = {
+	KNT_restore_local_infrastructure_2 = {
 		cost = 30
 		days_remove = 30
 		complete_effect = {	
@@ -6950,7 +6930,7 @@ KNT_britain_pacification  = {
 			factor = 100
 		}
 	}
-	KNT_neovictorian_propaganda = {
+	KNT_neovictorian_propaganda_6 = {
 		cost = 75
 		days_remove = 30
 		complete_effect = {	
