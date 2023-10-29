@@ -109,27 +109,29 @@ country_event = { #WESSEX SENDS DIVISION#
 				amount = 36
 			}
 			if = {
-				STM = {
-					NOT = {
-						has_template = "Wessex Volunteers"
-					}	
-					division_template = {
-						name = "Wessex Volunteers"
-						division_names_group = WES_INF_01
+				limit = {
+					STM = {
+						NOT = {
+							has_template = "Wessex Volunteers"
+						}	
+					}
+				}
+				division_template = {
+					name = "Wessex Volunteers"
+					division_names_group = WES_INF_01
 
-						regiments = {
-							infantry = { x = 0 y = 0 }	
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }	
-							infantry = { x = 0 y = 3 }
-							infantry = { x = 0 y = 4 }
-							infantry = { x = 0 y = 5 }
-							artillery_brigade = { x = 1 y = 0 }
-						}
-							
-						support = { 
-							engineer = { x = 0 y = 0 } 	
-						}
+					regiments = {
+						infantry = { x = 0 y = 0 }	
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }	
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
+						infantry = { x = 0 y = 5 }
+						artillery_brigade = { x = 1 y = 0 }
+					}
+						
+					support = { 
+						engineer = { x = 0 y = 0 } 	
 					}
 				}
 			}			

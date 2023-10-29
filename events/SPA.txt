@@ -77,36 +77,36 @@ country_event = {
 	
     fire_only_once = yes	
 	immediate = {
-	hidden_effect = {
-		    POR = {
-		        add_state_core = 679
-		        transfer_state = 679
+		hidden_effect = {
+			POR = {
+				add_state_core = 679
+				transfer_state = 679
 				add_state_core = 680
-		        transfer_state = 680
+				transfer_state = 680
 				add_state_core = 680
-		        transfer_state = 677
+				transfer_state = 677
 				add_state_core = 677
-		        transfer_state = 678
+				transfer_state = 678
 				add_state_core = 678
-		        transfer_state = 676
+				transfer_state = 676
 				add_state_core = 676
-		        transfer_state = 672
+				transfer_state = 672
 				add_state_core = 672
 			}
 		}
-		option = {
+	}
+	option = {
 		name = SPA_event.3.a
 		add_stability = -0.20
-		}	
-		option = {
-			name = SPA_event.3.b
-			trigger = {
-				is_ai = no
-			}
-			hidden_effect = {
-				POR = {
-	            change_tag_from = SPA
-				}
+	}	
+	option = {
+		name = SPA_event.3.b
+		trigger = {
+			is_ai = no
+		}
+		hidden_effect = {
+			POR = {
+				change_tag_from = SPA
 			}
 		}
 	}

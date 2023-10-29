@@ -175,10 +175,12 @@ country_event = {
 	option = {
 		name = POL_event.5.a
 		retire_character = POL_lech_kaczynski
-		recruit_character = POL_jens_stoltenberg
-		POL_jens_stoltenberg = {
-			promote_character = yes
-			promote_character = stratocracy
+		add_country_leader_role = {
+			character = POL_jens_stoltenberg
+			promote_leader = yes
+			country_leader = {
+				ideology = stratocracy
+				expire = "2040.1.1.14"
 		}
     }	
 }
@@ -193,10 +195,13 @@ country_event = {
 	option = {
 		name = POL_event.6.a
 		retire_character = POL_jens_stoltenberg
-		recruit_character = POL_antoni_macierewicz
-		POL_antoni_macierewicz = {
-			promote_character = yes
-			promote_character = stratocracy
+		add_country_leader_role = {
+			character = POL_antoni_macierewicz
+			promote_leader = yes
+			country_leader = {
+				ideology = stratocracy
+				expire = "2040.1.1.14"
+			}
 		}
     }	
 }

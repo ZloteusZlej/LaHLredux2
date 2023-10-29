@@ -271,14 +271,23 @@ country_event = {
     fire_only_once = yes
 	option = {
 		name = SUS_event.11.a
-		recruit_character = SUS_fergus_drake
+		add_advisor_role = {
+			character = SUS_fergus_drake
+			activate = yes
+			advisor = {
+				slot = political_advisor
+				cost = 175
+				idea_token = SUS_fergus_drake
+				traits = {
+				}
+			}
+		}
 		random_character = {
 			limit = {
 				is_advisor = yes
 			}
 			retire = yes
 		}
-		activate_advisor = SUS_fergus_drake
 		set_can_be_fired_in_advisor_role = {
 			character = SUS_fergus_drake
 			value = no
