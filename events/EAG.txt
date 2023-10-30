@@ -243,18 +243,29 @@ country_event = {
 	is_triggered_only = yes
     option = {
 		name = EAG_event.31.a
-			recruit_character = EAG_theresa_may
-			add_to_variable = {
-				var = help_ppl
-				value = 1
+		add_advisor_role = {
+			character = EAG_theresa_may
+			activate = no
+			advisor = {
+				slot = head_of_government
+				cost = -1
+				idea_token = EAG_theresa_may
+				traits = {
+					flexible_bureaucrat
+				}
 			}
-			EAG = {
-				country_event = {
-					days = 4
-					id = EAG_event.32
-			}
-			add_manpower = 500
 		}
+		add_to_variable = {
+			var = help_ppl
+			value = 1
+		}
+		EAG = {
+			country_event = {
+				days = 4
+				id = EAG_event.32
+			}
+		}	
+		add_manpower = 500
 		1004 = { 
 			add_building_construction = {
 				type = infrastructure
@@ -265,36 +276,47 @@ country_event = {
     }
 	option = {
 		name = EAG_event.31.b
-			recruit_character = EAG_theresa_may
-			add_to_variable = {
-				var = help_forces
-				value = 1
-			}
-			EAG = {
-				country_event = {
-					days = 4
-					id = EAG_event.32
-				}
-			}
-			add_to_variable = {
-				var = mercs_quality
-				value = 3
-			}
-			clamp_variable = {
-				var = mercs_quality
-				min = 0
-				max = 25
-			}
-			custom_effect_tooltip = EAG_mercs_quality_add_3
-			1004 = {
-				create_unit = {
-					division = "name = \"Cromer police\" division_template = \"Norfolk Militia\" start_experience_factor = 1 start_equipment_factor = 0.8"
-					
-					owner = EAG
+		add_advisor_role = {
+			character = EAG_theresa_may
+			activate = no
+			advisor = {
+				slot = head_of_government
+				cost = -1
+				idea_token = EAG_theresa_may
+				traits = {
+					flexible_bureaucrat
 				}
 			}
 		}
+		add_to_variable = {
+			var = help_forces
+			value = 1
+		}
+		EAG = {
+			country_event = {
+				days = 4
+				id = EAG_event.32
+			}
+		}
+		add_to_variable = {
+			var = mercs_quality
+			value = 3
+		}
+		clamp_variable = {
+			var = mercs_quality
+			min = 0
+			max = 25
+		}
+		custom_effect_tooltip = EAG_mercs_quality_add_3
+		1004 = {
+			create_unit = {
+				division = "name = \"Cromer police\" division_template = \"Norfolk Militia\" start_experience_factor = 1 start_equipment_factor = 0.8"
+				
+				owner = EAG
+			}
+		}
 	}
+}
 
 country_event = {
 	id = EAG_event.32
@@ -309,7 +331,20 @@ country_event = {
 				var = help_ppl
 				value = 1
 			}
-		recruit_character = EAG_alex_whitehouse
+		EAG = {
+			add_advisor_role = {
+				character = EAG_alex_whitehouse
+				activate = no
+				advisor = {
+					slot = political_advisor
+					cost = 120
+					idea_token = EAG_alex_whitehouse
+					traits = {
+						breadearner
+					}
+				}
+			}
+		}
 		1004 = { 
 			add_building_construction = {
 				type = industrial_complex
@@ -324,7 +359,20 @@ country_event = {
 				var = help_forces
 				value = 1
 			}
-		recruit_character = EAG_philip_yea
+		EAG = {
+			add_advisor_role = {
+				character = EAG_philip_yea
+				activate = no
+				advisor = {
+					slot = political_advisor
+					cost = 120
+					idea_token = EAG_philip_yea
+					traits = {
+						king_of_spirits
+					}
+				}
+			}
+		}
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
 			amount = 1000
@@ -2298,12 +2346,14 @@ country_event = {
 				days = 5
 				id = EAG_event.300
 			}
-			add_building_construction = {
+			1004 = {
+				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
 			}
-			add_extra_state_shared_building_slots = 2
 		}
 		
     }
@@ -5526,10 +5576,12 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.107.a	
-		add_province_modifier = {
-			static_modifiers = { henry_v_statue }
-			province = {
-				id = 17539
+		1160 = {
+			add_province_modifier = {
+				static_modifiers = { henry_v_statue }
+				province = {
+					id = 17539
+				}
 			}
 		}
     }
@@ -5542,10 +5594,12 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = EAG_event.108.a
-		add_province_modifier = {
-			static_modifiers = { william_the_conqueror_statue }
-			province = {
-				id = 17539
+		1160 = {
+			add_province_modifier = {
+				static_modifiers = { william_the_conqueror_statue }
+				province = {
+					id = 17539
+				}
 			}
 		}
     }
@@ -5558,10 +5612,12 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = EAG_event.109.a
-		add_province_modifier = {
-			static_modifiers = { margaret_thatcher_statue }
-			province = {
-				id = 17539
+		1160 = {
+			add_province_modifier = {
+				static_modifiers = { margaret_thatcher_statue }
+				province = {
+					id = 17539
+				}
 			}
 		}
     }

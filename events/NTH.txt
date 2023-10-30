@@ -400,29 +400,6 @@ country_event = {
 }
 
 country_event = {
-	id = albion.31
-	title = albion.31.t
-	desc = albion.31.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = albion.31.a
-		ai_chance = {
-			base = 100
-		}
-		add_political_power = -100
-		add_war_support = -0.15
-		SCO = {
-			country_event = { 
-				id = albion.40 
-				days = 1 
-			}
-		}
-	}
-}
-
-country_event = {
 	id = albion.32
 	title = albion.32.t
 	desc = albion.32.d

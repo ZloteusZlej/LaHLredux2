@@ -1409,7 +1409,7 @@ country_event = {
         original_tag = KNT			
 	}
 	mean_time_to_happen = {
-	    days = 1
+	    days = 2
     }
 	option = {
 		name = KNT_event.71.a
@@ -1520,7 +1520,7 @@ country_event = {
         original_tag = KNT			
 	}
 	mean_time_to_happen = {
-	    days = 1
+	    days = 2
     }
 	option = {
 		name = KNT_event.72.a
@@ -6328,11 +6328,11 @@ country_event = {
 					MBT = { x = 0 y = 2 }	
 					MBT = { x = 0 y = 3 }
 					MBT = { x = 0 y = 4 }
-					infantry_fighting_vehicle = { x = 1 y = 0 }
-					infantry_fighting_vehicle = { x = 1 y = 1 }
-					infantry_fighting_vehicle = { x = 1 y = 2 }
-					infantry_fighting_vehicle = { x = 1 y = 3 }
-					infantry_fighting_vehicle = { x = 1 y = 4 }
+					IFV = { x = 1 y = 0 }
+					IFV = { x = 1 y = 1 }
+					IFV = { x = 1 y = 2 }
+					IFV = { x = 1 y = 3 }
+					IFV = { x = 1 y = 4 }
 				}
 					support = {
 					recon = { x = 0 y = 0 } 
@@ -6598,22 +6598,22 @@ country_event = {
 				producer = KNT
 			}
 			add_political_power = -45
-			if = {
-				limit = { 
-					NOT = { has_template = "Landing Tanks" }
-				}
-				division_template = {
-					name = "Landing Tanks"
-					division_names_group = SAH_INF_02
-
-					regiments = {
-						landing_tank_battalion = { x = 0 y = 0 }	
-						landing_tank_battalion = { x = 0 y = 1 }
-						landing_tank_battalion = { x = 0 y = 2 }	
-						landing_tank_battalion = { x = 0 y = 3 }
-					}
-				}
-			}
+			#if = { #Не забудь поправить это, пожалуйста#
+			#	limit = { 
+			#		NOT = { has_template = "Landing Tanks" }
+			#	}
+			#	division_template = {
+			#		name = "Landing Tanks"
+			#		division_names_group = SAH_INF_02
+            #
+			#		regiments = {
+			#			landing_tank_battalion = { x = 0 y = 0 }	
+			#			landing_tank_battalion = { x = 0 y = 1 }
+			#			landing_tank_battalion = { x = 0 y = 2 }	
+			#			landing_tank_battalion = { x = 0 y = 3 }
+			#		}
+			#	}
+			#}
 		}
 	}
 	
