@@ -70,3 +70,34 @@ SUS_INF_03 =
 	}
 }
 
+SUS_ARM_01 = {
+	name = "Armoured Mercenary Corps"
+
+	for_countries = { SUS }
+
+	can_use = { always = yes }
+
+	division_types = { "armor" }
+
+	fallback_name = "%d. Armoured Brigade"
+
+	ordered =
+	{
+		1 = { "Brigade Golf"}
+		2 = { "Brigade Hotel" }
+		3 = { "Brigade India" }
+		4 = { "Brigade Juliett" }
+		5 = { "Brigade Kilo" }
+		6 = { "Brigade Lima" }
+		7 = { "Brigade Mike" }
+		8 = { "Brigade Mike" }
+		9 = { "Brigade November" }
+		10 = { "Brigade Oscar" }
+		11 = { "Brigade Papa" }
+		12 = { "Brigade Quebec" }
+		13 = { "Brigade Romeo" }
+		14 = { "Brigade Sierra" }	
+	}
+}
+
+
