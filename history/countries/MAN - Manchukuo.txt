@@ -1,4 +1,4 @@
-﻿capital = 1266
+﻿capital = 1173
 
 oob = "MAN_2020"
 
@@ -11,28 +11,15 @@ set_technology = {
 set_convoys = 5
 
 set_politics = {
-	ruling_party = hegemonism
+	ruling_party = right_populism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	neocameralism = 25
-	regressionism = 20
-	hegemonism = 40
-	national_bolshevism = 10
-	left_authoritarianism = 5
+	right_populism = 100
 }
 
-create_country_leader = {
-	name = "Pu Jun"
-	picture = "Portrait_MAN_Pu_Jun.dds"
-	expire = "1960.1.1"
-	ideology = autocracy
-	traits = {
-	nominal_president
-	}
-}
 
 create_country_leader = {
 	name = "Takeyuki Tanaka"
@@ -45,12 +32,11 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Li Shuo"
-	picture = "Portrait_Li_MAN_Shuo.dds"
+	picture = "Portrait_MAN_Li_Shuo.dds"
 	expire = "1960.1.1"
-	ideology = neo_feudalism
+	ideology = national_populism
 	traits = {
-	fengtian_viceroy
-	}
+    }
 }
 
 
