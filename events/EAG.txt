@@ -1827,6 +1827,10 @@ country_event = {
 		load_focus_tree = EAG_mercenary
 		add_ideas = EAG_illegitimate_government
 		activate_advisor = EAG_nicholas_patrick_carter
+		remove_advisor_role = {
+		  character = "EAG_theresa_may"
+		  slot = head_of_government
+		}
 		swap_ideas = {
 			remove_idea = lhl_regime_provisional_government
 			add_idea = lhl_regime_military_junta
@@ -1859,6 +1863,18 @@ country_event = {
 		load_focus_tree = EAG_anarchists
 		add_ideas = EAG_illegitimate_government
 		activate_advisor = EAG_troy_southgate
+		remove_advisor_role = {
+		  character = "EAG_theresa_may"
+		  slot = head_of_government
+		}
+		remove_advisor_role = {
+		  character = "EAG_alex_whitehouse"
+		  slot = political_advisor
+		}
+		remove_advisor_role = {
+		  character = "EAG_philip_yea"
+		  slot = political_advisor
+		}
 		swap_ideas = {
 			remove_idea = lhl_regime_provisional_government
 			add_idea = lhl_regime_anarchy
