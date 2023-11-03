@@ -437,11 +437,11 @@ shared_focus = {
 			idea = SUS_plan_vecta_idea
 			days = 90
 		}
-		add_province_modifier = {
-			tag = WES
-			static_modifiers = { SUS_plan_vecta_mod }
-			province = 15071
-			days = 90
+		1000 = {
+			add_province_modifier = {
+				static_modifiers = { SUS_plan_vecta_mod }
+				province = 15071
+			}
 		}
     }
 	prerequisite = {

@@ -33,3 +33,30 @@ KNT_INF_01 = {
 		21 = { "Kent Infantry Brigade" }	
 	}
 }
+
+KNT_MOT_01 = {
+	name = "Royal Armoured Regiment"
+
+	for_countries = { KNT }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	fallback_name = "%d. Cavalry Regiment"
+
+	ordered = {
+		1 = { "Royal Dragoon Guards" }
+		2 = { "Royal Hussars" }
+		3 = { "Royal Anglian Regiment" }
+		4 = { "Royal Yorkshire Regiment" }
+		5 = { "Mercian Regiment" }
+		6 = { "The Rifles" }
+		7 = { "Royal Regiment of Fusiliers" }
+		8 = { "Royal Lancers" }
+		9 = { "Royal Yeomanry" }
+		10 = { "Kent Yeomanry" }
+		11 = { "Blues and Royals" }
+		12 = { "Regiment of Light Dragoons" }
+	}
+}

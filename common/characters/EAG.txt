@@ -101,7 +101,7 @@ characters={
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 2
-			legacy_id = 236
+			legacy_id =-1
 		}
 	}
 	EAG_national_comittee={
@@ -130,23 +130,6 @@ characters={
 			expire="1.1.1.1"
 			id=-1
 		}
-		advisor = {
-			cost = -1
-			slot = head_of_government
-			idea_token = EAG_theresa_may
-			traits = {
-				flexible_bureaucrat
-			}
-			allowed = {
-				original_tag = EAG
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-			available = {
-				has_government = hegemonism
-			}
-	    }
 	}
 	EAG_samuel_vestey={
 		name="Samuel Vestey"
@@ -186,23 +169,6 @@ characters={
 				large="gfx/leaders/EAG/Portrait_EAG_Nicholas_Patrick_Carter.dds"
 			}
 		}
-		advisor = {
-			cost = -1
-			slot = head_of_government
-			idea_token = EAG_nicholas_patrick_carter
-			traits = {
-				house_manager 
-			}
-			allowed = {
-				original_tag = EAG
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-			available = {
-				has_government = neocameralism
-			}
-	    }
 		corps_commander = {
 				skill=2
 				traits = { angloid }
@@ -465,26 +431,6 @@ characters={
 				large="gfx/leaders/EAG/Portrait_EAG_Alex_Whitehouse.dds"
 			}
 		}
-		advisor = {
-			cost = 120
-			slot = political_advisor
-			idea_token = EAG_alex_whitehouse
-			traits = {
-				breadearner
-			}
-			allowed = {
-				original_tag = EAG
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-			available = {
-				OR = {
-					has_government = neocameralism
-					has_government = hegemonism
-				}
-			}
-	    }
 		country_leader={
 			ideology=atlantic_liberalism
 			expire="1.1.1.1"
@@ -500,26 +446,6 @@ characters={
 				large="gfx/leaders/EAG/Portrait_EAG_Philip_Yea.dds"
 			}
 		}
-		advisor = {
-			cost = 120
-			slot = political_advisor
-			idea_token = EAG_philip_yea
-			traits = {
-				king_of_spirits
-			}
-			allowed = {
-				original_tag = EAG
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-			available = {
-				OR = {
-					has_government = neocameralism
-					has_government = hegemonism
-				}
-			}
-	    }
 		country_leader={
 			ideology=atlantic_liberalism
 			expire="1.1.1.1"
@@ -691,7 +617,7 @@ characters={
 			defense_skill=1
 			planning_skill=2
 			logistics_skill=1
-			legacy_id = 232
+			legacy_id =-1
 		}
 		advisor = {
 			cost = 120
@@ -807,7 +733,7 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-			legacy_id = 234
+			legacy_id =-1
 		}
 	}
 	
@@ -848,7 +774,7 @@ characters={
 			defense_skill=2
 			planning_skill=1
 			logistics_skill=2
-			legacy_id = 235
+			legacy_id =-1
 		}
 	}
 	
@@ -888,7 +814,7 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=3
-			legacy_id = 240
+			legacy_id =-1
 		}
 	}
 	
@@ -934,7 +860,7 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=1
-			legacy_id = 241
+			legacy_id =-1
 		}
 	}
 	
@@ -954,7 +880,7 @@ characters={
 			defense_skill=1
 			planning_skill=1
 			logistics_skill=1
-			legacy_id = 242
+			legacy_id =-1
 		}
 	}
 	
@@ -974,7 +900,7 @@ characters={
 			defense_skill=2
 			planning_skill=1
 			logistics_skill=2
-			legacy_id = 243
+			legacy_id =-1
 		}
 	}
 
@@ -995,7 +921,7 @@ characters={
 			defense_skill=1
 			planning_skill=1
 			logistics_skill=2
-			legacy_id = 233
+			legacy_id =-1
 		}
 	}
 	
@@ -1015,7 +941,7 @@ characters={
 			defense_skill=1
 			planning_skill=3
 			logistics_skill=2
-			legacy_id = 237
+			legacy_id =-1
 		}
 	}
 	
@@ -1035,7 +961,7 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-			legacy_id = 238
+			legacy_id =-1
 		}
 	}
 	
@@ -1055,7 +981,7 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
-			legacy_id = 239
+			legacy_id =-1
 		}
 	}
 }

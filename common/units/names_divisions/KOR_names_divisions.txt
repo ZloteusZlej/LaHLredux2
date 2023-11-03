@@ -1,0 +1,20 @@
+KOR_ARM_01 = {
+	name = "Expeditionary Armoured Divisions"
+
+		for_countries = { KOR }
+
+		can_use = { always = yes }
+
+		division_types = { "MBT" }
+
+		fallback_name = "%d. Armoured Division"
+		
+		ordered =
+	{
+		1 = { "Guards Seoul Ryu Kyong-Su Armored Division" }
+		2 = { "27th Division" }
+		3 = { "%d Armoured Division" }
+		4 = { "%d Armoured Division" }
+				
+	}
+} 

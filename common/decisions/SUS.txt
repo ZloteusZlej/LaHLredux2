@@ -828,10 +828,44 @@ SUS_foreign_investors = {
 					owner = SUS
 				}
 			}
-			recruit_character = SUS_tim_spicer
-			recruit_character = SUS_mark_thatcher
-			recruit_character = SUS_jack_mann
-			recruit_character = SUS_simon_mann
+			SUS = {
+				add_corps_commander_role = {
+					Character = SUS_tim_spicer
+					skill=3
+					attack_skill=3
+					defense_skill=2
+					planning_skill=1
+					logistics_skill=3
+					legacy_id=-1
+				}
+				add_corps_commander_role = {
+					Character = SUS_mark_thatcher
+					skill=3
+					attack_skill=3
+					defense_skill=1
+					planning_skill=1
+					logistics_skill=3
+					legacy_id=-1
+				}
+				add_corps_commander_role = {
+					Character = SUS_jack_mann
+					skill=3
+					attack_skill=2
+					defense_skill=3
+					planning_skill=3
+					logistics_skill=1
+					legacy_id=-1
+				}
+				add_corps_commander_role = {
+					Character = SUS_simon_mann
+					skill=3
+					attack_skill=3
+					defense_skill=2
+					planning_skill=2
+					logistics_skill=1
+					legacy_id=-1
+				}
+			}
 		}
 	}	
 	
