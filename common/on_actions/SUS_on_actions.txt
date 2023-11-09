@@ -56,4 +56,88 @@ on_actions = {
 			}
 		}
 	}
+	on_weekly_SUS = { #SUS_king_absolutistic_rule_spirit
+        effect = {
+            SUS = {
+                set_variable = {
+                    var = SUS_ruletype_army_morale_factor_factor
+                    value = SUS.party_popularity@left_authoritarianism
+                }
+				set_variable = {
+                    var = SUS_ruletype_political_power_factor
+                    value = SUS.party_popularity@left_authoritarianism
+                }
+				set_variable = {
+                    var = SUS_ruletype_recruitable_population_factor
+                    value = SUS.party_popularity@left_authoritarianism
+                }
+                subtract_from_variable = {
+                    var = SUS_ruletype_army_morale_factor_factor
+                    value = 0.5
+                }
+                divide_variable = {
+                    var = SUS_ruletype_army_morale_factor_factor
+                    value = 5
+                } 
+				subtract_from_variable = {
+                    var = SUS_ruletype_political_power_factor
+                    value = 0.5
+                }
+                divide_variable = {
+                    var = SUS_ruletype_political_power_factor
+                    value = 0.5
+                } 
+				subtract_from_variable = {
+                    var = SUS_ruletype_recruitable_population_factor
+                    value = 0.5
+                }
+                divide_variable = {
+                    var = SUS_ruletype_recruitable_population_factor
+                    value = 0.5
+                } 
+            }
+        }
+    }
+	on_weekly_SUS = { #SUS_king_parlamental_rule_spirit
+        effect = {
+            SUS = {
+                set_variable = {
+                    var = SUS_ruletype_political_advisor_cost_factor
+                    value = SUS.party_popularity@left_authoritarianism
+                }
+				set_variable = {
+                    var = SUS_ruletype_consumer_goods_factor
+                    value = SUS.party_popularity@left_authoritarianism
+                }
+				set_variable = {
+                    var = SUS_ruletype_production_speed_buildings_factor
+                    value = SUS.party_popularity@left_authoritarianism
+                }
+                subtract_from_variable = {
+                    var = SUS_ruletype_political_advisor_cost_factor
+                    value = 5
+                }
+                divide_variable = {
+                    var = SUS_ruletype_political_advisor_cost_factor
+                    value = -5
+                } 
+				subtract_from_variable = {
+                    var = SUS_ruletype_consumer_goods_factor
+                    value = 0.5
+                }
+                divide_variable = {
+                    var = SUS_ruletype_consumer_goods_factor
+                    value = -0.5
+                } 
+				subtract_from_variable = {
+                    var = SUS_ruletype_production_speed_buildings_factor
+                    value = 0.5
+                }
+                divide_variable = {
+                    var = SUS_ruletype_production_speed_buildings_factor
+                    value = 0.5
+                } 
+            }
+        }
+    }
 }					  
