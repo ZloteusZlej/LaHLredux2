@@ -1,0 +1,76 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+ 
+SUS_royal_heavy_arms_industry_organization = {
+	include = generic_tank_refurbishment_plant_organization
+	icon = GFX_idea_SUS_royal_heavy_arms_industry_organization
+		allowed = {	
+		tag = SUS
+		has_dlc = "Arms Against Tyranny"
+	}
+	visible = {
+		SUS = {
+			has_completed_focus = SUS_improvised_armor 
+		}
+	}
+}
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+SUS_royal_drone_manufacturer_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_SUS_royal_drone_manufacturer
+	allowed = {	
+		tag = SUS
+		has_dlc = "Arms Against Tyranny"
+	}
+	visible = {
+		SUS = {
+			has_completed_focus = SUS_project_nimrod 
+		}
+	}
+}
+
