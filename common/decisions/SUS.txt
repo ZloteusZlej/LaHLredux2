@@ -4,6 +4,7 @@ SUS_debug = {
             load_focus_tree = SUS_king_focuses
 			add_ideas = SUS_labourists_strikes_1_of_3 
 			add_ideas = SUS_spies_intrigues_1_of_3
+			add_ideas = SUS_bewitched_army_1_of_3
 			set_popularities = {
 				neocameralism = 19
 				commendationism = 19
@@ -1554,7 +1555,9 @@ SUS_central_office_of_information_descisions = {
            left_authoritarianism_drift = 0.1
         }
 		available = {
-			has_country_flag = SUS_pr_campaign
+			NOT = {
+				has_country_flag = SUS_pr_campaign
+			}
 		}
 		complete_effect = {
 			set_country_flag = SUS_pr_campaign
@@ -1572,7 +1575,9 @@ SUS_central_office_of_information_descisions = {
            neocameralism_drift = -0.12
         }
 		available = {
-			has_country_flag = SUS_pr_campaign
+			NOT = {
+				has_country_flag = SUS_pr_campaign
+			}
 		}
 		complete_effect = {
 			set_country_flag = SUS_pr_campaign
@@ -1590,7 +1595,9 @@ SUS_central_office_of_information_descisions = {
            socialism_drift = -0.12
         }
 		available = {
-			has_country_flag = SUS_pr_campaign
+			NOT = {
+				has_country_flag = SUS_pr_campaign
+			}
 		}
 		complete_effect = {
 			set_country_flag = SUS_pr_campaign
@@ -1607,7 +1614,9 @@ SUS_central_office_of_information_descisions = {
            commendationism_drift = -0.12
         }
 		available = {
-			has_country_flag = SUS_pr_campaign
+			NOT = {
+				has_country_flag = SUS_pr_campaign
+			}
 		}
 		complete_effect = {
 			set_country_flag = SUS_pr_campaign
@@ -1626,7 +1635,9 @@ SUS_central_office_of_information_descisions = {
 		   industrial_capacity_factory = 0.3
         }
 		available = {
-			has_country_flag = SUS_pr_campaign
+			NOT = {
+				has_country_flag = SUS_pr_campaign
+			}
 		}
 		complete_effect = {
 			set_country_flag = SUS_pr_campaign
@@ -1650,7 +1661,9 @@ SUS_central_office_of_information_descisions = {
 			army_strength_factor = 0.25
         }
 		available = {
-			has_country_flag = SUS_pr_campaign
+			NOT = {
+				has_country_flag = SUS_pr_campaign
+			}
 		}
 		complete_effect = {
 			set_country_flag = SUS_pr_campaign
@@ -1673,7 +1686,9 @@ SUS_central_office_of_information_descisions = {
 			left_authoritarianism_drift = 0.1
         }
 		available = {
-			has_country_flag = SUS_pr_campaign
+			NOT = {
+				has_country_flag = SUS_pr_campaign
+			}
 		}
 		complete_effect = {
 			set_country_flag = SUS_pr_campaign
@@ -1701,7 +1716,9 @@ SUS_central_office_of_information_descisions = {
 		fire_only_once = yes
 		cost = 65
 		available = {
-			has_country_flag = SUS_pr_campaign
+			NOT = {
+				has_country_flag = SUS_pr_campaign
+			}
 		}
 		complete_effect = {
 			set_country_flag = SUS_pr_campaign
@@ -1730,7 +1747,9 @@ SUS_central_office_of_information_descisions = {
 			commendationism_drift = -0.1
         }
 		available = {
-			has_country_flag = SUS_pr_campaign
+			NOT = {
+				has_country_flag = SUS_pr_campaign
+			}
 		}
 		complete_effect = {
 			set_country_flag = SUS_pr_campaign

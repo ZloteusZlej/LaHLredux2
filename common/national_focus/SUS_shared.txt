@@ -464,6 +464,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_penal_auxiliaries"
 		add_ideas = SUS_penal_auxiliaries_idea
+		add_manpower = 35000
     }
 	prerequisite = {
 		focus = SUS_aircraft_cannibalization
@@ -1068,9 +1069,7 @@ shared_focus = {
 	}
 	prerequisite = {
 		focus = SUS_exclusive_investments
-	}
-	prerequisite = {
-			focus = SUS_royal_protection
+		focus = SUS_royal_protection
 	}
 	relative_position_id = SUS_cut_tributes
 	cost = 4.3
@@ -1166,6 +1165,9 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_personal_rule"
+		add_dynamic_modifier = {
+			modifier = SUS_king_absolutistic_rule_spirit 	
+		}
 	}
 	relative_position_id = SUS_semper_fidelis
 	cost = 4.3
@@ -1184,6 +1186,9 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_loyal_parliament"
+		add_dynamic_modifier = {
+			modifier = SUS_king_parlamental_rule_spirit 	
+		}
 	}
 	relative_position_id = SUS_semper_fidelis
 	cost = 4.3
@@ -1396,6 +1401,12 @@ shared_focus = {
 	icon = GFX_goal_SUS_impressment
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_impressment"
+		add_manpower = 55000
+		add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 3000
+            producer = SUS
+        }
 	}
 	prerequisite = {
 		focus = SUS_king_s_academies
@@ -1412,6 +1423,20 @@ shared_focus = {
 	icon = GFX_goal_SUS_project_nimrod
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_project_nimrod"
+		add_equipment_to_stockpile = {
+            type = uav_equipment
+            amount = 100
+            producer = SUS
+        }
+		add_tech_bonus = {
+			name = SUS_uav_bonus
+			bonus = 1
+			uses = 1
+			category = cat_uav
+			}
+		mio:SUS_royal_drone_manufacturer_organization = {
+				add_mio_funds = 1000
+		}
 	}
 	prerequisite = {
 		focus = SUS_impressment
@@ -1427,6 +1452,9 @@ shared_focus = {
 	icon = GFX_goal_SUS_reorganise_trainings
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_battle_for_britain"
+		add_ideas = SUS_send_the_next_wave
+		army_experience = 75
+		add_manpower = 55000
 	}
 	prerequisite = {
 		focus = SUS_impressment
@@ -1439,10 +1467,17 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = SUS_who_dares_wins
-	icon = GFX_goal_SUS_who_dares_wins
+	id = SUS_anytime_anywhere
+	icon = GFX_goal_SUS_anytime_anywhere
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SUS_who_dares_wins"
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_anytime_anywhere"
+		add_ideas = SUS_royal_red_army
+		add_tech_bonus = {
+			name = SUS_special_forces_bonus
+			bonus = 0.5
+			uses = 2
+			category = cat_special_forces_generic
+			}
 	}
 	prerequisite = {
 		focus = SUS_impressment
@@ -1461,9 +1496,21 @@ shared_focus = {
 	icon = GFX_goal_SUS_battle_for_britain
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_battle_for_britain"
+		add_ideas = SUS_heaven_under_control
+		air_experience = 35
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine 
+			}
+		add_equipment_subsidy = {
+			cic = 2000
+			equipment_type = small_plane_airframe
+			seller_trigger = Not_part_of_england
+		}
 	}
 	prerequisite = {
-		focus = SUS_who_dares_wins
+		focus = SUS_anytime_anywhere
 	}
 	prerequisite = {
 		focus = SUS_reorganise_trainings
@@ -1485,9 +1532,20 @@ shared_focus = {
 	icon = GFX_goal_SUS_noble_anvil
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_noble_anvil"
+		add_ideas = SUS_falling_sky
+		air_experience = 35
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine 
+			}
+		add_equipment_subsidy = {
+				cic = 2000
+				equipment_type = medium_plane_airframe
+		}
 	}
 	prerequisite = {
-		focus = SUS_who_dares_wins
+		focus = SUS_anytime_anywhere
 	}
 	prerequisite = {
 		focus = SUS_reorganise_trainings
@@ -1509,6 +1567,9 @@ shared_focus = {
 	icon = GFX_goal_SUS_improvised_armor
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_improvised_armor"
+		mio:SUS_royal_heavy_arms_industry_organization = {
+				add_mio_funds = 1000
+		}
 	}
 	prerequisite = {
 		focus = SUS_battle_for_britain
@@ -1527,6 +1588,15 @@ shared_focus = {
 	icon = GFX_goal_SUS_legion_of_frontiersmen
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_legion_of_frontiersmen"
+		add_to_variable = {
+			var = SUS_coring_cost
+			value = -15
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_15_tt
+		swap_ideas = {
+            remove_idea = SUS_bewitched_army_1_of_3
+            add_idea = SUS_bewitched_army_2_of_3
+        }
 	}
 	prerequisite = {
 		focus = SUS_king_s_academies
@@ -1543,6 +1613,16 @@ shared_focus = {
 	icon = GFX_goal_SUS_land_for_blood
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_land_for_blood"
+		every_army_leader	= {
+			add_skill_level = 1
+		}
+		add_popularity = {
+			ideology = left_authoritarianism
+			popularity = -0.15
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = -1
+		}
 	}
 	prerequisite = {
 		focus = SUS_legion_of_frontiersmen
@@ -1575,6 +1655,53 @@ shared_focus = {
 	icon = GFX_goal_SUS_local_defence_volunteers
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_local_defence_volunteers"
+		division_template = {
+			name = "TDF"
+			division_names_group = SUS_INF_01
+			force_allow_recruiting = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+			}
+			support = {
+			engineer = { x = 0 y = 0 }  		
+				}
+
+		}
+		random_controlled_state = {
+			create_unit = {
+				division = "name = \"Regional Milita\" division_template = \"TDF\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+				owner = SUS
+			}
+		}
+		random_controlled_state = {
+			create_unit = {
+				division = "name = \"Regional Milita\" division_template = \"TDF\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+				owner = SUS
+			}
+		}
+		random_controlled_state = {
+			create_unit = {
+				division = "name = \"Regional Milita\" division_template = \"TDF\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+				owner = SUS
+			}
+		}
+		random_controlled_state = {
+			create_unit = {
+				division = "name = \"Regional Milita\" division_template = \"TDF\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+				owner = SUS
+			}
+		}
+		random_controlled_state = {
+			create_unit = {
+				division = "name = \"Regional Milita\" division_template = \"TDF\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+				owner = SUS
+			}
+		}
 	}
 	
 	prerequisite = {
@@ -1597,6 +1724,54 @@ shared_focus = {
 	icon = GFX_goal_SUS_pardon_for_scum
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_pardon_for_scum"
+		division_template = {
+			name = "Penal Legions"
+			division_names_group = SUS_INF_01
+			force_allow_recruiting = yes
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+			}
+			support = {
+				recon = { x = 0 y = 0 }  		
+			}
+
+		}
+		random_controlled_state = {
+			create_unit = {
+				division = "name = \"'HM YOI' Squad N21\" division_template = \"Penal Legions\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+				owner = SUS
+			}
+		}
+		random_controlled_state = {
+			create_unit = {
+				division = "name = \"'HM YOI' Squad N21\" division_template = \"Penal Legions\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+				owner = SUS
+			}
+		}
+		random_controlled_state = {
+			create_unit = {
+				division = "name = \"'HM YOI' Squad N44\" division_template = \"Penal Legions\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+				owner = SUS
+			}
+		}
+		random_controlled_state = {
+			create_unit = {
+				division = "name = \"'HM PS' Squad N13\" division_template = \"Penal Legions\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+				owner = SUS
+			}
+		}
+		random_controlled_state = {
+			create_unit = {
+				division = "name = \"'HM YOI' Squad N621\" division_template = \"Penal Legions\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
+				owner = SUS
+			}
+		}
 	}
 	
 	prerequisite = {
@@ -1618,14 +1793,15 @@ shared_focus = {
 	icon = GFX_goal_SUS_sovereigns_parade
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_sovereigns_parade"
+		swap_ideas = {
+            remove_idea = SUS_bewitched_army_2_of_3
+            add_idea = SUS_bewitched_army_3_of_3
+        }
 	}
 	prerequisite = {
 		focus = SUS_local_defence_volunteers
-	}
-	prerequisite = {
 		focus = SUS_pardon_for_scum
 	}
-		
 	relative_position_id = SUS_legion_of_frontiersmen
 	cost = 4.3
 	x = 0
@@ -1637,6 +1813,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_witch_hunt
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_witch_hunt"
+		remove_ideas = SUS_bewitched_army_3_of_3
 	}
 	
 	prerequisite = {
@@ -1650,4 +1827,219 @@ shared_focus = {
 	cost = 4.3
 	x = 0
 	y = 5
+}
+
+shared_focus = {
+	id = SUS_kings_triumphant
+	icon = GFX_goal_SUS_kings_triumphant
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_kings_triumphant"
+		
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 0
+	y = 8
+}
+
+shared_focus = {
+	id = SUS_swords_to_ploughs
+	icon = GFX_goal_SUS_swords_to_ploughs
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_swords_to_ploughs"
+		
+	}
+	prerequisite = {
+		focus = SUS_kings_triumphant
+	}
+	relative_position_id = SUS_kings_triumphant
+	cost = 4.3
+	x = 0
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_prefabs
+	icon = GFX_goal_SUS_prefabs
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_prefabs"
+		
+	}
+	prerequisite = {
+		focus = SUS_swords_to_ploughs
+	}
+	relative_position_id = SUS_kings_triumphant
+	cost = 4.3
+	x = -2
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_in_iron_gloves
+	icon = GFX_goal_SUS_in_iron_gloves
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_in_iron_gloves"
+		
+	}
+	prerequisite = {
+		focus = SUS_swords_to_ploughs
+	}
+	relative_position_id = SUS_kings_triumphant
+	cost = 4.3
+	x = 0
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_encourage_repatriation
+	icon = GFX_goal_SUS_encourage_repatriation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_encourage_repatriation"
+		
+	}
+	prerequisite = {
+		focus = SUS_swords_to_ploughs
+	}
+	relative_position_id = SUS_kings_triumphant
+	cost = 4.3
+	x = 2
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_cultural_export
+	icon = GFX_goal_SUS_cultural_export
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_cultural_export"
+		
+	}
+	prerequisite = {
+		focus = SUS_prefabs
+	}
+	prerequisite = {
+		focus = SUS_in_iron_gloves
+	}
+	prerequisite = {
+		focus = SUS_encourage_repatriation	
+	}
+	relative_position_id = SUS_kings_triumphant
+	cost = 4.3
+	x = -4
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_connecting_people
+	icon = GFX_goal_SUS_connecting_people
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_connecting_people"
+		
+	}
+	prerequisite = {
+		focus = SUS_prefabs
+	}
+	prerequisite = {
+		focus = SUS_in_iron_gloves
+	}
+	prerequisite = {
+		focus = SUS_encourage_repatriation	
+	}
+	relative_position_id = SUS_kings_triumphant
+	cost = 4.3
+	x = -2
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_rule_the_waves
+	icon = GFX_goal_SUS_rule_the_waves
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_rule_the_waves"
+		
+	}
+	prerequisite = {
+		focus = SUS_prefabs
+	}
+	prerequisite = {
+		focus = SUS_in_iron_gloves
+	}
+	prerequisite = {
+		focus = SUS_encourage_repatriation	
+	}
+	relative_position_id = SUS_kings_triumphant
+	cost = 4.3
+	x = 0
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_moonlite
+	icon = GFX_goal_SUS_moonlite
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_moonlite"
+		
+	}
+	prerequisite = {
+		focus = SUS_prefabs
+	}
+	prerequisite = {
+		focus = SUS_in_iron_gloves
+	}
+	prerequisite = {
+		focus = SUS_encourage_repatriation	
+	}
+	relative_position_id = SUS_kings_triumphant
+	cost = 4.3
+	x = 2
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_the_first_capital
+	icon = GFX_goal_SUS_the_first_capital
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_the_first_capital"
+		
+	}
+	prerequisite = {
+		focus = SUS_prefabs
+	}
+	prerequisite = {
+		focus = SUS_in_iron_gloves
+	}
+	prerequisite = {
+		focus = SUS_encourage_repatriation	
+	}
+	relative_position_id = SUS_kings_triumphant
+	cost = 4.3
+	x = 4
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_long_live_the_king
+	icon = GFX_goal_SUS_long_live_the_king
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_long_live_the_king"
+		
+	}
+	prerequisite = {
+		focus = SUS_cultural_export
+	}
+	prerequisite = {
+		focus = SUS_connecting_people
+	}
+	prerequisite = {
+		focus = SUS_rule_the_waves	
+	}
+	prerequisite = {
+		focus = SUS_moonlite	
+	}
+	prerequisite = {
+		focus = SUS_the_first_capital	
+	}
+	relative_position_id = SUS_kings_triumphant
+	cost = 4.3
+	x = 0
+	y = 4
 }
