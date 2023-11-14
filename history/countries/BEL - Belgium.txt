@@ -2,6 +2,10 @@ capital = 290
 
 oob = "BEL_2020"
 
+recruit_character = BEL_elisabeth_i
+recruit_character = BEL_luc_michel
+recruit_character = BEL_alain_de_benoist
+
 set_research_slots = 3
 
 set_stability = 0.7
@@ -53,26 +57,4 @@ add_ai_strategy = {
     type = alliance
     id = GER
     value = 200
-}
-
-create_country_leader = {
-	name = "Elisabeth I"
-	picture = "Portrait_BEL_Elisabeth_I.dds"
-	ideology = progressivism
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "Luc Michel"
-	picture = "Portrait_BEL_Luc_Michel.dds"
-	ideology = nazbol_gang
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "Alain de Benoist"
-	picture = "Portrait_BEL_Alain_de_Benoist.dds"
-	ideology = charismatic_dictatorship
-	traits = {
-	}
 }
