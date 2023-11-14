@@ -2056,3 +2056,343 @@ shared_focus = {
 	x = 0
 	y = 4
 }
+
+##LABOURISTS ECONOMY##
+
+shared_focus = {
+	id = SUS_robin_hood_laws
+	icon = GFX_goal_SUS_robin_hood_laws
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_robin_hood_laws"
+		add_political_power = 100
+		add_dynamic_modifier = {
+			modifier = SUS_labourist_economy_spirit
+		}
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 0
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_national_bus_company
+	icon = GFX_goal_SUS_national_bus_company
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_national_bus_company"
+		add_to_variable = {
+			var = SUS_base_fuel_gain_factor
+			value = 0.2
+		}
+	}
+	prerequisite = {
+		focus = SUS_robin_hood_laws
+	}
+	relative_position_id = SUS_robin_hood_laws
+	cost = 4.3
+	x = -2
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_employment_equality
+	icon = GFX_goal_SUS_employment_equality
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_employment_equality"
+		add_to_variable = {
+			var = SUS_industrial_capacity_factory
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_conscription_factor_economy
+			value = 0.05
+		}
+	}
+	prerequisite = {
+		focus = SUS_robin_hood_laws
+	}
+	relative_position_id = SUS_robin_hood_laws
+	cost = 4.3
+	x = 0
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_public_pricing_board
+	icon = GFX_goal_SUS_public_pricing_board
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_public_pricing_board"
+		add_to_variable = {
+			var = SUS_consumer_goods_factor
+			value = -0.05
+		}
+		add_to_variable = {
+			var = SUS_political_power_factor
+			value = -0.15
+		}
+		add_to_variable = {
+			var = SUS_unit_upkeep_attrition_factor
+			value = -0.15
+		}
+	}
+	prerequisite = {
+		focus = SUS_robin_hood_laws
+	}
+	relative_position_id = SUS_robin_hood_laws
+	cost = 4.3
+	x = 2
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_clause_iv
+	icon = GFX_goal_SUS_clause_iv
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_clause_iv"
+		
+	}
+	prerequisite = {
+		focus = SUS_public_pricing_board
+	}
+	prerequisite = {
+		focus = SUS_employment_equality
+	}
+	prerequisite = {
+		focus = SUS_national_bus_company
+	}
+	mutually_exclusive = {
+		focus = SUS_private_finance_initative
+	}
+	relative_position_id = SUS_robin_hood_laws
+	cost = 4.3
+	x = -1
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_private_finance_initative
+	icon = GFX_goal_SUS_private_finance_initative
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_private_finance_initative"
+		add_to_variable = {
+			var = SUS_political_power_factor
+			value = 0.2
+		}
+		add_to_variable = {
+			var = SUS_production_speed_buildings_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_production_factory_max_efficiency_factor
+			value = 0.15
+		}
+		add_to_variable = {
+			var = SUS_production_factory_efficiency_gain_factor
+			value = 0.1
+		}
+	}
+	prerequisite = {
+		focus = SUS_public_pricing_board
+	}
+	prerequisite = {
+		focus = SUS_employment_equality
+	}
+	prerequisite = {
+		focus = SUS_national_bus_company
+	}
+	mutually_exclusive = {
+		focus = SUS_clause_iv
+	}
+	relative_position_id = SUS_robin_hood_laws
+	cost = 4.3
+	x = 1
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_colivings
+	icon = GFX_goal_SUS_colivings
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_colivings"
+		add_to_variable = {
+			var = SUS_global_building_slots_factor
+			value = 0.25
+		}
+		add_to_variable = {
+			var = SUS_supply_factor
+			value = 0.2
+		}
+	}
+	prerequisite = {
+		focus = SUS_private_finance_initative
+		focus = SUS_clause_iv
+	}
+	relative_position_id = SUS_robin_hood_laws
+	cost = 4.3
+	x = -1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_renewables_obligation
+	icon = GFX_goal_SUS_renewables_obligation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_renewables_obligation"
+		add_to_variable = {
+			var = SUS_production_speed_buildings_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_production_factory_max_efficiency_factor
+			value = 0.05
+		}
+	}
+	prerequisite = {
+		focus = SUS_private_finance_initative
+		focus = SUS_clause_iv
+	}
+	relative_position_id = SUS_robin_hood_laws
+	cost = 4.3
+	x = 1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_state_planning_commission
+	icon = GFX_goal_SUS_state_planning_commission
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_state_planning_commission"
+		
+	}
+	prerequisite = {
+		focus = SUS_renewables_obligation
+	}
+	prerequisite = {
+		focus = SUS_colivings
+	}
+	relative_position_id = SUS_robin_hood_laws
+	cost = 4.3
+	x = -2
+	y = 4
+}
+
+shared_focus = {
+	id = SUS_meal_replacement
+	icon = GFX_goal_SUS_meal_replacement
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_meal_replacement"
+		add_to_variable = {
+			var = SUS_consumer_goods_factor
+			value = -0.03
+		}
+	}
+	prerequisite = {
+		focus = SUS_renewables_obligation
+	}
+	prerequisite = {
+		focus = SUS_colivings
+	}
+	relative_position_id = SUS_robin_hood_laws
+	cost = 4.3
+	x = 0
+	y = 4
+}
+
+shared_focus = {
+	id = SUS_graduate_tax
+	icon = GFX_goal_SUS_graduate_tax
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_graduate_tax"
+		add_to_variable = {
+			var = SUS_research_speed_factor
+			value = 0.15
+		}
+	}
+	prerequisite = {
+		focus = SUS_renewables_obligation
+	}
+	prerequisite = {
+		focus = SUS_colivings
+	}
+	relative_position_id = SUS_robin_hood_laws
+	cost = 4.3
+	x = 2
+	y = 4
+}
+
+shared_focus = {
+	id = SUS_better_out_than_in
+	icon = GFX_goal_SUS_better_out_than_in
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_better_out_than_in"
+		add_to_variable = {
+			var = SUS_production_factory_start_efficiency_factor
+			value = 0.1
+		}
+	}
+	prerequisite = {
+		focus = SUS_graduate_tax
+	}
+	prerequisite = {
+		focus = SUS_meal_replacement
+	}
+	prerequisite = {
+		focus = SUS_state_planning_commission
+	}
+	mutually_exclusive = {
+		focus = SUS_workfare
+	}
+	relative_position_id = SUS_robin_hood_laws
+	cost = 4.3
+	x = -1
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_workfare
+	icon = GFX_goal_SUS_workfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_workfare"
+		add_to_variable = {
+			var = SUS_production_factory_efficiency_gain_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_consumer_goods_factor
+			value = -0.02
+		}
+	}
+	prerequisite = {
+		focus = SUS_graduate_tax
+	}
+	prerequisite = {
+		focus = SUS_meal_replacement
+	}
+	prerequisite = {
+		focus = SUS_state_planning_commission
+	}
+	mutually_exclusive = {
+		focus = SUS_better_out_than_in
+	}
+	relative_position_id = SUS_robin_hood_laws
+	cost = 4.3
+	x = 1
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_socecon
+	icon = GFX_goal_SUS_socecon
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_socecon"
+		
+	}
+	prerequisite = {
+		focus = SUS_workfare
+		focus = SUS_better_out_than_in
+	}
+	relative_position_id = SUS_robin_hood_laws
+	cost = 4.3
+	x = 0
+	y = 6
+}
