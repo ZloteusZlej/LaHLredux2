@@ -1945,9 +1945,14 @@ leader_traits = {
 	mister_king = { #Henry_IX#
 		random = no
 		political_power_factor = 0.1
-		stability_weekly_factor = 0.07
 		industrial_capacity_factory = 0.05
-		production_lack_of_resource_penalty_factor = -0.25
+		production_lack_of_resource_penalty_factor = -0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	true_sovereign = { #Henry_IX#
+		random = no
 		ai_will_do = {
 			factor = 1
 		}

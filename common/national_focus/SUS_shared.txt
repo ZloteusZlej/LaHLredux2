@@ -1235,6 +1235,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_high_church
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_high_church"
+		add_ideas = SUS_state_anglicanism_1_of_2
 	}
 	prerequisite = {
 		focus = SUS_loyal_parliament
@@ -1251,6 +1252,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_general_synod
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_general_synod"
+		swap_ideas = {
+            remove_idea = SUS_state_anglicanism_1_of_2
+            add_idea = SUS_state_anglicanism_2_of_2
+        }
 	}
 	prerequisite = {
 		focus = SUS_high_church
@@ -1372,6 +1377,12 @@ shared_focus = {
 	icon = GFX_goal_SUS_dieu_et_mon_droit
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_dieu_et_mon_droit"
+		every_character	= {
+			limit = {
+				is_character = SUS_henry_ix
+			}
+			add_country_leader_trait = true_sovereign
+		}
 	}
 	prerequisite = {
 		focus = SUS_the_merlin_mystery
