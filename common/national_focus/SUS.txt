@@ -26,7 +26,26 @@ focus_tree = {
 		shared_focus = SUS_semper_fidelis
 		shared_focus = SUS_king_s_academies
 		shared_focus = SUS_kings_triumphant
-		shared_focus = SUS_robin_hood_laws
+		
+	country = {
+		factor = 0
+		modifier = {
+			add = 1
+			tag = SUS
+			
+		}
+	}
+}
+focus_tree = {
+	id = SUS_labour_focuses
+	default = no
+	continuous_focus_position = { x = 20 y = 4000 }
+		shared_focus = SUS_the_crimson_king
+		shared_focus = SUS_no_empty_seats
+		shared_focus = SUS_dance_to_the_radio
+        shared_focus = SUS_robin_hood_laws
+
+		
 	country = {
 		factor = 0
 		modifier = {
