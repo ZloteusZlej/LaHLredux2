@@ -2466,3 +2466,285 @@ shared_focus = {
 	x = 0
 	y = 6
 }
+
+##LABOURISTS ARMY##
+
+shared_focus = {
+	id = SUS_war_office
+	icon = GFX_goal_SUS_war_office
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_war_office"
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 9
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_national_service_act
+	icon = GFX_goal_SUS_national_service_act
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_national_service_act"
+		
+	}
+	prerequisite = {
+		focus = SUS_war_office
+	}
+
+	relative_position_id = SUS_war_office
+	cost = 4.3
+	x = -3
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_integrate_peoples_militias
+	icon = GFX_goal_SUS_integrate_peoples_militias
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_integrate_peoples_militias"
+		
+	}
+	prerequisite = {
+		focus = SUS_national_service_act
+	}	
+	relative_position_id = SUS_national_service_act
+	cost = 4.3
+	x = -2
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_junior_leaders
+	icon = GFX_goal_SUS_junior_leaders
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_junior_leaders"
+		
+	}
+	prerequisite = {
+		focus = SUS_national_service_act
+	}	
+	relative_position_id = SUS_national_service_act
+	cost = 4.3
+	x = 0
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_future_commando_force
+	icon = GFX_goal_SUS_future_commando_force
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_future_commando_force"
+		
+	}
+	prerequisite = {
+		focus = SUS_national_service_act
+	}	
+	relative_position_id = SUS_national_service_act
+	cost = 4.3
+	x = 2
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_automatic_death
+	icon = GFX_goal_SUS_automatic_death
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_automatic_death"
+		
+	}
+	prerequisite = {
+		focus = SUS_future_commando_force
+	}	
+	prerequisite = {
+		focus = SUS_junior_leaders
+	}	
+	prerequisite = {
+		focus = SUS_integrate_peoples_militias
+	}	
+	mutually_exclusive = {
+		focus = SUS_machine_warfare
+	}
+	relative_position_id = SUS_national_service_act
+	cost = 4.3
+	x = -1
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_machine_warfare
+	icon = GFX_goal_SUS_machine_warfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_machine_warfare"
+		
+	}
+	prerequisite = {
+		focus = SUS_future_commando_force
+	}	
+	prerequisite = {
+		focus = SUS_junior_leaders
+	}	
+	prerequisite = {
+		focus = SUS_integrate_peoples_militias
+	}	
+	mutually_exclusive = {
+		focus = SUS_machine_warfare
+	}
+	relative_position_id = SUS_national_service_act
+	cost = 4.3
+	x = 1
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_deliberate_force
+	icon = GFX_goal_SUS_deliberate_force
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_deliberate_force"
+		
+	}
+	prerequisite = {
+		focus = SUS_machine_warfare
+		focus = SUS_automatic_death
+	}	
+	
+	relative_position_id = SUS_national_service_act
+	cost = 4.3
+	x = 0
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_debates_in_command
+	icon = GFX_goal_SUS_debates_in_command
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_debates_in_command"
+		
+	}
+	prerequisite = {
+		focus = SUS_war_office
+	}
+	
+	relative_position_id = SUS_war_office
+	cost = 4.3
+	x = 3
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_fresh_mind
+	icon = GFX_goal_SUS_fresh_mind
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_fresh_mind"
+		
+	}
+	prerequisite = {
+		focus = SUS_debates_in_command
+	}
+	
+	relative_position_id = SUS_debates_in_command
+	cost = 4.3
+	x = -1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_mistakes_of_NATO
+	icon = GFX_goal_SUS_mistakes_of_NATO
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_mistakes_of_NATO"
+		
+	}
+	prerequisite = {
+		focus = SUS_debates_in_command
+	}
+	
+	relative_position_id = SUS_debates_in_command
+	cost = 4.3
+	x = 1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_political_warfare_officers
+	icon = GFX_goal_SUS_political_warfare_officers
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_political_warfare_officers"
+		
+	}
+	prerequisite = {
+		focus = SUS_mistakes_of_NATO
+	}
+	prerequisite = {
+		focus = SUS_fresh_mind
+	}
+	mutually_exclusive = {
+		focus = SUS_depoliticization_of_the_military
+	}
+	
+	relative_position_id = SUS_debates_in_command
+	cost = 4.3
+	x = -1
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_depoliticization_of_the_military
+	icon = GFX_goal_SUS_depoliticization_of_the_military
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_depoliticization_of_the_military"
+		
+	}
+	prerequisite = {
+		focus = SUS_mistakes_of_NATO
+	}
+	prerequisite = {
+		focus = SUS_fresh_mind
+	}
+	mutually_exclusive = {
+		focus = SUS_political_warfare_officers
+	}
+	
+	relative_position_id = SUS_debates_in_command
+	cost = 4.3
+	x = 1
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_plead_of_generals
+	icon = GFX_goal_SUS_plead_of_generals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_plead_of_generals"
+		
+	}
+	prerequisite = {
+		focus = SUS_depoliticization_of_the_military
+		focus = SUS_political_warfare_officers
+	}
+	relative_position_id = SUS_debates_in_command
+	cost = 4.3
+	x = 0
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_supply_the_liberation
+	icon = GFX_goal_SUS_supply_the_liberation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_supply_the_liberation"
+		
+	}
+	
+	prerequisite = {
+		focus = SUS_plead_of_generals
+	}
+	prerequisite = {
+		focus = SUS_deliberate_force
+	}
+ 	
+	relative_position_id = SUS_war_office
+	cost = 4.3
+	x = 0
+	y = 5
+}
