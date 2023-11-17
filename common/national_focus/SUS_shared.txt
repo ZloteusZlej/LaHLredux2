@@ -1165,6 +1165,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_personal_rule"
+		add_popularity = {
+			ideology = left_authoritarianism
+			popularity = 0.15
+		}
+		custom_effect_tooltip = SUS_king_ruletype_tt
 		add_dynamic_modifier = {
 			modifier = SUS_king_absolutistic_rule_spirit 	
 		}
@@ -1186,6 +1191,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_loyal_parliament"
+		add_popularity = {
+			ideology = left_authoritarianism
+			popularity = 0.15
+		}
+		custom_effect_tooltip = SUS_king_ruletype_tt
 		add_dynamic_modifier = {
 			modifier = SUS_king_parlamental_rule_spirit 	
 		}
@@ -1219,6 +1229,16 @@ shared_focus = {
 	icon = GFX_goal_SUS_prestel
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_prestel"
+		add_to_variable = {
+			var = SUS_coring_cost
+			value = -15
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_15_tt
+		add_tech_bonus = {
+			bonus = 0.3
+			uses = 1
+			category = electronics
+		}
 	}
 	prerequisite = {
 		focus = SUS_loyal_parliament
@@ -1235,7 +1255,8 @@ shared_focus = {
 	icon = GFX_goal_SUS_high_church
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_high_church"
-		add_ideas = SUS_state_anglicanism_1_of_2
+		add_stability = 0.025
+		add_ideas = SUS_state_anglicanism_1_of_3
 	}
 	prerequisite = {
 		focus = SUS_loyal_parliament
@@ -1252,9 +1273,13 @@ shared_focus = {
 	icon = GFX_goal_SUS_general_synod
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_general_synod"
+		add_popularity = {
+			ideology = left_authoritarianism
+			popularity = 0.10
+		}
 		swap_ideas = {
-            remove_idea = SUS_state_anglicanism_1_of_2
-            add_idea = SUS_state_anglicanism_2_of_2
+            remove_idea = SUS_state_anglicanism_1_of_3
+            add_idea = SUS_state_anglicanism_2_of_3
         }
 	}
 	prerequisite = {
@@ -1277,6 +1302,8 @@ shared_focus = {
 	icon = GFX_goal_SUS_church_urban_fund
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_church_urban_fund"
+		add_stability = 0.12
+		add_political_power = 120
 	}
 	prerequisite = {
 		focus = SUS_high_church
@@ -1298,6 +1325,11 @@ shared_focus = {
 	icon = GFX_goal_SUS_studium_generale
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_studium_generale"
+		add_research_slot = 1
+		swap_ideas = {
+            remove_idea = SUS_state_anglicanism_2_of_3
+            add_idea = SUS_state_anglicanism_3_of_3
+        }
 	}
 	prerequisite = {
 		focus = SUS_church_urban_fund
@@ -1316,6 +1348,34 @@ shared_focus = {
 	icon = GFX_goal_SUS_test_act
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_test_act"
+		add_popularity = {
+			ideology = left_authoritarianism
+			popularity = -0.15
+		}
+		random_owned_controlled_state = {	
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
 	}
 	prerequisite = {
 		focus = SUS_studium_generale
@@ -1346,6 +1406,15 @@ shared_focus = {
 	icon = GFX_goal_SUS_ACPO
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_ACPO"
+		add_to_variable = {
+			var = SUS_coring_cost
+			value = -15
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_15_tt
+		swap_ideas = {
+            remove_idea = SUS_spies_intrigues_2_of_3
+            add_idea = SUS_spies_intrigues_3_of_3
+        }
 	}
 	prerequisite = {
 		focus = SUS_studium_generale
@@ -1383,6 +1452,7 @@ shared_focus = {
 			}
 			add_country_leader_trait = true_sovereign
 		}
+		remove_ideas = SUS_spies_intrigues_3_of_3
 	}
 	prerequisite = {
 		focus = SUS_the_merlin_mystery

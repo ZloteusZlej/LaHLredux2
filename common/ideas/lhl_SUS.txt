@@ -647,7 +647,7 @@ ideas = {
 				
 			}
 		}
-		SUS_state_anglicanism_1_of_2 = {
+		SUS_state_anglicanism_1_of_3 = {
 
 			allowed = {
 				original_tag = SUS
@@ -666,11 +666,36 @@ ideas = {
 			#picture = 
 
 			modifier = {
+				war_support_factor = 0.08
+				monthly_population = 0.15
+			}
+		}
+		SUS_state_anglicanism_2_of_3 = {
 
+			allowed = {
+				original_tag = SUS
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_bewitched_army_1_of_3"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				war_support_factor = 0.08
+				monthly_population = 0.16
+				stability_factor = 0.08
 				
 			}
 		}
-		SUS_state_anglicanism_2_of_2 = {
+		SUS_state_anglicanism_3_of_3 = {
 
 			allowed = {
 				original_tag = SUS
@@ -689,8 +714,10 @@ ideas = {
 			#picture = 
 
 			modifier = {
-
-				
+				war_support_factor = 0.08
+				monthly_population = 0.16
+				stability_factor = 0.08
+				research_speed_factor = 0.08
 			}
 		}
 		SUS_sabotaged_finances = {
