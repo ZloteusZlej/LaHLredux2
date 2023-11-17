@@ -1325,6 +1325,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_studium_generale
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_studium_generale"
+		add_research_slot = 1
 		swap_ideas = {
             remove_idea = SUS_state_anglicanism_2_of_3
             add_idea = SUS_state_anglicanism_3_of_3
@@ -1347,6 +1348,34 @@ shared_focus = {
 	icon = GFX_goal_SUS_test_act
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_test_act"
+		add_popularity = {
+			ideology = left_authoritarianism
+			popularity = -0.15
+		}
+		random_owned_controlled_state = {	
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {	
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
 	}
 	prerequisite = {
 		focus = SUS_studium_generale
@@ -1377,6 +1406,11 @@ shared_focus = {
 	icon = GFX_goal_SUS_ACPO
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_ACPO"
+		add_to_variable = {
+			var = SUS_coring_cost
+			value = -15
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_15_tt
 		swap_ideas = {
             remove_idea = SUS_spies_intrigues_2_of_3
             add_idea = SUS_spies_intrigues_3_of_3
