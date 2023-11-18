@@ -2154,6 +2154,7 @@ shared_focus = {
 			var = SUS_base_fuel_gain_factor
 			value = 0.2
 		}
+		custom_effect_tooltip = SUS_national_bus_company_tt
 	}
 	prerequisite = {
 		focus = SUS_robin_hood_laws
@@ -2177,6 +2178,7 @@ shared_focus = {
 			var = SUS_conscription_factor_economy
 			value = 0.05
 		}
+		custom_effect_tooltip = SUS_employment_equality_tt
 	}
 	prerequisite = {
 		focus = SUS_robin_hood_laws
@@ -2204,6 +2206,7 @@ shared_focus = {
 			var = SUS_unit_upkeep_attrition_factor
 			value = -0.15
 		}
+		custom_effect_tooltip = SUS_public_pricing_board_tt
 	}
 	prerequisite = {
 		focus = SUS_robin_hood_laws
@@ -2219,7 +2222,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_clause_iv
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_clause_iv"
-		
+		unlock_decision_category_tooltip = SUS_planism
 	}
 	prerequisite = {
 		focus = SUS_public_pricing_board
@@ -2260,6 +2263,7 @@ shared_focus = {
 			var = SUS_production_factory_efficiency_gain_factor
 			value = 0.1
 		}
+		custom_effect_tooltip = SUS_private_finance_initative_tt
 	}
 	prerequisite = {
 		focus = SUS_public_pricing_board
@@ -2292,6 +2296,7 @@ shared_focus = {
 			var = SUS_supply_factor
 			value = 0.2
 		}
+		custom_effect_tooltip = SUS_colivings_tt
 	}
 	prerequisite = {
 		focus = SUS_private_finance_initative
@@ -2316,6 +2321,7 @@ shared_focus = {
 			var = SUS_production_factory_max_efficiency_factor
 			value = 0.05
 		}
+		custom_effect_tooltip = SUS_renewables_obligation_tt
 	}
 	prerequisite = {
 		focus = SUS_private_finance_initative
@@ -2357,6 +2363,7 @@ shared_focus = {
 		activate_mission = SUS_heavy_machinery_board_plan
 		activate_mission = SUS_military_aviation_board_plan
 		activate_mission = SUS_iron_and_steel_board_plan
+		unlock_decision_category_tooltip = SUS_state_planning_comission_decisions
 	}
 	prerequisite = {
 		focus = SUS_renewables_obligation
@@ -2379,6 +2386,7 @@ shared_focus = {
 			var = SUS_consumer_goods_factor
 			value = -0.03
 		}
+		custom_effect_tooltip = SUS_meal_replacement_tt
 	}
 	prerequisite = {
 		focus = SUS_renewables_obligation
@@ -2401,6 +2409,7 @@ shared_focus = {
 			var = SUS_research_speed_factor
 			value = 0.15
 		}
+		custom_effect_tooltip = SUS_graduate_tax_tt
 	}
 	prerequisite = {
 		focus = SUS_renewables_obligation
@@ -2423,6 +2432,7 @@ shared_focus = {
 			var = SUS_production_factory_start_efficiency_factor
 			value = 0.1
 		}
+		custom_effect_tooltip = SUS_better_out_than_in_tt
 	}
 	prerequisite = {
 		focus = SUS_graduate_tax
@@ -2455,6 +2465,7 @@ shared_focus = {
 			var = SUS_consumer_goods_factor
 			value = -0.02
 		}
+		custom_effect_tooltip = SUS_workfare_tt
 	}
 	prerequisite = {
 		focus = SUS_graduate_tax
