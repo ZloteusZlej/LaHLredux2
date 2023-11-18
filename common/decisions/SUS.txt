@@ -2397,5 +2397,578 @@ SUS_his_majestys_bureau_decision = {
 
 
 SUS_planism = {
+	SUS_infantry_equipment_effort_d = {
+		days_remove = 183
+		days_re_enable = 1
+		cost = 40
+		available = {
+			NOT = {
+				has_country_flag = SUS_labour_effort_set
+			}
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+			set_country_flag = SUS_labour_effort_set
+			add_ideas = SUS_infantry_equipment_effort
+		}
+		remove_effect = {
+			clr_country_flag = SUS_labour_effort_set
+			remove_ideas = SUS_infantry_equipment_effort
+		}
+	}
 	
+	SUS_support_equipment_effort_d = {
+		days_remove = 183
+		days_re_enable = 1
+		cost = 40
+		available = {
+			NOT = {
+				has_country_flag = SUS_labour_effort_set
+			}
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+			set_country_flag = SUS_labour_effort_set
+			add_ideas = SUS_support_equipment_effort
+		}
+		remove_effect = {
+			clr_country_flag = SUS_labour_effort_set
+			remove_ideas = SUS_support_equipment_effort
+		}
+	}
+	
+	SUS_artillery_effort_d = {
+		days_remove = 183
+		days_re_enable = 1
+		cost = 40
+		available = {
+			NOT = {
+				has_country_flag = SUS_labour_effort_set
+			}
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+			set_country_flag = SUS_labour_effort_set
+			add_ideas = SUS_artillery_effort
+		}
+		remove_effect = {
+			clr_country_flag = SUS_labour_effort_set
+			remove_ideas = SUS_artillery_effort
+		}
+	}
+	
+	SUS_armor_effort_d = {
+		days_remove = 183
+		days_re_enable = 1
+		cost = 50
+		available = {
+			NOT = {
+				has_country_flag = SUS_labour_effort_set
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		
+		complete_effect = {
+			set_country_flag = SUS_labour_effort_set
+			add_ideas = SUS_armor_effort
+		}
+		remove_effect = {
+			clr_country_flag = SUS_labour_effort_set
+			remove_ideas = SUS_armor_effort
+		}
+	}
+	
+	SUS_motorized_effort_d = {
+		days_remove = 183
+		days_re_enable = 1
+		cost = 40
+		available = {
+			NOT = {
+				has_country_flag = SUS_labour_effort_set
+			}
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+			set_country_flag = SUS_labour_effort_set
+			add_ideas = SUS_motorized_effort
+		}
+		remove_effect = {
+			clr_country_flag = SUS_labour_effort_set
+			remove_ideas = SUS_motorized_effort
+		}
+	}
+	SUS_mechanized_effort_d = {
+		days_remove = 183
+		days_re_enable = 1
+		cost = 40
+		available = {
+			NOT = {
+				has_country_flag = SUS_labour_effort_set
+			}
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+			set_country_flag = SUS_labour_effort_set
+			add_ideas = SUS_mechanized_effort
+		}
+		remove_effect = {
+			clr_country_flag = SUS_labour_effort_set
+			remove_ideas = SUS_mechanized_effort
+		}
+	}
+	SUS_cas_effort_d = {
+		days_remove = 183
+		days_re_enable = 1
+		cost = 45
+		available = {
+			NOT = {
+				has_country_flag = SUS_labour_effort_set
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		
+		complete_effect = {
+			set_country_flag = SUS_labour_effort_set
+			add_ideas = SUS_cas_effort
+		}
+		remove_effect = {
+			clr_country_flag = SUS_labour_effort_set
+			remove_ideas = SUS_cas_effort
+		}
+	}
+	
+	SUS_fighter_effort_d = {
+		days_remove = 183
+		days_re_enable = 1
+		cost = 45
+		available = {
+			NOT = {
+				has_country_flag = SUS_labour_effort_set
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		
+		complete_effect = {
+			set_country_flag = SUS_labour_effort_set
+			add_ideas = SUS_fighter_effort
+		}
+		remove_effect = {
+			clr_country_flag = SUS_labour_effort_set
+			remove_ideas = SUS_fighter_effort
+		}
+	}
+	
+	SUS_tactical_bomber_effort_d = {
+		days_remove = 183
+		days_re_enable = 1
+		cost = 45
+		available = {
+			NOT = {
+				has_country_flag = SUS_labour_effort_set
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		
+		complete_effect = {
+			set_country_flag = SUS_labour_effort_set
+			add_ideas = SUS_tactical_bomber_effort
+		}
+		remove_effect = {
+			clr_country_flag = SUS_labour_effort_set
+			remove_ideas = SUS_tactical_bomber_effort
+		}
+	}
+	
+	SUS_infanstracture_expansion_effort = {
+		days_remove = 183
+		days_re_enable = 1
+		cost = 45
+		available = {
+			NOT = {
+				has_country_flag = SUS_labour_effort_set
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			production_speed_infrastructure_factor = 0.25
+			production_speed_air_base_factor = 0.33
+			production_speed_supply_node_factor = 0.5
+			production_speed_rail_way_factor = 0.15
+		}
+		
+		complete_effect = {
+			set_country_flag = SUS_labour_effort_set
+		}
+		remove_effect = {
+			clr_country_flag = SUS_labour_effort_set
+		}
+	}
+	
+	SUS_industrial_expansion_effort = {
+		days_remove = 183
+		days_re_enable = 1
+		cost = 40
+		available = {
+			NOT = {
+				has_country_flag = SUS_labour_effort_set
+			}
+		}
+		modifier = {
+			civilian_factory_use = 2
+			production_speed_industrial_complex_factor = 0.2
+			production_speed_arms_factory_factor = 0.2
+		}
+		
+		complete_effect = {
+			set_country_flag = SUS_labour_effort_set
+		}
+		remove_effect = {
+			clr_country_flag = SUS_labour_effort_set
+		}
+	}
+	
+	SUS_general_research_effort = {
+		days_remove = 183
+		days_re_enable = 1
+		cost = 50
+		available = {
+			NOT = {
+				has_country_flag = SUS_labour_effort_set
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			research_speed_factor = 0.2
+		}
+		
+		complete_effect = {
+			set_country_flag = SUS_labour_effort_set
+		}
+		remove_effect = {
+			clr_country_flag = SUS_labour_effort_set
+		}
+	}
+	
+	SUS_resources_extraction_effort = {
+		days_remove = 183
+		days_re_enable = 1
+		cost = 40
+		available = {
+			NOT = {
+				has_country_flag = SUS_labour_effort_set
+			}
+		}
+		modifier = {
+			civilian_factory_use = 2
+			local_resources_factor = 0.33
+			base_fuel_gain_factor = 0.3
+		}
+		
+		complete_effect = {
+			set_country_flag = SUS_labour_effort_set
+		}
+		remove_effect = {
+			clr_country_flag = SUS_labour_effort_set
+		}
+	}
+	
+	SUS_trade_expansion_effort = {
+		days_remove = 183
+		days_re_enable = 1
+		cost = 40
+		available = {
+			NOT = {
+				has_country_flag = SUS_labour_effort_set
+			}
+		}
+		modifier = {
+			civilian_factory_use = 2
+			trade_opinion_factor = 0.15
+			min_export = 0.15
+			industrial_capacity_factory = 0.1
+		}
+		
+		complete_effect = {
+			set_country_flag = SUS_labour_effort_set
+		}
+		remove_effect = {
+			clr_country_flag = SUS_labour_effort_set
+		}
+	}
+}
+
+SUS_state_planning_comission_decisions = {
+	SUS_national_enterprise_board_plan = {
+		days_mission_timeout = 365
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}		
+		remove_effect = {
+			
+		}
+		timeout_effect = {
+			if = {	
+				limit ={
+					check_variable = {
+						var = num_of_civilian_factories
+						value = NEB
+						compare = less_than_or_equals
+					}
+				}
+				add_to_variable = {
+						var = NEB
+						value = 5
+						tooltip = add_5_to_NEB_tt
+					}
+				add_timed_idea = {
+						idea = SUS_failed_NEB_plan
+						days = 63
+					}
+			}
+			else_if = {
+				limit = {
+					num_of_civilian_factories > var:NEB 
+				}
+				add_to_variable = {
+					var = NEB
+					value = 15
+					tooltip = add_15_to_NEB_tt
+				}
+				add_timed_idea = {
+						idea = SUS_successful_NEB_plan
+						days = 120
+					}
+			}
+			custom_effect_tooltip = SUS_NEB_trigger_tt
+			activate_mission = SUS_national_enterprise_board_plan
+		}
+	}
+	
+	SUS_defence_industry_board_plan = {
+		days_mission_timeout = 365
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}		
+		remove_effect = {
+			
+		}
+		timeout_effect = {
+			if = {	
+				limit ={
+					check_variable = {
+						var = num_of_civilian_factories
+						value = DIB
+						compare = less_than_or_equals
+					}
+				}
+				add_to_variable = {
+						var = DIB
+						value = 5
+						tooltip = add_5_to_DIB_tt
+					}
+				add_timed_idea = {
+						idea = SUS_failed_DIB_plan
+						days = 63
+					}
+			}
+			else_if = {
+				limit = {
+					num_of_civilian_factories > var:DIB 
+				}
+				add_to_variable = {
+					var = DIB
+					value = 15
+					tooltip = add_15_to_DIB_tt
+				}
+				add_timed_idea = {
+						idea = SUS_successful_DIB_plan
+						days = 120
+					}
+			}
+			custom_effect_tooltip = SUS_DIB_trigger_tt
+			activate_mission = SUS_defence_industry_board_plan
+		}
+	}
+	
+	SUS_heavy_machinery_board_plan = {
+		days_mission_timeout = 365
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}		
+		remove_effect = {
+			
+		}
+		timeout_effect = {
+			if = {	
+				limit ={
+					has_army_size = {
+						size < var:HMB
+						type = armor
+					}
+				}
+				add_to_variable = {
+						var = HMB
+						value = 2
+						tooltip = add_2_to_HMB_tt
+					}
+				add_timed_idea = {
+						idea = SUS_failed_HMB_plan
+						days = 63
+					}
+			}
+			else_if = {
+				limit = {
+					has_army_size = {
+						size > var:HMB
+						type = armor
+					}
+				}
+				add_to_variable = {
+					var = HMB
+					value = 4
+					tooltip = add_4_to_HMB_tt
+				}
+				add_timed_idea = {
+						idea = SUS_successful_HMB_plan
+						days = 120
+					}
+			}
+			custom_effect_tooltip = SUS_HMB_trigger_tt
+			activate_mission = SUS_heavy_machinery_board_plan
+		}
+	}
+	
+	SUS_military_aviation_board_plan = {
+		days_mission_timeout = 365
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}		
+		remove_effect = {
+			
+		}
+		timeout_effect = {
+			if = {	
+				limit ={
+					has_deployed_air_force_size = {
+						size < var:MAB
+					}
+				}
+				add_to_variable = {
+						var = MAB
+						value = 5
+						tooltip = add_5_to_MAB_tt
+					}
+				add_timed_idea = {
+						idea = SUS_failed_MAB_plan
+						days = 63
+					}
+			}
+			else_if = {
+				limit = {
+					has_deployed_air_force_size = {
+						size > var:MAB
+					}
+				}
+				add_to_variable = {
+					var = MAB
+					value = 10
+					tooltip = add_10_to_MAB_tt
+				}
+				add_timed_idea = {
+						idea = SUS_successful_MAB_plan
+						days = 120
+					}
+			}
+			custom_effect_tooltip = SUS_MAB_trigger_tt
+			activate_mission = SUS_military_aviation_board_plan
+		}
+	}
+	
+	SUS_iron_and_steel_board_plan = {
+		days_mission_timeout = 730
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}		
+		remove_effect = {
+			
+		}
+		timeout_effect = {
+			if = {	
+				limit ={
+					has_resources_in_country = {
+						resource = steel
+						amount < var:ISB
+						extracted = yes
+					}
+				}
+				add_to_variable = {
+						var = ISB
+						value = 5
+						tooltip = add_5_to_ISB_tt
+					}
+				add_timed_idea = {
+						idea = SUS_failed_ISB_plan
+						days = 63
+					}
+			}
+			else_if = {
+				limit ={
+					has_resources_in_country = {
+						resource = steel
+						amount > var:ISB
+						extracted = yes
+					}
+				}
+				add_to_variable = {
+					var = ISB
+					value = 25
+					tooltip = add_25_to_ISB_tt
+				}
+				add_timed_idea = {
+						idea = SUS_successful_ISB_plan
+						days = 120
+					}
+			}
+			custom_effect_tooltip = SUS_ISB_trigger_tt
+			activate_mission = SUS_iron_and_steel_board_plan
+		}
+	}
 }

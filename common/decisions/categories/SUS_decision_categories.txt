@@ -105,3 +105,19 @@ SUS_planism = {
 	}
 	visible_when_empty = yes
 }
+
+SUS_state_planning_comission_decisions = {
+	icon = GFX_
+	allowed = { original_tag = SUS }
+	visible = {
+		SUS = {
+			has_completed_focus = SUS_state_planning_commission
+		}
+	}
+	available = {
+		SUS = {
+			has_completed_focus = SUS_state_planning_commission
+		}
+	}
+	visible_when_empty = yes
+}

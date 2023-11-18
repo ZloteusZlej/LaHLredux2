@@ -2332,7 +2332,31 @@ shared_focus = {
 	icon = GFX_goal_SUS_state_planning_commission
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_state_planning_commission"
-		
+		set_variable = {
+			var = NEB
+			value = 30
+		}
+		set_variable = {
+			var = DIB
+			value = 25
+		}
+		set_variable = {
+			var = HMB
+			value = 4
+		}
+		set_variable = {
+			var = MAB
+			value = 25
+		}
+		set_variable = {
+			var = ISB
+			value = 45
+		}
+		activate_mission = SUS_national_enterprise_board_plan
+		activate_mission = SUS_defence_industry_board_plan
+		activate_mission = SUS_heavy_machinery_board_plan
+		activate_mission = SUS_military_aviation_board_plan
+		activate_mission = SUS_iron_and_steel_board_plan
 	}
 	prerequisite = {
 		focus = SUS_renewables_obligation
