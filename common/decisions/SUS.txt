@@ -2928,10 +2928,8 @@ SUS_state_planning_comission_decisions = {
 		timeout_effect = {
 			if = {	
 				limit ={
-					has_resources_in_country = {
-						resource = steel
-						amount < var:ISB
-						extracted = yes
+					SUS = {
+						steel < var:ISB
 					}
 				}
 				add_to_variable = {
