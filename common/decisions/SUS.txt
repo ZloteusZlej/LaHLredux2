@@ -2839,22 +2839,16 @@ SUS_state_planning_comission_decisions = {
 					}
 				}
 				add_to_variable = {
-						var = HMB
-						value = 2
-						tooltip = add_2_to_HMB_tt
-					}
-				add_timed_idea = {
-						idea = SUS_failed_HMB_plan
-						days = 63
-					}
-			}
-			else_if = {
-				limit = {
-					has_army_size = {
-						size > var:HMB
-						type = armor
-					}
+					var = HMB
+					value = 2
+					tooltip = add_2_to_HMB_tt
 				}
+				add_timed_idea = {
+					idea = SUS_failed_HMB_plan
+					days = 63
+				}
+			}
+			else = {
 				add_to_variable = {
 					var = HMB
 					value = 4
@@ -2863,7 +2857,8 @@ SUS_state_planning_comission_decisions = {
 				add_timed_idea = {
 						idea = SUS_successful_HMB_plan
 						days = 120
-					}
+				}
+				
 			}
 			custom_effect_tooltip = SUS_HMB_trigger_tt
 			activate_mission = SUS_heavy_machinery_board_plan
@@ -2940,32 +2935,25 @@ SUS_state_planning_comission_decisions = {
 					}
 				}
 				add_to_variable = {
-						var = ISB
-						value = 5
-						tooltip = add_5_to_ISB_tt
+							var = ISB
+							value = 5
+							tooltip = add_5_to_ISB_tt
 					}
 				add_timed_idea = {
-						idea = SUS_failed_ISB_plan
-						days = 63
+							idea = SUS_failed_ISB_plan
+							days = 63
 					}
 			}
-			else_if = {
-				limit ={
-					has_resources_in_country = {
-						resource = steel
-						amount > var:ISB
-						extracted = yes
-					}
-				}
+			else = {
 				add_to_variable = {
 					var = ISB
 					value = 25
 					tooltip = add_25_to_ISB_tt
 				}
 				add_timed_idea = {
-						idea = SUS_successful_ISB_plan
-						days = 120
-					}
+					idea = SUS_successful_ISB_plan
+					days = 120
+				}
 			}
 			custom_effect_tooltip = SUS_ISB_trigger_tt
 			activate_mission = SUS_iron_and_steel_board_plan
