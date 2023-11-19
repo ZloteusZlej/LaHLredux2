@@ -494,3 +494,27 @@ country_event = { #A Scapegoat
 		name = SUS_event.501.c
     }
 }
+
+country_event = { #LABOUR DOCTRINE PICK
+	id = SUS_event.701
+	title = SUS_event.701.t
+	desc = SUS_event.701.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.701.a
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.25
+			uses = 3
+			category = cat_mobile_warfare
+		}
+    }
+	option = {
+		name = SUS_event.701.b
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.25
+			uses = 3
+			category = cat_superior_firepower
+		}
+    }
+}

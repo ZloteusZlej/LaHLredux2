@@ -2509,6 +2509,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_war_office
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_war_office"
+		add_to_variable = {
+			var = SUS_experience_gain_army
+			value = 0.1
+		}
 	}
 	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
@@ -2521,7 +2525,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_national_service_act
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_national_service_act"
-		
+		add_to_variable = {
+			var = SUS_conscription_factor_army
+			value = 0.03
+		}
 	}
 	prerequisite = {
 		focus = SUS_war_office
@@ -2538,7 +2545,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_integrate_peoples_militias
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_integrate_peoples_militias"
-		
+		load_oob = SUS_irregular_militias
 	}
 	prerequisite = {
 		focus = SUS_national_service_act
@@ -2554,7 +2561,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_junior_leaders
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_junior_leaders"
-		
+		add_to_variable = {
+			var = SUS_conscription_factor_army
+			value = 0.02
+		}
+		add_to_variable = {
+			var = SUS_training_time_factor
+			value = -0.1
+		}
 	}
 	prerequisite = {
 		focus = SUS_national_service_act
@@ -2570,7 +2584,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_future_commando_force
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_future_commando_force"
-		
+		add_to_variable = {
+			var = SUS_special_forces_cap
+			value = 0.25
+		}
+		add_to_variable = {
+			var = SUS_special_forces_training_time_factor
+			value = -0.1
+		}
 	}
 	prerequisite = {
 		focus = SUS_national_service_act
@@ -2586,7 +2607,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_automatic_death
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_automatic_death"
-		
+		add_ideas = SUS_automatic_death_spirit
 	}
 	prerequisite = {
 		focus = SUS_future_commando_force
@@ -2611,7 +2632,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_machine_warfare
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_machine_warfare"
-		
+		add_ideas = SUS_SUS_machine_warfare_spirit
 	}
 	prerequisite = {
 		focus = SUS_future_commando_force
@@ -2636,7 +2657,22 @@ shared_focus = {
 	icon = GFX_goal_SUS_deliberate_force
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_deliberate_force"
-		
+		add_to_variable = {
+			var = SUS_air_close_air_support_org_damage_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_air_cas_efficiency
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_ground_attack_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_air_strategic_bomber_bombing_factor
+			value = -0.1
+		}
 	}
 	prerequisite = {
 		focus = SUS_machine_warfare
@@ -2654,7 +2690,13 @@ shared_focus = {
 	icon = GFX_goal_SUS_debates_in_command
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_debates_in_command"
-		
+		add_to_variable = {
+			var = SUS_land_doctrine_cost_factor
+			value = -0.15
+		}
+		SUS = {
+			country_event = { id = SUS_event.701 }
+		}
 	}
 	prerequisite = {
 		focus = SUS_war_office
@@ -2671,7 +2713,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_fresh_mind
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_fresh_mind"
-		
+		add_to_variable = {
+			var = SUS_initiative_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_planning_speed
+			value = 0.15
+		}
 	}
 	prerequisite = {
 		focus = SUS_debates_in_command
@@ -2688,7 +2737,18 @@ shared_focus = {
 	icon = GFX_goal_SUS_mistakes_of_NATO
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_mistakes_of_NATO"
-		
+		add_to_variable = {
+			var = SUS_pocket_penalty
+			value = -0.1
+		}
+		add_to_variable = {
+			var = SUS_coordination_bonus
+			value = 0.15
+		}
+		add_to_variable = {
+			var = SUS_attrition
+			value = -0.1
+		}
 	}
 	prerequisite = {
 		focus = SUS_debates_in_command
@@ -2705,7 +2765,18 @@ shared_focus = {
 	icon = GFX_goal_SUS_political_warfare_officers
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_political_warfare_officers"
-		
+		add_to_variable = {
+			var = SUS_army_morale_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_army_core_defence_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_army_core_attack_factor
+			value = 0.05
+		}
 	}
 	prerequisite = {
 		focus = SUS_mistakes_of_NATO
@@ -2728,7 +2799,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_depoliticization_of_the_military
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_depoliticization_of_the_military"
-		
+		add_to_variable = {
+			var = SUS_army_org_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_army_org_regain
+			value = 0.05
+		}
 	}
 	prerequisite = {
 		focus = SUS_mistakes_of_NATO
@@ -2751,7 +2829,13 @@ shared_focus = {
 	icon = GFX_goal_SUS_plead_of_generals
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_plead_of_generals"
-		
+		every_army_leader = {
+			limit = {
+				is_leading_army = yes
+			}
+			add_skill_level = 2
+			add_max_trait = 2
+		}
 	}
 	prerequisite = {
 		focus = SUS_depoliticization_of_the_military
@@ -2768,7 +2852,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_supply_the_liberation
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_supply_the_liberation"
-		
+		add_to_variable = {
+			var = SUS_pocket_penalty
+			value = -0.05
+		}
+		add_to_variable = {
+			var = SUS_dig_in_speed_factor
+			value = 0.1
+		}
 	}
 	
 	prerequisite = {
