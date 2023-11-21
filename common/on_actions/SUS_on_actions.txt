@@ -48,6 +48,35 @@ on_actions = {
 			}
 		}
 	}
+	
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					SUS = {
+						has_war_with = MRC
+					}
+				}
+				load_oob = SUS_workers_uprising_Mercia
+			}
+			else_if = {
+				limit = {
+					SUS = {
+						has_war_with = NTH
+					}
+				}
+				load_oob = SUS_workers_uprising_Northumbria
+			}
+			else_if = {
+				limit = {
+					SUS = {
+						has_war_with = EAG
+					}
+				}
+				load_oob = SUS_workers_uprising_East_Anglia
+			}
+		}
+	}
 	on_monthly = {
 		effect = {
 			add_to_variable = {

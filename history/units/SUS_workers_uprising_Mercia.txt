@@ -1,0 +1,64 @@
+division_template = {
+	name = "Workers Brigades"
+	division_names_group = SUS_INF_01
+	force_allow_recruiting = no
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+
+}
+
+units = {
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 17593
+		division_template = "Workers Brigades"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 17638
+		division_template = "Workers Brigades"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 7790
+		division_template = "Workers Brigades"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 6101
+		division_template = "Workers Brigades"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 17620
+		division_template = "Workers Brigades"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+}

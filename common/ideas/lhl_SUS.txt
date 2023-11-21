@@ -647,7 +647,7 @@ ideas = {
 				
 			}
 		}
-		SUS_state_anglicanism_1_of_2 = {
+		SUS_state_anglicanism_1_of_3 = {
 
 			allowed = {
 				original_tag = SUS
@@ -666,11 +666,36 @@ ideas = {
 			#picture = 
 
 			modifier = {
+				war_support_factor = 0.08
+				monthly_population = 0.15
+			}
+		}
+		SUS_state_anglicanism_2_of_3 = {
 
+			allowed = {
+				original_tag = SUS
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_bewitched_army_1_of_3"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				war_support_factor = 0.08
+				monthly_population = 0.16
+				stability_factor = 0.08
 				
 			}
 		}
-		SUS_state_anglicanism_2_of_2 = {
+		SUS_state_anglicanism_3_of_3 = {
 
 			allowed = {
 				original_tag = SUS
@@ -689,8 +714,10 @@ ideas = {
 			#picture = 
 
 			modifier = {
-
-				
+				war_support_factor = 0.08
+				monthly_population = 0.16
+				stability_factor = 0.08
+				research_speed_factor = 0.08
 			}
 		}
 		SUS_sabotaged_finances = {
@@ -714,6 +741,95 @@ ideas = {
 				unit_upkeep_attrition_factor = 0.25
 				production_speed_buildings_factor = -0.25
 				research_speed_factor = -0.2
+			}
+		}
+		
+		SUS_automatic_death_spirit = {
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_labourists_strikes_3_of_3"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+			equipment_bonus = {
+				artillery = {
+					build_cost_ic = -0.05
+				}
+			}
+			research_bonus = {
+				artillery = 0.1
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+			research_bonus = {
+				infantry_equipment = 0.1
+			}
+			research_bonus = {
+				infantry_equipment = 0.05
+			}
+		}
+		
+		SUS_automatic_death_spirit = {
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_labourists_strikes_3_of_3"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+			equipment_bonus = {
+				artillery = {
+					build_cost_ic = -0.05
+				}
+			}
+			research_bonus = {
+				artillery = 0.1
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+			research_bonus = {
+				infantry_equipment = 0.05
+			}
+		}
+		SUS_SUS_machine_warfare_spirit = {
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_labourists_strikes_3_of_3"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+				}
+			}
+			research_bonus = {
+				armor = 0.1
 			}
 		}
 	}
@@ -811,6 +927,403 @@ ideas = {
 				land_reinforce_rate = 0.05
 				
 			}
+		}
+		
+		SUS_infantry_equipment_effort = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.3
+				}
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_infantry_equipment_effort"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_support_equipment_effort = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.3
+				}
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_infantry_equipment_effort"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_artillery_effort = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			equipment_bonus = {
+				artillery = {
+					build_cost_ic = -0.3
+				}
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_infantry_equipment_effort"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_armor_effort = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.45
+				}
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_infantry_equipment_effort"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_motorized_effort = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			equipment_bonus = {
+				motorized = {
+					build_cost_ic = -0.3
+				}
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_motorized_effort"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_mechanized_effort = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			equipment_bonus = {
+				mechanized = {
+					build_cost_ic = -0.4
+				}
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_mechanized_effort"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_cas_effort = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			equipment_bonus = {
+				cas = {
+					build_cost_ic = -0.35
+				}
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_cas_effort"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_fighter_effort = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.35
+				}
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_fighter_effort"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_tactical_bomber_effort = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			equipment_bonus = {
+				tactical_bomber = {
+					build_cost_ic = -0.35
+				}
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_tactical_bomber_effort"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_failed_NEB_plan = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.1 
+				consumer_goods_factor = 0.05
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_failed_NEB_plan"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_successful_NEB_plan = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.07
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_successful_NEB_plan"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_failed_DIB_plan = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.1 
+				industrial_capacity_factory = -0.2
+				production_factory_efficiency_gain_factor = -0.15 
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_failed_DIB_plan"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_successful_DIB_plan = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.2
+				production_factory_efficiency_gain_factor = 0.15
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_successful_DIB_plan"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_failed_HMB_plan = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				army_armor_attack_factor = -0.1
+				army_armor_defence_factor = -0.1
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_failed_HMB_plan"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_successful_HMB_plan = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				army_armor_attack_factor = -0.15
+				army_armor_defence_factor = -0.15
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_successful_HMB_plan"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_failed_MAB_plan = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {	
+				air_attack_factor = -0.1
+				air_defence_factor = -0.1
+				air_mission_efficiency = -0.15
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_failed_MAB_plan"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_successful_MAB_plan = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				air_attack_factor = 0.1
+				air_defence_factor = 0.1
+				air_mission_efficiency = 0.15
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_successful_MAB_plan"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_failed_ISB_plan = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {	
+				production_lack_of_resource_penalty_factor = 0.1
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.05
+
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_failed_ISB_plan"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		
+		SUS_successful_ISB_plan = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				local_resources_factor = 0.25
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_successful_ISB_plan"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
 		}
 	}
 }
