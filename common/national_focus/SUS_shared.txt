@@ -2513,7 +2513,12 @@ shared_focus = {
 			var = SUS_experience_gain_army
 			value = 0.1
 		}
-	}
+		army_experience = 75
+		custom_effect_tooltip = SUS_war_office_tt
+		add_dynamic_modifier = { 
+			modifier = SUS_labourist_army_spirit 
+			}
+		}
 	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
 	x = 9
@@ -2529,6 +2534,7 @@ shared_focus = {
 			var = SUS_conscription_factor_army
 			value = 0.03
 		}
+		custom_effect_tooltip = SUS_national_service_act_tt
 	}
 	prerequisite = {
 		focus = SUS_war_office
@@ -2546,6 +2552,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_integrate_peoples_militias"
 		load_oob = SUS_irregular_militias
+		custom_effect_tooltip = SUS_integrate_peoples_militias_tt
 	}
 	prerequisite = {
 		focus = SUS_national_service_act
@@ -2569,6 +2576,7 @@ shared_focus = {
 			var = SUS_training_time_factor
 			value = -0.1
 		}
+		custom_effect_tooltip = SUS_junior_leaders_tt
 	}
 	prerequisite = {
 		focus = SUS_national_service_act
@@ -2592,6 +2600,7 @@ shared_focus = {
 			var = SUS_special_forces_training_time_factor
 			value = -0.1
 		}
+		custom_effect_tooltip = SUS_future_commando_force_tt
 	}
 	prerequisite = {
 		focus = SUS_national_service_act
@@ -2632,7 +2641,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_machine_warfare
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_machine_warfare"
-		add_ideas = SUS_SUS_machine_warfare_spirit
+		add_ideas = SUS_machine_warfare_spirit
 	}
 	prerequisite = {
 		focus = SUS_future_commando_force
@@ -2673,6 +2682,7 @@ shared_focus = {
 			var = SUS_air_strategic_bomber_bombing_factor
 			value = -0.1
 		}
+		custom_effect_tooltip = SUS_deliberate_force_tt
 	}
 	prerequisite = {
 		focus = SUS_machine_warfare
@@ -2697,6 +2707,7 @@ shared_focus = {
 		SUS = {
 			country_event = { id = SUS_event.701 }
 		}
+		custom_effect_tooltip = SUS_debates_in_command_tt
 	}
 	prerequisite = {
 		focus = SUS_war_office
@@ -2721,6 +2732,7 @@ shared_focus = {
 			var = SUS_planning_speed
 			value = 0.15
 		}
+		custom_effect_tooltip = SUS_fresh_mind_tt
 	}
 	prerequisite = {
 		focus = SUS_debates_in_command
@@ -2749,6 +2761,7 @@ shared_focus = {
 			var = SUS_attrition
 			value = -0.1
 		}
+		custom_effect_tooltip = SUS_mistakes_of_NATO_tt
 	}
 	prerequisite = {
 		focus = SUS_debates_in_command
@@ -2777,6 +2790,7 @@ shared_focus = {
 			var = SUS_army_core_attack_factor
 			value = 0.05
 		}
+		custom_effect_tooltip = SUS_political_warfare_officers_tt
 	}
 	prerequisite = {
 		focus = SUS_mistakes_of_NATO
@@ -2807,6 +2821,7 @@ shared_focus = {
 			var = SUS_army_org_regain
 			value = 0.05
 		}
+		custom_effect_tooltip = SUS_depoliticization_of_the_military_tt
 	}
 	prerequisite = {
 		focus = SUS_mistakes_of_NATO
@@ -2860,6 +2875,7 @@ shared_focus = {
 			var = SUS_dig_in_speed_factor
 			value = 0.1
 		}
+		custom_effect_tooltip = SUS_supply_the_liberation_tt
 	}
 	
 	prerequisite = {

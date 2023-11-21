@@ -53,8 +53,13 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					SUS = {
-						has_war_with = MRC
+					AND ={ 
+						SUS = {
+							has_war_with = MRC
+						}
+						SUS = {
+							has_completed_focus = SUS_supply_the_liberation
+						}
 					}
 				}
 				load_oob = SUS_workers_uprising_Mercia
@@ -64,6 +69,9 @@ on_actions = {
 					SUS = {
 						has_war_with = NTH
 					}
+					SUS = {
+						has_completed_focus = SUS_supply_the_liberation
+					}
 				}
 				load_oob = SUS_workers_uprising_Northumbria
 			}
@@ -71,6 +79,9 @@ on_actions = {
 				limit = {
 					SUS = {
 						has_war_with = EAG
+					}
+					SUS = {
+						has_completed_focus = SUS_supply_the_liberation
 					}
 				}
 				load_oob = SUS_workers_uprising_East_Anglia
