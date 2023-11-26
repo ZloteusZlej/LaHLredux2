@@ -1912,6 +1912,8 @@ shared_focus = {
 	y = 5
 }
 
+##KING FINAL##
+
 shared_focus = {
 	id = SUS_kings_triumphant
 	icon = GFX_goal_SUS_kings_triumphant
@@ -2889,4 +2891,390 @@ shared_focus = {
 	cost = 4.3
 	x = 0
 	y = 5
+}
+
+##LABOURISTS FINAL##
+
+shared_focus = {
+	id = SUS_face_the_future
+	icon = GFX_goal_SUS_face_the_future
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_face_the_future"
+		add_dynamic_modifier = { 
+			modifier = SUS_labourist_reconstruction_spirit 
+			}
+		}
+		add_to_variable = {
+			var = SUS_l_reconstruction_industry_free_repair_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_l_reconstruction_industry_repair_factor
+			value = 0.05
+		}
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 0
+	y = 8
+}
+
+shared_focus = {
+	id = SUS_millions_programme
+	icon = GFX_goal_SUS_millions_programme
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_millions_programme"
+		add_to_variable = {
+			var = SUS_l_reconstruction_production_speed_buildings_factor
+			value = 0.02
+		}
+		add_to_variable = {
+			var = SUS_l_reconstruction_global_building_slots_factor
+			value = 0.15
+		}
+		activate_mission = SUS_million_programme_plan
+	}
+	prerequisite = {
+		focus = SUS_face_the_future
+	}
+	relative_position_id = SUS_face_the_future
+	cost = 4.3
+	x = -1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_marching_home
+	icon = GFX_goal_SUS_marching_home
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_marching_home"
+		add_to_variable = {
+			var = SUS_l_reconstruction_conscription_factor
+			value = -0.1
+		}
+		add_to_variable = {
+			var = SUS_l_reconstruction_production_factory_efficiency_gain_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_l_reconstruction_production_factory_start_efficiency_factor
+			value = 0.1
+		}
+	}
+	prerequisite = {
+		focus = SUS_face_the_future
+	}
+	relative_position_id = SUS_face_the_future
+	cost = 4.3
+	x = 1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_family_planning
+	icon = GFX_goal_SUS_family_planning
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_family_planning"
+		add_to_variable = {
+			var = SUS_l_reconstruction_monthly_population
+			value = 0.02
+		}
+		add_to_variable = {
+			var = SUS_l_reconstruction_research_speed_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_l_reconstruction_industrial_capacity_factory
+			value = 0.1
+		}
+	}
+	
+	prerequisite = {
+		focus = SUS_millions_programme
+	}
+	prerequisite = {
+		focus = SUS_marching_home
+	}
+	relative_position_id = SUS_face_the_future
+	cost = 4.3
+	x = -3
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_reconstruction_of_the_north
+	icon = GFX_goal_SUS_reconstruction_of_the_north
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_family_planning"
+		1154 ={
+			add_extra_state_shared_building_slots = 3
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+			add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+		}
+		1146 ={
+			add_extra_state_shared_building_slots = 4
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+			add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+		}
+		1009 ={
+			add_extra_state_shared_building_slots = 4
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+			add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+		}
+		1012 ={
+			add_extra_state_shared_building_slots = 4
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+			add_building_construction = {
+                type = industrial_complex
+                level = 3
+                instant_build = yes
+            }
+		}
+	}
+	
+	prerequisite = {
+		focus = SUS_millions_programme
+	}
+	prerequisite = {
+		focus = SUS_marching_home
+	}
+	relative_position_id = SUS_face_the_future
+	cost = 4.3
+	x = -1
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_industrial_training_act
+	icon = GFX_goal_SUS_industrial_training_act
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_industrial_training_act"
+		add_to_variable = {
+			var = SUS_l_reconstruction_production_factory_start_efficiency_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_l_reconstruction_production_factory_efficiency_gain_factor
+			value = 0.05
+		}
+	}
+	
+	prerequisite = {
+		focus = SUS_millions_programme
+	}
+	prerequisite = {
+		focus = SUS_marching_home
+	}
+	relative_position_id = SUS_face_the_future
+	cost = 4.3
+	x = 1
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_historical_justice
+	icon = GFX_goal_SUS_historical_justice
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_historical_justice"
+		add_political_power = 150
+		add_to_variable = {
+			var = SUS_l_reconstruction_production_speed_rail_way_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_l_reconstruction_production_speed_supply_node_factor
+			value = 0.25
+		}
+	}
+	
+	prerequisite = {
+		focus = SUS_millions_programme
+	}
+	prerequisite = {
+		focus = SUS_marching_home
+	}
+	relative_position_id = SUS_face_the_future
+	cost = 4.3
+	x = 3
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_health_of_nation
+	icon = GFX_goal_SUS_health_of_nation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_health_of_nation"
+		add_to_variable = {
+			var = SUS_l_reconstruction_monthly_population
+			value = 0.03
+		}
+		add_tech_bonus = {
+			bonus = 0.33
+			uses = 2
+			category = green_industry_category
+		}
+	}
+	
+	prerequisite = {
+		focus = SUS_family_planning
+	}
+	prerequisite = {
+		focus = SUS_reconstruction_of_the_north
+	}
+	prerequisite = {
+		focus = SUS_industrial_training_act
+	}
+	prerequisite = {
+		focus = SUS_historical_justice
+	}
+	relative_position_id = SUS_face_the_future
+	cost = 4.3
+	x = -1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_freedom_from_want
+	icon = GFX_goal_SUS_freedom_from_want
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_freedom_from_want"
+		add_to_variable = {
+			var = SUS_l_reconstruction_consumer_goods_factor
+			value = 0.02
+		}
+		add_to_variable = {
+			var = SUS_l_reconstruction_political_power_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_l_reconstruction_production_speed_buildings_factor
+			value = 0.02
+		}
+	}
+	
+	prerequisite = {
+		focus = SUS_family_planning
+	}
+	prerequisite = {
+		focus = SUS_reconstruction_of_the_north
+	}
+	prerequisite = {
+		focus = SUS_industrial_training_act
+	}
+	prerequisite = {
+		focus = SUS_historical_justice
+	}
+	relative_position_id = SUS_face_the_future
+	cost = 4.3
+	x = 1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_immediate_step
+	icon = GFX_goal_SUS_immediate_step
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_immediate_step"
+		add_to_variable = {
+			var = SUS_l_reconstruction_consumer_goods_factor
+			value = -0.02
+		}
+		add_to_variable = {
+			var = SUS_l_reconstruction_industrial_capacity_factory
+			value = 0.03
+		}
+	}
+	available = {
+		has_completed_focus = SUS_clause_iv
+	}
+	mutually_exclusive = {
+		focus = SUS_employee_funds
+	}
+	prerequisite = {
+		focus = SUS_freedom_from_want
+	}
+	prerequisite = {
+		focus = SUS_health_of_nation
+	}
+	relative_position_id = SUS_face_the_future
+	cost = 4.3
+	x = -1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_employee_funds
+	icon = GFX_goal_SUS_employee_funds
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_employee_funds"
+		add_to_variable = {
+			var = SUS_l_reconstruction_production_factory_efficiency_gain_factor
+			value = 0.03
+		}
+		add_to_variable = {
+			var = SUS_l_reconstruction_production_speed_buildings_factor
+			value = 0.03
+		}
+	}
+	available = {
+		has_completed_focus = SUS_private_finance_initative
+	}
+	mutually_exclusive = {
+		focus = SUS_immediate_step
+	}
+	prerequisite = {
+		focus = SUS_freedom_from_want
+	}
+	prerequisite = {
+		focus = SUS_health_of_nation
+	}
+	relative_position_id = SUS_face_the_future
+	cost = 4.3
+	x = 1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_twin_dragons_tame_the_storm
+	icon = GFX_goal_SUS_twin_dragons_tame_the_storm
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_twin_dragons_tame_the_storm"
+		country_event = { id = SUS_event.1961 }
+	}
+	prerequisite = {
+		focus = SUS_employee_funds
+		focus = SUS_immediate_step
+	}
+	relative_position_id = SUS_face_the_future
+	cost = 4.3
+	x = 0
+	y = 4
 }

@@ -2957,4 +2957,95 @@ SUS_state_planning_comission_decisions = {
 			activate_mission = SUS_iron_and_steel_board_plan
 		}
 	}
+	
+	SUS_million_programme_plan = {
+		days_mission_timeout = 365
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}		
+		remove_effect = {
+			
+		}
+		timeout_effect = {
+			if = {	
+				limit ={
+					all_controlled_state = {
+						infrastructure > 3
+					}
+				}
+				add_to_variable = {
+					var = SUS_l_reconstruction_monthly_population
+					value = 0.1
+				}
+				add_to_variable = {
+					var = SUS_l_reconstruction_consumer_goods_factor
+					value = -0.04
+				}
+				add_to_variable = {
+					var = SUS_l_reconstruction_global_building_slots_factor
+					value = 0.1
+				}
+			}
+			else = {
+				add_to_variable = {
+					var = SUS_l_reconstruction_consumer_goods_factor
+					value = 0.02
+				}
+				add_to_variable = {
+					var = SUS_l_reconstruction_global_building_slots_factor
+					value = -0.1
+				}
+			}
+			custom_effect_tooltip = SUS_MPP_trigger_tt
+		}
+	}
+	
+	SUS_urban_cultural_improvement_board = {
+		days_mission_timeout = 365
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}		
+		remove_effect = {
+			
+		}
+		timeout_effect = {
+			if = {	
+				limit ={
+					AND= {
+						SUS = {
+							radar_station > 10
+						}
+						SUS = {
+							supply_node > 7
+						}
+					}
+				}
+				add_to_variable = {
+					var = SUS_l_reconstruction_global_building_slots_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = SUS_l_reconstruction_production_speed_buildings_factor
+					value = 0.05
+				}
+			}
+			else = {
+				add_to_variable = {
+					var = SUS_l_reconstruction_global_building_slots_factor
+					value = -0.05
+				}
+				add_to_variable = {
+					var = SUS_l_reconstruction_production_speed_buildings_factor
+					value = -0.05
+				}
+			}
+			custom_effect_tooltip = SUS_MPP_trigger_tt
+		}
+	}
 }
