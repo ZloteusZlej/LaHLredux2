@@ -1921,6 +1921,9 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_kings_triumphant"
 		
 	}
+	available = {
+		has_country_flag = SUSSEX_king_britain_reunified
+	}
 	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
 	x = 0
@@ -2136,7 +2139,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_citizen_henry_winsdor
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_citizen_henry_winsdor"
-	
+		country_event = { id = SUS_event.700 }
 	}
 	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
@@ -2149,7 +2152,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_citizen_henry_winsdor
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_citizen_henry_winsdor"
-	
+		swap_ideas = {
+			remove_idea = SUS_portsmouth_plot_1_of_3
+			add_idea = SUS_portsmouth_plot_2_of_3
+		}
 	}
 	prerequisite = {
 		focus = SUS_citizen_henry_winsdor
@@ -2168,7 +2174,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_better_aristocracy
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_better_aristocracy"
-	
+		swap_ideas = {
+				remove_idea = SUS_portsmouth_plot_1_of_3
+				add_idea = SUS_portsmouth_plot_2_of_3
+		}
 	}
 	prerequisite = {
 		focus = SUS_citizen_henry_winsdor
@@ -2260,7 +2269,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_secularization_debates
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_secularization_debates"
-	
+		swap_ideas = {
+			remove_idea = SUS_portsmouth_plot_2_of_3
+			add_idea = SUS_portsmouth_plot_3_of_3
+		}
 	}
 	prerequisite = {
 		focus = SUS_expand_tuc
@@ -2333,7 +2345,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_public_rating
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_public_rating"
-	
+		remove_ideas = SUS_portsmouth_plot_3_of_3
 	}
 	prerequisite = {
 		focus = SUS_brotherhood_and_unity
@@ -2352,7 +2364,7 @@ shared_focus = {
 	
 	}
 	prerequisite = {
-		focus = SUS_labour_competition
+		focus = SUS_public_rating
 	}
 	relative_position_id = SUS_citizen_henry_winsdor
 	cost = 4.3
@@ -3163,6 +3175,9 @@ shared_focus = {
 			value = 0.05
 		}
 		custom_effect_tooltip = SUS_face_the_future_tt
+	available = {
+		has_country_flag = SUSSEX_labour_britain_reunified
+	}
 	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
 	x = 0
@@ -3184,6 +3199,9 @@ shared_focus = {
 		}
 		activate_mission = SUS_million_programme_plan
 		custom_effect_tooltip = SUS_millions_programme_tt
+	}
+	available = {
+		has_country_flag = SUSSEX_labour_britain_reunified
 	}
 	prerequisite = {
 		focus = SUS_face_the_future
