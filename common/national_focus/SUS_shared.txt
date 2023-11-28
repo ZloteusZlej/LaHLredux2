@@ -2129,6 +2129,256 @@ shared_focus = {
 	y = 4
 }
 
+##LABOURISTS POLITICS##
+
+shared_focus = {
+	id = SUS_citizen_henry_winsdor
+	icon = GFX_goal_SUS_citizen_henry_winsdor
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_citizen_henry_winsdor"
+	
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = -6
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_abolish_peerage
+	icon = GFX_goal_SUS_citizen_henry_winsdor
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_citizen_henry_winsdor"
+	
+	}
+	prerequisite = {
+		focus = SUS_citizen_henry_winsdor
+	}
+	mutually_exclusive = {
+		focus = SUS_better_aristocracy
+	}
+	relative_position_id = SUS_citizen_henry_winsdor
+	cost = 4.3
+	x = -1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_better_aristocracy
+	icon = GFX_goal_SUS_better_aristocracy
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_better_aristocracy"
+	
+	}
+	prerequisite = {
+		focus = SUS_citizen_henry_winsdor
+	}
+	mutually_exclusive = {
+		focus = SUS_abolish_peerage
+	}
+	relative_position_id = SUS_citizen_henry_winsdor
+	cost = 4.3
+	x = 1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_expand_tuc
+	icon = GFX_goal_SUS_abolish_peerage
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_expand_tuc"
+	
+	}
+	prerequisite = {
+		focus = SUS_abolish_peerage
+		focus = SUS_better_aristocracy
+	}
+	relative_position_id = SUS_citizen_henry_winsdor
+	cost = 4.3
+	x = -2
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_british_extraordinary_commission
+	icon = GFX_goal_SUS_british_extraordinary_commission
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_british_extraordinary_commission"
+	
+	}
+	prerequisite = {
+		focus = SUS_abolish_peerage
+		focus = SUS_better_aristocracy
+	}
+	relative_position_id = SUS_citizen_henry_winsdor
+	cost = 4.3
+	x = 0
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_tribune
+	icon = GFX_goal_SUS_tribune
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_tribune"
+	
+	}
+	prerequisite = {
+		focus = SUS_abolish_peerage
+		focus = SUS_better_aristocracy
+	}
+	relative_position_id = SUS_citizen_henry_winsdor
+	cost = 4.3
+	x = 2
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_regional_committees
+	icon = GFX_goal_SUS_regional_committees
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_regional_committees"
+	
+	}
+	prerequisite = {
+		focus = SUS_expand_tuc
+	}
+	prerequisite = {
+		focus = SUS_british_extraordinary_commission
+	}
+	prerequisite = {
+		focus = SUS_tribune
+	}
+	relative_position_id = SUS_citizen_henry_winsdor
+	cost = 4.3
+	x = -1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_secularization_debates
+	icon = GFX_goal_SUS_secularization_debates
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_secularization_debates"
+	
+	}
+	prerequisite = {
+		focus = SUS_expand_tuc
+	}
+	prerequisite = {
+		focus = SUS_british_extraordinary_commission
+	}
+	prerequisite = {
+		focus = SUS_tribune
+	}
+	relative_position_id = SUS_citizen_henry_winsdor
+	cost = 4.3
+	x = 1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_brotherhood_and_unity
+	icon = GFX_goal_SUS_brotherhood_and_unity
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_brotherhood_and_unity"
+	
+	}
+	prerequisite = {
+		focus = SUS_regional_committees
+	}
+	prerequisite = {
+		focus = SUS_secularization_debates
+	}
+	relative_position_id = SUS_citizen_henry_winsdor
+	cost = 4.3
+	x = 0
+	y = 4
+}
+
+shared_focus = {
+	id = SUS_labour_competition
+	icon = GFX_goal_SUS_labour_competition
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_labour_competition"
+	
+	}
+	prerequisite = {
+		focus = SUS_brotherhood_and_unity
+	}
+	relative_position_id = SUS_citizen_henry_winsdor
+	cost = 4.3
+	x = -1
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_share_the_land
+	icon = GFX_goal_SUS_share_the_land
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_share_the_land"
+	
+	}
+	prerequisite = {
+		focus = SUS_labour_competition
+	}
+	relative_position_id = SUS_citizen_henry_winsdor
+	cost = 4.3
+	x = -1
+	y = 6
+}
+
+shared_focus = {
+	id = SUS_public_rating
+	icon = GFX_goal_SUS_public_rating
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_public_rating"
+	
+	}
+	prerequisite = {
+		focus = SUS_brotherhood_and_unity
+	}
+	relative_position_id = SUS_citizen_henry_winsdor
+	cost = 4.3
+	x = 1
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_pride_in_progress
+	icon = GFX_goal_SUS_pride_in_progress
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_pride_in_progress"
+	
+	}
+	prerequisite = {
+		focus = SUS_labour_competition
+	}
+	relative_position_id = SUS_citizen_henry_winsdor
+	cost = 4.3
+	x = 1
+	y = 6
+}
+
+shared_focus = {
+	id = SUS_first_british_constitution
+	icon = GFX_goal_SUS_first_british_constitution
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_first_british_constitution"
+	
+	}
+	prerequisite = {
+		focus = SUS_share_the_land
+	}
+	prerequisite = {
+		focus = SUS_pride_in_progress
+	}
+	relative_position_id = SUS_citizen_henry_winsdor
+	cost = 4.3
+	x = 0
+	y = 7
+}
+
 ##LABOURISTS ECONOMY##
 
 shared_focus = {
@@ -2913,7 +3163,6 @@ shared_focus = {
 			value = 0.05
 		}
 		custom_effect_tooltip = SUS_face_the_future_tt
-	}
 	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
 	x = 0
