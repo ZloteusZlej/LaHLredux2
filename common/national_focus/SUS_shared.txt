@@ -3555,3 +3555,280 @@ shared_focus = {
 	x = 0
 	y = 5
 }
+
+
+##WITCHES ECONOMY##
+
+shared_focus = {
+	id = SUS_loot_the_looters
+	icon = GFX_goal_SUS_loot_the_looters
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_loot_the_looters"
+		add_dynamic_modifier = {
+			modifier = 
+		}
+	}
+	relative_position_id = SUS_loot_the_looters
+	cost = 4.3
+	x = 0
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_househopping
+	icon = GFX_goal_SUS_househopping
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_househopping"
+		
+	}
+	prerequisite = {
+		focus = SUS_loot_the_looters
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = -2
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_re_electrification_plan
+	icon = GFX_goal_SUS_re_electrification_plan
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_re_electrification_plan"
+		
+	}
+	prerequisite = {
+		focus = SUS_loot_the_looters
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 0
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_common_resource_pool
+	icon = GFX_goal_SUS_common_resource_pool
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_common_resource_pool"
+		
+	}
+	prerequisite = {
+		focus = SUS_loot_the_looters
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 2
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_rose_and_tangarine
+	icon = GFX_goal_SUS_rose_and_tangarine
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_rose_and_tangarine"
+		
+	}
+	prerequisite = {
+		focus = SUS_common_resource_pool
+	}
+	prerequisite = {
+		focus = SUS_re_electrification_plan
+	}
+	prerequisite = {
+		focus = SUS_househopping
+	}
+	mutually_exclusive = {
+		focus = SUS_akataplexia
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = -1
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_akataplexia
+	icon = GFX_goal_SUS_akataplexia
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_akataplexia"
+		
+	}
+	prerequisite = {
+		focus = SUS_common_resource_pool
+	}
+	prerequisite = {
+		focus = SUS_re_electrification_plan
+	}
+	prerequisite = {
+		focus = SUS_househopping
+	}
+	mutually_exclusive = {
+		focus = SUS_rose_and_tangarine
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 1
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_labour_service
+	icon = GFX_goal_SUS_labour_service
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_labour_service"
+		
+	}
+	prerequisite = {
+		focus = SUS_akataplexia
+		focus = SUS_rose_and_tangarine
+	}
+	
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = -1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_associative_labour
+	icon = GFX_goal_SUS_associative_labour
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_associative_labour"
+		
+	}
+	prerequisite = {
+		focus = SUS_akataplexia
+		focus = SUS_rose_and_tangarine
+	}
+	
+	
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_peoples_self_reliance
+	icon = GFX_goal_SUS_peoples_self_reliance
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_peoples_self_reliance"
+		
+	}
+	prerequisite = {
+		focus = SUS_associative_labour
+	}
+	prerequisite = {
+		focus = SUS_labour_service
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = -2
+	y = 4
+}
+
+shared_focus = {
+	id = SUS_re_education
+	icon = GFX_goal_SUS_re_education
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_re_education"
+		
+	}
+	prerequisite = {
+		focus = SUS_associative_labour
+	}
+	prerequisite = {
+		focus = SUS_labour_service
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 0
+	y = 4
+}
+
+shared_focus = {
+	id = SUS_rural_and_urban_collaboration
+	icon = GFX_goal_SUS_rural_and_urban_collaboration
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_rural_and_urban_collaboration"
+		
+	}
+	prerequisite = {
+		focus = SUS_associative_labour
+	}
+	prerequisite = {
+		focus = SUS_labour_service
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 2
+	y = 4
+}
+
+shared_focus = {
+	id = SUS_honour_and_reward
+	icon = GFX_goal_SUS_honour_and_reward
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_honour_and_reward"
+		
+	}
+	mutually_exclusive = {
+		focus = SUS_work_makes_one_free
+	}
+	prerequisite = {
+		focus = SUS_rural_and_urban_collaboration
+	}
+	prerequisite = {
+		focus = SUS_re_education
+	}
+	prerequisite = {
+		focus = SUS_peoples_self_reliance
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = -1
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_work_makes_one_free
+	icon = GFX_goal_SUS_work_makes_one_free
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_work_makes_one_free"
+		
+	}
+	mutually_exclusive = {
+		focus = SUS_honour_and_reward
+	}
+	prerequisite = {
+		focus = SUS_rural_and_urban_collaboration
+	}
+	prerequisite = {
+		focus = SUS_re_education
+	}
+	prerequisite = {
+		focus = SUS_peoples_self_reliance
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 1
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_endless_joy
+	icon = GFX_goal_SUS_endless_joy
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_endless_joy"
+		
+	}
+	prerequisite = {
+		focus = SUS_work_makes_one_free
+		focus = SUS_honour_and_reward
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 0
+	y = 6
+}
