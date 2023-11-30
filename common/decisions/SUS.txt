@@ -34,6 +34,577 @@ SUS_espionage_window = {
 }
 
 SUS_power_struggle = {
+	SUS_power_struggle = {
+		days_mission_timeout = 150
+		available = {
+			SUS ={
+				has_global_flag = SUS_power_struggle_ended
+			}
+		}
+		visible = {
+			SUS ={
+				has_global_flag = SUS_power_struggle_ended
+			}
+		}
+		activation = {
+			always = no                  
+		}
+		is_good = no
+		timeout_effect = {
+			country_event = {
+				id = SUS_event.502
+			}
+		}
+	}
+	SUS_spies_acquire_guns = {
+		days_mission_timeout = 15
+		available = {
+			SUS ={
+				has_global_flag = SUS_power_struggle_ended
+			}
+		}
+		visible = {
+			SUS ={
+				has_global_flag = SUS_power_struggle_ended
+			}
+		}
+		activation = {
+			always = no                  
+		}
+		is_good = no
+		timeout_effect = {
+			activate_mission = SUS_spies_acquire_guns
+			random_list = {
+				60 = {
+					set_temp_variable = {
+						var = sus_spies_guns_var_temp
+						value = 250
+					}
+					SUS_add_spies_guns = yes
+				}
+				30 = {
+					set_temp_variable = {
+						var = sus_spies_guns_var_temp
+						value = 500
+					}
+					SUS_add_spies_guns = yes
+				}
+				10 = {
+					set_temp_variable = {
+						var = sus_spies_guns_var_temp
+						value = 1000
+					}
+					SUS_add_spies_guns = yes
+				}
+			}
+		}
+	}
+	SUS_party_acquire_guns = {
+		days_mission_timeout = 15
+		available = {
+			SUS ={
+				has_global_flag = SUS_power_struggle_ended
+			}
+		}
+		visible = {
+			SUS ={
+				has_global_flag = SUS_power_struggle_ended
+			}
+		}
+		activation = {
+			always = no                  
+		}
+		is_good = no
+		timeout_effect = {
+			activate_mission = SUS_party_acquire_guns
+			random_list = {
+				60 = {
+					set_temp_variable = {
+						var = sus_party_guns_var_temp
+						value = 250
+					}
+					SUS_add_party_guns = yes
+				}
+				30 = {
+					set_temp_variable = {
+						var = sus_party_guns_var_temp
+						value = 500
+					}
+					SUS_add_party_guns = yes
+				}
+				10 = {
+					set_temp_variable = {
+						var = sus_party_guns_var_temp
+						value = 1000
+					}
+					SUS_add_party_guns = yes
+				}
+			}
+		}
+	}
+	SUS_guards_acquire_guns = {
+		days_mission_timeout = 15
+		available = {
+			SUS ={
+				has_global_flag = SUS_power_struggle_ended
+			}
+		}
+		visible = {
+			SUS ={
+				has_global_flag = SUS_power_struggle_ended
+			}
+		}
+		activation = {
+			always = no                  
+		}
+		is_good = no
+		timeout_effect = {
+			activate_mission = SUS_guards_acquire_guns
+			random_list = {
+				60 = {
+					set_temp_variable = {
+						var = sus_guards_guns_var_temp
+						value = 250
+					}
+					SUS_add_guards_guns = yes
+				}
+				30 = {
+					set_temp_variable = {
+						var = sus_guards_guns_var_temp
+						value = 500
+					}
+					SUS_add_guards_guns = yes
+				}
+				10 = {
+					set_temp_variable = {
+						var = sus_guards_guns_var_temp
+						value = 1000
+					}
+					SUS_add_guards_guns = yes
+				}
+			}
+		}
+	}
+	SUS_add_250_guns_spies = {
+	    cost = 25
+		days_remove = 15
+		available = {
+			SUS = {
+				has_country_flag = SUS_sided_with_spies
+			}
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_sided_with_spies
+				NOT = {
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = sus_spies_guns_var_temp
+				value = 250
+			}
+			SUS_add_spies_guns = yes
+		}
+	}
+	SUS_add_500_guns_spies = {
+	    cost = 50
+		days_remove = 15
+		available = {
+			SUS = {
+				has_country_flag = SUS_sided_with_spies
+			}
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_sided_with_spies
+				NOT = {
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = sus_spies_guns_var_temp
+				value = 500
+			}
+			SUS_add_spies_guns = yes
+		}
+	}
+	SUS_add_1000_guns_spies = {
+	    cost = 100
+		days_remove = 15
+		available = {
+			SUS = {
+				has_country_flag = SUS_sided_with_spies
+			}
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_sided_with_spies
+				NOT = {
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = sus_spies_guns_var_temp
+				value = 1000
+			}
+			SUS_add_spies_guns = yes
+		}
+	}
+	SUS_add_250_guns_party = {
+	    cost = 25
+		days_remove = 15
+		available = {
+			SUS = {
+				has_country_flag = SUS_sided_with_party
+			}
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_sided_with_party
+				NOT = {
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = sus_party_guns_var_temp
+				value = 250
+			}
+			SUS_add_party_guns = yes
+		}
+	}
+	SUS_add_500_guns_party = {
+	    cost = 50
+		days_remove = 15
+		available = {
+			SUS = {
+				has_country_flag = SUS_sided_with_party
+			}
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_sided_with_party
+				NOT = {
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = sus_party_guns_var_temp
+				value = 500
+			}
+			SUS_add_party_guns = yes
+		}
+	}
+	SUS_add_1000_guns_party = {
+	    cost = 100
+		days_remove = 15
+		available = {
+			SUS = {
+				has_country_flag = SUS_sided_with_party
+			}
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_sided_with_party
+				NOT = {
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = sus_party_guns_var_temp
+				value = 1000
+			}
+			SUS_add_party_guns = yes
+		}
+	}
+	SUS_add_250_guns_guards = {
+	    cost = 25
+		days_remove = 15
+		available = {
+			SUS = {
+				has_country_flag = SUS_sided_with_guards
+			}
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_sided_with_guards
+				NOT = {
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = sus_guards_guns_var_temp
+				value = 250
+			}
+			SUS_add_guards_guns = yes
+		}
+	}
+	SUS_add_500_guns_guards = {
+	    cost = 50
+		days_remove = 15
+		available = {
+			SUS = {
+				has_country_flag = SUS_sided_with_guards
+			}
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_sided_with_guards
+				NOT = {
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = sus_guards_guns_var_temp
+				value = 500
+			}
+			SUS_add_guards_guns = yes
+		}
+	}
+	SUS_add_1000_guns_guards = {
+	    cost = 100
+		days_remove = 15
+		available = {
+			SUS = {
+				has_country_flag = SUS_sided_with_guards
+			}
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_sided_with_guards
+				NOT = {
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = sus_guards_guns_var_temp
+				value = 1000
+			}
+			SUS_add_guards_guns = yes
+		}
+	}
+	SUS_subtract_300_guns_spies = {
+	    cost = 45
+		days_remove = 15
+		available = {
+			SUS = {
+				OR = {
+					has_country_flag = SUS_sided_with_party
+					has_country_flag = SUS_sided_with_guards
+				}
+				NOT = {
+					has_country_flag = SUS_sided_with_spies
+				}
+			}
+		}
+		visible = {
+			SUS = {
+				OR = {
+					has_country_flag = SUS_sided_with_party
+					has_country_flag = SUS_sided_with_guards
+				}
+				NOT = {
+					has_country_flag = SUS_sided_with_spies
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = sus_spies_guns_var_temp
+				value = -300
+			}
+			SUS_subtract_spies_guns = yes
+		}
+	}
+	SUS_subtract_600_guns_spies = {
+	    cost = 90
+		days_remove = 15
+		available = {
+			SUS = {
+				OR = {
+					has_country_flag = SUS_sided_with_party
+					has_country_flag = SUS_sided_with_guards
+				}
+				NOT = {
+					has_country_flag = SUS_sided_with_spies
+				}
+			}
+		}
+		visible = {
+			SUS = {
+				OR = {
+					has_country_flag = SUS_sided_with_party
+					has_country_flag = SUS_sided_with_guards
+				}
+				NOT = {
+					has_country_flag = SUS_sided_with_spies
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = sus_spies_guns_var_temp
+				value = -600
+			}
+			SUS_subtract_spies_guns = yes
+		}
+	}
+	SUS_subtract_300_guns_party = {
+	    cost = 45
+		days_remove = 15
+		available = {
+			SUS = {
+				OR = {
+					has_country_flag = SUS_sided_with_spies
+					has_country_flag = SUS_sided_with_guards
+				}
+				NOT = {
+					has_country_flag = SUS_sided_with_party
+				}
+			}
+		}
+		visible = {
+			SUS = {
+				OR = {
+					has_country_flag = SUS_sided_with_spies
+					has_country_flag = SUS_sided_with_guards
+				}
+				NOT = {
+					has_country_flag = SUS_sided_with_party
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = sus_party_guns_var_temp
+				value = -300
+			}
+			SUS_subtract_party_guns = yes
+		}
+	}
+	SUS_subtract_600_guns_party = {
+	    cost = 90
+		days_remove = 15
+		available = {
+			SUS = {
+				OR = {
+					has_country_flag = SUS_sided_with_spies
+					has_country_flag = SUS_sided_with_guards
+				}
+				NOT = {
+					has_country_flag = SUS_sided_with_party
+				}
+			}
+		}
+		visible = {
+			SUS = {
+				OR = {
+					has_country_flag = SUS_sided_with_spies
+					has_country_flag = SUS_sided_with_guards
+				}
+				NOT = {
+					has_country_flag = SUS_sided_with_party
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = sus_party_guns_var_temp
+				value = -600
+			}
+			SUS_subtract_party_guns = yes
+		}
+	}
+	SUS_subtract_300_guns_guards = {
+	    cost = 45
+		days_remove = 15
+		available = {
+			SUS = {
+				OR = {
+					has_country_flag = SUS_sided_with_spies
+					has_country_flag = SUS_sided_with_party
+				}
+				NOT = {
+					has_country_flag = SUS_sided_with_guards
+				}
+			}
+		}
+		visible = {
+			SUS = {
+				OR = {
+					has_country_flag = SUS_sided_with_spies
+					has_country_flag = SUS_sided_with_party
+				}
+				NOT = {
+					has_country_flag = SUS_sided_with_guards
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = sus_guards_guns_var_temp
+				value = 300
+			}
+			SUS_subtract_guards_guns = yes
+		}
+	}
+	SUS_subtract_600_guns_guards = {
+	    cost = 90
+		days_remove = 15
+		available = {
+			SUS = {
+				OR = {
+					has_country_flag = SUS_sided_with_spies
+					has_country_flag = SUS_sided_with_party
+				}
+				NOT = {
+					has_country_flag = SUS_sided_with_guards
+				}
+			}
+		}
+		visible = {
+			SUS = {
+				OR = {
+					has_country_flag = SUS_sided_with_spies
+					has_country_flag = SUS_sided_with_party
+				}
+				NOT = {
+					has_country_flag = SUS_sided_with_guards
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = sus_guards_guns_var_temp
+				value = 600
+			}
+			SUS_subtract_guards_guns = yes
+		}
+	}
 }
 
 SUS_his_majestys_subsidies = {

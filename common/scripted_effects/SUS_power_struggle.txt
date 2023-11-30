@@ -1,0 +1,83 @@
+SUS_add_spies_guns = {
+	custom_effect_tooltip = SUS_add_spies_guns_tt
+	
+	add_to_variable = {
+		var = sus_spies_guns_var 
+		value = sus_spies_guns_var_temp
+	}
+	
+	clamp_variable = {
+		var = sus_spies_guns_var
+		min = 0
+	}
+}
+
+SUS_add_party_guns = {
+	custom_effect_tooltip = SUS_add_party_guns_tt
+	
+	add_to_variable = {
+		var = sus_party_guns_var 
+		value = sus_party_guns_var_temp
+	}
+	
+	clamp_variable = {
+		var = sus_party_guns_var
+		min = 0
+	}
+}
+
+SUS_add_guards_guns = {
+	custom_effect_tooltip = SUS_add_guards_guns_tt
+	
+	add_to_variable = {
+		var = sus_guards_guns_var 
+		value = sus_guards_guns_var_temp
+	}
+	
+	clamp_variable = {
+		var = sus_guards_guns_var
+		min = 0
+	}
+}
+
+SUS_subtract_spies_guns = {
+	custom_effect_tooltip = SUS_subtract_spies_guns_tt
+	
+	subtract_to_variable = {
+		var = sus_spies_guns_var 
+		value = sus_spies_guns_var_temp
+	}
+	
+	clamp_variable = {
+		var = sus_spies_guns_var
+		min = 0
+	}
+}
+
+SUS_subtract_party_guns = {
+	custom_effect_tooltip = SUS_subtract_party_guns_tt
+	
+	subtract_to_variable = {
+		var = sus_party_guns_var 
+		value = sus_party_guns_var_temp
+	}
+	
+	clamp_variable = {
+		var = sus_party_guns_var
+		min = 0
+	}
+}
+
+SUS_subtract_guards_guns = {
+	custom_effect_tooltip = SUS_subtract_guards_guns_tt
+	
+	subtract_to_variable = {
+		var = sus_guards_guns_var 
+		value = sus_guards_guns_var_temp
+	}
+	
+	clamp_variable = {
+		var = sus_guards_guns_var
+		min = 0
+	}
+}
