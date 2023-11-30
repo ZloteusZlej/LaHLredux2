@@ -3565,8 +3565,41 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_loot_the_looters"
 		add_dynamic_modifier = {
-			modifier = 
+			modifier = SUS_witches_economy_spirit
 		}
+		random_controlled_state = {
+			add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		random_controlled_state = {
+			add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		random_controlled_state = {
+			add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+			}
+			add_extra_state_shared_building_slots =2
+		}
+		random_controlled_state = {
+			add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+			}
+			add_extra_state_shared_building_slots =2
+		}
+		add_political_power = 150
 	}
 	relative_position_id = SUS_loot_the_looters
 	cost = 4.3
@@ -3579,7 +3612,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_househopping
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_househopping"
-		
+		add_to_variable = {
+			var = SUS_w_global_building_slots_factor
+			value = 0.2
+		}
+		add_to_variable = {
+			var = SUS_w_supply_factor
+			value = 0.1
+		}
 	}
 	prerequisite = {
 		focus = SUS_loot_the_looters
@@ -3595,7 +3635,11 @@ shared_focus = {
 	icon = GFX_goal_SUS_re_electrification_plan
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_re_electrification_plan"
-		
+		add_to_variable = {
+			var = SUS_w_production_factory_efficiency_gain_factor
+			value = 0.15
+		}
+
 	}
 	prerequisite = {
 		focus = SUS_loot_the_looters
@@ -3611,7 +3655,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_common_resource_pool
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_common_resource_pool"
-		
+		add_to_variable = {
+			var = SUS_w_consumer_goods_factor
+			value = -0.02
+		}
+		add_to_variable = {
+			var = SUS_w_base_fuel_gain_factor
+			value = 0.1
+		}
 	}
 	prerequisite = {
 		focus = SUS_loot_the_looters
@@ -3652,7 +3703,22 @@ shared_focus = {
 	icon = GFX_goal_SUS_akataplexia
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_akataplexia"
-		
+		add_to_variable = {
+			var = SUS_w_production_lack_of_resource_penalty_factor
+			value = -0.25
+		}
+		add_to_variable = {
+			var = SUS_w_local_resources_factor
+			value = 0.15
+		}
+		add_to_variable = {
+			var = SUS_w_base_fuel_gain_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_w_production_factory_max_efficiency_factor
+			value = 0.15
+		}
 	}
 	prerequisite = {
 		focus = SUS_common_resource_pool
@@ -3677,7 +3743,18 @@ shared_focus = {
 	icon = GFX_goal_SUS_labour_service
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_labour_service"
-		
+		add_to_variable = {
+			var = SUS_w_production_factory_efficiency_gain_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_w_production_speed_buildings_factor
+			value = 0.07
+		}
+		add_to_variable = {
+			var = SUS_w_industrial_capacity_factory
+			value = 0.1
+		}
 	}
 	prerequisite = {
 		focus = SUS_akataplexia
@@ -3695,7 +3772,18 @@ shared_focus = {
 	icon = GFX_goal_SUS_associative_labour
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_associative_labour"
-		
+		add_to_variable = {
+			var = SUS_w_production_factory_start_efficiency_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_w_production_speed_buildings_factor
+			value = 0.03
+		}
+		add_to_variable = {
+			var = SUS_w_production_factory_max_efficiency_factor
+			value = 0.05
+		}
 	}
 	prerequisite = {
 		focus = SUS_akataplexia
@@ -3714,7 +3802,11 @@ shared_focus = {
 	icon = GFX_goal_SUS_peoples_self_reliance
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_peoples_self_reliance"
-		
+		add_political_power = 65
+		add_to_variable = {
+			var = SUS_w_consumer_goods_factor
+			value = -0.03
+		}
 	}
 	prerequisite = {
 		focus = SUS_associative_labour
@@ -3733,7 +3825,38 @@ shared_focus = {
 	icon = GFX_goal_SUS_re_education
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_re_education"
-		
+		add_to_variable = {
+			var = SUS_w_production_factory_max_efficiency_factor
+			value = 0.03
+		}
+		add_to_variable = {
+			var = SUS_w_attrition
+			value = -0.05
+		}
+		random_controlled_state = {
+			add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 3
+		}
+		random_controlled_state = {
+			add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+			}
+			add_extra_state_shared_building_slots =2
+		}
+		random_controlled_state = {
+			add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+			add_extra_state_shared_building_slots =1
+		}
 	}
 	prerequisite = {
 		focus = SUS_associative_labour
@@ -3752,7 +3875,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_rural_and_urban_collaboration
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_rural_and_urban_collaboration"
-		
+		add_to_variable = {
+			var = SUS_w_industrial_capacity_factory
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_w_production_speed_buildings_factor
+			value = 0.03
+		}
 	}
 	prerequisite = {
 		focus = SUS_associative_labour
@@ -3771,7 +3901,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_honour_and_reward
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_honour_and_reward"
-		
+		add_to_variable = {
+			var = SUS_w_production_factory_efficiency_gain_factor
+			value = 0.03
+		}
+		add_to_variable = {
+			var = SUS_w_political_power_factor
+			value = -0.05
+		}
 	}
 	mutually_exclusive = {
 		focus = SUS_work_makes_one_free
@@ -3796,7 +3933,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_work_makes_one_free
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_work_makes_one_free"
-		
+		add_to_variable = {
+			var = SUS_w_production_factory_start_efficiency_factor
+			value = 0.05
+		}
 	}
 	mutually_exclusive = {
 		focus = SUS_honour_and_reward
@@ -3821,7 +3961,18 @@ shared_focus = {
 	icon = GFX_goal_SUS_endless_joy
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_endless_joy"
-		
+		add_to_variable = {
+			var = SUS_w_research_speed_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_w_monthly_population
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_w_political_power_factor
+			value = 0.1
+		}
 	}
 	prerequisite = {
 		focus = SUS_work_makes_one_free
