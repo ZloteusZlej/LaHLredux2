@@ -4,6 +4,14 @@ SUS_debug = {
 	allowed = { original_tag = SUS }
 }
 
+SUS_pillars = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = SUS }
+	visible_when_empty = yes
+	scripted_gui = SUS_labour_pillars_gui
+}
+
 SUS_espionage_window = {
 	icon = GFX_
 
@@ -119,5 +127,13 @@ SUS_state_planning_comission_decisions = {
 			has_completed_focus = SUS_state_planning_commission
 		}
 	}
+	visible_when_empty = yes
+}
+
+SUS_imperial_grace = {
+	icon = GFX_
+
+	allowed = { original_tag = SUS }
+	
 	visible_when_empty = yes
 }
