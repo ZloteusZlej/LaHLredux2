@@ -22,7 +22,7 @@ focus_tree = {
 		shared_focus = SUS_the_crimson_king
 		shared_focus = SUS_no_empty_seats
 		shared_focus = SUS_dance_to_the_radio
-        shared_focus = SUS_cut_tributes
+        	shared_focus = SUS_cut_tributes
 		shared_focus = SUS_semper_fidelis
 		shared_focus = SUS_king_s_academies
 		shared_focus = SUS_kings_triumphant
@@ -43,9 +43,29 @@ focus_tree = {
 		shared_focus = SUS_the_crimson_king
 		shared_focus = SUS_no_empty_seats
 		shared_focus = SUS_dance_to_the_radio
-        shared_focus = SUS_robin_hood_laws
-
+       		shared_focus = SUS_citizen_henry_winsdor
+       		shared_focus = SUS_robin_hood_laws
 		shared_focus = SUS_war_office
+		shared_focus = SUS_face_the_future
+	country = {
+		factor = 0
+		modifier = {
+			add = 1
+			tag = SUS
+			
+		}
+	}
+}
+
+
+focus_tree = {
+	id = SUS_witches_focuses
+	default = no
+	continuous_focus_position = { x = 20 y = 4000 }
+		shared_focus = SUS_the_crimson_king
+		shared_focus = SUS_no_empty_seats
+		shared_focus = SUS_dance_to_the_radio
+		shared_focus = SUS_loot_the_looters
 	country = {
 		factor = 0
 		modifier = {

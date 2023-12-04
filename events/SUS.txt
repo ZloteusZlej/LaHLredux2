@@ -461,6 +461,52 @@ country_event = { #Wardecc deciision
     }
 }
 
+country_event = { #Victory Celebrations
+	id = SUS_event.499
+	title = SUS_event.499.t
+	desc = SUS_event.499.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	trigger = {
+	    original_tag = SUS
+		OR = {
+		   WES = {
+		   exists = no
+		   }
+		   KNT = {
+		   exists = no
+		   }
+		}
+	}
+	mean_time_to_happen = {
+        days = 7
+    }
+	option = {
+		name = SUS_event.499.a
+		set_country_flag = sus_king_ill_flag
+		set_country_flag = SUS_sided_with_spies
+		activate_mission = SUS_power_struggle
+		activate_mission = SUS_party_acquire_guns
+		activate_mission = SUS_guards_acquire_guns
+    }
+	option = {
+		name = SUS_event.499.b
+		set_country_flag = sus_king_ill_flag
+		set_country_flag = SUS_sided_with_party
+		activate_mission = SUS_power_struggle
+		activate_mission = SUS_spies_acquire_guns
+		activate_mission = SUS_guards_acquire_guns
+    }
+	option = {
+		name = SUS_event.499.c
+		set_country_flag = sus_king_ill_flag
+		set_country_flag = SUS_sided_with_guards
+		activate_mission = SUS_power_struggle
+		activate_mission = SUS_spies_acquire_guns
+		activate_mission = SUS_party_acquire_guns
+    }
+}
+
 country_event = { #Dealing with Knights
 	id = SUS_event.500
 	title = SUS_event.500.t
@@ -469,12 +515,29 @@ country_event = { #Dealing with Knights
     fire_only_once = yes
 	option = {
 		name = SUS_event.500.a
+		set_temp_variable = {
+			var = sus_spies_guns_var_temp
+			value = 300
+		}
+		SUS_add_spies_guns = yes
     }
 	option = {
 		name = SUS_event.500.b
+		set_temp_variable = {
+			var = sus_party_guns_var_temp
+			value = 300
+		}
+		SUS_add_party_guns = yes
+		
     }
 	option = {
 		name = SUS_event.500.c
+		set_temp_variable = {
+			var = sus_guards_guns_var_temp
+			value = 300
+		}
+		SUS_add_guards_guns = yes
+		
     }
 }
 
@@ -486,12 +549,124 @@ country_event = { #A Scapegoat
     fire_only_once = yes
 	option = {
 		name = SUS_event.501.a
+		set_variable = { 
+			var = sus_spies_guns_var 
+			value = 0
+		}
     }
 	option = {
 		name = SUS_event.501.b
+		set_variable = { 
+			var = sus_party_guns_var
+			value = 0
+		}
+		
     }
 	option = {
 		name = SUS_event.501.c
+		set_variable = { 
+			var = sus_guards_guns_var
+			value = 0
+		}
+		
+    }
+}
+
+country_event = { #The King Awakens
+	id = SUS_event.502
+	title = SUS_event.502.t
+	desc = SUS_event.502.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	#Dearlove#
+	option = {
+		name = SUS_event.502.a
+		trigger = {
+			check_variable = { sus_spies_guns_var > sus_party_guns_var }
+			check_variable = { sus_spies_guns_var > sus_guards_guns_var }
+		}
+		set_politics = {
+			ruling_party = neocameralism
+			elections_allowed = no
+		}
+		load_focus_tree = #
+		clr_country_flag = sus_king_ill_flag
+		set_global_flag = SUS_power_struggle_ended
+	}
+	#Corbyn#
+	option = {
+		name = SUS_event.502.b
+		trigger = {
+			check_variable = { sus_party_guns_var > sus_spies_guns_var }
+			check_variable = { sus_party_guns_var > sus_guards_guns_var }
+		}
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = no
+		}
+		set_popularities = {
+			neocameralism = 10
+			commendationism = 10
+			socialism = 45
+			left_authoritarianism = 35
+		}
+		load_focus_tree = SUS_labour_focuses
+		clr_country_flag = sus_king_ill_flag
+		set_global_flag = SUS_power_struggle_ended
+	}
+	#Watson#
+	option = {
+		name = SUS_event.502.c
+		trigger = {
+			check_variable = { sus_guards_guns_var > sus_spies_guns_var }
+			check_variable = { sus_guards_guns_var > sus_party_guns_var }
+		}
+		set_politics = {
+			ruling_party = commendationism
+			elections_allowed = no
+		}
+		set_popularities = {
+			neocameralism = 15
+			commendationism = 45
+			socialism = 15
+			left_authoritarianism = 25
+		}
+		load_focus_tree = SUS_witches_focuses
+		clr_country_flag = sus_king_ill_flag
+		set_global_flag = SUS_power_struggle_ended
+	}
+	#Harry#
+	option = {
+		name = SUS_event.502.e
+		set_popularities = {
+			neocameralism = 19
+			commendationism = 19
+			socialism = 21
+			left_authoritarianism = 41
+		}
+		load_focus_tree = SUS_king_focuses
+		clr_country_flag = sus_king_ill_flag
+		set_global_flag = SUS_power_struggle_ended
+	}
+}
+
+country_event = { #LABOUR KING EVENT
+	id = SUS_event.700
+	title = SUS_event.700.t
+	desc = SUS_event.700.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.700.a
+		
+    }
+	option = {
+		name = SUS_event.700.b
+		
+    }
+	option = {
+		name = SUS_event.700.c
+		
     }
 }
 
@@ -516,5 +691,16 @@ country_event = { #LABOUR DOCTRINE PICK
 			uses = 3
 			category = cat_superior_firepower
 		}
+    }
+}
+
+country_event = { #LABOUR FINAL EVENT
+	id = SUS_event.1961
+	title = SUS_event.1961.t
+	desc = SUS_event.1961.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.1961.a
     }
 }
