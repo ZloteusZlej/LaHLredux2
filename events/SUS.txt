@@ -704,3 +704,21 @@ country_event = { #LABOUR FINAL EVENT
 		name = SUS_event.1961.a
     }
 }
+
+country_event = { #Test Congress Start Conditions
+	id = SUS_event.2000
+	title = SUS_event.2000.t
+	desc = SUS_event.2000.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.2000.a
+		set_variable = { SUS_red_var = 30 }
+		set_variable = { SUS_orange_var = 10 }
+		set_variable = { SUS_yellow_var = 10 }
+		set_variable = { SUS_green_var = 10 }
+		set_variable = { SUS_blue_var = 10 }
+		set_variable = { SUS_indigo_var = 10 }
+		set_variable = { SUS_purple_var = 10 }
+    }
+}
