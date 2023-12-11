@@ -1394,5 +1394,47 @@ ideas = {
 
 			
 		}
+		
+		##Pillars Stuff##
+		SUS_pillars_labourists_dominate = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = 0.15
+				war_support_factor = 0.1
+				stability_factor = 0.1
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_pillars_labourists_dominate"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_pillars_outsiders_dominate = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = -0.15
+				war_support_factor = -0.15
+				stability_factor = -0.15
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_pillars_outsiders_dominate"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
 	}
 }
