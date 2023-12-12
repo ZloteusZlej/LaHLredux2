@@ -3994,3 +3994,292 @@ shared_focus = {
 	x = 0
 	y = 6
 }
+
+##WITCHES ARMY##
+
+shared_focus = {
+	id = SUS_state_defence_comission
+	icon = GFX_goal_SUS_state_defence_comission
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_state_defence_comission"
+		#
+		custom_effect_tooltip = SUS_state_defence_comission_tt
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 8
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_reserve_training_units
+	icon = GFX_goal_SUS_reserve_training_units
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_reserve_training_units"
+		#
+		custom_effect_tooltip = SUS_reserve_training_units_tt
+	}
+	prerequisite = {
+		focus = SUS_state_defence_comission
+	}
+	relative_position_id = SUS_state_defence_comission
+	cost = 4.3
+	x = -3
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_replace_the_traitors
+	icon = GFX_goal_SUS_replace_the_traitors
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_replace_the_traitors"
+		#
+		custom_effect_tooltip = SUS_replace_the_traitors_tt
+	}
+	prerequisite = {
+		focus = SUS_reserve_training_units
+	}
+	relative_position_id = SUS_reserve_training_units
+	cost = 4.3
+	x = -2
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_second_front_doctrine
+	icon = GFX_goal_SUS_second_front_doctrine
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_second_front_doctrine"
+		#
+		custom_effect_tooltip = SUS_second_front_doctrine_tt
+	}
+	prerequisite = {
+		focus = SUS_reserve_training_units
+	}
+	relative_position_id = SUS_reserve_training_units
+	cost = 4.3
+	x = 0
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_tunnel_warfare
+	icon = GFX_goal_SUS_tunnel_warfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_tunnel_warfare"
+		#
+		custom_effect_tooltip = SUS_tunnel_warfare_tt
+	}
+	prerequisite = {
+		focus = SUS_reserve_training_units
+	}
+	relative_position_id = SUS_reserve_training_units
+	cost = 4.3
+	x = 2
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_air_awareness
+	icon = GFX_goal_SUS_air_awareness
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_air_awareness"
+		#
+		custom_effect_tooltip = SUS_air_awareness_tt
+	}
+	mutually_exclusive = {
+		focus = SUS_operation_deny_flight
+	}
+	prerequisite = {
+		focus = SUS_replace_the_traitors
+	}
+	prerequisite = {
+		focus = SUS_second_front_doctrine
+	}
+	prerequisite = {
+		focus = SUS_tunnel_warfare
+	}
+	relative_position_id = SUS_second_front_doctrine
+	cost = 4.3
+	x = -1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_operation_deny_flight
+	icon = GFX_goal_SUS_operation_deny_flight
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_operation_deny_flight"
+		#
+		custom_effect_tooltip = SUS_operation_deny_flight_tt
+	}
+	mutually_exclusive = {
+		focus = SUS_air_awareness
+	}
+	prerequisite = {
+		focus = SUS_replace_the_traitors
+	}
+	prerequisite = {
+		focus = SUS_second_front_doctrine
+	}
+	prerequisite = {
+		focus = SUS_tunnel_warfare
+	}
+	relative_position_id = SUS_second_front_doctrine
+	cost = 4.3
+	x = 1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_mechanical_synergy
+	icon = GFX_goal_SUS_mechanical_synergy
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_mechanical_synergy"
+		#
+		custom_effect_tooltip = SUS_mechanical_synergy_tt
+	}
+	prerequisite = {
+		focus = SUS_air_awareness
+		focus = SUS_operation_deny_flight
+	}
+	relative_position_id = SUS_second_front_doctrine
+	cost = 4.3
+	x = 0
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_total_peoples_defence
+	icon = GFX_goal_SUS_total_peoples_defence
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_total_peoples_defence"
+		#
+		custom_effect_tooltip = SUS_total_peoples_defence_tt
+	}
+	prerequisite = {
+		focus = SUS_state_defence_comission
+	}
+	relative_position_id = SUS_state_defence_comission
+	cost = 4.3
+	x = 2
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_by_sea_by_land
+	icon = GFX_goal_SUS_by_sea_by_land
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_by_sea_by_land"
+		#
+		custom_effect_tooltip = SUS_by_sea_by_land_tt
+	}
+	prerequisite = {
+		focus = SUS_total_peoples_defence
+	}
+	relative_position_id = SUS_total_peoples_defence
+	cost = 4.3
+	x = -1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_ready_for_anything
+	icon = GFX_goal_SUS_ready_for_anything
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_ready_for_anything"
+		#
+		custom_effect_tooltip = SUS_ready_for_anything_tt
+	}
+	prerequisite = {
+		focus = SUS_total_peoples_defence
+	}
+	relative_position_id = SUS_total_peoples_defence
+	cost = 4.3
+	x = 1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_hide_the_infiltration
+	icon = GFX_goal_SUS_hide_the_infiltration
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_hide_the_infiltration"
+		#
+		custom_effect_tooltip = SUS_hide_the_infiltration_tt
+	}
+	mutually_exclusive = {
+		focus = SUS_supply_the_valkyries
+	}
+	prerequisite = {
+		focus = SUS_by_sea_by_land
+	}
+	prerequisite = {
+		focus = SUS_ready_for_anything
+	}
+	relative_position_id = SUS_by_sea_by_land
+	cost = 4.3
+	x = 0
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_supply_the_valkyries
+	icon = GFX_goal_SUS_supply_the_valkyries
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_supply_the_valkyries"
+		#
+		custom_effect_tooltip = SUS_supply_the_valkyries_tt
+	}
+	mutually_exclusive = {
+		focus = SUS_hide_the_infiltration
+	}
+	prerequisite = {
+		focus = SUS_by_sea_by_land
+	}
+	prerequisite = {
+		focus = SUS_ready_for_anything
+	}
+	relative_position_id = SUS_ready_for_anything
+	cost = 4.3
+	x = 0
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_the_rifles
+	icon = GFX_goal_SUS_the_rifles
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_the_rifles"
+		#
+		custom_effect_tooltip = SUS_the_rifles_tt
+	}
+	prerequisite = {
+		focus = SUS_hide_the_infiltration
+		focus = SUS_supply_the_valkyries
+	}
+	relative_position_id = SUS_total_peoples_defence
+	cost = 4.3
+	x = 0
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_dig_for_victory
+	icon = GFX_goal_SUS_dig_for_victory
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_dig_for_victory"
+		#
+		custom_effect_tooltip = SUS_dig_for_victory_tt
+	}
+	prerequisite = {
+		focus = SUS_mechanical_synergy
+	}
+	prerequisite = {
+		focus = SUS_the_rifles
+	}
+	relative_position_id = SUS_state_defence_comission
+	cost = 4.3
+	x = 0
+	y = 5
+}
