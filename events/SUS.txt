@@ -610,6 +610,7 @@ country_event = { #The King Awakens
 			socialism = 45
 			left_authoritarianism = 35
 		}
+		add_ideas = SUS_portsmouth_plot_1_of_3
 		load_focus_tree = SUS_labour_focuses
 		clr_country_flag = sus_king_ill_flag
 		set_global_flag = SUS_power_struggle_ended
@@ -657,6 +658,7 @@ country_event = { #The King Awakens
 			check_variable = { sus_guards_guns_var > sus_spies_guns_var }
 			check_variable = { sus_guards_guns_var > sus_party_guns_var }
 		}
+		add_ideas = SUS_grand_opera_of_struggle_1_of_3
 		set_politics = {
 			ruling_party = commendationism
 			elections_allowed = no
@@ -680,6 +682,9 @@ country_event = { #The King Awakens
 			socialism = 21
 			left_authoritarianism = 41
 		}
+		add_ideas = SUS_labourists_strikes_1_of_3 
+		add_ideas = SUS_spies_intrigues_1_of_3
+		add_ideas = SUS_bewitched_army_1_of_3
 		load_focus_tree = SUS_king_focuses
 		clr_country_flag = sus_king_ill_flag
 		set_global_flag = SUS_power_struggle_ended
@@ -784,5 +789,25 @@ country_event = { #Test Congress Start Conditions
 		set_variable = { SUS_indigo_var = 10 }
 		set_variable = { SUS_purple_var = 10 }
 		SUS_pillars_set_variables = yes
+    }
+}
+
+country_event = { #WITCHES QUEEN EVENT
+	id = SUS_event.200
+	title = SUS_event.200.t
+	desc = SUS_event.200.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.200.a
+		add_ideas = SUS_queen_anne
+    }
+	option = {
+		name = SUS_event.200.b
+		add_ideas = SUS_queen_beatrice
+    }
+	option = {
+		name = SUS_event.200.c
+		add_ideas = SUS_queen_eugenie
     }
 }

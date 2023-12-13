@@ -2152,7 +2152,7 @@ shared_focus = {
 	id = SUS_abolish_peerage
 	icon = GFX_goal_SUS_abolish_peerage
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SUS_citizen_henry_winsdor"
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_abolish_peerage"
 		swap_ideas = {
 			remove_idea = SUS_portsmouth_plot_1_of_3
 			add_idea = SUS_portsmouth_plot_2_of_3
@@ -3557,6 +3557,284 @@ shared_focus = {
 	y = 5
 }
 
+##WITCHES POLITICS##
+
+shared_focus = {
+	id = SUS_walburgas_eve
+	icon = GFX_goal_SUS_walburgas_eve
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_walburgas_eve"
+		swap_ideas = {
+			remove_idea = SUS_grand_opera_of_struggle_1_of_3
+			add_idea = SUS_grand_opera_of_struggle_2_of_3
+		}
+		add_political_power = 175
+		SUS = {
+			random_unit_leader  = {
+				remove_unit_leader = yes
+			}
+			random_unit_leader  = {
+				remove_unit_leader = yes
+			}
+			random_unit_leader  = {
+				remove_unit_leader = yes
+			}
+			random_unit_leader  = {
+				remove_unit_leader = yes
+			}
+		}
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = -6
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_spare_the_king
+	icon = GFX_goal_SUS_spare_the_king
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_spare_the_king"
+		clamp_variable = {
+			var = SUS_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = SUS_coring_cost
+			value = -15
+		}
+		
+	}
+	prerequisite = {
+		focus = SUS_walburgas_eve
+	}
+	mutually_exclusive = {
+		focus = SUS_elect_the_queen
+	}
+	relative_position_id = SUS_walburgas_eve
+	cost = 4.3
+	x = -1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_elect_the_queen
+	icon = GFX_goal_SUS_elect_the_queen
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_elect_the_queen"
+		SUS = {
+			country_event = { id = SUS_event.200 }
+		}
+	}
+	prerequisite = {
+		focus = SUS_walburgas_eve
+	}
+	mutually_exclusive = {
+		focus = SUS_spare_the_king
+	}
+	relative_position_id = SUS_walburgas_eve
+	cost = 4.3
+	x = 1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_settling_act 
+	icon = GFX_goal_SUS_settling_act
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_settling_act"
+		
+	}
+	prerequisite = {
+		focus = SUS_elect_the_queen
+		focus = SUS_spare_the_king
+	}
+	relative_position_id = SUS_walburgas_eve
+	cost = 4.3
+	x = -2
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_peoples_assembly
+	icon = GFX_goal_SUS_peoples_assembly
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_peoples_assembly"
+	
+	}
+	prerequisite = {
+		focus = SUS_elect_the_queen
+		focus = SUS_spare_the_king
+	}
+	relative_position_id = SUS_walburgas_eve
+	cost = 4.3
+	x = 0
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_work_units
+	icon = GFX_goal_SUS_work_units
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_work_units"
+	
+	}
+	prerequisite = {
+		focus = SUS_elect_the_queen
+		focus = SUS_spare_the_king
+	}
+	relative_position_id = SUS_walburgas_eve
+	cost = 4.3
+	x = 2
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_simplify_the_law
+	icon = GFX_goal_SUS_simplify_the_law
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_simplify_the_law"
+	
+	}
+	prerequisite = {
+		focus = SUS_work_units
+	}
+	prerequisite = {
+		focus = SUS_peoples_assembly
+	}
+	prerequisite = {
+		focus = SUS_settling_act
+	}
+	relative_position_id = SUS_walburgas_eve
+	cost = 4.3
+	x = -1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_security_command
+	icon = GFX_goal_SUS_security_command
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_security_command"
+	
+	}
+	prerequisite = {
+		focus = SUS_work_units
+	}
+	prerequisite = {
+		focus = SUS_peoples_assembly
+	}
+	prerequisite = {
+		focus = SUS_settling_act
+	}
+	relative_position_id = SUS_walburgas_eve
+	cost = 4.3
+	x = 1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_forge_of_cadres
+	icon = GFX_goal_SUS_forge_of_cadres
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_forge_of_cadres"
+	
+	}
+	prerequisite = {
+		focus = SUS_security_command
+	}
+	prerequisite = {
+		focus = SUS_simplify_the_law
+	}
+	relative_position_id = SUS_walburgas_eve
+	cost = 4.3
+	x = 0
+	y = 4
+}
+
+shared_focus = {
+	id = SUS_freedom_from_family
+	icon = GFX_goal_SUS_freedom_from_family
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_freedom_from_family"
+	
+	}
+	prerequisite = {
+		focus = SUS_forge_of_cadres
+	}
+	relative_position_id = SUS_walburgas_eve
+	cost = 4.3
+	x = -1
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_neo_independentism
+	icon = GFX_goal_SUS_neo_independentism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_neo_independentism"
+	
+	}
+	prerequisite = {
+		focus = SUS_freedom_from_family
+	}
+	relative_position_id = SUS_walburgas_eve
+	cost = 4.3
+	x = -1
+	y = 6
+}
+
+shared_focus = {
+	id = SUS_utopian_collectivism
+	icon = GFX_goal_SUS_utopian_collectivism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_utopian_collectivism"
+	
+	}
+	prerequisite = {
+		focus = SUS_forge_of_cadres
+	}
+	relative_position_id = SUS_walburgas_eve
+	cost = 4.3
+	x = 1
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_workers_courts
+	icon = GFX_goal_SUS_workers_courts
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_workers_courts"
+	
+	}
+	prerequisite = {
+		focus = SUS_utopian_collectivism
+	}
+	relative_position_id = SUS_walburgas_eve
+	cost = 4.3
+	x = 1
+	y = 6
+}
+
+shared_focus = {
+	id = SUS_mass_creativity
+	icon = GFX_goal_SUS_mass_creativity
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_mass_creativity"
+	
+	}
+	prerequisite = {
+		focus = SUS_workers_courts
+	}
+	prerequisite = {
+		focus = SUS_neo_independentism
+	}
+	relative_position_id = SUS_walburgas_eve
+	cost = 4.3
+	x = 0
+	y = 7
+}
 
 ##WITCHES ECONOMY##
 
@@ -3994,6 +4272,10 @@ shared_focus = {
 	x = 0
 	y = 6
 }
+
+#WITCHES POLITICS##
+
+
 
 ##WITCHES ARMY##
 

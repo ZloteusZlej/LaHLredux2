@@ -901,6 +901,126 @@ ideas = {
 				armor = 0.1
 			}
 		}
+		
+		SUS_grand_opera_of_struggle_1_of_3 = {
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_labourists_strikes_3_of_3"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				surrender_limit	 = -0.09
+				political_power_factor = -0.3
+				political_advisor_cost_factor = 0.45
+				trade_laws_cost_factor = 0.3
+				stability_factor = -0.24
+			}
+		}
+		
+		SUS_grand_opera_of_struggle_2_of_3 = {
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_labourists_strikes_3_of_3"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				surrender_limit	 = -0.06
+				political_power_factor = -0.2
+				political_advisor_cost_factor = 0.3
+				trade_laws_cost_factor = 0.2
+				stability_factor = -0.16
+			}
+		}
+		
+		SUS_grand_opera_of_struggle_3_of_3 = {
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_labourists_strikes_3_of_3"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				surrender_limit	 = -0.03
+				political_power_factor = -0.1
+				political_advisor_cost_factor = 0.15
+				trade_laws_cost_factor = 0.1
+				stability_factor = -0.08
+			}
+		}
+		
+		SUS_queen_anne = {
+	
+			picture = GFX_
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            modifier = {
+				war_support_factor = 0.05
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+		
+		SUS_queen_beatrice = {
+	
+			picture = GFX_
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.05
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.03
+			}	
+		}
+		
+		SUS_queen_eugenie  = {
+	
+			picture = GFX_
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.05
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.03
+			}	
+		}
 	}
 	hidden_ideas = {
 		SUS_initial_push = {
