@@ -343,6 +343,10 @@ on_actions = {
                     var = SUS_pillars_essex_trade_opinion_factor
                     value = SUS_yellow_var
                 }
+				divide_variable = {
+					var = SUS_pillars_essex_trade_opinion_factor
+					value = 100
+				}
 				#East Anglia#
                 set_variable = {
                     var = SUS_pillars_east_anglia_equipment_capture_factor
@@ -351,7 +355,15 @@ on_actions = {
                 set_variable = {
                     var = SUS_pillars_east_anglia_recruitable_population_factor
                     value = SUS_green_var
-                } 				
+                }
+				divide_variable = {
+					var = SUS_pillars_east_anglia_equipment_capture_factor
+					value = 100
+				}
+				divide_variable = {
+					var = SUS_pillars_east_anglia_recruitable_population_factor
+					value = 400
+				} 				
 				#Mercia#
                 set_variable = {
                     var = SUS_pillars_mercia_required_garrison_factor
@@ -365,6 +377,22 @@ on_actions = {
                     var = SUS_pillars_political_power_gain
                     value = SUS_indigo_var
                 }
+				divide_variable = {
+					var = SUS_pillars_mercia_required_garrison_factor
+					value = 100
+				}
+				divide_variable = {
+					var = SUS_pillars_mercia_army_morale_factor
+					value = 800
+				}
+				divide_variable = {
+					var = SUS_pillars_political_power_gain
+					value = 500
+				}	
+				multiply_variable = {
+					var = SUS_pillars_mercia_required_garrison_factor
+					value = -1
+				}				
 				#Northumbria#
                 set_variable = {
                     var = SUS_pillars_northumbria_factory_start_efficiency
@@ -378,6 +406,18 @@ on_actions = {
                     var = SUS_pillars_northumbria_max_efficiency_factor
                     value = SUS_orange_var
                 }
+				divide_variable = {
+					var = SUS_pillars_northumbria_factory_start_efficiency
+					value = 400
+				}
+				divide_variable = {
+					var = SUS_pillars_northumbria_army_armor_attack_factor
+					value = 1000
+				}
+				divide_variable = {
+					var = SUS_pillars_northumbria_max_efficiency_factor
+					value = 400
+				}
 				#Dominant Party Thing#
 				if = {
 					limit = {

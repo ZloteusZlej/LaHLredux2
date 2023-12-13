@@ -1,11 +1,24 @@
 SUS_pillars_set_variables = {
-   set_variable = {
+	#Wessex#
+	set_variable = {
 		var = SUS_pillars_wessex_monthly_population
 		value = SUS_purple_var
 	}
 	set_variable = {
 		var = SUS_pillars_wessex_consumer_goods_factor
 		value = SUS_purple_var
+	}
+	divide_variable = {
+		var = SUS_pillars_wessex_monthly_population
+		value = 100
+	}
+	divide_variable = {
+		var = SUS_pillars_wessex_consumer_goods_factor
+		value = 400
+	}
+	multiply_variable = {
+		var = SUS_pillars_wessex_consumer_goods_factor
+		value = -1
 	}
 	#Sussex#
 	set_variable = {
@@ -27,6 +40,38 @@ SUS_pillars_set_variables = {
 	set_variable = {
 		var = SUS_pillars_sussex_economy_cost_factor
 		value = SUS_red_var
+	}
+	divide_variable = {
+		var = SUS_pillars_sussex_production_factory_efficiency
+		value = 100
+	}
+	divide_variable = {
+		var = SUS_pillars_sussex_production_speed_buildings
+		value = 200
+	}
+	divide_variable = {
+		var = SUS_pillars_sussex_political_advisor_cost_factor
+		value = 200
+	}
+	divide_variable = {
+		var = SUS_pillars_sussex_industrial_concern_cost_factor 
+		value = 200
+	}
+	divide_variable = {
+		var = SUS_pillars_sussex_economy_cost_factor
+		value = 200
+	}
+	multiply_variable = {
+		var = SUS_pillars_sussex_political_advisor_cost_factor
+		value = -1
+	}
+	multiply_variable = {
+		var = SUS_pillars_sussex_industrial_concern_cost_factor 
+		value = -1
+	}
+	multiply_variable = {
+		var = SUS_pillars_sussex_economy_cost_factor
+		value = -1
 	}
 	#Kent#
 	set_variable = {
@@ -57,10 +102,66 @@ SUS_pillars_set_variables = {
 		var = SUS_pillars_kent_naval_equipment
 		value = SUS_blue_var
 	}
+	divide_variable = {
+		var = SUS_pillars_kent_research_speed_factor
+		value = 400
+	}
+	divide_variable = {
+		var = SUS_pillars_kent_land_doctrine
+		value = 100
+	}
+	divide_variable = {
+		var = SUS_pillars_kent_air_doctrine
+		value = 100
+	}
+	divide_variable = {
+		var = SUS_pillars_kent_naval_doctrine
+		value = 100
+	}
+	divide_variable = {
+		var = SUS_pillars_kent_land_equipment
+		value = 100
+	}
+	divide_variable = {
+		var = SUS_pillars_kent_air_equipment
+		value = 100
+	}
+	divide_variable = {
+		var = SUS_pillars_kent_naval_equipment
+		value = 100
+	}
+	multiply_variable = {
+		var = SUS_pillars_kent_land_doctrine
+		value = -1
+	}
+	multiply_variable = {
+		var = SUS_pillars_kent_air_doctrine
+		value = -1
+	}
+	multiply_variable = {
+		var = SUS_pillars_kent_naval_doctrine
+		value = -1
+	}
+	multiply_variable = {
+		var = SUS_pillars_kent_land_equipment
+		value = -1
+	}
+	multiply_variable = {
+		var = SUS_pillars_kent_air_equipment
+		value = -1
+	}
+	multiply_variable = {
+		var = SUS_pillars_kent_naval_equipment
+		value = -1
+	}
 	#Essex#
 	set_variable = {
 		var = SUS_pillars_essex_trade_opinion_factor
 		value = SUS_yellow_var
+	}
+	divide_variable = {
+		var = SUS_pillars_essex_trade_opinion_factor
+		value = 100
 	}
 	#East Anglia#
 	set_variable = {
@@ -70,6 +171,14 @@ SUS_pillars_set_variables = {
 	set_variable = {
 		var = SUS_pillars_east_anglia_recruitable_population_factor
 		value = SUS_green_var
+	}
+	divide_variable = {
+		var = SUS_pillars_east_anglia_equipment_capture_factor
+		value = 100
+	}
+	divide_variable = {
+		var = SUS_pillars_east_anglia_recruitable_population_factor
+		value = 400
 	} 				
 	#Mercia#
 	set_variable = {
@@ -84,6 +193,22 @@ SUS_pillars_set_variables = {
 		var = SUS_pillars_political_power_gain
 		value = SUS_indigo_var
 	}
+	divide_variable = {
+		var = SUS_pillars_mercia_required_garrison_factor
+		value = 100
+	}
+	divide_variable = {
+		var = SUS_pillars_mercia_army_morale_factor
+		value = 800
+	}
+	divide_variable = {
+		var = SUS_pillars_political_power_gain
+		value = 500
+	}	
+	multiply_variable = {
+		var = SUS_pillars_mercia_required_garrison_factor
+		value = -1
+	}				
 	#Northumbria#
 	set_variable = {
 		var = SUS_pillars_northumbria_factory_start_efficiency
@@ -96,5 +221,17 @@ SUS_pillars_set_variables = {
 	set_variable = {
 		var = SUS_pillars_northumbria_max_efficiency_factor
 		value = SUS_orange_var
+	}
+	divide_variable = {
+		var = SUS_pillars_northumbria_factory_start_efficiency
+		value = 400
+	}
+	divide_variable = {
+		var = SUS_pillars_northumbria_army_armor_attack_factor
+		value = 1000
+	}
+	divide_variable = {
+		var = SUS_pillars_northumbria_max_efficiency_factor
+		value = 400
 	}
 }
