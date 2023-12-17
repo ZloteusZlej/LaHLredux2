@@ -4286,7 +4286,6 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_state_defence_comission"
 		army_experience = 75
 		#country_event = { id = SUS_event.# }
-		custom_effect_tooltip = SUS_state_defence_comission_tt
 	}
 	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
@@ -4307,7 +4306,6 @@ shared_focus = {
 			var = SUS_w_recruitable_population_factor
 			value = 0.1
 		}
-		custom_effect_tooltip = SUS_reserve_training_units_tt
 	}
 	prerequisite = {
 		focus = SUS_state_defence_comission
@@ -4328,7 +4326,6 @@ shared_focus = {
 			value = 0.1
 		}
 		#recruit generals here
-		custom_effect_tooltip = SUS_replace_the_traitors_tt
 	}
 	prerequisite = {
 		focus = SUS_reserve_training_units
@@ -4352,7 +4349,6 @@ shared_focus = {
 			var = SUS_w_attrition
 			value = -0.1
 		}
-		custom_effect_tooltip = SUS_second_front_doctrine_tt
 	}
 	prerequisite = {
 		focus = SUS_reserve_training_units
@@ -4369,7 +4365,6 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_tunnel_warfare"
 		#every unit leader gets trait
-		custom_effect_tooltip = SUS_tunnel_warfare_tt
 	}
 	prerequisite = {
 		focus = SUS_reserve_training_units
@@ -4389,7 +4384,6 @@ shared_focus = {
 			var = SUS_w_static_anti_air_damage_factor
 			value = 0.1
 		}
-		custom_effect_tooltip = SUS_air_awareness_tt
 	}
 	mutually_exclusive = {
 		focus = SUS_operation_deny_flight
@@ -4420,7 +4414,6 @@ shared_focus = {
 			category = light_air
 		}
 		#Add air MIO upgrade here when we update to 1.13
-		custom_effect_tooltip = SUS_operation_deny_flight_tt
 	}
 	mutually_exclusive = {
 		focus = SUS_air_awareness
@@ -4446,7 +4439,6 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_mechanical_synergy"
 		#Add MIO upgrade here when we update to 1.13
-		custom_effect_tooltip = SUS_mechanical_synergy_tt
 	}
 	prerequisite = {
 		focus = SUS_air_awareness
@@ -4471,7 +4463,6 @@ shared_focus = {
 			var = SUS_w_army_core_defence_factor
 			value = 0.1
 		}
-		custom_effect_tooltip = SUS_total_peoples_defence_tt
 	}
 	prerequisite = {
 		focus = SUS_state_defence_comission
@@ -4528,7 +4519,6 @@ shared_focus = {
 				owner = SUS
 			}
 		}
-		custom_effect_tooltip = SUS_by_sea_by_land_tt
 	}
 	prerequisite = {
 		focus = SUS_total_peoples_defence
@@ -4585,7 +4575,6 @@ shared_focus = {
 				owner = SUS
 			}
 		}
-		custom_effect_tooltip = SUS_ready_for_anything_tt
 	}
 	prerequisite = {
 		focus = SUS_total_peoples_defence
@@ -4647,7 +4636,6 @@ shared_focus = {
 			variant_name = "#"
 		}
 		#add navy MIO upgrade here
-		custom_effect_tooltip = SUS_hide_the_infiltration_tt
 	}
 	mutually_exclusive = {
 		focus = SUS_supply_the_valkyries
@@ -4674,7 +4662,6 @@ shared_focus = {
 			amount = 100
 			producer = SUS
 		}
-		custom_effect_tooltip = SUS_supply_the_valkyries_tt
 	}
 	mutually_exclusive = {
 		focus = SUS_hide_the_infiltration
@@ -4724,7 +4711,6 @@ shared_focus = {
 				owner = SUS
 			}
 		}
-		custom_effect_tooltip = SUS_the_rifles_tt
 	}
 	prerequisite = {
 		focus = SUS_hide_the_infiltration
@@ -4857,7 +4843,6 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
-		custom_effect_tooltip = SUS_dig_for_victory_tt
 	}
 	prerequisite = {
 		focus = SUS_mechanical_synergy
@@ -4869,4 +4854,244 @@ shared_focus = {
 	cost = 4.3
 	x = 0
 	y = 5
+}
+
+##WITCHES FINAL##
+
+shared_focus = {
+	id = SUS_arduous_march
+	icon = GFX_goal_SUS_arduous_march
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_arduous_march"
+		#
+	}
+	available = {
+		has_country_flag = SUSSEX_witches_britain_reunified
+	}
+	relative_position_id = SUS_endless_joy
+	cost = 4.3
+	x = 0
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_no_more_limousines
+	icon = GFX_goal_SUS_no_more_limousines
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_no_more_limousines"
+		#
+	}
+	prerequisite = {
+		focus = SUS_arduous_march
+	}
+	relative_position_id = SUS_arduous_march
+	cost = 4.3
+	x = -1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_abolish_nobility
+	icon = GFX_goal_SUS_abolish_nobility
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_abolish_nobility"
+		#
+	}
+	prerequisite = {
+		focus = SUS_arduous_march
+	}
+	relative_position_id = SUS_arduous_march
+	cost = 4.3
+	x = 1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_restore_sovereignty
+	icon = GFX_goal_SUS_restore_sovereignty
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_restore_sovereignty"
+		#
+	}
+	prerequisite = {
+		focus = SUS_no_more_limousines
+	}
+	prerequisite = {
+		focus = SUS_abolish_nobility
+	}
+	relative_position_id = SUS_arduous_march
+	cost = 4.3
+	x = 0
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_ectogenesis
+	icon = GFX_goal_SUS_ectogenesis
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_ectogenesis"
+		#
+	}
+	prerequisite = {
+		focus = SUS_restore_sovereignty
+	}
+	relative_position_id = SUS_restore_sovereignty
+	cost = 4.3
+	x = -2
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_protector_of_nature
+	icon = GFX_goal_SUS_protector_of_nature
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_protector_of_nature"
+		#
+	}
+	prerequisite = {
+		focus = SUS_restore_sovereignty
+	}
+	relative_position_id = SUS_restore_sovereignty
+	cost = 4.3
+	x = 0
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_struggle_sessions
+	icon = GFX_goal_SUS_struggle_sessions
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_struggle_sessions"
+		#
+	}
+	prerequisite = {
+		focus = SUS_restore_sovereignty
+	}
+	relative_position_id = SUS_restore_sovereignty
+	cost = 4.3
+	x = 2
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_make_love_not_war
+	icon = GFX_goal_SUS_make_love_not_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_make_love_not_war"
+		#
+	}
+	mutually_exclusive = {
+		focus = SUS_defend_the_peace
+	}
+	prerequisite = {
+		focus = SUS_ectogenesis
+	}
+	prerequisite = {
+		focus = SUS_protector_of_nature
+	}
+	prerequisite = {
+		focus = SUS_struggle_sessions
+	}
+	relative_position_id = SUS_protector_of_nature
+	cost = 4.3
+	x = -1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_defend_the_peace
+	icon = GFX_goal_SUS_defend_the_peace
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_defend_the_peace"
+		#
+	}
+	mutually_exclusive = {
+		focus = SUS_make_love_not_war
+	}
+	prerequisite = {
+		focus = SUS_ectogenesis
+	}
+	prerequisite = {
+		focus = SUS_protector_of_nature
+	}
+	prerequisite = {
+		focus = SUS_struggle_sessions
+	}
+	relative_position_id = SUS_protector_of_nature
+	cost = 4.3
+	x = 1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_public_competitions
+	icon = GFX_goal_SUS_public_competitions
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_public_competitions"
+		#
+	}
+	prerequisite = {
+		focus = SUS_make_love_not_war
+		focus = SUS_defend_the_peace
+	}
+	relative_position_id = SUS_protector_of_nature
+	cost = 4.3
+	x = -2
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_archegetes_of_britain
+	icon = GFX_goal_SUS_archegetes_of_britain
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_archegetes_of_britain"
+		#
+	}
+	prerequisite = {
+		focus = SUS_make_love_not_war
+		focus = SUS_defend_the_peace
+	}
+	relative_position_id = SUS_protector_of_nature
+	cost = 4.3
+	x = 0
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_new_towns_act
+	icon = GFX_goal_SUS_new_towns_act
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_new_towns_act"
+		#
+	}
+	prerequisite = {
+		focus = SUS_make_love_not_war
+		focus = SUS_defend_the_peace
+	}
+	relative_position_id = SUS_protector_of_nature
+	cost = 4.3
+	x = 2
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_our_place_in_the_world
+	icon = GFX_goal_SUS_our_place_in_the_world
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_our_place_in_the_world"
+		#
+	}
+	prerequisite = {
+		focus = SUS_public_competitions
+	}
+	prerequisite = {
+		focus = SUS_archegetes_of_britain
+	}
+	prerequisite = {
+		focus = SUS_new_towns_act
+	}
+	relative_position_id = SUS_archegetes_of_britain
+	cost = 4.3
+	x = 0
+	y = 1
 }
