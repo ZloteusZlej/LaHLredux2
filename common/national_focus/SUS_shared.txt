@@ -4863,7 +4863,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_arduous_march
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_arduous_march"
-		#
+		add_to_variable = {
+			var = SUS_w_industry_repair_factor
+			value = 0.1
+		}
 	}
 	available = {
 		has_country_flag = SUSSEX_witches_britain_reunified
@@ -4879,7 +4882,11 @@ shared_focus = {
 	icon = GFX_goal_SUS_no_more_limousines
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_no_more_limousines"
-		#
+		add_political_power = 100
+		add_to_variable = {
+			var = SUS_w_consumer_goods_factor
+			value = -0.1
+		}
 	}
 	prerequisite = {
 		focus = SUS_arduous_march
@@ -4895,7 +4902,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_abolish_nobility
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_abolish_nobility"
-		#
+		every_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 2
+		}
 	}
 	prerequisite = {
 		focus = SUS_arduous_march
@@ -4911,7 +4921,13 @@ shared_focus = {
 	icon = GFX_goal_SUS_restore_sovereignty
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_restore_sovereignty"
-		#
+		army_experience = 10
+		navy_experience = 10
+		air_experience = 10
+		add_to_variable = {
+			var = SUS_w_nuclear_production
+			value = 1
+		}
 	}
 	prerequisite = {
 		focus = SUS_no_more_limousines
@@ -4930,7 +4946,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_ectogenesis
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_ectogenesis"
-		#
+		add_to_variable = {
+			var = SUS_w_monthly_population
+			value = 0.1
+		}
 	}
 	prerequisite = {
 		focus = SUS_restore_sovereignty
@@ -4946,7 +4965,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_protector_of_nature
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_protector_of_nature"
-		#
+		add_to_variable = {
+			var = SUS_w_research_speed_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_w_local_resources_factor
+			value = 0.1
+		}
 	}
 	prerequisite = {
 		focus = SUS_restore_sovereignty
@@ -4962,7 +4988,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_struggle_sessions
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_struggle_sessions"
-		#
+		add_to_variable = {
+			var = SUS_w_political_power_factor
+			value = 0.1
+		}
 	}
 	prerequisite = {
 		focus = SUS_restore_sovereignty
@@ -4978,7 +5007,19 @@ shared_focus = {
 	icon = GFX_goal_SUS_make_love_not_war
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_make_love_not_war"
-		#
+		add_ideas = {
+			volunteer_only
+			export_focus
+			civilian_economy
+		}
+		add_to_variable = {
+			var = SUS_w_monthly_population
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_w_production_factory_efficiency_gain_factor
+			value = 0.1
+		}
 	}
 	mutually_exclusive = {
 		focus = SUS_defend_the_peace
@@ -5003,7 +5044,19 @@ shared_focus = {
 	icon = GFX_goal_SUS_defend_the_peace
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_defend_the_peace"
-		#
+		division_template = {
+			name = "Territorial Defence Forces"
+			division_names_group = SUS_INF_01
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+			}
+		}
 	}
 	mutually_exclusive = {
 		focus = SUS_make_love_not_war
@@ -5028,7 +5081,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_public_competitions
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_public_competitions"
-		#
+		add_to_variable = {
+			var = SUS_w_industrial_capacity_factory
+			value = 0.1
+		}
 	}
 	prerequisite = {
 		focus = SUS_make_love_not_war
@@ -5045,7 +5101,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_archegetes_of_britain
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_archegetes_of_britain"
-		#
+		#ELECTION MECHANIC HERE
 	}
 	prerequisite = {
 		focus = SUS_make_love_not_war
@@ -5062,7 +5118,15 @@ shared_focus = {
 	icon = GFX_goal_SUS_new_towns_act
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_new_towns_act"
-		#
+		every_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+                instant_build = yes
+            }
+		}
 	}
 	prerequisite = {
 		focus = SUS_make_love_not_war
@@ -5079,7 +5143,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_our_place_in_the_world
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_our_place_in_the_world"
-		#
+		#ENDING EVENT GOES HERE
 	}
 	prerequisite = {
 		focus = SUS_public_competitions
