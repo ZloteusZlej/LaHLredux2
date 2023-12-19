@@ -47,6 +47,337 @@ SUS_debug = {
 }
 
 SUS_pillars = {
+	#Generic Decisions#
+	SUS_create_semi_autonomous_zones = {
+	    cost = 30
+		days_remove = 30
+		days_re_enable = 60
+		available = {
+			check_variable = {
+				var = SUS_red_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_green_var
+				value = 90
+				compare = less_than_or_equals
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_green_var
+				value = 10
+			}
+			add_to_variable = {
+				var = SUS_red_var
+				value = -10
+			}
+			clamp_variable = {
+				var = SUS_green_var
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = SUS_red_var
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = SUS_red-_green+_tt
+		}
+	}
+	SUS_british_pastoralism_discussion = {
+	    cost = 30
+		days_remove = 30
+		days_re_enable = 60
+		available = {
+			check_variable = {
+				var = SUS_blue_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_purple_var
+				value = 90
+				compare = less_than_or_equals
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_purple_var
+				value = 10
+			}
+			add_to_variable = {
+				var = SUS_blue_var
+				value = -10
+			}
+			clamp_variable = {
+				var = SUS_purple_var
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = SUS_blue_var
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = SUS_blue-_purple+_tt
+		}
+	}
+	SUS_appeal_to_praxis = {
+	    cost = 30
+		days_remove = 30
+		days_re_enable = 60
+		available = {
+			check_variable = {
+				var = SUS_green_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_orange_var
+				value = 90
+				compare = less_than_or_equals
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_orange_var
+				value = 10
+			}
+			add_to_variable = {
+				var = SUS_green_var
+				value = -10
+			}
+			clamp_variable = {
+				var = SUS_orange_var
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = SUS_green_var
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = SUS_green-_orange+_tt
+		}
+	}
+	SUS_hold_a_pro_labour_march = {
+	    cost = 30
+		days_remove = 30
+		days_re_enable = 60
+		available = {
+			check_variable = {
+				var = SUS_orange_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_red_var
+				value = 90
+				compare = less_than_or_equals
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_red_var
+				value = 10
+			}
+			add_to_variable = {
+				var = SUS_orange_var
+				value = -10
+			}
+			clamp_variable = {
+				var = SUS_red_var
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = SUS_orange_var
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = SUS_orange-_red+_tt
+		}
+	}
+	SUS_aid_church_charity = {
+	    cost = 30
+		days_remove = 30
+		days_re_enable = 60
+		available = {
+			check_variable = {
+				var = SUS_yellow_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_indigo_var
+				value = 90
+				compare = less_than_or_equals
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_indigo_var
+				value = 10
+			}
+			add_to_variable = {
+				var = SUS_yellow_var
+				value = -10
+			}
+			clamp_variable = {
+				var = SUS_indigo_var
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = SUS_yellow_var
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = SUS_yellow-_indigo+_tt
+		}
+	}
+	SUS_promote_urban_discussion = {
+	    cost = 30
+		days_remove = 30
+		days_re_enable = 60
+		available = {
+			check_variable = {
+				var = SUS_purple_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_yellow_var
+				value = 90
+				compare = less_than_or_equals
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_yellow_var
+				value = 10
+			}
+			add_to_variable = {
+				var = SUS_purple_var
+				value = -10
+			}
+			clamp_variable = {
+				var = SUS_yellow_var
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = SUS_purple_var
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = SUS_purple-_yellow+_tt
+		}
+	}
+	SUS_promote_scientific_fetishism = {
+	    cost = 30
+		days_remove = 30
+		days_re_enable = 60
+		available = {
+			check_variable = {
+				var = SUS_indigo_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_blue_var
+				value = 90
+				compare = less_than_or_equals
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_blue_var
+				value = 10
+			}
+			add_to_variable = {
+				var = SUS_indigo_var
+				value = -10
+			}
+			clamp_variable = {
+				var = SUS_blue_var
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = SUS_indigo_var
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = SUS_indigo-_blue+_tt
+		}
+	}
+	##Unique Decisions##
+	SUS_subsidize_progressive_agrarian_reform = {
+	    cost = 100
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+			SUS = {
+				has_completed_focus = SUS_meal_replacement
+			}
+			check_variable = {
+				var = SUS_indigo_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_indigo_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_yellow_var
+				value = 15
+			}
+			add_to_variable = {
+				var = SUS_purple_var
+				value = 15
+			}
+			add_to_variable = {
+				var = SUS_yellow_var
+				value = 15
+			}
+			add_to_variable = {
+				var = SUS_purple_var
+				value = 15
+			}
+			clamp_variable = {
+				var = SUS_blue_var
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = SUS_indigo_var
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = SUS_indigo-_blue+_tt
+		}
+		remove_effect = {
+			SUS = {
+				random_owned_controlled_state = {	
+					add_extra_state_shared_building_slots = 1
+				}
+				random_owned_controlled_state = {	
+					add_extra_state_shared_building_slots = 1
+				}
+				random_owned_controlled_state = {	
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+	}
+	
 }
 
 SUS_espionage_window = {
