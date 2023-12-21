@@ -811,3 +811,43 @@ country_event = { #WITCHES QUEEN EVENT
 		add_ideas = SUS_queen_eugenie
     }
 }
+
+country_event = { #WITCHES ARCHEGETES ELECTIONS EVENT
+	id = SUS_event.250
+	title = SUS_event.250.t
+	desc = SUS_event.250.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.250.a
+		set_global_flag = SUS_archegetes_elections_ended
+    }
+	#REPLACE THESE AFTER WE GET PROPER PEOPLE
+	option = {
+		name = SUS_event.250.b
+		retire_country_leader = yes
+		promote_character = {
+			character = SUS_placeholder1
+			ideology = ultrahegelianism
+		}
+		set_global_flag = SUS_archegetes_elections_ended
+    }
+	option = {
+		name = SUS_event.250.c
+		retire_country_leader = yes
+		promote_character = {
+			character = SUS_placeholder2
+			ideology = ultrahegelianism
+		}
+		set_global_flag = SUS_archegetes_elections_ended
+    }
+	option = {
+		name = SUS_event.250.e
+		retire_country_leader = yes
+		promote_character = {
+			character = SUS_placeholder3
+			ideology = ultrahegelianism
+		}
+		set_global_flag = SUS_archegetes_elections_ended
+    }
+}

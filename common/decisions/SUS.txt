@@ -3971,3 +3971,28 @@ SUS_state_planning_comission_decisions = {
 		}
 	}
 }
+
+SUS_archegetes_elections = {
+	SUS_archegetes_elections = {
+		days_mission_timeout = 90
+		available = {
+			SUS ={
+				has_global_flag = SUS_archegetes_elections_ended
+			}
+		}
+		visible = {
+			SUS ={
+				has_global_flag = SUS_archegetes_elections_ended
+			}
+		}
+		activation = {
+			always = no                  
+		}
+		is_good = no
+		timeout_effect = {
+			country_event = {
+				id = SUS_event.250
+			}
+		}
+	}
+}

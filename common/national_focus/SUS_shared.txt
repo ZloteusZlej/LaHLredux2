@@ -5101,7 +5101,8 @@ shared_focus = {
 	icon = GFX_goal_SUS_archegetes_of_britain
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_archegetes_of_britain"
-		#ELECTION MECHANIC HERE
+		activate_mission = SUS_archegetes_elections
+		unlock_decision_category_tooltip = SUS_archegetes_elections
 	}
 	prerequisite = {
 		focus = SUS_make_love_not_war

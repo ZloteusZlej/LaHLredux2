@@ -137,3 +137,21 @@ SUS_imperial_grace = {
 	
 	visible_when_empty = yes
 }
+
+SUS_archegetes_elections = {
+	icon = GFX_
+
+	allowed = { original_tag = SUS }
+	visible = {
+		SUS = {
+			has_completed_focus = SUS_archegetes_of_britain
+		}
+	}
+	available = {
+		SUS = {
+			has_completed_focus = SUS_archegetes_of_britain
+		}
+	}
+	scripted_gui = lhl_SUS_archegetes_elections_screen_body
+	visible_when_empty = yes
+}
