@@ -3972,6 +3972,307 @@ SUS_state_planning_comission_decisions = {
 	}
 }
 
+SUS_KOR_market_category = {
+	SUS_KOR_influence_ticker = {
+		allowed = {
+			always = no
+		}
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		cancel_if_not_visible = yes
+		is_good = no
+
+		days_mission_timeout = 365
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout SUS_KOR_influence_ticker"
+			SUS_decrease_KOR_support_low = yes
+			hidden_effect = {
+				activate_mission = SUS_KOR_influence_ticker
+			}
+		}
+	}
+	SUS_KOR_improve_relations = {
+		visible = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
+		available = {
+			NOT = { has_war_with = KOR }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		days_re_enable = 60
+		cost = 50
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SUS_KOR_improve_relations"
+			SUS_increase_KOR_support_low = yes
+		}
+	}
+
+	SUS_KOR_purchase_guns = {
+		visible = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
+		available = {
+			NOT = { has_war_with = KOR }
+			custom_trigger_tooltip = {
+				tooltip = SUS_KOR_20_support_tp
+				SUS = {
+					check_variable = { SUS_KOR_support > 19 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 30
+		days_re_enable = 180
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SUS_KOR_purchase_guns"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SUS_KOR_purchase_guns"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = KOR
+			}
+		}
+	}
+
+	SUS_KOR_purchase_trucks = {
+		visible = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
+		available = {
+			NOT = { has_war_with = KOR }
+			custom_trigger_tooltip = {
+				tooltip = SUS_KOR_40_support_tp
+				SUS = {
+					check_variable = { SUS_KOR_support > 39 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 30
+		days_re_enable = 180
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SUS_KOR_purchase_trucks"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SUS_KOR_purchase_trucks"
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 200
+				producer = KOR
+			}
+		}
+	}
+
+	SUS_KOR_purchase_artillery = {
+		visible = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
+		available = {
+			NOT = { has_war_with = KOR }
+			custom_trigger_tooltip = {
+				tooltip = SUS_KOR_60_support_tp
+				SUS = {
+					check_variable = { SUS_KOR_support > 59 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 30
+		days_re_enable = 180
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SUS_KOR_purchase_artillery"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SUS_KOR_purchase_artillery"
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_2
+				amount = 150
+				producer = KOR
+			}
+		}
+	}
+
+	SUS_KOR_industrial_experts = {
+		visible = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
+		available = {
+			NOT = { has_war_with = KOR }
+			custom_trigger_tooltip = {
+				tooltip = SUS_KOR_60_support_tp
+				SUS = {
+					check_variable = { SUS_KOR_support > 59 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 30
+		days_re_enable = 365
+		cost = 75
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SUS_KOR_industrial_experts"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SUS_KOR_industrial_experts"
+			add_tech_bonus = {
+				name = industry
+				bonus = 0.75
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	SUS_KOR_electronics_experts = {
+		visible = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
+		available = {
+			NOT = { has_war_with = KOR }
+			custom_trigger_tooltip = {
+				tooltip = SUS_KOR_60_support_tp
+				SUS = {
+					check_variable = { SUS_KOR_support > 59 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 30
+		days_re_enable = 365
+		cost = 75
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SUS_KOR_electronics_experts"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SUS_KOR_electronics_experts"
+			add_tech_bonus = {
+				name = electronics
+				bonus = 0.75
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+
+	SUS_KOR_purchase_tanks = {
+		visible = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
+		available = {
+			NOT = { has_war_with = KOR }
+			custom_trigger_tooltip = {
+				tooltip = SUS_KOR_80_support_tp
+				SUS = {
+					check_variable = { SUS_KOR_support > 79 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 30
+		days_re_enable = 180
+		cost = 100
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SUS_KOR_purchase_tanks"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SUS_KOR_purchase_tanks"
+			if = { 
+				limit = { 
+					has_dlc = "No Step Back"
+				}
+				add_equipment_to_stockpile = {
+					type = MBT_chassis_1
+					amount = 75
+					producer = KOR
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = MBT_equipment_1
+					amount = 75
+					producer = KOR
+				}
+			}
+		}
+	}
+
+	SUS_KOR_purchase_jets = {
+		visible = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
+		available = {
+			NOT = { has_war_with = KOR }
+			custom_trigger_tooltip = {
+				tooltip = SUS_KOR_80_support_tp
+				SUS = {
+					check_variable = { SUS_KOR_support > 79 }
+				}
+			}
+			any_controlled_state = {
+				air_base > 2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 30
+		days_re_enable = 365
+		cost = 100
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SUS_KOR_purchase_jets"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SUS_KOR_purchase_jets"
+			add_equipment_to_stockpile = {
+				type = jet_fighter_equipment_1
+				amount = 35
+				producer = KOR
+			}
+		}
+	}
+}
+
 SUS_archegetes_elections = {
 	SUS_archegetes_elections = {
 		days_mission_timeout = 90

@@ -79,3 +79,34 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = GetSUS_KOR_support
+	text = {
+		trigger = {
+			check_variable = { SUS_KOR_support > 79 }
+		}
+		localization_key = SUS_KOR_support_very_high
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_KOR_support > 59 }
+		}
+		localization_key = SUS_KOR_support_high
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_KOR_support > 39 }
+		}
+		localization_key = SUS_KOR_support_medium
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_KOR_support > 19 }
+		}
+		localization_key = SUS_KOR_support_low
+	}
+	text = {
+		localization_key = SUS_KOR_support_very_low
+	}
+}
+

@@ -138,6 +138,15 @@ SUS_imperial_grace = {
 	visible_when_empty = yes
 }
 
+SUS_KOR_market_category = {
+	icon = GFX_
+
+	allowed = { original_tag = SUS }
+	visible = {
+		has_country_flag = SUS_market_unlock
+	}
+}
+
 SUS_archegetes_elections = {
 	icon = GFX_
 

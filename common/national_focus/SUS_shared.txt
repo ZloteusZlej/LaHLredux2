@@ -3959,7 +3959,12 @@ shared_focus = {
 	icon = GFX_goal_SUS_rose_and_tangarine
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_rose_and_tangarine"
-		
+		unlock_decision_category_tooltip = SUS_KOR_market_category
+		hidden_effect = {
+			set_country_flag = SUS_market_unlock
+			set_variable = { var = SUS_KOR_support value = 1 }
+			activate_mission = SUS_KOR_influence_ticker
+		}
 	}
 	prerequisite = {
 		focus = SUS_common_resource_pool

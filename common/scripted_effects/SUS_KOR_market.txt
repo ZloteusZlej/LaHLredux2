@@ -1,0 +1,47 @@
+SUS_increase_KOR_support_low = {
+	add_to_variable = { SUS_KOR_support = 5 }
+	clamp_variable = { var = SUS_KOR_support min = 0 max = 100 }
+	custom_effect_tooltip = SUS_increase_KOR_support_low_tt
+}
+
+SUS_increase_KOR_support_med = {
+	add_to_variable = { SUS_KOR_support = 10 }
+	clamp_variable = { var = SUS_KOR_support min = 0 max = 100 }
+	custom_effect_tooltip = SUS_increase_KOR_support_med_tt
+}
+
+SUS_increase_KOR_support_high = {
+	add_to_variable = { SUS_KOR_support = 15 }
+	clamp_variable = { var = SUS_KOR_support min = 0 max = 100 }
+	custom_effect_tooltip = SUS_increase_KOR_support_high_tt
+}
+
+SUS_increase_KOR_support_very_high = {
+	add_to_variable = { SUS_KOR_support = 20 }
+	clamp_variable = { var = SUS_KOR_support min = 0 max = 100 }
+	custom_effect_tooltip = SUS_increase_KOR_support_very_high_tt
+}
+
+SUS_decrease_KOR_support_low = {
+	subtract_from_variable = { SUS_KOR_support = 5 }
+	clamp_variable = { var = SUS_KOR_support min = 0 max = 100 }
+	custom_effect_tooltip = SUS_decrease_KOR_support_low_tt
+}
+
+SUS_decrease_KOR_support_med = {
+	subtract_from_variable = { SUS_KOR_support = 10 }
+	clamp_variable = { var = SUS_KOR_support min = 0 max = 100 }
+	custom_effect_tooltip = SUS_decrease_KOR_support_med_tt
+}
+
+SUS_decrease_KOR_support_high = {
+	subtract_from_variable = { SUS_KOR_support = 15 }
+	clamp_variable = { var = SUS_KOR_support min = 0 max = 100 }
+	custom_effect_tooltip = SUS_decrease_KOR_support_high_tt
+}
+
+SUS_decrease_KOR_support_very_high = {
+	subtract_from_variable = { SUS_KOR_support = 20 }
+	clamp_variable = { var = SUS_KOR_support min = 0 max = 100 }
+	custom_effect_tooltip = SUS_decrease_KOR_support_very_high_tt
+}
