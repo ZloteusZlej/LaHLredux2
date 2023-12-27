@@ -48,6 +48,13 @@ SUS_debug = {
 
 SUS_pillars = {
 	#Generic Decisions#
+	SUS_pillars_generic_TITLE = {
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+	}
 	SUS_create_semi_autonomous_zones = {
 	    cost = 30
 		days_remove = 30
@@ -62,6 +69,40 @@ SUS_pillars = {
 				var = SUS_green_var
 				value = 90
 				compare = less_than_or_equals
+			}
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_pillars_generic_decisison
+				}
+			}
+		}
+		visible = {
+			check_variable = {
+				var = SUS_red_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_green_var
+				value = 90
+				compare = less_than_or_equals
+			}
+		}
+		cancel_trigger = {
+			check_variable = {
+				var = SUS_red_var
+				value = 10
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_green_var
+				value = 90
+				compare = greater_than_or_equals
+			}
+		}
+		cancel_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_generic_decisison
 			}
 		}
 		complete_effect = {
@@ -83,7 +124,15 @@ SUS_pillars = {
 				min = 0
 				max = 100
 			}
-			custom_effect_tooltip = SUS_red-_green+_tt
+			custom_effect_tooltip = SUS_create_semi_autonomous_zones_tt
+			SUS = {
+				set_country_flag = SUS_pillars_generic_decisison
+			}
+		}
+		remove_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_generic_decisison
+			}
 		}
 	}
 	SUS_british_pastoralism_discussion = {
@@ -101,6 +150,40 @@ SUS_pillars = {
 				value = 90
 				compare = less_than_or_equals
 			}
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_pillars_generic_decisison
+				}
+			}
+		}
+		visible = {
+			check_variable = {
+				var = SUS_blue_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_purple_var
+				value = 90
+				compare = less_than_or_equals
+			}
+		}
+		cancel_trigger = {
+			check_variable = {
+				var = SUS_blue_var
+				value = 10
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_purple_var
+				value = 90
+				compare = greater_than_or_equals
+			}
+		}
+		cancel_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_generic_decisison
+			}
 		}
 		complete_effect = {
 			add_to_variable = {
@@ -121,7 +204,15 @@ SUS_pillars = {
 				min = 0
 				max = 100
 			}
-			custom_effect_tooltip = SUS_blue-_purple+_tt
+			custom_effect_tooltip = SUS_british_pastoralism_discussion_tt
+			SUS = {
+				set_country_flag = SUS_pillars_generic_decisison
+			}
+		}
+		remove_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_generic_decisison
+			}
 		}
 	}
 	SUS_appeal_to_praxis = {
@@ -139,6 +230,40 @@ SUS_pillars = {
 				value = 90
 				compare = less_than_or_equals
 			}
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_pillars_generic_decisison
+				}
+			}
+		}
+		visible = {
+			check_variable = {
+				var = SUS_green_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_orange_var
+				value = 90
+				compare = less_than_or_equals
+			}
+		}
+		cancel_trigger = {
+			check_variable = {
+				var = SUS_green_var
+				value = 10
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_orange_var
+				value = 90
+				compare = greater_than_or_equals
+			}
+		}
+		cancel_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_generic_decisison
+			}
 		}
 		complete_effect = {
 			add_to_variable = {
@@ -159,7 +284,15 @@ SUS_pillars = {
 				min = 0
 				max = 100
 			}
-			custom_effect_tooltip = SUS_green-_orange+_tt
+			custom_effect_tooltip = SUS_appeal_to_praxis_tt
+			SUS = {
+				set_country_flag = SUS_pillars_generic_decisison
+			}
+		}
+		remove_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_generic_decisison
+			}
 		}
 	}
 	SUS_hold_a_pro_labour_march = {
@@ -177,6 +310,40 @@ SUS_pillars = {
 				value = 90
 				compare = less_than_or_equals
 			}
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_pillars_generic_decisison
+				}
+			}
+		}
+		visible = {
+			check_variable = {
+				var = SUS_orange_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_red_var
+				value = 90
+				compare = less_than_or_equals
+			}
+		}
+		cancel_trigger = {
+			check_variable = {
+				var = SUS_orange_var
+				value = 10
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_red_var
+				value = 90
+				compare = greater_than_or_equals
+			}
+		}
+		cancel_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_generic_decisison
+			}
 		}
 		complete_effect = {
 			add_to_variable = {
@@ -197,7 +364,15 @@ SUS_pillars = {
 				min = 0
 				max = 100
 			}
-			custom_effect_tooltip = SUS_orange-_red+_tt
+			custom_effect_tooltip = SUS_hold_a_pro_labour_march_tt
+			SUS = {
+				set_country_flag = SUS_pillars_generic_decisison
+			}
+		}
+		remove_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_generic_decisison
+			}
 		}
 	}
 	SUS_aid_church_charity = {
@@ -215,6 +390,40 @@ SUS_pillars = {
 				value = 90
 				compare = less_than_or_equals
 			}
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_pillars_generic_decisison
+				}
+			}
+		}
+		visible = {
+			check_variable = {
+				var = SUS_yellow_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_indigo_var
+				value = 90
+				compare = less_than_or_equals
+			}
+		}
+		cancel_trigger = {
+			check_variable = {
+				var = SUS_yellow_var
+				value = 10
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_indigo_var
+				value = 90
+				compare = greater_than_or_equals
+			}
+		}
+		cancel_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_generic_decisison
+			}
 		}
 		complete_effect = {
 			add_to_variable = {
@@ -235,7 +444,15 @@ SUS_pillars = {
 				min = 0
 				max = 100
 			}
-			custom_effect_tooltip = SUS_yellow-_indigo+_tt
+			custom_effect_tooltip = SUS_aid_church_charity_tt
+			SUS = {
+				set_country_flag = SUS_pillars_generic_decisison
+			}
+		}
+		remove_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_generic_decisison
+			}
 		}
 	}
 	SUS_promote_urban_discussion = {
@@ -253,6 +470,40 @@ SUS_pillars = {
 				value = 90
 				compare = less_than_or_equals
 			}
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_pillars_generic_decisison
+				}
+			}
+		}
+		visible = {
+			check_variable = {
+				var = SUS_purple_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_yellow_var
+				value = 90
+				compare = less_than_or_equals
+			}
+		}
+		cancel_trigger = {
+			check_variable = {
+				var = SUS_purple_var
+				value = 10
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_yellow_var
+				value = 90
+				compare = greater_than_or_equals
+			}
+		}
+		cancel_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_generic_decisison
+			}
 		}
 		complete_effect = {
 			add_to_variable = {
@@ -273,7 +524,15 @@ SUS_pillars = {
 				min = 0
 				max = 100
 			}
-			custom_effect_tooltip = SUS_purple-_yellow+_tt
+			custom_effect_tooltip = SUS_promote_urban_discussion_tt
+			SUS = {
+				set_country_flag = SUS_pillars_generic_decisison
+			}
+		}
+		remove_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_generic_decisison
+			}
 		}
 	}
 	SUS_promote_scientific_fetishism = {
@@ -291,6 +550,40 @@ SUS_pillars = {
 				value = 90
 				compare = less_than_or_equals
 			}
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_pillars_generic_decisison
+				}
+			}
+		}
+		visible = {
+			check_variable = {
+				var = SUS_indigo_var
+				value = 10
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_blue_var
+				value = 90
+				compare = less_than_or_equals
+			}
+		}
+		cancel_trigger = {
+			check_variable = {
+				var = SUS_indigo_var
+				value = 10
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_blue_var
+				value = 90
+				compare = greater_than_or_equals
+			}
+		}
+		cancel_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_generic_decisison
+			}
 		}
 		complete_effect = {
 			add_to_variable = {
@@ -311,10 +604,25 @@ SUS_pillars = {
 				min = 0
 				max = 100
 			}
-			custom_effect_tooltip = SUS_indigo-_blue+_tt
+			custom_effect_tooltip = SUS_promote_scientific_fetishism_tt
+			SUS = {
+				set_country_flag = SUS_pillars_generic_decisison
+			}
+		}
+		remove_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_generic_decisison
+			}
 		}
 	}
 	##Unique Decisions##
+	SUS_pillars_unique_TITLE = {
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+	}
 	SUS_subsidize_progressive_agrarian_reform = {
 	    cost = 100
 		days_remove = 120
@@ -343,6 +651,60 @@ SUS_pillars = {
 				value = 85
 				compare = less_than_or_equals
 			}
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_pillars_unique_decisison
+				}
+			}
+		}
+		visible = {
+			check_variable = {
+				var = SUS_orange_var
+				value = 15
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_indigo_var
+				value = 15
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_yellow_var
+				value = 85
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_purple_var
+				value = 85
+				compare = less_than_or_equals
+			}
+		}
+		cancel_trigger = {
+			check_variable = {
+				var = SUS_orange_var
+				value = 15
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_indigo_var
+				value = 15
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_yellow_var
+				value = 85
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_purple_var
+				value = 85
+				compare = greater_than_or_equals
+			}
+		}
+		cancel_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_unique_decisison
+			}
 		}
 		complete_effect = {
 			add_to_variable = {
@@ -381,7 +743,10 @@ SUS_pillars = {
 				min = 0
 				max = 100
 			}
-			custom_effect_tooltip = 
+			SUS = {
+				set_country_flag = SUS_pillars_unique_decisison
+			}
+			custom_effect_tooltip = SUS_subsidize_progressive_agrarian_reform_tt
 		}
 		remove_effect = {
 			SUS = {
@@ -394,6 +759,7 @@ SUS_pillars = {
 				random_owned_controlled_state = {	
 					add_extra_state_shared_building_slots = 1
 				}
+				clr_country_flag = SUS_pillars_unique_decisison
 			}
 		}
 	}
@@ -439,6 +805,90 @@ SUS_pillars = {
 				var = SUS_purple_var
 				value = 3
 				compare = greater_than_or_equals
+			}
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_pillars_unique_decisison
+				}
+			}
+		}
+		visible = {
+			check_variable = {
+				var = SUS_red_var
+				value = 82
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_orange_var
+				value = 3
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_yellow_var
+				value = 3
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_green_var
+				value = 3
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SUS_blue_var
+				value = 3
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SUS_indigo_var
+				value = 3
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SUS_purple_var
+				value = 3
+				compare = greater_than_or_equals
+			}
+		}
+		cancel_trigger = {
+			check_variable = {
+				var = SUS_red_var
+				value = 82
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_orange_var
+				value = 3
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_yellow_var
+				value = 3
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_green_var
+				value = 3
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = SUS_blue_var
+				value = 3
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = SUS_indigo_var
+				value = 3
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = SUS_purple_var
+				value = 3
+				compare = less_than_or_equals
+			}
+		}
+		cancel_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_unique_decisison
 			}
 		}
 		remove_effect = {
@@ -507,8 +957,14 @@ SUS_pillars = {
 			}
 			SUS = {
 				add_political_power = 150
+				clr_country_flag = SUS_pillars_unique_decisison
 			}
-			custom_effect_tooltip = 
+			custom_effect_tooltip = SUS_paper_bomb_tt
+		}
+		complete_effect = {
+			SUS = {
+				set_country_flag = SUS_pillars_unique_decisison
+			}
 		}
 	}
 	SUS_british_tank_olympics = {
@@ -526,6 +982,45 @@ SUS_pillars = {
 				value = 15
 				compare = greater_than_or_equals
 			}	
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_pillars_unique_decisison
+				}
+			}
+		}
+		visible = {
+			check_variable = {
+				var = SUS_orange_var
+				value = 85
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_purple_var
+				value = 15
+				compare = greater_than_or_equals
+			}	
+		}
+		cancel_trigger = {
+			check_variable = {
+				var = SUS_orange_var
+				value = 85
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_purple_var
+				value = 15
+				compare = less_than_or_equals
+			}	
+		}
+		cancel_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_unique_decisison
+			}
+		}
+		complete_effect = {
+			SUS = {
+				set_country_flag = SUS_pillars_unique_decisison
+			}
 		}
 		remove_effect = {
 			add_to_variable = {
@@ -547,8 +1042,231 @@ SUS_pillars = {
 				max = 100
 			}
 			SUS = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 2
+					category = mobile_warfare
+				}
+				army_experience = 10
+				clr_country_flag = SUS_pillars_unique_decisison
 			}
-			custom_effect_tooltip = 
+			custom_effect_tooltip = SUS_british_tank_olympics_tt
+		}
+	}
+	SUS_centralize_rural_infrastructure = {
+	    cost = 100
+		days_remove = 90
+		fire_only_once = yes
+		available = {
+			check_variable = {
+				var = SUS_purple_var
+				value = 85
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_green_var
+				value = 15
+				compare = greater_than_or_equals
+			}	
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_pillars_unique_decisison
+				}
+			}
+			SUS = {
+				all_owned_state = {
+					infrastructure > 2
+				}
+			}
+		}
+		visible = {
+			check_variable = {
+				var = SUS_purple_var
+				value = 85
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_green_var
+				value = 15
+				compare = greater_than_or_equals
+			}	
+		}
+		cancel_trigger = {
+			check_variable = {
+				var = SUS_purple_var
+				value = 85
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_green_var
+				value = 15
+				compare = less_than_or_equals
+			}	
+		}
+		cancel_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_unique_decisison
+			}
+		}
+		complete_effect = {
+			SUS = {
+				set_country_flag = SUS_pillars_unique_decisison
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = SUS_purple_var
+				value = 15
+			}
+			add_to_variable = {
+				var = SUS_green_var
+				value = -15
+			}
+			clamp_variable = {
+				var = SUS_purple_var
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = SUS_green_var
+				min = 0
+				max = 100
+			}
+			SUS = {
+				random_owned_controlled_state = {	
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+					}
+						add_extra_state_shared_building_slots = 1
+				}
+				random_owned_controlled_state = {	
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+					}
+						add_extra_state_shared_building_slots = 1
+				}
+				random_owned_controlled_state = {	
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+					}
+						add_extra_state_shared_building_slots = 1
+				}
+				clr_country_flag = SUS_pillars_unique_decisison
+			}
+			custom_effect_tooltip = SUS_centralize_rural_infrastructure_tt
+		}
+	}
+	SUS_increase_workplace_science_intensity = {
+	    cost = 100
+		days_remove = 90
+		fire_only_once = yes
+		modifier = {
+            civilian_factory_use = 3
+		}
+		available = {
+			check_variable = {
+				var = SUS_blue_var
+				value = 85
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_indigo_var
+				value = 15
+				compare = greater_than_or_equals
+			}	
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_pillars_unique_decisison
+				}
+			}
+		}
+		visible = {
+			check_variable = {
+				var = SUS_blue_var
+				value = 85
+				compare = less_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_indigo_var
+				value = 15
+				compare = greater_than_or_equals
+			}	
+		}
+		cancel_trigger = {
+			check_variable = {
+				var = SUS_blue_var
+				value = 85
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = SUS_indigo_var
+				value = 15
+				compare = less_than_or_equals
+			}	
+		}
+		cancel_effect = {
+			SUS = {
+				clr_country_flag = SUS_pillars_unique_decisison
+			}
+		}
+		complete_effect = {
+			SUS = {
+				set_country_flag = SUS_pillars_unique_decisison
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = SUS_blue_var
+				value = 15
+			}
+			add_to_variable = {
+				var = SUS_indigo_var
+				value = -15
+			}
+			clamp_variable = {
+				var = SUS_blue_var
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = SUS_indigo_var
+				min = 0
+				max = 100
+			}
+			SUS = {
+				random_owned_controlled_state = {	
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+					}
+						add_extra_state_shared_building_slots = 1
+				}
+				random_owned_controlled_state = {	
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+					}
+						add_extra_state_shared_building_slots = 1
+				}
+				random_owned_controlled_state = {	
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+					}
+						add_extra_state_shared_building_slots = 1
+				}
+				clr_country_flag = SUS_pillars_unique_decisison
+			}
+			custom_effect_tooltip = SUS_increase_workplace_science_intensity_tt
 		}
 	}
 	

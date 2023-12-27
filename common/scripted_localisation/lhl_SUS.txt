@@ -77,6 +77,213 @@ defined_text = {
 		}
 		localization_key = WES_pillars_leader_purple
 	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = {
+					check_variable = { SUS_red_var > SUS_orange_var }
+					check_variable = { SUS_red_var > SUS_yellow_var }
+					check_variable = { SUS_red_var > SUS_green_var }
+					check_variable = { SUS_red_var > SUS_blue_var }
+					check_variable = { SUS_red_var > SUS_indigo_var }
+					check_variable = { SUS_red_var > SUS_purple_var }
+				}
+				NOT = {
+					check_variable = { SUS_orange_var > SUS_red_var }
+					check_variable = { SUS_orange_var > SUS_yellow_var }
+					check_variable = { SUS_orange_var > SUS_green_var }
+					check_variable = { SUS_orange_var > SUS_blue_var }
+					check_variable = { SUS_orange_var > SUS_indigo_var }
+					check_variable = { SUS_orange_var > SUS_purple_var }
+				}
+				NOT = {
+					check_variable = { SUS_yellow_var > SUS_orange_var }
+					check_variable = { SUS_yellow_var > SUS_red_var }
+					check_variable = { SUS_yellow_var > SUS_green_var }
+					check_variable = { SUS_yellow_var > SUS_blue_var }
+					check_variable = { SUS_yellow_var > SUS_indigo_var }
+					check_variable = { SUS_yellow_var > SUS_purple_var }
+				}
+				NOT = {
+					check_variable = { SUS_green_var > SUS_orange_var }
+					check_variable = { SUS_green_var > SUS_yellow_var }
+					check_variable = { SUS_green_var > SUS_red_var }
+					check_variable = { SUS_green_var > SUS_blue_var }
+					check_variable = { SUS_green_var > SUS_indigo_var }
+					check_variable = { SUS_green_var > SUS_purple_var }
+				}
+				NOT = {
+					check_variable = { SUS_blue_var > SUS_orange_var }
+					check_variable = { SUS_blue_var > SUS_yellow_var }
+					check_variable = { SUS_blue_var > SUS_green_var }
+					check_variable = { SUS_blue_var > SUS_red_var }
+					check_variable = { SUS_blue_var > SUS_indigo_var }
+					check_variable = { SUS_blue_var > SUS_purple_var }
+				}
+				NOT = {
+					check_variable = { SUS_indigo_var > SUS_orange_var }
+					check_variable = { SUS_indigo_var > SUS_yellow_var }
+					check_variable = { SUS_indigo_var > SUS_green_var }
+					check_variable = { SUS_indigo_var > SUS_blue_var }
+					check_variable = { SUS_indigo_var > SUS_red_var }
+					check_variable = { SUS_indigo_var > SUS_purple_var }
+				}
+				NOT = {
+					check_variable = { SUS_purple_var > SUS_orange_var }
+					check_variable = { SUS_purple_var > SUS_yellow_var }
+					check_variable = { SUS_purple_var > SUS_green_var }
+					check_variable = { SUS_purple_var > SUS_blue_var }
+					check_variable = { SUS_purple_var > SUS_indigo_var }
+					check_variable = { SUS_purple_var > SUS_red_var }
+				}
+			}
+		}
+		localization_key = WES_pillars_leader_nobody
+	}
+}
+
+defined_text = {
+	name = GetSUSPillarsLeaderEffect
+	text = {
+		trigger = {
+			check_variable = { SUS_red_var > SUS_orange_var }
+			check_variable = { SUS_red_var > SUS_yellow_var }
+			check_variable = { SUS_red_var > SUS_green_var }
+			check_variable = { SUS_red_var > SUS_blue_var }
+			check_variable = { SUS_red_var > SUS_indigo_var }
+			check_variable = { SUS_red_var > SUS_purple_var }
+		}
+		localization_key = WES_pillars_leader_red_effect
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_orange_var > SUS_red_var }
+			check_variable = { SUS_orange_var > SUS_yellow_var }
+			check_variable = { SUS_orange_var > SUS_green_var }
+			check_variable = { SUS_orange_var > SUS_blue_var }
+			check_variable = { SUS_orange_var > SUS_indigo_var }
+			check_variable = { SUS_orange_var > SUS_purple_var }
+		}
+		localization_key = WES_pillars_leader_orange_effect
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_yellow_var > SUS_orange_var }
+			check_variable = { SUS_yellow_var > SUS_red_var }
+			check_variable = { SUS_yellow_var > SUS_green_var }
+			check_variable = { SUS_yellow_var > SUS_blue_var }
+			check_variable = { SUS_yellow_var > SUS_indigo_var }
+			check_variable = { SUS_yellow_var > SUS_purple_var }
+		}
+		localization_key = WES_pillars_leader_yellow_effect
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_green_var > SUS_orange_var }
+			check_variable = { SUS_green_var > SUS_yellow_var }
+			check_variable = { SUS_green_var > SUS_red_var }
+			check_variable = { SUS_green_var > SUS_blue_var }
+			check_variable = { SUS_green_var > SUS_indigo_var }
+			check_variable = { SUS_green_var > SUS_purple_var }
+		}
+		localization_key = WES_pillars_leader_green_effect
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_blue_var > SUS_orange_var }
+			check_variable = { SUS_blue_var > SUS_yellow_var }
+			check_variable = { SUS_blue_var > SUS_green_var }
+			check_variable = { SUS_blue_var > SUS_red_var }
+			check_variable = { SUS_blue_var > SUS_indigo_var }
+			check_variable = { SUS_blue_var > SUS_purple_var }
+		}
+		localization_key = WES_pillars_leader_blue_effect
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_indigo_var > SUS_orange_var }
+			check_variable = { SUS_indigo_var > SUS_yellow_var }
+			check_variable = { SUS_indigo_var > SUS_green_var }
+			check_variable = { SUS_indigo_var > SUS_blue_var }
+			check_variable = { SUS_indigo_var > SUS_red_var }
+			check_variable = { SUS_indigo_var > SUS_purple_var }
+		}
+		localization_key = WES_pillars_leader_indigo_effect
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_purple_var > SUS_orange_var }
+			check_variable = { SUS_purple_var > SUS_yellow_var }
+			check_variable = { SUS_purple_var > SUS_green_var }
+			check_variable = { SUS_purple_var > SUS_blue_var }
+			check_variable = { SUS_purple_var > SUS_indigo_var }
+			check_variable = { SUS_purple_var > SUS_red_var }
+		}
+		localization_key = WES_pillars_leader_purple_effect
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = {
+					check_variable = { SUS_red_var > SUS_orange_var }
+					check_variable = { SUS_red_var > SUS_yellow_var }
+					check_variable = { SUS_red_var > SUS_green_var }
+					check_variable = { SUS_red_var > SUS_blue_var }
+					check_variable = { SUS_red_var > SUS_indigo_var }
+					check_variable = { SUS_red_var > SUS_purple_var }
+				}
+				NOT = {
+					check_variable = { SUS_orange_var > SUS_red_var }
+					check_variable = { SUS_orange_var > SUS_yellow_var }
+					check_variable = { SUS_orange_var > SUS_green_var }
+					check_variable = { SUS_orange_var > SUS_blue_var }
+					check_variable = { SUS_orange_var > SUS_indigo_var }
+					check_variable = { SUS_orange_var > SUS_purple_var }
+				}
+				NOT = {
+					check_variable = { SUS_yellow_var > SUS_orange_var }
+					check_variable = { SUS_yellow_var > SUS_red_var }
+					check_variable = { SUS_yellow_var > SUS_green_var }
+					check_variable = { SUS_yellow_var > SUS_blue_var }
+					check_variable = { SUS_yellow_var > SUS_indigo_var }
+					check_variable = { SUS_yellow_var > SUS_purple_var }
+				}
+				NOT = {
+					check_variable = { SUS_green_var > SUS_orange_var }
+					check_variable = { SUS_green_var > SUS_yellow_var }
+					check_variable = { SUS_green_var > SUS_red_var }
+					check_variable = { SUS_green_var > SUS_blue_var }
+					check_variable = { SUS_green_var > SUS_indigo_var }
+					check_variable = { SUS_green_var > SUS_purple_var }
+				}
+				NOT = {
+					check_variable = { SUS_blue_var > SUS_orange_var }
+					check_variable = { SUS_blue_var > SUS_yellow_var }
+					check_variable = { SUS_blue_var > SUS_green_var }
+					check_variable = { SUS_blue_var > SUS_red_var }
+					check_variable = { SUS_blue_var > SUS_indigo_var }
+					check_variable = { SUS_blue_var > SUS_purple_var }
+				}
+				NOT = {
+					check_variable = { SUS_indigo_var > SUS_orange_var }
+					check_variable = { SUS_indigo_var > SUS_yellow_var }
+					check_variable = { SUS_indigo_var > SUS_green_var }
+					check_variable = { SUS_indigo_var > SUS_blue_var }
+					check_variable = { SUS_indigo_var > SUS_red_var }
+					check_variable = { SUS_indigo_var > SUS_purple_var }
+				}
+				NOT = {
+					check_variable = { SUS_purple_var > SUS_orange_var }
+					check_variable = { SUS_purple_var > SUS_yellow_var }
+					check_variable = { SUS_purple_var > SUS_green_var }
+					check_variable = { SUS_purple_var > SUS_blue_var }
+					check_variable = { SUS_purple_var > SUS_indigo_var }
+					check_variable = { SUS_purple_var > SUS_red_var }
+				}
+			}
+		}
+		localization_key = WES_pillars_leader_nobody_effect
+	}
 }
 
 defined_text = {
