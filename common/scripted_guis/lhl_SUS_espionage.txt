@@ -1,14 +1,106 @@
 scripted_gui = {
 	
 	lhl_SUS_espionage_screen_body = {
-		context_type = decision_category
-		parent_window_token = decision_tab
+		context_type = player_context
+		parent_window_token = politics_tab
 		window_name = "lhl_SUS_espionage_full"
 
 		visible = {
 			tag = SUS
+			has_government = neocameralism
 		}
-		triggers = {		
+		effects = {	
+			SUS_espionage_button_click = {
+				if = {
+					limit = { has_country_flag = lhl_SUS_espionage_screen_activated }
+					clr_country_flag = lhl_SUS_espionage_screen_activated
+					clr_country_flag = lhl_SUS_espionage_logo_down
+				}
+				else = {
+					set_country_flag = lhl_SUS_espionage_screen_activated
+				}
+			}
         }
+	}
+	lhl_SUS_espionage_screen_body_2 = {
+		context_type = player_context
+		window_name = "lhl_SUS_espionage_full_2"
+
+		visible = {
+			has_country_flag = lhl_SUS_espionage_screen_activated
+		}
+		effects = {	
+			lhl_SUS_espionage_screen_logo_click = {
+				if = {
+					limit = { has_country_flag = lhl_SUS_espionage_logo_down }
+					clr_country_flag = lhl_SUS_espionage_logo_down
+				}
+				else = {
+					set_country_flag = lhl_SUS_espionage_logo_down
+				}
+			}
+			lhl_SUS_circle_active_mission_1_click = {
+				set_country_flag = lhl_SUS_espionage_mission_1_selected
+				set_country_flag = lhl_SUS_espionage_mission_selected
+				SUS = {
+					country_event = {
+						id = SUS_event.18
+						days = 0
+					}
+				}
+			}
+        }
+		triggers = {
+			lhl_SUS_espionage_screen_logo_visible = {
+				NOT = {
+					has_country_flag = lhl_SUS_espionage_logo_down
+				}
+			}
+			#MISSIONS#
+			lhl_SUS_circle_active_mission_1_visible = {
+				NOT = {
+					OR = {
+						has_country_flag = lhl_SUS_espionage_mission_selected
+						has_country_flag = lhl_SUS_espionage_mission_1_complete
+					}
+				}
+			}
+			lhl_SUS_circle_active_mission_1_selected_visible = {
+				has_country_flag = lhl_SUS_espionage_mission_1_selected
+				NOT = {
+					has_country_flag = lhl_SUS_espionage_mission_1_complete
+				}				
+			}
+			lhl_SUS_circle_active_mission_1_complete_visible = {
+				has_country_flag = lhl_SUS_espionage_mission_1_complete
+				NOT = {
+					has_country_flag = lhl_SUS_espionage_mission_1_selected
+				}				
+			}
+			lhl_SUS_circle_active_mission_2_visible = {
+				NOT = {
+					has_country_flag = lhl_SUS_espionage_mission_selected
+				}
+			}
+			lhl_SUS_circle_active_mission_2_inactive_visible = {
+				has_country_flag = lhl_SUS_espionage_mission_selected
+			}
+			lhl_SUS_circle_active_mission_3_visible = {
+				NOT = {
+					has_country_flag = lhl_SUS_espionage_mission_selected
+				}
+			}
+			lhl_SUS_circle_active_mission_3_inactive_visible = {
+				has_country_flag = lhl_SUS_espionage_mission_selected
+			}
+			lhl_SUS_circle_active_mission_4_visible = {
+				NOT = {
+					has_country_flag = lhl_SUS_espionage_mission_selected
+				}
+			}
+			lhl_SUS_circle_active_mission_4_inactive_visible = {
+				has_country_flag = lhl_SUS_espionage_mission_selected
+			}
+		}
 	}
 }

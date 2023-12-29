@@ -681,6 +681,54 @@
  SUS_event.17.t:0 "Smugglers caught 5!"
  SUS_event.17.d:0 "We have caught some smugglers, transporting some aircraft. We have taken the cargo."
  SUS_event.17.a:0 "Great"
+ #
+ SUS_event.18.t:0 "Operation "CHOCOLATE KING""
+ SUS_event.18.d:0 "One of our sleeper agents in former Malorussia, code-named §LThe Chocolate King§! has recently discovered a secret Eurasian chemical-weapons laboratory. We should investigate this curiosity, locate the laboratory, extract our agent and the scientists willing to work for us and maybe steal some Eurasian technologies from the area."
+ SUS_event.18.a:0 "Great"
+ #
+ SUS_event.19.t:0 "Operation "CHOCOLATE KING" Stage 1"
+ SUS_event.19.d:0 "The King's factory grows large. He has a lot of investment from local oligarchs. Now we need to send our agents in, so they can get the factory under control."
+ SUS_event.19.a:0 "Great"
+ #
+ SUS_event.20.t:0 "Operation "CHOCOLATE KING" Stage 2"
+ SUS_event.20.d:0 "It's time to push the agent a little bit. Let's cooperate with the local oligarchs to do the funny."
+ SUS_event.20.a:0 "Great"
+ #
+ SUS_event.21.t:0 "Operation "CHOCOLATE KING" Stage 3"
+ SUS_event.21.d:0 "With all the accumulated resources it's time to take the chemical plant."
+ SUS_event.21.a:0 "Great"
+ #
+ SUS_event.22.t:0 "Operation "CHOCOLATE KING" Stage 4"
+ SUS_event.22.d:0 "We have succesfully taken over the plant. Time to grab the superweapon and get out of here!"
+ SUS_event.22.a:0 "Great"
+ #
+ SUS_event.23.t:0 "Operation "CHOCOLATE KING" Stage 5"
+ SUS_event.23.d:0 "We did it guys. We gaind 250 000 subscribers, we are getting a Silver Youtube Play Button. Big thanks to Vse-Mayki.ru - the todsay's sponsor."
+ SUS_event.23.a:0 "Great"
+ #
+ SUS_event.24.t:0 "Operation "CHOCOLATE KING" Major Failure"
+ SUS_event.24.d:0 "It's so over"
+ SUS_event.24.a:0 "Not Great"
+ #
+ SUS_event.25.t:0 "Operation "CHOCOLATE KING" Failure"
+ SUS_event.25.d:0 "It's over"
+ SUS_event.25.a:0 "Not Great"
+ #
+ SUS_event.26.t:0 "Operation "CHOCOLATE KING" Minor Success"
+ SUS_event.26.d:0 "We are kinda back"
+ SUS_event.26.a:0 "Great"
+ #
+ SUS_event.27.t:0 "Operation "CHOCOLATE KING" Success"
+ SUS_event.27.d:0 "We are back!"
+ SUS_event.27.a:0 "Great"
+ #
+ SUS_event.28.t:0 "Operation "CHOCOLATE KING" Major Success"
+ SUS_event.28.d:0 "We so are back!!!"
+ SUS_event.28.a:0 "Great"
+ #
+ SUS_event.29.t:0 "Operation "CHOCOLATE KING" Complete Failure"
+ SUS_event.29.d:0 "The West has fallen"
+ SUS_event.29.a:0 "Not Great"
  
  SUS_event.100.t:0 "Dawn of England and Beyond"
  SUS_event.100.d:0 "Wow"
@@ -857,13 +905,13 @@
  SUS_pillars:0 "Congress of Councils"
  SUS_pillars_desc:0 "§9The Congress of Councils§! is a loose agglomeration of leftists forces in the British Isles. They may provide us with benefits in proportion to their influence as long as the §tLabourists§! faction maintains the dominance in the Congress. If some other faction becomes the leader their political influence will undermine our progress - therefore the §tLaboursits§! are advised to maintain dominance at all times. However, if our influence surpasses §Y75%§!, other faction may unite against us, leading to §Runforseen consequences.§!\n\n§YCurrent Leading Faction:§! [GetSUSPillarsLeader]\n§9Faction Dominance Effect:§! [GetSUSPillarsLeaderEffect]"
  #Tooltips#
- SUS_pillar_red_tt:0 "§tLabourists§! - the main socialist faction, originating from Sussex. Their influence has to be maintained.\n\nCurrent Influence: §Y[?SUS_red_var]/100§!\n\nThe current influence of this faction grants us the following benefits:\nConstruction Speed: §G+[?SUS_pillars_sussex_production_speed_buildings|%]§!\n£prod_eff Production Efficiency growth: §G+[?SUS_pillars_sussex_production_factory_efficiency|%]§!\nEconomy Laws Cost: §G[?SUS_pillars_sussex_economy_cost_factor|%]§!\nPolitical Advisor Cost: §G[?SUS_pillars_sussex_political_advisor_cost_factor|%]§!\nIndustrial Concern Cost: §G[?SUS_pillars_sussex_industrial_concern_cost_factor|%]§!"
- SUS_pillar_orange_tt:0 "§ORevisionists§! - a collection of deserters from the Republican forces located in Northumbria.\n\nCurrent Influence: §Y[?SUS_orange_var]/100§!\n\nThe current influence of this faction grants us the following benefits:\n£prod_eff_cap Production Efficiency Cap: §G+[?SUS_pillars_northumbria_max_efficiency_factor|%]§!\nProduction Efficiency Base: §G+[?SUS_pillars_northumbria_factory_start_efficiency|%]§!\nArmor Division Attack: §G+[?SUS_pillars_northumbria_army_armor_attack_factor|%]§!"
- SUS_pillar_yellow_tt:0 "§8Progressives§! - this group consists of former Richard Dawkins associates from London.\n\nCurrent Influence: §Y[?SUS_yellow_var]/100§!\n\nThe current influence of this faction grants us the following benefits:\nTrade deal opinion factor: §Y+[?SUS_pillars_essex_trade_opinion_factor|%]§!"
- SUS_pillar_green_tt:0 "§GAnarchists§! - various anarchist straggelers from East Anglia have found our way here and established this group.\n\nCurrent Influence: §Y[?SUS_green_var]/100§!\n\nThe current influence of this faction grants us the following benefits:\nEquipment Capture Ratio Modifier: §G+[?SUS_pillars_east_anglia_equipment_capture_factor|%]§!\nRecruitable Population: §G+[?SUS_pillars_east_anglia_recruitable_population_factor|%]§!"
- SUS_pillar_blue_tt:0 "§4Ultravisionaries§! - the scientists from Kent have unionized and formed this faction.\n\nCurrent Influence: §Y[?SUS_blue_var]/100§!\n\nThe current influence of this faction grants us the following benefits:\nResearch Speed: §G+[?SUS_pillars_kent_research_speed_factor|%]§!\nNaval Equipment Experience Cost: §G[?SUS_pillars_kent_naval_equipment|%]§!\nLand Equipment Experience Cost: §G[?SUS_pillars_kent_land_equipment|%]§!\nAir Equipment Experience Cost: §G[?SUS_pillars_kent_air_equipment|%]§!\nAir Doctrine Cost: §G[?SUS_pillars_kent_air_doctrine|%]§!\nLand Doctrine Cost: §G[?SUS_pillars_kent_land_doctrine|%]§!\nNaval Doctrine Cost: §G[?SUS_pillars_kent_naval_doctrine|%]§!"
- SUS_pillar_indigo_tt:0 "§2Christian Socialists§! - various christian socialists from Mercia have formed this faction.\n\nCurrent Influence: §Y[?SUS_indigo_var]/100§!\n\nThe current influence of this faction grants us the following benefits:\nDaily Political Power Gain: §G+[?SUS_pillars_political_power_gain]§!\nDivision Recovery Rate: §G+[?SUS_pillars_mercia_army_morale_factor|%]§!\nRequired Garrisons: §G[?SUS_pillars_mercia_required_garrison_factor|%]§!"
- SUS_pillar_purple_tt:0 "§0Agrarian Socialists§! - the former servants of Kind George have created this faction.\n\nCurrent Influence: §Y[?SUS_purple_var]/100§!\n\nThe current influence of this faction grants us the following benefits:\nMonthly Population: §G+[?SUS_pillars_wessex_monthly_population|%]§!\nConsumer Goods Factories factor: §Y[?SUS_pillars_wessex_consumer_goods_factor|%]§!"
+ SUS_pillar_red_tt:0 "§tLabourists§! - the main socialist faction, originating from Sussex. Their influence has to be maintained.\nThis faction is part of the §CLeft-Wing§!.\n\nCurrent Influence: §Y[?SUS_red_var]/100§!\n\nThe current influence of this faction grants us the following benefits:\nConstruction Speed: §G+[?SUS_pillars_sussex_production_speed_buildings|%]§!\n£prod_eff Production Efficiency growth: §G+[?SUS_pillars_sussex_production_factory_efficiency|%]§!\nEconomy Laws Cost: §G[?SUS_pillars_sussex_economy_cost_factor|%]§!\nPolitical Advisor Cost: §G[?SUS_pillars_sussex_political_advisor_cost_factor|%]§!\nIndustrial Concern Cost: §G[?SUS_pillars_sussex_industrial_concern_cost_factor|%]§!"
+ SUS_pillar_orange_tt:0 "§ORevisionists§! - a collection of deserters from the Republican forces located in Northumbria.\nThis faction is part of the §LRight-Wing§!.\n\nCurrent Influence: §Y[?SUS_orange_var]/100§!\n\nThe current influence of this faction grants us the following benefits:\n£prod_eff_cap Production Efficiency Cap: §G+[?SUS_pillars_northumbria_max_efficiency_factor|%]§!\nProduction Efficiency Base: §G+[?SUS_pillars_northumbria_factory_start_efficiency|%]§!\nArmor Division Attack: §G+[?SUS_pillars_northumbria_army_armor_attack_factor|%]§!"
+ SUS_pillar_yellow_tt:0 "§8Progressives§! - this group consists of former Richard Dawkins associates from London.\nThis faction is part of the §CLeft-Wing§!.\n\nCurrent Influence: §Y[?SUS_yellow_var]/100§!\n\nThe current influence of this faction grants us the following benefits:\nTrade deal opinion factor: §Y+[?SUS_pillars_essex_trade_opinion_factor|%]§!"
+ SUS_pillar_green_tt:0 "§GAnarchists§! - various anarchist straggelers from East Anglia have found our way here and established this group.\nThis faction is part of the §CLeft-Wing§!.\n\nCurrent Influence: §Y[?SUS_green_var]/100§!\n\nThe current influence of this faction grants us the following benefits:\nEquipment Capture Ratio Modifier: §G+[?SUS_pillars_east_anglia_equipment_capture_factor|%]§!\nRecruitable Population: §G+[?SUS_pillars_east_anglia_recruitable_population_factor|%]§!"
+ SUS_pillar_blue_tt:0 "§4Ultravisionaries§! - the scientists from Kent have unionized and formed this faction.\nThis faction is neither §CLeft-Wing§! or §LRight-Wing§!.\n\nCurrent Influence: §Y[?SUS_blue_var]/100§!\n\nThe current influence of this faction grants us the following benefits:\nResearch Speed: §G+[?SUS_pillars_kent_research_speed_factor|%]§!\nNaval Equipment Experience Cost: §G[?SUS_pillars_kent_naval_equipment|%]§!\nLand Equipment Experience Cost: §G[?SUS_pillars_kent_land_equipment|%]§!\nAir Equipment Experience Cost: §G[?SUS_pillars_kent_air_equipment|%]§!\nAir Doctrine Cost: §G[?SUS_pillars_kent_air_doctrine|%]§!\nLand Doctrine Cost: §G[?SUS_pillars_kent_land_doctrine|%]§!\nNaval Doctrine Cost: §G[?SUS_pillars_kent_naval_doctrine|%]§!"
+ SUS_pillar_indigo_tt:0 "§2Christian Socialists§! - various christian socialists from Mercia have formed this faction.\nThis faction is part of the §LRight-Wing§!.\n\nCurrent Influence: §Y[?SUS_indigo_var]/100§!\n\nThe current influence of this faction grants us the following benefits:\nDaily Political Power Gain: §G+[?SUS_pillars_political_power_gain]§!\nDivision Recovery Rate: §G+[?SUS_pillars_mercia_army_morale_factor|%]§!\nRequired Garrisons: §G[?SUS_pillars_mercia_required_garrison_factor|%]§!"
+ SUS_pillar_purple_tt:0 "§0Agrarian Socialists§! - the former servants of Kind George have created this faction.\nThis faction is part of the §LRight-Wing§!.\n\nCurrent Influence: §Y[?SUS_purple_var]/100§!\n\nThe current influence of this faction grants us the following benefits:\nMonthly Population: §G+[?SUS_pillars_wessex_monthly_population|%]§!\nConsumer Goods Factories factor: §Y[?SUS_pillars_wessex_consumer_goods_factor|%]§!"
  #Leading Faction#
  WES_pillars_leader_red:0 "§GThe§! §tLabourists§! §Gare in the lead§!"
  WES_pillars_leader_orange:0 "§RThe§! §ORevisionists§! §Rare in the lead§!"
@@ -895,7 +943,11 @@
  SUS_british_tank_olympics_tt:0 "Add §Y15 Influence§! to §ORevisionists§!.\nSubstract §Y15 Influence§! from §0Agrarian Socialists§!."
  SUS_centralize_rural_infrastructure_tt:0 "Add §Y15 Influence§! to §0Agrarian Socialists§!.\nSubstract §Y15 Influence§! from §GAnarchists§!."
  SUS_increase_workplace_science_intensity_tt:0 "Add §Y15 Influence§! to §4Ultravisionaries§!.\nSubstract §Y15 Influence§! from §2Christian Socialists§!."
+ SUS_parole_political_prisioners_tt:0 "Add §Y5 Influence§! to all §CLeft-Wing§! parties.\nSubstract §Y5 Influence§! from all §LRight-Wing§! parties."
+ SUS_criticize_unpatriotic_elements_tt:0 "Add §Y5 Influence§! to all §LRight-Wing§! parties.\nSubstract §Y5 Influence§! from all §CLeft-Wing§! parties."
  #
+ SUS_parole_political_prisioners:0 "Parole Political Prisioners"
+ SUS_criticize_unpatriotic_elements:0 "Criticize Unpatriotic Elements"
  SUS_create_semi_autonomous_zones:0 "Create Semi-Autonomous Zones"
  SUS_british_pastoralism_discussion:0 "British Pastoralism Discussion"
  SUS_appeal_to_praxis:0 "Appeal to Praxis"
@@ -915,4 +967,53 @@
  SUS_pillars_unique_TITLE:0 "§YUNIQUE LOBBYING DECISIONS§!"
  SUS_pillars_generic_decisison:0 " Currently lobbying another faction"
  SUS_pillars_unique_decisison:0 " Currently lobbying another faction"
+ #
+ SUS_pillars_75_failure:0 "Council Unrest"
+ SUS_pillars_75_percent:0 "A Conspiracy in The Council"
+ SUS_pillars_75_percent_desc:0 "One of the Council faction is fully in control of the Congress. The other leftist forces are clearly unsatisfied with this state of affairs and seem to be planning something. If we do not act fast, they may sabotage the fabric of the state itself, just so to make the dominante faction lose its power. We have to decrease the power of the dominant faction if we want to avoid negative consequences."
+ ###ESPIONAGE###
+ SUS_SPY_MISSION_UKRAINE:0 "     §YOPERATION§! §L"CHOCOLATE KING"§!\n\nOne of our sleeper agents in former Malorussia, code-named §LThe Chocolate King§! has recently discovered a secret Eurasian chemical-weapons laboratory. We should investigate this curiosity, locate the laboratory, extract our agent and the scientists willing to work for us and maybe steal some Eurasian technologies from the area.\n\n§YSTATUS:§! §GAVAILABLE§!\n\n§CCLICK TO START THE MISSION§!"
+ SUS_SPY_MISSION_UKRAINE_SELECTED:0 "     §YOPERATION§! §L"CHOCOLATE KING"§!\n\nOne of our sleeper agents in former Malorussia, code-named §LThe Chocolate King§! has recently discovered a secret Eurasian chemical-weapons laboratory. We should investigate this curiosity, locate the laboratory, extract our agent and the scientists willing to work for us and maybe steal some Eurasian technologies from the area.\n\n§YSTATUS:§! §OIN PROGRESS...§!"
+ SUS_SPY_MISSION_PLACEHOLDER:0 "PLACEHOLDER"
+ #
+ SUS_espionage_mission_1_title:0 "§YOPERATION§! §L"CHOCOLATE KING"§!"
+ SUS_espionage_mission_1_desc:0 "One of our sleeper agents in former Malorussia, code-named §LThe Chocolate King§! has recently discovered a secret Eurasian chemical-weapons laboratory. We should investigate this curiosity, locate the laboratory, extract our agent and the scientists willing to work for us and maybe steal some Eurasian technologies from the area.\n\n[GetSUSEMission1Stage]"
+ #
+ SUS_espionage_window:0 "[GetSUSEspionageTitle]"
+ SUS_espionage_window_desc:0 "[GetSUSEspionageDesc]"
+ SUS_mission_1_stage_1:0 "STAGE I: §C"Investment"§!"
+ SUS_mission_1_stage_2:0 "STAGE II: §G"Infiltration"§!"
+ SUS_mission_1_stage_3:0 "STAGE III: §8"Cooperation"§!"
+ SUS_mission_1_stage_4:0 "STAGE IV: §O"Assault"§!"
+ SUS_mission_1_stage_5:0 "STAGE V: §R"The Superweapon"§!"
+ SUS_espionage_stage_1_complete:0 "The first stage of the operation has been completed"
+ SUS_espionage_stage_2_complete:0 "The second stage of the operation has been completed"
+ SUS_espionage_stage_3_complete:0 "The third stage of the operation has been completed"
+ SUS_espionage_stage_4_complete:0 "The fourth stage of the operation has been completed"
+ SUS_mission_1_timer:0 "§YOPERATION§! §L"CHOCOLATE KING"§! DEADLINE"
+ #
+ SUS_espionage_mission_1_stage_0:0 "§YSTAGE 0:§! Our agents stand ready, firstly we need to supply the §LChocolate King§! with pp, so he can build big factory above the chemical plant."
+ SUS_espionage_mission_1_stage_1:0 "§YSTAGE 1:§! The §LKings'§! factory grows large. He has a lot of investment from local oligarchs. Now we need to send our agents in, so they can get the factory under control."
+ SUS_espionage_mission_1_stage_2:0 "§YSTAGE 2:§! It's time to push the agent a little bit. Let's cooperate with the local oligarchs to do the funny."
+ SUS_espionage_mission_1_stage_3:0 "§YSTAGE 3:§! With all the accumulated resources it's time to take the chemical plant."
+ SUS_espionage_mission_1_stage_4:0 "§YSTAGE 4:§! We have succesfully taken over the plant. Time to grab the superweapon and get out of here!"
+ SUS_espionage_mission_1_stage_5:0 "§YSTAGE 5:§! We did it guys. We gaind 250 000 subscribers, we are getting a Silver Youtube Play Button. Big thanks to Vse-Mayki.ru - the todsay's sponsor."
+ #
+ SUS_ESPIONAGE_GUNS:0 "£infantry_equipment_text_icon §Y1000§!"
+ SUS_ESPIONAGE_GUNS_blocked:0 "£infantry_equipment_text_icon §R1000§!"
+ SUS_ESPIONAGE_GUNS_tooltip:0 "It costs £infantry_equipment_text_icon §Y1000§! to take the decision!"
+ #
+ SUS_ESPIONAGE_RELATIONS:0 "[NRS.GetNameWithFlag] relations modifier > §Y35§!"
+ SUS_ESPIONAGE_RELATIONS_blocked:0 "[NRS.GetNameWithFlag] relations modifier > §R35§!"
+ SUS_ESPIONAGE_RELATIONS_tooltip:0 "We need to increase our relations modifier with [NRS.GetNameWithFlag] by §G+35§! points"
+ #
+ SUS_ESPIONAGE_SHIP:0 "§YOne§! £airwing_carrier_texticon  in Black Sea"
+ SUS_ESPIONAGE_SHIP_blocked:0 "§ROne§! £airwing_carrier_texticon  in Black Sea"
+ SUS_ESPIONAGE_SHIP_tooltip:0 "We need at least one ship £airwing_carrier_texticon in the Black Sea area"
+ #
+ SUS_ESPIONAGE_MANPOWER:0 "£manpower_texticon  §Y3000§!"
+ SUS_ESPIONAGE_MANPOWER_blocked:0 "£manpower_texticon  §R3000§!"
+ SUS_ESPIONAGE_MANPOWER_tooltip:0 "It costs £manpower_texticon  §Y3000§! to take the decision!"
+ #
+ SUS_mission_1_superweapon_tt:0 "A Superweapon §Y"Bullet-Dog"§! has been added to the §Cartifact menu.§!"
  

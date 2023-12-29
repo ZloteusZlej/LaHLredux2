@@ -131,6 +131,28 @@ ideas = {
 	}
 
 	country = {
+		SUS_pillars_75_failure = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = -0.1
+				war_support_factor = -0.1
+				stability_factor = -0.1
+				consumer_goods_factor = 0.15
+				research_speed_factor = -0.1
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_pillars_outsiders_dominate"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
 		SUS_Underground_Factories = {
 
 			allowed = {

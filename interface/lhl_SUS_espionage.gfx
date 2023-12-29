@@ -7,4 +7,44 @@ spriteTypes = {
 		name = "GFX_lhl_SUS_espionage_button"
 		textureFile = "gfx/interface/scripted_guis/SUS_espionage/SUS_espionage_button.dds"
 	}
+	spriteType = {
+		name = "GFX_lhl_SUS_espionage_screen_main"
+		textureFile = "gfx/interface/scripted_guis/SUS_espionage/SUS_spy_screen.dds"
+	}
+	spriteType = {
+		name = "GFX_lhl_SUS_espionage_screen_logo"
+		textureFile = "gfx/interface/scripted_guis/SUS_espionage/SUS_screen_logo.dds"
+	}
+	spriteType = {
+		name = "GFX_lhl_SUS_espionage_screen_map"
+		textureFile = "gfx/interface/scripted_guis/SUS_espionage/SUS_screen_map.dds"
+	}
+	spriteType = {
+		name = "GFX_lhl_SUS_espionage_screen_artifacts"
+		textureFile = "gfx/interface/scripted_guis/SUS_espionage/SUS_espionage_artifacts.dds"
+	}
+	#CIRCLES#
+	frameAnimatedSpriteType = {
+		name = "GFX_SUS_circle_active_mission"
+		textureFile = "gfx/interface/scripted_guis/SUS_espionage/SUS_circle_active_mission.dds"
+		noOfFrames = 2
+		loadType = "INGAME"
+		alwaystransparent = no
+		animation_rate_fps = 2
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	spriteType = {
+		name = "GFX_SUS_circle_active_mission_selected"
+		textureFile = "gfx/interface/scripted_guis/SUS_espionage/SUS_circle_selected_mission.dds"
+	}
+	spriteType = {
+		name = "GFX_SUS_circle_active_mission_inactive"
+		textureFile = "gfx/interface/scripted_guis/SUS_espionage/SUS_circle_inactive_mission.dds"
+	}
+	spriteType = {
+		name = "GFX_SUS_circle_active_mission_complete"
+		textureFile = "gfx/interface/scripted_guis/SUS_espionage/SUS_circle_complete_mission.dds"
+	}
 }

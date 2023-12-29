@@ -418,122 +418,126 @@ on_actions = {
 					var = SUS_pillars_northumbria_max_efficiency_factor
 					value = 400
 				}
-				#Dominant Party Thing#
+            }
+        }
+    }
+	on_weekly_SUS = { #SUS Pillars Mechanic 2|
+		effect = {
+			#Dominant Party Thing#
+			if = {
+				limit = {
+					SUS = {
+						has_government = socialism
+					}
+					check_variable = { SUS_red_var > SUS_orange_var }
+					check_variable = { SUS_red_var > SUS_yellow_var }
+					check_variable = { SUS_red_var > SUS_green_var }
+					check_variable = { SUS_red_var > SUS_blue_var }
+					check_variable = { SUS_red_var > SUS_indigo_var }
+					check_variable = { SUS_red_var > SUS_purple_var }
+				}
 				if = {
 					limit = {
 						SUS = {
-							has_government = socialism
-						}
-						check_variable = { SUS_red_var > SUS_orange_var }
-						check_variable = { SUS_red_var > SUS_yellow_var }
-						check_variable = { SUS_red_var > SUS_green_var }
-						check_variable = { SUS_red_var > SUS_blue_var }
-						check_variable = { SUS_red_var > SUS_indigo_var }
-						check_variable = { SUS_red_var > SUS_purple_var }
-					}
-					if = {
-						limit = {
-							SUS = {
-								has_country_flag = SUS_pillars_balance_nobody
-							}
-						}
-						SUS = {
-							add_ideas = SUS_pillars_labourists_dominate
-							clr_country_flag = SUS_pillars_balance_nobody
+							has_country_flag = SUS_pillars_balance_nobody
 						}
 					}
-					if = {
-						limit = {
-							SUS = {
-								NOT = {
-									has_country_flag = SUS_pillars_balance_nobody
-								}
-							}
-						}
-						SUS = {
-							swap_ideas = {
-								remove_idea = SUS_pillars_outsiders_dominate
-								add_idea = SUS_pillars_labourists_dominate
-							}
-						}
+					SUS = {
+						add_ideas = SUS_pillars_labourists_dominate
+						clr_country_flag = SUS_pillars_balance_nobody
 					}
 				}
 				if = {
 					limit = {
 						SUS = {
-							has_government = socialism
-						}
-						OR = {
-							check_variable = { SUS_red_var < SUS_orange_var }
-							check_variable = { SUS_red_var < SUS_yellow_var }
-							check_variable = { SUS_red_var < SUS_green_var }
-							check_variable = { SUS_red_var < SUS_blue_var }
-							check_variable = { SUS_red_var < SUS_indigo_var }
-							check_variable = { SUS_red_var < SUS_purple_var }
-						}
-					}
-					if = {
-						limit = {
-							SUS = {
+							NOT = {
 								has_country_flag = SUS_pillars_balance_nobody
-							}
-						}
-						SUS = {
-							add_ideas = SUS_pillars_outsiders_dominate
-							clr_country_flag = SUS_pillars_balance_nobody
-						}
-					}
-					if = {
-						limit = {
-							SUS = {
-								NOT = {
-									has_country_flag = SUS_pillars_balance_nobody
-								}
-							}
-						}
-						SUS = {
-							swap_ideas = {
-								remove_idea = SUS_pillars_labourists_dominate
-								add_idea = SUS_pillars_outsiders_dominate
-							}
-						}
-					}
-				}
-				if = {
-					limit = {
-						SUS = {
-							has_government = socialism
-						}
-						OR = {
-							NOT = {
-								OR = {
-									check_variable = { SUS_red_var < SUS_orange_var }
-									check_variable = { SUS_red_var < SUS_yellow_var }
-									check_variable = { SUS_red_var < SUS_green_var }
-									check_variable = { SUS_red_var < SUS_blue_var }
-									check_variable = { SUS_red_var < SUS_indigo_var }
-									check_variable = { SUS_red_var < SUS_purple_var }
-								}
-							}
-							NOT = {
-								check_variable = { SUS_red_var > SUS_orange_var }
-								check_variable = { SUS_red_var > SUS_yellow_var }
-								check_variable = { SUS_red_var > SUS_green_var }
-								check_variable = { SUS_red_var > SUS_blue_var }
-								check_variable = { SUS_red_var > SUS_indigo_var }
-								check_variable = { SUS_red_var > SUS_purple_var }
 							}
 						}
 					}
 					SUS = {
-						remove_ideas = {
-							SUS_pillars_outsiders_dominate
-							SUS_pillars_labourists_dominate
+						swap_ideas = {
+							remove_idea = SUS_pillars_outsiders_dominate
+							add_idea = SUS_pillars_labourists_dominate
 						}
-						set_country_flag = SUS_pillars_balance_nobody
 					}
 				}
-            }
-        }
-    }
+			}
+			if = {
+				limit = {
+					SUS = {
+						has_government = socialism
+					}
+					OR = {
+						check_variable = { SUS_red_var < SUS_orange_var }
+						check_variable = { SUS_red_var < SUS_yellow_var }
+						check_variable = { SUS_red_var < SUS_green_var }
+						check_variable = { SUS_red_var < SUS_blue_var }
+						check_variable = { SUS_red_var < SUS_indigo_var }
+						check_variable = { SUS_red_var < SUS_purple_var }
+					}
+				}
+				if = {
+					limit = {
+						SUS = {
+							has_country_flag = SUS_pillars_balance_nobody
+						}
+					}
+					SUS = {
+						add_ideas = SUS_pillars_outsiders_dominate
+						clr_country_flag = SUS_pillars_balance_nobody
+					}
+				}
+				if = {
+					limit = {
+						SUS = {
+							NOT = {
+								has_country_flag = SUS_pillars_balance_nobody
+							}
+						}
+					}
+					SUS = {
+						swap_ideas = {
+							remove_idea = SUS_pillars_labourists_dominate
+							add_idea = SUS_pillars_outsiders_dominate
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					SUS = {
+						has_government = socialism
+					}
+					OR = {
+						NOT = {
+							OR = {
+								check_variable = { SUS_red_var < SUS_orange_var }
+								check_variable = { SUS_red_var < SUS_yellow_var }
+								check_variable = { SUS_red_var < SUS_green_var }
+								check_variable = { SUS_red_var < SUS_blue_var }
+								check_variable = { SUS_red_var < SUS_indigo_var }
+								check_variable = { SUS_red_var < SUS_purple_var }
+							}
+						}
+						NOT = {
+							check_variable = { SUS_red_var > SUS_orange_var }
+							check_variable = { SUS_red_var > SUS_yellow_var }
+							check_variable = { SUS_red_var > SUS_green_var }
+							check_variable = { SUS_red_var > SUS_blue_var }
+							check_variable = { SUS_red_var > SUS_indigo_var }
+							check_variable = { SUS_red_var > SUS_purple_var }
+						}
+					}
+				}
+				SUS = {
+					remove_ideas = {
+						SUS_pillars_outsiders_dominate
+						SUS_pillars_labourists_dominate
+					}
+					set_country_flag = SUS_pillars_balance_nobody
+				}
+			}
+		}
+	}
 }					  

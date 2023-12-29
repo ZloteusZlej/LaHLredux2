@@ -10,15 +10,23 @@ SUS_pillars = {
 	allowed = { original_tag = SUS }
 	visible_when_empty = yes
 	scripted_gui = SUS_labour_pillars_gui
+	visible = {
+		SUS = {
+			has_government = socialism
+		}
+	}
 }
 
 SUS_espionage_window = {
 	icon = GFX_
 
 	allowed = { original_tag = SUS }
-
-	scripted_gui = lhl_SUS_espionage_screen_body
-	visible_when_empty = yes
+	visible = {
+		SUS = {
+			has_government = neocameralism
+			has_country_flag = lhl_SUS_espionage_mission_selected
+		}
+	}
 }
 
 SUS_power_struggle = {
