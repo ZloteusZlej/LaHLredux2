@@ -78,3 +78,24 @@ focus_tree = {
 		}
 	}
 }
+
+focus_tree = {
+	id = SUS_spies_focuses
+	default = no
+	continuous_focus_position = { x = 20 y = 4000 }
+		shared_focus = SUS_the_crimson_king
+		shared_focus = SUS_no_empty_seats
+		shared_focus = SUS_dance_to_the_radio
+		shared_focus = SUS_rob_public_enemies
+		shared_focus = SUS_punish_entrists
+		shared_focus = SUS_headquarters_reshuffle
+		shared_focus = SUS_top_secret
+	country = {
+		factor = 0
+		modifier = {
+			add = 1
+			tag = SUS
+			
+		}
+	}
+}
