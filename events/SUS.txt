@@ -712,6 +712,20 @@ country_event = { #Request 1
     }
 }
 
+country_event = { #Choosing new head of the MI6
+	id = SUS_event.32
+	title = SUS_event.32.t
+	desc = SUS_event.32.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.32.a
+    }
+	option = {
+		name = SUS_event.32.b
+    }
+}
+
 
 country_event = { #Coronation
 	id = SUS_event.100
