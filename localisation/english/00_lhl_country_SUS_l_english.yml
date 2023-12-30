@@ -24,6 +24,8 @@
  ##COUNTRY NAME##
  SUS_left_authoritarianism:0 "Absolutists"
  SUS_left_authoritarianism_DEF:0 "British Provisional Government"
+ SUS_commendationism:0 "Absolutists"
+ SUS_commendationism_DEF:0 "People's Kingdom of Britain"
  SUS_REUNIFIED1:0 "British Union"
  SUS_REUNIFIED2:0 "People's Kingdom of Britain"
  SUS_REUNIFIED3:0 "Great Britain"
@@ -787,6 +789,15 @@
  SUS_event.29.t:0 "Operation "CHOCOLATE KING" Complete Failure"
  SUS_event.29.d:0 "The West has fallen"
  SUS_event.29.a:0 "Not Great"
+ #
+ SUS_event.30.t:0 "REQUEST: More military factories"
+ SUS_event.30.d:0 "The workers of Croydon request to build a new military factory, otherwise they would be unable to complete the plan in time and we will have issues when fighting our enemies."
+ SUS_event.30.a:0 "Set out to work"
+ #
+ SUS_event.31.t:0 "PLEA: An unjust factory manager"
+ SUS_event.31.d:0 "The workers of Portsmouth have issued a complaint against a local weapons manufacturing facility. According to them, the manager of the factory mistreats the workers and has been comitting counter-revolutionary activity by selling the weapons of the Kingdom to rival cliques on the island. We know for a fact that this information is false, however it may be beneficial to still act against the manager and his factory to satisfy the will of the people."
+ SUS_event.31.a:0 "Deal with the manager"
+ SUS_event.31.b:0 "We execute justice, not mob rule"
  
  SUS_event.100.t:0 "Dawn of England and Beyond"
  SUS_event.100.d:0 "Wow"
@@ -1076,4 +1087,26 @@
  SUS_mission_1_superweapon_tt:0 "A Superweapon §Y"Bullet-Dog"§! has been added to the §Cartifact menu.§!"
  #
  SUS_ARTIFACT_CHEMICAL_WEAPON:0 "Ukrainian Chemical Weapon"
- 
+ ###WORKERS SENATE###
+ SUS_workers_senate:0 "Worker's Senate"
+ SUS_workers_senate_desc:0 "§1Worker's Senate§! is the new representative and judicial body of the People's Kingdom of Britain. The Organ deals with both the various requests from the populace as well as legal disputes. Sometimes we will recieve §Rpleas§! from the people, asking us to either help solve their issue or resolve disputes. If we are to gain the support of the population we need to maintain a certain level of £stability_texticon §CJustice§! - this may require making populist choices when reviewing §Rpleas§! from the people, which in turn may not be very beneficial for the state at large.\n\n Current £stability_texticon §CJustice§! level - §Y[?SUS_senate_trust]/100§!\nThe current £stability_texticon §CJustice§! level gives us the following effects:\nPolitical Power Gain: §G+[?SUS_senate_political_power_factor|%]§!\nStability: §G+[?SUS_senate_stability_factor|%]§!\nWar Support: §G+[?SUS_senate_war_support_factor|%]§!\nResistance Activity Chance: §G[?SUS_senate_resistance_activity|%]§!"
+ SUS_senate_sacrifise_trust:0 "Bypass The Senate"
+ SUS_senate_gain_trust:0 "Concessions to The People"
+ SUS_senate_stop_debuff:0 "Temporary Suspend The Senate"
+ SUS_senate_cheat_hearing:0 "Cheat The Next Hearing"
+ #
+ SUS_SENATE_JUSTICE_5:0 "£stability_texticon §Y5§!"
+ SUS_SENATE_JUSTICE_5_blocked:0 "£stability_texticon §R5§!"
+ SUS_SENATE_JUSTICE_5_tooltip:0 "It costs £stability_texticon §Y5§! to take the decision!"
+ #
+ SUS_SENATE_JUSTICE_10:0 "£stability_texticon §Y10§!"
+ SUS_SENATE_JUSTICE_10_blocked:0 "£stability_texticon §R10§!"
+ SUS_SENATE_JUSTICE_10_tooltip:0 "It costs £stability_texticon §Y10§! to take the decision!"
+ #
+ SUS_senate_gain_trust_tt:0 "£stability_texticon §CJustice§! §G+5§!"
+ SUS_senate_stop_debuff_tt:0 "Disable £stability_texticon §CJustice§! effects for §Y90§! days"
+ SUS_senate_cheat_hearing_tt:0 "During the next §Rplea§! from the populace, no negative effects will be applied."
+ SUS_senate_minus_5_tt:0 "£stability_texticon §CJustice§! §R-5§!"
+ #
+ SUS_weapon_shortages:0 "Weapon Shortages"
+ SUS_request_1_mission:0 "Request Deadline"

@@ -46,6 +46,118 @@ SUS_debug = {
 	}
 }
 
+SUS_workers_senate = {
+	SUS_senate_sacrifise_trust = {
+		custom_cost_trigger = {
+			check_variable = { SUS_senate_trust > 4 }
+		}
+		custom_cost_text = SUS_SENATE_JUSTICE_5
+		days_remove = 45
+		days_re_enable = 60
+		available = {
+			check_variable = { SUS_senate_trust > 4 }
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_senate_trust
+				value = -5
+			}
+		}
+		remove_effect = {
+			SUS = {
+				add_political_power = 75
+			}
+		}
+	}
+	SUS_senate_gain_trust = {
+		cost = 50
+		days_remove = 45
+		days_re_enable = 60
+		remove_effect = {
+			add_to_variable = {
+				var = SUS_senate_trust
+				value = 5
+			}
+			clamp_variable = {
+				var = SUS_senate_trust
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = SUS_senate_gain_trust_tt
+		}
+	}
+	SUS_senate_stop_debuff = {
+		cost = 120
+		days_remove = 120
+		days_re_enable = 90
+		complete_effect = {
+			SUS = {
+				set_country_flag = SUS_senate_emergency
+			}
+		}
+		remove_effect = {
+			SUS = {
+				clr_country_flag = SUS_senate_emergency
+			}
+			custom_effect_tooltip = SUS_senate_stop_debuff_tt
+		}
+	}
+	SUS_senate_cheat_hearing = {
+		custom_cost_trigger = {
+			check_variable = { SUS_senate_trust > 9 }
+		}
+		custom_cost_text = SUS_SENATE_JUSTICE_10
+		days_remove = 10
+		days_re_enable = 90
+		available = {
+			check_variable = { SUS_senate_trust > 9 }
+		}
+		complete_effect = {
+			SUS = {
+				set_country_flag = SUS_cheat_hearing
+			}
+			add_to_variable = {
+				var = SUS_senate_trust
+				value = -10
+			}
+			clamp_variable = {
+				var = SUS_senate_trust
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = SUS_senate_cheat_hearing_tt
+		}
+	}
+	SUS_request_1_mission = {
+		days_mission_timeout = 100
+		available = {
+			SUS = {
+				1156 = {
+					has_built = {
+						type = arms_factory
+						value > 1
+					}
+				}
+			}
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no               
+		}
+		is_good = no
+		timeout_effect = {
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_weapon_shortages
+					days = 180
+				}
+			}
+		}
+	}
+}
+
 SUS_espionage_window = {
 	##OPERATION CHOCOLATE KING##
 	SUS_mission_1_stage_1 = {
