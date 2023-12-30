@@ -1121,3 +1121,48 @@ country_event = { #WITCHES ARCHEGETES ELECTIONS EVENT
 		set_global_flag = SUS_archegetes_elections_ended
     }
 }
+country_event = { #WITCHES ARCHEGETES ELECTIONS EVENT
+	id = SUS_event.2500
+	title = SUS_event.2500.t
+	desc = SUS_event.2500.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.2500.a
+		SUS = {
+			hidden_effect = {
+				set_country_flag = SUS_pillars_mechanic_opened
+				add_dynamic_modifier = {
+					modifier = SUS_pillars_wessex
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_pillars_sussex
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_pillars_kent
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_pillars_essex
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_pillars_mercia
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_pillars_east_anglia
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_pillars_northumbria
+				}
+				add_ideas = SUS_pillars_labourists_dominate
+			}
+		}
+		set_variable = { SUS_red_var = 30 }
+		set_variable = { SUS_orange_var = 10 }
+		set_variable = { SUS_yellow_var = 10 }
+		set_variable = { SUS_green_var = 10 }
+		set_variable = { SUS_blue_var = 10 }
+		set_variable = { SUS_indigo_var = 10 }
+		set_variable = { SUS_purple_var = 10 }
+		SUS_pillars_set_variables = yes
+    }
+}
