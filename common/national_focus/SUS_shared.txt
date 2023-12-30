@@ -5167,3 +5167,524 @@ shared_focus = {
 
 ##SPIES ECONOMY##
 
+shared_focus = {
+	id = SUS_rob_public_enemies 
+	icon = GFX_goal_SUS_rob_public_enemies
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_rob_public_enemies"
+		
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 0
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_critical_materials
+	icon = GFX_goal_SUS_critical_materials
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_critical_materials"
+		
+	}
+	prerequisite = {
+		focus = SUS_rob_public_enemies
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = -2
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_foreign_finance_group
+	icon = GFX_goal_SUS_foreign_finance_group
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_foreign_finance_group"
+		
+	}
+	prerequisite = {
+		focus = SUS_rob_public_enemies
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 0
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_parallel_import
+	icon = GFX_goal_SUS_parallel_import
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_parallel_import"
+		
+	}
+	prerequisite = {
+		focus = SUS_rob_public_enemies
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 2
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_in_place_of_strife
+	icon = GFX_goal_SUS_in_place_of_strife
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_in_place_of_strife"
+		
+	}
+	prerequisite = {
+		focus = SUS_critical_materials
+	}
+	prerequisite = {
+		focus = SUS_foreign_finance_group
+	}
+	prerequisite = {
+		focus = SUS_parallel_import
+	}
+	mutually_exclusive = {
+		focus = SUS_pink_scare
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = -1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_pink_scare
+	icon = GFX_goal_SUS_pink_scare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_pink_scare"
+		
+	}
+	prerequisite = {
+		focus = SUS_critical_materials
+	}
+	prerequisite = {
+		focus = SUS_foreign_finance_group
+	}
+	prerequisite = {
+		focus = SUS_parallel_import
+	}
+	mutually_exclusive = {
+		focus = SUS_in_place_of_strife
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_plata_o_plomo
+	icon = GFX_goal_SUS_plata_o_plomo
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_plata_o_plomo"
+		
+	}
+	prerequisite = {
+		focus = SUS_pink_scare
+		focus = SUS_in_place_of_strife
+	}
+	
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = -1
+	y = 4
+}
+
+shared_focus = {
+	id = SUS_the_dove
+	icon = GFX_goal_SUS_the_dove
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_the_dove"
+		
+	}
+	prerequisite = {
+		focus = SUS_pink_scare
+		focus = SUS_in_place_of_strife
+	}
+	
+	
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 1
+	y = 4
+}
+
+shared_focus = {
+	id = SUS_hidden_facilities
+	icon = GFX_goal_SUS_hidden_facilities
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_hidden_facilities"
+	
+	}
+	prerequisite = {
+		focus = SUS_the_dove
+	}
+	prerequisite = {
+		focus = SUS_plata_o_plomo
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = -2
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_thousand_talents_plan
+	icon = GFX_goal_SUS_thousand_talents_plan
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_thousand_talents_plan"
+		
+	}
+	prerequisite = {
+		focus = SUS_the_dove
+	}
+	prerequisite = {
+		focus = SUS_plata_o_plomo
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 0
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_private_public_partnership
+	icon = GFX_goal_SUS_private_public_partnership
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_private_public_partnership"
+		
+	}
+	prerequisite = {
+		focus = SUS_the_dove
+	}
+	prerequisite = {
+		focus = SUS_plata_o_plomo
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 2
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_corporate_surveillance
+	icon = GFX_goal_SUS_corporate_surveillance
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_corporate_surveillance"
+		
+	}
+	mutually_exclusive = {
+		focus = SUS_convict_lease 
+	}
+	prerequisite = {
+		focus = SUS_private_public_partnership
+	}
+	prerequisite = {
+		focus = SUS_thousand_talents_plan
+	}
+	prerequisite = {
+		focus = SUS_hidden_facilities
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = -1
+	y = 6
+}
+
+shared_focus = {
+	id = SUS_convict_lease
+	icon = GFX_goal_SUS_convict_lease
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_convict_lease"
+	
+	}
+	mutually_exclusive = {
+		focus = SUS_corporate_surveillance
+	}
+	prerequisite = {
+		focus = SUS_private_public_partnership
+	}
+	prerequisite = {
+		focus = SUS_thousand_talents_plan
+	}
+	prerequisite = {
+		focus = SUS_hidden_facilities
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 1
+	y = 6
+}
+
+shared_focus = {
+	id = SUS_closed_towns 
+	icon = GFX_goal_SUS_closed_towns
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_closed_towns"
+		
+	}
+	prerequisite = {
+		focus = SUS_convict_lease
+		focus = SUS_corporate_surveillance
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = 0
+	y = 7
+}
+
+##SPIES POLITICS##
+
+shared_focus = {
+	id = SUS_punish_entrists
+	icon = GFX_goal_SUS_punish_entrists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_punish_entrists"
+
+	}
+	relative_position_id = SUS_a_scapegoat
+	cost = 4.3
+	x = -6
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_london_bridge_is_down
+	icon = GFX_goal_SUS_london_bridge_is_down
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_london_bridge_is_down"
+		
+	}
+	prerequisite = {
+		focus = SUS_punish_entrists
+	}
+	mutually_exclusive = {
+		focus = SUS_long_live_the_queen
+	}
+	relative_position_id = SUS_punish_entrists
+	cost = 4.3
+	x = -1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_long_live_the_queen
+	icon = GFX_goal_SUS_long_live_the_queen
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_long_live_the_queen"
+		
+	}
+	prerequisite = {
+		focus = SUS_punish_entrists
+	}
+	mutually_exclusive = {
+		focus = SUS_london_bridge_is_down
+	}
+	relative_position_id = SUS_punish_entrists
+	cost = 4.3
+	x = 1
+	y = 1
+}
+
+shared_focus = {
+	id = SUS_big_tent
+	icon = GFX_goal_SUS_big_tent
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_big_tent"
+	
+	}
+	prerequisite = {
+		focus = SUS_long_live_the_queen
+		focus = SUS_london_bridge_is_down
+	}
+	relative_position_id = SUS_punish_entrists
+	cost = 4.3
+	x = -2
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_sky_always_shines_on_tv
+	icon = GFX_goal_SUS_sky_always_shines_on_tv
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_sky_always_shines_on_tv"
+	
+	}
+	prerequisite = {
+		focus = SUS_long_live_the_queen
+		focus = SUS_london_bridge_is_down
+	}
+	relative_position_id = SUS_punish_entrists
+	cost = 4.3
+	x = 0
+	y = 2
+}
+
+shared_focus = {
+	id = SUS_spoiler_effect
+	icon = GFX_goal_SUS_spoiler_effect
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_spoiler_effect"
+	
+	}
+	prerequisite = {
+		focus = SUS_long_live_the_queen
+		focus = SUS_london_bridge_is_down
+	}
+	relative_position_id = SUS_punish_entrists
+	cost = 4.3
+	x = 2
+	y = 2
+}
+
+shared_focus = {
+	id = 
+	icon = GFX_goal_SUS_net_stalking
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_net_stalking"
+	
+	}
+	prerequisite = {
+		focus = SUS_spoiler_effect
+	}
+	prerequisite = {
+		focus = SUS_sky_always_shines_on_tv
+	}
+	prerequisite = {
+		focus = SUS_big_tent
+	}
+	relative_position_id = SUS_punish_entrists
+	cost = 4.3
+	x = -1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_holiday_quiz
+	icon = GFX_goal_SUS_holiday_quiz
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_holiday_quiz"
+		
+	}
+	prerequisite = {
+		focus = SUS_spoiler_effect
+	}
+	prerequisite = {
+		focus = SUS_sky_always_shines_on_tv
+	}
+	prerequisite = {
+		focus = SUS_big_tent
+	}
+	relative_position_id = SUS_punish_entrists
+	cost = 4.3
+	x = 1
+	y = 3
+}
+
+shared_focus = {
+	id = SUS_government_code_and_cypher_school
+	icon = GFX_goal_SUS_government_code_and_cypher_school
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_government_code_and_cypher_school"
+	
+	}
+	prerequisite = {
+		focus = SUS_holiday_quiz
+	}
+	prerequisite = {
+		focus = SUS_net_stalking
+	}
+	relative_position_id = SUS_punish_entrists
+	cost = 4.3
+	x = 0
+	y = 4
+}
+
+shared_focus = {
+	id = SUS_punitive_psychiatry
+	icon = GFX_goal_SUS_punitive_psychiatry
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_punitive_psychiatry"
+	
+	}
+	prerequisite = {
+		focus = SUS_government_code_and_cypher_school
+	}
+	relative_position_id = SUS_punish_entrists
+	cost = 4.3
+	x = -1
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_the_doors_of_perception
+	icon = GFX_goal_SUS_the_doors_of_perception
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_the_doors_of_perception"
+	
+	}
+	prerequisite = {
+		focus = SUS_punitive_psychiatry
+	}
+	relative_position_id = SUS_punish_entrists
+	cost = 4.3
+	x = -1
+	y = 6
+}
+
+shared_focus = {
+	id = SUS_tomorrow_never_dies 
+	icon = GFX_goal_SUS_tomorrow_never_dies
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_tomorrow_never_dies"
+	
+	}
+	prerequisite = {
+		focus = SUS_government_code_and_cypher_school
+	}
+	relative_position_id = SUS_punish_entrists
+	cost = 4.3
+	x = 1
+	y = 5
+}
+
+shared_focus = {
+	id = SUS_protocol_awaken
+	icon = GFX_goal_SUS_protocol_awaken
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_protocol_awaken"
+	
+	}
+	prerequisite = {
+		focus = SUS_tomorrow_never_dies
+	}
+	relative_position_id = SUS_punish_entrists
+	cost = 4.3
+	x = 1
+	y = 6
+}
+
+shared_focus = {
+	id = SUS_operation_sabbath 
+	icon = GFX_goal_SUS_operation_sabbath
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_operation_sabbath"
+	
+	}
+	prerequisite = {
+		focus = SUS_protocol_awaken
+	}
+	prerequisite = {
+		focus = SUS_the_doors_of_perception
+	}
+	relative_position_id = SUS_punish_entrists
+	cost = 4.3
+	x = 0
+	y = 7
+}
