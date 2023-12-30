@@ -17,6 +17,18 @@ SUS_pillars = {
 	}
 }
 
+SUS_workers_senate = {
+	icon = GFX_SUS_workers_senate
+
+	allowed = { original_tag = SUS }
+	visible = {
+		SUS = {
+			has_government = commendationism
+		}
+	}
+	visible_when_empty = yes
+}
+
 SUS_espionage_window = {
 	icon = GFX_
 

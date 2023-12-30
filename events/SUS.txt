@@ -639,6 +639,79 @@ country_event = { #Ukraine Outcome 6
     }
 }
 
+##Worker's Senate##
+country_event = { #Request 1
+	id = SUS_event.30
+	title = SUS_event.30.t
+	desc = SUS_event.30.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.30.a
+		SUS = {
+			activate_mission = SUS_request_1_mission
+		}
+    }
+}
+
+country_event = { #Request 1
+	id = SUS_event.31
+	title = SUS_event.31.t
+	desc = SUS_event.31.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.31.a
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			SUS = {
+				1001 = {
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+		}
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = 5
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = 0
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+		}	
+		custom_effect_tooltip = SUS_senate_gain_trust_tt
+    }
+	option = {
+		name = SUS_event.31.b
+		add_political_power = 100
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = -5
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = 0
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+		}	
+		custom_effect_tooltip = SUS_senate_minus_5_tt
+    }
+}
+
 
 country_event = { #Coronation
 	id = SUS_event.100
@@ -968,40 +1041,10 @@ country_event = { #Test Congress Start Conditions
 	option = {
 		name = SUS_event.2000.a
 		SUS = {
-			hidden_effect = {
-				set_country_flag = SUS_pillars_mechanic_opened
-				add_dynamic_modifier = {
-					modifier = SUS_pillars_wessex
-				}
-				add_dynamic_modifier = {
-					modifier = SUS_pillars_sussex
-				}
-				add_dynamic_modifier = {
-					modifier = SUS_pillars_kent
-				}
-				add_dynamic_modifier = {
-					modifier = SUS_pillars_essex
-				}
-				add_dynamic_modifier = {
-					modifier = SUS_pillars_mercia
-				}
-				add_dynamic_modifier = {
-					modifier = SUS_pillars_east_anglia
-				}
-				add_dynamic_modifier = {
-					modifier = SUS_pillars_northumbria
-				}
-				add_ideas = SUS_pillars_labourists_dominate
+			add_dynamic_modifier = {
+				modifier = SUS_senate_justice
 			}
 		}
-		set_variable = { SUS_red_var = 30 }
-		set_variable = { SUS_orange_var = 10 }
-		set_variable = { SUS_yellow_var = 10 }
-		set_variable = { SUS_green_var = 10 }
-		set_variable = { SUS_blue_var = 10 }
-		set_variable = { SUS_indigo_var = 10 }
-		set_variable = { SUS_purple_var = 10 }
-		SUS_pillars_set_variables = yes
     }
 }
 
