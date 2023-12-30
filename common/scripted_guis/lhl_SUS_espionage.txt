@@ -15,6 +15,7 @@ scripted_gui = {
 					limit = { has_country_flag = lhl_SUS_espionage_screen_activated }
 					clr_country_flag = lhl_SUS_espionage_screen_activated
 					clr_country_flag = lhl_SUS_espionage_logo_down
+					clr_country_flag = lhl_SUS_espionage_screen_map
 				}
 				else = {
 					set_country_flag = lhl_SUS_espionage_screen_activated
@@ -49,12 +50,29 @@ scripted_gui = {
 					}
 				}
 			}
+			lhl_SUS_circle_close_button_click = {
+				clr_country_flag = lhl_SUS_espionage_screen_activated
+				clr_country_flag = lhl_SUS_espionage_logo_down
+				clr_country_flag = lhl_SUS_espionage_screen_map
+			}
+			lhl_SUS_circle_artifact_button_click = {
+				if = {
+					limit = { has_country_flag = lhl_SUS_espionage_screen_map }
+					clr_country_flag = lhl_SUS_espionage_screen_map
+				}
+				else = {
+					set_country_flag = lhl_SUS_espionage_screen_map
+				}
+			}
         }
 		triggers = {
 			lhl_SUS_espionage_screen_logo_visible = {
 				NOT = {
 					has_country_flag = lhl_SUS_espionage_logo_down
 				}
+			}
+			lhl_SUS_espionage_screen_artifact_visible = {
+				has_country_flag = lhl_SUS_espionage_screen_map
 			}
 			#MISSIONS#
 			lhl_SUS_circle_active_mission_1_visible = {
@@ -100,6 +118,41 @@ scripted_gui = {
 			}
 			lhl_SUS_circle_active_mission_4_inactive_visible = {
 				has_country_flag = lhl_SUS_espionage_mission_selected
+			}
+			#Artifacts#
+			lhl_SUS_espionage_artifact_1_visible = {
+				has_country_flag = lhl_SUS_espionage_screen_map
+			}
+			lhl_SUS_espionage_artifact_2_visible = {
+				has_country_flag = lhl_SUS_espionage_screen_map
+			}
+			lhl_SUS_espionage_artifact_3_visible = {
+				has_country_flag = lhl_SUS_espionage_screen_map
+			}
+			lhl_SUS_espionage_artifact_4_visible = {
+				has_country_flag = lhl_SUS_espionage_screen_map
+			}
+			lhl_SUS_espionage_artifact_5_visible = {
+				has_country_flag = lhl_SUS_espionage_screen_map
+			}
+			lhl_SUS_espionage_artifact_6_visible = {
+				has_country_flag = lhl_SUS_espionage_screen_map
+			}
+			lhl_SUS_espionage_artifact_7_visible = {
+				has_country_flag = lhl_SUS_espionage_screen_map
+			}
+			lhl_SUS_espionage_artifact_8_visible = {
+				has_country_flag = lhl_SUS_espionage_screen_map
+			}
+			lhl_SUS_espionage_artifact_9_visible = {
+				has_country_flag = lhl_SUS_espionage_screen_map
+			}
+			lhl_SUS_espionage_artifact_10_visible = {
+				has_country_flag = lhl_SUS_espionage_screen_map
+			}
+			lhl_SUS_espionage_artifact_chemical_weapon_visible = {
+				has_country_flag = lhl_SUS_espionage_screen_map
+				has_country_flag = SUS_mission_1_superweapon
 			}
 		}
 	}

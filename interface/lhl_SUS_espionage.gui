@@ -22,6 +22,7 @@ guiTypes = {
 		show_animation_type = decelerated
 		animation_time = 700
 		show_sound = SUS_monitor_sound_1
+		moveable = yes
 		
 		background = {
 			name = "lhl_SUS_espionage_screen_l"
@@ -89,6 +90,89 @@ guiTypes = {
 			position = { x = 23 y = 58 }
 			spriteType = "GFX_lhl_SUS_espionage_screen_logo"
 			frame = 1
+		}
+		##Artifacts##
+		iconType = {
+			name = "lhl_SUS_espionage_screen_artifact"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_lhl_SUS_espionage_screen_artifacts"
+			alwaystransparent = yes
+		}
+		buttonType = { 
+			name = "lhl_SUS_circle_close_button"
+			position = { x = 1046 y = 15 }
+			spriteType = "GFX_lhl_SUS_espionage_screen_close_button"
+		}
+		buttonType = { 
+			name = "lhl_SUS_circle_artifact_button"
+			position = { x = 975 y = 7 }
+			spriteType = "GFX_lhl_SUS_espionage_screen_artifact_button"
+		}
+		iconType = {
+			name = "lhl_SUS_espionage_artifact_1"
+			position = { x = 65 y = 300 }
+			spriteType = "GFX_lhl_SUS_espionage_artifact_title"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "lhl_SUS_espionage_artifact_2"
+			position = { x = 265 y = 300 }
+			spriteType = "GFX_lhl_SUS_espionage_artifact_title"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "lhl_SUS_espionage_artifact_3"
+			position = { x = 465 y = 300 }
+			spriteType = "GFX_lhl_SUS_espionage_artifact_title"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "lhl_SUS_espionage_artifact_4"
+			position = { x = 665 y = 300 }
+			spriteType = "GFX_lhl_SUS_espionage_artifact_title"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "lhl_SUS_espionage_artifact_5"
+			position = { x = 865 y = 300 }
+			spriteType = "GFX_lhl_SUS_espionage_artifact_title"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "lhl_SUS_espionage_artifact_6"
+			position = { x = 65 y = 600 }
+			spriteType = "GFX_lhl_SUS_espionage_artifact_title"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "lhl_SUS_espionage_artifact_7"
+			position = { x = 265 y = 600 }
+			spriteType = "GFX_lhl_SUS_espionage_artifact_title"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "lhl_SUS_espionage_artifact_8"
+			position = { x = 465 y = 600 }
+			spriteType = "GFX_lhl_SUS_espionage_artifact_title"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "lhl_SUS_espionage_artifact_9"
+			position = { x = 665 y = 600 }
+			spriteType = "GFX_lhl_SUS_espionage_artifact_title"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "lhl_SUS_espionage_artifact_10"
+			position = { x = 865 y = 600 }
+			spriteType = "GFX_lhl_SUS_espionage_artifact_title"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "lhl_SUS_espionage_artifact_chemical_weapon"
+			position = { x = 72 y = 150 }
+			spriteType = "GFX_lhl_SUS_espionage_artifact_chemical_weapon"
+			pdx_tooltip = "SUS_ARTIFACT_CHEMICAL_WEAPON"
 		}
 	}
 }
