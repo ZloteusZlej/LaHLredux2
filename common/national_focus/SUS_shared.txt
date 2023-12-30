@@ -3880,7 +3880,7 @@ shared_focus = {
 		}
 		add_political_power = 150
 	}
-	relative_position_id = SUS_loot_the_looters
+	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
 	x = 0
 	y = 1
@@ -4278,10 +4278,6 @@ shared_focus = {
 	y = 6
 }
 
-#WITCHES POLITICS##
-
-
-
 ##WITCHES ARMY##
 
 shared_focus = {
@@ -4474,7 +4470,7 @@ shared_focus = {
 	}
 	relative_position_id = SUS_state_defence_comission
 	cost = 4.3
-	x = 2
+	x = 3
 	y = 1
 }
 
@@ -4868,13 +4864,12 @@ shared_focus = {
 	icon = GFX_goal_SUS_arduous_march
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_arduous_march"
-		add_to_variable = {
-			var = SUS_w_industry_repair_factor
-			value = 0.1
-		}
-		add_dynamic_modifier = { 
-				modifier = SUS_witches_political_spirit 
-			}
+	add_to_variable = {
+		var = SUS_w_industry_repair_factor
+		value = 0.1
+	}
+	add_dynamic_modifier = { 
+			modifier = SUS_witches_political_spirit 
 		}
 	}
 	available = {
@@ -5169,3 +5164,6 @@ shared_focus = {
 	x = 0
 	y = 1
 }
+
+##SPIES ECONOMY##
+
