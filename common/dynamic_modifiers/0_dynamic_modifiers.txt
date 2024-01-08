@@ -87,7 +87,7 @@ unplanned_offensive = {
 ##LAHL DYNAMIC MODIFIERS##
 ##WES##
 WES_rule_of_george_dynamic_modifier = { 
-	icon = GFX_idea_WES_rule_of_george_dynamic_modifier
+	icon = WES_rule_of_george_dynamic_modifier
 	compliance_gain = WES_rule_of_george_compliance_gain #
 	non_core_manpower = WES_rule_of_george_non_core_manpower #
 	political_advisor_cost_factor = WES_rule_of_george_political_advisor_cost_factor #
@@ -146,14 +146,14 @@ WES_exclusion_zone_state_dynamic_modifier = {
 }
 
 WES_competitive_spirit_modifier = { 
-	icon = GFX_idea_WES_competitive_spirit_modifier
+	icon = WES_competitive_spirit_modifier
 	production_speed_buildings_factor =  WES_competitive_spirit_building
 	production_factory_start_efficiency_factor = WES_competitive_spirit_production
 	political_power_gain = WES_competitive_spirit_political_power
 }
 
 WES_royal_army = { 
-	icon = GFX_idea_WES_royal_army
+	icon = WES_royal_army
 	army_org_factor = 0.02
 	land_reinforce_rate = 0.02
 	army_core_defence_factor = WES_royal_army_core_defence
@@ -197,7 +197,7 @@ WES_agrarian_economy = {
 ##SUS##
 
 SUS_king_economy_spirit = { 
-	icon = GFX_SUS_king_economy_spirit
+	icon = SUS_king_economy_spirit
 	production_speed_buildings_factor = SUS_production_speed_buildings_factor
 	industrial_capacity_factory = SUS_industrial_capacity_factory
 	production_factory_start_efficiency_factor = SUS_production_factory_start_efficiency_factor
@@ -224,21 +224,21 @@ SUS_king_political_spirit = {
 }
 
 SUS_king_absolutistic_rule_spirit = {
-	icon = SUS_king_absolutistic_rule_spirit
+	icon = SUS_king_absolutistic_rule
 	army_morale_factor = SUS_ruletype_army_morale_factor_factor
 	political_power_factor = SUS_ruletype_political_power_factor
 	recruitable_population_factor = SUS_ruletype_recruitable_population_factor
 }
 
 SUS_king_parlamental_rule_spirit = {
-	icon = SUS_king_parlamental_rule_spirit
+	icon =  SUS_parlamental_rule
 	political_advisor_cost_factor = SUS_ruletype_political_advisor_cost_factor
 	consumer_goods_factor = SUS_ruletype_consumer_goods_factor
 	production_speed_buildings_factor = SUS_ruletype_production_speed_buildings_factor
 }
 
 SUS_concessions_spirit = { 
-	icon = GFX_SUS_concessions_spirit
+	icon = SUS_mostly_equal_concessions
 	production_speed_buildings_factor = SUS_concessions_production_speed_buildings_factor
 	consumer_goods_factor = SUS_concessions_consumer_goods_factor
 	unit_upkeep_attrition_factor = SUS_concessions_unit_upkeep_attrition_factor 
