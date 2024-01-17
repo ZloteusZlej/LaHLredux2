@@ -44,8 +44,9 @@ replace_path="common/ideologies"
 replace_path="gfx/loadingscreens"
 replace_path="localisation"
 replace_path="common/bop"
+replace_path="common/military_industrial_organization"
 tags={
 	"Map"
 }
 name="LaHLredux"
-supported_version="1.11.*"
+supported_version="1.13.*"
