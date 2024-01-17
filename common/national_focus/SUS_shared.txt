@@ -4930,7 +4930,7 @@ shared_focus = {
 		air_experience = 10
 		add_to_variable = {
 			var = SUS_w_nuclear_production
-			value = 1
+			value = 0.5
 		}
 	}
 	prerequisite = {
@@ -5172,7 +5172,37 @@ shared_focus = {
 	icon = GFX_goal_SUS_rob_public_enemies
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_rob_public_enemies"
-		
+		add_political_power = 125
+		random_controlled_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+		}
+		random_controlled_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+		}
+		random_controlled_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+		}
+		add_dynamic_modifier = {
+			modifier = SUS_spies_economy_spirit
+		}
 	}
 	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
@@ -5185,7 +5215,33 @@ shared_focus = {
 	icon = GFX_goal_SUS_critical_materials
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_critical_materials"
-		
+		if = {
+			limit = {
+				has_idea = free_trade
+			}
+			swap_ideas = {
+				remove_idea = free_trade
+				add_idea = export_focus
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = export_focus
+			}
+			swap_ideas = {
+				remove_idea = export_focus
+				add_idea = limited_exports
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = limited_exports
+			}
+			swap_ideas = {
+				remove_idea = limited_exports
+				add_idea = closed_economy
+			}
+		}
 	}
 	prerequisite = {
 		focus = SUS_rob_public_enemies
@@ -5201,7 +5257,16 @@ shared_focus = {
 	icon = GFX_goal_SUS_foreign_finance_group
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_foreign_finance_group"
-		
+		give_market_access = GER
+		give_market_access = GRE
+		give_market_access = KOR
+		give_market_access = UAS
+		add_offsite_building = { type = industrial_complex level = 4 }
+		add_to_variable = {
+			var = SUS_s_political_power_factor
+			value = 0.05
+		}
+		custom_effect_tooltip = SUS_foreign_finance_group_tt
 	}
 	prerequisite = {
 		focus = SUS_rob_public_enemies
@@ -5217,7 +5282,15 @@ shared_focus = {
 	icon = GFX_goal_SUS_parallel_import
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_parallel_import"
-		
+		add_to_variable = {
+			var = SUS_s_consumer_goods_factor
+			value = -0.05
+		}
+		add_to_variable = {
+			var = SUS_s_political_power_factor
+			value = 0.05
+		}
+		custom_effect_tooltip = SUS_parallel_import_tt
 	}
 	prerequisite = {
 		focus = SUS_rob_public_enemies
@@ -5233,7 +5306,19 @@ shared_focus = {
 	icon = GFX_goal_SUS_in_place_of_strife
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_in_place_of_strife"
-		
+		add_to_variable = {
+			var = SUS_s_industrial_capacity_factory
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_s_production_factory_efficiency_gain_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_s_political_power_factor
+			value = -0.03
+		}
+		custom_effect_tooltip = SUS_in_place_of_strife_tt
 	}
 	prerequisite = {
 		focus = SUS_critical_materials
@@ -5258,7 +5343,19 @@ shared_focus = {
 	icon = GFX_goal_SUS_pink_scare
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_pink_scare"
-		
+		add_to_variable = {
+			var = SUS_s_production_factory_max_efficiency_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_s_production_factory_efficiency_gain_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_s_surrender_limit
+			value = -0.03
+		}
+		custom_effect_tooltip = SUS_pink_scare_tt
 	}
 	prerequisite = {
 		focus = SUS_critical_materials
@@ -5283,7 +5380,19 @@ shared_focus = {
 	icon = GFX_goal_SUS_plata_o_plomo
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_plata_o_plomo"
-		
+		add_to_variable = {
+			var = SUS_s_military_industrial_organization_funds_gain
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_s_military_industrial_organization_research_bonus
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_s_production_factory_efficiency_gain_factor
+			value = 0.05
+		}
+		custom_effect_tooltip = SUS_plata_o_plomo_tt
 	}
 	prerequisite = {
 		focus = SUS_pink_scare
@@ -5301,7 +5410,34 @@ shared_focus = {
 	icon = GFX_goal_SUS_the_dove
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_the_dove"
-		
+		##INSERT FUNDS FOR BAE SYSTEMS WHEN THEY WOULD BE DONE##
+		random_controlled_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+		}
+		random_controlled_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+		}
+		random_controlled_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+		}
 	}
 	prerequisite = {
 		focus = SUS_pink_scare
@@ -5320,7 +5456,38 @@ shared_focus = {
 	icon = GFX_goal_SUS_hidden_facilities
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_hidden_facilities"
-	
+		add_to_variable = {
+			var = SUS_s_industry_air_damage_factor
+			value = -0.15
+		}
+		random_controlled_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+		}
+		random_controlled_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+		}
+		random_controlled_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+		}
+		custom_effect_tooltip = SUS_hidden_facilities_tt
 	}
 	prerequisite = {
 		focus = SUS_the_dove
@@ -5339,7 +5506,12 @@ shared_focus = {
 	icon = GFX_goal_SUS_thousand_talents_plan
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_thousand_talents_plan"
-		
+		add_research_slot = 1
+		add_to_variable = {
+			var = SUS_s_research_speed_factor
+			value = 0.05
+		}
+		custom_effect_tooltip = SUS_thousand_talents_plan_tt
 	}
 	prerequisite = {
 		focus = SUS_the_dove
@@ -5358,7 +5530,16 @@ shared_focus = {
 	icon = GFX_goal_SUS_private_public_partnership
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_private_public_partnership"
-		
+		clamp_variable = {
+			var = SUS_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = SUS_coring_cost
+			value = -15
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_15_tt
 	}
 	prerequisite = {
 		focus = SUS_the_dove
@@ -5377,7 +5558,19 @@ shared_focus = {
 	icon = GFX_goal_SUS_corporate_surveillance
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_corporate_surveillance"
-		
+		add_to_variable = {
+			var = SUS_s_industrial_capacity_factory
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_s_production_speed_buildings_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_s_consumer_goods_factor
+			value = -0.02
+		}
+		custom_effect_tooltip = SUS_corporate_surveillance_tt
 	}
 	mutually_exclusive = {
 		focus = SUS_convict_lease 
@@ -5402,7 +5595,19 @@ shared_focus = {
 	icon = GFX_goal_SUS_convict_lease
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_convict_lease"
-	
+		add_to_variable = {
+			var = SUS_s_political_power_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_s_production_factory_efficiency_gain_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_s_production_factory_start_efficiency_factor
+			value = 0.05
+		}
+		custom_effect_tooltip = SUS_convict_lease_tt
 	}
 	mutually_exclusive = {
 		focus = SUS_corporate_surveillance
@@ -5427,7 +5632,42 @@ shared_focus = {
 	icon = GFX_goal_SUS_closed_towns
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_closed_towns"
-		
+		add_to_variable = {
+			var = SUS_s_research_speed_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_s_production_factory_start_efficiency_factor
+			value = 0.05
+		}
+		random_controlled_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+		}
+		random_controlled_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+		}
+		random_controlled_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+		}
+		custom_effect_tooltip = SUS_closed_towns_tt
 	}
 	prerequisite = {
 		focus = SUS_convict_lease
