@@ -95,7 +95,7 @@ SUS_workers_senate = {
 			}
 			clamp_variable = {
 				var = SUS_senate_trust
-				min = 0
+				min = -100
 				max = 100
 			}
 			custom_effect_tooltip = SUS_senate_gain_trust_tt
@@ -108,11 +108,13 @@ SUS_workers_senate = {
 		complete_effect = {
 			SUS = {
 				set_country_flag = SUS_senate_emergency
+				remove_dynamic_modifier = { modifier = SUS_senate_justice }
 			}
 		}
 		remove_effect = {
 			SUS = {
 				clr_country_flag = SUS_senate_emergency
+				add_dynamic_modifier = { modifier = SUS_senate_justice }
 			}
 			custom_effect_tooltip = SUS_senate_stop_debuff_tt
 		}
@@ -137,7 +139,7 @@ SUS_workers_senate = {
 			}
 			clamp_variable = {
 				var = SUS_senate_trust
-				min = 0
+				min = -100
 				max = 100
 			}
 			custom_effect_tooltip = SUS_senate_cheat_hearing_tt

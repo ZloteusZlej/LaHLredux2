@@ -150,6 +150,53 @@ ideas = {
 
 			
 		}
+		SUS_plea_purged_scientists_air = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				air_ace_generation_chance_factor = -0.25
+				air_mission_efficiency = -0.15
+				air_maximum_speed_factor = -0.1
+				experience_gain_air_factor = -0.2
+				air_mission_xp_gain_factor = -0.2
+				air_accidents_factor = 0.25
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_plea_purged_scientists_electronics"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_plea_purged_scientists_navy = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				critical_receive_chance = 0.3
+				naval_doctrine_cost_factor = 0.6
+				experience_gain_navy_factor = -0.3
+				positioning = -0.3
+				industrial_capacity_dockyard = -0.1
+				naval_equipment_upgrade_xp_cost = 0.2
+				refit_speed = -0.1
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_plea_purged_scientists_industry"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
 		SUS_pillars_75_failure = {
 
 			allowed_civil_war = {
@@ -1062,6 +1109,7 @@ ideas = {
 				consumer_goods_factor = -0.03
 			}	
 		}
+		
 	}
 	hidden_ideas = {
 		SUS_initial_push = {

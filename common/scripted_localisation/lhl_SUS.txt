@@ -417,3 +417,205 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = GetSUSSenateTrust
+	text = {
+		trigger = {
+			check_variable = { SUS_senate_trust > 0 }
+		}
+		localization_key = SUS_senate_trust_positive
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_senate_trust < 0 }
+		}
+		localization_key = SUS_senate_trust_negative
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_senate_trust = 0 }
+		}
+		localization_key = SUS_senate_trust_zero
+	}
+}
+
+defined_text = {
+	name = GetSUSSenatePoliticalPower
+	text = {
+		trigger = {
+			check_variable = { SUS_senate_political_power_factor > 0 }
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_senate_emergency
+				}
+			}
+		}
+		localization_key = SUS_senate_trust_political_power_positive
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_senate_political_power_factor < 0 }
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_senate_emergency
+				}
+			}
+		}
+		localization_key = SUS_senate_trust_political_power_negative
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_senate_political_power_factor = 0 }
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_senate_emergency
+				}
+			}
+		}
+		localization_key = SUS_senate_trust_political_power_zero
+	}
+	text = {
+		trigger = {
+			SUS = {
+				has_country_flag = SUS_senate_emergency
+			}
+		}
+		localization_key = SUS_senate_trust_political_power_suspended
+	}
+}
+
+defined_text = {
+	name = GetSUSSenateStabilityFactor
+	text = {
+		trigger = {
+			check_variable = { SUS_senate_stability_factor > 0 }
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_senate_emergency
+				}
+			}
+		}
+		localization_key = SUS_senate_trust_stability_factor_positive
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_senate_stability_factor < 0 }
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_senate_emergency
+				}
+			}
+		}
+		localization_key = SUS_senate_trust_stability_factor_negative
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_senate_stability_factor = 0 }
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_senate_emergency
+				}
+			}
+		}
+		localization_key = SUS_senate_trust_stability_factor_zero
+	}
+	text = {
+		trigger = {
+			SUS = {
+				has_country_flag = SUS_senate_emergency
+			}
+		}
+		localization_key = SUS_senate_trust_stability_factor_suspended
+	}
+}
+
+defined_text = {
+	name = GetSUSSenateWarSupport
+	text = {
+		trigger = {
+			check_variable = { SUS_senate_war_support_factor > 0 }
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_senate_emergency
+				}
+			}
+		}
+		localization_key = SUS_senate_trust_war_support_positive
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_senate_war_support_factor < 0 }
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_senate_emergency
+				}
+			}
+		}
+		localization_key = SUS_senate_trust_war_support_negative
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_senate_war_support_factor = 0 }
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_senate_emergency
+				}
+			}
+		}
+		localization_key = SUS_senate_trust_war_support_zero
+	}
+	text = {
+		trigger = {
+			SUS = {
+				has_country_flag = SUS_senate_emergency
+			}
+		}
+		localization_key = SUS_senate_trust_war_support_suspended
+	}
+}
+
+defined_text = {
+	name = GetSUSSenateResistanceActivity
+	text = {
+		trigger = {
+			check_variable = { SUS_senate_resistance_activity > 0 }
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_senate_emergency
+				}
+			}
+		}
+		localization_key = SUS_senate_trust_resistance_activity_positive
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_senate_resistance_activity < 0 }
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_senate_emergency
+				}
+			}
+		}
+		localization_key = SUS_senate_trust_resistance_activity_negative
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_senate_resistance_activity = 0 }
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_senate_emergency
+				}
+			}
+		}
+		localization_key = SUS_senate_trust_resistance_activity_zero
+	}
+	text = {
+		trigger = {
+			SUS = {
+				has_country_flag = SUS_senate_emergency
+			}
+		}
+		localization_key = SUS_senate_trust_resistance_activity_suspended
+	}
+}
+
