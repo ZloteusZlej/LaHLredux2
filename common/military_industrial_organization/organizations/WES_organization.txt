@@ -1,0 +1,310 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+ 
+WES_Tank_guilds_w_armor_emphasis_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_WES_Tank_guilds_w_armor_emphasis_organization
+		allowed = {	
+		tag = WES
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		WES = {
+			has_idea = WES_Tank_guilds_w_armor_emphasis 
+		}
+	}
+	visible = {
+		WES = {
+			has_idea = WES_Tank_guilds_w_armor_emphasis 
+		}
+	}
+}
+
+WES_Tank_guilds_w_speed_emphasis_organization = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_WES_Tank_guilds_w_speed_emphasis_organization
+		allowed = {	
+		tag = WES
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		WES = {
+			has_idea = WES_Tank_guilds_w_speed_emphasis 
+		}
+	}
+	visible = {
+		WES = {
+			has_idea = WES_Tank_guilds_w_speed_emphasis 
+		}
+	}
+}
+
+WES_Tank_guilds_w_experimental_emphasis_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_WES_Tank_guilds_w_experimental_emphasis_organization
+		allowed = {	
+		tag = WES
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		WES = {
+			has_idea = WES_Tank_guilds_w_experimental_emphasis 
+		}
+	}
+	visible = {
+		WES = {
+			has_idea = WES_Tank_guilds_w_experimental_emphasis 
+		}
+	}
+}
+
+WES_sc_group_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_WES_sc_group_organization
+		allowed = {	
+		tag = WES
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		ROOT = {
+			owns_state = 1007
+		}
+	}
+	visible = {
+		ROOT = {
+			owns_state = 1007
+		}
+	}
+}
+
+WES_ovik_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_WES_ovik_organization
+		allowed = {	
+		tag = WES
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		ROOT = {
+			owns_state = 1007
+		}
+	}
+	visible = {
+		ROOT = {
+			owns_state = 1007
+		}
+	}
+}
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+WES_bae_systems_weymouth_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_WES_bae_systems_weymouth_organization
+		allowed = {	
+		tag = WES
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		ROOT = {
+			owns_state = 1007
+		}
+	}
+	visible = {
+		ROOT = {
+			owns_state = 1007
+		}
+	}
+}
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+WES_bae_systems_yeovil_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_WES_bae_systems_yeovil_organization
+		allowed = {	
+		tag = WES
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		ROOT = {
+			owns_state = 1007
+		}
+	}
+	visible = {
+		ROOT = {
+			owns_state = 1007
+		}
+	}
+}
+
+WES_rolls_royce_bristol_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_WES_rolls_royce_bristol_organization
+		allowed = {	
+		tag = WES
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		ROOT = {
+			owns_state = 1006
+		}
+	}
+	visible = {
+		ROOT = {
+			owns_state = 1006
+		}
+	}
+}
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+WES_conventional_artillery_emphasis_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_WES_conventional_artillery_emphasis_organization
+	allowed = {	
+		tag = WES
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		WES = {
+			has_idea = WES_conventional_artillery_emphasis 
+		}
+	}
+	visible = {
+		WES = {
+			has_idea = WES_conventional_artillery_emphasis 
+		}
+	}
+}
+
+WES_sp_artillery_emphasis_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_WES_sp_artillery_emphasis_organization
+	allowed = {	
+		tag = WES
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		WES = {
+			has_idea = WES_sp_artillery_emphasis 
+		}
+	}
+	visible = {
+		WES = {
+			has_idea = WES_sp_artillery_emphasis 
+		}
+	}
+}
+
+WES_infantry_guild_1_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_WES_infantry_guild_1_organization
+	allowed = {	
+		tag = WES
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		WES = {
+			has_idea = WES_infantry_guild_1 
+		}
+	}
+	visible = {
+		WES = {
+			has_idea = WES_infantry_guild_1 
+		}
+	}
+}
+
+WES_infantry_guild_2_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_WES_infantry_guild_2_organization
+	allowed = {	
+		tag = WES
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		WES = {
+			has_idea = WES_infantry_guild_2 
+		}
+	}
+	visible = {
+		WES = {
+			has_idea = WES_infantry_guild_2 
+		}
+	}
+}
+
+WES_infantry_guild_3_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_WES_infantry_guild_3_organization
+	allowed = {	
+		tag = WES
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		WES = {
+			has_idea = WES_infantry_guild_3 
+		}
+	}
+	visible = {
+		WES = {
+			has_idea = WES_infantry_guild_3 
+		}
+	}
+}
+
+WES_ww_greener_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_WES_ww_greener_organization
+		allowed = {	
+		tag = WES
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		ROOT = {
+			owns_state = 1161
+		}
+	}
+	visible = {
+		ROOT = {
+			owns_state = 1161
+		}
+	}
+}
+

@@ -4415,7 +4415,9 @@ shared_focus = {
 			uses = 2
 			category = light_air
 		}
-		#Add air MIO upgrade here when we update to 1.13
+		mio:generic_general_aircraft_organization = {
+				add_mio_funds = 1000
+		}
 	}
 	mutually_exclusive = {
 		focus = SUS_air_awareness
@@ -4440,7 +4442,9 @@ shared_focus = {
 	icon = GFX_goal_SUS_mechanical_synergy
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_mechanical_synergy"
-		#Add MIO upgrade here when we update to 1.13
+		mio:SUS_royal_heavy_arms_industry_organization = {
+				add_mio_funds = 1000
+		}
 	}
 	prerequisite = {
 		focus = SUS_air_awareness
@@ -4637,7 +4641,9 @@ shared_focus = {
 			amount = 100
 			variant_name = "#"
 		}
-		#add navy MIO upgrade here
+		mio:SUS_bae_systems_portsmouth_organization = {
+				add_mio_funds = 1000
+		}
 	}
 	mutually_exclusive = {
 		focus = SUS_supply_the_valkyries
