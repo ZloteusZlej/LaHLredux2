@@ -640,20 +640,27 @@ country_event = { #Ukraine Outcome 6
 }
 
 ##Worker's Senate##
-country_event = { #Request 1
+country_event = { #Request 1 Build Military Factory
 	id = SUS_event.30
 	title = SUS_event.30.t
 	desc = SUS_event.30.d
     is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
     fire_only_once = yes
 	option = {
 		name = SUS_event.30.a
 		SUS = {
 			activate_mission = SUS_request_1_mission
+			set_country_flag = SUS_council_request_active
 		}
     }
 }
-
 country_event = { #Plea 17 Delete Factory
 	id = SUS_event.31
 	title = SUS_event.31.t
@@ -2196,6 +2203,442 @@ country_event = { #Plea 20: Korea Criticism
 		SUS = {
 			clr_country_flag = SUS_cheat_hearing
 			add_political_power = 75
+		}
+    }
+}
+
+country_event = { #Request 2 Build Civilian Factory
+	id = SUS_event.52
+	title = SUS_event.52.t
+	desc = SUS_event.52.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.52.a
+		SUS = {
+			activate_mission = SUS_request_2_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 3 Upgrade Railways
+	id = SUS_event.53
+	title = SUS_event.53.t
+	desc = SUS_event.53.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.53.a
+		SUS = {
+			activate_mission = SUS_request_3_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 4 Build Bunkers
+	id = SUS_event.54
+	title = SUS_event.54.t
+	desc = SUS_event.54.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.54.a
+		SUS = {
+			activate_mission = SUS_request_4_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 5 More Divisions
+	id = SUS_event.55
+	title = SUS_event.55.t
+	desc = SUS_event.55.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.55.a
+		SUS = {
+			activate_mission = SUS_request_5_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 6 Fuel Silos
+	id = SUS_event.56
+	title = SUS_event.56.t
+	desc = SUS_event.56.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.56.a
+		SUS = {
+			activate_mission = SUS_request_6_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 7 Infrastructure
+	id = SUS_event.57
+	title = SUS_event.57.t
+	desc = SUS_event.57.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.57.a
+		SUS = {
+			activate_mission = SUS_request_7_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 8 Airports
+	id = SUS_event.58
+	title = SUS_event.58.t
+	desc = SUS_event.58.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.58.a
+		SUS = {
+			activate_mission = SUS_request_8_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 9 Convoys
+	id = SUS_event.59
+	title = SUS_event.59.t
+	desc = SUS_event.59.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.59.a
+		SUS = {
+			activate_mission = SUS_request_9_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 10 Trucks
+	id = SUS_event.60
+	title = SUS_event.60.t
+	desc = SUS_event.60.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.60.a
+		SUS = {
+			activate_mission = SUS_request_10_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 11 More Guns
+	id = SUS_event.61
+	title = SUS_event.61.t
+	desc = SUS_event.61.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.61.a
+		SUS = {
+			activate_mission = SUS_request_11_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 12 Synthetic Refinery
+	id = SUS_event.62
+	title = SUS_event.62.t
+	desc = SUS_event.62.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.62.a
+		SUS = {
+			activate_mission = SUS_request_12_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 13 Air Coverage
+	id = SUS_event.63
+	title = SUS_event.63.t
+	desc = SUS_event.63.d
+    is_triggered_only = yes
+	trigger = {
+		SUS = {
+			has_war = yes
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.63.a
+		SUS = {
+			activate_mission = SUS_request_13_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 14 Build Anti-Air
+	id = SUS_event.64
+	title = SUS_event.64.t
+	desc = SUS_event.64.d
+    is_triggered_only = yes
+	trigger = {
+		SUS = {
+			has_war = yes
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.64.a
+		SUS = {
+			activate_mission = SUS_request_14_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 15 Civilian economy
+	id = SUS_event.65
+	title = SUS_event.65.t
+	desc = SUS_event.65.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.65.a
+		SUS = {
+			activate_mission = SUS_request_15_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 16 Volunteer Only
+	id = SUS_event.66
+	title = SUS_event.66.t
+	desc = SUS_event.66.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.66.a
+		SUS = {
+			activate_mission = SUS_request_16_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 17 Volunteer Only
+	id = SUS_event.67
+	title = SUS_event.67.t
+	desc = SUS_event.67.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.67.a
+		SUS = {
+			activate_mission = SUS_request_17_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 18 Minister Reshuffle
+	id = SUS_event.68
+	title = SUS_event.68.t
+	desc = SUS_event.68.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.68.a
+		SUS = {
+			activate_mission = SUS_request_18_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 19 Dockyards
+	id = SUS_event.69
+	title = SUS_event.69.t
+	desc = SUS_event.69.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.69.a
+		SUS = {
+			activate_mission = SUS_request_19_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 20 Destroy The Celts!
+	id = SUS_event.70
+	title = SUS_event.70.t
+	desc = SUS_event.70.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.70.a
+		SUS = {
+			activate_mission = SUS_request_20_mission
+			set_country_flag = SUS_council_request_active
+		}
+    }
+}
+
+country_event = { #Request 20 Wha?
+	id = SUS_event.71
+	title = SUS_event.71.t
+	desc = SUS_event.71.d
+    is_triggered_only = yes
+	trigger = {
+		NOT = {
+			SUS = {
+				has_war = yes
+			}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = SUS_event.71.a
+		SUS = {
+			activate_mission = SUS_request_21_mission
+			set_country_flag = SUS_council_request_active
 		}
     }
 }
