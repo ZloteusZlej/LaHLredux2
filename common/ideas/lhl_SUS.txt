@@ -196,6 +196,98 @@ ideas = {
 			#picture = 
 
 			
+		}	
+		SUS_plea_mass_inspections = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.065
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_plea_mass_inspections"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_plea_plot_question_mark = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.1
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_plot_question_mark"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+		}
+		SUS_plea_censorship = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_factor = 0.15
+				stability_weekly_factor = 0.025
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_plot_question_mark"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+		}
+		SUS_plea_poacher_hunt = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				navy_intel_factor = 0.25
+				experience_gain_navy_factor = 0.15
+				navy_org_factor = 0.15
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_plot_question_mark"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+		}
+		SUS_plea_psyop = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				decryption_factor = 0.15
+				civilian_intel_factor = 0.15
+				intel_network_gain = 0.3
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_plot_question_mark"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
 		}
 		SUS_pillars_75_failure = {
 

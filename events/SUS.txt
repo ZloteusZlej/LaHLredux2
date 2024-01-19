@@ -654,7 +654,7 @@ country_event = { #Request 1
     }
 }
 
-country_event = { #Plea 1
+country_event = { #Plea 17 Delete Factory
 	id = SUS_event.31
 	title = SUS_event.31.t
 	desc = SUS_event.31.d
@@ -685,7 +685,7 @@ country_event = { #Plea 1
 		}
 		clamp_variable = {
 			var = SUS_senate_trust
-			min = 0
+			min = -100
 			max = 100
 		}
 		SUS = {
@@ -702,7 +702,7 @@ country_event = { #Plea 1
 		}
 		clamp_variable = {
 			var = SUS_senate_trust
-			min = 0
+			min = -100
 			max = 100
 		}
 		SUS = {
@@ -1561,8 +1561,642 @@ country_event = { #Plea 10: Purge Scientists
 		}
 		SUS = {
 			clr_country_flag = SUS_cheat_hearing
+			add_political_power = 150
 		}
 		custom_effect_tooltip = SUS_senate_gain_trust_tt
+    }
+	option = {
+		name = SUS_event.42.c
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_plea_purged_scientists_navy
+					days = 180
+				}
+				add_timed_idea = {
+					idea = SUS_plea_purged_scientists_air
+					days = 180
+				}
+			}
+		}
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = 10
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+			add_political_power = 150
+		}
+		custom_effect_tooltip = SUS_senate_gain_trust_big_tt
+    }
+}
+
+country_event = { #Plea 11: Man-made Disaster
+	id = SUS_event.43
+	title = SUS_event.43.t
+	desc = SUS_event.43.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.43.a
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = 5
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+		}	
+		custom_effect_tooltip = SUS_senate_gain_trust_tt
+    }
+	option = {
+		name = SUS_event.43.b
+		custom_effect_tooltip = SUS_senate_gain_trust_big_tt
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_plea_mass_inspections
+					days = 180
+				}
+			}
+		}
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = 10
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+		}
+    }
+}
+
+country_event = { #Plea 12: Doctor's Plot
+	id = SUS_event.44
+	title = SUS_event.44.t
+	desc = SUS_event.44.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.44.a
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			add_to_variable = {
+				var = SUS_senate_trust
+				value = -15
+			}
+			custom_effect_tooltip = SUS_senate_minus_15_tt
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+			add_political_power = 100
+			add_stability = 0.1
+		}	
+    }
+	option = {
+		name = SUS_event.44.b
+		custom_effect_tooltip = SUS_senate_gain_trust_huge_tt
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_plea_plot_question_mark
+					days = 300
+				}
+			}
+		}
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = 15
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+		}
+    }
+}
+
+country_event = { #Plea 13: Family Feud
+	id = SUS_event.45
+	title = SUS_event.45.t
+	desc = SUS_event.45.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.45.a
+		custom_effect_tooltip = SUS_senate_gain_trust_tt
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			add_stability = -0.1
+		}
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = 5
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+		}	
+    }
+	option = {
+		name = SUS_event.45.b
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			add_to_variable = {
+				var = SUS_senate_trust
+				value = -5
+			}
+			custom_effect_tooltip = SUS_senate_minus_5_tt
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+			add_stability = 0.1
+		}
+    }
+}
+
+country_event = { #Plea 14: Self-Publishers
+	id = SUS_event.46
+	title = SUS_event.46.t
+	desc = SUS_event.46.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.46.a
+		custom_effect_tooltip = SUS_senate_gain_trust_tt
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			add_stability = -0.1
+		}
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = 5
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+		}	
+    }
+	option = {
+		name = SUS_event.46.b
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			add_to_variable = {
+				var = SUS_senate_trust
+				value = -10
+			}
+			custom_effect_tooltip = SUS_senate_minus_10_tt
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+			add_timed_idea = {
+				idea = SUS_plea_censorship
+				days = 180
+			}
+		}
+    }
+}
+
+country_event = { #Plea 15: Religious Rabble
+	id = SUS_event.47
+	title = SUS_event.47.t
+	desc = SUS_event.47.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.47.a
+		custom_effect_tooltip = SUS_senate_gain_trust_tt
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = 5
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+		}	
+    }
+	option = {
+		name = SUS_event.47.b
+		custom_effect_tooltip = SUS_senate_gain_trust_big_tt
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			SUS = {
+				random_owned_controlled_state = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+				}
+				random_owned_controlled_state = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+				}
+				random_owned_controlled_state = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+				}
+			}
+		}
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = 10
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+		}
+    }
+}
+
+country_event = { #Plea 16: Oil Factory
+	id = SUS_event.48
+	title = SUS_event.48.t
+	desc = SUS_event.48.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	trigger = {
+		SUS = {
+			any_state = {
+				synthetic_refinery > 1
+			}
+		}
+	}
+	option = {
+		name = SUS_event.48.a
+		custom_effect_tooltip = SUS_senate_gain_trust_big_tt
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			SUS = {
+				random_owned_controlled_state = {
+					remove_building = {
+						type = synthetic_refinery
+						level = 1
+					}
+				}
+			}
+		}
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = 10
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+		}
+    }
+	option = {
+		name = SUS_event.48.b
+		custom_effect_tooltip = SUS_senate_gain_trust_huge_tt
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			SUS = {
+				random_owned_controlled_state = {
+					remove_building = {
+						type = synthetic_refinery
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+		}
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = 15
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+		}
+    }
+	option = {
+		name = SUS_event.48.c
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			add_to_variable = {
+				var = SUS_senate_trust
+				value = -10
+			}
+			custom_effect_tooltip = SUS_senate_minus_10_tt
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+		}
+    }
+}
+
+country_event = { #Plea 18: Poacher Hunt
+	id = SUS_event.49
+	title = SUS_event.49.t
+	desc = SUS_event.49.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.49.a
+		custom_effect_tooltip = SUS_senate_gain_trust_big_tt
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = 10
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+		}	
+    }
+	option = {
+		name = SUS_event.49.b
+		custom_effect_tooltip = SUS_senate_gain_trust_big_tt
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			SUS = {
+				add_political_power = -100
+			}
+		}
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = 10
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+			add_timed_idea = {
+				idea = SUS_plea_poacher_hunt
+				days = 180
+			}
+		}
+    }
+}
+
+country_event = { #Plea 19: Internet Board
+	id = SUS_event.50
+	title = SUS_event.50.t
+	desc = SUS_event.50.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.50.a
+		custom_effect_tooltip = SUS_senate_gain_trust_big_tt
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = 10
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+		}
+    }
+	option = {
+		name = SUS_event.50.b
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			add_to_variable = {
+				var = SUS_senate_trust
+				value = -10
+			}
+			custom_effect_tooltip = SUS_senate_minus_10_tt
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+			add_ideas = SUS_plea_psyop
+		}
+    }
+}
+
+country_event = { #Plea 20: Korea Criticism
+	id = SUS_event.51
+	title = SUS_event.51.t
+	desc = SUS_event.51.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.51.a
+		custom_effect_tooltip = SUS_senate_gain_trust_big_tt
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			SUS_decrease_KOR_support_low = yes
+		}
+		add_to_variable = {
+			var = SUS_senate_trust
+			value = 10
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+		}
+    }
+	option = {
+		name = SUS_event.51.b
+		if = {
+			limit = {
+				SUS = {
+					NOT = {
+						has_country_flag = SUS_cheat_hearing
+					}
+				}
+			}
+			add_to_variable = {
+				var = SUS_senate_trust
+				value = -10
+			}
+			custom_effect_tooltip = SUS_senate_minus_10_tt
+		}
+		clamp_variable = {
+			var = SUS_senate_trust
+			min = -100
+			max = 100
+		}
+		SUS = {
+			clr_country_flag = SUS_cheat_hearing
+			add_political_power = 75
+		}
     }
 }
 
