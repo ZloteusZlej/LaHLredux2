@@ -31,7 +31,7 @@ WES_Tank_guilds_w_speed_emphasis_organization = {
 	include = generic_mobile_tank_organization
 	icon = GFX_idea_WES_Tank_guilds_w_speed_emphasis_organization
 		allowed = {	
-		tag = WES
+		always = yes
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
@@ -67,18 +67,18 @@ WES_Tank_guilds_w_experimental_emphasis_organization = {
 
 WES_sc_group_organization = {
 	include = generic_infantry_tank_organization
-	icon = GFX_idea_WES_sc_group_organization
+	icon = GFX_idea_sc_group_organization
 		allowed = {	
-		tag = WES
+		always = yes
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		ROOT = {
+		FROM = {
 			owns_state = 1007
 		}
 	}
 	visible = {
-		ROOT = {
+		FROM = {
 			owns_state = 1007
 		}
 	}
@@ -86,18 +86,18 @@ WES_sc_group_organization = {
 
 WES_ovik_organization = {
 	include = generic_infantry_tank_organization
-	icon = GFX_idea_WES_ovik_organization
+	icon = GFX_idea_ovik_organization
 		allowed = {	
-		tag = WES
+		always = yes
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		ROOT = {
+		FROM = {
 			owns_state = 1007
 		}
 	}
 	visible = {
-		ROOT = {
+		FROM = {
 			owns_state = 1007
 		}
 	}
@@ -116,18 +116,18 @@ WES_ovik_organization = {
 
 WES_bae_systems_weymouth_organization = {
 	include = generic_raider_ship_organization
-	icon = GFX_idea_WES_bae_systems_weymouth_organization
+	icon = GFX_idea_bae_systems_weymouth_organization
 		allowed = {	
-		tag = WES
+		always = yes
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		ROOT = {
+		FROM = {
 			owns_state = 1007
 		}
 	}
 	visible = {
-		ROOT = {
+		FROM = {
 			owns_state = 1007
 		}
 	}
@@ -146,18 +146,18 @@ WES_bae_systems_weymouth_organization = {
 
 WES_bae_systems_yeovil_organization = {
 	include = generic_general_aircraft_organization
-	icon = GFX_idea_WES_bae_systems_yeovil_organization
+	icon = GFX_idea_bae_systems_yeovil_organization
 		allowed = {	
-		tag = WES
+		always = yes
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		ROOT = {
+		FROM = {
 			owns_state = 1007
 		}
 	}
 	visible = {
-		ROOT = {
+		FROM = {
 			owns_state = 1007
 		}
 	}
@@ -165,18 +165,18 @@ WES_bae_systems_yeovil_organization = {
 
 WES_rolls_royce_bristol_organization = {
 	include = generic_general_aircraft_organization
-	icon = GFX_idea_WES_rolls_royce_bristol_organization
+	icon = GFX_idea_rolls_royce_bristol_organization
 		allowed = {	
-		tag = WES
+		always = yes
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		ROOT = {
+		FROM = {
 			owns_state = 1006
 		}
 	}
 	visible = {
-		ROOT = {
+		FROM = {
 			owns_state = 1006
 		}
 	}
@@ -291,18 +291,18 @@ WES_infantry_guild_3_organization = {
 
 WES_ww_greener_organization = {
 	include = generic_infantry_equipment_organization
-	icon = GFX_idea_WES_ww_greener_organization
+	icon = GFX_idea_ww_greener_organization
 		allowed = {	
-		tag = WES
+		always = yes
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		ROOT = {
+		FROM = {
 			owns_state = 1161
 		}
 	}
 	visible = {
-		ROOT = {
+		FROM = {
 			owns_state = 1161
 		}
 	}

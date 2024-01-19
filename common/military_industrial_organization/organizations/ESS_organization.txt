@@ -52,16 +52,16 @@ ESS_james_purdey_and_sons_organization = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_ESS_james_purdey_and_sons_organization
 	allowed = {	
-		tag = ESS
+		always = yes
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		ROOT = {
+		FROM = {
 			owns_state = 1160
 		}
 	}
 	visible = {
-		ROOT = {
+		FROM = {
 			owns_state = 1160
 		}
 	}

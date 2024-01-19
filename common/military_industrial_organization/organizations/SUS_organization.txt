@@ -10,7 +10,7 @@
  
 SUS_royal_heavy_arms_industry_organization = {
 	include = generic_tank_refurbishment_plant_organization
-	icon = GFX_idea_SUS_royal_heavy_arms_industry_organization
+	icon = GFX_idea_royal_heavy_arms_industry_organization
 	allowed = {	
 		tag = SUS
 		has_dlc = "Arms Against Tyranny"
@@ -42,18 +42,18 @@ SUS_royal_heavy_arms_industry_organization = {
 
 SUS_bae_systems_portsmouth_organization = {
 	include = generic_raider_ship_organization
-	icon = GFX_idea_SUS_bae_systems_portsmouth_organization
+	icon = GFX_idea_bae_systems_portsmouth_organization
 	allowed = {	
-		tag = SUS
+		always = yes
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		ROOT = {
+		FROM = {
 			owns_state = 1001
 		}
 	}
 	visible = {
-		ROOT = {
+		FROM = {
 			owns_state = 1001
 		}
 	}
@@ -86,18 +86,18 @@ SUS_bae_systems_portsmouth_organization = {
 
 SUS_accuracy_international_organization = {
 	include = generic_infantry_equipment_organization
-	icon = GFX_idea_SUS_accuracy_international_organization
+	icon = GFX_idea_accuracy_international_organization
 	allowed = {	
-		tag = SUS
+		always = yes
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		ROOT = {
+		FROM = {
 			owns_state = 1001
 		}
 	}
 	visible = {
-		ROOT = {
+		FROM = {
 			owns_state = 1001
 		}
 	}
@@ -105,7 +105,7 @@ SUS_accuracy_international_organization = {
 
 SUS_royal_drone_manufacturer_organization = {
 	include = generic_support_equipment_organization
-	icon = GFX_idea_SUS_royal_drone_manufacturer
+	icon = GFX_idea_royal_drone_manufacturer
 	allowed = {	
 		tag = SUS
 		has_dlc = "Arms Against Tyranny"
