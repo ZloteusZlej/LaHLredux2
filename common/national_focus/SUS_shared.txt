@@ -5693,6 +5693,11 @@ shared_focus = {
 	icon = GFX_goal_SUS_punish_entrists
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_punish_entrists"
+		add_political_power = 50
+		swap_ideas = {
+			remove_idea = SUS_active_measures_1_of_3
+			add_idea = SUS_active_measures_2_of_3
+		}
 
 	}
 	relative_position_id = SUS_a_scapegoat
@@ -5706,6 +5711,19 @@ shared_focus = {
 	icon = GFX_goal_SUS_london_bridge_is_down
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_london_bridge_is_down"
+                add_ideas = SUS_king_harry
+		add_to_variable = {
+			var = SUS_s_pol_political_power_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_s_pol_command_power_gain
+			value = 0.2
+		}
+		add_to_variable = {
+			var = SUS_s_pol_experience_gain_army
+			value = 0.05
+		}
 		
 	}
 	prerequisite = {
@@ -5725,6 +5743,27 @@ shared_focus = {
 	icon = GFX_goal_SUS_long_live_the_queen
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_long_live_the_queen"
+		add_to_variable = {
+			var = SUS_s_pol_army_core_attack_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_s_pol_army_core_defence_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_s_pol_surrender_limit
+			value = 0.2
+		}
+		clamp_variable = {
+            var = SUS_coring_cost
+            min = 0
+            max = 250
+        }
+        add_to_variable = {
+            var = SUS_coring_cost
+            value = -15
+        }
 		
 	}
 	prerequisite = {
@@ -5744,6 +5783,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_big_tent
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_big_tent"
+		add_to_variable = {
+            var = SUS_s_pol_political_advisor_cost_factor
+            value = -0.2
+        }
 	
 	}
 	prerequisite = {
@@ -5778,6 +5821,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_spoiler_effect
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_spoiler_effect"
+		swap_ideas = {
+			remove_idea = SUS_active_measures_2_of_3
+			add_idea = SUS_active_measures_3_of_3
+		}
+		add_to_variable = {
+            var = SUS_s_pol_political_power_factor
+            value = 0.1
+        }
 	
 	}
 	prerequisite = {
@@ -5795,6 +5846,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_net_stalking
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_net_stalking"
+		add_to_variable = {
+            var = SUS_s_pol_research_speed_factor
+            value = 0.05
+        }
+		add_to_variable = {
+            var = SUS_s_pol_decryption_factor
+            value = 0.3
+        }
 	
 	}
 	prerequisite = {
@@ -5838,7 +5897,16 @@ shared_focus = {
 	id = SUS_government_code_and_cypher_school
 	icon = GFX_goal_SUS_government_code_and_cypher_school
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SUS_government_code_and_cypher_school"
+		log = "[GetDateText]: [Root.GetName]: Focus SUS_government_code_and_cypher_school"\
+		add_research_slot = 1
+		add_to_variable = {
+            var = SUS_s_pol_research_speed_factor
+            value = 0.05
+        }
+		add_to_variable = {
+            var = SUS_s_pol_encryption_factor
+            value = 0.3
+        }
 	
 	}
 	prerequisite = {
@@ -5858,6 +5926,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_punitive_psychiatry
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_punitive_psychiatry"
+		add_to_variable = {
+            var = SUS_s_pol_required_garrison_factor
+            value = -0.2
+        }
+		add_to_variable = {
+            var = SUS_s_pol_resistance_activity
+            value = -0.1
+        }
 	
 	}
 	prerequisite = {
@@ -5922,6 +5998,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_operation_sabbath
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_operation_sabbath"
+		remove_ideas = SUS_active_measures_3_of_3
 	
 	}
 	prerequisite = {
