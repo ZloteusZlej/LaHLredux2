@@ -619,3 +619,22 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = GetSUSHisMajestysBureauDecision
+	text = {
+		trigger = {
+			SUS = {
+				has_country_flag = SUS_his_majestys_bureau_founded
+			}
+		}
+		localization_key = SUS_bureau_decision_king
+	}
+	text = {
+		trigger = {
+			SUS = {
+					has_country_flag = SUS_british_extraordinary_commission_founded
+			}
+		}
+		localization_key = SUS_bureau_decision_labourist
+	}
+}
