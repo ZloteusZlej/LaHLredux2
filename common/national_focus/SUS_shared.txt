@@ -2141,6 +2141,9 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_citizen_henry_winsdor"
 		country_event = { id = SUS_event.700 }
+		add_dynamic_modifier ={
+			modifier = SUS_labourist_political_spirit
+		}
 	}
 	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
@@ -2157,6 +2160,15 @@ shared_focus = {
 			remove_idea = SUS_portsmouth_plot_1_of_3
 			add_idea = SUS_portsmouth_plot_2_of_3
 		}
+		add_to_variable = {
+			var = SUS_l_consumer_goods_factor
+			value = -0.05
+		}
+		add_to_variable = {
+			var = SUS_l_pol_political_power_factor
+			value = 0.05
+		}
+		custom_effect_tooltip = SUS_abolish_peerage_tt
 	}
 	prerequisite = {
 		focus = SUS_citizen_henry_winsdor
@@ -2179,6 +2191,15 @@ shared_focus = {
 				remove_idea = SUS_portsmouth_plot_1_of_3
 				add_idea = SUS_portsmouth_plot_2_of_3
 		}
+		add_to_variable = {
+			var = SUS_l_pol_experience_gain_army
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_l_pol_political_advisor_cost_factor
+			value = -0.15
+		}
+		custom_effect_tooltip = SUS_better_aristocracy_tt
 	}
 	prerequisite = {
 		focus = SUS_citizen_henry_winsdor
@@ -2197,7 +2218,21 @@ shared_focus = {
 	icon = GFX_goal_SUS_expand_tuc
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_expand_tuc"
-	
+		clamp_variable = {
+			var = SUS_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = SUS_coring_cost
+			value = -15
+		}
+	    add_to_variable = {
+			var = SUS_l_pol_monthly_population
+			value = 0.1
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_15_tt
+		custom_effect_tooltip = SUS_expand_tuc_tt
 	}
 	prerequisite = {
 		focus = SUS_abolish_peerage
@@ -2214,7 +2249,8 @@ shared_focus = {
 	icon = GFX_goal_SUS_british_extraordinary_commission
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_british_extraordinary_commission"
-	
+		set_country_flag = SUS_british_extraordinary_commission_founded
+		custom_effect_tooltip = SUS_bureau_created_tt
 	}
 	prerequisite = {
 		focus = SUS_abolish_peerage
@@ -2231,6 +2267,25 @@ shared_focus = {
 	icon = GFX_goal_SUS_tribune
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_tribune"
+		clamp_variable = {
+			var = SUS_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = SUS_coring_cost
+			value = -20
+		}
+		add_to_variable = {
+			var = SUS_l_pol_recruitable_population_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_l_pol_required_garrison_factor
+			value = -0.1
+		}	
+		custom_effect_tooltip = EAG_coring_cost_lowered_20_tt
+		custom_effect_tooltip = SUS_tribune_tt
 	
 	}
 	prerequisite = {
@@ -2248,6 +2303,23 @@ shared_focus = {
 	icon = GFX_goal_SUS_regional_committees
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_regional_committees"
+		add_to_variable = {
+			var = SUS_l_pol_local_resources_factor
+			value = 0.10
+		}
+		add_to_variable = {
+			var = SUS_l_pol_production_speed_buildings_factor
+			value = 0.10
+		}
+		add_to_variable = {
+			var = SUS_l_pol_recruitable_population_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_l_pol_local_building_slots_factor
+			value = 0.1
+		}
+		custom_effect_tooltip = SUS_regional_committees_tt
 	
 	}
 	prerequisite = {
