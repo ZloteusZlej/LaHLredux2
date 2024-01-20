@@ -90,12 +90,19 @@ SUS_his_majestys_bureau_decision = {
 	allowed = { original_tag = SUS }
 	visible = {
 		SUS = {
-			has_completed_focus = SUS_his_majestys_bureau
+			OR ={
+                has_country_flag = SUS_his_majestys_bureau_founded
+				has_country_flag = SUS_british_extraordinary_commission_founded
+			}
+			
 		}
 	}
 	available = {
 		SUS = {
-			has_completed_focus = SUS_his_majestys_bureau
+			OR ={
+                has_country_flag = SUS_his_majestys_bureau_founded
+			    has_country_flag = SUS_british_extraordinary_commission_founded
+			}
 		}
 	}
 	visible_when_empty = yes
