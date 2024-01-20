@@ -6303,4 +6303,270 @@ SUS_archegetes_elections = {
 			}
 		}
 	}
+
+SUS_directing_minds = {
+	SUS_army_recruitment_ads = {
+	    cost = 50
+		days_remove = 30
+		available = {
+			SUS = {
+				has_completed_focus = SUS_sky_always_shines_on_tv
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_sky_always_shines_on_tv
+			}
+		}
+		modifier = {
+            weekly_manpower = 500
+		}
+	}
+
+	SUS_reunification_propaganda = {
+		cost = 50
+		days_remove = 30
+		available = {
+			SUS = {
+				has_completed_focus = SUS_sky_always_shines_on_tv
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_sky_always_shines_on_tv
+			}
+		}
+		modifier = {
+			required_garrison_factor = -0.1
+		}
+	}
+
+	SUS_unpaid_overtimes_encouragement = {
+		cost = 50
+		days_remove = 30
+		available = {
+			SUS = {
+				has_completed_focus = SUS_sky_always_shines_on_tv
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_sky_always_shines_on_tv
+			}
+		}
+		modifier = {
+			industrial_capacity_factory = 0.1
+			industry_free_repair_factor	= 0.1
+			industry_repair_factor = 0.1
+		}
+	}
+
+	SUS_uncover_the_truth = {
+		cost = 50
+		days_remove = 30
+		available = {
+			SUS = {
+				has_completed_focus = SUS_sky_always_shines_on_tv
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_sky_always_shines_on_tv
+			}
+		}
+		modifier = {
+			stability_weekly = 0.002
+			political_power_gain = 0.5
+		}
+	}
+
+	SUS_strengthen_the_censorship = {
+		cost = 50
+		days_remove = 30
+		available = {
+			SUS = {
+				has_completed_focus = SUS_sky_always_shines_on_tv
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_sky_always_shines_on_tv
+			}
+		}
+		complete_effect = {
+			add_stability = 0.05
+		}
+	}
+	
+    SUS_expand_patriotic_education = {
+        cost = 50
+		days_remove = 30
+		available = {
+			SUS = {
+				has_completed_focus = SUS_sky_always_shines_on_tv
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_sky_always_shines_on_tv
+			}
+		}
+		complete_effect = {
+            add_war_support = 0.05
+		}
+	}
+
+    SUS_cycle_the_kings_speech = {
+		cost = 0
+		days_remove = 30
+		available = {
+			SUS = {
+				has_completed_focus = SUS_sky_always_shines_on_tv
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_sky_always_shines_on_tv
+			}
+		}
+		complete_effect = {
+			add_political_power = 25
+		}
+	}
+
+	SUS_amnesia_drugs_for_homeless = {
+		cost = 100
+		days_remove = 100
+		available = {
+			SUS = {
+				has_completed_focus = SUS_the_doors_of_perception
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_the_doors_of_perception
+			}
+		}
+		modifier = {
+            weekly_manpower = 2500
+		}
+	}
+
+	SUS_cocaine_for_bureaucrats = {
+		cost = 0
+		days_remove = 100
+		available = {
+			SUS = {
+				has_completed_focus = SUS_the_doors_of_perception
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_the_doors_of_perception
+			}
+		}
+		complete_effect = {
+            add_political_power = 100
+			add_command_power = 20
+		}
+	}
+
+	SUS_meth_for_workers = {
+		cost = 100
+		days_remove = 100
+		available = {
+			SUS = {
+				has_completed_focus = SUS_the_doors_of_perception
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_the_doors_of_perception
+			}
+		}
+		modifier = {
+           industrial_capacity_factory = 0.2
+		   production_speed_buildings_factor = 0.1
+		   production_factory_efficiency_gain_factor = 0.2
+		}
+	}
+
+	SUS_captagon_for_soliders = {
+		cost = 100
+		days_remove = 100
+		available = {
+			SUS = {
+				has_completed_focus = SUS_the_doors_of_perception
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_the_doors_of_perception
+			}
+		}
+		modifier = {
+           training_time_army_factor = -0.05
+		   experience_gain_army_factor = 0.05
+		}
+	}
+
+	SUS_cannabis_dispensaries_everywhere = {
+		cost = 100
+		days_remove = 100
+		available = {
+			SUS = {
+				has_completed_focus = SUS_the_doors_of_perception
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_the_doors_of_perception
+			}
+		}
+		modifier = {
+            monthly_population = 0.2
+		    stability_weekly = 0.05
+			political_power_gain = 0.05
+		}
+	}
+
+	SUS_research_more_drugs = {
+		cost = 100
+		days_remove = 100
+		available = {
+			SUS = {
+				has_completed_focus = SUS_the_doors_of_perception
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_the_doors_of_perception
+			}
+		}
+		modifier = {
+           research_speed_factor = 0.1
+		}
+	}
+
+	SUS_drugs_ads_on_tv = {
+		cost = 100
+		days_remove = 100
+		available = {
+			SUS = {
+				has_completed_focus = SUS_the_doors_of_perception
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_the_doors_of_perception
+			}
+		}
+		modifier = {
+           consumer_goods_factor = -0.15
+		}
+		complete_effect = {
+		   add_stability = 0.05
+		   add_war_support = 0.05
+		}
+	}
 }
