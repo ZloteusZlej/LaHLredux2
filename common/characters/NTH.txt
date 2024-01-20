@@ -11,7 +11,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=ultrahegelianism
+			ideology=ethical_millennialism
 			expire="1.1.1.1"
 			id=-1
 		}
@@ -24,9 +24,6 @@ characters={
 			}
 			allowed = {
 				original_tag = NTH
-			}
-			available = {
-				has_government = commendationism
 			}
 			ai_will_do  = {
 				factor  = 1.000
@@ -44,7 +41,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=nationalism
+			ideology=paternalism
 			expire="1.1.1.1"
 			id=-1
 		}
@@ -57,9 +54,6 @@ characters={
 			}
 			allowed = {
 				original_tag = NTH
-			}
-			available = {
-				has_government = hegemonism
 			}
 			ai_will_do  = {
 				factor  = 1.000
@@ -92,19 +86,39 @@ characters={
 			id=-1
 		}
 	}
-	NTH_ken_livingstone={
-		name="Ken Livingstone"
+	NTH_Lee_Anderson ={
+		name="Lee Anderson"
 		portraits={
 			civilian={
-				large="gfx/leaders/NTH/Portrait_NTH_Ken_Livingstone.dds"
+				large="gfx/leaders/NTH/Portrait_NTH_Lee_Anderson.dds"
+			}
+			civilian={
+				small="gfx/interface/ideas/NTH/idea_NTH_lee_anderson.dds"
 			}
 		}
 		country_leader={
-			ideology=nazbol_gang
+			ideology=ultrahegelianism
 			expire="1.1.1.1"
 			id=-1
 		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = NTH_Lee_Anderson
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
 	}
+	
+	
+	
 	NTH_parmjit_dhanda={
 		name="Parmjit Dhanda"
 		portraits={
@@ -182,6 +196,34 @@ characters={
 			expire="1.1.1.1"
 			id=-1
 		}
+	}
+	
+	NTH_andrew_murray={
+		name="Andrew Murray"
+		portraits={
+			civilian={
+				large="gfx/leaders/NTH/Portrait_NTH_Andrew_Murray.dds"
+			}
+		}
+		country_leader={
+			ideology=nazbol_gang
+			expire="1.1.1.1"
+			id=-1
+		}
+		advisor = {
+			cost = 120
+			slot = head_of_government
+			idea_token = NTH_andrew_murray
+			traits = {
+
+			}
+			allowed = {
+				original_tag = NTH
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
 	}
 	#GENERALS#
 	NTH_peter_wall={
@@ -362,6 +404,11 @@ characters={
 			army={
 				large="gfx/leaders/NTH/Portrait_NTH_Dan_Jarvis.dds"
 			}
+		}
+		country_leader={
+			ideology=labor_socialism
+			expire="1.1.1.1"
+			id=-1
 		}
 		corps_commander={
 			traits={ paratrooper disgruntled }
