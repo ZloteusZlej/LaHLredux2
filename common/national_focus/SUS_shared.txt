@@ -4327,7 +4327,7 @@ shared_focus = {
 			var = SUS_w_initiative_factor
 			value = 0.1
 		}
-		custom_effect_tooltip = replace_the_traitors_tt
+		custom_effect_tooltip = SUS_replace_the_traitors_tt
 	}
 	prerequisite = {
 		focus = SUS_reserve_training_units
@@ -4351,7 +4351,7 @@ shared_focus = {
 			var = SUS_w_attrition
 			value = -0.1
 		}
-		custom_effect_tooltip = second_front_doctrine_tt
+		custom_effect_tooltip = SUS_second_front_doctrine_tt
 	}
 	prerequisite = {
 		focus = SUS_reserve_training_units
@@ -4387,7 +4387,7 @@ shared_focus = {
 			var = SUS_w_static_anti_air_damage_factor
 			value = 0.1
 		}
-		custom_effect_tooltip = air_aearness_tt
+		custom_effect_tooltip = SUS_air_aearness_tt
 	}
 	mutually_exclusive = {
 		focus = SUS_operation_deny_flight
@@ -4471,7 +4471,7 @@ shared_focus = {
 			var = SUS_w_army_core_defence_factor
 			value = 0.1
 		}
-		custom_effect_tooltip = total_peoples_defence_tt
+		custom_effect_tooltip = SUS_total_peoples_defence_tt
 	}
 	prerequisite = {
 		focus = SUS_state_defence_comission
@@ -6510,7 +6510,7 @@ shared_focus = {
 shared_focus = {
 	id = SUS_the_british_thaw
 	icon = GFX_goal_SUS_the_british_thaw
-	completion_reward = {
+	completion_reward = { 
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_the_british_thaw"
 		
 	}
