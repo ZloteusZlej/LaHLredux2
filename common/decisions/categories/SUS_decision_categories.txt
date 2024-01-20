@@ -185,8 +185,27 @@ SUS_archegetes_elections = {
 	visible_when_empty = yes
 }
 
+
 SUS_war_preparations = {
 	icon = GFX
 	picture = GFX
 	allowed = { original_tag = SUS }
 }
+
+SUS_directing_minds = {
+	icon = GFX_
+
+	allowed = { original_tag = SUS }
+	visible = {
+		SUS = {
+			has_completed_focus = SUS_sky_always_shines_on_tv
+		}
+	}
+	available = {
+		SUS = {
+			has_completed_focus = SUS_sky_always_shines_on_tv
+		}
+	}
+	visible_when_empty = yes
+}
+
