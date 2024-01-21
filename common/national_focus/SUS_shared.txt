@@ -2368,6 +2368,16 @@ shared_focus = {
 	icon = GFX_goal_SUS_brotherhood_and_unity
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_brotherhood_and_unity"
+		add_to_variable = {
+			var = SUS_l_pol_research_speed_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_l_pol_weekly_manpower
+			value = 500
+		}
+		add_research_slot = 1
+		custom_effect_tooltip = SUS_brotherhood_and_unity_tt
 	
 	}
 	prerequisite = {
@@ -2387,6 +2397,15 @@ shared_focus = {
 	icon = GFX_goal_SUS_labour_competition
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_labour_competition"
+		add_to_variable = {
+			var = SUS_l_pol_production_factory_efficiency_gain_factor
+			value = 0.08
+		}
+		add_to_variable = {
+			var = SUS_l_pol_production_factory_max_efficiency_factor
+			value = 0.08
+		}
+		custom_effect_tooltip = SUS_labour_competition_tt
 	
 	}
 	prerequisite = {
@@ -2403,6 +2422,19 @@ shared_focus = {
 	icon = GFX_goal_SUS_share_the_land
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_share_the_land"
+		add_to_variable = {
+			var = SUS_purple_var
+			value = 20
+		}
+		add_to_variable = {
+			var = SUS_l_pol_local_building_slots_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_l_pol_unit_upkeep_attrition_factor
+			value = -0.2
+		}
+		custom_effect_tooltip = SUS_share_the_land_tt
 	
 	}
 	prerequisite = {
@@ -2435,6 +2467,19 @@ shared_focus = {
 	icon = GFX_goal_SUS_pride_in_progress
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_pride_in_progress"
+		add_to_variable = {
+			var = SUS_l_pol_surrender_limit
+			value = 0.2
+		}
+		add_to_variable = {
+			var = SUS_l_pol_army_core_defence_factor
+			value = 0.2
+		}
+		add_to_variable = {
+			var = SUS_l_pol_war_support_factor
+			value = 0.1
+		}
+		custom_effect_tooltip = SUS_pride_in_progress_tt
 	
 	}
 	prerequisite = {
@@ -2451,6 +2496,40 @@ shared_focus = {
 	icon = GFX_goal_SUS_first_british_constitution
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_first_british_constitution"
+		add_political_power = 100
+		add_to_variable = {
+			var = SUS_l_consumer_goods_factor
+			value = -0.05
+		}
+		add_to_variable = {
+			var = SUS_l_pol_political_advisor_cost_factor
+			value = -0.10
+		}
+		add_to_variable = {
+			var = SUS_l_pol_monthly_population
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_l_pol_local_resources_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_l_pol_weekly_manpower
+			value = 250
+		}
+		add_to_variable = {
+			var = SUS_l_pol_production_factory_efficiency_gain_factor
+			value = 0.07
+		}
+		add_to_variable = {
+			var = SUS_l_pol_production_speed_buildings_factor
+			value = 0.10
+		}
+		add_to_variable = {
+			var = SUS_l_pol_production_factory_max_efficiency_factor
+			value = 0.07
+		}
+		custom_effect_tooltip = SUS_first_british_constitution_tt
 	
 	}
 	prerequisite = {
