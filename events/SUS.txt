@@ -2940,10 +2940,14 @@ country_event = { #LABOUR KING EVENT
 	option = {
 		name = SUS_event.700.b
 		add_political_power = 100
-		add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
+		1001 ={
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+		}
     }
 	option = {
 		name = SUS_event.700.c
@@ -2982,6 +2986,57 @@ country_event = { #LABOUR DOCTRINE PICK
 			uses = 3
 			category = cat_superior_firepower
 		}
+    }
+}
+
+country_event = { #LABOUR Secularization Debates
+	id = SUS_event.702
+	title = SUS_event.702.t
+	desc = SUS_event.702.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.702.a
+		modifier = {
+			var = SUS_l_pol_surrender_limit
+			value = 0.2
+		}
+		add_to_variable = {
+			var = SUS_indigo_var
+			value = 15
+		}
+		clamp_variable = {
+				var = SUS_indigo_var
+				min = 0
+				max = 100
+			}
+		custom_effect_tooltip = SUS_strenth_christian_socialist_tt
+    }
+	option = {
+		name = SUS_event.702.b
+		modifier = {
+            var = SUS_l_pol_local_building_slots_factor
+			value = 0.1
+		}
+		add_political_power = 20
+        1001 ={
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+		}
+		add_to_variable = {
+			var = SUS_indigo_var
+			value = -15
+		}
+		clamp_variable = {
+				var = SUS_indigo_var
+				min = 0
+				max = 100
+			}
+		custom_effect_tooltip = SUS_weaken_christian_socialist_tt
     }
 }
 
