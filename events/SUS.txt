@@ -2394,6 +2394,9 @@ country_event = { #Request 9 Convoys
 			SUS = {
 				has_war = yes
 				has_country_flag = SUS_council_request_active
+				has_equipment = {
+					convoy > 300
+				}
 			}
 		}
 	}
@@ -2417,6 +2420,9 @@ country_event = { #Request 10 Trucks
 			SUS = {
 				has_war = yes
 				has_country_flag = SUS_council_request_active
+				has_equipment = {
+					motorized_equipment > 300
+				}
 			}
 		}
 	}
@@ -2440,6 +2446,10 @@ country_event = { #Request 11 More Guns
 			SUS = {
 				has_war = yes
 				has_country_flag = SUS_council_request_active
+				stockpile_ratio = {
+					archetype = infantry_equipment
+					ratio > 1.5
+				}
 			}
 		}
 	}
@@ -2484,6 +2494,10 @@ country_event = { #Request 13 Air Coverage
 	trigger = {
 		SUS = {
 			has_war = yes
+			num_planes_stationed_in_regions = {
+				value < 50
+				regions = { 3 4 5 }
+			}
 			has_country_flag = SUS_council_request_active
 		}
 	}
@@ -2506,6 +2520,12 @@ country_event = { #Request 14 Build Anti-Air
 		SUS = {
 			has_war = yes
 			has_country_flag = SUS_council_request_active
+			1001 = {
+				has_built = {
+					type = anti_air_building
+					value < 4
+				}
+			}
 		}
 	}
     fire_only_once = yes

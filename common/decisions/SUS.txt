@@ -342,7 +342,7 @@ SUS_workers_senate = {
 				random_owned_state = {
 					has_built = {
 						type = fuel_silo
-						value > 5
+						value > 4
 					}
 				}
 			}
@@ -376,13 +376,13 @@ SUS_workers_senate = {
 				998 = {
 					has_built = {
 						type = infrastructure
-						value > 5
+						value > 4
 					}
 				}
 				1018 = {
 					has_built = {
 						type = infrastructure
-						value > 5
+						value > 4
 					}
 				}
 			}
@@ -473,21 +473,104 @@ SUS_workers_senate = {
 		days_mission_timeout = 90
 		available = {
 			SUS = {
-				random_owned_state = {
-					has_built = {
-						type = air_base
-						value > 3
-					}
+				has_equipment = {
+					convoy > 300
 				}
-				random_owned_state = {
-					has_built = {
-						type = air_base
-						value > 3
-					}
+			}
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no               
+		}
+		is_good = no
+		timeout_effect = {
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_slowed_naval_transport
+					days = 180
 				}
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+		complete_effect = {
+			SUS = {
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+	}
+	SUS_request_10_mission = {
+		days_mission_timeout = 90
+		available = {
+			SUS = {
+				has_equipment = {
+					motorized_equipment > 300
+				}
+			}
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no               
+		}
+		is_good = no
+		timeout_effect = {
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_slowed_ground_transport
+					days = 180
+				}
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+		complete_effect = {
+			SUS = {
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+	}
+	SUS_request_11_mission = {
+		days_mission_timeout = 90
+		available = {
+			SUS = {
+				stockpile_ratio = {
+					archetype = infantry_equipment
+					ratio > 1.5
+				}
+			}
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no               
+		}
+		is_good = no
+		timeout_effect = {
+			SUS = {
+				random_country_division = { destroy_unit = yes }
+				random_country_division = { destroy_unit = yes }
+				random_country_division = { destroy_unit = yes }
+				random_country_division = { destroy_unit = yes }
+				random_country_division = { destroy_unit = yes }
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+		complete_effect = {
+			SUS = {
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+	}
+	SUS_request_12_mission = {
+		days_mission_timeout = 90
+		available = {
+			SUS = {
 				random_owned_state = {
 					has_built = {
-						type = air_base
+						type = synthetic_refinery
 						value > 3
 					}
 				}
@@ -503,8 +586,128 @@ SUS_workers_senate = {
 		timeout_effect = {
 			SUS = {
 				add_timed_idea = {
-					idea = SUS_slowed_air_travel
+					idea = SUS_lack_of_oil
 					days = 180
+				}
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+		complete_effect = {
+			SUS = {
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+	}
+	SUS_request_13_mission = {
+		days_mission_timeout = 90
+		available = {
+			SUS = {
+				num_planes_stationed_in_regions = {
+					value > 50
+					regions = { 3 4 5 }
+				}
+			}
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no               
+		}
+		is_good = no
+		timeout_effect = {
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_unrestricted_bombing
+					days = 180
+				}
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+		complete_effect = {
+			SUS = {
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+	}
+	SUS_request_14_mission = {
+		days_mission_timeout = 90
+		available = {
+			SUS = {
+				1001 = {
+					has_built = {
+						type = anti_air_building
+						value > 4
+					}
+				}
+			}
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no               
+		}
+		is_good = no
+		timeout_effect = {
+			SUS = {
+				1001 = {
+					damage_building = {
+						type = arms_factory
+						damage = 3
+					}
+					damage_building = {
+						type = infrastructure
+						damage = 3
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 3
+					}
+				}
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+		complete_effect = {
+			SUS = {
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+	}
+	SUS_request_15_mission = {
+		days_mission_timeout = 90
+		available = {
+			SUS = {
+				1001 = {
+					has_built = {
+						type = anti_air_building
+						value > 4
+					}
+				}
+			}
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no               
+		}
+		is_good = no
+		timeout_effect = {
+			SUS = {
+				1001 = {
+					damage_building = {
+						type = arms_factory
+						damage = 3
+					}
+					damage_building = {
+						type = infrastructure
+						damage = 3
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 3
+					}
 				}
 				clr_country_flag = SUS_council_request_active
 			}

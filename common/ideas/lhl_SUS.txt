@@ -246,6 +246,84 @@ ideas = {
 
 			
 		}
+		SUS_slowed_naval_transport = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				min_export = -0.5
+				trade_opinion_factor = -0.75
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_slowed_ground_transport = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.25 
+				supply_factor = -0.1
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_lack_of_oil = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				base_fuel_gain_factor = -0.25
+				fuel_gain_factor = -25
+				
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_unrestricted_bombing = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				industry_air_damage_factor = 1.0
+				weekly_manpower = -200
+				
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
 		SUS_plea_purged_scientists_air = {
 
 			allowed_civil_war = {
