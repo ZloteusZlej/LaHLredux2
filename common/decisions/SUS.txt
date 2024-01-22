@@ -146,13 +146,13 @@ SUS_workers_senate = {
 		}
 	}
 	SUS_request_1_mission = {
-		days_mission_timeout = 100
+		days_mission_timeout = 90
 		available = {
 			SUS = {
 				1156 = {
-					has_built = {
+					random_owned_state = {
 						type = arms_factory
-						value > 1
+						value > 2
 					}
 				}
 			}
@@ -170,6 +170,348 @@ SUS_workers_senate = {
 					idea = SUS_weapon_shortages
 					days = 180
 				}
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+		complete_effect = {
+			SUS = {
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+	}
+	SUS_request_2_mission = {
+		days_mission_timeout = 90
+		available = {
+			SUS = {
+				random_owned_state = {
+					has_built = {
+						type = industrial_complex
+						value > 2
+					}
+				}
+			}
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no               
+		}
+		is_good = no
+		timeout_effect = {
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_product_deficit
+					days = 180
+				}
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+		complete_effect = {
+			SUS = {
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+	}
+	SUS_request_3_mission = {
+		days_mission_timeout = 90
+		available = {
+			SUS = {
+				has_railway_level = {
+					state = 1001
+					level = 5
+				}
+				has_railway_level = {
+					state = 1002
+					level = 5
+				}
+				has_railway_level = {
+					state = 1006
+					level = 5
+				}
+			}
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no               
+		}
+		is_good = no
+		timeout_effect = {
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_transportation_issues
+					days = 180
+				}
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+		complete_effect = {
+			SUS = {
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+	}
+	SUS_request_4_mission = {
+		days_mission_timeout = 90
+		available = {
+			1153 = {
+				any_province_building_level = {
+					province = {
+						id = 10647
+						id = 17551
+						id = 10617
+						id = 17568
+						id = 17552
+						limit_to_border = yes
+					}
+					building = bunker
+					level > 4
+				}
+			}
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no               
+		}
+		is_good = no
+		timeout_effect = {
+			SUS = {
+				add_war_support = -0.1
+				add_stability = -0.1
+				add_political_power = -75
+				1153 = {
+					damage_building = {
+						type = infrastructure
+						damage = 3
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 3
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 3
+					}
+				}
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+		complete_effect = {
+			SUS = {
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+	}
+	SUS_request_5_mission = {
+		days_mission_timeout = 90
+		available = {
+			SUS = {
+				num_divisions > 50
+			}
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no               
+		}
+		is_good = no
+		timeout_effect = {
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_bandit_raids
+					days = 180
+				}
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+		complete_effect = {
+			SUS = {
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+	}
+	SUS_request_6_mission = {
+		days_mission_timeout = 90
+		available = {
+			SUS = {
+				random_owned_state = {
+					has_built = {
+						type = fuel_silo
+						value > 5
+					}
+				}
+			}
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no               
+		}
+		is_good = no
+		timeout_effect = {
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_fuel_shortages
+					days = 180
+				}
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+		complete_effect = {
+			SUS = {
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+	}
+	SUS_request_7_mission = {
+		days_mission_timeout = 90
+		available = {
+			SUS = {
+				998 = {
+					has_built = {
+						type = infrastructure
+						value > 5
+					}
+				}
+				1018 = {
+					has_built = {
+						type = infrastructure
+						value > 5
+					}
+				}
+			}
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no               
+		}
+		is_good = no
+		timeout_effect = {
+			SUS = {
+				998 = {
+					add_state_modifier = {
+						modifier = {
+							state_resources_factor = -0.3
+							local_factories = -0.25
+							state_production_speed_buildings_factor = -0.25
+						}
+					}
+				}
+				1018 = {
+					add_state_modifier = {
+						modifier = {
+							state_resources_factor = -0.3
+							local_factories = -0.25
+							state_production_speed_buildings_factor = -0.25
+						}
+					}
+				}
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+		complete_effect = {
+			SUS = {
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+	}
+	SUS_request_8_mission = {
+		days_mission_timeout = 90
+		available = {
+			SUS = {
+				random_owned_state = {
+					has_built = {
+						type = air_base
+						value > 3
+					}
+				}
+				random_owned_state = {
+					has_built = {
+						type = air_base
+						value > 3
+					}
+				}
+				random_owned_state = {
+					has_built = {
+						type = air_base
+						value > 3
+					}
+				}
+			}
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no               
+		}
+		is_good = no
+		timeout_effect = {
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_slowed_air_travel
+					days = 180
+				}
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+		complete_effect = {
+			SUS = {
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+	}
+	SUS_request_9_mission = {
+		days_mission_timeout = 90
+		available = {
+			SUS = {
+				random_owned_state = {
+					has_built = {
+						type = air_base
+						value > 3
+					}
+				}
+				random_owned_state = {
+					has_built = {
+						type = air_base
+						value > 3
+					}
+				}
+				random_owned_state = {
+					has_built = {
+						type = air_base
+						value > 3
+					}
+				}
+			}
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no               
+		}
+		is_good = no
+		timeout_effect = {
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_slowed_air_travel
+					days = 180
+				}
+				clr_country_flag = SUS_council_request_active
+			}
+		}
+		complete_effect = {
+			SUS = {
+				clr_country_flag = SUS_council_request_active
 			}
 		}
 	}

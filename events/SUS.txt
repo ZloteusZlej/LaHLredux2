@@ -649,6 +649,7 @@ country_event = { #Request 1 Build Military Factory
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2216,6 +2217,7 @@ country_event = { #Request 2 Build Civilian Factory
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2237,7 +2239,7 @@ country_event = { #Request 3 Upgrade Railways
 	trigger = {
 		NOT = {
 			SUS = {
-				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2260,7 +2262,10 @@ country_event = { #Request 4 Build Bunkers
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
+			country_exists = WES
+			country_exists = KNT
 		}
 	}
     fire_only_once = yes
@@ -2282,6 +2287,9 @@ country_event = { #Request 5 More Divisions
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
+				num_divisions < 50
+				num_divisions > 20
 			}
 		}
 	}
@@ -2304,6 +2312,7 @@ country_event = { #Request 6 Fuel Silos
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2326,6 +2335,19 @@ country_event = { #Request 7 Infrastructure
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
+				998 = {
+					has_built = {
+						type = infrastructure
+						value < 5
+					}
+				}
+				1018 = {
+					has_built = {
+						type = infrastructure
+						value < 5
+					}
+				}
 			}
 		}
 	}
@@ -2348,6 +2370,7 @@ country_event = { #Request 8 Airports
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2370,6 +2393,7 @@ country_event = { #Request 9 Convoys
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2392,6 +2416,7 @@ country_event = { #Request 10 Trucks
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2414,6 +2439,7 @@ country_event = { #Request 11 More Guns
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2436,6 +2462,7 @@ country_event = { #Request 12 Synthetic Refinery
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2457,6 +2484,7 @@ country_event = { #Request 13 Air Coverage
 	trigger = {
 		SUS = {
 			has_war = yes
+			has_country_flag = SUS_council_request_active
 		}
 	}
     fire_only_once = yes
@@ -2477,6 +2505,7 @@ country_event = { #Request 14 Build Anti-Air
 	trigger = {
 		SUS = {
 			has_war = yes
+			has_country_flag = SUS_council_request_active
 		}
 	}
     fire_only_once = yes
@@ -2498,6 +2527,7 @@ country_event = { #Request 15 Civilian economy
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2520,6 +2550,7 @@ country_event = { #Request 16 Volunteer Only
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2533,7 +2564,7 @@ country_event = { #Request 16 Volunteer Only
     }
 }
 
-country_event = { #Request 17 Volunteer Only
+country_event = { #Request 17 Research Tech
 	id = SUS_event.67
 	title = SUS_event.67.t
 	desc = SUS_event.67.d
@@ -2542,6 +2573,7 @@ country_event = { #Request 17 Volunteer Only
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2564,6 +2596,7 @@ country_event = { #Request 18 Minister Reshuffle
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2586,6 +2619,7 @@ country_event = { #Request 19 Dockyards
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2608,6 +2642,7 @@ country_event = { #Request 20 Destroy The Celts!
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2630,6 +2665,7 @@ country_event = { #Request 20 Wha?
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2720,6 +2756,8 @@ country_event = { #Victory Celebrations
 		name = SUS_event.499.c
 		set_country_flag = sus_king_ill_flag
 		set_country_flag = SUS_sided_with_guards
+		clr_country_flag = SUS_his_majestys_bureau_founded
+		custom_effect_tooltip = SUS_bureau_closed_tt
 		activate_mission = SUS_power_struggle
 		activate_mission = SUS_spies_acquire_guns
 		activate_mission = SUS_party_acquire_guns
@@ -2799,6 +2837,7 @@ country_event = { #The King Awakens
 	is_triggered_only = yes
 	fire_only_once = yes
 	#Dearlove#
+	#Dearlove#
 	option = {
 		name = SUS_event.502.a
 		trigger = {
@@ -2815,6 +2854,7 @@ country_event = { #The King Awakens
 			socialism = 15
 			left_authoritarianism = 25
 		}
+		add_ideas = SUS_spies_intrigues_1_of_3
 		load_focus_tree = SUS_spies_focuses
 		clr_country_flag = sus_king_ill_flag
 		set_global_flag = SUS_power_struggle_ended
@@ -3087,6 +3127,15 @@ country_event = { #WITCHES QUEEN EVENT
     }
 }
 
+country_event = { #WITCHES WORKER COUNT EVENT
+	title = SUS_event.201.t
+	desc = SUS_event.201.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.201.a
+    }
+}
 country_event = { #WITCHES ARCHEGETES ELECTIONS EVENT
 	id = SUS_event.250
 	title = SUS_event.250.t
