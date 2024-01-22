@@ -3721,9 +3721,6 @@ shared_focus = {
 			remove_idea = SUS_grand_opera_of_struggle_1_of_3
 			add_idea = SUS_grand_opera_of_struggle_2_of_3
 		}
-		add_dynamic_modifier = { 
-			modifier = SUS_labourist_reconstruction_spirit 
-		}
 		add_political_power = 175
 		SUS = {
 			random_unit_leader  = {
@@ -3739,6 +3736,9 @@ shared_focus = {
 				remove_unit_leader = yes
 			}
 		}
+		add_dynamic_modifier = {
+            modifier = SUS_witches_political_spirit
+		}
 	}
 	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
@@ -3751,6 +3751,21 @@ shared_focus = {
 	icon = GFX_goal_SUS_spare_the_king
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_spare_the_king"
+		add_field_marshal_role = {
+            character = SUS_henry_ix
+            skill = 1
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 1
+            traits = {
+              politically_connected
+            }
+        }
+		add_to_variable = {
+			var = SUS_w_pol_surrender_limit
+			value = 0.15
+		}
 		clamp_variable = {
 			var = SUS_coring_cost
 			min = 0
@@ -3760,7 +3775,8 @@ shared_focus = {
 			var = SUS_coring_cost
 			value = -15
 		}
-		
+		custom_effect_tooltip = EAG_coring_cost_lowered_15_tt
+		custom_effect_tooltip = SUS_spare_the_king_tt
 	}
 	prerequisite = {
 		focus = SUS_walburgas_eve
@@ -3800,7 +3816,15 @@ shared_focus = {
 	icon = GFX_goal_SUS_settling_act
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_settling_act"
-		
+		add_to_variable = {
+			var = SUS_w_pol_production_factory_start_efficiency_factor
+			value = 0.15
+		}
+		add_to_variable = {
+			var = SUS_w_pol_mobilization_speed
+			value = 0.25
+		}
+		custom_effect_tooltip = SUS_settling_act_tt
 	}
 	prerequisite = {
 		focus = SUS_elect_the_queen
@@ -3817,6 +3841,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_peoples_assembly
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_peoples_assembly"
+		custom_effect_tooltip = SUS_peoples_assembly_tt
 	
 	}
 	prerequisite = {
@@ -3834,6 +3859,15 @@ shared_focus = {
 	icon = GFX_goal_SUS_work_units
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_work_units"
+		add_to_variable = {
+			var = SUS_w_pol_required_garrison_factor
+			value = -0.15
+		}
+		add_to_variable = {
+			var = SUS_w_pol_industrial_capacity_factory
+			value = 0.1
+		}
+		custom_effect_tooltip = SUS_work_units_tt
 	
 	}
 	prerequisite = {
@@ -3851,6 +3885,23 @@ shared_focus = {
 	icon = GFX_goal_SUS_simplify_the_law
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_simplify_the_law"
+		add_to_variable = {
+			var = SUS_w_pol_political_power_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_w_pol_mobilization_laws_cost_factor
+			value = -0.1
+		}
+		add_to_variable = {
+			var = SUS_w_pol_trade_laws_cost_factor
+			value = -0.1
+		}
+		add_to_variable = {
+			var = SUS_w_pol_economy_cost_factor
+			value = -0.1
+		}
+		custom_effect_tooltip = SUS_simplify_the_law_tt
 	
 	}
 	prerequisite = {
@@ -3873,6 +3924,8 @@ shared_focus = {
 	icon = GFX_goal_SUS_security_command
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_security_command"
+		set_country_flag = SUS_security_command_founded
+		custom_effect_tooltip = SUS_bureau_created_tt
 	
 	}
 	prerequisite = {
@@ -3895,6 +3948,19 @@ shared_focus = {
 	icon = GFX_goal_SUS_forge_of_cadres
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_forge_of_cadres"
+		swap_ideas = {
+			remove_idea = SUS_grand_opera_of_struggle_2_of_3
+			add_idea = SUS_grand_opera_of_struggle_3_of_3
+		}
+		add_to_variable = {
+			var = SUS_w_pol_research_speed_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_w_pol_political_advisor_cost_factor
+			value = -0.1
+		}
+		custom_effect_tooltip = SUS_forge_of_cadres_tt
 	
 	}
 	prerequisite = {
@@ -3914,6 +3980,15 @@ shared_focus = {
 	icon = GFX_goal_SUS_freedom_from_family
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_freedom_from_family"
+		add_to_variable = {
+			var = SUS_w_pol_research_speed_factor
+			value = 0.10
+		}
+		add_to_variable = {
+			var = SUS_w_pol_production_factory_efficiency_gain_factor
+			value = 0.2
+		}
+		custom_effect_tooltip = SUS_freedom_from_family_tt
 	
 	}
 	prerequisite = {
@@ -3930,6 +4005,25 @@ shared_focus = {
 	icon = GFX_goal_SUS_neo_independentism
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_neo_independentism"
+		clamp_variable = {
+			var = SUS_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = SUS_coring_cost
+			value = -15
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_15_tt
+		add_to_variable = {
+			var = SUS_w_pol_army_core_defence
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_w_pol_army_core_attack
+			value = 0.1
+		}
+		custom_effect_tooltip = SUS_neo_independentism_tt
 	
 	}
 	prerequisite = {
@@ -3946,6 +4040,11 @@ shared_focus = {
 	icon = GFX_goal_SUS_utopian_collectivism
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_utopian_collectivism"
+		add_to_variable = {
+			var = SUS_w_pol_consumer_goods_factor
+			value = -0.05
+		}
+		custom_effect_tooltip = SUS_utopian_collectivism_tt
 	
 	}
 	prerequisite = {
@@ -3962,6 +4061,23 @@ shared_focus = {
 	icon = GFX_goal_SUS_workers_courts
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_workers_courts"
+		clamp_variable = {
+			var = SUS_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = SUS_coring_cost
+			value = -15
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_15_tt
+		add_to_variable = {
+			var = SUS_w_pol_political_power_factor
+			value = 0.1
+		}
+		custom_effect_tooltip = SUS_workers_courts_tt
+		country_event = { id = SUS_event.201 }   
+		# write an event about how some peasants caught a spy who crashed near a field
 	
 	}
 	prerequisite = {
@@ -3978,6 +4094,8 @@ shared_focus = {
 	icon = GFX_goal_SUS_mass_creativity
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_mass_creativity"
+		remove_ideas = SUS_grand_opera_of_struggle_3_of_3
+		custom_effect_tooltip = SUS_mass_creativity_tt
 	
 	}
 	prerequisite = {
