@@ -2220,6 +2220,14 @@ country_event = { #Request 2 Build Civilian Factory
 				has_country_flag = SUS_council_request_active
 			}
 		}
+		SUS = {
+			any_owned_state = {
+				has_built = {
+					type = industrial_complex
+					value < 3
+				}
+			}
+		}
 	}
     fire_only_once = yes
 	option = {
@@ -2227,6 +2235,15 @@ country_event = { #Request 2 Build Civilian Factory
 		SUS = {
 			activate_mission = SUS_request_2_mission
 			set_country_flag = SUS_council_request_active
+			random_owned_state = {
+				limit = {
+					has_built = {
+						type = industrial_complex
+						value < 3
+					}
+				}
+				set_state_flag = SUS_request_civilian_factory
+			}
 		}
     }
 }
@@ -2580,6 +2597,7 @@ country_event = { #Request 16 Volunteer Only
 		SUS = {
 			activate_mission = SUS_request_16_mission
 			set_country_flag = SUS_council_request_active
+			add_ideas = volunteer_only
 		}
     }
 }
@@ -2596,6 +2614,9 @@ country_event = { #Request 17 Research Tech
 				has_country_flag = SUS_council_request_active
 			}
 		}
+		SUS = {
+			can_research = advanced_computing_machine
+		}
 	}
     fire_only_once = yes
 	option = {
@@ -2603,6 +2624,7 @@ country_event = { #Request 17 Research Tech
 		SUS = {
 			activate_mission = SUS_request_17_mission
 			set_country_flag = SUS_council_request_active
+			add_ideas = civilian_economy
 		}
     }
 }
@@ -2619,6 +2641,11 @@ country_event = { #Request 18 Minister Reshuffle
 				has_country_flag = SUS_council_request_active
 			}
 		}
+		SUS = {
+			any_character = {
+				is_hired_as_advisor = yes
+			}
+		}
 	}
     fire_only_once = yes
 	option = {
@@ -2626,6 +2653,12 @@ country_event = { #Request 18 Minister Reshuffle
 		SUS = {
 			activate_mission = SUS_request_18_mission
 			set_country_flag = SUS_council_request_active
+			random_character = {
+				limit = {
+					is_hired_as_advisor = yes
+				}
+				set_character_flag = SUS_reshuffle_character
+			}
 		}
     }
 }

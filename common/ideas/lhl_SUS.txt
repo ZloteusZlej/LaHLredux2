@@ -160,7 +160,7 @@ ideas = {
 				consumer_goods_factor = 0.1
 			}
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_product_deficit"
 			}
 
 			removal_cost = -1
@@ -179,7 +179,7 @@ ideas = {
 				equipment_conversion_speed = -0.5 
 			}
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_transportation_issues"
 			}
 
 			removal_cost = -1
@@ -198,7 +198,7 @@ ideas = {
 				production_factory_start_efficiency_factor = -0.15
 			}
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_bandit_raids"
 			}
 
 			removal_cost = -1
@@ -217,7 +217,7 @@ ideas = {
 				army_fuel_capacity_factor = -0.3
 			}
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_fuel_shortages"
 			}
 
 			removal_cost = -1
@@ -237,7 +237,7 @@ ideas = {
 				air_range_factor = -0.5
 			}
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_slowed_air_travel"
 			}
 
 			removal_cost = -1
@@ -256,7 +256,47 @@ ideas = {
 				trade_opinion_factor = -0.75
 			}
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_slowed_naval_transport"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_retarding_research = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = -0.25
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_retarding_research"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_lack_of_dockyards = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				production_cost_max_ship_hull_light = -0.3
+				production_cost_max_ship_hull_carrier = -0.3
+				production_cost_max_ship_hull_cruiser = -0.3
+				production_cost_max_ship_hull_heavy = -0.3
+				production_cost_max_ship_hull_submarine = -0.3
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_retarding_research"
 			}
 
 			removal_cost = -1
