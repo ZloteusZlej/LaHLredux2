@@ -7302,3 +7302,156 @@ SUS_directing_minds = {
 		}
 	}
 }
+
+SUS_public_art_gallery = {
+	SUS_operas_to_critique_bureaucrats = {
+		cost = 50
+		days_remove = 30
+	    visible = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+	    available = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+		complete_effect = {
+		   add_stability = 0.05
+		}
+	}
+	SUS_theatre_plays_about_loyal_army = {
+		cost = 50
+		days_remove = 30
+	    visible = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+	    available = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+		complete_effect = {
+		   add_command_power = 20
+		   add_war_support = 0.03
+		}
+	}
+	SUS_films_about_glorious_history = {
+		cost = 50
+		days_remove = 30
+	    visible = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+	    available = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+		complete_effect = {
+		   add_manpower = 5000
+		}
+	}
+	SUS_thought_provoking_tv_shows = {
+		cost = 0
+		days_remove = 30
+	    visible = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+	    available = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+		modifier = {
+			political_power_factor = 0.1
+		}
+	}
+	SUS_novels_praising_collectivistic_cultures = {
+		cost = 75
+		days_remove = 30
+	    visible = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+	    available = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+		modifier = {
+			consumer_goods_factor = -0.1
+			production_factory_efficiency_gain_factor = 0.1
+			production_speed_buildings_factor = 0.1
+		}
+	}
+    SUS_comics_reflecting_peoples_lives = {
+		cost = 50
+		days_remove = 30
+	    visible = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+	    available = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+		modifier = {
+			production_speed_infrastructure_factor = 0.2
+			production_speed_air_base_factor = 0.2
+			production_speed_supply_node_factor = 0.5
+			production_speed_rail_way_factor = 0.2
+		}
+	}
+	SUS_paintings_propagating_the_future_utopia = {
+		cost = 100
+		days_remove = 30
+	    visible = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+	    available = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+		modifier = {
+			research_speed_factor = 0.25
+			local_resources_factor = 0.3
+			base_fuel_gain_factor = 0.3
+		}
+	}
+	SUS_natural_scenery_photography = {
+		cost = 75
+		days_remove = 30
+	    visible = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+	    available = {
+		    SUS = {
+			    has_completed_focus = SUS_mass_creativity
+		    }
+	    }
+		complete_effect = {
+			random_state = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	}
+}
