@@ -218,3 +218,20 @@ SUS_directing_minds = {
 	visible_when_empty = yes
 }
 
+SUS_public_art_gallery = { 
+	icon = GFX_
+
+	allowed = { original_tag = SUS }
+	visible = {
+		SUS = {
+			has_completed_focus = SUS_mass_creativity
+		}
+	}
+	available = {
+		SUS = {
+			has_completed_focus = SUS_mass_creativity
+		}
+	}
+	visible_when_empty = yes
+}
+
