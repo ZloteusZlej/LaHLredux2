@@ -7301,6 +7301,30 @@ SUS_directing_minds = {
            consumer_goods_factor = -0.15
 		}
 	}
+	SUS_awaken_agents = {
+		targets = { EAG ESS NTH MRC WLS SCO ULS IRE}
+		cost = 50
+		days_remove = 45
+		available = {
+			SUS = { 
+				has_country_flag = SUS_awaken_agents_available
+			}
+		}
+		complete_effect = {
+			FROM = {
+				set_country_flag = SUS_awaken_agents_active
+			}
+			SUS = {
+				clr_country_flag = SUS_awaken_agents_available
+				country_event = SUS_event.800
+			}
+		}
+		remove_effect = {
+			SUS = {	
+				set_country_flag = SUS_awaken_agents_available
+			}
+		}
+	}
 }
 
 SUS_public_art_gallery = {
