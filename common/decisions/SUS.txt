@@ -7301,6 +7301,217 @@ SUS_directing_minds = {
            consumer_goods_factor = -0.15
 		}
 	}
+	SUS_sharon_tates_baby = {
+		cost = 75
+		days_remove = 90
+		targets = { MRC }
+		available = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		complete_effect = {
+            FROM = {
+				add_stability = -0.05
+		        add_war_support = -0.05
+			}
+		}
+	}
+	SUS_the_wicker_men = {
+		cost = 75
+		days_remove = 90
+		targets = { MRC }
+		available = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		complete_effect = {
+            FROM = {
+				add_manpower = -5000
+			}
+		}
+	}
+	SUS_n_for_northfire = {
+		cost = 75
+		days_remove = 90
+		targets = { ESS }
+		available = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		complete_effect = {
+            FROM = {
+				add_stability = -0.05
+			}
+		}
+		targeted_modifier = {
+			tag = ESS
+			political_power_factor = -0.1
+		}
+	}
+	SUS_the_don = {
+		cost = 75
+		days_remove = 90
+		targets = { ESS }
+		available = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		complete_effect = {
+            FROM = {
+				add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -1000
+		    }
+			}
+		}		
+	}
+	SUS_look_whos_back = {
+		cost = 75
+		days_remove = 90
+		targets = { EAG }
+		available = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		complete_effect = {
+            FROM = {
+		        add_war_support = -0.05
+			}
+		}
+		targeted_modifier = {
+			tag = EAG
+			political_power_gain = -0.5
+		}
+	}
+	SUS_dark_and_darker_hours = {
+		cost = 75
+		days_remove = 90
+		targets = { EAG }
+		available = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		targeted_modifier = {
+			tag = EAG
+		    army_attack_factor = -0.2
+			army_defence_factor = -0.2
+		}
+	}
+	SUS_the_skynet = {
+		cost = 75
+		days_remove = 90
+		targets = { EAG }
+		available = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		targeted_modifier = {
+			tag = EAG
+			attrition = 0.20
+			supply_consumption_factor = 0.15
+		}
+	}
+	SUS_piglets_farm = {
+		cost = 75
+		days_remove = 90
+		targets = { NTH }
+		available = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		targeted_modifier = {
+			tag = NTH
+			stability_weekly = -0.005
+			weekly_manpower = -500
+		}
+	}
+	SUS_richman_poorman_beggarman_traitor = {
+		cost = 75
+		days_remove = 90
+		targets = { NTH }
+		available = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		targeted_modifier = {
+			tag = NTH
+			encryption_factor = -0.25
+			decryption_factor = -0.25
+		}
+	}
+	SUS_the_death_of_letov = {
+		cost = 75
+		days_remove = 90
+		targets = { NTH }
+		available = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_tomorrow_never_dies
+			}
+		}
+		targeted_modifier = {
+			tag = NTH
+			army_org_regain = -0.2
+		}
+	}
 	SUS_awaken_agents = {
 		targets = { EAG ESS NTH MRC WLS SCO ULS IRE}
 		cost = 50
@@ -7308,6 +7519,11 @@ SUS_directing_minds = {
 		available = {
 			SUS = { 
 				has_country_flag = SUS_awaken_agents_available
+			}
+		}
+		visible = {
+			SUS = {
+				has_completed_focus = SUS_protocol_awaken
 			}
 		}
 		complete_effect = {
