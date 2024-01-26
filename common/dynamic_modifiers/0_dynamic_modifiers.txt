@@ -541,3 +541,21 @@ SUS_senate_justice = {
 	war_support_factor = SUS_senate_war_support_factor
 	resistance_activity= SUS_senate_resistance_activity
 }
+SUS_unplanned_offensive = {
+	attacker_modifier = yes
+
+	air_cas_present_factor = -0.25
+	army_attack_factor = -0.3
+	army_speed_factor = -0.2
+	ground_attack_factor = -0.2
+	local_org_regain = -0.1
+}
+SUS_planned_offensive = {
+	attacker_modifier = yes
+
+	air_cas_present_factor = 0.25
+	army_attack_factor = 0.15
+	army_speed_factor = 0.2
+	ground_attack_factor = 0.2
+	local_org_regain = 0.3
+}
