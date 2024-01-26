@@ -6317,6 +6317,9 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_headquarters_reshuffle"
 		army_experience = 80
+		add_dynamic_modifier = {
+			modifier = SUS_spies_army_spirit
+		}
 	}
 	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
@@ -6333,6 +6336,7 @@ shared_focus = {
 			var = SUS_s_army_conscription_factor
 			value = 0.05
 		}
+		custom_effect_tooltip = SUS_draft_lottery_tt
 	}
 	prerequisite = {
 		focus = SUS_headquarters_reshuffle
@@ -6391,6 +6395,7 @@ shared_focus = {
 			var = SUS_s_army_strategic_bomb_visibility
 			value = -0.15
 		}
+		custom_effect_tooltip = SUS_the_tempest_tt
 	}
 	prerequisite = {
 		focus = SUS_draft_lottery
@@ -6410,6 +6415,7 @@ shared_focus = {
 			var = SUS_s_army_static_anti_air_damage_factor
 			value = 0.15
 		}
+		custom_effect_tooltip = SUS_golden_gun_tt
 	}
 	prerequisite = {
 		focus = SUS_draft_lottery
@@ -6425,6 +6431,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_twilight_zone
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_twilight_zone"
+                custom_effect_tooltip = SUS_twilight_zone_tt
 		
 	}
 	prerequisite = {
@@ -6492,6 +6499,19 @@ shared_focus = {
 	icon = GFX_goal_SUS_awareness_agency
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_awareness_agency"
+		add_to_variable = {
+            var = SUS_s_army_army_morale_factor
+            value = 0.1
+        }
+		add_to_variable = {
+            var = SUS_s_army_army_core_defence_factor
+            value = 0.2
+        }
+		add_to_variable = {
+            var = SUS_s_army_required_garrison_factor
+            value = -0.15
+        }
+		custom_effect_tooltip = SUS_awareness_agency_tt
 		
 	}
 	prerequisite = {
@@ -6509,6 +6529,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_small_scale_warfare
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_small_scale_warfare"
+		custom_effect_tooltip = SUS_small_scale_warfare_tt
 		
 	}
 	prerequisite = {
@@ -6526,8 +6547,35 @@ shared_focus = {
 	icon = GFX_goal_SUS_rapid_dominance
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_rapid_dominance"
+		if = {
+			limit = {
+				SUS = {
+					has_country_flag = SUS_aviation
+				}
+			}
+			add_to_variable = {
+                var = SUS_s_army_ground_attack_factor
+                value = 0.25
+            }
+		}
+		if = {
+			limit = {
+				SUS = {
+					has_country_flag = SUS_land_forces
+				}
+			}
+			add_to_variable = {
+                var = SUS_s_army_speed_factor
+                value = 0.15
+            }
+			add_to_variable = {
+                var = SUS_s_army_breakthrough_factor
+                value = 0.1
+            }
+		}
 		
 	}
+	select_effect = { country_event = { id = SUS_event.900 } }
 	prerequisite = {
 		focus = SUS_awareness_agency
 	}
