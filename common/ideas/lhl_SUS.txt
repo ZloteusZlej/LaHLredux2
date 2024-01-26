@@ -1523,6 +1523,33 @@ SUS_king_william = {
 
 		}
 	}
+	SUS_land_forces_war_support = {
+				picture = GFX_
+			
+		allowed = {
+			always = no
+		}
+			
+		removal_cost = -1
+
+        modifier = {
+			weekly_casualties_war_support = -0.002
+		}
+	}
+
+	SUS_avaition_war_support = {
+				picture = GFX_
+			
+		allowed = {
+			always = no
+		}
+			
+		removal_cost = -1
+
+        modifier = {
+			weekly_bombing_war_support = -0.003
+		}
+	}
 	hidden_ideas = {
 		SUS_initial_push = {
 			allowed = { original_tag = SUS }
