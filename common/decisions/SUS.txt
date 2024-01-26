@@ -6994,6 +6994,1341 @@ SUS_archegetes_elections = {
 }
 
 SUS_war_preparations = {
+
+	SUS_harrow_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1159 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1159 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1159 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1159 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1159 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_london_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1160 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1160 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1160 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1160 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1160 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_essex_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1003 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1003 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1003 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1003 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1003 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_enfield_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1157 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1157 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1157 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1157 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1157 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_romford_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1158 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1158 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1158 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1158 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1158 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_suffolk_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1143 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1143 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1143 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1143 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1143 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_norfolk_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1004 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1004 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1004 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1004 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1004 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_combridge_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1005 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1005 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1005 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1005 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1005 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_northampton_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1155 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1155 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1155 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1155 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1155 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_stafford_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1154 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1154 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1154 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1154 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1154 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_herefordshire_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1152 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1152 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1152 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1152 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1152 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_lincornshire_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1144 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1144 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1144 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1144 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1144 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_nottinghamshire_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1008 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1008 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1008 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1008 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1008 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_riding_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1146 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1146 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1146 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1146 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1146 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_cheshire_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1151 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1151 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1151 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1151 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1151 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_yorkshire_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1010 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1010 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1010 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1010 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1010 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_durham_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1011 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1011 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1011 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1011 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1011 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_manchester_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1009 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1009 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1009 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1009 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1009 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_northumbia_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1012 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1012 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1012 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1012 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1012 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_cumberland_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			NOT = { has_full_control_of_state = 1145 }
+			NOT = { has_active_mission = SUS_preparing_offensive }
+			1145 = {
+				OR = {
+					is_controlled_by = SUS
+					any_neighbor_state = {
+						is_controlled_by = SUS
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1145 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		visible = {
+			has_completed_focus = SUS_small_scale_warfare
+			1145 = {
+				has_state_flag = SUS_unplanned_offensive_flag
+			}
+		}
+
+		complete_effect = {
+			activate_mission = SUS_preparing_offensive
+			set_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		remove_effect = {
+			1145 = {
+				clr_state_flag = SUS_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = SUS_unplanned_offensive
+				}
+				add_dynamic_modifier = {
+					modifier = SUS_planned_offensive
+				}
+			}
+		}
+
+	}
+
+	SUS_preparing_offensive = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = yes
+
+		days_mission_timeout = 120
+
+		is_good = no
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = SUS
+			has_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+
+		timeout_effect = {
+			clr_country_flag = SUS_preparing_offensive_in_progress_flag
+		}
+	}
+	
 	SUS_establish_twilight_zone_croydon = {
 		cost = 25
 		days_remove = 100
