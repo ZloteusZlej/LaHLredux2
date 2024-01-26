@@ -578,4 +578,101 @@ on_actions = {
 			}
 		}
 	}
+        on_war = {
+		effect = {
+			if = {
+				limit = {
+					ESS = {
+						has_war_with = SUS
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = ESS
+					}
+					set_state_flag = SUS_unplanned_offensive_flag
+					add_dynamic_modifier = {
+						modifier = SUS_unplanned_offensive
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					MRC = {
+						has_war_with = SUS
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = MRC
+					}
+					set_state_flag = SUS_unplanned_offensive_flag
+					add_dynamic_modifier = {
+						modifier = SUS_unplanned_offensive
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					EAG = {
+						has_war_with = SUS
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = EAG
+					}
+					set_state_flag = SUS_unplanned_offensive_flag
+					add_dynamic_modifier = {
+						modifier = SUS_unplanned_offensive
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NTH = {
+						has_war_with = SUS
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = NTH
+					}
+					set_state_flag = SUS_unplanned_offensive_flag
+					add_dynamic_modifier = {
+						modifier = SUS_unplanned_offensive
+					}
+				}
+			}
+		}
+	}
+
+	on_weekly = {
+	    every_country = {
+		    if = {
+			    limit = {
+				    has_war_with = SUS
+				    SUS = {
+					    has_country_flag = SUS_land_forces
+				    }
+				    NOT = {
+					    has_idea = SUS_land_forces_war_support
+				    }
+			    }
+			    add_ideas = SUS_land_forces_war_support
+		    }
+		    else_if = {
+			    limit = {
+				    has_war_with = SUS
+				    SUS = {
+					    has_country_flag = SUS_aviation
+				    }
+				    NOT = {
+					    has_idea = SUS_aviation_war_support
+				    }
+			    }
+			    add_ideas = SUS_aviation_war_support
+		    }
+	    }
+    }
 }					  
