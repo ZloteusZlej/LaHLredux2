@@ -6415,6 +6415,15 @@ shared_focus = {
 			var = SUS_s_army_static_anti_air_damage_factor
 			value = 0.15
 		}
+		add_to_variable = {
+			var = SUS_s_army_static_anti_air_hit_chance_factor
+			value = 0.15
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = anti_air_equipment
+		}
 		custom_effect_tooltip = SUS_golden_gun_tt
 	}
 	prerequisite = {
@@ -6431,7 +6440,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_twilight_zone
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_twilight_zone"
-                custom_effect_tooltip = SUS_twilight_zone_tt
+		custom_effect_tooltip = SUS_twilight_zone_tt
 		
 	}
 	prerequisite = {
@@ -6457,6 +6466,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_shadow_of_the_collosus
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_shadow_of_the_collosus"
+		set_variable = {
+			var = SUS_shadow_times
+			value = 2
+		}
 	}
 	prerequisite = {
 		focus = SUS_reconnect_to_skynet
