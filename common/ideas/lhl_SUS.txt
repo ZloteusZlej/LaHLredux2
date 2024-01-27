@@ -1550,6 +1550,38 @@ SUS_king_william = {
 			weekly_bombing_war_support = -0.003
 		}
 	}
+	SUS_licence_to_be_harmed = {
+				picture = GFX_
+			
+		allowed = {
+			always = no
+		}
+			
+		removal_cost = -1
+
+        modifier = {
+			wounded_chance_factor = 0.15
+		}
+	}
+
+	SUS_shadow_decyphering_ongoing = {
+	picture = GFX_
+			
+		allowed = {
+			always = no
+		}
+			
+		removal_cost = -1
+
+modifier = {
+			intel_network_gain_factor = 0.25
+		army_intel_factor = 0.2
+		navy_intel_factor = 0.2
+		civilian_intel_factor = 0.2
+		airforce_intel_factor = 0.2
+		}
+		
+	}
 	hidden_ideas = {
 		SUS_initial_push = {
 			allowed = { original_tag = SUS }
