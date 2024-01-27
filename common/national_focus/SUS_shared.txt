@@ -6604,7 +6604,23 @@ shared_focus = {
 	icon = GFX_goal_SUS_cement_loyalty
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_cement_loyalty"
-		
+		every_army_leader  = {
+				add_unit_leader_trait = theoretical_pioneer
+			}
+		add_to_variable = {
+			SUS_s_army_army_org_factor = 0.2
+		}
+	}
+	select_effect = { 
+		random_army_leader  = {
+				remove_unit_leader = yes
+			}
+		random_army_leader  = {
+				remove_unit_leader = yes
+			}
+		add_to_variable = {
+			SUS_s_army_army_org_factor = -0.2
+		}
 	}
 	prerequisite = {
 		focus = SUS_rapid_dominance
@@ -6627,6 +6643,27 @@ shared_focus = {
 	icon = GFX_goal_SUS_thought_reform
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_thought_reform"
+		random_army_leader  = {
+				add_skill_level = 1
+				add_attack = 1
+				add_defense = 1
+				add_logistics = 1
+				add_planning = 1
+			}
+		random_army_leader  = {
+				add_skill_level = 1
+				add_attack = 1
+				add_defense = 1
+				add_logistics = 1
+				add_planning = 1
+			}
+		random_army_leader  = {
+				add_skill_level = 1
+				add_attack = 1
+				add_defense = 1
+				add_logistics = 1
+				add_planning = 1
+			}
 	
 	}
 	prerequisite = {
@@ -6650,6 +6687,13 @@ shared_focus = {
 	icon = GFX_goal_SUS_provide_comfort
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_provide_comfort"
+		add_equipment_to_stockpile = {
+            type = transport_plane_equipment
+            amount = 250
+        }
+		add_to_variable = {
+			SUS_s_army_supply_factor = 0.2
+		}
 		
 	}
 	prerequisite = {
