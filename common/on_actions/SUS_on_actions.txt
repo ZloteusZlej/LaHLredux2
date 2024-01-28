@@ -710,10 +710,10 @@ on_actions = {
 			every_state = {
                 if = {
 			        limit = {
-					    owner = SUS
+					    is_owned_by = SUS
 					    any_neighbor_state = {
 						    NOT = {
-							    owner = SUS
+							    is_owned_by = SUS
 						    }
 					    }
 				    }
@@ -734,7 +734,7 @@ on_actions = {
 		        }
 				every_country = {
                     remove_ideas = SUS_licence_to_be_harmed
-					remove_ideas = SUS_avaition_war_support
+					remove_ideas = SUS_aviation_war_support
 					remove_ideas = SUS_land_forces_war_support						
 				}
 				every_state = {
