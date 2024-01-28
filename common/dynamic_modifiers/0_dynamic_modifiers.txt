@@ -440,6 +440,7 @@ SUS_spies_political_spirit = {
         encryption_factor = SUS_s_pol_encryption_factor
 	required_garrison_factor = SUS_s_pol_required_garrison_factor
 	resistance_activity= SUS_s_pol_resistance_activity
+}
 
 SUS_spies_army_spirit = {
 	icon = GFX_SUS_spies_army_spirit
@@ -454,10 +455,41 @@ SUS_spies_army_spirit = {
 	conscription_factor = SUS_s_army_conscription_factor 
 	air_strategic_bomber_bombing_factor = SUS_s_army_air_strategic_bomber_bombing_factor 
 	strategic_bomb_visibility = SUS_s_army_strategic_bomb_visibility 
-	static_anti_air_damage_factor = SUS_s_army_static_anti_air_damage_factor 
+	static_anti_air_damage_factor = SUS_s_army_static_anti_air_damage_factor
+	static_anti_air_hit_chance_factor = SUS_s_army_static_anti_air_hit_chance_factor
 	special_forces_training_time_factor = SUS_s_army_special_forces_training_time_factor
 	special_forces_cap = SUS_s_army_special_forces_cap
 }
+
+SUS_spies_reconstruction_spirit = { 
+	icon = GFX_SUS_spies_army_spirit
+	industry_free_repair_factor = SUS_s_reconstruction_industry_free_repair_factor 
+	industry_repair_factor = SUS_s_reconstruction_industry_repair_factor 
+	production_speed_rail_way_factor = SUS_s_reconstruction_production_speed_rail_way_factor
+	production_speed_infrastructure_factor = SUS_s_reconstruction_production_speed_infrastructure_factor
+	production_speed_supply_node_factor = SUS_s_reconstruction_production_speed_supply_node_factor
+	global_building_slots_factor = SUS_s_reconstruction_global_building_slots_factor
+	conscription_factor = SUS_s_reconstruction_conscription_factor
+	production_factory_max_efficiency_factor = SUS_s_reconstruction_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = SUS_s_reconstruction_production_factory_efficiency_gain_factor
+	production_factory_start_efficiency_factor = SUS_s_reconstruction_production_factory_start
+	production_speed_buildings_factor = SUS_s_reconstruction_production_speed_buildings_factor
+	industrial_capacity_factory = SUS_s_reconstruction_industrial_capacity_factory
+	consumer_goods_factor = SUS_s_reconstruction_consumer_goods_factor
+	monthly_population = SUS_s_reconstruction_monthly_population
+	research_speed_factor = SUS_s_reconstruction_research_speed_factor
+	political_power_factor = SUS_s_reconstruction_political_power_factor
+	political_advisor_cost_factor = SUS_s_reconstruction_political_advisor_cost_factor
+	war_support_factor = SUS_s_reconstruction_war_support_factor
+	send_volunteers_tension = SUS_s_reconstruction_send_volunteers_tension
+	army_core_defence_factor = SUS_s_reconstruction_army_core_defence
+	army_core_attack_factor  = SUS_s_reconstruction_army_core_attack
+	supply_factor = SUS_s_reconstruction_supply_factor
+	trade_opinion_factor = SUS_s_reconstruction_trade_opinion_factor
+	recruitable_population_factor = SUS_s_reconstruction_recruitable_population_factor
+}
+
+
 ##MRC##
 MRC_Spirit_Of_Neofolk = {
 	icon = GFX_

@@ -8330,10 +8330,24 @@ SUS_war_preparations = {
 	}
 	
 	SUS_establish_twilight_zone_croydon = {
-		cost = 25
+		
 		days_remove = 100
 		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
 		complete_effect = {
+			add_command_power = -20
 			1156 = {
 				add_province_modifier = {
 						static_modifiers = { SUS_established_twilight_zone }
@@ -8341,6 +8355,512 @@ SUS_war_preparations = {
 						all_provinces = yes
 					}
 				}
+			}
+		}
+	}
+
+	SUS_establish_twilight_zone_gloustershire = {
+		
+		days_remove = 100
+		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1153 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+		complete_effect = {
+			add_command_power = -20
+			1153 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_established_twilight_zone }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	SUS_establish_twilight_zone_whiltshire = {
+		
+		days_remove = 100
+		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1161 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+		complete_effect = {
+			add_command_power = -20
+			1161 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_established_twilight_zone }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	SUS_establish_twilight_zone_northern_kent = {
+		
+		days_remove = 100
+		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1165 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+		complete_effect = {
+			add_command_power = -20
+			1165 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_established_twilight_zone }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	SUS_establish_twilight_zone_herefordshire = {
+		
+		days_remove = 100
+		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1152 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+		complete_effect = {
+			add_command_power = -20
+			1152 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_established_twilight_zone }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	SUS_establish_twilight_zone_nothampton = {
+		
+		days_remove = 100
+		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1155 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+		complete_effect = {
+			add_command_power = -20
+			1155 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_established_twilight_zone }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	SUS_establish_twilight_zone_cambridge = {
+		
+		days_remove = 100
+		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1005 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+		complete_effect = {
+			add_command_power = -20
+			1005 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_established_twilight_zone }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	SUS_establish_twilight_zone_enfield = {
+		
+		days_remove = 100
+		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1158 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+		complete_effect = {
+			add_command_power = -20
+			1158 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_established_twilight_zone }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	SUS_establish_twilight_zone_romford = {
+		
+		days_remove = 100
+		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1157 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+		complete_effect = {
+			add_command_power = -20
+			1157 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_established_twilight_zone }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	SUS_establish_twilight_zone_essex = {
+		
+		days_remove = 100
+		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1003 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+		complete_effect = {
+			add_command_power = -20
+			1003 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_established_twilight_zone }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	SUS_establish_twilight_zone_suffolk = {
+		
+		days_remove = 100
+		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1143 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+		complete_effect = {
+			add_command_power = -20
+			1143 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_established_twilight_zone }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	SUS_establish_twilight_zone_norfolk = {
+		
+		days_remove = 100
+		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1004 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+		complete_effect = {
+			add_command_power = -20
+			1004 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_established_twilight_zone }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	SUS_establish_twilight_zone_cheshire = {
+		
+		days_remove = 100
+		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1151 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+		complete_effect = {
+			add_command_power = -20
+			1151 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_established_twilight_zone }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	SUS_establish_twilight_zone_riding = {
+		
+		days_remove = 100
+		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1146 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+		complete_effect = {
+			add_command_power = -20
+			1146 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_established_twilight_zone }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	SUS_establish_twilight_zone_norttinghamshire = {
+		
+		days_remove = 100
+		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1008 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+		complete_effect = {
+			add_command_power = -20
+			1008 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_established_twilight_zone }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	SUS_establish_twilight_zone_lincoinshire = {
+		
+		days_remove = 100
+		fire_only_once = yes
+		available = {
+			command_power > 20
+			has_completed_focus = SUS_twilight_zone
+			1144 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+visible = {
+            has_completed_focus = SUS_twilight_zone
+			1156 = {
+				has_state_flag = SUS_twilight_zone_can_found
+			}
+		}
+		complete_effect = {
+			add_command_power = -20
+			1144 = {
+				add_province_modifier = {
+						static_modifiers = { SUS_established_twilight_zone }
+						province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	SUS_shadow_decyphering = {
+        days_remove = 7
+		available = {
+			has_completed_focus = SUS_shadow_of_the_collosus
+			SUS = {
+				check_variable = {
+				    SUS_shadow_times > 1
+			    }
+				NOT = {
+					has_idea = SUS_shadow_decyphering_ongoing
+				}
+			}
+		}
+		visible = {
+			original_tag = SUS
+			has_completed_focus = SUS_shadow_of_the_collosus
+		}
+		complete_effect = {
+			custom_effect_tooltip = SUS_shadow_decyphering_tt
+			add_to_variable = {
+			    var = SUS_shadow_times
+			    value = -1
+		    }
+			add_timed_idea = {
+				idea = SUS_shadow_decyphering_ongoing
+				days = 90
+			}
+		}
+	}
+
+	SUS_shadow_decyphering_mission = {
+        days_mission_timeout = 365
+		available = {
+				always = no
+		}
+		visible = {
+			has_completed_focus = SUS_shadow_of_the_collosus
+		}
+		activation = {
+			always = no                  
+		}
+		is_good = no
+		timeout_effect = {
+			custom_effect_tooltip = SUS_shadow_decyphering_mission_tt
+			SUS = {
+				set_variable = {
+			        var = SUS_shadow_times
+			        value = 2
+		        }
+			}
+			hidden_effect = {
+				activate_mission = SUS_shadow_decyphering_mission
 			}
 		}
 	}
