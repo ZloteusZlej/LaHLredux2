@@ -150,6 +150,220 @@ ideas = {
 
 			
 		}
+		SUS_product_deficit = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.15
+				consumer_goods_factor = 0.1
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_product_deficit"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_transportation_issues = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				army_speed_factor = -0.5
+				equipment_conversion_speed = -0.5 
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_transportation_issues"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_bandit_raids = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				weekly_manpower = -100
+				production_factory_start_efficiency_factor = -0.15
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_bandit_raids"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_fuel_shortages = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				max_fuel_factor = -0.3 
+				army_fuel_capacity_factor = -0.3
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_fuel_shortages"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_slowed_air_travel = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				air_fuel_consumption_factor = 0.5
+				air_accidents_factor = 0.5
+				air_range_factor = -0.5
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_slowed_air_travel"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_slowed_naval_transport = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				min_export = -0.5
+				trade_opinion_factor = -0.75
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_slowed_naval_transport"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_retarding_research = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = -0.25
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_retarding_research"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_lack_of_dockyards = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				production_cost_max_ship_hull_light = -0.3
+				production_cost_max_ship_hull_carrier = -0.3
+				production_cost_max_ship_hull_cruiser = -0.3
+				production_cost_max_ship_hull_heavy = -0.3
+				production_cost_max_ship_hull_submarine = -0.3
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_retarding_research"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_slowed_ground_transport = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.25 
+				supply_factor = -0.1
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_lack_of_oil = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				base_fuel_gain_factor = -0.25
+				fuel_gain_factor = -25
+				
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
+		SUS_unrestricted_bombing = {
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				industry_air_damage_factor = 1.0
+				weekly_manpower = -200
+				
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			
+		}
 		SUS_plea_purged_scientists_air = {
 
 			allowed_civil_war = {
@@ -1308,6 +1522,65 @@ SUS_king_william = {
 			}
 
 		}
+	}
+	SUS_land_forces_war_support = {
+				picture = GFX_
+			
+		allowed = {
+			always = no
+		}
+			
+		removal_cost = -1
+
+        modifier = {
+			weekly_casualties_war_support = -0.002
+		}
+	}
+
+	SUS_avaition_war_support = {
+				picture = GFX_
+			
+		allowed = {
+			always = no
+		}
+			
+		removal_cost = -1
+
+        modifier = {
+			weekly_bombing_war_support = -0.003
+		}
+	}
+	SUS_licence_to_be_harmed = {
+				picture = GFX_
+			
+		allowed = {
+			always = no
+		}
+			
+		removal_cost = -1
+
+        modifier = {
+			wounded_chance_factor = 0.15
+		}
+	}
+
+	SUS_shadow_decyphering_ongoing = {
+	picture = GFX_
+			
+		allowed = {
+			always = no
+		}
+			
+		removal_cost = -1
+
+modifier = {
+			intel_network_gain_factor = 0.25
+		army_intel_factor = 0.2
+		navy_intel_factor = 0.2
+		civilian_intel_factor = 0.2
+		airforce_intel_factor = 0.2
+		}
+		
 	}
 	hidden_ideas = {
 		SUS_initial_push = {

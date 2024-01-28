@@ -3736,6 +3736,9 @@ shared_focus = {
 				remove_unit_leader = yes
 			}
 		}
+		add_dynamic_modifier = {
+            modifier = SUS_witches_political_spirit
+		}
 	}
 	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
@@ -3748,6 +3751,21 @@ shared_focus = {
 	icon = GFX_goal_SUS_spare_the_king
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_spare_the_king"
+		add_field_marshal_role = {
+            character = SUS_henry_ix
+            skill = 1
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 1
+            traits = {
+              politically_connected
+            }
+        }
+		add_to_variable = {
+			var = SUS_w_pol_surrender_limit
+			value = 0.15
+		}
 		clamp_variable = {
 			var = SUS_coring_cost
 			min = 0
@@ -3757,7 +3775,8 @@ shared_focus = {
 			var = SUS_coring_cost
 			value = -15
 		}
-		
+		custom_effect_tooltip = EAG_coring_cost_lowered_15_tt
+		custom_effect_tooltip = SUS_spare_the_king_tt
 	}
 	prerequisite = {
 		focus = SUS_walburgas_eve
@@ -3797,7 +3816,15 @@ shared_focus = {
 	icon = GFX_goal_SUS_settling_act
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_settling_act"
-		
+		add_to_variable = {
+			var = SUS_w_pol_production_factory_start_efficiency_factor
+			value = 0.15
+		}
+		add_to_variable = {
+			var = SUS_w_pol_mobilization_speed
+			value = 0.25
+		}
+		custom_effect_tooltip = SUS_settling_act_tt
 	}
 	prerequisite = {
 		focus = SUS_elect_the_queen
@@ -3814,6 +3841,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_peoples_assembly
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_peoples_assembly"
+		custom_effect_tooltip = SUS_peoples_assembly_tt
 	
 	}
 	prerequisite = {
@@ -3831,6 +3859,15 @@ shared_focus = {
 	icon = GFX_goal_SUS_work_units
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_work_units"
+		add_to_variable = {
+			var = SUS_w_pol_required_garrison_factor
+			value = -0.15
+		}
+		add_to_variable = {
+			var = SUS_w_pol_industrial_capacity_factory
+			value = 0.1
+		}
+		custom_effect_tooltip = SUS_work_units_tt
 	
 	}
 	prerequisite = {
@@ -3848,6 +3885,23 @@ shared_focus = {
 	icon = GFX_goal_SUS_simplify_the_law
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_simplify_the_law"
+		add_to_variable = {
+			var = SUS_w_pol_political_power_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_w_pol_mobilization_laws_cost_factor
+			value = -0.1
+		}
+		add_to_variable = {
+			var = SUS_w_pol_trade_laws_cost_factor
+			value = -0.1
+		}
+		add_to_variable = {
+			var = SUS_w_pol_economy_cost_factor
+			value = -0.1
+		}
+		custom_effect_tooltip = SUS_simplify_the_law_tt
 	
 	}
 	prerequisite = {
@@ -3870,6 +3924,8 @@ shared_focus = {
 	icon = GFX_goal_SUS_security_command
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_security_command"
+		set_country_flag = SUS_security_command_founded
+		custom_effect_tooltip = SUS_bureau_created_tt
 	
 	}
 	prerequisite = {
@@ -3892,6 +3948,19 @@ shared_focus = {
 	icon = GFX_goal_SUS_forge_of_cadres
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_forge_of_cadres"
+		swap_ideas = {
+			remove_idea = SUS_grand_opera_of_struggle_2_of_3
+			add_idea = SUS_grand_opera_of_struggle_3_of_3
+		}
+		add_to_variable = {
+			var = SUS_w_pol_research_speed_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_w_pol_political_advisor_cost_factor
+			value = -0.1
+		}
+		custom_effect_tooltip = SUS_forge_of_cadres_tt
 	
 	}
 	prerequisite = {
@@ -3911,6 +3980,15 @@ shared_focus = {
 	icon = GFX_goal_SUS_freedom_from_family
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_freedom_from_family"
+		add_to_variable = {
+			var = SUS_w_pol_research_speed_factor
+			value = 0.10
+		}
+		add_to_variable = {
+			var = SUS_w_pol_production_factory_efficiency_gain_factor
+			value = 0.2
+		}
+		custom_effect_tooltip = SUS_freedom_from_family_tt
 	
 	}
 	prerequisite = {
@@ -3927,6 +4005,25 @@ shared_focus = {
 	icon = GFX_goal_SUS_neo_independentism
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_neo_independentism"
+		clamp_variable = {
+			var = SUS_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = SUS_coring_cost
+			value = -15
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_15_tt
+		add_to_variable = {
+			var = SUS_w_pol_army_core_defence
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_w_pol_army_core_attack
+			value = 0.1
+		}
+		custom_effect_tooltip = SUS_neo_independentism_tt
 	
 	}
 	prerequisite = {
@@ -3943,6 +4040,11 @@ shared_focus = {
 	icon = GFX_goal_SUS_utopian_collectivism
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_utopian_collectivism"
+		add_to_variable = {
+			var = SUS_w_pol_consumer_goods_factor
+			value = -0.05
+		}
+		custom_effect_tooltip = SUS_utopian_collectivism_tt
 	
 	}
 	prerequisite = {
@@ -3959,6 +4061,23 @@ shared_focus = {
 	icon = GFX_goal_SUS_workers_courts
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_workers_courts"
+		clamp_variable = {
+			var = SUS_coring_cost
+			min = 0
+			max = 250
+		}
+		add_to_variable = {
+			var = SUS_coring_cost
+			value = -15
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_15_tt
+		add_to_variable = {
+			var = SUS_w_pol_political_power_factor
+			value = 0.1
+		}
+		custom_effect_tooltip = SUS_workers_courts_tt
+		country_event = { id = SUS_event.201 }   
+		# write an event about how some peasants caught a spy who crashed near a field
 	
 	}
 	prerequisite = {
@@ -3975,6 +4094,8 @@ shared_focus = {
 	icon = GFX_goal_SUS_mass_creativity
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_mass_creativity"
+		remove_ideas = SUS_grand_opera_of_struggle_3_of_3
+		custom_effect_tooltip = SUS_mass_creativity_tt
 	
 	}
 	prerequisite = {
@@ -5032,7 +5153,7 @@ shared_focus = {
 		value = 0.1
 	}
 	add_dynamic_modifier = { 
-			modifier = SUS_witches_political_spirit 
+			modifier = SUS_labourist_reconstruction_spirit 
 		}
 	}
 	available = {
@@ -5972,6 +6093,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_sky_always_shines_on_tv
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_sky_always_shines_on_tv"
+                custom_effect_tooltip = SUS_sky_always_shines_on_tv_tt
 	
 	}
 	prerequisite = {
@@ -6122,7 +6244,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_the_doors_of_perception
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_the_doors_of_perception"
-	
+		custom_effect_tooltip = SUS_the_doors_of_perception_tt
 	}
 	prerequisite = {
 		focus = SUS_punitive_psychiatry
@@ -6138,7 +6260,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_tomorrow_never_dies
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_tomorrow_never_dies"
-	
+	        custom_effect_tooltip = SUS_tomorrow_never_dies_tt
 	}
 	prerequisite = {
 		focus = SUS_government_code_and_cypher_school
@@ -6154,6 +6276,8 @@ shared_focus = {
 	icon = GFX_goal_SUS_protocol_awaken
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_protocol_awaken"
+                set_country_flag = SUS_awaken_agents_available
+		custom_effect_tooltip = SUS_protocol_awaken_tt
 	
 	}
 	prerequisite = {
@@ -6193,6 +6317,9 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_headquarters_reshuffle"
 		army_experience = 80
+		add_dynamic_modifier = {
+			modifier = SUS_spies_army_spirit
+		}
 	}
 	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
@@ -6209,6 +6336,7 @@ shared_focus = {
 			var = SUS_s_army_conscription_factor
 			value = 0.05
 		}
+		custom_effect_tooltip = SUS_draft_lottery_tt
 	}
 	prerequisite = {
 		focus = SUS_headquarters_reshuffle
@@ -6267,6 +6395,7 @@ shared_focus = {
 			var = SUS_s_army_strategic_bomb_visibility
 			value = -0.15
 		}
+		custom_effect_tooltip = SUS_the_tempest_tt
 	}
 	prerequisite = {
 		focus = SUS_draft_lottery
@@ -6286,6 +6415,16 @@ shared_focus = {
 			var = SUS_s_army_static_anti_air_damage_factor
 			value = 0.15
 		}
+		add_to_variable = {
+			var = SUS_s_army_static_anti_air_hit_chance_factor
+			value = 0.15
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = anti_air_equipment
+		}
+		custom_effect_tooltip = SUS_golden_gun_tt
 	}
 	prerequisite = {
 		focus = SUS_draft_lottery
@@ -6301,6 +6440,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_twilight_zone
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_twilight_zone"
+		custom_effect_tooltip = SUS_twilight_zone_tt
 		
 	}
 	prerequisite = {
@@ -6326,6 +6466,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_shadow_of_the_collosus
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_shadow_of_the_collosus"
+		set_variable = {
+			var = SUS_shadow_times
+			value = 2
+		}
 	}
 	prerequisite = {
 		focus = SUS_reconnect_to_skynet
@@ -6368,6 +6512,19 @@ shared_focus = {
 	icon = GFX_goal_SUS_awareness_agency
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_awareness_agency"
+		add_to_variable = {
+            var = SUS_s_army_army_morale_factor
+            value = 0.1
+        }
+		add_to_variable = {
+            var = SUS_s_army_army_core_defence_factor
+            value = 0.2
+        }
+		add_to_variable = {
+            var = SUS_s_army_required_garrison_factor
+            value = -0.15
+        }
+		custom_effect_tooltip = SUS_awareness_agency_tt
 		
 	}
 	prerequisite = {
@@ -6385,6 +6542,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_small_scale_warfare
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_small_scale_warfare"
+		custom_effect_tooltip = SUS_small_scale_warfare_tt
 		
 	}
 	prerequisite = {
@@ -6402,8 +6560,35 @@ shared_focus = {
 	icon = GFX_goal_SUS_rapid_dominance
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_rapid_dominance"
+		if = {
+			limit = {
+				SUS = {
+					has_country_flag = SUS_aviation
+				}
+			}
+			add_to_variable = {
+                var = SUS_s_army_ground_attack_factor
+                value = 0.25
+            }
+		}
+		if = {
+			limit = {
+				SUS = {
+					has_country_flag = SUS_land_forces
+				}
+			}
+			add_to_variable = {
+                var = SUS_s_army_speed_factor
+                value = 0.15
+            }
+			add_to_variable = {
+                var = SUS_s_army_breakthrough_factor
+                value = 0.1
+            }
+		}
 		
 	}
+	select_effect = { country_event = { id = SUS_event.900 } }
 	prerequisite = {
 		focus = SUS_awareness_agency
 	}
@@ -6419,7 +6604,23 @@ shared_focus = {
 	icon = GFX_goal_SUS_cement_loyalty
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_cement_loyalty"
-		
+		every_army_leader  = {
+				add_unit_leader_trait = theoretical_pioneer
+			}
+		add_to_variable = {
+			SUS_s_army_army_org_factor = 0.2
+		}
+	}
+	select_effect = { 
+		random_army_leader  = {
+				remove_unit_leader = yes
+			}
+		random_army_leader  = {
+				remove_unit_leader = yes
+			}
+		add_to_variable = {
+			SUS_s_army_army_org_factor = -0.2
+		}
 	}
 	prerequisite = {
 		focus = SUS_rapid_dominance
@@ -6442,6 +6643,27 @@ shared_focus = {
 	icon = GFX_goal_SUS_thought_reform
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_thought_reform"
+		random_army_leader  = {
+				add_skill_level = 1
+				add_attack = 1
+				add_defense = 1
+				add_logistics = 1
+				add_planning = 1
+			}
+		random_army_leader  = {
+				add_skill_level = 1
+				add_attack = 1
+				add_defense = 1
+				add_logistics = 1
+				add_planning = 1
+			}
+		random_army_leader  = {
+				add_skill_level = 1
+				add_attack = 1
+				add_defense = 1
+				add_logistics = 1
+				add_planning = 1
+			}
 	
 	}
 	prerequisite = {
@@ -6465,6 +6687,13 @@ shared_focus = {
 	icon = GFX_goal_SUS_provide_comfort
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_provide_comfort"
+		add_equipment_to_stockpile = {
+            type = transport_plane_equipment
+            amount = 250
+        }
+		add_to_variable = {
+			SUS_s_army_supply_factor = 0.2
+		}
 		
 	}
 	prerequisite = {

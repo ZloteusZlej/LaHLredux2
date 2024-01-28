@@ -93,6 +93,7 @@ SUS_his_majestys_bureau_decision = {
 			OR ={
                 has_country_flag = SUS_his_majestys_bureau_founded
 				has_country_flag = SUS_british_extraordinary_commission_founded
+				has_country_flag = SUS_security_command_founded
 			}
 			
 		}
@@ -102,6 +103,7 @@ SUS_his_majestys_bureau_decision = {
 			OR ={
                 has_country_flag = SUS_his_majestys_bureau_founded
 			    has_country_flag = SUS_british_extraordinary_commission_founded
+				has_country_flag = SUS_security_command_founded
 			}
 		}
 	}
@@ -211,6 +213,23 @@ SUS_directing_minds = {
 	available = {
 		SUS = {
 			has_completed_focus = SUS_sky_always_shines_on_tv
+		}
+	}
+	visible_when_empty = yes
+}
+
+SUS_public_art_gallery = { 
+	icon = GFX_
+
+	allowed = { original_tag = SUS }
+	visible = {
+		SUS = {
+			has_completed_focus = SUS_mass_creativity
+		}
+	}
+	available = {
+		SUS = {
+			has_completed_focus = SUS_mass_creativity
 		}
 	}
 	visible_when_empty = yes

@@ -374,12 +374,14 @@ SUS_witches_political_spirit = {
 	surrender_limit = SUS_w_pol_surrender_limit
 	production_factory_start_efficiency_factor = SUS_w_pol_production_factory_start_efficiency_factor
 	mobilization_speed = SUS_w_pol_mobilization_speed 
+	required_garrison_factor = SUS_w_pol_required_garrison_factor
 	industrial_capacity_factory = SUS_w_pol_industrial_capacity_factory
 	political_power_factor = SUS_w_pol_political_power_factor
 	mobilization_laws_cost_factor = SUS_w_pol_mobilization_laws_cost_factor
 	trade_laws_cost_factor = SUS_w_pol_trade_laws_cost_factor
 	economy_cost_factor = SUS_w_pol_economy_cost_factor
 	research_speed_factor = SUS_w_pol_research_speed_factor
+	political_advisor_cost_factor = SUS_w_pol_political_advisor_cost_factor
 	production_factory_efficiency_gain_factor = SUS_w_pol_production_factory_efficiency_gain_factor
 	army_core_defence_factor = SUS_w_pol_army_core_defence
 	army_core_attack_factor = SUS_w_pol_army_core_attack
@@ -447,7 +449,8 @@ SUS_spies_army_spirit = {
 	conscription_factor = SUS_s_army_conscription_factor 
 	air_strategic_bomber_bombing_factor = SUS_s_army_air_strategic_bomber_bombing_factor 
 	strategic_bomb_visibility = SUS_s_army_strategic_bomb_visibility 
-	static_anti_air_damage_factor = SUS_s_army_static_anti_air_damage_factor 
+	static_anti_air_damage_factor = SUS_s_army_static_anti_air_damage_factor
+	static_anti_air_hit_chance_factor = SUS_s_army_static_anti_air_hit_chance_factor
 	special_forces_training_time_factor = SUS_s_army_special_forces_training_time_factor
 	special_forces_cap = SUS_s_army_special_forces_cap
 }
@@ -568,4 +571,22 @@ SUS_senate_justice = {
 	stability_factor = SUS_senate_stability_factor
 	war_support_factor = SUS_senate_war_support_factor
 	resistance_activity= SUS_senate_resistance_activity
+}
+SUS_unplanned_offensive = {
+	attacker_modifier = yes
+
+	air_cas_present_factor = -0.25
+	army_attack_factor = -0.3
+	army_speed_factor = -0.2
+	ground_attack_factor = -0.2
+	local_org_regain = -0.1
+}
+SUS_planned_offensive = {
+	attacker_modifier = yes
+
+	air_cas_present_factor = 0.25
+	army_attack_factor = 0.15
+	army_speed_factor = 0.2
+	ground_attack_factor = 0.2
+	local_org_regain = 0.3
 }

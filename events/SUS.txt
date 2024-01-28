@@ -649,6 +649,7 @@ country_event = { #Request 1 Build Military Factory
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2216,6 +2217,15 @@ country_event = { #Request 2 Build Civilian Factory
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
+			}
+		}
+		SUS = {
+			any_owned_state = {
+				has_built = {
+					type = industrial_complex
+					value < 3
+				}
 			}
 		}
 	}
@@ -2225,6 +2235,15 @@ country_event = { #Request 2 Build Civilian Factory
 		SUS = {
 			activate_mission = SUS_request_2_mission
 			set_country_flag = SUS_council_request_active
+			random_owned_state = {
+				limit = {
+					has_built = {
+						type = industrial_complex
+						value < 3
+					}
+				}
+				set_state_flag = SUS_request_civilian_factory
+			}
 		}
     }
 }
@@ -2237,7 +2256,7 @@ country_event = { #Request 3 Upgrade Railways
 	trigger = {
 		NOT = {
 			SUS = {
-				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2260,7 +2279,10 @@ country_event = { #Request 4 Build Bunkers
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
+			country_exists = WES
+			country_exists = KNT
 		}
 	}
     fire_only_once = yes
@@ -2282,6 +2304,9 @@ country_event = { #Request 5 More Divisions
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
+				num_divisions < 50
+				num_divisions > 20
 			}
 		}
 	}
@@ -2304,6 +2329,7 @@ country_event = { #Request 6 Fuel Silos
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2326,6 +2352,19 @@ country_event = { #Request 7 Infrastructure
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
+				998 = {
+					has_built = {
+						type = infrastructure
+						value < 5
+					}
+				}
+				1018 = {
+					has_built = {
+						type = infrastructure
+						value < 5
+					}
+				}
 			}
 		}
 	}
@@ -2348,6 +2387,7 @@ country_event = { #Request 8 Airports
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2370,6 +2410,10 @@ country_event = { #Request 9 Convoys
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
+				has_equipment = {
+					convoy > 300
+				}
 			}
 		}
 	}
@@ -2392,6 +2436,10 @@ country_event = { #Request 10 Trucks
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
+				has_equipment = {
+					motorized_equipment > 300
+				}
 			}
 		}
 	}
@@ -2414,6 +2462,11 @@ country_event = { #Request 11 More Guns
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
+				stockpile_ratio = {
+					archetype = infantry_equipment
+					ratio > 1.5
+				}
 			}
 		}
 	}
@@ -2436,6 +2489,7 @@ country_event = { #Request 12 Synthetic Refinery
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2457,6 +2511,11 @@ country_event = { #Request 13 Air Coverage
 	trigger = {
 		SUS = {
 			has_war = yes
+			num_planes_stationed_in_regions = {
+				value < 50
+				regions = { 3 4 5 }
+			}
+			has_country_flag = SUS_council_request_active
 		}
 	}
     fire_only_once = yes
@@ -2477,6 +2536,13 @@ country_event = { #Request 14 Build Anti-Air
 	trigger = {
 		SUS = {
 			has_war = yes
+			has_country_flag = SUS_council_request_active
+			1001 = {
+				has_built = {
+					type = anti_air_building
+					value < 4
+				}
+			}
 		}
 	}
     fire_only_once = yes
@@ -2498,6 +2564,7 @@ country_event = { #Request 15 Civilian economy
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2520,6 +2587,7 @@ country_event = { #Request 16 Volunteer Only
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2529,11 +2597,12 @@ country_event = { #Request 16 Volunteer Only
 		SUS = {
 			activate_mission = SUS_request_16_mission
 			set_country_flag = SUS_council_request_active
+			add_ideas = volunteer_only
 		}
     }
 }
 
-country_event = { #Request 17 Volunteer Only
+country_event = { #Request 17 Research Tech
 	id = SUS_event.67
 	title = SUS_event.67.t
 	desc = SUS_event.67.d
@@ -2542,7 +2611,11 @@ country_event = { #Request 17 Volunteer Only
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
+		}
+		SUS = {
+			can_research = advanced_computing_machine
 		}
 	}
     fire_only_once = yes
@@ -2551,6 +2624,7 @@ country_event = { #Request 17 Volunteer Only
 		SUS = {
 			activate_mission = SUS_request_17_mission
 			set_country_flag = SUS_council_request_active
+			add_ideas = civilian_economy
 		}
     }
 }
@@ -2564,6 +2638,12 @@ country_event = { #Request 18 Minister Reshuffle
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
+			}
+		}
+		SUS = {
+			any_character = {
+				is_hired_as_advisor = yes
 			}
 		}
 	}
@@ -2573,6 +2653,12 @@ country_event = { #Request 18 Minister Reshuffle
 		SUS = {
 			activate_mission = SUS_request_18_mission
 			set_country_flag = SUS_council_request_active
+			random_character = {
+				limit = {
+					is_hired_as_advisor = yes
+				}
+				set_character_flag = SUS_reshuffle_character
+			}
 		}
     }
 }
@@ -2586,6 +2672,7 @@ country_event = { #Request 19 Dockyards
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2608,6 +2695,7 @@ country_event = { #Request 20 Destroy The Celts!
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2630,6 +2718,7 @@ country_event = { #Request 20 Wha?
 		NOT = {
 			SUS = {
 				has_war = yes
+				has_country_flag = SUS_council_request_active
 			}
 		}
 	}
@@ -2720,6 +2809,8 @@ country_event = { #Victory Celebrations
 		name = SUS_event.499.c
 		set_country_flag = sus_king_ill_flag
 		set_country_flag = SUS_sided_with_guards
+		clr_country_flag = SUS_his_majestys_bureau_founded
+		custom_effect_tooltip = SUS_bureau_closed_tt
 		activate_mission = SUS_power_struggle
 		activate_mission = SUS_spies_acquire_guns
 		activate_mission = SUS_party_acquire_guns
@@ -2799,6 +2890,7 @@ country_event = { #The King Awakens
 	is_triggered_only = yes
 	fire_only_once = yes
 	#Dearlove#
+	#Dearlove#
 	option = {
 		name = SUS_event.502.a
 		trigger = {
@@ -2815,6 +2907,7 @@ country_event = { #The King Awakens
 			socialism = 15
 			left_authoritarianism = 25
 		}
+		add_ideas = SUS_active_measures_1_of_3
 		load_focus_tree = SUS_spies_focuses
 		clr_country_flag = sus_king_ill_flag
 		set_global_flag = SUS_power_struggle_ended
@@ -3087,6 +3180,15 @@ country_event = { #WITCHES QUEEN EVENT
     }
 }
 
+country_event = { #WITCHES WORKER COUNT EVENT
+	title = SUS_event.201.t
+	desc = SUS_event.201.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.201.a
+    }
+}
 country_event = { #WITCHES ARCHEGETES ELECTIONS EVENT
 	id = SUS_event.250
 	title = SUS_event.250.t
@@ -3189,4 +3291,702 @@ country_event = { #WITCHES Justice event
 			}
 		}
 	}
+}
+
+country_event = { #SPIES AWAKEN AGENTS EVENT
+	id = SUS_event.800
+	title = SUS_event.800.t
+	desc = SUS_event.800.d
+    is_triggered_only = yes
+	option = {#factory
+		name = SUS_event.800.a
+		ai_chance = {
+			factor = 1
+		}
+		SUS = {
+			country_event = {
+			    id = SUS_event.801
+		    }
+		}
+    }
+	option = {#amry
+		name = SUS_event.800.b
+		ai_chance = {
+			factor = 1
+		}
+		SUS = {
+			country_event = {
+			    id = SUS_event.802
+		    }
+		}
+    }
+	option = {#office
+		name = SUS_event.800.c
+		ai_chance = {
+			factor = 1
+		}
+		SUS = {
+			country_event = {
+			    id = SUS_event.803
+		    }
+		}
+    }
+}
+
+country_event = { #SPIES AWAKEN AGENTS IN FACTORY
+	id = SUS_event.801
+	title = SUS_event.801.t
+	desc = SUS_event.801.d
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.801.a
+		ai_chance = {
+			factor = 1
+		}
+		set_global_flag = SUS_awaken_agents_supply_hub
+		every_country = {
+			limit = {
+				has_country_flag = SUS_awaken_agents_active
+			}
+			country_event = { 
+				id = SUS_event.804
+			    days = 1
+			}
+		}
+    }
+	option = {
+		name = SUS_event.801.b
+		ai_chance = {
+			factor = 1
+		}
+		set_global_flag = SUS_awaken_agents_industrial_complex
+		every_country = {
+			limit = {
+				has_country_flag = SUS_awaken_agents_active
+			}
+			country_event = { 
+				id = SUS_event.804
+			    days = 1
+			}
+		}
+    }
+	option = {
+		name = SUS_event.801.c
+		ai_chance = {
+			factor = 1
+		}
+		set_global_flag = SUS_awaken_agents_military_factory
+		every_country = {
+			limit = {
+				has_country_flag = SUS_awaken_agents_active
+			}
+			country_event = { 
+				id = SUS_event.804
+			    days = 1
+			}
+		}
+    }
+}country_event = { #SPIES AWAKEN AGENTS IN ARMY
+	id = SUS_event.802
+	title = SUS_event.802.t
+	desc = SUS_event.802.d
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.802.a
+		ai_chance = {
+			factor = 1
+		}
+		set_global_flag = SUS_awaken_agents_wound_general
+		every_country = {
+			limit = {
+				has_country_flag = SUS_awaken_agents_active
+			}
+			country_event = { 
+				id = SUS_event.805
+			    days = 1
+			}
+		}
+    }
+	option = {
+		name = SUS_event.802.b
+		ai_chance = {
+			factor = 1
+		}
+		set_global_flag = SUS_awaken_agents_spread_rumor
+		every_country = {
+			limit = {
+				has_country_flag = SUS_awaken_agents_active
+			}
+			country_event = { 
+				id = SUS_event.805
+			    days = 1
+			}
+		}
+    }
+	option = {
+		name = SUS_event.802.c
+		ai_chance = {
+			factor = 1
+		}
+		set_global_flag = SUS_tamper_commands
+		every_country = {
+			limit = {
+				has_country_flag = SUS_awaken_agents_active
+			}
+			country_event = { 
+				id = SUS_event.805
+			    days = 1
+			}
+		}
+    }
+}
+
+country_event = { #SPIES AWAKEN AGENTS IN OFFICE
+	id = SUS_event.803
+	title = SUS_event.803.t
+	desc = SUS_event.803.d
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.803.a
+		ai_chance = {
+			factor = 1
+		}
+		set_global_flag = SUS_awaken_agents_spy_secrets
+		every_country = {
+			limit = {
+				has_country_flag = SUS_awaken_agents_active
+			}
+			country_event = { 
+				id = SUS_event.806
+				days = 1
+			}
+		}
+    }
+	option = {
+		name = SUS_event.803.b
+		ai_chance = {
+			factor = 1
+		}
+		set_global_flag = SUS_awaken_agents_bride_officer
+		every_country = {
+			limit = {
+				has_country_flag = SUS_awaken_agents_active
+			}
+			country_event = { 
+				id = SUS_event.806 
+			    days = 1
+			}
+		}
+    }
+	option = {
+		name = SUS_event.803.c
+		ai_chance = {
+			factor = 1
+		}
+		set_global_flag = SUS_awaken_agents_incite_opponents
+		every_country = {
+			limit = {
+				has_country_flag = SUS_awaken_agents_active
+			}
+			country_event = { 
+				id = SUS_event.806 
+			    days = 1
+			}
+		}
+    }
+}
+
+country_event = { #FIGHT AGAINST AGENTS IN FACTORY
+	id = SUS_event.804
+	title = SUS_event.804.t
+	desc = SUS_event.804.d
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.804.a
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+            if = {
+			    limit = {
+                    has_global_flag = SUS_awaken_agents_supply_hub
+			    }
+			    country_event = { 
+					id = SUS_event.807
+					days = 1 
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.808 
+						days = 1
+					}
+			    }
+		    }
+		    else = {
+			    country_event = { 
+					id = SUS_event.809 
+					days = 1
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.810 
+						days = 1
+					}
+			    }
+		    }
+		}
+    }
+	option = {
+		name = SUS_event.804.b
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+            if = {
+			    limit = {
+                    has_global_flag = SUS_awaken_agents_industrial_complex
+			    }
+			    country_event = { 
+					id = SUS_event.807
+					days = 1 
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.808 
+						days = 1
+					}
+			    }
+		    }
+		    else = {
+			    country_event = { 
+					id = SUS_event.809 
+					days = 1
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.810 
+						days = 1
+					}
+			    }
+		    }
+		}
+    }
+	option = {
+		name = SUS_event.804.c
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+            if = {
+			    limit = {
+                    has_global_flag = SUS_awaken_agents_military_factory
+			    }
+			    country_event = { 
+					id = SUS_event.807
+					days = 1 
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.808 
+						days = 1
+					}
+			    }
+		    }
+		    else = {
+			    country_event = { 
+					id = SUS_event.809 
+					days = 1
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.810 
+						days = 1
+					}
+			    }
+		    }
+		}
+    }
+}
+
+country_event = { #FIGHT AGAINST AGENTS IN ARMY
+	id = SUS_event.805
+	title = SUS_event.805.t
+	desc = SUS_event.805.d
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.805.a
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+            if = {
+			    limit = {
+                    has_global_flag = SUS_awaken_agents_wound_general
+			    }
+			    country_event = { 
+					id = SUS_event.807
+					days = 1 
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.808 
+						days = 1
+					}
+			    }
+		    }
+		    else = {
+			    country_event = { 
+					id = SUS_event.809 
+					days = 1
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.810 
+						days = 1
+					}
+			    }
+		    }
+		}
+    }
+	option = {
+		name = SUS_event.805.b
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+            if = {
+			    limit = {
+                    has_global_flag = SUS_awaken_agents_spread_rumor
+			    }
+			    country_event = { 
+					id = SUS_event.807
+					days = 1 
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.808 
+						days = 1
+					}
+			    }
+		    }
+		    else = {
+			    country_event = { 
+					id = SUS_event.809 
+					days = 1
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.810 
+						days = 1
+					}
+			    }
+		    }
+		}
+    }
+	option = {
+		name = SUS_event.805.c
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+            if = {
+			    limit = {
+                    has_global_flag = SUS_tamper_commands
+			    }
+			    country_event = { 
+					id = SUS_event.807
+					days = 1 
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.808 
+						days = 1
+					}
+			    }
+		    }
+		    else = {
+			    country_event = { 
+					id = SUS_event.809 
+					days = 1
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.810 
+						days = 1
+					}
+			    }
+		    }
+		}
+    }
+}
+
+country_event = { #FIGHT AGAINST AGENTS IN OFFICE
+	id = SUS_event.806
+	title = SUS_event.806.t
+	desc = SUS_event.806.d
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.806.a
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+            if = {
+			    limit = {
+                    has_global_flag = SUS_awaken_agents_spy_secrets
+			    }
+			    country_event = { 
+					id = SUS_event.807
+					days = 1 
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.808 
+						days = 1
+					}
+			    }
+		    }
+		    else = {
+			    country_event = { 
+					id = SUS_event.809 
+					days = 1
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.810 
+						days = 1
+					}
+			    }
+		    }
+		}
+    }
+	option = {
+		name = SUS_event.806.b
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+            if = {
+			    limit = {
+                    has_global_flag = SUS_awaken_agents_bride_officer
+			    }
+			    country_event = { 
+					id = SUS_event.807
+					days = 1 
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.808 
+						days = 1
+					}
+			    }
+		    }
+		    else = {
+			    country_event = { 
+					id = SUS_event.809 
+					days = 1
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.810 
+						days = 1
+					}
+			    }
+		    }
+		}
+    }
+	option = {
+		name = SUS_event.806.c
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+            if = {
+			    limit = {
+                    has_global_flag = SUS_awaken_agents_incite_opponents
+			    }
+			    country_event = { 
+					id = SUS_event.807
+					days = 1 
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.808 
+						days = 1
+					}
+			    }
+		    }
+		    else = {
+			    country_event = { 
+					id = SUS_event.809 
+					days = 1
+				}
+			    SUS = {
+                    country_event = { 
+						id = SUS_event.810 
+						days = 1
+					}
+			    }
+		    }
+		}
+		
+    }
+}
+
+country_event = { #FIGHT AGAINST AGENTS SUCCESSFULLY
+	id = SUS_event.807
+	title = SUS_event.807.t
+	desc = SUS_event.807.d
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.807.a
+		clr_global_flag = SUS_awaken_agents_supply_hub
+		clr_global_flag = SUS_awaken_agents_industrial_complex
+		clr_global_flag = SUS_awaken_agents_military_factory
+		clr_global_flag = SUS_awaken_agents_wound_general
+		clr_global_flag = SUS_awaken_agents_spread_rumor
+		clr_global_flag = SUS_tamper_commands
+		clr_global_flag = SUS_awaken_agents_spy_secrets
+		clr_global_flag = SUS_awaken_agents_bride_officer
+		clr_global_flag = SUS_awaken_agents_incite_opponents
+		clr_country_flag = SUS_awaken_agents_active
+	}
+}
+
+country_event = { # AGENTS FAIL
+	id = SUS_event.808
+	title = SUS_event.808.t
+	desc = SUS_event.808.d
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.808.a
+		add_war_support = -0.02
+        add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -250
+		}
+	}
+}
+
+country_event = { #FIGHT AGAINST AGENTS UNSUCCESSFUL
+	id = SUS_event.809
+	title = SUS_event.809.t
+	desc = SUS_event.809.d
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.809.a
+		if = {
+			limit = {
+                has_global_flag = SUS_awaken_agents_supply_hub
+			}
+			random_controlled_state = {
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+			clr_global_flag = SUS_awaken_agents_supply_hub
+			clr_country_flag = SUS_awaken_agents_active
+		}
+		else_if = {
+			limit = {
+                has_global_flag = SUS_awaken_agents_industrial_complex
+			}
+			random_controlled_state = {
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+			}
+			clr_global_flag = SUS_awaken_agents_industrial_complex
+			clr_country_flag = SUS_awaken_agents_active
+		}
+		else_if = {
+			limit = {
+                has_global_flag = SUS_awaken_agents_military_factory
+			}
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -750
+		    }
+			clr_global_flag = SUS_awaken_agents_military_factory
+			clr_country_flag = SUS_awaken_agents_active
+		}
+		else_if = {
+			limit = {
+                has_global_flag = SUS_awaken_agents_wound_general
+			}
+			random_unit_leader = {
+				add_unit_leader_trait = wounded
+			}
+		    clr_global_flag = SUS_awaken_agents_wound_general
+			clr_country_flag = SUS_awaken_agents_active
+		}
+		else_if = {
+			limit = {
+                has_global_flag = SUS_awaken_agents_spread_rumor
+			}
+			add_war_support = -0.05
+		    clr_global_flag = SUS_awaken_agents_spread_rumor
+			clr_country_flag = SUS_awaken_agents_active
+		}
+		else_if = {
+			limit = {
+                has_global_flag = SUS_tamper_commands
+			}
+			add_manpower = -5000
+		    clr_global_flag = SUS_tamper_commands
+			clr_country_flag = SUS_awaken_agents_active
+		}
+		else_if = {
+			limit = {
+                has_global_flag = SUS_awaken_agents_spy_secrets
+			}
+			add_command_power = -20
+		    clr_global_flag = SUS_awaken_agents_spy_secrets
+			clr_country_flag = SUS_awaken_agents_active
+		}
+	    else_if = {
+			limit = {
+                has_global_flag = SUS_awaken_agents_bride_officer
+			}
+			add_political_power = -150
+		    clr_global_flag = SUS_awaken_agents_bride_officer
+			clr_country_flag = SUS_awaken_agents_active
+		}
+		else_if = {
+			limit = {
+                has_global_flag = SUS_awaken_agents_incite_opponents
+			}
+			add_stability = -0.05
+		    clr_global_flag = SUS_awaken_agents_incite_opponents
+			clr_country_flag = SUS_awaken_agents_active
+		}
+	}
+}
+
+country_event = { # AGENTS SUCCEED
+	id = SUS_event.810
+	title = SUS_event.810.t
+	desc = SUS_event.810.d
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.810.a
+	}
+}
+
+country_event = { #Rapid Dominance
+	id = SUS_event.900
+	title = SUS_event.900.t
+	desc = SUS_event.900.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.900.a
+		set_country_flag = SUS_aviation
+    }
+	option = {
+		name = SUS_event.900.b
+		set_country_flag = SUS_land_forces
+    }
 }
