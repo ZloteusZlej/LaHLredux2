@@ -7157,7 +7157,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_low_power_reactors
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_low_power_reactors"
-		
+		add_to_variable = {
+			var = SUS_s_reconstruction_industrial_capacity_factory
+			value = 0.15
+		}
+		add_to_variable = {
+			var = SUS_s_reconstruction_industry_air_damage_factor	
+			value = -0.3
+		}	
 	}
 	prerequisite = {
 		focus = SUS_data_mining
