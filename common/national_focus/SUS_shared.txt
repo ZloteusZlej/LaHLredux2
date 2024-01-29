@@ -7121,6 +7121,14 @@ shared_focus = {
 			var = SUS_s_reconstruction_recruitable_population_factor
 			value = -0.1
 		}
+		add_to_variable = {
+			var = SUS_s_reconstruction_production_factory_max_efficiency_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = SUS_s_reconstruction_production_factory_efficiency_gain_factor
+			value = 0.1
+		}
 	}
 	prerequisite = {
 		focus = SUS_many_happy_returns
