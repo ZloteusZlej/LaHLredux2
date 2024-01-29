@@ -6422,7 +6422,7 @@ shared_focus = {
 		add_tech_bonus = {
 			bonus = 0.5
 			uses = 2
-			category = anti_air_equipment
+			category = cat_anti_air
 		}
 		custom_effect_tooltip = SUS_golden_gun_tt
 	}
@@ -6466,9 +6466,15 @@ shared_focus = {
 	icon = GFX_goal_SUS_shadow_of_the_collosus
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_shadow_of_the_collosus"
-		set_variable = {
-			var = SUS_shadow_times
-			value = 2
+		custom_effect_tooltip = SUS_shadow_of_the_collosus_tt
+		SUS = {
+			set_variable = {
+			    var = SUS_shadow_times
+			    value = 2
+		    }
+		}
+		hidden_effect = {
+			activate_mission = SUS_shadow_decyphering_mission
 		}
 	}
 	prerequisite = {
@@ -6494,6 +6500,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_licence_to_harm
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_licence_to_harm"
+		custom_effect_tooltip = SUS_licence_to_harm_tt
 	
 	}
 	prerequisite = {
@@ -6570,6 +6577,7 @@ shared_focus = {
                 var = SUS_s_army_ground_attack_factor
                 value = 0.25
             }
+			custom_effect_tooltip = SUS_aviation_tt
 		}
 		if = {
 			limit = {
@@ -6585,6 +6593,7 @@ shared_focus = {
                 var = SUS_s_army_breakthrough_factor
                 value = 0.1
             }
+			custom_effect_tooltip = SUS_land_forces_tt
 		}
 		
 	}
@@ -6604,11 +6613,13 @@ shared_focus = {
 	icon = GFX_goal_SUS_cement_loyalty
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_cement_loyalty"
+		custom_effect_tooltip = SUS_cement_loyalty_tt
 		every_army_leader  = {
 				add_unit_leader_trait = theoretical_pioneer
 			}
 		add_to_variable = {
-			SUS_s_army_army_org_factor = 0.2
+			var = SUS_s_army_army_org_factor
+			value = 0.2
 		}
 	}
 	select_effect = { 
@@ -6618,8 +6629,12 @@ shared_focus = {
 		random_army_leader  = {
 				remove_unit_leader = yes
 			}
+		random_army_leader  = {
+				remove_unit_leader = yes
+			}
 		add_to_variable = {
-			SUS_s_army_army_org_factor = -0.2
+			var = SUS_s_army_army_org_factor
+			value = -0.2
 		}
 	}
 	prerequisite = {
@@ -6692,8 +6707,10 @@ shared_focus = {
             amount = 250
         }
 		add_to_variable = {
-			SUS_s_army_supply_factor = 0.2
+			var = SUS_s_army_supply_factor
+			value = 0.2
 		}
+		custom_effect_tooltip = SUS_provide_comfort_tt
 		
 	}
 	prerequisite = {
@@ -6711,6 +6728,20 @@ shared_focus = {
 	icon = GFX_goal_SUS_defence_in_a_competitive_age
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_defence_in_a_competitive_age"
+		add_to_variable = {
+			var = SUS_s_army_special_forces_training_time_factor
+			value = -0.2
+		}
+		add_to_variable = {
+			var = SUS_s_army_special_forces_cap
+			value = 0.25
+		}
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = cat_special_forces_generic
+		}
+		custom_effect_tooltip = SUS_defence_in_a_competitive_age_tt
 		
 	}
 	
@@ -6726,7 +6757,6 @@ shared_focus = {
 	x = 0
 	y = 5
 }
-
 ##SPIES FINAL##
 
 shared_focus = {

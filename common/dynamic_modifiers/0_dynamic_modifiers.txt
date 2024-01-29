@@ -194,6 +194,11 @@ WES_agrarian_economy = {
 	local_resources_factor =  WES_agrarian_economy_local_resources_factor #
 }
 
+WES_sussex_unrest = {
+	icon = GFX_sex
+	recruitable_population_factor = 0.35
+}
+
 ##SUS##
 
 SUS_king_economy_spirit = { 
@@ -435,6 +440,7 @@ SUS_spies_political_spirit = {
         encryption_factor = SUS_s_pol_encryption_factor
 	required_garrison_factor = SUS_s_pol_required_garrison_factor
 	resistance_activity= SUS_s_pol_resistance_activity
+}
 
 SUS_spies_army_spirit = {
 	icon = GFX_SUS_spies_army_spirit
@@ -590,3 +596,4 @@ SUS_planned_offensive = {
 	ground_attack_factor = 0.2
 	local_org_regain = 0.3
 }
+

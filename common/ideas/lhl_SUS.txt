@@ -289,14 +289,10 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				production_cost_max_ship_hull_light = -0.3
-				production_cost_max_ship_hull_carrier = -0.3
-				production_cost_max_ship_hull_cruiser = -0.3
-				production_cost_max_ship_hull_heavy = -0.3
-				production_cost_max_ship_hull_submarine = -0.3
+				industrial_capacity_dockyard = -0.5
 			}
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: added idea SUS_retarding_research"
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_lack_of_dockyards"
 			}
 
 			removal_cost = -1
@@ -315,7 +311,7 @@ ideas = {
 				supply_factor = -0.1
 			}
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_slowed_ground_transport"
 			}
 
 			removal_cost = -1
@@ -335,7 +331,7 @@ ideas = {
 				
 			}
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_lack_of_oil"
 			}
 
 			removal_cost = -1
@@ -355,7 +351,7 @@ ideas = {
 				
 			}
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: added idea SUS_weapon_shortages"
+				log = "[GetDateText]: [Root.GetName]: added idea SUS_unrestricted_bombing"
 			}
 
 			removal_cost = -1
@@ -1522,8 +1518,7 @@ SUS_king_william = {
 			}
 
 		}
-	}
-	SUS_land_forces_war_support = {
+SUS_land_forces_war_support = {
 				picture = GFX_
 			
 		allowed = {
@@ -1537,7 +1532,7 @@ SUS_king_william = {
 		}
 	}
 
-	SUS_avaition_war_support = {
+	SUS_aviation_war_support = {
 				picture = GFX_
 			
 		allowed = {
@@ -1581,6 +1576,7 @@ modifier = {
 		airforce_intel_factor = 0.2
 		}
 		
+	}
 	}
 	hidden_ideas = {
 		SUS_initial_push = {
