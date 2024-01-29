@@ -6867,23 +6867,23 @@ shared_focus = {
 			value = 0.1
 		}
 		SUS = {
-		division_template = {
-			name = "Legalised Militia"
-			division_names_group = SUS_INF_22
-			force_allow_recruiting = yes
+			division_template = {
+				name = "Legalised Militia"
+				division_names_group = SUS_INF_22
+				force_allow_recruiting = yes
 
-			regiments = {
-				infantry = { x = 0 y = 0 }
-				infantry = { x = 0 y = 2 }
-				infantry = { x = 0 y = 3 }
-				infantry = { x = 1 y = 0 }
-				infantry = { x = 1 y = 2 }
-				infantry = { x = 1 y = 3 }
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+				}
+				support = {
+					recon = { x = 0 y = 0 }  		
+				}
 			}
-			support = {
-				recon = { x = 0 y = 0 }  		
-			}
-		}
 				create_unit = {
 					prioritize_location = 1160
 					division = "name = \"Enfielders\" division_template = \"Legalised Militia\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
@@ -6894,7 +6894,7 @@ shared_focus = {
 					division = "name = \"Hacknies\" division_template = \"Legalised Militia\" start_experience_factor = 1.8 start_equipment_factor = 1.0"
 					owner = SUS
 				}
-			}
+		}
 	}
 	prerequisite = {
 		focus = SUS_royal_philanthropic_society
@@ -6915,7 +6915,6 @@ shared_focus = {
 			value = -0.9
 			}
 		}	
-	}	
 	prerequisite = {
 		focus = SUS_hire_londoner_firms
 	}
