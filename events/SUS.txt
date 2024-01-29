@@ -654,6 +654,7 @@ country_event = { #Request 1 Build Military Factory
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 			any_owned_state = {
 				arms_factory < 3
 			}
@@ -682,6 +683,26 @@ country_event = { #Plea 17 Delete Factory
 	desc = SUS_event.31.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.31.a
 		if = {
@@ -754,6 +775,26 @@ country_event = { #Plea 1: Fake Money
 	desc = SUS_event.33.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.33.a
 		if = {
@@ -818,6 +859,26 @@ country_event = { #Plea 2: Stolen Aircraft
 	desc = SUS_event.34.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.34.a
 		add_to_variable = {
@@ -887,6 +948,26 @@ country_event = { #Plea 3: British Sablin
 	desc = SUS_event.35.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.35.a
 		if = {
@@ -957,6 +1038,26 @@ country_event = { #Plea 4: Murderer
 	desc = SUS_event.36.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.36.a
 		custom_effect_tooltip = SUS_senate_gain_trust_huge_tt
@@ -1028,6 +1129,26 @@ country_event = { #Plea 5: Corruption
 	desc = SUS_event.37.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
     immediate = {
 		SUS = {
 			random_character = {
@@ -1137,6 +1258,26 @@ country_event = { #Plea 6: Unlawful Factories
 	desc = SUS_event.38.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.38.a
 		if = {
@@ -1212,6 +1353,26 @@ country_event = { #Plea 7: Military Corruption
 	desc = SUS_event.39.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
     immediate = {
 		SUS = {
 			random_unit_leader = {
@@ -1318,6 +1479,26 @@ country_event = { #Plea 8: Unruly Poet
 	desc = SUS_event.40.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.40.a
 		if = {
@@ -1381,6 +1562,26 @@ country_event = { #Plea 9: GULAG Revolt
 	desc = SUS_event.41.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.41.a
 		if = {
@@ -1524,6 +1725,26 @@ country_event = { #Plea 10: Purge Scientists
 	desc = SUS_event.42.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.42.a
 		if = {
@@ -1631,6 +1852,26 @@ country_event = { #Plea 11: Man-made Disaster
 	desc = SUS_event.43.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.43.a
 		add_to_variable = {
@@ -1686,6 +1927,26 @@ country_event = { #Plea 12: Doctor's Plot
 	desc = SUS_event.44.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.44.a
 		if = {
@@ -1752,6 +2013,26 @@ country_event = { #Plea 13: Family Feud
 	desc = SUS_event.45.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.45.a
 		custom_effect_tooltip = SUS_senate_gain_trust_tt
@@ -1812,6 +2093,26 @@ country_event = { #Plea 14: Self-Publishers
 	desc = SUS_event.46.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.46.a
 		custom_effect_tooltip = SUS_senate_gain_trust_tt
@@ -1875,6 +2176,26 @@ country_event = { #Plea 15: Religious Rabble
 	desc = SUS_event.47.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.47.a
 		custom_effect_tooltip = SUS_senate_gain_trust_tt
@@ -1944,6 +2265,26 @@ country_event = { #Plea 16: Oil Factory
 	desc = SUS_event.48.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	trigger = {
 		SUS = {
 			any_state = {
@@ -2062,6 +2403,26 @@ country_event = { #Plea 18: Poacher Hunt
 	desc = SUS_event.49.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.49.a
 		custom_effect_tooltip = SUS_senate_gain_trust_big_tt
@@ -2118,6 +2479,26 @@ country_event = { #Plea 19: Internet Board
 	desc = SUS_event.50.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.50.a
 		custom_effect_tooltip = SUS_senate_gain_trust_big_tt
@@ -2168,6 +2549,26 @@ country_event = { #Plea 20: Korea Criticism
 	desc = SUS_event.51.d
     is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		SUS = {
+			set_country_flag = {
+				flag = SUS_justice_case_cooldown
+				days = 90
+				value = 1
+			}
+		}
+	}
+	trigger = {
+		SUS = {
+			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
+		}
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_justice_case_cooldown
+			}
+		}
+	}
 	option = {
 		name = SUS_event.51.a
 		custom_effect_tooltip = SUS_senate_gain_trust_big_tt
@@ -2236,6 +2637,7 @@ country_event = { #Request 2 Build Civilian Factory
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 			any_owned_state = {
 				industrial_complex < 3
 			}
@@ -2286,6 +2688,7 @@ country_event = { #Request 3 Upgrade Railways
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 		}
 		SUS_justice_event_trigger = yes
 	}
@@ -2365,6 +2768,7 @@ country_event = { #Request 4 Build Bunkers
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 		}
 		OR = {
 			country_exists = NTH
@@ -2398,6 +2802,7 @@ country_event = { #Request 5 More Divisions
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 		}
 		SUS_justice_event_trigger = yes
 	}
@@ -2425,6 +2830,7 @@ country_event = { #Request 6 Fuel Silos
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 			any_owned_state = {
 				fuel_silo < 3
 			}
@@ -2468,6 +2874,7 @@ country_event = { #Request 7 Infrastructure
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 		}
 		SUS_justice_event_trigger = yes
 	}
@@ -2495,6 +2902,7 @@ country_event = { #Request 8 Airports
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 			any_owned_state = {
 				air_base < 5
 			}
@@ -2534,6 +2942,7 @@ country_event = { #Request 9 Convoys
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 		}
 		SUS_justice_event_trigger = yes
 	}
@@ -2564,6 +2973,7 @@ country_event = { #Request 10 Trucks
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 		}
 		SUS_justice_event_trigger = yes
 	}
@@ -2595,6 +3005,7 @@ country_event = { #Request 11 More Guns
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 		}
 		SUS_justice_event_trigger = yes
 	}
@@ -2622,6 +3033,7 @@ country_event = { #Request 12 Synthetic Refinery
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 			any_owned_state = {
 				synthetic_refinery < 3
 			}
@@ -2662,6 +3074,7 @@ country_event = { #Request 13 Air Coverage
 				type = fighter
 			}
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 		}
 		NOT = {
 			has_country_flag = SUS_council_request_active
@@ -2690,6 +3103,7 @@ country_event = { #Request 14 Build Anti-Air
 				anti_air_building > 4
 			}
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 		}
 		NOT = {
 			has_country_flag = SUS_council_request_active
@@ -2720,6 +3134,7 @@ country_event = { #Request 15 Civilian economy
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 		}
 		SUS_justice_event_trigger = yes
 	}
@@ -2747,6 +3162,7 @@ country_event = { #Request 16 Volunteer Only
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 		}
 		SUS_justice_event_trigger = yes
 	}
@@ -2775,6 +3191,7 @@ country_event = { #Request 17 Research Tech
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 			can_research = advanced_computing_machine
 		}
 		SUS_justice_event_trigger = yes
@@ -2803,6 +3220,7 @@ country_event = { #Request 18 Minister Reshuffle
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 			any_character = {
 				is_hired_as_advisor = yes
 			}
@@ -2839,6 +3257,7 @@ country_event = { #Request 19 Dockyards
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 			any_owned_state = {
 				dockyard < 4
 				is_coastal = yes
@@ -2884,6 +3303,7 @@ country_event = { #Request 20 Destroy The Celts!
 		}
 		SUS = {
 			has_government = commendationism
+			has_completed_focus = SUS_peoples_assembly
 		}
 		SUS_justice_event_trigger = yes
 	}
