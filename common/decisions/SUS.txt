@@ -149,11 +149,11 @@ SUS_workers_senate = {
 		days_mission_timeout = 90
 		available = {
 			SUS = {
-				1156 = {
-					random_owned_state = {
-						type = arms_factory
-						value > 3
+				any_owned_state = {
+					limit = {
+						has_state_flag = SUS_request_military_factory
 					}
+					arms_factory > 3
 				}
 			}
 		}
@@ -166,6 +166,12 @@ SUS_workers_senate = {
 		is_good = no
 		timeout_effect = {
 			SUS = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = SUS_request_military_factory
+				}
+				clr_state_flag = SUS_request_military_factory
+			}
 				add_timed_idea = {
 					idea = SUS_weapon_shortages
 					days = 180
@@ -176,6 +182,14 @@ SUS_workers_senate = {
 		complete_effect = {
 			SUS = {
 				clr_country_flag = SUS_council_request_active
+				hidden_effect = {
+					random_owned_state = {
+						limit = {
+							has_state_flag = SUS_request_military_factory
+						}
+						clr_state_flag = SUS_request_military_factory
+					}
+				}
 			}
 		}
 	}
@@ -187,10 +201,7 @@ SUS_workers_senate = {
 					limit = {
 						has_state_flag = SUS_request_civilian_factory
 					}
-					has_built = {
-						type = industrial_complex
-						value > 3
-					}
+					industrial_complex > 3
 				}
 			}
 		}
@@ -202,6 +213,12 @@ SUS_workers_senate = {
 		}
 		is_good = no
 		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = SUS_request_civilian_factory
+				}
+				clr_state_flag = SUS_request_civilian_factory
+			}
 			SUS = {
 				add_timed_idea = {
 					idea = SUS_product_deficit
@@ -213,6 +230,14 @@ SUS_workers_senate = {
 		complete_effect = {
 			SUS = {
 				clr_country_flag = SUS_council_request_active
+				hidden_effect = {
+					random_owned_state = {
+						limit = {
+							has_state_flag = SUS_request_civilian_factory
+						}
+						clr_state_flag = SUS_request_civilian_factory
+					}
+				}
 			}
 		}
 	}
@@ -259,19 +284,60 @@ SUS_workers_senate = {
 	SUS_request_4_mission = {
 		days_mission_timeout = 90
 		available = {
-			1153 = {
-				any_province_building_level = {
-					province = {
-						id = 10647
-						id = 17551
-						id = 10617
-						id = 17568
-						id = 17552
-						limit_to_border = yes
+			hidden_trigger = {
+				1153 = {
+					any_province_building_level = {
+						province = {
+							id = 10647
+							limit_to_border = yes
+						}
+						building = bunker
+						level > 4
 					}
-					building = bunker
-					level > 4
 				}
+				1153 = {
+					any_province_building_level = {
+						province = {
+							id = 17551
+							limit_to_border = yes
+						}
+						building = bunker
+						level > 4
+					}
+				}
+				1153 = {
+					any_province_building_level = {
+						province = {
+							id = 10617
+							limit_to_border = yes
+						}
+						building = bunker
+						level > 4
+					}
+				}
+				1153 = {
+					any_province_building_level = {
+						province = {
+							id = 17568
+							limit_to_border = yes
+						}
+						building = bunker
+						level > 4
+					}
+				}
+				1153 = {
+					any_province_building_level = {
+						province = {
+							id = 17552
+							limit_to_border = yes
+						}
+						building = bunker
+						level > 4
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = SUS_request_4_mission_tt
 			}
 		}
 		visible = {
@@ -342,11 +408,11 @@ SUS_workers_senate = {
 		days_mission_timeout = 90
 		available = {
 			SUS = {
-				random_owned_state = {
-					has_built = {
-						type = fuel_silo
-						value > 4
+				any_owned_state = {
+					limit = {
+						has_state_flag = SUS_request_fuel_silo
 					}
+					fuel_silo > 2
 				}
 			}
 		}
@@ -359,6 +425,12 @@ SUS_workers_senate = {
 		is_good = no
 		timeout_effect = {
 			SUS = {
+				random_owned_state = {
+					limit = {
+						has_state_flag = SUS_request_fuel_silo
+					}
+					clr_state_flag = SUS_request_fuel_silo
+				}
 				add_timed_idea = {
 					idea = SUS_fuel_shortages
 					days = 180
@@ -369,6 +441,14 @@ SUS_workers_senate = {
 		complete_effect = {
 			SUS = {
 				clr_country_flag = SUS_council_request_active
+				hidden_effect = {
+					random_owned_state = {
+						limit = {
+							has_state_flag = SUS_request_fuel_silo
+						}
+						clr_state_flag = SUS_request_fuel_silo
+					}
+				}
 			}
 		}
 	}
@@ -377,16 +457,10 @@ SUS_workers_senate = {
 		available = {
 			SUS = {
 				998 = {
-					has_built = {
-						type = infrastructure
-						value > 4
-					}
+					infrastructure > 4
 				}
 				1018 = {
-					has_built = {
-						type = infrastructure
-						value > 4
-					}
+					infrastructure > 4
 				}
 			}
 		}
@@ -430,23 +504,11 @@ SUS_workers_senate = {
 		days_mission_timeout = 90
 		available = {
 			SUS = {
-				random_owned_state = {
-					has_built = {
-						type = air_base
-						value > 3
+				any_owned_state = {
+					limit = {
+						has_state_flag = SUS_request_air_base
 					}
-				}
-				random_owned_state = {
-					has_built = {
-						type = air_base
-						value > 3
-					}
-				}
-				random_owned_state = {
-					has_built = {
-						type = air_base
-						value > 3
-					}
+					air_base > 3
 				}
 			}
 		}
@@ -459,6 +521,12 @@ SUS_workers_senate = {
 		is_good = no
 		timeout_effect = {
 			SUS = {
+				random_owned_state = {
+					limit = {
+						has_state_flag = SUS_request_air_base
+					}
+					clr_state_flag = SUS_request_air_base
+				}
 				add_timed_idea = {
 					idea = SUS_slowed_air_travel
 					days = 180
@@ -469,6 +537,14 @@ SUS_workers_senate = {
 		complete_effect = {
 			SUS = {
 				clr_country_flag = SUS_council_request_active
+				hidden_effect = {
+					random_owned_state = {
+						limit = {
+							has_state_flag = SUS_request_air_base
+						}
+						clr_state_flag = SUS_request_air_base
+					}
+				}
 			}
 		}
 	}
@@ -477,7 +553,7 @@ SUS_workers_senate = {
 		available = {
 			SUS = {
 				has_equipment = {
-					convoy > 300
+					convoy > 299
 				}
 			}
 		}
@@ -508,7 +584,7 @@ SUS_workers_senate = {
 		available = {
 			SUS = {
 				has_equipment = {
-					motorized_equipment > 300
+					motorized_equipment > 299
 				}
 			}
 		}
@@ -540,7 +616,7 @@ SUS_workers_senate = {
 			SUS = {
 				stockpile_ratio = {
 					archetype = infantry_equipment
-					ratio > 1.5
+					ratio > 0.5
 				}
 			}
 		}
@@ -571,11 +647,11 @@ SUS_workers_senate = {
 		days_mission_timeout = 90
 		available = {
 			SUS = {
-				random_owned_state = {
-					has_built = {
-						type = synthetic_refinery
-						value > 3
+				any_owned_state = {
+					limit = {
+						has_state_flag = SUS_request_synthetic_refinery
 					}
+					synthetic_refinery > 2
 				}
 			}
 		}
@@ -588,6 +664,12 @@ SUS_workers_senate = {
 		is_good = no
 		timeout_effect = {
 			SUS = {
+				random_owned_state = {
+					limit = {
+						has_state_flag = SUS_request_synthetic_refinery
+					}
+					clr_state_flag = SUS_request_synthetic_refinery
+				}
 				add_timed_idea = {
 					idea = SUS_lack_of_oil
 					days = 180
@@ -598,6 +680,14 @@ SUS_workers_senate = {
 		complete_effect = {
 			SUS = {
 				clr_country_flag = SUS_council_request_active
+				hidden_effect = {
+					random_owned_state = {
+						limit = {
+							has_state_flag = SUS_request_synthetic_refinery
+						}
+						clr_state_flag = SUS_request_synthetic_refinery
+					}
+				}
 			}
 		}
 	}
@@ -609,6 +699,10 @@ SUS_workers_senate = {
 					value > 50
 					regions = { 3 4 5 }
 				}
+			has_deployed_air_force_size = {
+				size > 149
+				type = fighter
+			}
 			}
 		}
 		visible = {
@@ -638,10 +732,7 @@ SUS_workers_senate = {
 		available = {
 			SUS = {
 				1001 = {
-					has_built = {
-						type = anti_air_building
-						value > 4
-					}
+					anti_air_building > 4
 				}
 			}
 		}
@@ -775,6 +866,7 @@ SUS_workers_senate = {
 				any_character = {
 					limit = {
 						has_character_flag = SUS_reshuffle_character
+						is_hired_as_advisor = yes
 					}
 					is_hired_as_advisor = no
 				}
@@ -789,6 +881,12 @@ SUS_workers_senate = {
 		is_good = no
 		timeout_effect = {
 			SUS = {
+				any_character = {
+					limit = {
+						has_character_flag = SUS_reshuffle_character
+					}
+					clr_character_flag = SUS_reshuffle_character
+				}
 				clr_country_flag = SUS_council_request_active
 				add_political_power = -300
 			}
@@ -796,6 +894,14 @@ SUS_workers_senate = {
 		complete_effect = {
 			SUS = {
 				clr_country_flag = SUS_council_request_active
+				hidden_effect = {
+					any_character = {
+						limit = {
+							has_character_flag = SUS_reshuffle_character
+						}
+						clr_character_flag = SUS_reshuffle_character
+					}
+				}
 			}
 		}
 	}
@@ -803,11 +909,11 @@ SUS_workers_senate = {
 		days_mission_timeout = 90
 		available = {
 			SUS = {
-				random_owned_state = {
-					has_built = {
-						type = dockyard
-						value > 4
+				any_owned_state = {
+					limit = {
+						has_state_flag = SUS_request_dockyard
 					}
+					dockyard > 3
 				}
 			}
 		}
@@ -820,6 +926,12 @@ SUS_workers_senate = {
 		is_good = no
 		timeout_effect = {
 			SUS = {
+				random_owned_state = {
+					limit = {
+						has_state_flag = SUS_request_dockyard
+					}
+					clr_state_flag = SUS_request_dockyard
+				}
 				clr_country_flag = SUS_council_request_active
 				add_timed_idea = {
 					idea = SUS_lack_of_dockyards
@@ -830,11 +942,19 @@ SUS_workers_senate = {
 		complete_effect = {
 			SUS = {
 				clr_country_flag = SUS_council_request_active
+				hidden_effect = {
+					random_owned_state = {
+						limit = {
+							has_state_flag = SUS_request_dockyard
+						}
+						clr_state_flag = SUS_request_dockyard
+					}
+				}
 			}
 		}
 	}
 	SUS_request_20_mission = {
-		days_mission_timeout = 90
+		days_mission_timeout = 10
 		available = {
 			SUS = {
 				has_war_with = SCO
@@ -852,6 +972,7 @@ SUS_workers_senate = {
 			SUS = {
 				clr_country_flag = SUS_council_request_active
 				add_political_power = -150
+				activate_mission = SUS_request_20_mission
 			}
 		}
 		complete_effect = {

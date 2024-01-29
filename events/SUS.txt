@@ -652,11 +652,25 @@ country_event = { #Request 1 Build Military Factory
 				has_country_flag = SUS_council_request_active
 			}
 		}
+		SUS = {
+			has_government = commendationism
+			any_owned_state = {
+				arms_factory < 3
+			}
+		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
 		name = SUS_event.30.a
 		SUS = {
+			random_owned_state = {
+				limit = {
+					arms_factory < 3
+				}
+				set_state_flag = SUS_request_military_factory
+				add_extra_state_shared_building_slots = 4
+			}
 			activate_mission = SUS_request_1_mission
 			set_country_flag = SUS_council_request_active
 		}
@@ -2221,29 +2235,26 @@ country_event = { #Request 2 Build Civilian Factory
 			}
 		}
 		SUS = {
+			has_government = commendationism
 			any_owned_state = {
-				has_built = {
-					type = industrial_complex
-					value < 3
-				}
+				industrial_complex < 3
 			}
 		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
 		name = SUS_event.52.a
 		SUS = {
-			activate_mission = SUS_request_2_mission
-			set_country_flag = SUS_council_request_active
 			random_owned_state = {
 				limit = {
-					has_built = {
-						type = industrial_complex
-						value < 3
-					}
+					industrial_complex < 3
 				}
 				set_state_flag = SUS_request_civilian_factory
+				add_extra_state_shared_building_slots = 4
 			}
+			activate_mission = SUS_request_2_mission
+			set_country_flag = SUS_council_request_active
 		}
     }
 }
@@ -2258,7 +2269,25 @@ country_event = { #Request 3 Upgrade Railways
 			SUS = {
 				has_country_flag = SUS_council_request_active
 			}
+			SUS = {
+				has_railway_level = {
+					state = 1001
+					level = 5
+				}
+				has_railway_level = {
+					state = 1002
+					level = 5
+				}
+				has_railway_level = {
+					state = 1006
+					level = 5
+				}
+			}
 		}
+		SUS = {
+			has_government = commendationism
+		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
@@ -2281,9 +2310,67 @@ country_event = { #Request 4 Build Bunkers
 				has_war = yes
 				has_country_flag = SUS_council_request_active
 			}
+			1153 = {
+				any_province_building_level = {
+					province = {
+						id = 10647
+						limit_to_border = yes
+					}
+					building = bunker
+					level > 4
+				}
+			}
+			1153 = {
+				any_province_building_level = {
+					province = {
+						id = 17551
+						limit_to_border = yes
+					}
+					building = bunker
+					level > 4
+				}
+			}
+			1153 = {
+				any_province_building_level = {
+					province = {
+						id = 10617
+						limit_to_border = yes
+					}
+					building = bunker
+					level > 4
+				}
+			}
+			1153 = {
+				any_province_building_level = {
+					province = {
+						id = 17568
+						limit_to_border = yes
+					}
+					building = bunker
+					level > 4
+				}
+			}
+			1153 = {
+				any_province_building_level = {
+					province = {
+						id = 17552
+						limit_to_border = yes
+					}
+					building = bunker
+					level > 4
+				}
+			}
 			country_exists = WES
 			country_exists = KNT
 		}
+		SUS = {
+			has_government = commendationism
+		}
+		OR = {
+			country_exists = NTH
+			country_exists = MRC
+		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
@@ -2309,6 +2396,10 @@ country_event = { #Request 5 More Divisions
 				num_divisions > 20
 			}
 		}
+		SUS = {
+			has_government = commendationism
+		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
@@ -2332,11 +2423,25 @@ country_event = { #Request 6 Fuel Silos
 				has_country_flag = SUS_council_request_active
 			}
 		}
+		SUS = {
+			has_government = commendationism
+			any_owned_state = {
+				fuel_silo < 3
+			}
+		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
 		name = SUS_event.56.a
 		SUS = {
+			random_owned_state = {
+				limit = {
+					fuel_silo < 3
+				}
+				set_state_flag = SUS_request_fuel_silo
+				add_extra_state_shared_building_slots = 3
+			}
 			activate_mission = SUS_request_6_mission
 			set_country_flag = SUS_council_request_active
 		}
@@ -2354,19 +2459,17 @@ country_event = { #Request 7 Infrastructure
 				has_war = yes
 				has_country_flag = SUS_council_request_active
 				998 = {
-					has_built = {
-						type = infrastructure
-						value < 5
-					}
+					infrastructure > 5
 				}
 				1018 = {
-					has_built = {
-						type = infrastructure
-						value < 5
-					}
+					infrastructure > 5
 				}
 			}
 		}
+		SUS = {
+			has_government = commendationism
+		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
@@ -2390,11 +2493,24 @@ country_event = { #Request 8 Airports
 				has_country_flag = SUS_council_request_active
 			}
 		}
+		SUS = {
+			has_government = commendationism
+			any_owned_state = {
+				air_base < 5
+			}
+		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
 		name = SUS_event.58.a
 		SUS = {
+			random_owned_state = {
+				limit = {
+					air_base < 3
+				}
+				set_state_flag = SUS_request_air_base
+			}
 			activate_mission = SUS_request_8_mission
 			set_country_flag = SUS_council_request_active
 		}
@@ -2416,6 +2532,10 @@ country_event = { #Request 9 Convoys
 				}
 			}
 		}
+		SUS = {
+			has_government = commendationism
+		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
@@ -2442,6 +2562,10 @@ country_event = { #Request 10 Trucks
 				}
 			}
 		}
+		SUS = {
+			has_government = commendationism
+		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
@@ -2465,10 +2589,14 @@ country_event = { #Request 11 More Guns
 				has_country_flag = SUS_council_request_active
 				stockpile_ratio = {
 					archetype = infantry_equipment
-					ratio > 1.5
+					ratio > 0.5
 				}
 			}
 		}
+		SUS = {
+			has_government = commendationism
+		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
@@ -2492,11 +2620,25 @@ country_event = { #Request 12 Synthetic Refinery
 				has_country_flag = SUS_council_request_active
 			}
 		}
+		SUS = {
+			has_government = commendationism
+			any_owned_state = {
+				synthetic_refinery < 3
+			}
+		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
 		name = SUS_event.62.a
 		SUS = {
+			random_owned_state = {
+				limit = {
+					synthetic_refinery  < 3
+				}
+				set_state_flag = SUS_request_synthetic_refinery
+				add_extra_state_shared_building_slots = 4
+			}
 			activate_mission = SUS_request_12_mission
 			set_country_flag = SUS_council_request_active
 		}
@@ -2515,8 +2657,16 @@ country_event = { #Request 13 Air Coverage
 				value < 50
 				regions = { 3 4 5 }
 			}
+			has_deployed_air_force_size = {
+				size < 149
+				type = fighter
+			}
+			has_government = commendationism
+		}
+		NOT = {
 			has_country_flag = SUS_council_request_active
 		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
@@ -2536,14 +2686,15 @@ country_event = { #Request 14 Build Anti-Air
 	trigger = {
 		SUS = {
 			has_war = yes
-			has_country_flag = SUS_council_request_active
 			1001 = {
-				has_built = {
-					type = anti_air_building
-					value < 4
-				}
+				anti_air_building > 4
 			}
+			has_government = commendationism
 		}
+		NOT = {
+			has_country_flag = SUS_council_request_active
+		} 
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
@@ -2567,6 +2718,10 @@ country_event = { #Request 15 Civilian economy
 				has_country_flag = SUS_council_request_active
 			}
 		}
+		SUS = {
+			has_government = commendationism
+		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
@@ -2590,6 +2745,10 @@ country_event = { #Request 16 Volunteer Only
 				has_country_flag = SUS_council_request_active
 			}
 		}
+		SUS = {
+			has_government = commendationism
+		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
@@ -2615,8 +2774,10 @@ country_event = { #Request 17 Research Tech
 			}
 		}
 		SUS = {
+			has_government = commendationism
 			can_research = advanced_computing_machine
 		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
@@ -2624,7 +2785,6 @@ country_event = { #Request 17 Research Tech
 		SUS = {
 			activate_mission = SUS_request_17_mission
 			set_country_flag = SUS_council_request_active
-			add_ideas = civilian_economy
 		}
     }
 }
@@ -2642,23 +2802,25 @@ country_event = { #Request 18 Minister Reshuffle
 			}
 		}
 		SUS = {
+			has_government = commendationism
 			any_character = {
 				is_hired_as_advisor = yes
 			}
 		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
 		name = SUS_event.68.a
 		SUS = {
-			activate_mission = SUS_request_18_mission
-			set_country_flag = SUS_council_request_active
 			random_character = {
 				limit = {
-					is_hired_as_advisor = yes
+					is_advisor = yes
 				}
 				set_character_flag = SUS_reshuffle_character
 			}
+			activate_mission = SUS_request_18_mission
+			set_country_flag = SUS_council_request_active
 		}
     }
 }
@@ -2675,11 +2837,27 @@ country_event = { #Request 19 Dockyards
 				has_country_flag = SUS_council_request_active
 			}
 		}
+		SUS = {
+			has_government = commendationism
+			any_owned_state = {
+				dockyard < 4
+				is_coastal = yes
+			}
+		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
 		name = SUS_event.69.a
 		SUS = {
+			random_owned_state = {
+				limit = {
+					dockyard < 4
+					is_coastal = yes
+				}
+				set_state_flag = SUS_request_dockyard
+				add_extra_state_shared_building_slots = 5
+			}
 			activate_mission = SUS_request_19_mission
 			set_country_flag = SUS_council_request_active
 		}
@@ -2697,7 +2875,17 @@ country_event = { #Request 20 Destroy The Celts!
 				has_war = yes
 				has_country_flag = SUS_council_request_active
 			}
+			country_exists = WES
+			country_exists = KNT
+			country_exists = EAG
+			country_exists = ESS
+			country_exists = NTH
+			country_exists = MRC			
 		}
+		SUS = {
+			has_government = commendationism
+		}
+		SUS_justice_event_trigger = yes
 	}
     fire_only_once = yes
 	option = {
