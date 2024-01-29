@@ -7141,6 +7141,14 @@ shared_focus = {
 			var = SUS_s_reconstruction_consumer_goods_factor
 			value = -0.1
 		}
+		add_to_variable = {
+			var = SUS_s_reconstruction_encryption_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = SUS_s_reconstruction_stability_factor
+			value = 0.1
+		}	
 	}
 	prerequisite = {
 		focus = SUS_civil_resettlement_units
