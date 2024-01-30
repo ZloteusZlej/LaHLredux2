@@ -7035,11 +7035,14 @@ shared_focus = {
 	icon = GFX_goal_SUS_the_british_thaw
 	completion_reward = { 
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_the_british_thaw"
-		add_political_power = 50
 		add_to_variable = {
 			var = SUS_s_reconstruction_production_factory_efficiency_gain_factor
 			value = 0.1
 		}
+		add_to_variable = {
+			var = SUS_s_reconstruction_political_power_factor
+			value = 0.05
+		}	
 	}
 	prerequisite = {
 		focus = SUS_primary_mortgage_company
@@ -7080,7 +7083,11 @@ shared_focus = {
 	icon = GFX_goal_SUS_tempora
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_tempora"
-		
+		add_to_variable = {
+			var = SUS_s_reconstruction_decryption_factor
+			value = 0.2
+		}
+		add_research_slots = 1
 	}
 	prerequisite = {
 		focus = SUS_top_secret
@@ -7099,7 +7106,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_many_happy_returns"
 		add_to_variable = {
 			var = SUS_s_reconstruction_trade_opinion_factor
-			value = 0.5
+			value = 0.3
 		}
 	}
 	prerequisite = {
