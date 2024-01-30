@@ -1239,7 +1239,7 @@ SUS_espionage_window = {
 	##OPERATION ADAM'S BLUE##
 	SUS_mission_2_stage_1 = {
 		custom_cost_trigger = {
-			check_variable = { SUS_spy_number_of_agents > 20 }
+			check_variable = { SUS_spy_number_of_agents > 19 }
 			has_equipment = {
 				transport_helicopter_equipment > 99
 			}
@@ -1256,17 +1256,29 @@ SUS_espionage_window = {
 					id = SUS_event.73
 					days = 0
 				}
+				hidden_effect = {
+					SUS = {
+						add_equipment_to_stockpile = {
+							type = transport_helicopter_equipment
+							amount = -100
+							producer = SUS
+						}
+					}
+					add_to_variable = {
+						var = SUS_spy_number_of_agents
+						value = -20
+					}
+				}
 				set_country_flag = SUS_espionage_stage_1_complete
 			}
 		}
 	}
 	SUS_mission_2_stage_2 = {
 		custom_cost_trigger = {
-			has_equipment = {
-				infantry_equipment_1 > 999
-			}
+			check_variable = { SUS_spy_number_of_agents > 29 }
+			has_fuel > 99
 		}
-		custom_cost_text = SUS_ESPIONAGE_GUNS
+		custom_cost_text = SUS_ESPIONAGE_AGENTS_FUEL
 		days_remove = 5
 		fire_only_once = yes
 		visible = {
@@ -1285,11 +1297,11 @@ SUS_espionage_window = {
 				}
 				hidden_effect = {
 					SUS = {
-						add_equipment_to_stockpile = {
-							type = infantry_equipment
-							amount = -1000
-							producer = SUS
-						}
+						add_fuel = -100
+					}
+					add_to_variable = {
+						var = SUS_spy_number_of_agents
+						value = -30
 					}
 				}
 				set_country_flag = SUS_espionage_stage_2_complete
@@ -1298,12 +1310,8 @@ SUS_espionage_window = {
 	}
 	SUS_mission_2_stage_3 = {
 		custom_cost_trigger = {
-			NRS = {
-				has_opinion = {
-					target = SUS
-					value > 35
-				}
-			}
+			command_power > 49
+			has_political_power > 119
 		}
 		custom_cost_text = SUS_ESPIONAGE_RELATIONS
 		days_remove = 5
