@@ -1554,24 +1554,25 @@
  SUS_pillars_75_percent:0 "A Conspiracy in The Council"
  SUS_pillars_75_percent_desc:0 "One of the Council faction is fully in control of the Congress. The other leftist forces are clearly unsatisfied with this state of affairs and seem to be planning something. If we do not act fast, they may sabotage the fabric of the state itself, just so to make the dominante faction lose its power. We have to decrease the power of the dominant faction if we want to avoid negative consequences."
  ###ESPIONAGE###
+ SUS_espionage_window:0 "[GetSUSEspionageTitle]"
+ SUS_espionage_window_desc:0 "[GetSUSEspionageDesc]"
+ SUS_SPY_MISSION_PLACEHOLDER:0 "PLACEHOLDER"
+ SUS_espionage_stage_1_complete:0 "The first stage of the operation has been completed"
+ SUS_espionage_stage_2_complete:0 "The second stage of the operation has been completed"
+ SUS_espionage_stage_3_complete:0 "The third stage of the operation has been completed"
+ SUS_espionage_stage_4_complete:0 "The fourth stage of the operation has been completed"
+ #OPERATION CHOCOLATE KING#
  SUS_SPY_MISSION_UKRAINE:0 "     §YOPERATION§! §L"CHOCOLATE KING"§!\n\nOne of our sleeper agents in former Malorussia, has recently discovered a secret chemical-weapons laboratory disguised as a chocolate factory. The facility appears to be owned by a notorious Ukrainian oligarch. We should investigate this curiosity - it's possible that with the help of rival oliagrchs and military forces operating in the area, we would be able to infiltrate the laboratory and seize the weapons hidden within its depths.\n\n§YSTATUS:§! §GAVAILABLE§!\n\n§CCLICK TO START THE MISSION§!"
  SUS_SPY_MISSION_UKRAINE_SELECTED:0 "     §YOPERATION§! §L"CHOCOLATE KING"§!\n\nOne of our sleeper agents in former Malorussia, has recently discovered a secret chemical-weapons laboratory disguised as a chocolate factory. The facility appears to be owned by a notorious Ukrainian oligarch. We should investigate this curiosity - it's possible that with the help of rival oliagrchs and military forces operating in the area, we would be able to infiltrate the laboratory and seize the weapons hidden within its depths.\n\n§YSTATUS:§! §OIN PROGRESS...§!"
- SUS_SPY_MISSION_PLACEHOLDER:0 "PLACEHOLDER"
  #
  SUS_espionage_mission_1_title:0 "§YOPERATION§! §L"CHOCOLATE KING"§!"
  SUS_espionage_mission_1_desc:0 "One of our sleeper agents in former Malorussia, has recently discovered a secret chemical-weapons laboratory disguised as a chocolate factory. The facility appears to be owned by a notorious Ukrainian oligarch. We should investigate this curiosity - it's possible that with the help of rival oliagrchs and military forces operating in the area, we would be able to infiltrate the laboratory and seize the weapons hidden within its depths.\n\n[GetSUSEMission1Stage]"
  #
- SUS_espionage_window:0 "[GetSUSEspionageTitle]"
- SUS_espionage_window_desc:0 "[GetSUSEspionageDesc]"
  SUS_mission_1_stage_1:0 "STAGE I: §C"Investment"§!"
  SUS_mission_1_stage_2:0 "STAGE II: §G"Infiltration"§!"
  SUS_mission_1_stage_3:0 "STAGE III: §8"Cooperation"§!"
  SUS_mission_1_stage_4:0 "STAGE IV: §O"Assault"§!"
  SUS_mission_1_stage_5:0 "STAGE V: §R"The Superweapon"§!"
- SUS_espionage_stage_1_complete:0 "The first stage of the operation has been completed"
- SUS_espionage_stage_2_complete:0 "The second stage of the operation has been completed"
- SUS_espionage_stage_3_complete:0 "The third stage of the operation has been completed"
- SUS_espionage_stage_4_complete:0 "The fourth stage of the operation has been completed"
  SUS_mission_1_timer:0 "§YOPERATION§! §L"CHOCOLATE KING"§! DEADLINE"
  #
  SUS_espionage_mission_1_stage_0:0 "§YSTAGE 0:§! Our agents stand ready, firstly we need to make contact with the §LChocolate King§! to lead him into a false sense of security. Perhaps investing into his business would make him trust us."
@@ -1600,6 +1601,32 @@
  SUS_mission_1_superweapon_tt:0 "§Y"Ukrainian Chemical Agent"§! has been added to the §Csuperweapon menu.§!"
  #
  SUS_ARTIFACT_CHEMICAL_WEAPON:0 "§YUkrainian Chemical Agent§!\nExtracted from the factories of the §L"Chocolate King"§!, this weapon can now be used against our enemies on the Isles."
+ #OPERTION ADAM'S BLUE#
+ SUS_SPY_MISSION_MAN:0 "     §YOPERATION§! §C"ADAM'S BLUE"§!\n\nAfter King George's order to peacefully transfer the Isle of Man under our administration, the island became a zone of high importance for our future operations in the British north. The landmass was turned into a testing ground for various experimental programs and put under a strict information blockade for security reasons. Recently, however, the limited contact between our research facilities on the Isle and the mainland has completely stopped. The cause of this "radio silence" is currently undetermined, and it is unknown if it has something to do with research done on the island. We must prepare our agents, investigate the Isle of Man and find out what happened to our men, stationed on the island.\n\n§YSTATUS:§! §GAVAILABLE§!\n\n§CCLICK TO START THE MISSION§!"
+ SUS_SPY_MISSION_MAN_SELECTED:0 "     §YOPERATION§! §C"ADAM'S BLUE"§!\n\nAfter King George's order to peacefully transfer the Isle of Man under our administration, the island became a zone of high importance for our future operations in the British north. The landmass was turned into a testing ground for various experimental programs and put under a strict information blockade for security reasons. Recently, however, the limited contact between our research facilities on the Isle and the mainland has completely stopped. The cause of this "radio silence" is currently undetermined, and it is unknown if it has something to do with research done on the island. We must prepare our agents, investigate the Isle of Man and find out what happened to our men, stationed on the island.\n\n§YSTATUS:§! §OIN PROGRESS...§!"
+ #
+ SUS_espionage_mission_2_title:0 "§YOPERATION§! §C"ADAM'S BLUE"§!"
+ SUS_espionage_mission_2_desc:0 "After King George's order to peacefully transfer the Isle of Man under our administration, the island became a zone of high importance for our future operations in the British north. The landmass was turned into a testing ground for various experimental programs and put under a strict information blockade for security reasons. Recently, however, the limited contact between our research facilities on the Isle and the mainland has completely stopped. The cause of this "radio silence" is currently undetermined, and it is unknown if it has something to do with research done on the island. We must prepare our agents, investigate the Isle of Man and find out what happened to our men, stationed on the island.\n\n[GetSUSEMission1Stage]"
+ #
+ SUS_mission_2_stage_1:0 "STAGE I: §C"Supply Drop"§!"
+ SUS_mission_2_stage_2:0 "STAGE II: §G"Dust Storm"§!"
+ SUS_mission_2_stage_3:0 "STAGE III: §8"Ringtone"§!"
+ SUS_mission_2_stage_4:0 "STAGE IV: §O"Cat's Tail"§!"
+ SUS_mission_2_stage_5:0 "STAGE V: §R"History Lesson"§!"
+ SUS_mission_2_timer:0 "§YOPERATION§! §С"ADAM'S BLUE"§! DEADLINE"
+ #
+ SUS_espionage_mission_2_stage_0:0 "§YSTAGE 0:§! Bottom Text"
+ SUS_espionage_mission_2_stage_1:0 "§YSTAGE 1:§! Bottom Text"
+ SUS_espionage_mission_2_stage_2:0 "§YSTAGE 2:§! Bottom Text"
+ SUS_espionage_mission_2_stage_3:0 "§YSTAGE 3:§! Bottom Text"
+ SUS_espionage_mission_2_stage_4:0 "§YSTAGE 4:§! Bottom Text"
+ SUS_espionage_mission_2_stage_5:0 "§YSTAGE 5:§! Bottom Text"
+ #
+ SUS_ESPIONAGE_AGENTS_HELI:0 ""
+ SUS_ESPIONAGE_AGENTS_HELI_blocked:0 ""
+ SUS_ESPIONAGE_AGENTS_HELI_tooltip:0 ""
+ #
+ 
  ###WORKERS SENATE###
  SUS_workers_senate:0 "Worker's Senate"
  SUS_workers_senate_desc:0 "§1Worker's Senate§! is the new representative and judicial body of the People's Kingdom of Britain. The Organ deals with both the various requests from the populace as well as legal disputes. Sometimes we will recieve §Rpleas§! from the people, asking us to either help solve their issue or resolve disputes. If we are to gain the support of the population we need to maintain a certain level of £stability_texticon §CJustice§! - this may require making populist choices when reviewing §Rpleas§! from the people, which in turn may not be very beneficial for the state at large.\n\nCurrent £stability_texticon §CJustice§! level: [GetSUSSenateTrust]\nThe current £stability_texticon §CJustice§! level gives us the following effects:\nPolitical Power Gain: [GetSUSSenatePoliticalPower]\nStability: [GetSUSSenateStabilityFactor]\nWar Support: [GetSUSSenateWarSupport]\nResistance Activity Chance: [GetSUSSenateResistanceActivity]"
