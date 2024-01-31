@@ -1563,6 +1563,7 @@
  SUS_espionage_stage_2_complete:0 "The second stage of the operation has been completed"
  SUS_espionage_stage_3_complete:0 "The third stage of the operation has been completed"
  SUS_espionage_stage_4_complete:0 "The fourth stage of the operation has been completed"
+ SUS_HMB_LEADER:0 "Current Head of "His Majesty's Bureau""
  #OPERATION CHOCOLATE KING#
  SUS_SPY_MISSION_UKRAINE:0 "     §YOPERATION§! §L"CHOCOLATE KING"§!\n\nOne of our sleeper agents in former Malorussia, has recently discovered a secret chemical-weapons laboratory disguised as a chocolate factory. The facility appears to be owned by a notorious Ukrainian oligarch. We should investigate this curiosity - it's possible that with the help of rival oliagrchs and military forces operating in the area, we would be able to infiltrate the laboratory and seize the weapons hidden within its depths.\n\n§YSTATUS:§! §GAVAILABLE§!\n\n§CCLICK TO START THE MISSION§!"
  SUS_SPY_MISSION_UKRAINE_SELECTED:0 "     §YOPERATION§! §L"CHOCOLATE KING"§!\n\nOne of our sleeper agents in former Malorussia, has recently discovered a secret chemical-weapons laboratory disguised as a chocolate factory. The facility appears to be owned by a notorious Ukrainian oligarch. We should investigate this curiosity - it's possible that with the help of rival oliagrchs and military forces operating in the area, we would be able to infiltrate the laboratory and seize the weapons hidden within its depths.\n\n§YSTATUS:§! §OIN PROGRESS...§!"
@@ -1624,11 +1625,25 @@
  SUS_espionage_mission_2_stage_4:0 "§YSTAGE 4:§! Bottom Text"
  SUS_espionage_mission_2_stage_5:0 "§YSTAGE 5:§! Bottom Text"
  #
- SUS_ESPIONAGE_AGENTS_HELI:0 ""
- SUS_ESPIONAGE_AGENTS_HELI_blocked:0 ""
- SUS_ESPIONAGE_AGENTS_HELI_tooltip:0 ""
+ SUS_ESPIONAGE_AGENTS_HELI:0 "£lhl_heli_spies §Y100§!  §Y£lhl_agents_icon 20§!"
+ SUS_ESPIONAGE_AGENTS_HELI_blocked:0 "£lhl_heli_spies §R100§!  §R£lhl_agents_icon 20§!"
+ SUS_ESPIONAGE_AGENTS_HELI_tooltip:0 "We need £lhl_agents_icon §Y20§! agents and £lhl_heli_spies §Y100§! transport helicopters to take the decision"
  #
- 
+ SUS_ESPIONAGE_AGENTS_FUEL:0 "£fuel_texticon §Y100§!  §Y£lhl_agents_icon 30§!"
+ SUS_ESPIONAGE_AGENTS_FUEL_blocked:0 "£fuel_texticon §R100§!  §R£lhl_agents_icon 30§!"
+ SUS_ESPIONAGE_AGENTS_FUEL_tooltip:0 "We need £lhl_agents_icon §Y20§! agents and £fuel_texticon §Y100§! fuel to take the decision"
+ #
+ SUS_ESPIONAGE_CP_PP:0 "£command_power §Y50§!  £lhl_pol_power_20x20 §Y120§!"
+ SUS_ESPIONAGE_CP_PP_blocked:0 "£command_power §R50§!  £lhl_pol_power_20x20 §R120§!"
+ SUS_ESPIONAGE_CP_PP_tooltip:0 "We need £command_power §Y50§! command power and £lhl_pol_power_20x20 §Y120§! political power to take the decision"
+ #
+ SUS_ESPIONAGE_FLEET_IRELAND:0 "§YOne§! £airwing_carrier_texticon  in Irish Sea £convoy_texticon §Y50§! §YOne§! £lhl_field_hospital_texticon  in §YCornwall§!"
+ SUS_ESPIONAGE_FLEET_IRELAND_blocked:0 "£convoy_texticon  §R50§!   £lhl_field_hospital_texticon §R1§!  in §RCornwall§!"
+ SUS_ESPIONAGE_FLEET_IRELAND_tooltip:0 "We need at least £airwing_carrier_texticon §Yone§! ship in the Irish Sea area, £convoy_texticon §Y50§! convoys and £lhl_field_hospital_texticon §Yone§! division with §Yfield hospital§! support company"
+ #
+ SUS_ESPIONAGE_CP_SUPPORT_EQUIPMENT:0 "£command_power §Y100§!  £lhl_support_eq_texticon §Y100§!"
+ SUS_ESPIONAGE_CP_SUPPORT_EQUIPMENT_blocked:0 "£command_power §R100§!  £lhl_support_eq_texticon §R100§!"
+ SUS_ESPIONAGE_CP_SUPPORT_EQUIPMENT_tooltip:0 "We need £command_power §Y100§! command power and £lhl_support_eq_texticon §Y100§! support equipment to take the decision"
  ###WORKERS SENATE###
  SUS_workers_senate:0 "Worker's Senate"
  SUS_workers_senate_desc:0 "§1Worker's Senate§! is the new representative and judicial body of the People's Kingdom of Britain. The Organ deals with both the various requests from the populace as well as legal disputes. Sometimes we will recieve §Rpleas§! from the people, asking us to either help solve their issue or resolve disputes. If we are to gain the support of the population we need to maintain a certain level of £stability_texticon §CJustice§! - this may require making populist choices when reviewing §Rpleas§! from the people, which in turn may not be very beneficial for the state at large.\n\nCurrent £stability_texticon §CJustice§! level: [GetSUSSenateTrust]\nThe current £stability_texticon §CJustice§! level gives us the following effects:\nPolitical Power Gain: [GetSUSSenatePoliticalPower]\nStability: [GetSUSSenateStabilityFactor]\nWar Support: [GetSUSSenateWarSupport]\nResistance Activity Chance: [GetSUSSenateResistanceActivity]"

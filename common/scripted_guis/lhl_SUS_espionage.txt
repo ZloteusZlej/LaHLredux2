@@ -50,6 +50,16 @@ scripted_gui = {
 					}
 				}
 			}
+			lhl_SUS_circle_active_mission_2_click = {
+				set_country_flag = lhl_SUS_espionage_mission_2_selected
+				set_country_flag = lhl_SUS_espionage_mission_selected
+				SUS = {
+					country_event = {
+						id = SUS_event.72
+						days = 0
+					}
+				}
+			}
 			lhl_SUS_circle_close_button_click = {
 				clr_country_flag = lhl_SUS_espionage_screen_activated
 				clr_country_flag = lhl_SUS_espionage_logo_down
@@ -75,6 +85,7 @@ scripted_gui = {
 				has_country_flag = lhl_SUS_espionage_screen_map
 			}
 			#MISSIONS#
+			#Mission 1#
 			lhl_SUS_circle_active_mission_1_visible = {
 				NOT = {
 					OR = {
@@ -95,14 +106,31 @@ scripted_gui = {
 					has_country_flag = lhl_SUS_espionage_mission_1_selected
 				}				
 			}
+			#Mission 2#
 			lhl_SUS_circle_active_mission_2_visible = {
 				NOT = {
-					has_country_flag = lhl_SUS_espionage_mission_selected
+					OR = {
+						has_country_flag = lhl_SUS_espionage_mission_selected
+						has_country_flag = lhl_SUS_espionage_mission_2_complete
+					}
 				}
+			}
+			lhl_SUS_circle_active_mission_2_selected_visible = {
+				has_country_flag = lhl_SUS_espionage_mission_2_selected
+				NOT = {
+					has_country_flag = lhl_SUS_espionage_mission_2_complete
+				}				
+			}
+			lhl_SUS_circle_active_mission_2_complete_visible = {
+				has_country_flag = lhl_SUS_espionage_mission_2_complete
+				NOT = {
+					has_country_flag = lhl_SUS_espionage_mission_2_selected
+				}				
 			}
 			lhl_SUS_circle_active_mission_2_inactive_visible = {
 				has_country_flag = lhl_SUS_espionage_mission_selected
 			}
+			#Mission 3#
 			lhl_SUS_circle_active_mission_3_visible = {
 				NOT = {
 					has_country_flag = lhl_SUS_espionage_mission_selected
@@ -153,6 +181,41 @@ scripted_gui = {
 			lhl_SUS_espionage_artifact_chemical_weapon_visible = {
 				has_country_flag = lhl_SUS_espionage_screen_map
 				has_country_flag = SUS_mission_1_superweapon
+			}
+		}
+	}
+	lhl_SUS_espionage_screen_body_3 = {
+		context_type = decision_category
+		parent_window_token = decision_tab
+		window_name = "lhl_SUS_espionage_full_3"
+
+		visible = {
+			tag = SUS
+			has_government = neocameralism
+			NOT = {
+				has_country_flag = lhl_SUS_espionage_mission_selected
+			}
+		}
+		triggers = {
+			lhl_SUS_espionage_screen_body_3_visible = {
+				NOT = {
+					has_country_flag = lhl_SUS_espionage_mission_selected
+				}
+			}
+			lhl_SUS_espionage_full_3_visible = {
+				NOT = {
+					has_country_flag = lhl_SUS_espionage_mission_selected
+				}
+			}
+			lhl_SUS_espionage_leader_visible = {
+				NOT = {
+					has_country_flag = lhl_SUS_espionage_mission_selected
+				}
+			}
+			lhl_SUS_espionage_leader_title_visible = {
+				NOT = {
+					has_country_flag = lhl_SUS_espionage_mission_selected
+				}
 			}
 		}
 	}
