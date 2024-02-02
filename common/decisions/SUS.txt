@@ -1241,7 +1241,7 @@ SUS_espionage_window = {
 		custom_cost_trigger = {
 			check_variable = { SUS_spy_number_of_agents > 19 }
 			has_equipment = {
-				transport_helicopter_equipment > 99
+				convoy > 99
 			}
 		}
 		custom_cost_text = SUS_ESPIONAGE_AGENTS_HELI
@@ -1259,7 +1259,7 @@ SUS_espionage_window = {
 				hidden_effect = {
 					SUS = {
 						add_equipment_to_stockpile = {
-							type = transport_helicopter_equipment
+							type = convoy
 							amount = -100
 							producer = SUS
 						}
@@ -1276,7 +1276,7 @@ SUS_espionage_window = {
 	SUS_mission_2_stage_2 = {
 		custom_cost_trigger = {
 			check_variable = { SUS_spy_number_of_agents > 29 }
-			has_fuel > 99
+			has_political_power > 99
 		}
 		custom_cost_text = SUS_ESPIONAGE_AGENTS_FUEL
 		days_remove = 5
@@ -1297,7 +1297,7 @@ SUS_espionage_window = {
 				}
 				hidden_effect = {
 					SUS = {
-						add_fuel = -100
+						add_political_power = -100
 					}
 					add_to_variable = {
 						var = SUS_spy_number_of_agents
