@@ -11,6 +11,7 @@ SUS_debug = {
 				socialism = 21
 				left_authoritarianism = 41
 			}
+			set_global_flag = SUS_power_struggle_ended
 		}
 	}
 	SUS_labour = {
@@ -1239,9 +1240,9 @@ SUS_espionage_window = {
 	##OPERATION ADAM'S BLUE##
 	SUS_mission_2_stage_1 = {
 		custom_cost_trigger = {
-			check_variable = { SUS_spy_number_of_agents > 20 }
+			check_variable = { SUS_spy_number_of_agents > 19 }
 			has_equipment = {
-				transport_helicopter_equipment > 99
+				convoy > 99
 			}
 		}
 		custom_cost_text = SUS_ESPIONAGE_AGENTS_HELI
@@ -1256,17 +1257,29 @@ SUS_espionage_window = {
 					id = SUS_event.73
 					days = 0
 				}
+				hidden_effect = {
+					SUS = {
+						add_equipment_to_stockpile = {
+							type = convoy
+							amount = -100
+							producer = SUS
+						}
+					}
+					add_to_variable = {
+						var = SUS_spy_number_of_agents
+						value = -20
+					}
+				}
 				set_country_flag = SUS_espionage_stage_1_complete
 			}
 		}
 	}
 	SUS_mission_2_stage_2 = {
 		custom_cost_trigger = {
-			has_equipment = {
-				infantry_equipment_1 > 999
-			}
+			check_variable = { SUS_spy_number_of_agents > 29 }
+			has_political_power > 99
 		}
-		custom_cost_text = SUS_ESPIONAGE_GUNS
+		custom_cost_text = SUS_ESPIONAGE_AGENTS_FUEL
 		days_remove = 5
 		fire_only_once = yes
 		visible = {
@@ -1285,11 +1298,11 @@ SUS_espionage_window = {
 				}
 				hidden_effect = {
 					SUS = {
-						add_equipment_to_stockpile = {
-							type = infantry_equipment
-							amount = -1000
-							producer = SUS
-						}
+						add_political_power = -100
+					}
+					add_to_variable = {
+						var = SUS_spy_number_of_agents
+						value = -30
 					}
 				}
 				set_country_flag = SUS_espionage_stage_2_complete
@@ -1298,14 +1311,10 @@ SUS_espionage_window = {
 	}
 	SUS_mission_2_stage_3 = {
 		custom_cost_trigger = {
-			NRS = {
-				has_opinion = {
-					target = SUS
-					value > 35
-				}
-			}
+			command_power > 49
+			has_political_power > 119
 		}
-		custom_cost_text = SUS_ESPIONAGE_RELATIONS
+		custom_cost_text = SUS_ESPIONAGE_CP_PP
 		days_remove = 5
 		fire_only_once = yes
 		visible = {
@@ -1322,15 +1331,29 @@ SUS_espionage_window = {
 					id = SUS_event.75
 					days = 0
 				}
+				hidden_effect = {
+					add_command_power = -50
+					add_political_power = -120
+				}
 				set_country_flag = SUS_espionage_stage_3_complete
 			}
 		}
 	}
 	SUS_mission_2_stage_4 = {
 		custom_cost_trigger = {
-			has_manpower > 3000
+			SUS = {
+				ships_in_area = { area = 126 size > 1 }
+				has_equipment = {
+					convoy > 49
+				}
+				divisions_in_state = {
+					type = support
+					size > 0
+					state = 998
+				}
+			}
 		}
-		custom_cost_text = SUS_ESPIONAGE_MANPOWER
+		custom_cost_text = SUS_ESPIONAGE_FLEET_IRELAND
 		days_remove = 5
 		fire_only_once = yes
 		visible = {
@@ -1347,20 +1370,27 @@ SUS_espionage_window = {
 					id = SUS_event.76
 					days = 0
 				}
-				add_manpower = -3000
+				hidden_effect = {
+					add_equipment_to_stockpile = {
+						type = convoy
+						amount = -50
+						producer = SUS
+					}
+				}
 				set_country_flag = SUS_espionage_stage_4_complete
 			}
 		}
 	}
 	SUS_mission_2_stage_5 = {
-		days_remove = 5
-		fire_only_once = yes
 		custom_cost_trigger = {
-			SUS = {
-				ships_in_area = { area = 91 size > 1 }
+			command_power > 99
+			has_equipment = {
+				support_equipment > 99
 			}
 		}
-		custom_cost_text = SUS_ESPIONAGE_SHIP
+		days_remove = 5
+		fire_only_once = yes
+		custom_cost_text = SUS_ESPIONAGE_CP_SUPPORT_EQUIPMENT
 		visible = {
 			has_country_flag = lhl_SUS_espionage_mission_2_selected
 		}
@@ -1374,6 +1404,14 @@ SUS_espionage_window = {
 				country_event = {
 					id = SUS_event.77
 					days = 0
+				}
+				hidden_effect = {
+					add_command_power = -100
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = -100
+						producer = SUS
+					}
 				}
 				set_country_flag = SUS_espionage_stage_5_complete
 			}

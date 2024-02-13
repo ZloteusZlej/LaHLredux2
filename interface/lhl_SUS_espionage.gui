@@ -52,15 +52,15 @@ guiTypes = {
 			position = { x = 345 y = 250 }
 			spriteType = "GFX_SUS_circle_active_mission_complete"
 		}
-		buttonType = { #Scandinavia AVAILABLE
+		buttonType = { #MAN AVAILABLE
 			name = "lhl_SUS_circle_active_mission_2"
-			position = { x = 200 y = 140 }
+			position = { x = 115 y = 200 }
 			spriteType = "GFX_SUS_circle_active_mission"
-			pdx_tooltip = "SUS_SPY_MISSION_PLACEHOLDER"
+			pdx_tooltip = "SUS_SPY_MISSION_MAN"
 		}
-		iconType = { #Scandinavia INACTIVE
+		iconType = { #MAN INACTIVE
 			name = "lhl_SUS_circle_active_mission_2_inactive"
-			position = { x = 200 y = 140 }
+			position = { x = 115 y = 200 }
 			spriteType = "GFX_SUS_circle_active_mission_inactive"
 		}
 		buttonType = { #Israel AVAILABLE
@@ -74,15 +74,15 @@ guiTypes = {
 			position = { x = 375 y = 375 }
 			spriteType = "GFX_SUS_circle_active_mission_inactive"
 		}
-		buttonType = { #Ireland AVAILABLE
+		buttonType = { #Scandinavia AVAILABLE
 			name = "lhl_SUS_circle_active_mission_4"
-			position = { x = 98 y = 200 }
+			position = { x = 200 y = 140 }
 			spriteType = "GFX_SUS_circle_active_mission"
 			pdx_tooltip = "SUS_SPY_MISSION_PLACEHOLDER"
 		}
-		iconType = { #Ireland INACTIVE
+		iconType = { #Scandinavia INACTIVE
 			name = "lhl_SUS_circle_active_mission_4_inactive"
-			position = { x = 98 y = 200 }
+			position = { x = 200 y = 140 }
 			spriteType = "GFX_SUS_circle_active_mission_inactive"
 		}
 		buttonType = {
@@ -173,6 +173,34 @@ guiTypes = {
 			position = { x = 72 y = 150 }
 			spriteType = "GFX_lhl_SUS_espionage_artifact_chemical_weapon"
 			pdx_tooltip = "SUS_ARTIFACT_CHEMICAL_WEAPON"
+		}
+	}
+	containerWindowType = {
+		name = "lhl_SUS_espionage_full_3"
+		size = { width = 1000 height = 400 }
+		position = { x = 100 y = 0 }
+		scale = 1.0
+		clipping = no
+		iconType = {
+			name = "lhl_SUS_espionage_leader_1"
+			position = { x = 165 y = 100 }
+			spriteType = "GFX_SUS_espionage_leader_1"
+			pdx_tooltip = "SUS_HMB_LEADER_IMAGE_1"
+		}
+		iconType = {
+			name = "lhl_SUS_espionage_leader_2"
+			position = { x = 165 y = 100 }
+			spriteType = "GFX_SUS_espionage_leader_2"
+			pdx_tooltip = "SUS_HMB_LEADER_IMAGE_2"
+		}
+		instantTextboxType = {
+			name = "lhl_SUS_espionage_leader_title"
+			position = { x = 100 y = 30 }
+			font = "hoi_24header"
+			text = "SUS_HMB_LEADER"
+			maxWidth = 300
+			format = centre
+			alwaystransparent = yes
 		}
 	}
 }
