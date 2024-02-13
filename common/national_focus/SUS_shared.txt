@@ -6769,6 +6769,10 @@ shared_focus = {
 			var = SUS_s_reconstruction_production_speed_buildings_factor
 			value = 0.1
 		}
+		add_dynamic_modifier = {
+			modifier = SUS_spies_reconstruction_spirit
+		}
+		custom_effect_tooltip = SUS_top_secret_tt
 	}
 	relative_position_id = SUS_a_scapegoat
 	cost = 4.3
@@ -6789,6 +6793,7 @@ shared_focus = {
 			var = SUS_s_reconstruction_production_speed_buildings_factor
 			value = 0.1
 		}
+		custom_effect_tooltip = SUS_civilian_conservation_corps_tt
 	}
 	prerequisite = {
 		focus = SUS_top_secret
@@ -6811,6 +6816,7 @@ shared_focus = {
             var = SUS_s_reconstruction_coring_cost
             value = -15
         }
+		custom_effect_tooltip = SUS_talks_with_the_underworld_tt
 	}
 	prerequisite = {
 		focus = SUS_civilian_conservation_corps
@@ -6830,6 +6836,7 @@ shared_focus = {
 			var = SUS_s_reconstruction_war_support_factor
 			value = 0.1
 		}
+		custom_effect_tooltip = SUS_icebreaker_tt
 	}
 	prerequisite = {
 		focus = SUS_talks_with_the_underworld
@@ -6850,6 +6857,7 @@ shared_focus = {
 			var = SUS_s_reconstruction_consumer_goods_factor
 			value = -0.05
 		}
+		custom_effect_tooltip = SUS_royal_philanthropic_society_tt
 	}
 	prerequisite = {
 		focus = SUS_civilian_conservation_corps
@@ -6898,6 +6906,7 @@ shared_focus = {
 					owner = SUS
 				}
 		}
+		custom_effect_tooltip = SUS_hire_londoner_firms_tt
 	}
 	prerequisite = {
 		focus = SUS_royal_philanthropic_society
@@ -6917,6 +6926,7 @@ shared_focus = {
 			var = SUS_s_send_volunteers_tension
 			value = -0.9
 			}
+			custom_effect_tooltip =  SUS_yes_prime_minister_tt
 		}	
 	prerequisite = {
 		focus = SUS_hire_londoner_firms
@@ -6948,6 +6958,7 @@ shared_focus = {
 			limit = { is_owned_by = SUS }
 		    add_extra_state_shared_building_slots = 1
 		}	
+		custom_effect_tooltip = SUS_fifty_first_killometre_tt
 	}
 	prerequisite = {
 		focus = SUS_top_secret
@@ -6966,7 +6977,7 @@ shared_focus = {
 	icon = GFX_goal_SUS_hammer_into_anvil
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_hammer_into_anvil"
-		
+		custom_effect_tooltip = SUS_hammer_into_anvil_tt
 	}
 	prerequisite = {
 		focus = SUS_fifty_first_killometre
@@ -6987,10 +6998,17 @@ shared_focus = {
 			var = SUS_army_core_defence_factor
 			value = 0.05
 		}
-		add_to_variable = {
-			var = SUS_army_core_attack_factor
-			value = 0.05
+		clamp_variable = {
+			var = SUS_coring_cost
+			min = 0
+			max = 250
 		}
+		add_to_variable = {
+			var = SUS_coring_cost
+			value = -10
+		}
+		custom_effect_tooltip = EAG_coring_cost_lowered_10_tt
+		
 	}
 	prerequisite = {
 		focus = SUS_hammer_into_anvil
@@ -7014,6 +7032,7 @@ shared_focus = {
 			var = SUS_consumer_goods_factor
 			value = -0.05
 		}
+		custom_effect_tooltip = SUS_great_grain_robbery_tt
 	}
 	prerequisite = {
 		focus = SUS_fifty_first_killometre
@@ -7034,6 +7053,7 @@ shared_focus = {
 			var = SUS_s_reconstruction_production_speed_buildings_factor
 			value = 0.1
 		}
+		custom_effect_tooltip = SUS_primary_mortgage_company_tt
 	}
 	prerequisite = {
 		focus = SUS_great_grain_robbery
@@ -7057,6 +7077,7 @@ shared_focus = {
 			var = SUS_s_reconstruction_political_power_factor
 			value = 0.05
 		}	
+		custom_effect_tooltip = SUS_the_british_thaw_tt
 	}
 	prerequisite = {
 		focus = SUS_primary_mortgage_company
@@ -7080,7 +7101,7 @@ shared_focus = {
 			var = SUS_s_reconstruction_political_advisor_cost_factor
 			value = -0.15
 		}
-		
+		custom_effect_tooltip = SUS_independent_intelligence_schools_tt
 	}
 	prerequisite = {
 		focus = SUS_top_secret
@@ -7102,6 +7123,7 @@ shared_focus = {
 			value = 0.2
 		}
 		add_research_slots = 1
+		custom_effect_tooltip = SUS_tempora_tt
 	}
 	prerequisite = {
 		focus = SUS_top_secret
@@ -7122,6 +7144,7 @@ shared_focus = {
 			var = SUS_s_reconstruction_trade_opinion_factor
 			value = 0.3
 		}
+		custom_effect_tooltip = SUS_many_happy_returns_tt
 	}
 	prerequisite = {
 		focus = SUS_top_secret
@@ -7150,6 +7173,7 @@ shared_focus = {
 			var = SUS_s_reconstruction_production_factory_efficiency_gain_factor
 			value = 0.1
 		}
+		custom_effect_tooltip = SUS_civil_resettlement_units_tt
 	}
 	prerequisite = {
 		focus = SUS_many_happy_returns
@@ -7178,6 +7202,7 @@ shared_focus = {
 			var = SUS_s_reconstruction_stability_factor
 			value = 0.1
 		}	
+		custom_effect_tooltip = SUS_data_mining_tt
 	}
 	prerequisite = {
 		focus = SUS_civil_resettlement_units
@@ -7202,6 +7227,7 @@ shared_focus = {
 			var = SUS_s_reconstruction_industry_air_damage_factor	
 			value = -0.3
 		}	
+		custom_effect_tooltip = SUS_low_power_reactors_tt
 	}
 	prerequisite = {
 		focus = SUS_data_mining
