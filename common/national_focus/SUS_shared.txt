@@ -6807,7 +6807,10 @@ shared_focus = {
 	icon = GFX_goal_SUS_talks_with_the_underworld
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_talks_with_the_underworld"
-		
+		add_to_variable = {
+            var = SUS_s_reconstruction_coring_cost
+            value = -15
+        }
 	}
 	prerequisite = {
 		focus = SUS_civilian_conservation_corps
@@ -6933,7 +6936,18 @@ shared_focus = {
 	icon = GFX_goal_SUS_fifty_first_killometre
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_fifty_first_killometre"
-		
+		add_to_variable = {
+			var = SUS_s_reconstruction_surrender_limit
+			value = 0.1
+		}	
+		random_controlled_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 1
+		}	
+		random_controlled_state = {
+			limit = { is_owned_by = SUS }
+		    add_extra_state_shared_building_slots = 1
+		}	
 	}
 	prerequisite = {
 		focus = SUS_top_secret
