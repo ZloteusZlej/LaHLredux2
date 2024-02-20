@@ -793,5 +793,32 @@ on_actions = {
 			100 = SUS_event.51
 		}
 	}
+	on_weekly = {
+		effect = {
+		    if = {
+			    limit = {
+					original_tag = SUS
+		            SUS_kate_hoey = {
+			            is_hired_as_advisor = yes
+		            }
+		        }
+				SUS = {
+					country_event = SUS_event.1000
+				}
+		    }
+			else_if = {
+				limit = {
+					original_tag = SUS
+		            SUS_kate_hoey = {
+			            is_hired_as_advisor = no
+		            }
+					has_country_flag = SUS_kate_hoey_is_hired
+		        }
+				SUS = {
+					country_event = SUS_event.1001
+				}
+			}
+		}
+	}
 
 }					  
