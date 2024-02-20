@@ -868,8 +868,8 @@ characters={
 	    }
 	}
 
-	SUS_stephen_pound = {
-		name = SUS_stephen_pound
+	SUS_lindsay_hoyle = {
+		name = SUS_lindsay_hoyle
 		portraits = {
 			civilian = {
 				small = "gfx/interface/ideas/SUS/.dds"
@@ -878,42 +878,9 @@ characters={
 		advisor = {
 			cost = 120
 			slot = political_advisor
-			idea_token = SUS_stephen_pound
+			idea_token = SUS_lindsay_hoyle
 			traits = {
-				tattooed_bruiser
-			}
-			allowed = {
-				original_tag = SUS
-			}
-			available = {
-				hidden_trigger = {
-					has_government = left_authoritarianism
-					has_global_flag = SUS_power_struggle_ended
-				}
-			}
-			visible = {
-				has_government = left_authoritarianism
-				has_global_flag = SUS_power_struggle_ended
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-	    }
-	}
-
-	SUS_cat_smith = {
-		name = SUS_cat_smith
-		portraits = {
-			civilian = {
-				small = "gfx/interface/ideas/SUS/.dds"
-			}
-		}
-		advisor = {
-			cost = 120
-			slot = political_advisor
-			idea_token = SUS_cat_smith
-			traits = {
-				unpolitically_educated_rising_star
+				mediator
 			}
 			allowed = {
 				original_tag = SUS
@@ -946,7 +913,7 @@ characters={
 			slot = political_advisor
 			idea_token = SUS_kelvin_hopkins
 			traits = {
-				rebellion_prone_economist
+				co_operative_treasurer
 			}
 			allowed = {
 				original_tag = SUS
@@ -967,8 +934,8 @@ characters={
 	    }
 	}
 
-	SUS_naz_shah = {
-		name = SUS_naz_shah
+	SUS_kate_hoey = {
+		name = SUS_kate_hoey
 		portraits = {
 			civilian = {
 				small = "gfx/interface/ideas/SUS/.dds"
@@ -977,9 +944,9 @@ characters={
 		advisor = {
 			cost = 120
 			slot = political_advisor
-			idea_token = SUS_naz_shah
+			idea_token = SUS_kate_hoey
 			traits = {
-					lady_biraderi
+				SUS_goodwill_ambassador
 			}
 			allowed = {
 				original_tag = SUS
@@ -1000,8 +967,8 @@ characters={
 	    }
 	}
 
-	SUS_lisa_nandy = {
-		name = SUS_lisa_nandy
+	SUS_chris_bryant = {
+		name = SUS_chris_bryant
 		portraits = {
 			civilian = {
 				small = "gfx/interface/ideas/SUS/.dds"
@@ -1010,9 +977,9 @@ characters={
 		advisor = {
 			cost = 120
 			slot = political_advisor
-			idea_token = SUS_lisa_nandy
+			idea_token = SUS_chris_bryant
 			traits = {
-					authentic_soft_left
+					pink_tail_gunner
 			}
 			allowed = {
 				original_tag = SUS
@@ -1033,8 +1000,8 @@ characters={
 	    }
 	}
 
-	SUS_lilian_greenwood = {
-		name = SUS_lilian_greenwood
+	SUS_vernon_coaker = {
+		name = SUS_vernon_coaker
 		portraits = {
 			civilian = {
 				small = "gfx/interface/ideas/SUS/.dds"
@@ -1043,9 +1010,9 @@ characters={
 		advisor = {
 			cost = 120
 			slot = political_advisor
-			idea_token = SUS_lilian_greenwood
+			idea_token = SUS_vernon_coaker
 			traits = {
-					careful_unlucky_cyclist
+					gentleman_from_grassroots
 			}
 			allowed = {
 				original_tag = SUS
@@ -1066,8 +1033,8 @@ characters={
 	    }
 	}
 
-	SUS_ian_murray = {
-		name = SUS_ian_murray
+	SUS_frank_field = {
+		name = SUS_frank_field
 		portraits = {
 			civilian = {
 				small = "gfx/interface/ideas/SUS/.dds"
@@ -1076,9 +1043,9 @@ characters={
 		advisor = {
 			cost = 120
 			slot = political_advisor
-			idea_token = SUS_ian_murray
+			idea_token = SUS_frank_field
 			traits = {
-					chair_of_foundation_of_hearts
+					chief_procurator
 			}
 			allowed = {
 				original_tag = SUS
@@ -1099,8 +1066,8 @@ characters={
 	    }
 	}
 
-	SUS_charles_leslie_falconer = {
-		name = SUS_charles_leslie_falconer
+	SUS_andrew_adonis = {
+		name = SUS_andrew_adonis
 		portraits = {
 			civilian = {
 				small = "gfx/interface/ideas/SUS/.dds"
@@ -1109,9 +1076,42 @@ characters={
 		advisor = {
 			cost = 120
 			slot = political_advisor
-			idea_token = SUS_charles_leslie_falconer
+			idea_token = SUS_andrew_adonis
 			traits = {
-					baron_falconer_of_thoroton
+					open_minded_academic
+			}
+			allowed = {
+				original_tag = SUS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = left_authoritarianism
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+			visible = {
+				has_government = left_authoritarianism
+				has_global_flag = SUS_power_struggle_ended
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+
+	SUS_louise_ellman = {
+		name = SUS_louise_ellman
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SUS/.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = SUS_louise_ellman
+			traits = {
+					whip_of_labour
 			}
 			allowed = {
 				original_tag = SUS
@@ -1144,40 +1144,7 @@ characters={
 			slot = political_advisor
 			idea_token = SUS_ed_miliband
 			traits = {
-					leader_of_one_nation_labour
-			}
-			allowed = {
-				original_tag = SUS
-			}
-			available = {
-				hidden_trigger = {
-					has_government = left_authoritarianism
-					has_global_flag = SUS_power_struggle_ended
-				}
-			}
-			visible = {
-				has_government = left_authoritarianism
-				has_global_flag = SUS_power_struggle_ended
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-	    }
-	}
-
-	SUS_ian_davidson = {
-		name = SUS_ian_davidson
-		portraits = {
-			civilian = {
-				small = "gfx/interface/ideas/SUS/.dds"
-			}
-		}
-		advisor = {
-			cost = 120
-			slot = political_advisor
-			idea_token = SUS_ian_davidson
-			traits = {
-					eurosceptic_swimming_master
+					architect_of_socialism
 			}
 			allowed = {
 				original_tag = SUS

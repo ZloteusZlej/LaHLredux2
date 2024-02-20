@@ -2045,72 +2045,74 @@ leader_traits = {
 		}
 	}
 
-	tattooed_bruiser = { #Stephen Pound#
+	mediator = { #Lindsay Hoyle#
 	    random = no
-		war_support_factor = 0.1
-		political_power_factor = 0.1
+		political_advisor_cost_factor = -0.1
+		stability_factor = 0.05
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	unpolitically_educated_rising_star = { #Cat Smith#
+	co_operative_treasurer = { #Kelvin Hopkins#
 	    random = no
-		monthly_population = 0.3
-		stability_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.1
+		industrial_capacity_factory = 0.1
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	rebellion_prone_economist = { #Kelvin Hopkins#
+	SUS_goodwill_ambassador = { #Kate Hoey#
 	    random = no
-		production_factory_start_efficiency_factor = 0.1
-		consumer_goods_factor = -0.1
+		trade_opinion_factor = 0.15
+		SUS_coring_cost_modifier = -15
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	lady_biraderi = { #Naz Shah#
+	pink_tail_gunner = { #Chris Bryant#
 	    random = no
-		stability_factor = 0.1
+		encryption_factor = 0.1
 		political_power_gain = 0.15
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	authentic_soft_left = { #Lisa Nandy#
+	gentleman_from_grassroots = { #Vernon Coaker#
 	    random = no
-		stability_factor = 0.1
-		war_support_factor = 0.1
+		research_speed_factor = 0.05
+		command_power_gain = 0.1
+		experience_gain_army_factor = 0.1
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	careful_unlucky_cyclist = { #Lilian Greenwood#
+	chief_procurator = { #Frank Field#
 	    random = no
-		army_speed_factor = 0.15
+		recruitable_population_factor = 0.3
+		war_support_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	open_minded_academic = { #Andrew Adonis#
+	    random = no
+		research_speed_factor = 0.1
 		production_speed_buildings_factor = 0.1
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	chair_of_foundation_of_hearts = { #Ian Murray#
+	whip_of_labour = { #Louise Ellman#
 	    random = no
-		stability_factor = 0.05
-		weekly_manpower = 400
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	baron_falconer_of_thoroton = { #Charles Leslie Falconer#
-	    random = no
-		required_garrison_factor = -0.2
+		supply_factor = 0.1
+		production_speed_rail_way_factor = 0.1
 		mobilization_laws_cost_factor = -0.05
 		trade_laws_cost_factor = -0.05
 		economy_cost_factor = -0.05
@@ -2119,21 +2121,10 @@ leader_traits = {
 		}
 	}
 
-	leader_of_one_nation_labour  = { #Ed Miliband#
+	architect_of_socialism  = { #Ed Miliband#
 	    random = no
-		stability_factor = 0.05
-		production_factory_efficiency_gain_factor = 0.1
-        production_factory_max_efficiency_factor = 0.1
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	eurosceptic_swimming_master  = { #Ian Davidson#
-	    random = no
-		stability_factor = 0.05
-		industrial_capacity_dockyard = 0.2
-        production_speed_dockyard_factor = 0.2
+		left_authoritarianism_drift = 0.1
+		war_support_factor = 0.1
 		ai_will_do = {
 			factor = 1
 		}

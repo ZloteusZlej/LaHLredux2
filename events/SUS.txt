@@ -4820,3 +4820,53 @@ country_event = { #Rapid Dominance
 		set_country_flag = SUS_land_forces
     }
 }
+
+country_event = { #Kate Hoey Hired
+	id = SUS_event.1000
+	title = SUS_event.1000.t
+	desc = SUS_event.1000.d
+	hidden = yes
+    is_triggered_only = yes
+	trigger = {
+	    original_tag = SUS
+		SUS_kate_hoey = {
+			is_hired_as_advisor = yes
+		}
+	}
+	immediate = {
+		SUS = {
+			add_to_variable = {
+			    var = SUS_coring_cost
+			    value = -15
+		    }
+		    set_country_flag = SUS_kate_hoey_is_hired
+		}
+	}
+}
+
+country_event = { #Kate Hoey Fired
+	id = SUS_event.1001
+	title = SUS_event.1001.t
+	desc = SUS_event.1001.d
+	hidden = yes
+    is_triggered_only = yes
+	trigger = {
+	    original_tag = SUS
+
+		SUS_kate_hoey = {
+			is_hired_as_advisor = no
+		}
+		SUS = {
+			has_country_flag = SUS_kate_hoey_is_hired
+		}
+	}
+	immediate = {
+		SUS = {
+			add_to_variable = {
+			    var = SUS_coring_cost
+			    value = 15
+		    }
+		    clr_country_flag = SUS_kate_hoey_is_hired
+		}
+	}
+}
