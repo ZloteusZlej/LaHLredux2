@@ -130,10 +130,12 @@ SUS_workers_senate = {
 		available = {
 			check_variable = { SUS_senate_trust > 9 }
 		}
-		complete_effect = {
-			SUS = {
-				set_country_flag = SUS_cheat_hearing
+		available = {
+			NOT = {
+				has_country_flag = SUS_senate_cheat_hearing_locked
 			}
+		}
+		complete_effect = {
 			add_to_variable = {
 				var = SUS_senate_trust
 				value = -10
@@ -7271,14 +7273,14 @@ SUS_KOR_market_category = {
 
 SUS_archegetes_elections = {
 	SUS_archegetes_elections = {
-		days_mission_timeout = 90
+		days_mission_timeout = 150
 		available = {
-			SUS ={
+			SUS = {
 				has_global_flag = SUS_archegetes_elections_ended
 			}
 		}
 		visible = {
-			SUS ={
+			SUS = {
 				has_global_flag = SUS_archegetes_elections_ended
 			}
 		}
@@ -7289,6 +7291,94 @@ SUS_archegetes_elections = {
 		timeout_effect = {
 			country_event = {
 				id = SUS_event.250
+			}
+		}
+	}
+	SUS_archegetes_elections_watson_TITLE = {
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+	}
+	SUS_archegetes_elections_watson_project_night_bloom = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_watson_plus
+			add_to_variable = {
+				var = SUS_arch_watson
+				value = 10
+			}
+		}
+		remove_effect = {
+			1001 = {
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	SUS_archegetes_elections_watson_project_night_bloom_sabotage = {
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_watson_minus
+			add_to_variable = {
+				var = SUS_arch_watson
+				value = -10
+			}
+			remove_decision = SUS_archegetes_elections_watson_project_night_bloom
+		}
+		
+	}
+	
+	SUS_archegetes_elections_ogrady_TITLE = {
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+	}
+	SUS_archegetes_elections_ogrady_increase_senates_power = {
+		custom_cost_trigger = {
+			check_variable = { SUS_senate_trust > 0 }
+		}
+		custom_cost_text = SUS_senate_more_then_zero_trust
+		days_remove = 45
+		days_re_enable = 60
+		available = {
+			check_variable = { SUS_senate_trust > 0 }
+		}
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_ogrady_plus
+			add_to_variable = {
+				var = SUS_arch_ogrady
+				value = 10
+			}
+		}
+		remove_effect = {
+			SUS = {
+				custom_effect_tooltip = SUS_archegetes_elections_ogrady_increase_senates_power_lock
+				custom_effect_tooltip = SUS_archegetes_elections_ogrady_increase_senates_power_double
+				add_political_power = 75
+				set_country_flag = SUS_senate_cheat_hearing_locked
+			}
+		}
+	}
+	
+	SUS_archegetes_elections_hodge_TITLE = {
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+	}
+	
+	
+	SUS_archegetes_elections_wei_TITLE = {
+		available = {
+			hidden_trigger = {
+				always = no
 			}
 		}
 	}
