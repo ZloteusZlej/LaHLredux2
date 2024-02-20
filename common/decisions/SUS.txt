@@ -62,6 +62,30 @@ SUS_debug = {
 	}
 }
 
+SUS_socecon = {
+	SUS_socecon_recruit_member = {
+		custom_cost_trigger = {
+			SUS_socecon_price_count = yes
+			SUS = {
+				has_political_power > SUS_member_price_level_total
+			}
+		}
+		days_remove = 10
+		days_re_enable = 180
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_government = left_authoritarianism
+					has_government = commendationism
+				}
+			}
+		}
+		complete_effect = {
+		}
+	}
+}
+
 SUS_workers_senate = {
 	SUS_senate_sacrifise_trust = {
 		custom_cost_trigger = {

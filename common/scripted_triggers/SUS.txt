@@ -24,3 +24,25 @@ SUS_justice_event_trigger = {
 		}
 	}
 }
+SUS_socecon_price_count = {
+	set_temp_variable = { SUS_member_price_level_total = 0 }
+	set_temp_variable = { SUS_member_price_level_factory = 0 }
+	set_temp_variable = { SUS_member_price_level_army = 0 }
+	set_temp_variable = { SUS_member_price_level_stability = 0 }
+	set_temp_variable = { SUS_member_price_level_limit = 0 }
+	add_to_temp_variable = { SUS_member_price_level_factory = FROM.num_of_civilian_factories }
+	divide_temp_variable = { SUS_member_price_level_factory = SUS.num_of_civilian_factories }
+	multiply_temp_variable = { SUS_member_price_level_factory = 10 }
+	add_to_temp_variable = { SUS_member_price_level_army = FROM.manpower_k }
+	divide_temp_variable = { SUS_member_price_level_army = SUS.manpower_k }
+	multiply_temp_variable = { SUS_member_price_level_army = 10 }
+	add_to_temp_variable = { SUS_member_price_level_stability = FROM.stability }
+	divide_temp_variable = { SUS_member_price_level_stability = SUS.stability }
+	multiply_temp_variable = { SUS_member_price_level_stability = 10 }
+	add_to_temp_variable = { SUS_member_price_level_limit = SUS_socecon_member_limit }
+	multiply_temp_variable = { SUS_member_price_level_limit = 10 }
+	add_to_temp_variable = { SUS_member_price_level_total = SUS_member_price_level_factory }
+	add_to_temp_variable = { SUS_member_price_level_total = SUS_member_price_level_army }
+	add_to_temp_variable = { SUS_member_price_level_total = SUS_member_price_level_stability }
+	add_to_temp_variable = { SUS_member_price_level_total = SUS_member_price_level_limit }
+}
