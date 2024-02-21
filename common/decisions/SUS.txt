@@ -64,12 +64,21 @@ SUS_debug = {
 
 SUS_socecon = {
 	SUS_socecon_recruit_member = {
-		custom_cost_trigger = {
-			SUS_socecon_price_count = yes
-			SUS = {
-				has_political_power > SUS_member_price_level_total
+		available = {
+			custom_trigger_tooltip = {
+				FROM = {
+					OR = {
+						has_government = left_authoritarianism
+						has_government = socialism
+					}
+				}
+				FROM = {
+					SUS_socecon_price_count = yes
+				}
 			}
 		}
+		cost = SUS_member_price_level_total
+		custom_cost_text = SUS_socecon_member_price_tt
 		days_remove = 10
 		days_re_enable = 180
 		targets_dynamic = yes
@@ -77,11 +86,16 @@ SUS_socecon = {
 			FROM = {
 				OR = {
 					has_government = left_authoritarianism
-					has_government = commendationism
+					has_government = socialism
 				}
 			}
 		}
 		complete_effect = {
+			SUS_socecon_price_count = yes
+			add_to_variable = {
+				var = SUS.political_power
+				value = SUS_member_price_level_total
+			}
 		}
 	}
 }
