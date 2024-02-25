@@ -734,9 +734,11 @@ on_actions = {
 		        }
 				every_country = {
 					limit = {
-					    has_idea = SUS_licence_to_be_harmed
-					    has_idea = SUS_aviation_war_support
-					    has_idea = SUS_land_forces_war_support
+					   OR = {
+					        has_idea = SUS_licence_to_be_harmed
+					        has_idea = SUS_aviation_war_support
+					        has_idea = SUS_land_forces_war_support
+						}
 		            }
                     remove_ideas = SUS_licence_to_be_harmed
 					remove_ideas = SUS_aviation_war_support
