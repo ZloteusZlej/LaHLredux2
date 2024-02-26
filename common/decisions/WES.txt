@@ -2536,14 +2536,10 @@ WES_england_transformation = {
 						level = 3
 					}
 				}
-				remove_ideas = {
-					sc_group
-				}
-				remove_ideas = {
-					ovik
-				}
+				set_country_flag = WES_dismantle_tank_companies_finished
 			}
 			custom_effect_tooltip =	WES_transformation_education_small.tt
+			custom_effect_tooltip =	WES_dismantle_tank_companies_tt
 		}
 	}
 	WES_dismantle_ship_companies = {
@@ -2590,11 +2586,10 @@ WES_england_transformation = {
 						level = 3
 					}
 				}
-				remove_ideas = {
-					bae_systems_weymouth
-				}
+				set_country_flag = WES_dismantle_ship_companies_finished
 			}
 			custom_effect_tooltip =	WES_transformation_education_small.tt
+			custom_effect_tooltip =	WES_dismantle_ship_companies_tt
 		}
 	}
 	WES_dismantle_plane_companies = {
@@ -2641,14 +2636,10 @@ WES_england_transformation = {
 						level = 3
 					}
 				}
-				remove_ideas = {
-					bae_systems_yeovil
-				}
-				remove_ideas = {
-					rolls_royce_bristol
-				}
+				set_country_flag = WES_dismantle_plane_companies_finished
 			}
 			custom_effect_tooltip =	WES_transformation_education_small.tt
+			custom_effect_tooltip =	WES_dismantle_plane_companies_tt
 		}
 	}
 	WES_dismantle_rifle_companies = {
@@ -2695,11 +2686,10 @@ WES_england_transformation = {
 						level = 3
 					}
 				}
-				remove_ideas = {
-					ww_greener
-				}
+				set_country_flag = WES_dismantle_rifle_companies_finished
 			}
 			custom_effect_tooltip =	WES_transformation_education_small.tt
+			custom_effect_tooltip =	WES_dismantle_rifle_companies_tt
 		}
 	}
 	WES_dismantle_industrial_companies = {
@@ -2746,11 +2736,10 @@ WES_england_transformation = {
 						level = 3
 					}
 				}
-				remove_ideas = {
-					chemring_group
-				}
+				set_country_flag = WES_dismantle_industrial_companies_finished
 			}
 			custom_effect_tooltip =	WES_transformation_education_small.tt
+			custom_effect_tooltip =	WES_dismantle_industrial_companies_tt
 		}
 	}
     WES_overwork_military_factories = {
