@@ -872,7 +872,7 @@ characters={
 		name = SUS_lindsay_hoyle
 		portraits = {
 			civilian = {
-				small = "gfx/interface/ideas/SUS/.dds"
+				small = "gfx/interface/ideas/SUS/idea_SUS_lindsay_hoyle.dds"
 			}
 		}
 		advisor = {
@@ -901,11 +901,43 @@ characters={
 	    }
 	}
 
+		SUS_alan_johnson = {
+		name = SUS_alan_johnson
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SUS/idea_SUS_alan_johnson.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = SUS_alan_johnson
+			traits = {
+			}
+			allowed = {
+				original_tag = SUS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = left_authoritarianism
+					has_global_flag = SUS_power_struggle_ended
+				}
+			}
+			visible = {
+				has_government = left_authoritarianism
+				has_global_flag = SUS_power_struggle_ended
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+
 	SUS_kelvin_hopkins = {
 		name = SUS_kelvin_hopkins
 		portraits = {
 			civilian = {
-				small = "gfx/interface/ideas/SUS/.dds"
+				small = "gfx/interface/ideas/SUS/idea_SUS_kelvin_hopkins.dds"
 			}
 		}
 		advisor = {
@@ -938,7 +970,7 @@ characters={
 		name = SUS_kate_hoey
 		portraits = {
 			civilian = {
-				small = "gfx/interface/ideas/SUS/.dds"
+				small = "gfx/interface/ideas/SUS/idea_SUS_kate_hoey.dds"
 			}
 		}
 		advisor = {
@@ -971,7 +1003,7 @@ characters={
 		name = SUS_chris_bryant
 		portraits = {
 			civilian = {
-				small = "gfx/interface/ideas/SUS/.dds"
+				small = "gfx/interface/ideas/SUS/idea_SUS_chris_bryant.dds"
 			}
 		}
 		advisor = {
@@ -1004,7 +1036,7 @@ characters={
 		name = SUS_vernon_coaker
 		portraits = {
 			civilian = {
-				small = "gfx/interface/ideas/SUS/.dds"
+				small = "gfx/interface/ideas/SUS/idea_SUS_vernon_coaker.dds"
 			}
 		}
 		advisor = {
@@ -1037,7 +1069,7 @@ characters={
 		name = SUS_frank_field
 		portraits = {
 			civilian = {
-				small = "gfx/interface/ideas/SUS/.dds"
+				small = "gfx/interface/ideas/SUS/idea_SUS_frank_field.dds"
 			}
 		}
 		advisor = {
@@ -1070,7 +1102,7 @@ characters={
 		name = SUS_andrew_adonis
 		portraits = {
 			civilian = {
-				small = "gfx/interface/ideas/SUS/.dds"
+				small = "gfx/interface/ideas/SUS/idea_SUS_andrew_adonis.dds"
 			}
 		}
 		advisor = {
@@ -1103,7 +1135,7 @@ characters={
 		name = SUS_louise_ellman
 		portraits = {
 			civilian = {
-				small = "gfx/interface/ideas/SUS/.dds"
+				small = "gfx/interface/ideas/SUS/idea_SUS_louise_ellman.dds"
 			}
 		}
 		advisor = {
@@ -1136,7 +1168,7 @@ characters={
 		name = SUS_ed_miliband
 		portraits = {
 			civilian = {
-				small = "gfx/interface/ideas/SUS/.dds"
+				small = "gfx/interface/ideas/SUS/idea_SUS_ed_miliband.dds"
 			}
 		}
 		advisor = {
@@ -1164,7 +1196,6 @@ characters={
 			}
 	    }
 	}
-
 	SUS_laura_bates = {
 		name = SUS_laura_bates
 		portraits = {
