@@ -75,11 +75,17 @@ WES_sc_group_organization = {
 	available = {
 		FROM = {
 			owns_state = 1007
+			NOT = {
+			    has_country_flag = WES_dismantle_tank_companies_finished
+		    }
 		}
 	}
 	visible = {
 		FROM = {
 			owns_state = 1007
+			NOT = {
+			    has_country_flag = WES_dismantle_tank_companies_finished
+		    }
 		}
 	}
 }
@@ -94,11 +100,17 @@ WES_ovik_organization = {
 	available = {
 		FROM = {
 			owns_state = 1007
+			NOT = {
+				has_country_flag = WES_dismantle_tank_companies_finished
+			}
 		}
 	}
 	visible = {
 		FROM = {
 			owns_state = 1007
+			NOT = {
+				has_country_flag = WES_dismantle_tank_companies_finished
+			}
 		}
 	}
 }
@@ -124,11 +136,18 @@ WES_bae_systems_weymouth_organization = {
 	available = {
 		FROM = {
 			owns_state = 1007
+			NOT = {
+				has_country_flag = WES_dismantle_ship_companies_finished
+			}
 		}
+		
 	}
 	visible = {
 		FROM = {
 			owns_state = 1007
+			NOT = {
+				has_country_flag = WES_dismantle_ship_companies_finished
+			}
 		}
 	}
 }
@@ -154,11 +173,17 @@ WES_bae_systems_yeovil_organization = {
 	available = {
 		FROM = {
 			owns_state = 1007
+			NOT = {
+				has_country_flag = WES_dismantle_plane_companies_finished
+			}
 		}
 	}
 	visible = {
 		FROM = {
 			owns_state = 1007
+			NOT = {
+				has_country_flag = WES_dismantle_plane_companies_finished
+			}
 		}
 	}
 }
@@ -173,11 +198,17 @@ WES_rolls_royce_bristol_organization = {
 	available = {
 		FROM = {
 			owns_state = 1006
+			NOT = {
+				has_country_flag = WES_dismantle_plane_companies_finished
+			}
 		}
 	}
 	visible = {
 		FROM = {
 			owns_state = 1006
+			NOT = {
+				has_country_flag = WES_dismantle_plane_companies_finished
+			}
 		}
 	}
 }
@@ -299,11 +330,17 @@ WES_ww_greener_organization = {
 	available = {
 		FROM = {
 			owns_state = 1161
+			NOT = {
+				has_country_flag = WES_dismantle_plane_companies_finished
+			}
 		}
 	}
 	visible = {
 		FROM = {
 			owns_state = 1161
+			NOT = {
+				has_country_flag = WES_dismantle_plane_companies_finished
+			}
 		}
 	}
 }

@@ -610,6 +610,25 @@
 		}
 		completion_reward = {
 			KNT = { add_ideas = KNT_railorads_revival }
+	shared_focus = {
+		id = KNT_new_era_of_railways
+		icon = GFX_goal_KNT_new_era_of_railways
+		cost = 4.3
+		prerequisite = {
+			focus = KNT_the_workshop_of_the_world
+		}
+		completion_reward = {
+			KNT = { add_ideas = KNT_railorads_revival }
+			add_equipment_to_stockpile = {
+				type = railway_gun_equipment
+		    	        amount = 80
+				producer = KNT
+			}
+			custom_effect_tooltip =  KNT_new_era_of_railways.tt
+		}
+		x = 20
+		y = 8
+	}
 			custom_effect_tooltip =  KNT_new_era_of_railways.tt
 		}
 		x = 20

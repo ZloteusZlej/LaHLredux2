@@ -10,6 +10,7 @@ WES_wars = {
 			}	
 		}
 		available = {
+			country_exists = KNT
 			WES = {
 				has_completed_focus = WES_battle_camlann
 				has_completed_focus = WES_sword_stone
@@ -40,6 +41,7 @@ WES_wars = {
 				country_exists = SUS
 				country_exists = KNT
 			}
+			country_exists = NTH
 			WES = {
 				has_completed_focus = WES_english_spirit
 				has_completed_focus = WES_connect_nature
@@ -49,10 +51,8 @@ WES_wars = {
 				has_completed_focus = WES_road_unification
 			}
 			OR = {
-				WES = {
-					has_completed_focus = WES_law_england
-					has_completed_focus = WES_law_king
-				}
+				has_completed_focus = WES_law_england
+				has_completed_focus = WES_law_king
 			}
 		}
 		ai_will_do = {
@@ -71,6 +71,7 @@ WES_wars = {
 			}	
 		}
 		available = {
+			country_exists = SUS
 			WES = {
 				has_completed_focus = WES_battle_camlann
 				has_completed_focus = WES_sword_stone
@@ -98,6 +99,7 @@ WES_wars = {
 				country_exists = SUS
 				country_exists = KNT
 			}
+			country_exists = EAG
 			WES = {
 				has_completed_focus = WES_english_spirit
 				has_completed_focus = WES_connect_nature
@@ -106,10 +108,8 @@ WES_wars = {
 				has_completed_focus = WES_road_unification
 			}
 			OR = {
-				WES = {
-					has_completed_focus = WES_law_england
-					has_completed_focus = WES_law_king
-				}
+				has_completed_focus = WES_law_england
+				has_completed_focus = WES_law_king
 			}
 		}
 		ai_will_do = {
@@ -132,6 +132,7 @@ WES_wars = {
 				country_exists = SUS
 				country_exists = KNT
 			}
+			country_exists = MRC
 			WES = {
 				has_completed_focus = WES_english_spirit
 				has_completed_focus = WES_connect_nature
@@ -140,10 +141,48 @@ WES_wars = {
 				has_completed_focus = WES_road_unification
 			}
 			OR = {
+				has_completed_focus = WES_law_england
+				has_completed_focus = WES_law_king
+			}
+		}
+		visible = {
+			NOT = {
 				WES = {
-					has_completed_focus = WES_law_england
-					has_completed_focus = WES_law_king
+					has_completed_focus = WES_final_decision
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	WES_war_on_essex = {
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = ESS
+				type = annex_everything
+			}	
+		}
+		available = {
+			NOT = {
+				country_exists = SUS
+				country_exists = KNT
+			}
+			country_exists = ESS
+			WES = {
+				has_completed_focus = WES_english_spirit
+				has_completed_focus = WES_connect_nature
+				has_completed_focus = WES_dismantle_cities
+				has_completed_focus = WES_rural_paradise
+				has_completed_focus = WES_road_unification
+			}
+			OR = {
+				has_completed_focus = WES_law_england
+				has_completed_focus = WES_law_king
 			}
 		}
 		visible = {
@@ -158,7 +197,6 @@ WES_wars = {
 		}
 	}
 }
-
 WES_Royal_military_schools = {
 
     Rebuild_Naval_College = {
@@ -2536,14 +2574,10 @@ WES_england_transformation = {
 						level = 3
 					}
 				}
-				remove_ideas = {
-					sc_group
-				}
-				remove_ideas = {
-					ovik
-				}
+				set_country_flag = WES_dismantle_tank_companies_finished
 			}
 			custom_effect_tooltip =	WES_transformation_education_small.tt
+			custom_effect_tooltip =	WES_dismantle_tank_companies_tt
 		}
 	}
 	WES_dismantle_ship_companies = {
@@ -2590,11 +2624,10 @@ WES_england_transformation = {
 						level = 3
 					}
 				}
-				remove_ideas = {
-					bae_systems_weymouth
-				}
+				set_country_flag = WES_dismantle_ship_companies_finished
 			}
 			custom_effect_tooltip =	WES_transformation_education_small.tt
+			custom_effect_tooltip =	WES_dismantle_ship_companies_tt
 		}
 	}
 	WES_dismantle_plane_companies = {
@@ -2641,14 +2674,10 @@ WES_england_transformation = {
 						level = 3
 					}
 				}
-				remove_ideas = {
-					bae_systems_yeovil
-				}
-				remove_ideas = {
-					rolls_royce_bristol
-				}
+				set_country_flag = WES_dismantle_plane_companies_finished
 			}
 			custom_effect_tooltip =	WES_transformation_education_small.tt
+			custom_effect_tooltip =	WES_dismantle_plane_companies_tt
 		}
 	}
 	WES_dismantle_rifle_companies = {
@@ -2695,11 +2724,10 @@ WES_england_transformation = {
 						level = 3
 					}
 				}
-				remove_ideas = {
-					ww_greener
-				}
+				set_country_flag = WES_dismantle_rifle_companies_finished
 			}
 			custom_effect_tooltip =	WES_transformation_education_small.tt
+			custom_effect_tooltip =	WES_dismantle_rifle_companies_tt
 		}
 	}
 	WES_dismantle_industrial_companies = {
@@ -2746,11 +2774,10 @@ WES_england_transformation = {
 						level = 3
 					}
 				}
-				remove_ideas = {
-					chemring_group
-				}
+				set_country_flag = WES_dismantle_industrial_companies_finished
 			}
 			custom_effect_tooltip =	WES_transformation_education_small.tt
+			custom_effect_tooltip =	WES_dismantle_industrial_companies_tt
 		}
 	}
     WES_overwork_military_factories = {

@@ -3,7 +3,18 @@ SUS_debug = {
 	picture = GFX
 	allowed = { original_tag = SUS }
 }
-
+SUS_socecon = {
+	icon = GFX
+	picture = GFX
+	allowed = { original_tag = SUS }
+	visible_when_empty = yes
+	#scripted_gui = 
+	visible = {
+		SUS = {
+			has_government = left_authoritarianism
+		}
+	}
+}
 SUS_pillars = {
 	icon = GFX
 	picture = GFX

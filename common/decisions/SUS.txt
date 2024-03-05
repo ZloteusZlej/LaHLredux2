@@ -62,6 +62,44 @@ SUS_debug = {
 	}
 }
 
+SUS_socecon = {
+	SUS_socecon_recruit_member = {
+		available = {
+			custom_trigger_tooltip = {
+				FROM = {
+					OR = {
+						has_government = left_authoritarianism
+						has_government = socialism
+					}
+				}
+				FROM = {
+					SUS_socecon_price_count = yes
+				}
+			}
+		}
+		cost = SUS_member_price_level_total
+		custom_cost_text = SUS_socecon_member_price_tt
+		days_remove = 10
+		days_re_enable = 180
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_government = left_authoritarianism
+					has_government = socialism
+				}
+			}
+		}
+		complete_effect = {
+			SUS_socecon_price_count = yes
+			add_to_variable = {
+				var = SUS.political_power
+				value = SUS_member_price_level_total
+			}
+		}
+	}
+}
+
 SUS_workers_senate = {
 	SUS_senate_sacrifise_trust = {
 		custom_cost_trigger = {
@@ -130,10 +168,12 @@ SUS_workers_senate = {
 		available = {
 			check_variable = { SUS_senate_trust > 9 }
 		}
-		complete_effect = {
-			SUS = {
-				set_country_flag = SUS_cheat_hearing
+		available = {
+			NOT = {
+				has_country_flag = SUS_senate_cheat_hearing_locked
 			}
+		}
+		complete_effect = {
 			add_to_variable = {
 				var = SUS_senate_trust
 				value = -10
@@ -7271,14 +7311,14 @@ SUS_KOR_market_category = {
 
 SUS_archegetes_elections = {
 	SUS_archegetes_elections = {
-		days_mission_timeout = 90
+		days_mission_timeout = 150
 		available = {
-			SUS ={
+			SUS = {
 				has_global_flag = SUS_archegetes_elections_ended
 			}
 		}
 		visible = {
-			SUS ={
+			SUS = {
 				has_global_flag = SUS_archegetes_elections_ended
 			}
 		}
@@ -7290,6 +7330,295 @@ SUS_archegetes_elections = {
 			country_event = {
 				id = SUS_event.250
 			}
+		}
+	}
+	SUS_archegetes_elections_watson_TITLE = {
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+	}
+	SUS_archegetes_elections_watson_project_night_bloom = {
+		days_remove = 45
+		complete_effect = {
+			set_country_flag = SUS_archegetes_elections_watson_project_night_bloom_active
+			custom_effect_tooltip = SUS_archegetes_elections_arch_watson_plus
+			add_to_variable = {
+				var = SUS_arch_watson
+				value = 10
+			}
+		}
+		remove_effect = {
+			1001 = {
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	SUS_archegetes_elections_watson_project_night_bloom_sabotage = {
+		visible = {
+			has_country_flag = SUS_archegetes_elections_watson_project_night_bloom_active
+		}
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_watson_minus
+			add_to_variable = {
+				var = SUS_arch_watson
+				value = -10
+			}
+			add_stability = 0.05
+			remove_decision = SUS_archegetes_elections_watson_project_night_bloom
+		}
+		
+	}
+	SUS_archegetes_elections_watson_ensure_political_harmony = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_watson_plus
+			add_to_variable = {
+				var = SUS_arch_watson
+				value = 10
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	SUS_archegetes_elections_watson_revaluation_of_the_high_command = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_watson_plus
+			add_to_variable = {
+				var = SUS_arch_watson
+				value = 10
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	SUS_archegetes_elections_watson_promote_on_ground_inclusivity = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_watson_plus
+			add_to_variable = {
+				var = SUS_arch_watson
+				value = 10
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	
+	
+	SUS_archegetes_elections_ogrady_TITLE = {
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+	}
+	SUS_archegetes_elections_ogrady_increase_senates_power = {
+		custom_cost_trigger = {
+			check_variable = { SUS_senate_trust > 0 }
+		}
+		custom_cost_text = SUS_senate_more_then_zero_trust
+		days_remove = 45
+		days_re_enable = 60
+		available = {
+			check_variable = { SUS_senate_trust > 0 }
+		}
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_ogrady_plus
+			add_to_variable = {
+				var = SUS_arch_ogrady
+				value = 10
+			}
+		}
+		remove_effect = {
+			SUS = {
+				custom_effect_tooltip = SUS_archegetes_elections_ogrady_increase_senates_power_lock
+				custom_effect_tooltip = SUS_archegetes_elections_ogrady_increase_senates_power_double
+				add_political_power = 75
+				set_country_flag = SUS_senate_cheat_hearing_locked
+			}
+		}
+	}
+	SUS_archegetes_elections_ogrady_probe_foregin_goods_market = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_ogrady_plus
+			add_to_variable = {
+				var = SUS_arch_ogrady
+				value = 10
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	SUS_archegetes_elections_ogrady_lift_travel_restrictions = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_ogrady_plus
+			add_to_variable = {
+				var = SUS_arch_ogrady
+				value = 10
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	SUS_archegetes_elections_ogrady_hear_the_peoples_deputees = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_ogrady_plus
+			add_to_variable = {
+				var = SUS_arch_ogrady
+				value = 10
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	SUS_archegetes_elections_ogrady_re_prospect_abandoned_mines = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_ogrady_plus
+			add_to_variable = {
+				var = SUS_arch_ogrady
+				value = 10
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	
+	
+	SUS_archegetes_elections_hodge_TITLE = {
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+	}
+	SUS_archegetes_elections_hodge_dry_suffolk_bogs = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_hodge_plus
+			add_to_variable = {
+				var = SUS_arch_hodge
+				value = 10
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	SUS_archegetes_elections_hodge_peace_and_survelliance = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_hodge_plus
+			add_to_variable = {
+				var = SUS_arch_hodge
+				value = 10
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	SUS_archegetes_elections_hodge_drill_the_bobbies = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_hodge_plus
+			add_to_variable = {
+				var = SUS_arch_hodge
+				value = 10
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	SUS_archegetes_elections_hodge_militia_checkup = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_hodge_plus
+			add_to_variable = {
+				var = SUS_arch_hodge
+				value = 10
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	
+	SUS_archegetes_elections_wei_TITLE = {
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+	}
+	SUS_archegetes_elections_wei_glass_celling_farms = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_wei_plus
+			add_to_variable = {
+				var = SUS_arch_wei
+				value = 10
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	SUS_archegetes_elections_wei_birminghams_tourist_zones = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_wei_plus
+			add_to_variable = {
+				var = SUS_arch_wei
+				value = 10
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	SUS_archegetes_elections_wei_isles_of_green = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_wei_plus
+			add_to_variable = {
+				var = SUS_arch_wei
+				value = 10
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	SUS_archegetes_elections_wei_walkable_kingdom = {
+		days_remove = 45
+		complete_effect = {
+			custom_effect_tooltip = SUS_archegetes_elections_arch_wei_plus
+			add_to_variable = {
+				var = SUS_arch_wei
+				value = 10
+			}
+		}
+		remove_effect = {
+			
 		}
 	}
 

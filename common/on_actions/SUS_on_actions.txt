@@ -733,11 +733,23 @@ on_actions = {
 					}
 		        }
 				every_country = {
+					limit = {
+					   OR = {
+					        has_idea = SUS_licence_to_be_harmed
+					        has_idea = SUS_aviation_war_support
+					        has_idea = SUS_land_forces_war_support
+						}
+		            }
                     remove_ideas = SUS_licence_to_be_harmed
 					remove_ideas = SUS_aviation_war_support
 					remove_ideas = SUS_land_forces_war_support						
 				}
 				every_state = {
+					limit = {
+					    has_dynamic_modifier = {
+						modifier = SUS_unplanned_offensive
+					    }
+		            }
 					remove_dynamic_modifier = {
 						modifier = SUS_unplanned_offensive
 					}
@@ -791,6 +803,33 @@ on_actions = {
 			100 = SUS_event.49
 			100 = SUS_event.50
 			100 = SUS_event.51
+		}
+	}
+	on_weekly = {
+		effect = {
+		    if = {
+			    limit = {
+					original_tag = SUS
+		            SUS_kate_hoey = {
+			            is_hired_as_advisor = yes
+		            }
+		        }
+				SUS = {
+					country_event = SUS_event.1000
+				}
+		    }
+			else_if = {
+				limit = {
+					original_tag = SUS
+		            SUS_kate_hoey = {
+			            is_hired_as_advisor = no
+		            }
+					has_country_flag = SUS_kate_hoey_is_hired
+		        }
+				SUS = {
+					country_event = SUS_event.1001
+				}
+			}
 		}
 	}
 

@@ -3562,6 +3562,65 @@ country_event = { #Adam's Blue Outcome 6
     }
 }
 
+country_event = { #Witch Elections Watson wins
+	id = SUS_event.84
+	title = SUS_event.84.t
+	desc = SUS_event.84.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.84.a
+    }
+}
+
+country_event = { #Witch Elections O'Grady wins
+	id = SUS_event.85
+	title = SUS_event.85.t
+	desc = SUS_event.85.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.85.a
+		retire_country_leader = yes
+		promote_character = {
+			character = SUS_frances_ogrady
+			ideology = ultrahegelianism
+		}
+    }
+}
+
+country_event = { #Witch Elections Hodge wins
+	id = SUS_event.86
+	title = SUS_event.86.t
+	desc = SUS_event.86.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.86.a
+		retire_country_leader = yes
+		promote_character = {
+			character = SUS_placeholder2
+			ideology = ultrahegelianism
+		}
+    }
+}
+
+country_event = { #Witch Elections Yang wins
+	id = SUS_event.87
+	title = SUS_event.87.t
+	desc = SUS_event.87.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.87.a
+		retire_country_leader = yes
+		promote_character = {
+			character = SUS_wei_yang
+			ideology = ultrahegelianism
+		}
+    }
+}
+
 country_event = { #Coronation
 	id = SUS_event.100
 	title = SUS_event.100.t
@@ -4026,39 +4085,112 @@ country_event = { #WITCHES ARCHEGETES ELECTIONS EVENT
     is_triggered_only = yes
     fire_only_once = yes
 	option = {
+		trigger = {
+			check_variable = {
+				var = SUS_arch_watson
+				value = SUS_arch_ogrady
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SUS_arch_watson
+				value = SUS_arch_hodge
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SUS_arch_watson
+				value = SUS_arch_yang
+				compare = greater_than_or_equals
+			}
+		}
 		name = SUS_event.250.a
+		SUS = {
+			country_event = {
+			    id = SUS_event.84
+		    }
+		}
 		set_global_flag = SUS_archegetes_elections_ended
     }
-	#REPLACE THESE AFTER WE GET PROPER PEOPLE
 	option = {
 		name = SUS_event.250.b
-		retire_country_leader = yes
-		promote_character = {
-			character = SUS_placeholder1
-			ideology = ultrahegelianism
+		trigger = {
+			check_variable = {
+				var = SUS_arch_ogrady
+				value = SUS_arch_watson
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SUS_arch_ogrady
+				value = SUS_arch_hodge
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SUS_arch_ogrady
+				value = SUS_arch_yang
+				compare = greater_than_or_equals
+			}
+		}
+		SUS = {
+			country_event = {
+			    id = SUS_event.85
+		    }
 		}
 		set_global_flag = SUS_archegetes_elections_ended
     }
 	option = {
 		name = SUS_event.250.c
-		retire_country_leader = yes
-		promote_character = {
-			character = SUS_placeholder2
-			ideology = ultrahegelianism
+		trigger = {
+			check_variable = {
+				var = SUS_arch_hodge
+				value = SUS_arch_watson
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SUS_arch_hodge
+				value = SUS_arch_ogrady
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SUS_arch_hodge
+				value = SUS_arch_yang
+				compare = greater_than_or_equals
+			}
+		}
+		SUS = {
+			country_event = {
+			    id = SUS_event.86
+		    }
 		}
 		set_global_flag = SUS_archegetes_elections_ended
     }
 	option = {
 		name = SUS_event.250.e
+		trigger = {
+			check_variable = {
+				var = SUS_arch_yang
+				value = SUS_arch_watson
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SUS_arch_yang
+				value = SUS_arch_ogrady
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SUS_arch_yang
+				value = SUS_arch_hodge
+				compare = greater_than_or_equals
+			}
+		}
 		retire_country_leader = yes
-		promote_character = {
-			character = SUS_placeholder3
-			ideology = ultrahegelianism
+		SUS = {
+			country_event = {
+			    id = SUS_event.87
+		    }
 		}
 		set_global_flag = SUS_archegetes_elections_ended
     }
 }
-country_event = { #WITCHES ARCHEGETES ELECTIONS EVENT
+country_event = { #test event
 	id = SUS_event.2500
 	title = SUS_event.2500.t
 	desc = SUS_event.2500.d
@@ -4805,6 +4937,16 @@ country_event = { # AGENTS SUCCEED
 	}
 }
 
+country_event = { # an estate run by distributists was raided Waco siege style
+	id = SUS_event.811
+	title = SUS_event.811.t
+	desc = SUS_event.811.d
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.811.a
+	}
+}
+
 country_event = { #Rapid Dominance
 	id = SUS_event.900
 	title = SUS_event.900.t
@@ -4819,4 +4961,54 @@ country_event = { #Rapid Dominance
 		name = SUS_event.900.b
 		set_country_flag = SUS_land_forces
     }
+}
+
+country_event = { #Kate Hoey Hired
+	id = SUS_event.1000
+	title = SUS_event.1000.t
+	desc = SUS_event.1000.d
+	hidden = yes
+    is_triggered_only = yes
+	trigger = {
+	    original_tag = SUS
+		SUS_kate_hoey = {
+			is_hired_as_advisor = yes
+		}
+	}
+	immediate = {
+		SUS = {
+			add_to_variable = {
+			    var = SUS_coring_cost
+			    value = -15
+		    }
+		    set_country_flag = SUS_kate_hoey_is_hired
+		}
+	}
+}
+
+country_event = { #Kate Hoey Fired
+	id = SUS_event.1001
+	title = SUS_event.1001.t
+	desc = SUS_event.1001.d
+	hidden = yes
+    is_triggered_only = yes
+	trigger = {
+	    original_tag = SUS
+
+		SUS_kate_hoey = {
+			is_hired_as_advisor = no
+		}
+		SUS = {
+			has_country_flag = SUS_kate_hoey_is_hired
+		}
+	}
+	immediate = {
+		SUS = {
+			add_to_variable = {
+			    var = SUS_coring_cost
+			    value = 15
+		    }
+		    clr_country_flag = SUS_kate_hoey_is_hired
+		}
+	}
 }
