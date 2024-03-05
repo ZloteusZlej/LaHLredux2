@@ -2063,7 +2063,7 @@ leader_traits = {
 		}
 	}
 
-	SUS_goodwill_ambassador = { #Kate Hoey#
+	goodwill_ambassador = { #Kate Hoey#
 	    random = no
 		trade_opinion_factor = 0.15
 		SUS_coring_cost_modifier = -15
@@ -2130,81 +2130,73 @@ leader_traits = {
 		}
 	}
 
-	everyday_sex_discriminated  = { #Laura Bates#
+	ideologist_of_emancipation  = { #Angela McRobbie#
 	    random = no
 		political_power_factor = 0.15
-		monthly_population = 0.1
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	star_right_across_the_house  = { #Jo Fox#
+	messenger_of_hope  = { #Jo Cox#
 	    random = no
 		political_power_factor = 0.10
-		army_morale_factor = 0.1
+		trade_opinion_factor = 0.10
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	tampon_untaxpayer  = { #Laura Coryton#
+	friend_of_magnolia  = { #Dermot Hudson#
 	    random = no
-		stability_factor = 0.1
-		consumer_goods_factor = -0.15
+		production_factory_start_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor  = 0.1
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	baroness_ogrady_of_upper_holloway  = { #Frances O'Grady#
+	guardian_angel   = { #Frances O'Grady#
 	    random = no
-		production_factory_efficiency_gain_factor = 0.2
-		production_factory_max_efficiency_factor = 0.2
+		industrial_capacity_factory  = 0.15
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	chinese_octavia_hill  = { #Wei Yang#
+	gardener  = { #Wei Yang#
 	    random = no
 		production_speed_buildings_factor = 0.15
 		industry_repair_factor = 0.15
+		global_building_slots_factor = 0.5
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	founder_of_uk_feminista  = { #Kat Banyard#
+	digitalizer  = { #Chi Onwurah#
+	    random = no
+		research_speed_factor = 0.1
+		production_factory_max_efficiency_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	lotus  = { #Taban Shoresh#
 	    random = no
 		war_support_factor = 0.1
-		political_power_factor = 0.1
+		recruitable_population_factor = 0.05
+		consumer_goods_factor = -0.05
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	descendants_of_sheikh_wazed  = { #Tulip Siddiq#
+	combinator  = { #Michelle Joyce#
 	    random = no
-		political_power_factor = 0.15
-		monthly_population = 0.3
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	forward_lotus_flower  = { #Taban Shoresh#
-	    random = no
-		war_support_factor = 0.1
-		monthly_population = 0.3
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	korean_aesthetic_propagandist  = { #Michelle Joyce#
-	    random = no
-		political_power_gain = 0.15
+		military_industrial_organizations_funds_gain = 0.2
 		trade_opinion_factor = 0.25
 		ai_will_do = {
 			factor = 1
@@ -2222,48 +2214,46 @@ leader_traits = {
 		}
 	}
 
-	assasin_from_korea  = { #Siti Aisyah#
+	master_of_nature  = { #Aarathi Prasad#
 	    random = no
-		experience_gain_army_factor = 0.1
-		conscription = 0.1
+		research_speed_factor = 0.15
+		monthly_population = 0.33
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	dragons_eye  = { #Owen Smith#
+	pharmacist  = { #Owen Smith#
 	    random = no
-		political_power_factor = 0.15
-		production_speed_buildings_factor = 0.05
+		political_power_factor = 0.05
+		research_speed_factor = 0.2
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	the_epitome_of_centrism  = { #Alan Milburn#
-	    random = no
-	    production_factory_start_efficiency_factor = 0.1
-	    production_factory_max_efficiency_factor = 0.1
-	    production_lack_of_resource_penalty_factor = -0.1
-	    ai_will_do = {
-		    factor = 1
-	    }
-    }
-
-	the_prince_of_darkness  = { #Peter Mandelson#
-	    random = no
-	    political_power_factor = 0.2
-		war_support_factor = 0.1
-		production_factory_efficiency_gain_factor = -0.025
-	    ai_will_do = {
-		    factor = 1
-	    }
-    }
-
-	strategist_of_time_to_change  = { #Alastair Campbell#
+	private_caretaker  = { #Alan Milburn#
 	    random = no
 	    political_power_factor = 0.1
-	    production_factory_efficiency_gain_factor = 0.1
+		monthly_population = 0.2
+	    ai_will_do = {
+		    factor = 1
+	    }
+    }
+
+	net_tsar = { #Peter Mandelson#
+	    random = no
+		trade_opinion_factor = 0.25
+		production_factory_efficiency_gain_factor = 0.1
+	    ai_will_do = {
+		    factor = 1
+	    }
+    }
+
+	architect_of_lies  = { #Alastair Campbell#
+	    random = no
+	    war_support_factor = 0.15
+		surrender_limit = 0.15
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -2271,28 +2261,19 @@ leader_traits = {
 
 	last_man_standing  = { #Jack Straw#
 	    random = no
-	    political_power_factor = -0.05
-	    experience_gain_army_factor = 0.1
+	    political_power_factor = 0.05
 		command_power_gain = 0.1
 	    ai_will_do = {
 		    factor = 1
 	    }
     }
 
-	donald_trump_without_the_hair  = { #Andrew Adonis#
-	    random = no
-	    production_speed_buildings_factor = 0.15
-		production_factory_efficiency_gain_factor = 0.1
-	    ai_will_do = {
-		    factor = 1
-	    }
-    }
 
-	scolish_blair  = { #Jim Murphy#
+	scolish_hawk = { #Jim Murphy#
 	    random = no
 	    political_power_factor = 0.1
-		army_fuel_capacity_factor = 0.15
-		army_fuel_consumption_factor = -0.15
+		political_advisor_cost_factor = -0.25
+		max_command_power_mult = 0.25
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -2300,28 +2281,26 @@ leader_traits = {
 
 	brains  = { #David Miliband#
 	    random = no
-	    political_power_factor = 0.1
-		consumer_goods_factor = -0.15
+	    economy_cost_factor = -0.33
+		trade_laws_cost_factor = -0.33
 	    ai_will_do = {
 		    factor = 1
 	    }
     }
 
-	veggie_benn  = { #Hilary Benn#
+	state_philanthropist  = { #Hilary Benn#
 	    random = no
-	    production_speed_buildings_factor = 0.15
+	    consumer_goods_factor = -0.05
 		stability_factor = 0.1
 	    ai_will_do = {
 		    factor = 1
 	    }
     }
 
-	baron_darling_of_roulanish  = { #Alistair Darling#
+	rational_chancellor  = { #Alistair Darling#
 	    random = no
 		production_factory_efficiency_gain_factor = 0.1
-		mobilization_laws_cost_factor = -0.1
-		trade_laws_cost_factor = -0.1
-		economy_cost_factor = -0.1
+		production_speed_buildings_factor = 0.15
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -2337,49 +2316,8 @@ leader_traits = {
 	    }
     }
 
-	starmerite  = { #Keir Starmer#
-	    random = no
-	    political_power_gain = 0.1
-		stability_factor = 0.1
-	    ai_will_do = {
-		    factor = 1
-	    }
-    }
 
-	the_lion_after_slumber  = { #Andrew Gwynne#
-	    random = no
-	    political_power_gain = 0.1
-		production_factory_efficiency_gain_factor = 0.1
-	    ai_will_do = {
-		    factor = 1
-	    }
-    }
-
-	the_blind_in_the_bear_pit  = { #David Blunkett#
-	    random = no
-	    political_power_factor = 0.25
-	    ai_will_do = {
-		    factor = 1
-	    }
-    }
-
-	grangela  = { #Angela Rayner#
-	    random = no
-	    political_power_gain = 0.1
-		war_support_factor = 0.1
-	    ai_will_do = {
-		    factor = 1
-	    }
-    }
-
-	blinky_balls  = { #Ed Balls#
-	    random = no
-	    political_power_gain = 0.1
-		production_speed_buildings_factor = 0.1
-	    ai_will_do = {
-		    factor = 1
-	    }
-    }
+	
 	
 	universal_man  = { #Alan Johnson#
 	    random = no
