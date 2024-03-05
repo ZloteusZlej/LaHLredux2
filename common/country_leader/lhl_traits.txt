@@ -2225,6 +2225,17 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	
+	old_revolutionary  = { #Andy Brooks#
+	    random = no
+		political_advisor_cost_factor = -0.1
+		mobilization_laws_cost_factor = -0.1
+		trade_laws_cost_factor = -0.1
+		economy_cost_factor = -0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 	assasin_from_korea  = { #Siti Aisyah#
 	    random = no
@@ -2330,6 +2341,16 @@ leader_traits = {
 		    factor = 1
 	    }
     }
+	
+	red_whistleblower   = { #Vladimir Rezun#
+	    random = no
+		army_experience_gain = 0.1
+		command_power_gain = 0.25
+		decryption_factor = 0.15
+	    ai_will_do = {
+		    factor = 1
+	    }
+    }
 
 	starmerite  = { #Keir Starmer#
 	    random = no
@@ -2370,6 +2391,15 @@ leader_traits = {
 	    random = no
 	    political_power_gain = 0.1
 		production_speed_buildings_factor = 0.1
+	    ai_will_do = {
+		    factor = 1
+	    }
+    }
+	
+	universal_man  = { #Alan Johnson#
+	    random = no
+	    political_power_gain = 0.1
+		production_factory_efficiency_gain_factor = 0.1
 	    ai_will_do = {
 		    factor = 1
 	    }

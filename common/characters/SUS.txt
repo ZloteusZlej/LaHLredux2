@@ -1445,6 +1445,37 @@ characters={
 			}
 	    }
 	}
+	
+	SUS_jo_cox = {
+		name = SUS_jo_cox
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SUS/.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = SUS_jo_cox
+			traits = {
+				messenger_of_hope
+			}
+			allowed = {
+				original_tag = SUS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = commendationism
+				}
+			}
+			visible = {
+				has_government = commendationism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
 
 	SUS_michelle_joyce = {
 		name = SUS_michelle_joyce
@@ -1456,7 +1487,7 @@ characters={
 		advisor = {
 			cost = 120
 			slot = political_advisor
-			idea_token = SUS_michelle_joyce
+			idea_token = SUS_f_joyce
 			traits = {
 				korean_aesthetic_propagandist
 			}
@@ -1476,6 +1507,38 @@ characters={
 			}
 	    }
 	}
+	
+	SUS_andy_brooks = {
+		name = SUS_andy_brooks
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SUS/.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = SUS_andy_brooks
+			traits = {
+				korean_old_revolutionary
+			}
+			allowed = {
+				original_tag = SUS
+			}
+			available = {
+				hidden_trigger = {
+					has_government = commendationism
+				}
+			}
+			visible = {
+				has_government = commendationism
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	
 
 	SUS_siti_aisyah = {
 		name = SUS_siti_aisyah
@@ -1927,6 +1990,78 @@ characters={
 			idea_token = SUS_ed_balls
 			traits = {
 				blinky_balls
+			}
+			allowed = {
+				original_tag = SUS
+			}
+			
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+
+	SUS_alan_johnson = {
+		name = SUS_alan_johnson
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SUS/.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = SUS_alan_johnson
+			traits = {
+				universal_man
+			}
+			allowed = {
+				original_tag = SUS
+			}
+			
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	
+		SUS_andy_brooks = {
+		name = SUS_andy_brooks
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SUS/.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = SUS_andy_brooks
+			traits = {
+				old_revolutionary
+			}
+			allowed = {
+				original_tag = SUS
+			}
+			
+			ai_will_do  = {
+				factor  = 1.000
+			}
+	    }
+	}
+	
+	SUS_vladimir_rezun = {
+		name = SUS_vladimir_rezun
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SUS/.dds"
+			}
+		}
+		advisor = {
+			cost = 120
+			slot = political_advisor
+			idea_token = SUS_vladimir_rezun
+			traits = {
+				red_whistleblower
 			}
 			allowed = {
 				original_tag = SUS
