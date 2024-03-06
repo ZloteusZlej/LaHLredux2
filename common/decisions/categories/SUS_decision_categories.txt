@@ -247,3 +247,19 @@ SUS_public_art_gallery = {
 	visible_when_empty = yes
 }
 
+SUS_reopen_military_academies = { 
+	icon = GFX_
+
+	allowed = { original_tag = SUS }
+	visible = {
+		SUS = {
+			has_completed_focus = SUS_king_s_academies
+		}
+	}
+	available = {
+		SUS = {
+			has_completed_focus = SUS_king_s_academies
+		}
+	}
+	visible_when_empty = no
+}
