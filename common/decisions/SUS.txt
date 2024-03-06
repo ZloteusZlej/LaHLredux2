@@ -8971,7 +8971,7 @@ SUS_war_preparations = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
 			1156 = {
 				has_state_flag = SUS_twilight_zone_can_found
@@ -9001,9 +9001,9 @@ visible = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
-			1156 = {
+			1153 = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
@@ -9031,9 +9031,9 @@ visible = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
-			1156 = {
+			1161 = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
@@ -9061,9 +9061,9 @@ visible = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
-			1156 = {
+			1165 = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
@@ -9091,9 +9091,9 @@ visible = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
-			1156 = {
+			1152 = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
@@ -9121,9 +9121,9 @@ visible = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
-			1156 = {
+			1155 = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
@@ -9151,9 +9151,9 @@ visible = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
-			1156 = {
+			1005 = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
@@ -9181,9 +9181,9 @@ visible = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
-			1156 = {
+			1158 = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
@@ -9211,9 +9211,9 @@ visible = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
-			1156 = {
+			1157 = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
@@ -9241,9 +9241,9 @@ visible = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
-			1156 = {
+			1003 = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
@@ -9271,9 +9271,9 @@ visible = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
-			1156 = {
+			1143 = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
@@ -9301,9 +9301,9 @@ visible = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
-			1156 = {
+			1004 = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
@@ -9331,9 +9331,9 @@ visible = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
-			1156 = {
+			1151 = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
@@ -9361,9 +9361,9 @@ visible = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
-			1156 = {
+			1146 = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
@@ -9391,9 +9391,9 @@ visible = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
-			1156 = {
+			1008 = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
@@ -9421,9 +9421,9 @@ visible = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
-visible = {
+        visible = {
             has_completed_focus = SUS_twilight_zone
-			1156 = {
+			1144 = {
 				has_state_flag = SUS_twilight_zone_can_found
 			}
 		}
@@ -10177,6 +10177,532 @@ SUS_public_art_gallery = {
 				level = 1
 				instant_build = yes
 				}
+			}
+		}
+	}
+}
+
+SUS_reopen_military_academies = {
+    SUS_reopen_military_academies_in_kent = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			has_completed_focus = SUS_king_s_academies
+			1002 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1002 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		visible = {
+			has_completed_focus = SUS_king_s_academies
+			1002 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		remove_effect = {
+			SUS = {
+				army_experience = 10
+				add_doctrine_cost_reduction = {
+			        cost_reduction = 0.5
+			        uses = 2
+			        category = land_doctrine
+			    }
+			}
+		}
+	}
+
+	SUS_reopen_military_academies_in_northern_kent = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			has_completed_focus = SUS_king_s_academies
+			1165 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1165 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		visible = {
+			has_completed_focus = SUS_king_s_academies
+			1165 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		remove_effect = {
+			SUS = {
+				army_experience = 10
+				add_tech_bonus = {
+				    bonus = 0.75
+				    uses = 1
+				    category = cat_special_forces_generic
+			    }
+			}
+		}
+	}
+
+	SUS_reopen_military_academies_in_croydon = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			has_completed_focus = SUS_king_s_academies
+			1156 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1156 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		visible = {
+			has_completed_focus = SUS_king_s_academies
+			1156 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		remove_effect = {
+			SUS = {
+				army_experience = 10
+				add_tech_bonus = {
+				    bonus = 0.75
+				    uses = 1
+				    category = support_tech
+			    }
+			}
+		}
+	}
+
+	SUS_reopen_military_academies_in_sussex = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			has_completed_focus = SUS_king_s_academies
+			1001 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1001 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		visible = {
+			has_completed_focus = SUS_king_s_academies
+			1001 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		remove_effect = {
+			SUS = {
+				army_experience = 10
+				add_tech_bonus = {
+				    bonus = 0.75
+				    uses = 1
+				    category = infantry_weapons
+			    }
+			}
+		}
+	}
+
+	SUS_reopen_military_academies_in_gloustershire = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			has_completed_focus = SUS_king_s_academies
+			1153 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1153 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		visible = {
+			has_completed_focus = SUS_king_s_academies
+			1153 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		remove_effect = {
+			SUS = {
+				army_experience = 10
+				add_tech_bonus = {
+				    bonus = 0.75
+				    uses = 1
+				    category = artillery
+			    }
+			}
+		}
+	}
+
+	SUS_reopen_military_academies_in_dorset = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			has_completed_focus = SUS_king_s_academies
+			1007 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1007 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		visible = {
+			has_completed_focus = SUS_king_s_academies
+			1007 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		remove_effect = {
+			SUS = {
+				army_experience = 10
+				add_tech_bonus = {
+				    bonus = 0.75
+				    uses = 1
+				    category = cat_mechanized_equipment
+			    }
+			}
+		}
+	}
+
+	SUS_reopen_military_academies_in_hampshire = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			has_completed_focus = SUS_king_s_academies
+			1000 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1000 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		visible = {
+			has_completed_focus = SUS_king_s_academies
+			1000 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		remove_effect = {
+			SUS = {
+				air_experience = 20
+				add_tech_bonus = {
+				    bonus = 0.5
+				    uses = 2
+				    category = jet_technology
+			    }
+			}
+		}
+	}
+
+	SUS_reopen_military_academies_in_whiltshire = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			has_completed_focus = SUS_king_s_academies
+			1161 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1161 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		visible = {
+			has_completed_focus = SUS_king_s_academies
+			1161 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		remove_effect = {
+			SUS = {
+				army_experience = 10
+				add_tech_bonus = {
+				    bonus = 0.75
+				    uses = 1
+				    category = armor
+			    }
+			}
+		}
+	}
+
+	SUS_reopen_military_academies_in_somerset = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			has_completed_focus = SUS_king_s_academies
+			1006 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 1006 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		visible = {
+			has_completed_focus = SUS_king_s_academies
+			1006 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		remove_effect = {
+			SUS = {
+				army_experience = 10
+				add_doctrine_cost_reduction = {
+			        cost_reduction = 0.5
+			        uses = 2
+			        category = land_doctrine
+			    }
+			}
+		}
+	}
+
+	SUS_reopen_military_academies_in_devon = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			has_completed_focus = SUS_king_s_academies
+			999 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 999 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		visible = {
+			has_completed_focus = SUS_king_s_academies
+			999 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		remove_effect = {
+			SUS = {
+				army_experience = 20
+				add_command_power = 20
+			}
+		}
+	}
+
+	SUS_reopen_military_academies_in_cornwall = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SUS
+		}
+
+		available = {
+			has_completed_focus = SUS_king_s_academies
+			998 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		highlight_states = {
+ 			highlight_state_targets = { state = 998 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		visible = {
+			has_completed_focus = SUS_king_s_academies
+			998 = {
+					is_controlled_by = SUS
+			}
+		}
+
+		remove_effect = {
+			SUS = {
+				air_experience = 20
+				add_doctrine_cost_reduction = {
+			        cost_reduction = 0.5
+			        uses = 3
+			        category = air_doctrine
+			    }
 			}
 		}
 	}
