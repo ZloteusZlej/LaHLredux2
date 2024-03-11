@@ -1738,6 +1738,49 @@ shared_focus = {
 	icon = GFX_goal_SUS_honourable_gentlemen
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SUS_honourable_gentlemen"
+		hidden_effect = {
+			random_country_division = {	
+			    add_history_entry = {
+				    key = the_royal_defenders
+				    subject = "The Royal Defenders"
+				    allow = yes
+			    }
+			    add_unit_medal_to_latest_entry = {
+				    unit_medals = SUS_victoria_cross
+			    }
+		    }
+		    random_country_division = {	
+			    add_history_entry = {
+				    key = the_royal_defenders
+				    subject = "The Royal Defenders"
+				    allow = yes
+			    }
+			    add_unit_medal_to_latest_entry = {
+				    unit_medals = SUS_victoria_cross
+			    }
+		    }
+		    random_country_division = {	
+			    add_history_entry = {
+				    key = the_royal_defenders
+				    subject = "The Royal Defenders"
+				    allow = yes
+			    }
+			    add_unit_medal_to_latest_entry = {
+				    unit_medals = SUS_victoria_cross
+			    }
+		    }
+		    random_country_division = {	
+			    add_history_entry = {
+				    key = the_royal_defenders
+				    subject = "The Royal Defenders"
+				    allow = yes
+			    }
+			    add_unit_medal_to_latest_entry = {
+				    unit_medals = SUS_victoria_cross
+			    }
+		    }
+		}
+		custom_effect_tooltip = SUS_honourable_gentlemen_tt
 	}
 	prerequisite = {
 		focus = SUS_legion_of_frontiersmen
