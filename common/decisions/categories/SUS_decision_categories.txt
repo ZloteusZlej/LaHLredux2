@@ -5,10 +5,10 @@ SUS_debug = {
 }
 SUS_socecon = {
 	icon = GFX
-	picture = GFX
+	#picture
 	allowed = { original_tag = SUS }
 	visible_when_empty = yes
-	#scripted_gui = 
+	scripted_gui = lhl_SUS_socecon_screen_body
 	visible = {
 		SUS = {
 			has_government = left_authoritarianism

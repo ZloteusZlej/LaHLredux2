@@ -1,0 +1,25 @@
+guiTypes = {
+	containerWindowType = {
+		name = "lhl_SUS_socecon_full"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 350 }
+		
+		instantTextBoxType = {
+			name ="SUS_socecon_current_budget"
+			position = { x = 0 y = 215 }
+			font = "hoi_24header"
+			text = SUS_socecon_current_budget
+			format = center
+			maxHeight = 0
+			maxWidth = 500
+		}
+		
+		iconType = {
+			name ="SUS_socecon_image_icon"
+			spriteType = "GFX_SUS_socecon_image"
+			position = { x=150	y=0 } 
+			pdx_tooltip = SUS_socecon_status
+
+		}
+	}
+}
