@@ -42,4 +42,24 @@ unit_medals = {
 			add_divisional_commander_xp = 100
 		}
 	}
+	SUS_victoria_cross = {
+		
+		available = { should_have_english_medals_trigger = yes }
+		frame = 2
+		icon = "GFX_medal_icon_SUS"
+		
+		cost = 50
+		
+		unit_modifiers = {
+			army_strength_factor = 0.1
+			army_defence_factor = 0.1
+			max_dig_in_factor = 0.1
+			recon_factor_while_entrenched = 0.1
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
 }
