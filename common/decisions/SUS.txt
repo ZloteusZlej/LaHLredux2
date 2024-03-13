@@ -63,6 +63,239 @@ SUS_debug = {
 }
 
 SUS_socecon = {
+	SUS_socecon_recruit_members_menu = {
+		complete_effect = {
+			if = {
+				limit = {
+					SUS = {
+						has_country_flag = SUS_socecon_accepting_menu_opened
+					}
+				}
+				SUS = {
+					clr_country_flag = SUS_socecon_accepting_menu_opened
+				}
+			}
+			else_if = {
+				SUS = {
+					set_country_flag = SUS_socecon_accepting_menu_opened
+				}
+			}
+		}
+	}
+	SUS_socecon_interact_members_menu = {
+		complete_effect = {
+			if = {
+				limit = {
+					SUS = {
+						has_country_flag = SUS_socecon_interaction_menu_opened
+					}
+				}
+				SUS = {
+					clr_country_flag = SUS_socecon_interaction_menu_opened
+				}
+			}
+			else_if = {
+				SUS = {
+					set_country_flag = SUS_socecon_interaction_menu_opened
+				}
+			}
+		}
+	}
+	SUS_socecon_decisions_menu = {
+		complete_effect = {
+			if = {
+				limit = {
+					SUS = {
+						has_country_flag = SUS_socecon_decisions_menu_opened
+					}
+				}
+				SUS = {
+					clr_country_flag = SUS_socecon_decisions_menu_opened
+				}
+			}
+			else_if = {
+				SUS = {
+					set_country_flag = SUS_socecon_decisions_menu_opened
+				}
+			}
+		}
+	}
+	SUS_socecon_interact_member = {
+		available = {
+			SUS = {
+				has_country_flag = SUS_socecon_interaction_menu_opened
+			}
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_socecon_interaction_menu_opened
+			}
+		}
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				has_idea = SUS_socecon_member
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					FROM = {
+						has_country_flag = SUS_socecon_current_interaction
+					}
+					SUS = {
+						has_country_flag = SUS_socecon_current_interaction_active
+					}
+				}
+				SUS = {
+					clr_country_flag = SUS_socecon_decisions_menu_opened
+				}
+				FROM = {
+					clr_country_flag = SUS_socecon_current_interaction
+				}
+			}
+			else_if = {
+				FROM = {
+					set_country_flag = SUS_socecon_current_interaction
+				}
+				SUS = {
+					set_country_flag = SUS_socecon_current_interaction_active
+				}
+			}
+		}
+	}
+	SUS_socecon_interact_request_guns = {
+		cost = 50
+		days_remove = 60
+		days_re_enable = 90
+		target_trigger = {
+			FROM = {
+				has_country_flag = SUS_socecon_current_interaction
+			}
+		}
+		available = {
+			FROM = {
+				has_equipment = {
+					infantry_equipment_1 > 999
+				}
+			}
+			FROM = {
+				has_country_flag = SUS_socecon_current_interaction
+			}
+			SUS = {
+				has_country_flag = SUS_socecon_current_interaction_active
+			}
+			SUS = {
+				has_country_flag = SUS_socecon_interaction_menu_opened
+			}				
+		}
+		visible = {
+			FROM = {
+				has_country_flag = SUS_socecon_current_interaction
+			}
+			SUS = {
+				has_country_flag = SUS_socecon_current_interaction_active
+			}	
+			SUS = {
+				has_country_flag = SUS_socecon_interaction_menu_opened
+			}	
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			SUS = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = FROM
+				}
+			}
+		}
+	}
+	SUS_socecon_interact_request_funds = {
+		cost = 100
+		days_remove = 120
+		days_re_enable = 360
+		target_trigger = {
+			FROM = {
+				has_country_flag = SUS_socecon_current_interaction
+			}
+		}
+		available = {
+			FROM = {
+				has_political_power > 100
+			}
+			FROM = {
+				has_country_flag = SUS_socecon_current_interaction
+			}
+			SUS = {
+				has_country_flag = SUS_socecon_current_interaction_active
+			}
+			SUS = {
+				has_country_flag = SUS_socecon_interaction_menu_opened
+			}				
+		}
+		visible = {
+			FROM = {
+				has_country_flag = SUS_socecon_current_interaction
+			}
+			SUS = {
+				has_country_flag = SUS_socecon_current_interaction_active
+			}	
+			SUS = {
+				has_country_flag = SUS_socecon_interaction_menu_opened
+			}	
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = SUS_socecon_gain_funds_2
+			add_to_variable = {
+				var = SUS_socecon_current_budget
+				value = 10
+			}
+		}
+	}
+	SUS_socecon_interact_request_construction = {
+		cost = 150
+		days_remove = 120
+		days_re_enable = 360
+		target_trigger = {
+			FROM = {
+				has_country_flag = SUS_socecon_current_interaction
+			}
+		}
+		available = {
+			FROM = {
+				has_country_flag = SUS_socecon_current_interaction
+			}
+			SUS = {
+				has_country_flag = SUS_socecon_current_interaction_active
+			}
+			SUS = {
+				has_country_flag = SUS_socecon_interaction_menu_opened
+			}				
+		}
+		visible = {
+			FROM = {
+				has_country_flag = SUS_socecon_current_interaction
+			}
+			SUS = {
+				has_country_flag = SUS_socecon_current_interaction_active
+			}	
+			SUS = {
+				has_country_flag = SUS_socecon_interaction_menu_opened
+			}	
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_timed_idea = {
+				idea = SUS_socecon_war_help
+				days = 180
+			}
+		}
+	}
 	SUS_socecon_recruit_member = {
 		available = {
 			custom_trigger_tooltip = {
@@ -76,11 +309,23 @@ SUS_socecon = {
 					SUS_socecon_price_count = yes
 				}
 			}
+			NOT = {
+				SUS = {
+					has_country_flag = SUS_socecon_accepting_new_member
+				}
+			}
+			SUS = {
+				has_country_flag = SUS_socecon_accepting_menu_opened
+			}
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_socecon_accepting_menu_opened
+			}
 		}
 		cost = SUS_member_price_level_total
-		custom_cost_text = SUS_socecon_member_price_tt
-		days_remove = 10
-		days_re_enable = 180
+		days_remove = 60
+		fire_only_once = yes
 		targets_dynamic = yes
 		target_trigger = {
 			FROM = {
@@ -96,6 +341,370 @@ SUS_socecon = {
 				var = SUS.political_power
 				value = SUS_member_price_level_total
 			}
+			add_to_variable = {
+				var = SUS_socecon_current_budget_income
+				value = FROM.num_of_civilian_factories
+			}
+			add_to_variable = {
+				var = SUS_socecon_current_budget
+				value = FROM.num_of_civilian_factories
+			}
+			add_to_variable = {
+				var = SUS_socecon_member_count
+				value = 1
+			}
+			set_variable = { FROM.SUS_current_loyalty_level = 10 }
+			FROM = {
+				add_ideas = SUS_socecon_member
+			}
+			SUS = {
+				set_country_flag = SUS_socecon_accepting_new_member
+			}	
+		}
+		remove_effect = {
+			SUS = {
+				clr_country_flag = SUS_socecon_accepting_new_member
+			}	
+		}
+	}
+	SUS_socecon_project_food_security = {
+		custom_cost_trigger = {
+			check_variable = { SUS_socecon_current_budget > 74 }
+		}
+		custom_cost_text = SUS_SOCECON_BUDGET_COST_2
+		days_remove = 120
+		days_re_enable = 365
+		available = {
+			check_variable = { SUS_socecon_current_budget > 74 }
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}			
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_socecon_current_budget
+				value = -75
+			}
+		}
+		remove_effect = {
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_socecon_food_buff
+					days = 180
+				}
+			}
+			every_country = {
+				limit = {
+					has_idea = SUS_socecon_member
+				}
+				add_timed_idea = {
+					idea = SUS_socecon_food_buff
+					days = 180
+				}
+			}
+		}
+	}
+	SUS_socecon_project_excavation = {
+		custom_cost_trigger = {
+			check_variable = { SUS_socecon_current_budget > 99 }
+		}
+		custom_cost_text = SUS_SOCECON_BUDGET_COST_1
+		days_remove = 120
+		days_re_enable = 365
+		available = {
+			check_variable = { SUS_socecon_current_budget > 99 }
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}			
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_socecon_current_budget
+				value = -100
+			}
+		}
+		remove_effect = {
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_socecon_construction_buff
+					days = 180
+				}
+			}
+			every_country = {
+				limit = {
+					has_idea = SUS_socecon_member
+				}
+				add_timed_idea = {
+					idea = SUS_socecon_construction_buff
+					days = 180
+				}
+			}
+		}
+	}
+	SUS_socecon_project_production_speed = {
+		custom_cost_trigger = {
+			check_variable = { SUS_socecon_current_budget > 99 }
+		}
+		custom_cost_text = SUS_SOCECON_BUDGET_COST_1
+		days_remove = 120
+		days_re_enable = 365
+		available = {
+			check_variable = { SUS_socecon_current_budget > 99 }
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}			
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_socecon_current_budget
+				value = -100
+			}
+		}
+		remove_effect = {
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_socecon_production_buff 
+					days = 180
+				}
+			}
+			every_country = {
+				limit = {
+					has_idea = SUS_socecon_member
+				}
+				add_timed_idea = {
+					idea = SUS_socecon_production_buff 
+					days = 180
+				}
+			}
+		}
+	}
+	SUS_socecon_project_rearmament = {
+		custom_cost_trigger = {
+			check_variable = { SUS_socecon_current_budget > 149 }
+		}
+		custom_cost_text = SUS_SOCECON_BUDGET_COST_3
+		days_remove = 120
+		days_re_enable = 365
+		available = {
+			check_variable = { SUS_socecon_current_budget > 149 }
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}			
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_socecon_current_budget
+				value = -150
+			}
+		}
+		remove_effect = {
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_socecon_rearmament_buff
+					days = 180
+				}
+			}
+			every_country = {
+				limit = {
+					has_idea = SUS_socecon_member
+				}
+				add_timed_idea = {
+					idea = SUS_socecon_rearmament_buff
+					days = 180
+				}
+			}
+		}
+	}
+	SUS_socecon_project_nuclear_programme = {
+		custom_cost_trigger = {
+			check_variable = { SUS_socecon_current_budget > 299 }
+		}
+		custom_cost_text = SUS_SOCECON_BUDGET_COST_4
+		days_remove = 120
+		days_re_enable = 365
+		available = {
+			check_variable = { SUS_socecon_current_budget > 299 }
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}			
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_socecon_current_budget
+				value = -300
+			}
+		}
+		remove_effect = {
+			SUS = {
+				add_timed_idea = {
+					idea = SUS_socecon_nuclear_buff
+					days = 180
+				}
+				add_tech_bonus = {
+					bonus = 1.0
+					uses = 1
+					category = nuclear
+				}
+			}
+			every_country = {
+				limit = {
+					has_idea = SUS_socecon_member
+				}
+				add_timed_idea = {
+					idea = SUS_socecon_nuclear_buff
+					days = 180
+				}
+				add_tech_bonus = {
+					bonus = 1.0
+					uses = 1
+					category = nuclear
+				}
+			}
+		}
+	}
+	SUS_socecon_administrative_resource = {
+		custom_cost_trigger = {
+			check_variable = { SUS_socecon_current_budget > 99 }
+		}
+		custom_cost_text = SUS_SOCECON_BUDGET_COST_1
+		days_remove = 90
+		days_re_enable = 60
+		available = {
+			check_variable = { SUS_socecon_current_budget > 99 }
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}			
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = SUS_socecon_current_budget
+				value = -100
+			}
+		}
+		remove_effect = {
+			SUS = {
+				add_political_power = 100
+			}
+		}
+	}
+	SUS_socecon_administrative_resource_2 = {
+		cost = 150
+		days_remove = 90
+		days_re_enable = 90
+		available = {
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}			
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = SUS_socecon_gain_funds
+			add_to_variable = {
+				var = SUS_socecon_current_budget
+				value = 75
+			}
+		}
+	}
+	SUS_increase_fees = {
+		cost = 150
+		days_remove = 10
+		days_re_enable = 240
+		available = {
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}			
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = SUS_socecon_increase_fees
+			multiply_variable = {
+				var = SUS_socecon_current_budget_income
+				value = 1.5
+			}
+			add_to_variable = {
+				var = FROM.SUS_current_loyalty_level
+				value = -3
+			}
+			clamp_variable = {
+				var = FROM@SUS_current_loyalty_level
+				min = 0
+				max = 10
+			}
+		}
+		remove_effect = {
+		}
+	}
+	SUS_decrease_fees = {
+		cost = 150
+		days_remove = 10
+		days_re_enable = 240
+		available = {
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}			
+		}
+		visible = {
+			SUS = {
+				has_country_flag = SUS_socecon_decisions_menu_opened
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = SUS_socecon_decrease_fees
+			divide_variable = {
+				var = SUS_socecon_current_budget_income
+				value = 1.5
+			}
+			add_to_variable = {
+				var = FROM.SUS_current_loyalty_level
+				value = 3
+			}
+			clamp_variable = {
+				var = FROM@SUS_current_loyalty_level
+				min = 0
+				max = 10
+			}
+		}
+		remove_effect = {
 		}
 	}
 }

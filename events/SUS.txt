@@ -3621,6 +3621,148 @@ country_event = { #Witch Elections Yang wins
     }
 }
 
+country_event = { #Request construction
+	id = SUS_event.88
+	title = SUS_event.88.t
+	desc = SUS_event.88.d
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.88.a
+		custom_effect_tooltip = SUS_socecon_event_price_20
+		trigger = {
+			check_variable = {
+				var = SUS_socecon_current_budget
+				value = 20
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = SUS_socecon_current_budget
+			value = -20
+		}
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+			}
+			add_timed_idea = {
+				idea = SUS_socecon_construction_help
+				days = 180
+			}
+		}
+    }
+	option = {
+		name = SUS_event.88.b
+		custom_effect_tooltip = SUS_socecon_loyalty_drop_small
+		SUS = {
+			add_political_power = -15
+		}
+		add_to_variable = {
+			var = FROM@SUS_current_loyalty_level
+			value = -2
+		}
+		clamp_variable = {
+			var = FROM@SUS_current_loyalty_level
+			min = 0
+			max = 10
+		}
+    }
+}
+
+country_event = { #Request War
+	id = SUS_event.89
+	title = SUS_event.89.t
+	desc = SUS_event.89.d
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.89.a
+		custom_effect_tooltip = SUS_socecon_event_price_50
+		trigger = {
+			SUS = {
+				has_equipment = {
+					infantry_equipment_1 > 1500
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1500
+				producer = SUS
+			}
+		}
+		SUS = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1500
+				producer = SUS
+			}
+		}
+    }
+	option = {
+		name = SUS_event.89.b
+		trigger = {
+			check_variable = {
+				var = SUS_socecon_current_budget
+				value = 50
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = SUS_socecon_current_budget
+			value = -50
+		}
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+			}
+			add_timed_idea = {
+				idea = SUS_socecon_war_help
+				days = 180
+			}
+		}
+    }
+	option = {
+		name = SUS_event.89.c
+		custom_effect_tooltip = SUS_socecon_loyalty_drop_big
+		SUS = {
+			add_political_power = -50
+		}
+		add_to_variable = {
+			var = FROM@SUS_current_loyalty_level
+			value = -5
+		}
+		clamp_variable = {
+			var = FROM@SUS_current_loyalty_level
+			min = 0
+			max = 10
+		}
+    }
+}
+
+country_event = { #Request construction
+	id = SUS_event.90
+	title = SUS_event.90.t
+	desc = SUS_event.90.d
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.90.a
+		random_country = {
+			custom_effect_tooltip = SUS_socecon_country_leaves
+			limit = {
+				has_idea = SUS_socecon_member
+			}
+			remove_ideas = SUS_socecon_member
+			subtract_from_variable = {
+				var = SUS_socecon_current_budget_income
+				value = FROM.num_of_civilian_factories
+			}
+		}
+    }
+}
+
 country_event = { #Coronation
 	id = SUS_event.100
 	title = SUS_event.100.t
@@ -4181,7 +4323,6 @@ country_event = { #WITCHES ARCHEGETES ELECTIONS EVENT
 				compare = greater_than_or_equals
 			}
 		}
-		retire_country_leader = yes
 		SUS = {
 			country_event = {
 			    id = SUS_event.87
@@ -5011,4 +5152,21 @@ country_event = { #Kate Hoey Fired
 		    clr_country_flag = SUS_kate_hoey_is_hired
 		}
 	}
+}
+
+country_event = { #SOCECON test
+	id = SUS_event.3000
+	title = SUS_event.3000.t
+	desc = SUS_event.3000.d
+	hidden = yes
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.3000.a
+		SUS = {
+			add_dynamic_modifier = {
+				modifier = SUS_socecon_modifier
+			}
+			set_variable = { SUS_socecon_member_count = 1 }
+		}
+    }
 }

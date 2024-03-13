@@ -131,6 +131,56 @@ ideas = {
 	}
 
 	country = {
+		SUS_socecon_production_buff = {
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_start_efficiency_factor = 0.25
+			}
+		}
+		SUS_socecon_food_buff = {
+			modifier = {
+				monthly_population = 0.75
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+			}
+		}
+		SUS_socecon_construction_buff = {
+			modifier = {
+				production_speed_buildings_factor = 0.5
+				local_resources_factor = 0.3
+			}
+		}
+		SUS_socecon_rearmament_buff = {
+			modifier = {
+				experience_gain_army_factor = 0.3
+				experience_gain_navy_factor = 0.3
+				experience_gain_air_factor = 0.3
+			}
+		}
+		SUS_socecon_nuclear_buff = {
+			modifier = {
+				production_speed_nuclear_reactor_factor = 1.0
+			}
+		}
+		SUS_socecon_member = {
+			modifier = {
+				research_speed_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		SUS_socecon_war_help = {
+			modifier = {
+				war_support_factor = 0.35
+				production_factory_efficiency_gain_factor = 0.35
+				weekly_manpower = 300
+			}
+		}
+		SUS_socecon_construction_help = {
+			modifier = {
+				production_speed_buildings_factor = 0.25
+			}
+		}
 		SUS_weapon_shortages = {
 
 			allowed_civil_war = {
@@ -1568,15 +1618,15 @@ SUS_land_forces_war_support = {
 			
 		removal_cost = -1
 
-modifier = {
-			intel_network_gain_factor = 0.25
-		army_intel_factor = 0.2
-		navy_intel_factor = 0.2
-		civilian_intel_factor = 0.2
-		airforce_intel_factor = 0.2
+		modifier = {
+		intel_network_gain_factor = 0.25
+			army_intel_factor = 0.2
+			navy_intel_factor = 0.2
+			civilian_intel_factor = 0.2
+			airforce_intel_factor = 0.2
+			}
+			
 		}
-		
-	}
 	}
 	hidden_ideas = {
 		SUS_initial_push = {

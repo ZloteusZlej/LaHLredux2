@@ -578,6 +578,52 @@ on_actions = {
 			}
 		}
 	}
+	on_weekly_SUS = { #SUS SOCECON
+        effect = {
+            SUS = {
+                set_variable = {
+                    var = SUS_socecon_research_speed_factor
+                    value = SUS_socecon_current_budget_income
+                }
+                set_variable = {
+                    var = SUS_socecon_production_speed_buildings
+                    value = SUS_socecon_current_budget_income
+                }
+                set_variable = {
+                    var = SUS_socecon_industrial_capacity_factory
+                    value = SUS_socecon_current_budget_income
+                }
+				divide_variable = {
+					var = SUS_socecon_research_speed_factor
+					value = 100
+				}
+				divide_variable = {
+					var = SUS_socecon_production_speed_buildings
+					value = 100
+				}
+				divide_variable = {
+					var = SUS_socecon_industrial_capacity_factory
+					value = 100
+				}
+				#
+			}
+		}
+	}
+	on_weekly_SUS = { #SUS SOCECON
+        effect = {
+			random_events = {
+				100 = SUS_event.88
+			}
+		}
+	}
+	on_monthly_SUS = {  
+		effect = {
+			add_to_variable = {
+				var = SUS_socecon_current_budget
+				value = SUS_socecon_current_budget_income
+			}
+		}
+	}
         on_war = {
 		effect = {
 			if = {

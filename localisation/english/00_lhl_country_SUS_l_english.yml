@@ -171,6 +171,9 @@
  the_blind_in_the_bear_pit:0 "The Blind In The Bear Pit"
  grangela:0 "Grangela"
  blinky_balls:0 "Blinky Balls"
+ ##MEDALS##
+ the_royal_defenders:0 "The Royal Defenders"
+ SUS_victoria_cross:0 "Victoria Cross"
  ##DESIGN_COMPANIES##
  bae_systems_portsmouth:0 "BAE Systems Submarines (Portsmouth)"
  bae_systems_portsmouth_cheap:0 "BAE Systems Submarines (Portsmouth)"
@@ -486,8 +489,7 @@
  SUS_better_out_than_in_desc:0 "A Bountiful Harvest"
  SUS_workfare:0 "Workfare"
  SUS_workfare_desc:0 "A Bountiful Harvest"
- SUS_socecon:0 "Socecon"
- SUS_socecon_desc:0 "A Bountiful Harvest"
+ SUS_socecon:0 "Union for Socialist Cooperation"
  SUS_war_office:0 "War Office"
  SUS_war_office_desc:0 "A Bountiful Harvest"
  SUS_national_service_act:0 "National Service Act"
@@ -858,6 +860,7 @@
  SUS_data_mining_tt:0 "Modify §YBack to Basics§! by \nConsumer Goods Factories: §Y-10%§! \nEncryption: §G+5.00%§! \nStability: §G+10.00%§!."
  SUS_low_power_reactors_tt:0 "Modify §YBack to Basics§! by \nProduction Efficiency Cap: §G+15%§! \nStrategic bombing visibility: §G-15%§!."
  SUS_king_s_academies_tt:0 "§YNew decisions to reopen military academies in the south of England will be available§!"
+ SUS_honourable_gentlemen_tt:0 "§YThe brave warriors who successfully defended the King in the coup will receive the Victoria Cross§!" 
  ##DECISIONS##
  SUS_his_majestys_subsidies:0 "His Majesty's Subsidies"
  SUS_foreign_investors:0 "Mostly Equal Treaties"
@@ -1474,6 +1477,21 @@
  SUS_event.82.d:0 "At [GetDateText] British Government Authority and Prime Minister Richard Dearlove reached an agreement by which the Isle of Man was recognized as a sovereign state and would become an ally of the United Kingdom. This opens a window for military and economic cooperation between the two government in an ongoing turmoil within Britain. Both nations agreed to guarantee each other's security as the mainland invests into expanding the Manx Home Defence and the island provides a place for more naval and military bases. Manx and Sussex troops march together on the streets of Douglas to celebrate the agreement and more entrepreneurs from Britain pour to the Isle, setting up their branches there, reconnecting the Isle of Man with the mainland.\n\nThis news shocked other political players in Britain as no one has a clear explanation of this political gesture from Richard Dearlove. Many believe this will weaken the positions of Portsmouth but it is expected that it might be a part of some scheme that will be used to defeat the remaining opponents of Sussex.\n\nBefore the agreement was signed, some rumors about the medical facility in Douglas hidden under a historical museum that had a serious accident that allegedly caused erratic behavior of the islanders, reached the rest of England. When these speculations got to the UK’s government a special commission was opened to make an inquiry into the matter. Investigation results concluded that such erratic behavior amongst the locals was caused by psychotraumatic memory losses caused by the lack of information coming from the Isle about the ongoing civil war that leaves people with no answers regarding the well-being of their relatives.\n\nNow with the matter of the Isle of Man resolved, we can safely say that Britain is one step closer towards peace."
  SUS_event.82.a:0 "Everything is running smoothly"
  #
+ SUS_event.88.t:0 "USC member requests investment"
+ SUS_event.88.d:0 "One of the members of our organization has requested assistance in furthering their construction efforts. We can either allocate a number of collective funds towards their needs or ignore their pleas if we don't have enough resourses or find their projects to be undesirable. The latter option, however, may make them question why theu continue to be a part of our organization."
+ SUS_event.88.a:0 "We will allocate the necessary funds"
+ SUS_event.88.b:0 "We don't have anything to spare right now"
+ #
+ SUS_event.89.t:0 "USC member pleads for relief!"
+ SUS_event.89.d:0 "One of the members of our organization is currently involved in an armed conflict with another state. The member pleads for any help they can get from oour organization - we can can provide them with funds or weapons. Neglecting their request will have adverse effects on the member's loyalty to USC."
+ SUS_event.89.a:0 "Send them guns"
+ SUS_event.89.b:0 "Give them as much money, as we can"
+ SUS_event.89.c:0 "This war is none of our concern"
+ #
+ SUS_event.90.t:0 "A member state leaves USC!"
+ SUS_event.90.d:0 "One of the member states of USC has recently announced their intentions to leave the organization. Citing overbearing union fees and a "complete disregard of their national interests", the country in question will depart from USC, effective immediately."
+ SUS_event.90.a:0 "An unfortunate incident"
+ #
  SUS_event.100.t:0 "Dawn of England and Beyond"
  SUS_event.100.d:0 "Wow"
  SUS_event.100.a:0 "Ok"
@@ -1512,7 +1530,7 @@
  SUS_event.1961.t:0 "Passing Storm"
  SUS_event.1961.d:0 "Live is good"
  SUS_event.1961.a:0 ""
-  ##Awaken Agents##
+ ##Awaken Agents##
  SUS_event.800.t:0 "The agent is ready"
  SUS_event.800.d:0 "Please give the order. The agent will travel to:"
  SUS_event.800.a:0 "Factory."
@@ -1965,7 +1983,63 @@
  #
  SUS_shadow_decyphering_tt:0 "We still have §Y[?SUS_shadow_times]§! chances to operate this year."
  SUS_shadow_decyphering_mission_tt:0 "We will gain §Y2§! chances for Operation "Shadow"."
- ###SOCECON###
- SUS_socecon_member_price_tt: "£lhl_pol_power_20x20"
- SUS_socecon_member_price_tt_blocked: "£lhl_pol_power_20x20"
- SUS_socecon_member_price_tt_tooltip: "It costs £lhl_pol_power_20x20  §Y[?]§! to take the decision"
+ ###USC###
+ #
+ SUS_socecon_recruit_member:0 "Invite §Y[FROM.GetName]§!"
+ SUS_socecon_recruit_members_menu:0 "§YOPEN MEMBER INVITATION MENU§!"
+ SUS_socecon_interact_members_menu:0 "§COPEN MEMBER INTERACTION MENU§!"
+ SUS_socecon_decisions_menu:0 "§OOPEN USC DECISIONS MENU§!"
+ SUS_socecon_status:0 "§CUSC§! - is an economic organization formed by prime minister Corbyn to support various socialist regimes around the globe.\n\nThe organization currently has §Y[?SUS_socecon_member_count]§! members.\n\nThe current benefits we gain from the organization are as follows:\nConstruction Speed: §G+[?SUS_socecon_production_speed_buildings|%]§!\nResearch Speed: §G+[?SUS_socecon_research_speed_factor|%]§!\nMilitary factory output: §G+[?SUS_socecon_industrial_capacity_factory|%]§!"
+ SUS_socecon_current_budget:0 "Current §CUSC§! budget:\n§Y££[?SUS_socecon_current_budget] million§!\n\nMonthly §CUSC§! income:\n§Y££[?SUS_socecon_current_budget_income] million§!"
+ #
+ SUS_socecon_interact_member:0 "§Y[FROM.GetName]§!  Loyalty: §Y[?FROM.SUS_current_loyalty_level]§!  Budget Fee: §Y££[?FROM.num_of_civilian_factories] million§!"
+ #
+ SUS_socecon_member:0 "USC member"
+ #
+ SUS_socecon_event_price_20:0 "This will cost §Y££20 million§!"
+ SUS_socecon_event_price_50:0 "This will cost §Y££50 million§!"
+ SUS_socecon_loyalty_drop_small:0 "§RThe member's loyalty will slightly decrease§!"
+ SUS_socecon_loyalty_drop_big:0 "§RThe member's loyalty will drastically decrease§!"
+ SUS_socecon_increase_fees:0 "The §CUSC§! monthly income will be §Gmultiplied§! by §Yx1.5§!\n§RThe members' loyalty will moderately decrease§!"
+ SUS_socecon_decrease_fees:0 "The §CUSC§! monthly income will be §Rdivided§! by §Yx1.5§!\n§GThe members' loyalty will moderately decrease§!"
+ SUS_socecon_country_leaves:0 "§Rleaves the USC! Their monthly membership fee is substracted from our income§!"
+ SUS_socecon_gain_funds:0 "We will gain §Y££75 million§!"
+ SUS_socecon_gain_funds_2:0 "We will gain §Y££10 million§!"
+ #
+ SUS_SOCECON_BUDGET_COST_1:0 "§Y££100 million§!"
+ SUS_SOCECON_BUDGET_COST_1_blocked:0 "§R££100 million§!"
+ SUS_SOCECON_BUDGET_COST_1_tooltip:0 "It costs §Y££100 million§! to take the decision!"
+ SUS_SOCECON_BUDGET_COST_2:0 "§Y££75 million§!"
+ SUS_SOCECON_BUDGET_COST_2_blocked:0 "§R££75 million§!"
+ SUS_SOCECON_BUDGET_COST_2_tooltip:0 "It costs §Y££75 million§! to take the decision!"
+ SUS_SOCECON_BUDGET_COST_3:0 "§Y££150 million§!"
+ SUS_SOCECON_BUDGET_COST_3_blocked:0 "§R££150 million§!"
+ SUS_SOCECON_BUDGET_COST_3_tooltip:0 "It costs §Y££150 million§! to take the decision!"
+ SUS_SOCECON_BUDGET_COST_4:0 "§Y££300 million§!"
+ SUS_SOCECON_BUDGET_COST_4_blocked:0 "§R££300 million§!"
+ SUS_SOCECON_BUDGET_COST_4_tooltip:0 "It costs §Y££300 million§! to take the decision!"
+ #
+ SUS_socecon_administrative_resource:0 "Streamline Bureaucracy"
+ SUS_socecon_administrative_resource_2:0 "Utilize Reserve Funds"
+ SUS_increase_fees:0 "Increase Membership Fees"
+ SUS_decrease_fees:0 "Decrease Membership Fees"
+ SUS_socecon_project_production_speed:0 "§CUSC§!  Factory Investment"
+ SUS_socecon_project_food_security:0 "§CUSC§!  Food Security"
+ SUS_socecon_project_excavation:0 "§CUSC§!  Excavation Projects"
+ SUS_socecon_project_rearmament:0 "§CUSC§!  Rearmament"
+ SUS_socecon_project_nuclear_programme:0 "§CUSC§!  Nuclear Energy Effort"
+ SUS_socecon_interact_request_guns:0 "Request Weapons from §Y[FROM.GetName]§!"
+ SUS_socecon_interact_request_funds:0 "Request Funds from §Y[FROM.GetName]§!"
+ SUS_socecon_interact_request_construction:0 "Request War Support from §Y[FROM.GetName]§!"
+ #
+ SUS_socecon_production_buff:0 "§CUSC§! Factory Investment Programme"
+ SUS_socecon_food_buff:0 "§CUSC§! Food Security Programme"
+ SUS_socecon_construction_buff:0 "§CUSC§! Excavation Projects Programme"
+ SUS_socecon_rearmament_buff:0 "§CUSC§! Rearmament Programme"
+ SUS_socecon_nuclear_buff:0 "§CUSC§! Peaceful Atom"
+ SUS_socecon_member:0 "§CUSC§! Member"
+ SUS_socecon_war_help:0 "§CUSC§! War Support"
+ SUS_socecon_construction_help:0 "§CUSC§! Development Programme"
+
+ 
+ 
