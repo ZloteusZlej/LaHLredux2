@@ -658,3 +658,73 @@ defined_text = {
 		localization_key = SUS_bureau_decision_witches
 	}
 }
+
+defined_text = {
+	name = GetSUSSoceconLoyaltyColor
+	text = {
+		trigger = {
+			check_variable = { SUS_current_loyalty_level@FROM = 10 }
+		}
+		localization_key = SUS_socecon_loyalty_10_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_current_loyalty_level@FROM = 9 }
+		}
+		localization_key = SUS_socecon_loyalty_9_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_current_loyalty_level@FROM = 8 }
+		}
+		localization_key = SUS_socecon_loyalty_8_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_current_loyalty_level@FROM = 7 }
+		}
+		localization_key = SUS_socecon_loyalty_7_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_current_loyalty_level@FROM = 6 }
+		}
+		localization_key = SUS_socecon_loyalty_6_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_current_loyalty_level@FROM = 5 }
+		}
+		localization_key = SUS_socecon_loyalty_5_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_current_loyalty_level@FROM = 4 }
+		}
+		localization_key = SUS_socecon_loyalty_4_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_current_loyalty_level@FROM = 3 }
+		}
+		localization_key = SUS_socecon_loyalty_3_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_current_loyalty_level@FROM = 2 }
+		}
+		localization_key = SUS_socecon_loyalty_2_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_current_loyalty_level@FROM = 1 }
+		}
+		localization_key = SUS_socecon_loyalty_1_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { SUS_current_loyalty_level@FROM = 0 }
+		}
+		localization_key = SUS_socecon_loyalty_0_tt
+	}
+}

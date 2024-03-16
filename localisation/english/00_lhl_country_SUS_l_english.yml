@@ -1492,6 +1492,10 @@
  SUS_event.90.d:0 "One of the member states of USC has recently announced their intentions to leave the organization. Citing overbearing union fees and a "complete disregard of their national interests", the country in question will depart from USC, effective immediately."
  SUS_event.90.a:0 "An unfortunate incident"
  #
+ SUS_event.91.t:0 "SUS has invaded a USC country!"
+ SUS_event.91.d:0 "Are you stupid?"
+ SUS_event.91.a:0 "Reap what you sow"
+ #
  SUS_event.100.t:0 "Dawn of England and Beyond"
  SUS_event.100.d:0 "Wow"
  SUS_event.100.a:0 "Ok"
@@ -1990,9 +1994,9 @@
  SUS_socecon_interact_members_menu:0 "§COPEN MEMBER INTERACTION MENU§!"
  SUS_socecon_decisions_menu:0 "§OOPEN USC DECISIONS MENU§!"
  SUS_socecon_status:0 "§CUSC§! - is an economic organization formed by prime minister Corbyn to support various socialist regimes around the globe.\n\nThe organization currently has §Y[?SUS_socecon_member_count]§! members.\n\nThe current benefits we gain from the organization are as follows:\nConstruction Speed: §G+[?SUS_socecon_production_speed_buildings|%]§!\nResearch Speed: §G+[?SUS_socecon_research_speed_factor|%]§!\nMilitary factory output: §G+[?SUS_socecon_industrial_capacity_factory|%]§!"
- SUS_socecon_current_budget:0 "Current §CUSC§! budget:\n§Y££[?SUS_socecon_current_budget] million§!\n\nMonthly §CUSC§! income:\n§Y££[?SUS_socecon_current_budget_income] million§!"
+ SUS_socecon_current_budget:0 "Current §CUSC§! budget:\n§Y££[?SUS_socecon_current_budget] million§!\n\nMonthly §CUSC§! income:\n§Y££[?global.SUS_socecon_current_budget_income] million§!"
  #
- SUS_socecon_interact_member:0 "§Y[FROM.GetName]§!  Loyalty: §Y[?SUS_current_loyalty_level@FROM]§!  Budget Fee: §Y££[?FROM.num_of_civilian_factories] million§!"
+ SUS_socecon_interact_member:0 "§Y[FROM.GetName]§!  Loyalty: §Y[GetSUSSoceconLoyaltyColor]§!  Budget Fee: §Y££[?FROM.num_of_civilian_factories] million§!"
  #
  SUS_socecon_member:0 "USC member"
  #
@@ -2005,6 +2009,9 @@
  SUS_socecon_country_leaves:0 "§Rleaves the USC! Their monthly membership fee is substracted from our income§!"
  SUS_socecon_gain_funds:0 "We will gain §Y££75 million§!"
  SUS_socecon_gain_funds_2:0 "We will gain §Y££10 million§!"
+ SUS_socecon_country_invaded:0 "§Rleaves the USC! Their monthly membership fee is substracted from our income. The loyalty of all other USC members is decreased§!"
+ SUS_socecon_interaction_8:0 "The member state should have at least §Y8§! loyalty"
+ SUS_socecon_interaction_6:0 "The member state should have at least §Y6§! loyalty"
  #
  SUS_SOCECON_BUDGET_COST_1:0 "§Y££100 million§!"
  SUS_SOCECON_BUDGET_COST_1_blocked:0 "§R££100 million§!"
@@ -2031,6 +2038,7 @@
  SUS_socecon_interact_request_guns:0 "Request Weapons from §Y[FROM.GetName]§!"
  SUS_socecon_interact_request_funds:0 "Request Funds from §Y[FROM.GetName]§!"
  SUS_socecon_interact_request_construction:0 "Request War Support from §Y[FROM.GetName]§!"
+ SUS_socecon_kick_the_member:0 "Kick the member from §CUSC§!"
  #
  SUS_socecon_production_buff:0 "§CUSC§! Factory Investment Programme"
  SUS_socecon_food_buff:0 "§CUSC§! Food Security Programme"
@@ -2040,6 +2048,18 @@
  SUS_socecon_member:0 "§CUSC§! Member"
  SUS_socecon_war_help:0 "§CUSC§! War Support"
  SUS_socecon_construction_help:0 "§CUSC§! Development Programme"
+ #
+ SUS_socecon_loyalty_10_tt:0 "§G[?SUS_current_loyalty_level@FROM]§!"
+ SUS_socecon_loyalty_9_tt:0 "§G[?SUS_current_loyalty_level@FROM]§!"
+ SUS_socecon_loyalty_8_tt:0 "§7[?SUS_current_loyalty_level@FROM]§!"
+ SUS_socecon_loyalty_7_tt:0 "§7[?SUS_current_loyalty_level@FROM]§!"
+ SUS_socecon_loyalty_6_tt:0 "§Y[?SUS_current_loyalty_level@FROM]§!"
+ SUS_socecon_loyalty_5_tt:0 "§Y[?SUS_current_loyalty_level@FROM]§!"
+ SUS_socecon_loyalty_4_tt:0 "§O[?SUS_current_loyalty_level@FROM]§!"
+ SUS_socecon_loyalty_3_tt:0 "§O[?SUS_current_loyalty_level@FROM]§!"
+ SUS_socecon_loyalty_2_tt:0 "§R[?SUS_current_loyalty_level@FROM]§!"
+ SUS_socecon_loyalty_1_tt:0 "§R[?SUS_current_loyalty_level@FROM]§!"
+ SUS_socecon_loyalty_0_tt:0 "§b[?SUS_current_loyalty_level@FROM]§!"
 
  
  

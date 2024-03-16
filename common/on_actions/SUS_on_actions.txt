@@ -580,39 +580,128 @@ on_actions = {
 	}
 	on_weekly_SUS = { #SUS SOCECON
         effect = {
-            SUS = {
-                set_variable = {
-                    var = SUS_socecon_research_speed_factor
-                    value = SUS_socecon_current_budget_income
-                }
-                set_variable = {
-                    var = SUS_socecon_production_speed_buildings
-                    value = SUS_socecon_current_budget_income
-                }
-                set_variable = {
-                    var = SUS_socecon_industrial_capacity_factory
-                    value = SUS_socecon_current_budget_income
-                }
-				divide_variable = {
-					var = SUS_socecon_research_speed_factor
-					value = 100
-				}
-				divide_variable = {
-					var = SUS_socecon_production_speed_buildings
-					value = 100
-				}
-				divide_variable = {
-					var = SUS_socecon_industrial_capacity_factory
-					value = 100
-				}
-				#
+			set_variable = {
+				var = SUS_socecon_research_speed_factor
+				value = global.SUS_socecon_current_budget_income
+			}
+			set_variable = {
+				var = SUS_socecon_production_speed_buildings
+				value = global.SUS_socecon_current_budget_income
+			}
+			set_variable = {
+				var = SUS_socecon_industrial_capacity_factory
+				value = global.SUS_socecon_current_budget_income
+			}
+			divide_variable = {
+				var = SUS_socecon_research_speed_factor
+				value = 100
+			}
+			divide_variable = {
+				var = SUS_socecon_production_speed_buildings
+				value = 100
+			}
+			divide_variable = {
+				var = SUS_socecon_industrial_capacity_factory
+				value = 100
 			}
 		}
 	}
 	on_weekly_SUS = { #SUS SOCECON
+		random_events = { 
+			#5 = SUS_event.88
+		}
+	}
+	on_daily_SUS = { #Budget Update
+		effect = {
+			if = {
+				limit = {
+					SUS = {
+						has_country_flag = SUS_socecon_activated
+					}
+					any_country = {
+						has_idea = SUS_socecon_member
+					}
+				}
+				subtract_from_variable = {
+					var = global.SUS_socecon_current_budget_income
+					value = global.SUS_socecon_current_budget_income
+				}
+				random_country = {
+					limit = {
+						has_idea = SUS_socecon_member
+					}
+					add_to_variable = {
+						var = global.SUS_socecon_current_budget_income
+						value = THIS.num_of_civilian_factories
+					}
+				}
+				
+			}
+		}
+	}
+	on_weekly_SUS = { #SUS SOCECON LEAVE
         effect = {
-			random_events = {
-				100 = SUS_event.88
+			if = {
+				limit = {
+					any_country = {
+						has_idea = SUS_socecon_member
+						check_variable = {
+							var = PREV.SUS_current_loyalty_level@THIS
+							value = 0
+							compare = less_than_or_equals
+						}
+					}
+				}
+				SUS = {
+					country_event = {
+						id = SUS_event.90
+						days = 0
+					}
+				}
+			}
+		}
+	}
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					SUS = {
+						has_country_flag = SUS_socecon_activated
+					}
+					FROM = { 
+						has_idea = SUS_socecon_member
+					}
+					NOT = {
+						 tag = SUS
+					}
+				}
+				SUS = {
+					country_event = {
+						id = SUS_event.89
+						days = 0
+					}
+				}
+			}
+		}
+	}
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					SUS = {
+						has_country_flag = SUS_socecon_activated
+					}
+					tag = SUS
+					FROM = { 
+						has_idea = SUS_socecon_member
+					}
+				}
+				SUS = {
+					country_event = {
+						id = SUS_event.91
+						days = 0
+					}
+				}
 			}
 		}
 	}
@@ -620,7 +709,7 @@ on_actions = {
 		effect = {
 			add_to_variable = {
 				var = SUS_socecon_current_budget
-				value = SUS_socecon_current_budget_income
+				value = global.SUS_socecon_current_budget_income
 			}
 		}
 	}

@@ -64,6 +64,18 @@ SUS_debug = {
 
 SUS_socecon = {
 	SUS_socecon_recruit_members_menu = {
+		visible = {
+			NOT = {
+				OR = {
+					SUS = {
+						has_country_flag = SUS_socecon_interaction_menu_opened
+					}
+					SUS = {
+						has_country_flag = SUS_socecon_decisions_menu_opened
+					}
+				}
+			}
+		}
 		complete_effect = {
 			if = {
 				limit = {
@@ -83,6 +95,18 @@ SUS_socecon = {
 		}
 	}
 	SUS_socecon_interact_members_menu = {
+		visible = {
+			NOT = {
+				OR = {
+					SUS = {
+						has_country_flag = SUS_socecon_accepting_menu_opened
+					}
+					SUS = {
+						has_country_flag = SUS_socecon_decisions_menu_opened
+					}
+				}
+			}
+		}
 		complete_effect = {
 			if = {
 				limit = {
@@ -102,6 +126,18 @@ SUS_socecon = {
 		}
 	}
 	SUS_socecon_decisions_menu = {
+		visible = {
+			NOT = {
+				OR = {
+					SUS = {
+						has_country_flag = SUS_socecon_accepting_menu_opened
+					}
+					SUS = {
+						has_country_flag = SUS_socecon_interaction_menu_opened
+					}
+				}
+			}
+		}
 		complete_effect = {
 			if = {
 				limit = {
@@ -187,7 +223,18 @@ SUS_socecon = {
 			}
 			SUS = {
 				has_country_flag = SUS_socecon_interaction_menu_opened
-			}				
+			}	
+			custom_trigger_tooltip = {
+				tooltip = SUS_socecon_interaction_8
+				check_variable = {
+					var = SUS_current_loyalty_level@FROM
+					value = 8
+					compare = greater_than_or_equals
+				}
+			}
+			FROM = {
+				has_idea = SUS_socecon_member
+			}
 		}
 		visible = {
 			FROM = {
@@ -199,6 +246,9 @@ SUS_socecon = {
 			SUS = {
 				has_country_flag = SUS_socecon_interaction_menu_opened
 			}	
+			FROM = {
+				has_idea = SUS_socecon_member
+			}
 		}
 		complete_effect = {
 		}
@@ -233,7 +283,18 @@ SUS_socecon = {
 			}
 			SUS = {
 				has_country_flag = SUS_socecon_interaction_menu_opened
-			}				
+			}	
+			custom_trigger_tooltip = {
+				tooltip = SUS_socecon_interaction_6
+				check_variable = {
+					var = SUS_current_loyalty_level@FROM
+					value = 6
+					compare = greater_than_or_equals
+				}
+			}	
+			FROM = {
+				has_idea = SUS_socecon_member
+			}			
 		}
 		visible = {
 			FROM = {
@@ -245,6 +306,9 @@ SUS_socecon = {
 			SUS = {
 				has_country_flag = SUS_socecon_interaction_menu_opened
 			}	
+			FROM = {
+				has_idea = SUS_socecon_member
+			}
 		}
 		complete_effect = {
 		}
@@ -274,7 +338,18 @@ SUS_socecon = {
 			}
 			SUS = {
 				has_country_flag = SUS_socecon_interaction_menu_opened
-			}				
+			}
+			custom_trigger_tooltip = {
+				tooltip = SUS_socecon_interaction_8
+				check_variable = {
+					var = SUS_current_loyalty_level@FROM
+					value = 8
+					compare = greater_than_or_equals
+				}
+			}
+			FROM = {
+				has_idea = SUS_socecon_member
+			}			
 		}
 		visible = {
 			FROM = {
@@ -286,6 +361,9 @@ SUS_socecon = {
 			SUS = {
 				has_country_flag = SUS_socecon_interaction_menu_opened
 			}	
+			FROM = {
+				has_idea = SUS_socecon_member
+			}
 		}
 		complete_effect = {
 		}
@@ -294,6 +372,56 @@ SUS_socecon = {
 				idea = SUS_socecon_war_help
 				days = 180
 			}
+		}
+	}
+	SUS_socecon_kick_the_member = {
+		cost = 100
+		days_remove = 120
+		days_re_enable = 360
+		target_trigger = {
+			FROM = {
+				has_country_flag = SUS_socecon_current_interaction
+			}
+		}
+		available = {
+			FROM = {
+				has_country_flag = SUS_socecon_current_interaction
+			}
+			SUS = {
+				has_country_flag = SUS_socecon_current_interaction_active
+			}
+			SUS = {
+				has_country_flag = SUS_socecon_interaction_menu_opened
+			}	
+			FROM = {
+				has_idea = SUS_socecon_member
+			}
+		}
+		visible = {
+			FROM = {
+				has_country_flag = SUS_socecon_current_interaction
+			}
+			SUS = {
+				has_country_flag = SUS_socecon_current_interaction_active
+			}	
+			SUS = {
+				has_country_flag = SUS_socecon_interaction_menu_opened
+			}	
+			FROM = {
+				has_idea = SUS_socecon_member
+			}
+		}
+		complete_effect = {
+			FROM = {
+				remove_ideas = SUS_socecon_member
+				clr_country_flag = SUS_socecon_event_chosen_leaving
+				subtract_from_variable = {
+					var = global.SUS_socecon_current_budget_income
+					value = FROM.num_of_civilian_factories
+				}
+			}
+		}
+		remove_effect = {
 		}
 	}
 	SUS_socecon_recruit_member = {
@@ -342,7 +470,7 @@ SUS_socecon = {
 				value = SUS_member_price_level_total
 			}
 			add_to_variable = {
-				var = SUS_socecon_current_budget_income
+				var = global.SUS_socecon_current_budget_income
 				value = FROM.num_of_civilian_factories
 			}
 			add_to_variable = {
@@ -353,7 +481,11 @@ SUS_socecon = {
 				var = SUS_socecon_member_count
 				value = 1
 			}
-			set_variable = { FROM.SUS_current_loyalty_level = 10 }
+			add_to_variable = {
+				var = global.SUS_socecon_member_limit
+				value = 10
+			}
+			set_variable = { SUS_current_loyalty_level@FROM = 6 }
 			FROM = {
 				add_ideas = SUS_socecon_member
 			}
@@ -658,17 +790,22 @@ SUS_socecon = {
 		complete_effect = {
 			custom_effect_tooltip = SUS_socecon_increase_fees
 			multiply_variable = {
-				var = SUS_socecon_current_budget_income
+				var = global.SUS_socecon_current_budget_income
 				value = 1.5
 			}
-			add_to_variable = {
-				var = FROM.SUS_current_loyalty_level
-				value = -3
-			}
-			clamp_variable = {
-				var = FROM@SUS_current_loyalty_level
-				min = 0
-				max = 10
+			every_country = { 
+				limit = {
+					has_idea = SUS_socecon_member
+				}
+				subtract_from_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					value = 3
+				}
+				clamp_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					min = 0
+					max = 10
+				}
 			}
 		}
 		remove_effect = {
@@ -691,17 +828,22 @@ SUS_socecon = {
 		complete_effect = {
 			custom_effect_tooltip = SUS_socecon_decrease_fees
 			divide_variable = {
-				var = SUS_socecon_current_budget_income
+				var = global.SUS_socecon_current_budget_income
 				value = 1.5
 			}
-			add_to_variable = {
-				var = FROM.SUS_current_loyalty_level
-				value = 3
-			}
-			clamp_variable = {
-				var = FROM@SUS_current_loyalty_level
-				min = 0
-				max = 10
+			every_country = { 
+				limit = {
+					has_idea = SUS_socecon_member
+				}
+				add_to_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					value = 3
+				}
+				clamp_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					min = 0
+					max = 10
+				}
 			}
 		}
 		remove_effect = {
