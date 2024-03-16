@@ -3625,6 +3625,17 @@ country_event = { #Request construction
 	id = SUS_event.88
 	title = SUS_event.88.t
 	desc = SUS_event.88.d
+	immediate = {
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+			}
+			set_country_flag = SUS_socecon_event_chosen
+		}	
+		SUS = {
+			set_country_flag = SUS_socecon_event_active
+		}
+	}
     is_triggered_only = yes
 	option = {
 		name = SUS_event.88.a
@@ -3643,6 +3654,7 @@ country_event = { #Request construction
 		random_country = {
 			limit = {
 				has_idea = SUS_socecon_member
+				has_country_flag = SUS_socecon_event_active
 			}
 			add_timed_idea = {
 				idea = SUS_socecon_construction_help
@@ -3656,14 +3668,20 @@ country_event = { #Request construction
 		SUS = {
 			add_political_power = -15
 		}
-		add_to_variable = {
-			var = FROM@SUS_current_loyalty_level
-			value = -2
-		}
-		clamp_variable = {
-			var = FROM@SUS_current_loyalty_level
-			min = 0
-			max = 10
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+				has_country_flag = SUS_socecon_event_active
+			}
+			add_to_variable = {
+				var = PREV.SUS_current_loyalty_level@THIS
+				value = -2
+			}
+			clamp_variable = {
+				var = PREV.SUS_current_loyalty_level@THIS
+				min = 0
+				max = 10
+			}
 		}
     }
 }
@@ -3672,10 +3690,20 @@ country_event = { #Request War
 	id = SUS_event.89
 	title = SUS_event.89.t
 	desc = SUS_event.89.d
+	immediate = {
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+			}
+			set_country_flag = SUS_socecon_event_chosen_war
+		}	
+		SUS = {
+			set_country_flag = SUS_socecon_event_active_war
+		}
+	}
     is_triggered_only = yes
 	option = {
 		name = SUS_event.89.a
-		custom_effect_tooltip = SUS_socecon_event_price_50
 		trigger = {
 			SUS = {
 				has_equipment = {
@@ -3686,6 +3714,7 @@ country_event = { #Request War
 		random_country = {
 			limit = {
 				has_idea = SUS_socecon_member
+				has_country_flag = SUS_socecon_event_active_war
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -3703,6 +3732,7 @@ country_event = { #Request War
     }
 	option = {
 		name = SUS_event.89.b
+		custom_effect_tooltip = SUS_socecon_event_price_50
 		trigger = {
 			check_variable = {
 				var = SUS_socecon_current_budget
@@ -3717,6 +3747,7 @@ country_event = { #Request War
 		random_country = {
 			limit = {
 				has_idea = SUS_socecon_member
+				has_country_flag = SUS_socecon_event_active_war
 			}
 			add_timed_idea = {
 				idea = SUS_socecon_war_help
@@ -3730,34 +3761,54 @@ country_event = { #Request War
 		SUS = {
 			add_political_power = -50
 		}
-		add_to_variable = {
-			var = FROM@SUS_current_loyalty_level
-			value = -5
-		}
-		clamp_variable = {
-			var = FROM@SUS_current_loyalty_level
-			min = 0
-			max = 10
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+				has_country_flag = SUS_socecon_event_active_war
+			}
+			add_to_variable = {
+				var = PREV.SUS_current_loyalty_level@THIS
+				value = -5
+			}
+			clamp_variable = {
+				var = PREV.SUS_current_loyalty_level@THIS
+				min = 0
+				max = 10
+			}
 		}
     }
 }
 
-country_event = { #Request construction
+country_event = { #Withdrawing from SOCECON
 	id = SUS_event.90
 	title = SUS_event.90.t
 	desc = SUS_event.90.d
-    is_triggered_only = yes
+	trigger = {
+		any_country = {
+			has_idea = SUS_socecon_member
+			check_variable = {
+				var = PREV.SUS_current_loyalty_level@THIS
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+	}
 	option = {
 		name = SUS_event.90.a
 		random_country = {
 			custom_effect_tooltip = SUS_socecon_country_leaves
 			limit = {
 				has_idea = SUS_socecon_member
+				check_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					value = 0
+					compare = less_than_or_equals
+				}
 			}
 			remove_ideas = SUS_socecon_member
 			subtract_from_variable = {
 				var = SUS_socecon_current_budget_income
-				value = FROM.num_of_civilian_factories
+				value = PREV.num_of_civilian_factories
 			}
 		}
     }

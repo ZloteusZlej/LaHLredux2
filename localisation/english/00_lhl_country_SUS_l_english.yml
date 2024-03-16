@@ -1992,7 +1992,7 @@
  SUS_socecon_status:0 "§CUSC§! - is an economic organization formed by prime minister Corbyn to support various socialist regimes around the globe.\n\nThe organization currently has §Y[?SUS_socecon_member_count]§! members.\n\nThe current benefits we gain from the organization are as follows:\nConstruction Speed: §G+[?SUS_socecon_production_speed_buildings|%]§!\nResearch Speed: §G+[?SUS_socecon_research_speed_factor|%]§!\nMilitary factory output: §G+[?SUS_socecon_industrial_capacity_factory|%]§!"
  SUS_socecon_current_budget:0 "Current §CUSC§! budget:\n§Y££[?SUS_socecon_current_budget] million§!\n\nMonthly §CUSC§! income:\n§Y££[?SUS_socecon_current_budget_income] million§!"
  #
- SUS_socecon_interact_member:0 "§Y[FROM.GetName]§!  Loyalty: §Y[?FROM.SUS_current_loyalty_level]§!  Budget Fee: §Y££[?FROM.num_of_civilian_factories] million§!"
+ SUS_socecon_interact_member:0 "§Y[FROM.GetName]§!  Loyalty: §Y[?SUS_current_loyalty_level@FROM]§!  Budget Fee: §Y££[?FROM.num_of_civilian_factories] million§!"
  #
  SUS_socecon_member:0 "USC member"
  #
