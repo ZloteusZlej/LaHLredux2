@@ -11458,3 +11458,1355 @@ SUS_reopen_military_academies = {
 		}
 	}
 }
+
+SUS_king_prestige_game = {
+	SUS_king_prestige_amount = {
+        days_mission_timeout = 500
+		available = {
+			always = no
+		}
+		visible = {
+			has_completed_focus = SUS_kings_triumphant
+		}
+		activation = {
+			always = no                  
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable =  { SUS_king_prestige < 50 }
+				}
+				SUS = {
+				    country_event = SUS_event.1100
+			    }
+			}
+			else_if = {
+				limit = {
+					check_variable =  { SUS_king_prestige > 50 }
+					check_variable =  { SUS_king_prestige < 90 }
+				}
+				SUS = {
+				    country_event = SUS_event.1101
+			    }
+			}
+			else = {
+				SUS = {
+				    country_event = SUS_event.1102
+			    }
+			}
+		}
+	}
+	SUS_cheap_electronics_mission = {
+        days_mission_timeout = 200
+		available = {
+			check_variable =  { SUS_connecting_people_process > 99 }
+		}
+		visible = {
+			has_country_flag = SUS_cheap_electronics
+		}
+		activation = {
+			always = no                  
+		}
+		complete_effect = {
+			SUS = {
+				country_event = SUS_event.1104
+				random_owned_state = {
+			         add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+			        add_extra_state_shared_building_slots = 2
+		        } 
+				random_owned_state = {
+			         add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+			        add_extra_state_shared_building_slots = 2
+		        }
+			}
+		}
+		timeout_effect = {
+			SUS = {
+				country_event = SUS_event.1106
+			}
+		}
+	}
+	SUS_expanding_pc_production = {
+		cost = 25
+		visible = {
+			has_country_flag = SUS_cheap_electronics
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_connecting_people_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_connecting_to_the_european_network = {
+		cost = 25
+		visible = {
+			has_country_flag = SUS_cheap_electronics
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_connecting_people_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_developing_smartphones = {
+		cost = 25
+		visible = {
+			has_country_flag = SUS_cheap_electronics
+		}
+		fire_only_once = yes
+		available= {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_connecting_people_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_reducing_networking_costs = {
+		cost = 25
+		visible = {
+			has_country_flag = SUS_cheap_electronics
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_connecting_people_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_more_contents_mission = {
+        days_mission_timeout = 200
+		available = {
+			check_variable =  { SUS_connecting_people_process > 99 }
+		}
+		visible = {
+			has_country_flag = SUS_more_contents
+		}
+		activation = {
+			always = no                  
+		}
+		complete_effect = {
+			SUS = {
+				country_event = SUS_event.1105
+				add_to_variable = {
+			        var = SUS_left_authoritarianism_drift
+			        value = 0.2
+		        }
+			}
+		}
+		timeout_effect = {
+			SUS = {
+				country_event = SUS_event.1106
+			}
+		}
+	}
+	SUS_building_network_encyclopedia = {
+		cost = 40
+		visible = {
+			has_country_flag = SUS_more_contents
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 3
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_connecting_people_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_building_videohostings = {
+		cost = 40
+		visible = {
+			has_country_flag = SUS_more_contents
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 3
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_connecting_people_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_developing_sms = {
+		cost = 40
+		visible = {
+			has_country_flag = SUS_more_contents
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 3
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_connecting_people_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_providing_online_shopping_service = {
+		cost = 40
+		visible = {
+			has_country_flag = SUS_more_contents
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 3
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_connecting_people_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_hire_bbc_team_mission = {
+        days_mission_timeout = 200
+		available = {
+			check_variable =  { SUS_cultural_export_process > 99 }
+		}
+		visible = {
+			has_country_flag = SUS_hire_bbc_team
+		}
+		activation = {
+			always = no                  
+		}
+		complete_effect = {
+			SUS = {
+				country_event = SUS_event.1108
+				add_political_power = 100
+			}
+		}
+		timeout_effect = {
+			SUS = {
+				country_event = SUS_event.1111
+			}
+		}
+	}
+	SUS_refilming_teletubbies = {
+		visible = {
+			has_country_flag = SUS_hire_bbc_team
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_cultural_export_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_remaking_sherlock_holmes = {
+		visible = {
+			has_country_flag = SUS_hire_bbc_team
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_cultural_export_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_launching_3_by_3_quiz_show = {
+		visible = {
+			has_country_flag = SUS_hire_bbc_team
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_cultural_export_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_filming_documentarys_on_king_henry = {
+		visible = {
+			has_country_flag = SUS_hire_bbc_team
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_cultural_export_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_hire_foreigners_mission = {
+        days_mission_timeout = 200
+		available = {
+			check_variable =  { SUS_cultural_export_process > 99 }
+		}
+		visible = {
+			has_country_flag = SUS_hire_foreigners
+		}
+		activation = {
+			always = no                  
+		}
+		complete_effect = {
+			SUS = {
+				country_event = SUS_event.1109
+			}
+		}
+		timeout_effect = {
+			SUS = {
+				country_event = SUS_event.1111
+			}
+		}
+	}
+	SUS_inviting_korean_produces = {
+		cost = 30
+		visible = {
+			has_country_flag = SUS_hire_foreigners
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_cultural_export_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_inviting_american_videogame_designers = {
+		cost = 30
+		visible = {
+			has_country_flag = SUS_hire_foreigners
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_cultural_export_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_inviting_japanese_cartoonists = {
+		cost = 30
+		visible = {
+			has_country_flag = SUS_hire_foreigners
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_cultural_export_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_inviting_global_pop_stars = {
+		cost = 30
+		visible = {
+			has_country_flag = SUS_hire_foreigners
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_cultural_export_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_intellectual_and_elite_mission = {
+        days_mission_timeout = 200
+		available = {
+			check_variable =  { SUS_cultural_export_process > 99 }
+		}
+		visible = {
+			has_country_flag = SUS_intellectual_and_elite
+		}
+		activation = {
+			always = no                  
+		}
+		complete_effect = {
+			SUS = {
+				country_event = SUS_event.1110
+				activate_mission = SUS_intellectual_and_elite_influence_expanding
+			}
+		}
+		timeout_effect = {
+			SUS = {
+				country_event = SUS_event.1111
+			}
+		}
+	}
+	SUS_intellectual_and_elite_influence_expanding = {
+        days_mission_timeout = 30
+		available = {
+			always = no
+		}
+		visible = {
+			has_country_flag = SUS_intellectual_and_elite
+		}
+		activation = {
+			always = no                  
+		}
+		timeout_effect = {
+			SUS = {
+		        clamp_variable = {
+			        var = SUS_king_prestige
+			        min = 0
+			        max = 100
+		        }		
+		        add_to_variable = {
+			        var = SUS_king_prestige
+			        value = 1
+		        }
+				custom_effect_tooltip = SUS_king_prestige_influence_expanding_tt
+				activate_mission = SUS_intellectual_and_elite_influence_expanding
+			}
+		}
+	}
+	SUS_building_globe_theatre = {
+		cost = 75
+		visible = {
+			has_country_flag = SUS_intellectual_and_elite
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 40
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_cultural_export_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_holding_army_parade_shows = {
+		cost = 75
+		visible = {
+			has_country_flag = SUS_intellectual_and_elite
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 40
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_cultural_export_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_organising_international_film_festivals = {
+		cost = 75
+		visible = {
+			has_country_flag = SUS_intellectual_and_elite
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 40
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_cultural_export_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_establishing_literary_awards = {
+		cost = 75
+		visible = {
+			has_country_flag = SUS_intellectual_and_elite
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 40
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_cultural_export_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_ships_from_abroad_mission = {
+        days_mission_timeout = 200
+		available = {
+			check_variable =  { SUS_rule_the_waves_process > 99 }
+		}
+		visible = {
+			has_country_flag = SUS_ships_from_abroad
+		}
+		activation = {
+			always = no                  
+		}
+		complete_effect = {
+			SUS = {
+				country_event = SUS_event.1113
+			}
+		}
+		timeout_effect = {
+			SUS = {
+				country_event = SUS_event.1115
+			}
+		}
+	}
+	SUS_purchasing_active_cruisers_from_korea = {
+		cost = 40
+		visible = {
+			has_country_flag = SUS_ships_from_abroad
+		}
+		available = {
+		     has_equipment = {
+				convoy > 50
+			 }
+	    }
+		days_remove = 10
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_rule_the_waves_process
+			    value = 20
+		    }
+		}
+	}
+	SUS_purchasing_active_submarines_from_korea = {
+		cost = 40
+		visible = {
+			has_country_flag = SUS_ships_from_abroad
+		}
+		available = {
+		     has_equipment = {
+				convoy > 20
+			 }
+	    }
+		days_remove = 10
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_rule_the_waves_process
+			    value = 10
+		    }
+		}
+	}
+	SUS_purchasing_active_destroyers_from_korea = {
+		cost = 40
+		visible = {
+			has_country_flag = SUS_ships_from_abroad
+		}
+		available = {
+		     has_equipment = {
+				convoy > 20
+			 }
+	    }
+		days_remove = 10
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_rule_the_waves_process
+			    value = 10
+		    }
+		}
+	}
+	SUS_recycling_decommissioned_aircraft_carriers = {
+		cost = 15
+		visible = {
+			has_country_flag = SUS_ships_from_abroad
+		}
+		available = {
+		     has_equipment = {
+				convoy > 20
+			 }
+	    }
+		days_remove = 40
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_rule_the_waves_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_ships_by_ourselves_mission = {
+        days_mission_timeout = 200
+		available = {
+			check_variable =  { SUS_rule_the_waves_process > 99 }
+		}
+		visible = {
+			has_country_flag = SUS_ships_by_ourselves
+		}
+		activation = {
+			always = no                  
+		}
+		complete_effect = {
+			SUS = {
+				country_event = SUS_event.1114
+			}
+		}
+		timeout_effect = {
+			SUS = {
+				country_event = SUS_event.1115
+			}
+		}
+	}
+	SUS_recruiting_warship_designers = {
+		cost = 20
+		visible = {
+			has_country_flag = SUS_ships_by_ourselves
+		}
+		fire_only_once = yes
+		complete_effect = {
+            add_to_variable = {
+			    var = SUS_rule_the_waves_process
+			    value = 10
+		    }
+		}
+	}
+	SUS_expanding_shipyards = {
+		cost = 60
+		visible = {
+			has_country_flag = SUS_ships_by_ourselves
+		}
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_rule_the_waves_process
+			    value = 15
+		    }
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			    add_building_construction = {
+                    type = dockyard
+                    level = 1
+                    instant_build = yes
+                }
+		    } 
+		}
+	}
+	SUS_rehabilitating_old_production_lines = {
+		cost = 60
+		visible = {
+			has_country_flag = SUS_ships_by_ourselves
+		}
+		available = {
+		    num_of_available_naval_factories > 2
+	    }
+		days_remove = 25
+		modifier = {
+			naval_factories_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_rule_the_waves_process
+			    value = 20
+		    }
+		}
+	}
+	SUS_designing_new_battleships = {
+		cost = 60
+		visible = {
+			has_country_flag = SUS_ships_by_ourselves
+		}
+		fire_only_once = yes
+		available = {
+		    num_of_available_naval_factories > 2
+	    }
+		days_remove = 25
+		modifier = {
+			naval_factories_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_rule_the_waves_process
+			    value = 20
+		    }
+		}
+	}
+	SUS_reconstruct_space_program_mission = {
+        days_mission_timeout = 200
+		available = {
+			check_variable =  { SUS_moonlite_process > 99 }
+		}
+		visible = {
+			has_country_flag = SUS_reconstruct_space_program
+		}
+		activation = {
+			always = no                  
+		}
+		complete_effect = {
+			SUS = {
+				country_event = SUS_event.1117
+			}
+		}
+		timeout_effect = {
+			SUS = {
+				country_event = SUS_event.1120
+			}
+		}
+	}
+	SUS_building_launch_sites = {
+		cost = 80
+		visible = {
+			has_country_flag = SUS_reconstruct_space_program
+		}
+		available = {
+		    num_of_civilian_factories_for_projects > 2
+	    }
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 2
+		}
+		days_remove = 80
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_moonlite_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_recruiting_astronauts = {
+		cost = 80
+		visible = {
+			has_country_flag = SUS_reconstruct_space_program
+		}
+		days_remove = 80
+		fire_only_once = yes
+		remove_effect = {
+             add_to_variable = {
+			    var = SUS_moonlite_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_improving_rocket_reliability = {
+		cost = 80
+		visible = {
+			has_country_flag = SUS_reconstruct_space_program
+		}
+		available = {
+		    num_of_available_naval_factories > 2
+			has_tech = advanced_computing_machine
+	    }
+		days_remove = 80
+		fire_only_once = yes
+		modifier = {
+			naval_factories_use = 2
+		}
+		remove_effect = {
+             add_to_variable = {
+			    var = SUS_moonlite_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_increasing_engine_power = {
+		cost = 80
+		visible = {
+			has_country_flag = SUS_reconstruct_space_program
+		}
+		available = {
+		    num_of_available_naval_factories > 2
+			has_tech = nuclear_reactor
+	    }
+		days_remove = 80
+		fire_only_once = yes
+		modifier = {
+			naval_factories_use = 2
+		}
+		remove_effect = {
+             add_to_variable = {
+			    var = SUS_moonlite_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_hire_americans_mission = {
+        days_mission_timeout = 200
+		available = {
+			check_variable =  { SUS_moonlite_process > 99 }
+		}
+		visible = {
+			has_country_flag = SUS_hire_americans
+		}
+		activation = {
+			always = no                  
+		}
+		complete_effect = {
+			SUS = {
+				country_event = SUS_event.1118
+			}
+		}
+		timeout_effect = {
+			SUS = {
+				country_event = SUS_event.1120
+			}
+		}
+	}
+	SUS_hiring_american_aviation_experts = {
+		cost = 100
+		visible = {
+			has_country_flag = SUS_hire_americans
+		}
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_moonlite_process
+			    value = 15
+		    }
+		}
+	}
+	SUS_cultivating_astronauts_by_americans = {
+		cost = 100
+		visible = {
+			has_country_flag = SUS_hire_americans
+		}
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+             add_to_variable = {
+			    var = SUS_moonlite_process
+			    value = 15
+		    }
+		}
+	}
+	SUS_purchasing_american_rockets = {
+		cost = 100
+		visible = {
+			has_country_flag = SUS_hire_americans
+		}
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+             add_to_variable = {
+			    var = SUS_moonlite_process
+			    value = 15
+		    }
+		}
+	}
+	SUS_sharing_american_moon_landing_technology = {
+		cost = 100
+		visible = {
+			has_country_flag = SUS_hire_americans
+		}
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+             add_to_variable = {
+			    var = SUS_moonlite_process
+			    value = 15
+		    }
+		}
+	}
+	SUS_fake_moon_landing_mission = {
+        days_mission_timeout = 200
+		available = {
+			check_variable =  { SUS_moonlite_process > 99 }
+		}
+		visible = {
+			has_country_flag = SUS_fake_moon_landing
+		}
+		activation = {
+			always = no                  
+		}
+		complete_effect = {
+			SUS = {
+				country_event = SUS_event.1119
+			}
+		}
+		timeout_effect = {
+			SUS = {
+				country_event = SUS_event.1120
+			}
+		}
+	}
+	SUS_recruiting_actors = {
+		cost = 20
+		visible = {
+			has_country_flag = SUS_fake_moon_landing
+		}
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_moonlite_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_setting_up_a_filming_stage = {
+		cost = 20
+		visible = {
+			has_country_flag = SUS_fake_moon_landing
+		}
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+             add_to_variable = {
+			    var = SUS_moonlite_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_using_cg_technology = {
+		cost = 20
+		visible = {
+			has_country_flag = SUS_fake_moon_landing
+		}
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+             add_to_variable = {
+			    var = SUS_moonlite_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_faking_lunar_rock_samples = {
+		cost = 20
+		visible = {
+			has_country_flag = SUS_fake_moon_landing
+		}
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+             add_to_variable = {
+			    var = SUS_moonlite_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_build_a_new_palace_mission = {
+        days_mission_timeout = 200
+		available = {
+			check_variable =  { SUS_the_first_capital_process > 99 }
+		}
+		visible = {
+			has_country_flag = SUS_build_a_new_palace
+		}
+		activation = {
+			always = no                  
+		}
+		complete_effect = {
+			SUS = {
+				country_event = SUS_event.1124
+				add_political_power = 100
+			}
+		}
+		timeout_effect = {
+			SUS = {
+				country_event = SUS_event.1127
+			}
+		}
+	}
+	SUS_building_a_beautiful_garden = {
+		cost = 30
+		visible = {
+			has_country_flag = SUS_build_a_new_palace
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 50
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_the_first_capital_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_moving_the_artworks = {
+		cost = 30
+		visible = {
+			has_country_flag = SUS_build_a_new_palace
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 50
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_the_first_capital_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_building_royal_opera_house = {
+		cost = 30
+		visible = {
+			has_country_flag = SUS_build_a_new_palace
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 50
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_the_first_capital_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_making_a_statue_of_king_henry = {
+		cost = 30
+		visible = {
+			has_country_flag = SUS_build_a_new_palace
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 2
+	    }
+		days_remove = 50
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_the_first_capital_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_build_an_ideal_town_mission = {
+        days_mission_timeout = 200
+		available = {
+			check_variable =  { SUS_the_first_capital_process > 99 }
+		}
+		visible = {
+			has_country_flag = SUS_build_an_ideal_town
+		}
+		activation = {
+			always = no                  
+		}
+		complete_effect = {
+			SUS = {
+				country_event = SUS_event.1124
+				add_political_power = 100
+			}
+		}
+		timeout_effect = {
+			SUS = {
+				country_event = SUS_event.1127
+			}
+		}
+	}
+	SUS_reviving_the_low_rise_streetscape = {
+		cost = 60
+		visible = {
+			has_country_flag = SUS_build_an_ideal_town
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 3
+	    }
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_the_first_capital_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_reducing_car_roads = {
+		cost = 60
+		visible = {
+			has_country_flag = SUS_build_an_ideal_town
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 3
+	    }
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_the_first_capital_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_burying_utilities_under_the_town = {
+		cost = 60
+		visible = {
+			has_country_flag = SUS_build_an_ideal_town
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 3
+	    }
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_the_first_capital_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_attracting_businesses_to_the_area = {
+		cost = 60
+		visible = {
+			has_country_flag = SUS_build_an_ideal_town
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 3
+	    }
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_the_first_capital_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_build_something_insane_mission = {
+        days_mission_timeout = 200
+		available = {
+			check_variable =  { SUS_the_first_capital_process > 99 }
+		}
+		visible = {
+			has_country_flag = SUS_build_something_insane
+		}
+		activation = {
+			always = no                  
+		}
+		complete_effect = {
+			SUS = {
+				country_event = SUS_event.1124
+				add_political_power = 100
+			}
+		}
+		timeout_effect = {
+			SUS = {
+				country_event = SUS_event.1127
+			}
+		}
+	}
+	SUS_building_1000_metre_skyscrapers = {
+		cost = 80
+		visible = {
+			has_country_flag = SUS_build_something_insane
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 5
+	    }
+		days_remove = 120
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_the_first_capital_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_building_the_town_entirely_out_of_marble = {
+		cost = 80
+		visible = {
+			has_country_flag = SUS_build_something_insane
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 5
+	    }
+		days_remove = 120
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_the_first_capital_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_building_the_world_s_largest_theme_park = {
+		cost = 80
+		visible = {
+			has_country_flag = SUS_build_something_insane
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 5
+	    }
+		days_remove = 120
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_the_first_capital_process
+			    value = 25
+		    }
+		}
+	}
+	SUS_building_satellite_towns_under_the_ground = {
+		cost = 80
+		visible = {
+			has_country_flag = SUS_build_something_insane
+		}
+		fire_only_once = yes
+		available = {
+		     num_of_civilian_factories_for_projects > 5
+	    }
+		days_remove = 120
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+            add_to_variable = {
+			    var = SUS_the_first_capital_process
+			    value = 25
+		    }
+		}
+	}
+}
