@@ -263,3 +263,20 @@ SUS_reopen_military_academies = {
 	}
 	visible_when_empty = no
 }
+
+SUS_king_prestige_game = { 
+	icon = GFX_
+
+	allowed = { original_tag = SUS }
+	visible = {
+		SUS = {
+			has_completed_focus = SUS_kings_triumphant
+		}
+	}
+	available = {
+		SUS = {
+			has_completed_focus = SUS_kings_triumphant
+		}
+	}
+	visible_when_empty = yes
+}
