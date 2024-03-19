@@ -5310,6 +5310,614 @@ country_event = { #Kate Hoey Fired
 	}
 }
 
+country_event = { #King Prestige Ending 1
+	id = SUS_event.1100
+	title = SUS_event.1100.t
+	desc = SUS_event.1100.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.1100.a
+    }
+}
+
+country_event = { #King Prestige Ending 2
+	id = SUS_event.1101
+	title = SUS_event.1101.t
+	desc = SUS_event.1101.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.1101.a
+    }
+}
+
+country_event = { #King Prestige Ending 3
+	id = SUS_event.1102
+	title = SUS_event.1102.t
+	desc = SUS_event.1102.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SUS_event.1102.a
+    }
+}
+
+country_event = { #Connecting People
+	id = SUS_event.1103
+	title = SUS_event.1103.t
+	desc = SUS_event.1103.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #Produce cheap electronics
+		name = SUS_event.1103.a
+		set_country_flag = SUS_cheap_electronics
+		activate_mission = SUS_cheap_electronics_mission
+    }
+	option = { #Fill more contents
+		name = SUS_event.1103.b
+		set_country_flag = SUS_more_contents
+		activate_mission = SUS_more_contents_mission
+    }
+}
+
+country_event = { #Produce cheap electronics sucessfully
+	id = SUS_event.1104
+	title = SUS_event.1104.t
+	desc = SUS_event.1104.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People disappointed with poor content
+		name = SUS_event.1104.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = -5
+		}
+		custom_effect_tooltip = SUS_king_prestige_fail_small_tt
+    }
+}
+
+country_event = { #Fill more contents sucessfully
+	id = SUS_event.1105
+	title = SUS_event.1105.t
+	desc = SUS_event.1105.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People are happy with new things
+		name = SUS_event.1105.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = 15
+		}
+		custom_effect_tooltip = SUS_king_prestige_large_tt
+    }
+}
+
+country_event = { #Connect people unsucessfully
+	id = SUS_event.1106
+	title = SUS_event.1106.t
+	desc = SUS_event.1106.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People disappoint
+		name = SUS_event.1106.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = -10
+		}
+		custom_effect_tooltip = SUS_king_prestige_fail_medium_tt
+    }
+}
+
+country_event = { #Cultural Export
+	id = SUS_event.1107
+	title = SUS_event.1107.t
+	desc = SUS_event.1107.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #Hire BBC team
+		name = SUS_event.1107.a
+		set_country_flag = SUS_hire_bbc_team
+		activate_mission = SUS_hire_bbc_team_mission
+    }
+	option = { #Hire foreigners
+		name = SUS_event.1107.b
+		set_country_flag = SUS_hire_foreigners
+		activate_mission = SUS_hire_foreigners_mission
+    }
+	option = { #Present Britain as some "intellectual and elite" resort
+		name = SUS_event.1107.c
+		set_country_flag = SUS_intellectual_and_elite
+		activate_mission = SUS_intellectual_and_elite_mission
+    }
+}
+
+country_event = { #BBC team sucessful
+	id = SUS_event.1108
+	title = SUS_event.1108.t
+	desc = SUS_event.1108.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People disappointed with poor content
+		name = SUS_event.1108.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = 5
+		}
+		custom_effect_tooltip = SUS_king_prestige_small_tt
+    }
+}
+
+country_event = { #Foreigners sucessful
+	id = SUS_event.1109
+	title = SUS_event.1109.t
+	desc = SUS_event.1109.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People interested with good content
+		name = SUS_event.1109.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = 10
+		}
+		custom_effect_tooltip = SUS_king_prestige_medium_tt
+    }
+}
+
+country_event = { #"intellectual and elite" resort
+	id = SUS_event.1110
+	title = SUS_event.1110.t
+	desc = SUS_event.1110.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People interested with good content
+		name = SUS_event.1110.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = 10
+		}
+		custom_effect_tooltip = SUS_king_prestige_medium_tt
+    }
+}
+
+country_event = { #Cultural Export unsucessfully
+	id = SUS_event.1111
+	title = SUS_event.1111.t
+	desc = SUS_event.1111.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People disappoint
+		name = SUS_event.1111.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}		
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = -10
+		}
+		custom_effect_tooltip = SUS_king_prestige_fail_medium_tt
+    }
+}
+
+country_event = { #Rule the Waves
+	id = SUS_event.1112
+	title = SUS_event.1112.t
+	desc = SUS_event.1112.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #Purchase some ships from abroad
+		name = SUS_event.1112.a
+		set_country_flag = SUS_ships_from_abroad
+		activate_mission = SUS_ships_from_abroad_mission
+    }
+	option = { #build ships by ourselves
+		name = SUS_event.1112.b
+		set_country_flag = SUS_ships_by_ourselves
+		activate_mission = SUS_ships_by_ourselves_mission
+    }
+}
+
+country_event = { #Purchase some ships from abroad sucessfully
+	id = SUS_event.1113
+	title = SUS_event.1113.t
+	desc = SUS_event.1113.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People don't feel anything about it
+		name = SUS_event.1104.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = 5
+		}
+		custom_effect_tooltip = SUS_king_prestige_small_tt
+    }
+}
+
+country_event = { #build ships ourselves sucessfully
+	id = SUS_event.1114
+	title = SUS_event.1114.t
+	desc = SUS_event.1114.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People are honoured by it
+		name = SUS_event.1114.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = 15
+		}
+		custom_effect_tooltip = SUS_king_prestige_large_tt
+    }
+}
+
+country_event = { #Rule the Waves unsucessfully
+	id = SUS_event.1115
+	title = SUS_event.1115.t
+	desc = SUS_event.1115.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People disappoint
+		name = SUS_event.1115.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = -10
+		}
+		custom_effect_tooltip = SUS_king_prestige_fail_medium_tt
+    }
+}
+
+country_event = { #organize a british moon landing
+	id = SUS_event.1116
+	title = SUS_event.1116.t
+	desc = SUS_event.1116.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #reconstruct space program
+		name = SUS_event.1116.a
+		set_country_flag = SUS_reconstruct_space_program
+		activate_mission = SUS_reconstruct_space_program_mission
+    }
+	option = { #hire americans to help
+		name = SUS_event.1116.b
+		set_country_flag = SUS_hire_americans
+		activate_mission = SUS_hire_americans_mission
+		hidden_effect = {
+			country_event = { #americans ask for pay
+				id = SUS_event.1121
+				days = 15
+				random_days = 5
+			}
+		}
+    }
+	option = { #fake moon landing
+		name = SUS_event.1116.c
+		set_country_flag = SUS_fake_moon_landing
+		activate_mission = SUS_fake_moon_landing_mission
+    }
+}
+
+country_event = { #reconstruct space program sucessfully
+	id = SUS_event.1117
+	title = SUS_event.1117.t
+	desc = SUS_event.1117.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People are honoured by it
+		name = SUS_event.1117.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = 15
+		}
+		custom_effect_tooltip = SUS_king_prestige_large_tt
+    }
+}
+
+country_event = { #reconstruct space program with americans sucessfully
+	id = SUS_event.1118
+	title = SUS_event.1118.t
+	desc = SUS_event.1118.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People are honoured by it
+		name = SUS_event.1118.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = 15
+		}
+		custom_effect_tooltip = SUS_king_prestige_large_tt
+    }
+}
+
+country_event = { #fake moon landing sucessfully?
+	id = SUS_event.1119
+	title = SUS_event.1119.t
+	desc = SUS_event.1119.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People are honoured by it
+		name = SUS_event.1119.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = 15
+		}
+		custom_effect_tooltip = SUS_king_prestige_large_tt
+		hidden_effect = {
+			country_event = {
+				id = SUS_event.1122
+			    days = 30
+			}
+		}
+    }
+}
+
+country_event = { #moon landing unsucessfully
+	id = SUS_event.1120
+	title = SUS_event.1120.t
+	desc = SUS_event.1120.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People disappoint
+		name = SUS_event.1120.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = -10
+		}
+		custom_effect_tooltip = SUS_king_prestige_fail_medium_tt
+    }
+}
+
+country_event = { #americans ask for pay
+	id = SUS_event.1121
+	title = SUS_event.1121.t
+	desc = SUS_event.1121.d
+    is_triggered_only = yes
+	option = { #agree
+		name = SUS_event.1121.a
+		trigger = {
+			has_political_power > 25
+		}
+		add_political_power = -25
+		add_to_variable = {
+			var = SUS_moon_landing_process
+			value = 10
+		}
+		country_event = {
+			id = SUS_event.1121
+			days = 20
+			random_days = 5
+		}
+    }
+	option = { #disagree
+		name = SUS_event.1121.b
+		clr_country_flag = SUS_hire_americans
+		SUS = {
+			country_event = SUS_event.1120
+		}
+    }
+}
+
+country_event = { #a whistleblower uncovers the project 
+	id = SUS_event.1122
+	title = SUS_event.1122.t
+	desc = SUS_event.1122.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People disappoint
+		name = SUS_event.1122.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = -20
+		}
+		custom_effect_tooltip = SUS_king_prestige_fail_large_tt
+    }
+}
+
+country_event = { #moving the king's residency to Winchester 
+	id = SUS_event.1123
+	title = SUS_event.1123.t
+	desc = SUS_event.1123.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #just build a new palace
+		name = SUS_event.1123.a
+		set_country_flag = SUS_build_a_new_palace
+		activate_mission = SUS_build_a_new_palace_mission
+    }
+	option = { #build an ideal town
+		name = SUS_event.1123.b
+		set_country_flag = SUS_build_an_ideal_town
+		activate_mission = SUS_build_an_ideal_town_mission
+    }
+	option = { #build something insane
+		name = SUS_event.1123.c
+		set_country_flag = SUS_build_something_insane
+		activate_mission = SUS_build_something_insane_mission
+    }
+}
+
+country_event = { #build a new palace sucessfully
+	id = SUS_event.1124
+	title = SUS_event.1124.t
+	desc = SUS_event.1124.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People are honoured by it
+		name = SUS_event.1124.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = 5
+		}
+		custom_effect_tooltip = SUS_king_prestige_small_tt
+    }
+}
+
+country_event = { #build an ideal town sucessfully
+	id = SUS_event.1125
+	title = SUS_event.1125.t
+	desc = SUS_event.1125.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People are honoured by it
+		name = SUS_event.1125.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = 10
+		}
+		custom_effect_tooltip = SUS_king_prestige_medium_tt
+    }
+}
+
+country_event = { #build something insane sucessfully?
+	id = SUS_event.1126
+	title = SUS_event.1126.t
+	desc = SUS_event.1126.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People are honoured by it
+		name = SUS_event.1126.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = 15
+		}
+		custom_effect_tooltip = SUS_king_prestige_large_tt
+		hidden_effect = {
+			country_event = {
+				id = SUS_event.1128
+			    days = 30
+			}
+		}
+    }
+}
+
+country_event = { #building new capital unsucessfully
+	id = SUS_event.1127
+	title = SUS_event.1127.t
+	desc = SUS_event.1127.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People disappoint
+		name = SUS_event.1127.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = -10
+		}
+		custom_effect_tooltip = SUS_king_prestige_fail_medium_tt
+    }
+}
+
+country_event = { #this new city is a tastless garbage 
+	id = SUS_event.1128
+	title = SUS_event.1128.t
+	desc = SUS_event.1128.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = { #People disappoint
+		name = SUS_event.1128.a
+		clamp_variable = {
+			var = SUS_king_prestige
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = SUS_king_prestige
+			value = -20
+		}
+		custom_effect_tooltip = SUS_king_prestige_fail_large_tt
+    }
+}
+
+
 country_event = { #SOCECON test
 	id = SUS_event.3000
 	title = SUS_event.3000.t
