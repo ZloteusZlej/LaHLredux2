@@ -5705,7 +5705,7 @@ country_event = { #fake moon landing sucessfully?
 		hidden_effect = {
 			country_event = {
 				id = SUS_event.1122
-			    days = 30
+			    days = 7
 			}
 		}
     }
@@ -5737,6 +5737,12 @@ country_event = { #americans ask for pay
 	title = SUS_event.1121.t
 	desc = SUS_event.1121.d
     is_triggered_only = yes
+	trigger = {
+	    original_tag = SUS
+		SUS = {
+			has_country_flag = SUS_hire_americans
+		}
+	}
 	option = { #agree
 		name = SUS_event.1121.a
 		trigger = {
@@ -5869,7 +5875,7 @@ country_event = { #build something insane sucessfully?
 		hidden_effect = {
 			country_event = {
 				id = SUS_event.1128
-			    days = 30
+			    days = 7
 			}
 		}
     }
