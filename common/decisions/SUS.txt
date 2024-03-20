@@ -11526,11 +11526,13 @@ SUS_king_prestige_game = {
                     }
 			        add_extra_state_shared_building_slots = 2
 		        }
+				clr_country_flag = SUS_cheap_electronics
 			}
 		}
 		timeout_effect = {
 			SUS = {
 				country_event = SUS_event.1106
+				clr_country_flag = SUS_cheap_electronics
 			}
 		}
 	}
@@ -11623,7 +11625,7 @@ SUS_king_prestige_game = {
 			has_country_flag = SUS_more_contents
 		}
 		activation = {
-			always = no                  
+			has_country_flag = SUS_more_contents              
 		}
 		complete_effect = {
 			SUS = {
@@ -11632,11 +11634,13 @@ SUS_king_prestige_game = {
 			        var = SUS_left_authoritarianism_drift
 			        value = 0.2
 		        }
+				clr_country_flag = SUS_more_contents
 			}
 		}
 		timeout_effect = {
 			SUS = {
 				country_event = SUS_event.1106
+				clr_country_flag = SUS_more_contents
 			}
 		}
 	}
@@ -11729,17 +11733,19 @@ SUS_king_prestige_game = {
 			has_country_flag = SUS_hire_bbc_team
 		}
 		activation = {
-			always = no                  
+			has_country_flag = SUS_hire_bbc_team                 
 		}
 		complete_effect = {
 			SUS = {
 				country_event = SUS_event.1108
 				add_political_power = 100
+				clr_country_flag = SUS_hire_bbc_team
 			}
 		}
 		timeout_effect = {
 			SUS = {
 				country_event = SUS_event.1111
+				clr_country_flag = SUS_hire_bbc_team
 			}
 		}
 	}
@@ -11828,16 +11834,18 @@ SUS_king_prestige_game = {
 			has_country_flag = SUS_hire_foreigners
 		}
 		activation = {
-			always = no                  
+			has_country_flag = SUS_hire_foreigners
 		}
 		complete_effect = {
 			SUS = {
 				country_event = SUS_event.1109
+				clr_country_flag = SUS_hire_foreigners
 			}
 		}
 		timeout_effect = {
 			SUS = {
 				country_event = SUS_event.1111
+				clr_country_flag = SUS_hire_foreigners
 			}
 		}
 	}
@@ -11930,7 +11938,7 @@ SUS_king_prestige_game = {
 			has_country_flag = SUS_intellectual_and_elite
 		}
 		activation = {
-			always = no                  
+			has_country_flag = SUS_intellectual_and_elite
 		}
 		complete_effect = {
 			SUS = {
@@ -11941,6 +11949,7 @@ SUS_king_prestige_game = {
 		timeout_effect = {
 			SUS = {
 				country_event = SUS_event.1111
+				clr_country_flag = SUS_intellectual_and_elite
 			}
 		}
 	}
@@ -12060,16 +12069,18 @@ SUS_king_prestige_game = {
 			has_country_flag = SUS_ships_from_abroad
 		}
 		activation = {
-			always = no                  
+			has_country_flag = SUS_ships_from_abroad
 		}
 		complete_effect = {
 			SUS = {
 				country_event = SUS_event.1113
+				clr_country_flag = SUS_ships_from_abroad
 			}
 		}
 		timeout_effect = {
 			SUS = {
 				country_event = SUS_event.1115
+				clr_country_flag = SUS_ships_from_abroad
 			}
 		}
 	}
@@ -12154,16 +12165,18 @@ SUS_king_prestige_game = {
 			has_country_flag = SUS_ships_by_ourselves
 		}
 		activation = {
-			always = no                  
+			has_country_flag = SUS_ships_by_ourselves
 		}
 		complete_effect = {
 			SUS = {
 				country_event = SUS_event.1114
+				clr_country_flag = SUS_ships_by_ourselves
 			}
 		}
 		timeout_effect = {
 			SUS = {
 				country_event = SUS_event.1115
+				clr_country_flag = SUS_ships_by_ourselves
 			}
 		}
 	}
@@ -12231,7 +12244,6 @@ SUS_king_prestige_game = {
 		visible = {
 			has_country_flag = SUS_ships_by_ourselves
 		}
-		fire_only_once = yes
 		available = {
 		    num_of_available_naval_factories > 2
 	    }
@@ -12255,16 +12267,18 @@ SUS_king_prestige_game = {
 			has_country_flag = SUS_reconstruct_space_program
 		}
 		activation = {
-			always = no                  
+			has_country_flag = SUS_reconstruct_space_program
 		}
 		complete_effect = {
 			SUS = {
 				country_event = SUS_event.1117
+				clr_country_flag = SUS_reconstruct_space_program
 			}
 		}
 		timeout_effect = {
 			SUS = {
 				country_event = SUS_event.1120
+				clr_country_flag = SUS_reconstruct_space_program
 			}
 		}
 	}
@@ -12353,16 +12367,18 @@ SUS_king_prestige_game = {
 			has_country_flag = SUS_hire_americans
 		}
 		activation = {
-			always = no                  
+			has_country_flag = SUS_hire_americans                 
 		}
 		complete_effect = {
 			SUS = {
 				country_event = SUS_event.1118
+				clr_country_flag = SUS_hire_americans
 			}
 		}
 		timeout_effect = {
 			SUS = {
 				country_event = SUS_event.1120
+				clr_country_flag = SUS_hire_americans
 			}
 		}
 	}
@@ -12431,16 +12447,18 @@ SUS_king_prestige_game = {
 			has_country_flag = SUS_fake_moon_landing
 		}
 		activation = {
-			always = no                  
+			has_country_flag = SUS_fake_moon_landing                
 		}
 		complete_effect = {
 			SUS = {
 				country_event = SUS_event.1119
+				clr_country_flag = SUS_fake_moon_landing
 			}
 		}
 		timeout_effect = {
 			SUS = {
 				country_event = SUS_event.1120
+				clr_country_flag = SUS_fake_moon_landing
 			}
 		}
 	}
@@ -12509,17 +12527,18 @@ SUS_king_prestige_game = {
 			has_country_flag = SUS_build_a_new_palace
 		}
 		activation = {
-			always = no                  
+			has_country_flag = SUS_build_a_new_palace
 		}
 		complete_effect = {
 			SUS = {
 				country_event = SUS_event.1124
-				add_political_power = 100
+				clr_country_flag = SUS_build_a_new_palace
 			}
 		}
 		timeout_effect = {
 			SUS = {
 				country_event = SUS_event.1127
+				clr_country_flag = SUS_build_a_new_palace
 			}
 		}
 	}
@@ -12612,17 +12631,18 @@ SUS_king_prestige_game = {
 			has_country_flag = SUS_build_an_ideal_town
 		}
 		activation = {
-			always = no                  
+			has_country_flag = SUS_build_an_ideal_town               
 		}
 		complete_effect = {
 			SUS = {
 				country_event = SUS_event.1124
-				add_political_power = 100
+				clr_country_flag = SUS_build_an_ideal_town
 			}
 		}
 		timeout_effect = {
 			SUS = {
 				country_event = SUS_event.1127
+				clr_country_flag = SUS_build_an_ideal_town
 			}
 		}
 	}
@@ -12715,17 +12735,18 @@ SUS_king_prestige_game = {
 			has_country_flag = SUS_build_something_insane
 		}
 		activation = {
-			always = no                  
+			has_country_flag = SUS_build_something_insane                 
 		}
 		complete_effect = {
 			SUS = {
 				country_event = SUS_event.1124
-				add_political_power = 100
+				clr_country_flag = SUS_build_something_insane
 			}
 		}
 		timeout_effect = {
 			SUS = {
 				country_event = SUS_event.1127
+				clr_country_flag = SUS_build_something_insane
 			}
 		}
 	}
