@@ -11943,6 +11943,8 @@ SUS_king_prestige_game = {
 		complete_effect = {
 			SUS = {
 				country_event = SUS_event.1110
+				clr_country_flag = SUS_intellectual_and_elite
+				set_country_flag = SUS_influence_expanding
 				activate_mission = SUS_intellectual_and_elite_influence_expanding
 			}
 		}
@@ -11959,7 +11961,7 @@ SUS_king_prestige_game = {
 			always = no
 		}
 		visible = {
-			has_country_flag = SUS_intellectual_and_elite
+			has_country_flag = SUS_influence_expanding
 		}
 		activation = {
 			always = no                  
@@ -12361,7 +12363,12 @@ SUS_king_prestige_game = {
 	SUS_hire_americans_mission = {
         days_mission_timeout = 200
 		available = {
-			check_variable =  { SUS_moonlite_process > 99 }
+			OR = {
+				check_variable =  { SUS_moonlite_process > 99 }
+				NOT = {
+					has_country_flag = SUS_hire_americans
+				}
+			}
 		}
 		visible = {
 			has_country_flag = SUS_hire_americans
@@ -12370,15 +12377,36 @@ SUS_king_prestige_game = {
 			has_country_flag = SUS_hire_americans                 
 		}
 		complete_effect = {
-			SUS = {
-				country_event = SUS_event.1118
-				clr_country_flag = SUS_hire_americans
+			if = {
+				limit = {
+					has_country_flag = SUS_hire_americans
+				}
+				SUS = {
+				    country_event = SUS_event.1118
+				    clr_country_flag = SUS_hire_americans
+			    }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = SUS_hire_americans
+					}
+				}
+				SUS = {
+				    country_event = SUS_event.1120
+				    clr_country_flag = SUS_hire_americans
+			    }
 			}
 		}
 		timeout_effect = {
-			SUS = {
-				country_event = SUS_event.1120
-				clr_country_flag = SUS_hire_americans
+			if = {
+				limit = {
+					has_country_flag = SUS_hire_americans
+				}
+				SUS = {
+				    country_event = SUS_event.1120
+				    clr_country_flag = SUS_hire_americans
+			    }
 			}
 		}
 	}
@@ -12635,7 +12663,7 @@ SUS_king_prestige_game = {
 		}
 		complete_effect = {
 			SUS = {
-				country_event = SUS_event.1124
+				country_event = SUS_event.1125
 				clr_country_flag = SUS_build_an_ideal_town
 			}
 		}
@@ -12739,7 +12767,7 @@ SUS_king_prestige_game = {
 		}
 		complete_effect = {
 			SUS = {
-				country_event = SUS_event.1124
+				country_event = SUS_event.1126
 				clr_country_flag = SUS_build_something_insane
 			}
 		}
