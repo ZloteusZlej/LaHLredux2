@@ -3081,6 +3081,19 @@ shared_focus = {
 		focus = SUS_workfare
 		focus = SUS_better_out_than_in
 	}
+	completion_reward = {
+		custom_effect_tooltip = SUS_socecon_activated_focus
+		hidden_effect = {
+			SUS = {
+				add_dynamic_modifier = {
+					modifier = SUS_socecon_modifier
+				}
+				set_country_flag = SUS_socecon_activated
+				set_variable = { SUS_socecon_member_count = 1 }
+				set_variable = { global.SUS_socecon_member_limit = 0 }
+			}
+		}
+	}
 	relative_position_id = SUS_robin_hood_laws
 	cost = 4.3
 	x = 0

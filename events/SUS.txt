@@ -3919,6 +3919,623 @@ country_event = { #Declaring War on Socecon
     }
 }
 
+country_event = { #Giving a loan
+	id = SUS_event.92
+	title = SUS_event.92.t
+	desc = SUS_event.92.d
+	immediate = {
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+			}
+			set_country_flag = SUS_socecon_event_chosen
+			set_country_flag = SUS_socecon_event_chosen_loan
+		}	
+		SUS = {
+			set_country_flag = SUS_socecon_event_active
+		}
+	}
+	trigger = {
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_socecon_event_active
+			}
+		}
+		SUS = {
+			has_country_flag = SUS_socecon_activated
+		}
+		any_country = {
+			has_idea = SUS_socecon_member
+		}
+	}
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.92.a
+		custom_effect_tooltip = SUS_socecon_event_price_25
+		trigger = {
+			check_variable = {
+				var = SUS_socecon_current_budget
+				value = 25
+				compare = greater_than_or_equals
+			}
+		}
+		SUS = {
+			clr_country_flag = SUS_socecon_event_active
+		}
+		hidden_effect = {
+			SUS = {
+				country_event = {
+					id = SUS_event.93
+					days = 90
+				}
+			}
+		}
+		add_to_variable = {
+			var = SUS_socecon_current_budget
+			value = -25
+		}
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+				has_country_flag = SUS_socecon_event_chosen
+				set_country_flag = SUS_socecon_event_chosen_loan
+			}
+			clr_country_flag = SUS_socecon_event_chosen
+			add_political_power = 100
+		}
+    }
+	option = {
+		name = SUS_event.92.b
+		custom_effect_tooltip = SUS_socecon_loyalty_drop_small
+		SUS = {
+			add_political_power = -15
+			clr_country_flag = SUS_socecon_event_active
+		}
+		hidden_effect = {
+			random_country = {
+				limit = {
+					has_idea = SUS_socecon_member
+					has_country_flag = SUS_socecon_event_chosen
+				}
+				clr_country_flag = SUS_socecon_event_chosen
+				clr_country_flag = SUS_socecon_event_chosen_loan
+				add_to_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					value = -2
+				}
+				clamp_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					min = 0
+					max = 10
+				}
+			}
+		}
+    }
+}
+country_event = { #Giving a loan Part 2
+	id = SUS_event.93
+	title = SUS_event.93.t
+	desc = SUS_event.93.d
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.93.a
+		custom_effect_tooltip = SUS_socecon_gain_funds_3
+		add_to_variable = {
+			var = SUS_socecon_current_budget
+			value = 100
+		}
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+				has_country_flag = SUS_socecon_event_chosen_loan
+			}
+			clr_country_flag = SUS_socecon_event_chosen_loan
+		}
+    }
+}
+country_event = { #Food Shortages
+	id = SUS_event.94
+	title = SUS_event.94.t
+	desc = SUS_event.94.d
+	immediate = {
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+			}
+			set_country_flag = SUS_socecon_event_chosen
+		}	
+		SUS = {
+			set_country_flag = SUS_socecon_event_active
+		}
+	}
+	trigger = {
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_socecon_event_active
+			}
+		}
+		SUS = {
+			has_country_flag = SUS_socecon_activated
+		}
+		any_country = {
+			has_idea = SUS_socecon_member
+		}
+	}
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.94.a
+		custom_effect_tooltip = SUS_socecon_event_price_20
+		trigger = {
+			check_variable = {
+				var = SUS_socecon_current_budget
+				value = 20
+				compare = greater_than_or_equals
+			}
+		}
+		SUS = {
+			clr_country_flag = SUS_socecon_event_active
+		}
+		add_to_variable = {
+			var = SUS_socecon_current_budget
+			value = -20
+		}
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+				has_country_flag = SUS_socecon_event_chosen
+			}
+			clr_country_flag = SUS_socecon_event_chosen
+			add_timed_idea = {
+				idea = SUS_socecon_food_buff
+				days = 180
+			}
+		}
+    }
+	option = {
+		name = SUS_event.94.b
+		custom_effect_tooltip = SUS_socecon_loyalty_drop_small
+		SUS = {
+			add_political_power = -15
+			clr_country_flag = SUS_socecon_event_active
+		}
+		hidden_effect = {
+			random_country = {
+				limit = {
+					has_idea = SUS_socecon_member
+					has_country_flag = SUS_socecon_event_chosen
+				}
+				clr_country_flag = SUS_socecon_event_chosen
+				add_to_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					value = -2
+				}
+				clamp_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					min = 0
+					max = 10
+				}
+			}
+		}
+    }
+}
+country_event = { #Rearmament
+	id = SUS_event.95
+	title = SUS_event.95.t
+	desc = SUS_event.95.d
+	immediate = {
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+			}
+			set_country_flag = SUS_socecon_event_chosen
+		}	
+		SUS = {
+			set_country_flag = SUS_socecon_event_active
+		}
+	}
+	trigger = {
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_socecon_event_active
+			}
+		}
+		SUS = {
+			has_country_flag = SUS_socecon_activated
+		}
+		any_country = {
+			has_idea = SUS_socecon_member
+		}
+	}
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.95.a
+		custom_effect_tooltip = SUS_socecon_event_price_20
+		trigger = {
+			check_variable = {
+				var = SUS_socecon_current_budget
+				value = 20
+				compare = greater_than_or_equals
+			}
+		}
+		SUS = {
+			clr_country_flag = SUS_socecon_event_active
+		}
+		add_to_variable = {
+			var = SUS_socecon_current_budget
+			value = -20
+		}
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+				has_country_flag = SUS_socecon_event_chosen
+			}
+			clr_country_flag = SUS_socecon_event_chosen
+			add_timed_idea = {
+				idea = SUS_socecon_rearmament_buff
+				days = 180
+			}
+		}
+    }
+	option = {
+		name = SUS_event.95.b
+		custom_effect_tooltip = SUS_socecon_loyalty_drop_small
+		SUS = {
+			add_political_power = -15
+			clr_country_flag = SUS_socecon_event_active
+		}
+		hidden_effect = {
+			random_country = {
+				limit = {
+					has_idea = SUS_socecon_member
+					has_country_flag = SUS_socecon_event_chosen
+				}
+				clr_country_flag = SUS_socecon_event_chosen
+				add_to_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					value = -2
+				}
+				clamp_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					min = 0
+					max = 10
+				}
+			}
+		}
+    }
+}
+country_event = { #Give us pp
+	id = SUS_event.96
+	title = SUS_event.96.t
+	desc = SUS_event.96.d
+	immediate = {
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+			}
+			set_country_flag = SUS_socecon_event_chosen
+		}	
+		SUS = {
+			set_country_flag = SUS_socecon_event_active
+		}
+	}
+	trigger = {
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_socecon_event_active
+			}
+		}
+		SUS = {
+			has_country_flag = SUS_socecon_activated
+		}
+		any_country = {
+			has_idea = SUS_socecon_member
+		}
+	}
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.96.a
+		custom_effect_tooltip = SUS_socecon_event_price_20
+		trigger = {
+			SUS = {
+				has_political_power > 99
+			}
+		}
+		SUS = {
+			clr_country_flag = SUS_socecon_event_active
+			add_political_power = -100
+		}
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+				has_country_flag = SUS_socecon_event_chosen
+			}
+			clr_country_flag = SUS_socecon_event_chosen
+			add_political_power = 100
+		}
+    }
+	option = {
+		name = SUS_event.96.b
+		custom_effect_tooltip = SUS_socecon_loyalty_drop_small
+		SUS = {
+			add_political_power = -15
+			clr_country_flag = SUS_socecon_event_active
+		}
+		hidden_effect = {
+			random_country = {
+				limit = {
+					has_idea = SUS_socecon_member
+					has_country_flag = SUS_socecon_event_chosen
+				}
+				clr_country_flag = SUS_socecon_event_chosen
+				add_to_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					value = -2
+				}
+				clamp_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					min = 0
+					max = 10
+				}
+			}
+		}
+    }
+}
+country_event = { #Give us trains
+	id = SUS_event.97
+	title = SUS_event.97.t
+	desc = SUS_event.97.d
+	immediate = {
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+			}
+			set_country_flag = SUS_socecon_event_chosen
+		}	
+		SUS = {
+			set_country_flag = SUS_socecon_event_active
+		}
+	}
+	trigger = {
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_socecon_event_active
+			}
+		}
+		SUS = {
+			has_country_flag = SUS_socecon_activated
+		}
+		any_country = {
+			has_idea = SUS_socecon_member
+		}
+	}
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.97.a
+		trigger = {
+			SUS = {
+				has_equipment = {
+					train_equipment_1 > 24
+				}
+			}
+		}
+		SUS = {
+			clr_country_flag = SUS_socecon_event_active
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = -25
+				producer = SUS
+			}
+		}
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+				has_country_flag = SUS_socecon_event_chosen
+			}
+			clr_country_flag = SUS_socecon_event_chosen
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 25
+				producer = SUS
+			}
+		}
+    }
+	option = {
+		name = SUS_event.97.b
+		custom_effect_tooltip = SUS_socecon_loyalty_drop_small
+		SUS = {
+			add_political_power = -15
+			clr_country_flag = SUS_socecon_event_active
+		}
+		hidden_effect = {
+			random_country = {
+				limit = {
+					has_idea = SUS_socecon_member
+					has_country_flag = SUS_socecon_event_chosen
+				}
+				clr_country_flag = SUS_socecon_event_chosen
+				add_to_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					value = -2
+				}
+				clamp_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					min = 0
+					max = 10
+				}
+			}
+		}
+    }
+}
+
+country_event = { #Give us trucks
+	id = SUS_event.98
+	title = SUS_event.98.t
+	desc = SUS_event.98.d
+	immediate = {
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+			}
+			set_country_flag = SUS_socecon_event_chosen
+		}	
+		SUS = {
+			set_country_flag = SUS_socecon_event_active
+		}
+	}
+	trigger = {
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_socecon_event_active
+			}
+		}
+		SUS = {
+			has_country_flag = SUS_socecon_activated
+		}
+		any_country = {
+			has_idea = SUS_socecon_member
+		}
+	}
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.98.a
+		trigger = {
+			SUS = {
+				has_equipment = {
+					motorized_equipment_1 > 49
+				}
+			}
+		}
+		SUS = {
+			clr_country_flag = SUS_socecon_event_active
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = -50
+				producer = SUS
+			}
+		}
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+				has_country_flag = SUS_socecon_event_chosen
+			}
+			clr_country_flag = SUS_socecon_event_chosen
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 50
+				producer = SUS
+			}
+		}
+    }
+	option = {
+		name = SUS_event.98.b
+		custom_effect_tooltip = SUS_socecon_loyalty_drop_small
+		SUS = {
+			add_political_power = -15
+			clr_country_flag = SUS_socecon_event_active
+		}
+		hidden_effect = {
+			random_country = {
+				limit = {
+					has_idea = SUS_socecon_member
+					has_country_flag = SUS_socecon_event_chosen
+				}
+				clr_country_flag = SUS_socecon_event_chosen
+				add_to_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					value = -2
+				}
+				clamp_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					min = 0
+					max = 10
+				}
+			}
+		}
+    }
+}
+country_event = { #Give us reparations
+	id = SUS_event.99
+	title = SUS_event.99.t
+	desc = SUS_event.99.d
+	immediate = {
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+			}
+			set_country_flag = SUS_socecon_event_chosen
+		}	
+		SUS = {
+			set_country_flag = SUS_socecon_event_active
+		}
+	}
+	trigger = {
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_socecon_event_active
+			}
+		}
+		SUS = {
+			has_country_flag = SUS_socecon_activated
+		}
+		any_country = {
+			has_idea = SUS_socecon_member
+		}
+	}
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.99.a
+		custom_effect_tooltip = SUS_socecon_event_price_50
+		trigger = {
+			check_variable = {
+				var = SUS_socecon_current_budget
+				value = 50
+				compare = greater_than_or_equals
+			}
+		}
+		SUS = {
+			clr_country_flag = SUS_socecon_event_active
+		}
+		add_to_variable = {
+			var = SUS_socecon_current_budget
+			value = -50
+		}
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+				has_country_flag = SUS_socecon_event_chosen
+			}
+			clr_country_flag = SUS_socecon_event_chosen
+			add_political_power = 250
+		}
+    }
+	option = {
+		name = SUS_event.99.b
+		custom_effect_tooltip = SUS_socecon_loyalty_drop_small
+		SUS = {
+			add_political_power = -15
+			clr_country_flag = SUS_socecon_event_active
+		}
+		hidden_effect = {
+			random_country = {
+				limit = {
+					has_idea = SUS_socecon_member
+					has_country_flag = SUS_socecon_event_chosen
+				}
+				clr_country_flag = SUS_socecon_event_chosen
+				add_to_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					value = -2
+				}
+				clamp_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					min = 0
+					max = 10
+				}
+			}
+		}
+    }
+}
+
 country_event = { #Coronation
 	id = SUS_event.100
 	title = SUS_event.100.t
@@ -3930,6 +4547,170 @@ country_event = { #Coronation
 	option = {
 		name = SUS_event.100.a
 	    add_political_power = 100
+    }
+}
+
+country_event = { #Co-op trade
+	id = SUS_event.101
+	title = SUS_event.101.t
+	desc = SUS_event.101.d
+	immediate = {
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+			}
+			set_country_flag = SUS_socecon_event_chosen
+		}	
+		SUS = {
+			set_country_flag = SUS_socecon_event_active
+		}
+	}
+	trigger = {
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_socecon_event_active
+			}
+		}
+		SUS = {
+			has_country_flag = SUS_socecon_activated
+		}
+		any_country = {
+			has_idea = SUS_socecon_member
+		}
+	}
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.101.a
+		custom_effect_tooltip = SUS_socecon_event_price_50
+		trigger = {
+			check_variable = {
+				var = SUS_socecon_current_budget
+				value = 50
+				compare = greater_than_or_equals
+			}
+		}
+		SUS = {
+			clr_country_flag = SUS_socecon_event_active
+			add_timed_idea = {
+				idea = SUS_advacned_cooperation
+				days = 360
+			}
+		}
+		add_to_variable = {
+			var = SUS_socecon_current_budget
+			value = -50
+		}
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+				has_country_flag = SUS_socecon_event_chosen
+			}
+			clr_country_flag = SUS_socecon_event_chosen
+			add_timed_idea = {
+				idea = SUS_advacned_cooperation
+				days = 360
+			}
+		}
+    }
+	option = {
+		name = SUS_event.101.b
+		SUS = {
+			clr_country_flag = SUS_socecon_event_active
+		}
+		hidden_effect = {
+			random_country = {
+				limit = {
+					has_idea = SUS_socecon_member
+					has_country_flag = SUS_socecon_event_chosen
+				}
+				clr_country_flag = SUS_socecon_event_chosen
+			}
+		}
+    }
+}
+country_event = { #Cancer Research
+	id = SUS_event.102
+	title = SUS_event.102.t
+	desc = SUS_event.102.d
+	immediate = {
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+			}
+			set_country_flag = SUS_socecon_event_chosen
+		}	
+		SUS = {
+			set_country_flag = SUS_socecon_event_active
+		}
+	}
+	trigger = {
+		NOT = {
+			SUS = {
+				has_country_flag = SUS_socecon_event_active
+			}
+		}
+		SUS = {
+			has_country_flag = SUS_socecon_activated
+		}
+		any_country = {
+			has_idea = SUS_socecon_member
+		}
+	}
+    is_triggered_only = yes
+	option = {
+		name = SUS_event.102.a
+		custom_effect_tooltip = SUS_socecon_event_price_25
+		trigger = {
+			check_variable = {
+				var = SUS_socecon_current_budget
+				value = 25
+				compare = greater_than_or_equals
+			}
+		}
+		SUS = {
+			clr_country_flag = SUS_socecon_event_active
+		}
+		add_to_variable = {
+			var = SUS_socecon_current_budget
+			value = -25
+		}
+		random_country = {
+			limit = {
+				has_idea = SUS_socecon_member
+				has_country_flag = SUS_socecon_event_chosen
+			}
+			clr_country_flag = SUS_socecon_event_chosen
+			add_timed_idea = {
+				idea = SUS_cancer_research
+				days = 180
+			}
+		}
+    }
+	option = {
+		name = SUS_event.102.b
+		custom_effect_tooltip = SUS_socecon_loyalty_drop_small
+		SUS = {
+			add_political_power = -15
+			clr_country_flag = SUS_socecon_event_active
+		}
+		hidden_effect = {
+			random_country = {
+				limit = {
+					has_idea = SUS_socecon_member
+					has_country_flag = SUS_socecon_event_chosen
+				}
+				clr_country_flag = SUS_socecon_event_chosen
+				add_to_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					value = -2
+				}
+				clamp_variable = {
+					var = PREV.SUS_current_loyalty_level@THIS
+					min = 0
+					max = 10
+				}
+			}
+		}
     }
 }
 

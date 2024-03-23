@@ -608,7 +608,17 @@ on_actions = {
 	}
 	on_weekly_SUS = { #SUS SOCECON
 		random_events = { 
-			#5 = SUS_event.88
+			2 = SUS_event.88
+			2 = SUS_event.92
+			2 = SUS_event.94
+			2 = SUS_event.95
+			2 = SUS_event.96
+			2 = SUS_event.97
+			2 = SUS_event.98
+			2 = SUS_event.99
+			2 = SUS_event.101
+			2 = SUS_event.102
+			80 = 0
 		}
 	}
 	on_daily_SUS = { #Budget Update
@@ -621,12 +631,17 @@ on_actions = {
 					any_country = {
 						has_idea = SUS_socecon_member
 					}
+					NOT = {
+						SUS = {
+							has_country_flag = SUS_socecon_fee_effect
+						}
+					}
 				}
 				subtract_from_variable = {
 					var = global.SUS_socecon_current_budget_income
 					value = global.SUS_socecon_current_budget_income
 				}
-				random_country = {
+				every_country = {
 					limit = {
 						has_idea = SUS_socecon_member
 					}
